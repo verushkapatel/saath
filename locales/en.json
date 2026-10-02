@@ -458,7 +458,7 @@
     "eyebrow": "Your saathi for papers and money",
     "title": "Understand a paper before you sign it.",
     "lead": "Saath reads a loan or scheme paper and tells you, in plain words, what you will really pay. Then it helps you build money habits a few minutes a day.",
-    "does": "What it does. Tap one to see how.",
+    "does": "What Saath does, and how to use it",
     "how": "How to use it",
     "s1T": "Scan a paper",
     "s1P": "Saath reads printed loan agreements, gold loan slips and government scheme forms in English, Hindi and Marathi. The photo is read on your phone and is never uploaded or kept.",
@@ -524,5 +524,22 @@
     "logout": "Log out",
     "about": "What Saath does and how to use it",
     "hello": "Hello, {name}"
+  },
+  "demo": {
+    "try": "Try it",
+    "tapScan": "Scan this paper",
+    "reading": "Reading the paper",
+    "again": "Start again",
+    "compare": "Same loan, same 18 percent. Tap to compare.",
+    "extra": "{amount} more than you borrow",
+    "tapTasks": "Tap a task to finish it.",
+    "streakOn": "Today counts. Your streak has begun.",
+    "tapPath": "Tap a path to see what you will be able to do.",
+    "pocket": "You start the week with {amount}. Tap to spend.",
+    "left": "Left",
+    "word": "An [[emi]] looks small beside the full price. Add them all up and you see the real [[repayment]].",
+    "tapWord": "Tap an underlined word.",
+    "hear": "Hear this section",
+    "scroll": "See everything it does"
   }
 }
