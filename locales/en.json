@@ -56,14 +56,14 @@
     "bestPick": "Best answer",
     "pathsTitle": "Paths",
     "pathsSub": "Step by step, at your own pace.",
-    "allPaths": "See all paths"
+    "allPaths": "All paths"
   },
   "scan": {
     "title": "Scan a document",
     "intro": "Use a clear photo. Saath reads it here and does not keep the picture.",
     "camera": "Use the camera",
     "gallery": "Choose a photo",
-    "samples": "Try a sample",
+    "samples": "Or try a sample",
     "personal": "Personal loan agreement",
     "gold": "Gold loan slip",
     "scheme": "Government scheme form",
@@ -457,8 +457,8 @@
   "intro": {
     "eyebrow": "Your saathi for papers and money",
     "title": "Understand a paper before you sign it.",
-    "lead": "Saath reads a loan or scheme paper and tells you, in plain words, what you will really pay. Then it helps you build money habits a few minutes a day. Here is everything it does and how to use each part.",
-    "does": "What Saath does, and how to use it",
+    "lead": "Saath reads a loan or scheme paper and tells you, in plain words, what you will really pay. Then it helps you build money habits a few minutes a day.",
+    "does": "What it does. Tap one to see how.",
     "how": "How to use it",
     "s1T": "Scan a paper",
     "s1P": "Saath reads printed loan agreements, gold loan slips and government scheme forms in English, Hindi and Marathi. The photo is read on your phone and is never uploaded or kept.",
