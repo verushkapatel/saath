@@ -1,15 +1,25 @@
 {
   "name": "Saath",
   "short_name": "Saath",
-  "description": "Saath reads loan and scheme papers in plain language, and includes Money Lab for students.",
+  "description": "Saath explains loan and scheme papers in plain words, and gives you small daily steps to build money confidence.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#060B15",
-  "theme_color": "#060B15",
+  "background_color": "#02122b",
+  "theme_color": "#02122b",
   "lang": "en",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }
