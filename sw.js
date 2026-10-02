@@ -1,4 +1,6 @@
-const CACHE = "saath-v4";
+const CACHE = "saath-v5";
+// Works at the site root and in a sub-folder (for example /saath/ on GitHub Pages).
+const BASE = self.location.pathname.replace(/sw\.js$/, "");
 const PRECACHE = [
   "/",
   "/scan",
@@ -57,7 +59,7 @@ const PRECACHE = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(PRECACHE)));
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(PRECACHE.map((path) => BASE + path.replace(/^\//, ""))).catch(() => undefined)));
   self.skipWaiting();
 });
 
@@ -73,7 +75,7 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.startsWith("/api/")) return;
+  if (url.pathname.startsWith(BASE + "api/")) return;
   event.respondWith(
     fetch(request)
       .then((response) => {
