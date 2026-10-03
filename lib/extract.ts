@@ -8,15 +8,11 @@ import {
 } from "./schema";
 
 const DEV = "०१२३४५६७८९";
-// Papers sometimes carry digits from a neighbouring script. Reading them costs nothing.
-const KAN = "೦೧೨೩೪೫೬೭೮೯";
 
 export function foldDigits(raw: string): string {
   return [...raw].map((ch) => {
     const d = DEV.indexOf(ch);
     if (d >= 0) return String(d);
-    const k = KAN.indexOf(ch);
-    if (k >= 0) return String(k);
     return ch;
   }).join("");
 }
@@ -70,26 +66,26 @@ function hasAny(hay: string, needles: string[]): boolean {
 }
 
 const TYPE_GOLD = ["gold loan", "gold-loan", "सोने का कर्ज", "सोने का लोन", "सोन्याचे कर्ज", "gold slip"];
-const TYPE_SCHEME = ["application form", "scheme:", "योजना", "अनुदान", "grant", "scholarship form", "ಯೋಜನೆ", "ಅರ್ಜಿ ನಮೂನೆ"];
-const TYPE_PERSONAL = ["personal loan", "व्यक्तिगत ऋण", "पर्सनल लोन", "वैयक्तिक कर्ज", "ವೈಯಕ್ತಿಕ ಸಾಲ"];
+const TYPE_SCHEME = ["application form", "scheme:", "योजना", "अनुदान", "grant", "scholarship form"];
+const TYPE_PERSONAL = ["personal loan", "व्यक्तिगत ऋण", "पर्सनल लोन", "वैयक्तिक कर्ज"];
 
-const KEY_LENDER = ["lender", "ऋणदाता", "कर्ज देणारा", "कर्जदार संस्था", "bank", "बैंक", "scheme", "योजना", "ಸಾಲದಾತ", "ಯೋಜನೆ"];
-const KEY_PRINCIPAL = ["principal", "मूलधन", "मुद्दल", "amount borrowed", "उधार", "ಮೂಲಧನ"];
-const KEY_BENEFIT = ["benefit", "लाभ", "मदत", "grant amount", "अनुदान", "ಲಾಭ"];
-const KEY_INTEREST = ["interest", "ब्याज", "व्याज", "rate", "दर", "ಬಡ್ಡಿ"];
-const KEY_TENURE = ["tenure", "अवधि", "कालावधी", "duration", "period", "ಅವಧಿ"];
-const KEY_FEE = ["processing fee", "processing", "प्रोसेसिंग", "प्रक्रिया शुल्क", "ಪ್ರಕ್ರಿಯೆ ಶುಲ್ಕ"];
-const KEY_OTHER_FEE = ["other fee", "documentation", "अन्य शुल्क", "इतर शुल्क", "ಇತರ ಶುಲ್ಕ"];
-const KEY_PENALTY = ["penalty", "late fee", "जुर्माना", "विलंब", "दंड", "ದಂಡ"];
-const KEY_PREPAY = ["prepayment", "foreclosure", "पूर्वभुगतान", "पूर्वफेड", "ಮುಂಗಡ ಪಾವತಿ"];
-const KEY_COLLATERAL = ["collateral", "security", "pledge", "गिरवी", "तारण", "ಅಡಮಾನ"];
+const KEY_LENDER = ["lender", "ऋणदाता", "कर्ज देणारा", "कर्जदार संस्था", "bank", "बैंक", "scheme", "योजना"];
+const KEY_PRINCIPAL = ["principal", "मूलधन", "मुद्दल", "amount borrowed", "उधार"];
+const KEY_BENEFIT = ["benefit", "लाभ", "मदत", "grant amount", "अनुदान"];
+const KEY_INTEREST = ["interest", "ब्याज", "व्याज", "rate", "दर"];
+const KEY_TENURE = ["tenure", "अवधि", "कालावधी", "duration", "period"];
+const KEY_FEE = ["processing fee", "processing", "प्रोसेसिंग", "प्रक्रिया शुल्क"];
+const KEY_OTHER_FEE = ["other fee", "documentation", "अन्य शुल्क", "इतर शुल्क"];
+const KEY_PENALTY = ["penalty", "late fee", "जुर्माना", "विलंब", "दंड"];
+const KEY_PREPAY = ["prepayment", "foreclosure", "पूर्वभुगतान", "पूर्वफेड"];
+const KEY_COLLATERAL = ["collateral", "security", "pledge", "गिरवी", "तारण"];
 
-const NOT_LOAN = ["not a loan", "कर्ज नहीं", "कर्ज नाही", "grant not loan", "ಸಾಲವಲ್ಲ"];
-const FLAT = ["flat", "फ्लैट", "फ्लॅट", "ಫ್ಲಾಟ್"];
-const REDUCING = ["reducing", "reducing balance", "घटता", "घटती", "कमी होणारी", "ಕಡಿಮೆಯಾಗುವ"];
-const PREPAY_NO = ["not permitted", "not allowed", "cannot", "no prepayment", "अनुमति नहीं", "परवानगी नाही", "मनाही", "ಅನುಮತಿ ಇಲ್ಲ"];
-const PREPAY_YES = ["allowed", "permitted", "without charge", "अनुमति", "परवानगी", "ಅನುಮತಿ"];
-const YEAR = ["academic year", "one year", "शैक्षणिक वर्ष", "एक वर्ष", "ಶೈಕ್ಷಣಿಕ ವರ್ಷ"];
+const NOT_LOAN = ["not a loan", "कर्ज नहीं", "कर्ज नाही", "grant not loan"];
+const FLAT = ["flat", "फ्लैट", "फ्लॅट"];
+const REDUCING = ["reducing", "reducing balance", "घटता", "घटती", "कमी होणारी"];
+const PREPAY_NO = ["not permitted", "not allowed", "cannot", "no prepayment", "अनुमति नहीं", "परवानगी नाही", "मनाही"];
+const PREPAY_YES = ["allowed", "permitted", "without charge", "अनुमति", "परवानगी"];
+const YEAR = ["academic year", "one year", "शैक्षणिक वर्ष", "एक वर्ष"];
 
 function findPair(
   pairs: { key: string; value: string; line: string }[],
@@ -136,7 +132,7 @@ export function ruleExtract(rawText: string): Extraction {
 
   let months: number | null = null;
   const tenureText = tenurePair?.value ?? "";
-  const monthMatch = foldDigits(tenureText).match(/(\d+)\s*(month|महिने|महीने|माह|ತಿಂಗಳು)/i);
+  const monthMatch = foldDigits(tenureText).match(/(\d+)\s*(month|महिने|महीने|माह)/i);
   if (monthMatch) months = Number(monthMatch[1]);
   else if (hasAny(norm(tenureText), YEAR.map(norm))) months = 12;
   else {

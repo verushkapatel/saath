@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import { fill, lookup } from "@/lib/copy";
 import { asset } from "@/lib/config";
 import { LANGS, type Lang } from "@/lib/catalog";
+import { currentScope } from "@/lib/scope";
 
 type I18n = {
   lang: Lang | null;
@@ -11,7 +12,8 @@ type I18n = {
   code: Lang;
   ready: boolean;
   copyReady: boolean;
-  setLang: (lang: Lang) => void;
+  /** Pass false as the second value to use a language for this visit without saving it. */
+  setLang: (lang: Lang, persist?: boolean) => void;
   t: (path: string, vars?: Record<string, string | number>) => string;
 };
 
@@ -25,8 +27,11 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     try {
+      // A link may name a language (?lang=hi). It is used for this visit and not saved.
+      const asked = new URLSearchParams(window.location.search).get("lang");
       const saved = window.localStorage.getItem(KEY);
-      if (saved && LANGS.includes(saved as Lang)) setLangState(saved as Lang);
+      if (asked && LANGS.includes(asked as Lang)) setLangState(asked as Lang);
+      else if (saved && LANGS.includes(saved as Lang)) setLangState(saved as Lang);
     } catch {
       // Storage can be blocked. The language screen simply shows again.
     }
@@ -50,11 +55,15 @@ export function Providers({ children }: { children: React.ReactNode }) {
     };
   }, [lang]);
 
-  const setLang = useCallback((next: Lang) => {
-    try {
-      window.localStorage.setItem(KEY, next);
-    } catch {
-      // Still switch for this visit.
+  const setLang = useCallback((next: Lang, persist = true) => {
+    if (persist) {
+      try {
+        window.localStorage.setItem(KEY, next);
+        // The language is also kept with the account, so it comes back after logging in again.
+        if (currentScope()) window.localStorage.setItem(`${KEY}:${currentScope()}`, next);
+      } catch {
+        // Still switch for this visit.
+      }
     }
     setLangState(next);
   }, []);

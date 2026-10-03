@@ -6,9 +6,7 @@ import {
   Banknote, CalendarClock, Camera, Check, ChevronDown, ChevronRight, CircleAlert, HandCoins, ImagePlus, Info,
   MessageCircleQuestion, Percent, Plus, Share2, TriangleAlert, type LucideIcon,
 } from "lucide-react";
-import { tryAiExtract } from "@/lib/ai-client";
 import { answerFromDocument } from "@/lib/ask";
-import { AI_ENABLED } from "@/lib/config";
 import { todayISO } from "@/lib/dates";
 import { checklistIds, explainBlocks, planExplanation, type Block } from "@/lib/explain";
 import { applyConfirmed, ruleExtract } from "@/lib/extract";
@@ -186,8 +184,7 @@ export function ScanScreen({ initialSample }: { initialSample?: string }) {
     setOcrPhase(null);
     const text = sample.text[code] || sample.text.en;
     const local = ruleExtract(text);
-    const ai = await tryAiExtract(text, code);
-    openConfirm(ai ?? local, TITLES[sample.id], sample.id);
+    openConfirm(local, TITLES[sample.id], sample.id);
   }
 
   async function runPhoto(blob: Blob) {
@@ -204,8 +201,7 @@ export function ScanScreen({ initialSample }: { initialSample?: string }) {
         return;
       }
       const local = ruleExtract(text);
-      const ai = await tryAiExtract(text, code);
-      openConfirm(ai ?? local, null, null);
+      openConfirm(local, null, null);
     } catch {
       setPhase("error");
     }
@@ -290,7 +286,7 @@ export function ScanScreen({ initialSample }: { initialSample?: string }) {
         <>
           <div className="stack-xs">
             <h1>{t("scan.title")}</h1>
-            <p className="lead">{AI_ENABLED ? t("scan.privacyAi") : t("scan.privacyLocal")}</p>
+            <p className="lead">{t("scan.privacyLocal")}</p>
           </div>
           <div className="stack-sm">
             <label className="btn btn-primary">

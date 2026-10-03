@@ -1,0 +1,17 @@
+name = "saath-ai"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Option 1: Cloudflare Workers AI. Has a free daily allowance and needs no key.
+[ai]
+binding = "AI"
+
+[vars]
+# The app's address. Requests from anywhere else are refused. Separate several with commas.
+ALLOWED_ORIGIN = "https://verushkapatel.github.io"
+# AI_MODEL = "@cf/meta/llama-3.1-8b-instruct"
+
+# Option 2: an OpenAI-compatible API instead. Remove the [ai] block above, then run:
+#   npx wrangler secret put AI_API_KEY
+#   npx wrangler secret put AI_BASE_URL     (for example https://api.groq.com/openai/v1)
+#   npx wrangler secret put AI_MODEL

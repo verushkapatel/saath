@@ -1,0 +1,345 @@
+{
+ "note": {
+  "en": "These are real events. Each is summarised in Saath's own words from the published source named under it, and was checked against that source on the date shown. Saath has not interviewed anyone and adds no detail the source does not give. \"Reported\" means a news organisation reported the case; \"official\" means it comes from a regulator or the government.",
+  "hi": "ये असली घटनाएँ हैं। हर एक का सार साथ ने अपने शब्दों में, नीचे दर्ज प्रकाशित स्रोत से लिखा है, और दिखाई गई तारीख को उसी स्रोत से जाँचा है। साथ ने किसी से बातचीत नहीं की और ऐसा कोई ब्योरा नहीं जोड़ा जो स्रोत में नहीं है। \"रिपोर्टेड\" का मतलब है कि किसी समाचार संस्था ने मामला छापा; \"आधिकारिक\" का मतलब है कि यह नियामक या सरकार से है।",
+  "mr": "या खऱ्या घटना आहेत. प्रत्येकाचा सारांश साथने स्वतःच्या शब्दांत, खाली नमूद प्रकाशित स्रोतावरून लिहिला आहे आणि दाखवलेल्या तारखेला त्याच स्रोताशी तपासला आहे. साथने कोणाची मुलाखत घेतलेली नाही आणि स्रोतात नसलेला कोणताही तपशील जोडलेला नाही. \"वृत्त\" म्हणजे वृत्तसंस्थेने प्रकरण प्रसिद्ध केले; \"अधिकृत\" म्हणजे ते नियामक किंवा सरकारकडून आहे."
+ },
+ "stories": [
+  {
+   "id": "pune-digital-arrest",
+   "topic": "scams",
+   "kind": "reported",
+   "title": {
+    "en": "An 84-year-old in Pune and a video call from \"officers\"",
+    "hi": "पुणे के 84 वर्षीय बुज़ुर्ग और \"अधिकारियों\" का वीडियो कॉल",
+    "mr": "पुण्यातील 84 वर्षीय ज्येष्ठ आणि \"अधिकाऱ्यांचा\" व्हिडिओ कॉल"
+   },
+   "what": {
+    "en": "A senior citizen in Pune got a WhatsApp video call from an international number. The callers said they were anti-terror and CID officers from Lucknow, that his Aadhaar was linked to a criminal case, and that he and his wife could be arrested. They sent forged warrants, told him his phone was being watched and that he must tell no one. The next day he broke his fixed deposits and transferred ₹50.50 lakh for what he was told was \"RBI verification\". They then asked for ₹14.50 lakh more.",
+    "hi": "पुणे के एक वरिष्ठ नागरिक को अंतरराष्ट्रीय नंबर से व्हाट्सऐप वीडियो कॉल आया। कॉल करने वालों ने खुद को लखनऊ के ATS और CID अधिकारी बताया, कहा कि उनका आधार एक आपराधिक मामले से जुड़ा है और उन्हें व पत्नी को गिरफ़्तार किया जा सकता है। उन्होंने जाली वारंट भेजे, कहा कि फ़ोन पर नज़र रखी जा रही है और किसी को बताना नहीं है। अगले दिन उन्होंने अपनी FD तुड़वाईं और \"RBI सत्यापन\" के नाम पर ₹50.50 लाख भेज दिए। इसके बाद ₹14.50 लाख और माँगे गए।",
+    "mr": "पुण्यातील एका ज्येष्ठ नागरिकाला आंतरराष्ट्रीय क्रमांकावरून व्हॉट्सॲप व्हिडिओ कॉल आला. कॉल करणाऱ्यांनी स्वतःला लखनौचे ATS आणि CID अधिकारी म्हटले, त्यांचे आधार एका गुन्ह्याशी जोडलेले आहे आणि त्यांना व पत्नीला अटक होऊ शकते असे सांगितले. त्यांनी बनावट वॉरंट पाठवले, फोनवर नजर आहे आणि कोणाला सांगायचे नाही असे बजावले. दुसऱ्या दिवशी त्यांनी मुदत ठेवी मोडल्या आणि \"RBI पडताळणी\" च्या नावाखाली ₹50.50 लाख पाठवले. त्यानंतर आणखी ₹14.50 लाख मागितले गेले."
+   },
+   "lesson": {
+    "en": "Every step was built to keep him alone and frightened until the money moved. Knowing his Aadhaar number made the callers sound official; it did not make them police.",
+    "hi": "हर कदम इसलिए था कि पैसा भेजे जाने तक वे अकेले और डरे रहें। आधार नंबर पता होने से कॉल करने वाले सरकारी लगे; पुलिस नहीं बन गए।",
+    "mr": "पैसे पाठवले जाईपर्यंत ते एकटे आणि घाबरलेले राहावेत यासाठीच प्रत्येक पाऊल होते. आधार क्रमांक माहीत असल्याने कॉल करणारे अधिकृत वाटले; पोलिस ठरले नाहीत."
+   },
+   "act": {
+    "en": "No agency arrests or investigates by video call, and nobody honest asks you to move money to prove innocence. Hang up, tell a family member, and call 1930.",
+    "hi": "कोई एजेंसी वीडियो कॉल पर गिरफ़्तार या जाँच नहीं करती, और कोई ईमानदार व्यक्ति बेगुनाही साबित करने के लिए पैसा भेजने को नहीं कहता। फ़ोन काटें, परिवार में किसी को बताएँ, और 1930 पर फ़ोन करें।",
+    "mr": "कोणतीही यंत्रणा व्हिडिओ कॉलवर अटक किंवा चौकशी करत नाही आणि कोणताही प्रामाणिक माणूस निर्दोषत्व सिद्ध करण्यासाठी पैसे पाठवायला सांगत नाही. फोन कट करा, कुटुंबातील कोणाला सांगा आणि 1930 वर फोन करा."
+   },
+   "when": {
+    "en": "Pune, July 2026",
+    "hi": "पुणे, जुलाई 2026",
+    "mr": "पुणे, जुलै 2026"
+   },
+   "source": {
+    "name": "Outlook Money",
+    "title": "Digital arrest scam: how fraudsters trapped a Pune retiree into transferring Rs 50 lakh",
+    "url": "https://www.outlookmoney.com/news/digital-arrest-scam-how-fraudsters-trapped-a-pune-retiree-into-transferring-rs-50-lakh",
+    "published": "2026-08-03"
+   },
+   "guides": [
+    "scam-calls",
+    "money-missing"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "chennai-task-scam",
+   "topic": "scams",
+   "kind": "reported",
+   "title": {
+    "en": "₹100 became ₹300, and then ₹7.7 lakh was gone",
+    "hi": "₹100 के ₹300 बने, और फिर ₹7.7 लाख चले गए",
+    "mr": "₹100 चे ₹300 झाले आणि मग ₹7.7 लाख गेले"
+   },
+   "what": {
+    "en": "A woman in Chennai who had recently left her job saw a Facebook advert for part-time work reviewing videos. She paid ₹100 and got ₹300 back. She paid ₹1,000 and got ₹1,300, then ₹2,600 and got ₹3,900. She was added to a Telegram group and offered a \"trading\" task with a ₹20,000 minimum. Then she was told a team member's mistake had frozen everyone's money and penalties were due. She paid ₹50,000, ₹1.5 lakh, ₹3 lakh and more over a few days: ₹7.7 lakh in all.",
+    "hi": "चेन्नई की एक महिला ने, जिन्होंने हाल ही में नौकरी छोड़ी थी, फ़ेसबुक पर वीडियो देखकर समीक्षा करने के पार्ट-टाइम काम का विज्ञापन देखा। उन्होंने ₹100 दिए और ₹300 वापस मिले। ₹1,000 दिए तो ₹1,300 मिले, फिर ₹2,600 पर ₹3,900। उन्हें टेलीग्राम ग्रुप में जोड़ा गया और ₹20,000 न्यूनतम वाला \"ट्रेडिंग\" काम दिया गया। फिर कहा गया कि टीम के एक सदस्य की गलती से सबका पैसा अटक गया है और जुर्माना देना होगा। कुछ दिनों में उन्होंने ₹50,000, ₹1.5 लाख, ₹3 लाख और उससे ज़्यादा दिए: कुल ₹7.7 लाख।",
+    "mr": "चेन्नईतील एका महिलेने, जिने नुकतीच नोकरी सोडली होती, फेसबुकवर व्हिडिओ पाहून परीक्षण करण्याच्या अर्धवेळ कामाची जाहिरात पाहिली. तिने ₹100 दिले आणि ₹300 परत मिळाले. ₹1,000 दिले तर ₹1,300 मिळाले, मग ₹2,600 वर ₹3,900. तिला टेलिग्राम ग्रुपमध्ये जोडले गेले आणि ₹20,000 किमान असलेले \"ट्रेडिंग\" काम दिले. मग सांगितले की टीममधील एकाच्या चुकीमुळे सगळ्यांचे पैसे अडकले आहेत आणि दंड भरावा लागेल. काही दिवसांत तिने ₹50,000, ₹1.5 लाख, ₹3 लाख आणि त्याहून जास्त दिले: एकूण ₹7.7 लाख."
+   },
+   "lesson": {
+    "en": "The small early payouts were the bait. They cost the fraudsters a few thousand rupees and bought her trust. After that, each new payment was demanded to \"release\" what she had already put in.",
+    "hi": "शुरुआती छोटे भुगतान चारा थे। ठगों को वे कुछ हज़ार रुपये के पड़े और उनसे भरोसा खरीदा गया। उसके बाद हर नया भुगतान पहले से लगाए पैसे को \"छुड़ाने\" के नाम पर माँगा गया।",
+    "mr": "सुरुवातीचे छोटे पैसे हे आमिष होते. ते फसवणाऱ्यांना काही हजार रुपयांना पडले आणि त्यातून विश्वास विकत घेतला गेला. त्यानंतर प्रत्येक नवे पैसे आधी लावलेले पैसे \"सोडवण्यासाठी\" मागितले गेले."
+   },
+   "act": {
+    "en": "A real job never asks you to pay in order to be paid. The moment a task needs a deposit, stop. Paying more does not bring back what is already gone.",
+    "hi": "असली नौकरी कभी भुगतान पाने के लिए पैसा नहीं माँगती। जैसे ही किसी काम में जमा राशि माँगी जाए, रुक जाएँ। और पैसा देने से गया हुआ पैसा नहीं लौटता।",
+    "mr": "खरी नोकरी कधीही पैसे मिळवण्यासाठी पैसे मागत नाही. एखाद्या कामासाठी अनामत मागितली की थांबा. आणखी पैसे दिल्याने गेलेले पैसे परत येत नाहीत."
+   },
+   "when": {
+    "en": "Chennai, March 2024",
+    "hi": "चेन्नई, मार्च 2024",
+    "mr": "चेन्नई, मार्च 2024"
+   },
+   "source": {
+    "name": "The News Minute",
+    "title": "Chennai woman loses Rs 7.7 lakh to Telegram job scam",
+    "url": "https://www.thenewsminute.com/tamil-nadu/chennai-woman-loses-rs-77-lakh-to-telegram-job-scam",
+    "published": "2024-03-15"
+   },
+   "guides": [
+    "job-scams",
+    "double-money"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "loan-app-2000",
+   "topic": "borrowing",
+   "kind": "reported",
+   "title": {
+    "en": "A ₹2,000 app loan that did not end when it was repaid",
+    "hi": "₹2,000 का ऐप लोन जो चुकाने पर भी खत्म नहीं हुआ",
+    "mr": "₹2,000 चे ॲप कर्ज जे फेडल्यावरही संपले नाही"
+   },
+   "what": {
+    "en": "A 25-year-old woman in Mumbai borrowed ₹2,000 through a loan app. She received ₹1,300, for six days. After she repaid, the operators sent morphed photographs of her to her relatives and friends. In another case in the same report, an engineer in Karnataka borrowed ₹12,000 on a seven-day app, repaid it in full, and was then extorted of ₹4.4 lakh through threats to publish his personal data.",
+    "hi": "मुंबई की 25 वर्षीय महिला ने एक लोन ऐप से ₹2,000 उधार लिए। उन्हें छह दिन के लिए ₹1,300 मिले। चुकाने के बाद ऐप चलाने वालों ने उनकी छेड़छाड़ की हुई तस्वीरें रिश्तेदारों और दोस्तों को भेज दीं। उसी रिपोर्ट के एक और मामले में कर्नाटक के एक इंजीनियर ने सात दिन के ऐप से ₹12,000 लिए, पूरा चुकाया, और फिर निजी जानकारी सार्वजनिक करने की धमकियों से उनसे ₹4.4 लाख ऐंठ लिए गए।",
+    "mr": "मुंबईतील 25 वर्षीय महिलेने एका कर्ज ॲपवरून ₹2,000 घेतले. तिला सहा दिवसांसाठी ₹1,300 मिळाले. फेडल्यानंतर ॲप चालवणाऱ्यांनी तिची फेरफार केलेली छायाचित्रे नातेवाईक आणि मित्रांना पाठवली. त्याच वृत्तातील दुसऱ्या प्रकरणात कर्नाटकातील एका अभियंत्याने सात दिवसांच्या ॲपवरून ₹12,000 घेतले, पूर्ण फेडले आणि नंतर वैयक्तिक माहिती प्रसिद्ध करण्याच्या धमक्यांनी त्याच्याकडून ₹4.4 लाख उकळले गेले."
+   },
+   "lesson": {
+    "en": "With these apps the loan is small and the real product is your phone. The contacts, photos and files the app was allowed to read are what it uses afterwards.",
+    "hi": "ऐसे ऐप में लोन छोटा होता है और असली चीज़ आपका फ़ोन है। जिन संपर्कों, तस्वीरों और फ़ाइलों को पढ़ने की अनुमति ऐप को दी गई, वही बाद में इस्तेमाल होती हैं।",
+    "mr": "अशा ॲपमध्ये कर्ज लहान असते आणि खरी गोष्ट म्हणजे तुमचा फोन. ॲपला वाचण्याची परवानगी दिलेले संपर्क, छायाचित्रे आणि फाइल्सच नंतर वापरल्या जातात."
+   },
+   "act": {
+    "en": "Check that a lender is regulated before you install anything. Do not grant access to contacts or photos, and never pay a fee upfront. If you are threatened, report to 1930 or cybercrime.gov.in.",
+    "hi": "कुछ भी इंस्टॉल करने से पहले जाँचें कि ऋणदाता विनियमित है। संपर्कों या तस्वीरों की अनुमति न दें, और पहले से कोई शुल्क न दें। धमकी मिले तो 1930 या cybercrime.gov.in पर शिकायत करें।",
+    "mr": "काहीही इन्स्टॉल करण्यापूर्वी कर्जदाता नियमन केलेला आहे का ते तपासा. संपर्क किंवा छायाचित्रांची परवानगी देऊ नका आणि आधी कोणतेही शुल्क भरू नका. धमकी मिळाल्यास 1930 किंवा cybercrime.gov.in वर तक्रार करा."
+   },
+   "when": {
+    "en": "Mumbai, August 2025; Karnataka, late 2025",
+    "hi": "मुंबई, अगस्त 2025; कर्नाटक, 2025 के अंत में",
+    "mr": "मुंबई, ऑगस्ट 2025; कर्नाटक, 2025 च्या अखेरीस"
+   },
+   "source": {
+    "name": "Moneylife",
+    "title": "Fraud Alert: Desperate for a Quick Loan? Fake Apps Can Turn a ₹5,000 Need into a Nightmare",
+    "url": "https://www.moneylife.in/article/fraud-alert-desperate-for-a-quick-loan-fake-apps-can-turn-a-5000-need-into-a-nightmare/81353.html",
+    "published": "2026-08-14"
+   },
+   "guides": [
+    "fake-loan-apps",
+    "emergency-fund"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "pmc-bank-limit",
+   "topic": "banking",
+   "kind": "official",
+   "title": {
+    "en": "The morning a bank's customers could withdraw only ₹1,000",
+    "hi": "वह सुबह जब एक बैंक के ग्राहक सिर्फ़ ₹1,000 निकाल सकते थे",
+    "mr": "ती सकाळ जेव्हा एका बँकेचे ग्राहक फक्त ₹1,000 काढू शकत होते"
+   },
+   "what": {
+    "en": "In September 2019 the Reserve Bank of India placed restrictions on Punjab and Maharashtra Cooperative Bank. Depositors were at first limited to withdrawing ₹1,000 from their accounts. The limit was raised in steps over the following months, reaching ₹50,000 on 5 November 2019, when RBI said more than 78% of depositors could then withdraw their entire balance. Those with larger deposits waited far longer.",
+    "hi": "सितंबर 2019 में भारतीय रिज़र्व बैंक ने पंजाब एंड महाराष्ट्र कोऑपरेटिव बैंक पर पाबंदियाँ लगाईं। शुरू में जमाकर्ता अपने खातों से सिर्फ़ ₹1,000 निकाल सकते थे। अगले महीनों में सीमा क्रमशः बढ़ाई गई और 5 नवंबर 2019 को ₹50,000 हुई, जब RBI ने कहा कि 78% से ज़्यादा जमाकर्ता अपना पूरा पैसा निकाल सकते हैं। बड़ी जमा वालों को कहीं ज़्यादा इंतज़ार करना पड़ा।",
+    "mr": "सप्टेंबर 2019 मध्ये भारतीय रिझर्व्ह बँकेने पंजाब अँड महाराष्ट्र को-ऑपरेटिव्ह बँकेवर निर्बंध घातले. सुरुवातीला ठेवीदार खात्यातून फक्त ₹1,000 काढू शकत होते. पुढील महिन्यांत मर्यादा टप्प्याटप्प्याने वाढवली गेली आणि 5 नोव्हेंबर 2019 रोजी ₹50,000 झाली, तेव्हा RBI ने सांगितले की 78% हून अधिक ठेवीदार संपूर्ण शिल्लक काढू शकतात. मोठ्या ठेवी असणाऱ्यांना खूप जास्त वाट पाहावी लागली."
+   },
+   "lesson": {
+    "en": "A bank account is very safe, and still it is not a single point of failure you want for all your money. People who held everything in that one bank had no way to pay rent or a hospital.",
+    "hi": "बैंक खाता बहुत सुरक्षित है, फिर भी सारा पैसा एक ही जगह रखना ठीक नहीं। जिनका सब कुछ उसी एक बैंक में था, उनके पास किराया या अस्पताल का बिल भरने का कोई रास्ता नहीं था।",
+    "mr": "बँक खाते अतिशय सुरक्षित असते, तरीही सगळे पैसे एकाच ठिकाणी ठेवणे योग्य नाही. ज्यांचे सगळे त्या एकाच बँकेत होते त्यांच्याकडे भाडे किंवा रुग्णालयाचे बिल भरण्याचा मार्ग नव्हता."
+   },
+   "act": {
+    "en": "Deposit insurance covers up to ₹5 lakh per depositor per bank. Keep emergency money reachable in more than one bank, and keep large savings spread so no single bank holds more than is insured.",
+    "hi": "जमा बीमा प्रति जमाकर्ता प्रति बैंक ₹5 लाख तक कवर करता है। आपात का पैसा एक से ज़्यादा बैंकों में रखें, और बड़ी बचत फैलाकर रखें ताकि किसी एक बैंक में बीमित सीमा से ज़्यादा न हो।",
+    "mr": "ठेव विमा प्रति ठेवीदार प्रति बँक ₹5 लाखांपर्यंत संरक्षण देतो. आपत्कालीन पैसे एकापेक्षा जास्त बँकांत ठेवा आणि मोठी बचत पसरवून ठेवा, म्हणजे कोणत्याही एका बँकेत विमा मर्यादेपेक्षा जास्त नसेल."
+   },
+   "when": {
+    "en": "Mumbai, September to November 2019",
+    "hi": "मुंबई, सितंबर से नवंबर 2019",
+    "mr": "मुंबई, सप्टेंबर ते नोव्हेंबर 2019"
+   },
+   "source": {
+    "name": "Reserve Bank of India",
+    "title": "Press release, 5 November 2019: withdrawal limit for depositors of PMC Bank raised to ₹50,000",
+    "url": "https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=48562",
+    "published": "2019-11-05"
+   },
+   "also": [
+    {
+     "name": "Moneylife: the first ₹1,000 limit and the deposit insurance payout",
+     "url": "https://www.moneylife.in/article/rs5-lakh-deposit-insurance-pmc-bank-customers-need-to-wait-for-some-more-time/65192.html"
+    }
+   ],
+   "guides": [
+    "who-keeps-safe",
+    "emergency-fund"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "sebi-fno-study",
+   "topic": "investing",
+   "kind": "official",
+   "title": {
+    "en": "Nine in ten individual F&O traders lost money",
+    "hi": "दस में नौ व्यक्तिगत F&O ट्रेडरों को घाटा हुआ",
+    "mr": "दहापैकी नऊ वैयक्तिक F&O ट्रेडरना तोटा झाला"
+   },
+   "what": {
+    "en": "The market regulator SEBI studied individual traders in equity futures and options over three years, FY22 to FY24. It found that 93% of them made losses, and that their combined losses were more than ₹1.8 lakh crore over the period.",
+    "hi": "बाज़ार नियामक SEBI ने वित्त वर्ष 22 से 24, तीन साल के दौरान इक्विटी फ़्यूचर्स और ऑप्शंस के व्यक्तिगत ट्रेडरों का अध्ययन किया। पाया गया कि उनमें से 93% को घाटा हुआ, और इस अवधि में उनका कुल घाटा ₹1.8 लाख करोड़ से ज़्यादा था।",
+    "mr": "बाजार नियामक SEBI ने आर्थिक वर्ष 22 ते 24, तीन वर्षांतील इक्विटी फ्यूचर्स आणि ऑप्शन्समधील वैयक्तिक ट्रेडरचा अभ्यास केला. त्यात आढळले की त्यांपैकी 93% जणांना तोटा झाला आणि या काळात त्यांचा एकूण तोटा ₹1.8 लाख कोटींहून अधिक होता."
+   },
+   "lesson": {
+    "en": "The screenshot of one good morning that gets shared in a group chat is the exception. The regulator's own numbers show what usually happens.",
+    "hi": "ग्रुप चैट में साझा किया गया एक अच्छी सुबह का स्क्रीनशॉट अपवाद है। नियामक के अपने आँकड़े बताते हैं कि आम तौर पर क्या होता है।",
+    "mr": "ग्रुप चॅटमध्ये शेअर केलेला एका चांगल्या सकाळचा स्क्रीनशॉट हा अपवाद आहे. नियामकाचे स्वतःचे आकडे सहसा काय होते ते दाखवतात."
+   },
+   "act": {
+    "en": "Trading derivatives is not investing. If your aim is to build savings, use money you will not need for years, spread it widely, and add to it regularly.",
+    "hi": "डेरिवेटिव ट्रेडिंग निवेश नहीं है। अगर लक्ष्य बचत बढ़ाना है, तो वह पैसा लगाएँ जिसकी बरसों ज़रूरत नहीं, उसे खूब फैलाएँ, और नियमित जोड़ते रहें।",
+    "mr": "डेरिव्हेटिव्ह ट्रेडिंग म्हणजे गुंतवणूक नाही. बचत वाढवणे हे उद्दिष्ट असेल तर जे पैसे अनेक वर्षे लागणार नाहीत ते लावा, ते चांगले पसरवा आणि नियमित भर घाला."
+   },
+   "when": {
+    "en": "India, FY22 to FY24",
+    "hi": "भारत, वित्त वर्ष 22 से 24",
+    "mr": "भारत, आर्थिक वर्ष 22 ते 24"
+   },
+   "source": {
+    "name": "SEBI",
+    "title": "Press release 37/2024: Updated SEBI study reveals 93% of individual traders incurred losses in equity F&O between FY22 and FY24",
+    "url": "https://www.sebi.gov.in/media-and-notifications/press-releases/sep-2024/updated-sebi-study-reveals-93-of-individual-traders-incurred-losses-in-equity-fando-between-fy22-and-fy24-aggregate-losses-exceed-1-8-lakh-crores-over-three-years_86906.html",
+    "published": "2024-09-23"
+   },
+   "guides": [
+    "risk-diversify",
+    "what-sip",
+    "double-money"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "retiree-misold-policies",
+   "topic": "insurance",
+   "kind": "reported",
+   "title": {
+    "en": "A retirement fund turned into policies he could not keep paying",
+    "hi": "सेवानिवृत्ति की रकम ऐसी पॉलिसियों में बदल गई जिनका प्रीमियम वे भर नहीं सकते थे",
+    "mr": "निवृत्तीचा निधी अशा पॉलिसींमध्ये बदलला ज्यांचे हप्ते ते भरू शकत नव्हते"
+   },
+   "what": {
+    "en": "A retired airline employee in Mumbai, in his seventies, put his entire retirement fund of ₹60 lakh into insurance policies that he was told needed a single premium and paid high returns. He later found that each needed a premium every year for five years or more. The policies lapsed. In the same report, a 78-year-old was told a ₹1 lakh \"guaranteed return\" deposit would become ₹1.42 lakh in three years; what arrived was a ten-year policy with a ₹95,000 yearly premium, and his complaint was first refused because the free-look period had passed.",
+    "hi": "मुंबई के सत्तर पार के एक सेवानिवृत्त एयरलाइन कर्मचारी ने ₹60 लाख की अपनी पूरी सेवानिवृत्ति निधि बीमा पॉलिसियों में लगा दी, जिनके बारे में बताया गया था कि एक ही बार प्रीमियम देना है और रिटर्न ऊँचा है। बाद में पता चला कि हर एक में पाँच साल या उससे ज़्यादा तक हर साल प्रीमियम देना था। पॉलिसियाँ बंद हो गईं। उसी रिपोर्ट में 78 वर्षीय व्यक्ति को बताया गया कि ₹1 लाख की \"गारंटीशुदा रिटर्न\" जमा तीन साल में ₹1.42 लाख हो जाएगी; जो आया वह ₹95,000 सालाना प्रीमियम वाली दस साल की पॉलिसी थी, और उनकी शिकायत पहले इसलिए ठुकरा दी गई कि फ्री-लुक अवधि निकल चुकी थी।",
+    "mr": "मुंबईतील सत्तरी ओलांडलेल्या एका निवृत्त विमान कंपनी कर्मचाऱ्याने ₹60 लाखांचा आपला संपूर्ण निवृत्ती निधी विमा पॉलिसींमध्ये लावला, ज्यांच्याबद्दल सांगितले होते की एकदाच हप्ता भरायचा आहे आणि परतावा जास्त आहे. नंतर कळले की प्रत्येकासाठी पाच किंवा अधिक वर्षे दरवर्षी हप्ता भरायचा होता. पॉलिसी बंद पडल्या. त्याच वृत्तात 78 वर्षीय व्यक्तीला सांगितले गेले की ₹1 लाखाची \"हमीच्या परताव्याची\" ठेव तीन वर्षांत ₹1.42 लाख होईल; जे आले ती ₹95,000 वार्षिक हप्त्याची दहा वर्षांची पॉलिसी होती आणि फ्री-लुक कालावधी संपल्याचे कारण देऊन त्यांची तक्रार आधी फेटाळली गेली."
+   },
+   "lesson": {
+    "en": "What a salesperson says and what the policy document says can be two different products. Only the document counts.",
+    "hi": "विक्रेता जो कहता है और पॉलिसी के कागज़ में जो लिखा है, वे दो अलग चीज़ें हो सकती हैं। मान्य सिर्फ़ कागज़ है।",
+    "mr": "विक्रेता जे सांगतो आणि पॉलिसीच्या कागदात जे लिहिले आहे ती दोन वेगळी उत्पादने असू शकतात. ग्राह्य फक्त कागद असतो."
+   },
+   "act": {
+    "en": "Before paying, ask in writing: how many years must I pay, and what do I get back if I stop early? When the policy arrives, read it at once. The free-look period is the time to return it.",
+    "hi": "पैसा देने से पहले लिखित में पूछें: कितने साल भरना है, और बीच में बंद करूँ तो क्या वापस मिलेगा? पॉलिसी आते ही पढ़ें। उसे लौटाने का समय फ्री-लुक अवधि ही है।",
+    "mr": "पैसे देण्यापूर्वी लेखी विचारा: किती वर्षे भरायचे आहे आणि मध्येच बंद केल्यास काय परत मिळेल? पॉलिसी येताच वाचा. ती परत करण्याची वेळ म्हणजे फ्री-लुक कालावधीच."
+   },
+   "when": {
+    "en": "Mumbai, reported in 2017",
+    "hi": "मुंबई, 2017 में प्रकाशित",
+    "mr": "मुंबई, 2017 मध्ये प्रसिद्ध"
+   },
+   "source": {
+    "name": "Moneylife",
+    "title": "How Insurance Mis-selling Defrauds Senior Citizens",
+    "url": "https://moneylife.in/article/how-insurance-misselling-defrauds-senior-citizens/50197.html",
+    "published": "2017-04-11"
+   },
+   "guides": [
+    "what-insurance",
+    "before-you-sign"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "kfs-rule",
+   "topic": "borrowing",
+   "kind": "official",
+   "title": {
+    "en": "Why every loan now comes with one page of plain facts",
+    "hi": "हर लोन के साथ अब सीधी बातों का एक पन्ना क्यों आता है",
+    "mr": "प्रत्येक कर्जासोबत आता साध्या तथ्यांचे एक पान का येते"
+   },
+   "what": {
+    "en": "In April 2024 the Reserve Bank of India told lenders that every new retail and MSME term loan sanctioned on or after 1 October 2024 must come with a Key Facts Statement. It sets out the loan in simple language and a standard format, with the annual percentage rate, which counts the interest and all other charges together, and the full repayment schedule.",
+    "hi": "अप्रैल 2024 में भारतीय रिज़र्व बैंक ने ऋणदाताओं से कहा कि 1 अक्टूबर 2024 या उसके बाद मंज़ूर हर नए खुदरा और MSME सावधि ऋण के साथ की फ़ैक्ट्स स्टेटमेंट देनी होगी। इसमें लोन सरल भाषा और मानक प्रारूप में दिया जाता है, वार्षिक प्रतिशत दर के साथ, जिसमें ब्याज और बाकी सभी शुल्क जुड़े होते हैं, और पूरी भुगतान तालिका।",
+    "mr": "एप्रिल 2024 मध्ये भारतीय रिझर्व्ह बँकेने कर्जदात्यांना सांगितले की 1 ऑक्टोबर 2024 किंवा त्यानंतर मंजूर प्रत्येक नव्या किरकोळ आणि MSME मुदत कर्जासोबत की फॅक्ट्स स्टेटमेंट द्यावे लागेल. त्यात कर्ज सोप्या भाषेत आणि प्रमाणित स्वरूपात दिले जाते, वार्षिक टक्केवारी दरासह, ज्यात व्याज आणि इतर सर्व शुल्क एकत्र असते, आणि संपूर्ण परतफेड तक्ता."
+   },
+   "lesson": {
+    "en": "The rule exists because borrowers were comparing loans by EMI and missing the fees. You now have a right to see the true yearly cost before you sign.",
+    "hi": "यह नियम इसलिए है कि उधार लेने वाले EMI से तुलना करते थे और शुल्क छूट जाते थे। अब दस्तखत से पहले असली सालाना लागत देखना आपका हक है।",
+    "mr": "हा नियम यासाठी आहे की कर्जदार EMI वरून तुलना करत होते आणि शुल्क नजरेतून सुटत होते. आता सहीआधी खरा वार्षिक खर्च पाहण्याचा तुम्हाला अधिकार आहे."
+   },
+   "act": {
+    "en": "Ask for the Key Facts Statement from every lender you are considering, and compare the APR and the total repayment. Do not pay any charge that is not on it.",
+    "hi": "जिन ऋणदाताओं पर विचार कर रहे हैं, हर एक से की फ़ैक्ट्स स्टेटमेंट माँगें, और APR व कुल भुगतान की तुलना करें। जो शुल्क उसमें नहीं है, वह न दें।",
+    "mr": "ज्या कर्जदात्यांचा विचार करत आहात त्या प्रत्येकाकडून की फॅक्ट्स स्टेटमेंट मागा आणि APR व एकूण परतफेड तुलना करा. त्यात नसलेले कोणतेही शुल्क भरू नका."
+   },
+   "when": {
+    "en": "India, in force from 1 October 2024",
+    "hi": "भारत, 1 अक्टूबर 2024 से लागू",
+    "mr": "भारत, 1 ऑक्टोबर 2024 पासून लागू"
+   },
+   "source": {
+    "name": "Reserve Bank of India",
+    "title": "Key Facts Statement (KFS) for Loans & Advances, circular dated 15 April 2024",
+    "url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12663&Mode=0",
+    "published": "2024-04-15"
+   },
+   "guides": [
+    "reading-fees",
+    "flat-reducing",
+    "before-you-sign"
+   ],
+   "verified": "2026-10-04"
+  },
+  {
+   "id": "four-nominees",
+   "topic": "family",
+   "kind": "official",
+   "title": {
+    "en": "A bank account can now name four nominees",
+    "hi": "बैंक खाते में अब चार नॉमिनी रखे जा सकते हैं",
+    "mr": "बँक खात्यात आता चार नॉमिनी ठेवता येतात"
+   },
+   "what": {
+    "en": "From 1 November 2025, under the Banking Laws (Amendment) Act, 2025, a bank customer can nominate up to four people for a deposit account, for articles in safe custody and for a locker. Nominees can be simultaneous, each with a stated share adding up to 100%, or successive, where the next nominee applies only if the one before has died.",
+    "hi": "1 नवंबर 2025 से, बैंकिंग कानून (संशोधन) अधिनियम, 2025 के तहत, बैंक ग्राहक जमा खाते, सुरक्षित अभिरक्षा की वस्तुओं और लॉकर के लिए चार लोगों तक को नामांकित कर सकता है। नॉमिनी एक साथ हो सकते हैं, हर एक के तय हिस्से के साथ जो कुल 100% हो, या क्रमवार, जहाँ अगला नॉमिनी तभी लागू होता है जब पहले वाले की मृत्यु हो चुकी हो।",
+    "mr": "1 नोव्हेंबर 2025 पासून, बँकिंग कायदे (दुरुस्ती) अधिनियम, 2025 अंतर्गत, बँक ग्राहक ठेव खाते, सुरक्षित ताब्यातील वस्तू आणि लॉकरसाठी चार व्यक्तींपर्यंत नामांकन करू शकतो. नॉमिनी एकाच वेळी असू शकतात, प्रत्येकाच्या ठरलेल्या हिश्शासह जो एकूण 100% होतो, किंवा क्रमवार, जिथे आधीच्याचा मृत्यू झाला असेल तरच पुढचा नॉमिनी लागू होतो."
+   },
+   "lesson": {
+    "en": "The change was made to make claims simpler for families. It only helps if the nomination has actually been filled in.",
+    "hi": "यह बदलाव परिवारों के लिए दावा आसान बनाने को किया गया। यह तभी काम आता है जब नामांकन सचमुच भरा गया हो।",
+    "mr": "कुटुंबांसाठी दावा सोपा करण्यासाठी हा बदल केला गेला. नामांकन प्रत्यक्षात भरले असेल तरच त्याचा उपयोग होतो."
+   },
+   "act": {
+    "en": "This week, check the nominee on each of your accounts. Add or update where needed, and tell the nominees.",
+    "hi": "इसी हफ़्ते अपने हर खाते का नॉमिनी देखें। ज़रूरत हो तो जोड़ें या अपडेट करें, और नॉमिनी को बताएँ।",
+    "mr": "याच आठवड्यात तुमच्या प्रत्येक खात्याचा नॉमिनी तपासा. गरज असेल तिथे जोडा किंवा अपडेट करा आणि नॉमिनींना सांगा."
+   },
+   "when": {
+    "en": "India, in force from 1 November 2025",
+    "hi": "भारत, 1 नवंबर 2025 से लागू",
+    "mr": "भारत, 1 नोव्हेंबर 2025 पासून लागू"
+   },
+   "source": {
+    "name": "Press Information Bureau, Ministry of Finance",
+    "title": "Key provisions relating to nomination under the Banking Laws (Amendment) Act, 2025 to come into effect from 1st November 2025",
+    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2181734",
+    "published": "2025-10"
+   },
+   "guides": [
+    "nominee-matters",
+    "family-money"
+   ],
+   "verified": "2026-10-04"
+  }
+ ]
+}

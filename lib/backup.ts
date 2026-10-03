@@ -19,6 +19,7 @@ export const backupSchema = z.object({
     category: z.string(),
     amount: z.number().positive(),
     date: z.string(),
+    note: z.string().optional(),
   })),
   loans: z.array(z.object({
     id: z.string(),
@@ -46,7 +47,7 @@ export const backupSchema = z.object({
     milestones: z.record(z.string()).optional(),
     activePath: z.string().nullable().optional(),
     offered: z.boolean().optional(),
-  }),
+  }).passthrough(),
 });
 
 export function parseBackup(input: unknown): Backup | null {

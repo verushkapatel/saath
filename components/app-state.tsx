@@ -3,39 +3,43 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { loadJson, type Lesson, type Path } from "@/lib/content-types";
 import { todayISO } from "@/lib/dates";
+import { journeyState, type JourneyFile, type JourneyState } from "@/lib/journey";
 import {
   answerCase,
   answerQuestion,
+  completeEpisode,
   completeLesson,
   completeStep,
   emptyProgress,
+  levelFor,
   markTask,
+  noteMistake,
+  openForm,
+  readStory,
+  setFocus,
+  setLook,
+  type Look,
   type Progress,
   type TaskId,
 } from "@/lib/progress";
+import { newlyUnlocked, type Reward } from "@/lib/rewards";
 import { chime } from "@/lib/sound";
 import { buzz } from "@/lib/speech";
 import {
   addEntry,
   addLoan as storeLoan,
-  getMeta,
+  removeEntry,
   importBackup,
   loadTracker,
   saveGoal,
   saveProgress,
-  setMeta,
-  writeSynced,
   type Backup,
   type Entry,
   type Loan,
 } from "@/lib/storage";
 import { computeStreak, type StreakView } from "@/lib/streak";
-import { getProvider, localOnly, mayHaveSession, SYNC_CONFIGURED, type SyncProvider, type SyncUser } from "@/lib/sync/provider";
-import { syncOnce, unlock, type Keyring, type VaultData } from "@/lib/sync/vault";
-
-export type SyncStatus = "guest" | "needs-secret" | "saving" | "saved" | "offline";
-
-type StoredKeyring = Keyring & { userId: string };
+import { share } from "@/lib/impact";
+import { currentProfile } from "@/lib/profile";
 
 type AppState = {
   ready: boolean;
@@ -61,25 +65,24 @@ type AppState = {
   setGoal: (target: number) => Promise<void>;
   addLoan: (loan: Loan) => Promise<void>;
   restore: (backup: Backup) => Promise<void>;
-  sync: {
-    configured: boolean;
-    user: SyncUser | null;
-    status: SyncStatus;
-    /** True when another phone already saved data for this account. */
-    hasRemote: boolean;
-    signInWithEmail: (email: string) => Promise<boolean>;
-    signInWithGoogle: () => Promise<boolean>;
-    unlock: (secret: string) => Promise<"ok" | "wrong" | "offline">;
-    signOut: () => Promise<void>;
-    deleteAccount: () => Promise<boolean>;
-  };
+  /** The life story, once its file has loaded. */
+  journey: JourneyFile | null;
+  story: JourneyState | null;
+  level: ReturnType<typeof levelFor>;
+  /** Rewards that opened since they were last shown. */
+  fresh: Reward[];
+  clearFresh: () => void;
+  finishEpisode: (episodeId: string, choice: number, drillRight: number) => Promise<void>;
+  mistake: (topic: string | null | undefined) => Promise<void>;
+  markStory: (storyId: string) => Promise<void>;
+  markForm: (formId: string) => Promise<void>;
+  saveFocus: (topics: string[]) => Promise<void>;
+  saveLook: (look: Partial<Look>) => Promise<void>;
+  finishMoneyIntro: () => Promise<void>;
+  deleteEntry: (id: string) => Promise<void>;
 };
 
 const Ctx = createContext<AppState | null>(null);
-
-function returnUrl(): string {
-  return window.location.origin + window.location.pathname;
-}
 
 export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
@@ -92,13 +95,9 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [paths, setPaths] = useState<Path[]>([]);
   const [cheer, setCheer] = useState(0);
+  const [journey, setJourney] = useState<JourneyFile | null>(null);
+  const [fresh, setFresh] = useState<Reward[]>([]);
 
-  const [user, setUser] = useState<SyncUser | null>(null);
-  const [status, setStatus] = useState<SyncStatus>("guest");
-  const [hasRemote, setHasRemote] = useState(false);
-  const provider = useRef<SyncProvider>(localOnly);
-  const keyring = useRef<StoredKeyring | null>(null);
-  const lastSynced = useRef("");
   const progressRef = useRef(progress);
   const pathsRef = useRef(paths);
   progressRef.current = progress;
@@ -122,6 +121,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       });
     loadJson<Lesson[]>("/content/guide.json").then((data) => live && setLessons(data)).catch(() => undefined);
     loadJson<Path[]>("/content/paths.json").then((data) => live && setPaths(data)).catch(() => undefined);
+    loadJson<JourneyFile>("/content/journey.json").then((data) => live && setJourney(data)).catch(() => undefined);
     const onVisible = () => {
       if (document.visibilityState === "visible") setToday(todayISO());
     };
@@ -139,6 +139,12 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     if (next === current) return;
     progressRef.current = next;
     setProgress(next);
+    const day = todayISO();
+    const opened = newlyUnlocked(
+      { progress: current, streak: computeStreak(current.days, day).count },
+      { progress: next, streak: computeStreak(next.days, day).count },
+    );
+    if (opened.length) setFresh((list) => [...list, ...opened.filter((reward) => !list.some((item) => item.id === reward.id && item.kind === reward.kind))]);
     if (celebrate) {
       buzz();
       chime();
@@ -154,14 +160,28 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   }, [change]);
 
   const answer = useCallback((choice: number) => change((current) => answerQuestion(current, choice, todayISO())), [change]);
+  /** Tells the cohort counter that something was finished. Sends nothing unless the student opted in. */
+  const note = useCallback((before: Progress) => {
+    const profile = currentProfile();
+    if (!profile) return;
+    const after = progressRef.current;
+    const lessonsNew = after.lessons.length - before.lessons.length;
+    const pathsNew = Object.keys(after.milestones).length - Object.keys(before.milestones).length;
+    if (lessonsNew > 0) share(profile, "lesson", { count: lessonsNew });
+    if (pathsNew > 0) share(profile, "path", { count: pathsNew });
+  }, []);
+
   const finishLesson = useCallback(async (lessonId: string) => {
-    const fresh = !progressRef.current.lessons.includes(lessonId);
+    const before = progressRef.current;
+    const fresh = !before.lessons.includes(lessonId);
     await change((current) => completeLesson(current, lessonId, pathsRef.current, todayISO()), fresh);
-  }, [change]);
-  const finishStep = useCallback(
-    (pathId: string, stepId: string) => change((current) => completeStep(current, pathId, stepId, pathsRef.current, todayISO())),
-    [change],
-  );
+    note(before);
+  }, [change, note]);
+  const finishStep = useCallback(async (pathId: string, stepId: string) => {
+    const before = progressRef.current;
+    await change((current) => completeStep(current, pathId, stepId, pathsRef.current, todayISO()));
+    note(before);
+  }, [change, note]);
   const finishCase = useCallback(
     (caseId: string, choice: number) => change((current) => answerCase(current, caseId, choice, todayISO())),
     [change],
@@ -174,6 +194,22 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     () => change((current) => (current.offered ? current : { ...current, offered: true }), false),
     [change],
   );
+
+  const finishEpisode = useCallback(
+    (episodeId: string, choice: number, drillRight: number) => change((current) => completeEpisode(current, episodeId, choice, drillRight, todayISO())),
+    [change],
+  );
+  const mistake = useCallback((topic: string | null | undefined) => change((current) => noteMistake(current, topic), false), [change]);
+  const markStory = useCallback((storyId: string) => change((current) => readStory(current, storyId, todayISO())), [change]);
+  const markForm = useCallback((formId: string) => change((current) => openForm(current, formId), false), [change]);
+  const saveFocus = useCallback((topics: string[]) => change((current) => setFocus(current, topics), false), [change]);
+  const saveLook = useCallback((look: Partial<Look>) => change((current) => setLook(current, look), false), [change]);
+  const finishMoneyIntro = useCallback(() => change((current) => (current.moneyIntro ? current : { ...current, moneyIntro: true }), false), [change]);
+  const clearFresh = useCallback(() => setFresh([]), []);
+  const deleteEntry = useCallback(async (id: string) => {
+    await removeEntry(id);
+    setEntries((current) => current.filter((entry) => entry.id !== id));
+  }, []);
 
   const logEntry = useCallback(async (entry: Entry) => {
     await addEntry(entry);
@@ -205,132 +241,20 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     await reload();
   }, [reload]);
 
-  // Sign-in and sync. Nothing here runs unless Supabase keys are set.
-
-  const runSync = useCallback(async (local: VaultData) => {
-    const ring = keyring.current;
-    if (!ring || !provider.current.available) return;
-    if (typeof navigator !== "undefined" && !navigator.onLine) {
-      setStatus("offline");
-      return;
-    }
-    setStatus("saving");
-    const merged = await syncOnce(provider.current, ring, local, todayISO());
-    if (!merged) {
-      setStatus("offline");
-      return;
-    }
-    lastSynced.current = JSON.stringify(merged);
-    if (lastSynced.current !== JSON.stringify(local)) {
-      await writeSynced(merged.entries as Entry[], merged.goal, merged.progress);
-      setEntries(merged.entries as Entry[]);
-      setGoalState(merged.goal);
-      progressRef.current = merged.progress;
-      setProgress(merged.progress);
-    }
-    setStatus("saved");
-  }, []);
-
-  const attach = useCallback(async (next: SyncProvider) => {
-    provider.current = next;
-    const apply = async (found: SyncUser | null) => {
-      setUser(found);
-      if (!found) {
-        keyring.current = null;
-        setStatus("guest");
-        return;
-      }
-      const stored = await getMeta<StoredKeyring>("keyring").catch(() => undefined);
-      if (stored && stored.userId === found.id) {
-        keyring.current = stored;
-        setStatus("saved");
-        lastSynced.current = "";
-      } else {
-        keyring.current = null;
-        setStatus("needs-secret");
-        next.pull().then((row) => setHasRemote(Boolean(row))).catch(() => undefined);
-      }
-    };
-    await apply(await next.getUser());
-    return next.onUser((found) => void apply(found));
-  }, []);
-
-  useEffect(() => {
-    if (!mayHaveSession()) return;
-    let stop: (() => void) | undefined;
-    getProvider().then(attach).then((off) => {
-      stop = off;
-    });
-    return () => stop?.();
-  }, [attach]);
-
-  const ensureProvider = useCallback(async () => {
-    if (provider.current.available) return provider.current;
-    const next = await getProvider();
-    if (next.available) await attach(next);
-    return next;
-  }, [attach]);
-
-  // Save a little after each change, and once when the app opens.
-  useEffect(() => {
-    if (!ready || !user || !keyring.current || status === "needs-secret") return;
-    const local: VaultData = { v: 1, entries, goal, progress };
-    if (JSON.stringify(local) === lastSynced.current) return;
-    const timer = window.setTimeout(() => void runSync(local), lastSynced.current ? 2500 : 300);
-    return () => window.clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, user, entries, goal, progress, runSync]);
-
-  const sync = useMemo<AppState["sync"]>(() => ({
-    configured: SYNC_CONFIGURED,
-    user,
-    status,
-    hasRemote,
-    signInWithEmail: async (email) => (await ensureProvider()).signInWithEmail(email, returnUrl()),
-    signInWithGoogle: async () => (await ensureProvider()).signInWithGoogle(returnUrl()),
-    unlock: async (secret) => {
-      const current = await ensureProvider();
-      const found = await current.getUser();
-      if (!found) return "offline";
-      const result = await unlock(current, secret);
-      if (!result.ok) return result.reason;
-      const stored: StoredKeyring = { ...result.keyring, userId: found.id };
-      keyring.current = stored;
-      await setMeta("keyring", stored).catch(() => undefined);
-      lastSynced.current = "";
-      setStatus("saving");
-      await runSync({ v: 1, entries, goal, progress: progressRef.current });
-      return "ok";
-    },
-    signOut: async () => {
-      await provider.current.signOut();
-      keyring.current = null;
-      await setMeta("keyring", null).catch(() => undefined);
-      setUser(null);
-      setStatus("guest");
-    },
-    deleteAccount: async () => {
-      const done = await provider.current.deleteAccount();
-      if (done) {
-        keyring.current = null;
-        await setMeta("keyring", null).catch(() => undefined);
-        setUser(null);
-        setStatus("guest");
-      }
-      return done;
-    },
-  }), [user, status, hasRemote, ensureProvider, runSync, entries, goal]);
-
   const streak = useMemo(() => computeStreak(progress.days, today), [progress.days, today]);
+  const story = useMemo(() => (journey ? journeyState(journey, progress, today) : null), [journey, progress, today]);
+  const level = useMemo(() => levelFor(progress.xp), [progress.xp]);
 
   const value = useMemo<AppState>(() => ({
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
-    logEntry, setGoal, addLoan, restore, sync,
+    logEntry, setGoal, addLoan, restore,
+    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry,
   }), [
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
-    logEntry, setGoal, addLoan, restore, sync,
+    logEntry, setGoal, addLoan, restore,
+    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry,
   ]);
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

@@ -1,10 +1,10 @@
+import { hapticsOn } from "./prefs";
 import type { Lang } from "./catalog";
 
 const SPEECH: Record<Lang, string> = {
   en: "en-IN",
   hi: "hi-IN",
   mr: "mr-IN",
-  kn: "kn-IN",
 };
 
 export function canListen(): boolean {
@@ -47,7 +47,7 @@ function score(voice: SpeechSynthesisVoice, code: string): number {
 export async function pickVoice(lang: Lang): Promise<SpeechSynthesisVoice | null> {
   if (!canListen()) return null;
   const voices = await waitForVoices();
-  const tries = lang === "mr" ? [SPEECH.mr, SPEECH.hi] : lang === "kn" ? [SPEECH.kn, SPEECH.en] : [SPEECH[lang]];
+  const tries = lang === "mr" ? [SPEECH.mr, SPEECH.hi] : [SPEECH[lang]];
   for (const code of tries) {
     const best = voices
       .map((voice) => ({ voice, points: score(voice, code) }))
@@ -108,14 +108,14 @@ type SpeechRecognition = {
 };
 
 export function tap(): void {
-  if (typeof navigator === "undefined" || !navigator.vibrate) return;
+  if (typeof navigator === "undefined" || !navigator.vibrate || !hapticsOn()) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   navigator.vibrate(12);
 }
 
 /** A slightly longer buzz for a finished task or a milestone. */
 export function buzz(): void {
-  if (typeof navigator === "undefined" || !navigator.vibrate) return;
+  if (typeof navigator === "undefined" || !navigator.vibrate || !hapticsOn()) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   navigator.vibrate([14, 40, 22]);
 }

@@ -8,9 +8,9 @@ out
 .DS_Store
 coverage
 tsconfig.tsbuildinfo
-.api-set-aside
 public/locales
 public/content
 public/tessdata
 public/tesseract
 public/sw.js
+public/handbook

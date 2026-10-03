@@ -1,12 +1,12 @@
 {
   "name": "Saath",
   "short_name": "Saath",
-  "description": "Saath explains loan and scheme papers in plain words, and includes Money Lab for students.",
+  "description": "Saath, from The Skyward Project: a few minutes of money practice a day, and a reader for loan papers.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#011b3d",
+  "theme_color": "#011b3d",
   "lang": "en",
   "icons": [
     {

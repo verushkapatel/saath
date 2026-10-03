@@ -7,15 +7,15 @@ export type AskResult = {
 };
 
 const INTENTS: { id: string; words: string[] }[] = [
-  { id: "rate", words: ["interest", "rate", "ब्याज", "व्याज", "ಬಡ್ಡಿ"] },
-  { id: "fees", words: ["fee", "fees", "charge", "charges", "शुल्क", "फी", "शूल्क", "ಶುಲ್ಕ"] },
-  { id: "penalty", words: ["penalty", "late", "overdue", "जुर्माना", "उशीर", "विलंब", "ದಂಡ"] },
-  { id: "prepay", words: ["prepay", "prepayment", "foreclose", "early", "जल्दी", "पूर्वभुगतान", "आधी", "ಮುಂಗಡ"] },
-  { id: "collateral", words: ["collateral", "gold", "pledge", "security", "गिरवी", "सोना", "ताराण", "ಅಡಮಾನ", "ಚಿನ್ನ"] },
-  { id: "tenure", words: ["tenure", "months", "duration", "अवधि", "कालावधी", "महिने", "ಅವಧಿ", "ತಿಂಗಳು"] },
+  { id: "rate", words: ["interest", "rate", "ब्याज", "व्याज"] },
+  { id: "fees", words: ["fee", "fees", "charge", "charges", "शुल्क", "फी", "शूल्क"] },
+  { id: "penalty", words: ["penalty", "late", "overdue", "जुर्माना", "उशीर", "विलंब"] },
+  { id: "prepay", words: ["prepay", "prepayment", "foreclose", "early", "जल्दी", "पूर्वभुगतान", "आधी"] },
+  { id: "collateral", words: ["collateral", "gold", "pledge", "security", "गिरवी", "सोना", "ताराण"] },
+  { id: "tenure", words: ["tenure", "months", "duration", "अवधि", "कालावधी", "महिने"] },
   { id: "lender", words: ["lender", "who", "bank", "ऋणदाता", "कोण", "सावकार"] },
-  { id: "amount", words: ["principal", "amount", "borrow", "राशि", "रक्कम", "ಮೊತ್ತ", "ಮೂಲಧನ"] },
-  { id: "blanks", words: ["blank", "empty", "fill", "खाली", "रिकामे", "ಖಾಲಿ"] },
+  { id: "amount", words: ["principal", "amount", "borrow", "राशि", "रक्कम"] },
+  { id: "blanks", words: ["blank", "empty", "fill", "खाली", "रिकामे"] },
 ];
 
 function wordsOf(value: string): string[] {

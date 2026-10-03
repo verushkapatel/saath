@@ -2,7 +2,6 @@ const LOCALES: Record<string, string> = {
   en: "en-IN",
   hi: "hi-IN",
   mr: "mr-IN",
-  kn: "kn-IN",
 };
 
 export function inr(amount: number, _lang?: string): string {

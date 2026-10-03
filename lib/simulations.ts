@@ -1,4 +1,5 @@
 import { addDays, todayISO } from "./dates";
+import { currentScope } from "./scope";
 
 export type Recall = { due: string; done: boolean; completedAt?: string; correct?: boolean };
 
@@ -14,18 +15,18 @@ export type SimulationState = {
 };
 
 export const SIM_PALETTE = [
-  "#9ec0ef",
-  "#7dceb0",
-  "#d5dde8",
-  "#a8b4c6",
-  "#86b7f5",
-  "#b8c4d4",
-  "#6fd3ad",
-  "#c3ccdc",
-  "#9ed9f2",
-  "#e6eaf0",
-  "#74b0e8",
-  "#8fb8a8",
+  "#bcbcbc",
+  "#bbbbbb",
+  "#dcdcdc",
+  "#b3b3b3",
+  "#b1b1b1",
+  "#c3c3c3",
+  "#bbbbbb",
+  "#cbcbcb",
+  "#cecece",
+  "#eaeaea",
+  "#a7a7a7",
+  "#aeaeae",
 ] as const;
 
 export const SIM_PEOPLE: Record<string, [string, string]> = {
@@ -61,11 +62,7 @@ export const SIM_GUIDE: Record<string, string> = {
 const KEY_PREFIX = "saath-simulations-v1:";
 
 function accountKey(): string {
-  try {
-    return localStorage.getItem("saath-account") || "guest";
-  } catch {
-    return "guest";
-  }
+  return currentScope() || "guest";
 }
 
 export function simulationStorageKey(): string {

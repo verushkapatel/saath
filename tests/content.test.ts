@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { CASE_IDS, CATEGORIES, LANGS, LESSON_IDS, PATH_IDS } from "@/lib/catalog";
+import { CASE_IDS, DRILL_IDS, LANGS, LESSON_IDS, PATH_IDS, UNITS } from "@/lib/catalog";
 import { answerFromDocument } from "@/lib/ask";
 import { fill } from "@/lib/copy";
 import { ruleExtract } from "@/lib/extract";
@@ -24,7 +24,7 @@ describe("locales", () => {
       return [prefix];
     };
     const english = new Set(leaves(readJson("locales/en.json")));
-    for (const lang of ["hi", "mr", "kn"]) {
+    for (const lang of ["hi", "mr"]) {
       const keys = new Set(leaves(readJson(`locales/${lang}.json`)));
       expect([...english].filter((key) => !keys.has(key))).toEqual([]);
       expect([...keys].filter((key) => !english.has(key))).toEqual([]);
@@ -33,14 +33,14 @@ describe("locales", () => {
 });
 
 describe("content", () => {
-  it("ships sixty questions, twelve cases, twenty-five lessons, and sixty terms", () => {
+  it("ships sixty questions, twelve cases, thirty-seven lessons, and sixty terms", () => {
     const questions = readJson("content/daily-questions.json");
     const cases = readJson("content/cases.json");
     const guide = readJson("content/guide.json");
     const glossary = readJson("content/glossary.json");
     expect(questions).toHaveLength(60);
     expect(cases).toHaveLength(12);
-    expect(guide).toHaveLength(25);
+    expect(guide).toHaveLength(37);
     expect(glossary).toHaveLength(60);
     expect(guide.map((item: { id: string }) => item.id)).toEqual([...LESSON_IDS]);
     expect(cases.map((item: { id: string }) => item.id)).toEqual([...CASE_IDS]);
@@ -61,9 +61,10 @@ describe("content", () => {
         expect(lesson.tryIt.text[lang].length).toBeGreaterThan(10);
         expect(lesson.check.question[lang].length).toBeGreaterThan(5);
         expect(lesson.check.why[lang].length).toBeGreaterThan(5);
-        expect(Object.keys(lesson.title).sort()).toEqual(["en", "hi", "kn", "mr"]);
+        expect(Object.keys(lesson.title).sort()).toEqual(["en", "hi", "mr"]);
       }
-      expect(CATEGORIES).toContain(lesson.category);
+      expect(UNITS).toContain(lesson.unit);
+      expect(lesson.reviewed).toMatch(/^\d{4}-\d{2}$/);
       expect(lesson.check.options).toHaveLength(3);
       expect(lesson.check.answer).toBeLessThan(3);
     }
@@ -119,5 +120,59 @@ describe("documents", () => {
     const silent = answerFromDocument("What is the colour of the office wall?", extraction);
     expect(silent.found).toBe(false);
     expect(silent.key).toBe("ask.unknown");
+  });
+});
+
+describe("the Skyward syllabus", () => {
+  const guide = readJson("content/guide.json");
+  const paths = readJson("content/paths.json");
+
+  it("has no Kannada left anywhere in content or locales", () => {
+    for (const file of ["content/guide.json", "content/paths.json", "content/cases.json", "content/daily-questions.json", "content/glossary.json", "content/drills.json", "content/finlit-check.json", "locales/en.json", "locales/hi.json", "locales/mr.json"]) {
+      const text = readFileSync(`${root}/${file}`, "utf8");
+      expect(/[\u0C80-\u0CFF]/.test(text)).toBe(false);
+      expect(text).not.toContain('"kn"');
+    }
+  });
+
+  it("covers all four units with lessons and paths", () => {
+    for (const unit of UNITS) {
+      expect(guide.filter((lesson: { unit: string }) => lesson.unit === unit).length).toBeGreaterThanOrEqual(5);
+      expect(paths.filter((path: { unit: string }) => path.unit === unit).length).toBeGreaterThanOrEqual(1);
+    }
+  });
+
+  it("teaches every topic the partnership brief names", () => {
+    const ids = guide.map((lesson: { id: string }) => lesson.id);
+    for (const id of ["budget", "pay-yourself", "true-cost", "subscription-traps", "lending-friends", "first-bank-account", "bank-charges", "money-missing", "why-pan", "payment-proof", "credit-score", "pay-later", "guarantor", "fake-loan-apps", "scam-calls", "job-scams", "double-money", "inflation", "what-sip", "who-keeps-safe"]) {
+      expect(ids).toContain(id);
+    }
+  });
+
+  it("does not always put the right answer first", () => {
+    const answers = guide.map((lesson: { check: { answer: number } }) => lesson.check.answer);
+    expect(new Set(answers).size).toBe(3);
+  });
+
+  it("ships fifteen scam messages whose warning words really appear in the message", () => {
+    const drills = readJson("content/drills.json");
+    expect(drills.scams).toHaveLength(15);
+    expect(drills.scams.some((item: { fake: boolean }) => !item.fake)).toBe(true);
+    for (const item of drills.scams) {
+      for (const lang of LANGS) {
+        expect(item.text[lang].length).toBeGreaterThan(20);
+        expect(item.why[lang].length).toBeGreaterThan(10);
+        for (const flag of item.flags[lang]) expect(item.text[lang]).toContain(flag);
+        if (item.fake) expect(item.flags[lang].length).toBeGreaterThan(0);
+      }
+    }
+    expect(drills.form.fields.filter((field: { wrong: boolean }) => field.wrong).length).toBeGreaterThanOrEqual(4);
+    expect(drills.price.phones.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it("labels the comic episode as a sample", () => {
+    const comic = readJson("content/comic.json");
+    expect(comic.episodes[0].sample).toBe(true);
+    for (const panel of comic.episodes[0].panels) for (const lang of LANGS) expect(panel.caption[lang].length).toBeGreaterThan(5);
   });
 });

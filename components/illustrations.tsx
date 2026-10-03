@@ -118,3 +118,28 @@ export function Flame({ lit }: { lit: boolean }) {
     </svg>
   );
 }
+
+/** FinLit Check: four bars of different lengths, one in gold. */
+export function ArtCheck({ label, small }: { label: string; small?: boolean }) {
+  return (
+    <Art label={label} small={small}>
+      <circle className="soft" cx="100" cy="70" r="56" />
+      <path className="ink" d="M52 44h74M52 64h44M52 104h60" />
+      <path className="gold" d="M52 84h96" />
+      <path className="ink" d="M44 30v88" opacity="0.4" />
+    </Art>
+  );
+}
+
+/** Drills: a phone showing a message that needs a second look. */
+export function ArtDrill({ label, small }: { label: string; small?: boolean }) {
+  return (
+    <Art label={label} small={small}>
+      <circle className="soft" cx="100" cy="70" r="56" />
+      <rect className="ink" x="70" y="18" width="60" height="104" rx="10" />
+      <rect className="ink" x="80" y="38" width="40" height="26" rx="6" />
+      <path className="gold" d="M95 46c0-6 10-6 10 0 0 4-5 4-5 8M100 59v1" />
+      <path className="ink" d="M82 78h36M82 90h24M92 110h16" opacity="0.5" />
+    </Art>
+  );
+}

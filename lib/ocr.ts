@@ -10,7 +10,6 @@ const TESS: Record<Lang, string> = {
   en: "eng",
   hi: "eng+hin",
   mr: "eng+mar",
-  kn: "eng+kan",
 };
 
 export async function readPhoto(

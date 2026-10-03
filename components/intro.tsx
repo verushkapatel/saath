@@ -1,243 +1,378 @@
 "use client";
 
-import { useEffect, useRef, useState, type FormEvent } from "react";
-import { ArrowDown, ChevronLeft, Eye, EyeOff, KeyRound, UserRound } from "lucide-react";
-import { createAccount, listAccounts, logIn, type Account, type AccountError } from "@/lib/account";
+import Link from "next/link";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { ArrowDown, ArrowRight, BookOpen, Check, FileText, Flame as FlameIcon, MessageCircle, Search, Share2, Sparkles, Wallet } from "lucide-react";
+import { TOPICS } from "@/lib/catalog";
+import { inr } from "@/lib/format";
 import { tap } from "@/lib/speech";
-import { FeatureDemo } from "./intro-demos";
+import { Character } from "./character";
 import { useI18n } from "./providers";
-import { Footer, ListenButton, SkywardMark } from "./ui";
+import { ThemeToggle } from "./theme-toggle";
 
-const SECTIONS = 8;
-
-/** Fades each section in as it scrolls into view. Content stays visible if the browser cannot observe. */
-function useReveal() {
-  const ref = useRef<HTMLDivElement | null>(null);
+/** Fades a section in the first time it scrolls into view. */
+function Reveal({ children, id }: { children: React.ReactNode; id?: string }) {
+  const ref = useRef<HTMLElement | null>(null);
+  const [seen, setSeen] = useState(false);
   useEffect(() => {
-    const root = ref.current;
-    if (!root || typeof IntersectionObserver === "undefined") return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const items = [...root.querySelectorAll<HTMLElement>(".feature")];
-    const observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        entry.target.classList.add("in");
-        observer.unobserve(entry.target);
-      }
-    }, { rootMargin: "0px 0px -12% 0px" });
-    items.forEach((item) => {
-      if (item.getBoundingClientRect().top > window.innerHeight * 0.9) item.classList.add("pre");
-      observer.observe(item);
-    });
+    const node = ref.current;
+    if (!node || typeof IntersectionObserver === "undefined") {
+      setSeen(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setSeen(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.18 },
+    );
+    observer.observe(node);
     return () => observer.disconnect();
   }, []);
-  return ref;
+  return <section ref={ref} id={id} className={`act${seen ? " in" : ""}`}>{children}</section>;
 }
 
-/**
- * Every feature in full: what it is, a small working model to try, and three steps on how to use it.
- * Shown before sign-up and again from the profile.
- */
-export function FeatureGuide() {
-  const { t } = useI18n();
-  const ref = useReveal();
+function ActHead({ n, title, lead }: { n: string; title: string; lead: string }) {
   return (
-    <div className="features" ref={ref}>
-      {Array.from({ length: SECTIONS }, (_, index) => {
-        const n = index + 1;
-        const steps = ["a", "b", "c"].map((key) => t(`intro.s${n}${key}`));
-        const spoken = `${t(`intro.s${n}T`)}. ${t(`intro.s${n}P`)} ${steps.join(" ")}`;
-        return (
-          <section className="feature" key={n} aria-labelledby={`feature-${n}`}>
-            <div className="row-between">
-              <p className="feature-num" aria-hidden>{String(n).padStart(2, "0")}</p>
-              {n !== 3 && <ListenButton compact text={spoken} label={t("demo.hear")} />}
-            </div>
-            <h2 id={`feature-${n}`}>{t(`intro.s${n}T`)}</h2>
-            <p className="lead">{t(`intro.s${n}P`)}</p>
-            <FeatureDemo index={n} text={spoken} />
-            {n !== 8 && (
-              <div className="stack-sm">
-                <p className="kicker">{t("intro.how")}</p>
-                <ol className="howto">
-                  {steps.map((step, at) => <li key={at}><span>{step}</span></li>)}
-                </ol>
-              </div>
-            )}
-          </section>
-        );
-      })}
+    <header className="stack-sm">
+      <p className="act-num" aria-hidden>{n}</p>
+      <h2>{title}</h2>
+      <p className="lead">{lead}</p>
+    </header>
+  );
+}
+
+/** A real, playable slice of the story: decide, see what follows, earn XP. */
+function PlayEpisode({ onXp }: { onXp: (xp: number) => void }) {
+  const { t } = useI18n();
+  const [pick, setPick] = useState<number | null>(null);
+  const verdicts = ["costly", "good", "okay"] as const;
+  return (
+    <div className="demo stage">
+      <div className="demo-split">
+        <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={132} label={t("intro.play.figure")} />
+        <div className="stack-sm">
+          <p className="kicker">{t("intro.play.kicker")}</p>
+          <p>{t("intro.play.story")}</p>
+        </div>
+      </div>
+      <p><strong>{t("intro.play.question")}</strong></p>
+      <div className="stack-sm" role="group" aria-label={t("intro.play.question")}>
+        {[0, 1, 2].map((index) => (
+          <button
+            key={index}
+            type="button"
+            className={`option${pick === index ? (verdicts[index] === "good" ? " is-best" : " is-mine") : ""}${pick !== null && pick !== index ? " is-dim" : ""}`}
+            aria-pressed={pick === index}
+            onClick={() => {
+              tap();
+              if (pick === null) onXp(verdicts[index] === "good" ? 50 : 40);
+              setPick(index);
+            }}
+          >
+            <span className="option-mark" aria-hidden>{pick === index ? <Check size={16} strokeWidth={3} /> : null}</span>
+            <span>{t(`intro.play.option${index}`)}</span>
+          </button>
+        ))}
+      </div>
+      <div className="consequence" role="status" aria-live="polite">
+        {pick === null ? (
+          <p className="faint">{t("intro.play.hint")}</p>
+        ) : (
+          <div className="stack-sm">
+            <p className="kicker">{t(`journey.verdict.${verdicts[pick]}`)}</p>
+            <p>{t(`intro.play.outcome${pick}`)}</p>
+            <p className="muted">{t("intro.play.lesson")}</p>
+            <p className="xp-pop"><Sparkles aria-hidden size={16} /> {t("intro.play.xp", { xp: verdicts[pick] === "good" ? 50 : 40 })}</p>
+            <button type="button" className="link" onClick={() => setPick(null)}>{t("intro.play.again")}</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
 
-const ERRORS: Record<AccountError, string> = {
-  nameShort: "acct.nameShort",
-  nameTaken: "acct.nameTaken",
-  passShort: "acct.passShort",
-  passMatch: "acct.passMatch",
-  noUser: "acct.noUser",
-  passBad: "acct.passBad",
-  noCrypto: "acct.noCrypto",
-};
-
-function PasswordField({ label, value, onChange, autoComplete }: { label: string; value: string; onChange: (value: string) => void; autoComplete: string }) {
+function ProgressDemo({ xp }: { xp: number }) {
   const { t } = useI18n();
-  const [show, setShow] = useState(false);
+  const [outfit, setOutfit] = useState("kurta");
+  const [place, setPlace] = useState("room");
+  const outfits = ["kurta", "blazer", "sari"];
+  const places = ["room", "office", "garden"];
   return (
-    <label>
-      <span className="label">{label}</span>
-      <span className="field-wrap">
-        <KeyRound aria-hidden size={18} />
-        <input
-          className="field text"
-          type={show ? "text" : "password"}
-          autoComplete={autoComplete}
-          value={value}
-          onChange={(event) => onChange(event.target.value)}
-        />
-        <button
-          type="button"
-          className="icon-btn"
-          style={{ border: 0 }}
-          aria-pressed={show}
-          aria-label={t("acct.password")}
-          onClick={() => setShow(!show)}
-        >
-          {show ? <EyeOff aria-hidden size={18} /> : <Eye aria-hidden size={18} />}
-        </button>
-      </span>
-    </label>
+    <div className="demo stage">
+      <div className="demo-split">
+        <Character look={{ outfit, extra: xp > 0 ? "bag" : "none", place }} age={outfit === "sari" ? 34 : 24} size={150} label={t("intro.progress.figure")} />
+        <div className="stack-sm" style={{ alignContent: "center" }}>
+          <div className="row-between">
+            <span className="kicker">{t("prog.level", { level: 1 })}</span>
+            <span className="num faint">{xp} / 100 XP</span>
+          </div>
+          <div className="bar" aria-hidden><span style={{ width: `${Math.max(4, Math.min(100, xp))}%` }} /></div>
+          <p className="streak-line"><FlameIcon aria-hidden size={18} /> {xp > 0 ? t("intro.progress.streakOn") : t("intro.progress.streakOff")}</p>
+        </div>
+      </div>
+      <div className="stack-sm">
+        <p className="label">{t("prog.outfit")}</p>
+        <div className="cluster" role="group" aria-label={t("prog.outfit")}>
+          {outfits.map((id) => (
+            <button key={id} type="button" className="chip" aria-pressed={outfit === id} onClick={() => { tap(); setOutfit(id); }}>{t(`rewards.outfit.${id}`)}</button>
+          ))}
+        </div>
+        <p className="label">{t("prog.place")}</p>
+        <div className="cluster" role="group" aria-label={t("prog.place")}>
+          {places.map((id) => (
+            <button key={id} type="button" className="chip" aria-pressed={place === id} onClick={() => { tap(); setPlace(id); }}>{t(`rewards.place.${id}`)}</button>
+          ))}
+        </div>
+        <p className="faint">{t("intro.progress.note")}</p>
+      </div>
+    </div>
   );
 }
 
-/** Nobody reaches the app without an account. This is the introduction, then create or log in. */
-export function Welcome({ onAccount }: { onAccount: (account: Account) => void }) {
+function GuideDemo() {
   const { t } = useI18n();
-  const [mode, setMode] = useState<"intro" | "create" | "login">("intro");
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
-  const [again, setAgain] = useState("");
-  const [error, setError] = useState("");
-  const [busy, setBusy] = useState(false);
-  const known = typeof window === "undefined" ? [] : listAccounts();
-
-  function go(next: typeof mode) {
-    tap();
-    setError("");
-    setPassword("");
-    setAgain("");
-    setMode(next);
-    window.scrollTo({ top: 0 });
-  }
-
-  async function submit(event: FormEvent) {
-    event.preventDefault();
-    setBusy(true);
-    setError("");
-    const result = mode === "create" ? await createAccount(name, password, again) : await logIn(name, password);
-    setBusy(false);
-    if (result.ok) onAccount(result.account);
-    else setError(t(ERRORS[result.error]));
-  }
-
-  if (mode !== "intro") {
-    const creating = mode === "create";
-    return (
-      <main className="page bare screen">
-        <form className="auth" onSubmit={submit}>
-          <button type="button" className="link" onClick={() => go("intro")}>
-            <ChevronLeft aria-hidden size={18} />
-            {t("common.back")}
-          </button>
-          <div className="stack-sm">
-            <SkywardMark size={44} />
-            <h1>{creating ? t("acct.createTitle") : t("acct.loginTitle")}</h1>
-            <p className="lead">{creating ? t("acct.createLead") : t("acct.loginLead")}</p>
-          </div>
-          {!creating && known.length > 0 && (
-            <div className="cluster" role="group" aria-label={t("acct.name")}>
-              {known.map((item) => (
-                <button key={item.id} type="button" className="chip" aria-pressed={name === item.name} onClick={() => { tap(); setName(item.name); }}>
-                  {item.name}
-                </button>
-              ))}
-            </div>
-          )}
-          <label>
-            <span className="label">{t("acct.name")}</span>
-            <span className="field-wrap">
-              <UserRound aria-hidden size={18} />
-              <input className="field text" autoComplete="username" maxLength={30} value={name} onChange={(event) => setName(event.target.value)} />
-            </span>
-          </label>
-          <PasswordField label={t("acct.password")} value={password} onChange={setPassword} autoComplete={creating ? "new-password" : "current-password"} />
-          {creating && <PasswordField label={t("acct.again")} value={again} onChange={setAgain} autoComplete="new-password" />}
-          {error && <p role="alert" className="note err">{error}</p>}
-          <button type="submit" className="btn btn-primary" disabled={busy}>
-            {busy ? t("acct.working") : creating ? t("intro.create") : t("intro.login")}
-          </button>
-          <button type="button" className="btn btn-ghost" onClick={() => go(creating ? "login" : "create")}>
-            {creating ? t("acct.haveOne") : t("acct.needOne")}
-          </button>
-        </form>
-      </main>
-    );
-  }
-
-  return <IntroPage onCreate={() => go("create")} onLogin={() => go("login")} />;
+  const [pick, setPick] = useState(0);
+  return (
+    <div className="demo">
+      <div className="field-wrap" style={{ marginTop: 0 }} aria-hidden>
+        <Search size={18} />
+        <span className="field text" style={{ display: "flex", alignItems: "center" }}>{t(`intro.guides.q${pick}`)}</span>
+      </div>
+      <div className="cluster" role="group" aria-label={t("intro.guides.try")}>
+        {[0, 1, 2].map((index) => (
+          <button key={index} type="button" className="chip" aria-pressed={pick === index} onClick={() => { tap(); setPick(index); }}>{t(`intro.guides.q${index}`)}</button>
+        ))}
+      </div>
+      <div className="answer" role="status" aria-live="polite">
+        <p className="kicker"><BookOpen aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("nav.guide")}</p>
+        <h3>{t(`intro.guides.t${pick}`)}</h3>
+        <p className="muted">{t(`intro.guides.a${pick}`)}</p>
+      </div>
+    </div>
+  );
 }
 
-function IntroPage({ onCreate, onLogin }: { onCreate: () => void; onLogin: () => void }) {
+function FormDemo() {
   const { t } = useI18n();
-  const heroCta = useRef<HTMLDivElement | null>(null);
-  const [pinned, setPinned] = useState(false);
+  const [pick, setPick] = useState<number | null>(null);
+  return (
+    <div className="demo">
+      <ul className="paper-form" aria-label={t("intro.forms.paper")}>
+        {[0, 1, 2].map((index) => (
+          <li key={index}>
+            <button type="button" className={`form-row${pick === index ? " is-marked" : ""}`} aria-expanded={pick === index} onClick={() => { tap(); setPick(pick === index ? null : index); }}>
+              <span className="form-label">{t(`intro.forms.f${index}`)}</span>
+              <span className="form-value">{t(`intro.forms.v${index}`)}</span>
+              {pick === index && <span className="form-note">{t(`intro.forms.n${index}`)}</span>}
+            </button>
+          </li>
+        ))}
+      </ul>
+      <p className="faint"><FileText aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {pick === null ? t("intro.forms.hint") : t("intro.forms.more")}</p>
+    </div>
+  );
+}
 
-  // Once the first buttons scroll away, keep one within reach of the thumb.
-  useEffect(() => {
-    const target = heroCta.current;
-    if (!target || typeof IntersectionObserver === "undefined") return;
-    const observer = new IntersectionObserver(([entry]) => setPinned(!entry.isIntersecting));
-    observer.observe(target);
-    return () => observer.disconnect();
-  }, []);
+function AskDemo() {
+  const { t } = useI18n();
+  const [pick, setPick] = useState<number | null>(null);
+  return (
+    <div className="demo">
+      <div className="chat" aria-live="polite">
+        {pick === null ? (
+          <p className="bubble saath">{t("intro.ai.hello")}</p>
+        ) : (
+          <>
+            <p className="bubble me">{t(`intro.ai.q${pick}`)}</p>
+            <p className="bubble saath">{t(`intro.ai.a${pick}`)}</p>
+          </>
+        )}
+      </div>
+      <div className="cluster" role="group" aria-label={t("intro.ai.try")}>
+        {[0, 1, 2].map((index) => (
+          <button key={index} type="button" className="chip" aria-pressed={pick === index} onClick={() => { tap(); setPick(index); }}>{t(`intro.ai.q${index}`)}</button>
+        ))}
+      </div>
+      <p className="faint"><MessageCircle aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("intro.ai.note")}</p>
+    </div>
+  );
+}
+
+const SAMPLE_SPEND = [
+  { id: "food", amount: 180 },
+  { id: "travel", amount: 60 },
+  { id: "phone", amount: 299 },
+  { id: "fun", amount: 250 },
+];
+
+function MoneyDemo() {
+  const { t, code } = useI18n();
+  const [logged, setLogged] = useState<string[]>([]);
+  const rows = SAMPLE_SPEND.filter((item) => logged.includes(item.id));
+  const total = rows.reduce((sum, item) => sum + item.amount, 0);
+  const max = Math.max(1, ...rows.map((item) => item.amount));
+  return (
+    <div className="demo">
+      <div className="cluster" role="group" aria-label={t("intro.money.try")}>
+        {SAMPLE_SPEND.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            className="chip"
+            aria-pressed={logged.includes(item.id)}
+            onClick={() => { tap(); setLogged((current) => (current.includes(item.id) ? current.filter((id) => id !== item.id) : [...current, item.id])); }}
+          >
+            {t(`categories.${item.id}`)} {inr(item.amount, code)}
+          </button>
+        ))}
+      </div>
+      <div className="stack-sm" aria-live="polite">
+        <div className="row-between">
+          <span className="muted">{t("intro.money.total")}</span>
+          <strong className="hero-num md">{inr(total, code)}</strong>
+        </div>
+        {rows.length === 0 ? (
+          <p className="faint">{t("intro.money.hint")}</p>
+        ) : (
+          <ul className="spend">
+            {rows.map((item) => (
+              <li key={item.id} className="spend-row">
+                <div className="row-between"><span>{t(`categories.${item.id}`)}</span><span className="num">{Math.round((item.amount / total) * 100)}%</span></div>
+                <div className="bar" aria-hidden><span style={{ width: `${(item.amount / max) * 100}%` }} /></div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <p className="faint"><Wallet aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("intro.money.note")}</p>
+    </div>
+  );
+}
+
+const DEMO_TOPICS = ["budgeting", "saving", "borrowing", "investing", "insurance", "scams", "paperwork", "retirement"] as const;
+
+function PersonalDemo() {
+  const { t } = useI18n();
+  const [picked, setPicked] = useState<string[]>([]);
+  return (
+    <div className="demo">
+      <div className="cluster" role="group" aria-label={t("personal.title")}>
+        {DEMO_TOPICS.filter((topic) => (TOPICS as readonly string[]).includes(topic)).map((topic) => (
+          <button
+            key={topic}
+            type="button"
+            className="chip"
+            aria-pressed={picked.includes(topic)}
+            onClick={() => { tap(); setPicked((current) => (current.includes(topic) ? current.filter((id) => id !== topic) : [...current, topic].slice(-3))); }}
+          >
+            {t(`topics.${topic}`)}
+          </button>
+        ))}
+      </div>
+      <p role="status" aria-live="polite" className={picked.length ? undefined : "faint"}>
+        {picked.length ? t("intro.personal.result", { topics: picked.map((topic) => t(`topics.${topic}`)).join(", ") }) : t("intro.personal.hint")}
+      </p>
+    </div>
+  );
+}
+
+export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => void }) {
+  const { t } = useI18n();
+  const [xp, setXp] = useState(0);
+  const acts = useMemo(() => ["play", "progress", "guides", "forms", "ai", "money", "stories", "personal"], []);
 
   return (
-    <main className="page bare">
-      <div className="intro screen">
-        <section className="intro-hero">
-          <div className="brand">
-            <SkywardMark />
-            <span className="brand-name">Saath</span>
-          </div>
-          <div className="stack-sm">
-            <p className="kicker">{t("intro.eyebrow")}</p>
-            <h1>{t("intro.title")}</h1>
-            <p className="lead">{t("intro.lead")}</p>
-          </div>
-          <div className="stack-sm" ref={heroCta}>
-            <button type="button" className="btn btn-primary" onClick={onCreate}>{t("intro.create")}</button>
-            <button type="button" className="btn btn-secondary" onClick={onLogin}>{t("intro.login")}</button>
-          </div>
-          <a className="link scroll-hint" href="#features">
-            {t("demo.scroll")}
+    <main className="intro">
+      <div className="intro-top">
+        <span className="brand-name">Saath</span>
+        <span className="cluster">
+          <button type="button" className="btn btn-ghost btn-auto" onClick={() => { tap(); onLogin(); }}>{t("auth.login")}</button>
+          <ThemeToggle />
+        </span>
+      </div>
+
+      <section className="intro-hero">
+        <div className="hero-figure stage">
+          <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={220} label={t("intro.hero.figure")} />
+        </div>
+        <div className="stack">
+          <p className="masthead">{t("intro.hero.kicker")}</p>
+          <h1>{t("intro.hero.title")}</h1>
+          <p className="lead">{t("intro.hero.lead")}</p>
+          <a className="btn btn-primary" href="#act-play" onClick={tap}>
+            {t("intro.hero.cta")}
             <ArrowDown aria-hidden size={18} />
           </a>
-        </section>
-        <div id="features" style={{ scrollMarginTop: 16 }}>
-          <FeatureGuide />
+          <p className="faint">{t("intro.hero.note")}</p>
         </div>
-        <section className="feature in stack-sm" style={{ textAlign: "center", justifyItems: "center" }}>
-          <h2>{t("intro.title")}</h2>
-          <button type="button" className="btn btn-primary" onClick={onCreate}>{t("intro.create")}</button>
-          <button type="button" className="btn btn-ghost" onClick={onLogin}>{t("acct.haveOne")}</button>
-        </section>
-        <Footer />
-      </div>
-      <div className={`cta-bar${pinned ? " show" : ""}`} aria-hidden={!pinned}>
-        <button type="button" className="btn btn-primary" tabIndex={pinned ? 0 : -1} onClick={onCreate}>{t("intro.create")}</button>
-        <button type="button" className="btn btn-ghost btn-auto" tabIndex={pinned ? 0 : -1} onClick={onLogin}>{t("intro.login")}</button>
-      </div>
+      </section>
+
+      <Reveal id="act-play">
+        <ActHead n="01" title={t("intro.play.title")} lead={t("intro.play.lead")} />
+        <PlayEpisode onXp={setXp} />
+        <ol className="loop" aria-label={t("intro.play.loopLabel")}>
+          {["story", "try", "decide", "outcome", "why", "drill", "xp"].map((step) => <li key={step}>{t(`intro.loop.${step}`)}</li>)}
+        </ol>
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="02" title={t("intro.progress.title")} lead={t("intro.progress.lead")} />
+        <ProgressDemo xp={xp} />
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="03" title={t("intro.guides.title")} lead={t("intro.guides.lead")} />
+        <GuideDemo />
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="04" title={t("intro.forms.title")} lead={t("intro.forms.lead")} />
+        <FormDemo />
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="05" title={t("intro.ai.title")} lead={t("intro.ai.lead")} />
+        <AskDemo />
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="06" title={t("intro.money.title")} lead={t("intro.money.lead")} />
+        <MoneyDemo />
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="07" title={t("intro.stories.title")} lead={t("intro.stories.lead")} />
+        <div className="demo">
+          <p className="kicker">{t("stories.kind.official")}</p>
+          <h3>{t("intro.stories.sample")}</h3>
+          <p className="muted">{t("intro.stories.sampleBody")}</p>
+          <p className="faint">{t("intro.stories.source")}</p>
+        </div>
+      </Reveal>
+
+      <Reveal>
+        <ActHead n="08" title={t("intro.personal.title")} lead={t("intro.personal.lead")} />
+        <PersonalDemo />
+        <p className="faint"><Share2 aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("intro.personal.share")}</p>
+      </Reveal>
+
+      <Reveal id="join">
+        <div className="finale">
+          <h2>{t("intro.cta")}</h2>
+          <p className="lead">{t("intro.ctaLead")}</p>
+          <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }}>
+            {t("intro.cta")}
+            <ArrowRight aria-hidden size={18} />
+          </button>
+          <button type="button" className="btn btn-ghost" onClick={() => { tap(); onLogin(); }}>{t("auth.haveAccount")}</button>
+          <p className="faint">{t("intro.ctaNote")} <Link href="/privacy">{t("profile.privacy")}</Link></p>
+        </div>
+      </Reveal>
+      <span hidden>{acts.length}</span>
     </main>
   );
 }

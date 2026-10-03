@@ -1,3 +1,5 @@
+import { soundOn } from "./prefs";
+
 let context: AudioContext | null = null;
 
 /**
@@ -5,7 +7,7 @@ let context: AudioContext | null = null;
  * It plays through the normal media channel, so a phone on silent or at zero volume stays quiet.
  */
 export function chime(): void {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || !soundOn()) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   try {
     const Ctor = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;

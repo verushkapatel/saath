@@ -1,29 +1,70 @@
+/**
+ * The four units of the Skyward syllabus. Every lesson, path, drill and FinLit Check question belongs to one.
+ * The order here is the order they are taught and shown.
+ */
+export const UNITS = ["own-money", "bank-paper", "borrow-safe", "how-money"] as const;
+export type Unit = (typeof UNITS)[number];
+
+/** The path to suggest when a unit turns out to be a student's weakest. */
+export const UNIT_PATH: Record<Unit, string> = {
+  "own-money": "first-budget",
+  "bank-paper": "missing-money",
+  "borrow-safe": "scam-shield",
+  "how-money": "grow-savings",
+};
+
+/** Lessons, in syllabus order. The unit of each lesson is stored on the lesson in content/guide.json. */
 export const LESSON_IDS = [
+  // Handling your own money
   "budget",
   "needs-wants",
   "pay-yourself",
+  "true-cost",
+  "subscription-traps",
+  "lending-friends",
+  "emergency-fund",
+  // Your bank and your paperwork
+  "first-bank-account",
+  "bank-charges",
+  "money-missing",
+  "why-pan",
+  "payment-proof",
+  "credit-score",
+  "upi-safety",
+  "otp-pin",
+  "tax-basics",
+  "what-insurance",
+  "health-cover",
+  // Borrowing and staying safe
+  "pay-later",
+  "guarantor",
   "what-interest",
-  "simple-compound",
   "what-emi",
   "flat-reducing",
   "fees",
-  "prepayment",
-  "credit-score",
-  "reading-agreement",
-  "upi-safety",
-  "otp-pin",
-  "fake-loan-apps",
-  "job-scams",
-  "what-insurance",
-  "health-cover",
-  "emergency-fund",
-  "where-savings",
-  "what-sip",
-  "inflation",
-  "tax-basics",
-  "why-pan",
   "reading-fees",
+  "reading-agreement",
   "before-you-sign",
+  "prepayment",
+  "fake-loan-apps",
+  "scam-calls",
+  "job-scams",
+  "double-money",
+  // How money works
+  "inflation",
+  "simple-compound",
+  "what-sip",
+  "where-savings",
+  "who-keeps-safe",
+  // Added for the life story: income, paperwork, family, schemes and retirement
+  "salary-slip",
+  "kyc-basics",
+  "nominee-matters",
+  "govt-schemes",
+  "family-money",
+  "children-planning",
+  "risk-diversify",
+  "retirement-basics",
 ] as const;
 
 export const CASE_IDS = [
@@ -43,17 +84,80 @@ export const CASE_IDS = [
 
 export const PATH_IDS = [
   "first-budget",
+  "emergency-jar",
+  "spend-smart",
+  "bank-visit",
+  "salary-slip",
+  "missing-money",
+  "upi-without-fear",
   "loan-scam",
   "first-loan-paper",
   "scholarship-safely",
-  "emergency-jar",
-  "upi-without-fear",
-  "salary-slip",
-  "bank-visit",
+  "scam-shield",
+  "borrow-wisely",
+  "grow-savings",
 ] as const;
 
-export const CATEGORIES = ["budgeting", "loans", "scams", "savings", "insurance", "taxid"] as const;
-export type Category = (typeof CATEGORIES)[number];
+/** The Day 2 activities, rebuilt for the phone. */
+export const DRILL_IDS = ["scam", "form", "price", "stories"] as const;
+export type DrillId = (typeof DRILL_IDS)[number];
 
-export const LANGS = ["en", "hi", "mr", "kn"] as const;
+export const DRILL_UNIT: Record<DrillId, Unit> = {
+  scam: "borrow-safe",
+  form: "bank-paper",
+  price: "own-money",
+  stories: "borrow-safe",
+};
+
+/** The daily question bank is tagged by topic. This places each topic in a unit. */
+export const TOPIC_UNIT: Record<string, Unit> = {
+  budgeting: "own-money",
+  saving: "own-money",
+  interest: "borrow-safe",
+  loans: "borrow-safe",
+  scams: "borrow-safe",
+  insurance: "bank-paper",
+  investing: "how-money",
+  inflation: "how-money",
+};
+
+/**
+ * The money areas the whole product is organised by. Guides, story episodes, daily questions, forms and
+ * real-life stories each carry one, which is what lets Saath suggest the right thing to a person.
+ */
+export const TOPICS = [
+  "banking", "budgeting", "saving", "income", "investing", "insurance", "borrowing",
+  "tax", "schemes", "paperwork", "family", "retirement", "scams",
+] as const;
+export type Topic = (typeof TOPICS)[number];
+
+/** The daily question bank uses older topic names. This maps them to the list above. */
+export const QUESTION_TOPIC: Record<string, Topic> = {
+  budgeting: "budgeting",
+  saving: "saving",
+  interest: "borrowing",
+  loans: "borrowing",
+  scams: "scams",
+  insurance: "insurance",
+  investing: "investing",
+  inflation: "investing",
+};
+
+/** The life stages of the story, in order. One episode each. */
+export const STAGE_IDS = [
+  "early-adulthood", "first-job", "first-income", "banking", "budgeting", "saving", "investing",
+  "insurance", "borrowing", "family-finances", "children", "long-term-planning", "financial-security", "retirement",
+] as const;
+export type StageId = (typeof STAGE_IDS)[number];
+
+export const FORM_IDS = [
+  "savings-account", "kyc-update", "nomination", "pan-application", "no-pan-declaration", "salary-tds-certificate",
+  "no-tds-declaration", "loan-kfs", "gold-loan", "insurance-proposal", "jan-suraksha", "atal-pension",
+  "sukanya-samriddhi", "epf-joining",
+] as const;
+
+export const LANGS = ["en", "hi", "mr"] as const;
 export type Lang = (typeof LANGS)[number];
+
+export const GRADES = ["9", "10", "11", "12"] as const;
+export type Grade = (typeof GRADES)[number];

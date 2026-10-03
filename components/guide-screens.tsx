@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { Check, ChevronLeft, ChevronRight, Lightbulb, Search } from "lucide-react";
-import { CATEGORIES, type Category } from "@/lib/catalog";
+import { BookMarked, Check, ChevronLeft, ChevronRight, Images, Lightbulb, Mic, Search } from "lucide-react";
+import { UNITS, type Unit } from "@/lib/catalog";
+import { monthLabel } from "@/lib/format";
 import { linkHref, loadJson, type CaseStudy, type MiniCheck } from "@/lib/content-types";
-import { tap } from "@/lib/speech";
+import { canHear, hear, tap } from "@/lib/speech";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
+import { UnitBadge } from "./unit-badge";
 import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary } from "./ui";
 
 const plain = (text: string) => text.replace(/\[\[|\]\]/g, "");
@@ -17,7 +19,21 @@ export function GuideScreen() {
   const { lessons, progress } = useApp();
   const glossary = useGlossary();
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<Category | "all">("all");
+  const [unit, setUnit] = useState<Unit | "all">("all");
+  const [listening, setListening] = useState(false);
+
+  async function voice() {
+    if (listening) return;
+    tap();
+    setListening(true);
+    try {
+      setQuery(await hear(code));
+    } catch {
+      // The search box is still there to type in.
+    } finally {
+      setListening(false);
+    }
+  }
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -25,12 +41,12 @@ export function GuideScreen() {
       ? glossary.terms.filter((term) => term.term[code].toLowerCase().includes(needle)).map((term) => `[[${term.id}]]`)
       : [];
     return lessons.filter((lesson) => {
-      if (category !== "all" && lesson.category !== category) return false;
+      if (unit !== "all" && lesson.unit !== unit) return false;
       if (!needle) return true;
       const hay = `${lesson.title[code]} ${lesson.summary[code]} ${lesson.points.map((point) => point[code]).join(" ")}`.toLowerCase();
       return hay.includes(needle) || termIds.some((id) => lesson.body[code].includes(id));
     });
-  }, [lessons, glossary.terms, query, category, code]);
+  }, [lessons, glossary.terms, query, unit, code]);
 
   if (lessons.length === 0) return <PageSkeleton />;
   const read = lessons.filter((lesson) => progress.lessons.includes(lesson.id)).length;
@@ -38,7 +54,25 @@ export function GuideScreen() {
   return (
     <div className="stack rise">
       <div className="stack-xs">
-        <h1>{t("guide.title")}</h1>
+        <p className="masthead">{t("home.masthead")}</p>
+        <h1>{t("nav.guide")}</h1>
+        <p className="lead">{t("guide.intro")}</p>
+      </div>
+      <div className="pair">
+        <Link href="/handbook" className="card tight tile" onClick={tap}>
+          <BookMarked aria-hidden size={22} />
+          <span className="item-title">{t("handbook.open")}</span>
+          <span className="item-sub">{t("handbook.sub")}</span>
+        </Link>
+        <Link href="/comic" className="card tight tile" onClick={tap}>
+          <Images aria-hidden size={22} />
+          <span className="item-title">{t("comic.open")}</span>
+          <span className="item-sub">{t("comic.sub")}</span>
+        </Link>
+      </div>
+      <hr className="rule-double" />
+      <div className="row-between">
+        <h2>{t("guide.title")}</h2>
         <p className="faint">{t("guide.read", { done: read, total: lessons.length })}</p>
       </div>
       <label>
@@ -46,12 +80,17 @@ export function GuideScreen() {
         <span className="field-wrap" style={{ marginTop: 0 }}>
           <Search aria-hidden size={18} />
           <input className="field text" type="search" value={query} placeholder={t("guide.search")} onChange={(event) => setQuery(event.target.value)} />
+          {canHear() && (
+            <button type="button" className="icon-btn" style={{ border: 0 }} aria-label={listening ? t("home.listening") : t("guide.voice")} aria-pressed={listening} onClick={() => void voice()}>
+              <Mic aria-hidden size={18} />
+            </button>
+          )}
         </span>
       </label>
       <div className="chips" role="group" aria-label={t("guide.filter")}>
-        {(["all", ...CATEGORIES] as const).map((item) => (
-          <button key={item} type="button" className="chip" aria-pressed={category === item} onClick={() => { tap(); setCategory(item); }}>
-            {t(`cat.${item}`)}
+        {(["all", ...UNITS] as const).map((item) => (
+          <button key={item} type="button" className="chip" aria-pressed={unit === item} onClick={() => { tap(); setUnit(item); }}>
+            {item === "all" ? t("guide.allUnits") : t(`unit.${item}`)}
           </button>
         ))}
       </div>
@@ -59,7 +98,7 @@ export function GuideScreen() {
         <div className="state">
           <span className="item-icon"><Search aria-hidden size={20} /></span>
           <p className="lead">{t("guide.empty")}</p>
-          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setQuery(""); setCategory("all"); }}>{t("cat.all")}</button>
+          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setQuery(""); setUnit("all"); }}>{t("guide.allUnits")}</button>
         </div>
       ) : (
         <ul className="list card tight">
@@ -72,6 +111,7 @@ export function GuideScreen() {
                     {done ? <Check aria-hidden size={20} strokeWidth={3} /> : <ContentIcon name={lesson.icon} size={20} />}
                   </span>
                   <span className="item-body">
+                    {unit === "all" && <UnitBadge unit={lesson.unit} />}
                     <span className="item-title">{lesson.title[code]}</span>
                     <span className="item-sub two">{lesson.summary[code]}</span>
                   </span>
@@ -91,6 +131,7 @@ export function GuideScreen() {
 
 function tryLabel(link: string | null, t: (key: string) => string): string {
   if (link === "tracker") return t("path.openTracker");
+  if (link?.startsWith("drill:")) return t(`drills.${link.slice(6)}.title`);
   if (link?.startsWith("case:")) return t("path.openCase");
   return t("path.openScan");
 }
@@ -136,7 +177,7 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
       <div className="pin-top"><ListenButton text={spoken} /></div>
       <div className="stack-sm">
         <span className="item-icon"><ContentIcon name={lesson.icon} /></span>
-        <p className="kicker">{t(`cat.${lesson.category}`)}</p>
+        <UnitBadge unit={lesson.unit} />
         <h1>{lesson.title[code]}</h1>
       </div>
 
@@ -202,6 +243,22 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
               {t("lesson.next")}
               <ChevronRight aria-hidden size={18} />
             </Link>
+          ) : null}
+        </div>
+      )}
+      {lesson.reviewed && (
+        <div className="stack-xs">
+          <p className="faint">{t("lesson.reviewed", { month: monthLabel(lesson.reviewed, code) })}</p>
+          {lesson.sources?.length ? (
+            <p className="faint">
+              {t("lesson.sources")}:{" "}
+              {lesson.sources.map((url, at) => (
+                <span key={url}>
+                  {at > 0 ? ", " : ""}
+                  <a href={url} target="_blank" rel="noopener noreferrer">{new URL(url).hostname.replace(/^www\./, "")}</a>
+                </span>
+              ))}
+            </p>
           ) : null}
         </div>
       )}

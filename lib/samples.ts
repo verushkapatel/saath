@@ -77,7 +77,6 @@ const PERSONAL: Record<Lang, string> = {
     "पूर्वफेड: कालावधीत परवानगी नाही",
     "तारण: नाही",
   ].join("\n"),
-  kn: PERSONAL_EN,
 };
 
 const GOLD: Record<Lang, string> = {
@@ -106,7 +105,6 @@ const GOLD: Record<Lang, string> = {
     "पूर्वफेड: शुल्काशिवाय परवानगी",
     "तारण: 20 ग्रॅम सोन्याची साखळी",
   ].join("\n"),
-  kn: GOLD_EN,
 };
 
 const SCHEME: Record<Lang, string> = {
@@ -135,7 +133,6 @@ const SCHEME: Record<Lang, string> = {
     "व्याज: कर्ज नाही",
     "कालावधी: एक शैक्षणिक वर्ष",
   ].join("\n"),
-  kn: SCHEME_EN,
 };
 
 export const SAMPLES: SampleDoc[] = [

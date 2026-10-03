@@ -10,6 +10,8 @@ export type Entry = {
   category: string;
   amount: number;
   date: string;
+  /** A few words, such as the shop name from a receipt. */
+  note?: string;
 };
 
 export type Loan = {
@@ -105,6 +107,15 @@ export async function addEntry(entry: Entry): Promise<void> {
   await put(database.transaction("entries", "readwrite").objectStore("entries"), entry);
 }
 
+export async function removeEntry(id: string): Promise<void> {
+  const database = await db();
+  await new Promise<void>((resolve, reject) => {
+    const request = database.transaction("entries", "readwrite").objectStore("entries").delete(id);
+    request.onsuccess = () => resolve();
+    request.onerror = () => reject(request.error);
+  });
+}
+
 export async function addLoan(loan: Loan): Promise<void> {
   const database = await db();
   await put(database.transaction("loans", "readwrite").objectStore("loans"), loan);
@@ -155,17 +166,6 @@ export async function importBackup(backup: Backup): Promise<void> {
   await put(meta, { ...normalizeProgress(backup.progress), id: "progress" });
 }
 
-/** Writes the result of a sync merge. Loans are left alone: they never leave the phone. */
-export async function writeSynced(entries: Entry[], goal: number, progress: Progress): Promise<void> {
-  const database = await db();
-  const tx = database.transaction(["entries", "meta"], "readwrite");
-  const store = tx.objectStore("entries");
-  const meta = tx.objectStore("meta");
-  await Promise.all(entries.map((entry) => put(store, entry)));
-  await put(meta, { id: "goal", target: goal } satisfies Goal);
-  await put(meta, progress);
-}
-
 /** Removes everything Saath saved in this browser. */
 export function eraseDevice(): Promise<void> {
   return new Promise((resolve) => {
@@ -177,6 +177,7 @@ export function eraseDevice(): Promise<void> {
 }
 
 export function entriesToCsv(entries: Entry[]): string {
-  const lines = ["date,kind,category,amount", ...entries.map((entry) => `${entry.date},${entry.kind},${entry.category},${entry.amount}`)];
+  const clean = (value: string) => value.replace(/[",\n]/g, " ").trim();
+  const lines = ["date,kind,category,amount,note", ...entries.map((entry) => `${entry.date},${entry.kind},${entry.category},${entry.amount},${clean(entry.note ?? "")}`)];
   return lines.join("\n");
 }

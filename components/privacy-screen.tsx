@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, ChevronLeft, ShieldCheck } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, ShieldCheck } from "lucide-react";
 import { useI18n } from "./providers";
 import { ListenButton } from "./ui";
 
+/** The short page for students: six plain sentences. */
 export function PrivacyScreen() {
   const { t } = useI18n();
   const points = [1, 2, 3, 4, 5, 6].map((n) => t(`privacy.p${n}`));
@@ -24,6 +25,11 @@ export function PrivacyScreen() {
         ))}
       </ol>
       <p className="faint">{t("result.disclaimer")}</p>
+      <Link href="/privacy/partners" className="link">
+        {t("privacy.partnersLink")}
+        <ChevronRight aria-hidden size={18} />
+      </Link>
+      <hr className="rule-double" />
       <section className="stack-sm">
         <h2>{t("privacy.faq")}</h2>
         <div className="card tight">
@@ -39,6 +45,43 @@ export function PrivacyScreen() {
         </div>
       </section>
       <p className="muted">{t("privacy.made")}</p>
+    </article>
+  );
+}
+
+/** The longer page for teachers and partners: what exists, where it is, and what is shared. */
+export function PartnerPrivacyScreen() {
+  const { t } = useI18n();
+  return (
+    <article className="stack">
+      <Link href="/privacy" className="link"><ChevronLeft aria-hidden size={18} />{t("privacy.title")}</Link>
+      <h1>{t("partners.title")}</h1>
+      {[1, 2, 3, 4, 5, 6].map((n) => (
+        <section key={n} className="stack-sm">
+          <hr className="rule-double" />
+          <h2>{t(`partners.h${n}`)}</h2>
+          <p>{t(`partners.b${n}`)}</p>
+        </section>
+      ))}
+    </article>
+  );
+}
+
+export function AboutScreen() {
+  const { t } = useI18n();
+  const lines = [1, 2, 3, 4, 5, 6].map((n) => t(`about.${n}`));
+  return (
+    <article className="stack">
+      <Link href="/" className="link"><ChevronLeft aria-hidden size={18} />{t("nav.home")}</Link>
+      <div className="row-between">
+        <h1>{t("about.title")}</h1>
+        <ListenButton compact text={lines.join(" ")} />
+      </div>
+      <ol className="points">
+        {lines.map((line, index) => (
+          <li key={index}><span aria-hidden>{index + 1}</span><span>{line}</span></li>
+        ))}
+      </ol>
     </article>
   );
 }

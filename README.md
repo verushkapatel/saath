@@ -1,8 +1,18 @@
 # Saath
 
-Saath is a free web app for students and young adults in India. It reads a loan or scheme paper on the phone, says in plain words what it will really cost, and gives three small tasks a day that build money confidence. Money Lab, from The Skyward Project and the Interact Club of Pune Skyward, is the tracker inside the same app.
+Saath is the app students take home from The Skyward Project's school programme. It gives a few minutes of money practice a day, and it reads a loan or scheme paper on the phone so a family can see what it really costs.
 
-It runs in English, Hindi and Marathi. Everyone creates an account (a name and a password kept on the phone). There are no ads and no tracking, and it keeps working offline after the first visit.
+It runs in English, Hindi and Marathi. There is no account, no server, no advertising and no tracking. Everything a student does stays on that phone unless they choose to share anonymous class numbers.
+
+## Programme context
+
+The Skyward Project is a youth-led initiative from Pune (theskywardproject.com). Its programme runs for two days in a school, for every student in Grades 9 to 12, at no cost to the school.
+
+- Day 1: students sit the FinLit Index, thirty minutes of real-life money situations.
+- Day 2: the team returns with the results and teaches a session built around what each grade got wrong. Students learn by doing: spotting scams in real-looking messages, filling a mock bank form, racing to find the real price of a phone on EMI, and working through true stories.
+- Every student leaves with the Skyward Handbook, the Skyward comic and Saath.
+
+Saath's job is to lock in the learning after the classroom. It is built for a student aged 14 to 18, often on a shared or low-end phone, who will soon meet a first salary, a loan offer, a scam call or a fake job.
 
 ## Setup
 
@@ -13,208 +23,225 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. The first screen asks for a language. The second is the introduction: a full-screen headline with "Create an account" and "Log in", then eight sections in full. Each section says what the feature is, gives a small working model to try (`components/intro-demos.tsx`, built on the same code and sample paper as the real app), and lists three steps on how to use it. A bar with "Create an account" stays at the bottom once the first buttons scroll away. Nobody reaches the app without an account. The same guide is at `/about`, linked from the profile.
+Open http://localhost:3000.
 
 ```bash
-npm test          # 65 tests
+npm test              # 88 tests
 npm run lint
-npm run build     # server build (Vercel, or `npm start`)
-npm run build:pages   # static site in out/ for GitHub Pages
+npm run build         # server build
+npm run build:pages   # static site in out/, for GitHub Pages
+npm run handbook:pdf  # one handbook PDF per language, from the built site (needs Chrome)
 ```
 
-`npm install` copies locales and content into `public/`, writes the service worker, and downloads English, Hindi and Marathi OCR data into `public/tessdata/`.
+`npm install` copies locales and content into `public/`, writes the service worker, and downloads English, Hindi and Marathi OCR data.
 
 ## What is in the app
 
 | Screen | What it does |
 | --- | --- |
-| Home | Greeting with a small streak count, "Scan a document", one Today card (the week strip and three tasks; the daily question opens in a sheet), and the active path |
-| Paths | Eight guided paths of five to seven steps. Each step is a lesson, a real-world action or a one-question check |
-| Scan | Photo or sample, confirm the numbers, then the result: total repayment, borrowed against extra, four short blocks, calm flags, questions to ask |
-| Money Lab | Month view, a number-pad sheet for logging, spending bars, a savings goal ring, a weekly line, one insight from your own entries, tracked loans, the weekly case |
-| Guide | 25 mini lessons in six categories, with search, tappable glossary words, Listen, a "Try it" action and one question |
-| Profile | Language, backup, sign-in, PIN lock, privacy page, account deletion |
+| Language, then Welcome | Pick a language, read one screen, tap Start. The student is inside as a guest. |
+| Home | Masthead, greeting, the one next thing to do (the FinLit Check, or the current path), today's three tasks with the week strip, the current path, the Leo practice companion, and a quiet "Join your school" row |
+| FinLit Check (`/check`) | Twelve situations, three per unit. Result is four slim unit bars with "Start here" on the weakest unit and a link to the matching path |
+| Learn (`/guide`) | The Handbook and the Comic, then 37 lessons filtered by unit, with search by text or voice |
+| Drills (`/drills`) | Spot the scam, Fill the form, Real price race, True stories |
+| Scan | Photo or sample, confirm the numbers, then the result. Framed as the thing a student takes home to read a parent's loan paper |
+| Money Lab | Month view, logging sheet, spending bars, savings goal, weekly case |
+| Handbook (`/handbook`) | All four units to keep, with Listen, share-as-text and a PDF |
+| Comic (`/comic`) | A swipeable panel reader with captions that can be read aloud |
+| Profile | Nickname and school, the sharing switch, language, PIN, backup, privacy, "How Saath works", "Delete everything on this phone" |
 
-### Tasks and the streak
+Two pages are for partners and are not linked from the student app: `/impact` and `/link`.
 
-- Home shows three tasks. "Answer today's question" is always one. The other two rotate with the date between logging an expense, reading a lesson, checking a fee and scanning a sample. The same date always shows the same three. See `lib/tasks.ts`.
-- A day counts toward the streak when at least one task is finished. Tasks are: the daily question, a logged entry, a finished lesson, confirming a scanned loan (the fee check), reaching a sample result, answering a case, or finishing a path step.
-- One missed day in each Monday-to-Sunday week is forgiven automatically. The forgiven day holds the streak together but is not counted in the number. Two missed days in a row are not forgiven. See `lib/streak.ts`.
-- Finishing a path unlocks one milestone card that can be shared as text or as a picture drawn on the phone. There are no points, badges or leaderboards.
+### The four units
 
-### Scan result
+Everything is organised under the Skyward syllabus. `lib/catalog.ts` holds the unit ids and the lesson and path order. Every lesson, path, task and drill shows a unit badge.
 
-- The hero number is the total repayment, with the amount borrowed beneath it and a bar that splits borrowed from extra paid.
-- Four blocks: what you get, what you pay back, what it really costs each year, and what happens if you pay late. Each has its own Listen button, and there is one for the whole result.
-- Flags are sorted most serious first and collapsed to the top two. Severity is shown with a label and an icon as well as colour.
-- The confirm screen shows the processing fee and other charges as two fields, each with the clause it came from, and a total beneath them.
+1. **Handling your own money** (`own-money`): budgeting, saving before spending, the true cost of what you buy, subscription traps, lending to friends, an emergency fund.
+2. **Your bank and your paperwork** (`bank-paper`): a first bank account, bank charges, acting fast when money goes missing, keeping ID safe, proof of payment, the credit record, UPI and OTP safety, tax, insurance.
+3. **Borrowing and staying safe** (`borrow-safe`): "pay later", signing as guarantor, interest and EMI, fees, reading a loan paper, dangerous loan apps, scam calls, fake jobs, double-your-money schemes.
+4. **How money works** (`how-money`): why prices rise, why savings need to grow, where to keep savings, who keeps money safe.
 
-### What the numbers mean
+There are 37 lessons and 13 paths. Twelve lessons were written for this version to cover gaps in the syllabus: true cost, subscription traps, lending to friends, first bank account, bank charges, money missing, proof of payment, pay later, guarantor, scam calls, double-your-money, and who keeps your money safe. Four paths are new: Spend with open eyes, When money goes missing, Shut down a scam, and Borrow with your eyes open.
 
-These rules are fixed in code so the same paper always gives the same result.
+### Tasks, streak and paths
 
-- A reducing EMI is the usual monthly payment on the remaining balance.
-- A flat EMI is principal plus simple interest for the whole time, split by the number of months.
-- Fees are taken out of the amount you receive. They are not added on top of the EMIs.
-- The yearly cost is the effective annual rate: a monthly internal rate of return on the amount received, turned into `(1 + monthly) ^ 12 - 1`.
-- The last instalment absorbs leftover paise so the balance ends at zero.
-- Flags: a yearly cost far above typical bands and a late penalty of 2 percent or more a month are "serious". Fees above 3 percent of principal, a flat rate, no right to repay early and blank spaces are "worth asking about". A missing number is "good to know". Saath never guesses a missing figure.
-- The daily question is the day of the year, modulo the number of questions. The weekly case is the ISO week, modulo the number of cases.
-- The tracker insight appears after entries exist on three different days. It reports the largest spending category if it is 40 percent or more of spending, otherwise the share of income saved, otherwise the average spend on a logged day.
+- Home shows three tasks. "Answer today's question" is always one. The other two rotate with the date between logging an expense, reading a lesson, checking a fee, scanning a sample and doing a drill. See `lib/tasks.ts`.
+- A day counts toward the streak when at least one task is finished. Finishing a drill, a case, a path step or the FinLit Check also counts.
+- One missed day in each Monday-to-Sunday week is forgiven automatically. See `lib/streak.ts`.
+- A path is five to seven steps: lessons, real-world actions finished with "I did it", and a one-question check. Some action steps open a drill. Finishing a path unlocks a milestone card and a short burst of confetti.
 
-## Accounts
+### The FinLit Check
 
-An account is compulsory. It is a name and a password, created on the phone and kept in the browser (`lib/account.ts`). The password is stored only as a salted PBKDF2 hash. Each account gets its own IndexedDB database, so people sharing a phone do not see each other's tracker or progress. The first account on a phone adopts whatever data was already there.
+A twelve-question quick version of the Index: three situations per unit, written as real-life moments, in `content/finlit-check.json`.
 
-Limits to know about: the account does not travel to another phone or browser, and a forgotten password cannot be reset, because there is no server. Clearing the browser's site data removes the accounts and their data. The optional Supabase backup below is what carries progress between phones.
+- It runs once at the start and once after the student finishes their first path, so the app shows a before and an after.
+- The result is four slim bars. It is never shown as a grade, a percentage total or a rank. The weakest unit is marked "Start here" and links to that unit's path (`UNIT_PATH` in `lib/catalog.ts`). When two units are level, the earlier one is chosen.
+- Results are stored on the device (`lib/finlit.ts`).
 
-## Backup across phones (optional)
+### Drills
 
-Saath is local-first. With no keys set the Supabase code is never downloaded.
+- **Spot the scam**: 15 real-looking messages (SMS, WhatsApp, UPI collect requests, loan app prompts, calls), five per round. Swipe right for real, left for fake, or use the buttons. The warning words are then highlighted in the message. Four of the fifteen are genuine, so "fake" is not always the answer.
+- **Fill the form**: a mock account opening form with six deliberate problems. Tap each wrong line, then check. A short debrief follows.
+- **Real price race**: pick a phone, an EMI offer and a fee table, then find the true total. The numbers come from the same finance engine as the scanner (`emiFlat` in `lib/finance.ts`). The timer is optional, off by default, and only counts up.
+- **True stories**: the twelve cases, as scene-by-scene simulations. The weekly case in Money Lab is one of these.
 
-When keys are set, the profile sheet shows "Back up across phones". Sign-in for the backup is by email magic link or Google. There is no phone OTP, because SMS costs money.
+Each drill takes under three minutes, works offline, has a Listen button, and counts toward tasks and the streak.
 
-What syncs: tracker entries, the savings goal, the streak, tasks and path progress. Nothing else. Photos, documents, OCR text and tracked loans (which come from documents) stay on the phone.
+## How a school code works
 
-### How the privacy works
+1. On Day 2 the Skyward team gives the class a code, for example `PUNE01`.
+2. A student opens Profile > Join your school, types the code, picks a grade, and may add a nickname.
+3. That is all. The code links the student to a cohort without a name, phone number or email.
 
-After signing in, the user chooses a secret word. On the phone, Web Crypto turns that word into an AES-256-GCM key with PBKDF2 (SHA-256, 210,000 rounds, a random salt). The synced data is encrypted with that key before upload. The server stores one row per user holding the salt, a nonce and unreadable text. The key and the secret word never leave the phone, so the server cannot read the data and the word cannot be reset by anyone. A second phone asks for the same word and must be able to open the row before it is trusted.
+To put the code in a student's hands without typing, open `/link`, enter the code, and print the QR code or link on the handbook. Scanning it opens Saath with the code already filled in (`?school=PUNE01`).
 
-Row level security limits every user to their own row.
+Codes are 3 to 12 letters, digits or hyphens. Saath does not check a code against a list, because there is no server to hold one.
 
-### Supabase setup
+## Measuring impact
 
-1. Create a free project at https://supabase.com.
-2. In the SQL editor, run the two files in `supabase/migrations/` in order. The first creates the `saath_vault` table with row level security. The second adds the `saath_delete_account` function used by "Delete my account".
-3. In Authentication > Providers, keep Email on. To offer Google, turn Google on and paste a client ID and secret from Google Cloud Console (OAuth consent screen, then Credentials > OAuth client ID > Web application, with the redirect URI Supabase shows you).
-4. In Authentication > URL Configuration, set Site URL to where Saath is hosted (for example `https://verushkapatel.github.io/saath/`) and add the same address, plus `http://localhost:3000`, to Redirect URLs.
-5. Copy `.env.example` to `.env.local` and fill in:
+**What is collected by default: nothing.** With no endpoint configured, Saath never sends anything to anyone.
 
+**What can be collected, only if all three are true:** the deployment sets `NEXT_PUBLIC_SAATH_IMPACT_URL`, the student has joined a school, and the student has switched on "Share anonymous class numbers" in the profile. The switch is off by default and is explained in one sentence in each language.
+
+Then Saath sends small events. This is the whole of what an event can hold (`lib/impact.ts`):
+
+```json
+{ "cohort": "PUNE01", "grade": "9", "kind": "check-before", "units": [0.33, 0.67, 0.33, 0] }
 ```
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+
+- `kind` is one of `join`, `check-before`, `check-after`, `lesson`, `path`.
+- `units` appears only on check events: the share right in each of the four units.
+- `count` appears on lesson and path events when more than one is reported at once.
+
+**What is never collected:** names, nicknames, phone numbers, emails, locations, device identifiers, individual answers, tracker entries, scanned documents, or anything about how a student moves through the app. Events are sent once and not queued or retried.
+
+**The endpoint contract.** `POST` receives one event as JSON. `GET` returns a JSON array of all events. Any small serverless function with a table will do. The endpoint must not log IP addresses or add identifiers, and should itself refuse to return groups smaller than ten.
+
+**The partner view** at `/impact` reads those events and shows, per school and grade: students joined, lessons and paths finished, and the average before and after per unit with the change in points. It never shows an individual, and any group with fewer than ten students is left out entirely (`MIN_COHORT` in `lib/impact.ts`). With no endpoint it says so, and can show clearly labelled sample data.
+
+**Limits to be honest about.** Because there are no identifiers, a student who reinstalls and rejoins is counted twice, and before and after averages are not matched pairs. The numbers describe a cohort, not individual progress.
+
+## Privacy for minors (DPIA-style note)
+
+| Data | Where it lives | Leaves the phone? |
+| --- | --- | --- |
+| Language | Browser local storage | No |
+| Nickname (optional), school code and grade (optional) | Browser local storage | Code and grade only, and only inside an opted-in event |
+| Sharing switch | Browser local storage | No |
+| PIN (optional) | Browser local storage, as a salted PBKDF2 hash | No |
+| FinLit Check results | Browser local storage | Four unit scores only, and only if opted in |
+| Tracker entries, savings goal, tracked loans | IndexedDB | No |
+| Lessons, paths, tasks, streak, drill rounds, case progress | IndexedDB and local storage | Counts only, and only if opted in |
+| Scanned photos and the text read from them | Memory, for the length of the scan | No |
+| Backup file | Wherever the student saves it | Only if the student moves the file |
+
+- There are no accounts. Saath collects no real names, phone numbers, emails, locations or device identifiers.
+- Documents and images never leave the device. The earlier optional cloud reading layer and the Supabase sync were removed for this reason.
+- No analytics, no ads, no tracking, no behavioural profiling.
+- "Delete everything on this phone" in the profile removes all of the above from the browser.
+- A forgotten PIN cannot be recovered. The reset clears local data, and the app says so in one line. Nothing implies cloud recovery, because there is none.
+- The student privacy page is `/privacy`. The longer page for teachers and partners is `/privacy/partners`.
+
+**Before any cloud sync, account system or new data collection is added, a qualified person must review it against India's Digital Personal Data Protection Act, 2023, including the rules on children's data and verifiable parental consent.** This note is a description written by the developers. It is not legal advice and has not been reviewed by a lawyer.
+
+## Content
+
+All content is JSON in `content/`, with English, Hindi and Marathi in every record. After editing, run `npm run sync` (it also runs before `dev` and `build`).
+
+Every lesson carries `reviewed`, the month its facts were last checked, and `sources`, the official pages used. The facts in this version were checked in October 2026 against:
+
+- cybercrime.gov.in and I4C for the 1930 helpline
+- RBI for unauthorised transaction liability, minors' accounts, basic savings accounts, digital lending and free credit reports
+- DICGC for deposit insurance of ₹5,00,000 per depositor per bank
+- sancharsaathi.gov.in for Chakshu
+- sachet.rbi.org.in for unregistered deposit schemes
+- UIDAI for masked Aadhaar
+
+One rule is changing: RBI's revised framework on fraudulent electronic transactions applies from 1 January 2027 and moves the reporting window from three working days to five calendar days. The "When money goes missing" lesson states both. Review it again in January 2027.
+
+### Adding a lesson
+
+1. Add the id to `LESSON_IDS` in `lib/catalog.ts`, in the position it should appear.
+2. Add the lesson to `content/guide.json` with: `id`, `unit`, `icon` (a name from `ICONS` in `components/ui.tsx`), `title`, `summary`, `body` (a short intro; wrap a glossary id as `[[emi]]` to make it tappable), three to five `points`, one `example`, `tryIt` (text and a link), a `check` with three options, `reviewed` and, if it states rules or limits, `sources`.
+3. `tryIt.link` and path action links can be `tracker`, `scan`, `scan:personal-loan`, `scan:gold-loan`, `scan:scheme-form`, `case:<id>`, `drill:<id>`, `drills`, `finlit` or `null`.
+4. Update the lesson count in `tests/content.test.ts`.
+
+### Adding a path
+
+Add the id to `PATH_IDS` and the path to `content/paths.json`. Use five to seven steps with at least one action and one check, a `unit`, and a milestone line that starts "You can now".
+
+### Adding a drill or drill content
+
+- More scam messages: add to `scams` in `content/drills.json`. Every phrase in `flags` must appear word for word in `text` in that language, because the app highlights it. A test checks this.
+- A different form or price table: edit `form` and `price` in the same file.
+- A new kind of drill: add the id to `DRILL_IDS` and `DRILL_UNIT` in `lib/catalog.ts`, a component in `components/drill-screens.tsx`, and titles under `drills.<id>` in each locale.
+
+### Adding comic pages
+
+`content/comic.json` holds a list of episodes. The first is shown.
+
+```json
+{
+  "id": "episode-1",
+  "title": { "en": "...", "hi": "...", "mr": "..." },
+  "panels": [
+    { "image": "/comic/episode-1/01.webp", "caption": { "en": "...", "hi": "...", "mr": "..." } }
+  ]
+}
 ```
 
-6. Rebuild. Both values are public by design. The anon key only allows what row level security allows.
+Put the images in `public/comic/`. Square images at about 1080px work best. Keep any speech in the caption, not in the picture, so it can be translated and read aloud. The episode that ships is marked `"sample": true` and has no pictures: it exists to show the reader working. Remove it when the real comic arrives, and add the image paths to `FILES` in `scripts/sw.template.js` so they work offline.
 
-The provider interface is `lib/sync/provider.ts`. `lib/sync/supabase.ts` is the only file that imports Supabase. To use another service, write another object with the same nine methods and return it from `getProvider()`.
+### The Handbook
 
-### PIN lock
+The Handbook screen is built from the lessons, grouped by unit, so the app, the PDF and the printed copy cannot disagree. `npm run handbook:pdf` prints `/handbook` from the built site with Chrome and writes `saath-handbook-en.pdf`, `-hi.pdf` and `-mr.pdf` into `public/handbook/` and `out/handbook/`. Without Chrome, the "Print or save as PDF" button in the app gives the same pages.
 
-An optional four-digit PIN for shared phones. It is off by default, offered on the sign-in sheet, and also reachable from the profile sheet. The PIN is stored as a salted PBKDF2 hash in the browser. It keeps a casual borrower of the phone out of the app. It does not encrypt local data. A forgotten PIN cannot be recovered: "Start fresh on this phone" clears local data, and a signed-in user gets their progress back by signing in again.
+The Skyward Handbook handed out in schools was not available as text when this was built. If its wording differs from the lessons, edit the lessons so both come from one place.
 
-### Account deletion
+### Adding a language
 
-Profile > Delete my account calls `saath_delete_account`, which removes the user's vault row and their auth user. Data on the phone stays until the browser's site data is cleared.
-
-## Privacy
-
-- No analytics, no ads, no tracking, no data selling.
-- Documents, images and OCR text are processed in memory on the device and are never sent to or stored on a server. (The optional AI reading layer below is the one exception, it is off by default, and it masks identity numbers first.)
-- The in-app privacy page at `/privacy` says all of this in six plain sentences, in each language.
+Saath supports exactly English, Hindi and Marathi. To add another: add the code to `LANGS` in `lib/catalog.ts`; copy `locales/en.json` and add an entry to `locales/gate.json`; add the language to every record in `content/`; add a speech locale in `lib/speech.ts`, a number locale in `lib/format.ts` and an OCR code in `lib/ocr.ts`; add the name in `components/profile-sheet.tsx`; add the locale file and OCR data to `scripts/sw.template.js` and `scripts/sync-static.mjs`; and add a font if the script is not Latin or Devanagari.
 
 ## Design system
 
-One visual language for every screen: navy so deep it is almost black is the world, white is the text, the reward and the one primary action. No section has its own theme, and there is one theme only. The app is navy on every phone, whatever the system setting.
+Saath is meant to read like the same publication as theskywardproject.com.
 
-All tokens live in one block at the top of `app/globals.css`. Components use token names only, never raw values. Tailwind supplies the base reset and nothing else.
+- Skyward navy `#011B3D` is the canvas, with lighter navy surfaces layered on it. Text is cream `#F4EFE3`. Gold `#F2B544` is kept for the one primary action on a screen and for rewards.
+- A light theme follows the system: warm paper `#F7F3EA`, navy ink, and a deeper gold `#B8791A` with navy text on buttons.
+- The typefaces are the site's: Playfair Display for headings and hero numbers, Newsreader for body text, and Noto Sans Devanagari for Hindi and Marathi. `next/font` serves them from the site.
+- Eyebrow labels (`.masthead`, `.kicker`, `.unit-badge`) are small capitals with wide spacing in English, and plain in Devanagari. Sections are separated by a thin double rule (`.rule-double`). Home carries the masthead "Saath · from The Skyward Project", and the Skyward seal is the logo mark.
+- All tokens are in one block at the top of `app/globals.css`. Components use token names only.
+- One primary action per screen. The bottom bar is fixed with safe-area padding and the page reserves space for it. Sheets render through a portal.
+- Motion uses only transform and opacity and collapses under `prefers-reduced-motion`. Confetti appears only when a path is finished.
+- Illustrations in `components/illustrations.tsx` are line drawings in navy and gold with no faces.
 
-| Group | Tokens |
-| --- | --- |
-| Colour | `--bg` #010713, `--surface-1/2/3` #06122A #0B1C3D #142A55, `--line` and `--line-strong` hairlines, `--text` #FFFFFF, `--text-muted` #C3CCDC, `--text-faint` #97A3BA, `--accent` #FFFFFF with `--accent-ink` #011B3D on top of it |
-| Meaning | `--sev-high` red, `--sev-medium` amber, `--sev-low` blue, `--ok` green, each with a `-soft` fill |
-| Space | `--s-1` to `--s-8` on an 8px grid, `--gutter` 16px |
-| Radius | 12, 16, 24, full |
-| Shadow | `--shadow-1` resting card, `--shadow-2` hero card, `--shadow-3` sheet |
-| Type | `--fs-label`, `--fs-body` (20px in English, 17px in Devanagari), `--fs-lg`, `--fs-h2`, `--fs-h1`, `--fs-hero` |
-| Motion | 120, 220 and 360 ms. `--ease-out` for entrances, `--ease-spring` for rewards |
-
-Rules that keep it consistent:
-
-- Fewer things per screen. Detail lives one tap away, in a sheet or a row that opens. If something is not needed to decide what to do next, it does not sit on the screen. Empty sections are not shown. The credit line appears on Home, Money Lab, the guide to the app and the privacy page only.
-
-- White fill is for the single primary action on a screen and for finished things (checks, rings, the streak). Everything else is a quiet outlined or text button.
-- Every text and background pair meets WCAG AA.
-- Depth comes from layered surfaces, hairlines and soft shadows. The canvas has a faint top wash and a fine grain tile (one inline SVG, drawn once). A soft white glow sits behind the greeting, hero cards and the flame.
-- EB Garamond for everything in English: headings, body, buttons and numbers, with lining figures. Noto Serif Devanagari for Hindi and Marathi. Both are served from the site by `next/font`. Garamond is small for its point size, so English body text is 20px. Devanagari steps down to 17px with a line height of 1.85. Eyebrow labels (`.kicker`) are spaced capitals in English and plain in Devanagari.
-- Animation moves only `transform` and `opacity`. Screens fade and rise, sections follow with a short stagger (`.rise`), checks draw themselves (`.draw`), options settle or nudge, the Listen pill shows a waveform while playing, and confetti appears only when a path is finished. Under `prefers-reduced-motion` all of it collapses to near-instant changes and the confetti is hidden.
-- Tap targets are at least 48px. Focus rings are white with a soft halo.
-- Icons come from Lucide only, at one stroke weight. Illustrations are in `components/illustrations.tsx`: seven line drawings in one style with soft fills (first launch, scan, read paper, empty tracker, finished path, streak, offline).
-- The bottom tab bar is fixed to the viewport with safe-area padding, a blurred translucent background and a white mark that slides to the open tab. The page has bottom padding equal to the bar. Bottom sheets render through a portal so an animating parent can never move them. At 900px and wider the tabs become a left rail and the content stays in a centred column.
-- Empty, error and offline states use `.state`: a small illustration or icon, one line of copy and one action.
-
-## Adding content
-
-### A language
-
-Saath supports exactly English, Hindi and Marathi. To add another:
-
-1. Copy `locales/en.json` and write every value in that language. Add an entry to `locales/gate.json`.
-2. Add the code to `LANGS` in `lib/catalog.ts` and to `LANG_NAMES` in `components/profile-sheet.tsx`.
-3. Add a speech locale in `lib/speech.ts`, a number locale in `lib/format.ts`, and an OCR code in `lib/ocr.ts`.
-4. Add the language as a fourth item in every array in `scripts/content/*.mjs` and to `LANGS` in `scripts/content/build.mjs`, and add it to each record in `content/cases.json`, `content/daily-questions.json`, `content/glossary.json`, and to the title, summary and body of each lesson in `content/guide.json`.
-5. Add the locale file to `FILES` in `scripts/sw.template.js`, and the Tesseract data code to `langs` in `scripts/sync-static.mjs`.
-6. If the script is not Latin or Devanagari, add a font in `app/layout.tsx` and to `--font-body` in `app/globals.css`.
-
-### A lesson
-
-1. Add the id to `LESSON_IDS` in `lib/catalog.ts`.
-2. Add the title, summary and intro to `content/guide.json` in all three languages. Wrap a glossary id as `[[emi]]` to make the word tappable.
-3. Add the depth to `scripts/content/lessons-a.mjs` or `lessons-b.mjs`: a category, an icon name from `ICONS` in `components/ui.tsx`, three to five points, one example, a "Try it" action with a link (`tracker`, `scan:personal-loan`, `scan:gold-loan`, `scan:scheme-form`, `case:<id>` or `null`), and a one-question check.
-4. Run `npm run content`. Update the lesson count in `tests/content.test.ts`.
-
-### A path
-
-1. Add the id to `PATH_IDS` in `lib/catalog.ts`.
-2. Add the path to `scripts/content/paths.mjs`. A step is `["L", lessonId]`, `["A", title, body, link]` or `["C", title, check]`. Use five to seven steps, with at least one action and one check. Write the milestone line as "You can now ...".
-3. Run `npm run content`.
-
-`npm run content` rebuilds `content/guide.json` and `content/paths.json`, then syncs everything into `public/` and rewrites the service worker's page list.
-
-### Other content
-
-- `content/daily-questions.json`: one question a day, 60 in all.
-- `content/cases.json`: one case a week, 12 in all. Link a case to a path through `cases` in `scripts/content/paths.mjs`.
-- `content/glossary.json`: 60 shared definitions used by lessons and scan results.
+Two things from earlier versions do not follow the "no faces" rule and were kept because they are existing features: the Leo practice companion (a lion) and the people in the True stories scenes.
 
 ## Offline
 
-`scripts/sw.template.js` becomes `public/sw.js` at sync time with the full list of pages. On install it saves every page, locale, content file and sample. Fonts, built scripts, the OCR engine and its language data are saved the first time they are fetched and served from the cache after that. Everything else is fetched fresh when there is a connection and served from the cache when there is not.
-
-## On-device OCR
-
-Reading a photo happens in the browser with Tesseract.js. English is always loaded. Hindi or Marathi is loaded with it to match the chosen language. Tesseract is only downloaded when a photo is scanned, so Home, Money Lab and Guide stay light.
-
-Known limits: blurry, dark, skewed or stamped photos misread. Handwriting and very small print are often missed. Unusual layouts stay "unclear" and Saath will not invent a number. Sample documents skip the camera but go through confirm, result, listen, share and add-to-tracker like any other paper.
-
-## Optional AI reading layer
-
-Off by default, and not available on a static host. Set `GEMINI_API_KEY` (or `GROQ_API_KEY`) and `NEXT_PUBLIC_SAATH_AI=1` on a server build. Identity numbers are masked first, the call times out after 8 seconds, and any failure falls back to the on-device reader. The model never does arithmetic.
+`scripts/sw.template.js` becomes `public/sw.js` at sync time with the full list of pages. On install it saves every page, the scripts, styles and fonts each page names, every locale and content file, and the samples. The OCR engine and its language data are saved the first time they are used.
 
 ## Deploy
 
-GitHub Pages:
+GitHub Pages serves the `main` branch of `verushkapatel/saath`, which holds the built site. The source is on other branches.
 
 ```bash
 NEXT_PUBLIC_BASE_PATH=/saath npm run build:pages
+NEXT_PUBLIC_BASE_PATH=/saath npm run handbook:pdf
 ```
 
-Upload the contents of `out/` to the Pages branch. Add the two Supabase variables to the same command to switch sign-in on.
-
-Vercel: import the repo. The build command is `npm run build`. Add environment variables in Project Settings.
+Then replace the contents of `main` with `out/`.
 
 ## Defaults chosen in this build
 
-Where the brief left something open, this is what was chosen.
-
-- Accounts are on-device (see Accounts above). The introduction shows whenever nobody is logged in.
-- Kannada was removed from locales, content and OCR data. The amount parser still reads digits from neighbouring scripts.
-- Home's one primary action is "Scan a document". Scan's is the camera. The result's is "Listen to all of it". Money Lab's is "Log money".
-- Spending is shown as horizontal bars in one hue, sorted and labelled with rupees and percent, instead of a donut. Bars stay readable with seven categories on a small screen and do not depend on telling colours apart.
-- Tracked loans do not sync, because they are built from documents.
-- The synced goal keeps the phone's value when it has one. Entries merge by id. Progress merges as a union, so nothing finished on either phone is lost.
-- The success chime is two soft notes through Web Audio. It follows the media volume and the iOS silent switch, and is skipped under reduced motion. Haptics use `navigator.vibrate` where it exists.
-- Marathi Listen falls back to a Hindi voice when the phone has no Marathi voice, since both read Devanagari. If neither exists, a short message says so and the text stays on screen.
-- Backup export and import, and CSV export, moved from Money Lab to the profile sheet.
-- Devanagari headings use Noto Sans Devanagari at weight 600 instead of a serif, to keep font downloads small.
-- Progress keeps the last 400 active days and the last 21 days of task detail.
+- The name-and-password account was replaced by a guest profile with an optional nickname, school code, grade and PIN. Anyone who used the earlier build keeps their data.
+- Supabase sync and the optional cloud AI reading layer were removed, so that nothing a minor does can leave the device except the opt-in cohort numbers.
+- Kannada was removed from locales, content, fonts, OCR data and tests.
+- The long landing page was replaced by one welcome screen. "How Saath works" in the profile is six lines.
+- The bottom bar has five items: Home, Learn, Drills, Scan, Money Lab.
+- Home's one gold action is the FinLit Check until it is taken, then the current path.
+- The check has no "retake" button. It appears twice: at the start, and after the first finished path.
+- Sharing sends what already exists once when it is switched on, then one event per lesson or path finished. Leaving or changing school switches sharing off again.
+- Content is edited directly in `content/*.json`. The earlier generator scripts were removed.
+- The daily question bank is tagged by topic, and each topic is mapped to a unit in `TOPIC_UNIT`.
+- Voice search moved from Home to the Learn search box.

@@ -13,13 +13,13 @@
     "lint": "next lint",
     "test": "vitest run",
     "sync": "node scripts/sync-static.mjs",
-    "content": "node scripts/content/build.mjs && node scripts/sync-static.mjs",
+    "handbook:pdf": "node scripts/handbook-pdf.mjs",
     "postinstall": "node scripts/sync-static.mjs"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.109.0",
     "lucide-react": "^0.453.0",
     "next": "^14.2.15",
+    "qrcode-generator": "^1.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tesseract.js": "^5.1.1",

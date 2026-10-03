@@ -12,6 +12,7 @@ import { useApp } from "./app-state";
 import { PathCard } from "./home-screen";
 import { ArtPath } from "./illustrations";
 import { useI18n } from "./providers";
+import { UnitBadge } from "./unit-badge";
 import { CheckCard, ContentIcon, ListenButton, PageSkeleton, Sheet } from "./ui";
 
 export function PathsScreen() {
@@ -36,6 +37,7 @@ function linkLabel(link: string | null, t: (key: string) => string): string {
   if (!link) return "";
   if (link === "tracker") return t("path.openTracker");
   if (link.startsWith("case:")) return t("path.openCase");
+  if (link.startsWith("drill:")) return t(`drills.${link.slice(6)}.title`);
   return t("path.openScan");
 }
 
@@ -180,7 +182,7 @@ export function PathScreen({ id }: { id: string }) {
     <div className="stack">
       <Link href="/paths" className="link"><ChevronLeft aria-hidden size={18} />{t("paths.title")}</Link>
       <div className="stack-sm">
-        <span className="item-icon"><ContentIcon name={path.icon} /></span>
+        <UnitBadge unit={path.unit} />
         <h1>{path.title[code]}</h1>
         <p className="lead">{path.summary[code]}</p>
         <div className="stack-xs">
