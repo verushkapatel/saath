@@ -4,6 +4,8 @@ import { Providers } from "@/components/providers";
 import { RegisterSW, Shell } from "@/components/shell";
 import { asset } from "@/lib/config";
 import "./globals.css";
+import "./leo.css";
+import "./simulations.css";
 
 const display = Fraunces({
   subsets: ["latin"],

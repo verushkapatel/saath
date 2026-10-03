@@ -2,14 +2,17 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { Check, Mic, ScanLine } from "lucide-react";
+import { Check, ChevronRight, Mic, ScanLine } from "lucide-react";
 import { LANGS } from "@/lib/catalog";
 import { dayOfYear } from "@/lib/dates";
 import { loadJson, type DailyQuestion, type GlossaryTerm, type Lesson, type MiniCheck, type Path } from "@/lib/content-types";
 import { pathProgress } from "@/lib/progress";
+import { pickTasks } from "@/lib/tasks";
 import { canHear, hear, tap } from "@/lib/speech";
 import { useApp } from "./app-state";
+import { CaseSimulations } from "./case-sim";
 import { Flame } from "./illustrations";
+import { LeoCompanion, useContinuePath } from "./leo-companion";
 import { useI18n } from "./providers";
 import { CheckCard, ContentIcon, ListenButton, PageSkeleton, Ring, Skeleton } from "./ui";
 
@@ -23,13 +26,15 @@ function greetingKey(date = new Date()) {
 export function HomeScreen() {
   const { t, code, setLang } = useI18n();
   const app = useApp();
-  const { progress, today, streak, lessons } = app;
+  const { progress, today, streak, lessons, paths } = app;
+  const continueTo = useContinuePath();
   const [questions, setQuestions] = useState<DailyQuestion[] | null>(null);
   const [glossary, setGlossary] = useState<GlossaryTerm[]>([]);
   const [failed, setFailed] = useState(false);
   const [heard, setHeard] = useState("");
   const [answer, setAnswer] = useState("");
   const [listening, setListening] = useState(false);
+  const [showExtras, setShowExtras] = useState(false);
 
   useEffect(() => {
     loadJson<DailyQuestion[]>("/content/daily-questions.json").then(setQuestions).catch(() => setFailed(true));
@@ -42,6 +47,11 @@ export function HomeScreen() {
     return { question: question.prompt, options: question.options, answer: question.answer, why: question.why };
   }, [questions]);
 
+  const tasks = useMemo(
+    () => (app.ready ? pickTasks(today, progress, lessons, paths) : []),
+    [app.ready, today, progress, lessons, paths],
+  );
+  const extraTasks = tasks.filter((task) => task.id !== "question");
   const picked = today in progress.answers ? progress.answers[today] : null;
   const streakLabel = streak.count ? t("home.streak", { count: streak.count }) : t("home.streakZero");
   const lessonCount = progress.lessons.length;
@@ -57,14 +67,17 @@ export function HomeScreen() {
       const spoken = await hear(code);
       setHeard(spoken);
       const needle = spoken.toLowerCase();
-      const term = glossary.find((item) => item.term[code].toLowerCase() === needle || needle.includes(item.term[code].toLowerCase()));
+      const term = glossary.find(
+        (item) => item.term[code].toLowerCase() === needle || needle.includes(item.term[code].toLowerCase()),
+      );
       if (term) {
         setAnswer(term.definition[code]);
         return;
       }
-      const lesson = lessons.find((item: Lesson) =>
-        item.title[code].toLowerCase().includes(needle) ||
-        needle.split(/\s+/).some((word) => word.length > 3 && item.title[code].toLowerCase().includes(word)),
+      const lesson = lessons.find(
+        (item: Lesson) =>
+          item.title[code].toLowerCase().includes(needle) ||
+          needle.split(/\s+/).some((word) => word.length > 3 && item.title[code].toLowerCase().includes(word)),
       );
       if (lesson) {
         setAnswer(lesson.summary[code]);
@@ -98,19 +111,40 @@ export function HomeScreen() {
               className="chip"
               lang={lang}
               aria-pressed={code === lang}
-              onClick={() => { tap(); setLang(lang); }}
+              onClick={() => {
+                tap();
+                setLang(lang);
+              }}
             >
               {t(`lang.${lang}`)}
             </button>
           ))}
         </div>
-        <Link href="/scan" className="btn btn-primary" onClick={tap}>
-          <ScanLine aria-hidden size={20} />
-          {t("home.scan")}
-        </Link>
+
+        {continueTo ? (
+          <Link href={`/paths/${continueTo.id}`} className="btn btn-primary saath-primary-continue" onClick={tap}>
+            {t("practice.continuePath", { path: continueTo.title[code] })}
+            <ChevronRight aria-hidden size={20} />
+          </Link>
+        ) : (
+          <Link href="/scan" className="btn btn-primary" onClick={tap}>
+            <ScanLine aria-hidden size={20} />
+            {t("home.scan")}
+          </Link>
+        )}
+
+        {continueTo && (
+          <Link href="/scan" className="btn btn-secondary" onClick={tap}>
+            <ScanLine aria-hidden size={20} />
+            {t("home.scan")}
+          </Link>
+        )}
       </div>
 
-      <section className="card tight" aria-labelledby="today-h">
+      <LeoCompanion />
+      <CaseSimulations />
+
+      <section className="card tight" aria-labelledby="today-h" id="question">
         <div className="stack">
           <h2 id="today-h">{t("home.today")}</h2>
           {!check && !failed && <Skeleton height={180} />}
@@ -124,8 +158,44 @@ export function HomeScreen() {
         </div>
       </section>
 
+      {extraTasks.length > 0 && (
+        <div className="stack-sm">
+          <button
+            type="button"
+            className="saath-task-toggle"
+            onClick={() => {
+              tap();
+              setShowExtras((open) => !open);
+            }}
+            aria-expanded={showExtras}
+          >
+            {showExtras ? t("practice.showLess") : t("practice.showMore", { count: extraTasks.length })}
+          </button>
+          {showExtras && (
+            <ul className="stack-sm list-plain">
+              {extraTasks.map((task) => (
+                <li key={task.id}>
+                  <Link href={task.href} className="card tight" onClick={tap}>
+                    <span className="row-between">
+                      <span>
+                        {task.id === "lesson" && task.lessonId
+                          ? lessons.find((lesson) => lesson.id === task.lessonId)?.title[code] ?? t(`task.${task.id}`)
+                          : t(`task.${task.id}`)}
+                      </span>
+                      <span className="faint">{task.done ? t("task.done") : t("task.todo")}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+
       <section className="card tight" aria-labelledby="progress-h">
-        <h2 id="progress-h" className="visually-hidden">{t("home.progress")}</h2>
+        <h2 id="progress-h" className="visually-hidden">
+          {t("home.progress")}
+        </h2>
         <p className="muted">{t("home.progressLine", { streak: streak.count, lessons: lessonCount, cases: caseCount })}</p>
       </section>
 

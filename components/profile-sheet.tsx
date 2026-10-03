@@ -16,7 +16,7 @@ import { Sheet } from "./ui";
 
 export type ProfileView = "main" | "signin" | "secret" | "pin" | "delete";
 
-const LANG_NAMES = { en: "English", hi: "हिन्दी", mr: "मराठी" } as const;
+const LANG_NAMES = { en: "English", hi: "हिन्दी", mr: "मराठी", kn: "ಕನ್ನಡ" } as const;
 
 function download(name: string, type: string, body: string) {
   const url = URL.createObjectURL(new Blob([body], { type }));

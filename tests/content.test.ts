@@ -24,7 +24,7 @@ describe("locales", () => {
       return [prefix];
     };
     const english = new Set(leaves(readJson("locales/en.json")));
-    for (const lang of ["hi", "mr"]) {
+    for (const lang of ["hi", "mr", "kn"]) {
       const keys = new Set(leaves(readJson(`locales/${lang}.json`)));
       expect([...english].filter((key) => !keys.has(key))).toEqual([]);
       expect([...keys].filter((key) => !english.has(key))).toEqual([]);
@@ -61,7 +61,7 @@ describe("content", () => {
         expect(lesson.tryIt.text[lang].length).toBeGreaterThan(10);
         expect(lesson.check.question[lang].length).toBeGreaterThan(5);
         expect(lesson.check.why[lang].length).toBeGreaterThan(5);
-        expect(Object.keys(lesson.title).sort()).toEqual(["en", "hi", "mr"]);
+        expect(Object.keys(lesson.title).sort()).toEqual(["en", "hi", "kn", "mr"]);
       }
       expect(CATEGORIES).toContain(lesson.category);
       expect(lesson.check.options).toHaveLength(3);
@@ -89,7 +89,6 @@ describe("content", () => {
     expect(worker).toContain("/content/glossary.json");
     expect(worker).toContain("/content/paths.json");
     for (const id of PATH_IDS) expect(worker).toContain(`/paths/${id}`);
-    expect(worker).not.toContain("kn.json");
   });
 });
 

@@ -1,0 +1,471 @@
+.saath-practice {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+  border-color: var(--line-strong);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-1);
+}
+
+.saath-companion {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-4);
+  background: var(--surface-1);
+}
+
+.saath-companion-art {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: #0b1c3d;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+}
+
+.saath-companion-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.saath-companion-orbit {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 1;
+  stroke-dasharray: 1 4;
+}
+
+.saath-companion-shadow {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.saath-lion-mane-detail,
+.saath-lion-brow,
+.saath-lion-mouth,
+.saath-lion-whiskers,
+.saath-lion-whisker-dots,
+.saath-lion-collar {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.saath-lion-mane {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform var(--dur-3) var(--ease-out);
+}
+
+.saath-companion-svg[data-stage="1"] .saath-lion-mane {
+  transform: scale(1.025);
+}
+
+.saath-companion-svg[data-stage="2"] .saath-lion-mane {
+  transform: scale(1.05);
+}
+
+.saath-companion-svg[data-stage="3"] .saath-lion-mane {
+  transform: scale(1.075);
+}
+
+.saath-lion-mane-shape {
+  fill: #e8a73c;
+  stroke: #ffdc91;
+  stroke-width: 1.25;
+}
+
+.saath-lion-mane-detail {
+  stroke: #fff0ca;
+  stroke-width: 1.4;
+  opacity: 0.38;
+}
+
+.saath-lion-ear {
+  fill: #ffedcf;
+  stroke: #f5f7fb;
+  stroke-width: 1.2;
+}
+
+.saath-lion-ear-inner {
+  fill: #cf7e27;
+}
+
+.saath-lion-face {
+  fill: #fff1d8;
+  stroke: #f5f7fb;
+  stroke-width: 1.2;
+}
+
+.saath-lion-brow,
+.saath-lion-whiskers {
+  stroke: #b86d2c;
+  stroke-width: 1.6;
+}
+
+.saath-lion-eye {
+  fill: #06122a;
+}
+
+.saath-lion-muzzle {
+  fill: #f5f7fb;
+}
+
+.saath-lion-nose,
+.saath-lion-compass-mark {
+  fill: var(--gold-soft);
+}
+
+.saath-lion-mouth {
+  stroke: #06122a;
+  stroke-width: 1.5;
+}
+
+.saath-lion-whisker-dots {
+  stroke: #06122a;
+  stroke-width: 2;
+}
+
+.saath-evolve-one,
+.saath-evolve-two,
+.saath-evolve-three {
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  transform: translateY(3px) scale(0.94);
+  transition: opacity var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+
+.saath-companion-svg[data-stage="1"] .saath-evolve-one,
+.saath-companion-svg[data-stage="2"] .saath-evolve-one,
+.saath-companion-svg[data-stage="2"] .saath-evolve-two,
+.saath-companion-svg[data-stage="3"] .saath-evolve-one,
+.saath-companion-svg[data-stage="3"] .saath-evolve-two,
+.saath-companion-svg[data-stage="3"] .saath-evolve-three {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.saath-lion-collar {
+  stroke: #f5f7fb;
+  stroke-width: 2.5;
+}
+
+.saath-lion-glasses path {
+  fill: none;
+  stroke: #07142d;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.saath-lion-suit {
+  fill: #14284b;
+  stroke: #edf2f9;
+  stroke-width: 1.1;
+}
+
+.saath-lion-lapel {
+  fill: #203d6c;
+  stroke: #dce6f3;
+  stroke-linejoin: round;
+  stroke-width: 1;
+}
+
+.saath-lion-tie {
+  fill: var(--gold-soft);
+  stroke: #fff0ca;
+  stroke-linejoin: round;
+  stroke-width: 0.8;
+}
+
+.saath-lion-compass {
+  fill: #0b1c3d;
+  stroke: #eef2f8;
+  stroke-width: 1.2;
+}
+
+.saath-companion-copy {
+  min-width: 0;
+}
+
+.saath-companion-eyebrow {
+  margin: 0 0 4px;
+  color: var(--text-faint);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.saath-companion-head,
+.saath-practice-progress-head,
+.saath-badge-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+}
+
+.saath-practice-title {
+  min-width: 0;
+  margin: 0;
+  font-size: var(--fs-h2);
+  line-height: 1.05;
+}
+
+.saath-practice-level {
+  flex: none;
+  padding: 3px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-full);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.saath-companion-stage {
+  margin: 8px 0 1px;
+  color: var(--text);
+  font-size: var(--fs-label);
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.saath-companion-hint {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.saath-practice-progress {
+  padding: 14px var(--s-4) var(--s-4);
+  border-top: 1px solid var(--line);
+}
+
+.saath-practice-points,
+.saath-practice-next {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.saath-practice-points {
+  color: var(--text);
+  font-size: var(--fs-label);
+  font-weight: 650;
+}
+
+.saath-practice-next {
+  color: var(--text-faint);
+  font-size: 0.88rem;
+  text-align: end;
+}
+
+.saath-practice-meter {
+  height: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: var(--r-full);
+  background: var(--surface-3);
+}
+
+.saath-practice-fill {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width var(--dur-3) var(--ease-out);
+}
+
+.saath-badge-details {
+  margin: 0 var(--s-4);
+  border-top: 1px solid var(--line);
+}
+
+.saath-badge-details summary {
+  min-height: var(--tap);
+  cursor: pointer;
+  list-style: none;
+  font-size: var(--fs-label);
+  font-weight: 600;
+}
+
+.saath-badge-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.saath-badge-details summary::after {
+  content: "+";
+  flex: none;
+  color: var(--text-faint);
+}
+
+.saath-badge-details[open] summary::after {
+  content: "−";
+}
+
+.saath-badge-title {
+  min-width: 0;
+}
+
+.saath-badge-count {
+  margin-inline-start: auto;
+  color: var(--text-faint);
+  font-size: 0.88rem;
+}
+
+.saath-badges {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-2);
+  padding: 0 0 var(--s-4);
+}
+
+.saath-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-width: 0;
+  padding: var(--s-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.saath-badge.is-earned {
+  border-color: var(--line-strong);
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+.saath-badge.is-locked {
+  opacity: 0.68;
+}
+
+.saath-badge-mark {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-full);
+  color: var(--text-faint);
+  font-weight: 700;
+}
+
+.is-earned .saath-badge-mark {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.saath-badge-name {
+  overflow-wrap: anywhere;
+}
+
+.saath-practice-note {
+  margin: 0;
+  padding: 0 var(--s-4) var(--s-4);
+  color: var(--text-faint);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.saath-task-toggle {
+  display: block;
+  width: 100%;
+  min-height: var(--tap);
+  margin-top: var(--s-1);
+  color: var(--text-muted);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-align: start;
+}
+
+.saath-task-toggle:hover,
+.saath-task-toggle:focus-visible {
+  color: var(--text);
+}
+
+.saath-task-toggle:focus-visible,
+.saath-badge-details summary:focus-visible {
+  border-radius: var(--r-sm);
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.list[data-saath-collapsed="true"] > li:not([data-saath-primary="true"]) {
+  display: none;
+}
+
+.greeting .saath-primary-continue > svg {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .saath-companion {
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: var(--s-3);
+    padding: var(--s-3);
+  }
+
+  .saath-companion-art {
+    width: 76px;
+  }
+
+  .saath-practice-progress {
+    padding-inline: var(--s-3);
+  }
+
+  .saath-badge-details {
+    margin-inline: var(--s-3);
+  }
+
+  .saath-practice-note {
+    padding-inline: var(--s-3);
+  }
+
+  .saath-badges {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .saath-practice-fill,
+  .saath-lion-mane,
+  .saath-evolve-one,
+  .saath-evolve-two,
+  .saath-evolve-three {
+    transition: none;
+  }
+}
+
+.list-plain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.saath-primary-continue {
+  justify-content: space-between;
+}
+
+@media (prefers-color-scheme: light) {
+  .saath-companion-art {
+    background: #011b3d;
+  }
+}
