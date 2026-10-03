@@ -45,7 +45,7 @@ export type AiAnswer = {
   /** Guides, forms or story episodes the answer was built from. */
   sources: AiSource[];
   /** Which provider produced the answer. */
-  via: "device" | "online";
+  via: "device" | "local" | "online";
   /** False when Saath had nothing checked to answer from and said so. */
   grounded: boolean;
 };

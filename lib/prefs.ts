@@ -14,6 +14,10 @@ export type Prefs = {
   aiOnline: boolean;
   /** Keep the conversation between visits. */
   aiMemory: boolean;
+  /** Answer with the model that runs in this browser, once it is downloaded. Nothing leaves the device. */
+  aiLocal: boolean;
+  /** Which local model was chosen. */
+  aiModel: string;
 };
 
 export const DEFAULT_PREFS: Prefs = {
@@ -26,6 +30,8 @@ export const DEFAULT_PREFS: Prefs = {
   ai: true,
   aiOnline: false,
   aiMemory: true,
+  aiLocal: false,
+  aiModel: "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
 };
 
 /** The device-wide copy, read by the tiny script in the page head so the right theme shows before the app loads. */
@@ -56,6 +62,8 @@ export function normalizePrefs(raw: unknown): Prefs {
     ai: flag(value.ai, DEFAULT_PREFS.ai),
     aiOnline: flag(value.aiOnline, DEFAULT_PREFS.aiOnline),
     aiMemory: flag(value.aiMemory, DEFAULT_PREFS.aiMemory),
+    aiLocal: flag(value.aiLocal, DEFAULT_PREFS.aiLocal),
+    aiModel: typeof value.aiModel === "string" && /^[\w.-]{3,80}$/.test(value.aiModel) ? value.aiModel : DEFAULT_PREFS.aiModel,
   };
 }
 

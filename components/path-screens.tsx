@@ -9,11 +9,32 @@ import { pathProgress } from "@/lib/progress";
 import { milestoneImage } from "@/lib/share-image";
 import { shareText, tap } from "@/lib/speech";
 import { useApp } from "./app-state";
-import { PathCard } from "./home-screen";
 import { ArtPath } from "./illustrations";
 import { useI18n } from "./providers";
 import { UnitBadge } from "./unit-badge";
-import { CheckCard, ContentIcon, ListenButton, PageSkeleton, Sheet } from "./ui";
+import { CheckCard, ContentIcon, ListenButton, PageSkeleton, Ring, Sheet } from "./ui";
+
+/** One row for a path: its unit, its name, how far along it is, and a slim ring. */
+export function PathCard({ path }: { path: Path }) {
+  const { t, code } = useI18n();
+  const { progress } = useApp();
+  const state = pathProgress(path, progress);
+  const label = state.complete ? t("path.complete") : t("path.steps", { done: state.done, total: state.total });
+  return (
+    <Link href={`/paths/${path.id}`} className="card tight" onClick={tap}>
+      <span className="row-between">
+        <span className="stack-xs">
+          <UnitBadge unit={path.unit} />
+          <h3>{path.title[code]}</h3>
+          <span className="faint">{label}</span>
+        </span>
+        <Ring value={state.ratio} label={label} size={52} stroke={4}>
+          {state.complete ? <Check size={18} strokeWidth={3} /> : <ContentIcon name={path.icon} size={20} />}
+        </Ring>
+      </span>
+    </Link>
+  );
+}
 
 export function PathsScreen() {
   const { t } = useI18n();
