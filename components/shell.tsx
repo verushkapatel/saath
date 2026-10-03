@@ -2,15 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { BookOpen, Check, Home, ScanLine, Wallet } from "lucide-react";
+import { currentAccount, logOut, type Account } from "@/lib/account";
 import { asset } from "@/lib/config";
 import { LANGS, type Lang } from "@/lib/catalog";
 import { loadJson } from "@/lib/content-types";
+import { checkPin, clearPin, hasPin } from "@/lib/pin";
+import { eraseDevice, openDatabase } from "@/lib/storage";
 import { tap } from "@/lib/speech";
-import { AppStateProvider } from "./app-state";
+import { AppStateProvider, useApp } from "./app-state";
 import { ArtFirst } from "./illustrations";
+import { Welcome } from "./intro";
+import { NumPad } from "./numpad";
+import { ProfileSheet, type ProfileView } from "./profile-sheet";
 import { useI18n } from "./providers";
+import { SessionCtx, useSession } from "./session";
 import { Footer, PageSkeleton, SkywardMark } from "./ui";
 
 const TABS = [
@@ -92,9 +99,78 @@ function LanguageGate() {
   );
 }
 
+function PinLock({ onOpen }: { onOpen: () => void }) {
+  const { t } = useI18n();
+  const [digits, setDigits] = useState("");
+  const [wrong, setWrong] = useState(false);
+  const [confirmErase, setConfirmErase] = useState(false);
+
+  async function addDigit(digit: string) {
+    const next = (digits + digit).slice(0, 4);
+    setDigits(next);
+    setWrong(false);
+    if (next.length < 4) return;
+    if (await checkPin(next)) onOpen();
+    else {
+      setDigits("");
+      setWrong(true);
+    }
+  }
+
+  return (
+    <main className="page bare gate screen">
+      <div className="stack-lg">
+        <div className="stack-sm center">
+          <p className="brand-name">Saath</p>
+          <h1>{t("pin.title")}</h1>
+        </div>
+        <div className="pin-dots" role="status" aria-label={t("pin.dots", { count: digits.length })}>
+          {[0, 1, 2, 3].map((index) => (
+            <i key={index} className={index < digits.length ? "on" : undefined} />
+          ))}
+        </div>
+        {wrong && <p role="alert" className="note err center">{t("pin.wrong")}</p>}
+        <NumPad onDigit={(digit) => void addDigit(digit)} onDelete={() => setDigits((value) => value.slice(0, -1))} deleteLabel={t("pin.delete")} />
+        {confirmErase ? (
+          <div className="stack-sm">
+            <p className="note">{t("pin.forgotBody")}</p>
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={async () => {
+                tap();
+                await eraseDevice();
+                clearPin();
+                logOut();
+                window.location.reload();
+              }}
+            >
+              {t("pin.erase")}
+            </button>
+          </div>
+        ) : (
+          <button type="button" className="btn btn-ghost" onClick={() => setConfirmErase(true)}>
+            {t("pin.forgot")}
+          </button>
+        )}
+      </div>
+    </main>
+  );
+}
+
 function AppFrame({ children }: { children: React.ReactNode }) {
   const { t } = useI18n();
+  const { account } = useSession();
+  const { sync } = useApp();
   const pathname = usePathname();
+  const [profile, setProfile] = useState<ProfileView | null>(null);
+  const openProfile = useCallback((view: ProfileView = "main") => setProfile(view), []);
+
+  useEffect(() => {
+    if (sync.status === "needs-secret") setProfile((current) => current ?? "secret");
+  }, [sync.status]);
+
+  const name = account.name;
 
   return (
     <div className="with-rail">
@@ -104,6 +180,18 @@ function AppFrame({ children }: { children: React.ReactNode }) {
           <SkywardMark />
           <span className="brand-name">Saath</span>
         </Link>
+        <button
+          type="button"
+          className="profile-btn"
+          aria-label={`${name}. ${t("profile.open")}`}
+          title={name}
+          onClick={() => {
+            tap();
+            openProfile();
+          }}
+        >
+          <strong aria-hidden>{name.charAt(0).toUpperCase()}</strong>
+        </button>
       </header>
       <nav className="rail" aria-label={t("nav.label")}>
         <Link href="/" className="brand" aria-label="Saath">
@@ -138,21 +226,62 @@ function AppFrame({ children }: { children: React.ReactNode }) {
           );
         })}
       </nav>
+      {profile && <ProfileSheet initial={profile} onClose={() => setProfile(null)} />}
     </div>
   );
 }
 
 export function Shell({ children }: { children: React.ReactNode }) {
   const { lang, ready, copyReady } = useI18n();
+  const [pinLocked, setPinLocked] = useState<boolean | null>(null);
+  const [account, setAccount] = useState<Account | null>(null);
 
-  if (!ready) return <main className="page bare" />;
+  useEffect(() => {
+    setPinLocked(hasPin());
+    const active = currentAccount();
+    if (active) openDatabase(active.db);
+    setAccount(active);
+  }, []);
+
+  const session = useMemo(
+    () =>
+      account
+        ? {
+            account,
+            logOut: () => {
+              logOut();
+              setAccount(null);
+              window.scrollTo({ top: 0 });
+            },
+          }
+        : null,
+    [account],
+  );
+
+  if (!ready || pinLocked === null) return <main className="page bare" />;
   if (!lang) return <div className="no-rail"><LanguageGate /></div>;
   if (!copyReady) return <main className="page bare"><PageSkeleton /></main>;
+  if (pinLocked) return <div className="no-rail"><PinLock onOpen={() => setPinLocked(false)} /></div>;
+  if (!account || !session) {
+    return (
+      <div className="no-rail">
+        <Welcome
+          onAccount={(next) => {
+            openDatabase(next.db);
+            setAccount(next);
+            window.scrollTo({ top: 0 });
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
-    <AppStateProvider>
-      <AppFrame>{children}</AppFrame>
-    </AppStateProvider>
+    <SessionCtx.Provider value={session}>
+      <AppStateProvider key={account.id}>
+        <AppFrame>{children}</AppFrame>
+      </AppStateProvider>
+    </SessionCtx.Provider>
   );
 }
 

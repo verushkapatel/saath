@@ -14,6 +14,7 @@ import { CaseSimulations } from "./case-sim";
 import { Flame } from "./illustrations";
 import { LeoCompanion, useContinuePath } from "./leo-companion";
 import { useI18n } from "./providers";
+import { useSession } from "./session";
 import { CheckCard, ContentIcon, ListenButton, PageSkeleton, Ring, Skeleton } from "./ui";
 
 function greetingKey(date = new Date()) {
@@ -25,6 +26,7 @@ function greetingKey(date = new Date()) {
 
 export function HomeScreen() {
   const { t, code, setLang } = useI18n();
+  const { account } = useSession();
   const app = useApp();
   const { progress, today, streak, lessons, paths } = app;
   const continueTo = useContinuePath();
@@ -97,7 +99,10 @@ export function HomeScreen() {
     <div className="stack-lg rise">
       <div className="stack greeting">
         <div className="row-between">
-          <h1>{t(greetingKey())}</h1>
+          <h1>
+            {t(greetingKey())}
+            {account.name ? `, ${account.name}` : ""}
+          </h1>
           <span className="streak-chip" role="img" aria-label={streakLabel}>
             <Flame lit={streak.count > 0} />
             <span aria-hidden>{streak.count}</span>
