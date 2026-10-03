@@ -429,26 +429,7 @@
     "exportBackup": "Save a backup file",
     "importBackup": "Bring back a backup",
     "importDone": "Backup added to this phone.",
-    "privacy": "Privacy, in plain words",
-    "pinSet": "Lock Saath with a PIN",
-    "pinRemove": "Remove the PIN",
-    "erase": "Delete everything on this phone",
-    "eraseBody": "This removes your tracker, progress, FinLit Check results, nickname, school code and PIN from this phone. Nothing is kept anywhere else, so it cannot be brought back.",
-    "eraseCta": "Delete everything"
-  },
-  "pin": {
-    "title": "Enter your PIN",
-    "setTitle": "Choose a 4-digit PIN",
-    "again": "Type it once more",
-    "mismatch": "Those two did not match. Start again.",
-    "wrong": "That PIN is not right.",
-    "forgot": "Forgot the PIN?",
-    "forgotBody": "A forgotten PIN cannot be recovered, because Saath keeps nothing online. Resetting clears everything Saath saved on this phone.",
-    "erase": "Reset and clear this phone",
-    "on": "The PIN is on.",
-    "off": "The PIN is removed.",
-    "delete": "Delete the last digit",
-    "dots": "{count} of 4 digits entered"
+    "privacy": "Privacy, in plain words"
   },
   "task": {
     "question": "Answer today's question",
@@ -774,17 +755,17 @@
   "partners": {
     "title": "Privacy for teachers and partners",
     "h1": "What exists, and where",
-    "b1": "Saath has no accounts and no server of its own. Each student's nickname, optional school code and grade, tracker entries, lesson and path progress, drill results and FinLit Check results are stored in that phone's browser storage. A PIN, if set, is stored only as a salted hash.",
+    "b1": "Saath has no server of its own. Each person makes a username and password that exist only in that browser; the password is stored as a salted PBKDF2 hash, never as text. Each account's tracker entries, lesson, story and path progress, chat history (if kept), drill and FinLit Check results, and optional school code and grade are stored in that browser's storage, kept apart per account. This storage is not encrypted.",
     "h2": "What never leaves the phone",
-    "b2": "Scanned documents, photos, the text read from them, tracked loans, tracker entries, the nickname, the PIN and individual answers. Saath collects no real names, phone numbers, emails, locations or device identifiers, and has no analytics, advertising or behavioural profiling.",
+    "b2": "Photos of forms and receipts, the text read from them, tracker entries, tracked loans, usernames, passwords and individual answers. Saath collects no real names, phone numbers, emails, locations or device identifiers, and has no analytics, advertising or behavioural profiling. Saath AI answers on the device unless a hosted model is configured and the person switches it on; even then Money Lab data is never sent.",
     "h3": "Optional cohort numbers",
     "b3": "A student who has joined a school can switch on sharing. It is off by default. When it is on, and only if this deployment has an endpoint configured, Saath sends small anonymous events: the school code, the grade, the kind of event (joined, a FinLit Check before or after, a lesson or path finished) and, for a check, four unit scores. No name, nickname or device identifier is included.",
     "h4": "What a partner sees",
     "b4": "The partner view shows totals for a school and grade: students joined, lessons and paths finished, and the average change per unit between the first and second FinLit Check. It never shows an individual student, and any group smaller than ten is hidden.",
     "h5": "Deletion",
-    "b5": "“Delete everything on this phone” in the profile removes all local data. Anonymous events already sent cannot be traced back to a student, so they cannot be picked out and removed.",
+    "b5": "Settings has “Delete this account”, which removes the account and everything it saved in that browser, and “Delete my progress and entries”. Anonymous events already sent cannot be traced back to a student, so they cannot be picked out and removed.",
     "h6": "Before anything is added",
-    "b6": "Saath is used by minors. Before any cloud sync, account system or new data collection is added, a qualified person must review it against India's Digital Personal Data Protection Act, including the rules on children's data and verifiable parental consent."
+    "b6": "Saath is used by minors. Before any cloud sync, server-side accounts or new data collection is added, a qualified person must review it against India's Digital Personal Data Protection Act, including the rules on children's data and verifiable parental consent."
   },
   "impact": {
     "title": "Impact",

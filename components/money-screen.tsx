@@ -220,15 +220,15 @@ function ReceiptSheet({ onClose, onSaved }: { onClose: () => void; onSaved: () =
             {blurry && <p className="faint">{t("forms.tipBlur")}</p>}
             <label>
               <span className="label">{t("money.receipt.amount")}</span>
-              <input className="field text num" inputMode="decimal" value={amount} onChange={(event) => setAmount(event.target.value.replace(/[^\d.]/g, ""))} />
+              <input className="field text boxed num" inputMode="decimal" value={amount} onChange={(event) => setAmount(event.target.value.replace(/[^\d.]/g, ""))} />
             </label>
             <label>
               <span className="label">{t("money.receipt.date")}</span>
-              <input className="field text" type="date" value={date} max={todayISO()} onChange={(event) => setDate(event.target.value)} />
+              <input className="field text boxed" type="date" value={date} max={todayISO()} onChange={(event) => setDate(event.target.value)} />
             </label>
             <label>
               <span className="label">{t("money.note")}</span>
-              <input className="field text" value={note} maxLength={40} onChange={(event) => setNote(event.target.value)} />
+              <input className="field text boxed" value={note} maxLength={40} onChange={(event) => setNote(event.target.value)} />
             </label>
             <div className="stack-xs">
               <p className="label">{t("money.pick")}</p>
@@ -528,7 +528,7 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
             <AmountPad value={amount} onChange={setAmount} />
             <label>
               <span className="label">{t("money.note")}</span>
-              <input className="field text" value={note} maxLength={40} placeholder={t("money.notePlaceholder")} onChange={(event) => setNote(event.target.value)} />
+              <input className="field text boxed" value={note} maxLength={40} placeholder={t("money.notePlaceholder")} onChange={(event) => setNote(event.target.value)} />
             </label>
             <button type="button" className="btn btn-primary" disabled={!category || !value} onClick={saveEntry}>
               {value ? t("money.saveAmount", { amount: money(value) }) : t("common.save")}

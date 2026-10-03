@@ -730,6 +730,10 @@ a.card:active, button.card:active { transform: scale(0.985) translateY(-1px); bo
 .field:focus { outline: none; }
 .field::placeholder { color: var(--text-faint); font-weight: 400; }
 .field.text { font-size: var(--fs-body); font-weight: 500; }
+/* A field that stands on its own, without an icon wrapper. */
+.field.boxed { display: block; height: 52px; margin-top: var(--s-2); padding: 0 var(--s-4); border: 1px solid var(--line-strong); border-radius: var(--r-md); background: var(--surface-2); color: var(--text); }
+.field.boxed:focus { border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft); }
+.chat-input .field.boxed { margin-top: 0; }
 
 .clause {
   display: block;

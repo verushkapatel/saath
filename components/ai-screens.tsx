@@ -218,7 +218,7 @@ function Chat({ compact }: { compact?: boolean }) {
         <label className="visually-hidden" htmlFor={compact ? "ask-sheet-input" : "ask-page-input"}>{t("ai.placeholder")}</label>
         <input
           id={compact ? "ask-sheet-input" : "ask-page-input"}
-          className="field text"
+          className="field text boxed"
           value={draft}
           maxLength={500}
           autoComplete="off"

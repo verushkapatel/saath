@@ -270,6 +270,10 @@ export function EpisodeScreen({ id }: { id: string }) {
   const { journey, story, progress, streak } = app;
   const episode = journey?.episodes.find((item) => item.id === id) ?? null;
   const already = episode ? progress.journey[episode.id] : undefined;
+  // Whether this visit is a replay is fixed when the screen opens, so finishing does not turn it into one.
+  const replayRef = useRef<boolean | null>(null);
+  if (replayRef.current === null && episode && app.ready) replayRef.current = Boolean(progress.journey[episode.id]);
+  const replaying = replayRef.current === true;
   const [step, setStep] = useState<Step>("story");
   const [choice, setChoice] = useState<number | null>(null);
   const [drill, setDrill] = useState<(number | null)[]>([]);
@@ -368,7 +372,7 @@ export function EpisodeScreen({ id }: { id: string }) {
       <div className="stack-xs">
         <p className="kicker">{stage?.title[code]} · {t("journey.age", { age: episode.age })}</p>
         <h1>{episode.title[code]}</h1>
-        {already && <p className="faint">{t("journey.replayNote")}</p>}
+        {replaying && <p className="faint">{t("journey.replayNote")}</p>}
       </div>
 
       {step === "story" && (
@@ -421,7 +425,7 @@ export function EpisodeScreen({ id }: { id: string }) {
               </button>
             ))}
           </div>
-          {already && <p className="faint">{t("journey.firstChoice", { choice: episode.options[already.choice]?.text[code] ?? "" })}</p>}
+          {replaying && already && <p className="faint">{t("journey.firstChoice", { choice: episode.options[already.choice]?.text[code] ?? "" })}</p>}
           <button
             type="button"
             className="btn btn-primary"
@@ -507,7 +511,7 @@ export function EpisodeScreen({ id }: { id: string }) {
               <div className="stack-xs">
                 <p className="label">{t("rewards.title")}</p>
                 <ul className="cluster">
-                  {app.fresh.map((reward) => <li key={`${reward.kind}:${reward.id}`} className="chip" aria-pressed="true">{rewardName(reward, t)}</li>)}
+                  {app.fresh.map((reward) => <li key={`${reward.kind}:${reward.id}`}><span className="chip">{rewardName(reward, t)}</span></li>)}
                 </ul>
               </div>
             )}

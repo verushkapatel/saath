@@ -72,21 +72,25 @@ function LocalModelPanel() {
 
   useEffect(() => {
     let live = true;
-    webgpuReady().then((ok) => live && setGpu(ok));
-    Promise.all(LOCAL_MODELS.map(async (item) => [item.id, await isDownloaded(item.id)] as const)).then((list) => live && setHave(Object.fromEntries(list)));
+    // The model library is large. It is only loaded, and the model host only contacted, when this browser could run it.
+    webgpuReady().then((ok) => {
+      if (!live) return;
+      setGpu(ok);
+      if (ok) Promise.all(LOCAL_MODELS.map(async (item) => [item.id, await isDownloaded(item.id)] as const)).then((list) => live && setHave(Object.fromEntries(list)));
+    });
     return () => {
       live = false;
     };
   }, []);
 
   useEffect(() => {
-    if (sizes[model] !== undefined) return;
+    if (!gpu || sizes[model] !== undefined) return;
     let live = true;
     modelSizeBytes(model).then((size) => live && setSizes((current) => ({ ...current, [model]: size })));
     return () => {
       live = false;
     };
-  }, [model, sizes]);
+  }, [gpu, model, sizes]);
 
   async function get() {
     tap();
@@ -181,11 +185,11 @@ function PasswordForm({ id }: { id: string }) {
     <form className="stack-sm" onSubmit={submit}>
       <label>
         <span className="label">{t("settings.currentPassword")}</span>
-        <input className="field text" type="password" autoComplete="current-password" value={current} onChange={(event) => setCurrent(event.target.value)} />
+        <input className="field text boxed" type="password" autoComplete="current-password" value={current} onChange={(event) => setCurrent(event.target.value)} />
       </label>
       <label>
         <span className="label">{t("settings.newPassword")}</span>
-        <input className="field text" type="password" autoComplete="new-password" value={next} onChange={(event) => setNext(event.target.value)} />
+        <input className="field text boxed" type="password" autoComplete="new-password" value={next} onChange={(event) => setNext(event.target.value)} />
         <span className="faint">{t("auth.passwordHelp", { min: PASSWORD_MIN })}</span>
       </label>
       {note && <p role="status" className={`note ${note.kind}`}>{note.text}</p>}
