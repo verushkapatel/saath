@@ -5,10 +5,10 @@ import { ChevronDown, ChevronLeft, ChevronRight, ShieldCheck } from "lucide-reac
 import { useI18n } from "./providers";
 import { ListenButton } from "./ui";
 
-/** The short page for students: six plain sentences. */
+/** The short page: eight plain sentences about where things are kept and what is shared. */
 export function PrivacyScreen() {
   const { t } = useI18n();
-  const points = [1, 2, 3, 4, 5, 6].map((n) => t(`privacy.p${n}`));
+  const points = [1, 2, 3, 4, 5, 6, 7, 8].map((n) => t(`privacy.p${n}`));
   return (
     <article className="stack">
       <Link href="/" className="link"><ChevronLeft aria-hidden size={18} />{t("nav.home")}</Link>
