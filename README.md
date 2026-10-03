@@ -10,7 +10,11 @@ Saath is a financial-life companion for young people in India, from The Skyward 
 - **Saath AI.** Ask in your own words. It answers only from Saath's checked content, refuses to quote rates or give investment advice, and says so when it does not know.
 - **Progress.** XP, levels, a forgiving streak, badges, and outfits and places for Verena that unlock as you go. A share card shows level, streak, story stage, newest badge and Verena, and nothing else.
 
-The interface is black and white only, with a light and a dark theme.
+The interface is black and white with hints of navy (the logo, the active tab, progress, links), in a light and a dark theme. The logo is two linked rings, ink and navy: *saath* means "together".
+
+## Language first
+
+The very first screen, before the introduction, sign-up or anything else, is the language choice (English, हिन्दी, मराठी). Its words come from the `land` section of each locale file and are gathered into `public/locales/gate.json` by `scripts/sync-static.mjs`, because that screen shows all three languages at once. The introduction and login screens have a language button that returns to it; Settings also has the switch.
 
 ## Setup
 
@@ -161,7 +165,8 @@ Then Saath sends small events. This is the whole of what an event can hold (`lib
 
 ## Design
 
-- Black and white only. Every colour is a token at the top of `app/globals.css`, redefined for dark mode. There is no accent hue and no gradient; emphasis is weight, size, inversion and space.
+- Black and white, with navy as the one accent (`--navy`, lighter in dark mode so it keeps its contrast on black). Every colour is a token in `app/globals.css`, redefined for dark mode. No gradients. Navy marks the logo, the active tab, progress bars, links, the person's own chat messages and finished steps; buttons and text stay ink.
+- The logo (`components/logo.tsx`) is two linked rings, one ink and one navy. The app icon is the same mark on navy.
 - The theme follows the device until the person picks Light or Dark (theme button, or Settings). The choice is applied before first paint.
 - Settings also has text size, reduce motion, stronger contrast, sound and vibration.
 - Playfair Display for headings, Inter for reading, Noto Sans Devanagari for Hindi and Marathi, all served by `next/font`.
@@ -181,6 +186,12 @@ NEXT_PUBLIC_BASE_PATH=/saath npm run build:pages
 ```
 
 Then replace the contents of `main` with `out/`.
+
+## Photo reading
+
+Forms and receipts are read with Tesseract on the device (`lib/ocr.ts`). Before reading, the photo is turned to grey, contrast-stretched, straightened and has form underlines removed (`lib/image.ts`). If that reading is weak, the original photo is read too and the better result is kept. The reader stays loaded for a minute, so a second photo is quick. The first photo after opening the app takes about half a minute on a slow device.
+
+Tested with printed English, Hindi and Marathi forms, a skewed and soft-focus phone-style shot, a blurred photo (correctly refused), and English and Hindi receipts. Handwriting is not supported.
 
 ## Not yet verified
 

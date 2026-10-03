@@ -10,6 +10,7 @@ import { useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { Character } from "./character";
 import { Flame } from "./illustrations";
+import { LogoMark } from "./logo";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
 import { PageSkeleton, Sheet } from "./ui";
@@ -96,7 +97,7 @@ export function ShareSheet({ onClose }: { onClose: () => void }) {
       <div className="stack">
         <p className="muted">{t("share.lead")}</p>
         <figure className="share-card" aria-label={t("share.preview")}>
-          <p className="share-brand">Saath</p>
+          <p className="share-brand"><LogoMark size={26} /> Saath</p>
           <div className="share-body">
             <div ref={svgHost} className="share-figure"><Character look={look} age={app.story?.age || 19} size={140} /></div>
             <div className="stack-xs">

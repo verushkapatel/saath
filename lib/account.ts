@@ -72,7 +72,8 @@ export function checkUsername(raw: string): "nameShort" | "nameLong" | "nameBad"
 export function checkPassword(password: string, username = ""): "passShort" | "passWeak" | null {
   if ([...password].length < PASSWORD_MIN) return "passShort";
   const lower = password.toLowerCase();
-  if (new Set(lower).size < 4 || (username && lower === cleanUsername(username))) return "passWeak";
+  // Digits alone look like a PIN, and the help text asks people not to reuse their UPI or ATM PIN.
+  if (new Set(lower).size < 4 || /^\d+$/.test(password) || (username && lower === cleanUsername(username))) return "passWeak";
   return null;
 }
 

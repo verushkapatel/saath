@@ -1,5 +1,5 @@
 /**
- * Square pictures for sharing, drawn on the phone. Black ink on white paper only: the same identity as the app.
+ * Square pictures for sharing, drawn on the phone. Black ink on white paper, with the navy of the logo.
  * Nothing in them comes from Money Lab. They hold only what the share sheet shows in its preview.
  */
 const SIZE = 1080;
@@ -141,9 +141,17 @@ export async function progressImage(card: ProgressCard, character: SVGSVGElement
   const [element, ctx] = made;
   frame(ctx);
   ctx.textAlign = "left";
+  // The logo: two linked rings, ink and navy.
+  ctx.lineWidth = 9;
+  ctx.strokeStyle = INK;
+  ctx.beginPath(); ctx.arc(140, 150, 30, 0, Math.PI * 2); ctx.stroke();
+  ctx.strokeStyle = "#14336b";
+  ctx.beginPath(); ctx.arc(178, 150, 30, 0, Math.PI * 2); ctx.stroke();
+  ctx.strokeStyle = INK;
+  ctx.beginPath(); ctx.arc(140, 150, 30, -Math.PI / 3, -Math.PI / 6); ctx.stroke();
   ctx.fillStyle = INK;
   ctx.font = `700 60px ${card.headFont}`;
-  ctx.fillText("Saath", 110, 170);
+  ctx.fillText("Saath", 230, 172);
 
   const picture = character ? await svgImage(character) : null;
   if (picture) ctx.drawImage(picture, 90, 240, 400, 456);

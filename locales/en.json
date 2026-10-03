@@ -865,7 +865,7 @@
       "nameLong": "Use 20 characters or fewer.",
       "nameBad": "Use letters, numbers, dot, dash or underscore. No spaces.",
       "passShort": "Use at least {min} characters.",
-      "passWeak": "That password is too easy to guess. Mix more different characters.",
+      "passWeak": "That password is too easy to guess. Use letters as well as numbers, and mix different characters.",
       "taken": "That username is already used on this device.",
       "noCrypto": "This browser cannot keep a password safely. Try an up-to-date browser.",
       "noUser": "No account with that username on this device.",

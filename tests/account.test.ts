@@ -29,6 +29,8 @@ describe("usernames and passwords", () => {
     expect(checkPassword("aaaaaaaa")).toBe("passWeak");
     expect(checkPassword("ashapatel", "ashapatel")).toBe("passWeak");
     expect(checkPassword("river-mango-41")).toBeNull();
+    // Digits alone look like a PIN.
+    expect(checkPassword("12345678")).toBe("passWeak");
   });
 });
 
