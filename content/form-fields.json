@@ -1,0 +1,709 @@
+[
+ {
+  "id": "name",
+  "patterns": [
+   "name of applicant",
+   "applicant name",
+   "full name",
+   "name of the account holder",
+   "नाम",
+   "नाव"
+  ],
+  "label": {
+   "en": "Name",
+   "hi": "नाम",
+   "mr": "नाव"
+  },
+  "meaning": {
+   "en": "Your name as on your identity document.",
+   "hi": "आपका नाम, जैसा पहचान दस्तावेज़ में है।",
+   "mr": "तुमचे नाव, ओळख दस्तऐवजाप्रमाणे."
+  },
+  "tip": {
+   "en": "The spelling must match your ID exactly.",
+   "hi": "वर्तनी पहचान पत्र से हूबहू मिलनी चाहिए।",
+   "mr": "स्पेलिंग ओळखपत्राशी तंतोतंत जुळले पाहिजे."
+  }
+ },
+ {
+  "id": "dob",
+  "patterns": [
+   "date of birth",
+   "d.o.b",
+   "dob",
+   "जन्म तिथि",
+   "जन्मतारीख",
+   "जन्म दिनांक"
+  ],
+  "label": {
+   "en": "Date of birth",
+   "hi": "जन्म तिथि",
+   "mr": "जन्मतारीख"
+  },
+  "meaning": {
+   "en": "Used to confirm your identity and your age for eligibility.",
+   "hi": "आपकी पहचान और पात्रता के लिए उम्र की पुष्टि में काम आती है।",
+   "mr": "तुमची ओळख आणि पात्रतेसाठी वय निश्चित करण्यासाठी वापरली जाते."
+  },
+  "tip": {
+   "en": "Write it in the order the form shows, usually day, month, year.",
+   "hi": "फ़ॉर्म में दिखाए क्रम में लिखें, आम तौर पर दिन, महीना, साल।",
+   "mr": "फॉर्ममध्ये दाखवलेल्या क्रमाने लिहा, सहसा दिवस, महिना, वर्ष."
+  }
+ },
+ {
+  "id": "pan",
+  "patterns": [
+   "pan",
+   "permanent account number",
+   "पैन",
+   "पॅन"
+  ],
+  "label": {
+   "en": "PAN",
+   "hi": "PAN",
+   "mr": "PAN"
+  },
+  "meaning": {
+   "en": "Your ten-character tax identity. Banks and investment firms must record it.",
+   "hi": "आपकी दस अक्षर-अंकों की कर पहचान। बैंकों और निवेश संस्थाओं को इसे दर्ज करना होता है।",
+   "mr": "तुमची दहा अक्षरी कर ओळख. बँका आणि गुंतवणूक संस्थांना ती नोंदवावी लागते."
+  },
+  "tip": {
+   "en": "Never share a photo of your PAN card with someone who contacted you first.",
+   "hi": "जिसने खुद आपसे संपर्क किया हो, उसे PAN कार्ड की फ़ोटो कभी न भेजें।",
+   "mr": "ज्याने स्वतः तुमच्याशी संपर्क केला त्याला PAN कार्डचा फोटो कधीही पाठवू नका."
+  }
+ },
+ {
+  "id": "aadhaar",
+  "patterns": [
+   "aadhaar",
+   "aadhar",
+   "uid",
+   "आधार"
+  ],
+  "label": {
+   "en": "Aadhaar",
+   "hi": "आधार",
+   "mr": "आधार"
+  },
+  "meaning": {
+   "en": "Your 12-digit identity number, used here as proof of identity and address.",
+   "hi": "आपका 12 अंकों का पहचान नंबर, यहाँ पहचान और पते के प्रमाण के रूप में।",
+   "mr": "तुमचा 12 अंकी ओळख क्रमांक, इथे ओळख आणि पत्त्याचा पुरावा म्हणून."
+  },
+  "tip": {
+   "en": "On a photocopy, write what it is being given for and the date.",
+   "hi": "फ़ोटोकॉपी पर लिखें कि वह किसलिए दी जा रही है, और तारीख।",
+   "mr": "छायाप्रतीवर ती कशासाठी दिली आहे ते आणि तारीख लिहा."
+  }
+ },
+ {
+  "id": "address",
+  "patterns": [
+   "address",
+   "permanent address",
+   "correspondence address",
+   "पता",
+   "पत्ता"
+  ],
+  "label": {
+   "en": "Address",
+   "hi": "पता",
+   "mr": "पत्ता"
+  },
+  "meaning": {
+   "en": "Where you live, and where letters and cards will be sent.",
+   "hi": "आप कहाँ रहते हैं, और पत्र व कार्ड कहाँ भेजे जाएँगे।",
+   "mr": "तुम्ही कुठे राहता आणि पत्रे व कार्ड कुठे पाठवली जातील."
+  },
+  "tip": {
+   "en": "If your present address differs from your ID, the form usually has a separate box for it.",
+   "hi": "अगर मौजूदा पता पहचान पत्र से अलग है, तो फ़ॉर्म में आम तौर पर उसके लिए अलग खाना होता है।",
+   "mr": "सध्याचा पत्ता ओळखपत्रापेक्षा वेगळा असेल तर फॉर्ममध्ये सहसा त्यासाठी वेगळा रकाना असतो."
+  }
+ },
+ {
+  "id": "mobile",
+  "patterns": [
+   "mobile",
+   "mobile no",
+   "contact number",
+   "phone",
+   "मोबाइल",
+   "मोबाईल"
+  ],
+  "label": {
+   "en": "Mobile number",
+   "hi": "मोबाइल नंबर",
+   "mr": "मोबाइल क्रमांक"
+  },
+  "meaning": {
+   "en": "Alerts and one-time passwords for this account go to this number.",
+   "hi": "इस खाते के अलर्ट और वन-टाइम पासवर्ड इसी नंबर पर आते हैं।",
+   "mr": "या खात्याचे अलर्ट आणि वन-टाइम पासवर्ड याच क्रमांकावर येतात."
+  },
+  "tip": {
+   "en": "Give your own number, never an agent's.",
+   "hi": "अपना ही नंबर दें, एजेंट का कभी नहीं।",
+   "mr": "स्वतःचाच क्रमांक द्या, एजंटचा कधीही नाही."
+  }
+ },
+ {
+  "id": "nominee",
+  "patterns": [
+   "nominee",
+   "nomination",
+   "नॉमिनी",
+   "नामांकन",
+   "नामिती"
+  ],
+  "label": {
+   "en": "Nominee",
+   "hi": "नॉमिनी",
+   "mr": "नॉमिनी"
+  },
+  "meaning": {
+   "en": "The person who receives the money if you die.",
+   "hi": "वह व्यक्ति जिसे आपकी मृत्यु पर पैसा मिलेगा।",
+   "mr": "तुमच्या मृत्यूनंतर ज्याला पैसे मिळतील ती व्यक्ती."
+  },
+  "tip": {
+   "en": "Do not leave this blank. Tell the person you have named them.",
+   "hi": "इसे खाली न छोड़ें। जिसे नामांकित किया है उसे बता दें।",
+   "mr": "हे रिकामे सोडू नका. ज्याला नामांकित केले त्याला सांगा."
+  }
+ },
+ {
+  "id": "operation",
+  "patterns": [
+   "mode of operation",
+   "operating instructions",
+   "either or survivor",
+   "jointly",
+   "संचालन"
+  ],
+  "label": {
+   "en": "Mode of operation",
+   "hi": "संचालन का तरीका",
+   "mr": "खाते चालवण्याची पद्धत"
+  },
+  "meaning": {
+   "en": "Who is allowed to use the account: one person, either of two, or both together.",
+   "hi": "खाता कौन चला सकता है: एक व्यक्ति, दो में से कोई, या दोनों साथ।",
+   "mr": "खाते कोण वापरू शकते: एक व्यक्ती, दोघांपैकी कोणीही, किंवा दोघे एकत्र."
+  },
+  "tip": {
+   "en": "\"Jointly\" means every withdrawal needs both signatures.",
+   "hi": "\"संयुक्त रूप से\" का मतलब है हर निकासी पर दोनों के दस्तखत चाहिए।",
+   "mr": "\"संयुक्तपणे\" म्हणजे प्रत्येक पैसे काढण्यासाठी दोघांच्या सह्या लागतात."
+  }
+ },
+ {
+  "id": "ifsc",
+  "patterns": [
+   "ifsc",
+   "ifs code"
+  ],
+  "label": {
+   "en": "IFSC",
+   "hi": "IFSC",
+   "mr": "IFSC"
+  },
+  "meaning": {
+   "en": "An 11-character code that identifies a bank branch for transfers.",
+   "hi": "11 अक्षर-अंकों का कोड जो पैसे भेजने के लिए बैंक शाखा की पहचान करता है।",
+   "mr": "पैसे पाठवण्यासाठी बँक शाखा ओळखणारा 11 अक्षरी कोड."
+  },
+  "tip": {
+   "en": "Copy it from your passbook or cheque, not from memory.",
+   "hi": "इसे पासबुक या चेक से देखकर लिखें, याद से नहीं।",
+   "mr": "तो पासबुक किंवा चेकवरून पाहून लिहा, आठवणीने नाही."
+  }
+ },
+ {
+  "id": "account",
+  "patterns": [
+   "account number",
+   "account no",
+   "a/c no",
+   "खाता संख्या",
+   "खाते क्रमांक"
+  ],
+  "label": {
+   "en": "Account number",
+   "hi": "खाता संख्या",
+   "mr": "खाते क्रमांक"
+  },
+  "meaning": {
+   "en": "The account that money will be paid into or taken from.",
+   "hi": "वह खाता जिसमें पैसा आएगा या जिससे जाएगा।",
+   "mr": "ज्या खात्यात पैसे येतील किंवा ज्यातून जातील ते."
+  },
+  "tip": {
+   "en": "One wrong digit sends money to a stranger. Check it twice.",
+   "hi": "एक गलत अंक पैसा किसी अनजान को भेज देता है। दो बार जाँचें।",
+   "mr": "एक चुकीचा अंक पैसे अनोळखी व्यक्तीला पाठवतो. दोनदा तपासा."
+  }
+ },
+ {
+  "id": "income",
+  "patterns": [
+   "annual income",
+   "gross income",
+   "monthly income",
+   "वार्षिक आय",
+   "वार्षिक उत्पन्न"
+  ],
+  "label": {
+   "en": "Income",
+   "hi": "आय",
+   "mr": "उत्पन्न"
+  },
+  "meaning": {
+   "en": "What you earn. Lenders and insurers use it to decide how much they will offer.",
+   "hi": "आपकी कमाई। ऋणदाता और बीमा कंपनियाँ इसी से तय करती हैं कि कितना देंगी।",
+   "mr": "तुमची कमाई. कर्जदाते आणि विमा कंपन्या त्यावरून किती द्यायचे ते ठरवतात."
+  },
+  "tip": {
+   "en": "State it truthfully. An inflated figure can void a loan or a claim.",
+   "hi": "सच लिखें। बढ़ा-चढ़ाकर लिखा आँकड़ा लोन या दावे को रद्द करा सकता है।",
+   "mr": "खरे लिहा. फुगवलेला आकडा कर्ज किंवा दावा रद्द करू शकतो."
+  }
+ },
+ {
+  "id": "occupation",
+  "patterns": [
+   "occupation",
+   "employment",
+   "profession",
+   "व्यवसाय",
+   "पेशा"
+  ],
+  "label": {
+   "en": "Occupation",
+   "hi": "पेशा",
+   "mr": "व्यवसाय"
+  },
+  "meaning": {
+   "en": "The work you do. Part of the KYC record.",
+   "hi": "आप जो काम करते हैं। KYC रिकॉर्ड का हिस्सा।",
+   "mr": "तुम्ही करत असलेले काम. KYC नोंदीचा भाग."
+  },
+  "tip": {
+   "en": "Choose the closest option; do not leave it for the agent to tick.",
+   "hi": "सबसे नज़दीकी विकल्प चुनें; इसे एजेंट के टिक करने के लिए न छोड़ें।",
+   "mr": "सर्वात जवळचा पर्याय निवडा; तो एजंटने खूण करण्यासाठी सोडू नका."
+  }
+ },
+ {
+  "id": "loan-amount",
+  "patterns": [
+   "loan amount",
+   "amount of loan",
+   "sanctioned amount",
+   "principal",
+   "ऋण राशि",
+   "कर्ज रक्कम"
+  ],
+  "label": {
+   "en": "Loan amount",
+   "hi": "लोन की रकम",
+   "mr": "कर्जाची रक्कम"
+  },
+  "meaning": {
+   "en": "How much you are borrowing. Interest is charged on this.",
+   "hi": "आप कितना उधार ले रहे हैं। ब्याज इसी पर लगता है।",
+   "mr": "तुम्ही किती कर्ज घेत आहात. व्याज यावर लागते."
+  },
+  "tip": {
+   "en": "Check it against the amount that will actually reach your account after fees.",
+   "hi": "इसकी तुलना उस रकम से करें जो शुल्क कटने के बाद सच में खाते में आएगी।",
+   "mr": "शुल्क कापल्यानंतर प्रत्यक्ष खात्यात येणाऱ्या रकमेशी याची तुलना करा."
+  }
+ },
+ {
+  "id": "rate",
+  "patterns": [
+   "rate of interest",
+   "interest rate",
+   "roi",
+   "% p.a",
+   "per annum",
+   "ब्याज दर",
+   "व्याजदर",
+   "व्याज दर"
+  ],
+  "label": {
+   "en": "Interest rate",
+   "hi": "ब्याज दर",
+   "mr": "व्याजदर"
+  },
+  "meaning": {
+   "en": "The yearly price of borrowing, or the yearly return on a deposit.",
+   "hi": "उधार की सालाना कीमत, या जमा पर सालाना रिटर्न।",
+   "mr": "कर्जाची वार्षिक किंमत, किंवा ठेवीवरील वार्षिक परतावा."
+  },
+  "tip": {
+   "en": "Ask whether it is flat or reducing, and fixed or floating.",
+   "hi": "पूछें कि यह फ्लैट है या घटती शेष पर, और तय है या बदलने वाली।",
+   "mr": "तो फ्लॅट आहे की घटत्या शिल्लकीवर, आणि स्थिर आहे की बदलता ते विचारा."
+  }
+ },
+ {
+  "id": "apr",
+  "patterns": [
+   "annual percentage rate",
+   "apr"
+  ],
+  "label": {
+   "en": "Annual percentage rate (APR)",
+   "hi": "वार्षिक प्रतिशत दर (APR)",
+   "mr": "वार्षिक टक्केवारी दर (APR)"
+  },
+  "meaning": {
+   "en": "The full yearly cost of a loan, with interest and every charge counted together.",
+   "hi": "लोन की पूरी सालाना लागत, ब्याज और हर शुल्क मिलाकर।",
+   "mr": "कर्जाचा संपूर्ण वार्षिक खर्च, व्याज आणि प्रत्येक शुल्क मिळून."
+  },
+  "tip": {
+   "en": "This is the number to compare between lenders.",
+   "hi": "ऋणदाताओं की तुलना इसी आँकड़े से करें।",
+   "mr": "कर्जदात्यांची तुलना याच आकड्याने करा."
+  }
+ },
+ {
+  "id": "fee",
+  "patterns": [
+   "processing fee",
+   "processing charge",
+   "documentation charge",
+   "service charge",
+   "प्रोसेसिंग",
+   "प्रक्रिया शुल्क"
+  ],
+  "label": {
+   "en": "Processing fee",
+   "hi": "प्रोसेसिंग शुल्क",
+   "mr": "प्रोसेसिंग शुल्क"
+  },
+  "meaning": {
+   "en": "A charge for arranging the loan, usually taken out of the amount before you receive it.",
+   "hi": "लोन की व्यवस्था का शुल्क, जो आम तौर पर रकम मिलने से पहले उसमें से काट लिया जाता है।",
+   "mr": "कर्जाची व्यवस्था करण्याचे शुल्क, जे सहसा रक्कम मिळण्यापूर्वी त्यातून कापले जाते."
+  },
+  "tip": {
+   "en": "Ask for the rupee amount, not only the percentage.",
+   "hi": "सिर्फ़ प्रतिशत नहीं, रुपये में रकम पूछें।",
+   "mr": "फक्त टक्केवारी नाही, रुपयांतील रक्कम विचारा."
+  }
+ },
+ {
+  "id": "emi",
+  "patterns": [
+   "emi",
+   "equated monthly",
+   "instalment",
+   "installment",
+   "किस्त",
+   "हप्ता"
+  ],
+  "label": {
+   "en": "EMI",
+   "hi": "EMI",
+   "mr": "EMI"
+  },
+  "meaning": {
+   "en": "The fixed amount you pay each month until the loan is cleared.",
+   "hi": "वह तय रकम जो लोन चुकने तक हर महीने देनी है।",
+   "mr": "कर्ज फिटेपर्यंत दर महिन्याला द्यायची ठरावीक रक्कम."
+  },
+  "tip": {
+   "en": "Multiply it by the number of months to see the true total.",
+   "hi": "असली कुल रकम देखने के लिए इसे महीनों की संख्या से गुणा करें।",
+   "mr": "खरी एकूण रक्कम पाहण्यासाठी महिन्यांच्या संख्येने गुणा."
+  }
+ },
+ {
+  "id": "tenure",
+  "patterns": [
+   "tenure",
+   "tenor",
+   "loan period",
+   "repayment period",
+   "अवधि",
+   "मुदत",
+   "कालावधी"
+  ],
+  "label": {
+   "en": "Tenure",
+   "hi": "अवधि",
+   "mr": "मुदत"
+  },
+  "meaning": {
+   "en": "How long the loan or deposit runs.",
+   "hi": "लोन या जमा कितने समय चलेगी।",
+   "mr": "कर्ज किंवा ठेव किती काळ चालेल."
+  },
+  "tip": {
+   "en": "A longer loan has a lower EMI and a higher total cost.",
+   "hi": "लंबे लोन में EMI कम और कुल लागत ज़्यादा होती है।",
+   "mr": "जास्त मुदतीच्या कर्जात EMI कमी आणि एकूण खर्च जास्त असतो."
+  }
+ },
+ {
+  "id": "penalty",
+  "patterns": [
+   "penal",
+   "penalty",
+   "late payment",
+   "overdue",
+   "default",
+   "जुर्माना",
+   "दंड"
+  ],
+  "label": {
+   "en": "Late payment charge",
+   "hi": "देर से भुगतान का शुल्क",
+   "mr": "उशिरा भरण्याचे शुल्क"
+  },
+  "meaning": {
+   "en": "What you are charged if an instalment is paid late or missed.",
+   "hi": "किस्त देर से या न भरने पर लगने वाला शुल्क।",
+   "mr": "हप्ता उशिरा भरल्यास किंवा चुकवल्यास लागणारे शुल्क."
+  },
+  "tip": {
+   "en": "Read how it is worked out. It should be a stated amount, not left open.",
+   "hi": "पढ़ें कि यह कैसे निकाला जाता है। यह तय रकम होनी चाहिए, खुला नहीं छोड़ा हुआ।",
+   "mr": "ते कसे काढले जाते ते वाचा. ती ठरलेली रक्कम असावी, मोकळी सोडलेली नाही."
+  }
+ },
+ {
+  "id": "prepay",
+  "patterns": [
+   "prepayment",
+   "pre-payment",
+   "foreclosure",
+   "pre-closure",
+   "पूर्व भुगतान",
+   "मुदतपूर्व"
+  ],
+  "label": {
+   "en": "Prepayment or foreclosure",
+   "hi": "पूर्व भुगतान या समय से पहले बंद करना",
+   "mr": "मुदतपूर्व परतफेड"
+  },
+  "meaning": {
+   "en": "Paying the loan off early, and any charge for doing so.",
+   "hi": "लोन समय से पहले चुकाना, और ऐसा करने पर कोई शुल्क।",
+   "mr": "कर्ज मुदतीआधी फेडणे आणि त्यासाठीचे कोणतेही शुल्क."
+  },
+  "tip": {
+   "en": "Ask whether you may repay early without a charge.",
+   "hi": "पूछें कि क्या बिना शुल्क के पहले चुकाया जा सकता है।",
+   "mr": "शुल्काशिवाय आधी फेडता येईल का ते विचारा."
+  }
+ },
+ {
+  "id": "guarantor",
+  "patterns": [
+   "guarantor",
+   "co-applicant",
+   "co-borrower",
+   "surety",
+   "जमानतदार",
+   "गारंटर",
+   "जामीनदार"
+  ],
+  "label": {
+   "en": "Guarantor or co-applicant",
+   "hi": "गारंटर या सह-आवेदक",
+   "mr": "जामीनदार किंवा सह-अर्जदार"
+  },
+  "meaning": {
+   "en": "A person who must repay the loan if the borrower does not.",
+   "hi": "वह व्यक्ति जिसे उधार लेने वाले के न चुकाने पर लोन चुकाना होगा।",
+   "mr": "कर्जदाराने न फेडल्यास ज्याला कर्ज फेडावे लागेल ती व्यक्ती."
+  },
+  "tip": {
+   "en": "Signing here makes the whole debt yours if things go wrong.",
+   "hi": "यहाँ दस्तखत करने पर, गड़बड़ होने पर पूरा कर्ज़ आपका हो जाता है।",
+   "mr": "इथे सही केल्यास, गडबड झाल्यास संपूर्ण कर्ज तुमचे होते."
+  }
+ },
+ {
+  "id": "security",
+  "patterns": [
+   "security",
+   "collateral",
+   "pledge",
+   "hypothecation",
+   "mortgage",
+   "गिरवी",
+   "तारण"
+  ],
+  "label": {
+   "en": "Security or collateral",
+   "hi": "जमानत या गिरवी",
+   "mr": "तारण"
+  },
+  "meaning": {
+   "en": "Something of value the lender can take and sell if the loan is not repaid.",
+   "hi": "कोई कीमती चीज़ जिसे लोन न चुकाने पर ऋणदाता लेकर बेच सकता है।",
+   "mr": "कर्ज न फेडल्यास कर्जदाता घेऊन विकू शकतो अशी मौल्यवान वस्तू."
+  },
+  "tip": {
+   "en": "Get a signed receipt describing exactly what you handed over.",
+   "hi": "आपने ठीक-ठीक क्या सौंपा, इसका ब्योरा देने वाली हस्ताक्षरित रसीद लें।",
+   "mr": "तुम्ही नेमके काय सोपवले याचे वर्णन असलेली सही केलेली पावती घ्या."
+  }
+ },
+ {
+  "id": "premium",
+  "patterns": [
+   "premium",
+   "प्रीमियम",
+   "हप्ता रक्कम"
+  ],
+  "label": {
+   "en": "Premium",
+   "hi": "प्रीमियम",
+   "mr": "विमा हप्ता"
+  },
+  "meaning": {
+   "en": "What you pay for insurance cover, and how often.",
+   "hi": "बीमे के लिए आप कितना देते हैं, और कितनी बार।",
+   "mr": "विमा संरक्षणासाठी तुम्ही किती आणि किती वेळा भरता."
+  },
+  "tip": {
+   "en": "Check how many years you must keep paying.",
+   "hi": "देखें कि कितने साल तक भरते रहना है।",
+   "mr": "किती वर्षे भरत राहायचे ते तपासा."
+  }
+ },
+ {
+  "id": "sum-assured",
+  "patterns": [
+   "sum assured",
+   "sum insured",
+   "cover amount",
+   "बीमा राशि",
+   "विमा रक्कम"
+  ],
+  "label": {
+   "en": "Sum assured or sum insured",
+   "hi": "बीमा राशि",
+   "mr": "विमा रक्कम"
+  },
+  "meaning": {
+   "en": "The amount the policy pays out on a valid claim.",
+   "hi": "मान्य दावे पर पॉलिसी जो रकम देती है।",
+   "mr": "वैध दाव्यावर पॉलिसी देते ती रक्कम."
+  },
+  "tip": {
+   "en": "Compare it with the premium. A large premium for a small cover is a warning.",
+   "hi": "इसकी तुलना प्रीमियम से करें। छोटे बीमे के लिए बड़ा प्रीमियम एक चेतावनी है।",
+   "mr": "याची तुलना हप्त्याशी करा. लहान संरक्षणासाठी मोठा हप्ता ही धोक्याची सूचना."
+  }
+ },
+ {
+  "id": "pep",
+  "patterns": [
+   "politically exposed",
+   "pep"
+  ],
+  "label": {
+   "en": "Politically exposed person",
+   "hi": "राजनीतिक रूप से जुड़ा व्यक्ति",
+   "mr": "राजकीयदृष्ट्या संबंधित व्यक्ती"
+  },
+  "meaning": {
+   "en": "A question about whether you or a close relative holds a senior public position. Most people answer no.",
+   "hi": "यह सवाल कि क्या आप या कोई नज़दीकी रिश्तेदार किसी ऊँचे सार्वजनिक पद पर है। ज़्यादातर लोग नहीं में जवाब देते हैं।",
+   "mr": "तुम्ही किंवा जवळचा नातेवाईक वरिष्ठ सार्वजनिक पदावर आहे का हा प्रश्न. बहुतेक लोक नाही असे उत्तर देतात."
+  },
+  "tip": {
+   "en": "Answer it yourself. It is a standard KYC question.",
+   "hi": "इसका जवाब खुद दें। यह KYC का सामान्य सवाल है।",
+   "mr": "याचे उत्तर स्वतः द्या. हा KYC चा नेहमीचा प्रश्न आहे."
+  }
+ },
+ {
+  "id": "fatca",
+  "patterns": [
+   "fatca",
+   "crs",
+   "tax resident",
+   "tax residency",
+   "country of tax"
+  ],
+  "label": {
+   "en": "Tax residency (FATCA/CRS)",
+   "hi": "कर निवास (FATCA/CRS)",
+   "mr": "कर निवास (FATCA/CRS)"
+  },
+  "meaning": {
+   "en": "A declaration of which country you pay tax in.",
+   "hi": "यह घोषणा कि आप किस देश में कर देते हैं।",
+   "mr": "तुम्ही कोणत्या देशात कर भरता याची घोषणा."
+  },
+  "tip": {
+   "en": "If you pay tax only in India, you declare that and nothing more.",
+   "hi": "अगर आप सिर्फ़ भारत में कर देते हैं, तो वही घोषित करें, और कुछ नहीं।",
+   "mr": "तुम्ही फक्त भारतात कर भरत असाल तर तेच जाहीर करा, आणखी काही नाही."
+  }
+ },
+ {
+  "id": "declaration",
+  "patterns": [
+   "i hereby declare",
+   "declaration",
+   "i/we",
+   "undertaking",
+   "घोषणा",
+   "घोषणापत्र"
+  ],
+  "label": {
+   "en": "Declaration",
+   "hi": "घोषणा",
+   "mr": "घोषणा"
+  },
+  "meaning": {
+   "en": "The part where you confirm that everything above is true and that you accept the terms.",
+   "hi": "वह हिस्सा जहाँ आप पुष्टि करते हैं कि ऊपर लिखा सब सच है और शर्तें मंज़ूर हैं।",
+   "mr": "तो भाग जिथे तुम्ही वर लिहिलेले सगळे खरे आहे आणि अटी मान्य आहेत याची खात्री देता."
+  },
+  "tip": {
+   "en": "Read this paragraph fully. It is what your signature applies to.",
+   "hi": "यह अनुच्छेद पूरा पढ़ें। आपका दस्तखत इसी पर लागू होता है।",
+   "mr": "हा परिच्छेद पूर्ण वाचा. तुमची सही यालाच लागू होते."
+  }
+ },
+ {
+  "id": "signature",
+  "patterns": [
+   "signature",
+   "thumb impression",
+   "दस्तखत",
+   "हस्ताक्षर",
+   "स्वाक्षरी",
+   "सही"
+  ],
+  "label": {
+   "en": "Signature",
+   "hi": "दस्तखत",
+   "mr": "सही"
+  },
+  "meaning": {
+   "en": "Your agreement to everything on the paper, including any blank you leave.",
+   "hi": "कागज़ पर लिखी हर बात पर आपकी सहमति, छोड़ी गई खाली जगहों समेत।",
+   "mr": "कागदावरील प्रत्येक गोष्टीला तुमची संमती, तुम्ही सोडलेल्या रिकाम्या जागांसह."
+  },
+  "tip": {
+   "en": "Never sign a form with blank fields. Strike through any you do not use.",
+   "hi": "खाली जगह वाले फ़ॉर्म पर कभी दस्तखत न करें। जो खाने इस्तेमाल नहीं किए उन्हें काट दें।",
+   "mr": "रिकाम्या जागा असलेल्या फॉर्मवर कधीही सही करू नका. न वापरलेले रकाने खोडून टाका."
+  }
+ }
+]

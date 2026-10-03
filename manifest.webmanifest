@@ -1,12 +1,12 @@
 {
   "name": "Saath",
   "short_name": "Saath",
-  "description": "Saath, from The Skyward Project: a few minutes of money practice a day, and a reader for loan papers.",
+  "description": "Saath, from The Skyward Project: live a financial life in a story, look anything up, read forms before you sign, and track your own money.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#011b3d",
-  "theme_color": "#011b3d",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "lang": "en",
   "icons": [
     {

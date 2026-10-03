@@ -1,0 +1,3146 @@
+{
+ "reviewed": "2026-10",
+ "name": {
+  "en": "Ira",
+  "hi": "इरा",
+  "mr": "इरा"
+ },
+ "intro": {
+  "en": "Ira's life is fiction. The money in it is the kind real people deal with. You decide with her, see what follows, and carry the lesson into your own life.",
+  "hi": "इरा की ज़िंदगी एक कहानी है। उसमें जो पैसों के मसले हैं, वे असली लोगों के जैसे हैं। आप उसके साथ फ़ैसला करते हैं, नतीजा देखते हैं, और सीख अपनी ज़िंदगी में ले जाते हैं।",
+  "mr": "इराचे आयुष्य ही एक गोष्ट आहे. त्यातील पैशांचे प्रश्न खऱ्या माणसांसारखेच आहेत. तुम्ही तिच्यासोबत निर्णय घेता, पुढे काय होते ते पाहता आणि शिकलेले स्वतःच्या आयुष्यात नेता."
+ },
+ "stages": [
+  {
+   "id": "early-adulthood",
+   "title": {
+    "en": "Early adulthood",
+    "hi": "शुरुआती वयस्कता",
+    "mr": "तारुण्याची सुरुवात"
+   }
+  },
+  {
+   "id": "first-job",
+   "title": {
+    "en": "First job",
+    "hi": "पहली नौकरी",
+    "mr": "पहिली नोकरी"
+   }
+  },
+  {
+   "id": "first-income",
+   "title": {
+    "en": "First income",
+    "hi": "पहली कमाई",
+    "mr": "पहिली कमाई"
+   }
+  },
+  {
+   "id": "banking",
+   "title": {
+    "en": "Banking",
+    "hi": "बैंकिंग",
+    "mr": "बँकिंग"
+   }
+  },
+  {
+   "id": "budgeting",
+   "title": {
+    "en": "Budgeting",
+    "hi": "बजट बनाना",
+    "mr": "बजेट"
+   }
+  },
+  {
+   "id": "saving",
+   "title": {
+    "en": "Saving",
+    "hi": "बचत",
+    "mr": "बचत"
+   }
+  },
+  {
+   "id": "investing",
+   "title": {
+    "en": "Investing",
+    "hi": "निवेश",
+    "mr": "गुंतवणूक"
+   }
+  },
+  {
+   "id": "insurance",
+   "title": {
+    "en": "Insurance",
+    "hi": "बीमा",
+    "mr": "विमा"
+   }
+  },
+  {
+   "id": "borrowing",
+   "title": {
+    "en": "Borrowing",
+    "hi": "उधार लेना",
+    "mr": "कर्ज घेणे"
+   }
+  },
+  {
+   "id": "family-finances",
+   "title": {
+    "en": "Family finances",
+    "hi": "परिवार का पैसा",
+    "mr": "कुटुंबाचे पैसे"
+   }
+  },
+  {
+   "id": "children",
+   "title": {
+    "en": "Children",
+    "hi": "बच्चे",
+    "mr": "मुले"
+   }
+  },
+  {
+   "id": "long-term-planning",
+   "title": {
+    "en": "Long-term planning",
+    "hi": "लंबी योजना",
+    "mr": "दीर्घकालीन नियोजन"
+   }
+  },
+  {
+   "id": "financial-security",
+   "title": {
+    "en": "Financial security",
+    "hi": "आर्थिक सुरक्षा",
+    "mr": "आर्थिक सुरक्षा"
+   }
+  },
+  {
+   "id": "retirement",
+   "title": {
+    "en": "Retirement",
+    "hi": "सेवानिवृत्ति",
+    "mr": "निवृत्ती"
+   }
+  }
+ ],
+ "episodes": [
+  {
+   "id": "early-adulthood",
+   "stage": "early-adulthood",
+   "topic": "budgeting",
+   "age": 19,
+   "place": "room",
+   "title": {
+    "en": "The month that ran out on day 18",
+    "hi": "महीना जो 18वें दिन खत्म हो गया",
+    "mr": "अठराव्या दिवशी संपलेला महिना"
+   },
+   "story": [
+    {
+     "en": "Ira is 19 and has just moved to Pune for college. Her parents send ₹6,000 on the first of every month. It felt like a lot on the day it arrived.",
+     "hi": "इरा 19 साल की है और कॉलेज के लिए अभी पुणे आई है। माता-पिता हर महीने की पहली तारीख को ₹6,000 भेजते हैं। जिस दिन पैसा आया, वह बहुत लगा था।",
+     "mr": "इरा 19 वर्षांची आहे आणि कॉलेजसाठी नुकतीच पुण्यात आली आहे. आई-बाबा दर महिन्याच्या पहिल्या तारखेला ₹6,000 पाठवतात. पैसे आले त्या दिवशी ते खूप वाटले होते."
+    },
+    {
+     "en": "Mess fees, a bus pass and phone recharge take ₹3,800. The rest went on things she can't quite name: food delivery, a friend's birthday, two apps she forgot she pays for.",
+     "hi": "मेस, बस पास और फ़ोन रिचार्ज में ₹3,800 जाते हैं। बाकी ऐसी चीज़ों पर गया जिनका नाम उसे ठीक से याद नहीं: खाना मँगवाना, दोस्त का जन्मदिन, दो ऐप जिनका पैसा कटता है यह वह भूल गई थी।",
+     "mr": "मेस, बस पास आणि फोन रिचार्जला ₹3,800 लागतात. उरलेले पैसे अशा गोष्टींवर गेले ज्यांची नावेही तिला नीट आठवत नाहीत: बाहेरून मागवलेले जेवण, मैत्रिणीचा वाढदिवस, दोन ॲप ज्यांचे पैसे कापले जातात हे ती विसरली होती."
+    },
+    {
+     "en": "It is the 18th. She opens her banking app and sees ₹350. There are twelve days left.",
+     "hi": "आज 18 तारीख है। वह बैंक ऐप खोलती है और ₹350 दिखते हैं। बारह दिन बाकी हैं।",
+     "mr": "आज 18 तारीख आहे. ती बँकेचे ॲप उघडते आणि ₹350 दिसतात. बारा दिवस बाकी आहेत."
+    }
+   ],
+   "slip": {
+    "en": "Ira never wrote down a single rupee. She only found out where the money went after it was gone.",
+    "hi": "इरा ने एक भी रुपया कहीं नहीं लिखा। पैसा कहाँ गया, यह उसे पैसा खत्म होने के बाद पता चला।",
+    "mr": "इराने एकही रुपया कुठे लिहून ठेवला नाही. पैसे कुठे गेले हे तिला ते संपल्यावरच कळले."
+   },
+   "sim": {
+    "kind": "budget",
+    "income": 6000,
+    "needs": 3800,
+    "title": {
+     "en": "Plan Ira's ₹6,000",
+     "hi": "इरा के ₹6,000 की योजना बनाएँ",
+     "mr": "इराच्या ₹6,000 चे नियोजन करा"
+    },
+    "hint": {
+     "en": "₹3,800 must go on mess, bus and phone. Move the slider to decide how much of the rest she spends freely.",
+     "hi": "₹3,800 मेस, बस और फ़ोन पर जाने ही हैं। स्लाइडर खिसकाकर तय करें कि बाकी में से वह कितना खुलकर खर्च करे।",
+     "mr": "₹3,800 मेस, बस आणि फोनवर जाणारच. स्लायडर सरकवून ठरवा की उरलेल्यापैकी ती किती मोकळेपणाने खर्च करेल."
+    }
+   },
+   "question": {
+    "en": "Twelve days, ₹350. What should Ira do?",
+    "hi": "बारह दिन, ₹350। इरा क्या करे?",
+    "mr": "बारा दिवस, ₹350. इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Borrow ₹2,000 from a friend and sort it out next month",
+      "hi": "दोस्त से ₹2,000 उधार ले और अगले महीने देख ले",
+      "mr": "मैत्रिणीकडून ₹2,000 उसने घ्यावेत आणि पुढच्या महिन्यात बघावे"
+     },
+     "outcome": {
+      "en": "She gets through the month. But next month starts ₹2,000 short, and the same thing happens by the 14th.",
+      "hi": "महीना निकल जाता है। पर अगला महीना ₹2,000 कम से शुरू होता है, और 14 तारीख तक फिर वही हाल।",
+      "mr": "महिना निघून जातो. पण पुढचा महिना ₹2,000 कमी घेऊन सुरू होतो आणि 14 तारखेपर्यंत पुन्हा तेच होते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "debt": 2000
+     }
+    },
+    {
+     "text": {
+      "en": "Tell her parents the phone bill was high and ask for more",
+      "hi": "माता-पिता से कहे कि फ़ोन का बिल ज़्यादा आया, और पैसे माँगे",
+      "mr": "आई-बाबांना सांगावे की फोनचे बिल जास्त आले, आणि आणखी पैसे मागावेत"
+     },
+     "outcome": {
+      "en": "They send ₹2,000. Nothing changes, because the real reason was never said aloud. She will make the same call next month.",
+      "hi": "वे ₹2,000 भेज देते हैं। कुछ नहीं बदलता, क्योंकि असली कारण कहा ही नहीं गया। अगले महीने वह फिर यही फ़ोन करेगी।",
+      "mr": "ते ₹2,000 पाठवतात. काहीच बदलत नाही, कारण खरे कारण सांगितलेच गेले नाही. पुढच्या महिन्यात ती पुन्हा हाच फोन करेल."
+     },
+     "verdict": "okay",
+     "effects": {
+      "cash": 2000
+     }
+    },
+    {
+     "text": {
+      "en": "Write out the twelve days, cancel the two apps, cook with her roommate, and tell her parents what happened",
+      "hi": "बारह दिन लिखकर योजना बनाए, दोनों ऐप बंद करे, रूममेट के साथ खाना बनाए, और माता-पिता को सच बताए",
+      "mr": "बारा दिवस लिहून काढावेत, दोन्ही ॲप बंद करावीत, रूममेटसोबत स्वयंपाक करावा आणि आई-बाबांना खरे सांगावे"
+     },
+     "outcome": {
+      "en": "It is a thin twelve days, but she finishes with ₹40 and owes nobody. On the first, she writes the plan before she spends anything.",
+      "hi": "बारह दिन तंगी में कटते हैं, पर वह ₹40 बचाकर खत्म करती है और किसी की उधारी नहीं। पहली तारीख को वह खर्च से पहले योजना लिखती है।",
+      "mr": "बारा दिवस काटकसरीत जातात, पण ती ₹40 शिल्लक ठेवून महिना संपवते आणि कोणाचेही देणे नाही. पहिल्या तारखेला ती खर्चाआधी योजना लिहिते."
+     },
+     "verdict": "good",
+     "effects": {
+      "cash": 40
+     }
+    }
+   ],
+   "lesson": {
+    "en": "A budget is written before the month starts, while the money is still there. List what comes in, then what must go out, and only then what is free to spend. Small payments that repeat are the ones that disappear unnoticed.",
+    "hi": "बजट महीना शुरू होने से पहले लिखा जाता है, जब पैसा हाथ में हो। पहले लिखें क्या आता है, फिर क्या जाना ही है, और उसके बाद क्या खुलकर खर्च हो सकता है। बार-बार कटने वाले छोटे भुगतान ही बिना दिखे गायब होते हैं।",
+    "mr": "बजेट महिना सुरू होण्यापूर्वी लिहायचे असते, पैसे हातात असताना. आधी लिहा काय येते, मग काय जाणारच, आणि त्यानंतर काय मोकळे खर्चता येईल. पुन्हा पुन्हा कापले जाणारे छोटे पैसेच नकळत नाहीसे होतात."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "When is the best time to make a budget?",
+      "hi": "बजट बनाने का सबसे अच्छा समय कब है?",
+      "mr": "बजेट करण्याची सर्वोत्तम वेळ कोणती?"
+     },
+     "options": [
+      {
+       "en": "When the money runs out",
+       "hi": "जब पैसा खत्म हो जाए",
+       "mr": "पैसे संपल्यावर"
+      },
+      {
+       "en": "Before the month begins",
+       "hi": "महीना शुरू होने से पहले",
+       "mr": "महिना सुरू होण्यापूर्वी"
+      },
+      {
+       "en": "At the end of the year",
+       "hi": "साल के अंत में",
+       "mr": "वर्षाच्या शेवटी"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "A plan made after the money is spent can only describe the damage.",
+      "hi": "पैसा खर्च होने के बाद बनी योजना सिर्फ़ नुकसान गिन सकती है।",
+      "mr": "पैसे खर्च झाल्यावर केलेली योजना फक्त नुकसान मोजू शकते."
+     }
+    },
+    {
+     "question": {
+      "en": "Which spending is easiest to lose track of?",
+      "hi": "कौन सा खर्च सबसे आसानी से नज़र से छूटता है?",
+      "mr": "कोणता खर्च सर्वात सहज नजरेतून सुटतो?"
+     },
+     "options": [
+      {
+       "en": "Small amounts that repeat every month",
+       "hi": "छोटी रकम जो हर महीने कटती है",
+       "mr": "दर महिन्याला कापली जाणारी छोटी रक्कम"
+      },
+      {
+       "en": "Rent",
+       "hi": "किराया",
+       "mr": "भाडे"
+      },
+      {
+       "en": "College fees",
+       "hi": "कॉलेज की फीस",
+       "mr": "कॉलेजची फी"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Rent and fees are large and remembered. A ₹149 subscription is not.",
+      "hi": "किराया और फीस बड़े होते हैं और याद रहते हैं। ₹149 की सदस्यता याद नहीं रहती।",
+      "mr": "भाडे आणि फी मोठी असते आणि लक्षात राहते. ₹149 ची वर्गणी लक्षात राहत नाही."
+     }
+    }
+   ],
+   "guides": [
+    "budget",
+    "needs-wants",
+    "subscription-traps"
+   ]
+  },
+  {
+   "id": "first-job",
+   "stage": "first-job",
+   "topic": "income",
+   "age": 22,
+   "place": "office",
+   "title": {
+    "en": "The offer said ₹4.2 lakh",
+    "hi": "ऑफ़र में ₹4.2 लाख लिखा था",
+    "mr": "ऑफरमध्ये ₹4.2 लाख लिहिले होते"
+   },
+   "story": [
+    {
+     "en": "Ira is 22 and has her first job offer: CTC ₹4.2 lakh a year. She divides by twelve and gets ₹35,000 a month. She tells her mother that number.",
+     "hi": "इरा 22 की है और पहली नौकरी का ऑफ़र मिला है: CTC ₹4.2 लाख सालाना। वह बारह से भाग देती है और ₹35,000 महीना निकालती है। माँ को भी यही आँकड़ा बताती है।",
+     "mr": "इरा 22 वर्षांची आहे आणि तिला पहिल्या नोकरीची ऑफर मिळाली आहे: CTC वर्षाला ₹4.2 लाख. ती बाराने भागते आणि महिन्याला ₹35,000 असा हिशोब करते. आईलाही हाच आकडा सांगते."
+    },
+    {
+     "en": "Before her first day she finds a one-room flat near the office for ₹14,000 and signs for eleven months.",
+     "hi": "पहले दिन से पहले ही वह दफ़्तर के पास ₹14,000 का एक कमरे का फ़्लैट ढूँढ़ती है और ग्यारह महीने का करार कर लेती है।",
+     "mr": "पहिल्या दिवसाआधीच ती ऑफिसजवळ ₹14,000 चा एका खोलीचा फ्लॅट शोधते आणि अकरा महिन्यांचा करार करते."
+    },
+    {
+     "en": "At the end of the month her payslip arrives. The amount credited is not ₹35,000.",
+     "hi": "महीने के अंत में सैलरी स्लिप आती है। खाते में आई रकम ₹35,000 नहीं है।",
+     "mr": "महिनाअखेरीस पगाराची स्लिप येते. खात्यात जमा झालेली रक्कम ₹35,000 नाही."
+    }
+   ],
+   "slip": {
+    "en": "Ira signed the rent agreement before she had seen a payslip. She planned her life on a number that was never going to reach her account.",
+    "hi": "इरा ने सैलरी स्लिप देखने से पहले किराये के करार पर दस्तखत कर दिए। उसने ऐसे आँकड़े पर ज़िंदगी की योजना बनाई जो कभी खाते में आने वाला नहीं था।",
+    "mr": "इराने पगाराची स्लिप पाहण्याआधीच भाडेकरारावर सही केली. जो आकडा खात्यात कधीच येणार नव्हता त्यावर तिने आयुष्याचे नियोजन केले."
+   },
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "Ira's first payslip",
+     "hi": "इरा की पहली सैलरी स्लिप",
+     "mr": "इराची पहिली पगार स्लिप"
+    },
+    "hint": {
+     "en": "This is an example payslip. Tap each line to see what it means.",
+     "hi": "यह एक उदाहरण स्लिप है। हर पंक्ति पर टैप करके देखें उसका मतलब क्या है।",
+     "mr": "ही एक उदाहरण स्लिप आहे. प्रत्येक ओळीवर टॅप करून तिचा अर्थ पाहा."
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "Basic pay",
+       "hi": "मूल वेतन",
+       "mr": "मूळ वेतन"
+      },
+      "value": {
+       "en": "₹15,000",
+       "hi": "₹15,000",
+       "mr": "₹15,000"
+      },
+      "note": {
+       "en": "The core of the salary. Provident fund and some other amounts are worked out from this line.",
+       "hi": "वेतन का मुख्य हिस्सा। भविष्य निधि और कुछ दूसरी रकम इसी से निकाली जाती हैं।",
+       "mr": "पगाराचा मुख्य भाग. भविष्य निर्वाह निधी आणि काही इतर रकमा यावरून काढल्या जातात."
+      }
+     },
+     {
+      "label": {
+       "en": "Allowances (HRA and others)",
+       "hi": "भत्ते (HRA व अन्य)",
+       "mr": "भत्ते (HRA व इतर)"
+      },
+      "value": {
+       "en": "₹15,800",
+       "hi": "₹15,800",
+       "mr": "₹15,800"
+      },
+      "note": {
+       "en": "Paid every month with the basic pay. Together they make the gross pay of ₹30,800.",
+       "hi": "हर महीने मूल वेतन के साथ मिलते हैं। दोनों मिलकर ₹30,800 का सकल वेतन बनता है।",
+       "mr": "दर महिन्याला मूळ वेतनासोबत मिळतात. दोन्ही मिळून ₹30,800 एकूण वेतन होते."
+      }
+     },
+     {
+      "label": {
+       "en": "Employee provident fund",
+       "hi": "कर्मचारी भविष्य निधि",
+       "mr": "कर्मचारी भविष्य निर्वाह निधी"
+      },
+      "value": {
+       "en": "− ₹1,800",
+       "hi": "− ₹1,800",
+       "mr": "− ₹1,800"
+      },
+      "flag": true,
+      "note": {
+       "en": "12% of basic pay goes into her own EPF account. It is her money, saved for later, but it does not reach her hand now.",
+       "hi": "मूल वेतन का 12% उसके अपने EPF खाते में जाता है। यह उसी का पैसा है, आगे के लिए जमा, पर अभी हाथ में नहीं आता।",
+       "mr": "मूळ वेतनाच्या 12% रक्कम तिच्या स्वतःच्या EPF खात्यात जाते. ते तिचेच पैसे आहेत, पुढच्यासाठी साठवलेले, पण आत्ता हातात येत नाहीत."
+      }
+     },
+     {
+      "label": {
+       "en": "Professional tax",
+       "hi": "पेशा कर",
+       "mr": "व्यवसाय कर"
+      },
+      "value": {
+       "en": "− ₹200",
+       "hi": "− ₹200",
+       "mr": "− ₹200"
+      },
+      "note": {
+       "en": "A small tax that some states charge on salaries. The employer deducts it.",
+       "hi": "एक छोटा कर जो कुछ राज्य वेतन पर लेते हैं। नियोक्ता इसे काटता है।",
+       "mr": "काही राज्ये पगारावर आकारतात असा छोटा कर. नियोक्ता तो कापतो."
+      }
+     },
+     {
+      "label": {
+       "en": "Net pay (in hand)",
+       "hi": "शुद्ध वेतन (हाथ में)",
+       "mr": "निव्वळ वेतन (हातात)"
+      },
+      "value": {
+       "en": "₹28,800",
+       "hi": "₹28,800",
+       "mr": "₹28,800"
+      },
+      "flag": true,
+      "note": {
+       "en": "This is what reaches the bank account. Every plan should start from this number.",
+       "hi": "यही बैंक खाते में आता है। हर योजना इसी आँकड़े से शुरू होनी चाहिए।",
+       "mr": "हेच बँक खात्यात येते. प्रत्येक योजना याच आकड्यापासून सुरू व्हायला हवी."
+      }
+     },
+     {
+      "label": {
+       "en": "In the CTC, not in the payslip",
+       "hi": "CTC में है, स्लिप में नहीं",
+       "mr": "CTC मध्ये आहे, स्लिपमध्ये नाही"
+      },
+      "value": {
+       "en": "about ₹4,200 a month",
+       "hi": "करीब ₹4,200 महीना",
+       "mr": "सुमारे ₹4,200 महिना"
+      },
+      "flag": true,
+      "note": {
+       "en": "CTC means cost to company. It also counts the employer's own EPF share, gratuity and yearly variable pay. None of that is paid monthly.",
+       "hi": "CTC यानी कंपनी की कुल लागत। इसमें नियोक्ता का EPF हिस्सा, ग्रेच्युटी और सालाना वेरिएबल पे भी गिने जाते हैं। ये हर महीने नहीं मिलते।",
+       "mr": "CTC म्हणजे कंपनीचा एकूण खर्च. त्यात नियोक्त्याचा EPF हिस्सा, ग्रॅच्युइटी आणि वार्षिक व्हेरिएबल पेही मोजले जातात. हे दर महिन्याला मिळत नाहीत."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "Her in-hand pay is ₹28,800 and the rent is ₹14,000. What should Ira do?",
+    "hi": "हाथ में ₹28,800 आते हैं और किराया ₹14,000 है। इरा क्या करे?",
+    "mr": "हातात ₹28,800 येतात आणि भाडे ₹14,000 आहे. इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Find a flatmate and split the rent",
+      "hi": "एक फ़्लैटमेट ढूँढ़े और किराया बाँट ले",
+      "mr": "फ्लॅटमेट शोधावी आणि भाडे वाटून घ्यावे"
+     },
+     "outcome": {
+      "en": "A colleague moves in. Rent drops to ₹7,000, and for the first time there is money left at the end of the month.",
+      "hi": "एक सहकर्मी साथ रहने आ जाती है। किराया ₹7,000 रह जाता है, और पहली बार महीने के अंत में पैसा बचता है।",
+      "mr": "एक सहकारी सोबत राहायला येते. भाडे ₹7,000 होते आणि पहिल्यांदाच महिनाअखेरीस पैसे उरतात."
+     },
+     "verdict": "good",
+     "effects": {
+      "cash": 7000
+     }
+    },
+    {
+     "text": {
+      "en": "Keep the flat and cut everything else, including saving",
+      "hi": "फ़्लैट रखे और बाकी सब काट दे, बचत भी",
+      "mr": "फ्लॅट ठेवावा आणि बाकी सगळे कमी करावे, बचतसुद्धा"
+     },
+     "outcome": {
+      "en": "She manages, with nothing to spare. Eleven months pass without a rupee saved, and one surprise bill would undo her.",
+      "hi": "काम चल जाता है, पर हाथ में कुछ नहीं बचता। ग्यारह महीने एक रुपया बचाए बिना निकलते हैं, और एक अचानक बिल सब बिगाड़ सकता है।",
+      "mr": "कसेबसे भागते, पण हातात काही उरत नाही. अकरा महिने एक रुपयाही न वाचवता जातात आणि एक अचानक आलेले बिल सगळे बिघडवू शकते."
+     },
+     "verdict": "okay",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Keep the flat and put the shortfall on a credit card",
+      "hi": "फ़्लैट रखे और कमी क्रेडिट कार्ड से पूरी करे",
+      "mr": "फ्लॅट ठेवावा आणि तूट क्रेडिट कार्डने भरावी"
+     },
+     "outcome": {
+      "en": "It works for two months. By the third she is paying only the minimum due, and the balance keeps growing with interest.",
+      "hi": "दो महीने चल जाता है। तीसरे तक वह सिर्फ़ न्यूनतम राशि भर रही है और बकाया ब्याज के साथ बढ़ता जा रहा है।",
+      "mr": "दोन महिने चालते. तिसऱ्या महिन्यापर्यंत ती फक्त किमान रक्कम भरते आणि थकबाकी व्याजासह वाढत जाते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "debt": 18000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "CTC is what the job costs the company in a year. Net pay is what reaches your account each month. The gap is made of your own EPF saving, taxes, the employer's contributions and pay that comes once a year. Ask for the monthly in-hand figure before you commit to rent or an EMI.",
+    "hi": "CTC वह है जो नौकरी पर कंपनी साल भर में खर्च करती है। शुद्ध वेतन वह है जो हर महीने खाते में आता है। फ़र्क में आपकी अपनी EPF बचत, कर, नियोक्ता का अंशदान और साल में एक बार मिलने वाला वेतन होता है। किराया या EMI तय करने से पहले हाथ में आने वाली मासिक रकम पूछें।",
+    "mr": "CTC म्हणजे नोकरीवर कंपनीचा वर्षभराचा खर्च. निव्वळ वेतन म्हणजे दर महिन्याला खात्यात येणारी रक्कम. फरकात तुमची स्वतःची EPF बचत, कर, नियोक्त्याचे अंशदान आणि वर्षातून एकदा मिळणारे वेतन असते. भाडे किंवा EMI ठरवण्याआधी हातात येणारी मासिक रक्कम विचारा."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "Which number should you plan your month on?",
+      "hi": "महीने की योजना किस आँकड़े पर बनानी चाहिए?",
+      "mr": "महिन्याचे नियोजन कोणत्या आकड्यावर करावे?"
+     },
+     "options": [
+      {
+       "en": "CTC divided by twelve",
+       "hi": "CTC को बारह से भाग देकर",
+       "mr": "CTC भागिले बारा"
+      },
+      {
+       "en": "Gross pay",
+       "hi": "सकल वेतन",
+       "mr": "एकूण वेतन"
+      },
+      {
+       "en": "Net pay",
+       "hi": "शुद्ध वेतन",
+       "mr": "निव्वळ वेतन"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Only net pay reaches your account.",
+      "hi": "खाते में सिर्फ़ शुद्ध वेतन आता है।",
+      "mr": "खात्यात फक्त निव्वळ वेतन येते."
+     }
+    },
+    {
+     "question": {
+      "en": "The EPF amount cut from Ira's pay is:",
+      "hi": "इरा के वेतन से कटी EPF की रकम है:",
+      "mr": "इराच्या पगारातून कापलेली EPF रक्कम म्हणजे:"
+     },
+     "options": [
+      {
+       "en": "Her own money, saved in her EPF account",
+       "hi": "उसका अपना पैसा, उसके EPF खाते में जमा",
+       "mr": "तिचे स्वतःचे पैसे, तिच्या EPF खात्यात जमा"
+      },
+      {
+       "en": "A fee the company keeps",
+       "hi": "कंपनी की रखी हुई फीस",
+       "mr": "कंपनीने ठेवलेली फी"
+      },
+      {
+       "en": "A fine for joining late",
+       "hi": "देर से आने का जुर्माना",
+       "mr": "उशिरा रुजू झाल्याचा दंड"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "An employee contributes 12% of basic wages to EPF, and the employer contributes too. It is saved in her name.",
+      "hi": "कर्मचारी मूल वेतन का 12% EPF में देता है, और नियोक्ता भी देता है। यह उसी के नाम पर जमा होता है।",
+      "mr": "कर्मचारी मूळ वेतनाच्या 12% EPF मध्ये भरतो आणि नियोक्ताही भरतो. ते तिच्याच नावावर जमा होते."
+     }
+    }
+   ],
+   "guides": [
+    "salary-slip",
+    "budget",
+    "true-cost"
+   ]
+  },
+  {
+   "id": "first-income",
+   "stage": "first-income",
+   "topic": "saving",
+   "age": 22,
+   "place": "room",
+   "title": {
+    "en": "Salary day",
+    "hi": "सैलरी का दिन",
+    "mr": "पगाराचा दिवस"
+   },
+   "story": [
+    {
+     "en": "It is the first of the month and ₹28,800 has landed. Ira's phone lights up: a weekend trip with friends, ₹9,000 each.",
+     "hi": "महीने की पहली तारीख है और ₹28,800 आ गए हैं। इरा का फ़ोन चमकता है: दोस्तों के साथ वीकेंड ट्रिप, ₹9,000 प्रति व्यक्ति।",
+     "mr": "महिन्याची पहिली तारीख आहे आणि ₹28,800 जमा झाले आहेत. इराचा फोन वाजतो: मित्रांसोबत वीकेंड ट्रिप, प्रत्येकी ₹9,000."
+    },
+    {
+     "en": "Last month she told herself she would save whatever was left. On the 28th there was ₹210 left.",
+     "hi": "पिछले महीने उसने खुद से कहा था कि जो बचेगा वह बचत होगी। 28 तारीख को ₹210 बचे थे।",
+     "mr": "गेल्या महिन्यात तिने स्वतःला सांगितले होते की जे उरेल ते बचत. 28 तारखेला ₹210 उरले होते."
+    },
+    {
+     "en": "Rent, food, travel and bills take about ₹17,000. The rest is hers to decide.",
+     "hi": "किराया, खाना, आना-जाना और बिल करीब ₹17,000 लेते हैं। बाकी का फ़ैसला उसका है।",
+     "mr": "भाडे, जेवण, प्रवास आणि बिले यांना सुमारे ₹17,000 लागतात. उरलेल्याचा निर्णय तिचा आहे."
+    }
+   ],
+   "slip": {
+    "en": "\"I'll save what's left\" gave her ₹210 in a month when she earned ₹28,800.",
+    "hi": "\"जो बचेगा वह बचाऊँगी\" ने उसे ₹28,800 की कमाई वाले महीने में ₹210 दिए।",
+    "mr": "\"जे उरेल ते वाचवेन\" यामुळे ₹28,800 कमावलेल्या महिन्यात तिच्याकडे ₹210 उरले."
+   },
+   "sim": {
+    "kind": "budget",
+    "income": 28800,
+    "needs": 17000,
+    "title": {
+     "en": "Split this month's salary",
+     "hi": "इस महीने का वेतन बाँटें",
+     "mr": "या महिन्याचा पगार वाटा"
+    },
+    "hint": {
+     "en": "₹17,000 is spoken for. Decide how much of the rest is for spending. What you don't spend is saved.",
+     "hi": "₹17,000 पहले से तय हैं। बाकी में से खर्च के लिए कितना, यह तय करें। जो खर्च नहीं होगा वह बचत है।",
+     "mr": "₹17,000 आधीच ठरलेले आहेत. उरलेल्यापैकी खर्चासाठी किती ते ठरवा. जे खर्च होणार नाही ती बचत."
+    }
+   },
+   "question": {
+    "en": "How should Ira handle saving from now on?",
+    "hi": "अब से इरा बचत कैसे करे?",
+    "mr": "आतापासून इराने बचत कशी करावी?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Save whatever is left at the end of the month",
+      "hi": "महीने के अंत में जो बचे वह बचाए",
+      "mr": "महिनाअखेरीस जे उरेल ते वाचवावे"
+     },
+     "outcome": {
+      "en": "Three months later her savings stand at ₹600. There is always a reason the money was needed.",
+      "hi": "तीन महीने बाद उसकी बचत ₹600 है। हर बार कोई कारण होता है कि पैसा चाहिए था।",
+      "mr": "तीन महिन्यांनंतर तिची बचत ₹600 आहे. दरवेळी पैसे लागले याचे काहीतरी कारण असते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": 600
+     }
+    },
+    {
+     "text": {
+      "en": "Set ₹3,000 to move to a separate account on salary day, then spend the rest freely",
+      "hi": "सैलरी के दिन ₹3,000 अपने-आप अलग खाते में जाएँ, फिर बाकी खुलकर खर्च करे",
+      "mr": "पगाराच्या दिवशी ₹3,000 आपोआप वेगळ्या खात्यात जावेत, मग उरलेले मोकळेपणाने खर्चावेत"
+     },
+     "outcome": {
+      "en": "She never sees the ₹3,000, so she never misses it. After three months there is ₹9,000 she did not have to think about.",
+      "hi": "₹3,000 उसे दिखते ही नहीं, तो कमी भी नहीं खलती। तीन महीने बाद ₹9,000 हैं जिनके बारे में सोचना भी नहीं पड़ा।",
+      "mr": "₹3,000 तिला दिसतच नाहीत, म्हणून त्यांची उणीवही भासत नाही. तीन महिन्यांनी ₹9,000 जमा आहेत, ज्यांचा विचारही करावा लागला नाही."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 9000
+     }
+    },
+    {
+     "text": {
+      "en": "Put ₹10,000 away at once to make up for lost time",
+      "hi": "खोया समय पूरा करने के लिए एक साथ ₹10,000 अलग रख दे",
+      "mr": "गेलेला वेळ भरून काढण्यासाठी एकदम ₹10,000 बाजूला ठेवावेत"
+     },
+     "outcome": {
+      "en": "By the 20th she is short and takes ₹8,500 back out. Saving too much at once turned into saving almost nothing.",
+      "hi": "20 तारीख तक पैसा कम पड़ता है और वह ₹8,500 वापस निकाल लेती है। एक साथ बहुत बचाना लगभग कुछ न बचाना बन गया।",
+      "mr": "20 तारखेपर्यंत पैसे कमी पडतात आणि ती ₹8,500 परत काढते. एकदम खूप वाचवणे म्हणजे जवळजवळ काहीच न वाचवणे ठरले."
+     },
+     "verdict": "okay",
+     "effects": {
+      "savings": 1500
+     }
+    }
+   ],
+   "lesson": {
+    "en": "Pay yourself first. Move a fixed amount out on the day the salary arrives, automatically, and live on what remains. An amount small enough to keep up every month beats a large one you take back.",
+    "hi": "पहले खुद को भुगतान करें। जिस दिन वेतन आए, उसी दिन एक तय रकम अपने-आप अलग हो जाए, और बाकी में गुज़ारा करें। हर महीने निभ सके ऐसी छोटी रकम उस बड़ी रकम से बेहतर है जो वापस निकालनी पड़े।",
+    "mr": "आधी स्वतःला द्या. पगार आला त्याच दिवशी ठरलेली रक्कम आपोआप बाजूला जावी आणि उरलेल्यात भागवावे. दर महिन्याला निभेल अशी छोटी रक्कम, परत काढावी लागणाऱ्या मोठ्या रकमेपेक्षा चांगली."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "\"Pay yourself first\" means:",
+      "hi": "\"पहले खुद को भुगतान\" का मतलब है:",
+      "mr": "\"आधी स्वतःला द्या\" म्हणजे:"
+     },
+     "options": [
+      {
+       "en": "Buy something nice on salary day",
+       "hi": "सैलरी के दिन कुछ अच्छा खरीदें",
+       "mr": "पगाराच्या दिवशी काहीतरी छान घ्या"
+      },
+      {
+       "en": "Save before you spend",
+       "hi": "खर्च से पहले बचत करें",
+       "mr": "खर्चाआधी बचत करा"
+      },
+      {
+       "en": "Pay your bills last",
+       "hi": "बिल सबसे अंत में भरें",
+       "mr": "बिले सर्वात शेवटी भरा"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Saving happens first, on salary day, so it does not depend on what is left.",
+      "hi": "बचत सबसे पहले, सैलरी के दिन होती है, ताकि वह बचे हुए पैसे पर निर्भर न रहे।",
+      "mr": "बचत सर्वात आधी, पगाराच्या दिवशी होते, म्हणजे ती उरलेल्या पैशांवर अवलंबून राहत नाही."
+     }
+    },
+    {
+     "question": {
+      "en": "Which plan is most likely to last a year?",
+      "hi": "कौन सी योजना साल भर चलने की सबसे ज़्यादा संभावना है?",
+      "mr": "कोणती योजना वर्षभर टिकण्याची सर्वाधिक शक्यता आहे?"
+     },
+     "options": [
+      {
+       "en": "₹3,000 moved automatically every month",
+       "hi": "हर महीने ₹3,000 अपने-आप अलग",
+       "mr": "दर महिन्याला ₹3,000 आपोआप बाजूला"
+      },
+      {
+       "en": "₹12,000 whenever she remembers",
+       "hi": "जब याद आए तब ₹12,000",
+       "mr": "आठवेल तेव्हा ₹12,000"
+      },
+      {
+       "en": "Whatever is left on the 30th",
+       "hi": "30 तारीख को जो बचे",
+       "mr": "30 तारखेला जे उरेल ते"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Automatic and affordable is what survives a busy month.",
+      "hi": "अपने-आप होने वाली और निभ सकने वाली बचत ही व्यस्त महीने में टिकती है।",
+      "mr": "आपोआप होणारी आणि परवडणारी बचतच धावपळीच्या महिन्यात टिकते."
+     }
+    }
+   ],
+   "guides": [
+    "pay-yourself",
+    "emergency-fund",
+    "needs-wants"
+   ]
+  },
+  {
+   "id": "banking",
+   "stage": "banking",
+   "topic": "banking",
+   "age": 23,
+   "place": "bank",
+   "title": {
+    "en": "\"Your account will be blocked today\"",
+    "hi": "\"आपका खाता आज बंद हो जाएगा\"",
+    "mr": "\"तुमचे खाते आज बंद होईल\""
+   },
+   "story": [
+    {
+     "en": "Ira is 23. Her salary account was opened in a hurry on her first day at work. She signed where the HR person pointed.",
+     "hi": "इरा 23 की है। उसका सैलरी खाता नौकरी के पहले दिन जल्दी-जल्दी में खुला था। HR ने जहाँ उँगली रखी, वहाँ उसने दस्तखत कर दिए।",
+     "mr": "इरा 23 वर्षांची आहे. तिचे सॅलरी खाते नोकरीच्या पहिल्या दिवशी घाईघाईत उघडले गेले. HR ने जिथे बोट ठेवले तिथे तिने सही केली."
+    },
+    {
+     "en": "This morning a text arrives: her KYC has expired, the account will be blocked today, tap the link to update.",
+     "hi": "आज सुबह एक संदेश आता है: KYC की अवधि खत्म हो गई है, खाता आज बंद हो जाएगा, अपडेट के लिए लिंक दबाएँ।",
+     "mr": "आज सकाळी एक संदेश येतो: KYC ची मुदत संपली आहे, खाते आज बंद होईल, अपडेटसाठी लिंक दाबा."
+    },
+    {
+     "en": "Rent is due tomorrow. Her thumb is already over the link.",
+     "hi": "कल किराया देना है। उसका अँगूठा लिंक के ऊपर पहुँच चुका है।",
+     "mr": "उद्या भाडे द्यायचे आहे. तिचा अंगठा लिंकवर पोहोचलाच आहे."
+    }
+   ],
+   "slip": {
+    "en": "When the account was opened, Ira left the nominee line blank and never read what she signed.",
+    "hi": "खाता खुलते समय इरा ने नॉमिनी की जगह खाली छोड़ दी और जिस पर दस्तखत किए वह पढ़ा ही नहीं।",
+    "mr": "खाते उघडताना इराने नॉमिनीचा रकाना रिकामा सोडला आणि ज्यावर सही केली ते वाचलेच नाही."
+   },
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "Look closely at the message",
+     "hi": "संदेश को ध्यान से देखें",
+     "mr": "संदेश नीट पाहा"
+    },
+    "hint": {
+     "en": "Tap each part. Which ones should make her stop?",
+     "hi": "हर हिस्से पर टैप करें। किन पर उसे रुक जाना चाहिए?",
+     "mr": "प्रत्येक भागावर टॅप करा. कोणत्या ठिकाणी तिने थांबायला हवे?"
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "Sender",
+       "hi": "भेजने वाला",
+       "mr": "पाठवणारा"
+      },
+      "value": {
+       "en": "+91 98••• ••214",
+       "hi": "+91 98••• ••214",
+       "mr": "+91 98••• ••214"
+      },
+      "flag": true,
+      "note": {
+       "en": "An ordinary mobile number. She has no reason to trust it, and the name of a bank in the text proves nothing.",
+       "hi": "एक साधारण मोबाइल नंबर। इस पर भरोसे की कोई वजह नहीं, और संदेश में बैंक का नाम लिखा होना कुछ साबित नहीं करता।",
+       "mr": "एक साधा मोबाइल नंबर. त्यावर विश्वास ठेवायचे काही कारण नाही आणि संदेशात बँकेचे नाव असणे काहीही सिद्ध करत नाही."
+      }
+     },
+     {
+      "label": {
+       "en": "Deadline",
+       "hi": "समय सीमा",
+       "mr": "मुदत"
+      },
+      "value": {
+       "en": "\"blocked today\"",
+       "hi": "\"आज बंद\"",
+       "mr": "\"आज बंद\""
+      },
+      "flag": true,
+      "note": {
+       "en": "Pressure to act within hours is how the message stops her from checking.",
+       "hi": "कुछ घंटों में कुछ करने का दबाव इसलिए है कि वह जाँच न कर पाए।",
+       "mr": "काही तासांत कृती करण्याचा दबाव यासाठीच की तिने तपासू नये."
+      }
+     },
+     {
+      "label": {
+       "en": "Link",
+       "hi": "लिंक",
+       "mr": "लिंक"
+      },
+      "value": {
+       "en": "a short link",
+       "hi": "एक छोटा लिंक",
+       "mr": "एक छोटी लिंक"
+      },
+      "flag": true,
+      "note": {
+       "en": "A shortened link hides where it really goes. KYC is updated at the branch or inside the bank's own app, never through a link in a message.",
+       "hi": "छोटा लिंक छिपा देता है कि वह असल में कहाँ ले जाएगा। KYC शाखा में या बैंक के अपने ऐप में अपडेट होता है, संदेश के लिंक से कभी नहीं।",
+       "mr": "छोटी लिंक ती खरी कुठे नेते हे लपवते. KYC शाखेत किंवा बँकेच्या स्वतःच्या ॲपमध्ये अपडेट होते, संदेशातील लिंकने कधीच नाही."
+      }
+     },
+     {
+      "label": {
+       "en": "What it will ask for",
+       "hi": "यह क्या माँगेगा",
+       "mr": "ती काय मागेल"
+      },
+      "value": {
+       "en": "card number, PIN, OTP",
+       "hi": "कार्ड नंबर, PIN, OTP",
+       "mr": "कार्ड नंबर, PIN, OTP"
+      },
+      "flag": true,
+      "note": {
+       "en": "A bank never needs her to type an OTP or PIN to keep an account open. An OTP approves a payment out.",
+       "hi": "खाता चालू रखने के लिए बैंक को कभी OTP या PIN टाइप करवाने की ज़रूरत नहीं होती। OTP बाहर जाने वाले भुगतान को मंज़ूरी देता है।",
+       "mr": "खाते चालू ठेवण्यासाठी बँकेला OTP किंवा PIN टाइप करून घेण्याची कधीच गरज नसते. OTP बाहेर जाणाऱ्या पैशांना मंजुरी देतो."
+      }
+     },
+     {
+      "label": {
+       "en": "The true part",
+       "hi": "सच्चा हिस्सा",
+       "mr": "खरा भाग"
+      },
+      "value": {
+       "en": "KYC does need updating",
+       "hi": "KYC को अपडेट करना पड़ता है",
+       "mr": "KYC अपडेट करावे लागते"
+      },
+      "note": {
+       "en": "Banks do ask customers to update KYC from time to time. That is why the trick works. The request is real; the route is fake.",
+       "hi": "बैंक समय-समय पर ग्राहकों से KYC अपडेट करवाते हैं। इसीलिए यह चाल चलती है। माँग असली है; रास्ता नकली है।",
+       "mr": "बँका वेळोवेळी ग्राहकांकडून KYC अपडेट करून घेतात. म्हणूनच ही युक्ती चालते. मागणी खरी आहे; मार्ग खोटा आहे."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "What should Ira do?",
+    "hi": "इरा क्या करे?",
+    "mr": "इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Delete the message and forget about KYC",
+      "hi": "संदेश मिटाए और KYC को भूल जाए",
+      "mr": "संदेश पुसावा आणि KYC विसरून जावे"
+     },
+     "outcome": {
+      "en": "She loses nothing today. But she never checks whether her KYC really is due, and the nominee line stays blank.",
+      "hi": "आज उसका कुछ नहीं जाता। पर वह यह कभी नहीं देखती कि KYC सच में बाकी है या नहीं, और नॉमिनी की जगह खाली ही रहती है।",
+      "mr": "आज तिचे काही जात नाही. पण KYC खरेच बाकी आहे का हे ती कधीच तपासत नाही आणि नॉमिनीचा रकाना रिकामाच राहतो."
+     },
+     "verdict": "okay",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Ignore the link, call the number printed on her debit card, and visit the branch",
+      "hi": "लिंक को छोड़े, डेबिट कार्ड पर छपे नंबर पर फ़ोन करे, और शाखा जाए",
+      "mr": "लिंककडे दुर्लक्ष करावे, डेबिट कार्डवर छापलेल्या नंबरवर फोन करावा आणि शाखेत जावे"
+     },
+     "outcome": {
+      "en": "The bank confirms the message was not theirs. At the branch she updates her KYC properly and adds her mother as nominee. It takes twenty minutes.",
+      "hi": "बैंक बताता है कि संदेश उनका नहीं था। शाखा में वह KYC ठीक से अपडेट करती है और माँ को नॉमिनी बनाती है। बीस मिनट लगते हैं।",
+      "mr": "बँक सांगते की तो संदेश त्यांचा नव्हता. शाखेत ती KYC नीट अपडेट करते आणि आईला नॉमिनी करते. वीस मिनिटे लागतात."
+     },
+     "verdict": "good",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Tap the link and update quickly so rent goes through",
+      "hi": "लिंक दबाए और जल्दी अपडेट करे ताकि किराया चला जाए",
+      "mr": "लिंक दाबावी आणि पटकन अपडेट करावे म्हणजे भाडे जाईल"
+     },
+     "outcome": {
+      "en": "The page looks like her bank's. She types her card number and an OTP. Within minutes ₹8,000 is gone. She calls 1930 and her bank at once, which is the right thing, but not all of it comes back.",
+      "hi": "पेज उसके बैंक जैसा दिखता है। वह कार्ड नंबर और OTP डाल देती है। कुछ ही मिनटों में ₹8,000 चले जाते हैं। वह तुरंत 1930 और बैंक को फ़ोन करती है, जो सही कदम है, पर पूरा पैसा वापस नहीं आता।",
+      "mr": "पान तिच्या बँकेसारखेच दिसते. ती कार्ड नंबर आणि OTP टाकते. काही मिनिटांत ₹8,000 जातात. ती लगेच 1930 आणि बँकेला फोन करते, जे योग्यच आहे, पण सगळे पैसे परत येत नाहीत."
+     },
+     "verdict": "costly",
+     "effects": {
+      "cash": -8000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "KYC is real and banks do ask for it again. It is done at the branch, or inside the bank's own app or website that you opened yourself. It is never done through a link someone sent you, and it never needs your OTP or PIN. If money has gone, call 1930 and your bank immediately.",
+    "hi": "KYC असली है और बैंक इसे दोबारा माँगते हैं। यह शाखा में, या बैंक के अपने ऐप या वेबसाइट पर होता है जिसे आपने खुद खोला हो। यह किसी के भेजे लिंक से कभी नहीं होता, और इसके लिए OTP या PIN की ज़रूरत कभी नहीं होती। पैसा चला गया हो तो तुरंत 1930 और अपने बैंक को फ़ोन करें।",
+    "mr": "KYC खरे आहे आणि बँका ते पुन्हा मागतात. ते शाखेत, किंवा तुम्ही स्वतः उघडलेल्या बँकेच्या ॲप किंवा संकेतस्थळावर होते. कोणी पाठवलेल्या लिंकने ते कधीच होत नाही आणि त्यासाठी OTP किंवा PIN कधीच लागत नाही. पैसे गेले असतील तर लगेच 1930 आणि बँकेला फोन करा."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "Where is it safe to update KYC?",
+      "hi": "KYC कहाँ अपडेट करना सुरक्षित है?",
+      "mr": "KYC कुठे अपडेट करणे सुरक्षित आहे?"
+     },
+     "options": [
+      {
+       "en": "Through a link in an SMS",
+       "hi": "SMS में आए लिंक से",
+       "mr": "SMS मधील लिंकने"
+      },
+      {
+       "en": "With a caller who says he is from the bank",
+       "hi": "फ़ोन करने वाले के साथ जो खुद को बैंक का बताए",
+       "mr": "स्वतःला बँकेचा म्हणवणाऱ्या फोन करणाऱ्यासोबत"
+      },
+      {
+       "en": "At the branch or in the bank's own app",
+       "hi": "शाखा में या बैंक के अपने ऐप में",
+       "mr": "शाखेत किंवा बँकेच्या स्वतःच्या ॲपमध्ये"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Use a route you opened yourself, never one that was sent to you.",
+      "hi": "वही रास्ता चुनें जो आपने खुद खोला हो, किसी का भेजा हुआ नहीं।",
+      "mr": "तुम्ही स्वतः उघडलेला मार्ग वापरा, कोणी पाठवलेला नाही."
+     }
+    },
+    {
+     "question": {
+      "en": "Money has just left your account by fraud. What first?",
+      "hi": "धोखे से अभी-अभी खाते से पैसा गया है। सबसे पहले क्या?",
+      "mr": "फसवणुकीने आत्ताच खात्यातून पैसे गेले. सर्वात आधी काय?"
+     },
+     "options": [
+      {
+       "en": "Call 1930 and your bank right away",
+       "hi": "तुरंत 1930 और अपने बैंक को फ़ोन करें",
+       "mr": "लगेच 1930 आणि बँकेला फोन करा"
+      },
+      {
+       "en": "Wait a day to see if it returns",
+       "hi": "एक दिन रुककर देखें कि लौटता है या नहीं",
+       "mr": "एक दिवस थांबून परत येतात का ते पाहा"
+      },
+      {
+       "en": "Reply to the scammer",
+       "hi": "ठग को जवाब दें",
+       "mr": "फसवणाऱ्याला उत्तर द्या"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "1930 is the national cyber crime helpline. The sooner the report, the better the chance of stopping the money.",
+      "hi": "1930 राष्ट्रीय साइबर अपराध हेल्पलाइन है। जितनी जल्दी शिकायत, पैसा रुकने की उतनी संभावना।",
+      "mr": "1930 ही राष्ट्रीय सायबर गुन्हे हेल्पलाइन आहे. तक्रार जितकी लवकर, पैसे थांबण्याची शक्यता तितकी जास्त."
+     }
+    }
+   ],
+   "guides": [
+    "kyc-basics",
+    "otp-pin",
+    "money-missing",
+    "nominee-matters"
+   ]
+  },
+  {
+   "id": "budgeting",
+   "stage": "budgeting",
+   "topic": "budgeting",
+   "age": 24,
+   "place": "room",
+   "title": {
+    "en": "A raise, and still nothing left",
+    "hi": "वेतन बढ़ा, फिर भी कुछ नहीं बचा",
+    "mr": "पगार वाढला, तरी काही उरले नाही"
+   },
+   "story": [
+    {
+     "en": "Ira is 24. A raise took her in-hand pay to ₹34,000. She was sure the money problem was solved.",
+     "hi": "इरा 24 की है। वेतन बढ़कर हाथ में ₹34,000 आने लगे। उसे पक्का लगा कि पैसे की समस्या हल हो गई।",
+     "mr": "इरा 24 वर्षांची आहे. पगार वाढून हातात ₹34,000 येऊ लागले. पैशांचा प्रश्न सुटला याची तिला खात्री वाटली."
+    },
+    {
+     "en": "Three months on, the end of the month looks exactly the same as before. The salary grew and the spending quietly grew with it.",
+     "hi": "तीन महीने बाद महीने का अंत बिल्कुल पहले जैसा है। वेतन बढ़ा और खर्च चुपचाप उसके साथ बढ़ गया।",
+     "mr": "तीन महिन्यांनंतर महिनाअखेर अगदी आधीसारखीच आहे. पगार वाढला आणि खर्चही गुपचूप त्याच्यासोबत वाढला."
+    },
+    {
+     "en": "She scrolls through her statement on a Sunday and starts adding things up for the first time.",
+     "hi": "एक रविवार वह अपना स्टेटमेंट देखती है और पहली बार जोड़ लगाना शुरू करती है।",
+     "mr": "एका रविवारी ती स्टेटमेंट पाहते आणि पहिल्यांदाच बेरीज करायला घेते."
+    }
+   ],
+   "slip": {
+    "en": "Food delivery came to ₹6,500 last month. Three subscriptions she had forgotten took another ₹1,100.",
+    "hi": "पिछले महीने खाना मँगवाने पर ₹6,500 गए। तीन सदस्यताएँ जो वह भूल चुकी थी, ₹1,100 और ले गईं।",
+    "mr": "गेल्या महिन्यात बाहेरून मागवलेल्या जेवणावर ₹6,500 गेले. ती विसरलेल्या तीन वर्गण्यांनी आणखी ₹1,100 घेतले."
+   },
+   "sim": {
+    "kind": "budget",
+    "income": 34000,
+    "needs": 19000,
+    "title": {
+     "en": "Give every rupee a job",
+     "hi": "हर रुपये को एक काम दें",
+     "mr": "प्रत्येक रुपयाला काम द्या"
+    },
+    "hint": {
+     "en": "₹19,000 covers needs. Set a limit for wants. Whatever is left becomes savings.",
+     "hi": "₹19,000 ज़रूरतों के हैं। चाहतों की एक सीमा तय करें। जो बचे वह बचत है।",
+     "mr": "₹19,000 गरजांसाठी आहेत. इच्छांसाठी एक मर्यादा ठरवा. जे उरेल ती बचत."
+    }
+   },
+   "question": {
+    "en": "How should Ira fix this?",
+    "hi": "इरा इसे कैसे ठीक करे?",
+    "mr": "इराने हे कसे सुधारावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Wait for the next raise to fix it",
+      "hi": "अगली वेतन-वृद्धि का इंतज़ार करे",
+      "mr": "पुढच्या पगारवाढीची वाट पाहावी"
+     },
+     "outcome": {
+      "en": "The next raise comes a year later. So does a better phone on EMI. The end of the month still looks the same.",
+      "hi": "अगली वृद्धि एक साल बाद आती है। साथ में EMI पर बेहतर फ़ोन भी। महीने का अंत अब भी वैसा ही है।",
+      "mr": "पुढची वाढ वर्षभराने येते. सोबत EMI वर चांगला फोनही. महिनाअखेर अजूनही तशीच आहे."
+     },
+     "verdict": "costly",
+     "effects": {
+      "debt": 6000
+     }
+    },
+    {
+     "text": {
+      "en": "Ban all fun spending from tomorrow",
+      "hi": "कल से मज़े का हर खर्च बंद",
+      "mr": "उद्यापासून मौजेचा सगळा खर्च बंद"
+     },
+     "outcome": {
+      "en": "She lasts eleven days. Then a bad week ends with a ₹4,000 evening out, and she drops the whole plan.",
+      "hi": "ग्यारह दिन निभता है। फिर एक खराब हफ़्ता ₹4,000 की शाम पर खत्म होता है, और वह पूरी योजना छोड़ देती है।",
+      "mr": "अकरा दिवस टिकते. मग एक वाईट आठवडा ₹4,000 च्या संध्याकाळीत संपतो आणि ती सगळी योजनाच सोडते."
+     },
+     "verdict": "okay",
+     "effects": {
+      "savings": 1000
+     }
+    },
+    {
+     "text": {
+      "en": "Track one month, then set three limits: needs, wants, savings. Check once a week",
+      "hi": "एक महीना हिसाब रखे, फिर तीन सीमाएँ तय करे: ज़रूरतें, चाहतें, बचत। हफ़्ते में एक बार देखे",
+      "mr": "एक महिना हिशोब ठेवावा, मग तीन मर्यादा ठरवाव्यात: गरजा, इच्छा, बचत. आठवड्यातून एकदा पाहावे"
+     },
+     "outcome": {
+      "en": "Wants get ₹8,000, which is still plenty. The forgotten subscriptions go. ₹7,000 a month now moves to savings on salary day.",
+      "hi": "चाहतों को ₹8,000 मिलते हैं, जो अब भी काफ़ी हैं। भूली हुई सदस्यताएँ बंद होती हैं। अब हर महीने ₹7,000 सैलरी के दिन बचत में जाते हैं।",
+      "mr": "इच्छांसाठी ₹8,000 मिळतात, जे अजूनही पुरेसे आहेत. विसरलेल्या वर्गण्या बंद होतात. आता दर महिन्याला ₹7,000 पगाराच्या दिवशी बचतीत जातात."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 21000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "Earning more does not fix spending by itself, because spending rises to meet income unless a limit is set. Track first so the limits are based on what really happens. Leave room for wants: a budget with no room for enjoyment gets abandoned.",
+    "hi": "ज़्यादा कमाने से खर्च अपने-आप ठीक नहीं होता, क्योंकि सीमा न हो तो खर्च आमदनी के बराबर पहुँच जाता है। पहले हिसाब रखें ताकि सीमाएँ असलियत पर टिकी हों। चाहतों के लिए जगह छोड़ें: जिस बजट में आनंद की जगह नहीं, वह छोड़ दिया जाता है।",
+    "mr": "जास्त कमावल्याने खर्च आपोआप सुधारत नाही, कारण मर्यादा नसेल तर खर्च उत्पन्नाएवढा होतो. आधी हिशोब ठेवा म्हणजे मर्यादा वास्तवावर आधारलेल्या असतील. इच्छांसाठी जागा ठेवा: ज्या बजेटमध्ये आनंदाला जागा नाही ते सोडून दिले जाते."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "Why did the raise not help Ira?",
+      "hi": "वेतन बढ़ने से इरा को फ़ायदा क्यों नहीं हुआ?",
+      "mr": "पगारवाढीचा इराला फायदा का झाला नाही?"
+     },
+     "options": [
+      {
+       "en": "Her spending rose along with her pay",
+       "hi": "उसका खर्च वेतन के साथ बढ़ गया",
+       "mr": "तिचा खर्च पगारासोबत वाढला"
+      },
+      {
+       "en": "The raise was taxed away",
+       "hi": "पूरी वृद्धि कर में चली गई",
+       "mr": "सगळी वाढ करात गेली"
+      },
+      {
+       "en": "Her bank charged more",
+       "hi": "बैंक ने ज़्यादा शुल्क लिया",
+       "mr": "बँकेने जास्त शुल्क घेतले"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Without a limit, spending grows to match whatever comes in.",
+      "hi": "सीमा न हो तो खर्च उतना ही बढ़ जाता है जितना पैसा आता है।",
+      "mr": "मर्यादा नसेल तर जेवढे पैसे येतात तेवढा खर्च वाढतो."
+     }
+    },
+    {
+     "question": {
+      "en": "Which budget is most likely to be followed?",
+      "hi": "किस बजट के निभने की सबसे ज़्यादा संभावना है?",
+      "mr": "कोणते बजेट पाळले जाण्याची सर्वाधिक शक्यता आहे?"
+     },
+     "options": [
+      {
+       "en": "One with no spending on enjoyment at all",
+       "hi": "जिसमें आनंद पर कोई खर्च नहीं",
+       "mr": "ज्यात आनंदावर काहीच खर्च नाही"
+      },
+      {
+       "en": "One kept only in her head",
+       "hi": "जो सिर्फ़ दिमाग में है",
+       "mr": "जे फक्त डोक्यात आहे"
+      },
+      {
+       "en": "One with a fixed limit for wants",
+       "hi": "जिसमें चाहतों की तय सीमा है",
+       "mr": "ज्यात इच्छांची ठरलेली मर्यादा आहे"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "A limit is easier to keep than a ban.",
+      "hi": "पाबंदी से सीमा निभाना आसान है।",
+      "mr": "बंदीपेक्षा मर्यादा पाळणे सोपे."
+     }
+    }
+   ],
+   "guides": [
+    "budget",
+    "true-cost",
+    "subscription-traps"
+   ]
+  },
+  {
+   "id": "saving",
+   "stage": "saving",
+   "topic": "saving",
+   "age": 25,
+   "place": "room",
+   "title": {
+    "en": "The night train home",
+    "hi": "घर की रात वाली ट्रेन",
+    "mr": "घरी जाणारी रात्रीची गाडी"
+   },
+   "story": [
+    {
+     "en": "Ira is 25. At 9 p.m. her brother calls: their father has been admitted to hospital in Nagpur. She needs to leave tonight.",
+     "hi": "इरा 25 की है। रात 9 बजे भाई का फ़ोन आता है: पिताजी नागपुर के अस्पताल में भर्ती हैं। उसे आज रात ही निकलना है।",
+     "mr": "इरा 25 वर्षांची आहे. रात्री 9 वाजता भावाचा फोन येतो: बाबांना नागपूरच्या रुग्णालयात दाखल केले आहे. तिला आज रात्रीच निघायचे आहे."
+    },
+    {
+     "en": "A last-minute ticket, a hospital deposit and a week away from work will cost about ₹22,000.",
+     "hi": "आखिरी समय का टिकट, अस्पताल की जमा राशि और काम से एक हफ़्ते की छुट्टी, कुल करीब ₹22,000।",
+     "mr": "ऐनवेळचे तिकीट, रुग्णालयाची अनामत आणि आठवडाभर कामावरून रजा, एकूण सुमारे ₹22,000."
+    },
+    {
+     "en": "She has ₹9,000 she can reach tonight. While she is packing, an advert slides onto her screen: a loan in five minutes, no paperwork.",
+     "hi": "आज रात उसके पास ₹9,000 हैं जो निकाले जा सकते हैं। सामान बाँधते हुए स्क्रीन पर एक विज्ञापन आता है: पाँच मिनट में लोन, कोई कागज़ नहीं।",
+     "mr": "आज रात्री तिला काढता येतील असे ₹9,000 आहेत. सामान भरताना स्क्रीनवर जाहिरात येते: पाच मिनिटांत कर्ज, कागदपत्रे नाहीत."
+    }
+   ],
+   "slip": {
+    "en": "Ira had been saving, but with no purpose and nothing kept apart for emergencies. Most of it went on a new phone in March.",
+    "hi": "इरा बचत कर रही थी, पर बिना किसी मकसद के और आपात स्थिति के लिए कुछ अलग रखे बिना। ज़्यादातर पैसा मार्च में नए फ़ोन पर चला गया।",
+    "mr": "इरा बचत करत होती, पण कोणत्याही हेतूशिवाय आणि आपत्कालीन गरजेसाठी काही वेगळे न ठेवता. त्यातील बहुतेक पैसे मार्चमध्ये नव्या फोनवर गेले."
+   },
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "Three ways to find ₹13,000 tonight",
+     "hi": "आज रात ₹13,000 जुटाने के तीन रास्ते",
+     "mr": "आज रात्री ₹13,000 उभे करण्याचे तीन मार्ग"
+    },
+    "hint": {
+     "en": "Tap each to see what it would really cost her.",
+     "hi": "हर एक पर टैप करके देखें उसकी असली कीमत क्या होगी।",
+     "mr": "प्रत्येकावर टॅप करून त्याची खरी किंमत पाहा."
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "Five-minute loan app",
+       "hi": "पाँच मिनट वाला लोन ऐप",
+       "mr": "पाच मिनिटांचे कर्ज ॲप"
+      },
+      "value": {
+       "en": "instant",
+       "hi": "तुरंत",
+       "mr": "तात्काळ"
+      },
+      "flag": true,
+      "note": {
+       "en": "It asks for her contacts and photos before it shows any terms. An app that is not from a lender regulated by RBI can cut fees upfront, demand far more back within days, and harass her contacts.",
+       "hi": "शर्तें दिखाने से पहले यह संपर्क और फ़ोटो की अनुमति माँगता है। जो ऐप RBI द्वारा विनियमित ऋणदाता का नहीं है, वह पहले ही शुल्क काट सकता है, कुछ ही दिनों में कहीं ज़्यादा वापस माँग सकता है, और उसके संपर्कों को परेशान कर सकता है।",
+       "mr": "अटी दाखवण्याआधीच ते संपर्क आणि फोटोंची परवानगी मागते. RBI ने नियमन केलेल्या कर्जदात्याचे नसलेले ॲप आधीच शुल्क कापू शकते, काही दिवसांतच खूप जास्त परत मागू शकते आणि तिच्या संपर्कांना त्रास देऊ शकते."
+      }
+     },
+     {
+      "label": {
+       "en": "Credit card, pay the minimum",
+       "hi": "क्रेडिट कार्ड, न्यूनतम भुगतान",
+       "mr": "क्रेडिट कार्ड, किमान रक्कम भरणे"
+      },
+      "value": {
+       "en": "quick",
+       "hi": "जल्दी",
+       "mr": "लवकर"
+      },
+      "flag": true,
+      "note": {
+       "en": "Fine if she clears the whole bill by the due date. If she pays only the minimum, interest is charged on the rest and the debt can drag on for months.",
+       "hi": "अगर वह नियत तारीख तक पूरा बिल चुका दे तो ठीक है। सिर्फ़ न्यूनतम राशि भरे तो बाकी पर ब्याज लगता है और कर्ज़ महीनों खिंच सकता है।",
+       "mr": "देय तारखेपर्यंत पूर्ण बिल भरले तर ठीक. फक्त किमान रक्कम भरली तर उरलेल्यावर व्याज लागते आणि कर्ज महिनोन्महिने रेंगाळू शकते."
+      }
+     },
+     {
+      "label": {
+       "en": "Salary advance or family, with a date to repay",
+       "hi": "वेतन अग्रिम या परिवार, लौटाने की तारीख के साथ",
+       "mr": "पगाराची उचल किंवा कुटुंब, परतफेडीच्या तारखेसह"
+      },
+      "value": {
+       "en": "a phone call",
+       "hi": "एक फ़ोन",
+       "mr": "एक फोन"
+      },
+      "note": {
+       "en": "Harder to ask for, but there are no hidden charges. Writing down the amount and the date keeps the relationship safe.",
+       "hi": "माँगना कठिन है, पर इसमें कोई छिपा शुल्क नहीं। रकम और तारीख लिख लेने से रिश्ता सुरक्षित रहता है।",
+       "mr": "मागणे अवघड आहे, पण यात छुपे शुल्क नाही. रक्कम आणि तारीख लिहून ठेवल्याने नाते सुरक्षित राहते."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "She is ₹13,000 short and the train leaves at 11. What should Ira do?",
+    "hi": "₹13,000 कम हैं और ट्रेन 11 बजे की है। इरा क्या करे?",
+    "mr": "₹13,000 कमी आहेत आणि गाडी 11 वाजता आहे. इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Ask her manager for a salary advance, and start an emergency fund when she is back",
+      "hi": "मैनेजर से वेतन अग्रिम माँगे, और लौटकर आपात निधि शुरू करे",
+      "mr": "मॅनेजरकडे पगाराची उचल मागावी आणि परतल्यावर आपत्कालीन निधी सुरू करावा"
+     },
+     "outcome": {
+      "en": "Her manager approves ₹13,000, recovered over two months. Back in Pune she opens a separate account and aims for three months of expenses in it.",
+      "hi": "मैनेजर ₹13,000 मंज़ूर करते हैं, जो दो महीनों में कटेंगे। पुणे लौटकर वह अलग खाता खोलती है और उसमें तीन महीने के खर्च का लक्ष्य रखती है।",
+      "mr": "मॅनेजर ₹13,000 मंजूर करतात, ते दोन महिन्यांत कापले जातील. पुण्यात परतल्यावर ती वेगळे खाते उघडते आणि त्यात तीन महिन्यांच्या खर्चाचे लक्ष्य ठेवते."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 5000
+     }
+    },
+    {
+     "text": {
+      "en": "Put it on the credit card and pay the minimum for now",
+      "hi": "क्रेडिट कार्ड से भरे और फ़िलहाल न्यूनतम राशि चुकाए",
+      "mr": "क्रेडिट कार्डने भरावे आणि सध्या किमान रक्कम भरावी"
+     },
+     "outcome": {
+      "en": "She gets home in time. But paying the minimum each month, the ₹13,000 takes most of a year to clear and costs her well over what she borrowed.",
+      "hi": "वह समय पर घर पहुँच जाती है। पर हर महीने न्यूनतम राशि भरते हुए ₹13,000 चुकाने में लगभग पूरा साल लग जाता है और उधार से कहीं ज़्यादा चुकाना पड़ता है।",
+      "mr": "ती वेळेत घरी पोहोचते. पण दर महिन्याला किमान रक्कम भरत ₹13,000 फेडायला जवळपास वर्ष लागते आणि घेतलेल्यापेक्षा बरेच जास्त द्यावे लागते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "debt": 14500
+     }
+    },
+    {
+     "text": {
+      "en": "Take the five-minute app loan",
+      "hi": "पाँच मिनट वाला ऐप लोन ले",
+      "mr": "पाच मिनिटांचे ॲप कर्ज घ्यावे"
+     },
+     "outcome": {
+      "en": "₹13,000 is approved and ₹10,400 arrives after \"fees\". A week later the app demands ₹15,600 and starts messaging her colleagues.",
+      "hi": "₹13,000 मंज़ूर होते हैं और \"शुल्क\" कटकर ₹10,400 आते हैं। एक हफ़्ते बाद ऐप ₹15,600 माँगता है और उसके सहकर्मियों को संदेश भेजने लगता है।",
+      "mr": "₹13,000 मंजूर होतात आणि \"शुल्क\" कापून ₹10,400 येतात. आठवड्याने ॲप ₹15,600 मागते आणि तिच्या सहकाऱ्यांना संदेश पाठवू लागते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "debt": 15600
+     }
+    }
+   ],
+   "lesson": {
+    "en": "An emergency fund is money kept apart for exactly this: a job loss, a hospital, an urgent journey. Aim for three to six months of expenses, in a place you can reach within a day. It is what lets you say no to expensive, hurried borrowing.",
+    "hi": "आपात निधि ठीक इसी के लिए अलग रखा पैसा है: नौकरी छूटना, अस्पताल, अचानक यात्रा। तीन से छह महीने के खर्च का लक्ष्य रखें, ऐसी जगह जहाँ से एक दिन में पैसा मिल जाए। यही आपको महँगे, जल्दबाज़ी के उधार से मना करने की ताकत देता है।",
+    "mr": "आपत्कालीन निधी म्हणजे नेमक्या अशाच वेळेसाठी बाजूला ठेवलेले पैसे: नोकरी जाणे, रुग्णालय, तातडीचा प्रवास. तीन ते सहा महिन्यांच्या खर्चाचे लक्ष्य ठेवा, जिथून एका दिवसात पैसे मिळतील अशा ठिकाणी. महागड्या, घाईच्या कर्जाला नाही म्हणण्याची ताकद यातूनच मिळते."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "How large should an emergency fund be?",
+      "hi": "आपात निधि कितनी बड़ी होनी चाहिए?",
+      "mr": "आपत्कालीन निधी किती मोठा असावा?"
+     },
+     "options": [
+      {
+       "en": "One week of expenses",
+       "hi": "एक हफ़्ते का खर्च",
+       "mr": "एका आठवड्याचा खर्च"
+      },
+      {
+       "en": "Three to six months of expenses",
+       "hi": "तीन से छह महीने का खर्च",
+       "mr": "तीन ते सहा महिन्यांचा खर्च"
+      },
+      {
+       "en": "Ten years of salary",
+       "hi": "दस साल का वेतन",
+       "mr": "दहा वर्षांचा पगार"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Enough to carry you through a job loss or a medical bill without borrowing.",
+      "hi": "इतना कि नौकरी छूटने या इलाज के बिल में बिना उधार के काम चल जाए।",
+      "mr": "नोकरी गेल्यावर किंवा उपचाराच्या बिलात कर्ज न घेता भागेल एवढा."
+     }
+    },
+    {
+     "question": {
+      "en": "A loan app asks for your contacts and photos before showing its terms. This is:",
+      "hi": "एक लोन ऐप शर्तें दिखाने से पहले आपके संपर्क और फ़ोटो माँगता है। यह है:",
+      "mr": "एक कर्ज ॲप अटी दाखवण्याआधी तुमचे संपर्क आणि फोटो मागते. हे:"
+     },
+     "options": [
+      {
+       "en": "Normal for any lender",
+       "hi": "हर ऋणदाता के लिए सामान्य",
+       "mr": "कोणत्याही कर्जदात्यासाठी सामान्य"
+      },
+      {
+       "en": "Helpful, it speeds things up",
+       "hi": "मददगार, काम जल्दी होता है",
+       "mr": "उपयुक्त, काम लवकर होते"
+      },
+      {
+       "en": "A warning sign",
+       "hi": "खतरे का संकेत",
+       "mr": "धोक्याची खूण"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Those permissions are what such apps use to pressure and shame borrowers.",
+      "hi": "इन्हीं अनुमतियों से ऐसे ऐप उधार लेने वालों पर दबाव डालते और बदनाम करते हैं।",
+      "mr": "याच परवानग्या वापरून अशी ॲप कर्जदारांवर दबाव आणतात आणि बदनामी करतात."
+     }
+    }
+   ],
+   "guides": [
+    "emergency-fund",
+    "fake-loan-apps",
+    "lending-friends"
+   ]
+  },
+  {
+   "id": "investing",
+   "stage": "investing",
+   "topic": "investing",
+   "age": 27,
+   "place": "office",
+   "title": {
+    "en": "The screenshot in the group chat",
+    "hi": "ग्रुप चैट का स्क्रीनशॉट",
+    "mr": "ग्रुप चॅटमधला स्क्रीनशॉट"
+   },
+   "story": [
+    {
+     "en": "Ira is 27 and has an emergency fund at last. A colleague posts a screenshot in the office group: ₹40,000 made in one morning trading options.",
+     "hi": "इरा 27 की है और आखिरकार उसके पास आपात निधि है। एक सहकर्मी ऑफ़िस ग्रुप में स्क्रीनशॉट डालता है: ऑप्शन ट्रेडिंग से एक सुबह में ₹40,000 कमाए।",
+     "mr": "इरा 27 वर्षांची आहे आणि अखेर तिच्याकडे आपत्कालीन निधी आहे. एक सहकारी ऑफिस ग्रुपमध्ये स्क्रीनशॉट टाकतो: ऑप्शन ट्रेडिंगमधून एका सकाळी ₹40,000 कमावले."
+    },
+    {
+     "en": "He adds her to a channel that sends tips. The first tip is a small company she has never heard of. \"Sure to double by Diwali.\"",
+     "hi": "वह उसे एक चैनल में जोड़ देता है जो टिप्स भेजता है। पहली टिप एक छोटी कंपनी की है जिसका नाम उसने कभी नहीं सुना। \"दिवाली तक दोगुना पक्का।\"",
+     "mr": "तो तिला टिप्स पाठवणाऱ्या चॅनलमध्ये जोडतो. पहिली टिप एका छोट्या कंपनीची आहे, जिचे नाव तिने कधी ऐकलेले नाही. \"दिवाळीपर्यंत दुप्पट नक्की.\""
+    },
+    {
+     "en": "She puts in ₹20,000. Six weeks later it is worth ₹12,000, and the channel has gone quiet.",
+     "hi": "वह ₹20,000 लगा देती है। छह हफ़्ते बाद उसकी कीमत ₹12,000 है, और चैनल चुप हो गया है।",
+     "mr": "ती ₹20,000 गुंतवते. सहा आठवड्यांनी त्यांची किंमत ₹12,000 आहे आणि चॅनल शांत झाले आहे."
+    }
+   ],
+   "slip": {
+    "en": "Ira bought something she could not explain, because someone she barely knew said it would double.",
+    "hi": "इरा ने ऐसी चीज़ खरीदी जिसे वह समझा नहीं सकती थी, क्योंकि किसी लगभग अनजान व्यक्ति ने कहा था कि यह दोगुनी हो जाएगी।",
+    "mr": "इराने अशी गोष्ट घेतली जी ती समजावू शकत नव्हती, कारण जवळजवळ अनोळखी माणसाने ती दुप्पट होईल असे सांगितले होते."
+   },
+   "sim": {
+    "kind": "grow",
+    "monthly": 3000,
+    "rate": 10,
+    "years": [
+     5,
+     10,
+     20
+    ],
+    "title": {
+     "en": "What ₹3,000 a month could become",
+     "hi": "हर महीने ₹3,000 क्या बन सकते हैं",
+     "mr": "दर महिन्याला ₹3,000 चे काय होऊ शकते"
+    },
+    "hint": {
+     "en": "This uses an assumed 10% a year to show how compounding works. It is not a promise. Real returns go up and down and can be negative.",
+     "hi": "यह चक्रवृद्धि कैसे काम करती है, यह दिखाने के लिए सालाना 10% मानकर चलता है। यह कोई वादा नहीं है। असली रिटर्न ऊपर-नीचे होते हैं और घाटा भी हो सकता है।",
+     "mr": "चक्रवाढ कशी काम करते हे दाखवण्यासाठी यात वर्षाला 10% गृहीत धरले आहे. हे आश्वासन नाही. खरा परतावा वर-खाली होतो आणि तोटाही होऊ शकतो."
+    }
+   },
+   "question": {
+    "en": "She is down ₹8,000. What should Ira do next?",
+    "hi": "उसे ₹8,000 का घाटा हुआ है। इरा आगे क्या करे?",
+    "mr": "तिचे ₹8,000 बुडाले आहेत. इराने पुढे काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Trade options herself to win the loss back quickly",
+      "hi": "घाटा जल्दी पूरा करने के लिए खुद ऑप्शन ट्रेड करे",
+      "mr": "तोटा लवकर भरून काढण्यासाठी स्वतः ऑप्शन ट्रेड करावे"
+     },
+     "outcome": {
+      "en": "She wins twice, then loses ₹15,000 in a single afternoon. A SEBI study found that 93% of individual traders in equity futures and options lost money between FY22 and FY24.",
+      "hi": "दो बार जीतती है, फिर एक ही दोपहर में ₹15,000 गँवा देती है। SEBI के एक अध्ययन में पाया गया कि वित्त वर्ष 22 से 24 के बीच इक्विटी फ़्यूचर्स और ऑप्शंस में 93% व्यक्तिगत ट्रेडरों को घाटा हुआ।",
+      "mr": "दोनदा जिंकते, मग एकाच दुपारी ₹15,000 गमावते. SEBI च्या एका अभ्यासात आढळले की आर्थिक वर्ष 22 ते 24 दरम्यान इक्विटी फ्यूचर्स आणि ऑप्शन्समध्ये 93% वैयक्तिक ट्रेडरना तोटा झाला."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": -15000
+     }
+    },
+    {
+     "text": {
+      "en": "Leave the channel, keep the emergency fund untouched, and start a small monthly investment in a diversified fund",
+      "hi": "चैनल छोड़े, आपात निधि को न छुए, और विविध फंड में छोटी मासिक निवेश शुरू करे",
+      "mr": "चॅनल सोडावे, आपत्कालीन निधीला हात लावू नये आणि विविधीकृत फंडात छोटी मासिक गुंतवणूक सुरू करावी"
+     },
+     "outcome": {
+      "en": "₹3,000 a month, the same date every month, into a fund that holds many companies. Some months it falls. She keeps going and stops checking it daily.",
+      "hi": "हर महीने ₹3,000, हर महीने एक ही तारीख को, ऐसे फंड में जिसमें कई कंपनियाँ हैं। कुछ महीने यह गिरता है। वह जारी रखती है और रोज़ देखना बंद कर देती है।",
+      "mr": "दर महिन्याला ₹3,000, दर महिन्याला त्याच तारखेला, अनेक कंपन्या असलेल्या फंडात. काही महिने तो घसरतो. ती सुरू ठेवते आणि रोज पाहणे बंद करते."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 18000
+     }
+    },
+    {
+     "text": {
+      "en": "Decide investing is gambling and keep everything in her savings account",
+      "hi": "तय कर ले कि निवेश जुआ है और सब कुछ बचत खाते में रखे",
+      "mr": "गुंतवणूक म्हणजे जुगार असे ठरवावे आणि सगळे बचत खात्यात ठेवावे"
+     },
+     "outcome": {
+      "en": "She loses nothing more. But prices rise every year, and ten years on her money buys noticeably less than it does today.",
+      "hi": "आगे कोई नुकसान नहीं होता। पर कीमतें हर साल बढ़ती हैं, और दस साल बाद उसका पैसा आज से साफ़ तौर पर कम खरीद पाता है।",
+      "mr": "पुढे काही नुकसान होत नाही. पण किमती दरवर्षी वाढतात आणि दहा वर्षांनी तिचे पैसे आजच्यापेक्षा स्पष्टपणे कमी वस्तू घेऊ शकतात."
+     },
+     "verdict": "okay",
+     "effects": {
+      "savings": 2000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "Investing rewards time and spread, and punishes hurry. Put in money you will not need for years, spread it across many companies, and add to it regularly. A tip that promises to double your money is selling you its own exit. Nobody can guarantee a return.",
+    "hi": "निवेश समय और फैलाव का फल देता है, और जल्दबाज़ी की सज़ा। वह पैसा लगाएँ जिसकी बरसों ज़रूरत नहीं पड़ेगी, उसे कई कंपनियों में फैलाएँ, और नियमित रूप से जोड़ते रहें। पैसा दोगुना करने का वादा करने वाली टिप आपको अपना माल बेच रही है। रिटर्न की गारंटी कोई नहीं दे सकता।",
+    "mr": "गुंतवणूक वेळ आणि विविधतेचे फळ देते आणि घाईची शिक्षा. जे पैसे अनेक वर्षे लागणार नाहीत तेच गुंतवा, ते अनेक कंपन्यांत पसरवा आणि नियमितपणे भर घाला. पैसे दुप्पट करण्याचे आश्वासन देणारी टिप तुम्हाला स्वतःचा माल विकत असते. परताव्याची हमी कोणीही देऊ शकत नाही."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "Diversifying means:",
+      "hi": "विविधीकरण का मतलब है:",
+      "mr": "विविधीकरण म्हणजे:"
+     },
+     "options": [
+      {
+       "en": "Putting everything in the stock a friend recommends",
+       "hi": "सारा पैसा दोस्त की बताई कंपनी में लगाना",
+       "mr": "सगळे पैसे मित्राने सांगितलेल्या शेअरमध्ये लावणे"
+      },
+      {
+       "en": "Spreading money across many investments",
+       "hi": "पैसा कई निवेशों में फैलाना",
+       "mr": "पैसे अनेक गुंतवणुकींमध्ये पसरवणे"
+      },
+      {
+       "en": "Checking prices every hour",
+       "hi": "हर घंटे भाव देखना",
+       "mr": "दर तासाला भाव पाहणे"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "When one investment falls, the others can hold the total up.",
+      "hi": "एक निवेश गिरे तो बाकी कुल रकम को सँभाल सकते हैं।",
+      "mr": "एक गुंतवणूक घसरली तरी इतर एकूण रक्कम सावरू शकतात."
+     }
+    },
+    {
+     "question": {
+      "en": "Someone guarantees your money will double in three months. You should:",
+      "hi": "कोई गारंटी देता है कि तीन महीने में पैसा दोगुना होगा। आपको चाहिए:",
+      "mr": "कोणी हमी देतो की तीन महिन्यांत पैसे दुप्पट होतील. तुम्ही:"
+     },
+     "options": [
+      {
+       "en": "Treat the guarantee as the warning",
+       "hi": "गारंटी को ही चेतावनी मानें",
+       "mr": "हमी हीच धोक्याची सूचना मानावी"
+      },
+      {
+       "en": "Invest a small amount to test it",
+       "hi": "परखने के लिए थोड़ा पैसा लगाएँ",
+       "mr": "तपासण्यासाठी थोडे पैसे लावावेत"
+      },
+      {
+       "en": "Tell your friends quickly",
+       "hi": "दोस्तों को जल्दी बताएँ",
+       "mr": "मित्रांना पटकन सांगावे"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Real investments carry risk and say so. A guaranteed fast return is the mark of a scheme.",
+      "hi": "असली निवेश में जोखिम होता है और वह बताया जाता है। तेज़ रिटर्न की गारंटी ठगी की पहचान है।",
+      "mr": "खऱ्या गुंतवणुकीत जोखीम असते आणि ती सांगितली जाते. झटपट परताव्याची हमी ही फसव्या योजनेची खूण."
+     }
+    }
+   ],
+   "guides": [
+    "risk-diversify",
+    "what-sip",
+    "inflation",
+    "double-money"
+   ]
+  },
+  {
+   "id": "insurance",
+   "stage": "insurance",
+   "topic": "insurance",
+   "age": 29,
+   "place": "bank",
+   "title": {
+    "en": "\"It's like a fixed deposit, with insurance free\"",
+    "hi": "\"यह FD जैसा है, बीमा मुफ़्त\"",
+    "mr": "\"हे FD सारखेच आहे, विमा मोफत\""
+   },
+   "story": [
+    {
+     "en": "Ira is 29. She goes to her bank to open a fixed deposit with ₹50,000 of savings. The relationship manager has a better idea.",
+     "hi": "इरा 29 की है। वह ₹50,000 की बचत से FD खुलवाने बैंक जाती है। रिलेशनशिप मैनेजर के पास एक \"बेहतर\" सुझाव है।",
+     "mr": "इरा 29 वर्षांची आहे. ती ₹50,000 च्या बचतीतून FD उघडायला बँकेत जाते. रिलेशनशिप मॅनेजरकडे एक \"चांगली\" कल्पना आहे."
+    },
+    {
+     "en": "\"Same as an FD, madam, but with life insurance free, and guaranteed.\" He fills the form himself and shows her where to sign.",
+     "hi": "\"मैडम, FD जैसा ही है, पर साथ में जीवन बीमा मुफ़्त, और गारंटी के साथ।\" वह खुद फ़ॉर्म भरता है और बताता है कहाँ दस्तखत करने हैं।",
+     "mr": "\"मॅडम, FD सारखेच आहे, पण सोबत जीवन विमा मोफत, आणि हमीसह.\" तो स्वतः फॉर्म भरतो आणि सही कुठे करायची ते दाखवतो."
+    },
+    {
+     "en": "Twelve days later the policy document arrives by post. She reads it for the first time.",
+     "hi": "बारह दिन बाद पॉलिसी के कागज़ डाक से आते हैं। वह पहली बार उन्हें पढ़ती है।",
+     "mr": "बारा दिवसांनी पॉलिसीची कागदपत्रे टपालाने येतात. ती ती पहिल्यांदाच वाचते."
+    }
+   ],
+   "slip": {
+    "en": "Ira signed a form that someone else had filled in, for a product she had not asked for and did not read.",
+    "hi": "इरा ने ऐसे फ़ॉर्म पर दस्तखत किए जो किसी और ने भरा था, ऐसे उत्पाद के लिए जो उसने माँगा नहीं था और पढ़ा भी नहीं।",
+    "mr": "इराने दुसऱ्याने भरलेल्या फॉर्मवर सही केली, तिने न मागितलेल्या आणि न वाचलेल्या उत्पादनासाठी."
+   },
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "What the policy document says",
+     "hi": "पॉलिसी के कागज़ में क्या लिखा है",
+     "mr": "पॉलिसीच्या कागदात काय लिहिले आहे"
+    },
+    "hint": {
+     "en": "This is an example policy. Tap each line.",
+     "hi": "यह एक उदाहरण पॉलिसी है। हर पंक्ति पर टैप करें।",
+     "mr": "ही एक उदाहरण पॉलिसी आहे. प्रत्येक ओळीवर टॅप करा."
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "Premium",
+       "hi": "प्रीमियम",
+       "mr": "हप्ता"
+      },
+      "value": {
+       "en": "₹50,000 every year",
+       "hi": "हर साल ₹50,000",
+       "mr": "दरवर्षी ₹50,000"
+      },
+      "flag": true,
+      "note": {
+       "en": "Not a one-time deposit. She has agreed to pay this amount again next year, and the year after.",
+       "hi": "यह एक बार की जमा नहीं है। उसने अगले साल और उसके बाद भी यही रकम देने की हामी भरी है।",
+       "mr": "ही एकदाच करायची ठेव नाही. पुढच्या वर्षी आणि त्यानंतरही हीच रक्कम भरण्याचे तिने मान्य केले आहे."
+      }
+     },
+     {
+      "label": {
+       "en": "Premium paying term",
+       "hi": "प्रीमियम भुगतान अवधि",
+       "mr": "हप्ता भरण्याची मुदत"
+      },
+      "value": {
+       "en": "10 years",
+       "hi": "10 साल",
+       "mr": "10 वर्षे"
+      },
+      "flag": true,
+      "note": {
+       "en": "Ten payments of ₹50,000. That is ₹5 lakh she has promised, out of a salary that cannot spare it.",
+       "hi": "₹50,000 की दस किस्तें। यानी ₹5 लाख का वादा, ऐसे वेतन से जो इतना नहीं निकाल सकता।",
+       "mr": "₹50,000 चे दहा हप्ते. म्हणजे ₹5 लाखांचे वचन, ज्या पगारातून ते निघू शकत नाही."
+      }
+     },
+     {
+      "label": {
+       "en": "Life cover",
+       "hi": "जीवन बीमा राशि",
+       "mr": "जीवन विमा रक्कम"
+      },
+      "value": {
+       "en": "₹5 lakh",
+       "hi": "₹5 लाख",
+       "mr": "₹5 लाख"
+      },
+      "note": {
+       "en": "If she died, her family would get ₹5 lakh. For someone with people depending on her income, that is a small cover for a large premium.",
+       "hi": "उसकी मृत्यु होने पर परिवार को ₹5 लाख मिलेंगे। जिसकी कमाई पर लोग निर्भर हों, उसके लिए इतने बड़े प्रीमियम पर यह छोटा बीमा है।",
+       "mr": "तिचा मृत्यू झाल्यास कुटुंबाला ₹5 लाख मिळतील. जिच्या उत्पन्नावर लोक अवलंबून आहेत तिच्यासाठी एवढ्या मोठ्या हप्त्यावर हे छोटे संरक्षण आहे."
+      }
+     },
+     {
+      "label": {
+       "en": "If she stops early",
+       "hi": "अगर बीच में बंद करे",
+       "mr": "मध्येच बंद केल्यास"
+      },
+      "value": {
+       "en": "surrender value",
+       "hi": "समर्पण मूल्य",
+       "mr": "समर्पण मूल्य"
+      },
+      "flag": true,
+      "note": {
+       "en": "Stopping in the first years usually returns much less than she paid in. The document has a table for this; most people never look at it.",
+       "hi": "शुरुआती वर्षों में बंद करने पर आम तौर पर जमा से काफ़ी कम वापस मिलता है। कागज़ में इसकी तालिका होती है; ज़्यादातर लोग उसे देखते ही नहीं।",
+       "mr": "सुरुवातीच्या वर्षांत बंद केल्यास भरलेल्यापेक्षा बरेच कमी परत मिळते. कागदात याचा तक्ता असतो; बहुतेक लोक तो पाहतच नाहीत."
+      }
+     },
+     {
+      "label": {
+       "en": "Free-look period",
+       "hi": "फ्री-लुक अवधि",
+       "mr": "फ्री-लुक कालावधी"
+      },
+      "value": {
+       "en": "30 days",
+       "hi": "30 दिन",
+       "mr": "30 दिवस"
+      },
+      "note": {
+       "en": "For life and health policies, the insurance regulator's 2024 rules give 30 days from receiving the policy document to return it if she does not agree with the terms.",
+       "hi": "जीवन और स्वास्थ्य पॉलिसी में, बीमा नियामक के 2024 के नियम पॉलिसी के कागज़ मिलने से 30 दिन देते हैं कि शर्तें मंज़ूर न हों तो उसे लौटा दिया जाए।",
+       "mr": "जीवन आणि आरोग्य पॉलिसीसाठी, विमा नियामकाचे 2024 चे नियम पॉलिसीची कागदपत्रे मिळाल्यापासून 30 दिवस देतात, अटी मान्य नसल्यास ती परत करण्यासाठी."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "It is day 12. What should Ira do?",
+    "hi": "आज बारहवाँ दिन है। इरा क्या करे?",
+    "mr": "आज बारावा दिवस आहे. इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Complain angrily to the manager and leave it there",
+      "hi": "मैनेजर पर नाराज़ होकर शिकायत करे और बात वहीं छोड़ दे",
+      "mr": "मॅनेजरकडे रागाने तक्रार करावी आणि तिथेच सोडून द्यावे"
+     },
+     "outcome": {
+      "en": "He promises to \"look into it\". Day 30 passes while she waits for his call. After that, cancelling costs far more.",
+      "hi": "वह \"देखने\" का वादा करता है। उसके फ़ोन के इंतज़ार में तीसवाँ दिन निकल जाता है। उसके बाद रद्द करना बहुत महँगा पड़ता है।",
+      "mr": "तो \"बघतो\" असे आश्वासन देतो. त्याच्या फोनची वाट पाहता पाहता तिसावा दिवस निघून जातो. त्यानंतर रद्द करणे खूप महाग पडते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": -25000
+     }
+    },
+    {
+     "text": {
+      "en": "Keep it. She has already paid, and the manager was so sure",
+      "hi": "रख ले। पैसा दे चुकी है, और मैनेजर को पूरा भरोसा था",
+      "mr": "ठेवावी. पैसे भरले आहेत आणि मॅनेजरला खात्री होती"
+     },
+     "outcome": {
+      "en": "Next year the ₹50,000 reminder arrives and she cannot pay it. The policy lapses, and most of the first premium is lost.",
+      "hi": "अगले साल ₹50,000 की सूचना आती है और वह भर नहीं पाती। पॉलिसी बंद हो जाती है, और पहले प्रीमियम का ज़्यादातर हिस्सा डूब जाता है।",
+      "mr": "पुढच्या वर्षी ₹50,000 ची सूचना येते आणि ती भरू शकत नाही. पॉलिसी बंद पडते आणि पहिल्या हप्त्याचा बहुतेक भाग बुडतो."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": -40000
+     }
+    },
+    {
+     "text": {
+      "en": "Return it within the free-look period, in writing, and keep proof",
+      "hi": "फ्री-लुक अवधि के भीतर, लिखित में लौटाए, और सबूत रखे",
+      "mr": "फ्री-लुक कालावधीत, लेखी स्वरूपात परत करावी आणि पुरावा ठेवावा"
+     },
+     "outcome": {
+      "en": "She writes to the insurer, keeps the acknowledgement, and the premium comes back less small charges. Then she opens the FD she came for, and buys a plain term cover and a health cover separately.",
+      "hi": "वह बीमा कंपनी को लिखती है, पावती रखती है, और प्रीमियम कुछ छोटे शुल्क कटकर लौट आता है। फिर वह वही FD खुलवाती है जिसके लिए आई थी, और सादा टर्म बीमा व स्वास्थ्य बीमा अलग से लेती है।",
+      "mr": "ती विमा कंपनीला लिहिते, पोचपावती ठेवते आणि हप्ता थोडे शुल्क कापून परत येतो. मग ती ज्यासाठी आली होती ती FD उघडते आणि साधा टर्म विमा व आरोग्य विमा वेगळा घेते."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 5000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "Insurance is protection against a loss you could not afford. It is a poor way to save. Buy cover for the risk itself: life cover if someone depends on your income, health cover for hospital bills. Read the policy when it arrives. The free-look period is your chance to return it, and it must be used in writing and on time.",
+    "hi": "बीमा उस नुकसान से बचाव है जिसे आप झेल नहीं सकते। बचत का यह कमज़ोर तरीका है। बीमा जोखिम के लिए लें: कोई आपकी कमाई पर निर्भर हो तो जीवन बीमा, अस्पताल के खर्च के लिए स्वास्थ्य बीमा। पॉलिसी आते ही पढ़ें। फ्री-लुक अवधि उसे लौटाने का मौका है, और यह लिखित में और समय पर करना होता है।",
+    "mr": "विमा म्हणजे जे नुकसान तुम्हाला परवडणार नाही त्यापासून संरक्षण. बचतीचा तो कमकुवत मार्ग आहे. जोखमीसाठीच विमा घ्या: कोणी तुमच्या उत्पन्नावर अवलंबून असेल तर जीवन विमा, रुग्णालयाच्या खर्चासाठी आरोग्य विमा. पॉलिसी आल्यावर लगेच वाचा. फ्री-लुक कालावधी ही ती परत करण्याची संधी आहे आणि ते लेखी आणि वेळेत करावे लागते."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "What is the free-look period for?",
+      "hi": "फ्री-लुक अवधि किसलिए है?",
+      "mr": "फ्री-लुक कालावधी कशासाठी आहे?"
+     },
+     "options": [
+      {
+       "en": "To return a policy you do not agree with",
+       "hi": "ऐसी पॉलिसी लौटाने के लिए जो आपको मंज़ूर नहीं",
+       "mr": "तुम्हाला मान्य नसलेली पॉलिसी परत करण्यासाठी"
+      },
+      {
+       "en": "To get insurance free for a month",
+       "hi": "एक महीने मुफ़्त बीमा पाने के लिए",
+       "mr": "एक महिना मोफत विमा मिळवण्यासाठी"
+      },
+      {
+       "en": "To pay the premium late",
+       "hi": "प्रीमियम देर से भरने के लिए",
+       "mr": "हप्ता उशिरा भरण्यासाठी"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "It lets you read the real terms and cancel if they are not what you were told.",
+      "hi": "इसमें आप असली शर्तें पढ़कर, बताए से अलग हों तो रद्द कर सकते हैं।",
+      "mr": "यात तुम्ही खऱ्या अटी वाचून, सांगितल्यापेक्षा वेगळ्या असतील तर रद्द करू शकता."
+     }
+    },
+    {
+     "question": {
+      "en": "Who needs life cover most?",
+      "hi": "जीवन बीमा की सबसे ज़्यादा ज़रूरत किसे है?",
+      "mr": "जीवन विम्याची सर्वाधिक गरज कोणाला?"
+     },
+     "options": [
+      {
+       "en": "Anyone who wants high returns",
+       "hi": "जिसे ऊँचा रिटर्न चाहिए",
+       "mr": "ज्याला जास्त परतावा हवा"
+      },
+      {
+       "en": "A child with no income",
+       "hi": "बिना आमदनी वाला बच्चा",
+       "mr": "उत्पन्न नसलेले मूल"
+      },
+      {
+       "en": "Someone whose family depends on their income",
+       "hi": "जिसकी कमाई पर परिवार निर्भर है",
+       "mr": "ज्याच्या उत्पन्नावर कुटुंब अवलंबून आहे"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Life cover replaces income for the people who would lose it.",
+      "hi": "जीवन बीमा उन लोगों के लिए आमदनी की भरपाई करता है जो उसे खो देंगे।",
+      "mr": "जीवन विमा त्या लोकांसाठी उत्पन्नाची भरपाई करतो जे ते गमावतील."
+     }
+    }
+   ],
+   "guides": [
+    "what-insurance",
+    "health-cover",
+    "before-you-sign"
+   ]
+  },
+  {
+   "id": "borrowing",
+   "stage": "borrowing",
+   "topic": "borrowing",
+   "age": 31,
+   "place": "bank",
+   "title": {
+    "en": "Two loan offers and one small number",
+    "hi": "दो लोन ऑफ़र और एक छोटा आँकड़ा",
+    "mr": "दोन कर्ज ऑफर आणि एक छोटा आकडा"
+   },
+   "story": [
+    {
+     "en": "Ira is 31 and getting married to Kabir in four months. They want to pay for the wedding themselves and need about ₹3 lakh more.",
+     "hi": "इरा 31 की है और चार महीने बाद कबीर से शादी है। वे शादी का खर्च खुद उठाना चाहते हैं और करीब ₹3 लाख और चाहिए।",
+     "mr": "इरा 31 वर्षांची आहे आणि चार महिन्यांनी कबीरशी लग्न आहे. त्यांना लग्नाचा खर्च स्वतः करायचा आहे आणि आणखी सुमारे ₹3 लाख लागणार आहेत."
+    },
+    {
+     "en": "One lender offers \"9% flat, zero paperwork\". Her own bank offers 13% on a reducing balance. Nine is less than thirteen.",
+     "hi": "एक ऋणदाता \"9% फ्लैट, कोई कागज़ नहीं\" देता है। उसका अपना बैंक घटती शेष राशि पर 13% देता है। नौ तेरह से कम है।",
+     "mr": "एक कर्जदाता \"9% फ्लॅट, कागदपत्रे नाहीत\" देतो. तिची स्वतःची बँक घटत्या शिल्लकीवर 13% देते. नऊ तेरापेक्षा कमी आहे."
+    },
+    {
+     "en": "Both salespeople lead with the same line: the EMI is \"only\" so much a month.",
+     "hi": "दोनों विक्रेता एक ही बात से शुरू करते हैं: EMI \"सिर्फ़\" इतनी है।",
+     "mr": "दोन्ही विक्रेते एकाच वाक्याने सुरुवात करतात: EMI \"फक्त\" एवढीच आहे."
+    }
+   ],
+   "slip": {
+    "en": "Ira compared the two monthly EMIs and nothing else. She had not asked either lender for the total she would repay.",
+    "hi": "इरा ने सिर्फ़ दोनों मासिक EMI की तुलना की, और कुछ नहीं। उसने किसी भी ऋणदाता से यह नहीं पूछा कि कुल कितना चुकाना होगा।",
+    "mr": "इराने फक्त दोन मासिक EMI ची तुलना केली, दुसरे काही नाही. एकूण किती परत करावे लागेल हे तिने कोणत्याही कर्जदात्याला विचारले नाही."
+   },
+   "sim": {
+    "kind": "emi",
+    "principal": 300000,
+    "rate": 13,
+    "months": [
+     24,
+     36,
+     60
+    ],
+    "title": {
+     "en": "₹3 lakh at 13% reducing: change the months",
+     "hi": "₹3 लाख, 13% घटती दर: महीने बदलें",
+     "mr": "₹3 लाख, 13% घटता दर: महिने बदला"
+    },
+    "hint": {
+     "en": "An example rate, to show how the length of a loan changes its cost. Watch the EMI fall and the total rise.",
+     "hi": "एक उदाहरण दर, यह दिखाने के लिए कि लोन की अवधि उसकी कीमत कैसे बदलती है। देखें EMI घटती है और कुल रकम बढ़ती है।",
+     "mr": "एक उदाहरण दर, कर्जाची मुदत त्याची किंमत कशी बदलते हे दाखवण्यासाठी. पाहा EMI कमी होते आणि एकूण रक्कम वाढते."
+    }
+   },
+   "question": {
+    "en": "How should Ira choose?",
+    "hi": "इरा कैसे चुने?",
+    "mr": "इराने कसे निवडावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Ask both for the Key Facts Statement, compare APR and total repayment, and borrow less for a shorter time",
+      "hi": "दोनों से की फ़ैक्ट्स स्टेटमेंट माँगे, APR और कुल भुगतान की तुलना करे, और कम रकम कम समय के लिए ले",
+      "mr": "दोघांकडून की फॅक्ट्स स्टेटमेंट मागावे, APR आणि एकूण परतफेड तुलना करावी आणि कमी रक्कम कमी मुदतीसाठी घ्यावी"
+     },
+     "outcome": {
+      "en": "On paper the \"9% flat\" loan has the higher APR. She and Kabir trim the guest list, borrow ₹2 lakh from the bank for 24 months, and know the exact total before signing.",
+      "hi": "कागज़ पर \"9% फ्लैट\" वाले लोन का APR ज़्यादा निकलता है। वह और कबीर मेहमानों की सूची छोटी करते हैं, बैंक से 24 महीने के लिए ₹2 लाख लेते हैं, और दस्तखत से पहले कुल रकम ठीक-ठीक जानते हैं।",
+      "mr": "कागदावर \"9% फ्लॅट\" कर्जाचा APR जास्त निघतो. ती आणि कबीर पाहुण्यांची यादी कमी करतात, बँकेकडून 24 महिन्यांसाठी ₹2 लाख घेतात आणि सहीआधी एकूण रक्कम नेमकी जाणतात."
+     },
+     "verdict": "good",
+     "effects": {
+      "debt": 200000
+     }
+    },
+    {
+     "text": {
+      "en": "Take the bank loan over 60 months for the lowest EMI",
+      "hi": "सबसे कम EMI के लिए बैंक का लोन 60 महीने में ले",
+      "mr": "सर्वात कमी EMI साठी बँकेचे कर्ज 60 महिन्यांत घ्यावे"
+     },
+     "outcome": {
+      "en": "The EMI is easy. But she pays interest for five years, long after the wedding photos are in an album, and the total is far higher than at 24 months.",
+      "hi": "EMI आसान है। पर वह पाँच साल ब्याज भरती है, शादी की तस्वीरें एल्बम में लग जाने के बहुत बाद तक, और कुल रकम 24 महीने वाले से कहीं ज़्यादा है।",
+      "mr": "EMI सोपी आहे. पण ती पाच वर्षे व्याज भरते, लग्नाचे फोटो अल्बममध्ये गेल्यानंतरही, आणि एकूण रक्कम 24 महिन्यांच्या तुलनेत खूप जास्त आहे."
+     },
+     "verdict": "okay",
+     "effects": {
+      "debt": 300000
+     }
+    },
+    {
+     "text": {
+      "en": "Take the 9% flat loan. Nine is less than thirteen",
+      "hi": "9% फ्लैट वाला लोन ले। नौ तेरह से कम है",
+      "mr": "9% फ्लॅट कर्ज घ्यावे. नऊ तेरापेक्षा कमी आहे"
+     },
+     "outcome": {
+      "en": "Flat interest is charged on the full ₹3 lakh for the whole term, even as she repays. With the processing fee, it costs her more than the 13% loan would have.",
+      "hi": "फ्लैट ब्याज पूरी अवधि में पूरे ₹3 लाख पर लगता है, भले ही वह चुकाती जाए। प्रोसेसिंग शुल्क मिलाकर यह 13% वाले लोन से महँगा पड़ता है।",
+      "mr": "फ्लॅट व्याज पूर्ण मुदतीसाठी पूर्ण ₹3 लाखांवर लागते, ती फेडत गेली तरी. प्रोसेसिंग शुल्क धरून ते 13% च्या कर्जापेक्षा महाग पडते."
+     },
+     "verdict": "costly",
+     "effects": {
+      "debt": 300000,
+      "cash": -9000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "Never compare loans by EMI alone. For retail loans sanctioned from 1 October 2024, RBI requires lenders to give a Key Facts Statement with the annual percentage rate (APR), which counts interest and all charges together, and the full repayment schedule. Compare APR and total repayment. A flat rate looks low because it charges interest on money you have already paid back.",
+    "hi": "लोन की तुलना कभी सिर्फ़ EMI से न करें। 1 अक्टूबर 2024 से मंज़ूर खुदरा लोन के लिए RBI के नियम के तहत ऋणदाता को की फ़ैक्ट्स स्टेटमेंट देनी होती है, जिसमें वार्षिक प्रतिशत दर (APR) होती है, यानी ब्याज और सारे शुल्क मिलाकर, और पूरी भुगतान तालिका। APR और कुल भुगतान की तुलना करें। फ्लैट दर कम इसलिए दिखती है कि वह उस पैसे पर भी ब्याज लेती है जो आप चुका चुके हैं।",
+    "mr": "कर्जांची तुलना कधीही फक्त EMI वरून करू नका. 1 ऑक्टोबर 2024 पासून मंजूर किरकोळ कर्जांसाठी RBI च्या नियमानुसार कर्जदात्याने की फॅक्ट्स स्टेटमेंट द्यावे लागते, ज्यात वार्षिक टक्केवारी दर (APR), म्हणजे व्याज आणि सर्व शुल्क एकत्र, आणि संपूर्ण परतफेड तक्ता असतो. APR आणि एकूण परतफेड तुलना करा. फ्लॅट दर कमी दिसतो कारण तुम्ही फेडलेल्या पैशांवरही तो व्याज घेतो."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "Which number lets you compare two loans fairly?",
+      "hi": "दो लोन की सही तुलना किस आँकड़े से होती है?",
+      "mr": "दोन कर्जांची योग्य तुलना कोणत्या आकड्याने होते?"
+     },
+     "options": [
+      {
+       "en": "The monthly EMI",
+       "hi": "मासिक EMI",
+       "mr": "मासिक EMI"
+      },
+      {
+       "en": "The APR",
+       "hi": "APR",
+       "mr": "APR"
+      },
+      {
+       "en": "The name of the lender",
+       "hi": "ऋणदाता का नाम",
+       "mr": "कर्जदात्याचे नाव"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "APR includes interest and all the charges, so nothing is hidden in the comparison.",
+      "hi": "APR में ब्याज और सारे शुल्क शामिल हैं, इसलिए तुलना में कुछ छिपा नहीं रहता।",
+      "mr": "APR मध्ये व्याज आणि सर्व शुल्क असते, त्यामुळे तुलनेत काही लपत नाही."
+     }
+    },
+    {
+     "question": {
+      "en": "Stretching a loan from 24 to 60 months usually:",
+      "hi": "लोन को 24 से 60 महीने करने पर आम तौर पर:",
+      "mr": "कर्ज 24 वरून 60 महिन्यांचे केल्यास सहसा:"
+     },
+     "options": [
+      {
+       "en": "Lowers both the EMI and the total cost",
+       "hi": "EMI और कुल कीमत दोनों घटती हैं",
+       "mr": "EMI आणि एकूण किंमत दोन्ही कमी होतात"
+      },
+      {
+       "en": "Changes nothing",
+       "hi": "कुछ नहीं बदलता",
+       "mr": "काही बदलत नाही"
+      },
+      {
+       "en": "Lowers the EMI but raises the total interest",
+       "hi": "EMI घटती है पर कुल ब्याज बढ़ता है",
+       "mr": "EMI कमी होते पण एकूण व्याज वाढते"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "You pay less each month, for many more months.",
+      "hi": "हर महीने कम देते हैं, पर बहुत ज़्यादा महीनों तक।",
+      "mr": "दर महिन्याला कमी देता, पण खूप जास्त महिने."
+     }
+    }
+   ],
+   "guides": [
+    "flat-reducing",
+    "what-emi",
+    "reading-fees",
+    "before-you-sign"
+   ]
+  },
+  {
+   "id": "family-finances",
+   "stage": "family-finances",
+   "topic": "family",
+   "age": 33,
+   "place": "home",
+   "title": {
+    "en": "The drawer nobody had opened",
+    "hi": "वह दराज़ जो किसी ने नहीं खोली थी",
+    "mr": "कोणीही न उघडलेला ड्रॉवर"
+   },
+   "story": [
+    {
+     "en": "Ira is 33 and married to Kabir. They split bills by feel: whoever has money that week pays.",
+     "hi": "इरा 33 की है और कबीर से शादी हो चुकी है। वे बिल अंदाज़ से बाँटते हैं: जिसके पास उस हफ़्ते पैसा हो, वह भर देता है।",
+     "mr": "इरा 33 वर्षांची आहे आणि कबीरशी लग्न झाले आहे. ते बिले अंदाजाने वाटतात: त्या आठवड्यात ज्याच्याकडे पैसे असतील तो भरतो."
+    },
+    {
+     "en": "Kabir's uncle dies suddenly. His aunt spends weeks at bank counters. One account had no nominee. One policy, nobody can find.",
+     "hi": "कबीर के चाचा का अचानक देहांत हो जाता है। चाची हफ़्तों बैंक के काउंटरों के चक्कर लगाती हैं। एक खाते में नॉमिनी नहीं था। एक पॉलिसी किसी को मिल नहीं रही।",
+     "mr": "कबीरच्या काकांचे अचानक निधन होते. काकू आठवडेच्या आठवडे बँकेच्या खिडक्यांवर घालवतात. एका खात्यात नॉमिनी नव्हता. एक पॉलिसी कोणालाच सापडत नाही."
+    },
+    {
+     "en": "That night Ira and Kabir realise that neither of them could list the other's accounts.",
+     "hi": "उस रात इरा और कबीर को समझ आता है कि दोनों में से कोई दूसरे के खातों की सूची नहीं बना सकता।",
+     "mr": "त्या रात्री इरा आणि कबीरला जाणवते की दोघांपैकी कोणीही दुसऱ्याच्या खात्यांची यादी करू शकत नाही."
+    }
+   ],
+   "slip": {
+    "en": "Ira's salary account still names her mother as nominee from ten years ago. Two newer accounts name no one.",
+    "hi": "इरा के सैलरी खाते में अब भी दस साल पहले का नॉमिनी, उसकी माँ, दर्ज है। दो नए खातों में कोई नॉमिनी नहीं है।",
+    "mr": "इराच्या सॅलरी खात्यात अजूनही दहा वर्षांपूर्वीची नॉमिनी, तिची आई, आहे. दोन नव्या खात्यांत कोणीच नॉमिनी नाही."
+   },
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "The family money file",
+     "hi": "परिवार की पैसों वाली फ़ाइल",
+     "mr": "कुटुंबाची पैशांची फाईल"
+    },
+    "hint": {
+     "en": "Four things a household should be able to find in ten minutes. Tap each.",
+     "hi": "चार चीज़ें जो घर में दस मिनट में मिल जानी चाहिए। हर एक पर टैप करें।",
+     "mr": "घरात दहा मिनिटांत सापडायला हव्यात अशा चार गोष्टी. प्रत्येकावर टॅप करा."
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "A list of every account and policy",
+       "hi": "हर खाते और पॉलिसी की सूची",
+       "mr": "प्रत्येक खात्याची आणि पॉलिसीची यादी"
+      },
+      "value": {
+       "en": "missing",
+       "hi": "नहीं है",
+       "mr": "नाही"
+      },
+      "flag": true,
+      "note": {
+       "en": "Bank, deposit, provident fund, insurance, investments, loans. Where each one is and who to contact. No passwords or PINs on the list.",
+       "hi": "बैंक, जमा, भविष्य निधि, बीमा, निवेश, लोन। हर एक कहाँ है और किससे संपर्क करना है। सूची में पासवर्ड या PIN नहीं।",
+       "mr": "बँक, ठेवी, भविष्य निर्वाह निधी, विमा, गुंतवणूक, कर्जे. प्रत्येक कुठे आहे आणि कोणाशी संपर्क करायचा. यादीत पासवर्ड किंवा PIN नको."
+      }
+     },
+     {
+      "label": {
+       "en": "Nominees",
+       "hi": "नॉमिनी",
+       "mr": "नॉमिनी"
+      },
+      "value": {
+       "en": "out of date",
+       "hi": "पुराने",
+       "mr": "जुने"
+      },
+      "flag": true,
+      "note": {
+       "en": "A nominee is the person the bank hands the money to if the account holder dies. Since 1 November 2025, a bank account can name up to four nominees.",
+       "hi": "नॉमिनी वह व्यक्ति है जिसे खाताधारक की मृत्यु पर बैंक पैसा सौंपता है। 1 नवंबर 2025 से बैंक खाते में चार तक नॉमिनी रखे जा सकते हैं।",
+       "mr": "नॉमिनी म्हणजे खातेदाराच्या मृत्यूनंतर बँक ज्याच्या हाती पैसे सोपवते ती व्यक्ती. 1 नोव्हेंबर 2025 पासून बँक खात्यात चारपर्यंत नॉमिनी ठेवता येतात."
+      }
+     },
+     {
+      "label": {
+       "en": "Health cover for both, and for parents",
+       "hi": "दोनों के लिए, और माता-पिता के लिए स्वास्थ्य बीमा",
+       "mr": "दोघांसाठी आणि आई-वडिलांसाठी आरोग्य विमा"
+      },
+      "value": {
+       "en": "only Kabir's office cover",
+       "hi": "सिर्फ़ कबीर के दफ़्तर का बीमा",
+       "mr": "फक्त कबीरच्या ऑफिसचा विमा"
+      },
+      "flag": true,
+      "note": {
+       "en": "Cover from an employer ends when the job does. A family needs its own.",
+       "hi": "नियोक्ता का बीमा नौकरी के साथ खत्म हो जाता है। परिवार को अपना बीमा चाहिए।",
+       "mr": "नियोक्त्याचा विमा नोकरीसोबत संपतो. कुटुंबाला स्वतःचा विमा हवा."
+      }
+     },
+     {
+      "label": {
+       "en": "A monthly money conversation",
+       "hi": "पैसों पर हर महीने बातचीत",
+       "mr": "पैशांविषयी दर महिन्याला संवाद"
+      },
+      "value": {
+       "en": "never",
+       "hi": "कभी नहीं",
+       "mr": "कधीच नाही"
+      },
+      "note": {
+       "en": "Twenty minutes a month: what came in, what went out, what is coming up. It prevents most money arguments.",
+       "hi": "महीने में बीस मिनट: क्या आया, क्या गया, आगे क्या है। इससे पैसों के ज़्यादातर झगड़े टल जाते हैं।",
+       "mr": "महिन्यातून वीस मिनिटे: काय आले, काय गेले, पुढे काय आहे. यामुळे पैशांवरील बहुतेक वाद टळतात."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "What should Ira and Kabir do?",
+    "hi": "इरा और कबीर क्या करें?",
+    "mr": "इरा आणि कबीरने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Let Kabir handle all of it. He is better with numbers",
+      "hi": "सब कुछ कबीर सँभाले। वह हिसाब में बेहतर है",
+      "mr": "सगळे कबीरने सांभाळावे. तो हिशोबात चांगला आहे"
+     },
+     "outcome": {
+      "en": "It is tidy for a while. But Ira no longer knows what they have or owe, which is exactly where Kabir's aunt found herself.",
+      "hi": "कुछ समय सब ठीक चलता है। पर इरा को अब पता नहीं कि उनके पास क्या है या क्या देना है, ठीक वहीं जहाँ कबीर की चाची पहुँच गई थीं।",
+      "mr": "काही काळ सगळे नीट चालते. पण त्यांच्याकडे काय आहे किंवा काय देणे आहे हे इराला आता माहीत नाही, जिथे कबीरची काकू पोहोचली होती तिथेच."
+     },
+     "verdict": "okay",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Agree it matters, and sort it out when things are calmer",
+      "hi": "मान लें कि ज़रूरी है, और जब सब शांत हो तब देखें",
+      "mr": "महत्त्वाचे आहे हे मान्य करावे आणि सगळे शांत झाल्यावर बघावे"
+     },
+     "outcome": {
+      "en": "Things do not get calmer. Two years later nothing has changed, and the list still does not exist.",
+      "hi": "सब कुछ शांत होता ही नहीं। दो साल बाद भी कुछ नहीं बदला, और सूची अब भी नहीं बनी।",
+      "mr": "सगळे शांत होतच नाही. दोन वर्षांनंतरही काही बदललेले नाही आणि यादी अजूनही नाही."
+     },
+     "verdict": "costly",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Spend one evening: list everything, update nominees, buy family health cover, set a monthly money talk",
+      "hi": "एक शाम लगाएँ: सब कुछ सूची में लिखें, नॉमिनी अपडेट करें, परिवार का स्वास्थ्य बीमा लें, मासिक बातचीत तय करें",
+      "mr": "एक संध्याकाळ द्यावी: सगळे यादीत लिहावे, नॉमिनी अपडेट करावेत, कुटुंबाचा आरोग्य विमा घ्यावा, मासिक संवाद ठरवावा"
+     },
+     "outcome": {
+      "en": "It takes three hours and two branch visits. They keep a shared account for common costs and their own accounts for the rest. Each knows where everything is.",
+      "hi": "तीन घंटे और शाखा के दो चक्कर लगते हैं। साझा खर्चों के लिए साझा खाता और बाकी के लिए अपने-अपने खाते रखते हैं। दोनों को पता है कि क्या कहाँ है।",
+      "mr": "तीन तास आणि शाखेच्या दोन फेऱ्या लागतात. सामाईक खर्चासाठी संयुक्त खाते आणि बाकीसाठी स्वतःची खाती ठेवतात. दोघांनाही सगळे कुठे आहे ते माहीत आहे."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 10000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "A household's money needs to be findable by more than one person. Keep a simple list of accounts and policies, name nominees on every one and update them after marriage or a birth, and talk about money on a fixed day each month. Shared costs can be shared without either person giving up their own account.",
+    "hi": "घर के पैसों की जानकारी एक से ज़्यादा लोगों को होनी चाहिए। खातों और पॉलिसियों की सीधी सूची रखें, हर एक में नॉमिनी दर्ज करें और शादी या बच्चे के जन्म के बाद अपडेट करें, और हर महीने तय दिन पैसों पर बात करें। साझा खर्च बाँटे जा सकते हैं, बिना किसी के अपना खाता छोड़े।",
+    "mr": "घरातील पैशांची माहिती एकापेक्षा जास्त व्यक्तींना असायला हवी. खाती आणि पॉलिसींची साधी यादी ठेवा, प्रत्येकात नॉमिनी नोंदवा आणि लग्न किंवा अपत्यजन्मानंतर अपडेट करा, आणि दर महिन्याला ठरलेल्या दिवशी पैशांवर बोला. सामाईक खर्च वाटून घेता येतो, कोणीही स्वतःचे खाते न सोडता."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "A nominee is the person who:",
+      "hi": "नॉमिनी वह व्यक्ति है जो:",
+      "mr": "नॉमिनी म्हणजे अशी व्यक्ती जी:"
+     },
+     "options": [
+      {
+       "en": "Can spend from your account today",
+       "hi": "आज आपके खाते से खर्च कर सकता है",
+       "mr": "आज तुमच्या खात्यातून खर्च करू शकते"
+      },
+      {
+       "en": "Guarantees your loans",
+       "hi": "आपके लोन की गारंटी देता है",
+       "mr": "तुमच्या कर्जाची हमी देते"
+      },
+      {
+       "en": "Receives the money from the bank if you die",
+       "hi": "आपकी मृत्यु पर बैंक से पैसा पाता है",
+       "mr": "तुमच्या मृत्यूनंतर बँकेकडून पैसे घेते"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "A nominee has no access while you are alive. The nomination only matters after a death.",
+      "hi": "आपके जीते-जी नॉमिनी की कोई पहुँच नहीं होती। नामांकन सिर्फ़ मृत्यु के बाद काम आता है।",
+      "mr": "तुम्ही हयात असताना नॉमिनीला काहीही अधिकार नसतो. नामांकन फक्त मृत्यूनंतर उपयोगी पडते."
+     }
+    },
+    {
+     "question": {
+      "en": "What should NOT go on a family money list?",
+      "hi": "परिवार की पैसों वाली सूची में क्या नहीं होना चाहिए?",
+      "mr": "कुटुंबाच्या पैशांच्या यादीत काय नसावे?"
+     },
+     "options": [
+      {
+       "en": "Passwords and PINs",
+       "hi": "पासवर्ड और PIN",
+       "mr": "पासवर्ड आणि PIN"
+      },
+      {
+       "en": "Which bank each account is with",
+       "hi": "कौन सा खाता किस बैंक में है",
+       "mr": "कोणते खाते कोणत्या बँकेत आहे"
+      },
+      {
+       "en": "Policy numbers",
+       "hi": "पॉलिसी नंबर",
+       "mr": "पॉलिसी क्रमांक"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The list says where things are. It must not be enough for a stranger to take them.",
+      "hi": "सूची बताती है कि चीज़ें कहाँ हैं। वह इतनी नहीं होनी चाहिए कि कोई अनजान उन्हें ले जाए।",
+      "mr": "यादी गोष्टी कुठे आहेत ते सांगते. अनोळखी व्यक्तीला त्या घेता येतील एवढी ती नसावी."
+     }
+    }
+   ],
+   "guides": [
+    "family-money",
+    "nominee-matters",
+    "health-cover"
+   ]
+  },
+  {
+   "id": "children",
+   "stage": "children",
+   "topic": "family",
+   "age": 35,
+   "place": "home",
+   "title": {
+    "en": "Meera",
+    "hi": "मीरा",
+    "mr": "मीरा"
+   },
+   "story": [
+    {
+     "en": "Ira is 35. Her daughter Meera is six weeks old. Everyone who visits brings a gift and an opinion about money.",
+     "hi": "इरा 35 की है। उसकी बेटी मीरा छह हफ़्ते की है। मिलने आने वाला हर व्यक्ति एक तोहफ़ा और पैसों पर एक राय लाता है।",
+     "mr": "इरा 35 वर्षांची आहे. तिची मुलगी मीरा सहा आठवड्यांची आहे. भेटायला येणारा प्रत्येकजण एक भेटवस्तू आणि पैशांबद्दल एक मत घेऊन येतो."
+    },
+    {
+     "en": "An agent who is a family friend recommends a \"child plan\". An aunt says to buy gold. Kabir's father says school fees will be the real shock.",
+     "hi": "एक एजेंट, जो परिवार के मित्र हैं, \"चाइल्ड प्लान\" सुझाते हैं। एक मौसी कहती हैं सोना खरीदो। कबीर के पिता कहते हैं असली झटका स्कूल की फीस देगी।",
+     "mr": "कुटुंबाचा मित्र असलेला एक एजंट \"चाइल्ड प्लॅन\" सुचवतो. एक मावशी सोने घ्यायला सांगते. कबीरचे वडील म्हणतात खरा धक्का शाळेच्या फीचा असेल."
+    },
+    {
+     "en": "Ira looks at the calendar. Meera will be eighteen in what feels like no time, and Ira and Kabir will be fifty-three.",
+     "hi": "इरा कैलेंडर देखती है। मीरा देखते-देखते अठारह की हो जाएगी, और तब इरा और कबीर तिरपन के होंगे।",
+     "mr": "इरा दिनदर्शिका पाहते. मीरा बघता बघता अठरा वर्षांची होईल आणि तेव्हा इरा व कबीर त्रेपन्न वर्षांचे असतील."
+    }
+   ],
+   "slip": {
+    "en": "To pay for the naming ceremony, they stopped their monthly investment and put ₹1.2 lakh on a credit card.",
+    "hi": "नामकरण के खर्च के लिए उन्होंने अपना मासिक निवेश रोक दिया और ₹1.2 लाख क्रेडिट कार्ड पर डाल दिए।",
+    "mr": "बारशाच्या खर्चासाठी त्यांनी मासिक गुंतवणूक थांबवली आणि ₹1.2 लाख क्रेडिट कार्डवर टाकले."
+   },
+   "sim": {
+    "kind": "grow",
+    "monthly": 2000,
+    "rate": 8,
+    "years": [
+     5,
+     10,
+     15
+    ],
+    "title": {
+     "en": "₹2,000 a month for Meera",
+     "hi": "मीरा के लिए हर महीने ₹2,000",
+     "mr": "मीरासाठी दर महिन्याला ₹2,000"
+    },
+    "hint": {
+     "en": "An assumed 8% a year, only to show what starting early does. It is not the rate of any scheme and not a promise.",
+     "hi": "सालाना 8% मानकर, सिर्फ़ यह दिखाने के लिए कि जल्दी शुरू करने से क्या होता है। यह किसी योजना की दर नहीं है और कोई वादा नहीं।",
+     "mr": "वर्षाला 8% गृहीत धरून, फक्त लवकर सुरुवात केल्याने काय होते हे दाखवण्यासाठी. हा कोणत्याही योजनेचा दर नाही आणि आश्वासनही नाही."
+    }
+   },
+   "question": {
+    "en": "Where should Ira and Kabir start?",
+    "hi": "इरा और कबीर कहाँ से शुरू करें?",
+    "mr": "इरा आणि कबीरने कुठून सुरुवात करावी?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Sign the child plan today. The agent is a friend",
+      "hi": "चाइल्ड प्लान पर आज ही दस्तखत करें। एजेंट मित्र है",
+      "mr": "चाइल्ड प्लॅनवर आजच सही करावी. एजंट मित्र आहे"
+     },
+     "outcome": {
+      "en": "They sign without comparing. Later they find the cover is small and the charges are high for what it gives. It was not a terrible choice, but it was nobody's careful one.",
+      "hi": "वे बिना तुलना किए दस्तखत कर देते हैं। बाद में पता चलता है कि बीमा राशि कम है और शुल्क ज़्यादा। यह बहुत बुरा चुनाव नहीं था, पर सोच-समझकर किया गया भी नहीं था।",
+      "mr": "ते तुलना न करता सही करतात. नंतर कळते की संरक्षण कमी आहे आणि शुल्क जास्त. ही फार वाईट निवड नव्हती, पण विचारपूर्वक केलेलीही नव्हती."
+     },
+     "verdict": "okay",
+     "effects": {
+      "savings": 5000
+     }
+    },
+    {
+     "text": {
+      "en": "Clear the card, raise their own life and health cover, then start a regular investment for Meera",
+      "hi": "कार्ड चुकाएँ, अपना जीवन और स्वास्थ्य बीमा बढ़ाएँ, फिर मीरा के लिए नियमित निवेश शुरू करें",
+      "mr": "कार्ड फेडावे, स्वतःचा जीवन आणि आरोग्य विमा वाढवावा, मग मीरासाठी नियमित गुंतवणूक सुरू करावी"
+     },
+     "outcome": {
+      "en": "Meera's security is her parents' income, so that is protected first. Then they open a Sukanya Samriddhi account for her and restart their own monthly investment.",
+      "hi": "मीरा की सुरक्षा उसके माता-पिता की कमाई है, इसलिए पहले उसे सुरक्षित किया जाता है। फिर वे उसके लिए सुकन्या समृद्धि खाता खोलते हैं और अपना मासिक निवेश दोबारा शुरू करते हैं।",
+      "mr": "मीराची सुरक्षा म्हणजे तिच्या आई-वडिलांचे उत्पन्न, म्हणून आधी ते सुरक्षित केले जाते. मग ते तिच्यासाठी सुकन्या समृद्धी खाते उघडतात आणि स्वतःची मासिक गुंतवणूक पुन्हा सुरू करतात."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 24000,
+      "debt": -120000
+     }
+    },
+    {
+     "text": {
+      "en": "Put every spare rupee into Meera's future and pause their own retirement saving",
+      "hi": "हर बचा रुपया मीरा के भविष्य में लगाएँ और अपनी सेवानिवृत्ति की बचत रोक दें",
+      "mr": "उरलेला प्रत्येक रुपया मीराच्या भविष्यासाठी लावावा आणि स्वतःची निवृत्तीची बचत थांबवावी"
+     },
+     "outcome": {
+      "en": "It feels generous. But a child can take a loan for college; nobody lends for retirement. At sixty they may have to depend on the very child they saved for.",
+      "hi": "यह उदारता लगती है। पर बच्चा कॉलेज के लिए लोन ले सकता है; सेवानिवृत्ति के लिए कोई उधार नहीं देता। साठ की उम्र में उन्हें उसी बच्चे पर निर्भर होना पड़ सकता है जिसके लिए बचाया था।",
+      "mr": "हे उदार वाटते. पण मूल कॉलेजसाठी कर्ज घेऊ शकते; निवृत्तीसाठी कोणी कर्ज देत नाही. साठाव्या वर्षी त्यांना त्याच मुलीवर अवलंबून राहावे लागू शकते जिच्यासाठी त्यांनी वाचवले."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": 12000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "A child's financial safety starts with the parents: clear expensive debt, hold enough life and health cover, and keep your own retirement saving going. After that, start early and regularly for the child's goals. For a girl below ten, a Sukanya Samriddhi account can be opened at a post office or bank with as little as ₹250.",
+    "hi": "बच्चे की आर्थिक सुरक्षा माता-पिता से शुरू होती है: महँगा कर्ज़ चुकाएँ, पर्याप्त जीवन और स्वास्थ्य बीमा रखें, और अपनी सेवानिवृत्ति की बचत जारी रखें। उसके बाद बच्चे के लक्ष्यों के लिए जल्दी और नियमित शुरुआत करें। दस साल से कम उम्र की बेटी के लिए सुकन्या समृद्धि खाता डाकघर या बैंक में मात्र ₹250 से खोला जा सकता है।",
+    "mr": "मुलाची आर्थिक सुरक्षा पालकांपासून सुरू होते: महागडे कर्ज फेडा, पुरेसा जीवन आणि आरोग्य विमा ठेवा आणि स्वतःची निवृत्तीची बचत सुरू ठेवा. त्यानंतर मुलाच्या उद्दिष्टांसाठी लवकर आणि नियमित सुरुवात करा. दहा वर्षांखालील मुलीसाठी सुकन्या समृद्धी खाते पोस्ट ऑफिस किंवा बँकेत फक्त ₹250 पासून उघडता येते."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "What protects a young child's future first?",
+      "hi": "छोटे बच्चे के भविष्य की सबसे पहली सुरक्षा क्या है?",
+      "mr": "लहान मुलाच्या भविष्याचे सर्वात आधी संरक्षण कशाने होते?"
+     },
+     "options": [
+      {
+       "en": "Gold bought in the child's name",
+       "hi": "बच्चे के नाम खरीदा सोना",
+       "mr": "मुलाच्या नावे घेतलेले सोने"
+      },
+      {
+       "en": "The parents' income being protected",
+       "hi": "माता-पिता की कमाई का सुरक्षित होना",
+       "mr": "आई-वडिलांचे उत्पन्न सुरक्षित असणे"
+      },
+      {
+       "en": "A large birthday party",
+       "hi": "बड़ी जन्मदिन पार्टी",
+       "mr": "मोठी वाढदिवसाची पार्टी"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "If a parent's income stops, every other plan for the child stops with it.",
+      "hi": "माता-पिता की कमाई रुक जाए तो बच्चे की हर योजना उसके साथ रुक जाती है।",
+      "mr": "पालकांचे उत्पन्न थांबले तर मुलासाठीची प्रत्येक योजना त्यासोबत थांबते."
+     }
+    },
+    {
+     "question": {
+      "en": "Why should parents not pause their retirement saving for a child's fund?",
+      "hi": "बच्चे के फंड के लिए माता-पिता को अपनी सेवानिवृत्ति की बचत क्यों नहीं रोकनी चाहिए?",
+      "mr": "मुलाच्या निधीसाठी पालकांनी निवृत्तीची बचत का थांबवू नये?"
+     },
+     "options": [
+      {
+       "en": "Children do not need money",
+       "hi": "बच्चों को पैसे की ज़रूरत नहीं",
+       "mr": "मुलांना पैशांची गरज नसते"
+      },
+      {
+       "en": "Banks forbid it",
+       "hi": "बैंक मना करते हैं",
+       "mr": "बँका मनाई करतात"
+      },
+      {
+       "en": "There are loans for education, but none for retirement",
+       "hi": "पढ़ाई के लिए लोन मिलते हैं, सेवानिवृत्ति के लिए नहीं",
+       "mr": "शिक्षणासाठी कर्ज मिळते, निवृत्तीसाठी नाही"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "An unfunded retirement becomes the child's burden later.",
+      "hi": "बिना बचत की सेवानिवृत्ति आगे चलकर बच्चे पर बोझ बनती है।",
+      "mr": "बचतीविना निवृत्ती पुढे मुलावर ओझे बनते."
+     }
+    }
+   ],
+   "guides": [
+    "children-planning",
+    "govt-schemes",
+    "what-insurance"
+   ]
+  },
+  {
+   "id": "long-term-planning",
+   "stage": "long-term-planning",
+   "topic": "retirement",
+   "age": 42,
+   "place": "office",
+   "title": {
+    "en": "Eighteen years is not long",
+    "hi": "अठारह साल ज़्यादा नहीं होते",
+    "mr": "अठरा वर्षे फार नसतात"
+   },
+   "story": [
+    {
+     "en": "Ira is 42. A colleague retires and the office holds a small party. On the way home Ira counts: eighteen years to sixty.",
+     "hi": "इरा 42 की है। एक सहकर्मी सेवानिवृत्त होते हैं और दफ़्तर में छोटी पार्टी होती है। घर लौटते हुए इरा गिनती है: साठ तक अठारह साल।",
+     "mr": "इरा 42 वर्षांची आहे. एक सहकारी निवृत्त होतात आणि ऑफिसमध्ये छोटी पार्टी होते. घरी जाताना इरा मोजते: साठीपर्यंत अठरा वर्षे."
+    },
+    {
+     "en": "She has changed jobs three times. She has never once logged in to see her provident fund balance.",
+     "hi": "उसने तीन बार नौकरी बदली है। भविष्य निधि का बैलेंस देखने के लिए उसने एक बार भी लॉग-इन नहीं किया।",
+     "mr": "तिने तीनदा नोकरी बदलली आहे. भविष्य निर्वाह निधीची शिल्लक पाहण्यासाठी तिने एकदाही लॉग-इन केलेले नाही."
+    },
+    {
+     "en": "The home loan EMI, Meera's school fees and her parents' medicines take most of what comes in. Retirement has always been next year's problem.",
+     "hi": "होम लोन की EMI, मीरा की स्कूल फीस और माता-पिता की दवाएँ आमदनी का ज़्यादातर हिस्सा ले लेती हैं। सेवानिवृत्ति हमेशा अगले साल की समस्या रही है।",
+     "mr": "गृहकर्जाची EMI, मीराची शाळेची फी आणि आई-वडिलांची औषधे उत्पन्नाचा बहुतेक भाग घेतात. निवृत्ती नेहमीच पुढच्या वर्षीचा प्रश्न राहिली आहे."
+    }
+   ],
+   "slip": {
+    "en": "At 30, between jobs, Ira withdrew her whole provident fund and spent it on a holiday. Twelve years of growth on that money are gone for good.",
+    "hi": "30 की उम्र में, दो नौकरियों के बीच, इरा ने पूरी भविष्य निधि निकालकर छुट्टियों पर खर्च कर दी। उस पैसे पर बारह साल की बढ़त हमेशा के लिए गई।",
+    "mr": "30 व्या वर्षी, दोन नोकऱ्यांच्या मध्ये, इराने संपूर्ण भविष्य निर्वाह निधी काढून सहलीवर खर्च केला. त्या पैशांवरील बारा वर्षांची वाढ कायमची गेली."
+   },
+   "sim": {
+    "kind": "grow",
+    "monthly": 5000,
+    "rate": 8,
+    "years": [
+     8,
+     13,
+     18
+    ],
+    "title": {
+     "en": "Starting now, or starting later",
+     "hi": "अभी शुरू करें, या बाद में",
+     "mr": "आत्ता सुरू करा, की नंतर"
+    },
+    "hint": {
+     "en": "₹5,000 a month at an assumed 8% a year. 18 years is starting today; 8 years is starting at 52. The rate is only for illustration.",
+     "hi": "हर महीने ₹5,000, सालाना 8% मानकर। 18 साल यानी आज से शुरू; 8 साल यानी 52 की उम्र में शुरू। दर सिर्फ़ उदाहरण के लिए है।",
+     "mr": "दर महिन्याला ₹5,000, वर्षाला 8% गृहीत धरून. 18 वर्षे म्हणजे आजपासून सुरू; 8 वर्षे म्हणजे 52 व्या वर्षी सुरू. दर फक्त उदाहरणासाठी आहे."
+    }
+   },
+   "question": {
+    "en": "What should Ira do about retirement?",
+    "hi": "सेवानिवृत्ति के बारे में इरा क्या करे?",
+    "mr": "निवृत्तीबाबत इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Find her UAN, bring her old PF accounts together, and add a fixed monthly amount that rises each year",
+      "hi": "अपना UAN खोजे, पुराने PF खाते एक साथ लाए, और हर साल बढ़ने वाली तय मासिक रकम जोड़े",
+      "mr": "स्वतःचा UAN शोधावा, जुनी PF खाती एकत्र आणावीत आणि दरवर्षी वाढणारी ठरलेली मासिक रक्कम जोडावी"
+     },
+     "outcome": {
+      "en": "Her UAN shows all three employers' PF in one place. She leaves it untouched, starts ₹5,000 a month into long-term retirement saving, and raises it a little after every increment.",
+      "hi": "उसके UAN में तीनों नियोक्ताओं का PF एक जगह दिखता है। वह उसे नहीं छूती, लंबी अवधि की सेवानिवृत्ति बचत में ₹5,000 महीना शुरू करती है, और हर वेतन-वृद्धि के बाद थोड़ा बढ़ाती है।",
+      "mr": "तिच्या UAN मध्ये तिन्ही नियोक्त्यांचा PF एकाच ठिकाणी दिसतो. ती त्याला हात लावत नाही, दीर्घकालीन निवृत्ती बचतीत ₹5,000 महिना सुरू करते आणि प्रत्येक पगारवाढीनंतर थोडी वाढवते."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 180000
+     }
+    },
+    {
+     "text": {
+      "en": "Count on Meera to look after them",
+      "hi": "मीरा पर भरोसा करे कि वह देखभाल करेगी",
+      "mr": "मीरा सांभाळेल यावर अवलंबून राहावे"
+     },
+     "outcome": {
+      "en": "Meera may well want to. But she will have her own rent, her own loans and perhaps her own children. A plan that depends on someone else's future income is a hope.",
+      "hi": "मीरा शायद ऐसा चाहेगी भी। पर उसका अपना किराया, अपने लोन और शायद अपने बच्चे होंगे। किसी और की भविष्य की कमाई पर टिकी योजना सिर्फ़ उम्मीद है।",
+      "mr": "मीराला तसे करावेसे वाटेलही. पण तिचे स्वतःचे भाडे, स्वतःची कर्जे आणि कदाचित स्वतःची मुले असतील. दुसऱ्याच्या भविष्यातील उत्पन्नावर अवलंबून असलेली योजना म्हणजे फक्त आशा."
+     },
+     "verdict": "costly",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Start saving for it at 50, once the home loan is paid",
+      "hi": "होम लोन चुकने के बाद, 50 की उम्र में बचत शुरू करे",
+      "mr": "गृहकर्ज फिटल्यावर, 50 व्या वर्षी बचत सुरू करावी"
+     },
+     "outcome": {
+      "en": "At 50 there are ten years left, and Meera's college fees arrive the same year. She saves what she can, and it is not enough.",
+      "hi": "50 की उम्र में दस साल बचते हैं, और उसी साल मीरा के कॉलेज की फीस आ जाती है। जितना हो सके बचाती है, और वह काफ़ी नहीं होता।",
+      "mr": "50 व्या वर्षी दहा वर्षे उरतात आणि त्याच वर्षी मीराच्या कॉलेजची फी येते. जमेल तेवढे वाचवते, आणि ते पुरेसे ठरत नाही."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": 40000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "Retirement saving is mostly a matter of time. The same monthly amount grows to far more over eighteen years than over eight. Keep provident fund money invested when you change jobs: your UAN links the accounts from every employer. Add a regular amount of your own, and increase it when your pay rises.",
+    "hi": "सेवानिवृत्ति की बचत ज़्यादातर समय का खेल है। वही मासिक रकम अठारह साल में आठ साल की तुलना में कहीं ज़्यादा बनती है। नौकरी बदलते समय भविष्य निधि का पैसा निवेशित रहने दें: आपका UAN हर नियोक्ता के खाते जोड़ता है। अपनी ओर से नियमित रकम जोड़ें, और वेतन बढ़ने पर उसे बढ़ाएँ।",
+    "mr": "निवृत्तीची बचत हा प्रामुख्याने वेळेचा खेळ आहे. तीच मासिक रक्कम अठरा वर्षांत आठ वर्षांपेक्षा खूप जास्त होते. नोकरी बदलताना भविष्य निर्वाह निधीचे पैसे गुंतवलेलेच राहू द्या: तुमचा UAN प्रत्येक नियोक्त्याची खाती जोडतो. स्वतःकडून नियमित रक्कम जोडा आणि पगार वाढल्यावर ती वाढवा."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "What is a UAN?",
+      "hi": "UAN क्या है?",
+      "mr": "UAN म्हणजे काय?"
+     },
+     "options": [
+      {
+       "en": "One 12-digit number that links your PF accounts across employers",
+       "hi": "एक 12 अंकों का नंबर जो अलग-अलग नियोक्ताओं के PF खाते जोड़ता है",
+       "mr": "वेगवेगळ्या नियोक्त्यांची PF खाती जोडणारा एक 12 अंकी क्रमांक"
+      },
+      {
+       "en": "A loan from your employer",
+       "hi": "नियोक्ता से लिया लोन",
+       "mr": "नियोक्त्याकडून घेतलेले कर्ज"
+      },
+      {
+       "en": "A type of insurance",
+       "hi": "एक तरह का बीमा",
+       "mr": "विम्याचा एक प्रकार"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "It stays with you through every job, so old PF accounts are not lost.",
+      "hi": "यह हर नौकरी में आपके साथ रहता है, ताकि पुराने PF खाते न खोएँ।",
+      "mr": "तो प्रत्येक नोकरीत तुमच्यासोबत राहतो, त्यामुळे जुनी PF खाती हरवत नाहीत."
+     }
+    },
+    {
+     "question": {
+      "en": "Why does starting at 42 beat starting at 52 so heavily?",
+      "hi": "42 में शुरू करना 52 में शुरू करने से इतना बेहतर क्यों है?",
+      "mr": "42 व्या वर्षी सुरू करणे 52 व्या वर्षीपेक्षा एवढे चांगले का?"
+     },
+     "options": [
+      {
+       "en": "Banks pay older people less",
+       "hi": "बैंक बड़ी उम्र वालों को कम देते हैं",
+       "mr": "बँका वयस्कांना कमी देतात"
+      },
+      {
+       "en": "Growth compounds over more years",
+       "hi": "बढ़त ज़्यादा सालों तक चक्रवृद्धि होती है",
+       "mr": "वाढ जास्त वर्षे चक्रवाढीने होते"
+      },
+      {
+       "en": "Prices fall over time",
+       "hi": "समय के साथ कीमतें घटती हैं",
+       "mr": "काळानुसार किमती कमी होतात"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Each year's growth earns growth of its own in every year after it.",
+      "hi": "हर साल की बढ़त आगे के हर साल में अपनी बढ़त कमाती है।",
+      "mr": "प्रत्येक वर्षाची वाढ पुढच्या प्रत्येक वर्षात स्वतःची वाढ कमावते."
+     }
+    }
+   ],
+   "guides": [
+    "retirement-basics",
+    "simple-compound",
+    "inflation"
+   ]
+  },
+  {
+   "id": "financial-security",
+   "stage": "financial-security",
+   "topic": "scams",
+   "age": 50,
+   "place": "home",
+   "title": {
+    "en": "\"Madam, do not disconnect this call\"",
+    "hi": "\"मैडम, यह कॉल मत काटिए\"",
+    "mr": "\"मॅडम, हा कॉल कट करू नका\""
+   },
+   "story": [
+    {
+     "en": "Ira is 50. The home loan is paid. On a Tuesday morning a video call comes from a man in uniform, with a crest on the wall behind him.",
+     "hi": "इरा 50 की है। होम लोन चुक गया है। मंगलवार सुबह वर्दी पहने एक आदमी का वीडियो कॉल आता है, पीछे दीवार पर एक प्रतीक चिह्न है।",
+     "mr": "इरा 50 वर्षांची आहे. गृहकर्ज फिटले आहे. मंगळवारी सकाळी गणवेशातील एका माणसाचा व्हिडिओ कॉल येतो, मागे भिंतीवर एक मानचिन्ह आहे."
+    },
+    {
+     "en": "He says a parcel with her Aadhaar number was caught with illegal goods. She is under \"digital arrest\". She must stay on camera and tell nobody.",
+     "hi": "वह कहता है कि उसके आधार नंबर वाला एक पार्सल गैरकानूनी सामान के साथ पकड़ा गया है। वह \"डिजिटल अरेस्ट\" में है। उसे कैमरे पर रहना है और किसी को नहीं बताना।",
+     "mr": "तो सांगतो की तिच्या आधार क्रमांकाचे एक पार्सल बेकायदा मालासह पकडले गेले आहे. ती \"डिजिटल अरेस्ट\" मध्ये आहे. तिने कॅमेऱ्यासमोर राहायचे आणि कोणाला सांगायचे नाही."
+    },
+    {
+     "en": "Two hours in, a second \"officer\" joins. To prove her money is clean, she must move it to a \"verification account\" and it will be returned by evening.",
+     "hi": "दो घंटे बाद एक दूसरा \"अधिकारी\" जुड़ता है। अपना पैसा साफ़ साबित करने के लिए उसे उसे एक \"जाँच खाते\" में भेजना होगा, जो शाम तक लौटा दिया जाएगा।",
+     "mr": "दोन तासांनी दुसरा \"अधिकारी\" सामील होतो. तिचे पैसे स्वच्छ आहेत हे सिद्ध करण्यासाठी ते \"पडताळणी खात्यात\" पाठवावे लागतील, जे संध्याकाळपर्यंत परत मिळतील."
+    }
+   ],
+   "slip": {
+    "en": "Ira has stayed on the call for two hours, told no one, and has already broken one fixed deposit so the money is ready to move.",
+    "hi": "इरा दो घंटे से कॉल पर है, किसी को नहीं बताया, और एक FD पहले ही तुड़वा चुकी है ताकि पैसा भेजने को तैयार रहे।",
+    "mr": "इरा दोन तास कॉलवर आहे, कोणाला सांगितले नाही आणि पैसे पाठवायला तयार राहावेत म्हणून एक FD आधीच मोडली आहे."
+   },
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "What is really happening on this call",
+     "hi": "इस कॉल पर असल में क्या हो रहा है",
+     "mr": "या कॉलवर खरे काय चालले आहे"
+    },
+    "hint": {
+     "en": "Tap each thing the caller did.",
+     "hi": "कॉल करने वाले ने जो-जो किया, हर एक पर टैप करें।",
+     "mr": "कॉल करणाऱ्याने जे जे केले त्या प्रत्येकावर टॅप करा."
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "\"You are under digital arrest\"",
+       "hi": "\"आप डिजिटल अरेस्ट में हैं\"",
+       "mr": "\"तुम्ही डिजिटल अरेस्टमध्ये आहात\""
+      },
+      "value": {
+       "en": "no such thing",
+       "hi": "ऐसा कुछ नहीं होता",
+       "mr": "असे काही नसते"
+      },
+      "flag": true,
+      "note": {
+       "en": "No government agency investigates or arrests anyone over a phone or video call. The Prime Minister said this publicly in October 2024, with the advice: stop, think, take action.",
+       "hi": "कोई सरकारी एजेंसी फ़ोन या वीडियो कॉल पर न जाँच करती है, न गिरफ़्तार करती है। प्रधानमंत्री ने अक्टूबर 2024 में यह सार्वजनिक रूप से कहा था, इस सलाह के साथ: रुको, सोचो, एक्शन लो।",
+       "mr": "कोणतीही सरकारी यंत्रणा फोन किंवा व्हिडिओ कॉलवर चौकशी किंवा अटक करत नाही. पंतप्रधानांनी ऑक्टोबर 2024 मध्ये हे जाहीरपणे सांगितले, या सल्ल्यासह: थांबा, विचार करा, कृती करा."
+      }
+     },
+     {
+      "label": {
+       "en": "\"Tell nobody\"",
+       "hi": "\"किसी को मत बताना\"",
+       "mr": "\"कोणाला सांगू नका\""
+      },
+      "value": {
+       "en": "isolation",
+       "hi": "अकेला करना",
+       "mr": "एकटे पाडणे"
+      },
+      "flag": true,
+      "note": {
+       "en": "One sentence from Kabir or Meera would end this. That is exactly why she is told to stay silent.",
+       "hi": "कबीर या मीरा का एक वाक्य इसे खत्म कर देता। ठीक इसीलिए उसे चुप रहने को कहा गया है।",
+       "mr": "कबीर किंवा मीराचे एक वाक्य हे संपवू शकले असते. नेमके म्हणूनच तिला गप्प राहायला सांगितले आहे."
+      }
+     },
+     {
+      "label": {
+       "en": "He knows her Aadhaar number",
+       "hi": "उसे उसका आधार नंबर पता है",
+       "mr": "त्याला तिचा आधार क्रमांक माहीत आहे"
+      },
+      "value": {
+       "en": "proves nothing",
+       "hi": "कुछ साबित नहीं करता",
+       "mr": "काही सिद्ध होत नाही"
+      },
+      "flag": true,
+      "note": {
+       "en": "Identity numbers leak. Knowing hers makes him sound official; it does not make him a police officer.",
+       "hi": "पहचान के नंबर लीक हो जाते हैं। नंबर जानने से वह सरकारी लगता है; पुलिस अधिकारी नहीं बन जाता।",
+       "mr": "ओळख क्रमांक बाहेर फुटतात. क्रमांक माहीत असल्याने तो अधिकृत वाटतो; पोलिस अधिकारी ठरत नाही."
+      }
+     },
+     {
+      "label": {
+       "en": "\"Move your money to a safe account\"",
+       "hi": "\"अपना पैसा सुरक्षित खाते में भेजें\"",
+       "mr": "\"तुमचे पैसे सुरक्षित खात्यात पाठवा\""
+      },
+      "value": {
+       "en": "the whole point",
+       "hi": "असली मकसद",
+       "mr": "खरा हेतू"
+      },
+      "flag": true,
+      "note": {
+       "en": "No police force, court, or bank ever asks a person to transfer money to prove innocence. Every part of the call exists to reach this one request.",
+       "hi": "कोई पुलिस, अदालत या बैंक कभी किसी से बेगुनाही साबित करने के लिए पैसा भेजने को नहीं कहता। कॉल का हर हिस्सा इसी एक माँग तक पहुँचने के लिए है।",
+       "mr": "कोणतेही पोलिस, न्यायालय किंवा बँक कधीही निर्दोषत्व सिद्ध करण्यासाठी पैसे पाठवायला सांगत नाही. कॉलचा प्रत्येक भाग याच एका मागणीपर्यंत पोहोचण्यासाठी आहे."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "The \"officer\" is waiting. What should Ira do?",
+    "hi": "\"अधिकारी\" इंतज़ार कर रहा है। इरा क्या करे?",
+    "mr": "\"अधिकारी\" वाट पाहत आहे. इराने काय करावे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Hang up, but tell no one. It is too embarrassing",
+      "hi": "फ़ोन काट दे, पर किसी को न बताए। बहुत शर्म आ रही है",
+      "mr": "फोन कट करावा, पण कोणाला सांगू नये. फार लाज वाटते"
+     },
+     "outcome": {
+      "en": "She loses no money. But the same callers try her sister the following month, who had never heard this story and stays on the line.",
+      "hi": "उसका पैसा नहीं जाता। पर वही लोग अगले महीने उसकी बहन को फ़ोन करते हैं, जिसने यह किस्सा कभी सुना नहीं था और जो कॉल पर बनी रहती है।",
+      "mr": "तिचे पैसे जात नाहीत. पण तेच लोक पुढच्या महिन्यात तिच्या बहिणीला फोन करतात, जिने ही गोष्ट कधी ऐकली नव्हती आणि जी कॉलवर राहते."
+     },
+     "verdict": "okay",
+     "effects": {}
+    },
+    {
+     "text": {
+      "en": "Transfer the money. It will be back by evening",
+      "hi": "पैसा भेज दे। शाम तक लौट आएगा",
+      "mr": "पैसे पाठवावेत. संध्याकाळपर्यंत परत येतील"
+     },
+     "outcome": {
+      "en": "She sends ₹6 lakh. The call ends. Nothing comes back by evening. She reports to 1930 that night, hours later than she could have, and only a small part is ever frozen.",
+      "hi": "वह ₹6 लाख भेज देती है। कॉल कट जाता है। शाम तक कुछ नहीं लौटता। वह उसी रात 1930 पर शिकायत करती है, जितनी जल्दी कर सकती थी उससे घंटों बाद, और बहुत थोड़ा हिस्सा ही रोका जा पाता है।",
+      "mr": "ती ₹6 लाख पाठवते. कॉल संपतो. संध्याकाळपर्यंत काहीच परत येत नाही. ती त्याच रात्री 1930 वर तक्रार करते, शक्य होते त्यापेक्षा तासन्‌तास उशिरा, आणि फार थोडाच भाग गोठवला जातो."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": -600000
+     }
+    },
+    {
+     "text": {
+      "en": "Hang up, call Kabir, then call 1930 and her bank",
+      "hi": "फ़ोन काटे, कबीर को फ़ोन करे, फिर 1930 और अपने बैंक को",
+      "mr": "फोन कट करावा, कबीरला फोन करावा, मग 1930 आणि बँकेला"
+     },
+     "outcome": {
+      "en": "Her hands are shaking, but she cuts the call. Kabir says one sentence: \"Police don't arrest people on video.\" She reports the number, tells the bank to watch her accounts, and puts the deposit back.",
+      "hi": "हाथ काँप रहे हैं, पर वह कॉल काट देती है। कबीर एक वाक्य कहता है: \"पुलिस वीडियो पर गिरफ़्तार नहीं करती।\" वह नंबर की शिकायत करती है, बैंक को खातों पर नज़र रखने को कहती है, और FD दोबारा करवा देती है।",
+      "mr": "हात थरथरत आहेत, पण ती कॉल कट करते. कबीर एकच वाक्य म्हणतो: \"पोलिस व्हिडिओवर अटक करत नाहीत.\" ती नंबरची तक्रार करते, बँकेला खात्यांवर लक्ष ठेवायला सांगते आणि FD पुन्हा करते."
+     },
+     "verdict": "good",
+     "effects": {}
+    }
+   ],
+   "lesson": {
+    "en": "Financial security is also about not losing what you built. Fear and secrecy are the tools of every large fraud. No agency arrests by video call, and nobody honest asks you to move money to prove anything. Hang up, tell someone you trust, and call 1930. Talking about a scam you nearly fell for protects the next person.",
+    "hi": "आर्थिक सुरक्षा का मतलब यह भी है कि जो बनाया है वह न खोएँ। डर और गोपनीयता हर बड़ी ठगी के हथियार हैं। कोई एजेंसी वीडियो कॉल पर गिरफ़्तार नहीं करती, और कोई ईमानदार व्यक्ति कुछ साबित करने के लिए पैसा भेजने को नहीं कहता। फ़ोन काटें, किसी भरोसेमंद को बताएँ, और 1930 पर फ़ोन करें। जिस ठगी से आप बाल-बाल बचे, उसके बारे में बात करना अगले व्यक्ति को बचाता है।",
+    "mr": "आर्थिक सुरक्षा म्हणजे जे उभे केले ते न गमावणेही. भीती आणि गुप्तता ही प्रत्येक मोठ्या फसवणुकीची हत्यारे आहेत. कोणतीही यंत्रणा व्हिडिओ कॉलवर अटक करत नाही आणि कोणताही प्रामाणिक माणूस काही सिद्ध करण्यासाठी पैसे पाठवायला सांगत नाही. फोन कट करा, विश्वासातील कोणाला सांगा आणि 1930 वर फोन करा. ज्या फसवणुकीतून तुम्ही थोडक्यात वाचलात तिच्याबद्दल बोलणे पुढच्या माणसाला वाचवते."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "A caller in uniform says you are under \"digital arrest\". This is:",
+      "hi": "वर्दी पहने कॉल करने वाला कहता है आप \"डिजिटल अरेस्ट\" में हैं। यह है:",
+      "mr": "गणवेशातील कॉल करणारा सांगतो तुम्ही \"डिजिटल अरेस्ट\" मध्ये आहात. हे:"
+     },
+     "options": [
+      {
+       "en": "A new kind of legal arrest",
+       "hi": "एक नई तरह की कानूनी गिरफ़्तारी",
+       "mr": "नव्या प्रकारची कायदेशीर अटक"
+      },
+      {
+       "en": "A fraud. No agency arrests over a call",
+       "hi": "ठगी। कोई एजेंसी कॉल पर गिरफ़्तार नहीं करती",
+       "mr": "फसवणूक. कोणतीही यंत्रणा कॉलवर अटक करत नाही"
+      },
+      {
+       "en": "Routine checking",
+       "hi": "नियमित जाँच",
+       "mr": "नेहमीची तपासणी"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Investigations are not carried out by phone or video call.",
+      "hi": "जाँच फ़ोन या वीडियो कॉल पर नहीं होती।",
+      "mr": "चौकशी फोन किंवा व्हिडिओ कॉलवर होत नाही."
+     }
+    },
+    {
+     "question": {
+      "en": "Why do such callers insist you tell no one?",
+      "hi": "ऐसे कॉल करने वाले किसी को न बताने पर ज़ोर क्यों देते हैं?",
+      "mr": "असे कॉल करणारे कोणाला न सांगण्याचा आग्रह का धरतात?"
+     },
+     "options": [
+      {
+       "en": "To protect your privacy",
+       "hi": "आपकी निजता बचाने के लिए",
+       "mr": "तुमची गोपनीयता जपण्यासाठी"
+      },
+      {
+       "en": "Because the law requires secrecy",
+       "hi": "क्योंकि कानून गोपनीयता माँगता है",
+       "mr": "कारण कायदा गुप्तता मागतो"
+      },
+      {
+       "en": "Because anyone you told would stop you",
+       "hi": "क्योंकि आप जिसे भी बताते वह आपको रोक देता",
+       "mr": "कारण तुम्ही ज्याला सांगाल तो तुम्हाला थांबवेल"
+      }
+     ],
+     "answer": 2,
+     "why": {
+      "en": "The scam only works while you are alone with it.",
+      "hi": "ठगी तभी तक चलती है जब तक आप उसके साथ अकेले हैं।",
+      "mr": "तुम्ही एकटे असेपर्यंतच फसवणूक चालते."
+     }
+    }
+   ],
+   "guides": [
+    "scam-calls",
+    "money-missing",
+    "otp-pin"
+   ]
+  },
+  {
+   "id": "retirement",
+   "stage": "retirement",
+   "topic": "retirement",
+   "age": 60,
+   "place": "garden",
+   "title": {
+    "en": "The largest amount she has ever seen",
+    "hi": "अब तक की सबसे बड़ी रकम",
+    "mr": "आजवर पाहिलेली सर्वात मोठी रक्कम"
+   },
+   "story": [
+    {
+     "en": "Ira is 60. On her last working day there are flowers and speeches. A few weeks later her provident fund and other savings sit in one account: the largest number she has ever seen there.",
+     "hi": "इरा 60 की है। काम के आखिरी दिन फूल और भाषण होते हैं। कुछ हफ़्ते बाद उसकी भविष्य निधि और दूसरी बचत एक खाते में है: वहाँ देखी गई अब तक की सबसे बड़ी रकम।",
+     "mr": "इरा 60 वर्षांची आहे. कामाच्या शेवटच्या दिवशी फुले आणि भाषणे होतात. काही आठवड्यांनी तिचा भविष्य निर्वाह निधी आणि इतर बचत एकाच खात्यात आहे: तिथे पाहिलेला आजवरचा सर्वात मोठा आकडा."
+    },
+    {
+     "en": "People notice. The bank's manager calls with a product. A cousin calls with a company deposit paying \"much more than the bank\". Her nephew calls with a business that needs just a little capital.",
+     "hi": "लोगों की नज़र पड़ती है। बैंक मैनेजर एक उत्पाद लेकर फ़ोन करता है। एक चचेरा भाई ऐसी कंपनी जमा योजना बताता है जो \"बैंक से कहीं ज़्यादा\" देती है। भतीजा ऐसे कारोबार के लिए फ़ोन करता है जिसे बस थोड़ी पूँजी चाहिए।",
+     "mr": "लोकांच्या नजरेत येते. बँकेचा मॅनेजर एक उत्पादन घेऊन फोन करतो. एक चुलतभाऊ \"बँकेपेक्षा खूप जास्त\" देणारी कंपनी ठेव योजना सांगतो. पुतण्या फक्त थोडेसे भांडवल हव्या असलेल्या व्यवसायासाठी फोन करतो."
+    },
+    {
+     "en": "This money has to last perhaps thirty years. There will be no more salary to repair a mistake.",
+     "hi": "यह पैसा शायद तीस साल चलाना है। गलती सुधारने के लिए अब कोई वेतन नहीं आएगा।",
+     "mr": "हे पैसे कदाचित तीस वर्षे पुरवायचे आहेत. चूक सुधारण्यासाठी आता पगार येणार नाही."
+    }
+   ],
+   "sim": {
+    "kind": "inspect",
+    "title": {
+     "en": "Four questions before the money moves",
+     "hi": "पैसा कहीं लगाने से पहले चार सवाल",
+     "mr": "पैसे हलवण्याआधी चार प्रश्न"
+    },
+    "hint": {
+     "en": "Tap each one.",
+     "hi": "हर एक पर टैप करें।",
+     "mr": "प्रत्येकावर टॅप करा."
+    },
+    "lines": [
+     {
+      "label": {
+       "en": "What do we need every month?",
+       "hi": "हर महीने हमें कितना चाहिए?",
+       "mr": "दर महिन्याला आपल्याला किती लागते?"
+      },
+      "value": {
+       "en": "first",
+       "hi": "सबसे पहले",
+       "mr": "सर्वात आधी"
+      },
+      "note": {
+       "en": "Work out monthly expenses first. The safest part of the money is arranged to cover those, so daily life does not depend on markets.",
+       "hi": "पहले महीने का खर्च निकालें। पैसे का सबसे सुरक्षित हिस्सा उसे पूरा करने में लगता है, ताकि रोज़मर्रा की ज़िंदगी बाज़ार पर निर्भर न रहे।",
+       "mr": "आधी महिन्याचा खर्च काढा. पैशांचा सर्वात सुरक्षित भाग तो भागवण्यासाठी लावला जातो, म्हणजे रोजचे जीवन बाजारावर अवलंबून राहत नाही."
+      }
+     },
+     {
+      "label": {
+       "en": "Is it all in one place?",
+       "hi": "क्या सब एक ही जगह है?",
+       "mr": "सगळे एकाच ठिकाणी आहे का?"
+      },
+      "value": {
+       "en": "spread it",
+       "hi": "फैलाएँ",
+       "mr": "पसरवा"
+      },
+      "flag": true,
+      "note": {
+       "en": "Deposit insurance covers up to ₹5 lakh per depositor per bank, principal and interest together. Money above that in a single bank is not insured. Spreading across banks raises what is protected.",
+       "hi": "जमा बीमा प्रति जमाकर्ता प्रति बैंक ₹5 लाख तक कवर करता है, मूलधन और ब्याज मिलाकर। एक ही बैंक में इससे ऊपर की रकम बीमित नहीं। अलग-अलग बैंकों में रखने से सुरक्षित रकम बढ़ती है।",
+       "mr": "ठेव विमा प्रति ठेवीदार प्रति बँक ₹5 लाखांपर्यंत संरक्षण देतो, मुद्दल आणि व्याज मिळून. एकाच बँकेत त्यापेक्षा जास्त रक्कम विमा संरक्षित नसते. वेगवेगळ्या बँकांत ठेवल्याने संरक्षित रक्कम वाढते."
+      }
+     },
+     {
+      "label": {
+       "en": "What about illness?",
+       "hi": "बीमारी का क्या?",
+       "mr": "आजारपणाचे काय?"
+      },
+      "value": {
+       "en": "keep health cover",
+       "hi": "स्वास्थ्य बीमा बनाए रखें",
+       "mr": "आरोग्य विमा सुरू ठेवा"
+      },
+      "flag": true,
+      "note": {
+       "en": "Her employer's cover ended on her last day. Without her own health cover, one hospital stay could take years of this money.",
+       "hi": "नियोक्ता का बीमा आखिरी दिन खत्म हो गया। अपना स्वास्थ्य बीमा न हो तो एक बार अस्पताल में भर्ती होना इस पैसे के कई साल ले सकता है।",
+       "mr": "नियोक्त्याचा विमा शेवटच्या दिवशी संपला. स्वतःचा आरोग्य विमा नसेल तर एकदा रुग्णालयात दाखल होणे या पैशांची अनेक वर्षे घेऊ शकते."
+      }
+     },
+     {
+      "label": {
+       "en": "Who gets it after us?",
+       "hi": "हमारे बाद यह किसे मिलेगा?",
+       "mr": "आपल्यानंतर हे कोणाला मिळेल?"
+      },
+      "value": {
+       "en": "nominees and a will",
+       "hi": "नॉमिनी और वसीयत",
+       "mr": "नॉमिनी आणि मृत्युपत्र"
+      },
+      "note": {
+       "en": "Nominees on every account, and a written will. It spares Meera the months Kabir's aunt spent at bank counters.",
+       "hi": "हर खाते में नॉमिनी, और लिखित वसीयत। इससे मीरा को वे महीने नहीं काटने पड़ेंगे जो कबीर की चाची ने बैंक के काउंटरों पर काटे।",
+       "mr": "प्रत्येक खात्यात नॉमिनी आणि लेखी मृत्युपत्र. त्यामुळे कबीरच्या काकूंनी बँकेच्या खिडक्यांवर घालवलेले महिने मीराला घालवावे लागणार नाहीत."
+      }
+     }
+    ]
+   },
+   "question": {
+    "en": "How should Ira place her retirement money?",
+    "hi": "इरा अपनी सेवानिवृत्ति की रकम कैसे रखे?",
+    "mr": "इराने निवृत्तीचे पैसे कसे ठेवावेत?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Put most of it in the company deposit. It pays much more",
+      "hi": "ज़्यादातर पैसा कंपनी जमा योजना में लगाए। रिटर्न बहुत ज़्यादा है",
+      "mr": "बहुतेक पैसे कंपनी ठेव योजनेत ठेवावेत. परतावा खूप जास्त आहे"
+     },
+     "outcome": {
+      "en": "It pays on time for fourteen months. Then the payments stop and the office is locked. A return far above what banks pay was the warning, and she had no way to earn the money again.",
+      "hi": "चौदह महीने समय पर पैसा आता है। फिर भुगतान रुक जाता है और दफ़्तर पर ताला लग जाता है। बैंकों से कहीं ज़्यादा रिटर्न ही चेतावनी थी, और वह पैसा दोबारा कमाने का उसके पास कोई रास्ता नहीं था।",
+      "mr": "चौदा महिने वेळेवर पैसे येतात. मग पैसे येणे थांबते आणि कार्यालयाला कुलूप लागते. बँकांपेक्षा खूप जास्त परतावा हीच धोक्याची सूचना होती आणि ते पैसे पुन्हा कमावण्याचा तिच्याकडे मार्ग नव्हता."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": -800000
+     }
+    },
+    {
+     "text": {
+      "en": "Cover monthly needs with safe income spread across banks, keep health cover, invest a part for growth, and write a will",
+      "hi": "मासिक ज़रूरतें अलग-अलग बैंकों में फैली सुरक्षित आमदनी से पूरी करे, स्वास्थ्य बीमा रखे, एक हिस्सा बढ़त के लिए निवेश करे, और वसीयत लिखे",
+      "mr": "मासिक गरजा वेगवेगळ्या बँकांत पसरलेल्या सुरक्षित उत्पन्नातून भागवाव्यात, आरोग्य विमा ठेवावा, एक भाग वाढीसाठी गुंतवावा आणि मृत्युपत्र लिहावे"
+     },
+     "outcome": {
+      "en": "It is not exciting. Her monthly income is steady, no single bank holds more than is insured, a part keeps growing ahead of prices, and Meera knows where every paper is.",
+      "hi": "यह रोमांचक नहीं है। उसकी मासिक आमदनी स्थिर है, किसी एक बैंक में बीमित सीमा से ज़्यादा नहीं, एक हिस्सा कीमतों से आगे बढ़ता रहता है, और मीरा को पता है हर कागज़ कहाँ है।",
+      "mr": "हे रोमांचक नाही. तिचे मासिक उत्पन्न स्थिर आहे, कोणत्याही एका बँकेत विमा मर्यादेपेक्षा जास्त नाही, एक भाग किमतींपेक्षा पुढे वाढत राहतो आणि मीराला प्रत्येक कागद कुठे आहे ते माहीत आहे."
+     },
+     "verdict": "good",
+     "effects": {
+      "savings": 100000
+     }
+    },
+    {
+     "text": {
+      "en": "Lend a large part to her nephew's business",
+      "hi": "बड़ा हिस्सा भतीजे के कारोबार को उधार दे",
+      "mr": "मोठा भाग पुतण्याच्या व्यवसायाला उसना द्यावा"
+     },
+     "outcome": {
+      "en": "He means well and the business struggles anyway. There is no paper, so there is nothing to claim. The money and the ease between them are both gone.",
+      "hi": "उसकी नीयत ठीक है, फिर भी कारोबार नहीं चलता। कोई कागज़ नहीं है, इसलिए दावा करने को कुछ नहीं। पैसा और रिश्ते की सहजता, दोनों चले गए।",
+      "mr": "त्याचा हेतू चांगला आहे, तरी व्यवसाय चालत नाही. कागद नाही, म्हणून दावा करायला काही नाही. पैसे आणि नात्यातील सहजता, दोन्ही गेले."
+     },
+     "verdict": "costly",
+     "effects": {
+      "savings": -500000
+     }
+    }
+   ],
+   "lesson": {
+    "en": "In retirement the order is: safety, then income, then growth. Cover monthly needs from the safest money. Do not keep more in one bank than deposit insurance protects. Keep your own health cover. Leave a part invested so prices do not outrun you. Be most careful with anyone offering far more than banks pay. And put your nominations and will in order.",
+    "hi": "सेवानिवृत्ति में क्रम यह है: पहले सुरक्षा, फिर आमदनी, फिर बढ़त। मासिक ज़रूरतें सबसे सुरक्षित पैसे से पूरी करें। एक बैंक में उतना ही रखें जितना जमा बीमा सुरक्षित करता है। अपना स्वास्थ्य बीमा बनाए रखें। एक हिस्सा निवेशित रहने दें ताकि कीमतें आपसे आगे न निकलें। जो बैंकों से कहीं ज़्यादा देने का वादा करे, उससे सबसे ज़्यादा सावधान रहें। और अपने नामांकन व वसीयत ठीक रखें।",
+    "mr": "निवृत्तीत क्रम असा: आधी सुरक्षितता, मग उत्पन्न, मग वाढ. मासिक गरजा सर्वात सुरक्षित पैशांतून भागवा. एका बँकेत ठेव विमा जेवढे संरक्षण देतो तेवढेच ठेवा. स्वतःचा आरोग्य विमा सुरू ठेवा. एक भाग गुंतवलेला राहू द्या म्हणजे किमती तुमच्या पुढे जाणार नाहीत. बँकांपेक्षा खूप जास्त देण्याचे आश्वासन देणाऱ्यापासून सर्वाधिक सावध राहा. आणि नामांकन व मृत्युपत्र व्यवस्थित ठेवा."
+   },
+   "drill": [
+    {
+     "question": {
+      "en": "Deposit insurance protects, per depositor in one bank, up to:",
+      "hi": "जमा बीमा एक बैंक में प्रति जमाकर्ता कितने तक सुरक्षा देता है?",
+      "mr": "ठेव विमा एका बँकेत प्रति ठेवीदार किती रकमेपर्यंत संरक्षण देतो?"
+     },
+     "options": [
+      {
+       "en": "₹5 lakh",
+       "hi": "₹5 लाख",
+       "mr": "₹5 लाख"
+      },
+      {
+       "en": "₹50 lakh",
+       "hi": "₹50 लाख",
+       "mr": "₹50 लाख"
+      },
+      {
+       "en": "Any amount",
+       "hi": "कोई भी रकम",
+       "mr": "कोणतीही रक्कम"
+      }
+     ],
+     "answer": 0,
+     "why": {
+      "en": "The limit counts principal and interest together, and applies separately at each bank.",
+      "hi": "इस सीमा में मूलधन और ब्याज दोनों गिने जाते हैं, और यह हर बैंक पर अलग लागू होती है।",
+      "mr": "या मर्यादेत मुद्दल आणि व्याज दोन्ही मोजले जातात आणि ती प्रत्येक बँकेसाठी स्वतंत्र लागू होते."
+     }
+    },
+    {
+     "question": {
+      "en": "An offer pays far more than any bank. For a retiree this is:",
+      "hi": "एक प्रस्ताव किसी भी बैंक से कहीं ज़्यादा देता है। सेवानिवृत्त व्यक्ति के लिए यह है:",
+      "mr": "एक प्रस्ताव कोणत्याही बँकेपेक्षा खूप जास्त देतो. निवृत्त व्यक्तीसाठी हे:"
+     },
+     "options": [
+      {
+       "en": "The best place for most of the money",
+       "hi": "ज़्यादातर पैसे के लिए सबसे अच्छी जगह",
+       "mr": "बहुतेक पैशांसाठी सर्वोत्तम जागा"
+      },
+      {
+       "en": "A reason to ask what risk explains it",
+       "hi": "यह पूछने की वजह कि किस जोखिम के कारण ऐसा है",
+       "mr": "कोणत्या जोखमीमुळे असे आहे हे विचारण्याचे कारण"
+      },
+      {
+       "en": "Safe if a relative recommends it",
+       "hi": "रिश्तेदार बताए तो सुरक्षित",
+       "mr": "नातेवाइकाने सांगितल्यास सुरक्षित"
+      }
+     ],
+     "answer": 1,
+     "why": {
+      "en": "Extra return is payment for extra risk. Retirement money cannot be earned twice.",
+      "hi": "अतिरिक्त रिटर्न अतिरिक्त जोखिम की कीमत है। सेवानिवृत्ति का पैसा दोबारा नहीं कमाया जा सकता।",
+      "mr": "जास्तीचा परतावा म्हणजे जास्तीच्या जोखमीची किंमत. निवृत्तीचे पैसे दोनदा कमावता येत नाहीत."
+     }
+    }
+   ],
+   "guides": [
+    "retirement-basics",
+    "who-keeps-safe",
+    "risk-diversify",
+    "nominee-matters"
+   ]
+  }
+ ]
+}
