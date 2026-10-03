@@ -1,0 +1,48 @@
+{
+  "note": "Sample only. Replace this episode with the real Skyward comic. See README, 'Adding comic pages'.",
+  "episodes": [
+    {
+      "id": "sample",
+      "sample": true,
+      "title": {
+        "en": "Sample episode",
+        "hi": "नमूना एपिसोड",
+        "mr": "नमुना भाग"
+      },
+      "panels": [
+        {
+          "image": null,
+          "caption": {
+            "en": "This is a sample panel. The real Skyward comic will appear here.",
+            "hi": "यह एक नमूना पैनल है। असली स्काईवर्ड कॉमिक यहाँ दिखेगी।",
+            "mr": "हा एक नमुना पॅनेल आहे. खरे स्कायवर्ड कॉमिक इथे दिसेल."
+          }
+        },
+        {
+          "image": null,
+          "caption": {
+            "en": "Swipe left to move to the next panel.",
+            "hi": "अगले पैनल पर जाने के लिए बाईं ओर स्वाइप करें।",
+            "mr": "पुढच्या पॅनेलसाठी डावीकडे स्वाइप करा."
+          }
+        },
+        {
+          "image": null,
+          "caption": {
+            "en": "Each panel has a caption like this one, and Listen reads it aloud.",
+            "hi": "हर पैनल के साथ ऐसा ही एक कैप्शन होता है, और सुनें उसे पढ़कर सुनाता है।",
+            "mr": "प्रत्येक पॅनेलसोबत असेच एक कॅप्शन असते, आणि ऐका ते वाचून दाखवते."
+          }
+        },
+        {
+          "image": null,
+          "caption": {
+            "en": "End of the sample. Ask your Skyward team when the first episode arrives.",
+            "hi": "नमूना यहीं खत्म। अपनी स्काईवर्ड टीम से पूछें कि पहला एपिसोड कब आएगा।",
+            "mr": "नमुना इथे संपला. पहिला भाग केव्हा येईल ते तुमच्या स्कायवर्ड टीमला विचारा."
+          }
+        }
+      ]
+    }
+  ]
+}
