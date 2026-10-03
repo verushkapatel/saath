@@ -14,18 +14,18 @@ export type SimulationState = {
 };
 
 export const SIM_PALETTE = [
-  "#74d7c4",
-  "#f5b66d",
-  "#72c7fa",
-  "#f38eb2",
-  "#f0d266",
-  "#f5916c",
-  "#7ed1a7",
-  "#9ed9f2",
-  "#eaa57a",
+  "#9ec0ef",
+  "#7dceb0",
+  "#d5dde8",
+  "#a8b4c6",
   "#86b7f5",
-  "#e0b35a",
+  "#b8c4d4",
   "#6fd3ad",
+  "#c3ccdc",
+  "#9ed9f2",
+  "#e6eaf0",
+  "#74b0e8",
+  "#8fb8a8",
 ] as const;
 
 export const SIM_PEOPLE: Record<string, [string, string]> = {

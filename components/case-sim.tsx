@@ -282,12 +282,10 @@ export function CaseSimulations() {
     <>
       <section className="card saath-sim-home" id="saath-simulations" aria-labelledby="saath-sim-heading">
         <div className="sim-home-intro">
-          <p className="sim-eyebrow">{t("sim.eyebrow")}</p>
           <h2 className="sim-home-title" id="saath-sim-heading">
-            {t("sim.title")}
+            {t("sim.today")}
           </h2>
           <p className="sim-home-description">{t("sim.intro")}</p>
-          <p className="sim-home-meta">{t("sim.time")}</p>
         </div>
 
         {featured && (
@@ -299,7 +297,6 @@ export function CaseSimulations() {
               <SceneArt scenario={featured} index={featuredIndex} />
             </div>
             <div className="sim-featured-copy">
-              <p className="sim-featured-kicker">{state.days[app.today] ? t("sim.dayComplete") : t("sim.today")}</p>
               <h3 className="sim-featured-title">{featured.title[code]}</h3>
               <button
                 type="button"
@@ -321,7 +318,6 @@ export function CaseSimulations() {
             <div className="sim-recall-copy">
               <p className="sim-recall-kicker">{t("sim.review")}</p>
               <p className="sim-recall-title">{cases.find((item) => item.id === due.id)?.title[code] ?? ""}</p>
-              <p className="sim-recall-description">{t("sim.reviewHint")}</p>
             </div>
             <button
               type="button"
@@ -359,10 +355,8 @@ export function CaseSimulations() {
               );
             })}
           </div>
+          <p className="sim-progress-line">{t("sim.progress", { count: explored, total: cases.length })}</p>
         </details>
-
-        <p className="sim-progress-line">{t("sim.progress", { count: explored, total: cases.length })}</p>
-        <p className="sim-privacy-note">{t("sim.footer")}</p>
       </section>
 
       {session && (

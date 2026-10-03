@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Check, ChevronRight, Mic, ScanLine } from "lucide-react";
-import { LANGS } from "@/lib/catalog";
 import { dayOfYear } from "@/lib/dates";
 import { loadJson, type DailyQuestion, type GlossaryTerm, type Lesson, type MiniCheck, type Path } from "@/lib/content-types";
 import { pathProgress } from "@/lib/progress";
@@ -11,7 +10,6 @@ import { pickTasks } from "@/lib/tasks";
 import { canHear, hear, tap } from "@/lib/speech";
 import { useApp } from "./app-state";
 import { CaseSimulations } from "./case-sim";
-import { Flame } from "./illustrations";
 import { LeoCompanion, useContinuePath } from "./leo-companion";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
@@ -25,10 +23,10 @@ function greetingKey(date = new Date()) {
 }
 
 export function HomeScreen() {
-  const { t, code, setLang } = useI18n();
+  const { t, code } = useI18n();
   const { account } = useSession();
   const app = useApp();
-  const { progress, today, streak, lessons, paths } = app;
+  const { progress, today, lessons, paths } = app;
   const continueTo = useContinuePath();
   const [questions, setQuestions] = useState<DailyQuestion[] | null>(null);
   const [glossary, setGlossary] = useState<GlossaryTerm[]>([]);
@@ -36,7 +34,7 @@ export function HomeScreen() {
   const [heard, setHeard] = useState("");
   const [answer, setAnswer] = useState("");
   const [listening, setListening] = useState(false);
-  const [showExtras, setShowExtras] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     loadJson<DailyQuestion[]>("/content/daily-questions.json").then(setQuestions).catch(() => setFailed(true));
@@ -55,9 +53,6 @@ export function HomeScreen() {
   );
   const extraTasks = tasks.filter((task) => task.id !== "question");
   const picked = today in progress.answers ? progress.answers[today] : null;
-  const streakLabel = streak.count ? t("home.streak", { count: streak.count }) : t("home.streakZero");
-  const lessonCount = progress.lessons.length;
-  const caseCount = Object.keys(progress.cases).length;
 
   async function askVoice() {
     if (!canHear() || listening) return;
@@ -96,52 +91,24 @@ export function HomeScreen() {
   if (!app.ready) return <PageSkeleton />;
 
   return (
-    <div className="stack-lg rise">
+    <div className="stack-lg rise home-calm">
       <div className="stack greeting">
-        <div className="row-between">
-          <h1>
-            {t(greetingKey())}
-            {account.name ? `, ${account.name}` : ""}
-          </h1>
-          <span className="streak-chip" role="img" aria-label={streakLabel}>
-            <Flame lit={streak.count > 0} />
-            <span aria-hidden>{streak.count}</span>
-          </span>
-        </div>
-        <div className="lang-row" role="group" aria-label={t("profile.language")}>
-          {LANGS.map((lang) => (
-            <button
-              key={lang}
-              type="button"
-              className="chip"
-              lang={lang}
-              aria-pressed={code === lang}
-              onClick={() => {
-                tap();
-                setLang(lang);
-              }}
-            >
-              {t(`lang.${lang}`)}
-            </button>
-          ))}
-        </div>
+        <h1>
+          {t(greetingKey())}
+          {account.name ? `, ${account.name}` : ""}
+        </h1>
+        <p className="lead home-lead">{t("home.lead")}</p>
 
-        {continueTo ? (
-          <Link href={`/paths/${continueTo.id}`} className="btn btn-primary saath-primary-continue" onClick={tap}>
-            {t("practice.continuePath", { path: continueTo.title[code] })}
-            <ChevronRight aria-hidden size={20} />
-          </Link>
-        ) : (
-          <Link href="/scan" className="btn btn-primary" onClick={tap}>
-            <ScanLine aria-hidden size={20} />
-            {t("home.scan")}
-          </Link>
-        )}
+        <Link href="/scan" className="btn btn-primary home-hero-cta" onClick={tap}>
+          <ScanLine aria-hidden size={22} />
+          {t("home.scan")}
+        </Link>
+        <p className="faint home-scan-hint">{t("home.scanHint")}</p>
 
         {continueTo && (
-          <Link href="/scan" className="btn btn-secondary" onClick={tap}>
-            <ScanLine aria-hidden size={20} />
-            {t("home.scan")}
+          <Link href={`/paths/${continueTo.id}`} className="btn btn-secondary saath-primary-continue" onClick={tap}>
+            {t("practice.continuePath", { path: continueTo.title[code] })}
+            <ChevronRight aria-hidden size={20} />
           </Link>
         )}
       </div>
@@ -152,7 +119,7 @@ export function HomeScreen() {
       <section className="card tight" aria-labelledby="today-h" id="question">
         <div className="stack">
           <h2 id="today-h">{t("home.today")}</h2>
-          {!check && !failed && <Skeleton height={180} />}
+          {!check && !failed && <Skeleton height={160} />}
           {failed && <p className="note">{t("errors.generic")}</p>}
           {check && (
             <>
@@ -163,55 +130,33 @@ export function HomeScreen() {
         </div>
       </section>
 
-      {extraTasks.length > 0 && (
-        <div className="stack-sm">
-          <button
-            type="button"
-            className="saath-task-toggle"
-            onClick={() => {
-              tap();
-              setShowExtras((open) => !open);
-            }}
-            aria-expanded={showExtras}
-          >
-            {showExtras ? t("practice.showLess") : t("practice.showMore", { count: extraTasks.length })}
+      <details
+        className="home-more"
+        open={showMore}
+        onToggle={(event) => setShowMore((event.target as HTMLDetailsElement).open)}
+      >
+        <summary className="saath-task-toggle">{showMore ? t("practice.showLess") : t("home.moreHelp")}</summary>
+        <div className="stack-sm home-more-body">
+          {extraTasks.map((task) => (
+            <Link key={task.id} href={task.href} className="card tight" onClick={tap}>
+              <span className="row-between">
+                <span>
+                  {task.id === "lesson" && task.lessonId
+                    ? lessons.find((lesson) => lesson.id === task.lessonId)?.title[code] ?? t(`task.${task.id}`)
+                    : t(`task.${task.id}`)}
+                </span>
+                <span className="faint">{task.done ? t("task.done") : t("task.todo")}</span>
+              </span>
+            </Link>
+          ))}
+          <button type="button" className="btn btn-secondary" onClick={() => void askVoice()} disabled={listening || !canHear()}>
+            <Mic aria-hidden size={20} />
+            {listening ? t("home.listening") : t("home.askVoice")}
           </button>
-          {showExtras && (
-            <ul className="stack-sm list-plain">
-              {extraTasks.map((task) => (
-                <li key={task.id}>
-                  <Link href={task.href} className="card tight" onClick={tap}>
-                    <span className="row-between">
-                      <span>
-                        {task.id === "lesson" && task.lessonId
-                          ? lessons.find((lesson) => lesson.id === task.lessonId)?.title[code] ?? t(`task.${task.id}`)
-                          : t(`task.${task.id}`)}
-                      </span>
-                      <span className="faint">{task.done ? t("task.done") : t("task.todo")}</span>
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
+          {heard ? <p className="muted">{heard}</p> : null}
+          {answer ? <p>{answer}</p> : null}
         </div>
-      )}
-
-      <section className="card tight" aria-labelledby="progress-h">
-        <h2 id="progress-h" className="visually-hidden">
-          {t("home.progress")}
-        </h2>
-        <p className="muted">{t("home.progressLine", { streak: streak.count, lessons: lessonCount, cases: caseCount })}</p>
-      </section>
-
-      <section className="stack-sm">
-        <button type="button" className="btn btn-secondary" onClick={() => void askVoice()} disabled={listening || !canHear()}>
-          <Mic aria-hidden size={20} />
-          {listening ? t("home.listening") : t("home.askVoice")}
-        </button>
-        {heard ? <p className="muted">{heard}</p> : null}
-        {answer ? <p>{answer}</p> : null}
-      </section>
+      </details>
     </div>
   );
 }

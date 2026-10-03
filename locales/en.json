@@ -61,7 +61,9 @@
     "progress": "Your progress",
     "progressLine": "{streak}-day streak · {lessons} lessons · {cases} cases",
     "askVoice": "Ask by voice",
-    "listening": "Listening"
+    "listening": "Listening",
+    "lead": "Need help with a loan or scheme paper? Start with Scan. Everything else is optional.",
+    "moreHelp": "More small steps"
   },
   "scan": {
     "title": "Scan a document",

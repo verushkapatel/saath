@@ -92,10 +92,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 42px;
-  padding: 9px 15px;
+  min-height: 52px;
+  padding: 12px 18px;
   border: 1px solid transparent;
-  border-radius: var(--r-full);
+  border-radius: var(--r-md);
   font: inherit;
   font-size: 0.94rem;
   font-weight: 650;

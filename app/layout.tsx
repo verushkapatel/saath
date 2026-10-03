@@ -34,19 +34,16 @@ const kan = Noto_Sans_Kannada({
 
 export const metadata: Metadata = {
   title: "Saath",
-  description: "Saath reads loan and scheme papers in plain language, and includes Money Lab for students.",
+  description: "Saath explains loan and scheme papers in plain words, and helps you learn money skills step by step.",
   applicationName: "Saath",
   manifest: asset("/manifest.webmanifest"),
-  appleWebApp: { capable: true, title: "Saath", statusBarStyle: "default" },
+  appleWebApp: { capable: true, title: "Saath", statusBarStyle: "black-translucent" },
   icons: { icon: asset("/icon-192.png"), apple: asset("/icon-192.png") },
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F6F1E4" },
-    { media: "(prefers-color-scheme: dark)", color: "#011B3D" },
-  ],
-  colorScheme: "light dark",
+  themeColor: "#000000",
+  colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",

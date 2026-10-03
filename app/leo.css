@@ -25,8 +25,8 @@
   overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 50%;
-  background: #0b1c3d;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+  background: #000000;
+  box-shadow: none;
 }
 
 .saath-companion-svg {
@@ -464,8 +464,3 @@
   justify-content: space-between;
 }
 
-@media (prefers-color-scheme: light) {
-  .saath-companion-art {
-    background: #011b3d;
-  }
-}

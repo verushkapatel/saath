@@ -6,37 +6,37 @@
   One system for every screen: navy is the world, white is the text, the reward and the primary action.
 */
 :root {
-  /* Light: warm off-white ground, navy ink, saffron-gold for the one primary action. */
-  --brand: #011b3d;
-  --bg: #f6f1e4;
-  --bg-top: #fbf6ea;
-  --surface-1: #fffdf8;
-  --surface-2: #efe6d2;
-  --surface-3: #e4d8bc;
-  --line: rgba(1, 27, 61, 0.1);
-  --line-strong: rgba(1, 27, 61, 0.18);
-  --text: #011b3d;
-  --text-muted: #3a4d66;
-  --text-faint: #6b7c90;
-  --accent: #b86e0a;
-  --accent-hi: #c97c12;
-  --accent-press: #9a5c08;
-  --accent-ink: #fff8ec;
-  --accent-text: #8f5608;
-  --accent-soft: rgba(184, 110, 10, 0.12);
-  --accent-glow: rgba(184, 110, 10, 0.22);
-  --gold-soft: #b86e0a;
-  --sev-high: #9d2d38;
-  --sev-high-soft: rgba(157, 45, 56, 0.1);
-  --sev-medium: #8a5a00;
-  --sev-medium-soft: rgba(138, 90, 0, 0.1);
-  --sev-low: #1d4f8a;
-  --sev-low-soft: rgba(29, 79, 138, 0.1);
-  --ok: #1f6b4a;
-  --ok-soft: rgba(31, 107, 74, 0.1);
-  --scrim: rgba(1, 27, 61, 0.46);
-  --glow: radial-gradient(110% 80% at 50% 0%, rgba(184, 110, 10, 0.08), transparent 64%);
-  --grain-opacity: 0.04;
+  /* Always black ground, navy surfaces, white text and primary actions. Built for high contrast. */
+  --brand: #0a1a33;
+  --bg: #000000;
+  --bg-top: #000000;
+  --surface-1: #0a1628;
+  --surface-2: #12243f;
+  --surface-3: #1a3358;
+  --line: rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.22);
+  --text: #ffffff;
+  --text-muted: #d5dde8;
+  --text-faint: #a8b4c6;
+  --accent: #ffffff;
+  --accent-hi: #ffffff;
+  --accent-press: #e6eaf0;
+  --accent-ink: #000000;
+  --accent-text: #ffffff;
+  --accent-soft: rgba(255, 255, 255, 0.1);
+  --accent-glow: rgba(255, 255, 255, 0.08);
+  --gold-soft: #ffffff;
+  --sev-high: #ff8a93;
+  --sev-high-soft: rgba(255, 138, 147, 0.14);
+  --sev-medium: #f0d48a;
+  --sev-medium-soft: rgba(240, 212, 138, 0.14);
+  --sev-low: #9ec0ef;
+  --sev-low-soft: rgba(158, 192, 239, 0.14);
+  --ok: #7dceb0;
+  --ok-soft: rgba(125, 206, 176, 0.14);
+  --scrim: rgba(0, 0, 0, 0.72);
+  --glow: none;
+  --grain-opacity: 0;
 
   /* Space: an 8px grid. */
   --s-1: 4px;
@@ -51,26 +51,26 @@
   /* Radius */
   --r-sm: 12px;
   --r-md: 16px;
-  --r-lg: 24px;
+  --r-lg: 20px;
   --r-full: 999px;
 
-  /* Shadow: three levels. */
-  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 8px 22px rgba(1, 27, 61, 0.06);
-  --shadow-2: 0 14px 36px rgba(1, 27, 61, 0.08);
-  --shadow-3: 0 -16px 48px rgba(1, 27, 61, 0.12);
+  /* Shadow: quiet depth on black. */
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 16px 40px rgba(0, 0, 0, 0.45);
+  --shadow-3: 0 -12px 48px rgba(0, 0, 0, 0.55);
 
-  /* Type: five sizes and one hero size. Body never goes below 17px. */
+  /* Type: large body for elders and first-time readers. */
   --font-body: var(--font-sans), var(--font-dev), var(--font-kan), system-ui, sans-serif;
   --font-head: var(--font-display), var(--font-dev), var(--font-kan), Georgia, serif;
-  --fs-label: 1.0625rem;
-  --fs-body: 1.25rem;
-  --fs-lg: 1.4375rem;
-  --fs-h2: 1.75rem;
-  --fs-h1: 2.375rem;
-  --fs-hero: clamp(3.25rem, 16vw, 4.75rem);
-  --lh-body: 1.55;
-  --lh-dev: 1.85;
-  --lh-kan: 1.85;
+  --fs-label: 1.125rem;
+  --fs-body: 1.3125rem;
+  --fs-lg: 1.5rem;
+  --fs-h2: 1.875rem;
+  --fs-h1: 2.5rem;
+  --fs-hero: clamp(3rem, 14vw, 4.5rem);
+  --lh-body: 1.6;
+  --lh-dev: 1.9;
+  --lh-kan: 1.9;
 
   /* Motion: three durations, two easings. */
   --dur-1: 120ms;
@@ -80,50 +80,13 @@
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Layout */
-  --gutter: 16px;
-  --tabbar: 68px;
+  --gutter: 20px;
+  --tabbar: 72px;
   --rail: 248px;
   --page: 40rem;
-  --tap: 48px;
+  --tap: 52px;
 
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #010713;
-    --bg-top: #030e22;
-    --surface-1: #06122a;
-    --surface-2: #0b1c3d;
-    --surface-3: #142a55;
-    --line: rgba(246, 241, 228, 0.1);
-    --line-strong: rgba(246, 241, 228, 0.18);
-    --text: #f6f1e4;
-    --text-muted: #c3ccdc;
-    --text-faint: #97a3ba;
-    --accent: #d4922a;
-    --accent-hi: #e0a33c;
-    --accent-press: #b87a16;
-    --accent-ink: #011b3d;
-    --accent-text: #e0b35a;
-    --accent-soft: rgba(212, 146, 42, 0.14);
-    --accent-glow: rgba(212, 146, 42, 0.2);
-    --gold-soft: #e0b35a;
-    --sev-high: #f08a93;
-    --sev-high-soft: rgba(240, 138, 147, 0.13);
-    --sev-medium: #eebb66;
-    --sev-medium-soft: rgba(238, 187, 102, 0.13);
-    --sev-low: #86b7f5;
-    --sev-low-soft: rgba(134, 183, 245, 0.13);
-    --ok: #6fd3ad;
-    --ok-soft: rgba(111, 211, 173, 0.13);
-    --scrim: rgba(1, 8, 22, 0.7);
-    --glow: radial-gradient(110% 80% at 50% 0%, rgba(212, 146, 42, 0.1), transparent 64%);
-    --grain-opacity: 0.05;
-    --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 6px 18px rgba(0, 0, 0, 0.22);
-    --shadow-2: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 14px 36px rgba(0, 0, 0, 0.32);
-    --shadow-3: 0 -16px 56px rgba(0, 0, 0, 0.5);
-  }
+  color-scheme: dark;
 }
 
 /* Devanagari letters are larger at the same size, so Hindi and Marathi step down one notch. */
@@ -143,12 +106,7 @@ html { background: var(--bg); -webkit-text-size-adjust: 100%; overflow-x: clip; 
 body {
   margin: 0;
   min-height: 100dvh;
-  /* A faint top-to-bottom wash, and a fine grain tile drawn once by the browser. */
-  background-color: var(--bg);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .6  0 0 0 0 .6  0 0 0 0 .6  0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.09'/%3E%3C/svg%3E"),
-    linear-gradient(180deg, var(--bg-top), var(--bg) 420px);
-  background-repeat: repeat, no-repeat;
+  background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   font-size: var(--fs-body);
@@ -452,7 +410,7 @@ button { cursor: pointer; }
   box-shadow: var(--shadow-1);
   text-decoration: none;
 }
-.card.hero { background: var(--glow), linear-gradient(180deg, var(--surface-2), var(--surface-1)); box-shadow: var(--shadow-2); }
+.card.hero { background: var(--surface-2); box-shadow: var(--shadow-2); }
 .card.flat { background: var(--surface-2); box-shadow: none; border-color: transparent; }
 .card.tight { padding: var(--s-4); }
 a.card, button.card {
@@ -489,11 +447,12 @@ a.card:active, button.card:active { transform: scale(0.985) translateY(-1px); bo
 }
 .btn:active { transform: scale(0.98); }
 .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; transform: none; }
-/* White on navy, with a soft glow. The one primary action on a screen. */
+/* White on black. The one primary action on a screen. */
 .btn-primary {
   background: var(--accent);
   color: var(--accent-ink);
-  box-shadow: 0 10px 30px var(--accent-glow);
+  border-color: var(--accent);
+  box-shadow: none;
 }
 .btn-primary:active { background: var(--accent-press); }
 .btn-primary:disabled { box-shadow: none; }
@@ -950,7 +909,7 @@ li:last-child > .step::before { display: none; }
   padding: var(--s-6) var(--s-5);
   border: 1px solid var(--accent-text);
   border-radius: var(--r-lg);
-  background: var(--glow), linear-gradient(160deg, var(--surface-3), var(--surface-1) 70%);
+  background: var(--surface-2);
   box-shadow: var(--shadow-2), 0 0 0 4px var(--accent-soft);
   text-align: center;
   animation: enter var(--dur-3) var(--ease-out) both;
@@ -1075,11 +1034,10 @@ li:last-child > .step::before { display: none; }
 .skeleton {
   min-height: 16px;
   border-radius: var(--r-md);
-  background: linear-gradient(90deg, var(--surface-1) 20%, var(--surface-2) 50%, var(--surface-1) 80%);
-  background-size: 200% 100%;
-  animation: shimmer 1.4s linear infinite;
+  background: var(--surface-2);
+  animation: pulse 1.4s ease-in-out infinite;
 }
-@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes pulse { 50% { opacity: 0.55; } }
 
 .foot {
   display: flex;
@@ -1115,13 +1073,36 @@ li:last-child > .step::before { display: none; }
 /* Polish layer: greeting glow, sample cards, OCR ring, sticky listen, confetti, quiet states */
 
 .greeting { position: relative; }
-.greeting::before {
-  content: "";
-  position: absolute;
-  inset: -56px calc(var(--gutter) * -1) -40px;
-  z-index: -1;
-  background: radial-gradient(60% 70% at 22% 40%, var(--accent-soft), transparent 70%);
-  pointer-events: none;
+
+.home-lead {
+  max-width: 28rem;
+  color: var(--text-muted);
+}
+
+.home-scan-hint {
+  margin-top: calc(var(--s-2) * -1);
+}
+
+.home-hero-cta {
+  font-size: var(--fs-lg);
+  min-height: 60px;
+}
+
+.home-more {
+  border-top: 1px solid var(--line);
+  padding-top: var(--s-3);
+}
+
+.home-more summary {
+  list-style: none;
+}
+
+.home-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.home-more-body {
+  margin-top: var(--s-3);
 }
 
 .samples { display: grid; gap: var(--s-3); }
@@ -1249,7 +1230,7 @@ li:last-child > .step::before { display: none; }
   line-height: 1.35;
 }
 .paper .head { font-weight: 700; letter-spacing: 0.02em; }
-.scanline { position: absolute; left: 0; right: 0; top: 0; height: 40%; opacity: 0; background: linear-gradient(180deg, transparent, rgba(1, 27, 61, 0.28)); border-bottom: 2px solid var(--brand); transform: translateY(-100%); }
+.scanline { position: absolute; left: 0; right: 0; top: 0; height: 3px; opacity: 0; background: var(--brand); transform: translateY(-100%); }
 .paper.reading .scanline { opacity: 1; animation: scan 1.4s var(--ease-out) forwards; }
 @keyframes scan { to { transform: translateY(250%); } }
 
