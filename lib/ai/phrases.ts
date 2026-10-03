@@ -3,6 +3,8 @@ import type { Lang } from "../catalog";
 /** The few fixed sentences the on-device provider needs. Everything else it says is quoted from checked content. */
 export const PHRASES: Record<Lang, Record<string, string>> = {
   en: {
+    thanks: "You're welcome. Ask again any time.",
+    greet: "Hello! Ask me anything about money in your own words: a word you don't understand, a form, a loan offer, or something in Verena's story. You could start with:",
     unknown: "I don't have a checked answer for that, so I won't guess. I can answer from Saath's guides, forms and story. Try asking about one of these:",
     noRates: "I don't quote today's interest rates, returns or prices, because they change and I can't check them from here. Look at the lender's or the regulator's own page for the current figure. What I can explain is how it works:",
     noAdvice: "I can't tell you what to buy or where to put your money. That depends on your whole situation, and I'm not a licensed adviser. Here is what the guides say about how to think it through:",
@@ -27,6 +29,8 @@ export const PHRASES: Record<Lang, Record<string, string>> = {
     offline: "(Answered on this device from Saath's checked guides.)",
   },
   hi: {
+    thanks: "आपका स्वागत है। कभी भी फिर पूछें।",
+    greet: "नमस्ते! पैसों के बारे में अपने शब्दों में कुछ भी पूछें: कोई शब्द जो समझ न आए, कोई फ़ॉर्म, लोन का ऑफ़र, या वेरेना की कहानी की कोई बात। शुरुआत इनसे कर सकते हैं:",
     unknown: "इसका जाँचा हुआ जवाब मेरे पास नहीं है, इसलिए मैं अंदाज़ा नहीं लगाऊँगी। मैं साथ की गाइड, फ़ॉर्म और कहानी से जवाब दे सकती हूँ। इनमें से कुछ पूछकर देखें:",
     noRates: "मैं आज की ब्याज दर, रिटर्न या भाव नहीं बताती, क्योंकि ये बदलते रहते हैं और यहाँ से जाँचे नहीं जा सकते। ताज़ा आँकड़ा ऋणदाता या नियामक की अपनी वेबसाइट पर देखें। यह कैसे काम करता है, वह मैं समझा सकती हूँ:",
     noAdvice: "क्या खरीदें या पैसा कहाँ लगाएँ, यह मैं नहीं बता सकती। यह आपकी पूरी स्थिति पर निर्भर है और मैं लाइसेंस प्राप्त सलाहकार नहीं हूँ। सोचने का तरीका गाइड में यह है:",
@@ -51,6 +55,8 @@ export const PHRASES: Record<Lang, Record<string, string>> = {
     offline: "(जवाब इसी फ़ोन पर, साथ की जाँची हुई गाइड से दिया गया।)",
   },
   mr: {
+    thanks: "आनंद झाला. कधीही पुन्हा विचारा.",
+    greet: "नमस्कार! पैशांबद्दल तुमच्या शब्दांत काहीही विचारा: न समजलेला शब्द, एखादा फॉर्म, कर्जाची ऑफर, किंवा वेरेनाच्या गोष्टीतली एखादी गोष्ट. सुरुवात यांनी करू शकता:",
     unknown: "याचे तपासलेले उत्तर माझ्याकडे नाही, म्हणून मी अंदाज लावणार नाही. मी साथच्या मार्गदर्शिका, फॉर्म आणि गोष्टीतून उत्तर देऊ शकते. यापैकी काही विचारून पाहा:",
     noRates: "मी आजचा व्याजदर, परतावा किंवा भाव सांगत नाही, कारण ते बदलत राहतात आणि इथून तपासता येत नाहीत. ताजा आकडा कर्ज देणाऱ्याच्या किंवा नियामकाच्या स्वतःच्या संकेतस्थळावर पाहा. हे कसे चालते ते मी समजावू शकते:",
     noAdvice: "काय घ्यावे किंवा पैसे कुठे गुंतवावेत हे मी सांगू शकत नाही. ते तुमच्या संपूर्ण परिस्थितीवर अवलंबून आहे आणि मी परवानाधारक सल्लागार नाही. विचार कसा करावा हे मार्गदर्शिकेत असे आहे:",

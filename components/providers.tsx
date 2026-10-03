@@ -15,6 +15,8 @@ type I18n = {
   /** Pass false as the second value to use a language for this visit without saving it. */
   setLang: (lang: Lang, persist?: boolean) => void;
   t: (path: string, vars?: Record<string, string | number>) => string;
+  /** Shows the language screen again. The current choice stays saved until a new one is made. */
+  chooseLanguage: () => void;
 };
 
 const Ctx = createContext<I18n | null>(null);
@@ -68,6 +70,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
     setLangState(next);
   }, []);
 
+  const chooseLanguage = useCallback(() => setLangState(null), []);
+
   const t = useCallback(
     (path: string, vars?: Record<string, string | number>) => fill(lookup(dict, path), vars),
     [dict],
@@ -80,7 +84,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
     copyReady: Boolean(dict && typeof dict === "object" && Object.keys(dict as object).length),
     setLang,
     t,
-  }), [dict, lang, ready, setLang, t]);
+    chooseLanguage,
+  }), [dict, lang, ready, setLang, t, chooseLanguage]);
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

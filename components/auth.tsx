@@ -7,6 +7,8 @@ import { todayISO } from "@/lib/dates";
 import { resetLocalData } from "@/lib/profile";
 import { tap } from "@/lib/speech";
 import { useI18n } from "./providers";
+import { LangSwitch } from "./lang-switch";
+import { LogoMark } from "./logo";
 import { ThemeToggle } from "./theme-toggle";
 
 export type AuthMode = "signup" | "login";
@@ -71,10 +73,10 @@ export function AuthScreen({
             <ChevronLeft aria-hidden size={18} />
             {t("auth.back")}
           </button>
-          <ThemeToggle />
+          <span className="cluster"><LangSwitch /><ThemeToggle /></span>
         </div>
         <div className="stack-sm">
-          <p className="masthead">Saath</p>
+          <LogoMark size={34} title="Saath" />
           <h1>{signup ? t("auth.signupTitle") : t("auth.loginTitle")}</h1>
           <p className="lead">{signup ? t("auth.signupLead") : t("auth.loginLead")}</p>
         </div>

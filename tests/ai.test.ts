@@ -63,6 +63,26 @@ describe("on-device rule provider", () => {
     }
   });
 
+  it("finds the right guide for the way students actually ask", async () => {
+    const top = async (lang: Lang, question: string) => (await rules.answerQuestion(question, request(lang))).sources[0]?.href;
+    expect(await top("en", "how do i save money as a student")).toBe("/guide/pay-yourself");
+    expect(await top("en", "what is a mutual fund")).toBe("/guide/what-sip");
+    expect(await top("en", "buy now pay later is it a loan")).toBe("/guide/pay-later");
+    expect(await top("mr", "बजेट कसे बनवायचे?")).toBe("/guide/budget");
+    expect(await top("hi", "पैसे कैसे बचाएँ?")).toBe("/guide/pay-yourself");
+    expect(await top("en", "is this job asking 5000 deposit real")).toBe("/guide/job-scams");
+  });
+
+  it("greets and thanks like a person, and treats a failed payment as a failed payment", async () => {
+    expect((await rules.answerQuestion("hi", request())).text.startsWith(PHRASES.en.greet)).toBe(true);
+    expect((await rules.answerQuestion("नमस्ते", request("hi"))).text.startsWith(PHRASES.hi.greet)).toBe(true);
+    expect((await rules.answerQuestion("thanks", request())).text).toBe(PHRASES.en.thanks);
+    const failed = await rules.answerQuestion("my upi money got debited but not received", request());
+    expect(failed.text).not.toBe(PHRASES.en.emergency);
+    // A scam where money is gone still starts with the helpline, even if a parcel is "stuck".
+    expect((await rules.answerQuestion("caller said my parcel is stuck, I paid and money gone", request())).text).toBe(PHRASES.en.emergency);
+  });
+
   it("explains what is on screen when asked to explain this", async () => {
     const context = { screen: "Learn", kind: "lesson" as const, id: "what-emi", title: "What is an EMI", text: "An EMI is the same amount paid every month." };
     const answer = await rules.answerQuestion("Explain this", request("en", { context }));

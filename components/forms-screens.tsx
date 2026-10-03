@@ -8,7 +8,7 @@ import { loadJson, type FormGuide, type FormsFile } from "@/lib/content-types";
 import { dayLabel } from "@/lib/format";
 import { explainFormText, type FieldRule, type FormReading } from "@/lib/form-explain";
 import { photoQuality, preprocessImage } from "@/lib/image";
-import { readPhoto, type OcrProgress } from "@/lib/ocr";
+import { readPhotoBest, type OcrProgress } from "@/lib/ocr";
 import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
@@ -284,7 +284,11 @@ export function FormExplainScreen() {
     try {
       setQuality(await photoQuality(file));
       const cleaned = await preprocessImage(file);
-      const text = await readPhoto(cleaned, code, setProgress);
+      const score = (text: string) => {
+        const reading = explainFormText(text, rules);
+        return reading.readable ? reading.found.length : 0;
+      };
+      const text = await readPhotoBest(file, cleaned, code, score, 5, setProgress);
       setReading(explainFormText(text, rules));
       setPhase("done");
     } catch {

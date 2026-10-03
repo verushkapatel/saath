@@ -26,8 +26,9 @@ export type FormReading = {
  */
 export function explainFormText(text: string, rules: FieldRule[]): FormReading {
   const lines = text.split(/\r?\n/).map((line) => line.replace(/\s+/g, " ").trim()).filter((line) => line.length > 2);
-  const letters = (text.match(/\p{L}/gu) ?? []).length;
-  const words = text.split(/\s+/).filter((word) => /^\p{L}{3,}$/u.test(word)).length;
+  // Letters include vowel signs (\p{M}): in Hindi and Marathi most syllables carry one.
+  const letters = (text.match(/[\p{L}\p{M}]/gu) ?? []).length;
+  const words = text.split(/\s+/).filter((word) => /^[\p{L}\p{M}]{3,}$/u.test(word)).length;
   const found: FormReading["found"] = [];
   const seen = new Set<string>();
   for (const line of lines) {
@@ -41,7 +42,7 @@ export function explainFormText(text: string, rules: FieldRule[]): FormReading {
     }
   }
   // A real form photo gives dozens of words. A blurred one gives a handful of stray letters.
-  const readable = letters >= 60 && words >= 10 && found.length >= 1;
+  const readable = letters >= 60 && words >= 8 && found.length >= 1;
   return { readable, found: readable ? found : [], lines: lines.length };
 }
 

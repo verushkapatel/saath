@@ -1,4 +1,13 @@
 {
+  "land": {
+    "hello": "Hello",
+    "name": "English",
+    "title": "Choose your language",
+    "cta": "Continue",
+    "line": "Live a financial life before you have to.",
+    "change": "Language",
+    "changeHint": "Change language"
+  },
   "common": {
     "listen": "Listen",
     "stop": "Stop",

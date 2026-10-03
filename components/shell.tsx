@@ -18,6 +18,7 @@ import { AppStateProvider, useApp } from "./app-state";
 import { AuthScreen, type AuthMode } from "./auth";
 import { Character } from "./character";
 import { Intro } from "./intro";
+import { Logo, LogoMark } from "./logo";
 import { Personalize } from "./personalize";
 import { PrefsProvider, usePrefs } from "./prefs";
 import { useI18n } from "./providers";
@@ -51,6 +52,13 @@ function Landing() {
   const [pick, setPick] = useState<Lang | null>(null);
 
   useEffect(() => {
+    // Coming back to change language: start with the one already in use.
+    try {
+      const saved = window.localStorage.getItem("saath-lang");
+      if (saved && LANGS.includes(saved as Lang)) setPick(saved as Lang);
+    } catch {
+      // Nothing saved yet.
+    }
     loadJson<GateCopy>("/locales/gate.json").then(setCopy).catch(() => undefined);
   }, []);
 
@@ -65,7 +73,7 @@ function Landing() {
           <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={168} />
         </div>
         <div className="gate-heading">
-          <p className="wordmark">Saath</p>
+          <p className="wordmark"><LogoMark size={40} /> Saath</p>
           <h1 lang={shown}>{copy[shown].title}</h1>
           <p className="lead" lang={shown}>{copy[shown].line}</p>
         </div>
@@ -109,7 +117,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
       <a className="skip" href="#content">{t("common.skip")}</a>
       <header className="shell-top">
         <Link href="/" className="brand" aria-label="Saath">
-          <span className="brand-name">Saath</span>
+          <Logo size={26} />
         </Link>
         <span className="cluster">
           {prefs.ai && (
@@ -125,7 +133,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
       </header>
       <nav className="rail" aria-label={t("nav.label")}>
         <Link href="/" className="brand" aria-label="Saath">
-          <span className="brand-name">Saath</span>
+          <Logo size={26} />
         </Link>
         {[...TABS, ...MORE].map((tab, index) => {
           const Icon = tab.icon;

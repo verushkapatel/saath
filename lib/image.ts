@@ -56,6 +56,34 @@ function deskew(context: CanvasRenderingContext2D, width: number, height: number
   context.restore();
 }
 
+/**
+ * Wipes out long horizontal rules: the underlines and boxes printed on forms. Tesseract reads the letters that
+ * touch a rule as noise, which garbles field names, worst of all in Devanagari. A run of dark pixels longer than
+ * about a fifth of the page is a rule, never a letter or a word.
+ */
+function removeRules(context: CanvasRenderingContext2D, width: number, height: number): void {
+  const image = context.getImageData(0, 0, width, height);
+  const data = image.data;
+  const minRun = Math.round(width * 0.22);
+  for (let y = 0; y < height; y += 1) {
+    let start = -1;
+    for (let x = 0; x <= width; x += 1) {
+      const dark = x < width && grayOf(data, (y * width + x) * 4) < 120;
+      if (dark && start < 0) start = x;
+      if (!dark && start >= 0) {
+        if (x - start >= minRun) {
+          for (let i = start; i < x; i += 1) {
+            const at = (y * width + i) * 4;
+            data[at] = data[at + 1] = data[at + 2] = 255;
+          }
+        }
+        start = -1;
+      }
+    }
+  }
+  context.putImageData(image, 0, 0);
+}
+
 export async function preprocessImage(file: Blob): Promise<Blob> {
   const bitmap = await createImageBitmap(file);
   const scale = Math.min(1, 1600 / Math.max(bitmap.width, bitmap.height));
@@ -77,11 +105,10 @@ export async function preprocessImage(file: Blob): Promise<Blob> {
     if (g > max) max = g;
   }
   const span = Math.max(1, max - min);
+  // Stretch the contrast only. Pushing greys harder thins the vowel signs and the top line of Devanagari letters.
   for (let i = 0; i < data.length; i += 4) {
     const g = grayOf(data, i);
-    const stretched = Math.max(0, Math.min(255, ((g - min) / span) * 255));
-    const boosted = stretched < 128 ? stretched * 0.85 : Math.min(255, stretched * 1.12);
-    data[i] = data[i + 1] = data[i + 2] = boosted;
+    data[i] = data[i + 1] = data[i + 2] = Math.max(0, Math.min(255, ((g - min) / span) * 255));
   }
   context.putImageData(image, 0, 0);
   try {
@@ -89,13 +116,15 @@ export async function preprocessImage(file: Blob): Promise<Blob> {
   } catch {
     // Deskew is best-effort on a slow phone.
   }
-  let quality = 0.82;
-  let blob = await canvasBlob(canvas, quality);
-  while (blob && blob.size > 500 * 1024 && quality > 0.4) {
-    quality -= 0.1;
-    blob = await canvasBlob(canvas, quality);
+  try {
+    removeRules(context, width, height);
+  } catch {
+    // Also best-effort.
   }
-  return blob ?? file;
+  // A lossless picture keeps thin strokes sharp. It only lives in memory while it is read.
+  const png = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png"));
+  if (png && png.size < 4 * 1024 * 1024) return png;
+  return (await canvasBlob(canvas, 0.92)) ?? file;
 }
 
 export function photoQuality(file: Blob): Promise<{ dark: boolean; blurry: boolean }> {

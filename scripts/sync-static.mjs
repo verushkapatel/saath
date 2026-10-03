@@ -14,6 +14,14 @@ function copyDirJson(from, to) {
 }
 
 copyDirJson(join(root, "locales"), join(root, "public", "locales"));
+
+// The language screen shows all three languages at once, before any one is chosen, so it cannot load a single
+// locale file. Its words live in the "land" section of each locale and are gathered here into one small file.
+const gate = Object.fromEntries(["en", "hi", "mr"].map((lang) => {
+  const land = JSON.parse(readFileSync(join(root, "locales", `${lang}.json`), "utf8")).land;
+  return [lang, land];
+}));
+writeFileSync(join(root, "public", "locales", "gate.json"), JSON.stringify(gate));
 copyDirJson(join(root, "content"), join(root, "public", "content"));
 
 const tessJs = join(root, "node_modules", "tesseract.js", "dist", "worker.min.js");

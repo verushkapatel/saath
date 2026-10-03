@@ -13,14 +13,21 @@ import type { AiAnswer, AiRequest, AiSource, Doc, MistakeInput, SaathAIProvider 
 export const RATE_ASK = /(current|today|latest|right now|best)\s.*(rate|return|price|nav)|(rate|return|price)\s.*(today|now|current|latest)|which\s+(bank|fd|fund|stock|share|policy|scheme|app|loan)\s.*(best|highest|cheapest|lowest)|आज\s.*(दर|भाव|रेट)|सबसे\s+(अच्छा|ज़्यादा|सस्ता)\s.*(बैंक|फंड|शेयर|पॉलिसी)|आजचा\s.*(दर|भाव)|सर्वात\s+(चांगला|जास्त|स्वस्त)\s.*(बँक|फंड|शेअर|पॉलिसी)/i;
 export const ADVICE_ASK = /should i (buy|sell|invest|put|take|get)|is it (good|safe|worth) to (buy|invest)|which (stock|share|fund|crypto|coin|policy) should|where should i invest|what should i (buy|invest)|tip for|guaranteed return|क्या मुझे\s.*(खरीद|निवेश|लेना)|कहाँ निवेश|कौन सा\s.*(शेयर|फंड|खरीद)|मी\s.*(घ्यावे|गुंतवावे|खरेदी) का|कुठे गुंतव|कोणता\s.*(शेअर|फंड)/i;
 export const EMERGENCY = /(lost|stolen|stole|debited|gone|deducted|hacked|scammed|cheated|shared).{0,40}(money|otp|pin|account|upi|card)|(otp|pin).{0,20}(shared|told|gave)|money.{0,20}(gone|missing|debited|stolen)|पैसा.{0,20}(कट|गया|चोरी)|ओटीपी.{0,20}(बता|दे)|पैसे.{0,20}(गेले|कापले|चोरी)|ओटीपी.{0,20}(सांगितला|दिला)/i;
+/** A payment that failed or is pending is not fraud: it needs the app's complaint button or the bank, not the police. */
+export const FAILED_PAYMENT = /(not (received|credited|reached)|failed|pending|नहीं (मिला|पहुँचा|आया)|फेल|मिळाले नाही|पोहोचले नाही)/i;
 export const VAGUE = /^(explain|explain this|what does this mean|what is this|tell me more|more|why|why\?|help|i don't understand|समझाएँ|यह क्या है|और बताएँ|क्यों|मदद|समजावा|हे काय आहे|अजून सांगा|का|मदत)[\s.?!]*$/i;
 
 export const MIN_SCORE = 2;
+export const GREETING = /^(hi+|hello+|hey+|namaste|namaskar|good (morning|afternoon|evening)|नमस्ते|नमस्कार|हाय|हेलो)[\s.!?,]*$/i;
+export const THANKS = /^(thanks?|thank you|thx|ok(ay)?|got it|धन्यवाद|शुक्रिया|ठीक है|समझ गया|समझ गई|थँक्यू|समजले|बरं)[\s.!?,]*$/i;
 
 function sourcesOf(hits: Hit[], limit = 3): AiSource[] {
   const seen = new Set<string>();
   const out: AiSource[] = [];
+  // Only passages close to the best one are named as sources, so a weak match never appears as a "source".
+  const floor = (hits[0]?.score ?? 0) * 0.55;
   for (const hit of hits) {
+    if (hit.score < floor) break;
     if (hit.doc.kind === "term" || seen.has(hit.doc.href + hit.doc.title)) continue;
     seen.add(hit.doc.href + hit.doc.title);
     out.push({ title: hit.doc.title, href: hit.doc.href });
@@ -52,7 +59,12 @@ export function createRuleProvider(docsFor: (lang: Lang) => Doc[]): SaathAIProvi
     const context = request.context;
     const asked = question.trim();
 
-    if (EMERGENCY.test(asked)) {
+    if (THANKS.test(asked)) return answer(phrases.thanks, [], true);
+    if (GREETING.test(asked)) {
+      return answer(`${phrases.greet}\n${suggestions(docs, request)}`, [], true);
+    }
+
+    if (EMERGENCY.test(asked) && !FAILED_PAYMENT.test(asked)) {
       const hits = search("money missing fraud otp report bank", docs);
       return answer(phrases.emergency, sourcesOf(hits, 2), true);
     }

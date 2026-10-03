@@ -7,7 +7,7 @@ import { todayISO } from "@/lib/dates";
 import { dayLabel, groupAmount, inr, monthLabel, parseAmountInput } from "@/lib/format";
 import { photoQuality, preprocessImage } from "@/lib/image";
 import { insightFor, loggedDays, weekSummary } from "@/lib/insights";
-import { readPhoto, type OcrProgress } from "@/lib/ocr";
+import { readPhotoBest, type OcrProgress } from "@/lib/ocr";
 import { recurringSpends, weekendShare } from "@/lib/patterns";
 import { parseReceipt, type ReceiptGuess } from "@/lib/receipt";
 import { tap } from "@/lib/speech";
@@ -154,7 +154,12 @@ function ReceiptSheet({ onClose, onSaved }: { onClose: () => void; onSaved: () =
     try {
       const quality = await photoQuality(file);
       setBlurry(quality.blurry || quality.dark);
-      const text = await readPhoto(await preprocessImage(file), code, setProgress);
+      // A reading with a printed total and a date is as good as it gets; anything less is worth a second look.
+      const score = (text: string) => {
+        const guess = parseReceipt(text);
+        return (guess.confidence === "good" ? 2 : guess.confidence === "low" ? 1 : 0) + (guess.date ? 1 : 0);
+      };
+      const text = await readPhotoBest(file, await preprocessImage(file), code, score, 3, setProgress);
       const found = parseReceipt(text);
       setGuess(found);
       setAmount(found.total ? String(found.total) : "");

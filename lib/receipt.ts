@@ -28,7 +28,11 @@ function toNumber(raw: string): number {
   return Number(raw.replace(/,/g, ""));
 }
 
-function amountsIn(line: string): number[] {
+const DATE_IN_LINE = /\b\d{1,2}[\/.-]\d{1,2}[\/.-](\d{2}|\d{4})\b|\b\d{1,2}[\s-]*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*[\s,-]*\d{4}\b|\b\d{1,2}:\d{2}(:\d{2})?\b/gi;
+
+function amountsIn(raw: string): number[] {
+  // A date or a time is never an amount: "01/10/2026" must not become ₹2,026.
+  const line = raw.replace(DATE_IN_LINE, " ");
   const found: number[] = [];
   for (const match of line.matchAll(AMOUNT)) {
     const value = toNumber(match[1]);

@@ -1605,7 +1605,7 @@ mark { padding: 0 2px; border-radius: 2px; background: var(--accent-soft); color
 .landing-top { display: flex; justify-content: flex-end; }
 .landing-body { display: grid; align-content: center; gap: var(--s-5); width: min(100%, 26rem); margin: 0 auto; }
 .landing-figure { justify-self: center; padding: var(--s-3) var(--s-5); }
-.wordmark { font-family: var(--font-head); font-size: 2.75rem; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+.wordmark { display: inline-flex; align-items: center; justify-content: center; gap: var(--s-3); font-family: var(--font-head); font-size: 2.75rem; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
 
 /* Introduction acts */
 .intro { width: min(100%, 46rem); margin: 0 auto; padding: 0 var(--gutter) calc(env(safe-area-inset-bottom) + var(--s-7)); }
@@ -1770,3 +1770,42 @@ mark { padding: 0 2px; border-radius: 2px; background: var(--accent-soft); color
 }
 :root[data-motion="reduce"] .act { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .act { opacity: 1; transform: none; } }
+
+/* ───────────────────────────────────────────────────────────────
+   Navy: a hint of colour on a black-and-white page. Used for the logo,
+   the active place in the app, progress, links and the person's own words.
+   Buttons and text stay ink.
+   ─────────────────────────────────────────────────────────────── */
+:root { --navy: #14336b; --navy-soft: rgba(20, 51, 107, 0.09); --navy-ink: #ffffff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --navy: #9db7e8; --navy-soft: rgba(157, 183, 232, 0.14); --navy-ink: #000000; }
+}
+:root[data-theme="dark"] { --navy: #9db7e8; --navy-soft: rgba(157, 183, 232, 0.14); --navy-ink: #000000; }
+
+.logo { display: inline-flex; align-items: center; gap: var(--s-2); }
+.logo-mark { flex: none; display: block; }
+.brand .logo .brand-name { line-height: 1; }
+
+:focus-visible { outline-color: var(--navy); }
+.masthead { color: var(--navy); }
+.link { color: var(--navy); }
+.tab-ind::after { background: var(--navy); }
+.tabs a[aria-current="page"] svg { color: var(--navy); }
+.rail a.nav[aria-current="page"] { background: var(--navy); color: var(--navy-ink); }
+.rail a.nav[aria-current="page"] svg { color: var(--navy-ink); }
+.bar > span { background: var(--navy); }
+.xp-pop { background: var(--navy); color: var(--navy-ink); }
+.stage-mark.done { background: var(--navy); border-color: var(--navy); color: var(--navy-ink); }
+.stage-mark.open { border-color: var(--navy); box-shadow: 0 0 0 4px var(--navy-soft); }
+.stage-row.done + .stage-row > a::before, .stage-row.done + .stage-row > div::before { border-left-color: var(--navy); }
+.loop-dots li.on { background: var(--navy); }
+.bubble.me { background: var(--navy); color: var(--navy-ink); }
+.switch[aria-checked="true"] { background: var(--navy); border-color: var(--navy); }
+.switch[aria-checked="true"] i { background: var(--navy-ink); }
+.badge.have { border-color: var(--navy); }
+.badge.have .badge-art, .reward .badge-art { background: var(--navy); border-color: var(--navy); color: var(--navy-ink); }
+.topic[aria-pressed="true"], .chip[aria-pressed="true"] { border-color: var(--navy); background: var(--navy-soft); box-shadow: inset 0 0 0 1px var(--navy); }
+.split-bar .part-needs { background: var(--navy); }
+.dot.done { background: var(--navy); border-color: var(--navy); color: var(--navy-ink); }
+.card.hero { box-shadow: inset 4px 0 0 var(--navy); }
+.lang-switch { display: inline-flex; align-items: center; gap: var(--s-1); min-height: 40px; padding: 0 var(--s-3); border: 1px solid var(--line-strong); border-radius: var(--r-full); background: var(--surface-1); color: var(--text); font-weight: 600; font-size: var(--fs-label); }

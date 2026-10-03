@@ -30,6 +30,15 @@ describe("receipts", () => {
     expect(parseReceipt("")).toMatchObject({ total: null, confidence: "none" });
   });
 
+  it("never takes a date as the amount", () => {
+    // The total line was lost in the photo, so the guess is low, but it must not be 2026 from the date.
+    const guess = parseReceipt(["राम किराणा स्टोर", "दिनांक 01/10/2026", "चावल 5kg 320", "दाल 1kg 140", "Time 18:45"].join("\n"));
+    expect(guess.total).toBe(320);
+    expect(guess.date).toBe("2026-10-01");
+    expect(guess.confidence).toBe("low");
+    expect(parseReceipt("राम किराणा स्टोर\nदिनांक 01/10/2026\nकुल 625").total).toBe(625);
+  });
+
   it("ignores phone numbers and bill numbers as amounts", () => {
     const guess = parseReceipt(["Kirana Store", "Ph 9876543210", "Bill No 123456", "Total 95"].join("\n"));
     expect(guess.total).toBe(95);
@@ -54,6 +63,14 @@ describe("explaining a form from a photo", () => {
     const ids = reading.found.map((item) => item.rule.id);
     expect(ids).toEqual(expect.arrayContaining(["name", "dob", "pan", "apr", "tenure", "signature"]));
     expect(ids.indexOf("name")).toBeLessThan(ids.indexOf("signature"));
+  });
+
+  it("reads a Hindi form: vowel signs count as letters", () => {
+    // Text as Tesseract read a printed Hindi savings-account form during testing.
+    const text = "बचत खाता खोलने का फ़ॉर्म\nआवेदक का नाम\nजन्म तिथि\nOT\nRo\nमोबाइल नंबर\nवार्षिक आय\nमैं घोषणा करता/करती हूँ कि ऊपर दी गई जानकारी सही है।";
+    const reading = explainFormText(text, rules);
+    expect(reading.readable).toBe(true);
+    expect(reading.found.map((item) => item.rule.id)).toEqual(expect.arrayContaining(["name", "dob", "mobile", "income", "declaration"]));
   });
 
   it("says the photo is unreadable rather than guessing", () => {

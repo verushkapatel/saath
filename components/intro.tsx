@@ -7,6 +7,8 @@ import { TOPICS } from "@/lib/catalog";
 import { inr } from "@/lib/format";
 import { tap } from "@/lib/speech";
 import { Character } from "./character";
+import { LangSwitch } from "./lang-switch";
+import { Logo } from "./logo";
 import { useI18n } from "./providers";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -288,8 +290,9 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
   return (
     <main className="intro">
       <div className="intro-top">
-        <span className="brand-name">Saath</span>
+        <Logo size={24} />
         <span className="cluster">
+          <LangSwitch />
           <button type="button" className="btn btn-ghost btn-auto" onClick={() => { tap(); onLogin(); }}>{t("auth.login")}</button>
           <ThemeToggle />
         </span>

@@ -107,10 +107,10 @@ describe("content", () => {
     expect(worker).toContain('key.startsWith("saath-")');
   });
 
-  it("keeps the manifest and icons black and white", () => {
+  it("gives the installed app the navy of the logo", () => {
     const manifest = readJson("public/manifest.webmanifest");
-    expect(manifest.background_color).toBe("#000000");
-    expect(manifest.theme_color).toBe("#000000");
+    expect(manifest.background_color).toBe("#0b1f45");
+    expect(manifest.theme_color).toBe("#0b1f45");
   });
 });
 
@@ -195,5 +195,16 @@ describe("the Skyward syllabus", () => {
     const comic = readJson("content/comic.json");
     expect(comic.episodes[0].sample).toBe(true);
     for (const panel of comic.episodes[0].panels) for (const lang of LANGS) expect(panel.caption[lang].length).toBeGreaterThan(5);
+  });
+});
+
+describe("language screen", () => {
+  it("takes its words from the land section of each locale, and lists every language", () => {
+    const gate = readJson("public/locales/gate.json");
+    for (const lang of LANGS) {
+      const land = readJson(`locales/${lang}.json`).land;
+      for (const key of ["hello", "name", "title", "cta", "line", "change"]) expect(land[key]?.length).toBeGreaterThan(0);
+      expect(gate[lang]).toEqual(land);
+    }
   });
 });
