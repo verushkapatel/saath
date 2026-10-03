@@ -78,7 +78,7 @@
 }
 
 .sim-featured-kicker {
-  color: var(--sim-accent, var(--accent-text));
+  color: var(--accent-text);
 }
 
 .sim-featured-title {
@@ -155,7 +155,7 @@
   bottom: -45%;
   left: -14%;
   height: 75%;
-  border: 1px solid rgba(255, 255, 255, 0.14));
+  border: 1px solid var(--line);
   border-radius: 50%;
   content: "";
 }
@@ -201,10 +201,10 @@
   width: min(100%, 78px);
   aspect-ratio: 0.9;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--sim-person) 76%, white 24%);
+  border: 1px solid var(--line-strong);
   border-radius: 48% 48% 18% 18%;
-  background: color-mix(in srgb, var(--sim-person) 15%, #131313);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25));
+  background: color-mix(in srgb, var(--sim-person) 15%, var(--surface-2));
+  box-shadow: var(--shadow-2);
 }
 
 .sim-avatar svg {
@@ -218,24 +218,26 @@
 }
 
 .sim-avatar-hair {
-  fill: color-mix(in srgb, var(--sim-person) 66%, #1c1c1c);
+  fill: color-mix(in srgb, var(--sim-person) 40%, var(--text));
 }
 
 .sim-avatar-face {
-  fill: color-mix(in srgb, var(--sim-person) 37%, #e8e8e8);
+  fill: var(--bg);
+  stroke: var(--text);
+  stroke-width: 1.5;
 }
 
 .sim-avatar-fringe {
-  fill: color-mix(in srgb, var(--sim-person) 60%, #1a1a1a);
+  fill: color-mix(in srgb, var(--sim-person) 30%, var(--text));
 }
 
 .sim-avatar svg circle:not(:first-child) {
-  fill: #191919;
+  fill: var(--text);
 }
 
 .sim-avatar-smile {
   fill: none;
-  stroke: #5d5d5d;
+  stroke: var(--text-muted);
   stroke-linecap: round;
   stroke-width: 1.5;
 }
@@ -277,7 +279,7 @@
   bottom: 48%;
   left: 38%;
   width: 24%;
-  border-top: 1px dashed color-mix(in srgb, var(--sim-accent) 65%, white 15%);
+  border-top: 1px dashed var(--line-strong);
 }
 
 .sim-recall-card {
@@ -372,7 +374,7 @@
 }
 
 .sim-library-index {
-  color: var(--sim-accent);
+  color: var(--accent-text);
   font-size: 0.72rem;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
@@ -412,11 +414,11 @@
   border-radius: var(--r-lg);
   background: var(--surface-3);
   color: var(--text);
-  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.6));
+  box-shadow: var(--shadow-3);
 }
 
 .sim-dialog::backdrop {
-  background: rgba(5, 5, 5, 0.8));
+  background: var(--scrim);
   backdrop-filter: blur(8px);
 }
 
@@ -568,11 +570,11 @@
 }
 
 .sim-outcome.is-protected {
-  --sim-result: #bfbfbf;
+  --sim-result: var(--text);
 }
 
 .sim-outcome.is-rethink {
-  --sim-result: #c2c2c2;
+  --sim-result: var(--text-faint);
 }
 
 .sim-outcome-title {
@@ -603,7 +605,7 @@
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: var(--r-sm);
-  background: rgba(10, 10, 10, 0.46));
+  background: var(--surface-1);
 }
 
 .sim-guide-link {

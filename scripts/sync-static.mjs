@@ -68,9 +68,13 @@ for (const code of langs) {
 }
 
 // The service worker precaches every page. Its list is written here so it never falls out of step with the content.
-const read = (name) => JSON.parse(readFileSync(join(root, "content", name), "utf8")).map((item) => item.id);
+const load = (name) => JSON.parse(readFileSync(join(root, "content", name), "utf8"));
+const read = (name) => load(name).map((item) => item.id);
 const pages = [
-  "/", "/scan", "/money-lab", "/guide", "/paths", "/privacy", "/privacy/partners", "/about", "/check", "/drills", "/handbook", "/comic",
+  "/", "/journey", "/guide", "/money-lab", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings",
+  "/scan", "/paths", "/privacy", "/privacy/partners", "/about", "/check", "/drills", "/handbook", "/comic",
+  ...load("journey.json").episodes.map((episode) => `/journey/${episode.id}`),
+  ...load("forms.json").forms.map((form) => `/forms/${form.id}`),
   ...["scam", "form", "price", "stories"].map((id) => `/drills/${id}`),
   ...read("guide.json").map((id) => `/guide/${id}`),
   ...read("cases.json").map((id) => `/money-lab/case/${id}`),

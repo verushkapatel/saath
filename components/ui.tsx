@@ -28,7 +28,8 @@ export function ContentIcon({ name, size = 22 }: { name: string; size?: number }
 
 export function SkywardMark({ size = 36 }: { size?: number }) {
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={asset("/skyward-logo.png")} alt="" width={size} height={size} style={{ width: size, height: size }} />;
+  // The partner logo is printed in grey so the app stays black and white.
+  return <img src={asset("/skyward-logo.png")} alt="" width={size} height={size} style={{ width: size, height: size, filter: "grayscale(1)" }} />;
 }
 
 export function Footer() {

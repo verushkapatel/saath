@@ -1,5 +1,5 @@
 // Saath service worker. Written to public/sw.js by scripts/sync-static.mjs. Edit the template, not the output.
-const CACHE = "saath-v11";
+const CACHE = "saath-v12";
 // Works at the site root and in a sub-folder (for example /saath/ on GitHub Pages).
 const BASE = self.location.pathname.replace(/sw\.js$/, "");
 const PAGES = [
@@ -22,6 +22,10 @@ const FILES = [
   "/content/finlit-check.json",
   "/content/drills.json",
   "/content/comic.json",
+  "/content/journey.json",
+  "/content/forms.json",
+  "/content/form-fields.json",
+  "/content/stories.json",
   "/samples/personal-loan.png",
   "/samples/gold-loan.png",
   "/samples/scheme-form.png",
@@ -85,7 +89,9 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)))),
+    // Only Saath's own old caches are removed. The local AI model (WebLLM) keeps its files in caches of its own,
+    // and deleting those would force a download of hundreds of megabytes again.
+    caches.keys().then((keys) => Promise.all(keys.filter((key) => key.startsWith("saath-") && key !== CACHE).map((key) => caches.delete(key)))),
   );
   self.clients.claim();
 });
