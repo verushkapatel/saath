@@ -65,7 +65,9 @@ describe("content", () => {
       }
       expect(UNITS).toContain(lesson.unit);
       expect(TOPICS).toContain(lesson.topic);
-      for (const url of lesson.sources ?? []) expect(url).toMatch(/^https:\/\//);
+      // Every guide names at least one official page it was checked against.
+      expect(lesson.sources?.length).toBeGreaterThan(0);
+      for (const url of lesson.sources ?? []) expect(url).toMatch(/^https:\/\/[^/]*(rbi\.org\.in|gov\.in|nic\.in|npci\.org\.in|dicgc\.org\.in|pfrda\.org\.in|ncfe\.org\.in|cybercrime\.gov\.in)/);
       expect(lesson.reviewed).toMatch(/^\d{4}-\d{2}$/);
       expect(lesson.check.options).toHaveLength(3);
       expect(lesson.check.answer).toBeLessThan(3);

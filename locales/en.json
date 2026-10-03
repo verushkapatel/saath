@@ -66,10 +66,10 @@
     "masthead": "Saath · from The Skyward Project",
     "continue": "Continue: {path}",
     "pathsDone": "Every path is complete.",
-    "allDoneLead": "Come back tomorrow for the next part of Ira's story. Or read a guide while you are here.",
+    "allDoneLead": "Come back tomorrow for the next part of Verena's story. Or read a guide while you are here.",
     "todaySaath": "Today's Saath",
     "todayStory": "Today's part of the story",
-    "todayStoryLead": "{stage}. Ira is {age}.",
+    "todayStoryLead": "{stage}. Verena is {age}.",
     "startStory": "Start the story",
     "continueStory": "Continue the story",
     "todayQuestion": "Today's question",
@@ -409,7 +409,7 @@
     "q3": "If I lose my phone, is my progress lost?",
     "a3": "Yes, unless you saved a backup file. Saath has no server copy. Save a backup in Settings from time to time.",
     "q4": "Is the story real?",
-    "a4": "Ira is fictional. The money rules in her story, the guides and the forms are checked against official sources. The real stories section is real, with sources.",
+    "a4": "Verena is fictional. The money rules in her story, the guides and the forms are checked against official sources. The real stories section is real, with sources.",
     "q5": "Will Saath tell me what to invest in or whether to take a loan?",
     "a5": "No. Saath explains how things work and what to check. The decision is yours. Talk to someone you trust before you sign."
   },
@@ -628,12 +628,12 @@
     "homeJoin": "Got a school code? Join your class."
   },
   "about": {
-    "1": "Story: live Ira's money life, one part a day, from her first month away from home to retirement.",
+    "1": "Story: live Verena's money life, one part a day, from her first month away from home to retirement.",
     "2": "Learn: 45 short guides, searchable and filtered by topic. Their facts were checked against official sources.",
     "3": "Forms: fourteen common forms explained, and a photo reader for the one in front of you.",
     "4": "Money Lab: track your own money, from receipts or by hand. It stays on this device.",
     "5": "Saath AI: ask in your own words. It answers only from Saath's checked content.",
-    "6": "Progress: XP, levels, streaks and badges, and Ira's outfits and places to unlock.",
+    "6": "Progress: XP, levels, streaks and badges, and Verena's outfits and places to unlock.",
     "title": "How Saath works"
   },
   "check": {
@@ -877,16 +877,16 @@
     "hero": {
       "kicker": "Saath, from The Skyward Project",
       "title": "Live a financial life before you have to.",
-      "lead": "Follow Ira from her first month away from home to retirement. Make her money decisions, see what follows, and learn why.",
+      "lead": "Follow Verena from her first month away from home to retirement. Make her money decisions, see what follows, and learn why.",
       "cta": "See how it works",
       "note": "Free. No ads. Works on this phone, even offline once it has loaded.",
-      "figure": "Ira, the character in Saath's story"
+      "figure": "Verena, the character in Saath's story"
     },
     "play": {
       "title": "Decide, then see what happens",
-      "lead": "Every part of Ira's story ends in a choice. Try one now.",
-      "kicker": "Ira, 19, in Pune",
-      "story": "It is the 18th. Ira opens her banking app and sees ₹350. There are twelve days left in the month.",
+      "lead": "Every part of Verena's story ends in a choice. Try one now.",
+      "kicker": "Verena, 19, in Pune",
+      "story": "It is the 18th. Verena opens her banking app and sees ₹350. There are twelve days left in the month.",
       "question": "What should she do?",
       "option0": "Borrow ₹2,000 from a friend and sort it out next month",
       "option1": "Write down every rupee she has spent, and plan ₹29 a day until the 1st",
@@ -898,7 +898,7 @@
       "hint": "Pick one to see what follows.",
       "xp": "+{xp} XP",
       "again": "Try another choice",
-      "figure": "Ira looking at her phone",
+      "figure": "Verena looking at her phone",
       "loopLabel": "How each part of the story works"
     },
     "loop": {
@@ -911,9 +911,9 @@
       "xp": "XP"
     },
     "progress": {
-      "title": "Keep going and Ira changes",
+      "title": "Keep going and Verena changes",
       "lead": "Each day you play adds XP and keeps your streak. New outfits, places and badges open as you go. Nothing is bought.",
-      "figure": "Ira in the outfit and place you picked",
+      "figure": "Verena in the outfit and place you picked",
       "streakOn": "1-day streak. Come back tomorrow to keep it.",
       "streakOff": "Your streak starts with your first choice.",
       "note": "In the app, these open as you finish parts of the story."
@@ -1002,7 +1002,7 @@
     "playNext": "Play: {title}",
     "tomorrow": "The next part opens on {date}. One part opens each day.",
     "opensOn": "Opens {date}",
-    "finishedTitle": "You have lived Ira's whole story.",
+    "finishedTitle": "You have lived Verena's whole story.",
     "revisionTitle": "Stay financially capable",
     "revisionLead": "The story is done, but money keeps changing. Revise what slipped, replay any part, and keep your streak.",
     "revisionWeak": "Topics where you had wrong answers: {topics}.",
@@ -1027,7 +1027,7 @@
     "askSaath": "Ask Saath about this",
     "askWhy": "Why was that the better choice?",
     "askReal": "How does this work in real life?",
-    "askWhatNext": "What happens next in Ira's story?",
+    "askWhatNext": "What happens next in Verena's story?",
     "toDrill": "Two quick questions",
     "finish": "Finish this part",
     "doneTitle": "Part complete",
@@ -1180,14 +1180,14 @@
     "level": "Level {level}",
     "toNext": "{xp} XP to level {next}",
     "xpBar": "Progress to the next level",
-    "figure": "Your Ira",
+    "figure": "Your Verena",
     "episodes": "Story parts",
     "lessons": "Guides read",
     "stories": "Real stories",
     "forms": "Forms opened",
     "badges": "Badges",
-    "customise": "Dress Ira",
-    "customiseLead": "Pick what Ira wears and where she stands. More opens as you go.",
+    "customise": "Dress Verena",
+    "customiseLead": "Pick what Verena wears and where she stands. More opens as you go.",
     "outfit": "Outfit",
     "extra": "Extra",
     "place": "Place",

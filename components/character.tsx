@@ -1,7 +1,7 @@
 import type { Look } from "@/lib/progress";
 
 /**
- * Ira, drawn in ink. One figure, a few outfits, a few places.
+ * Verena, drawn in ink. One figure, a few outfits, a few places.
  * Everything is stroke and fill from the theme, so she is black on white in light mode and white on black in dark mode.
  * Her hair changes with the age of the episode she is in.
  */

@@ -1,14 +1,14 @@
 {
  "reviewed": "2026-10",
  "name": {
-  "en": "Ira",
-  "hi": "इरा",
-  "mr": "इरा"
+  "en": "Verena",
+  "hi": "वेरेना",
+  "mr": "वेरेना"
  },
  "intro": {
-  "en": "Ira's life is fiction. The money in it is the kind real people deal with. You decide with her, see what follows, and carry the lesson into your own life.",
-  "hi": "इरा की ज़िंदगी एक कहानी है। उसमें जो पैसों के मसले हैं, वे असली लोगों के जैसे हैं। आप उसके साथ फ़ैसला करते हैं, नतीजा देखते हैं, और सीख अपनी ज़िंदगी में ले जाते हैं।",
-  "mr": "इराचे आयुष्य ही एक गोष्ट आहे. त्यातील पैशांचे प्रश्न खऱ्या माणसांसारखेच आहेत. तुम्ही तिच्यासोबत निर्णय घेता, पुढे काय होते ते पाहता आणि शिकलेले स्वतःच्या आयुष्यात नेता."
+  "en": "Verena's life is fiction. The money in it is the kind real people deal with. You decide with her, see what follows, and carry the lesson into your own life.",
+  "hi": "वेरेना की ज़िंदगी एक कहानी है। उसमें जो पैसों के मसले हैं, वे असली लोगों के जैसे हैं। आप उसके साथ फ़ैसला करते हैं, नतीजा देखते हैं, और सीख अपनी ज़िंदगी में ले जाते हैं।",
+  "mr": "वेरेनाचे आयुष्य ही एक गोष्ट आहे. त्यातील पैशांचे प्रश्न खऱ्या माणसांसारखेच आहेत. तुम्ही तिच्यासोबत निर्णय घेता, पुढे काय होते ते पाहता आणि शिकलेले स्वतःच्या आयुष्यात नेता."
  },
  "stages": [
   {
@@ -138,9 +138,9 @@
    },
    "story": [
     {
-     "en": "Ira is 19 and has just moved to Pune for college. Her parents send ₹6,000 on the first of every month. It felt like a lot on the day it arrived.",
-     "hi": "इरा 19 साल की है और कॉलेज के लिए अभी पुणे आई है। माता-पिता हर महीने की पहली तारीख को ₹6,000 भेजते हैं। जिस दिन पैसा आया, वह बहुत लगा था।",
-     "mr": "इरा 19 वर्षांची आहे आणि कॉलेजसाठी नुकतीच पुण्यात आली आहे. आई-बाबा दर महिन्याच्या पहिल्या तारखेला ₹6,000 पाठवतात. पैसे आले त्या दिवशी ते खूप वाटले होते."
+     "en": "Verena is 19 and has just moved to Pune for college. Her parents send ₹6,000 on the first of every month. It felt like a lot on the day it arrived.",
+     "hi": "वेरेना 19 साल की है और कॉलेज के लिए अभी पुणे आई है। माता-पिता हर महीने की पहली तारीख को ₹6,000 भेजते हैं। जिस दिन पैसा आया, वह बहुत लगा था।",
+     "mr": "वेरेना 19 वर्षांची आहे आणि कॉलेजसाठी नुकतीच पुण्यात आली आहे. आई-बाबा दर महिन्याच्या पहिल्या तारखेला ₹6,000 पाठवतात. पैसे आले त्या दिवशी ते खूप वाटले होते."
     },
     {
      "en": "Mess fees, a bus pass and phone recharge take ₹3,800. The rest went on things she can't quite name: food delivery, a friend's birthday, two apps she forgot she pays for.",
@@ -154,18 +154,18 @@
     }
    ],
    "slip": {
-    "en": "Ira never wrote down a single rupee. She only found out where the money went after it was gone.",
-    "hi": "इरा ने एक भी रुपया कहीं नहीं लिखा। पैसा कहाँ गया, यह उसे पैसा खत्म होने के बाद पता चला।",
-    "mr": "इराने एकही रुपया कुठे लिहून ठेवला नाही. पैसे कुठे गेले हे तिला ते संपल्यावरच कळले."
+    "en": "Verena never wrote down a single rupee. She only found out where the money went after it was gone.",
+    "hi": "वेरेना ने एक भी रुपया कहीं नहीं लिखा। पैसा कहाँ गया, यह उसे पैसा खत्म होने के बाद पता चला।",
+    "mr": "वेरेनाने एकही रुपया कुठे लिहून ठेवला नाही. पैसे कुठे गेले हे तिला ते संपल्यावरच कळले."
    },
    "sim": {
     "kind": "budget",
     "income": 6000,
     "needs": 3800,
     "title": {
-     "en": "Plan Ira's ₹6,000",
-     "hi": "इरा के ₹6,000 की योजना बनाएँ",
-     "mr": "इराच्या ₹6,000 चे नियोजन करा"
+     "en": "Plan Verena's ₹6,000",
+     "hi": "वेरेना के ₹6,000 की योजना बनाएँ",
+     "mr": "वेरेनाच्या ₹6,000 चे नियोजन करा"
     },
     "hint": {
      "en": "₹3,800 must go on mess, bus and phone. Move the slider to decide how much of the rest she spends freely.",
@@ -174,9 +174,9 @@
     }
    },
    "question": {
-    "en": "Twelve days, ₹350. What should Ira do?",
-    "hi": "बारह दिन, ₹350। इरा क्या करे?",
-    "mr": "बारा दिवस, ₹350. इराने काय करावे?"
+    "en": "Twelve days, ₹350. What should Verena do?",
+    "hi": "बारह दिन, ₹350। वेरेना क्या करे?",
+    "mr": "बारा दिवस, ₹350. वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -314,9 +314,9 @@
    },
    "story": [
     {
-     "en": "Ira is 22 and has her first job offer: CTC ₹4.2 lakh a year. She divides by twelve and gets ₹35,000 a month. She tells her mother that number.",
-     "hi": "इरा 22 की है और पहली नौकरी का ऑफ़र मिला है: CTC ₹4.2 लाख सालाना। वह बारह से भाग देती है और ₹35,000 महीना निकालती है। माँ को भी यही आँकड़ा बताती है।",
-     "mr": "इरा 22 वर्षांची आहे आणि तिला पहिल्या नोकरीची ऑफर मिळाली आहे: CTC वर्षाला ₹4.2 लाख. ती बाराने भागते आणि महिन्याला ₹35,000 असा हिशोब करते. आईलाही हाच आकडा सांगते."
+     "en": "Verena is 22 and has her first job offer: CTC ₹4.2 lakh a year. She divides by twelve and gets ₹35,000 a month. She tells her mother that number.",
+     "hi": "वेरेना 22 की है और पहली नौकरी का ऑफ़र मिला है: CTC ₹4.2 लाख सालाना। वह बारह से भाग देती है और ₹35,000 महीना निकालती है। माँ को भी यही आँकड़ा बताती है।",
+     "mr": "वेरेना 22 वर्षांची आहे आणि तिला पहिल्या नोकरीची ऑफर मिळाली आहे: CTC वर्षाला ₹4.2 लाख. ती बाराने भागते आणि महिन्याला ₹35,000 असा हिशोब करते. आईलाही हाच आकडा सांगते."
     },
     {
      "en": "Before her first day she finds a one-room flat near the office for ₹14,000 and signs for eleven months.",
@@ -330,16 +330,16 @@
     }
    ],
    "slip": {
-    "en": "Ira signed the rent agreement before she had seen a payslip. She planned her life on a number that was never going to reach her account.",
-    "hi": "इरा ने सैलरी स्लिप देखने से पहले किराये के करार पर दस्तखत कर दिए। उसने ऐसे आँकड़े पर ज़िंदगी की योजना बनाई जो कभी खाते में आने वाला नहीं था।",
-    "mr": "इराने पगाराची स्लिप पाहण्याआधीच भाडेकरारावर सही केली. जो आकडा खात्यात कधीच येणार नव्हता त्यावर तिने आयुष्याचे नियोजन केले."
+    "en": "Verena signed the rent agreement before she had seen a payslip. She planned her life on a number that was never going to reach her account.",
+    "hi": "वेरेना ने सैलरी स्लिप देखने से पहले किराये के करार पर दस्तखत कर दिए। उसने ऐसे आँकड़े पर ज़िंदगी की योजना बनाई जो कभी खाते में आने वाला नहीं था।",
+    "mr": "वेरेनाने पगाराची स्लिप पाहण्याआधीच भाडेकरारावर सही केली. जो आकडा खात्यात कधीच येणार नव्हता त्यावर तिने आयुष्याचे नियोजन केले."
    },
    "sim": {
     "kind": "inspect",
     "title": {
-     "en": "Ira's first payslip",
-     "hi": "इरा की पहली सैलरी स्लिप",
-     "mr": "इराची पहिली पगार स्लिप"
+     "en": "Verena's first payslip",
+     "hi": "वेरेना की पहली सैलरी स्लिप",
+     "mr": "वेरेनाची पहिली पगार स्लिप"
     },
     "hint": {
      "en": "This is an example payslip. Tap each line to see what it means.",
@@ -455,9 +455,9 @@
     ]
    },
    "question": {
-    "en": "Her in-hand pay is ₹28,800 and the rent is ₹14,000. What should Ira do?",
-    "hi": "हाथ में ₹28,800 आते हैं और किराया ₹14,000 है। इरा क्या करे?",
-    "mr": "हातात ₹28,800 येतात आणि भाडे ₹14,000 आहे. इराने काय करावे?"
+    "en": "Her in-hand pay is ₹28,800 and the rent is ₹14,000. What should Verena do?",
+    "hi": "हाथ में ₹28,800 आते हैं और किराया ₹14,000 है। वेरेना क्या करे?",
+    "mr": "हातात ₹28,800 येतात आणि भाडे ₹14,000 आहे. वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -545,9 +545,9 @@
     },
     {
      "question": {
-      "en": "The EPF amount cut from Ira's pay is:",
-      "hi": "इरा के वेतन से कटी EPF की रकम है:",
-      "mr": "इराच्या पगारातून कापलेली EPF रक्कम म्हणजे:"
+      "en": "The EPF amount cut from Verena's pay is:",
+      "hi": "वेरेना के वेतन से कटी EPF की रकम है:",
+      "mr": "वेरेनाच्या पगारातून कापलेली EPF रक्कम म्हणजे:"
      },
      "options": [
       {
@@ -593,9 +593,9 @@
    },
    "story": [
     {
-     "en": "It is the first of the month and ₹28,800 has landed. Ira's phone lights up: a weekend trip with friends, ₹9,000 each.",
-     "hi": "महीने की पहली तारीख है और ₹28,800 आ गए हैं। इरा का फ़ोन चमकता है: दोस्तों के साथ वीकेंड ट्रिप, ₹9,000 प्रति व्यक्ति।",
-     "mr": "महिन्याची पहिली तारीख आहे आणि ₹28,800 जमा झाले आहेत. इराचा फोन वाजतो: मित्रांसोबत वीकेंड ट्रिप, प्रत्येकी ₹9,000."
+     "en": "It is the first of the month and ₹28,800 has landed. Verena's phone lights up: a weekend trip with friends, ₹9,000 each.",
+     "hi": "महीने की पहली तारीख है और ₹28,800 आ गए हैं। वेरेना का फ़ोन चमकता है: दोस्तों के साथ वीकेंड ट्रिप, ₹9,000 प्रति व्यक्ति।",
+     "mr": "महिन्याची पहिली तारीख आहे आणि ₹28,800 जमा झाले आहेत. वेरेनाचा फोन वाजतो: मित्रांसोबत वीकेंड ट्रिप, प्रत्येकी ₹9,000."
     },
     {
      "en": "Last month she told herself she would save whatever was left. On the 28th there was ₹210 left.",
@@ -629,9 +629,9 @@
     }
    },
    "question": {
-    "en": "How should Ira handle saving from now on?",
-    "hi": "अब से इरा बचत कैसे करे?",
-    "mr": "आतापासून इराने बचत कशी करावी?"
+    "en": "How should Verena handle saving from now on?",
+    "hi": "अब से वेरेना बचत कैसे करे?",
+    "mr": "आतापासून वेरेनाने बचत कशी करावी?"
    },
    "options": [
     {
@@ -769,9 +769,9 @@
    },
    "story": [
     {
-     "en": "Ira is 23. Her salary account was opened in a hurry on her first day at work. She signed where the HR person pointed.",
-     "hi": "इरा 23 की है। उसका सैलरी खाता नौकरी के पहले दिन जल्दी-जल्दी में खुला था। HR ने जहाँ उँगली रखी, वहाँ उसने दस्तखत कर दिए।",
-     "mr": "इरा 23 वर्षांची आहे. तिचे सॅलरी खाते नोकरीच्या पहिल्या दिवशी घाईघाईत उघडले गेले. HR ने जिथे बोट ठेवले तिथे तिने सही केली."
+     "en": "Verena is 23. Her salary account was opened in a hurry on her first day at work. She signed where the HR person pointed.",
+     "hi": "वेरेना 23 की है। उसका सैलरी खाता नौकरी के पहले दिन जल्दी-जल्दी में खुला था। HR ने जहाँ उँगली रखी, वहाँ उसने दस्तखत कर दिए।",
+     "mr": "वेरेना 23 वर्षांची आहे. तिचे सॅलरी खाते नोकरीच्या पहिल्या दिवशी घाईघाईत उघडले गेले. HR ने जिथे बोट ठेवले तिथे तिने सही केली."
     },
     {
      "en": "This morning a text arrives: her KYC has expired, the account will be blocked today, tap the link to update.",
@@ -785,9 +785,9 @@
     }
    ],
    "slip": {
-    "en": "When the account was opened, Ira left the nominee line blank and never read what she signed.",
-    "hi": "खाता खुलते समय इरा ने नॉमिनी की जगह खाली छोड़ दी और जिस पर दस्तखत किए वह पढ़ा ही नहीं।",
-    "mr": "खाते उघडताना इराने नॉमिनीचा रकाना रिकामा सोडला आणि ज्यावर सही केली ते वाचलेच नाही."
+    "en": "When the account was opened, Verena left the nominee line blank and never read what she signed.",
+    "hi": "खाता खुलते समय वेरेना ने नॉमिनी की जगह खाली छोड़ दी और जिस पर दस्तखत किए वह पढ़ा ही नहीं।",
+    "mr": "खाते उघडताना वेरेनाने नॉमिनीचा रकाना रिकामा सोडला आणि ज्यावर सही केली ते वाचलेच नाही."
    },
    "sim": {
     "kind": "inspect",
@@ -894,9 +894,9 @@
     ]
    },
    "question": {
-    "en": "What should Ira do?",
-    "hi": "इरा क्या करे?",
-    "mr": "इराने काय करावे?"
+    "en": "What should Verena do?",
+    "hi": "वेरेना क्या करे?",
+    "mr": "वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -1031,9 +1031,9 @@
    },
    "story": [
     {
-     "en": "Ira is 24. A raise took her in-hand pay to ₹34,000. She was sure the money problem was solved.",
-     "hi": "इरा 24 की है। वेतन बढ़कर हाथ में ₹34,000 आने लगे। उसे पक्का लगा कि पैसे की समस्या हल हो गई।",
-     "mr": "इरा 24 वर्षांची आहे. पगार वाढून हातात ₹34,000 येऊ लागले. पैशांचा प्रश्न सुटला याची तिला खात्री वाटली."
+     "en": "Verena is 24. A raise took her in-hand pay to ₹34,000. She was sure the money problem was solved.",
+     "hi": "वेरेना 24 की है। वेतन बढ़कर हाथ में ₹34,000 आने लगे। उसे पक्का लगा कि पैसे की समस्या हल हो गई।",
+     "mr": "वेरेना 24 वर्षांची आहे. पगार वाढून हातात ₹34,000 येऊ लागले. पैशांचा प्रश्न सुटला याची तिला खात्री वाटली."
     },
     {
      "en": "Three months on, the end of the month looks exactly the same as before. The salary grew and the spending quietly grew with it.",
@@ -1067,9 +1067,9 @@
     }
    },
    "question": {
-    "en": "How should Ira fix this?",
-    "hi": "इरा इसे कैसे ठीक करे?",
-    "mr": "इराने हे कसे सुधारावे?"
+    "en": "How should Verena fix this?",
+    "hi": "वेरेना इसे कैसे ठीक करे?",
+    "mr": "वेरेनाने हे कसे सुधारावे?"
    },
    "options": [
     {
@@ -1129,9 +1129,9 @@
    "drill": [
     {
      "question": {
-      "en": "Why did the raise not help Ira?",
-      "hi": "वेतन बढ़ने से इरा को फ़ायदा क्यों नहीं हुआ?",
-      "mr": "पगारवाढीचा इराला फायदा का झाला नाही?"
+      "en": "Why did the raise not help Verena?",
+      "hi": "वेतन बढ़ने से वेरेना को फ़ायदा क्यों नहीं हुआ?",
+      "mr": "पगारवाढीचा वेरेनाला फायदा का झाला नाही?"
      },
      "options": [
       {
@@ -1207,9 +1207,9 @@
    },
    "story": [
     {
-     "en": "Ira is 25. At 9 p.m. her brother calls: their father has been admitted to hospital in Nagpur. She needs to leave tonight.",
-     "hi": "इरा 25 की है। रात 9 बजे भाई का फ़ोन आता है: पिताजी नागपुर के अस्पताल में भर्ती हैं। उसे आज रात ही निकलना है।",
-     "mr": "इरा 25 वर्षांची आहे. रात्री 9 वाजता भावाचा फोन येतो: बाबांना नागपूरच्या रुग्णालयात दाखल केले आहे. तिला आज रात्रीच निघायचे आहे."
+     "en": "Verena is 25. At 9 p.m. her brother calls: their father has been admitted to hospital in Nagpur. She needs to leave tonight.",
+     "hi": "वेरेना 25 की है। रात 9 बजे भाई का फ़ोन आता है: पिताजी नागपुर के अस्पताल में भर्ती हैं। उसे आज रात ही निकलना है।",
+     "mr": "वेरेना 25 वर्षांची आहे. रात्री 9 वाजता भावाचा फोन येतो: बाबांना नागपूरच्या रुग्णालयात दाखल केले आहे. तिला आज रात्रीच निघायचे आहे."
     },
     {
      "en": "A last-minute ticket, a hospital deposit and a week away from work will cost about ₹22,000.",
@@ -1223,9 +1223,9 @@
     }
    ],
    "slip": {
-    "en": "Ira had been saving, but with no purpose and nothing kept apart for emergencies. Most of it went on a new phone in March.",
-    "hi": "इरा बचत कर रही थी, पर बिना किसी मकसद के और आपात स्थिति के लिए कुछ अलग रखे बिना। ज़्यादातर पैसा मार्च में नए फ़ोन पर चला गया।",
-    "mr": "इरा बचत करत होती, पण कोणत्याही हेतूशिवाय आणि आपत्कालीन गरजेसाठी काही वेगळे न ठेवता. त्यातील बहुतेक पैसे मार्चमध्ये नव्या फोनवर गेले."
+    "en": "Verena had been saving, but with no purpose and nothing kept apart for emergencies. Most of it went on a new phone in March.",
+    "hi": "वेरेना बचत कर रही थी, पर बिना किसी मकसद के और आपात स्थिति के लिए कुछ अलग रखे बिना। ज़्यादातर पैसा मार्च में नए फ़ोन पर चला गया।",
+    "mr": "वेरेना बचत करत होती, पण कोणत्याही हेतूशिवाय आणि आपत्कालीन गरजेसाठी काही वेगळे न ठेवता. त्यातील बहुतेक पैसे मार्चमध्ये नव्या फोनवर गेले."
    },
    "sim": {
     "kind": "inspect",
@@ -1296,9 +1296,9 @@
     ]
    },
    "question": {
-    "en": "She is ₹13,000 short and the train leaves at 11. What should Ira do?",
-    "hi": "₹13,000 कम हैं और ट्रेन 11 बजे की है। इरा क्या करे?",
-    "mr": "₹13,000 कमी आहेत आणि गाडी 11 वाजता आहे. इराने काय करावे?"
+    "en": "She is ₹13,000 short and the train leaves at 11. What should Verena do?",
+    "hi": "₹13,000 कम हैं और ट्रेन 11 बजे की है। वेरेना क्या करे?",
+    "mr": "₹13,000 कमी आहेत आणि गाडी 11 वाजता आहे. वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -1436,9 +1436,9 @@
    },
    "story": [
     {
-     "en": "Ira is 27 and has an emergency fund at last. A colleague posts a screenshot in the office group: ₹40,000 made in one morning trading options.",
-     "hi": "इरा 27 की है और आखिरकार उसके पास आपात निधि है। एक सहकर्मी ऑफ़िस ग्रुप में स्क्रीनशॉट डालता है: ऑप्शन ट्रेडिंग से एक सुबह में ₹40,000 कमाए।",
-     "mr": "इरा 27 वर्षांची आहे आणि अखेर तिच्याकडे आपत्कालीन निधी आहे. एक सहकारी ऑफिस ग्रुपमध्ये स्क्रीनशॉट टाकतो: ऑप्शन ट्रेडिंगमधून एका सकाळी ₹40,000 कमावले."
+     "en": "Verena is 27 and has an emergency fund at last. A colleague posts a screenshot in the office group: ₹40,000 made in one morning trading options.",
+     "hi": "वेरेना 27 की है और आखिरकार उसके पास आपात निधि है। एक सहकर्मी ऑफ़िस ग्रुप में स्क्रीनशॉट डालता है: ऑप्शन ट्रेडिंग से एक सुबह में ₹40,000 कमाए।",
+     "mr": "वेरेना 27 वर्षांची आहे आणि अखेर तिच्याकडे आपत्कालीन निधी आहे. एक सहकारी ऑफिस ग्रुपमध्ये स्क्रीनशॉट टाकतो: ऑप्शन ट्रेडिंगमधून एका सकाळी ₹40,000 कमावले."
     },
     {
      "en": "He adds her to a channel that sends tips. The first tip is a small company she has never heard of. \"Sure to double by Diwali.\"",
@@ -1452,9 +1452,9 @@
     }
    ],
    "slip": {
-    "en": "Ira bought something she could not explain, because someone she barely knew said it would double.",
-    "hi": "इरा ने ऐसी चीज़ खरीदी जिसे वह समझा नहीं सकती थी, क्योंकि किसी लगभग अनजान व्यक्ति ने कहा था कि यह दोगुनी हो जाएगी।",
-    "mr": "इराने अशी गोष्ट घेतली जी ती समजावू शकत नव्हती, कारण जवळजवळ अनोळखी माणसाने ती दुप्पट होईल असे सांगितले होते."
+    "en": "Verena bought something she could not explain, because someone she barely knew said it would double.",
+    "hi": "वेरेना ने ऐसी चीज़ खरीदी जिसे वह समझा नहीं सकती थी, क्योंकि किसी लगभग अनजान व्यक्ति ने कहा था कि यह दोगुनी हो जाएगी।",
+    "mr": "वेरेनाने अशी गोष्ट घेतली जी ती समजावू शकत नव्हती, कारण जवळजवळ अनोळखी माणसाने ती दुप्पट होईल असे सांगितले होते."
    },
    "sim": {
     "kind": "grow",
@@ -1477,9 +1477,9 @@
     }
    },
    "question": {
-    "en": "She is down ₹8,000. What should Ira do next?",
-    "hi": "उसे ₹8,000 का घाटा हुआ है। इरा आगे क्या करे?",
-    "mr": "तिचे ₹8,000 बुडाले आहेत. इराने पुढे काय करावे?"
+    "en": "She is down ₹8,000. What should Verena do next?",
+    "hi": "उसे ₹8,000 का घाटा हुआ है। वेरेना आगे क्या करे?",
+    "mr": "तिचे ₹8,000 बुडाले आहेत. वेरेनाने पुढे काय करावे?"
    },
    "options": [
     {
@@ -1618,9 +1618,9 @@
    },
    "story": [
     {
-     "en": "Ira is 29. She goes to her bank to open a fixed deposit with ₹50,000 of savings. The relationship manager has a better idea.",
-     "hi": "इरा 29 की है। वह ₹50,000 की बचत से FD खुलवाने बैंक जाती है। रिलेशनशिप मैनेजर के पास एक \"बेहतर\" सुझाव है।",
-     "mr": "इरा 29 वर्षांची आहे. ती ₹50,000 च्या बचतीतून FD उघडायला बँकेत जाते. रिलेशनशिप मॅनेजरकडे एक \"चांगली\" कल्पना आहे."
+     "en": "Verena is 29. She goes to her bank to open a fixed deposit with ₹50,000 of savings. The relationship manager has a better idea.",
+     "hi": "वेरेना 29 की है। वह ₹50,000 की बचत से FD खुलवाने बैंक जाती है। रिलेशनशिप मैनेजर के पास एक \"बेहतर\" सुझाव है।",
+     "mr": "वेरेना 29 वर्षांची आहे. ती ₹50,000 च्या बचतीतून FD उघडायला बँकेत जाते. रिलेशनशिप मॅनेजरकडे एक \"चांगली\" कल्पना आहे."
     },
     {
      "en": "\"Same as an FD, madam, but with life insurance free, and guaranteed.\" He fills the form himself and shows her where to sign.",
@@ -1634,9 +1634,9 @@
     }
    ],
    "slip": {
-    "en": "Ira signed a form that someone else had filled in, for a product she had not asked for and did not read.",
-    "hi": "इरा ने ऐसे फ़ॉर्म पर दस्तखत किए जो किसी और ने भरा था, ऐसे उत्पाद के लिए जो उसने माँगा नहीं था और पढ़ा भी नहीं।",
-    "mr": "इराने दुसऱ्याने भरलेल्या फॉर्मवर सही केली, तिने न मागितलेल्या आणि न वाचलेल्या उत्पादनासाठी."
+    "en": "Verena signed a form that someone else had filled in, for a product she had not asked for and did not read.",
+    "hi": "वेरेना ने ऐसे फ़ॉर्म पर दस्तखत किए जो किसी और ने भरा था, ऐसे उत्पाद के लिए जो उसने माँगा नहीं था और पढ़ा भी नहीं।",
+    "mr": "वेरेनाने दुसऱ्याने भरलेल्या फॉर्मवर सही केली, तिने न मागितलेल्या आणि न वाचलेल्या उत्पादनासाठी."
    },
    "sim": {
     "kind": "inspect",
@@ -1742,9 +1742,9 @@
     ]
    },
    "question": {
-    "en": "It is day 12. What should Ira do?",
-    "hi": "आज बारहवाँ दिन है। इरा क्या करे?",
-    "mr": "आज बारावा दिवस आहे. इराने काय करावे?"
+    "en": "It is day 12. What should Verena do?",
+    "hi": "आज बारहवाँ दिन है। वेरेना क्या करे?",
+    "mr": "आज बारावा दिवस आहे. वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -1882,9 +1882,9 @@
    },
    "story": [
     {
-     "en": "Ira is 31 and getting married to Kabir in four months. They want to pay for the wedding themselves and need about ₹3 lakh more.",
-     "hi": "इरा 31 की है और चार महीने बाद कबीर से शादी है। वे शादी का खर्च खुद उठाना चाहते हैं और करीब ₹3 लाख और चाहिए।",
-     "mr": "इरा 31 वर्षांची आहे आणि चार महिन्यांनी कबीरशी लग्न आहे. त्यांना लग्नाचा खर्च स्वतः करायचा आहे आणि आणखी सुमारे ₹3 लाख लागणार आहेत."
+     "en": "Verena is 31 and getting married to Kabir in four months. They want to pay for the wedding themselves and need about ₹3 lakh more.",
+     "hi": "वेरेना 31 की है और चार महीने बाद कबीर से शादी है। वे शादी का खर्च खुद उठाना चाहते हैं और करीब ₹3 लाख और चाहिए।",
+     "mr": "वेरेना 31 वर्षांची आहे आणि चार महिन्यांनी कबीरशी लग्न आहे. त्यांना लग्नाचा खर्च स्वतः करायचा आहे आणि आणखी सुमारे ₹3 लाख लागणार आहेत."
     },
     {
      "en": "One lender offers \"9% flat, zero paperwork\". Her own bank offers 13% on a reducing balance. Nine is less than thirteen.",
@@ -1898,9 +1898,9 @@
     }
    ],
    "slip": {
-    "en": "Ira compared the two monthly EMIs and nothing else. She had not asked either lender for the total she would repay.",
-    "hi": "इरा ने सिर्फ़ दोनों मासिक EMI की तुलना की, और कुछ नहीं। उसने किसी भी ऋणदाता से यह नहीं पूछा कि कुल कितना चुकाना होगा।",
-    "mr": "इराने फक्त दोन मासिक EMI ची तुलना केली, दुसरे काही नाही. एकूण किती परत करावे लागेल हे तिने कोणत्याही कर्जदात्याला विचारले नाही."
+    "en": "Verena compared the two monthly EMIs and nothing else. She had not asked either lender for the total she would repay.",
+    "hi": "वेरेना ने सिर्फ़ दोनों मासिक EMI की तुलना की, और कुछ नहीं। उसने किसी भी ऋणदाता से यह नहीं पूछा कि कुल कितना चुकाना होगा।",
+    "mr": "वेरेनाने फक्त दोन मासिक EMI ची तुलना केली, दुसरे काही नाही. एकूण किती परत करावे लागेल हे तिने कोणत्याही कर्जदात्याला विचारले नाही."
    },
    "sim": {
     "kind": "emi",
@@ -1923,9 +1923,9 @@
     }
    },
    "question": {
-    "en": "How should Ira choose?",
-    "hi": "इरा कैसे चुने?",
-    "mr": "इराने कसे निवडावे?"
+    "en": "How should Verena choose?",
+    "hi": "वेरेना कैसे चुने?",
+    "mr": "वेरेनाने कसे निवडावे?"
    },
    "options": [
     {
@@ -2065,9 +2065,9 @@
    },
    "story": [
     {
-     "en": "Ira is 33 and married to Kabir. They split bills by feel: whoever has money that week pays.",
-     "hi": "इरा 33 की है और कबीर से शादी हो चुकी है। वे बिल अंदाज़ से बाँटते हैं: जिसके पास उस हफ़्ते पैसा हो, वह भर देता है।",
-     "mr": "इरा 33 वर्षांची आहे आणि कबीरशी लग्न झाले आहे. ते बिले अंदाजाने वाटतात: त्या आठवड्यात ज्याच्याकडे पैसे असतील तो भरतो."
+     "en": "Verena is 33 and married to Kabir. They split bills by feel: whoever has money that week pays.",
+     "hi": "वेरेना 33 की है और कबीर से शादी हो चुकी है। वे बिल अंदाज़ से बाँटते हैं: जिसके पास उस हफ़्ते पैसा हो, वह भर देता है।",
+     "mr": "वेरेना 33 वर्षांची आहे आणि कबीरशी लग्न झाले आहे. ते बिले अंदाजाने वाटतात: त्या आठवड्यात ज्याच्याकडे पैसे असतील तो भरतो."
     },
     {
      "en": "Kabir's uncle dies suddenly. His aunt spends weeks at bank counters. One account had no nominee. One policy, nobody can find.",
@@ -2075,15 +2075,15 @@
      "mr": "कबीरच्या काकांचे अचानक निधन होते. काकू आठवडेच्या आठवडे बँकेच्या खिडक्यांवर घालवतात. एका खात्यात नॉमिनी नव्हता. एक पॉलिसी कोणालाच सापडत नाही."
     },
     {
-     "en": "That night Ira and Kabir realise that neither of them could list the other's accounts.",
-     "hi": "उस रात इरा और कबीर को समझ आता है कि दोनों में से कोई दूसरे के खातों की सूची नहीं बना सकता।",
-     "mr": "त्या रात्री इरा आणि कबीरला जाणवते की दोघांपैकी कोणीही दुसऱ्याच्या खात्यांची यादी करू शकत नाही."
+     "en": "That night Verena and Kabir realise that neither of them could list the other's accounts.",
+     "hi": "उस रात वेरेना और कबीर को समझ आता है कि दोनों में से कोई दूसरे के खातों की सूची नहीं बना सकता।",
+     "mr": "त्या रात्री वेरेना आणि कबीरला जाणवते की दोघांपैकी कोणीही दुसऱ्याच्या खात्यांची यादी करू शकत नाही."
     }
    ],
    "slip": {
-    "en": "Ira's salary account still names her mother as nominee from ten years ago. Two newer accounts name no one.",
-    "hi": "इरा के सैलरी खाते में अब भी दस साल पहले का नॉमिनी, उसकी माँ, दर्ज है। दो नए खातों में कोई नॉमिनी नहीं है।",
-    "mr": "इराच्या सॅलरी खात्यात अजूनही दहा वर्षांपूर्वीची नॉमिनी, तिची आई, आहे. दोन नव्या खात्यांत कोणीच नॉमिनी नाही."
+    "en": "Verena's salary account still names her mother as nominee from ten years ago. Two newer accounts name no one.",
+    "hi": "वेरेना के सैलरी खाते में अब भी दस साल पहले का नॉमिनी, उसकी माँ, दर्ज है। दो नए खातों में कोई नॉमिनी नहीं है।",
+    "mr": "वेरेनाच्या सॅलरी खात्यात अजूनही दहा वर्षांपूर्वीची नॉमिनी, तिची आई, आहे. दोन नव्या खात्यांत कोणीच नॉमिनी नाही."
    },
    "sim": {
     "kind": "inspect",
@@ -2172,9 +2172,9 @@
     ]
    },
    "question": {
-    "en": "What should Ira and Kabir do?",
-    "hi": "इरा और कबीर क्या करें?",
-    "mr": "इरा आणि कबीरने काय करावे?"
+    "en": "What should Verena and Kabir do?",
+    "hi": "वेरेना और कबीर क्या करें?",
+    "mr": "वेरेना आणि कबीरने काय करावे?"
    },
    "options": [
     {
@@ -2184,9 +2184,9 @@
       "mr": "सगळे कबीरने सांभाळावे. तो हिशोबात चांगला आहे"
      },
      "outcome": {
-      "en": "It is tidy for a while. But Ira no longer knows what they have or owe, which is exactly where Kabir's aunt found herself.",
-      "hi": "कुछ समय सब ठीक चलता है। पर इरा को अब पता नहीं कि उनके पास क्या है या क्या देना है, ठीक वहीं जहाँ कबीर की चाची पहुँच गई थीं।",
-      "mr": "काही काळ सगळे नीट चालते. पण त्यांच्याकडे काय आहे किंवा काय देणे आहे हे इराला आता माहीत नाही, जिथे कबीरची काकू पोहोचली होती तिथेच."
+      "en": "It is tidy for a while. But Verena no longer knows what they have or owe, which is exactly where Kabir's aunt found herself.",
+      "hi": "कुछ समय सब ठीक चलता है। पर वेरेना को अब पता नहीं कि उनके पास क्या है या क्या देना है, ठीक वहीं जहाँ कबीर की चाची पहुँच गई थीं।",
+      "mr": "काही काळ सगळे नीट चालते. पण त्यांच्याकडे काय आहे किंवा काय देणे आहे हे वेरेनाला आता माहीत नाही, जिथे कबीरची काकू पोहोचली होती तिथेच."
      },
      "verdict": "okay",
      "effects": {}
@@ -2308,9 +2308,9 @@
    },
    "story": [
     {
-     "en": "Ira is 35. Her daughter Meera is six weeks old. Everyone who visits brings a gift and an opinion about money.",
-     "hi": "इरा 35 की है। उसकी बेटी मीरा छह हफ़्ते की है। मिलने आने वाला हर व्यक्ति एक तोहफ़ा और पैसों पर एक राय लाता है।",
-     "mr": "इरा 35 वर्षांची आहे. तिची मुलगी मीरा सहा आठवड्यांची आहे. भेटायला येणारा प्रत्येकजण एक भेटवस्तू आणि पैशांबद्दल एक मत घेऊन येतो."
+     "en": "Verena is 35. Her daughter Meera is six weeks old. Everyone who visits brings a gift and an opinion about money.",
+     "hi": "वेरेना 35 की है। उसकी बेटी मीरा छह हफ़्ते की है। मिलने आने वाला हर व्यक्ति एक तोहफ़ा और पैसों पर एक राय लाता है।",
+     "mr": "वेरेना 35 वर्षांची आहे. तिची मुलगी मीरा सहा आठवड्यांची आहे. भेटायला येणारा प्रत्येकजण एक भेटवस्तू आणि पैशांबद्दल एक मत घेऊन येतो."
     },
     {
      "en": "An agent who is a family friend recommends a \"child plan\". An aunt says to buy gold. Kabir's father says school fees will be the real shock.",
@@ -2318,9 +2318,9 @@
      "mr": "कुटुंबाचा मित्र असलेला एक एजंट \"चाइल्ड प्लॅन\" सुचवतो. एक मावशी सोने घ्यायला सांगते. कबीरचे वडील म्हणतात खरा धक्का शाळेच्या फीचा असेल."
     },
     {
-     "en": "Ira looks at the calendar. Meera will be eighteen in what feels like no time, and Ira and Kabir will be fifty-three.",
-     "hi": "इरा कैलेंडर देखती है। मीरा देखते-देखते अठारह की हो जाएगी, और तब इरा और कबीर तिरपन के होंगे।",
-     "mr": "इरा दिनदर्शिका पाहते. मीरा बघता बघता अठरा वर्षांची होईल आणि तेव्हा इरा व कबीर त्रेपन्न वर्षांचे असतील."
+     "en": "Verena looks at the calendar. Meera will be eighteen in what feels like no time, and Verena and Kabir will be fifty-three.",
+     "hi": "वेरेना कैलेंडर देखती है। मीरा देखते-देखते अठारह की हो जाएगी, और तब वेरेना और कबीर तिरपन के होंगे।",
+     "mr": "वेरेना दिनदर्शिका पाहते. मीरा बघता बघता अठरा वर्षांची होईल आणि तेव्हा वेरेना व कबीर त्रेपन्न वर्षांचे असतील."
     }
    ],
    "slip": {
@@ -2349,9 +2349,9 @@
     }
    },
    "question": {
-    "en": "Where should Ira and Kabir start?",
-    "hi": "इरा और कबीर कहाँ से शुरू करें?",
-    "mr": "इरा आणि कबीरने कुठून सुरुवात करावी?"
+    "en": "Where should Verena and Kabir start?",
+    "hi": "वेरेना और कबीर कहाँ से शुरू करें?",
+    "mr": "वेरेना आणि कबीरने कुठून सुरुवात करावी?"
    },
    "options": [
     {
@@ -2490,9 +2490,9 @@
    },
    "story": [
     {
-     "en": "Ira is 42. A colleague retires and the office holds a small party. On the way home Ira counts: eighteen years to sixty.",
-     "hi": "इरा 42 की है। एक सहकर्मी सेवानिवृत्त होते हैं और दफ़्तर में छोटी पार्टी होती है। घर लौटते हुए इरा गिनती है: साठ तक अठारह साल।",
-     "mr": "इरा 42 वर्षांची आहे. एक सहकारी निवृत्त होतात आणि ऑफिसमध्ये छोटी पार्टी होते. घरी जाताना इरा मोजते: साठीपर्यंत अठरा वर्षे."
+     "en": "Verena is 42. A colleague retires and the office holds a small party. On the way home Verena counts: eighteen years to sixty.",
+     "hi": "वेरेना 42 की है। एक सहकर्मी सेवानिवृत्त होते हैं और दफ़्तर में छोटी पार्टी होती है। घर लौटते हुए वेरेना गिनती है: साठ तक अठारह साल।",
+     "mr": "वेरेना 42 वर्षांची आहे. एक सहकारी निवृत्त होतात आणि ऑफिसमध्ये छोटी पार्टी होते. घरी जाताना वेरेना मोजते: साठीपर्यंत अठरा वर्षे."
     },
     {
      "en": "She has changed jobs three times. She has never once logged in to see her provident fund balance.",
@@ -2506,9 +2506,9 @@
     }
    ],
    "slip": {
-    "en": "At 30, between jobs, Ira withdrew her whole provident fund and spent it on a holiday. Twelve years of growth on that money are gone for good.",
-    "hi": "30 की उम्र में, दो नौकरियों के बीच, इरा ने पूरी भविष्य निधि निकालकर छुट्टियों पर खर्च कर दी। उस पैसे पर बारह साल की बढ़त हमेशा के लिए गई।",
-    "mr": "30 व्या वर्षी, दोन नोकऱ्यांच्या मध्ये, इराने संपूर्ण भविष्य निर्वाह निधी काढून सहलीवर खर्च केला. त्या पैशांवरील बारा वर्षांची वाढ कायमची गेली."
+    "en": "At 30, between jobs, Verena withdrew her whole provident fund and spent it on a holiday. Twelve years of growth on that money are gone for good.",
+    "hi": "30 की उम्र में, दो नौकरियों के बीच, वेरेना ने पूरी भविष्य निधि निकालकर छुट्टियों पर खर्च कर दी। उस पैसे पर बारह साल की बढ़त हमेशा के लिए गई।",
+    "mr": "30 व्या वर्षी, दोन नोकऱ्यांच्या मध्ये, वेरेनाने संपूर्ण भविष्य निर्वाह निधी काढून सहलीवर खर्च केला. त्या पैशांवरील बारा वर्षांची वाढ कायमची गेली."
    },
    "sim": {
     "kind": "grow",
@@ -2531,9 +2531,9 @@
     }
    },
    "question": {
-    "en": "What should Ira do about retirement?",
-    "hi": "सेवानिवृत्ति के बारे में इरा क्या करे?",
-    "mr": "निवृत्तीबाबत इराने काय करावे?"
+    "en": "What should Verena do about retirement?",
+    "hi": "सेवानिवृत्ति के बारे में वेरेना क्या करे?",
+    "mr": "निवृत्तीबाबत वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -2669,9 +2669,9 @@
    },
    "story": [
     {
-     "en": "Ira is 50. The home loan is paid. On a Tuesday morning a video call comes from a man in uniform, with a crest on the wall behind him.",
-     "hi": "इरा 50 की है। होम लोन चुक गया है। मंगलवार सुबह वर्दी पहने एक आदमी का वीडियो कॉल आता है, पीछे दीवार पर एक प्रतीक चिह्न है।",
-     "mr": "इरा 50 वर्षांची आहे. गृहकर्ज फिटले आहे. मंगळवारी सकाळी गणवेशातील एका माणसाचा व्हिडिओ कॉल येतो, मागे भिंतीवर एक मानचिन्ह आहे."
+     "en": "Verena is 50. The home loan is paid. On a Tuesday morning a video call comes from a man in uniform, with a crest on the wall behind him.",
+     "hi": "वेरेना 50 की है। होम लोन चुक गया है। मंगलवार सुबह वर्दी पहने एक आदमी का वीडियो कॉल आता है, पीछे दीवार पर एक प्रतीक चिह्न है।",
+     "mr": "वेरेना 50 वर्षांची आहे. गृहकर्ज फिटले आहे. मंगळवारी सकाळी गणवेशातील एका माणसाचा व्हिडिओ कॉल येतो, मागे भिंतीवर एक मानचिन्ह आहे."
     },
     {
      "en": "He says a parcel with her Aadhaar number was caught with illegal goods. She is under \"digital arrest\". She must stay on camera and tell nobody.",
@@ -2685,9 +2685,9 @@
     }
    ],
    "slip": {
-    "en": "Ira has stayed on the call for two hours, told no one, and has already broken one fixed deposit so the money is ready to move.",
-    "hi": "इरा दो घंटे से कॉल पर है, किसी को नहीं बताया, और एक FD पहले ही तुड़वा चुकी है ताकि पैसा भेजने को तैयार रहे।",
-    "mr": "इरा दोन तास कॉलवर आहे, कोणाला सांगितले नाही आणि पैसे पाठवायला तयार राहावेत म्हणून एक FD आधीच मोडली आहे."
+    "en": "Verena has stayed on the call for two hours, told no one, and has already broken one fixed deposit so the money is ready to move.",
+    "hi": "वेरेना दो घंटे से कॉल पर है, किसी को नहीं बताया, और एक FD पहले ही तुड़वा चुकी है ताकि पैसा भेजने को तैयार रहे।",
+    "mr": "वेरेना दोन तास कॉलवर आहे, कोणाला सांगितले नाही आणि पैसे पाठवायला तयार राहावेत म्हणून एक FD आधीच मोडली आहे."
    },
    "sim": {
     "kind": "inspect",
@@ -2777,9 +2777,9 @@
     ]
    },
    "question": {
-    "en": "The \"officer\" is waiting. What should Ira do?",
-    "hi": "\"अधिकारी\" इंतज़ार कर रहा है। इरा क्या करे?",
-    "mr": "\"अधिकारी\" वाट पाहत आहे. इराने काय करावे?"
+    "en": "The \"officer\" is waiting. What should Verena do?",
+    "hi": "\"अधिकारी\" इंतज़ार कर रहा है। वेरेना क्या करे?",
+    "mr": "\"अधिकारी\" वाट पाहत आहे. वेरेनाने काय करावे?"
    },
    "options": [
     {
@@ -2913,9 +2913,9 @@
    },
    "story": [
     {
-     "en": "Ira is 60. On her last working day there are flowers and speeches. A few weeks later her provident fund and other savings sit in one account: the largest number she has ever seen there.",
-     "hi": "इरा 60 की है। काम के आखिरी दिन फूल और भाषण होते हैं। कुछ हफ़्ते बाद उसकी भविष्य निधि और दूसरी बचत एक खाते में है: वहाँ देखी गई अब तक की सबसे बड़ी रकम।",
-     "mr": "इरा 60 वर्षांची आहे. कामाच्या शेवटच्या दिवशी फुले आणि भाषणे होतात. काही आठवड्यांनी तिचा भविष्य निर्वाह निधी आणि इतर बचत एकाच खात्यात आहे: तिथे पाहिलेला आजवरचा सर्वात मोठा आकडा."
+     "en": "Verena is 60. On her last working day there are flowers and speeches. A few weeks later her provident fund and other savings sit in one account: the largest number she has ever seen there.",
+     "hi": "वेरेना 60 की है। काम के आखिरी दिन फूल और भाषण होते हैं। कुछ हफ़्ते बाद उसकी भविष्य निधि और दूसरी बचत एक खाते में है: वहाँ देखी गई अब तक की सबसे बड़ी रकम।",
+     "mr": "वेरेना 60 वर्षांची आहे. कामाच्या शेवटच्या दिवशी फुले आणि भाषणे होतात. काही आठवड्यांनी तिचा भविष्य निर्वाह निधी आणि इतर बचत एकाच खात्यात आहे: तिथे पाहिलेला आजवरचा सर्वात मोठा आकडा."
     },
     {
      "en": "People notice. The bank's manager calls with a product. A cousin calls with a company deposit paying \"much more than the bank\". Her nephew calls with a business that needs just a little capital.",
@@ -3014,9 +3014,9 @@
     ]
    },
    "question": {
-    "en": "How should Ira place her retirement money?",
-    "hi": "इरा अपनी सेवानिवृत्ति की रकम कैसे रखे?",
-    "mr": "इराने निवृत्तीचे पैसे कसे ठेवावेत?"
+    "en": "How should Verena place her retirement money?",
+    "hi": "वेरेना अपनी सेवानिवृत्ति की रकम कैसे रखे?",
+    "mr": "वेरेनाने निवृत्तीचे पैसे कसे ठेवावेत?"
    },
    "options": [
     {

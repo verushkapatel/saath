@@ -89,7 +89,7 @@ describe("the one-episode-a-day rule", () => {
   });
 });
 
-describe("Ira's money", () => {
+describe("Verena's money", () => {
   it("never shows cash or savings below zero: a shortfall becomes debt", () => {
     const fake: JourneyFile = {
       ...file,

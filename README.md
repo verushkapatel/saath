@@ -2,13 +2,13 @@
 
 Saath is a financial-life companion for young people in India, from The Skyward Project. It runs in a browser and installs as an app (PWA). It works in English, Hindi and Marathi.
 
-- **Story.** Follow Ira from her first month away from home (age 19) to retirement (age 60) across fourteen life stages. Each part is a loop: story, the slip she made, a hands-on sim (read a payslip, plan a budget, see compounding, compare loan lengths), a decision, what follows, why, two questions, then XP. One new part opens each calendar day. After retirement the story turns into a revision mode, "Stay financially capable".
+- **Story.** Follow Verena from her first month away from home (age 19) to retirement (age 60) across fourteen life stages. Each part is a loop: story, the slip she made, a hands-on sim (read a payslip, plan a budget, see compounding, compare loan lengths), a decision, what follows, why, two questions, then XP. One new part opens each calendar day. After retirement the story turns into a revision mode, "Stay financially capable".
 - **Learn.** 45 short guides, searchable and filtered by thirteen topics, each with the date its facts were checked and, where it states rules, the official sources.
 - **Forms.** Fourteen common forms (bank, KYC, PAN, TDS, loan KFS, gold loan, insurance, schemes, EPF) explained field by field, with official sources and a check date. A photo reader explains the fields it recognises on a printed form, on the device.
 - **Real stories.** Eight real events, from a regulator, the government or a news report, each with its source link, kind and check date. One is shown each day.
 - **Money Lab.** Track your own money by hand or from a receipt photo (take photo, read, check, confirm, save; nothing is saved automatically). Notes, deleting entries, recurring-spend detection and simple patterns.
 - **Saath AI.** Ask in your own words. It answers only from Saath's checked content, refuses to quote rates or give investment advice, and says so when it does not know.
-- **Progress.** XP, levels, a forgiving streak, badges, and outfits and places for Ira that unlock as you go. A share card shows level, streak, story stage, newest badge and Ira, and nothing else.
+- **Progress.** XP, levels, a forgiving streak, badges, and outfits and places for Verena that unlock as you go. A share card shows level, streak, story stage, newest badge and Verena, and nothing else.
 
 The interface is black and white only, with a light and a dark theme.
 
@@ -72,7 +72,7 @@ All content is JSON in `content/`, with English, Hindi and Marathi in every reco
 
 | File | What | Checked |
 | --- | --- | --- |
-| `journey.json` | Ira's fourteen episodes | Money facts checked October 2026 (`reviewed`) |
+| `journey.json` | Verena's fourteen episodes | Money facts checked October 2026 (`reviewed`) |
 | `guide.json` | 45 guides | `reviewed` and `sources` per guide |
 | `forms.json` | 14 forms | `source` and `verified` per form (2026-10-04) |
 | `form-fields.json` | 28 field explanations for the photo reader | |
@@ -165,7 +165,7 @@ Then Saath sends small events. This is the whole of what an event can hold (`lib
 - The theme follows the device until the person picks Light or Dark (theme button, or Settings). The choice is applied before first paint.
 - Settings also has text size, reduce motion, stronger contrast, sound and vibration.
 - Playfair Display for headings, Inter for reading, Noto Sans Devanagari for Hindi and Marathi, all served by `next/font`.
-- Ira (`components/character.tsx`) is drawn in ink and paper so she follows the theme.
+- Verena (`components/character.tsx`) is drawn in ink and paper so she follows the theme.
 - Layout: bottom tab bar on phones, a side rail from 900px.
 
 ## Offline

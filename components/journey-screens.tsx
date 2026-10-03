@@ -27,7 +27,7 @@ function MoneyStrip({ money }: { money: { cash: number; savings: number; debt: n
   );
 }
 
-/** The story map: every life stage, what Ira chose in it, and what opens next. */
+/** The story map: every life stage, what Verena chose in it, and what opens next. */
 export function JourneyScreen() {
   const { t, code } = useI18n();
   const app = useApp();
