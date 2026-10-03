@@ -1,0 +1,662 @@
+[
+  {
+    "id": "hidden-fees",
+    "title": {
+      "en": "The loan that looked small",
+      "hi": "जो कर्ज छोटा लगा",
+      "mr": "जे कर्ज लहान वाटले",
+      "kn": "ಈಸು: The loan that looked small"
+    },
+    "story": {
+      "en": "A classmate sends Meera an app. It says a personal loan of one and a half lakh, 18 percent, and an EMI that fits a part-time job. The chat says the fee is “just processing”. Meera has not opened the paper.",
+      "hi": "एक साथी मीरा को ऐप भेजता है। उसमें डेढ़ लाख का पर्सनल लोन, 18 प्रतिशत, और पार्ट-टाइम नौकरी में समा जाने वाली ईएमआई लिखी है। चैट में शुल्क “सिर्फ प्रोसेसिंग” है। मीरा ने कागज नहीं खोला।",
+      "mr": "एका वर्गमित्राने मीराला अ‍ॅप पाठवले. त्यात दीड लाखांचे पर्सनल लोन, 18 टक्के, आणि अर्धवेळ नोकरीत मावणारी ईएमआय आहे. चॅटमध्ये शुल्क “फक्त प्रोसेसिंग” आहे. मीराने कागद उघडला नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A classmate sends Meera an app. It says a personal loan of one and a half lakh, 18 percent, and an EMI that fits a part-time job. The chat says the fee is “just processing”. Meera has not opened the paper."
+    },
+    "question": {
+      "en": "What should Meera do before she taps accept?",
+      "hi": "स्वीकार दबाने से पहले मीरा क्या करे?",
+      "mr": "स्वीकार दाबण्यापूर्वी मीराने काय करावे?",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: What should Meera do before she taps accept?"
+    },
+    "options": [
+      {
+        "en": "Install the app and share contacts so the limit rises.",
+        "hi": "ऐप इंस्टॉल करे और लिमिट बढ़ाने के लिए संपर्क साझा करे।",
+        "mr": "अ‍ॅप इन्स्टॉल करून मर्यादा वाढवण्यासाठी संपर्क शेअर करावे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Install the app and share contacts so the limit rises."
+      },
+      {
+        "en": "Read the agreement and add every fee to the total.",
+        "hi": "समझौता पढ़े और हर शुल्क को कुल में जोड़े।",
+        "mr": "करार वाचून प्रत्येक शुल्क एकूणात मिळवावा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read the agreement and add every fee to the total."
+      },
+      {
+        "en": "Send the OTP the caller asks for, to “lock the rate”.",
+        "hi": "दर लॉक करने के लिए कॉलर का ओटीपी भेज दे।",
+        "mr": "दर लॉक करण्यासाठी कॉलरने मागितलेला ओटीपी पाठवावा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Send the OTP the caller asks for, to “lock the rate”."
+      },
+      {
+        "en": "Ask three friends to co-sign tonight.",
+        "hi": "आज रात तीन दोस्तों से सह-हस्ताक्षर करवाए।",
+        "mr": "आज रात्री तीन मित्रांकडून सहसही करून घ्यावी.",
+        "kn": "ಈಸು: Ask three friends to co-sign tonight."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "The calm step is to read. On this kind of paper the rate is flat, so interest is charged on the full amount for the whole time. Fees of several thousand sit on top, and prepayment may be closed. Contacts and an OTP do not make a loan safer. They only give the app more power.",
+      "hi": "शांत कदम पढ़ना है। ऐसे कागज पर दर फ्लैट होती है, इसलिए पूरे समय पूरी रकम पर ब्याज लगता है। कई हज़ार का शुल्क ऊपर बैठता है, और जल्दी चुकाना बंद हो सकता है। संपर्क और ओटीपी कर्ज को सुरक्षित नहीं बनाते। वे ऐप को और ताकत देते हैं।",
+      "mr": "शांत पाऊल वाचणे आहे. अशा कागदावर दर फ्लॅट असतो, म्हणजे संपूर्ण काळ संपूर्ण रकमेवर व्याज लागते. हजारो रुपये शुल्क वर बसते, आणि लवकर फेडणे बंद असू शकते. संपर्क आणि ओटीपी कर्ज सुरक्षित करत नाहीत. ते अ‍ॅपला अधिक ताकद देतात.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The calm step is to read. On this kind of paper the rate is flat, so interest is charged on the full amount for the whole time. Fees of several thousand sit on top, and prepayment may be closed. Contacts and an OTP do not make a loan safer. They only give the app more power."
+    },
+    "sampleId": "personal-loan"
+  },
+  {
+    "id": "gold-emergency",
+    "title": {
+      "en": "The chain and the due date",
+      "hi": "चेन और तारीख",
+      "mr": "साखळी आणि तारीख",
+      "kn": "ಈಸು: The chain and the due date"
+    },
+    "story": {
+      "en": "Arjun’s family wants cash for a hospital bill. The gold shop offers fifty thousand on a chain, six months, reducing balance, and a small fee. The slip is short. The chain stays with the shop.",
+      "hi": "अर्जुन के परिवार को अस्पताल के बिल के लिए नकद चाहिए। सोने की दुकान चेन पर पचास हज़ार देती है, छह महीने, घटता बैलेंस, और छोटा शुल्क। पर्ची छोटी है। चेन दुकान के पास रहती है।",
+      "mr": "अर्जुनच्या कुटुंबाला हॉस्पिटल बिलासाठी रोख हवा. सोन्याचे दुकान साखळीवर पन्नास हजार देते, सहा महिने, कमी होणारी शिल्लक, आणि छोटे शुल्क. चिठ्ठी छोटी आहे. साखळी दुकानाकडे राहते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Arjun’s family wants cash for a hospital bill. The gold shop offers fifty thousand on a chain, six months, reducing balance, and a small fee. The slip is short. The chain stays with the shop."
+    },
+    "question": {
+      "en": "What is the careful reading of this slip?",
+      "hi": "इस पर्ची को ध्यान से कैसे पढ़ें?",
+      "mr": "ही चिठ्ठी काळजीपूर्वक कशी वाचावी?",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: What is the careful reading of this slip?"
+    },
+    "options": [
+      {
+        "en": "Treat it as free money because the fee looks small.",
+        "hi": "शुल्क छोटा है इसलिए इसे मुफ्त पैसा मानें।",
+        "mr": "शुल्क लहान आहे म्हणून हे मोफत पैसे समजा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Treat it as free money because the fee looks small."
+      },
+      {
+        "en": "Check the total, the due date, and whether the family can repay.",
+        "hi": "कुल, तारीख, और परिवार चुका पाएगा या नहीं, यह देखें।",
+        "mr": "एकूण, तारीख, आणि कुटुंब फेडू शकेल का ते पाहा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check the total, the due date, and whether the family can repay."
+      },
+      {
+        "en": "Pledge more gold so the shop “trusts” them.",
+        "hi": "दुकान भरोसा करे इसलिए और सोना गिरवी रखें।",
+        "mr": "दुकान विश्वास ठेवावा म्हणून आणखी सोने गहाण ठेवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Pledge more gold so the shop “trusts” them."
+      },
+      {
+        "en": "Ignore the penalty line. It only matters for other people.",
+        "hi": "जुर्माने की पंक्ति छोड़ दें। वह दूसरों के लिए है।",
+        "mr": "दंडाची ओळ दुर्लक्ष करा. ती इतरांसाठी आहे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ignore the penalty line. It only matters for other people."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "A gold loan can be a bridge for a real bill, because the rate here is on the reducing balance and early payment is allowed. It is still a loan. If the due date passes, the penalty is sharp and the chain can be sold. Write the six payments before you agree.",
+      "hi": "असली बिल के लिए सोने का कर्ज पुल हो सकता है, क्योंकि यहाँ दर घटती शेष पर है और जल्दी चुकाना खुला है। फिर भी यह कर्ज है। तारीख निकल जाए तो जुर्माना तेज़ है और चेन बिक सकती है। हाँ से पहले छह भुगतान लिख लें।",
+      "mr": "खऱ्या बिलासाठी सोन्याचे कर्ज पूल असू शकते, कारण इथे दर कमी होणाऱ्या शिल्लकीवर आहे आणि लवकर फेडणे खुले आहे. तरी हे कर्ज आहे. तारीख गेली तर दंड तीव्र आहे आणि साखळी विकली जाऊ शकते. हो म्हणण्यापूर्वी सहा पेमेंट लिहा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A gold loan can be a bridge for a real bill, because the rate here is on the reducing balance and early payment is allowed. It is still a loan. If the due date passes, the penalty is sharp and the chain can be sold. Write the six payments before you agree."
+    },
+    "sampleId": "gold-loan"
+  },
+  {
+    "id": "upi-pin",
+    "title": {
+      "en": "The helpful caller",
+      "hi": "मददगार कॉल",
+      "mr": "मदतनीस कॉल",
+      "kn": "ಈಸು: The helpful caller"
+    },
+    "story": {
+      "en": "A voice says Priya’s UPI payment failed and the refund will come only if she reads her PIN. The caller knows her name from a package slip.",
+      "hi": "एक आवाज़ कहता है प्रिया का यूपीआई भुगतान असफल रहा और रिफंड तभी आएगा जब वह पिन पढ़े। कॉलर को उसका नाम पार्सल की पर्ची से पता है।",
+      "mr": "एक आवाज म्हणतो प्रियाचे यूपीआय पेमेंट फेल झाले आणि रिफंड तेव्हाच येईल जेव्हा ती पिन वाचून सांगेल. कॉलरला तिचे नाव पार्सलच्या चिठ्ठीवरून माहीत आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A voice says Priya’s UPI payment failed and the refund will come only if she reads her PIN. The caller knows her name from a package slip."
+    },
+    "question": {
+      "en": "What does Priya do with the PIN?",
+      "hi": "प्रिया पिन का क्या करे?",
+      "mr": "प्रियाने पिनचे काय करावे?",
+      "kn": "ಈಸು: What does Priya do with the PIN?"
+    },
+    "options": [
+      {
+        "en": "Read it slowly so the refund is not delayed.",
+        "hi": "रिफंड न रुके इसलिए धीरे पढ़ दे।",
+        "mr": "रिफंड थांबू नये म्हणून हळू वाचून सांगावा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read it slowly so the refund is not delayed."
+      },
+      {
+        "en": "End the call. A refund never needs a PIN.",
+        "hi": "कॉल काट दे। रिफंड को पिन नहीं चाहिए।",
+        "mr": "कॉल बंद करा. रिफंडला पिन नको.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: End the call. A refund never needs a PIN."
+      },
+      {
+        "en": "Share it only if the caller says they are from the bank.",
+        "hi": "कॉलर बैंक से हो तभी बताए।",
+        "mr": "कॉलर बँकेचा असेल तरच सांगावा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Share it only if the caller says they are from the bank."
+      },
+      {
+        "en": "Type it into the link they text next.",
+        "hi": "अगले मैसेज के लिंक में डाल दे।",
+        "mr": "पुढच्या संदेशातील दुव्यात टाकावा.",
+        "kn": "ಈಸು: Type it into the link they text next."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "The PIN is the key to the account. Banks, shops, and refund desks do not ask for it. A name on a parcel is not proof. End the call and open the app yourself if you want to check a payment.",
+      "hi": "पिन खाते की चाबी है। बैंक, दुकान और रिफंड डेस्क इसे नहीं माँगते। पार्सल पर नाम सबूत नहीं। कॉल काटें और भुगतान जाँचना हो तो ऐप खुद खोलें।",
+      "mr": "पिन खात्याची चावी आहे. बँक, दुकान आणि रिफंड डेस्क तो मागत नाहीत. पार्सलवरील नाव पुरावा नाही. कॉल बंद करा आणि पेमेंट तपासायचे असेल तर अ‍ॅप स्वतः उघडा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The PIN is the key to the account. Banks, shops, and refund desks do not ask for it. A name on a parcel is not proof. End the call and open the app yourself if you want to check a payment."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "blank-form",
+    "title": {
+      "en": "The form with empty lines",
+      "hi": "खाली पंक्तियों वाला फॉर्म",
+      "mr": "रिकाम्या ओळींचा अर्ज",
+      "kn": "ಈಸು: The form with empty lines"
+    },
+    "story": {
+      "en": "A desk at college asks Kabir to sign a scheme form today. His name, Aadhaar, school, and family income are still blank. The clerk says they will fill those later.",
+      "hi": "कॉलेज का एक डेस्क कबीर से आज योजना का फॉर्म साइन करवाता है। नाम, आधार, स्कूल और पारिवारिक आय अभी खाली हैं। क्लर्क कहता है बाद में भर देंगे।",
+      "mr": "कॉलेजमधील एक टेबल कबीरला आज योजनेचा अर्ज सही करायला सांगते. नाव, आधार, शाळा आणि कौटुंबिक उत्पन्न अजून रिकामे आहेत. कारकून म्हणतो नंतर भरू.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A desk at college asks Kabir to sign a scheme form today. His name, Aadhaar, school, and family income are still blank. The clerk says they will fill those later."
+    },
+    "question": {
+      "en": "What should Kabir do with the blanks?",
+      "hi": "कबीर खाली जगहों का क्या करे?",
+      "mr": "कबीरने रिकाम्या जागांचे काय करावे?",
+      "kn": "ಈಸು: What should Kabir do with the blanks?"
+    },
+    "options": [
+      {
+        "en": "Sign now so he does not miss the queue.",
+        "hi": "लाइन न छूटे इसलिए अभी साइन करे।",
+        "mr": "रांग सुटू नये म्हणून आता सही करावी.",
+        "kn": "ಈಸು: Sign now so he does not miss the queue."
+      },
+      {
+        "en": "Fill every line himself, then read it once more.",
+        "hi": "हर पंक्ति खुद भरे, फिर एक बार और पढ़े।",
+        "mr": "प्रत्येक ओळ स्वतः भरावी, मग आणखी एकदा वाचावी.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Fill every line himself, then read it once more."
+      },
+      {
+        "en": "Leave Aadhaar blank and sign the rest.",
+        "hi": "आधार खाली छोड़कर बाकी साइन कर दे।",
+        "mr": "आधार रिकामे ठेवून बाकी सही करावी.",
+        "kn": "ಈಸು: Leave Aadhaar blank and sign the rest."
+      },
+      {
+        "en": "Hand the clerk his unlocked phone.",
+        "hi": "क्लर्क को अनलॉक फोन दे दे।",
+        "mr": "कारकुनाला अनलॉक फोन द्यावा.",
+        "kn": "ಈಸು: Hand the clerk his unlocked phone."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "A blank line can be filled with a number you never agreed to. This paper is a grant form, not a loan, but a signature still means you accept what is written. Write the facts yourself. Do not hand over an unlocked phone.",
+      "hi": "खाली पंक्ति में वह संख्या भर सकती है जिससे आप कभी सहमत नहीं हुए। यह कागज अनुदान का है, कर्ज का नहीं, पर दस्तखत का मतलब है आप लिखी बात मानते हैं। तथ्य खुद लिखें। अनलॉक फोन न दें।",
+      "mr": "रिकामी ओळीत तुम्ही कधी न मानलेली संख्या भरली जाऊ शकते. हा कागज अनुदानाचा आहे, कर्जाचा नाही, पण सही म्हणजे लिहिलेले तुम्ही मानता. तथ्ये स्वतः लिहा. अनलॉक फोन देऊ नका.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A blank line can be filled with a number you never agreed to. This paper is a grant form, not a loan, but a signature still means you accept what is written. Write the facts yourself. Do not hand over an unlocked phone."
+    },
+    "sampleId": "scheme-form"
+  },
+  {
+    "id": "store-emi",
+    "title": {
+      "en": "The phone on twelve slips",
+      "hi": "बारह पर्ची वाला फोन",
+      "mr": "बारा चिठ्ठ्यांचा फोन",
+      "kn": "ಈಸು: The phone on twelve slips"
+    },
+    "story": {
+      "en": "The shop says a phone is “only two thousand a month”. The board does not show the months, the rate, or the total. The sales person wants a decision before the offer ends at closing time.",
+      "hi": "दुकान कहता है फोन “सिर्फ दो हज़ार महीने” का है। बोर्ड पर महीने, दर या कुल नहीं। सेल्स वाला बंद होने से पहले फैसला चाहता है।",
+      "mr": "दुकान म्हणते फोन “फक्त दोन हजार महिना” आहे. फळीवर महिने, दर किंवा एकूण नाही. विक्रेत्याला बंद होण्यापूर्वी निर्णय हवा आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The shop says a phone is “only two thousand a month”. The board does not show the months, the rate, or the total. The sales person wants a decision before the offer ends at closing time."
+    },
+    "question": {
+      "en": "What number matters most?",
+      "hi": "कौन सी संख्या सबसे ज़्यादा मायने रखती है?",
+      "mr": "कोणती संख्या सर्वात महत्त्वाची?",
+      "kn": "ಈಸು: What number matters most?"
+    },
+    "options": [
+      {
+        "en": "The monthly figure on the poster.",
+        "hi": "पोस्टर पर मासिक आँकड़ा।",
+        "mr": "पोस्टरवरील मासिक आकडा.",
+        "kn": "ಈಸು: The monthly figure on the poster."
+      },
+      {
+        "en": "Months times EMI, plus any fee, written down.",
+        "hi": "महीने गुणा ईएमआई, जमा शुल्क, लिखकर।",
+        "mr": "महिने गुणिले ईएमआय, अधिक शुल्क, लिहून.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Months times EMI, plus any fee, written down."
+      },
+      {
+        "en": "How many classmates already bought it.",
+        "hi": "कितने साथियों ने खरीद लिया।",
+        "mr": "किती वर्गमित्रांनी घेतले.",
+        "kn": "ಈಸು: How many classmates already bought it."
+      },
+      {
+        "en": "The colour that is “almost gone”.",
+        "hi": "जो रंग “लगभग खत्म” है।",
+        "mr": "जो रंग “जवळपास संपला” आहे.",
+        "kn": "ಈಸು: The colour that is “almost gone”."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "An EMI is a slice, not the price. Multiply. Add fees. If the shop will not write the total, you do not have an offer yet. A closing-time rush is a reason to leave, not to sign.",
+      "hi": "ईएमआई टुकड़ा है, कीमत नहीं। गुणा करें। शुल्क जोड़ें। दुकान कुल नहीं लिखे तो ऑफर अभी पूरा नहीं। बंद होने की जल्दी जाने की वजह है, साइन करने की नहीं।",
+      "mr": "ईएमआय तुकडा आहे, किंमत नाही. गुणा करा. शुल्क मिळवा. दुकान एकूण लिहीत नसेल तर ऑफर अजून पूर्ण नाही. बंद होण्याची घाई जाण्याचे कारण आहे, सही करण्याचे नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An EMI is a slice, not the price. Multiply. Add fees. If the shop will not write the total, you do not have an offer yet. A closing-time rush is a reason to leave, not to sign."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "whatsapp-tip",
+    "title": {
+      "en": "The group that cannot lose",
+      "hi": "जो समूह कभी नहीं हारता",
+      "mr": "जो गट कधी हरत नाही",
+      "kn": "ಈಸು: The group that cannot lose"
+    },
+    "story": {
+      "en": "A WhatsApp group promises daily stock tips and a “sure” doubling in a month. The admin asks for a fee, then a screenshot of Neel’s bank balance.",
+      "hi": "एक व्हाट्सऐप समूह रोज़ स्टॉक टिप और महीने में “पक्का” दोगुना होने का वादा करता है। एडमिन शुल्क माँगता है, फिर नील के बैंक बैलेंस का स्क्रीनशॉट।",
+      "mr": "एक व्हॉट्सअ‍ॅप गट रोज स्टॉक टीप आणि महिन्यात “नक्की” दुप्पट होण्याचे वचन देतो. अ‍ॅडमिन फी मागतो, मग नीलच्या बँक शिलकीचा स्क्रीनशॉट.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A WhatsApp group promises daily stock tips and a “sure” doubling in a month. The admin asks for a fee, then a screenshot of Neel’s bank balance."
+    },
+    "question": {
+      "en": "What is the sound move?",
+      "hi": "सही कदम क्या है?",
+      "mr": "योग्य पाऊल काय?",
+      "kn": "ಈಸು: What is the sound move?"
+    },
+    "options": [
+      {
+        "en": "Pay the fee from savings. The group has many members.",
+        "hi": "बचत से शुल्क दें। समूह में बहुत लोग हैं।",
+        "mr": "बचतीतून फी द्या. गटात खूप लोक आहेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Pay the fee from savings. The group has many members."
+      },
+      {
+        "en": "Leave, and do not send a balance or a code.",
+        "hi": "छोड़ दें, और बैलेंस या कोड न भेजें।",
+        "mr": "सोडा, आणि शिल्लक किंवा कोड पाठवू नका.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Leave, and do not send a balance or a code."
+      },
+      {
+        "en": "Send a small amount first, as a test.",
+        "hi": "परीक्षा के लिए पहले छोटी रकम भेजें।",
+        "mr": "चाचणीसाठी आधी छोटी रक्कम पाठवा.",
+        "kn": "ಈಸು: Send a small amount first, as a test."
+      },
+      {
+        "en": "Forward the tip to the family group.",
+        "hi": "टिप परिवार वाले समूह में आगे भेजें।",
+        "mr": "टीप कौटुंबिक गटात पुढे पाठवा.",
+        "kn": "ಈಸು: Forward the tip to the family group."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "No one can promise a sure doubling. A fee plus a screenshot is how a group learns what you have and how to pressure you. Leaving costs nothing. Sending money “to test” is still sending money.",
+      "hi": "कोई पक्का दोगुना नहीं वादा कर सकता। शुल्क और स्क्रीनशॉट से समूह जानता है आपके पास क्या है और दबाव कैसे डालें। छोड़ने की कीमत नहीं। “परीक्षा” के लिए भेजना भी भेजना ही है।",
+      "mr": "कोणी नक्की दुप्पट वचन देऊ शकत नाही. फी आणि स्क्रीनशॉटने गट जाणतो तुमच्याकडे काय आहे आणि दबाव कसा द्यावा. सोडण्याची किंमत नाही. “चाचणी” साठी पाठवणेही पाठवणेच आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: No one can promise a sure doubling. A fee plus a screenshot is how a group learns what you have and how to pressure you. Leaving costs nothing. Sending money “to test” is still sending money."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "fest-card",
+    "title": {
+      "en": "The card for the festival",
+      "hi": "त्योहार का कार्ड",
+      "mr": "सणाचे कार्ड",
+      "kn": "ಈಸು: The card for the festival"
+    },
+    "story": {
+      "en": "A bank stall offers Renu a credit card “for festival shopping”. The minimum due is printed large. The full bill is in smaller type. She can pay the minimum from her pocket money.",
+      "hi": "बैंक का स्टॉल रेणु को “त्योहार की खरीदारी” के लिए क्रेडिट कार्ड देता है। न्यूनतम देय बड़ा छपा है। पूरा बिल छोटे अक्षरों में है। वह न्यूनतम जेब खर्च से दे सकती है।",
+      "mr": "बँकेचा स्टॉल रेणूला “सणाच्या खरेदी” साठी क्रेडिट कार्ड देतो. किमान देय मोठे छापले आहे. पूर्ण बिल लहान अक्षरात आहे. ती किमान खिशाच्या पैशातून देऊ शकते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A bank stall offers Renu a credit card “for festival shopping”. The minimum due is printed large. The full bill is in smaller type. She can pay the minimum from her pocket money."
+    },
+    "question": {
+      "en": "When is the card a calm choice?",
+      "hi": "कार्ड शांत चुनाव कब है?",
+      "mr": "कार्ड शांत निवड कधी आहे?",
+      "kn": "ಈಸು: When is the card a calm choice?"
+    },
+    "options": [
+      {
+        "en": "When she can pay the full bill on the due date.",
+        "hi": "जब वह तारीख पर पूरा बिल चुका सके।",
+        "mr": "जेव्हा ती तारखेला पूर्ण बिल फेडू शकेल.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: When she can pay the full bill on the due date."
+      },
+      {
+        "en": "When the minimum due fits this month.",
+        "hi": "जब न्यूनतम देय इस महीने में समा जाए।",
+        "mr": "जेव्हा किमान देय या महिन्यात मावेल.",
+        "kn": "ಈಸು: When the minimum due fits this month."
+      },
+      {
+        "en": "When the stall says the first month is free.",
+        "hi": "जब स्टॉल कहे पहला महीना मुफ्त है।",
+        "mr": "स्टॉल म्हणेल पहिला महिना मोफत आहे तेव्हा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: When the stall says the first month is free."
+      },
+      {
+        "en": "When friends are taking one too.",
+        "hi": "जब दोस्त भी ले रहे हों।",
+        "mr": "मित्रही घेत असतील तेव्हा.",
+        "kn": "ಈಸು: When friends are taking one too."
+      }
+    ],
+    "best": 0,
+    "debrief": {
+      "en": "The minimum due keeps the card alive and lets interest grow on the rest. A card is calm only if the full amount is already in the plan. “First month free” does not shrink a bill you cannot pay.",
+      "hi": "न्यूनतम देय कार्ड को ज़िंदा रखता है और बाकी पर ब्याज बढ़ने देता है। कार्ड तभी शांत है जब पूरी रकम योजना में पहले से हो। “पहला महीना मुफ्त” उस बिल को छोटा नहीं करता जिसे आप चुका नहीं सकते।",
+      "mr": "किमान देय कार्ड जिवंत ठेवते आणि उरलेल्या रकमेवर व्याज वाढू देते. कार्ड तेव्हाच शांत आहे जेव्हा पूर्ण रक्कम योजनेत आधीच आहे. “पहिला महिना मोफत” तुम्ही फेडू शकत नाही ते बिल लहान करत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The minimum due keeps the card alive and lets interest grow on the rest. A card is calm only if the full amount is already in the plan. “First month free” does not shrink a bill you cannot pay."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "room-deposit",
+    "title": {
+      "en": "The room and the token",
+      "hi": "कमरा और टोकन",
+      "mr": "खोली आणि टोकन",
+      "kn": "ಈಸು: The room and the token"
+    },
+    "story": {
+      "en": "A listing asks Asha for a “token” on an unknown UPI name before she sees the room. The real deposit, the owner says, comes later. The profile photo is a building, not a person.",
+      "hi": "एक लिस्टिंग आशा से कमरा देखने से पहले अनजान यूपीआई नाम पर “टोकन” माँगती है। असली जमा, मालिक कहता है, बाद में। प्रोफाइल फोटो इमारत है, व्यक्ति नहीं।",
+      "mr": "एक जाहिरात आशाला खोली पाहण्यापूर्वी अनोळखी यूपीआय नावावर “टोकन” मागते. खरी अनामत, मालक म्हणतो, नंतर. प्रोफाइल फोटो इमारत आहे, व्यक्ती नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A listing asks Asha for a “token” on an unknown UPI name before she sees the room. The real deposit, the owner says, comes later. The profile photo is a building, not a person."
+    },
+    "question": {
+      "en": "How should Asha pay for a room?",
+      "hi": "आशा कमरे के लिए कैसे भुगतान करे?",
+      "mr": "आशाने खोलीसाठी कसे पैसे द्यावेत?",
+      "kn": "ಈಸು: How should Asha pay for a room?"
+    },
+    "options": [
+      {
+        "en": "Send the token so nobody else takes the room.",
+        "hi": "कोई और कमरा न ले जाए इसलिए टोकन भेज दे।",
+        "mr": "दुसरा कोणी खोली नेऊ नये म्हणून टोकन पाठवावा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Send the token so nobody else takes the room."
+      },
+      {
+        "en": "See the room, then pay a named person and keep a receipt.",
+        "hi": "कमरा देखे, फिर नाम वाले व्यक्ति को दे और रसीद रखे।",
+        "mr": "खोली पाहा, मग नाव असलेल्या व्यक्तीला द्या आणि पावती ठेवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: See the room, then pay a named person and keep a receipt."
+      },
+      {
+        "en": "Send half now and ask for the key photo.",
+        "hi": "आधा अभी भेजे और चाबी की फोटो माँगे।",
+        "mr": "अर्धे आता पाठवा आणि चावीचा फोटो मागा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Send half now and ask for the key photo."
+      },
+      {
+        "en": "Pay a friend of the owner who “handles tokens”.",
+        "hi": "मालिक के दोस्त को दें जो “टोकन संभालता” है।",
+        "mr": "मालकाच्या मित्राला द्या जो “टोकन सांभाळतो”.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Pay a friend of the owner who “handles tokens”."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "Money before a visit is how empty rooms collect deposits. Pay only after you have stood in the room, to a person whose name matches the receipt. A photo of a key is not a key.",
+      "hi": "देखने से पहले पैसा, ऐसे खाली कमरे जमा वसूलते हैं। कमरे में खड़े होने के बाद ही दें, उस व्यक्ति को जिसका नाम रसीद से मिले। चाबी की फोटो चाबी नहीं।",
+      "mr": "भेट देण्यापूर्वी पैसे, अशा रिकाम्या खोल्या अनामत गोळा करतात. खोलीत उभे राहिल्यानंतरच द्या, ज्या व्यक्तीचे नाव पावतीशी जुळते तिला. चावीचा फोटो चावी नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Money before a visit is how empty rooms collect deposits. Pay only after you have stood in the room, to a person whose name matches the receipt. A photo of a key is not a key."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "insurance-missold",
+    "title": {
+      "en": "The policy that sounded like a deposit",
+      "hi": "जमा जैसी पॉलिसी",
+      "mr": "ठेवीसारखी पॉलिसी",
+      "kn": "ಈಸು: The policy that sounded like a deposit"
+    },
+    "story": {
+      "en": "An agent tells Farhan a policy will “return more than a fixed deposit” if he pays every year for fifteen years. The agent does not say what illness or loss it covers. He wants the first premium today.",
+      "hi": "एक एजेंट फरहान से कहता है पॉलिसी “फिक्स्ड डिपॉज़िट से ज़्यादा लौटाएगी” अगर वह पंद्रह साल हर साल दे। एजेंट नहीं बताता कौन सी बीमारी या नुकसान कवर है। वह आज पहला प्रीमियम चाहता है।",
+      "mr": "एक एजंट फरहानला सांगतो पॉलिसी “मुदत ठेवीपेक्षा जास्त परत करेल” जर तो पंधरा वर्षे दर वर्षी देईल. एजंट सांगत नाही कोणता आजार किंवा नुकसान कव्हर आहे. त्याला आज पहिला प्रीमियम हवा आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An agent tells Farhan a policy will “return more than a fixed deposit” if he pays every year for fifteen years. The agent does not say what illness or loss it covers. He wants the first premium today."
+    },
+    "question": {
+      "en": "What should Farhan ask before he pays?",
+      "hi": "पैसे देने से पहले फरहान क्या पूछे?",
+      "mr": "पैसे देण्यापूर्वी फरहानने काय विचारावे?",
+      "kn": "ಈಸು: What should Farhan ask before he pays?"
+    },
+    "options": [
+      {
+        "en": "Only the maturity amount in the brochure.",
+        "hi": "सिर्फ ब्रोशर की मैच्योरिटी रकम।",
+        "mr": "फक्त माहितीपत्रकातील मॅच्युरिटी रक्कम.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Only the maturity amount in the brochure."
+      },
+      {
+        "en": "What is covered, what is excluded, and what he gets if he stops.",
+        "hi": "क्या कवर है, क्या बाहर है, और बीच में रुकने पर क्या मिलेगा।",
+        "mr": "काय कव्हर आहे, काय बाहेर आहे, आणि थांबल्यास काय मिळेल.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: What is covered, what is excluded, and what he gets if he stops."
+      },
+      {
+        "en": "Whether his friends’ parents bought the same one.",
+        "hi": "क्या दोस्तों के माता-पिता ने यही लिया।",
+        "mr": "मित्रांच्या पालकांनी हेच घेतले का.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Whether his friends’ parents bought the same one."
+      },
+      {
+        "en": "How large a bonus the agent earns.",
+        "hi": "एजेंट को कितना बोनस मिलता है।",
+        "mr": "एजंटला किती बोनस मिळतो.",
+        "kn": "ಈಸು: How large a bonus the agent earns."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "Insurance pays for a stated loss. A savings product grows a balance. When one pitch uses both sentences, ask them apart. If stopping early returns very little, the “more than a deposit” line was never the whole story.",
+      "hi": "बीमा बताए नुकसान के लिए होता है। बचत उत्पाद शेष बढ़ाता है। जब एक बात दोनों वाक्य बोले, उन्हें अलग पूछें। बीच में रुकने पर बहुत कम लौटे तो “जमा से ज़्यादा” वाली पंक्ति पूरी कहानी नहीं थी।",
+      "mr": "विमा सांगितलेल्या नुकसानासाठी असतो. बचत उत्पादन शिल्लक वाढवते. एकच सादरीकरण दोन्ही वाक्ये बोलत असेल तर ती वेगळी विचारा. लवकर थांबल्यास फार कमी परत येत असेल तर “ठेवीपेक्षा जास्त” ही ओळ पूर्ण कहाणी नव्हती.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Insurance pays for a stated loss. A savings product grows a balance. When one pitch uses both sentences, ask them apart. If stopping early returns very little, the “more than a deposit” line was never the whole story."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "payday-app",
+    "title": {
+      "en": "The app that wants the phone book",
+      "hi": "फोन बुक माँगने वाला ऐप",
+      "mr": "फोन बुक मागणारे अ‍ॅप",
+      "kn": "ಈಸು: The app that wants the phone book"
+    },
+    "story": {
+      "en": "A payday app approves “instant cash” if Dev allows contacts, photos, and location. The late fee is a percent per day, written under a collapsed menu.",
+      "hi": "एक पेडे ऐप देव को संपर्क, फोटो और लोकेशन देने पर “तुरंत नकद” मंज़ूर करता है। विलंब शुल्क प्रति दिन प्रतिशत है, एक सिकुड़े मेनू के नीचे।",
+      "mr": "एक पेडे अ‍ॅप देवला संपर्क, फोटो आणि लोकेशन दिल्यास “ताबडतोब रोख” मंजूर करते. विलंब शुल्क दर दिवशी टक्का आहे, एका मिटलेल्या मेनूखाली.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A payday app approves “instant cash” if Dev allows contacts, photos, and location. The late fee is a percent per day, written under a collapsed menu."
+    },
+    "question": {
+      "en": "What should Dev do?",
+      "hi": "देव क्या करे?",
+      "mr": "देवने काय करावे?",
+      "kn": "ಈಸು: What should Dev do?"
+    },
+    "options": [
+      {
+        "en": "Allow contacts. They are “only for KYC”.",
+        "hi": "संपर्क दें। वे “सिर्फ केवाईसी” के लिए हैं।",
+        "mr": "संपर्क द्या. ते “फक्त केवायसी” साठी आहेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Allow contacts. They are “only for KYC”."
+      },
+      {
+        "en": "Close the app. A lender does not need the phone book.",
+        "hi": "ऐप बंद करे। ऋणदाता को फोन बुक नहीं चाहिए।",
+        "mr": "अ‍ॅप बंद करा. कर्ज देणाऱ्याला फोन बुक नको.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Close the app. A lender does not need the phone book."
+      },
+      {
+        "en": "Borrow the smallest amount, just once.",
+        "hi": "सबसे छोटी रकम उधार ले, सिर्फ एक बार।",
+        "mr": "सर्वात लहान रक्कम उसने घ्या, फक्त एकदा.",
+        "kn": "ಈಸು: Borrow the smallest amount, just once."
+      },
+      {
+        "en": "Ask the app to message his parents as guarantors.",
+        "hi": "ऐप से माता-पिता को गारंटर के रूप में संदेश भिजवाए।",
+        "mr": "अ‍ॅपला पालकांना जामीनदार म्हणून संदेश पाठवायला सांगावे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask the app to message his parents as guarantors."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "Contacts are not a form of ID. Apps that threaten to message your family are using shame as a penalty. A daily percent becomes a huge cost in a week. Close it.",
+      "hi": "संपर्क पहचान का रूप नहीं। जो ऐप परिवार को संदेश की धमकी दे, वह शर्म को जुर्माना बना रहा है। रोज़ का प्रतिशत एक हफ्ते में भारी लागत बन जाता है। बंद कर दें।",
+      "mr": "संपर्क ओळखीचे रूप नाही. कुटुंबाला संदेशाची धमकी देणारे अ‍ॅप लाजेचा दंड करत आहे. रोजचा टक्का आठवड्यात जड खर्च होतो. बंद करा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Contacts are not a form of ID. Apps that threaten to message your family are using shame as a penalty. A daily percent becomes a huge cost in a week. Close it."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "two-education-loans",
+    "title": {
+      "en": "Two letters, one course",
+      "hi": "दो पत्र, एक कोर्स",
+      "mr": "दोन पत्रे, एक अभ्यासक्रम",
+      "kn": "ಈಸು: Two letters, one course"
+    },
+    "story": {
+      "en": "Two lenders offer Sana money for the same course. One is a lower EMI over more years, with no right to prepay. The other is a higher EMI, reducing balance, and she may close it when a scholarship arrives.",
+      "hi": "दो ऋणदाता सना को एक ही कोर्स के लिए पैसे देते हैं। एक में कम ईएमआई, ज़्यादा साल, और जल्दी चुकाने का अधिकार नहीं। दूसरे में ईएमआई ज़्यादा है, घटता बैलेंस, और छात्रवृत्ति आने पर वह बंद कर सकती है।",
+      "mr": "दोन कर्ज देणारे सनाला त्याच अभ्यासक्रमासाठी पैसे देतात. एकात कमी ईएमआय, अधिक वर्षे, आणि लवकर फेडण्याचा अधिकार नाही. दुसऱ्यात ईएमआय जास्त आहे, कमी होणारी शिल्लक, आणि शिष्यवृत्ती आली की ती बंद करू शकते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Two lenders offer Sana money for the same course. One is a lower EMI over more years, with no right to prepay. The other is a higher EMI, reducing balance, and she may close it when a scholarship arrives."
+    },
+    "question": {
+      "en": "Which comparison is the fair one?",
+      "hi": "निष्पक्ष तुलना कौन सी है?",
+      "mr": "निष्पक्ष तुलना कोणती?",
+      "kn": "ಈಸು: Which comparison is the fair one?"
+    },
+    "options": [
+      {
+        "en": "Pick the smaller EMI and stop reading.",
+        "hi": "छोटी ईएमआई चुनें और पढ़ना बंद करें।",
+        "mr": "लहान ईएमआय निवडा आणि वाचणे थांबवा.",
+        "kn": "ಈಸು: Pick the smaller EMI and stop reading."
+      },
+      {
+        "en": "Compare total repayment, fees, and the right to close early.",
+        "hi": "कुल चुकौती, शुल्क और जल्दी बंद करने का अधिकार तुलना करें।",
+        "mr": "एकूण परतफेड, शुल्क आणि लवकर बंद करण्याचा अधिकार तुलना करा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Compare total repayment, fees, and the right to close early."
+      },
+      {
+        "en": "Choose the logo she has seen on television.",
+        "hi": "वह लोगो चुनें जो टीवी पर देखा हो।",
+        "mr": "टीव्हीवर पाहिलेला लोगो निवडा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Choose the logo she has seen on television."
+      },
+      {
+        "en": "Let a parent sign the unread copy.",
+        "hi": "माता-पिता से बिना पढ़ी प्रति साइन करवाएँ।",
+        "mr": "पालकांकडून न वाचलेली प्रत सही करून घ्या.",
+        "kn": "ಈಸು: Let a parent sign the unread copy."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "A long, cheap-looking EMI can cost more in total and can trap a future scholarship. The right to prepay is part of the price. Read both totals in rupees before anyone signs.",
+      "hi": "लंबी, सस्ती दिखने वाली ईएमआई कुल में ज़्यादा पड़ सकती है और आने वाली छात्रवृत्ति को फँसा सकती है। जल्दी चुकाने का अधिकार कीमत का हिस्सा है। कोई साइन करे उससे पहले दोनों कुल रुपये में पढ़ें।",
+      "mr": "लांब, स्वस्त दिसणारी ईएमआय एकूणात जास्त पडू शकते आणि येणारी शिष्यवृत्ती अडकवू शकते. लवकर फेडण्याचा अधिकार किमतीचा भाग आहे. कोणी सही करावी त्यापूर्वी दोन्ही एकूण रुपयांत वाचा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A long, cheap-looking EMI can cost more in total and can trap a future scholarship. The right to prepay is part of the price. Read both totals in rupees before anyone signs."
+    },
+    "sampleId": null
+  },
+  {
+    "id": "festival-spend",
+    "title": {
+      "en": "The week before the lights",
+      "hi": "रोशनी से एक हफ्ता पहले",
+      "mr": "दिव्यांच्या एक आठवडा आधी",
+      "kn": "ಈಸು: The week before the lights"
+    },
+    "story": {
+      "en": "Three weeks of pocket money are already gone on clothes and sweets. A cousin suggests a small loan “just for gifts”. The rent share and the bus pass are still unpaid.",
+      "hi": "तीन हफ्ते का जेब खर्च कपड़ों और मिठाई में जा चुका है। एक कजिन “सिर्फ तोहफों” के लिए छोटा कर्ज सुझाता है। किराए का हिस्सा और बस पास अभी बाकी हैं।",
+      "mr": "तीन आठवड्यांचे खिशाचे पैसे कपडे आणि मिठाईत गेले आहेत. एक चुलत भावंड “फक्त भेटी” साठी छोटे कर्ज सुचवते. भाड्याचा वाटा आणि बस पास अजून बाकी आहेत.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Three weeks of pocket money are already gone on clothes and sweets. A cousin suggests a small loan “just for gifts”. The rent share and the bus pass are still unpaid."
+    },
+    "question": {
+      "en": "What keeps the month standing?",
+      "hi": "महीने को कौन खड़ा रखता है?",
+      "mr": "महिना कोण उभा ठेवतो?",
+      "kn": "ಈಸು: What keeps the month standing?"
+    },
+    "options": [
+      {
+        "en": "Borrow for gifts so the family is not disappointed.",
+        "hi": "परिवार निराश न हो इसलिए तोहफों के लिए उधार लें।",
+        "mr": "कुटुंब निराश होऊ नये म्हणून भेटींसाठी उसने घ्यावे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Borrow for gifts so the family is not disappointed."
+      },
+      {
+        "en": "Pay the bus and the rent share, and make gifts smaller.",
+        "hi": "बस और किराए का हिस्सा दें, तोहफे छोटे करें।",
+        "mr": "बस आणि भाड्याचा वाटा द्या, भेटी लहान करा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Pay the bus and the rent share, and make gifts smaller."
+      },
+      {
+        "en": "Skip the bus pass and spend that on sweets.",
+        "hi": "बस पास छोड़ें और वह पैसा मिठाई पर लगाएँ।",
+        "mr": "बस पास सोडा आणि ते पैसे मिठाईवर लावा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Skip the bus pass and spend that on sweets."
+      },
+      {
+        "en": "Open a new loan app during the festival sale.",
+        "hi": "त्योहार की सेल में नया लोन ऐप खोलें।",
+        "mr": "सणाच्या सेलमध्ये नवीन लोन अ‍ॅप उघडा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open a new loan app during the festival sale."
+      }
+    ],
+    "best": 1,
+    "debrief": {
+      "en": "Needs keep the next week possible. Gifts can shrink. A loan for sweets becomes a bill in a quiet month. Pay the bus and the rent share first.",
+      "hi": "ज़रूरतें अगला हफ्ता संभव रखती हैं। तोहफे छोटे हो सकते हैं। मिठाई का कर्ज शांत महीने में बिल बन जाता है। पहले बस और किराए का हिस्सा दें।",
+      "mr": "गरजा पुढचा आठवडा शक्य ठेवतात. भेटी लहान होऊ शकतात. मिठाईचे कर्ज शांत महिन्यात बिल होते. आधी बस आणि भाड्याचा वाटा द्या.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Needs keep the next week possible. Gifts can shrink. A loan for sweets becomes a bill in a quiet month. Pay the bus and the rent share first."
+    },
+    "sampleId": null
+  }
+]

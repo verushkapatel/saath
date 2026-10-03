@@ -1,0 +1,1148 @@
+[
+  {
+    "id": "first-budget",
+    "icon": "list",
+    "title": {
+      "en": "First budget",
+      "hi": "पहला बजट",
+      "mr": "पहिले बजेट",
+      "kn": "ಈಸು: First budget"
+    },
+    "summary": {
+      "en": "See where a week of money goes, then plan the next one.",
+      "hi": "देखें कि एक हफ्ते का पैसा कहाँ जाता है, फिर अगले की योजना बनाएँ।",
+      "mr": "एका आठवड्याचे पैसे कुठे जातात ते पाहा, मग पुढच्या आठवड्याचे नियोजन करा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: See where a week of money goes, then plan the next one."
+    },
+    "milestone": {
+      "en": "You can now plan a month of money on one page.",
+      "hi": "अब आप महीने भर के पैसे की योजना एक पन्ने पर बना सकते हैं।",
+      "mr": "आता तुम्ही महिन्याभराच्या पैशांचे नियोजन एका पानावर करू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now plan a month of money on one page."
+    },
+    "caseIds": [
+      "festival-spend",
+      "room-deposit"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "budget",
+        "title": {
+          "en": "A budget is a plan",
+          "hi": "बजट एक योजना है",
+          "mr": "अंदाजपत्रक म्हणजे योजना",
+          "kn": "ಈಸು: A budget is a plan"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "action",
+        "title": {
+          "en": "Log today's spending",
+          "hi": "आज का खर्च लिखें",
+          "mr": "आजचा खर्च नोंदवा",
+          "kn": "ಈಸು: Log today's spending"
+        },
+        "body": {
+          "en": "Open Money Lab and log everything you spent today, even ₹10 for tea.",
+          "hi": "मनी लैब खोलें और आज का हर खर्च लिखें, ₹10 की चाय भी।",
+          "mr": "मनी लॅब उघडा आणि आजचा प्रत्येक खर्च नोंदवा, ₹10 चा चहासुद्धा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open Money Lab and log everything you spent today, even ₹10 for tea."
+        },
+        "link": "tracker"
+      },
+      {
+        "id": "s3",
+        "kind": "lesson",
+        "lessonId": "needs-wants",
+        "title": {
+          "en": "Needs and wants",
+          "hi": "ज़रूरत और इच्छा",
+          "mr": "गरज आणि इच्छा",
+          "kn": "ಈಸು: Needs and wants"
+        }
+      },
+      {
+        "id": "s4",
+        "kind": "action",
+        "title": {
+          "en": "Log three days in a row",
+          "hi": "लगातार तीन दिन लिखें",
+          "mr": "सलग तीन दिवस नोंदवा",
+          "kn": "ಈಸು: Log three days in a row"
+        },
+        "body": {
+          "en": "Keep logging for three days. On the third day Money Lab shows you one thing about your own spending.",
+          "hi": "तीन दिन तक लिखते रहें। तीसरे दिन मनी लैब आपके अपने खर्च के बारे में एक बात दिखाएगा।",
+          "mr": "तीन दिवस नोंदवत राहा. तिसऱ्या दिवशी मनी लॅब तुमच्या खर्चाबद्दल एक गोष्ट दाखवेल.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Keep logging for three days. On the third day Money Lab shows you one thing about your own spending."
+        },
+        "link": "tracker"
+      },
+      {
+        "id": "s5",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "You have ₹600 for the week. Bus ₹210, lunch ₹280. What is free to spend?",
+            "hi": "हफ्ते के लिए ₹600 हैं। बस ₹210, खाना ₹280। खुला पैसा कितना है?",
+            "mr": "आठवड्यासाठी ₹600 आहेत. बस ₹210, जेवण ₹280. मोकळे पैसे किती?",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You have ₹600 for the week. Bus ₹210, lunch ₹280. What is free to spend?"
+          },
+          "options": [
+            {
+              "en": "₹110",
+              "hi": "₹110",
+              "mr": "₹110",
+              "kn": "ಈಸು: ₹110"
+            },
+            {
+              "en": "₹320",
+              "hi": "₹320",
+              "mr": "₹320",
+              "kn": "ಈಸು: ₹320"
+            },
+            {
+              "en": "₹600",
+              "hi": "₹600",
+              "mr": "₹600",
+              "kn": "ಈಸು: ₹600"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "600 minus 210 minus 280 leaves 110.",
+            "hi": "600 में से 210 और 280 घटाएँ तो 110 बचते हैं।",
+            "mr": "600 मधून 210 आणि 280 वजा केले की 110 उरतात.",
+            "kn": "ಈಸು: 600 minus 210 minus 280 leaves 110."
+          }
+        }
+      },
+      {
+        "id": "s6",
+        "kind": "lesson",
+        "lessonId": "pay-yourself",
+        "title": {
+          "en": "Pay yourself first",
+          "hi": "पहले खुद को बचाएँ",
+          "mr": "आधी स्वतःसाठी ठेवा",
+          "kn": "ಈಸು: Pay yourself first"
+        }
+      }
+    ]
+  },
+  {
+    "id": "loan-scam",
+    "icon": "shield",
+    "title": {
+      "en": "Spot a loan scam",
+      "hi": "कर्ज की ठगी पहचानें",
+      "mr": "कर्जाची फसवणूक ओळखा",
+      "kn": "ಈಸು: Spot a loan scam"
+    },
+    "summary": {
+      "en": "Learn the signs of a loan that is built to trap you.",
+      "hi": "उस कर्ज के संकेत जानें जो फँसाने के लिए बना है।",
+      "mr": "अडकवण्यासाठी बनवलेल्या कर्जाची लक्षणे जाणून घ्या.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Learn the signs of a loan that is built to trap you."
+    },
+    "milestone": {
+      "en": "You can now spot a loan that is built to trap.",
+      "hi": "अब आप फँसाने वाले कर्ज को पहचान सकते हैं।",
+      "mr": "आता तुम्ही अडकवणारे कर्ज ओळखू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now spot a loan that is built to trap."
+    },
+    "caseIds": [
+      "payday-app",
+      "whatsapp-tip"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "fake-loan-apps",
+        "title": {
+          "en": "Loan apps that harm",
+          "hi": "नुकसान करने वाले लोन ऐप",
+          "mr": "हानी करणारी लोन अ‍ॅप्स",
+          "kn": "ಈಸು: Loan apps that harm"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "action",
+        "title": {
+          "en": "Read a real case",
+          "hi": "एक असली मामला पढ़ें",
+          "mr": "एक खरा प्रसंग वाचा",
+          "kn": "ಈಸು: Read a real case"
+        },
+        "body": {
+          "en": "Read the case about the app that wants the phone book, and pick what you would do.",
+          "hi": "फोन बुक माँगने वाले ऐप का मामला पढ़ें और चुनें कि आप क्या करते।",
+          "mr": "फोन बुक मागणाऱ्या अ‍ॅपचा प्रसंग वाचा आणि तुम्ही काय केले असते ते निवडा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read the case about the app that wants the phone book, and pick what you would do."
+        },
+        "link": "case:payday-app"
+      },
+      {
+        "id": "s3",
+        "kind": "lesson",
+        "lessonId": "otp-pin",
+        "title": {
+          "en": "OTP and PIN",
+          "hi": "ओटीपी और पिन",
+          "mr": "ओटीपी आणि पिन",
+          "kn": "ಈಸು: OTP and PIN"
+        }
+      },
+      {
+        "id": "s4",
+        "kind": "action",
+        "title": {
+          "en": "Check your phone",
+          "hi": "अपना फोन जाँचें",
+          "mr": "तुमचा फोन तपासा",
+          "kn": "ಈಸು: Check your phone"
+        },
+        "body": {
+          "en": "Open your app list. If any loan app can read contacts or photos, remove that permission or the app.",
+          "hi": "ऐप की सूची खोलें। कोई लोन ऐप कॉन्टैक्ट या फोटो पढ़ सकता हो तो वह इजाज़त या ऐप हटा दें।",
+          "mr": "अ‍ॅपची यादी उघडा. एखादे लोन अ‍ॅप संपर्क किंवा फोटो वाचू शकत असेल तर ती परवानगी किंवा ते अ‍ॅप काढून टाका.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open your app list. If any loan app can read contacts or photos, remove that permission or the app."
+        },
+        "link": null
+      },
+      {
+        "id": "s5",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "Which is the clearest sign of a scam loan?",
+            "hi": "ठगी वाले कर्ज का सबसे साफ़ संकेत क्या है?",
+            "mr": "फसव्या कर्जाचे सर्वात स्पष्ट लक्षण कोणते?",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Which is the clearest sign of a scam loan?"
+          },
+          "options": [
+            {
+              "en": "It asks for a fee before giving the loan",
+              "hi": "कर्ज देने से पहले शुल्क माँगता है",
+              "mr": "कर्ज देण्याआधी शुल्क मागते",
+              "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: It asks for a fee before giving the loan"
+            },
+            {
+              "en": "It gives you a paper to read",
+              "hi": "पढ़ने के लिए कागज़ देता है",
+              "mr": "वाचायला कागद देते",
+              "kn": "ಈಸು: It gives you a paper to read"
+            },
+            {
+              "en": "It has a branch office",
+              "hi": "उसकी शाखा है",
+              "mr": "त्याची शाखा आहे",
+              "kn": "ಈಸು: It has a branch office"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A real lender takes fees out of the loan. It does not ask you to send money first.",
+            "hi": "असली कर्ज देने वाला शुल्क कर्ज में से काटता है। वह पहले पैसा भेजने को नहीं कहता।",
+            "mr": "खरा कर्जदाता शुल्क कर्जातून कापतो. तो आधी पैसे पाठवायला सांगत नाही.",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A real lender takes fees out of the loan. It does not ask you to send money first."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "first-loan-paper",
+    "icon": "file",
+    "title": {
+      "en": "Read your first loan paper",
+      "hi": "अपना पहला कर्ज का कागज़ पढ़ें",
+      "mr": "तुमचा पहिला कर्जाचा कागद वाचा",
+      "kn": "ಈಸು: Read your first loan paper"
+    },
+    "summary": {
+      "en": "Find the six things that decide what a loan costs.",
+      "hi": "वे छह चीज़ें ढूँढें जो तय करती हैं कि कर्ज कितना महँगा है।",
+      "mr": "कर्ज किती महाग आहे ते ठरवणाऱ्या सहा गोष्टी शोधा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Find the six things that decide what a loan costs."
+    },
+    "milestone": {
+      "en": "You can now spot a hidden fee.",
+      "hi": "अब आप छिपा हुआ शुल्क पकड़ सकते हैं।",
+      "mr": "आता तुम्ही लपलेले शुल्क ओळखू शकता.",
+      "kn": "ಈಸು: You can now spot a hidden fee."
+    },
+    "caseIds": [
+      "hidden-fees",
+      "store-emi",
+      "two-education-loans"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "what-emi",
+        "title": {
+          "en": "What an EMI is",
+          "hi": "ईएमआई क्या है",
+          "mr": "ईएमआय म्हणजे काय",
+          "kn": "ಈಸು: What an EMI is"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "lesson",
+        "lessonId": "flat-reducing",
+        "title": {
+          "en": "Flat and reducing",
+          "hi": "फ्लैट और घटता बैलेंस",
+          "mr": "फ्लॅट आणि कमी होणारी शिल्लक",
+          "kn": "ಈಸು: Flat and reducing"
+        }
+      },
+      {
+        "id": "s3",
+        "kind": "action",
+        "title": {
+          "en": "Scan the sample loan",
+          "hi": "नमूना कर्ज स्कैन करें",
+          "mr": "नमुना कर्ज स्कॅन करा",
+          "kn": "ಈಸು: Scan the sample loan"
+        },
+        "body": {
+          "en": "Open the personal loan sample. Look at the big number: the total you pay back.",
+          "hi": "पर्सनल लोन का नमूना खोलें। बड़ा आँकड़ा देखें: कुल कितना लौटाना है।",
+          "mr": "पर्सनल लोनचा नमुना उघडा. मोठा आकडा पाहा: एकूण किती परत द्यायचे.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the personal loan sample. Look at the big number: the total you pay back."
+        },
+        "link": "scan:personal-loan"
+      },
+      {
+        "id": "s4",
+        "kind": "lesson",
+        "lessonId": "fees",
+        "title": {
+          "en": "Fees change the price",
+          "hi": "शुल्क कीमत बदलते हैं",
+          "mr": "शुल्क किंमत बदलतात",
+          "kn": "ಈಸು: Fees change the price"
+        }
+      },
+      {
+        "id": "s5",
+        "kind": "action",
+        "title": {
+          "en": "Find the fee",
+          "hi": "शुल्क ढूँढें",
+          "mr": "शुल्क शोधा",
+          "kn": "ಈಸು: Find the fee"
+        },
+        "body": {
+          "en": "In the same sample, find both fee lines and add them. Check your answer against the fees Saath shows.",
+          "hi": "उसी नमूने में दोनों शुल्क की लाइनें ढूँढें और जोड़ें। साथ जो शुल्क दिखाता है उससे मिलाएँ।",
+          "mr": "त्याच नमुन्यात शुल्काच्या दोन्ही ओळी शोधा आणि मिळवा. साथ दाखवते त्या शुल्काशी ताडून पाहा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: In the same sample, find both fee lines and add them. Check your answer against the fees Saath shows."
+        },
+        "link": "scan:personal-loan"
+      },
+      {
+        "id": "s6",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "Loan ₹1,50,000. Fees ₹6,000 are cut first. How much do you receive?",
+            "hi": "कर्ज ₹1,50,000। ₹6,000 शुल्क पहले कटता है। हाथ में कितना आता है?",
+            "mr": "कर्ज ₹1,50,000. ₹6,000 शुल्क आधी कापले जाते. हातात किती येते?",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Loan ₹1,50,000. Fees ₹6,000 are cut first. How much do you receive?"
+          },
+          "options": [
+            {
+              "en": "₹1,56,000",
+              "hi": "₹1,56,000",
+              "mr": "₹1,56,000",
+              "kn": "ಈಸು: ₹1,56,000"
+            },
+            {
+              "en": "₹1,50,000",
+              "hi": "₹1,50,000",
+              "mr": "₹1,50,000",
+              "kn": "ಈಸು: ₹1,50,000"
+            },
+            {
+              "en": "₹1,44,000",
+              "hi": "₹1,44,000",
+              "mr": "₹1,44,000",
+              "kn": "ಈಸು: ₹1,44,000"
+            }
+          ],
+          "answer": 2,
+          "why": {
+            "en": "Fees come out of the loan before it reaches you.",
+            "hi": "शुल्क कर्ज में से आपके हाथ आने से पहले ही कट जाता है।",
+            "mr": "शुल्क कर्ज तुमच्या हातात येण्याआधीच कापले जाते.",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Fees come out of the loan before it reaches you."
+          }
+        }
+      },
+      {
+        "id": "s7",
+        "kind": "lesson",
+        "lessonId": "before-you-sign",
+        "title": {
+          "en": "Before you sign",
+          "hi": "दस्तखत से पहले",
+          "mr": "सही करण्यापूर्वी",
+          "kn": "ಈಸು: Before you sign"
+        }
+      }
+    ]
+  },
+  {
+    "id": "scholarship-safely",
+    "icon": "award",
+    "title": {
+      "en": "Apply for a scholarship safely",
+      "hi": "छात्रवृत्ति के लिए सुरक्षित आवेदन करें",
+      "mr": "शिष्यवृत्तीसाठी सुरक्षितपणे अर्ज करा",
+      "kn": "ಈಸು: Apply for a scholarship safely"
+    },
+    "summary": {
+      "en": "Fill the form yourself, share only what is needed, pay nothing.",
+      "hi": "फॉर्म खुद भरें, उतना ही बताएँ जितना ज़रूरी है, कोई पैसा न दें।",
+      "mr": "अर्ज स्वतः भरा, गरजेपुरतीच माहिती द्या, पैसे देऊ नका.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Fill the form yourself, share only what is needed, pay nothing."
+    },
+    "milestone": {
+      "en": "You can now apply for support without paying a middleman.",
+      "hi": "अब आप बिना बिचौलिये को पैसा दिए मदद के लिए आवेदन कर सकते हैं।",
+      "mr": "आता तुम्ही मध्यस्थाला पैसे न देता मदतीसाठी अर्ज करू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now apply for support without paying a middleman."
+    },
+    "caseIds": [
+      "blank-form"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "job-scams",
+        "title": {
+          "en": "Jobs and scholarships that ask for money",
+          "hi": "पैसे माँगने वाली नौकरी और छात्रवृत्ति",
+          "mr": "पैसे मागणारी नोकरी आणि शिष्यवृत्ती",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Jobs and scholarships that ask for money"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "action",
+        "title": {
+          "en": "Scan the scheme form",
+          "hi": "योजना का फॉर्म स्कैन करें",
+          "mr": "योजनेचा अर्ज स्कॅन करा",
+          "kn": "ಈಸು: Scan the scheme form"
+        },
+        "body": {
+          "en": "Open the scheme form sample. See which lines are still blank, and that it is support, not a loan.",
+          "hi": "योजना के फॉर्म का नमूना खोलें। देखें कौन सी लाइनें खाली हैं, और यह कि यह मदद है, कर्ज नहीं।",
+          "mr": "योजनेच्या अर्जाचा नमुना उघडा. कोणत्या ओळी रिकाम्या आहेत ते पाहा, आणि ही मदत आहे, कर्ज नाही हेही.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the scheme form sample. See which lines are still blank, and that it is support, not a loan."
+        },
+        "link": "scan:scheme-form"
+      },
+      {
+        "id": "s3",
+        "kind": "lesson",
+        "lessonId": "why-pan",
+        "title": {
+          "en": "Why a PAN exists",
+          "hi": "पैन क्यों होता है",
+          "mr": "पॅन का असतो",
+          "kn": "ಈಸು: Why a PAN exists"
+        }
+      },
+      {
+        "id": "s4",
+        "kind": "action",
+        "title": {
+          "en": "Ask one question at school",
+          "hi": "स्कूल में एक सवाल पूछें",
+          "mr": "शाळेत एक प्रश्न विचारा",
+          "kn": "ಈಸು: Ask one question at school"
+        },
+        "body": {
+          "en": "Ask a teacher or the office which scholarships students here have really received, and the official site for each.",
+          "hi": "किसी शिक्षक या दफ़्तर से पूछें कि यहाँ के छात्रों को सच में कौन सी छात्रवृत्तियाँ मिली हैं, और हर एक की सरकारी साइट कौन सी है।",
+          "mr": "शिक्षकांना किंवा कार्यालयात विचारा की इथल्या विद्यार्थ्यांना खरोखर कोणत्या शिष्यवृत्त्या मिळाल्या आहेत आणि प्रत्येकाची अधिकृत साइट कोणती.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask a teacher or the office which scholarships students here have really received, and the official site for each."
+        },
+        "link": null
+      },
+      {
+        "id": "s5",
+        "kind": "action",
+        "title": {
+          "en": "Read the blank form case",
+          "hi": "खाली फॉर्म वाला मामला पढ़ें",
+          "mr": "रिकाम्या अर्जाचा प्रसंग वाचा",
+          "kn": "ಈಸು: Read the blank form case"
+        },
+        "body": {
+          "en": "Someone offers to fill the rest of the form for you. Decide what you would do.",
+          "hi": "कोई कहता है कि बाकी फॉर्म वह भर देगा। तय करें कि आप क्या करते।",
+          "mr": "कोणी म्हणते की उरलेला अर्ज तो भरून देईल. तुम्ही काय केले असते ते ठरवा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Someone offers to fill the rest of the form for you. Decide what you would do."
+        },
+        "link": "case:blank-form"
+      },
+      {
+        "id": "s6",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "An agent will “guarantee” your scholarship for ₹800. You:",
+            "hi": "एजेंट ₹800 में छात्रवृत्ति की “गारंटी” देता है। आप:",
+            "mr": "एजंट ₹800 मध्ये शिष्यवृत्तीची “हमी” देतो. तुम्ही:",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An agent will “guarantee” your scholarship for ₹800. You:"
+          },
+          "options": [
+            {
+              "en": "Pay, it is a small amount",
+              "hi": "दे दें, रकम छोटी है",
+              "mr": "द्याल, रक्कम लहान आहे",
+              "kn": "ಈಸು: Pay, it is a small amount"
+            },
+            {
+              "en": "Apply yourself on the official site",
+              "hi": "सरकारी साइट पर खुद आवेदन करें",
+              "mr": "अधिकृत साइटवर स्वतः अर्ज कराल",
+              "kn": "ಈಸು: Apply yourself on the official site"
+            },
+            {
+              "en": "Give him your Aadhaar photo",
+              "hi": "उसे आधार की फोटो दे दें",
+              "mr": "त्याला आधारचा फोटो द्याल",
+              "kn": "ಈಸು: Give him your Aadhaar photo"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Nobody can guarantee a scholarship. Applying is free.",
+            "hi": "छात्रवृत्ति की गारंटी कोई नहीं दे सकता। आवेदन मुफ्त है।",
+            "mr": "शिष्यवृत्तीची हमी कोणीही देऊ शकत नाही. अर्ज मोफत असतो.",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Nobody can guarantee a scholarship. Applying is free."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "emergency-jar",
+    "icon": "jar",
+    "title": {
+      "en": "Build a ₹1,000 emergency jar",
+      "hi": "₹1,000 का आपातकालीन डिब्बा बनाएँ",
+      "mr": "₹1,000 चा आपत्कालीन डबा तयार करा",
+      "kn": "ಈಸು: Build a ₹1,000 emergency jar"
+    },
+    "summary": {
+      "en": "A small reserve keeps one bad week from turning into a loan.",
+      "hi": "छोटी सी जमा एक बुरे हफ्ते को कर्ज बनने से रोकती है।",
+      "mr": "थोडीशी शिल्लक एका वाईट आठवड्याचे कर्जात रूपांतर होऊ देत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A small reserve keeps one bad week from turning into a loan."
+    },
+    "milestone": {
+      "en": "You can now handle a small emergency without borrowing.",
+      "hi": "अब आप छोटी मुसीबत बिना उधार लिए सँभाल सकते हैं।",
+      "mr": "आता तुम्ही छोटी अडचण उधार न घेता सांभाळू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now handle a small emergency without borrowing."
+    },
+    "caseIds": [
+      "gold-emergency"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "emergency-fund",
+        "title": {
+          "en": "An emergency fund",
+          "hi": "आपात निधि",
+          "mr": "आणीबाणी निधी",
+          "kn": "ಈಸು: An emergency fund"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "action",
+        "title": {
+          "en": "Set the goal",
+          "hi": "लक्ष्य रखें",
+          "mr": "लक्ष्य ठेवा",
+          "kn": "ಈಸು: Set the goal"
+        },
+        "body": {
+          "en": "In Money Lab, set a savings goal of ₹1,000.",
+          "hi": "मनी लैब में ₹1,000 की बचत का लक्ष्य रखें।",
+          "mr": "मनी लॅबमध्ये ₹1,000 चे बचत लक्ष्य ठेवा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: In Money Lab, set a savings goal of ₹1,000."
+        },
+        "link": "tracker"
+      },
+      {
+        "id": "s3",
+        "kind": "action",
+        "title": {
+          "en": "Make the first deposit",
+          "hi": "पहली जमा करें",
+          "mr": "पहिली ठेव करा",
+          "kn": "ಈಸು: Make the first deposit"
+        },
+        "body": {
+          "en": "Put any amount aside today, even ₹20, and log it under Savings jar.",
+          "hi": "आज कोई भी रकम अलग रखें, ₹20 भी चलेगा, और उसे बचत के डिब्बे में लिखें।",
+          "mr": "आज कितीही रक्कम बाजूला ठेवा, ₹20 सुद्धा चालेल, आणि ती बचतीच्या डब्यात नोंदवा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Put any amount aside today, even ₹20, and log it under Savings jar."
+        },
+        "link": "tracker"
+      },
+      {
+        "id": "s4",
+        "kind": "lesson",
+        "lessonId": "where-savings",
+        "title": {
+          "en": "Where to keep savings",
+          "hi": "बचत कहाँ रखें",
+          "mr": "बचत कुठे ठेवावी",
+          "kn": "ಈಸು: Where to keep savings"
+        }
+      },
+      {
+        "id": "s5",
+        "kind": "action",
+        "title": {
+          "en": "Choose where it lives",
+          "hi": "तय करें पैसा कहाँ रहेगा",
+          "mr": "पैसे कुठे ठेवायचे ते ठरवा",
+          "kn": "ಈಸು: Choose where it lives"
+        },
+        "body": {
+          "en": "Decide one safe place for the jar: a savings account, or a box at home only you open.",
+          "hi": "डिब्बे के लिए एक सुरक्षित जगह तय करें: बचत खाता, या घर का वह डिब्बा जो सिर्फ आप खोलें।",
+          "mr": "डब्यासाठी एक सुरक्षित जागा ठरवा: बचत खाते, किंवा फक्त तुम्हीच उघडता असा घरातील डबा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Decide one safe place for the jar: a savings account, or a box at home only you open."
+        },
+        "link": null
+      },
+      {
+        "id": "s6",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "Saving ₹35 a week, about how long to reach ₹1,000?",
+            "hi": "हफ्ते के ₹35 बचाएँ तो ₹1,000 तक पहुँचने में लगभग कितना समय लगेगा?",
+            "mr": "आठवड्याला ₹35 वाचवले तर ₹1,000 व्हायला साधारण किती वेळ लागेल?",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Saving ₹35 a week, about how long to reach ₹1,000?"
+          },
+          "options": [
+            {
+              "en": "About 7 months",
+              "hi": "लगभग 7 महीने",
+              "mr": "सुमारे 7 महिने",
+              "kn": "ಈಸು: About 7 months"
+            },
+            {
+              "en": "About 2 years",
+              "hi": "लगभग 2 साल",
+              "mr": "सुमारे 2 वर्षे",
+              "kn": "ಈಸು: About 2 years"
+            },
+            {
+              "en": "About 2 weeks",
+              "hi": "लगभग 2 हफ्ते",
+              "mr": "सुमारे 2 आठवडे",
+              "kn": "ಈಸು: About 2 weeks"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "1,000 divided by 35 is about 29 weeks.",
+            "hi": "1,000 को 35 से भाग दें तो करीब 29 हफ्ते।",
+            "mr": "1,000 भागिले 35 म्हणजे सुमारे 29 आठवडे.",
+            "kn": "ಈಸು: 1,000 divided by 35 is about 29 weeks."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "upi-without-fear",
+    "icon": "phone",
+    "title": {
+      "en": "Use UPI without fear",
+      "hi": "बिना डर के यूपीआई चलाएँ",
+      "mr": "न घाबरता यूपीआय वापरा",
+      "kn": "ಈಸು: Use UPI without fear"
+    },
+    "summary": {
+      "en": "Three habits that stop almost every UPI trick.",
+      "hi": "तीन आदतें जो यूपीआई की लगभग हर चाल रोक देती हैं।",
+      "mr": "यूपीआयची जवळपास प्रत्येक फसवणूक थांबवणाऱ्या तीन सवयी.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Three habits that stop almost every UPI trick."
+    },
+    "milestone": {
+      "en": "You can now tell a real payment from a trick.",
+      "hi": "अब आप असली भुगतान और चाल में फर्क कर सकते हैं।",
+      "mr": "आता तुम्ही खरे पेमेंट आणि फसवणूक यांतील फरक ओळखू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now tell a real payment from a trick."
+    },
+    "caseIds": [
+      "upi-pin"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "upi-safety",
+        "title": {
+          "en": "UPI, used safely",
+          "hi": "यूपीआई, सुरक्षित तरीके से",
+          "mr": "यूपीआय, सुरक्षितपणे",
+          "kn": "ಈಸು: UPI, used safely"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "action",
+        "title": {
+          "en": "Read the helpful caller case",
+          "hi": "मददगार कॉलर वाला मामला पढ़ें",
+          "mr": "मदत करणाऱ्या कॉलरचा प्रसंग वाचा",
+          "kn": "ಈಸು: Read the helpful caller case"
+        },
+        "body": {
+          "en": "A caller offers to fix a failed payment. Pick what you would do.",
+          "hi": "एक कॉलर अटका हुआ भुगतान ठीक करने की बात करता है। चुनें कि आप क्या करते।",
+          "mr": "एक कॉलर अडकलेले पेमेंट दुरुस्त करतो म्हणतो. तुम्ही काय केले असते ते निवडा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A caller offers to fix a failed payment. Pick what you would do."
+        },
+        "link": "case:upi-pin"
+      },
+      {
+        "id": "s3",
+        "kind": "lesson",
+        "lessonId": "otp-pin",
+        "title": {
+          "en": "OTP and PIN",
+          "hi": "ओटीपी और पिन",
+          "mr": "ओटीपी आणि पिन",
+          "kn": "ಈಸು: OTP and PIN"
+        }
+      },
+      {
+        "id": "s4",
+        "kind": "action",
+        "title": {
+          "en": "Send ₹1 to someone you trust",
+          "hi": "किसी भरोसे वाले को ₹1 भेजें",
+          "mr": "विश्वासातल्या व्यक्तीला ₹1 पाठवा",
+          "kn": "ಈಸು: Send ₹1 to someone you trust"
+        },
+        "body": {
+          "en": "With a parent or friend beside you, send ₹1. Read the name on screen before you enter the PIN.",
+          "hi": "माता-पिता या दोस्त को साथ बैठाकर ₹1 भेजें। पिन डालने से पहले स्क्रीन पर नाम पढ़ें।",
+          "mr": "आईवडील किंवा मित्राला सोबत बसवून ₹1 पाठवा. पिन टाकण्याआधी स्क्रीनवरील नाव वाचा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: With a parent or friend beside you, send ₹1. Read the name on screen before you enter the PIN."
+        },
+        "link": null
+      },
+      {
+        "id": "s5",
+        "kind": "action",
+        "title": {
+          "en": "Set your own limit",
+          "hi": "अपनी सीमा तय करें",
+          "mr": "स्वतःची मर्यादा ठरवा",
+          "kn": "ಈಸು: Set your own limit"
+        },
+        "body": {
+          "en": "Open your UPI app settings and look at the daily limit. Lower it if it is more than you ever send.",
+          "hi": "यूपीआई ऐप की सेटिंग में रोज़ की सीमा देखें। जितना आप कभी भेजते नहीं, उससे ज़्यादा हो तो घटा दें।",
+          "mr": "यूपीआय अ‍ॅपच्या सेटिंगमध्ये रोजची मर्यादा पाहा. तुम्ही कधीच पाठवत नाही त्यापेक्षा जास्त असेल तर कमी करा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open your UPI app settings and look at the daily limit. Lower it if it is more than you ever send."
+        },
+        "link": null
+      },
+      {
+        "id": "s6",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "A QR code is sent to you “to receive a refund”. Scanning it will:",
+            "hi": "“रिफंड पाने के लिए” आपको क्यूआर कोड भेजा गया। उसे स्कैन करने पर:",
+            "mr": "“रिफंड मिळवण्यासाठी” तुम्हाला क्यूआर कोड पाठवला. तो स्कॅन केल्यावर:",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A QR code is sent to you “to receive a refund”. Scanning it will:"
+          },
+          "options": [
+            {
+              "en": "Bring money in",
+              "hi": "पैसा आएगा",
+              "mr": "पैसे येतील",
+              "kn": "ಈಸು: Bring money in"
+            },
+            {
+              "en": "Send money out",
+              "hi": "पैसा जाएगा",
+              "mr": "पैसे जातील",
+              "kn": "ಈಸು: Send money out"
+            },
+            {
+              "en": "Do nothing",
+              "hi": "कुछ नहीं होगा",
+              "mr": "काही होणार नाही",
+              "kn": "ಈಸು: Do nothing"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Scanning a QR code and entering a PIN always pays. It never receives.",
+            "hi": "क्यूआर स्कैन करके पिन डालने से हमेशा पैसा जाता है, आता नहीं।",
+            "mr": "क्यूआर स्कॅन करून पिन टाकल्यावर पैसे नेहमी जातात, येत नाहीत.",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Scanning a QR code and entering a PIN always pays. It never receives."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "salary-slip",
+    "icon": "briefcase",
+    "title": {
+      "en": "Understand your first salary slip",
+      "hi": "अपनी पहली सैलरी स्लिप समझें",
+      "mr": "तुमची पहिली पगाराची स्लिप समजून घ्या",
+      "kn": "ಈಸು: Understand your first salary slip"
+    },
+    "summary": {
+      "en": "Know why the amount in your account is less than the amount promised.",
+      "hi": "जानें कि खाते में आई रकम बताई गई रकम से कम क्यों है।",
+      "mr": "खात्यात आलेली रक्कम सांगितलेल्या रकमेपेक्षा कमी का आहे ते जाणून घ्या.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Know why the amount in your account is less than the amount promised."
+    },
+    "milestone": {
+      "en": "You can now read a salary slip line by line.",
+      "hi": "अब आप सैलरी स्लिप की हर लाइन पढ़ सकते हैं।",
+      "mr": "आता तुम्ही पगाराच्या स्लिपची प्रत्येक ओळ वाचू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now read a salary slip line by line."
+    },
+    "caseIds": [
+      "fest-card"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "action",
+        "title": {
+          "en": "Gross and in-hand",
+          "hi": "कुल और हाथ में",
+          "mr": "एकूण आणि हातात",
+          "kn": "ಈಸು: Gross and in-hand"
+        },
+        "body": {
+          "en": "Gross pay is what the job promises. In-hand pay is what reaches your account after cuts such as PF and tax. Ask someone at home to show you both on a real slip.",
+          "hi": "कुल वेतन वह है जो नौकरी में बताया जाता है। हाथ का वेतन वह है जो पीएफ और कर जैसी कटौती के बाद खाते में आता है। घर में किसी से असली स्लिप पर दोनों दिखाने को कहें।",
+          "mr": "एकूण पगार म्हणजे नोकरीत सांगितलेला. हातातला पगार म्हणजे पीएफ आणि कर यांसारख्या कपातीनंतर खात्यात येणारा. घरी कोणाला तरी खऱ्या स्लिपवर दोन्ही दाखवायला सांगा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Gross pay is what the job promises. In-hand pay is what reaches your account after cuts such as PF and tax. Ask someone at home to show you both on a real slip."
+        },
+        "link": null
+      },
+      {
+        "id": "s2",
+        "kind": "lesson",
+        "lessonId": "tax-basics",
+        "title": {
+          "en": "Tax, for a student",
+          "hi": "कर, एक छात्र के लिए",
+          "mr": "कर, विद्यार्थ्यासाठी",
+          "kn": "ಈಸು: Tax, for a student"
+        }
+      },
+      {
+        "id": "s3",
+        "kind": "action",
+        "title": {
+          "en": "Find the PF line",
+          "hi": "पीएफ की लाइन ढूँढें",
+          "mr": "पीएफची ओळ शोधा",
+          "kn": "ಈಸು: Find the PF line"
+        },
+        "body": {
+          "en": "PF is your own money, saved for later, with an equal part added by the employer. On a slip, find the PF cut and note the amount.",
+          "hi": "पीएफ आपका अपना पैसा है जो आगे के लिए जमा होता है, और उतना ही हिस्सा कंपनी जोड़ती है। स्लिप पर पीएफ की कटौती ढूँढें और रकम नोट करें।",
+          "mr": "पीएफ हे तुमचेच पैसे असतात, पुढच्यासाठी साठवलेले, आणि तेवढाच हिस्सा कंपनी घालते. स्लिपवर पीएफची कपात शोधा आणि रक्कम लिहून ठेवा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: PF is your own money, saved for later, with an equal part added by the employer. On a slip, find the PF cut and note the amount."
+        },
+        "link": null
+      },
+      {
+        "id": "s4",
+        "kind": "lesson",
+        "lessonId": "why-pan",
+        "title": {
+          "en": "Why a PAN exists",
+          "hi": "पैन क्यों होता है",
+          "mr": "पॅन का असतो",
+          "kn": "ಈಸು: Why a PAN exists"
+        }
+      },
+      {
+        "id": "s5",
+        "kind": "action",
+        "title": {
+          "en": "Log your income",
+          "hi": "अपनी आय लिखें",
+          "mr": "तुमचे उत्पन्न नोंदवा",
+          "kn": "ಈಸು: Log your income"
+        },
+        "body": {
+          "en": "Log this month's income in Money Lab: salary, stipend or pocket money. Use the amount that reached your hand.",
+          "hi": "इस महीने की आय मनी लैब में लिखें: वेतन, स्टाइपेंड या जेब खर्च। वही रकम लिखें जो हाथ में आई।",
+          "mr": "या महिन्याचे उत्पन्न मनी लॅबमध्ये नोंदवा: पगार, स्टायपेंड किंवा खर्चाचे पैसे. हातात आलेली रक्कमच लिहा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Log this month's income in Money Lab: salary, stipend or pocket money. Use the amount that reached your hand."
+        },
+        "link": "tracker"
+      },
+      {
+        "id": "s6",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "Gross pay ₹15,000. PF ₹1,800, other cuts ₹200. In-hand pay is:",
+            "hi": "कुल वेतन ₹15,000। पीएफ ₹1,800, बाकी कटौती ₹200। हाथ में आएगा:",
+            "mr": "एकूण पगार ₹15,000. पीएफ ₹1,800, इतर कपात ₹200. हातात येतील:",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Gross pay ₹15,000. PF ₹1,800, other cuts ₹200. In-hand pay is:"
+          },
+          "options": [
+            {
+              "en": "₹15,000",
+              "hi": "₹15,000",
+              "mr": "₹15,000",
+              "kn": "ಈಸು: ₹15,000"
+            },
+            {
+              "en": "₹13,000",
+              "hi": "₹13,000",
+              "mr": "₹13,000",
+              "kn": "ಈಸು: ₹13,000"
+            },
+            {
+              "en": "₹17,000",
+              "hi": "₹17,000",
+              "mr": "₹17,000",
+              "kn": "ಈಸು: ₹17,000"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Take the cuts away from gross pay: 15,000 minus 2,000.",
+            "hi": "कुल वेतन में से कटौती घटाएँ: 15,000 में से 2,000।",
+            "mr": "एकूण पगारातून कपात वजा करा: 15,000 मधून 2,000.",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Take the cuts away from gross pay: 15,000 minus 2,000."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "bank-visit",
+    "icon": "landmark",
+    "title": {
+      "en": "Prepare for a bank visit",
+      "hi": "बैंक जाने की तैयारी करें",
+      "mr": "बँकेत जाण्याची तयारी करा",
+      "kn": "ಈಸು: Prepare for a bank visit"
+    },
+    "summary": {
+      "en": "Walk in knowing what to carry, what to ask and what to refuse.",
+      "hi": "यह जानकर जाएँ कि क्या ले जाना है, क्या पूछना है और क्या मना करना है।",
+      "mr": "काय न्यायचे, काय विचारायचे आणि काय नाकारायचे ते जाणून जा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Walk in knowing what to carry, what to ask and what to refuse."
+    },
+    "milestone": {
+      "en": "You can now walk into a bank and ask for what you need.",
+      "hi": "अब आप बैंक जाकर अपनी ज़रूरत की बात साफ़ कह सकते हैं।",
+      "mr": "आता तुम्ही बँकेत जाऊन तुम्हाला हवे ते स्पष्टपणे मागू शकता.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can now walk into a bank and ask for what you need."
+    },
+    "caseIds": [
+      "insurance-missold"
+    ],
+    "steps": [
+      {
+        "id": "s1",
+        "kind": "lesson",
+        "lessonId": "where-savings",
+        "title": {
+          "en": "Where to keep savings",
+          "hi": "बचत कहाँ रखें",
+          "mr": "बचत कुठे ठेवावी",
+          "kn": "ಈಸು: Where to keep savings"
+        }
+      },
+      {
+        "id": "s2",
+        "kind": "action",
+        "title": {
+          "en": "Pack the papers",
+          "hi": "कागज़ तैयार रखें",
+          "mr": "कागदपत्रे तयार ठेवा",
+          "kn": "ಈಸು: Pack the papers"
+        },
+        "body": {
+          "en": "Put together an ID proof, an address proof, two photos and their copies. Ask at home if you are unsure which ones you have.",
+          "hi": "पहचान का सबूत, पते का सबूत, दो फोटो और उनकी कॉपी एक साथ रखें। कौन से कागज़ हैं, पक्का न हो तो घर पर पूछें।",
+          "mr": "ओळखीचा पुरावा, पत्त्याचा पुरावा, दोन फोटो आणि त्यांच्या प्रती एकत्र ठेवा. कोणते कागद आहेत याची खात्री नसेल तर घरी विचारा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Put together an ID proof, an address proof, two photos and their copies. Ask at home if you are unsure which ones you have."
+        },
+        "link": null
+      },
+      {
+        "id": "s3",
+        "kind": "action",
+        "title": {
+          "en": "Write three questions",
+          "hi": "तीन सवाल लिखें",
+          "mr": "तीन प्रश्न लिहा",
+          "kn": "ಈಸು: Write three questions"
+        },
+        "body": {
+          "en": "Write down: Is there a minimum balance? What does the ATM card cost each year? Which charges can I avoid?",
+          "hi": "लिख लें: क्या न्यूनतम बैलेंस रखना है? एटीएम कार्ड का सालाना शुल्क कितना है? कौन से शुल्क मैं बचा सकता हूँ?",
+          "mr": "लिहून ठेवा: किमान शिल्लक ठेवावी लागते का? एटीएम कार्डाचे वार्षिक शुल्क किती? कोणती शुल्के मी टाळू शकतो?",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Write down: Is there a minimum balance? What does the ATM card cost each year? Which charges can I avoid?"
+        },
+        "link": null
+      },
+      {
+        "id": "s4",
+        "kind": "lesson",
+        "lessonId": "what-insurance",
+        "title": {
+          "en": "What insurance is for",
+          "hi": "बीमा किस लिए है",
+          "mr": "विमा कशासाठी आहे",
+          "kn": "ಈಸು: What insurance is for"
+        }
+      },
+      {
+        "id": "s5",
+        "kind": "action",
+        "title": {
+          "en": "Read the mis-sold policy case",
+          "hi": "गलत बेची गई पॉलिसी का मामला पढ़ें",
+          "mr": "चुकीची विकलेली पॉलिसी हा प्रसंग वाचा",
+          "kn": "ಈಸು: Read the mis-sold policy case"
+        },
+        "body": {
+          "en": "A bank officer offers a policy that “works like a deposit”. Decide what you would say.",
+          "hi": "बैंक अधिकारी ऐसी पॉलिसी देता है जो “एफडी जैसी” है। तय करें कि आप क्या कहते।",
+          "mr": "बँक अधिकारी “ठेवीसारखी” पॉलिसी देऊ करतो. तुम्ही काय म्हणाला असता ते ठरवा.",
+          "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A bank officer offers a policy that “works like a deposit”. Decide what you would say."
+        },
+        "link": "case:insurance-missold"
+      },
+      {
+        "id": "s6",
+        "kind": "check",
+        "title": {
+          "en": "Quick check",
+          "hi": "छोटी जाँच",
+          "mr": "छोटी तपासणी",
+          "kn": "ಈಸು: Quick check"
+        },
+        "check": {
+          "question": {
+            "en": "At the counter you are asked to sign a form you have not read. You:",
+            "hi": "काउंटर पर ऐसे फॉर्म पर साइन माँगे जाते हैं जो आपने पढ़ा नहीं। आप:",
+            "mr": "काउंटरवर न वाचलेल्या अर्जावर सही मागितली जाते. तुम्ही:",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: At the counter you are asked to sign a form you have not read. You:"
+          },
+          "options": [
+            {
+              "en": "Sign, the queue is long",
+              "hi": "साइन कर दें, लाइन लंबी है",
+              "mr": "सही कराल, रांग मोठी आहे",
+              "kn": "ಈಸು: Sign, the queue is long"
+            },
+            {
+              "en": "Step aside and read it first",
+              "hi": "एक तरफ हटकर पहले पढ़ें",
+              "mr": "बाजूला होऊन आधी वाचाल",
+              "kn": "ಈಸು: Step aside and read it first"
+            },
+            {
+              "en": "Ask a stranger to fill it",
+              "hi": "किसी अनजान से भरवा लें",
+              "mr": "अनोळखी व्यक्तीकडून भरून घ्याल",
+              "kn": "ಈಸು: Ask a stranger to fill it"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "It is your right to read before you sign. The queue can wait.",
+            "hi": "साइन से पहले पढ़ना आपका हक है। लाइन रुक सकती है।",
+            "mr": "सही करण्यापूर्वी वाचणे हा तुमचा हक्क आहे. रांग थांबू शकते.",
+            "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: It is your right to read before you sign. The queue can wait."
+          }
+        }
+      }
+    ]
+  }
+]

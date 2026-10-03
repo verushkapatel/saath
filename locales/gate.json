@@ -1,0 +1,26 @@
+{
+  "en": {
+    "hello": "Hello",
+    "name": "English",
+    "title": "Choose your language",
+    "cta": "Continue"
+  },
+  "hi": {
+    "hello": "नमस्ते",
+    "name": "हिन्दी",
+    "title": "अपनी भाषा चुनें",
+    "cta": "आगे बढ़ें"
+  },
+  "mr": {
+    "hello": "नमस्कार",
+    "name": "मराठी",
+    "title": "तुमची भाषा निवडा",
+    "cta": "पुढे चला"
+  },
+  "kn": {
+    "hello": "ನಮಸ್ಕಾರ",
+    "name": "ಕನ್ನಡ",
+    "title": "ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆರಿಸಿ",
+    "cta": "ಮುಂದುವರಿಸಿ"
+  }
+}

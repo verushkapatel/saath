@@ -1,0 +1,2441 @@
+[
+  {
+    "id": "budget",
+    "category": "budgeting",
+    "icon": "list",
+    "title": {
+      "en": "A budget is a plan",
+      "hi": "बजट एक योजना है",
+      "mr": "अंदाजपत्रक म्हणजे योजना",
+      "kn": "ಈಸು: A budget is a plan"
+    },
+    "summary": {
+      "en": "Write what comes in, then what must go out.",
+      "hi": "पहले लिखें क्या आता है, फिर क्या जाना ज़रूरी है।",
+      "mr": "आधी काय येते ते लिहा, मग काय जाणे आवश्यक आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Write what comes in, then what must go out."
+    },
+    "body": {
+      "en": "A [[budget]] is not a punishment. It is a short list: money in, money that has to leave, and what can wait.\n\nIf the list is honest, you see a gap before the month ends, not after. Start with one week. That is enough.",
+      "hi": "[[budget]] सज़ा नहीं है। यह छोटी सूची है: पैसा आया, पैसा जो जाना ही है, और जो रुक सकता है।\n\nसूची सच्ची हो तो कमी महीने खत्म होने से पहले दिखती है। एक हफ्ते से शुरू करें। बस इतना काफी है।",
+      "mr": "[[budget]] शिक्षा नाही. ही छोटी यादी आहे: पैसे आले, पैसे जाणे आवश्यक आहे, आणि काय थांबू शकते.\n\nयादी खरी असेल तर तूट महिना संपण्यापूर्वी दिसते. एका आठवड्यापासून सुरू करा. ते पुरेसे आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[budget]] is not a punishment. It is a short list: money in, money that has to leave, and what can wait.\n\nIf the list is honest, you see a gap before the month ends, not after. Start with one week. That is enough."
+    },
+    "points": [
+      {
+        "en": "Write down every rupee that comes in this month.",
+        "hi": "इस महीने जो भी पैसा आता है, सब लिख लें।",
+        "mr": "या महिन्यात येणारा प्रत्येक रुपया लिहून ठेवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Write down every rupee that comes in this month."
+      },
+      {
+        "en": "List what must be paid: rent, travel, fees, food.",
+        "hi": "जो देना ही है वह लिखें: किराया, आना-जाना, फीस, खाना।",
+        "mr": "जे द्यावेच लागते ते लिहा: भाडे, प्रवास, फी, जेवण.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: List what must be paid: rent, travel, fees, food."
+      },
+      {
+        "en": "What is left is yours to plan, not to guess.",
+        "hi": "जो बचता है उसकी योजना बनाएँ, अंदाज़ा न लगाएँ।",
+        "mr": "उरलेल्या पैशांचे नियोजन करा, अंदाज नको.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: What is left is yours to plan, not to guess."
+      },
+      {
+        "en": "Look at the list once a week. Two minutes is enough.",
+        "hi": "हफ्ते में एक बार सूची देखें। दो मिनट काफी हैं।",
+        "mr": "आठवड्यातून एकदा यादी पाहा. दोन मिनिटे पुरतात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Look at the list once a week. Two minutes is enough."
+      }
+    ],
+    "example": {
+      "en": "Asha gets ₹3,000 a month. Bus pass ₹600, mess ₹1,500, phone ₹200. She now knows ₹700 is free, so a ₹900 jacket has to wait one month.",
+      "hi": "आशा को महीने के ₹3,000 मिलते हैं। बस पास ₹600, मेस ₹1,500, फोन ₹200। अब उसे पता है कि ₹700 खुले हैं, तो ₹900 की जैकेट एक महीना रुकेगी।",
+      "mr": "आशाला महिन्याला ₹3,000 मिळतात. बस पास ₹600, मेस ₹1,500, फोन ₹200. आता तिला कळते की ₹700 मोकळे आहेत, म्हणून ₹900 चे जॅकेट एक महिना थांबेल.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Asha gets ₹3,000 a month. Bus pass ₹600, mess ₹1,500, phone ₹200. She now knows ₹700 is free, so a ₹900 jacket has to wait one month."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Log what you spent today in Money Lab.",
+        "hi": "आज जो खर्च हुआ, मनी लैब में लिखें।",
+        "mr": "आज झालेला खर्च मनी लॅबमध्ये नोंदवा.",
+        "kn": "ಈಸು: Log what you spent today in Money Lab."
+      },
+      "link": "tracker"
+    },
+    "check": {
+      "question": {
+        "en": "What goes on a budget first?",
+        "hi": "बजट में सबसे पहले क्या आता है?",
+        "mr": "बजेटमध्ये सर्वात आधी काय येते?",
+        "kn": "ಈಸು: What goes on a budget first?"
+      },
+      "options": [
+        {
+          "en": "Things I want to buy",
+          "hi": "जो चीज़ें खरीदनी हैं",
+          "mr": "ज्या गोष्टी घ्यायच्या आहेत",
+          "kn": "ಈಸು: Things I want to buy"
+        },
+        {
+          "en": "Money coming in",
+          "hi": "आने वाला पैसा",
+          "mr": "येणारे पैसे",
+          "kn": "ಈಸು: Money coming in"
+        },
+        {
+          "en": "My friend's spending",
+          "hi": "दोस्त का खर्च",
+          "mr": "मित्राचा खर्च",
+          "kn": "ಈಸು: My friend's spending"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "You can only plan money you know you have.",
+        "hi": "योजना उसी पैसे की बनती है जो सच में आपके पास है।",
+        "mr": "जे पैसे खरेच हातात आहेत त्याचेच नियोजन करता येते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can only plan money you know you have."
+      }
+    }
+  },
+  {
+    "id": "needs-wants",
+    "category": "budgeting",
+    "icon": "scale",
+    "title": {
+      "en": "Needs and wants",
+      "hi": "ज़रूरत और इच्छा",
+      "mr": "गरज आणि इच्छा",
+      "kn": "ಈಸು: Needs and wants"
+    },
+    "summary": {
+      "en": "Needs keep the week going. Wants can wait.",
+      "hi": "ज़रूरतें हफ्ता चलाती हैं। इच्छाएँ रुक सकती हैं।",
+      "mr": "गरजा आठवडा चालवतात. इच्छा थांबू शकतात.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Needs keep the week going. Wants can wait."
+    },
+    "body": {
+      "en": "[[needs]] are the costs that break the day if you skip them: food, the bus, a required fee. [[wants]] are real, but they can move to next week.\n\nWhen money is tight, pay needs first. A want is not bad. It is just second.",
+      "hi": "[[needs]] वे खर्च हैं जिन्हें छोड़ने से दिन रुक जाता है: खाना, बस, ज़रूरी फीस। [[wants]] सच हैं, पर अगले हफ्ते जा सकते हैं।\n\nपैसे कम हों तो पहले ज़रूरत। इच्छा बुरी नहीं। वह दूसरी है।",
+      "mr": "[[needs]] असे खर्च आहेत की ते चुकवले तर दिवस थांबतो: जेवण, बस, आवश्यक फी. [[wants]] खऱ्या आहेत, पण पुढच्या आठवड्यात जाऊ शकतात.\n\nपैसे कमी असतील तर आधी गरज. इच्छा वाईट नाही. ती दुसऱ्या क्रमांकावर आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: [[needs]] are the costs that break the day if you skip them: food, the bus, a required fee. [[wants]] are real, but they can move to next week.\n\nWhen money is tight, pay needs first. A want is not bad. It is just second."
+    },
+    "points": [
+      {
+        "en": "A need breaks your day if you skip it.",
+        "hi": "ज़रूरत वह है जिसे छोड़ें तो दिन बिगड़ जाए।",
+        "mr": "गरज म्हणजे जी टाळली तर दिवस बिघडतो.",
+        "kn": "ಈಸು: A need breaks your day if you skip it."
+      },
+      {
+        "en": "A want can move to next week without harm.",
+        "hi": "चाहत अगले हफ्ते तक बिना नुकसान रुक सकती है।",
+        "mr": "हौस पुढच्या आठवड्यापर्यंत सहज थांबू शकते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A want can move to next week without harm."
+      },
+      {
+        "en": "Pay needs first, on the day money arrives.",
+        "hi": "पैसा आते ही पहले ज़रूरतें चुकाएँ।",
+        "mr": "पैसे येताच आधी गरजा भागवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Pay needs first, on the day money arrives."
+      },
+      {
+        "en": "Wants are fine. They just come second.",
+        "hi": "चाहत गलत नहीं है। बस उसका नंबर दूसरा है।",
+        "mr": "हौस चुकीची नाही. फक्त तिचा क्रम दुसरा आहे.",
+        "kn": "ಈಸು: Wants are fine. They just come second."
+      }
+    ],
+    "example": {
+      "en": "Ravi has ₹500 left. His exam form costs ₹350 and a movie costs ₹250. The form is a need. The movie moves to next month.",
+      "hi": "रवि के पास ₹500 बचे हैं। परीक्षा फॉर्म ₹350 का है और फिल्म ₹250 की। फॉर्म ज़रूरत है। फिल्म अगले महीने।",
+      "mr": "रवीकडे ₹500 उरले आहेत. परीक्षेचा फॉर्म ₹350 आणि सिनेमा ₹250. फॉर्म ही गरज आहे. सिनेमा पुढच्या महिन्यात.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ravi has ₹500 left. His exam form costs ₹350 and a movie costs ₹250. The form is a need. The movie moves to next month."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Log one need and one want you paid for this week.",
+        "hi": "इस हफ्ते की एक ज़रूरत और एक चाहत का खर्च लिखें।",
+        "mr": "या आठवड्यातील एक गरज आणि एक हौस यांचा खर्च नोंदवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Log one need and one want you paid for this week."
+      },
+      "link": "tracker"
+    },
+    "check": {
+      "question": {
+        "en": "Which of these is a need?",
+        "hi": "इनमें से ज़रूरत कौन सी है?",
+        "mr": "यापैकी गरज कोणती?",
+        "kn": "ಈಸು: Which of these is a need?"
+      },
+      "options": [
+        {
+          "en": "Bus fare to college",
+          "hi": "कॉलेज का बस किराया",
+          "mr": "कॉलेजचे बस भाडे",
+          "kn": "ಈಸು: Bus fare to college"
+        },
+        {
+          "en": "New phone cover",
+          "hi": "नया फोन कवर",
+          "mr": "नवे फोन कव्हर",
+          "kn": "ಈಸು: New phone cover"
+        },
+        {
+          "en": "A second pair of earphones",
+          "hi": "दूसरे ईयरफोन",
+          "mr": "दुसरे इयरफोन",
+          "kn": "ಈಸು: A second pair of earphones"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "Without the fare you cannot reach class.",
+        "hi": "किराए के बिना आप कक्षा तक नहीं पहुँच सकते।",
+        "mr": "भाड्याशिवाय वर्गात पोहोचता येत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Without the fare you cannot reach class."
+      }
+    }
+  },
+  {
+    "id": "pay-yourself",
+    "category": "budgeting",
+    "icon": "piggy",
+    "title": {
+      "en": "Pay yourself first",
+      "hi": "पहले खुद को बचाएँ",
+      "mr": "आधी स्वतःसाठी ठेवा",
+      "kn": "ಈಸು: Pay yourself first"
+    },
+    "summary": {
+      "en": "Move a small amount to savings before spending starts.",
+      "hi": "खर्च शुरू होने से पहले थोड़ी रकम बचत में ले जाएँ।",
+      "mr": "खर्च सुरू होण्यापूर्वी थोडी रक्कम बचतीत न्या.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Move a small amount to savings before spending starts."
+    },
+    "body": {
+      "en": "If you wait to save what is left, nothing is left. Paying yourself first means a small transfer on the day money arrives.\n\nEven fifty rupees counts. The habit matters more than the size at the start.",
+      "hi": "बचे हुए पैसे बचाने का इंतज़ार करें तो कुछ नहीं बचता। पहले खुद को देना मतलब पैसे आते ही छोटा ट्रांसफर।\n\nपचास रुपये भी गिनती में हैं। शुरू में आकार से आदत ज़्यादा मायने रखती है।",
+      "mr": "शिल्लक वाचवण्याची वाट पाहिली तर काही शिल्लक राहत नाही. आधी स्वतःला देणे म्हणजे पैसे येताच लहान ट्रान्सफर.\n\nपन्नास रुपयेही मोजले जातात. सुरुवातीला आकारापेक्षा सवय महत्त्वाची आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: If you wait to save what is left, nothing is left. Paying yourself first means a small transfer on the day money arrives.\n\nEven fifty rupees counts. The habit matters more than the size at the start."
+    },
+    "points": [
+      {
+        "en": "Save on the day money arrives, not at month end.",
+        "hi": "पैसा आते ही बचाएँ, महीने के आखिर में नहीं।",
+        "mr": "पैसे येताच बाजूला ठेवा, महिन्याच्या शेवटी नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Save on the day money arrives, not at month end."
+      },
+      {
+        "en": "Start small. Even ₹50 builds the habit.",
+        "hi": "छोटे से शुरू करें। ₹50 से भी आदत बनती है।",
+        "mr": "लहान सुरुवात करा. ₹50 नेही सवय लागते.",
+        "kn": "ಈಸು: Start small. Even ₹50 builds the habit."
+      },
+      {
+        "en": "Keep savings apart from spending money.",
+        "hi": "बचत को खर्च के पैसे से अलग रखें।",
+        "mr": "बचत खर्चाच्या पैशांपासून वेगळी ठेवा.",
+        "kn": "ಈಸು: Keep savings apart from spending money."
+      }
+    ],
+    "example": {
+      "en": "Meena gets ₹2,000 on the 1st. She moves ₹100 to a jar that same morning. In ten months she has ₹1,000 she never missed.",
+      "hi": "मीना को 1 तारीख को ₹2,000 मिलते हैं। उसी सुबह वह ₹100 डिब्बे में डाल देती है। दस महीने में ₹1,000 जमा हो जाते हैं और कमी महसूस भी नहीं होती।",
+      "mr": "मीनाला 1 तारखेला ₹2,000 मिळतात. त्याच सकाळी ती ₹100 डब्यात टाकते. दहा महिन्यांत ₹1,000 जमतात आणि कमतरता जाणवतही नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Meena gets ₹2,000 on the 1st. She moves ₹100 to a jar that same morning. In ten months she has ₹1,000 she never missed."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Log one saving in Money Lab, however small.",
+        "hi": "मनी लैब में एक बचत लिखें, चाहे छोटी हो।",
+        "mr": "मनी लॅबमध्ये एक बचत नोंदवा, कितीही लहान असो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Log one saving in Money Lab, however small."
+      },
+      "link": "tracker"
+    },
+    "check": {
+      "question": {
+        "en": "When is the best time to save?",
+        "hi": "बचत का सबसे अच्छा समय कब है?",
+        "mr": "बचतीची सर्वात चांगली वेळ कोणती?",
+        "kn": "ಈಸು: When is the best time to save?"
+      },
+      "options": [
+        {
+          "en": "After all the spending",
+          "hi": "सारा खर्च होने के बाद",
+          "mr": "सगळा खर्च झाल्यावर",
+          "kn": "ಈಸು: After all the spending"
+        },
+        {
+          "en": "The day money arrives",
+          "hi": "जिस दिन पैसा आए",
+          "mr": "पैसे येतात त्या दिवशी",
+          "kn": "ಈಸು: The day money arrives"
+        },
+        {
+          "en": "Only when a lot is left",
+          "hi": "जब बहुत बचे तभी",
+          "mr": "खूप उरले तरच",
+          "kn": "ಈಸು: Only when a lot is left"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "If you wait for what is left, usually nothing is left.",
+        "hi": "बचे हुए का इंतज़ार करें तो अक्सर कुछ नहीं बचता।",
+        "mr": "उरलेल्याची वाट पाहिली तर सहसा काही उरत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: If you wait for what is left, usually nothing is left."
+      }
+    }
+  },
+  {
+    "id": "what-interest",
+    "category": "loans",
+    "icon": "percent",
+    "title": {
+      "en": "What interest means",
+      "hi": "ब्याज का मतलब",
+      "mr": "व्याज म्हणजे काय",
+      "kn": "ಈಸು: What interest means"
+    },
+    "summary": {
+      "en": "Interest is the price of using money across time.",
+      "hi": "ब्याज समय के साथ पैसे इस्तेमाल करने की कीमत है।",
+      "mr": "व्याज म्हणजे काळात पैसे वापरण्याची किंमत.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Interest is the price of using money across time."
+    },
+    "body": {
+      "en": "When you borrow, [[interest]] is what you pay on top of the [[principal]]. When you save in a bank, interest is what the bank pays you.\n\nA low printed rate can still be costly if fees sit beside it. Always ask for the total, not only the percent.",
+      "hi": "उधार पर [[interest]] वह है जो [[principal]] के ऊपर देना होता है। बैंक में बचत पर ब्याज बैंक आपको देता है।\n\nछपा दर कम हो तो भी शुल्क साथ हों तो महँगा पड़ सकता है। सिर्फ प्रतिशत नहीं, कुल रकम पूछें।",
+      "mr": "उसने घेतल्यावर [[interest]] म्हणजे [[principal]] वर द्यावे लागणारे पैसे. बँकेत बचत केली तर व्याज बँक तुम्हाला देते.\n\nछापलेला दर कमी असला तरी शुल्क शेजारी असतील तर महाग पडू शकते. फक्त टक्केवारी नव्हे, एकूण रक्कम विचारा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: When you borrow, [[interest]] is what you pay on top of the [[principal]]. When you save in a bank, interest is what the bank pays you.\n\nA low printed rate can still be costly if fees sit beside it. Always ask for the total, not only the percent."
+    },
+    "points": [
+      {
+        "en": "Interest is the price of using someone else's money.",
+        "hi": "ब्याज किसी और का पैसा इस्तेमाल करने की कीमत है।",
+        "mr": "व्याज म्हणजे दुसऱ्याचे पैसे वापरण्याची किंमत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Interest is the price of using someone else's money."
+      },
+      {
+        "en": "When you borrow, you pay it. When you save, you earn it.",
+        "hi": "उधार लें तो आप देते हैं। बचाएँ तो आपको मिलता है।",
+        "mr": "कर्ज घेतले तर तुम्ही देता. बचत केली तर तुम्हाला मिळते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: When you borrow, you pay it. When you save, you earn it."
+      },
+      {
+        "en": "A percent means little alone. Ask for the total in rupees.",
+        "hi": "सिर्फ प्रतिशत से कुछ पता नहीं चलता। कुल रकम रुपयों में पूछें।",
+        "mr": "नुसत्या टक्क्यांनी काही कळत नाही. एकूण रक्कम रुपयांत विचारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A percent means little alone. Ask for the total in rupees."
+      }
+    ],
+    "example": {
+      "en": "Borrow ₹10,000 at 12 percent for one year and you pay back about ₹11,200. The extra ₹1,200 is the interest.",
+      "hi": "₹10,000 एक साल के लिए 12 प्रतिशत पर लें तो करीब ₹11,200 लौटाने होंगे। ऊपर के ₹1,200 ब्याज हैं।",
+      "mr": "₹10,000 एका वर्षासाठी 12 टक्क्यांनी घेतले तर सुमारे ₹11,200 परत द्यावे लागतात. वरचे ₹1,200 म्हणजे व्याज.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Borrow ₹10,000 at 12 percent for one year and you pay back about ₹11,200. The extra ₹1,200 is the interest."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open the gold loan sample and find the interest line.",
+        "hi": "गोल्ड लोन का नमूना खोलें और ब्याज वाली लाइन ढूँढें।",
+        "mr": "गोल्ड लोनचा नमुना उघडा आणि व्याजाची ओळ शोधा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the gold loan sample and find the interest line."
+      },
+      "link": "scan:gold-loan"
+    },
+    "check": {
+      "question": {
+        "en": "You borrow ₹5,000 and pay back ₹5,600. How much is interest?",
+        "hi": "आपने ₹5,000 लिए और ₹5,600 लौटाए। ब्याज कितना हुआ?",
+        "mr": "तुम्ही ₹5,000 घेतले आणि ₹5,600 परत दिले. व्याज किती?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You borrow ₹5,000 and pay back ₹5,600. How much is interest?"
+      },
+      "options": [
+        {
+          "en": "₹600",
+          "hi": "₹600",
+          "mr": "₹600",
+          "kn": "ಈಸು: ₹600"
+        },
+        {
+          "en": "₹5,600",
+          "hi": "₹5,600",
+          "mr": "₹5,600",
+          "kn": "ಈಸು: ₹5,600"
+        },
+        {
+          "en": "₹5,000",
+          "hi": "₹5,000",
+          "mr": "₹5,000",
+          "kn": "ಈಸು: ₹5,000"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "Interest is what you pay above the amount you borrowed.",
+        "hi": "ब्याज वह है जो उधार की रकम से ऊपर देना पड़ता है।",
+        "mr": "घेतलेल्या रकमेपेक्षा जास्त द्यावे लागते ते व्याज.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Interest is what you pay above the amount you borrowed."
+      }
+    }
+  },
+  {
+    "id": "simple-compound",
+    "category": "loans",
+    "icon": "trending",
+    "title": {
+      "en": "Simple and compound",
+      "hi": "साधारण और चक्रवृद्धि",
+      "mr": "सरळ आणि चक्रवाढ",
+      "kn": "ಈಸು: Simple and compound"
+    },
+    "summary": {
+      "en": "Simple interest stays on the original sum. Compound interest grows on the growth.",
+      "hi": "साधारण ब्याज मूल रकम पर रहता है। चक्रवृद्धि बढ़त पर भी बढ़ता है।",
+      "mr": "सरळ व्याज मूळ रकमेवर राहते. चक्रवाढ वाढीवरही वाढते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Simple interest stays on the original sum. Compound interest grows on the growth."
+    },
+    "body": {
+      "en": "[[simple-interest]] is easy to picture: the same extra each year on the starting amount. [[compound-interest]] adds the extra back in, so the next extra is larger.\n\nFor savings, compound helps you. For a forgotten card bill, it works against you.",
+      "hi": "[[simple-interest]] समझना आसान है: शुरू की रकम पर हर साल वही अतिरिक्त। [[compound-interest]] उस अतिरिक्त को वापस जोड़ता है, इसलिए अगला अतिरिक्त बड़ा होता है।\n\nबचत में चक्रवृद्धि आपकी मदद करता है। भूले कार्ड बिल में वह आपके खिलाफ काम करता है।",
+      "mr": "[[simple-interest]] समजायला सोपे आहे: सुरुवातीच्या रकमेवर दर वर्षी तेच अधिक. [[compound-interest]] ते अधिक परत मिसळते, म्हणजे पुढचे अधिक मोठे होते.\n\nबचतीत चक्रवाढ तुमची मदत करते. विसरलेल्या कार्ड बिलात ती तुमच्या विरोधात काम करते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: [[simple-interest]] is easy to picture: the same extra each year on the starting amount. [[compound-interest]] adds the extra back in, so the next extra is larger.\n\nFor savings, compound helps you. For a forgotten card bill, it works against you."
+    },
+    "points": [
+      {
+        "en": "Simple interest is charged only on the starting amount.",
+        "hi": "साधारण ब्याज सिर्फ शुरुआती रकम पर लगता है।",
+        "mr": "सरळ व्याज फक्त सुरुवातीच्या रकमेवर लागते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Simple interest is charged only on the starting amount."
+      },
+      {
+        "en": "Compound interest is charged on the amount plus old interest.",
+        "hi": "चक्रवृद्धि ब्याज रकम और पुराने ब्याज, दोनों पर लगता है।",
+        "mr": "चक्रवाढ व्याज रक्कम आणि जुने व्याज, दोन्हींवर लागते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Compound interest is charged on the amount plus old interest."
+      },
+      {
+        "en": "Compound helps your savings grow faster.",
+        "hi": "चक्रवृद्धि से बचत तेज़ बढ़ती है।",
+        "mr": "चक्रवाढीमुळे बचत वेगाने वाढते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Compound helps your savings grow faster."
+      },
+      {
+        "en": "Compound hurts when a bill is left unpaid.",
+        "hi": "बिल बाकी रह जाए तो चक्रवृद्धि नुकसान करता है।",
+        "mr": "बिल थकले तर चक्रवाढ नुकसान करते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Compound hurts when a bill is left unpaid."
+      }
+    ],
+    "example": {
+      "en": "₹1,000 at 10 percent. Simple: ₹100 every year. Compound: ₹100 the first year, ₹110 the second, ₹121 the third.",
+      "hi": "₹1,000 पर 10 प्रतिशत। साधारण: हर साल ₹100। चक्रवृद्धि: पहले साल ₹100, दूसरे साल ₹110, तीसरे साल ₹121।",
+      "mr": "₹1,000 वर 10 टक्के. सरळ: दरवर्षी ₹100. चक्रवाढ: पहिल्या वर्षी ₹100, दुसऱ्या वर्षी ₹110, तिसऱ्या वर्षी ₹121.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: ₹1,000 at 10 percent. Simple: ₹100 every year. Compound: ₹100 the first year, ₹110 the second, ₹121 the third."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Ask at home whether any bill or card has unpaid interest growing on it.",
+        "hi": "घर पर पूछें कि किसी बिल या कार्ड पर बकाया ब्याज तो नहीं बढ़ रहा।",
+        "mr": "घरी विचारा की एखाद्या बिलावर किंवा कार्डावर थकीत व्याज वाढत तर नाही ना.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask at home whether any bill or card has unpaid interest growing on it."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "Which kind grows on its own growth?",
+        "hi": "कौन सा ब्याज अपने ही ब्याज पर बढ़ता है?",
+        "mr": "कोणते व्याज स्वतःच्याच व्याजावर वाढते?",
+        "kn": "ಈಸು: Which kind grows on its own growth?"
+      },
+      "options": [
+        {
+          "en": "Simple",
+          "hi": "साधारण",
+          "mr": "सरळ",
+          "kn": "ಈಸು: Simple"
+        },
+        {
+          "en": "Compound",
+          "hi": "चक्रवृद्धि",
+          "mr": "चक्रवाढ",
+          "kn": "ಈಸು: Compound"
+        },
+        {
+          "en": "Neither",
+          "hi": "कोई नहीं",
+          "mr": "कोणतेही नाही",
+          "kn": "ಈಸು: Neither"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Compound adds interest back in, so the next interest is larger.",
+        "hi": "चक्रवृद्धि में ब्याज रकम में जुड़ जाता है, इसलिए अगला ब्याज बड़ा होता है।",
+        "mr": "चक्रवाढीत व्याज रकमेत मिसळते, म्हणून पुढचे व्याज मोठे होते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Compound adds interest back in, so the next interest is larger."
+      }
+    }
+  },
+  {
+    "id": "what-emi",
+    "category": "loans",
+    "icon": "calendar",
+    "title": {
+      "en": "What an EMI is",
+      "hi": "ईएमआई क्या है",
+      "mr": "ईएमआय म्हणजे काय",
+      "kn": "ಈಸು: What an EMI is"
+    },
+    "summary": {
+      "en": "An EMI slices a loan into monthly payments.",
+      "hi": "ईएमआई कर्ज को मासिक भुगतानों में काटती है।",
+      "mr": "ईएमआय कर्ज मासिक पेमेंटमध्ये विभागते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An EMI slices a loan into monthly payments."
+    },
+    "body": {
+      "en": "An [[emi]] looks small beside the full price. That is the trick. Add every EMI and you see the real [[repayment]].\n\nBefore you say yes, write the EMI, the number of months, and the total. If the total surprises you, stop.",
+      "hi": "पूरी कीमत के सामने [[emi]] छोटी दिखती है। यही चाल है। हर ईएमआई जोड़ें तो असली [[repayment]] दिखती है।\n\nहाँ कहने से पहले ईएमआई, महीनों की संख्या और कुल लिखें। कुल चौंकाए तो रुकें।",
+      "mr": "पूर्ण किमतीपुढे [[emi]] लहान दिसते. हीच युक्ती आहे. प्रत्येक ईएमआय मिळवा म्हणजे खरी [[repayment]] दिसते.\n\nहो म्हणण्यापूर्वी ईएमआय, महिन्यांची संख्या आणि एकूण लिहा. एकूण धक्का देईल तर थांबा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An [[emi]] looks small beside the full price. That is the trick. Add every EMI and you see the real [[repayment]].\n\nBefore you say yes, write the EMI, the number of months, and the total. If the total surprises you, stop."
+    },
+    "points": [
+      {
+        "en": "An EMI is the same payment every month.",
+        "hi": "ईएमआई हर महीने की एक जैसी किस्त है।",
+        "mr": "ईएमआय म्हणजे दर महिन्याचा सारखाच हप्ता.",
+        "kn": "ಈಸು: An EMI is the same payment every month."
+      },
+      {
+        "en": "Each EMI has some loan and some interest inside it.",
+        "hi": "हर किस्त में थोड़ा कर्ज और थोड़ा ब्याज होता है।",
+        "mr": "प्रत्येक हप्त्यात थोडे कर्ज आणि थोडे व्याज असते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Each EMI has some loan and some interest inside it."
+      },
+      {
+        "en": "EMI times months gives the real total.",
+        "hi": "किस्त को महीनों से गुणा करें तो असली कुल रकम मिलती है।",
+        "mr": "हप्ता गुणिले महिने म्हणजे खरी एकूण रक्कम.",
+        "kn": "ಈಸು: EMI times months gives the real total."
+      },
+      {
+        "en": "A small EMI over many months can cost the most.",
+        "hi": "छोटी किस्त और लंबा समय सबसे महँगा पड़ सकता है।",
+        "mr": "लहान हप्ता आणि जास्त महिने सर्वात महाग ठरू शकतात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A small EMI over many months can cost the most."
+      }
+    ],
+    "example": {
+      "en": "A phone costs ₹12,000. The shop offers ₹1,250 for 12 months. 1,250 times 12 is ₹15,000. The phone costs ₹3,000 more this way.",
+      "hi": "फोन ₹12,000 का है। दुकान 12 महीने के लिए ₹1,250 की किस्त देती है। 1,250 गुणा 12 यानी ₹15,000। इस तरह फोन ₹3,000 महँगा पड़ता है।",
+      "mr": "फोन ₹12,000 चा आहे. दुकान 12 महिन्यांसाठी ₹1,250 चा हप्ता देते. 1,250 गुणिले 12 म्हणजे ₹15,000. अशा प्रकारे फोन ₹3,000 ने महाग पडतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A phone costs ₹12,000. The shop offers ₹1,250 for 12 months. 1,250 times 12 is ₹15,000. The phone costs ₹3,000 more this way."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open the personal loan sample and see the total for 24 EMIs.",
+        "hi": "पर्सनल लोन का नमूना खोलें और 24 किस्तों का कुल देखें।",
+        "mr": "पर्सनल लोनचा नमुना उघडा आणि 24 हप्त्यांची एकूण रक्कम पाहा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the personal loan sample and see the total for 24 EMIs."
+      },
+      "link": "scan:personal-loan"
+    },
+    "check": {
+      "question": {
+        "en": "EMI is ₹2,000 for 10 months. What is the total?",
+        "hi": "किस्त ₹2,000 है, 10 महीने के लिए। कुल कितना?",
+        "mr": "हप्ता ₹2,000, 10 महिन्यांसाठी. एकूण किती?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: EMI is ₹2,000 for 10 months. What is the total?"
+      },
+      "options": [
+        {
+          "en": "₹2,000",
+          "hi": "₹2,000",
+          "mr": "₹2,000",
+          "kn": "ಈಸು: ₹2,000"
+        },
+        {
+          "en": "₹12,000",
+          "hi": "₹12,000",
+          "mr": "₹12,000",
+          "kn": "ಈಸು: ₹12,000"
+        },
+        {
+          "en": "₹20,000",
+          "hi": "₹20,000",
+          "mr": "₹20,000",
+          "kn": "ಈಸು: ₹20,000"
+        }
+      ],
+      "answer": 2,
+      "why": {
+        "en": "Multiply the EMI by the number of months.",
+        "hi": "किस्त को महीनों की गिनती से गुणा करें।",
+        "mr": "हप्त्याला महिन्यांच्या संख्येने गुणा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Multiply the EMI by the number of months."
+      }
+    }
+  },
+  {
+    "id": "flat-reducing",
+    "category": "loans",
+    "icon": "split",
+    "title": {
+      "en": "Flat and reducing",
+      "hi": "फ्लैट और घटता बैलेंस",
+      "mr": "फ्लॅट आणि कमी होणारी शिल्लक",
+      "kn": "ಈಸು: Flat and reducing"
+    },
+    "summary": {
+      "en": "The same percent can hide two very different totals.",
+      "hi": "एक ही प्रतिशत दो बहुत अलग कुल छिपा सकता है।",
+      "mr": "तोच टक्का दोन खूप वेगळे एकूण लपवू शकतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The same percent can hide two very different totals."
+    },
+    "body": {
+      "en": "A [[flat-rate]] charges interest on the full [[principal]] for the whole [[tenure]]. A [[reducing-balance]] charges interest only on what you still owe, so the total is usually lower.\n\nIf a shop says “only 12 percent”, ask which kind. Then ask for both totals in rupees.",
+      "hi": "[[flat-rate]] पूरे [[tenure]] तक पूरे [[principal]] पर ब्याज लेता है। [[reducing-balance]] सिर्फ बाकी रकम पर ब्याज लेता है, इसलिए कुल अक्सर कम होता है।\n\nदुकान कहे “सिर्फ 12 प्रतिशत”, तो पूछें कौन सा। फिर दोनों कुल रुपये में माँगें।",
+      "mr": "[[flat-rate]] संपूर्ण [[tenure]] पर्यंत संपूर्ण [[principal]] वर व्याज घेतो. [[reducing-balance]] फक्त बाकी रकमेवर व्याज घेतो, त्यामुळे एकूण अनेकदा कमी असतो.\n\nदुकान म्हणाले “फक्त 12 टक्के”, तर कोणता ते विचारा. मग दोन्ही एकूण रुपयांत मागा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[flat-rate]] charges interest on the full [[principal]] for the whole [[tenure]]. A [[reducing-balance]] charges interest only on what you still owe, so the total is usually lower.\n\nIf a shop says “only 12 percent”, ask which kind. Then ask for both totals in rupees."
+    },
+    "points": [
+      {
+        "en": "Flat: interest on the full amount for the whole time.",
+        "hi": "फ्लैट: पूरे समय पूरी रकम पर ब्याज।",
+        "mr": "फ्लॅट: पूर्ण काळ पूर्ण रकमेवर व्याज.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Flat: interest on the full amount for the whole time."
+      },
+      {
+        "en": "Reducing: interest only on what you still owe.",
+        "hi": "घटता: ब्याज सिर्फ बची हुई रकम पर।",
+        "mr": "कमी होणारे: व्याज फक्त उरलेल्या रकमेवर.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Reducing: interest only on what you still owe."
+      },
+      {
+        "en": "The same percent costs much more on a flat rate.",
+        "hi": "एक ही प्रतिशत फ्लैट में बहुत महँगा पड़ता है।",
+        "mr": "तेवढेच टक्के फ्लॅटमध्ये खूप महाग पडतात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The same percent costs much more on a flat rate."
+      },
+      {
+        "en": "Always ask which kind, then ask for both totals.",
+        "hi": "हमेशा पूछें कौन सा है, फिर दोनों का कुल पूछें।",
+        "mr": "नेहमी विचारा कोणता प्रकार, मग दोन्हींची एकूण रक्कम विचारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Always ask which kind, then ask for both totals."
+      }
+    ],
+    "example": {
+      "en": "₹1,00,000 at 12 percent for one year. Flat: you pay back ₹1,12,000. Reducing: about ₹1,06,600. The paper says 12 percent both times.",
+      "hi": "₹1,00,000, 12 प्रतिशत, एक साल। फ्लैट: ₹1,12,000 लौटाने होंगे। घटता: करीब ₹1,06,600। कागज़ पर दोनों बार 12 प्रतिशत ही लिखा है।",
+      "mr": "₹1,00,000, 12 टक्के, एक वर्ष. फ्लॅट: ₹1,12,000 परत द्यावे लागतात. कमी होणारे: सुमारे ₹1,06,600. कागदावर दोन्ही वेळा 12 टक्केच लिहिलेले असते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: ₹1,00,000 at 12 percent for one year. Flat: you pay back ₹1,12,000. Reducing: about ₹1,06,600. The paper says 12 percent both times."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open the personal loan sample and compare the flat and reducing totals.",
+        "hi": "पर्सनल लोन का नमूना खोलें और फ्लैट व घटते का कुल मिलाकर देखें।",
+        "mr": "पर्सनल लोनचा नमुना उघडा आणि फ्लॅट व कमी होणाऱ्या दराची एकूण रक्कम तुलना करा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the personal loan sample and compare the flat and reducing totals."
+      },
+      "link": "scan:personal-loan"
+    },
+    "check": {
+      "question": {
+        "en": "Two loans both say 12 percent. Which usually costs less?",
+        "hi": "दो कर्ज, दोनों पर 12 प्रतिशत लिखा है। आम तौर पर कौन सस्ता है?",
+        "mr": "दोन कर्जे, दोन्हींवर 12 टक्के. सहसा कोणते स्वस्त?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Two loans both say 12 percent. Which usually costs less?"
+      },
+      "options": [
+        {
+          "en": "The flat one",
+          "hi": "फ्लैट वाला",
+          "mr": "फ्लॅट दराचे",
+          "kn": "ಈಸು: The flat one"
+        },
+        {
+          "en": "The reducing one",
+          "hi": "घटते ब्याज वाला",
+          "mr": "कमी होणाऱ्या दराचे",
+          "kn": "ಈಸು: The reducing one"
+        },
+        {
+          "en": "They cost the same",
+          "hi": "दोनों बराबर",
+          "mr": "दोन्ही सारखेच",
+          "kn": "ಈಸು: They cost the same"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Reducing interest falls as you repay. Flat interest does not.",
+        "hi": "घटता ब्याज चुकाने के साथ कम होता है। फ्लैट नहीं होता।",
+        "mr": "परतफेड होईल तसे कमी होणारे व्याज घटते. फ्लॅट घटत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Reducing interest falls as you repay. Flat interest does not."
+      }
+    }
+  },
+  {
+    "id": "fees",
+    "category": "loans",
+    "icon": "receipt",
+    "title": {
+      "en": "Fees change the price",
+      "hi": "शुल्क कीमत बदलते हैं",
+      "mr": "शुल्क किंमत बदलतात",
+      "kn": "ಈಸು: Fees change the price"
+    },
+    "summary": {
+      "en": "A processing fee is part of the cost, even if it is taken on day one.",
+      "hi": "प्रोसेसिंग शुल्क लागत का हिस्सा है, भले पहले दिन कट जाए।",
+      "mr": "प्रोसेसिंग शुल्क खर्चाचा भाग आहे, जरी पहिल्या दिवशी कापले गेले.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A processing fee is part of the cost, even if it is taken on day one."
+    },
+    "body": {
+      "en": "A [[processing-fee]] often leaves your hands before the loan does. Add every other charge too. If fees are more than a small slice of the [[principal]], the loan is dearer than the rate suggests.\n\nAsk for a line that lists each fee in rupees, including [[gst]] if it applies.",
+      "hi": "[[processing-fee]] अक्सर कर्ज मिलने से पहले निकल जाता है। बाकी शुल्क भी जोड़ें। शुल्क [[principal]] का बड़ा हिस्सा हों तो कर्ज दर से महँगा है।\n\nहर शुल्क रुपये में लिखवाने को कहें, लागू हो तो [[gst]] सहित।",
+      "mr": "[[processing-fee]] अनेकदा कर्ज मिळण्यापूर्वी निघून जातो. इतर शुल्कही मिळवा. शुल्क [[principal]] चा मोठा भाग असतील तर कर्ज दरापेक्षा महाग आहे.\n\nप्रत्येक शुल्क रुपयांत लिहून मागा, लागू असेल तर [[gst]] सह.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[processing-fee]] often leaves your hands before the loan does. Add every other charge too. If fees are more than a small slice of the [[principal]], the loan is dearer than the rate suggests.\n\nAsk for a line that lists each fee in rupees, including [[gst]] if it applies."
+    },
+    "points": [
+      {
+        "en": "A processing fee is often cut before you get the money.",
+        "hi": "प्रोसेसिंग शुल्क अक्सर पैसा मिलने से पहले ही काट लिया जाता है।",
+        "mr": "प्रोसेसिंग शुल्क बहुधा पैसे मिळण्याआधीच कापले जाते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A processing fee is often cut before you get the money."
+      },
+      {
+        "en": "So you receive less, but repay the full amount.",
+        "hi": "इसलिए हाथ में कम आता है, पर लौटाना पूरा पड़ता है।",
+        "mr": "म्हणून हातात कमी येते, पण परत पूर्ण द्यावे लागते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: So you receive less, but repay the full amount."
+      },
+      {
+        "en": "Add every charge in rupees, including GST.",
+        "hi": "हर शुल्क रुपयों में जोड़ें, जीएसटी भी।",
+        "mr": "प्रत्येक शुल्क रुपयांत मिळवा, जीएसटीसह.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Add every charge in rupees, including GST."
+      },
+      {
+        "en": "Fees above 3 percent of the loan are high.",
+        "hi": "कर्ज के 3 प्रतिशत से ज़्यादा शुल्क ज़्यादा माना जाता है।",
+        "mr": "कर्जाच्या 3 टक्क्यांपेक्षा जास्त शुल्क जास्त मानले जाते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Fees above 3 percent of the loan are high."
+      }
+    ],
+    "example": {
+      "en": "Loan ₹50,000. Processing fee ₹1,500 and document charge ₹500. You get ₹48,000 in hand but pay interest on ₹50,000.",
+      "hi": "कर्ज ₹50,000। प्रोसेसिंग शुल्क ₹1,500 और दस्तावेज़ शुल्क ₹500। हाथ में ₹48,000 आते हैं, पर ब्याज ₹50,000 पर लगता है।",
+      "mr": "कर्ज ₹50,000. प्रोसेसिंग शुल्क ₹1,500 आणि कागदपत्र शुल्क ₹500. हातात ₹48,000 येतात, पण व्याज ₹50,000 वर लागते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Loan ₹50,000. Processing fee ₹1,500 and document charge ₹500. You get ₹48,000 in hand but pay interest on ₹50,000."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open the personal loan sample and find both fees.",
+        "hi": "पर्सनल लोन का नमूना खोलें और दोनों शुल्क ढूँढें।",
+        "mr": "पर्सनल लोनचा नमुना उघडा आणि दोन्ही शुल्क शोधा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the personal loan sample and find both fees."
+      },
+      "link": "scan:personal-loan"
+    },
+    "check": {
+      "question": {
+        "en": "Loan ₹20,000, fee ₹1,000 cut first. How much reaches you?",
+        "hi": "कर्ज ₹20,000, शुल्क ₹1,000 पहले कटा। आपके हाथ में कितना आया?",
+        "mr": "कर्ज ₹20,000, शुल्क ₹1,000 आधी कापले. हातात किती आले?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Loan ₹20,000, fee ₹1,000 cut first. How much reaches you?"
+      },
+      "options": [
+        {
+          "en": "₹21,000",
+          "hi": "₹21,000",
+          "mr": "₹21,000",
+          "kn": "ಈಸು: ₹21,000"
+        },
+        {
+          "en": "₹20,000",
+          "hi": "₹20,000",
+          "mr": "₹20,000",
+          "kn": "ಈಸು: ₹20,000"
+        },
+        {
+          "en": "₹19,000",
+          "hi": "₹19,000",
+          "mr": "₹19,000",
+          "kn": "ಈಸು: ₹19,000"
+        }
+      ],
+      "answer": 2,
+      "why": {
+        "en": "The fee leaves before the money reaches you.",
+        "hi": "शुल्क पैसा मिलने से पहले ही निकल जाता है।",
+        "mr": "पैसे मिळण्याआधीच शुल्क निघून जाते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The fee leaves before the money reaches you."
+      }
+    }
+  },
+  {
+    "id": "prepayment",
+    "category": "loans",
+    "icon": "unlock",
+    "title": {
+      "en": "Paying early",
+      "hi": "जल्दी चुकाना",
+      "mr": "लवकर फेडणे",
+      "kn": "ಈಸು: Paying early"
+    },
+    "summary": {
+      "en": "Check if you may close the loan, and what that costs.",
+      "hi": "देखें कि कर्ज बंद कर सकते हैं या नहीं, और उसकी कीमत क्या है।",
+      "mr": "कर्ज बंद करता येते का ते पाहा, आणि त्याची किंमत काय.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check if you may close the loan, and what that costs."
+    },
+    "body": {
+      "en": "[[prepayment]] or [[foreclosure]] lets you finish early. Some papers forbid it. Others allow it and then add a fee.\n\nIf you might receive a scholarship or a first salary, a loan you cannot close early can trap that money in EMIs.",
+      "hi": "[[prepayment]] या [[foreclosure]] से आप जल्दी खत्म कर सकते हैं। कुछ कागज मना करते हैं। कुछ अनुमति देकर शुल्क जोड़ते हैं।\n\nछात्रवृत्ति या पहली तनख्वाह आ सकती हो तो ऐसा कर्ज जिसे जल्दी बंद न कर सकें, उस पैसे को ईएमआई में फँसा सकता है।",
+      "mr": "[[prepayment]] किंवा [[foreclosure]] ने तुम्ही लवकर संपवू शकता. काही कागद मना करतात. काही परवानगी देऊन शुल्क लावतात.\n\nशिष्यवृत्ती किंवा पहिला पगार येऊ शकतो, तर लवकर बंद न होणारे कर्ज ते पैसे ईएमआयत अडकवू शकते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: [[prepayment]] or [[foreclosure]] lets you finish early. Some papers forbid it. Others allow it and then add a fee.\n\nIf you might receive a scholarship or a first salary, a loan you cannot close early can trap that money in EMIs."
+    },
+    "points": [
+      {
+        "en": "Prepayment means closing a loan before its end date.",
+        "hi": "पूर्वभुगतान यानी कर्ज को तय समय से पहले चुका देना।",
+        "mr": "पूर्वफेड म्हणजे कर्ज ठरलेल्या वेळेआधी फेडणे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Prepayment means closing a loan before its end date."
+      },
+      {
+        "en": "Closing early saves the interest of the remaining months.",
+        "hi": "जल्दी चुकाने से बचे महीनों का ब्याज बचता है।",
+        "mr": "लवकर फेडल्याने उरलेल्या महिन्यांचे व्याज वाचते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Closing early saves the interest of the remaining months."
+      },
+      {
+        "en": "Some papers forbid it or charge a fee for it.",
+        "hi": "कुछ कागज़ इसे मना करते हैं या इस पर शुल्क लगाते हैं।",
+        "mr": "काही करार याला मनाई करतात किंवा त्यावर शुल्क लावतात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Some papers forbid it or charge a fee for it."
+      }
+    ],
+    "example": {
+      "en": "Sunil gets a scholarship in month six of a 24 month loan. His paper says prepayment is not permitted, so he must keep paying interest for 18 more months.",
+      "hi": "सुनील को 24 महीने के कर्ज के छठे महीने में छात्रवृत्ति मिलती है। कागज़ में पूर्वभुगतान मना है, इसलिए उसे 18 महीने और ब्याज देना पड़ता है।",
+      "mr": "सुनीलला 24 महिन्यांच्या कर्जाच्या सहाव्या महिन्यात शिष्यवृत्ती मिळते. करारात पूर्वफेडीला मनाई आहे, म्हणून त्याला आणखी 18 महिने व्याज द्यावे लागते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Sunil gets a scholarship in month six of a 24 month loan. His paper says prepayment is not permitted, so he must keep paying interest for 18 more months."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open the gold loan sample and read the prepayment line.",
+        "hi": "गोल्ड लोन का नमूना खोलें और पूर्वभुगतान की लाइन पढ़ें।",
+        "mr": "गोल्ड लोनचा नमुना उघडा आणि पूर्वफेडीची ओळ वाचा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the gold loan sample and read the prepayment line."
+      },
+      "link": "scan:gold-loan"
+    },
+    "check": {
+      "question": {
+        "en": "Why ask about prepayment before signing?",
+        "hi": "साइन करने से पहले पूर्वभुगतान के बारे में क्यों पूछें?",
+        "mr": "सही करण्यापूर्वी पूर्वफेडीबद्दल का विचारावे?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Why ask about prepayment before signing?"
+      },
+      "options": [
+        {
+          "en": "So I can close early and save interest",
+          "hi": "ताकि जल्दी चुकाकर ब्याज बचा सकूँ",
+          "mr": "लवकर फेडून व्याज वाचवता यावे म्हणून",
+          "kn": "ಈಸು: So I can close early and save interest"
+        },
+        {
+          "en": "It makes the EMI smaller",
+          "hi": "इससे किस्त छोटी होती है",
+          "mr": "त्याने हप्ता लहान होतो",
+          "kn": "ಈಸು: It makes the EMI smaller"
+        },
+        {
+          "en": "It is only for big companies",
+          "hi": "यह सिर्फ बड़ी कंपनियों के लिए है",
+          "mr": "ते फक्त मोठ्या कंपन्यांसाठी असते",
+          "kn": "ಈಸು: It is only for big companies"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "If money comes later, an early close can save a lot.",
+        "hi": "आगे पैसा आ जाए तो जल्दी चुकाने से काफी बचत होती है।",
+        "mr": "पुढे पैसे आले तर लवकर फेडल्याने बरीच बचत होते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: If money comes later, an early close can save a lot."
+      }
+    }
+  },
+  {
+    "id": "credit-score",
+    "category": "loans",
+    "icon": "gauge",
+    "title": {
+      "en": "Your credit record",
+      "hi": "आपका क्रेडिट रिकॉर्ड",
+      "mr": "तुमची क्रेडिट नोंद",
+      "kn": "ಈಸು: Your credit record"
+    },
+    "summary": {
+      "en": "Old payments follow you. A missed EMI is not private.",
+      "hi": "पुराने भुगतान साथ रहते हैं। छूटी ईएमआई निजी नहीं रहती।",
+      "mr": "जुनी पेमेंट सोबत राहतात. चुकलेली ईएमआय खाजगी राहत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Old payments follow you. A missed EMI is not private."
+    },
+    "body": {
+      "en": "A [[credit-score]] and the [[cibil]] report describe loans and cards in your name. Paying on the [[due-date]] keeps the story calm. A [[default]] makes the next loan harder and dearer.\n\nYou can check your own report. If a loan you never took appears, treat it as [[identity-theft]] and write to the lender.",
+      "hi": "[[credit-score]] और [[cibil]] रिपोर्ट आपके नाम के कर्ज और कार्ड बताती हैं। [[due-date]] पर चुकाने से कहानी शांत रहती है। [[default]] अगला कर्ज कठिन और महँगा बनाता है।\n\nअपनी रिपोर्ट खुद देख सकते हैं। न लिया कर्ज दिखे तो उसे [[identity-theft]] मानें और ऋणदाता को लिखें।",
+      "mr": "[[credit-score]] आणि [[cibil]] अहवाल तुमच्या नावाची कर्जे आणि कार्डे सांगतात. [[due-date]] ला फेडल्याने कहाणी शांत राहते. [[default]] पुढचे कर्ज कठीण आणि महाग करते.\n\nतुम्ही स्वतःचा अहवाल पाहू शकता. न घेतलेले कर्ज दिसले तर ते [[identity-theft]] समजा आणि कर्ज देणाऱ्याला लिहा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[credit-score]] and the [[cibil]] report describe loans and cards in your name. Paying on the [[due-date]] keeps the story calm. A [[default]] makes the next loan harder and dearer.\n\nYou can check your own report. If a loan you never took appears, treat it as [[identity-theft]] and write to the lender."
+    },
+    "points": [
+      {
+        "en": "A credit score is a number that shows how you repaid before.",
+        "hi": "क्रेडिट स्कोर एक नंबर है जो बताता है आपने पहले कैसे चुकाया।",
+        "mr": "क्रेडिट स्कोअर हा एक आकडा आहे, जो तुम्ही आधी कशी परतफेड केली ते सांगतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A credit score is a number that shows how you repaid before."
+      },
+      {
+        "en": "Paying on the due date keeps it healthy.",
+        "hi": "तय तारीख पर चुकाने से यह अच्छा रहता है।",
+        "mr": "ठरलेल्या तारखेला भरल्याने तो चांगला राहतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Paying on the due date keeps it healthy."
+      },
+      {
+        "en": "A missed EMI stays on the record for years.",
+        "hi": "छूटी हुई किस्त सालों तक रिकॉर्ड में रहती है।",
+        "mr": "चुकलेला हप्ता वर्षानुवर्षे नोंदीत राहतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A missed EMI stays on the record for years."
+      },
+      {
+        "en": "You can check your own report once a year for free.",
+        "hi": "आप अपनी रिपोर्ट साल में एक बार मुफ्त देख सकते हैं।",
+        "mr": "तुम्ही तुमचा अहवाल वर्षातून एकदा मोफत पाहू शकता.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You can check your own report once a year for free."
+      }
+    ],
+    "example": {
+      "en": "Farah missed two EMIs on a ₹8,000 phone loan. Three years later a bank offers her an education loan at a higher rate because of that record.",
+      "hi": "फराह ने ₹8,000 के फोन लोन की दो किस्तें छोड़ दीं। तीन साल बाद उसी रिकॉर्ड की वजह से बैंक उसे पढ़ाई का कर्ज ज़्यादा ब्याज पर देता है।",
+      "mr": "फराहने ₹8,000 च्या फोन कर्जाचे दोन हप्ते चुकवले. तीन वर्षांनी त्याच नोंदीमुळे बँक तिला शिक्षण कर्ज जास्त व्याजाने देते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Farah missed two EMIs on a ₹8,000 phone loan. Three years later a bank offers her an education loan at a higher rate because of that record."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Ask a parent whether any loan or card is in your name.",
+        "hi": "माता-पिता से पूछें कि आपके नाम पर कोई कर्ज या कार्ड तो नहीं।",
+        "mr": "आईवडिलांना विचारा की तुमच्या नावावर एखादे कर्ज किंवा कार्ड आहे का.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask a parent whether any loan or card is in your name."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "What helps a credit score most?",
+        "hi": "क्रेडिट स्कोर को सबसे ज़्यादा क्या सुधारता है?",
+        "mr": "क्रेडिट स्कोअरला सर्वात जास्त काय मदत करते?",
+        "kn": "ಈಸು: What helps a credit score most?"
+      },
+      "options": [
+        {
+          "en": "Taking many loans",
+          "hi": "बहुत सारे कर्ज लेना",
+          "mr": "खूप कर्जे घेणे",
+          "kn": "ಈಸು: Taking many loans"
+        },
+        {
+          "en": "Paying on time, every time",
+          "hi": "हर बार समय पर चुकाना",
+          "mr": "प्रत्येक वेळी वेळेवर भरणे",
+          "kn": "ಈಸು: Paying on time, every time"
+        },
+        {
+          "en": "Never checking it",
+          "hi": "उसे कभी न देखना",
+          "mr": "तो कधीच न पाहणे",
+          "kn": "ಈಸು: Never checking it"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Lenders look first at whether you paid on time.",
+        "hi": "कर्ज देने वाले सबसे पहले देखते हैं कि आपने समय पर चुकाया या नहीं।",
+        "mr": "कर्ज देणारे आधी पाहतात की तुम्ही वेळेवर भरले की नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Lenders look first at whether you paid on time."
+      }
+    }
+  },
+  {
+    "id": "reading-agreement",
+    "category": "loans",
+    "icon": "file",
+    "title": {
+      "en": "Reading the agreement",
+      "hi": "समझौता पढ़ना",
+      "mr": "करार वाचणे",
+      "kn": "ಈಸು: Reading the agreement"
+    },
+    "summary": {
+      "en": "Look for amount, rate, time, fees, penalty, and blanks.",
+      "hi": "रकम, दर, समय, शुल्क, जुर्माना और खाली जगह देखें।",
+      "mr": "रक्कम, दर, काळ, शुल्क, दंड आणि रिकाम्या जागा पाहा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Look for amount, rate, time, fees, penalty, and blanks."
+    },
+    "body": {
+      "en": "A loan paper should name the [[principal]], the rate, whether it is [[flat-rate]] or [[reducing-balance]], the [[tenure]], every fee, the [[penalty]], and the rules for [[prepayment]].\n\nBlank lines are not harmless. Do not sign a paper that still has empty boxes for the price.",
+      "hi": "कर्ज के कागज में [[principal]], दर, [[flat-rate]] या [[reducing-balance]], [[tenure]], हर शुल्क, [[penalty]] और [[prepayment]] के नियम होने चाहिए।\n\nखाली पंक्तियाँ हानिरहित नहीं। कीमत के खाली खाने वाले कागज पर दस्तखत न करें।",
+      "mr": "कर्जाच्या कागदात [[principal]], दर, [[flat-rate]] की [[reducing-balance]], [[tenure]], प्रत्येक शुल्क, [[penalty]] आणि [[prepayment]] चे नियम असावेत.\n\nरिकाम्या ओळी निरुपद्रवी नाहीत. किमतीसाठी रिकामे चौकोन असलेल्या कागदावर सही करू नका.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A loan paper should name the [[principal]], the rate, whether it is [[flat-rate]] or [[reducing-balance]], the [[tenure]], every fee, the [[penalty]], and the rules for [[prepayment]].\n\nBlank lines are not harmless. Do not sign a paper that still has empty boxes for the price."
+    },
+    "points": [
+      {
+        "en": "Find six things: amount, rate, time, fees, penalty, early closing.",
+        "hi": "छह चीज़ें ढूँढें: रकम, दर, समय, शुल्क, जुर्माना, जल्दी चुकाना।",
+        "mr": "सहा गोष्टी शोधा: रक्कम, दर, कालावधी, शुल्क, दंड, लवकर फेड.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Find six things: amount, rate, time, fees, penalty, early closing."
+      },
+      {
+        "en": "Check whether the rate is flat or reducing.",
+        "hi": "देखें कि दर फ्लैट है या घटती।",
+        "mr": "दर फ्लॅट आहे की कमी होणारा ते पाहा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check whether the rate is flat or reducing."
+      },
+      {
+        "en": "Never sign a paper with blank spaces.",
+        "hi": "खाली जगह वाले कागज़ पर कभी साइन न करें।",
+        "mr": "रिकाम्या जागा असलेल्या कागदावर कधीही सही करू नका.",
+        "kn": "ಈಸು: Never sign a paper with blank spaces."
+      },
+      {
+        "en": "Ask for a copy. It is your right.",
+        "hi": "एक कॉपी माँगें। यह आपका हक है।",
+        "mr": "एक प्रत मागा. तो तुमचा हक्क आहे.",
+        "kn": "ಈಸು: Ask for a copy. It is your right."
+      }
+    ],
+    "example": {
+      "en": "Imran's paper names the amount and the EMI but leaves the penalty line blank. He asks the agent to write it in before he signs.",
+      "hi": "इमरान के कागज़ में रकम और किस्त लिखी है, पर जुर्माने की लाइन खाली है। वह साइन करने से पहले एजेंट से उसे भरवाता है।",
+      "mr": "इमरानच्या करारात रक्कम आणि हप्ता लिहिला आहे, पण दंडाची ओळ रिकामी आहे. सही करण्याआधी तो एजंटकडून ती भरून घेतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Imran's paper names the amount and the EMI but leaves the penalty line blank. He asks the agent to write it in before he signs."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Scan the personal loan sample and tick off all six things.",
+        "hi": "पर्सनल लोन का नमूना स्कैन करें और छहों चीज़ें मिलाएँ।",
+        "mr": "पर्सनल लोनचा नमुना स्कॅन करा आणि सहाही गोष्टी तपासा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Scan the personal loan sample and tick off all six things."
+      },
+      "link": "scan:personal-loan"
+    },
+    "check": {
+      "question": {
+        "en": "The penalty line is blank. What do you do?",
+        "hi": "जुर्माने की लाइन खाली है। आप क्या करेंगे?",
+        "mr": "दंडाची ओळ रिकामी आहे. तुम्ही काय कराल?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The penalty line is blank. What do you do?"
+      },
+      "options": [
+        {
+          "en": "Sign, it is probably zero",
+          "hi": "साइन कर दूँ, शायद शून्य होगा",
+          "mr": "सही करीन, बहुधा शून्य असेल",
+          "kn": "ಈಸು: Sign, it is probably zero"
+        },
+        {
+          "en": "Ask them to fill it in first",
+          "hi": "पहले उसे भरवाऊँ",
+          "mr": "आधी ती भरून घेईन",
+          "kn": "ಈಸು: Ask them to fill it in first"
+        },
+        {
+          "en": "Fill it myself later",
+          "hi": "बाद में खुद भर लूँ",
+          "mr": "नंतर स्वतः भरीन",
+          "kn": "ಈಸು: Fill it myself later"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "A blank can be filled later with terms you never agreed to.",
+        "hi": "खाली जगह बाद में ऐसी शर्तों से भरी जा सकती है जो आपने मानी ही नहीं।",
+        "mr": "रिकामी जागा नंतर तुम्ही मान्य न केलेल्या अटींनी भरली जाऊ शकते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A blank can be filled later with terms you never agreed to."
+      }
+    }
+  },
+  {
+    "id": "upi-safety",
+    "category": "scams",
+    "icon": "phone",
+    "title": {
+      "en": "UPI, used safely",
+      "hi": "यूपीआई, सुरक्षित तरीके से",
+      "mr": "यूपीआय, सुरक्षितपणे",
+      "kn": "ಈಸು: UPI, used safely"
+    },
+    "summary": {
+      "en": "You start a payment. A stranger should not pull money out.",
+      "hi": "भुगतान आप शुरू करते हैं। अजनबी पैसे नहीं खींच सकता।",
+      "mr": "पेमेंट तुम्ही सुरू करता. अनोळखी व्यक्ती पैसे ओढू शकत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You start a payment. A stranger should not pull money out."
+    },
+    "body": {
+      "en": "[[upi]] moves money from your account. You enter the PIN. Nobody from a bank, a shop, or a “refund desk” needs that PIN.\n\nIf a collect request appears and you did not buy anything, decline it. A refund does not need your PIN.",
+      "hi": "[[upi]] आपके खाते से पैसा ले जाता है। पिन आप डालते हैं। बैंक, दुकान या “रिफंड डेस्क” को वह पिन नहीं चाहिए।\n\nकलेक्ट रिक्वेस्ट आए और आपने कुछ खरीदा न हो तो मना करें। रिफंड के लिए पिन नहीं चाहिए।",
+      "mr": "[[upi]] तुमच्या खात्यातून पैसे नेतो. पिन तुम्ही टाकता. बँक, दुकान किंवा “रिफंड डेस्क” ला तो पिन नको.\n\nकलेक्ट विनंती आली आणि तुम्ही काही घेतले नसेल तर नाकारा. रिफंडसाठी पिन नको.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: [[upi]] moves money from your account. You enter the PIN. Nobody from a bank, a shop, or a “refund desk” needs that PIN.\n\nIf a collect request appears and you did not buy anything, decline it. A refund does not need your PIN."
+    },
+    "points": [
+      {
+        "en": "You enter your UPI PIN only to send money.",
+        "hi": "यूपीआई पिन सिर्फ पैसा भेजने के लिए डाला जाता है।",
+        "mr": "यूपीआय पिन फक्त पैसे पाठवण्यासाठी टाकला जातो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You enter your UPI PIN only to send money."
+      },
+      {
+        "en": "Receiving money never needs a PIN or a scan.",
+        "hi": "पैसा पाने के लिए कभी पिन या स्कैन नहीं लगता।",
+        "mr": "पैसे मिळवण्यासाठी कधीही पिन किंवा स्कॅन लागत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Receiving money never needs a PIN or a scan."
+      },
+      {
+        "en": "Decline a collect request you did not expect.",
+        "hi": "जो रिक्वेस्ट आपने नहीं माँगी, उसे मना कर दें।",
+        "mr": "तुम्ही न मागितलेली रिक्वेस्ट नाकारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Decline a collect request you did not expect."
+      },
+      {
+        "en": "Check the name on screen before you pay.",
+        "hi": "पैसा भेजने से पहले स्क्रीन पर नाम देख लें।",
+        "mr": "पैसे पाठवण्याआधी स्क्रीनवरील नाव तपासा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check the name on screen before you pay."
+      }
+    ],
+    "example": {
+      "en": "A buyer on a resale app says “I sent ₹2,000, enter your PIN to accept.” Pooja declines. Entering the PIN would have sent ₹2,000 out of her account.",
+      "hi": "एक खरीदार कहता है, “मैंने ₹2,000 भेजे हैं, लेने के लिए पिन डालो।” पूजा मना कर देती है। पिन डालने पर ₹2,000 उसके खाते से निकल जाते।",
+      "mr": "एक खरेदीदार म्हणतो, “मी ₹2,000 पाठवले, घेण्यासाठी पिन टाका.” पूजा नकार देते. पिन टाकला असता तर ₹2,000 तिच्या खात्यातून गेले असते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A buyer on a resale app says “I sent ₹2,000, enter your PIN to accept.” Pooja declines. Entering the PIN would have sent ₹2,000 out of her account."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Read this week's case about a helpful caller.",
+        "hi": "मददगार कॉलर वाला मामला पढ़ें।",
+        "mr": "मदत करणाऱ्या कॉलरचा प्रसंग वाचा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read this week's case about a helpful caller."
+      },
+      "link": "case:upi-pin"
+    },
+    "check": {
+      "question": {
+        "en": "Someone will send you money. Do you need your PIN?",
+        "hi": "कोई आपको पैसा भेजेगा। क्या पिन चाहिए?",
+        "mr": "कोणी तुम्हाला पैसे पाठवणार आहे. पिन लागतो का?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Someone will send you money. Do you need your PIN?"
+      },
+      "options": [
+        {
+          "en": "Yes, to accept it",
+          "hi": "हाँ, लेने के लिए",
+          "mr": "हो, स्वीकारण्यासाठी",
+          "kn": "ಈಸು: Yes, to accept it"
+        },
+        {
+          "en": "No, never",
+          "hi": "नहीं, कभी नहीं",
+          "mr": "नाही, कधीच नाही",
+          "kn": "ಈಸು: No, never"
+        },
+        {
+          "en": "Only for large amounts",
+          "hi": "सिर्फ बड़ी रकम के लिए",
+          "mr": "फक्त मोठ्या रकमेसाठी",
+          "kn": "ಈಸು: Only for large amounts"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "A PIN only sends money out. It never brings money in.",
+        "hi": "पिन से पैसा सिर्फ जाता है। आता कभी नहीं।",
+        "mr": "पिनने पैसे फक्त जातात. येत कधीच नाहीत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A PIN only sends money out. It never brings money in."
+      }
+    }
+  },
+  {
+    "id": "otp-pin",
+    "category": "scams",
+    "icon": "key",
+    "title": {
+      "en": "OTP and PIN",
+      "hi": "ओटीपी और पिन",
+      "mr": "ओटीपी आणि पिन",
+      "kn": "ಈಸು: OTP and PIN"
+    },
+    "summary": {
+      "en": "A code that can move money should never be spoken aloud.",
+      "hi": "पैसे हिला सकने वाला कोड कभी ज़ोर से न बताएँ।",
+      "mr": "पैसे हलवू शकणारा कोड कधीही मोठ्याने सांगू नका.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A code that can move money should never be spoken aloud."
+    },
+    "body": {
+      "en": "An [[otp]] proves a payment is yours. A PIN does the same inside [[upi]]. Read the message: it names the amount and the payee.\n\nIf the amount is wrong, do not enter the code. [[phishing]] often arrives as a helpful call.",
+      "hi": "[[otp]] साबित करता है कि भुगतान आपका है। पिन [[upi]] के अंदर वही काम करता है। संदेश पढ़ें: उसमें रकम और पाने वाले का नाम होता है।\n\nरकम गलत हो तो कोड न डालें। [[phishing]] अक्सर मददगार कॉल बनकर आती है।",
+      "mr": "[[otp]] पेमेंट तुमचे आहे हे सिद्ध करतो. पिन [[upi]] च्या आत तेच करतो. संदेश वाचा: त्यात रक्कम आणि घेणाऱ्याचे नाव असते.\n\nरक्कम चुकीची असेल तर कोड टाकू नका. [[phishing]] अनेकदा मदतनीस कॉल म्हणून येते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An [[otp]] proves a payment is yours. A PIN does the same inside [[upi]]. Read the message: it names the amount and the payee.\n\nIf the amount is wrong, do not enter the code. [[phishing]] often arrives as a helpful call."
+    },
+    "points": [
+      {
+        "en": "An OTP is a one-time key to your money.",
+        "hi": "ओटीपी आपके पैसे की एक बार की चाबी है।",
+        "mr": "ओटीपी म्हणजे तुमच्या पैशांची एकदाच वापरायची किल्ली.",
+        "kn": "ಈಸು: An OTP is a one-time key to your money."
+      },
+      {
+        "en": "No bank, shop or helpline will ask you to read it out.",
+        "hi": "कोई बैंक, दुकान या हेल्पलाइन इसे बोलकर बताने को नहीं कहती।",
+        "mr": "कोणतीही बँक, दुकान किंवा हेल्पलाइन तो सांगायला लावत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: No bank, shop or helpline will ask you to read it out."
+      },
+      {
+        "en": "Read the message. It names the amount and who gets it.",
+        "hi": "मैसेज पढ़ें। उसमें रकम और पाने वाले का नाम होता है।",
+        "mr": "मेसेज वाचा. त्यात रक्कम आणि पैसे कोणाला जाणार ते असते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read the message. It names the amount and who gets it."
+      }
+    ],
+    "example": {
+      "en": "A caller says Dev's SIM will be blocked unless he shares the code just sent. The message reads “OTP for payment of ₹4,999”. Dev hangs up.",
+      "hi": "फोन पर कोई कहता है कि देव का सिम बंद हो जाएगा, अभी आया कोड बताओ। मैसेज में लिखा है “₹4,999 के भुगतान का ओटीपी”। देव फोन काट देता है।",
+      "mr": "फोनवर कोणी सांगतो की देवचे सिम बंद होईल, आत्ता आलेला कोड सांगा. मेसेजमध्ये लिहिले आहे “₹4,999 च्या पेमेंटचा ओटीपी”. देव फोन ठेवतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A caller says Dev's SIM will be blocked unless he shares the code just sent. The message reads “OTP for payment of ₹4,999”. Dev hangs up."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open your last OTP message and read what it was for.",
+        "hi": "अपना पिछला ओटीपी मैसेज खोलें और पढ़ें कि वह किस काम का था।",
+        "mr": "तुमचा शेवटचा ओटीपी मेसेज उघडा आणि तो कशासाठी होता ते वाचा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open your last OTP message and read what it was for."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "A “bank officer” on a call asks for your OTP. You:",
+        "hi": "फोन पर “बैंक अधिकारी” ओटीपी माँगता है। आप:",
+        "mr": "फोनवर “बँक अधिकारी” ओटीपी मागतो. तुम्ही:",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A “bank officer” on a call asks for your OTP. You:"
+      },
+      "options": [
+        {
+          "en": "Share it quickly",
+          "hi": "जल्दी बता दें",
+          "mr": "लगेच सांगाल",
+          "kn": "ಈಸು: Share it quickly"
+        },
+        {
+          "en": "Hang up",
+          "hi": "फोन काट दें",
+          "mr": "फोन ठेवाल",
+          "kn": "ಈಸು: Hang up"
+        },
+        {
+          "en": "Share only half",
+          "hi": "आधा ही बताएँ",
+          "mr": "अर्धाच सांगाल",
+          "kn": "ಈಸು: Share only half"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "A real bank never asks for an OTP on a call.",
+        "hi": "असली बैंक फोन पर कभी ओटीपी नहीं माँगता।",
+        "mr": "खरी बँक फोनवर कधीही ओटीपी मागत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A real bank never asks for an OTP on a call."
+      }
+    }
+  },
+  {
+    "id": "fake-loan-apps",
+    "category": "scams",
+    "icon": "shield",
+    "title": {
+      "en": "Loan apps that harm",
+      "hi": "नुकसान करने वाले लोन ऐप",
+      "mr": "हानी करणारी लोन अ‍ॅप्स",
+      "kn": "ಈಸು: Loan apps that harm"
+    },
+    "summary": {
+      "en": "A real lender does not need your photo gallery or your contacts.",
+      "hi": "असली ऋणदाता को आपकी गैलरी या संपर्कों की ज़रूरत नहीं।",
+      "mr": "खऱ्या कर्ज देणाऱ्याला तुमची गॅलरी किंवा संपर्क नकोत.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A real lender does not need your photo gallery or your contacts."
+    },
+    "body": {
+      "en": "Some apps offer a quick [[personal-loan]], then raise a huge [[late-fee]] and message your family. That is not a normal cost of borrowing.\n\nBefore you install anything, read who the lender is. If the app wants contacts and photos, stop.",
+      "hi": "कुछ ऐप जल्दी [[personal-loan]] देते हैं, फिर भारी [[late-fee]] लगाते हैं और परिवार को संदेश भेजते हैं। उधार की यह सामान्य लागत नहीं।\n\nकुछ इंस्टॉल करने से पहले देखें ऋणदाता कौन है। ऐप संपर्क और फोटो माँगे तो रुकें।",
+      "mr": "काही अ‍ॅप्स लवकर [[personal-loan]] देतात, मग जड [[late-fee]] लावतात आणि कुटुंबाला संदेश पाठवतात. उसने घेण्याची ही सामान्य किंमत नाही.\n\nकाही इन्स्टॉल करण्यापूर्वी कर्ज देणारा कोण ते पाहा. अ‍ॅप संपर्क आणि फोटो मागेल तर थांबा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Some apps offer a quick [[personal-loan]], then raise a huge [[late-fee]] and message your family. That is not a normal cost of borrowing.\n\nBefore you install anything, read who the lender is. If the app wants contacts and photos, stop."
+    },
+    "points": [
+      {
+        "en": "A real lender is registered. Its name is on the RBI list.",
+        "hi": "असली कर्ज देने वाला रजिस्टर्ड होता है। उसका नाम आरबीआई की सूची में मिलता है।",
+        "mr": "खरा कर्जदाता नोंदणीकृत असतो. त्याचे नाव आरबीआयच्या यादीत असते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A real lender is registered. Its name is on the RBI list."
+      },
+      {
+        "en": "A loan app does not need your contacts or photos.",
+        "hi": "लोन ऐप को आपके कॉन्टैक्ट या फोटो की ज़रूरत नहीं होती।",
+        "mr": "लोन अ‍ॅपला तुमचे संपर्क किंवा फोटो लागत नाहीत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A loan app does not need your contacts or photos."
+      },
+      {
+        "en": "Loans of seven days with huge fees are a warning sign.",
+        "hi": "सात दिन का कर्ज और भारी शुल्क खतरे का संकेत है।",
+        "mr": "सात दिवसांचे कर्ज आणि भरमसाट शुल्क हे धोक्याचे लक्षण आहे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Loans of seven days with huge fees are a warning sign."
+      },
+      {
+        "en": "If an app threatens you, tell family and report it at 1930.",
+        "hi": "ऐप धमकाए तो घर पर बताएँ और 1930 पर शिकायत करें।",
+        "mr": "अ‍ॅपने धमकावले तर घरी सांगा आणि 1930 वर तक्रार करा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: If an app threatens you, tell family and report it at 1930."
+      }
+    ],
+    "example": {
+      "en": "An app gives Kiran ₹3,000 for seven days, keeps ₹900 as fees, and wants ₹3,000 back. When she is late by a day it messages her whole phone book.",
+      "hi": "एक ऐप किरण को सात दिन के लिए ₹3,000 देता है, ₹900 शुल्क में रख लेता है, और पूरे ₹3,000 वापस माँगता है। एक दिन देर होने पर वह उसके सारे कॉन्टैक्ट को मैसेज कर देता है।",
+      "mr": "एक अ‍ॅप किरणला सात दिवसांसाठी ₹3,000 देते, ₹900 शुल्क म्हणून ठेवते, आणि पूर्ण ₹3,000 परत मागते. एक दिवस उशीर झाल्यावर ते तिच्या सगळ्या संपर्कांना मेसेज करते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An app gives Kiran ₹3,000 for seven days, keeps ₹900 as fees, and wants ₹3,000 back. When she is late by a day it messages her whole phone book."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Read the case about the app that wants the phone book.",
+        "hi": "फोन बुक माँगने वाले ऐप का मामला पढ़ें।",
+        "mr": "फोन बुक मागणाऱ्या अ‍ॅपचा प्रसंग वाचा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read the case about the app that wants the phone book."
+      },
+      "link": "case:payday-app"
+    },
+    "check": {
+      "question": {
+        "en": "A loan app asks to read your contacts. You:",
+        "hi": "लोन ऐप आपके कॉन्टैक्ट पढ़ने की इजाज़त माँगता है। आप:",
+        "mr": "लोन अ‍ॅप तुमचे संपर्क वाचण्याची परवानगी मागते. तुम्ही:",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A loan app asks to read your contacts. You:"
+      },
+      "options": [
+        {
+          "en": "Allow, it is normal",
+          "hi": "दे दें, यह आम बात है",
+          "mr": "द्याल, हे नेहमीचे आहे",
+          "kn": "ಈಸು: Allow, it is normal"
+        },
+        {
+          "en": "Stop and uninstall",
+          "hi": "रुकें और ऐप हटा दें",
+          "mr": "थांबाल आणि अ‍ॅप काढून टाकाल",
+          "kn": "ಈಸು: Stop and uninstall"
+        },
+        {
+          "en": "Allow only for one day",
+          "hi": "एक दिन के लिए दे दें",
+          "mr": "एका दिवसासाठी द्याल",
+          "kn": "ಈಸು: Allow only for one day"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Contacts are used to shame borrowers, not to lend.",
+        "hi": "कॉन्टैक्ट का इस्तेमाल कर्ज देने में नहीं, बदनाम करने में होता है।",
+        "mr": "संपर्क कर्ज देण्यासाठी नाही, बदनामी करण्यासाठी वापरले जातात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Contacts are used to shame borrowers, not to lend."
+      }
+    }
+  },
+  {
+    "id": "job-scams",
+    "category": "scams",
+    "icon": "briefcase",
+    "title": {
+      "en": "Jobs and scholarships that ask for money",
+      "hi": "पैसे माँगने वाली नौकरी और छात्रवृत्ति",
+      "mr": "पैसे मागणारी नोकरी आणि शिष्यवृत्ती",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Jobs and scholarships that ask for money"
+    },
+    "summary": {
+      "en": "A real offer does not start with a fee to “confirm your seat”.",
+      "hi": "असली पेशकश “सीट पक्की करने” की फीस से शुरू नहीं होती।",
+      "mr": "खरी ऑफर “जागा पक्की करा” या फीने सुरू होत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A real offer does not start with a fee to “confirm your seat”."
+    },
+    "body": {
+      "en": "A [[scholarship]] is money you receive, not money you send. A job interview does not need a refundable deposit by [[upi]].\n\nIf someone rushes you and asks for an [[otp]], it is not a college and it is not an employer.",
+      "hi": "[[scholarship]] वह पैसा है जो आपको मिलता है, जो आप भेजते हैं वह नहीं। नौकरी के इंटरव्यू के लिए [[upi]] से जमानत नहीं चाहिए।\n\nकोई जल्दी कराए और [[otp]] माँगे तो वह कॉलेज नहीं और नियोक्ता नहीं।",
+      "mr": "[[scholarship]] म्हणजे तुम्हाला मिळणारे पैसे, तुम्ही पाठवणारे नाही. नोकरीच्या मुलाखतीसाठी [[upi]] ने अनामत नको.\n\nकोणी घाई करून [[otp]] मागितला तर ते कॉलेज नाही आणि नियोक्ता नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[scholarship]] is money you receive, not money you send. A job interview does not need a refundable deposit by [[upi]].\n\nIf someone rushes you and asks for an [[otp]], it is not a college and it is not an employer."
+    },
+    "points": [
+      {
+        "en": "A real job or scholarship never asks you to pay first.",
+        "hi": "असली नौकरी या छात्रवृत्ति कभी पहले पैसा नहीं माँगती।",
+        "mr": "खरी नोकरी किंवा शिष्यवृत्ती कधीही आधी पैसे मागत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A real job or scholarship never asks you to pay first."
+      },
+      {
+        "en": "“Registration fee” and “refundable deposit” are common tricks.",
+        "hi": "“रजिस्ट्रेशन फीस” और “वापस मिलने वाली जमा” आम चालें हैं।",
+        "mr": "“नोंदणी शुल्क” आणि “परत मिळणारी ठेव” या नेहमीच्या युक्त्या आहेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: “Registration fee” and “refundable deposit” are common tricks."
+      },
+      {
+        "en": "Check the offer on the official website you typed yourself.",
+        "hi": "ऑफर को उस सरकारी साइट पर जाँचें जिसका पता आपने खुद लिखा हो।",
+        "mr": "ऑफर अधिकृत साइटवर तपासा, पत्ता स्वतः टाइप करून.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check the offer on the official website you typed yourself."
+      },
+      {
+        "en": "Being rushed is a reason to slow down.",
+        "hi": "जल्दी मचाई जाए तो और धीरे चलें।",
+        "mr": "घाई केली जात असेल तर आणखी सावकाश व्हा.",
+        "kn": "ಈಸು: Being rushed is a reason to slow down."
+      }
+    ],
+    "example": {
+      "en": "A message says Neha won a ₹50,000 scholarship and must pay ₹499 today to confirm. Her college office has never heard of it. She does not pay.",
+      "hi": "मैसेज आता है कि नेहा को ₹50,000 की छात्रवृत्ति मिली है, पक्की करने के लिए आज ₹499 भरें। कॉलेज के दफ़्तर को इसकी कोई खबर नहीं। नेहा पैसा नहीं भरती।",
+      "mr": "मेसेज येतो की नेहाला ₹50,000 ची शिष्यवृत्ती मिळाली आहे, नक्की करण्यासाठी आज ₹499 भरा. कॉलेजच्या कार्यालयाला याची माहितीच नाही. नेहा पैसे भरत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A message says Neha won a ₹50,000 scholarship and must pay ₹499 today to confirm. Her college office has never heard of it. She does not pay."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Ask your college office which scholarship sites are real.",
+        "hi": "कॉलेज के दफ़्तर से पूछें कि छात्रवृत्ति की कौन सी साइटें असली हैं।",
+        "mr": "कॉलेजच्या कार्यालयात विचारा की शिष्यवृत्तीच्या कोणत्या साइट खऱ्या आहेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask your college office which scholarship sites are real."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "A “recruiter” wants ₹1,000 for a training kit before the job starts.",
+        "hi": "“भर्ती करने वाला” नौकरी से पहले ट्रेनिंग किट के ₹1,000 माँगता है।",
+        "mr": "“भरती करणारा” नोकरी सुरू होण्याआधी ट्रेनिंग किटसाठी ₹1,000 मागतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A “recruiter” wants ₹1,000 for a training kit before the job starts."
+      },
+      "options": [
+        {
+          "en": "Pay, it is refundable",
+          "hi": "भर दें, वापस मिल जाएगा",
+          "mr": "भराल, परत मिळतील",
+          "kn": "ಈಸು: Pay, it is refundable"
+        },
+        {
+          "en": "Do not pay",
+          "hi": "पैसा न दें",
+          "mr": "पैसे देणार नाही",
+          "kn": "ಈಸು: Do not pay"
+        },
+        {
+          "en": "Pay half",
+          "hi": "आधा दे दें",
+          "mr": "अर्धे द्याल",
+          "kn": "ಈಸು: Pay half"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Employers pay you. They do not charge you to start.",
+        "hi": "नौकरी देने वाला आपको पैसा देता है, आपसे लेता नहीं।",
+        "mr": "नोकरी देणारा तुम्हाला पैसे देतो, तुमच्याकडून घेत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Employers pay you. They do not charge you to start."
+      }
+    }
+  },
+  {
+    "id": "what-insurance",
+    "category": "insurance",
+    "icon": "umbrella",
+    "title": {
+      "en": "What insurance is for",
+      "hi": "बीमा किस लिए है",
+      "mr": "विमा कशासाठी आहे",
+      "kn": "ಈಸು: What insurance is for"
+    },
+    "summary": {
+      "en": "Insurance pays for a large loss. It is not a savings plan.",
+      "hi": "बीमा बड़े नुकसान के लिए होता है। यह बचत योजना नहीं।",
+      "mr": "विमा मोठ्या नुकसानासाठी असतो. ही बचत योजना नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Insurance pays for a large loss. It is not a savings plan."
+    },
+    "body": {
+      "en": "You pay a [[premium]] so that a fire, a hospital bill, or a death does not wipe out the family. The [[sum-assured]] is the most the policy will pay.\n\nIf someone calls a policy “a return like a fixed deposit”, ask to see the costs. Mixing [[insurance]] and investment often hides fees.",
+      "hi": "आप [[premium]] देते हैं ताकि आग, अस्पताल का बिल या मौत परिवार को खाली न कर दे। [[sum-assured]] पॉलिसी की अधिकतम रकम है।\n\nकोई पॉलिसी को “फिक्स्ड डिपॉज़िट जैसा रिटर्न” कहे तो खर्च दिखाने को कहें। [[insurance]] और निवेश मिलाने से शुल्क अक्सर छिपते हैं।",
+      "mr": "तुम्ही [[premium]] देता, म्हणजे आग, हॉस्पिटल बिल किंवा मृत्यू कुटुंब रिते करणार नाही. [[sum-assured]] पॉलिसीची कमाल रक्कम आहे.\n\nकोणी पॉलिसीला “मुदत ठेवीसारखा परतावा” म्हटले तर खर्च दाखवायला सांगा. [[insurance]] आणि गुंतवणूक मिसळल्याने शुल्क अनेकदा लपतात.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You pay a [[premium]] so that a fire, a hospital bill, or a death does not wipe out the family. The [[sum-assured]] is the most the policy will pay.\n\nIf someone calls a policy “a return like a fixed deposit”, ask to see the costs. Mixing [[insurance]] and investment often hides fees."
+    },
+    "points": [
+      {
+        "en": "You pay a small premium so a big loss does not break the family.",
+        "hi": "आप छोटा प्रीमियम देते हैं ताकि बड़ा नुकसान घर को न तोड़े।",
+        "mr": "तुम्ही छोटा हप्ता भरता, जेणेकरून मोठे नुकसान घर मोडणार नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You pay a small premium so a big loss does not break the family."
+      },
+      {
+        "en": "Sum assured is the most the policy will pay.",
+        "hi": "बीमा राशि वह सबसे बड़ी रकम है जो पॉलिसी देगी।",
+        "mr": "विमा रक्कम म्हणजे पॉलिसी जास्तीत जास्त किती देईल ती रक्कम.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Sum assured is the most the policy will pay."
+      },
+      {
+        "en": "Insurance is protection. It is not a savings plan.",
+        "hi": "बीमा सुरक्षा है। यह बचत की योजना नहीं है।",
+        "mr": "विमा म्हणजे संरक्षण. ती बचत योजना नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Insurance is protection. It is not a savings plan."
+      }
+    ],
+    "example": {
+      "en": "A family pays ₹500 a month for health cover of ₹5,00,000. When the father needs a ₹1,20,000 operation, the policy pays the hospital.",
+      "hi": "एक परिवार ₹5,00,000 के हेल्थ कवर के लिए महीने के ₹500 देता है। पिता के ₹1,20,000 के ऑपरेशन का बिल पॉलिसी भरती है।",
+      "mr": "एक कुटुंब ₹5,00,000 च्या आरोग्य विम्यासाठी महिन्याला ₹500 भरते. वडिलांच्या ₹1,20,000 च्या ऑपरेशनचे बिल पॉलिसी भरते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A family pays ₹500 a month for health cover of ₹5,00,000. When the father needs a ₹1,20,000 operation, the policy pays the hospital."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Ask at home which insurance the family has, and where the papers are.",
+        "hi": "घर पर पूछें कि परिवार के पास कौन सा बीमा है और कागज़ कहाँ रखे हैं।",
+        "mr": "घरी विचारा की कुटुंबाकडे कोणता विमा आहे आणि कागदपत्रे कुठे आहेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask at home which insurance the family has, and where the papers are."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "An agent says a policy “doubles your money like an FD”. You:",
+        "hi": "एजेंट कहता है पॉलिसी “एफडी की तरह पैसा दोगुना करती है”। आप:",
+        "mr": "एजंट म्हणतो पॉलिसी “एफडीसारखे पैसे दुप्पट करते”. तुम्ही:",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An agent says a policy “doubles your money like an FD”. You:"
+      },
+      "options": [
+        {
+          "en": "Buy it today",
+          "hi": "आज ही ले लें",
+          "mr": "आजच घ्याल",
+          "kn": "ಈಸು: Buy it today"
+        },
+        {
+          "en": "Ask to see all the costs in writing",
+          "hi": "सारे खर्च लिखकर माँगें",
+          "mr": "सगळे खर्च लेखी मागाल",
+          "kn": "ಈಸು: Ask to see all the costs in writing"
+        },
+        {
+          "en": "Buy two",
+          "hi": "दो ले लें",
+          "mr": "दोन घ्याल",
+          "kn": "ಈಸು: Buy two"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Mixing insurance with investment often hides high charges.",
+        "hi": "बीमा और निवेश को मिलाने में अक्सर भारी शुल्क छिपे होते हैं।",
+        "mr": "विमा आणि गुंतवणूक एकत्र केल्यावर बहुधा मोठे शुल्क लपलेले असते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Mixing insurance with investment often hides high charges."
+      }
+    }
+  },
+  {
+    "id": "health-cover",
+    "category": "insurance",
+    "icon": "heart",
+    "title": {
+      "en": "Health cover, plainly",
+      "hi": "स्वास्थ्य कवर, सीधे शब्दों में",
+      "mr": "आरोग्य कव्हर, सोप्या शब्दांत",
+      "kn": "ಈಸು: Health cover, plainly"
+    },
+    "summary": {
+      "en": "Know what is covered, what you pay first, and who is included.",
+      "hi": "क्या कवर है, आप पहले क्या देते हैं, और कौन शामिल है, यह जानें।",
+      "mr": "काय कव्हर आहे, तुम्ही आधी काय देता, आणि कोण समाविष्ट आहे ते जाणा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Know what is covered, what you pay first, and who is included."
+    },
+    "body": {
+      "en": "A health policy pays a hospital bill up to the [[sum-assured]], after any [[deductible]]. Read which hospitals and which illnesses are included.\n\nA [[claim]] needs papers. Keep discharge notes. A cheap premium that excludes the local hospital is not a bargain.",
+      "hi": "स्वास्थ्य पॉलिसी [[deductible]] के बाद अस्पताल का बिल [[sum-assured]] तक देती है। कौन से अस्पताल और बीमारियाँ शामिल हैं, पढ़ें।\n\n[[claim]] के लिए कागज चाहिए। डिस्चार्ज नोट रखें। सस्ता प्रीमियम जो पास के अस्पताल को काट दे, सस्ता नहीं।",
+      "mr": "आरोग्य पॉलिसी [[deductible]] नंतर हॉस्पिटल बिल [[sum-assured]] पर्यंत देते. कोणती हॉस्पिटल आणि कोणते आजार समाविष्ट आहेत ते वाचा.\n\n[[claim]] साठी कागद हवे. डिस्चार्ज नोट ठेवा. जवळचे हॉस्पिटल वगळणारा स्वस्त प्रीमियम स्वस्त नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A health policy pays a hospital bill up to the [[sum-assured]], after any [[deductible]]. Read which hospitals and which illnesses are included.\n\nA [[claim]] needs papers. Keep discharge notes. A cheap premium that excludes the local hospital is not a bargain."
+    },
+    "points": [
+      {
+        "en": "Check which hospitals near you accept the policy.",
+        "hi": "देखें कि आपके पास के कौन से अस्पताल पॉलिसी मानते हैं।",
+        "mr": "तुमच्या जवळची कोणती रुग्णालये पॉलिसी स्वीकारतात ते पाहा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check which hospitals near you accept the policy."
+      },
+      {
+        "en": "Know what you must pay yourself before the policy pays.",
+        "hi": "जानें कि पॉलिसी के देने से पहले आपको खुद कितना देना है।",
+        "mr": "पॉलिसी देण्याआधी तुम्हाला स्वतः किती भरावे लागते ते जाणून घ्या.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Know what you must pay yourself before the policy pays."
+      },
+      {
+        "en": "Read the list of illnesses that are not covered.",
+        "hi": "उन बीमारियों की सूची पढ़ें जो कवर में नहीं हैं।",
+        "mr": "ज्या आजारांना संरक्षण नाही त्यांची यादी वाचा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Read the list of illnesses that are not covered."
+      },
+      {
+        "en": "Keep every bill and discharge paper for the claim.",
+        "hi": "क्लेम के लिए हर बिल और डिस्चार्ज का कागज़ सँभालकर रखें।",
+        "mr": "दाव्यासाठी प्रत्येक बिल आणि डिस्चार्जचा कागद जपून ठेवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Keep every bill and discharge paper for the claim."
+      }
+    ],
+    "example": {
+      "en": "Ayushman Bharat covers up to ₹5,00,000 a year for families that qualify. Lata checks her family's name on the official site before the hospital visit.",
+      "hi": "आयुष्मान भारत पात्र परिवारों को साल में ₹5,00,000 तक का कवर देता है। लता अस्पताल जाने से पहले सरकारी साइट पर अपने परिवार का नाम देख लेती है।",
+      "mr": "आयुष्मान भारत पात्र कुटुंबांना वर्षाला ₹5,00,000 पर्यंत संरक्षण देते. लता रुग्णालयात जाण्याआधी अधिकृत साइटवर कुटुंबाचे नाव तपासते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ayushman Bharat covers up to ₹5,00,000 a year for families that qualify. Lata checks her family's name on the official site before the hospital visit."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Find out if your family has a health card, and where it is kept.",
+        "hi": "पता करें कि परिवार के पास हेल्थ कार्ड है या नहीं, और कहाँ रखा है।",
+        "mr": "कुटुंबाकडे आरोग्य कार्ड आहे का आणि ते कुठे ठेवले आहे ते शोधा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Find out if your family has a health card, and where it is kept."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "A cheap policy does not include the hospital in your town. Is it a good deal?",
+        "hi": "सस्ती पॉलिसी में आपके शहर का अस्पताल नहीं है। क्या यह फायदे का सौदा है?",
+        "mr": "स्वस्त पॉलिसीत तुमच्या गावातील रुग्णालय नाही. हा फायद्याचा सौदा आहे का?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A cheap policy does not include the hospital in your town. Is it a good deal?"
+      },
+      "options": [
+        {
+          "en": "Yes, cheap is best",
+          "hi": "हाँ, सस्ता सबसे अच्छा",
+          "mr": "हो, स्वस्त तेच उत्तम",
+          "kn": "ಈಸು: Yes, cheap is best"
+        },
+        {
+          "en": "No, I could not use it",
+          "hi": "नहीं, मैं इसे इस्तेमाल ही नहीं कर पाऊँगा",
+          "mr": "नाही, ती वापरताच येणार नाही",
+          "kn": "ಈಸು: No, I could not use it"
+        },
+        {
+          "en": "It makes no difference",
+          "hi": "कोई फर्क नहीं पड़ता",
+          "mr": "काही फरक पडत नाही",
+          "kn": "ಈಸು: It makes no difference"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Cover you cannot reach in an emergency does not protect you.",
+        "hi": "जो कवर ज़रूरत के समय काम न आए, वह सुरक्षा नहीं देता।",
+        "mr": "गरजेच्या वेळी उपयोगी न पडणारे संरक्षण काही कामाचे नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Cover you cannot reach in an emergency does not protect you."
+      }
+    }
+  },
+  {
+    "id": "emergency-fund",
+    "category": "savings",
+    "icon": "jar",
+    "title": {
+      "en": "An emergency fund",
+      "hi": "आपात निधि",
+      "mr": "आणीबाणी निधी",
+      "kn": "ಈಸು: An emergency fund"
+    },
+    "summary": {
+      "en": "A small cash reserve keeps a bad week from becoming a loan.",
+      "hi": "थोड़ी नकदी बुरे हफ्ते को कर्ज बनने से रोकती है।",
+      "mr": "थोडा रोख वाईट आठवड्याला कर्ज होऊ देत नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A small cash reserve keeps a bad week from becoming a loan."
+    },
+    "body": {
+      "en": "An [[emergency-fund]] is for a broken phone you need for class, a sudden ticket home, or a medical bill. It is not for a sale.\n\nKeep it somewhere with high [[liquidity]], such as a savings account, so you can use it the same day.",
+      "hi": "[[emergency-fund]] टूटे फोन के लिए है जो क्लास के लिए चाहिए, अचानक घर के टिकट या मेडिकल बिल के लिए। सेल के लिए नहीं।\n\nइसे ऊँची [[liquidity]] वाली जगह रखें, जैसे बचत खाता, ताकि उसी दिन इस्तेमाल हो सके।",
+      "mr": "[[emergency-fund]] तुटलेल्या फोनसाठी आहे जो वर्गाला हवा, अचानक घरी जाण्याच्या तिकिटासाठी किंवा वैद्यकीय बिलासाठी. सेलसाठी नाही.\n\nतो जास्त [[liquidity]] असलेल्या ठिकाणी ठेवा, जसे बचत खाते, म्हणजे त्याच दिवशी वापरता येईल.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An [[emergency-fund]] is for a broken phone you need for class, a sudden ticket home, or a medical bill. It is not for a sale.\n\nKeep it somewhere with high [[liquidity]], such as a savings account, so you can use it the same day."
+    },
+    "points": [
+      {
+        "en": "An emergency fund is money kept only for sudden needs.",
+        "hi": "आपातकालीन फंड वह पैसा है जो सिर्फ अचानक की ज़रूरत के लिए रखा जाता है।",
+        "mr": "आपत्कालीन निधी म्हणजे फक्त अचानक गरजेसाठी ठेवलेले पैसे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: An emergency fund is money kept only for sudden needs."
+      },
+      {
+        "en": "Start with a first goal of ₹1,000.",
+        "hi": "पहला लक्ष्य ₹1,000 रखें।",
+        "mr": "पहिले लक्ष्य ₹1,000 ठेवा.",
+        "kn": "ಈಸು: Start with a first goal of ₹1,000."
+      },
+      {
+        "en": "Keep it where you can reach it the same day.",
+        "hi": "इसे वहाँ रखें जहाँ से उसी दिन निकाल सकें।",
+        "mr": "ते अशा ठिकाणी ठेवा जिथून त्याच दिवशी काढता येईल.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Keep it where you can reach it the same day."
+      },
+      {
+        "en": "A sale or a party is not an emergency.",
+        "hi": "सेल या पार्टी आपातकाल नहीं है।",
+        "mr": "सेल किंवा पार्टी म्हणजे आपत्काल नाही.",
+        "kn": "ಈಸು: A sale or a party is not an emergency."
+      }
+    ],
+    "example": {
+      "en": "Arjun's phone screen cracks a week before online exams. The repair is ₹900. He pays from his jar instead of borrowing from an app.",
+      "hi": "ऑनलाइन परीक्षा से एक हफ्ता पहले अर्जुन के फोन की स्क्रीन टूट जाती है। मरम्मत ₹900 की है। वह ऐप से उधार लेने के बजाय अपने डिब्बे से पैसे देता है।",
+      "mr": "ऑनलाइन परीक्षेच्या एक आठवडा आधी अर्जुनच्या फोनची स्क्रीन फुटते. दुरुस्ती ₹900 ची आहे. अ‍ॅपकडून उधार घेण्याऐवजी तो आपल्या डब्यातून पैसे देतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Arjun's phone screen cracks a week before online exams. The repair is ₹900. He pays from his jar instead of borrowing from an app."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Set a ₹1,000 savings goal in Money Lab.",
+        "hi": "मनी लैब में ₹1,000 की बचत का लक्ष्य रखें।",
+        "mr": "मनी लॅबमध्ये ₹1,000 चे बचत लक्ष्य ठेवा.",
+        "kn": "ಈಸು: Set a ₹1,000 savings goal in Money Lab."
+      },
+      "link": "tracker"
+    },
+    "check": {
+      "question": {
+        "en": "Which is a fair use of an emergency fund?",
+        "hi": "आपातकालीन फंड का सही इस्तेमाल कौन सा है?",
+        "mr": "आपत्कालीन निधीचा योग्य वापर कोणता?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Which is a fair use of an emergency fund?"
+      },
+      "options": [
+        {
+          "en": "A festival sale",
+          "hi": "त्योहार की सेल",
+          "mr": "सणाचा सेल",
+          "kn": "ಈಸು: A festival sale"
+        },
+        {
+          "en": "A sudden medicine bill",
+          "hi": "अचानक दवा का बिल",
+          "mr": "अचानक आलेले औषधाचे बिल",
+          "kn": "ಈಸು: A sudden medicine bill"
+        },
+        {
+          "en": "A friend's birthday gift",
+          "hi": "दोस्त के जन्मदिन का तोहफा",
+          "mr": "मित्राच्या वाढदिवसाची भेट",
+          "kn": "ಈಸು: A friend's birthday gift"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "It is for needs you could not plan for.",
+        "hi": "यह उन ज़रूरतों के लिए है जिनकी योजना नहीं बन सकती थी।",
+        "mr": "ज्या गरजांचे नियोजन करता आले नसते त्यांच्यासाठी हा निधी असतो.",
+        "kn": "ಈಸು: It is for needs you could not plan for."
+      }
+    }
+  },
+  {
+    "id": "where-savings",
+    "category": "savings",
+    "icon": "landmark",
+    "title": {
+      "en": "Where to keep savings",
+      "hi": "बचत कहाँ रखें",
+      "mr": "बचत कुठे ठेवावी",
+      "kn": "ಈಸು: Where to keep savings"
+    },
+    "summary": {
+      "en": "Match the place to the time. Soon money stays easy to reach.",
+      "hi": "जगह को समय से मिलाएँ। जल्दी चाहिए पैसा आसानी से मिलना चाहिए।",
+      "mr": "जागा काळाशी जुळवा. लवकर हवे असलेले पैसे सहज मिळावेत.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Match the place to the time. Soon money stays easy to reach."
+    },
+    "body": {
+      "en": "Money for this month belongs in a savings account. Money you will not touch for a year can sit in a [[fixed-deposit]] or a [[recurring-deposit]].\n\nDo not chase a high rate that locks you in if you may need the cash. [[liquidity]] has a value of its own.",
+      "hi": "इस महीने का पैसा बचत खाते में रहता है। एक साल न छुएँ तो वह [[fixed-deposit]] या [[recurring-deposit]] में रह सकता है।\n\nनकदी लग सकती हो तो ऐसी ऊँची दर के पीछे न दौड़ें जो आपको बाँध दे। [[liquidity]] की अपनी कीमत है।",
+      "mr": "या महिन्याचे पैसे बचत खात्यात राहतात. वर्षभर हात लावणार नसाल तर ते [[fixed-deposit]] किंवा [[recurring-deposit]] मध्ये राहू शकतात.\n\nरोख लागण्याची शक्यता असेल तर अडकवणारा उच्च दर धरू नका. [[liquidity]] ची स्वतःची किंमत आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Money for this month belongs in a savings account. Money you will not touch for a year can sit in a [[fixed-deposit]] or a [[recurring-deposit]].\n\nDo not chase a high rate that locks you in if you may need the cash. [[liquidity]] has a value of its own."
+    },
+    "points": [
+      {
+        "en": "Money needed this month stays in a savings account.",
+        "hi": "इस महीने की ज़रूरत का पैसा बचत खाते में रखें।",
+        "mr": "या महिन्यात लागणारे पैसे बचत खात्यात ठेवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Money needed this month stays in a savings account."
+      },
+      {
+        "en": "Money for next year can go in a fixed or recurring deposit.",
+        "hi": "अगले साल के लिए पैसा एफडी या आरडी में रख सकते हैं।",
+        "mr": "पुढच्या वर्षासाठीचे पैसे एफडी किंवा आरडीमध्ये ठेवता येतात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Money for next year can go in a fixed or recurring deposit."
+      },
+      {
+        "en": "Bank deposits are insured up to ₹5,00,000 per bank.",
+        "hi": "बैंक में जमा पैसा हर बैंक में ₹5,00,000 तक बीमित होता है।",
+        "mr": "बँकेतील ठेवींना प्रत्येक बँकेत ₹5,00,000 पर्यंत विमा संरक्षण असते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Bank deposits are insured up to ₹5,00,000 per bank."
+      },
+      {
+        "en": "A very high promised return usually hides a risk.",
+        "hi": "बहुत ऊँचे मुनाफे के वादे में अक्सर जोखिम छिपा होता है।",
+        "mr": "खूप जास्त परताव्याच्या आश्वासनामागे बहुधा धोका लपलेला असतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A very high promised return usually hides a risk."
+      }
+    ],
+    "example": {
+      "en": "Sana saves ₹300 a month for next year's laptop in a recurring deposit at the post office. Her bus money stays in her savings account.",
+      "hi": "सना अगले साल के लैपटॉप के लिए हर महीने ₹300 डाकघर की आरडी में डालती है। बस का पैसा बचत खाते में ही रहता है।",
+      "mr": "सना पुढच्या वर्षीच्या लॅपटॉपसाठी दर महिन्याला ₹300 पोस्टाच्या आरडीमध्ये टाकते. बसचे पैसे बचत खात्यातच राहतात.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Sana saves ₹300 a month for next year's laptop in a recurring deposit at the post office. Her bus money stays in her savings account."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Ask at a bank or post office about the smallest recurring deposit.",
+        "hi": "बैंक या डाकघर में सबसे छोटी आरडी के बारे में पूछें।",
+        "mr": "बँकेत किंवा पोस्टात सर्वात लहान आरडीबद्दल विचारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask at a bank or post office about the smallest recurring deposit."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "Where should next week's rent money sit?",
+        "hi": "अगले हफ्ते के किराए का पैसा कहाँ रखें?",
+        "mr": "पुढच्या आठवड्याच्या भाड्याचे पैसे कुठे ठेवावेत?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Where should next week's rent money sit?"
+      },
+      "options": [
+        {
+          "en": "A five-year deposit",
+          "hi": "पाँच साल की एफडी में",
+          "mr": "पाच वर्षांच्या एफडीत",
+          "kn": "ಈಸು: A five-year deposit"
+        },
+        {
+          "en": "A savings account",
+          "hi": "बचत खाते में",
+          "mr": "बचत खात्यात",
+          "kn": "ಈಸು: A savings account"
+        },
+        {
+          "en": "A friend's scheme",
+          "hi": "दोस्त की स्कीम में",
+          "mr": "मित्राच्या योजनेत",
+          "kn": "ಈಸು: A friend's scheme"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Money you need soon must be easy to take out.",
+        "hi": "जो पैसा जल्दी चाहिए, वह आसानी से निकलना चाहिए।",
+        "mr": "लवकर लागणारे पैसे सहज काढता यायला हवेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Money you need soon must be easy to take out."
+      }
+    }
+  },
+  {
+    "id": "what-sip",
+    "category": "savings",
+    "icon": "sprout",
+    "title": {
+      "en": "What a SIP is",
+      "hi": "एसआईपी क्या है",
+      "mr": "एसआयपी म्हणजे काय",
+      "kn": "ಈಸು: What a SIP is"
+    },
+    "summary": {
+      "en": "A SIP is a monthly habit, not a promise of profit.",
+      "hi": "एसआईपी मासिक आदत है, मुनाफे का वादा नहीं।",
+      "mr": "एसआयपी मासिक सवय आहे, नफ्याचे वचन नाही.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A SIP is a monthly habit, not a promise of profit."
+    },
+    "body": {
+      "en": "A [[sip]] puts a fixed sum into a mutual fund each month. The value can fall. That is the [[risk]]. Over many years, [[compound-interest]] may help, but nothing is guaranteed.\n\nUse a SIP only for money you do not need soon. Keep the [[emergency-fund]] separate.",
+      "hi": "[[sip]] हर महीने म्यूचुअल फंड में तय रकम डालता है। कीमत गिर सकती है। यही [[risk]] है। कई वर्षों में [[compound-interest]] मदद कर सकता है, पर कुछ पक्का नहीं।\n\nएसआईपी सिर्फ उस पैसे के लिए जो जल्दी न चाहिए। [[emergency-fund]] अलग रखें।",
+      "mr": "[[sip]] दर महिन्याला म्युच्युअल फंडात ठरलेली रक्कम टाकतो. किंमत पडू शकते. तो [[risk]] आहे. अनेक वर्षांत [[compound-interest]] मदत करू शकतो, पण काही हमी नाही.\n\nएसआयपी फक्त लवकर नको असलेल्या पैशांसाठी. [[emergency-fund]] वेगळा ठेवा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[sip]] puts a fixed sum into a mutual fund each month. The value can fall. That is the [[risk]]. Over many years, [[compound-interest]] may help, but nothing is guaranteed.\n\nUse a SIP only for money you do not need soon. Keep the [[emergency-fund]] separate."
+    },
+    "points": [
+      {
+        "en": "A SIP puts a fixed amount into a mutual fund every month.",
+        "hi": "एसआईपी में हर महीने तय रकम म्यूचुअल फंड में जाती है।",
+        "mr": "एसआयपीमध्ये दर महिन्याला ठरलेली रक्कम म्युच्युअल फंडात जाते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A SIP puts a fixed amount into a mutual fund every month."
+      },
+      {
+        "en": "The value can go down as well as up.",
+        "hi": "इसकी कीमत बढ़ भी सकती है और घट भी सकती है।",
+        "mr": "त्याचे मूल्य वाढूही शकते आणि घटूही शकते.",
+        "kn": "ಈಸು: The value can go down as well as up."
+      },
+      {
+        "en": "It suits money you will not need for five years or more.",
+        "hi": "यह उस पैसे के लिए है जो पाँच साल या ज़्यादा नहीं चाहिए।",
+        "mr": "पाच वर्षे किंवा जास्त काळ न लागणाऱ्या पैशांसाठी हे योग्य आहे.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: It suits money you will not need for five years or more."
+      },
+      {
+        "en": "Build an emergency fund before you start one.",
+        "hi": "इसे शुरू करने से पहले आपातकालीन फंड बना लें।",
+        "mr": "हे सुरू करण्याआधी आपत्कालीन निधी तयार करा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Build an emergency fund before you start one."
+      }
+    ],
+    "example": {
+      "en": "Vikram starts a ₹500 SIP with his first salary. In a bad year the value falls below what he put in. He keeps going because he will not need it for ten years.",
+      "hi": "विक्रम पहली तनख्वाह से ₹500 की एसआईपी शुरू करता है। एक खराब साल में कीमत जमा रकम से नीचे चली जाती है। वह जारी रखता है, क्योंकि यह पैसा दस साल नहीं चाहिए।",
+      "mr": "विक्रम पहिल्या पगारातून ₹500 ची एसआयपी सुरू करतो. एका वाईट वर्षात मूल्य भरलेल्या रकमेपेक्षा खाली जाते. तो सुरू ठेवतो, कारण हे पैसे दहा वर्षे लागणार नाहीत.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Vikram starts a ₹500 SIP with his first salary. In a bad year the value falls below what he put in. He keeps going because he will not need it for ten years."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Check your savings goal in Money Lab before thinking about a SIP.",
+        "hi": "एसआईपी सोचने से पहले मनी लैब में अपनी बचत का लक्ष्य देखें।",
+        "mr": "एसआयपीचा विचार करण्याआधी मनी लॅबमधील बचत लक्ष्य पाहा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check your savings goal in Money Lab before thinking about a SIP."
+      },
+      "link": "tracker"
+    },
+    "check": {
+      "question": {
+        "en": "Does a SIP guarantee a profit?",
+        "hi": "क्या एसआईपी मुनाफे की गारंटी देती है?",
+        "mr": "एसआयपी नफ्याची हमी देते का?",
+        "kn": "ಈಸು: Does a SIP guarantee a profit?"
+      },
+      "options": [
+        {
+          "en": "Yes, always",
+          "hi": "हाँ, हमेशा",
+          "mr": "हो, नेहमी",
+          "kn": "ಈಸು: Yes, always"
+        },
+        {
+          "en": "No, the value can fall",
+          "hi": "नहीं, कीमत गिर सकती है",
+          "mr": "नाही, मूल्य घटू शकते",
+          "kn": "ಈಸು: No, the value can fall"
+        },
+        {
+          "en": "Only in the first year",
+          "hi": "सिर्फ पहले साल",
+          "mr": "फक्त पहिल्या वर्षी",
+          "kn": "ಈಸು: Only in the first year"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "A SIP is a habit of investing, not a promise.",
+        "hi": "एसआईपी निवेश की आदत है, कोई वादा नहीं।",
+        "mr": "एसआयपी ही गुंतवणुकीची सवय आहे, आश्वासन नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A SIP is a habit of investing, not a promise."
+      }
+    }
+  },
+  {
+    "id": "inflation",
+    "category": "savings",
+    "icon": "arrow-up",
+    "title": {
+      "en": "Inflation, in one page",
+      "hi": "मुद्रास्फीति, एक पन्ने में",
+      "mr": "महागाई, एका पानात",
+      "kn": "ಈಸು: Inflation, in one page"
+    },
+    "summary": {
+      "en": "Prices creep up. Cash that sits still buys less later.",
+      "hi": "कीमतें धीरे बढ़ती हैं। रुका नकद बाद में कम खरीदता है।",
+      "mr": "किमती हळू वाढतात. थांबलेला रोख नंतर कमी घेतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Prices creep up. Cash that sits still buys less later."
+    },
+    "body": {
+      "en": "[[inflation]] means the bus fare and the lunch cost more next year. A savings account may not fully keep up. That does not mean you should chase a [[ponzi]] scheme.\n\nFirst beat chaos with a budget. Then let long-term money take a measured [[risk]].",
+      "hi": "[[inflation]] का मतलब अगले साल बस और लंच महँगे होंगे। बचत खाता पूरी तरह साथ न दे। इसका मतलब [[ponzi]] के पीछे दौड़ना नहीं।\n\nपहले बजट से अव्यवस्था हराएँ। फिर लंबे समय के पैसे को नापा हुआ [[risk]] दें।",
+      "mr": "[[inflation]] म्हणजे पुढच्या वर्षी बस आणि जेवण महाग. बचत खाते पूर्ण साथ देणार नाही. म्हणजे [[ponzi]] च्या मागे धावणे नाही.\n\nआधी अंदाजपत्रकाने गोंधळ संपवा. मग दीर्घकालीन पैशांना मोजके [[risk]] द्या.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: [[inflation]] means the bus fare and the lunch cost more next year. A savings account may not fully keep up. That does not mean you should chase a [[ponzi]] scheme.\n\nFirst beat chaos with a budget. Then let long-term money take a measured [[risk]]."
+    },
+    "points": [
+      {
+        "en": "Inflation means prices rise a little every year.",
+        "hi": "महँगाई यानी दाम हर साल थोड़े-थोड़े बढ़ते हैं।",
+        "mr": "महागाई म्हणजे दरवर्षी किमती थोड्या थोड्या वाढतात.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Inflation means prices rise a little every year."
+      },
+      {
+        "en": "The same ₹100 buys less next year.",
+        "hi": "वही ₹100 अगले साल कम सामान खरीदते हैं।",
+        "mr": "तेच ₹100 पुढच्या वर्षी कमी वस्तू घेतात.",
+        "kn": "ಈಸು: The same ₹100 buys less next year."
+      },
+      {
+        "en": "Cash kept at home slowly loses value.",
+        "hi": "घर में रखा नकद धीरे-धीरे कीमत खोता है।",
+        "mr": "घरात ठेवलेली रोकड हळूहळू मूल्य गमावते.",
+        "kn": "ಈಸು: Cash kept at home slowly loses value."
+      },
+      {
+        "en": "Do not chase risky schemes to beat it.",
+        "hi": "इसे हराने के लिए जोखिम वाली स्कीमों के पीछे न भागें।",
+        "mr": "तिला हरवण्यासाठी धोकादायक योजनांच्या मागे धावू नका.",
+        "kn": "ಈಸು: Do not chase risky schemes to beat it."
+      }
+    ],
+    "example": {
+      "en": "A plate of vada pav cost ₹12 a few years ago and costs ₹20 now. The plate is the same. The rupee buys less.",
+      "hi": "कुछ साल पहले वड़ा पाव ₹12 का था, अब ₹20 का है। वड़ा पाव वही है। रुपया कम खरीद पाता है।",
+      "mr": "काही वर्षांपूर्वी वडापाव ₹12 ला होता, आता ₹20 ला आहे. वडापाव तोच आहे. रुपयात कमी मिळते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A plate of vada pav cost ₹12 a few years ago and costs ₹20 now. The plate is the same. The rupee buys less."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Ask a parent what a bus ticket cost when they were your age.",
+        "hi": "माता-पिता से पूछें कि आपकी उम्र में बस का टिकट कितने का था।",
+        "mr": "आईवडिलांना विचारा की तुमच्या वयात बसचे तिकीट किती होते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask a parent what a bus ticket cost when they were your age."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "Prices rose 6 percent. Your savings earned 3 percent. You can now buy:",
+        "hi": "दाम 6 प्रतिशत बढ़े। बचत पर 3 प्रतिशत मिला। अब आप खरीद सकते हैं:",
+        "mr": "किमती 6 टक्के वाढल्या. बचतीवर 3 टक्के मिळाले. आता तुम्ही घेऊ शकता:",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Prices rose 6 percent. Your savings earned 3 percent. You can now buy:"
+      },
+      "options": [
+        {
+          "en": "More than before",
+          "hi": "पहले से ज़्यादा",
+          "mr": "आधीपेक्षा जास्त",
+          "kn": "ಈಸು: More than before"
+        },
+        {
+          "en": "A little less than before",
+          "hi": "पहले से थोड़ा कम",
+          "mr": "आधीपेक्षा थोडे कमी",
+          "kn": "ಈಸು: A little less than before"
+        },
+        {
+          "en": "Exactly the same",
+          "hi": "बिलकुल उतना ही",
+          "mr": "अगदी तेवढेच",
+          "kn": "ಈಸು: Exactly the same"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Prices grew faster than your money did.",
+        "hi": "दाम आपके पैसे से तेज़ बढ़े।",
+        "mr": "किमती तुमच्या पैशांपेक्षा वेगाने वाढल्या.",
+        "kn": "ಈಸು: Prices grew faster than your money did."
+      }
+    }
+  },
+  {
+    "id": "tax-basics",
+    "category": "taxid",
+    "icon": "building",
+    "title": {
+      "en": "Tax, for a student",
+      "hi": "कर, एक छात्र के लिए",
+      "mr": "कर, विद्यार्थ्यासाठी",
+      "kn": "ಈಸು: Tax, for a student"
+    },
+    "summary": {
+      "en": "Most pocket money is not a tax problem. A job might be.",
+      "hi": "अधिकांश जेब खर्च कर की समस्या नहीं। नौकरी हो सकती है।",
+      "mr": "बहुतेक खिशाचे पैसे कराची अडचण नाहीत. नोकरी असू शकते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Most pocket money is not a tax problem. A job might be."
+    },
+    "body": {
+      "en": "[[tax]] is what the government takes from income above a threshold. A small part-time job may still be below it. Keep payslips anyway.\n\nDo not pay a stranger to “file and get a refund” if you never earned enough. That pitch is often a scam.",
+      "hi": "[[tax]] वह है जो सरकार सीमा से ऊपर की आय से लेती है। छोटी पार्ट-टाइम नौकरी अभी भी नीचे हो सकती है। फिर भी पेरोल स्लिप रखें।\n\nकाफी कमाई न हुई हो तो “रिटर्न भरकर रिफंड दिलाएँगे” वाले अजनबी को पैसे न दें। यह अक्सर ठगी होती है।",
+      "mr": "[[tax]] म्हणजे सरकार मर्यादेवरील उत्पन्नातून घेते ते. छोटी अर्धवेळ नोकरी अजून खाली असू शकते. तरी पेस्लिप ठेवा.\n\nपुरेसे कमावले नसेल तर “रिटर्न भरून रिफंड मिळवून देतो” म्हणणाऱ्या अनोळखीला पैसे देऊ नका. ही अनेकदा फसवणूक असते.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: [[tax]] is what the government takes from income above a threshold. A small part-time job may still be below it. Keep payslips anyway.\n\nDo not pay a stranger to “file and get a refund” if you never earned enough. That pitch is often a scam."
+    },
+    "points": [
+      {
+        "en": "Income tax applies only above a yearly income limit.",
+        "hi": "आयकर सिर्फ सालाना आय की एक सीमा से ऊपर लगता है।",
+        "mr": "आयकर फक्त वार्षिक उत्पन्नाच्या ठराविक मर्यादेपुढे लागतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Income tax applies only above a yearly income limit."
+      },
+      {
+        "en": "Most students with pocket money or a small job owe nothing.",
+        "hi": "जेब खर्च या छोटी नौकरी वाले ज़्यादातर छात्रों पर कोई कर नहीं बनता।",
+        "mr": "खर्चाचे पैसे किंवा छोटी नोकरी असलेल्या बहुतेक विद्यार्थ्यांना कर लागत नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Most students with pocket money or a small job owe nothing."
+      },
+      {
+        "en": "GST is already inside the price of most things you buy.",
+        "hi": "आप जो खरीदते हैं, उसकी कीमत में जीएसटी पहले से शामिल होता है।",
+        "mr": "तुम्ही जे विकत घेता त्याच्या किमतीत जीएसटी आधीच असतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: GST is already inside the price of most things you buy."
+      },
+      {
+        "en": "Keep payslips and receipts. They prove what you earned.",
+        "hi": "सैलरी स्लिप और रसीदें रखें। ये आपकी कमाई का सबूत हैं।",
+        "mr": "पगाराची स्लिप आणि पावत्या ठेवा. त्या तुमच्या कमाईचा पुरावा आहेत.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Keep payslips and receipts. They prove what you earned."
+      }
+    ],
+    "example": {
+      "en": "Tara earns ₹8,000 a month from tuitions, ₹96,000 a year. That is far below the limit, so she owes no income tax. A caller offering a “refund” for ₹500 is lying.",
+      "hi": "तारा ट्यूशन से महीने के ₹8,000 कमाती है, साल के ₹96,000। यह सीमा से बहुत नीचे है, इसलिए उस पर कोई आयकर नहीं। ₹500 में “रिफंड” दिलाने वाला कॉलर झूठ बोल रहा है।",
+      "mr": "तारा शिकवणीतून महिन्याला ₹8,000 कमावते, वर्षाला ₹96,000. हे मर्यादेपेक्षा खूप कमी आहे, म्हणून तिला आयकर लागत नाही. ₹500 मध्ये “रिफंड” मिळवून देणारा कॉलर खोटे बोलत आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Tara earns ₹8,000 a month from tuitions, ₹96,000 a year. That is far below the limit, so she owes no income tax. A caller offering a “refund” for ₹500 is lying."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Look at a shop bill at home and find the GST line.",
+        "hi": "घर पर किसी दुकान का बिल देखें और जीएसटी वाली लाइन ढूँढें।",
+        "mr": "घरी एखादे दुकानाचे बिल पाहा आणि जीएसटीची ओळ शोधा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Look at a shop bill at home and find the GST line."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "Someone offers to get you a tax refund for a fee, but you paid no tax. This is:",
+        "hi": "कोई शुल्क लेकर टैक्स रिफंड दिलाने की बात करता है, पर आपने कर दिया ही नहीं। यह है:",
+        "mr": "कोणी शुल्क घेऊन कर परतावा मिळवून देतो म्हणतो, पण तुम्ही कर भरलाच नाही. हे आहे:",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Someone offers to get you a tax refund for a fee, but you paid no tax. This is:"
+      },
+      "options": [
+        {
+          "en": "A good service",
+          "hi": "अच्छी सेवा",
+          "mr": "चांगली सेवा",
+          "kn": "ಈಸು: A good service"
+        },
+        {
+          "en": "Very likely a scam",
+          "hi": "बहुत संभव है कि ठगी",
+          "mr": "बहुधा फसवणूक",
+          "kn": "ಈಸು: Very likely a scam"
+        },
+        {
+          "en": "A government scheme",
+          "hi": "सरकारी योजना",
+          "mr": "सरकारी योजना",
+          "kn": "ಈಸು: A government scheme"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "There is nothing to refund if no tax was paid.",
+        "hi": "जब कर दिया ही नहीं, तो वापस मिलने को कुछ नहीं।",
+        "mr": "कर भरलाच नसेल तर परत मिळण्यासारखे काहीच नाही.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: There is nothing to refund if no tax was paid."
+      }
+    }
+  },
+  {
+    "id": "why-pan",
+    "category": "taxid",
+    "icon": "id",
+    "title": {
+      "en": "Why a PAN exists",
+      "hi": "पैन क्यों होता है",
+      "mr": "पॅन का असतो",
+      "kn": "ಈಸು: Why a PAN exists"
+    },
+    "summary": {
+      "en": "PAN links large money to a person. Guard the number.",
+      "hi": "पैन बड़े पैसे को व्यक्ति से जोड़ता है। नंबर की रखवाली करें।",
+      "mr": "पॅन मोठे पैसे व्यक्तीशी जोडतो. क्रमांकाची राखण करा.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: PAN links large money to a person. Guard the number."
+    },
+    "body": {
+      "en": "A [[pan]] is asked when you open some accounts, take some jobs, or cross a payment limit. It is not a secret you post on a form from a stranger.\n\nShare [[aadhaar]] and PAN only on a site you typed yourself, or across a bank counter. A photo in a chat is enough for [[identity-theft]].",
+      "hi": "कुछ खाते, कुछ नौकरियाँ या भुगतान सीमा पार करने पर [[pan]] माँगा जाता है। यह वह राज़ नहीं जिसे अजनबी के फॉर्म पर चिपकाएँ।\n\n[[aadhaar]] और पैन सिर्फ उस साइट पर दें जिसे आपने खुद टाइप किया, या बैंक काउंटर पर। चैट में फोटो [[identity-theft]] के लिए काफी है।",
+      "mr": "काही खाती, काही नोकऱ्या किंवा पेमेंट मर्यादा ओलांडल्यास [[pan]] विचारला जातो. तो अनोळखीच्या फॉर्मवर चिकटवण्याचा गुपित नाही.\n\n[[aadhaar]] आणि पॅन फक्त तुम्ही स्वतः टाइप केलेल्या साइटवर द्या, किंवा बँक काउंटरवर. चॅटमधील फोटो [[identity-theft]] साठी पुरेसा आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A [[pan]] is asked when you open some accounts, take some jobs, or cross a payment limit. It is not a secret you post on a form from a stranger.\n\nShare [[aadhaar]] and PAN only on a site you typed yourself, or across a bank counter. A photo in a chat is enough for [[identity-theft]]."
+    },
+    "points": [
+      {
+        "en": "PAN is a ten-character number that links money to you.",
+        "hi": "पैन दस अक्षरों का नंबर है जो पैसे को आपसे जोड़ता है।",
+        "mr": "पॅन हा दहा अक्षरांचा क्रमांक आहे, जो पैशांना तुमच्याशी जोडतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: PAN is a ten-character number that links money to you."
+      },
+      {
+        "en": "You need it for a bank account, a job and larger payments.",
+        "hi": "बैंक खाते, नौकरी और बड़े भुगतान के लिए यह चाहिए।",
+        "mr": "बँक खाते, नोकरी आणि मोठ्या व्यवहारांसाठी तो लागतो.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: You need it for a bank account, a job and larger payments."
+      },
+      {
+        "en": "Aadhaar proves who you are. Share it only where the law asks.",
+        "hi": "आधार आपकी पहचान है। इसे वहीं दें जहाँ कानून माँगता है।",
+        "mr": "आधार तुमची ओळख सिद्ध करते. कायद्याने लागते तिथेच द्या.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Aadhaar proves who you are. Share it only where the law asks."
+      },
+      {
+        "en": "Never send a photo of either card in a chat to a stranger.",
+        "hi": "किसी अनजान को चैट में दोनों में से किसी कार्ड की फोटो न भेजें।",
+        "mr": "अनोळखी व्यक्तीला चॅटमध्ये कोणत्याही कार्डाचा फोटो पाठवू नका.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Never send a photo of either card in a chat to a stranger."
+      }
+    ],
+    "example": {
+      "en": "A stranger offers Rohan ₹500 for “just a photo” of his PAN and Aadhaar. With those two photos a loan can be taken in Rohan's name. He refuses.",
+      "hi": "एक अनजान रोहन को पैन और आधार की “बस एक फोटो” के ₹500 देने को कहता है। इन दो फोटो से रोहन के नाम पर कर्ज लिया जा सकता है। वह मना कर देता है।",
+      "mr": "एक अनोळखी व्यक्ती रोहनला पॅन आणि आधारच्या “फक्त एका फोटोसाठी” ₹500 देतो म्हणते. त्या दोन फोटोंवर रोहनच्या नावावर कर्ज घेता येते. तो नकार देतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A stranger offers Rohan ₹500 for “just a photo” of his PAN and Aadhaar. With those two photos a loan can be taken in Rohan's name. He refuses."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Check where your PAN and Aadhaar cards are kept, and who has copies.",
+        "hi": "देखें कि आपका पैन और आधार कहाँ रखा है, और किसके पास कॉपी है।",
+        "mr": "तुमचे पॅन आणि आधार कुठे ठेवले आहे आणि प्रती कोणाकडे आहेत ते पाहा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Check where your PAN and Aadhaar cards are kept, and who has copies."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "Where is it safe to share your Aadhaar number?",
+        "hi": "आधार नंबर कहाँ देना सुरक्षित है?",
+        "mr": "आधार क्रमांक कुठे देणे सुरक्षित आहे?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Where is it safe to share your Aadhaar number?"
+      },
+      "options": [
+        {
+          "en": "At the bank counter",
+          "hi": "बैंक के काउंटर पर",
+          "mr": "बँकेच्या काउंटरवर",
+          "kn": "ಈಸು: At the bank counter"
+        },
+        {
+          "en": "In a WhatsApp group",
+          "hi": "व्हाट्सऐप ग्रुप में",
+          "mr": "व्हॉट्सअ‍ॅप ग्रुपमध्ये",
+          "kn": "ಈಸು: In a WhatsApp group"
+        },
+        {
+          "en": "On a link sent by SMS",
+          "hi": "एसएमएस में आए लिंक पर",
+          "mr": "एसएमएसने आलेल्या लिंकवर",
+          "kn": "ಈಸು: On a link sent by SMS"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "Share it in person at a known office, or on a site you typed yourself.",
+        "hi": "इसे जाने-पहचाने दफ़्तर में खुद दें, या उस साइट पर जिसका पता आपने खुद लिखा हो।",
+        "mr": "ओळखीच्या कार्यालयात स्वतः द्या, किंवा स्वतः पत्ता टाइप केलेल्या साइटवर.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Share it in person at a known office, or on a site you typed yourself."
+      }
+    }
+  },
+  {
+    "id": "reading-fees",
+    "category": "loans",
+    "icon": "table",
+    "title": {
+      "en": "Reading a fee table",
+      "hi": "शुल्क की तालिका पढ़ना",
+      "mr": "शुल्क तक्ता वाचणे",
+      "kn": "ಈಸು: Reading a fee table"
+    },
+    "summary": {
+      "en": "Add the rupees. Percents are easy to underestimate.",
+      "hi": "रुपये जोड़ें। प्रतिशत को कम आँकना आसान है।",
+      "mr": "रुपये मिळवा. टक्के कमी लेखणे सोपे आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Add the rupees. Percents are easy to underestimate."
+    },
+    "body": {
+      "en": "A fee table may list a [[processing-fee]], a document charge, and [[gst]]. Write them as rupees and add them. Compare the sum with the [[principal]].\n\nIf you cannot tell which line is optional, ask. An optional charge you did not refuse is still your money.",
+      "hi": "शुल्क तालिका में [[processing-fee]], दस्तावेज़ शुल्क और [[gst]] हो सकते हैं। उन्हें रुपये में लिखकर जोड़ें। योग की तुलना [[principal]] से करें।\n\nकौन सी पंक्ति वैकल्पिक है पता न चले तो पूछें। जिसे आपने मना नहीं किया, वह शुल्क भी आपका पैसा है।",
+      "mr": "शुल्क तक्त्यात [[processing-fee]], कागद शुल्क आणि [[gst]] असू शकतात. ते रुपयांत लिहून मिळवा. बेरीज [[principal]] शी तुलना करा.\n\nकोणती ओळ ऐच्छिक आहे कळले नाही तर विचारा. तुम्ही नाकारला नाही तो शुल्कही तुमचे पैसे आहेत.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A fee table may list a [[processing-fee]], a document charge, and [[gst]]. Write them as rupees and add them. Compare the sum with the [[principal]].\n\nIf you cannot tell which line is optional, ask. An optional charge you did not refuse is still your money."
+    },
+    "points": [
+      {
+        "en": "Turn every percent into rupees.",
+        "hi": "हर प्रतिशत को रुपयों में बदलें।",
+        "mr": "प्रत्येक टक्का रुपयांत बदला.",
+        "kn": "ಈಸು: Turn every percent into rupees."
+      },
+      {
+        "en": "Add all the lines: processing, documents, insurance, GST.",
+        "hi": "सारी लाइनें जोड़ें: प्रोसेसिंग, दस्तावेज़, बीमा, जीएसटी।",
+        "mr": "सगळ्या ओळी मिळवा: प्रोसेसिंग, कागदपत्रे, विमा, जीएसटी.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Add all the lines: processing, documents, insurance, GST."
+      },
+      {
+        "en": "Ask which charges are optional, and refuse those you do not want.",
+        "hi": "पूछें कौन से शुल्क ज़रूरी नहीं हैं, और जो नहीं चाहिए उन्हें मना करें।",
+        "mr": "कोणती शुल्के ऐच्छिक आहेत ते विचारा आणि नको असलेली नाकारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask which charges are optional, and refuse those you do not want."
+      }
+    ],
+    "example": {
+      "en": "A fee table shows 2 percent processing on ₹40,000, a ₹300 document charge and 18 percent GST on both. That is ₹800 plus ₹300 plus ₹198, so ₹1,298 in all.",
+      "hi": "शुल्क तालिका में ₹40,000 पर 2 प्रतिशत प्रोसेसिंग, ₹300 दस्तावेज़ शुल्क और दोनों पर 18 प्रतिशत जीएसटी है। यानी ₹800, ₹300 और ₹198, कुल ₹1,298।",
+      "mr": "शुल्क तक्त्यात ₹40,000 वर 2 टक्के प्रोसेसिंग, ₹300 कागदपत्र शुल्क आणि दोन्हींवर 18 टक्के जीएसटी आहे. म्हणजे ₹800, ₹300 आणि ₹198, एकूण ₹1,298.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: A fee table shows 2 percent processing on ₹40,000, a ₹300 document charge and 18 percent GST on both. That is ₹800 plus ₹300 plus ₹198, so ₹1,298 in all."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Open the personal loan sample and add its two fees yourself.",
+        "hi": "पर्सनल लोन का नमूना खोलें और दोनों शुल्क खुद जोड़ें।",
+        "mr": "पर्सनल लोनचा नमुना उघडा आणि दोन्ही शुल्क स्वतः मिळवा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Open the personal loan sample and add its two fees yourself."
+      },
+      "link": "scan:personal-loan"
+    },
+    "check": {
+      "question": {
+        "en": "2 percent processing fee on a ₹50,000 loan is:",
+        "hi": "₹50,000 के कर्ज पर 2 प्रतिशत प्रोसेसिंग शुल्क कितना है?",
+        "mr": "₹50,000 च्या कर्जावर 2 टक्के प्रोसेसिंग शुल्क किती?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: 2 percent processing fee on a ₹50,000 loan is:"
+      },
+      "options": [
+        {
+          "en": "₹100",
+          "hi": "₹100",
+          "mr": "₹100",
+          "kn": "ಈಸು: ₹100"
+        },
+        {
+          "en": "₹1,000",
+          "hi": "₹1,000",
+          "mr": "₹1,000",
+          "kn": "ಈಸು: ₹1,000"
+        },
+        {
+          "en": "₹10,000",
+          "hi": "₹10,000",
+          "mr": "₹10,000",
+          "kn": "ಈಸು: ₹10,000"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "One percent of 50,000 is 500, so two percent is 1,000.",
+        "hi": "50,000 का एक प्रतिशत 500 है, तो दो प्रतिशत 1,000।",
+        "mr": "50,000 चा एक टक्का 500, म्हणून दोन टक्के 1,000.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: One percent of 50,000 is 500, so two percent is 1,000."
+      }
+    }
+  },
+  {
+    "id": "before-you-sign",
+    "category": "loans",
+    "icon": "pen",
+    "title": {
+      "en": "Before you sign",
+      "hi": "दस्तखत से पहले",
+      "mr": "सही करण्यापूर्वी",
+      "kn": "ಈಸು: Before you sign"
+    },
+    "summary": {
+      "en": "Slow down. A fair lender can wait while you read.",
+      "hi": "धीमे हों। अच्छा ऋणदाता पढ़ते समय इंतज़ार कर सकता है।",
+      "mr": "मंद पडा. योग्य कर्ज देणारा वाचताना वाट पाहू शकतो.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Slow down. A fair lender can wait while you read."
+    },
+    "body": {
+      "en": "Ask who the lender is, what you receive after fees, the total [[repayment]], the [[due-date]], and what a [[late-fee]] looks like in rupees. Ask if [[prepayment]] is allowed.\n\nIf the answer is “sign now or the offer dies”, let it die. Pressure is part of the cost.",
+      "hi": "पूछें ऋणदाता कौन है, शुल्क के बाद हाथ में क्या आता है, कुल [[repayment]], [[due-date]], और [[late-fee]] रुपये में कैसा है। पूछें [[prepayment]] की छूट है या नहीं।\n\nजवाब हो “अभी दस्तखत करें वरना ऑफर खत्म”, तो खत्म होने दें। दबाव भी लागत का हिस्सा है।",
+      "mr": "कर्ज देणारा कोण, शुल्कानंतर हातात काय येते, एकूण [[repayment]], [[due-date]], आणि [[late-fee]] रुपयांत कसा आहे ते विचारा. [[prepayment]] ला परवानगी आहे का ते विचारा.\n\nउत्तर “आता सही करा नाहीतर ऑफर संपेल” असेल तर संपू द्या. दबावही खर्चाचा भाग आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask who the lender is, what you receive after fees, the total [[repayment]], the [[due-date]], and what a [[late-fee]] looks like in rupees. Ask if [[prepayment]] is allowed.\n\nIf the answer is “sign now or the offer dies”, let it die. Pressure is part of the cost."
+    },
+    "points": [
+      {
+        "en": "Ask how much reaches your hand after fees.",
+        "hi": "पूछें कि शुल्क कटने के बाद हाथ में कितना आएगा।",
+        "mr": "शुल्क कापल्यानंतर हातात किती येईल ते विचारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask how much reaches your hand after fees."
+      },
+      {
+        "en": "Ask for the total you repay, in rupees.",
+        "hi": "पूछें कि कुल कितना लौटाना है, रुपयों में।",
+        "mr": "एकूण किती परत द्यायचे ते रुपयांत विचारा.",
+        "kn": "ಈಸು: Ask for the total you repay, in rupees."
+      },
+      {
+        "en": "Ask what one late month costs, in rupees.",
+        "hi": "पूछें कि एक महीना देर होने पर कितने रुपये लगेंगे।",
+        "mr": "एक महिना उशीर झाल्यास किती रुपये लागतील ते विचारा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Ask what one late month costs, in rupees."
+      },
+      {
+        "en": "Take the paper home for a day. A fair lender will wait.",
+        "hi": "कागज़ एक दिन के लिए घर ले जाएँ। सही कर्ज देने वाला रुक जाएगा।",
+        "mr": "कागद एक दिवस घरी न्या. योग्य कर्जदाता थांबेल.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Take the paper home for a day. A fair lender will wait."
+      }
+    ],
+    "example": {
+      "en": "The agent says the offer ends tonight. Priya takes a photo of the paper, reads it with her mother, and returns the next morning. The offer is still there.",
+      "hi": "एजेंट कहता है ऑफर आज रात खत्म है। प्रिया कागज़ की फोटो लेती है, माँ के साथ पढ़ती है और अगली सुबह लौटती है। ऑफर अब भी वहीं है।",
+      "mr": "एजंट म्हणतो ऑफर आज रात्री संपते. प्रिया कागदाचा फोटो घेते, आईसोबत वाचते आणि दुसऱ्या दिवशी सकाळी परत जाते. ऑफर अजूनही तशीच आहे.",
+      "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: The agent says the offer ends tonight. Priya takes a photo of the paper, reads it with her mother, and returns the next morning. The offer is still there."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Scan a sample and read the questions to ask before you sign.",
+        "hi": "एक नमूना स्कैन करें और साइन से पहले पूछने वाले सवाल पढ़ें।",
+        "mr": "एक नमुना स्कॅन करा आणि सही करण्यापूर्वी विचारायचे प्रश्न वाचा.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Scan a sample and read the questions to ask before you sign."
+      },
+      "link": "scan:personal-loan"
+    },
+    "check": {
+      "question": {
+        "en": "“Sign now or lose the offer.” What is the calm reply?",
+        "hi": "“अभी साइन करो वरना ऑफर गया।” शांत जवाब क्या है?",
+        "mr": "“आत्ताच सही करा, नाहीतर ऑफर गेली.” शांत उत्तर काय?",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: “Sign now or lose the offer.” What is the calm reply?"
+      },
+      "options": [
+        {
+          "en": "Sign quickly",
+          "hi": "जल्दी साइन कर दूँ",
+          "mr": "पटकन सही करीन",
+          "kn": "ಈಸು: Sign quickly"
+        },
+        {
+          "en": "“I will read it and come back.”",
+          "hi": "“मैं पढ़कर वापस आऊँगा।”",
+          "mr": "“मी वाचून परत येतो.”",
+          "kn": "ಈಸು: “I will read it and come back.”"
+        },
+        {
+          "en": "Pay a holding fee",
+          "hi": "रोकने के लिए शुल्क दे दूँ",
+          "mr": "थांबवण्यासाठी शुल्क भरीन",
+          "kn": "ಈಸು: Pay a holding fee"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Pressure is a cost too. A fair offer survives one night.",
+        "hi": "दबाव भी एक कीमत है। सही ऑफर एक रात टिक जाता है।",
+        "mr": "दबाव हीसुद्धा एक किंमत आहे. योग्य ऑफर एक रात्र टिकते.",
+        "kn": "ಸರಳ ಮಾತಿನಲ್ಲಿ ಇದು: Pressure is a cost too. A fair offer survives one night."
+      }
+    }
+  }
+]
