@@ -54,6 +54,8 @@ for (const lang of ["en", "hi", "mr"]) {
   const status = await new Promise((resolve) => {
     const child = spawn(chrome, [
       "--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--virtual-time-budget=20000",
+      // Chrome refuses to start its sandbox as root, which is how containers and CI usually run.
+      ...(process.getuid?.() === 0 ? ["--no-sandbox"] : []),
       `--print-to-pdf=${target}`,
       `http://127.0.0.1:${port}${base}/handbook/?lang=${lang}&print=1`,
     ], { stdio: "ignore" });
