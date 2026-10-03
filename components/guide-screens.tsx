@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookMarked, Check, ChevronLeft, ChevronRight, Images, Lightbulb, Mic, Search } from "lucide-react";
-import { UNITS, type Unit } from "@/lib/catalog";
+import { BookMarked, Check, ChevronLeft, ChevronRight, Images, Lightbulb, MessageCircle, Mic, Search } from "lucide-react";
+import { TOPICS, type Topic } from "@/lib/catalog";
 import { monthLabel } from "@/lib/format";
 import { linkHref, loadJson, type CaseStudy, type MiniCheck } from "@/lib/content-types";
 import { canHear, hear, tap } from "@/lib/speech";
+import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
-import { UnitBadge } from "./unit-badge";
 import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary } from "./ui";
 
 const plain = (text: string) => text.replace(/\[\[|\]\]/g, "");
@@ -19,7 +19,7 @@ export function GuideScreen() {
   const { lessons, progress } = useApp();
   const glossary = useGlossary();
   const [query, setQuery] = useState("");
-  const [unit, setUnit] = useState<Unit | "all">("all");
+  const [topic, setTopic] = useState<Topic | "all">("all");
   const [listening, setListening] = useState(false);
 
   async function voice() {
@@ -41,12 +41,19 @@ export function GuideScreen() {
       ? glossary.terms.filter((term) => term.term[code].toLowerCase().includes(needle)).map((term) => `[[${term.id}]]`)
       : [];
     return lessons.filter((lesson) => {
-      if (unit !== "all" && lesson.unit !== unit) return false;
+      if (topic !== "all" && lesson.topic !== topic) return false;
       if (!needle) return true;
       const hay = `${lesson.title[code]} ${lesson.summary[code]} ${lesson.points.map((point) => point[code]).join(" ")}`.toLowerCase();
       return hay.includes(needle) || termIds.some((id) => lesson.body[code].includes(id));
     });
-  }, [lessons, glossary.terms, query, unit, code]);
+  }, [lessons, glossary.terms, query, topic, code]);
+
+  useAiContext({
+    screen: t("nav.guide"),
+    kind: "lesson",
+    title: t("guide.title"),
+    suggestions: [t("ai.s1"), t("ai.s2"), t("ai.s3")],
+  });
 
   if (lessons.length === 0) return <PageSkeleton />;
   const read = lessons.filter((lesson) => progress.lessons.includes(lesson.id)).length;
@@ -88,9 +95,9 @@ export function GuideScreen() {
         </span>
       </label>
       <div className="chips" role="group" aria-label={t("guide.filter")}>
-        {(["all", ...UNITS] as const).map((item) => (
-          <button key={item} type="button" className="chip" aria-pressed={unit === item} onClick={() => { tap(); setUnit(item); }}>
-            {item === "all" ? t("guide.allUnits") : t(`unit.${item}`)}
+        {(["all", ...TOPICS] as const).map((item) => (
+          <button key={item} type="button" className="chip" aria-pressed={topic === item} onClick={() => { tap(); setTopic(item); }}>
+            {item === "all" ? t("guide.allTopics") : t(`topics.${item}`)}
           </button>
         ))}
       </div>
@@ -98,7 +105,7 @@ export function GuideScreen() {
         <div className="state">
           <span className="item-icon"><Search aria-hidden size={20} /></span>
           <p className="lead">{t("guide.empty")}</p>
-          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setQuery(""); setUnit("all"); }}>{t("guide.allUnits")}</button>
+          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setQuery(""); setTopic("all"); }}>{t("guide.allTopics")}</button>
         </div>
       ) : (
         <ul className="list card tight">
@@ -111,7 +118,7 @@ export function GuideScreen() {
                     {done ? <Check aria-hidden size={20} strokeWidth={3} /> : <ContentIcon name={lesson.icon} size={20} />}
                   </span>
                   <span className="item-body">
-                    {unit === "all" && <UnitBadge unit={lesson.unit} />}
+                    {topic === "all" && <span className="unit-badge">{t(`topics.${lesson.topic}`)}</span>}
                     <span className="item-title">{lesson.title[code]}</span>
                     <span className="item-sub two">{lesson.summary[code]}</span>
                   </span>
@@ -131,6 +138,8 @@ export function GuideScreen() {
 
 function tryLabel(link: string | null, t: (key: string) => string): string {
   if (link === "tracker") return t("path.openTracker");
+  if (link?.startsWith("episode:")) return t("guide.openEpisode");
+  if (link?.startsWith("form:")) return t("guide.openForm");
   if (link?.startsWith("drill:")) return t(`drills.${link.slice(6)}.title`);
   if (link?.startsWith("case:")) return t("path.openCase");
   return t("path.openScan");
@@ -140,8 +149,18 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
   const { t, code } = useI18n();
   const app = useApp();
   const glossary = useGlossary();
+  const ai = useAi();
   const [picked, setPicked] = useState<number | null>(null);
   const lesson = app.lessons.find((item) => item.id === id) ?? null;
+
+  useAiContext(lesson ? {
+    screen: t("nav.guide"),
+    kind: "lesson",
+    id: lesson.id,
+    title: lesson.title[code],
+    text: `${lesson.summary[code]}\n${plain(lesson.body[code])}\n${lesson.points.map((point) => point[code]).join(" ")}`,
+    suggestions: [t("guide.askSimpler"), t("guide.askExample")],
+  } : null);
 
   if (app.lessons.length === 0) return <PageSkeleton />;
   if (!lesson) {
@@ -177,7 +196,7 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
       <div className="pin-top"><ListenButton text={spoken} /></div>
       <div className="stack-sm">
         <span className="item-icon"><ContentIcon name={lesson.icon} /></span>
-        <UnitBadge unit={lesson.unit} />
+        <span className="unit-badge">{t(`topics.${lesson.topic}`)}</span>
         <h1>{lesson.title[code]}</h1>
       </div>
 
@@ -219,6 +238,10 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
         </div>
       </section>
 
+      <button type="button" className="btn btn-ghost" onClick={() => { tap(); ai.openAsk(t("guide.askSimpler")); }}>
+        <MessageCircle aria-hidden size={18} />{t("guide.askSaath")}
+      </button>
+
       <section className="card" aria-labelledby="check-h">
         <div className="stack-sm">
           <p className="kicker" id="check-h">{t("lesson.check")}</p>
@@ -227,9 +250,15 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
             picked={picked}
             onPick={(choice) => {
               setPicked(choice);
+              if (choice !== lesson.check.answer) void app.mistake(lesson.topic);
               void app.finishLesson(lesson.id);
             }}
           />
+          {picked !== null && picked !== lesson.check.answer && (
+            <button type="button" className="link" onClick={() => { tap(); ai.openAsk(t("ai.whyWrong", { question: lesson.check.question[code] })); }}>
+              <MessageCircle aria-hidden size={16} />{t("ai.askWhy")}
+            </button>
+          )}
         </div>
       </section>
 
@@ -246,9 +275,9 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
           ) : null}
         </div>
       )}
-      {lesson.reviewed && (
-        <div className="stack-xs">
-          <p className="faint">{t("lesson.reviewed", { month: monthLabel(lesson.reviewed, code) })}</p>
+      {(lesson.reviewed || lesson.sources?.length) && (
+        <div className="stack-xs sources">
+          {lesson.reviewed && <p className="faint">{t("lesson.reviewed", { month: monthLabel(lesson.reviewed, code) })}</p>}
           {lesson.sources?.length ? (
             <p className="faint">
               {t("lesson.sources")}:{" "}

@@ -1,5 +1,4 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { checkPin, clearPin, hasPin, setPin } from "@/lib/pin";
 import { cleanCode, currentProfile, ensureProfile, resetLocalData, saveJoin, setSharing, validateJoin } from "@/lib/profile";
 
 let store: Map<string, string>;
@@ -55,31 +54,13 @@ describe("joining a school", () => {
   });
 });
 
-describe("PIN and reset", () => {
-  it("accepts only four digits and never stores the PIN itself", async () => {
-    expect(await setPin("12ab")).toBe(false);
-    expect(await setPin("123")).toBe(false);
-    expect(hasPin()).toBe(false);
-    expect(await setPin("4821")).toBe(true);
-    expect(hasPin()).toBe(true);
-    expect([...store.values()].join(" ")).not.toContain("4821");
-  });
-
-  it("opens with the right PIN and not with a wrong one", async () => {
-    await setPin("4821");
-    expect(await checkPin("4821")).toBe(true);
-    expect(await checkPin("0000")).toBe(false);
-    clearPin();
-    expect(hasPin()).toBe(false);
-  });
-
-  it("a forgotten PIN is reset by clearing everything on the phone, and keeps the language", async () => {
+describe("reset", () => {
+  it("a forgotten password is handled by clearing everything in this browser, and keeps the language", async () => {
     store.set("saath-lang", "mr");
     store.set("saath-finlit-v2", "{}");
+    store.set("saath-accounts-v3", "[]");
     saveJoin({ nickname: "Asha", schoolCode: "PUNE01", grade: "9" });
-    await setPin("4821");
     await resetLocalData();
-    expect(hasPin()).toBe(false);
     expect(currentProfile()).toBeNull();
     expect([...store.keys()]).toEqual(["saath-lang"]);
   });

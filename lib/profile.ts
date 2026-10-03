@@ -1,5 +1,4 @@
 import type { Grade } from "./catalog";
-import { clearPin } from "./pin";
 import { scoped } from "./scope";
 
 /**
@@ -128,11 +127,10 @@ export function setSharing(on: boolean): Profile {
 }
 
 /**
- * Removes everything Saath saved in this browser: profile, PIN, results, tracker and progress.
- * Used by "Delete everything on this phone" and by a forgotten PIN. Nothing is kept anywhere else.
+ * Removes everything Saath saved in this browser, for every account: profiles, results, tracker and progress.
+ * Used by "Forgot password" on the login screen. Nothing is kept anywhere else.
  */
 export async function resetLocalData(): Promise<void> {
-  clearPin();
   const keys: string[] = [];
   for (let index = 0; index < window.localStorage.length; index += 1) {
     const key = window.localStorage.key(index);
