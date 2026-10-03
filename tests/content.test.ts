@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { CASE_IDS, DRILL_IDS, LANGS, LESSON_IDS, PATH_IDS, UNITS } from "@/lib/catalog";
+import { CASE_IDS, DRILL_IDS, FORM_IDS, LANGS, LESSON_IDS, PATH_IDS, STAGE_IDS, TOPICS, UNITS } from "@/lib/catalog";
 import { answerFromDocument } from "@/lib/ask";
 import { fill } from "@/lib/copy";
 import { ruleExtract } from "@/lib/extract";
@@ -33,14 +33,14 @@ describe("locales", () => {
 });
 
 describe("content", () => {
-  it("ships sixty questions, twelve cases, thirty-seven lessons, and sixty terms", () => {
+  it("ships sixty questions, twelve cases, forty-five guides, and sixty terms", () => {
     const questions = readJson("content/daily-questions.json");
     const cases = readJson("content/cases.json");
     const guide = readJson("content/guide.json");
     const glossary = readJson("content/glossary.json");
     expect(questions).toHaveLength(60);
     expect(cases).toHaveLength(12);
-    expect(guide).toHaveLength(37);
+    expect(guide).toHaveLength(45);
     expect(glossary).toHaveLength(60);
     expect(guide.map((item: { id: string }) => item.id)).toEqual([...LESSON_IDS]);
     expect(cases.map((item: { id: string }) => item.id)).toEqual([...CASE_IDS]);
@@ -64,6 +64,8 @@ describe("content", () => {
         expect(Object.keys(lesson.title).sort()).toEqual(["en", "hi", "mr"]);
       }
       expect(UNITS).toContain(lesson.unit);
+      expect(TOPICS).toContain(lesson.topic);
+      for (const url of lesson.sources ?? []) expect(url).toMatch(/^https:\/\//);
       expect(lesson.reviewed).toMatch(/^\d{4}-\d{2}$/);
       expect(lesson.check.options).toHaveLength(3);
       expect(lesson.check.answer).toBeLessThan(3);
@@ -90,6 +92,23 @@ describe("content", () => {
     expect(worker).toContain("/content/glossary.json");
     expect(worker).toContain("/content/paths.json");
     for (const id of PATH_IDS) expect(worker).toContain(`/paths/${id}`);
+  });
+
+  it("precaches the companion screens and their content, under the new cache name", () => {
+    const worker = readFileSync(`${root}/public/sw.js`, "utf8");
+    expect(worker).toContain('const CACHE = "saath-v12"');
+    for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings"]) expect(worker).toContain(`"${page}"`);
+    for (const id of STAGE_IDS) expect(worker).toContain(`/journey/${id}`);
+    for (const id of FORM_IDS) expect(worker).toContain(`/forms/${id}`);
+    for (const file of ["journey", "forms", "form-fields", "stories"]) expect(worker).toContain(`/content/${file}.json`);
+    // Only Saath's own caches are cleared, so a downloaded local model survives an update.
+    expect(worker).toContain('key.startsWith("saath-")');
+  });
+
+  it("keeps the manifest and icons black and white", () => {
+    const manifest = readJson("public/manifest.webmanifest");
+    expect(manifest.background_color).toBe("#000000");
+    expect(manifest.theme_color).toBe("#000000");
   });
 });
 
@@ -128,7 +147,7 @@ describe("the Skyward syllabus", () => {
   const paths = readJson("content/paths.json");
 
   it("has no Kannada left anywhere in content or locales", () => {
-    for (const file of ["content/guide.json", "content/paths.json", "content/cases.json", "content/daily-questions.json", "content/glossary.json", "content/drills.json", "content/finlit-check.json", "locales/en.json", "locales/hi.json", "locales/mr.json"]) {
+    for (const file of ["content/guide.json", "content/paths.json", "content/cases.json", "content/daily-questions.json", "content/glossary.json", "content/drills.json", "content/finlit-check.json", "content/journey.json", "content/forms.json", "content/stories.json", "content/form-fields.json", "locales/en.json", "locales/hi.json", "locales/mr.json"]) {
       const text = readFileSync(`${root}/${file}`, "utf8");
       expect(/[\u0C80-\u0CFF]/.test(text)).toBe(false);
       expect(text).not.toContain('"kn"');

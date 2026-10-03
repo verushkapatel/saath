@@ -1,0 +1,146 @@
+import { readFileSync } from "node:fs";
+import { describe, expect, it } from "vitest";
+import { LANGS, STAGE_IDS, TOPICS } from "@/lib/catalog";
+import type { Lesson } from "@/lib/content-types";
+import { grownValue, journeyState, loanCost, moneyAfter, type JourneyFile } from "@/lib/journey";
+import { completeEpisode, emptyProgress, levelFor, noteMistake, readStory, XP } from "@/lib/progress";
+
+const file = JSON.parse(readFileSync(`${process.cwd()}/content/journey.json`, "utf8")) as JourneyFile;
+const lessons = JSON.parse(readFileSync(`${process.cwd()}/content/guide.json`, "utf8")) as Lesson[];
+
+describe("the story file", () => {
+  it("has fourteen episodes, one per life stage, in order", () => {
+    expect(file.episodes.map((episode) => episode.id)).toEqual([...STAGE_IDS]);
+    expect(file.stages.map((stage) => stage.id)).toEqual([...STAGE_IDS]);
+    expect(file.reviewed).toMatch(/^\d{4}-\d{2}/);
+  });
+
+  it("has every text in three languages, three options, two drill questions, and real guide links", () => {
+    const guideIds = new Set(lessons.map((lesson) => lesson.id));
+    let age = 0;
+    for (const episode of file.episodes) {
+      expect(TOPICS).toContain(episode.topic);
+      expect(episode.age).toBeGreaterThanOrEqual(age);
+      age = episode.age;
+      expect(episode.options).toHaveLength(3);
+      expect(episode.drill).toHaveLength(2);
+      expect(["inspect", "budget", "grow", "emi"]).toContain(episode.sim.kind);
+      for (const id of episode.guides) expect(guideIds.has(id)).toBe(true);
+      expect(episode.options.some((option) => option.verdict === "good")).toBe(true);
+      for (const lang of LANGS) {
+        expect(episode.title[lang].length).toBeGreaterThan(3);
+        expect(episode.question[lang].length).toBeGreaterThan(3);
+        expect(episode.lesson[lang].length).toBeGreaterThan(20);
+        for (const line of episode.story) expect(line[lang].length).toBeGreaterThan(10);
+        for (const option of episode.options) expect(option.outcome[lang].length).toBeGreaterThan(10);
+        for (const check of episode.drill) {
+          expect(check.options).toHaveLength(3);
+          expect(check.answer).toBeLessThan(3);
+          expect(check.why[lang].length).toBeGreaterThan(5);
+        }
+      }
+    }
+  });
+
+  it("labels the sliders' growth and loan rates as examples, never as current rates", () => {
+    for (const episode of file.episodes) {
+      if (episode.sim.kind === "grow" || episode.sim.kind === "emi") {
+        expect(episode.sim.hint.en.toLowerCase()).toMatch(/example|assum|not a promise/);
+      }
+    }
+  });
+});
+
+describe("the one-episode-a-day rule", () => {
+  it("opens the first episode at once", () => {
+    const state = journeyState(file, emptyProgress(), "2026-10-05");
+    expect(state.next?.id).toBe(STAGE_IDS[0]);
+    expect(state.open).toBe(true);
+    expect(state.done).toBe(0);
+  });
+
+  it("holds the next episode until the next calendar day", () => {
+    const played = completeEpisode(emptyProgress(), STAGE_IDS[0], 2, 2, "2026-10-05");
+    const sameDay = journeyState(file, played, "2026-10-05");
+    expect(sameDay.next?.id).toBe(STAGE_IDS[1]);
+    expect(sameDay.open).toBe(false);
+    expect(sameDay.opensOn).toBe("2026-10-06");
+    const nextDay = journeyState(file, played, "2026-10-06");
+    expect(nextDay.open).toBe(true);
+    expect(nextDay.opensOn).toBeNull();
+  });
+
+  it("does not let a skipped week unlock more than one episode", () => {
+    const played = completeEpisode(emptyProgress(), STAGE_IDS[0], 2, 2, "2026-10-05");
+    const later = journeyState(file, played, "2026-10-20");
+    expect(later.next?.id).toBe(STAGE_IDS[1]);
+    expect(later.open).toBe(true);
+  });
+
+  it("is finished after the last episode", () => {
+    let progress = emptyProgress();
+    STAGE_IDS.forEach((id, index) => {
+      progress = completeEpisode(progress, id, 0, 1, `2026-11-${String(index + 1).padStart(2, "0")}`);
+    });
+    const state = journeyState(file, progress, "2026-12-31");
+    expect(state.finished).toBe(true);
+    expect(state.next).toBeNull();
+    expect(state.done).toBe(14);
+  });
+});
+
+describe("Ira's money", () => {
+  it("never shows cash or savings below zero: a shortfall becomes debt", () => {
+    const fake: JourneyFile = {
+      ...file,
+      episodes: [
+        { ...file.episodes[0], id: "a", options: [{ ...file.episodes[0].options[0], effects: { savings: -500 } }] },
+        { ...file.episodes[0], id: "b", options: [{ ...file.episodes[0].options[0], effects: { debt: -9000 } }] },
+      ],
+    };
+    const money = moneyAfter(fake, { a: { choice: 0, drill: 0, at: "2026-10-05" } });
+    expect(money).toEqual({ cash: 0, savings: 0, debt: 500 });
+    expect(moneyAfter(fake, { a: { choice: 0, drill: 0, at: "x" }, b: { choice: 0, drill: 0, at: "y" } }).debt).toBe(0);
+  });
+
+  it("works out compounding and loan cost as illustrations", () => {
+    expect(grownValue(1000, 0, 1)).toEqual({ paid: 12_000, value: 12_000 });
+    const grown = grownValue(3000, 10, 10);
+    expect(grown.paid).toBe(360_000);
+    expect(grown.value).toBeGreaterThan(grown.paid);
+    const short = loanCost(300_000, 13, 24);
+    const long = loanCost(300_000, 13, 60);
+    expect(long.emi).toBeLessThan(short.emi);
+    expect(long.interest).toBeGreaterThan(short.interest);
+  });
+});
+
+describe("XP and levels", () => {
+  it("starts at level 1 and needs a little more for each level", () => {
+    expect(levelFor(0)).toMatchObject({ level: 1, into: 0, need: 100 });
+    expect(levelFor(99).level).toBe(1);
+    expect(levelFor(100)).toMatchObject({ level: 2, into: 0, need: 200 });
+    expect(levelFor(299).level).toBe(2);
+    expect(levelFor(300).level).toBe(3);
+    expect(levelFor(1000).level).toBe(5);
+    expect(levelFor(-5).level).toBe(1);
+  });
+
+  it("pays for an episode once, plus each right drill answer", () => {
+    const once = completeEpisode(emptyProgress(), STAGE_IDS[0], 1, 2, "2026-10-05");
+    expect(once.xp).toBe(XP.task + XP.episode + 2 * XP.drillRight);
+    expect(once.journey[STAGE_IDS[0]]).toEqual({ choice: 1, drill: 2, at: "2026-10-05" });
+    const again = completeEpisode(once, STAGE_IDS[0], 2, 0, "2026-10-06");
+    expect(again).toBe(once);
+  });
+
+  it("remembers wrong answers by topic, and reading a story once", () => {
+    const wrong = noteMistake(noteMistake(emptyProgress(), "borrowing"), "borrowing");
+    expect(wrong.mistakes.borrowing).toBe(2);
+    expect(noteMistake(wrong, null)).toBe(wrong);
+    const read = readStory(emptyProgress(), "kfs-rule", "2026-10-05");
+    expect(read.stories).toEqual(["kfs-rule"]);
+    expect(readStory(read, "kfs-rule", "2026-10-05")).toBe(read);
+    expect(read.xp).toBe(XP.task + XP.story);
+  });
+});

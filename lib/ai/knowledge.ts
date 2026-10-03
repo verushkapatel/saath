@@ -51,6 +51,7 @@ export function buildDocs(sources: Sources, lang: Lang): Doc[] {
 }
 
 const STOP = new Set([
+  "is", "on", "in", "of", "to", "an", "do", "it", "my", "me", "at", "be", "by", "or", "if", "so", "as", "we", "us", "am", "no", "up", "get", "got", "did", "its",
   "the", "and", "for", "are", "but", "not", "you", "your", "what", "how", "why", "when", "who", "does", "can", "should", "with", "this", "that", "from", "have", "has",
   "was", "were", "will", "would", "about", "into", "than", "then", "them", "they", "any", "all", "much", "many", "need", "tell", "explain", "mean", "means", "please",
   "क्या", "कैसे", "क्यों", "है", "हैं", "और", "का", "की", "के", "को", "में", "से", "पर", "यह", "वह", "मुझे", "मेरा", "मेरी", "कब", "कौन", "होता", "होती", "करें", "बताएँ", "बताओ", "समझाएँ",
@@ -67,33 +68,62 @@ const ALIASES: Record<string, string[]> = {
   फसवणूक: ["ओटीपी"], विमा: ["पॉलिसी"], निवृत्ती: ["पेन्शन"],
 };
 
-export function tokens(text: string): string[] {
+/** The asked words (weight 1) and the words they stand for (weight 0.5), so an alias never outranks what was typed. */
+export function weightedTokens(text: string): Map<string, number> {
   const base = text.toLowerCase().split(/[^\p{L}\p{M}\p{N}]+/u).filter((word) => word.length > 1 && !STOP.has(word));
-  const out = new Set<string>();
+  const out = new Map<string, number>();
+  const put = (word: string, weight: number) => {
+    if (word && (out.get(word) ?? 0) < weight) out.set(word, weight);
+  };
   for (const word of base) {
-    out.add(word);
+    put(word, 1);
     // A light stem so "loans" finds "loan" and "saving" finds "save".
-    if (/^[a-z]+$/.test(word) && word.length > 4) out.add(word.replace(/(ing|ies|es|s)$/, ""));
-    for (const alias of ALIASES[word] ?? []) out.add(alias);
+    if (/^[a-z]+$/.test(word) && word.length > 4) put(word.replace(/(ing|ies|es|s)$/, ""), 1);
+    for (const alias of ALIASES[word] ?? []) put(alias, 0.5);
   }
-  return [...out].filter(Boolean);
+  return out;
+}
+
+export function tokens(text: string): string[] {
+  return [...weightedTokens(text).keys()];
 }
 
 export type Hit = { doc: Doc; score: number };
 
+/** The words of a passage, split the same way as a question. Worked out once per passage. */
+const wordsCache = new WeakMap<Doc, { title: Set<string>; id: Set<string>; body: Set<string> }>();
+function wordsOf(doc: Doc) {
+  let hit = wordsCache.get(doc);
+  if (!hit) {
+    const split = (text: string) => new Set(text.toLowerCase().split(/[^\p{L}\p{M}\p{N}]+/u).filter((word) => word.length > 1));
+    hit = { title: split(doc.title), id: split(doc.id), body: split(`${doc.lead} ${doc.points.join(" ")}`) };
+    wordsCache.set(doc, hit);
+  }
+  return hit;
+}
+
+/** A whole-word match, or a shared beginning of five letters or more ("saving" and "savings"). Never a fragment inside a word. */
+function has(words: Set<string>, word: string): boolean {
+  if (words.has(word)) return true;
+  if (word.length < 5) return false;
+  for (const candidate of words) {
+    if (candidate.length >= 5 && (candidate.startsWith(word) || word.startsWith(candidate))) return true;
+  }
+  return false;
+}
+
 /** Ranks passages by how many of the asked words they contain. Title matches count most. */
 export function search(question: string, docs: Doc[], boost?: { id?: string; topic?: string }): Hit[] {
-  const asked = tokens(question);
-  if (asked.length === 0 && !boost?.id) return [];
+  const asked = weightedTokens(question);
+  if (asked.size === 0 && !boost?.id) return [];
   const hits: Hit[] = [];
   for (const doc of docs) {
-    const title = doc.title.toLowerCase();
-    const body = `${doc.lead} ${doc.points.join(" ")}`.toLowerCase();
+    const words = wordsOf(doc);
     let score = 0;
-    for (const word of asked) {
-      if (title.includes(word)) score += 3;
-      else if (doc.id.includes(word)) score += 2.5;
-      else if (body.includes(word)) score += 1;
+    for (const [word, weight] of asked) {
+      if (has(words.title, word)) score += 3 * weight;
+      else if (has(words.id, word)) score += 2.5 * weight;
+      else if (has(words.body, word)) score += weight;
     }
     if (score > 0 && doc.kind === "guide") score += 0.5;
     if (score > 0 && boost?.topic && doc.topic === boost.topic) score += 1;
