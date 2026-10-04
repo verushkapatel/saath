@@ -15,6 +15,7 @@ import { useApp } from "./app-state";
 import { Character } from "./character";
 import { TodayChallenges } from "./challenges";
 import { Flame } from "./illustrations";
+import { FeedbackPanel } from "./feedback-panel";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
 import { CheckCard, ListenButton, PageSkeleton, Sheet, Skeleton } from "./ui";
@@ -207,6 +208,8 @@ export function HomeScreen() {
           </Link>
         </section>
       )}
+
+      <FeedbackPanel />
 
       {asking && (
         <Sheet title={t("home.todayQuestion")} onClose={() => setAsking(false)}>

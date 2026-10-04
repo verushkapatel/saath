@@ -361,27 +361,27 @@
     },
     "today": "Today",
     "scan": "Scan a receipt",
-    "addShort": "Add"
-    ,"atGlance": "Your money at a glance"
-    ,"whereNow": "What needs your attention"
-    ,"todaySpend": "Spent today"
-    ,"todaySpendHint": "Only today's outgoings"
-    ,"budgetRemaining": "Budget remaining"
-    ,"budgetRemainingHint": "Income minus spending and savings"
-    ,"categoryChange": "Largest category"
-    ,"recurringTotal": "Recurring costs"
-    ,"recurringReview": "Review what still earns its place"
-    ,"noneFound": "No repeated charge found yet"
-    ,"noBaseline": "Log spending to see change"
-    ,"newThisMonth": "New or not logged last month"
-    ,"upFromLast": "{amount} more than last month"
-    ,"downFromLast": "{amount} less than last month"
-    ,"oneAction": "One useful action"
-    ,"actionStart": "Log one thing you bought today. That is enough to start a useful picture."
-    ,"actionOver": "You are {amount} over this month's available money. Review the largest flexible expense first."
-    ,"actionRecurring": "Review the recurring {amount}. Cancel only what you no longer use."
-    ,"actionTop": "Look at {category}: {amount} this month. Decide whether that fits what matters to you."
-    ,"actionSave": "Your plan has room. Move a small amount to savings before it gets spent."
+    "addShort": "Add",
+    "atGlance": "Your money at a glance",
+    "whereNow": "What needs your attention",
+    "todaySpend": "Spent today",
+    "todaySpendHint": "Only today's outgoings",
+    "budgetRemaining": "Budget remaining",
+    "budgetRemainingHint": "Income minus spending and savings",
+    "categoryChange": "Largest category",
+    "recurringTotal": "Recurring costs",
+    "recurringReview": "Review what still earns its place",
+    "noneFound": "No repeated charge found yet",
+    "noBaseline": "Log spending to see change",
+    "newThisMonth": "New or not logged last month",
+    "upFromLast": "{amount} more than last month",
+    "downFromLast": "{amount} less than last month",
+    "oneAction": "One useful action",
+    "actionStart": "Log one thing you bought today. That is enough to start a useful picture.",
+    "actionOver": "You are {amount} over this month's available money. Review the largest flexible expense first.",
+    "actionRecurring": "Review the recurring {amount}. Cancel only what you no longer use.",
+    "actionTop": "Look at {category}: {amount} this month. Decide whether that fits what matters to you.",
+    "actionSave": "Your plan has room. Move a small amount to savings before it gets spent."
   },
   "categories": {
     "pocket": "Family support",
@@ -1555,7 +1555,8 @@
     "eraseConfirm": "Delete this account's progress, Money Lab entries and goal from this device? The account stays. This cannot be undone.",
     "school": "School programme",
     "schoolLead": "Joined Saath through The Skyward Project? Enter the code your team gave you. It links you to your class without your name.",
-    "schoolLeft": "You have left the school programme."
+    "schoolLeft": "You have left the school programme.",
+    "aiAuto": "Saath AI is ready to use with Saath's best model. There is nothing to set up. If you are offline, it answers from Saath's checked guides."
   },
   "install": {
     "title": "Install Saath",

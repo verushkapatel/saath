@@ -66,9 +66,10 @@ export function normalizePrefs(raw: unknown): Prefs {
     sound: flag(value.sound, DEFAULT_PREFS.sound),
     haptics: flag(value.haptics, DEFAULT_PREFS.haptics),
     ai: flag(value.ai, DEFAULT_PREFS.ai),
-    aiOnline: flag(value.aiOnline, DEFAULT_PREFS.aiOnline),
+    // Saath AI always uses the best model available: Saath's own server model, with the checked offline answers behind it.
+    aiOnline: true,
     aiMemory: flag(value.aiMemory, DEFAULT_PREFS.aiMemory),
-    aiLocal: flag(value.aiLocal, DEFAULT_PREFS.aiLocal),
+    aiLocal: false,
     aiModel: typeof value.aiModel === "string" && /^[\w.-]{3,80}$/.test(value.aiModel) ? value.aiModel : DEFAULT_PREFS.aiModel,
     aiOllamaUrl: typeof value.aiOllamaUrl === "string" && /^(https?:\/\/)?[\w.[\]:-]+(?:\/.*)?$/.test(value.aiOllamaUrl.trim()) ? value.aiOllamaUrl.trim().slice(0, 240) : "",
     aiOllamaModel: typeof value.aiOllamaModel === "string" && /^[\w.:/-]{2,100}$/.test(value.aiOllamaModel.trim()) ? value.aiOllamaModel.trim() : DEFAULT_PREFS.aiOllamaModel,

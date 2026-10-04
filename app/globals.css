@@ -2576,3 +2576,30 @@ h1 { font-weight: 700; }
 .credit-line { display: block; width: 100%; text-align: center; font-size: 0.875rem; color: var(--text-faint); letter-spacing: 0.02em; }
 .foot { flex-wrap: wrap; }
 .intro-credit { padding: var(--s-6) var(--s-4) var(--s-7, 48px); margin: 0; }
+
+/* Forms: room to breathe. Each section is its own card; every field, document and warning gets its own line. */
+.form-detail { gap: var(--s-6); }
+.form-detail > section { display: grid; gap: var(--s-4); padding: var(--s-5); border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface-1); }
+.form-detail > section h2 { font-size: 1.25rem; }
+.form-detail .field-list { display: grid; gap: 0; margin: 0; }
+.form-detail .field-list > div { display: grid; gap: 6px; padding: var(--s-4) 0; border-top: 1px solid var(--line); }
+.form-detail .field-list > div:first-child { border-top: 0; padding-top: 0; }
+.form-detail .field-list > div:last-child { padding-bottom: 0; }
+.form-detail .field-list dt { font-weight: 600; line-height: 1.35; }
+.form-detail .field-list dd { margin: 0; color: var(--text-muted); line-height: 1.6; }
+.form-detail .checks { display: grid; gap: var(--s-3); }
+.form-detail .checks li { display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: var(--s-3); align-items: start; line-height: 1.55; }
+.form-detail .checks svg { margin-top: 4px; color: var(--accent-text); }
+.form-detail > .card.flat { display: grid; gap: var(--s-3); padding: var(--s-5); border: 1px solid var(--line); }
+.form-detail .sources { gap: var(--s-2); padding-top: var(--s-4); border-top: 1px solid var(--line); }
+.form-detail .cluster { gap: var(--s-3); margin-top: var(--s-2); }
+.list.card .item { padding-block: var(--s-4); }
+.list.card .item-sub { margin-top: 2px; }
+
+/* Feedback on Home: one calm card. */
+.feedback-panel { display: grid; gap: var(--s-4); padding: var(--s-5); border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface-1); }
+.feedback-panel h2 { font-size: 1.375rem; }
+.feedback-panel form { gap: var(--s-4); }
+.feedback-panel .feedback-box { min-height: 120px; padding: var(--s-3) var(--s-4); resize: vertical; line-height: 1.55; font: inherit; }
+.feedback-mic { justify-self: start; display: inline-flex; align-items: center; gap: var(--s-2); min-height: 40px; padding: 0 var(--s-4); border: 1px solid var(--line-strong); border-radius: var(--r-full); background: transparent; color: var(--text); font-weight: 600; font-size: var(--fs-label); }
+.feedback-mic[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }

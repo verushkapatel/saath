@@ -164,7 +164,7 @@ export function FormScreen({ id }: { id: string }) {
   const spoken = [form.name[code], form.purpose[code], ...form.mistakes.map((item) => item[code])].join(". ");
 
   return (
-    <article className="stack">
+    <article className="stack form-detail">
       <Link href="/forms" className="link"><ChevronLeft aria-hidden size={18} />{t("forms.title")}</Link>
       <div className="stack-sm">
         <p className="kicker">{t(`topics.${form.topic}`)}</p>

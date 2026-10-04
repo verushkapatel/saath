@@ -391,7 +391,6 @@ function Chat({ compact }: { compact?: boolean }) {
         </div>
       )}
 
-      <OnlineNote />
       <form className={`composer${hearing ? " hearing" : ""}`} onSubmit={submit} data-testid="ai-composer">
         <label className="visually-hidden" htmlFor={inputId}>{t("ai.placeholder")}</label>
         <textarea

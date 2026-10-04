@@ -16,7 +16,6 @@ import { usePrefs } from "./prefs";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
 import { ThemePicker } from "./theme-toggle";
-import { FeedbackPanel } from "./feedback-panel";
 
 const LANG_NAMES = { en: "English", hi: "हिन्दी", mr: "मराठी" } as const;
 
@@ -284,20 +283,7 @@ export function SettingsScreen() {
                 if (!next) void setMeta("ai-chat", []).catch(() => undefined);
               }}
             />
-            <div className="stack-xs">
-              <p className="label"><Server aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> {t("settings.ollama")}</p>
-              <OllamaPanel />
-            </div>
-            <div className="stack-xs">
-              <p className="label"><Cpu aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> {t("settings.local")}</p>
-              <LocalModelPanel />
-            </div>
-            {onlineConfigured() ? (
-              <Switch id="ai-online" label={t("settings.aiOnline")} sub={t("settings.aiOnlineSub")} on={prefs.aiOnline} disabled={prefs.aiLocal} onChange={(next) => update({ aiOnline: next })} />
-            ) : (
-              <p className="faint">{t("settings.aiOnlineNone")}</p>
-            )}
-            <p className="faint">{t("settings.aiOrder")}</p>
+            <p className="faint">{t("settings.aiAuto")}</p>
           </>
         )}
       </Group>
@@ -377,8 +363,6 @@ export function SettingsScreen() {
       <Group id="install-h" title={t("install.title")}>
         <InstallPanel />
       </Group>
-
-      <FeedbackPanel />
 
       <ul className="list card tight">
         <li>

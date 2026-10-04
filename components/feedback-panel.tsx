@@ -54,7 +54,7 @@ export function FeedbackPanel() {
   }
 
   return (
-    <section className="stack-sm feedback-panel" aria-labelledby="feedback-title" data-testid="feedback-section">
+    <section className="feedback-panel" aria-labelledby="feedback-title" data-testid="feedback-section">
       <div className="stack-xs">
         <h2 id="feedback-title" data-testid="feedback-title">{copy.title}</h2>
         <p className="faint" data-testid="feedback-description">{copy.lead}</p>
@@ -68,7 +68,7 @@ export function FeedbackPanel() {
           <span className="label">{copy.label}</span>
           <textarea className="field boxed feedback-box" value={feedback} maxLength={2000} placeholder={copy.placeholder} onChange={(event) => setFeedback(event.target.value)} data-testid="feedback-message-input" />
         </label>
-        {mic && <button type="button" className="btn btn-secondary" aria-pressed={listening} onClick={toggleVoice} data-testid="feedback-dictate-button">{listening ? <Square aria-hidden size={16} /> : <Mic aria-hidden size={18} />}{listening ? copy.stop : copy.listen}</button>}
+        {mic && <button type="button" className="feedback-mic" aria-pressed={listening} onClick={toggleVoice} data-testid="feedback-dictate-button">{listening ? <Square aria-hidden size={16} /> : <Mic aria-hidden size={18} />}{listening ? copy.stop : copy.listen}</button>}
         {listening && <p className="note" role="status" data-testid="feedback-listening-status">{copy.listening}</p>}
         <button type="submit" className="btn btn-primary" disabled={busy || name.trim().length < 3 || feedback.trim().length < 5} data-testid="feedback-submit-button"><Send aria-hidden size={18} />{busy ? copy.sending : copy.send}</button>
         {note && <p className={`note ${note.ok ? "ok" : "err"}`} role="status" data-testid="feedback-delivery-status">{note.text}</p>}
