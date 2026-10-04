@@ -2629,3 +2629,20 @@ h1 { font-weight: 700; }
 .intro .act-points svg, .intro .act-navy .act-points svg { background: transparent; color: var(--text); padding: 0; }
 .intro-dots { display: none; }
 .intro-top .lang-switch, .intro-top .icon-btn { background: transparent !important; border: 0 !important; }
+
+/* Landing, final: every chapter is a title, one line and a real snapshot of that part of the app, framed like a phone.
+   Snapshots are for looking, not tapping (only the first chapter's decision can be played). No bullet lists. */
+.intro .act .act-points { display: none; }
+.intro .act .demo { display: grid !important; pointer-events: none; user-select: none; width: min(100%, 360px); justify-self: center; margin-top: var(--s-3); padding: var(--s-5) var(--s-4); border: 1px solid var(--line-strong); border-radius: 36px; background: var(--surface-1); box-shadow: 0 1px 0 var(--line), 0 24px 48px -28px rgba(0, 0, 0, 0.35); position: relative; }
+.intro .act .demo::before { content: ""; position: absolute; top: 9px; left: 50%; width: 64px; height: 5px; border-radius: 999px; background: var(--line-strong); transform: translateX(-50%); }
+.intro #act-play .demo { pointer-events: auto; user-select: auto; }
+.intro .act { text-align: center; justify-items: center; }
+.intro .act header { justify-items: center; }
+.intro .act h2, .intro .act .lead { margin-inline: auto; }
+.intro .act .demo { text-align: start; }
+@media (min-width: 900px) {
+  .intro .act { grid-template-columns: minmax(0, 1fr) 360px; text-align: start; justify-items: start; align-items: center; column-gap: var(--s-7); }
+  .intro .act header { justify-items: start; }
+  .intro .act h2, .intro .act .lead { margin-inline: 0; }
+  .intro .act .demo { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; }
+}
