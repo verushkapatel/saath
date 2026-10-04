@@ -4,6 +4,9 @@ name: Check Saath AI
 
 on:
   workflow_dispatch:
+  push:
+    branches: [companion-rebuild]
+    paths: [server/saath-ai-worker/**, .github/workflows/check-ai.yml]
 
 jobs:
   check:
