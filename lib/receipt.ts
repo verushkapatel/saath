@@ -22,6 +22,9 @@ const CATEGORY_WORDS: [string, RegExp][] = [
   ["phone", /(recharge|mobile|telecom|airtel|jio|vodafone|bsnl|broadband|data\s*pack)/i],
   ["fees", /(school|college|tuition|fees?\b|exam|stationery|books?\b|xerox|फी)/i],
   ["fun", /(cinema|movie|pvr|inox|game|netflix|hotstar|spotify)/i],
+  ["health", /(pharma|pharmacy|chemist|medical|medicos|clinic|hospital|diagnostic|lab\b|apollo|medplus|दवा|औषध)/i],
+  ["bills", /(electricity|power|water\s*bill|gas\s*(bill|cylinder)|lpg|bescom|msedcl|mseb|tata\s*power|adani|bill\s*no.*(units|kwh)|बिजली|वीज)/i],
+  ["shopping", /(fashion|apparel|garments|clothing|footwear|shoes|trends|lifestyle|electronics|amazon|flipkart|myntra|meesho|decathlon)/i],
 ];
 
 function toNumber(raw: string): number {

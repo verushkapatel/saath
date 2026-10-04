@@ -14,14 +14,16 @@ import { tap } from "@/lib/speech";
 import type { Entry, Loan } from "@/lib/storage";
 import { useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
+import { CategoryIcon } from "./category-icon";
+import { Character } from "./character";
 import { ArtJar } from "./illustrations";
 import { NumPad } from "./numpad";
 import { useI18n } from "./providers";
 import { CountUp, ListenButton, PageSkeleton, Ring, Sheet } from "./ui";
 
 const GROUPS: Record<Entry["kind"], string[]> = {
-  out: ["food", "travel", "phone", "fun", "fees", "family", "otherOut"],
-  in: ["pocket", "scholarship", "work", "gift", "otherIn"],
+  out: ["food", "travel", "rent", "bills", "phone", "health", "shopping", "fun", "fees", "family", "otherOut"],
+  in: ["salary", "work", "pocket", "scholarship", "gift", "otherIn"],
   save: ["jar"],
 };
 const KINDS: Entry["kind"][] = ["out", "in", "save"];
@@ -75,6 +77,9 @@ function MoneyIntro() {
 
   return (
     <div className="stack rise">
+      <div className="money-intro-stage navy-scene" aria-hidden>
+        <Character look={{ outfit: "hoodie", extra: "backpack", place: "cafe" }} age={20} size={150} mood={step === 0 && tried.length === 0 ? "neutral" : step === 2 ? "proud" : "happy"} />
+      </div>
       <div className="stack-xs">
         <p className="masthead">{t("money.introKicker", { step: step + 1, total: 3 })}</p>
         <h1>{t(`money.intro${step}Title`)}</h1>
@@ -82,10 +87,11 @@ function MoneyIntro() {
       </div>
       {step === 0 && (
         <div className="demo">
-          <div className="cluster" role="group" aria-label={t("money.introTry")}>
+          <div className="cat-grid three" role="group" aria-label={t("money.introTry")}>
             {sample.map((item) => (
-              <button key={item.id} type="button" className="chip" aria-pressed={tried.includes(item.id)} onClick={() => { tap(); setTried((current) => (current.includes(item.id) ? current.filter((id) => id !== item.id) : [...current, item.id])); }}>
-                {t(`categories.${item.id}`)} {inr(item.amount, code)}
+              <button key={item.id} type="button" className="cat-tile" aria-pressed={tried.includes(item.id)} onClick={() => { tap(); setTried((current) => (current.includes(item.id) ? current.filter((id) => id !== item.id) : [...current, item.id])); }}>
+                <span className="cat-dot"><CategoryIcon id={item.id} /></span>
+                <span>{t(`categories.${item.id}`)} · {inr(item.amount, code)}</span>
               </button>
             ))}
           </div>
@@ -237,9 +243,9 @@ function ReceiptSheet({ onClose, onSaved }: { onClose: () => void; onSaved: () =
             </label>
             <div className="stack-xs">
               <p className="label">{t("money.pick")}</p>
-              <div className="chips" role="group" aria-label={t("money.pick")}>
+              <div className="cat-grid" role="group" aria-label={t("money.pick")}>
                 {GROUPS.out.map((id) => (
-                  <button key={id} type="button" className="chip" aria-pressed={category === id} onClick={() => { tap(); setCategory(id); }}>{t(`categories.${id}`)}</button>
+                  <button key={id} type="button" className="cat-tile chip" aria-pressed={category === id} onClick={() => { tap(); setCategory(id); }}><span className="cat-dot"><CategoryIcon id={id} /></span><span>{t(`categories.${id}`)}</span></button>
                 ))}
               </div>
             </div>
@@ -350,74 +356,85 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
 
   return (
     <div className="stack rise">
-      <header className="stack-sm">
-        <div className="row-between">
-          <h1>{t("money.title")}</h1>
-          <ListenButton compact text={spoken} />
-        </div>
-        <div className="row-between">
-          <button type="button" className="icon-btn" aria-label={t("money.prevMonth")} onClick={() => { tap(); setMonth(shiftMonth(month, -1)); }}><ChevronLeft aria-hidden size={20} /></button>
-          <p aria-live="polite"><strong>{monthLabel(month, code)}</strong></p>
-          <button type="button" className="icon-btn" aria-label={t("money.nextMonth")} disabled={atCurrent} onClick={() => { tap(); setMonth(shiftMonth(month, 1)); }}><ChevronRight aria-hidden size={20} /></button>
-        </div>
+      <header className="row-between">
+        <h1>{t("money.title")}</h1>
+        <ListenButton compact text={spoken} />
       </header>
 
-      <section className="card hero">
-        <div className="stack">
-          <div className="stack-xs">
-            <p className="muted">{t("money.left")}</p>
-            <p className="hero-num"><CountUp value={view.left} format={money} /></p>
-          </div>
-          <dl className="stats">
-            {(["in", "out", "save"] as const).map((key) => (
-              <div key={key}><dt>{t(`money.${key}`)}</dt><dd>{money(view.totals[key])}</dd></div>
-            ))}
-          </dl>
-          <p className="muted">{week.days > 0 ? t("money.week", { out: money(week.out), save: money(week.save) }) : t("money.weekEmpty")}</p>
-          {saved && <p role="status" className="note ok">{t("money.logged")}</p>}
+      <section className="wallet navy-scene" aria-labelledby="wallet-h">
+        <div className="wallet-month">
+          <button type="button" className="icon-btn" aria-label={t("money.prevMonth")} onClick={() => { tap(); setMonth(shiftMonth(month, -1)); }}><ChevronLeft aria-hidden size={18} /></button>
+          <p aria-live="polite">{monthLabel(month, code)}</p>
+          <button type="button" className="icon-btn" aria-label={t("money.nextMonth")} disabled={atCurrent} onClick={() => { tap(); setMonth(shiftMonth(month, 1)); }}><ChevronRight aria-hidden size={18} /></button>
         </div>
+        <p id="wallet-h" className="wallet-label">{t("money.left")}</p>
+        <p className="hero-num wallet-num"><CountUp value={view.left} format={money} /></p>
+        <dl className="wallet-stats">
+          {(["in", "out", "save"] as const).map((key) => (
+            <div key={key}><dt>{t(`money.${key}`)}</dt><dd className="num">{money(view.totals[key])}</dd></div>
+          ))}
+        </dl>
+        {view.totals.in > 0 && (
+          <div className="split-bar three wallet-bar" aria-hidden>
+            <span className="part-needs" style={{ width: `${Math.min(100, (view.totals.out / view.totals.in) * 100)}%` }} />
+            <span className="part-save" style={{ width: `${Math.min(100, (view.totals.save / view.totals.in) * 100)}%` }} />
+          </div>
+        )}
+        <p className="wallet-week">{week.days > 0 ? t("money.week", { out: money(week.out), save: money(week.save) }) : t("money.weekEmpty")}</p>
       </section>
+      {saved && <p role="status" className="note ok">{t("money.logged")}</p>}
 
-      <div className="pair">
-        <button type="button" className="btn btn-primary" onClick={openLogSheet}><Plus aria-hidden size={20} />{t("money.add")}</button>
-        <button type="button" className="btn btn-secondary" onClick={() => { tap(); setSaved(false); setSheet("receipt"); }}><Camera aria-hidden size={18} />{t("money.receipt.open")}</button>
+      <div className="money-actions">
+        <button type="button" className="money-action primary" onClick={openLogSheet}><span><Plus aria-hidden size={24} /></span>{t("money.addShort")}</button>
+        <button type="button" className="money-action" onClick={() => { tap(); setSaved(false); setSheet("receipt"); }}><span><Camera aria-hidden size={22} /></span>{t("money.scan")}</button>
+        <button type="button" className="money-action" onClick={() => { tap(); setGoalDraft(goal ? String(goal) : ""); setSheet("goal"); }}><span><Target aria-hidden size={22} /></span>{t("money.goal")}</button>
       </div>
 
-      <section className="card" aria-labelledby="entries-h">
-        <div className="stack-sm">
-          <h2 id="entries-h">{t("money.entries")}</h2>
-          {view.inMonth.length === 0 ? (
-            <div className="stack-sm center">
-              <ArtJar label={t("art.empty")} small />
-              <p className="muted">{t("money.noEntries")}</p>
-            </div>
-          ) : (
-            <ul className="list entry-list">
-              {view.inMonth.slice(0, 50).map((entry) => (
-                <li key={entry.id} className="entry">
-                  <span className="stack-xs">
-                    <span className="item-title">{t(`categories.${entry.category}`)}{entry.note ? <span className="faint"> · {entry.note}</span> : null}</span>
-                    <span className="item-sub">{dayLabel(entry.date, code)} · {t(`money.kind.${entry.kind}`)}</span>
-                  </span>
-                  <span className="cluster">
-                    <strong className="num">{entry.kind === "out" ? "−" : "+"}{money(entry.amount)}</strong>
-                    <button
-                      type="button"
-                      className="icon-btn"
-                      aria-label={t("money.deleteEntry", { amount: money(entry.amount) })}
-                      onClick={() => {
-                        if (!window.confirm(t("money.deleteConfirm", { amount: money(entry.amount), category: t(`categories.${entry.category}`) }))) return;
-                        void app.deleteEntry(entry.id);
-                      }}
-                    >
-                      <Trash2 aria-hidden size={16} />
-                    </button>
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
+      <section className="stack-sm" aria-labelledby="entries-h">
+        <h2 id="entries-h">{t("money.entries")}</h2>
+        {view.inMonth.length === 0 ? (
+          <div className="card stack-sm center">
+            <ArtJar label={t("art.empty")} small />
+            <p className="muted">{t("money.noEntries")}</p>
+          </div>
+        ) : (
+          (() => {
+            const groups: [string, Entry[]][] = [];
+            for (const entry of view.inMonth.slice(0, 60)) {
+              const last = groups.at(-1);
+              if (last && last[0] === entry.date) last[1].push(entry);
+              else groups.push([entry.date, [entry]]);
+            }
+            return groups.map(([date, list]) => (
+              <div key={date} className="day-group">
+                <p className="day-head"><span>{date === app.today ? t("money.today") : dayLabel(date, code)}</span><span className="num">{money(list.filter((entry) => entry.kind === "out").reduce((sum, entry) => sum + entry.amount, 0))}</span></p>
+                <ul className="card tight list entry-list">
+                  {list.map((entry) => (
+                    <li key={entry.id} className="entry">
+                      <span className={`cat-dot ${entry.kind}`}><CategoryIcon id={entry.category} size={18} /></span>
+                      <span className="item-body">
+                        <span className="item-title">{t(`categories.${entry.category}`)}</span>
+                        <span className="item-sub">{entry.note ? entry.note : t(`money.kind.${entry.kind}`)}</span>
+                      </span>
+                      <strong className={`num amount ${entry.kind}`}>{entry.kind === "out" ? "−" : "+"}{money(entry.amount)}</strong>
+                      <button
+                        type="button"
+                        className="entry-del"
+                        aria-label={t("money.deleteEntry", { amount: money(entry.amount) })}
+                        onClick={() => {
+                          if (!window.confirm(t("money.deleteConfirm", { amount: money(entry.amount), category: t(`categories.${entry.category}`) }))) return;
+                          void app.deleteEntry(entry.id);
+                        }}
+                      >
+                        <Trash2 aria-hidden size={15} />
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ));
+          })()
+        )}
       </section>
 
       {view.spend.length > 0 && (
@@ -525,9 +542,12 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
                 </button>
               ))}
             </div>
-            <div className="chips" role="group" aria-label={t("money.pick")}>
+            <div className="cat-grid" role="group" aria-label={t("money.pick")}>
               {GROUPS[kind].map((id) => (
-                <button key={id} type="button" className="chip" aria-pressed={category === id} onClick={() => { tap(); setCategory(id); }}>{t(`categories.${id}`)}</button>
+                <button key={id} type="button" className="cat-tile" aria-pressed={category === id} onClick={() => { tap(); setCategory(id); }}>
+                  <span className="cat-dot"><CategoryIcon id={id} /></span>
+                  <span>{t(`categories.${id}`)}</span>
+                </button>
               ))}
             </div>
             <AmountPad value={amount} onChange={setAmount} />
