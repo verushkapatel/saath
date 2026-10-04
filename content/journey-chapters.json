@@ -1,50 +1,2581 @@
 {
   "reviewed": "2026-03",
   "chapters": [
-    {"id":"first-job","source":"first-job","stage":"first-job","topic":"income","age":22,"place":"office","title":{"en":"01 · Verena's first job","hi":"01 · वेरेना की पहली नौकरी","mr":"01 · वेरेनाची पहिली नोकरी"},"delta":{"income":42000,"confidence":4},"guide":"salary-slip"},
-    {"id":"first-bank-account","stage":"banking","topic":"banking","age":22,"place":"bank","title":{"en":"02 · Her first bank account","hi":"02 · उसका पहला बैंक खाता","mr":"02 · तिचे पहिले बँक खाते"},"setup":{"en":"Verena's employer needs an account for salary. At the branch she sees account types, KYC fields, an IFSC code and a debit-card form.","hi":"वेरेना के नियोक्ता को वेतन के लिए बैंक खाता चाहिए। शाखा में उसे खाते के प्रकार, KYC, IFSC और डेबिट कार्ड का फ़ॉर्म दिखता है।","mr":"वेरेनाच्या नियोक्त्याला पगारासाठी बँक खाते हवे आहे. शाखेत तिला खात्यांचे प्रकार, KYC, IFSC आणि डेबिट कार्डचा फॉर्म दिसतो."},"action":{"en":"Choose a low-fee savings account, verify every KYC field and activate only the services she understands.","hi":"कम शुल्क वाला बचत खाता चुनें, हर KYC जानकारी जाँचें और समझ में आने वाली सेवाएँ ही चालू करें।","mr":"कमी शुल्काचे बचत खाते निवडा, प्रत्येक KYC माहिती तपासा आणि समजणाऱ्या सेवाच सुरू करा."},"sim":{"kind":"inspect"},"delta":{"cash":1000,"confidence":5,"resilience":3},"guide":"first-bank-account"},
-    {"id":"first-income","source":"first-income","stage":"first-income","topic":"budgeting","age":22,"place":"room","title":{"en":"03 · First month's pay","hi":"03 · पहले महीने का वेतन","mr":"03 · पहिल्या महिन्याचा पगार"},"delta":{"cash":42000,"savings":3000,"confidence":3},"guide":"budget"},
-    {"id":"early-adulthood","source":"early-adulthood","stage":"early-adulthood","topic":"budgeting","age":23,"place":"room","title":{"en":"04 · The first bad spending decision","hi":"04 · खर्च का पहला गलत फ़ैसला","mr":"04 · खर्चाचा पहिला चुकीचा निर्णय"},"delta":{"confidence":2},"guide":"needs-wants"},
-    {"id":"saving","source":"saving","stage":"saving","topic":"saving","age":23,"place":"room","title":{"en":"05 · Building an emergency fund","hi":"05 · आपात निधि बनाना","mr":"05 · आणीबाणी निधी उभा करणे"},"delta":{"emergency":18000,"resilience":5},"guide":"emergency-fund"},
-    {"id":"insurance","source":"insurance","stage":"insurance","topic":"insurance","age":24,"place":"office","title":{"en":"06 · Her first insurance decision","hi":"06 · बीमा का पहला फ़ैसला","mr":"06 · विम्याचा पहिला निर्णय"},"delta":{"insurance":25,"resilience":4},"guide":"what-insurance"},
-    {"id":"government-benefits","stage":"banking","topic":"schemes","age":24,"place":"home","title":{"en":"07 · Government benefits and eligibility","hi":"07 · सरकारी लाभ और पात्रता","mr":"07 · सरकारी लाभ आणि पात्रता"},"setup":{"en":"A colleague sends Verena a scheme poster. It promises quick approval, but gives no department, date or official link.","hi":"एक सहकर्मी वेरेना को योजना का पोस्टर भेजता है। उसमें जल्दी मंज़ूरी का वादा है, पर विभाग, तारीख या आधिकारिक लिंक नहीं है।","mr":"एक सहकारी वेरेनाला योजनेचे पोस्टर पाठवतो. त्यात त्वरित मंजुरीचे आश्वासन आहे, पण विभाग, तारीख किंवा अधिकृत लिंक नाही."},"action":{"en":"Check eligibility and documents only on a current official source before sharing any information.","hi":"कोई जानकारी देने से पहले मौजूदा आधिकारिक स्रोत पर पात्रता और दस्तावेज़ जाँचें।","mr":"कोणतीही माहिती देण्याआधी अद्ययावत अधिकृत स्रोतावर पात्रता आणि कागदपत्रे तपासा."},"sim":{"kind":"inspect"},"delta":{"cash":2000,"confidence":4,"resilience":3},"guide":"govt-schemes"},
-    {"id":"first-goal","stage":"saving","topic":"saving","age":25,"place":"cafe","title":{"en":"08 · Her first financial goal","hi":"08 · उसका पहला आर्थिक लक्ष्य","mr":"08 · तिचे पहिले आर्थिक लक्ष्य"},"setup":{"en":"Verena wants to fund a professional course in eighteen months. The fee is clear, but travel and study materials also matter.","hi":"वेरेना अठारह महीने में एक प्रोफ़ेशनल कोर्स करना चाहती है। फीस साफ़ है, पर यात्रा और पढ़ाई का सामान भी खर्च है।","mr":"वेरेनाला अठरा महिन्यांत व्यावसायिक अभ्यासक्रम करायचा आहे. फी स्पष्ट आहे, पण प्रवास आणि अभ्यास साहित्याचाही खर्च आहे."},"action":{"en":"Set the full target, deadline and a monthly transfer that still leaves room for essentials.","hi":"पूरा लक्ष्य, समय-सीमा और ज़रूरी खर्चों के बाद संभव मासिक बचत तय करें।","mr":"पूर्ण लक्ष्य, मुदत आणि आवश्यक खर्चांनंतर शक्य असलेली मासिक बचत ठरवा."},"sim":{"kind":"grow","monthly":3500,"rate":0,"years":[1,2,3]},"delta":{"savings":18000,"confidence":4,"resilience":2},"guide":"pay-yourself"},
-    {"id":"tracking-spending","stage":"budgeting","topic":"budgeting","age":25,"place":"room","title":{"en":"09 · Tracking everyday spending","hi":"09 · रोज़मर्रा के खर्च का हिसाब","mr":"09 · रोजच्या खर्चाची नोंद"},"setup":{"en":"Small payments keep disappearing from Verena's account. None looks serious alone, but together they are larger than her electricity bill.","hi":"वेरेना के खाते से छोटे-छोटे भुगतान होते रहते हैं। अकेले वे बड़े नहीं लगते, पर मिलकर बिजली के बिल से ज़्यादा हैं।","mr":"वेरेनाच्या खात्यातून छोटे छोटे पैसे जात राहतात. एकटे मोठे वाटत नाहीत, पण मिळून वीजबिलापेक्षा जास्त आहेत."},"action":{"en":"Log one week honestly in MoneyLab, then group the payments by category and recurrence.","hi":"एक हफ़्ते का हर खर्च MoneyLab में लिखें, फिर श्रेणी और दोहराव के हिसाब से देखें।","mr":"एका आठवड्याचा प्रत्येक खर्च MoneyLab मध्ये नोंदवा, मग प्रकार आणि पुनरावृत्तीनुसार पाहा."},"sim":{"kind":"budget","income":42000,"needs":30000},"delta":{"savings":3500,"confidence":5,"resilience":2},"guide":"budget"},
-    {"id":"receipt","stage":"budgeting","topic":"paperwork","age":25,"place":"cafe","title":{"en":"10 · The receipt","hi":"10 · रसीद","mr":"10 · पावती"},"setup":{"en":"A long receipt mixes item prices, tax, a service charge and a discount. Verena wants to know what she actually paid and why.","hi":"लंबी रसीद में कीमतें, कर, सर्विस शुल्क और छूट साथ हैं। वेरेना जानना चाहती है कि उसने वास्तव में कितना और क्यों दिया।","mr":"लांब पावतीत किमती, कर, सेवा शुल्क आणि सवलत एकत्र आहेत. वेरेनाला तिने खरे किती आणि का भरले ते समजून घ्यायचे आहे."},"action":{"en":"Import the receipt, verify merchant, date and total, then correct the suggested category before saving.","hi":"रसीद आयात करें, दुकानदार, तारीख और कुल जाँचें, फिर श्रेणी सुधारकर सहेजें।","mr":"पावती आयात करा, विक्रेता, तारीख आणि एकूण तपासा, मग प्रकार दुरुस्त करून जतन करा."},"sim":{"kind":"inspect"},"delta":{"cash":-900,"confidence":4},"guide":"payment-proof"},
-    {"id":"subscription-trap","stage":"budgeting","topic":"budgeting","age":26,"place":"room","title":{"en":"11 · The subscription trap","hi":"11 · सब्सक्रिप्शन का जाल","mr":"11 · सबस्क्रिप्शनचा सापळा"},"setup":{"en":"Three free trials became monthly charges. Verena uses one often, one sometimes and has forgotten the third completely.","hi":"तीन मुफ़्त ट्रायल मासिक शुल्क बन गए। वेरेना एक अक्सर, एक कभी-कभी इस्तेमाल करती है और तीसरा भूल चुकी है।","mr":"तीन मोफत चाचण्या मासिक शुल्क झाल्या. वेरेना एक नेहमी, एक कधीमधी वापरते आणि तिसरे पूर्ण विसरली आहे."},"action":{"en":"Keep the useful service, cancel what is unused and note every renewal date.","hi":"काम की सेवा रखें, बेकार सेवाएँ बंद करें और हर नवीनीकरण तारीख लिखें।","mr":"उपयोगी सेवा ठेवा, न वापरणाऱ्या बंद करा आणि प्रत्येक नूतनीकरण तारीख नोंदवा."},"sim":{"kind":"budget","income":42000,"needs":31200},"delta":{"savings":4200,"confidence":3},"guide":"subscription-traps"},
-    {"id":"rent-lifestyle","stage":"budgeting","topic":"budgeting","age":26,"place":"home","title":{"en":"12 · Rent versus lifestyle","hi":"12 · किराया बनाम जीवनशैली","mr":"12 · भाडे विरुद्ध जीवनशैली"},"setup":{"en":"A brighter flat cuts Verena's commute, but the rent and deposit would slow her emergency fund for a year.","hi":"उजला फ़्लैट वेरेना की यात्रा कम करेगा, लेकिन किराया और जमा राशि एक साल तक आपात निधि धीमी करेंगे।","mr":"उजळ घर वेरेनाचा प्रवास कमी करेल, पण भाडे आणि ठेव एक वर्ष तिच्या आणीबाणी निधीची वाढ कमी करतील."},"action":{"en":"Compare total housing cost, commute time and the savings goal before choosing the trade-off she can sustain.","hi":"टिकाऊ समझौता चुनने से पहले कुल आवास लागत, यात्रा समय और बचत लक्ष्य की तुलना करें।","mr":"टिकणारी तडजोड निवडण्याआधी एकूण घरखर्च, प्रवासाचा वेळ आणि बचतीचे लक्ष्य तुलना करा."},"sim":{"kind":"budget","income":48000,"needs":35000},"delta":{"cash":-10000,"savings":5000,"confidence":4},"guide":"true-cost"},
-    {"id":"investing","source":"investing","stage":"investing","topic":"investing","age":27,"place":"cafe","title":{"en":"13 · Her first small investment","hi":"13 · उसका पहला छोटा निवेश","mr":"13 · तिची पहिली छोटी गुंतवणूक"},"delta":{"investments":18000,"confidence":3},"guide":"risk-diversify"},
-    {"id":"market-fall","stage":"investing","topic":"investing","age":27,"place":"room","title":{"en":"14 · Market fall","hi":"14 · बाज़ार में गिरावट","mr":"14 · बाजारातील घसरण"},"setup":{"en":"Verena's diversified investment falls soon after she starts. A group chat says to sell everything before it gets worse.","hi":"शुरू करने के तुरंत बाद वेरेना का विविध निवेश गिरता है। ग्रुप चैट सब बेचने को कहता है।","mr":"सुरुवातीनंतर लगेच वेरेनाची विविध गुंतवणूक घसरते. ग्रुप चॅट सर्व काही विकायला सांगते."},"action":{"en":"Return to her time horizon and risk plan instead of reacting to one frightening day.","hi":"एक डरावने दिन पर प्रतिक्रिया देने के बजाय समय-सीमा और जोखिम योजना पर लौटें।","mr":"एका भीतीदायक दिवसावर प्रतिक्रिया देण्याऐवजी कालावधी आणि जोखीम योजनेकडे परत जा."},"sim":{"kind":"grow","monthly":3000,"rate":7,"years":[1,5,10]},"delta":{"investments":12000,"confidence":4,"resilience":2},"guide":"risk-diversify"},
-    {"id":"financial-security","source":"financial-security","stage":"financial-security","topic":"scams","age":28,"place":"home","title":{"en":"15 · A financial scam","hi":"15 · आर्थिक ठगी","mr":"15 · आर्थिक फसवणूक"},"delta":{"confidence":5,"resilience":6},"guide":"scam-calls"},
-    {"id":"scam-consequences","stage":"financial-security","topic":"scams","age":28,"place":"home","title":{"en":"16 · The consequences of a mistake","hi":"16 · गलती के नतीजे","mr":"16 · चुकीचे परिणाम"},"setup":{"en":"Verena clicked the message but stopped before sharing an OTP. She now needs to secure the account and understand every warning sign she missed.","hi":"वेरेना ने लिंक खोला पर OTP देने से पहले रुक गई। अब उसे खाता सुरक्षित करना और छूटे संकेत समझना है।","mr":"वेरेनाने लिंक उघडली पण OTP देण्याआधी थांबली. आता तिला खाते सुरक्षित करून सुटलेल्या खुणा समजून घ्यायच्या आहेत."},"action":{"en":"Contact the bank through its official channel, change exposed credentials and document the message.","hi":"बैंक के आधिकारिक माध्यम से संपर्क करें, उजागर जानकारी बदलें और संदेश का प्रमाण रखें।","mr":"बँकेच्या अधिकृत मार्गाने संपर्क करा, उघड झालेली माहिती बदला आणि संदेशाचा पुरावा ठेवा."},"sim":{"kind":"inspect"},"delta":{"confidence":5,"resilience":6},"guide":"money-missing"},
-    {"id":"medical-expense","stage":"insurance","topic":"insurance","age":29,"place":"home","title":{"en":"17 · An unexpected medical expense","hi":"17 · अचानक चिकित्सा खर्च","mr":"17 · अचानक वैद्यकीय खर्च"},"setup":{"en":"A medical bill arrives on a Sunday. Verena has some emergency savings and insurance, but the hospital asks for immediate payment.","hi":"रविवार को चिकित्सा बिल आता है। वेरेना के पास कुछ आपात बचत और बीमा है, पर अस्पताल तुरंत भुगतान माँगता है।","mr":"रविवारी वैद्यकीय बिल येते. वेरेनाकडे काही आणीबाणी बचत आणि विमा आहे, पण रुग्णालय त्वरित पैसे मागते."},"action":{"en":"Confirm coverage, use liquid emergency money for the gap and keep every document for the claim.","hi":"कवरेज जाँचें, कमी के लिए उपलब्ध आपात धन इस्तेमाल करें और क्लेम के सारे दस्तावेज़ रखें।","mr":"कव्हर तपासा, तुटीसाठी सहज उपलब्ध आणीबाणी निधी वापरा आणि दाव्याची सर्व कागदपत्रे ठेवा."},"sim":{"kind":"inspect"},"delta":{"emergency":-18000,"cash":-6000,"insurance":8,"resilience":5},"guide":"health-cover"},
-    {"id":"money-tight","stage":"borrowing","topic":"budgeting","age":30,"place":"room","title":{"en":"18 · Money is tight","hi":"18 · पैसों की तंगी","mr":"18 · पैशांची चणचण"},"setup":{"en":"A repair and a family visit land in the same month. For the first time, Verena's planned expenses are above her income.","hi":"मरम्मत और परिवार की यात्रा एक ही महीने में आती हैं। पहली बार वेरेना का नियोजित खर्च आय से ऊपर है।","mr":"दुरुस्ती आणि कुटुंबाची भेट एकाच महिन्यात येतात. पहिल्यांदा वेरेनाचा नियोजित खर्च उत्पन्नापेक्षा जास्त आहे."},"action":{"en":"Protect essentials, delay a flexible purchase and use only the emergency amount needed for the real gap.","hi":"ज़रूरी खर्च बचाएँ, टाल सकने वाली खरीद रोकें और वास्तविक कमी जितना ही आपात धन लें।","mr":"आवश्यक खर्च जपा, पुढे ढकलता येणारी खरेदी थांबवा आणि खरी तूट तेवढाच आणीबाणी निधी वापरा."},"sim":{"kind":"budget","income":50000,"needs":46500},"delta":{"emergency":-5000,"debt":-2000,"resilience":4},"guide":"needs-wants"},
-    {"id":"borrowing","source":"borrowing","stage":"borrowing","topic":"borrowing","age":31,"place":"bank","title":{"en":"19 · Verena needs a loan","hi":"19 · वेरेना को लोन चाहिए","mr":"19 · वेरेनाला कर्ज हवे आहे"},"delta":{"cash":240000,"debt":240000,"confidence":3},"guide":"what-emi"},
-    {"id":"bad-loan-offer","stage":"borrowing","topic":"borrowing","age":31,"place":"cafe","title":{"en":"20 · The bad loan offer","hi":"20 · खराब लोन ऑफ़र","mr":"20 · वाईट कर्ज ऑफर"},"setup":{"en":"A lender advertises a tiny monthly payment. The processing fee, flat rate and late charge are hidden in smaller text.","hi":"ऋणदाता बहुत छोटी मासिक किस्त दिखाता है। प्रोसेसिंग शुल्क, फ्लैट दर और देरी शुल्क छोटे अक्षरों में हैं।","mr":"कर्जदाता खूप छोटा मासिक हप्ता दाखवतो. प्रक्रिया शुल्क, फ्लॅट दर आणि उशीर शुल्क लहान अक्षरांत आहेत."},"action":{"en":"Compare total repayment, APR or equivalent cost, fees, lender identity and late-payment terms.","hi":"कुल भुगतान, APR या बराबर लागत, शुल्क, ऋणदाता की पहचान और देरी की शर्तें तुलना करें।","mr":"एकूण परतफेड, APR किंवा समतुल्य खर्च, शुल्क, कर्जदात्याची ओळख आणि उशीराच्या अटी तुलना करा."},"sim":{"kind":"emi","principal":180000,"rate":18,"months":[12,24,36]},"delta":{"debt":-25000,"confidence":5,"resilience":3},"guide":"reading-fees"},
-    {"id":"loan-repayment","stage":"borrowing","topic":"borrowing","age":32,"place":"room","title":{"en":"21 · Loan repayment","hi":"21 · लोन की चुकौती","mr":"21 · कर्जाची परतफेड"},"setup":{"en":"The first EMI is due beside rent, groceries and savings. Verena sees how debt narrows every later choice.","hi":"पहली EMI किराए, राशन और बचत के साथ देनी है। वेरेना देखती है कि कर्ज़ आगे के हर विकल्प को छोटा करता है।","mr":"पहिला EMI भाडे, किराणा आणि बचतीसोबत भरायचा आहे. कर्ज पुढचा प्रत्येक पर्याय कसा कमी करते ते वेरेनाला दिसते."},"action":{"en":"Put the EMI into the monthly plan first, keep a small buffer and avoid new discretionary debt.","hi":"EMI को मासिक योजना में पहले रखें, थोड़ा बफ़र बचाएँ और नया गैर-ज़रूरी कर्ज़ न लें।","mr":"EMI मासिक योजनेत आधी ठेवा, थोडा राखीव ठेवा आणि नवे अनावश्यक कर्ज टाळा."},"sim":{"kind":"budget","income":56000,"needs":44500},"delta":{"debt":-18000,"savings":3000,"confidence":4},"guide":"prepayment"},
-    {"id":"job-loss","stage":"financial-security","topic":"income","age":33,"place":"home","title":{"en":"22 · Job loss","hi":"22 · नौकरी छूटना","mr":"22 · नोकरी जाणे"},"setup":{"en":"Verena's role is removed without warning. The next salary will not come, but rent and the EMI still will.","hi":"वेरेना की नौकरी बिना चेतावनी चली जाती है। अगला वेतन नहीं आएगा, लेकिन किराया और EMI आएँगे।","mr":"वेरेनाची नोकरी कोणतीही सूचना न देता जाते. पुढचा पगार येणार नाही, पण भाडे आणि EMI येतील."},"action":{"en":"Switch to a survival budget, use the emergency fund deliberately and avoid panic borrowing while she searches.","hi":"जीविका बजट अपनाएँ, आपात निधि सोचकर इस्तेमाल करें और नौकरी खोजते समय घबराकर कर्ज़ न लें।","mr":"जगण्यासाठीचे बजेट वापरा, आणीबाणी निधी विचारपूर्वक वापरा आणि नोकरी शोधताना घाईत कर्ज घेऊ नका."},"sim":{"kind":"budget","income":0,"needs":32000},"delta":{"income":-56000,"emergency":-30000,"resilience":8,"confidence":-4},"guide":"emergency-fund"},
-    {"id":"recovery","stage":"financial-security","topic":"saving","age":34,"place":"office","title":{"en":"23 · Recovery","hi":"23 · फिर से संभलना","mr":"23 · पुन्हा उभे राहणे"},"setup":{"en":"A new job arrives after four difficult months. The salary is higher, but the emergency fund is almost empty.","hi":"चार कठिन महीनों बाद नई नौकरी मिलती है। वेतन अधिक है, लेकिन आपात निधि लगभग खाली है।","mr":"चार कठीण महिन्यांनंतर नवी नोकरी मिळते. पगार जास्त आहे, पण आणीबाणी निधी जवळजवळ रिकामा आहे."},"action":{"en":"Rebuild the emergency fund before restoring every old expense, and review what the job loss revealed.","hi":"पुराने सारे खर्च लौटाने से पहले आपात निधि फिर बनाएँ और नौकरी छूटने से मिली सीख देखें।","mr":"जुने सर्व खर्च पुन्हा सुरू करण्याआधी आणीबाणी निधी उभा करा आणि नोकरी गेल्याने काय शिकवले ते पाहा."},"sim":{"kind":"budget","income":64000,"needs":39000},"delta":{"income":64000,"emergency":24000,"confidence":7,"resilience":8},"guide":"pay-yourself"},
-    {"id":"fraud-attempt","stage":"financial-security","topic":"scams","age":34,"place":"office","title":{"en":"24 · A sophisticated fraud attempt","hi":"24 · एक चालाक धोखाधड़ी","mr":"24 · एक हुशार फसवणूक प्रयत्न"},"setup":{"en":"A caller knows Verena's employer and recent purchase. They create urgency, then ask her to install a support app.","hi":"कॉलर को वेरेना के नियोक्ता और हाल की खरीद पता है। वह जल्दी कराता है और सहायता ऐप इंस्टॉल करने को कहता है।","mr":"फोन करणाऱ्याला वेरेनाचा नियोक्ता आणि अलीकडची खरेदी माहिती आहे. तो घाई निर्माण करून सपोर्ट अॅप बसवायला सांगतो."},"action":{"en":"End the call, verify through an independently found number and never install remote-access software for a caller.","hi":"कॉल बंद करें, खुद खोजे आधिकारिक नंबर से जाँचें और कॉलर के लिए रिमोट-एक्सेस ऐप कभी न डालें।","mr":"फोन बंद करा, स्वतः शोधलेल्या अधिकृत नंबरवर तपासा आणि फोन करणाऱ्यासाठी रिमोट-अॅक्सेस अॅप कधीही बसवू नका."},"sim":{"kind":"inspect"},"delta":{"confidence":6,"resilience":8},"guide":"scam-calls"},
-    {"id":"financial-reset","stage":"financial-security","topic":"budgeting","age":35,"place":"rooftop","title":{"en":"25 · Financial reset","hi":"25 · आर्थिक रीसेट","mr":"25 · आर्थिक पुनर्रचना"},"setup":{"en":"Verena pauses to review thirteen years of choices: what protected her, what cost more than expected and what still feels fragile.","hi":"वेरेना तेरह साल के फ़ैसले देखती है: किसने बचाया, क्या उम्मीद से महँगा पड़ा और क्या अब भी कमज़ोर है।","mr":"वेरेना तेरा वर्षांचे निर्णय पाहते: कशाने संरक्षण केले, काय अपेक्षेपेक्षा महाग पडले आणि काय अजून नाजूक आहे."},"action":{"en":"Use the evidence to set three priorities: resilience, manageable debt and one meaningful goal.","hi":"सबूत से तीन प्राथमिकताएँ तय करें: मज़बूती, संभालने योग्य कर्ज़ और एक सार्थक लक्ष्य।","mr":"पुराव्यावरून तीन प्राधान्ये ठरवा: लवचिकता, सांभाळता येणारे कर्ज आणि एक अर्थपूर्ण लक्ष्य."},"sim":{"kind":"inspect"},"delta":{"confidence":8,"resilience":7},"guide":"budget"},
-    {"id":"budgeting","source":"budgeting","stage":"first-income","topic":"income","age":36,"place":"office","title":{"en":"26 · Career growth","hi":"26 · करियर में बढ़त","mr":"26 · करिअरमधील वाढ"},"delta":{"income":18000,"savings":9000,"confidence":4},"guide":"pay-yourself"},
-    {"id":"moving-home","stage":"family-finances","topic":"family","age":37,"place":"home","title":{"en":"27 · Moving to a new home","hi":"27 · नए घर में जाना","mr":"27 · नव्या घरात जाणे"},"setup":{"en":"A new home offers space and a shorter commute. It also brings a deposit, moving costs and higher utilities.","hi":"नया घर जगह और छोटी यात्रा देता है। साथ में जमा राशि, शिफ़्टिंग और अधिक बिल भी आते हैं।","mr":"नवे घर जागा आणि कमी प्रवास देते. त्यासोबत ठेव, स्थलांतर खर्च आणि जास्त बिलेही येतात."},"action":{"en":"Price the whole first year, not only the rent, and keep the emergency reserve intact.","hi":"सिर्फ़ किराया नहीं, पूरे पहले साल की लागत देखें और आपात बचत सुरक्षित रखें।","mr":"फक्त भाडे नाही, संपूर्ण पहिल्या वर्षाचा खर्च पाहा आणि आणीबाणी राखीव सुरक्षित ठेवा."},"sim":{"kind":"budget","income":78000,"needs":57000},"delta":{"cash":-30000,"savings":10000,"resilience":3},"guide":"true-cost"},
-    {"id":"family-finances","source":"family-finances","stage":"family-finances","topic":"family","age":38,"place":"home","title":{"en":"28 · Family finances","hi":"28 · परिवार के पैसे","mr":"28 · कुटुंबाचे पैसे"},"delta":{"confidence":5,"resilience":4},"guide":"family-money"},
-    {"id":"insurance-review","stage":"insurance","topic":"insurance","age":39,"place":"home","title":{"en":"29 · Insurance review","hi":"29 · बीमा की समीक्षा","mr":"29 · विम्याचा आढावा"},"setup":{"en":"Verena now shares a home and supports another person. The cover she bought at twenty-four may no longer match the risk.","hi":"वेरेना अब घर और ज़िम्मेदारी साझा करती है। चौबीस साल में लिया कवरेज अब जोखिम के लिए कम हो सकता है।","mr":"वेरेना आता घर आणि जबाबदारी वाटून घेते. चोवीसाव्या वर्षी घेतलेले कव्हर आता जोखमीला पुरेसे नसेल."},"action":{"en":"Review coverage, exclusions, nominees and affordability against her changed responsibilities.","hi":"बदली ज़िम्मेदारियों के अनुसार कवरेज, अपवाद, नॉमिनी और वहनीयता जाँचें।","mr":"बदललेल्या जबाबदाऱ्यांनुसार कव्हर, अपवाद, नॉमिनी आणि परवड तपासा."},"sim":{"kind":"inspect"},"delta":{"insurance":15,"resilience":7,"confidence":4},"guide":"what-insurance"},
-    {"id":"taxes","stage":"first-income","topic":"tax","age":39,"place":"office","title":{"en":"30 · Taxes","hi":"30 · कर","mr":"30 · कर"},"setup":{"en":"Verena receives salary and tax documents with unfamiliar labels. She needs to understand what they record without guessing current rules.","hi":"वेरेना को अनजान शब्दों वाले वेतन और कर दस्तावेज़ मिलते हैं। उसे मौजूदा नियम गढ़े बिना उनका अर्थ समझना है।","mr":"वेरेनाला अनोळखी शब्दांचे पगार आणि कर कागद मिळतात. चालू नियमांचा अंदाज न लावता त्यांचा अर्थ समजून घ्यायचा आहे."},"action":{"en":"Match each document to its purpose, keep records and verify current obligations on an official dated source.","hi":"हर दस्तावेज़ का उद्देश्य समझें, रिकॉर्ड रखें और मौजूदा दायित्व आधिकारिक दिनांकित स्रोत से जाँचें।","mr":"प्रत्येक कागदाचा उद्देश समजा, नोंदी ठेवा आणि चालू जबाबदाऱ्या अधिकृत दिनांकित स्रोतावर तपासा."},"sim":{"kind":"inspect"},"delta":{"confidence":6,"resilience":3},"guide":"tax-basics"},
-    {"id":"important-documents","stage":"family-finances","topic":"paperwork","age":40,"place":"home","title":{"en":"31 · Important documents","hi":"31 · ज़रूरी दस्तावेज़","mr":"31 · महत्त्वाची कागदपत्रे"},"setup":{"en":"A claim is delayed because a document is hard to find. Verena decides her financial papers need a simple system.","hi":"दस्तावेज़ न मिलने से क्लेम देर होता है। वेरेना तय करती है कि आर्थिक कागज़ों को आसान व्यवस्था चाहिए।","mr":"कागद न सापडल्याने दावा उशिरा होतो. वेरेना आर्थिक कागदांसाठी सोपी व्यवस्था ठरवते."},"action":{"en":"Create a secure checklist for identity, bank, insurance, tax and investment records, with renewal dates.","hi":"पहचान, बैंक, बीमा, कर और निवेश रिकॉर्ड की सुरक्षित सूची बनाएँ, नवीनीकरण तारीखों सहित।","mr":"ओळख, बँक, विमा, कर आणि गुंतवणूक नोंदींची सुरक्षित यादी नूतनीकरण तारखांसह तयार करा."},"sim":{"kind":"inspect"},"delta":{"confidence":5,"resilience":6},"guide":"payment-proof"},
-    {"id":"government-form","stage":"family-finances","topic":"schemes","age":40,"place":"home","title":{"en":"32 · The government form","hi":"32 · सरकारी फ़ॉर्म","mr":"32 · सरकारी अर्ज"},"setup":{"en":"An application asks for identity, address, eligibility details and supporting documents. One unofficial agent offers to fill it for a fee.","hi":"आवेदन पहचान, पता, पात्रता और सहायक दस्तावेज़ माँगता है। एक अनौपचारिक एजेंट शुल्क लेकर भरने को कहता है।","mr":"अर्ज ओळख, पत्ता, पात्रता आणि जोड कागद मागतो. एक अनधिकृत एजंट पैसे घेऊन भरून देतो म्हणतो."},"action":{"en":"Use the official form and instructions, identify every required document and leave no unexplained blank.","hi":"आधिकारिक फ़ॉर्म और निर्देश लें, हर ज़रूरी दस्तावेज़ पहचानें और कोई अस्पष्ट खाली जगह न छोड़ें।","mr":"अधिकृत अर्ज आणि सूचना वापरा, प्रत्येक आवश्यक कागद ओळखा आणि अस्पष्ट रिकामी जागा ठेवू नका."},"sim":{"kind":"inspect"},"delta":{"cash":1500,"confidence":5},"guide":"govt-schemes"},
-    {"id":"kyc","stage":"banking","topic":"paperwork","age":41,"place":"bank","title":{"en":"33 · KYC","hi":"33 · KYC","mr":"33 · KYC"},"setup":{"en":"A financial institution asks Verena to update identity and address details. A message link looks convenient but the domain is unfamiliar.","hi":"संस्था वेरेना से पहचान और पते की जानकारी अपडेट करने को कहती है। संदेश का लिंक आसान है, पर डोमेन अनजान है।","mr":"संस्था वेरेनाला ओळख आणि पत्ता अद्ययावत करायला सांगते. संदेशातील लिंक सोपी वाटते, पण डोमेन अनोळखी आहे."},"action":{"en":"Use the institution's official app, site or branch and share only the documents that the verified process requests.","hi":"संस्था का आधिकारिक ऐप, साइट या शाखा इस्तेमाल करें और सत्यापित प्रक्रिया में माँगे दस्तावेज़ ही दें।","mr":"संस्थेचे अधिकृत अॅप, साइट किंवा शाखा वापरा आणि पडताळलेल्या प्रक्रियेत मागितलेले कागदच द्या."},"sim":{"kind":"inspect"},"delta":{"confidence":5,"resilience":4},"guide":"kyc-basics"},
-    {"id":"gold-loan","stage":"borrowing","topic":"borrowing","age":41,"place":"bank","title":{"en":"34 · A gold-loan decision","hi":"34 · गोल्ड लोन का फ़ैसला","mr":"34 · सोने कर्जाचा निर्णय"},"setup":{"en":"A family expense makes a gold loan look fast. Verena must weigh the lower secured rate against the risk of losing the collateral.","hi":"परिवार के खर्च के लिए गोल्ड लोन तेज़ लगता है। वेरेना को कम सुरक्षित दर और गिरवी खोने के जोखिम को तौलना है।","mr":"कुटुंबाच्या खर्चासाठी सोने कर्ज जलद वाटते. वेरेनाला कमी सुरक्षित दर आणि तारण गमावण्याची जोखीम तोलायची आहे."},"action":{"en":"Borrow only an affordable amount after comparing total cost, repayment plan and the default process in writing.","hi":"कुल लागत, भुगतान योजना और डिफ़ॉल्ट प्रक्रिया लिखित में देखकर ही वहनीय रकम लें।","mr":"एकूण खर्च, परतफेड योजना आणि थकबाकी प्रक्रिया लेखी पाहूनच परवडणारी रक्कम घ्या."},"sim":{"kind":"emi","principal":250000,"rate":12,"months":[12,24,36]},"delta":{"debt":80000,"cash":80000,"confidence":4,"resilience":-2},"guide":"reading-agreement"},
-    {"id":"children","source":"children","stage":"children","topic":"family","age":42,"place":"home","title":{"en":"35 · Having a child","hi":"35 · बच्चे का जन्म","mr":"35 · मूल होणे"},"delta":{"dependents":1,"resilience":3},"guide":"children-planning"},
-    {"id":"long-term-planning","source":"long-term-planning","stage":"long-term-planning","topic":"family","age":44,"place":"home","title":{"en":"36 · Education planning","hi":"36 · शिक्षा की योजना","mr":"36 · शिक्षणाचे नियोजन"},"delta":{"investments":120000,"confidence":4},"guide":"children-planning"},
-    {"id":"family-emergency","stage":"financial-security","topic":"family","age":46,"place":"home","title":{"en":"37 · A family emergency","hi":"37 · परिवार की आपात स्थिति","mr":"37 · कुटुंबातील आणीबाणी"},"setup":{"en":"A parent needs urgent support while Verena is rebuilding savings. Care, cash flow and long-term stability pull in different directions.","hi":"माता-पिता को तुरंत मदद चाहिए, जबकि वेरेना बचत फिर बना रही है। देखभाल, नकदी और स्थिरता अलग दिशाओं में खींचते हैं।","mr":"पालकांना तातडीची मदत हवी आहे आणि वेरेना बचत पुन्हा उभी करत आहे. काळजी, रोख प्रवाह आणि स्थैर्य वेगवेगळ्या दिशांना ओढतात."},"action":{"en":"Define the urgent need, share responsibility where possible and protect the household's essential floor.","hi":"तत्काल ज़रूरत तय करें, जहाँ संभव हो ज़िम्मेदारी बाँटें और घर की मूल आवश्यकताएँ बचाएँ।","mr":"तातडीची गरज ठरवा, शक्य तिथे जबाबदारी वाटा आणि घराच्या मूलभूत गरजा जपा."},"sim":{"kind":"budget","income":92000,"needs":72000},"delta":{"emergency":-12000,"cash":-8000,"resilience":6,"confidence":3},"guide":"family-money"},
-    {"id":"helping-relative","stage":"family-finances","topic":"family","age":47,"place":"cafe","title":{"en":"38 · Helping a relative","hi":"38 · रिश्तेदार की मदद","mr":"38 · नातेवाईकाला मदत"},"setup":{"en":"A relative asks Verena for money and promises to return it soon. She wants to help without risking rent or the relationship.","hi":"रिश्तेदार वेरेना से पैसे माँगता है और जल्दी लौटाने का वादा करता है। वह किराया या रिश्ता जोखिम में डाले बिना मदद करना चाहती है।","mr":"नातेवाईक वेरेनाकडे पैसे मागतो आणि लवकर परत देण्याचे म्हणतो. भाडे किंवा नाते धोक्यात न आणता तिला मदत करायची आहे."},"action":{"en":"Offer only what she can afford to lose, agree the terms clearly and keep essential money separate.","hi":"उतना ही दें जितना खो सकें, शर्तें साफ़ करें और ज़रूरी पैसा अलग रखें।","mr":"गमावणे परवडेल तेवढेच द्या, अटी स्पष्ट करा आणि आवश्यक पैसे वेगळे ठेवा."},"sim":{"kind":"budget","income":92000,"needs":70000},"delta":{"cash":-10000,"confidence":5,"resilience":3},"guide":"lending-friends"},
-    {"id":"long-term-investing","stage":"long-term-planning","topic":"investing","age":49,"place":"office","title":{"en":"39 · Long-term investing","hi":"39 · दीर्घकालिक निवेश","mr":"39 · दीर्घकालीन गुंतवणूक"},"setup":{"en":"With steadier finances, Verena can invest regularly. She still needs to balance growth, volatility, time and diversification.","hi":"स्थिर वित्त के साथ वेरेना नियमित निवेश कर सकती है। उसे बढ़त, उतार-चढ़ाव, समय और विविधता संतुलित करनी है।","mr":"स्थिर आर्थिक स्थितीत वेरेना नियमित गुंतवणूक करू शकते. वाढ, चढउतार, वेळ आणि विविधता संतुलित करावी लागते."},"action":{"en":"Use a diversified, consistent educational plan matched to the long horizon and her ability to tolerate falls.","hi":"लंबे समय और गिरावट सहने की क्षमता के अनुसार विविध, नियमित शैक्षिक योजना बनाएँ।","mr":"दीर्घ कालावधी आणि घसरण सहन करण्याच्या क्षमतेनुसार विविध, नियमित शैक्षणिक योजना वापरा."},"sim":{"kind":"grow","monthly":12000,"rate":7,"years":[5,10,15]},"delta":{"investments":144000,"confidence":5,"resilience":5},"guide":"risk-diversify"},
-    {"id":"security-review","stage":"financial-security","topic":"saving","age":51,"place":"home","title":{"en":"40 · Financial security","hi":"40 · आर्थिक सुरक्षा","mr":"40 · आर्थिक सुरक्षितता"},"setup":{"en":"Verena now has emergency savings, manageable debt, insurance, investments and organised documents. The pieces finally support one another.","hi":"अब वेरेना के पास आपात बचत, संभालने योग्य कर्ज़, बीमा, निवेश और व्यवस्थित दस्तावेज़ हैं।","mr":"आता वेरेनाकडे आणीबाणी बचत, सांभाळता येणारे कर्ज, विमा, गुंतवणूक आणि नीट कागदपत्रे आहेत."},"action":{"en":"Stress-test the plan against one lost income, one urgent expense and one major goal.","hi":"योजना को आय रुकने, अचानक खर्च और बड़े लक्ष्य के सामने परखें।","mr":"योजना एक उत्पन्न थांबणे, तातडीचा खर्च आणि मोठे लक्ष्य यांच्यासमोर तपासा."},"sim":{"kind":"inspect"},"delta":{"emergency":30000,"debt":-30000,"insurance":8,"resilience":10},"guide":"emergency-fund"},
-    {"id":"thinking-retirement","stage":"retirement","topic":"retirement","age":53,"place":"garden","title":{"en":"41 · Thinking about retirement","hi":"41 · सेवानिवृत्ति के बारे में सोचना","mr":"41 · निवृत्तीचा विचार"},"setup":{"en":"Retirement is no longer abstract. Verena lists future expenses, possible income sources and the years her money may need to last.","hi":"सेवानिवृत्ति अब दूर की बात नहीं। वेरेना भविष्य के खर्च, आय स्रोत और धन चलने के वर्षों की सूची बनाती है।","mr":"निवृत्ती आता दूरची गोष्ट नाही. वेरेना भविष्यातील खर्च, उत्पन्नाचे स्रोत आणि पैसे किती वर्षे पुरावे लागतील याची यादी करते."},"action":{"en":"Build from future expenses and several income sources, using cautious assumptions rather than one perfect number.","hi":"एक सही संख्या के बजाय सावधान मान्यताओं से भविष्य खर्च और कई आय स्रोत जोड़ें।","mr":"एका परिपूर्ण आकड्याऐवजी सावध गृहितकांनी भविष्यातील खर्च आणि अनेक उत्पन्न स्रोत जोडा."},"sim":{"kind":"grow","monthly":18000,"rate":6,"years":[5,10,12]},"delta":{"investments":216000,"confidence":5,"resilience":6},"guide":"retirement-basics"},
-    {"id":"retirement-plan","stage":"retirement","topic":"retirement","age":55,"place":"home","title":{"en":"42 · The retirement plan","hi":"42 · सेवानिवृत्ति योजना","mr":"42 · निवृत्ती योजना"},"setup":{"en":"Verena turns the retirement idea into a simple educational plan: likely expenses, a buffer, income sources and a review date.","hi":"वेरेना सेवानिवृत्ति विचार को सरल शैक्षिक योजना बनाती है: खर्च, बफ़र, आय स्रोत और समीक्षा तारीख।","mr":"वेरेना निवृत्तीच्या विचाराला सोप्या शैक्षणिक योजनेत बदलते: खर्च, राखीव, उत्पन्न स्रोत आणि आढावा तारीख."},"action":{"en":"Choose a contribution she can sustain, diversify sources and schedule a yearly review.","hi":"टिकाऊ योगदान चुनें, आय स्रोत विविध करें और सालाना समीक्षा तय करें।","mr":"टिकणारे योगदान निवडा, उत्पन्न स्रोत विविध करा आणि वार्षिक आढावा ठरवा."},"sim":{"kind":"grow","monthly":22000,"rate":6,"years":[5,8,10]},"delta":{"investments":264000,"confidence":6,"resilience":7},"guide":"retirement-basics"},
-    {"id":"late-life-shock","stage":"financial-security","topic":"retirement","age":59,"place":"home","title":{"en":"43 · A late-life financial shock","hi":"43 · जीवन के बाद के दौर का झटका","mr":"43 · आयुष्याच्या उत्तरार्धातील आर्थिक धक्का"},"setup":{"en":"A major home repair arrives just before retirement. Verena must protect liquidity without dismantling the whole long-term plan.","hi":"सेवानिवृत्ति से पहले घर की बड़ी मरम्मत आती है। वेरेना को दीर्घ योजना तोड़े बिना नकदी बचानी है।","mr":"निवृत्तीच्या आधी घराची मोठी दुरुस्ती येते. दीर्घ योजना मोडून न काढता वेरेनाला रोख उपलब्धता जपायची आहे."},"action":{"en":"Use the dedicated buffer first, phase non-urgent work and compare any borrowing against retirement cash flow.","hi":"पहले तय बफ़र लें, गैर-ज़रूरी काम चरणों में करें और कर्ज़ को सेवानिवृत्ति नकदी से तुलना करें।","mr":"आधी राखीव निधी वापरा, न तातडीचे काम टप्प्यांत करा आणि कर्जाची निवृत्ती रोख प्रवाहाशी तुलना करा."},"sim":{"kind":"budget","income":105000,"needs":85000},"delta":{"emergency":-25000,"cash":-15000,"resilience":7},"guide":"emergency-fund"},
-    {"id":"retirement","source":"retirement","stage":"retirement","topic":"retirement","age":62,"place":"garden","title":{"en":"44 · Retirement","hi":"44 · सेवानिवृत्ति","mr":"44 · निवृत्ती"},"delta":{"income":35000,"confidence":6,"resilience":8},"guide":"retirement-basics"},
-    {"id":"verena-looks-back","stage":"retirement","topic":"retirement","age":63,"place":"garden","title":{"en":"45 · Verena looks back","hi":"45 · वेरेना पीछे मुड़कर देखती है","mr":"45 · वेरेना मागे वळून पाहते"},"setup":{"en":"Verena compares her first offer letter with the life she built. The transformation came from many imperfect decisions, corrected over time.","hi":"वेरेना अपने पहले ऑफ़र पत्र की तुलना बनाई ज़िंदगी से करती है। बदलाव कई अधूरे फ़ैसलों और समय पर सुधार से आया।","mr":"वेरेना पहिल्या ऑफर पत्राची तुलना तिने उभ्या केलेल्या आयुष्याशी करते. बदल अनेक अपूर्ण निर्णय आणि वेळेवर केलेल्या सुधारणांनी आला."},"action":{"en":"Name the habits that created resilience, the mistakes worth remembering and the next way to keep learning.","hi":"मज़बूती बनाने वाली आदतें, याद रखने योग्य गलतियाँ और आगे सीखते रहने का तरीका पहचानें।","mr":"लवचिकता घडवणाऱ्या सवयी, लक्षात ठेवण्यासारख्या चुका आणि पुढे शिकत राहण्याचा मार्ग ओळखा."},"sim":{"kind":"inspect"},"delta":{"confidence":10,"resilience":10},"guide":"retirement-basics"}
+    {
+      "id": "first-job",
+      "source": "first-job",
+      "stage": "first-job",
+      "topic": "income",
+      "age": 22,
+      "place": "office",
+      "title": {
+        "en": "01 · Verena's first job",
+        "hi": "01 · वेरेना की पहली नौकरी",
+        "mr": "01 · वेरेनाची पहिली नोकरी"
+      },
+      "delta": {
+        "income": 42000,
+        "confidence": 4
+      },
+      "guide": "salary-slip"
+    },
+    {
+      "id": "first-bank-account",
+      "stage": "banking",
+      "topic": "banking",
+      "age": 22,
+      "place": "bank",
+      "title": {
+        "en": "02 · Her first bank account",
+        "hi": "02 · उसका पहला बैंक खाता",
+        "mr": "02 · तिचे पहिले बँक खाते"
+      },
+      "setup": {
+        "en": "Verena's employer needs an account for salary. At the branch she sees account types, KYC fields, an IFSC code and a debit-card form.",
+        "hi": "वेरेना के नियोक्ता को वेतन के लिए बैंक खाता चाहिए। शाखा में उसे खाते के प्रकार, KYC, IFSC और डेबिट कार्ड का फ़ॉर्म दिखता है।",
+        "mr": "वेरेनाच्या नियोक्त्याला पगारासाठी बँक खाते हवे आहे. शाखेत तिला खात्यांचे प्रकार, KYC, IFSC आणि डेबिट कार्डचा फॉर्म दिसतो."
+      },
+      "action": {
+        "en": "Choose a low-fee savings account, verify every KYC field and activate only the services she understands.",
+        "hi": "कम शुल्क वाला बचत खाता चुनें, हर KYC जानकारी जाँचें और समझ में आने वाली सेवाएँ ही चालू करें।",
+        "mr": "कमी शुल्काचे बचत खाते निवडा, प्रत्येक KYC माहिती तपासा आणि समजणाऱ्या सेवाच सुरू करा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "cash": 1000,
+        "confidence": 5,
+        "resilience": 3
+      },
+      "guide": "first-bank-account",
+      "more": {
+        "en": "The clerk offers a premium account with a ₹10,000 minimum balance, an add-on insurance plan and a credit card, all on one form.",
+        "hi": "क्लर्क एक ही फ़ॉर्म पर ₹10,000 न्यूनतम बैलेंस वाला प्रीमियम खाता, बीमा ऐड-ऑन और क्रेडिट कार्ड पेश करता है।",
+        "mr": "क्लार्क एकाच फॉर्मवर ₹10,000 किमान शिल्लक असलेले प्रीमियम खाते, विमा अ‍ॅड-ऑन आणि क्रेडिट कार्ड देऊ करतो."
+      },
+      "question": {
+        "en": "Which account should Verena open for her salary?",
+        "hi": "वेरेना सैलरी के लिए कौन सा खाता खोले?",
+        "mr": "वेरेनाने पगारासाठी कोणते खाते उघडावे?"
+      },
+      "okay": {
+        "en": "Open the premium account because the clerk recommends it, and sort out the extras later.",
+        "hi": "क्लर्क की सलाह पर प्रीमियम खाता खोले, बाकी चीज़ें बाद में देखे।",
+        "mr": "क्लार्कच्या सल्ल्याने प्रीमियम खाते उघडावे, बाकी नंतर पाहावे."
+      },
+      "costly": {
+        "en": "Sign every page quickly, including the insurance and card, so the salary is not delayed.",
+        "hi": "सैलरी न रुके इसलिए बीमा और कार्ड समेत हर पन्ने पर जल्दी साइन कर दे।",
+        "mr": "पगार अडू नये म्हणून विमा आणि कार्डसह प्रत्येक पानावर पटकन सही करावी."
+      },
+      "goodOutcome": {
+        "en": "Her salary lands in a simple account with no surprise charges. She knows her IFSC, has a nominee and uses only the services she understands.",
+        "hi": "उसकी सैलरी बिना छिपे शुल्क वाले सादे खाते में आती है। उसे IFSC पता है, नॉमिनी है और वह सिर्फ़ समझी हुई सेवाएँ इस्तेमाल करती है।",
+        "mr": "तिचा पगार छुप्या शुल्काशिवाय साध्या खात्यात येतो. तिला IFSC माहीत आहे, नॉमिनी आहे आणि ती फक्त समजलेल्या सेवा वापरते."
+      },
+      "okayOutcome": {
+        "en": "The account works, but in month three a ₹590 charge appears because her balance dipped below the minimum.",
+        "hi": "खाता चलता है, पर तीसरे महीने बैलेंस न्यूनतम से नीचे जाने पर ₹590 का शुल्क कट जाता है।",
+        "mr": "खाते चालते, पण तिसऱ्या महिन्यात शिल्लक किमानपेक्षा कमी गेल्याने ₹590 शुल्क कापले जाते."
+      },
+      "costlyOutcome": {
+        "en": "She is now paying for an insurance plan she never read and a card with an annual fee. Cancelling both takes two branch visits.",
+        "hi": "अब वह एक बिना पढ़े बीमे और सालाना फ़ीस वाले कार्ड के पैसे दे रही है। दोनों बंद करने में शाखा के दो चक्कर लगते हैं।",
+        "mr": "आता ती न वाचलेल्या विम्याचे आणि वार्षिक फी असलेल्या कार्डचे पैसे भरते. दोन्ही बंद करायला शाखेत दोनदा जावे लागते."
+      },
+      "lesson": {
+        "en": "Choose the account for how you will actually use it, read the charges, and never sign for add-ons you did not ask for.",
+        "hi": "खाता अपने असली इस्तेमाल के हिसाब से चुनें, शुल्क पढ़ें, और बिना माँगे ऐड-ऑन पर कभी साइन न करें।",
+        "mr": "खाते खऱ्या वापरानुसार निवडा, शुल्क वाचा, आणि न मागितलेल्या अ‍ॅड-ऑनवर कधीच सही करू नका."
+      }
+    },
+    {
+      "id": "first-income",
+      "source": "first-income",
+      "stage": "first-income",
+      "topic": "budgeting",
+      "age": 22,
+      "place": "room",
+      "title": {
+        "en": "03 · First month's pay",
+        "hi": "03 · पहले महीने का वेतन",
+        "mr": "03 · पहिल्या महिन्याचा पगार"
+      },
+      "delta": {
+        "cash": 42000,
+        "savings": 3000,
+        "confidence": 3
+      },
+      "guide": "budget"
+    },
+    {
+      "id": "early-adulthood",
+      "source": "early-adulthood",
+      "stage": "early-adulthood",
+      "topic": "budgeting",
+      "age": 23,
+      "place": "room",
+      "title": {
+        "en": "04 · The first bad spending decision",
+        "hi": "04 · खर्च का पहला गलत फ़ैसला",
+        "mr": "04 · खर्चाचा पहिला चुकीचा निर्णय"
+      },
+      "delta": {
+        "confidence": 2
+      },
+      "guide": "needs-wants"
+    },
+    {
+      "id": "saving",
+      "source": "saving",
+      "stage": "saving",
+      "topic": "saving",
+      "age": 23,
+      "place": "room",
+      "title": {
+        "en": "05 · Building an emergency fund",
+        "hi": "05 · आपात निधि बनाना",
+        "mr": "05 · आणीबाणी निधी उभा करणे"
+      },
+      "delta": {
+        "emergency": 18000,
+        "resilience": 5
+      },
+      "guide": "emergency-fund"
+    },
+    {
+      "id": "insurance",
+      "source": "insurance",
+      "stage": "insurance",
+      "topic": "insurance",
+      "age": 24,
+      "place": "office",
+      "title": {
+        "en": "06 · Her first insurance decision",
+        "hi": "06 · बीमा का पहला फ़ैसला",
+        "mr": "06 · विम्याचा पहिला निर्णय"
+      },
+      "delta": {
+        "insurance": 25,
+        "resilience": 4
+      },
+      "guide": "what-insurance"
+    },
+    {
+      "id": "government-benefits",
+      "stage": "banking",
+      "topic": "schemes",
+      "age": 24,
+      "place": "home",
+      "title": {
+        "en": "07 · Government benefits and eligibility",
+        "hi": "07 · सरकारी लाभ और पात्रता",
+        "mr": "07 · सरकारी लाभ आणि पात्रता"
+      },
+      "setup": {
+        "en": "A colleague sends Verena a scheme poster. It promises quick approval, but gives no department, date or official link.",
+        "hi": "एक सहकर्मी वेरेना को योजना का पोस्टर भेजता है। उसमें जल्दी मंज़ूरी का वादा है, पर विभाग, तारीख या आधिकारिक लिंक नहीं है।",
+        "mr": "एक सहकारी वेरेनाला योजनेचे पोस्टर पाठवतो. त्यात त्वरित मंजुरीचे आश्वासन आहे, पण विभाग, तारीख किंवा अधिकृत लिंक नाही."
+      },
+      "action": {
+        "en": "Check eligibility and documents only on a current official source before sharing any information.",
+        "hi": "कोई जानकारी देने से पहले मौजूदा आधिकारिक स्रोत पर पात्रता और दस्तावेज़ जाँचें।",
+        "mr": "कोणतीही माहिती देण्याआधी अद्ययावत अधिकृत स्रोतावर पात्रता आणि कागदपत्रे तपासा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "cash": 2000,
+        "confidence": 4,
+        "resilience": 3
+      },
+      "guide": "govt-schemes",
+      "more": {
+        "en": "The poster asks for Aadhaar and bank details on a WhatsApp number, and a ₹500 'registration fee'.",
+        "hi": "पोस्टर एक व्हाट्सऐप नंबर पर आधार और बैंक विवरण माँगता है, और ₹500 'पंजीकरण शुल्क'।",
+        "mr": "पोस्टर एका व्हॉट्सअ‍ॅप नंबरवर आधार आणि बँक तपशील मागते, आणि ₹500 'नोंदणी शुल्क'."
+      },
+      "question": {
+        "en": "How should Verena check this scheme?",
+        "hi": "वेरेना इस योजना की जाँच कैसे करे?",
+        "mr": "वेरेनाने ही योजना कशी तपासावी?"
+      },
+      "okay": {
+        "en": "Ask the colleague who forwarded it whether it worked for anyone they know.",
+        "hi": "आगे भेजने वाले साथी से पूछे कि क्या यह किसी जानने वाले के लिए काम आई।",
+        "mr": "पाठवणाऱ्या सहकाऱ्याला विचारावे की ओळखीच्या कोणाला याचा फायदा झाला का."
+      },
+      "costly": {
+        "en": "Pay the ₹500 and send the documents, because the deadline on the poster is tomorrow.",
+        "hi": "₹500 दे और काग़ज़ भेज दे, क्योंकि पोस्टर पर कल की आख़िरी तारीख है।",
+        "mr": "₹500 भरावे आणि कागदपत्रे पाठवावी, कारण पोस्टरवर उद्याची अंतिम तारीख आहे."
+      },
+      "goodOutcome": {
+        "en": "The official portal lists a real scheme she qualifies for, with no fee. She applies there and keeps the acknowledgement.",
+        "hi": "आधिकारिक पोर्टल पर एक असली योजना है जिसकी वह पात्र है, बिना शुल्क। वह वहीं आवेदन करती है और पावती रखती है।",
+        "mr": "अधिकृत पोर्टलवर ती पात्र असलेली खरी योजना आहे, शुल्काशिवाय. ती तिथेच अर्ज करते आणि पोचपावती ठेवते."
+      },
+      "okayOutcome": {
+        "en": "Her colleague is unsure. A week passes, and she still has not checked the official source.",
+        "hi": "साथी को पक्का नहीं पता। एक हफ़्ता बीत जाता है, और उसने अब भी आधिकारिक स्रोत नहीं देखा।",
+        "mr": "सहकाऱ्याला खात्री नाही. एक आठवडा जातो, आणि तिने अजूनही अधिकृत स्रोत पाहिलेला नाही."
+      },
+      "costlyOutcome": {
+        "en": "The number stops answering. Her ₹500 is gone, and her Aadhaar and bank details are now with a stranger.",
+        "hi": "नंबर जवाब देना बंद कर देता है। उसके ₹500 गए, और आधार व बैंक विवरण अब एक अजनबी के पास हैं।",
+        "mr": "नंबर उत्तर देणे थांबवतो. तिचे ₹500 गेले, आणि आधार व बँक तपशील आता अनोळखी व्यक्तीकडे आहेत."
+      },
+      "lesson": {
+        "en": "Government schemes are applied for through official portals, banks or service centres. A fee to an unknown number is a warning sign.",
+        "hi": "सरकारी योजनाओं के लिए आवेदन आधिकारिक पोर्टल, बैंक या सेवा केंद्र से होता है। किसी अनजान नंबर को शुल्क देना ख़तरे का संकेत है।",
+        "mr": "सरकारी योजनांसाठी अर्ज अधिकृत पोर्टल, बँक किंवा सेवा केंद्रातून होतो. अनोळखी नंबरला शुल्क देणे हे धोक्याचे लक्षण आहे."
+      }
+    },
+    {
+      "id": "first-goal",
+      "stage": "saving",
+      "topic": "saving",
+      "age": 25,
+      "place": "cafe",
+      "title": {
+        "en": "08 · Her first financial goal",
+        "hi": "08 · उसका पहला आर्थिक लक्ष्य",
+        "mr": "08 · तिचे पहिले आर्थिक लक्ष्य"
+      },
+      "setup": {
+        "en": "Verena wants to fund a professional course in eighteen months. The fee is clear, but travel and study materials also matter.",
+        "hi": "वेरेना अठारह महीने में एक प्रोफ़ेशनल कोर्स करना चाहती है। फीस साफ़ है, पर यात्रा और पढ़ाई का सामान भी खर्च है।",
+        "mr": "वेरेनाला अठरा महिन्यांत व्यावसायिक अभ्यासक्रम करायचा आहे. फी स्पष्ट आहे, पण प्रवास आणि अभ्यास साहित्याचाही खर्च आहे."
+      },
+      "action": {
+        "en": "Set the full target, deadline and a monthly transfer that still leaves room for essentials.",
+        "hi": "पूरा लक्ष्य, समय-सीमा और ज़रूरी खर्चों के बाद संभव मासिक बचत तय करें।",
+        "mr": "पूर्ण लक्ष्य, मुदत आणि आवश्यक खर्चांनंतर शक्य असलेली मासिक बचत ठरवा."
+      },
+      "sim": {
+        "kind": "grow",
+        "monthly": 3500,
+        "rate": 0,
+        "years": [
+          1,
+          2,
+          3
+        ]
+      },
+      "delta": {
+        "savings": 18000,
+        "confidence": 4,
+        "resilience": 2
+      },
+      "guide": "pay-yourself",
+      "more": {
+        "en": "The course fee is ₹60,000. Books, travel and the exam add about ₹12,000 more.",
+        "hi": "कोर्स की फ़ीस ₹60,000 है। किताबें, यात्रा और परीक्षा मिलाकर लगभग ₹12,000 और।",
+        "mr": "कोर्सची फी ₹60,000 आहे. पुस्तके, प्रवास आणि परीक्षा मिळून सुमारे ₹12,000 आणखी."
+      },
+      "question": {
+        "en": "How should Verena plan for this goal?",
+        "hi": "वेरेना इस लक्ष्य की योजना कैसे बनाए?",
+        "mr": "वेरेनाने या लक्ष्याचे नियोजन कसे करावे?"
+      },
+      "okay": {
+        "en": "Save whatever is left at the end of each month and see where she stands.",
+        "hi": "हर महीने के अंत में जो बचे वह बचाए और देखे कहाँ तक पहुँची।",
+        "mr": "प्रत्येक महिन्याच्या शेवटी जे उरेल ते वाचवावे आणि कुठपर्यंत आली ते पाहावे."
+      },
+      "costly": {
+        "en": "Plan only for the ₹60,000 fee and take a loan for whatever else comes up.",
+        "hi": "सिर्फ़ ₹60,000 की फ़ीस की योजना बनाए और बाकी के लिए कर्ज़ ले।",
+        "mr": "फक्त ₹60,000 फीचे नियोजन करावे आणि बाकीसाठी कर्ज घ्यावे."
+      },
+      "goodOutcome": {
+        "en": "₹72,000 over 18 months is ₹4,000 a month. An automatic transfer on payday gets her there with room to spare.",
+        "hi": "18 महीने में ₹72,000 यानी हर महीने ₹4,000। सैलरी के दिन ऑटोमैटिक ट्रांसफ़र से वह आराम से पहुँच जाती है।",
+        "mr": "18 महिन्यांत ₹72,000 म्हणजे दरमहा ₹4,000. पगाराच्या दिवशी आपोआप हस्तांतरणाने ती सहज पोहोचते."
+      },
+      "okayOutcome": {
+        "en": "Some months she saves ₹6,000, some months nothing. With six months left she is ₹20,000 behind.",
+        "hi": "किसी महीने ₹6,000 बचते हैं, किसी महीने कुछ नहीं। छह महीने बचे हैं और वह ₹20,000 पीछे है।",
+        "mr": "कधी ₹6,000 वाचतात, कधी काहीच नाही. सहा महिने उरले आणि ती ₹20,000 मागे आहे."
+      },
+      "costlyOutcome": {
+        "en": "The fee is ready, but books and travel go on a credit card. She starts the course already in debt.",
+        "hi": "फ़ीस तैयार है, पर किताबें और यात्रा क्रेडिट कार्ड पर जाती हैं। वह कोर्स कर्ज़ के साथ शुरू करती है।",
+        "mr": "फी तयार आहे, पण पुस्तके आणि प्रवास क्रेडिट कार्डवर जातात. ती कोर्स कर्जासह सुरू करते."
+      },
+      "lesson": {
+        "en": "A goal works when it has a full amount, a date and a monthly number, moved on payday before spending begins.",
+        "hi": "लक्ष्य तब काम करता है जब उसकी पूरी रकम, तारीख और महीने की संख्या हो, जो खर्च शुरू होने से पहले सैलरी के दिन अलग हो।",
+        "mr": "लक्ष्य तेव्हाच काम करते जेव्हा त्याची पूर्ण रक्कम, तारीख आणि मासिक आकडा असतो, जो खर्च सुरू होण्याआधी पगाराच्या दिवशी बाजूला होतो."
+      }
+    },
+    {
+      "id": "tracking-spending",
+      "stage": "budgeting",
+      "topic": "budgeting",
+      "age": 25,
+      "place": "room",
+      "title": {
+        "en": "09 · Tracking everyday spending",
+        "hi": "09 · रोज़मर्रा के खर्च का हिसाब",
+        "mr": "09 · रोजच्या खर्चाची नोंद"
+      },
+      "setup": {
+        "en": "Small payments keep disappearing from Verena's account. None looks serious alone, but together they are larger than her electricity bill.",
+        "hi": "वेरेना के खाते से छोटे-छोटे भुगतान होते रहते हैं। अकेले वे बड़े नहीं लगते, पर मिलकर बिजली के बिल से ज़्यादा हैं।",
+        "mr": "वेरेनाच्या खात्यातून छोटे छोटे पैसे जात राहतात. एकटे मोठे वाटत नाहीत, पण मिळून वीजबिलापेक्षा जास्त आहेत."
+      },
+      "action": {
+        "en": "Log one week honestly in MoneyLab, then group the payments by category and recurrence.",
+        "hi": "एक हफ़्ते का हर खर्च MoneyLab में लिखें, फिर श्रेणी और दोहराव के हिसाब से देखें।",
+        "mr": "एका आठवड्याचा प्रत्येक खर्च MoneyLab मध्ये नोंदवा, मग प्रकार आणि पुनरावृत्तीनुसार पाहा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 42000,
+        "needs": 30000
+      },
+      "delta": {
+        "savings": 3500,
+        "confidence": 5,
+        "resilience": 2
+      },
+      "guide": "budget",
+      "more": {
+        "en": "Tea, cab rides, snacks, app top-ups: forty small payments last month, adding up to ₹7,800.",
+        "hi": "चाय, कैब, नाश्ता, ऐप टॉप-अप: पिछले महीने चालीस छोटे भुगतान, कुल ₹7,800।",
+        "mr": "चहा, कॅब, नाश्ता, अ‍ॅप टॉप-अप: मागच्या महिन्यात चाळीस छोटी देयके, एकूण ₹7,800."
+      },
+      "question": {
+        "en": "What should Verena do about the small payments?",
+        "hi": "वेरेना छोटे भुगतानों का क्या करे?",
+        "mr": "वेरेनाने छोट्या देयकांचे काय करावे?"
+      },
+      "okay": {
+        "en": "Promise herself to spend less and check the bank balance more often.",
+        "hi": "खुद से कम खर्च करने का वादा करे और बैंक बैलेंस ज़्यादा बार देखे।",
+        "mr": "स्वतःला कमी खर्चाचे वचन द्यावे आणि बँक शिल्लक जास्त वेळा पाहावी."
+      },
+      "costly": {
+        "en": "Ignore them. Small amounts cannot really matter on her salary.",
+        "hi": "अनदेखा करे। उसकी सैलरी पर छोटी रकम से क्या फ़र्क पड़ेगा।",
+        "mr": "दुर्लक्ष करावे. तिच्या पगारावर छोट्या रकमांनी काय फरक पडणार."
+      },
+      "goodOutcome": {
+        "en": "One honest week shows cabs are her biggest leak. Switching two trips a week to the bus saves ₹1,600 a month.",
+        "hi": "एक ईमानदार हफ़्ता दिखाता है कि कैब सबसे बड़ा रिसाव है। हफ़्ते में दो सफ़र बस से करने पर महीने के ₹1,600 बचते हैं।",
+        "mr": "एक प्रामाणिक आठवडा दाखवतो की कॅब हीच सर्वात मोठी गळती आहे. आठवड्यातील दोन प्रवास बसने केल्याने दरमहा ₹1,600 वाचतात."
+      },
+      "okayOutcome": {
+        "en": "She feels more careful for a week, but without a record nothing specific changes.",
+        "hi": "एक हफ़्ता वह सावधान महसूस करती है, पर बिना रिकॉर्ड के कुछ खास नहीं बदलता।",
+        "mr": "एक आठवडा ती सावध वाटते, पण नोंदीशिवाय काही विशेष बदलत नाही."
+      },
+      "costlyOutcome": {
+        "en": "Next month the small payments reach ₹9,000, more than her savings for the month.",
+        "hi": "अगले महीने छोटे भुगतान ₹9,000 हो जाते हैं, महीने की बचत से भी ज़्यादा।",
+        "mr": "पुढच्या महिन्यात छोटी देयके ₹9,000 होतात, महिन्याच्या बचतीपेक्षाही जास्त."
+      },
+      "lesson": {
+        "en": "You cannot fix spending you have not seen. Tracking one week shows the pattern that willpower alone misses.",
+        "hi": "जो खर्च देखा नहीं, उसे सुधार नहीं सकते। एक हफ़्ते का हिसाब वह पैटर्न दिखाता है जो सिर्फ़ इच्छाशक्ति से नहीं दिखता।",
+        "mr": "न पाहिलेला खर्च सुधारता येत नाही. एका आठवड्याचा हिशोब तो नमुना दाखवतो जो फक्त इच्छाशक्तीने दिसत नाही."
+      }
+    },
+    {
+      "id": "receipt",
+      "stage": "budgeting",
+      "topic": "paperwork",
+      "age": 25,
+      "place": "cafe",
+      "title": {
+        "en": "10 · The receipt",
+        "hi": "10 · रसीद",
+        "mr": "10 · पावती"
+      },
+      "setup": {
+        "en": "A long receipt mixes item prices, tax, a service charge and a discount. Verena wants to know what she actually paid and why.",
+        "hi": "लंबी रसीद में कीमतें, कर, सर्विस शुल्क और छूट साथ हैं। वेरेना जानना चाहती है कि उसने वास्तव में कितना और क्यों दिया।",
+        "mr": "लांब पावतीत किमती, कर, सेवा शुल्क आणि सवलत एकत्र आहेत. वेरेनाला तिने खरे किती आणि का भरले ते समजून घ्यायचे आहे."
+      },
+      "action": {
+        "en": "Import the receipt, verify merchant, date and total, then correct the suggested category before saving.",
+        "hi": "रसीद आयात करें, दुकानदार, तारीख और कुल जाँचें, फिर श्रेणी सुधारकर सहेजें।",
+        "mr": "पावती आयात करा, विक्रेता, तारीख आणि एकूण तपासा, मग प्रकार दुरुस्त करून जतन करा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "cash": -900,
+        "confidence": 4
+      },
+      "guide": "payment-proof",
+      "more": {
+        "en": "The total says ₹1,840, but the items add up to ₹1,520. There is a 10% service charge and GST she does not recognise.",
+        "hi": "कुल ₹1,840 लिखा है, पर चीज़ें जोड़ने पर ₹1,520 होती हैं। 10% सर्विस चार्ज और GST है जिसे वह नहीं पहचानती।",
+        "mr": "एकूण ₹1,840 लिहिले आहे, पण वस्तू मिळून ₹1,520 होतात. 10% सेवा शुल्क आणि GST आहे जो तिला ओळखता येत नाही."
+      },
+      "question": {
+        "en": "What should Verena do with this receipt?",
+        "hi": "वेरेना इस रसीद का क्या करे?",
+        "mr": "वेरेनाने या पावतीचे काय करावे?"
+      },
+      "okay": {
+        "en": "Log the total as 'food' without reading the lines.",
+        "hi": "लाइनें पढ़े बिना कुल रकम को 'खाना' में दर्ज कर दे।",
+        "mr": "ओळी न वाचता एकूण रक्कम 'जेवण' मध्ये नोंदवावी."
+      },
+      "costly": {
+        "en": "Throw it away. Receipts are only useful for businesses.",
+        "hi": "फेंक दे। रसीदें सिर्फ़ व्यापारियों के काम की होती हैं।",
+        "mr": "फेकून द्यावी. पावत्या फक्त व्यापाऱ्यांच्या कामाच्या असतात."
+      },
+      "goodOutcome": {
+        "en": "She sees the service charge was optional, asks for it to be removed next time, and logs the right amount and category.",
+        "hi": "उसे दिखता है कि सर्विस चार्ज वैकल्पिक था, अगली बार हटाने को कहती है, और सही रकम व श्रेणी दर्ज करती है।",
+        "mr": "सेवा शुल्क ऐच्छिक होते हे तिला दिसते, पुढच्या वेळी काढायला सांगते, आणि योग्य रक्कम व वर्ग नोंदवते."
+      },
+      "okayOutcome": {
+        "en": "The amount is logged, but she never learns why it was ₹320 more than the menu prices.",
+        "hi": "रकम दर्ज हो जाती है, पर उसे कभी पता नहीं चलता कि मेन्यू से ₹320 ज़्यादा क्यों लगे।",
+        "mr": "रक्कम नोंदवली जाते, पण मेन्यूपेक्षा ₹320 जास्त का लागले हे तिला कधीच कळत नाही."
+      },
+      "costlyOutcome": {
+        "en": "A week later she is charged twice for the same meal and has no receipt to prove it.",
+        "hi": "एक हफ़्ते बाद उसी खाने के दो बार पैसे कटते हैं और उसके पास साबित करने को रसीद नहीं।",
+        "mr": "एका आठवड्यानंतर त्याच जेवणाचे दोनदा पैसे कापले जातात आणि सिद्ध करायला पावती नाही."
+      },
+      "lesson": {
+        "en": "A receipt shows what you really paid and why. Read the extra lines, keep it until the payment settles, and log the true amount.",
+        "hi": "रसीद बताती है आपने असल में क्या और क्यों दिया। अतिरिक्त लाइनें पढ़ें, भुगतान पूरा होने तक रखें, और सही रकम दर्ज करें।",
+        "mr": "पावती तुम्ही खरोखर काय आणि का भरले ते दाखवते. जास्तीच्या ओळी वाचा, देयक पूर्ण होईपर्यंत ठेवा, आणि खरी रक्कम नोंदवा."
+      }
+    },
+    {
+      "id": "subscription-trap",
+      "stage": "budgeting",
+      "topic": "budgeting",
+      "age": 26,
+      "place": "room",
+      "title": {
+        "en": "11 · The subscription trap",
+        "hi": "11 · सब्सक्रिप्शन का जाल",
+        "mr": "11 · सबस्क्रिप्शनचा सापळा"
+      },
+      "setup": {
+        "en": "Three free trials became monthly charges. Verena uses one often, one sometimes and has forgotten the third completely.",
+        "hi": "तीन मुफ़्त ट्रायल मासिक शुल्क बन गए। वेरेना एक अक्सर, एक कभी-कभी इस्तेमाल करती है और तीसरा भूल चुकी है।",
+        "mr": "तीन मोफत चाचण्या मासिक शुल्क झाल्या. वेरेना एक नेहमी, एक कधीमधी वापरते आणि तिसरे पूर्ण विसरली आहे."
+      },
+      "action": {
+        "en": "Keep the useful service, cancel what is unused and note every renewal date.",
+        "hi": "काम की सेवा रखें, बेकार सेवाएँ बंद करें और हर नवीनीकरण तारीख लिखें।",
+        "mr": "उपयोगी सेवा ठेवा, न वापरणाऱ्या बंद करा आणि प्रत्येक नूतनीकरण तारीख नोंदवा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 42000,
+        "needs": 31200
+      },
+      "delta": {
+        "savings": 4200,
+        "confidence": 3
+      },
+      "guide": "subscription-traps",
+      "more": {
+        "en": "Together the three charges are ₹1,047 a month, ₹12,564 a year.",
+        "hi": "तीनों मिलाकर महीने के ₹1,047, साल के ₹12,564।",
+        "mr": "तिन्ही मिळून दरमहा ₹1,047, वर्षाला ₹12,564."
+      },
+      "question": {
+        "en": "What should Verena do with her subscriptions?",
+        "hi": "वेरेना अपने सब्सक्रिप्शन का क्या करे?",
+        "mr": "वेरेनाने तिच्या सबस्क्रिप्शनचे काय करावे?"
+      },
+      "okay": {
+        "en": "Keep all three for now and decide when she has more time.",
+        "hi": "अभी तीनों रखे और फ़ुर्सत में फ़ैसला करे।",
+        "mr": "आत्ता तिन्ही ठेवावी आणि वेळ मिळाल्यावर ठरवावे."
+      },
+      "costly": {
+        "en": "Cancel the debit card so nothing can ever be charged again.",
+        "hi": "डेबिट कार्ड ही बंद कर दे ताकि कभी कुछ न कटे।",
+        "mr": "डेबिट कार्डच बंद करावे म्हणजे कधीच काही कापले जाणार नाही."
+      },
+      "goodOutcome": {
+        "en": "She keeps the one she uses, cancels two, and saves ₹7,000 a year. Renewal dates go into her calendar.",
+        "hi": "वह इस्तेमाल वाला रखती है, दो बंद करती है, और साल के ₹7,000 बचाती है। नवीनीकरण की तारीखें कैलेंडर में जाती हैं।",
+        "mr": "ती वापरते ते ठेवते, दोन बंद करते, आणि वर्षाला ₹7,000 वाचवते. नूतनीकरणाच्या तारखा कॅलेंडरमध्ये जातात."
+      },
+      "okayOutcome": {
+        "en": "Three months later she still has all three, and ₹3,141 has gone on services she barely opened.",
+        "hi": "तीन महीने बाद भी तीनों चालू हैं, और ₹3,141 उन सेवाओं पर गए जो उसने मुश्किल से खोलीं।",
+        "mr": "तीन महिन्यांनंतरही तिन्ही चालू आहेत, आणि ₹3,141 क्वचितच उघडलेल्या सेवांवर गेले."
+      },
+      "costlyOutcome": {
+        "en": "Her salary-linked bills and UPI autopay fail too, and one bill attracts a late fee.",
+        "hi": "सैलरी से जुड़े बिल और UPI ऑटोपे भी फेल हो जाते हैं, और एक बिल पर देर का जुर्माना लगता है।",
+        "mr": "पगाराशी जोडलेली बिले आणि UPI ऑटोपेही अयशस्वी होतात, आणि एका बिलावर उशिराचा दंड लागतो."
+      },
+      "lesson": {
+        "en": "Recurring charges are easy to forget. List them, keep what you use, and cancel the rest at the source.",
+        "hi": "बार-बार कटने वाले शुल्क आसानी से भूल जाते हैं। सूची बनाएँ, इस्तेमाल वाले रखें, और बाकी सीधे वहीं बंद करें।",
+        "mr": "वारंवार कापले जाणारे शुल्क सहज विसरले जातात. यादी करा, वापरता ते ठेवा, आणि बाकी तिथूनच बंद करा."
+      }
+    },
+    {
+      "id": "rent-lifestyle",
+      "stage": "budgeting",
+      "topic": "budgeting",
+      "age": 26,
+      "place": "home",
+      "title": {
+        "en": "12 · Rent versus lifestyle",
+        "hi": "12 · किराया बनाम जीवनशैली",
+        "mr": "12 · भाडे विरुद्ध जीवनशैली"
+      },
+      "setup": {
+        "en": "A brighter flat cuts Verena's commute, but the rent and deposit would slow her emergency fund for a year.",
+        "hi": "उजला फ़्लैट वेरेना की यात्रा कम करेगा, लेकिन किराया और जमा राशि एक साल तक आपात निधि धीमी करेंगे।",
+        "mr": "उजळ घर वेरेनाचा प्रवास कमी करेल, पण भाडे आणि ठेव एक वर्ष तिच्या आणीबाणी निधीची वाढ कमी करतील."
+      },
+      "action": {
+        "en": "Compare total housing cost, commute time and the savings goal before choosing the trade-off she can sustain.",
+        "hi": "टिकाऊ समझौता चुनने से पहले कुल आवास लागत, यात्रा समय और बचत लक्ष्य की तुलना करें।",
+        "mr": "टिकणारी तडजोड निवडण्याआधी एकूण घरखर्च, प्रवासाचा वेळ आणि बचतीचे लक्ष्य तुलना करा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 48000,
+        "needs": 35000
+      },
+      "delta": {
+        "cash": -10000,
+        "savings": 5000,
+        "confidence": 4
+      },
+      "guide": "true-cost",
+      "more": {
+        "en": "The new flat costs ₹6,000 more a month and needs a ₹40,000 deposit, but saves her eight hours of travel a week.",
+        "hi": "नया फ़्लैट महीने के ₹6,000 ज़्यादा है और ₹40,000 डिपॉज़िट चाहिए, पर हफ़्ते के आठ घंटे सफ़र बचाता है।",
+        "mr": "नवा फ्लॅट दरमहा ₹6,000 जास्त आहे आणि ₹40,000 अनामत लागते, पण आठवड्याचे आठ तास प्रवास वाचवतो."
+      },
+      "question": {
+        "en": "Should Verena move?",
+        "hi": "क्या वेरेना को घर बदलना चाहिए?",
+        "mr": "वेरेनाने घर बदलावे का?"
+      },
+      "okay": {
+        "en": "Move now and work out the savings later.",
+        "hi": "अभी घर बदले और बचत बाद में देखे।",
+        "mr": "आत्ता घर बदलावे आणि बचत नंतर पाहावी."
+      },
+      "costly": {
+        "en": "Take a personal loan for the deposit so the move happens this month.",
+        "hi": "डिपॉज़िट के लिए पर्सनल लोन ले ताकि इसी महीने घर बदल जाए।",
+        "mr": "अनामतीसाठी वैयक्तिक कर्ज घ्यावे म्हणजे याच महिन्यात घर बदलता येईल."
+      },
+      "goodOutcome": {
+        "en": "She works out the whole year: rent, deposit, travel saved and time gained. She moves in three months, once the deposit is saved.",
+        "hi": "वह पूरा साल जोड़ती है: किराया, डिपॉज़िट, बचा सफ़र और समय। डिपॉज़िट जमा होने पर वह तीन महीने बाद घर बदलती है।",
+        "mr": "ती पूर्ण वर्षाचा हिशोब करते: भाडे, अनामत, वाचलेला प्रवास आणि वेळ. अनामत जमल्यावर ती तीन महिन्यांनी घर बदलते."
+      },
+      "okayOutcome": {
+        "en": "The new flat is lovely, but her emergency fund stops growing for a year.",
+        "hi": "नया फ़्लैट अच्छा है, पर उसका आपातकालीन फ़ंड एक साल तक नहीं बढ़ता।",
+        "mr": "नवा फ्लॅट छान आहे, पण तिचा आपत्कालीन निधी वर्षभर वाढत नाही."
+      },
+      "costlyOutcome": {
+        "en": "She now pays rent plus a loan EMI. Any surprise this year goes straight onto a credit card.",
+        "hi": "अब वह किराया और लोन की EMI दोनों देती है। इस साल कोई भी झटका सीधे क्रेडिट कार्ड पर जाता है।",
+        "mr": "आता ती भाडे आणि कर्जाचा EMI दोन्ही भरते. या वर्षी कोणताही धक्का थेट क्रेडिट कार्डवर जातो."
+      },
+      "lesson": {
+        "en": "Housing is a trade-off between money, time and comfort. Count the whole year, and pay deposits from savings, not loans.",
+        "hi": "घर पैसे, समय और आराम के बीच का समझौता है। पूरे साल का हिसाब लगाएँ, और डिपॉज़िट बचत से दें, कर्ज़ से नहीं।",
+        "mr": "घर ही पैसा, वेळ आणि आराम यांतील तडजोड आहे. पूर्ण वर्षाचा हिशोब करा, आणि अनामत बचतीतून द्या, कर्जातून नाही."
+      }
+    },
+    {
+      "id": "investing",
+      "source": "investing",
+      "stage": "investing",
+      "topic": "investing",
+      "age": 27,
+      "place": "cafe",
+      "title": {
+        "en": "13 · Her first small investment",
+        "hi": "13 · उसका पहला छोटा निवेश",
+        "mr": "13 · तिची पहिली छोटी गुंतवणूक"
+      },
+      "delta": {
+        "investments": 18000,
+        "confidence": 3
+      },
+      "guide": "risk-diversify"
+    },
+    {
+      "id": "market-fall",
+      "stage": "investing",
+      "topic": "investing",
+      "age": 27,
+      "place": "room",
+      "title": {
+        "en": "14 · Market fall",
+        "hi": "14 · बाज़ार में गिरावट",
+        "mr": "14 · बाजारातील घसरण"
+      },
+      "setup": {
+        "en": "Verena's diversified investment falls soon after she starts. A group chat says to sell everything before it gets worse.",
+        "hi": "शुरू करने के तुरंत बाद वेरेना का विविध निवेश गिरता है। ग्रुप चैट सब बेचने को कहता है।",
+        "mr": "सुरुवातीनंतर लगेच वेरेनाची विविध गुंतवणूक घसरते. ग्रुप चॅट सर्व काही विकायला सांगते."
+      },
+      "action": {
+        "en": "Return to her time horizon and risk plan instead of reacting to one frightening day.",
+        "hi": "एक डरावने दिन पर प्रतिक्रिया देने के बजाय समय-सीमा और जोखिम योजना पर लौटें।",
+        "mr": "एका भीतीदायक दिवसावर प्रतिक्रिया देण्याऐवजी कालावधी आणि जोखीम योजनेकडे परत जा."
+      },
+      "sim": {
+        "kind": "grow",
+        "monthly": 3000,
+        "rate": 7,
+        "years": [
+          1,
+          5,
+          10
+        ]
+      },
+      "delta": {
+        "investments": 12000,
+        "confidence": 4,
+        "resilience": 2
+      },
+      "guide": "risk-diversify",
+      "more": {
+        "en": "Her ₹50,000 investment now shows ₹43,000. The group chat is posting red screenshots every hour.",
+        "hi": "उसका ₹50,000 का निवेश अब ₹43,000 दिखा रहा है। ग्रुप चैट हर घंटे लाल स्क्रीनशॉट डाल रहा है।",
+        "mr": "तिची ₹50,000 ची गुंतवणूक आता ₹43,000 दाखवते. ग्रुप चॅट दर तासाला लाल स्क्रीनशॉट टाकतो."
+      },
+      "question": {
+        "en": "What should Verena do?",
+        "hi": "वेरेना क्या करे?",
+        "mr": "वेरेनाने काय करावे?"
+      },
+      "okay": {
+        "en": "Stop her monthly investment until the market feels safe again.",
+        "hi": "बाज़ार सुरक्षित लगने तक मासिक निवेश रोक दे।",
+        "mr": "बाजार सुरक्षित वाटेपर्यंत मासिक गुंतवणूक थांबवावी."
+      },
+      "costly": {
+        "en": "Sell everything now to stop the loss from growing.",
+        "hi": "नुकसान बढ़ने से रोकने के लिए अभी सब बेच दे।",
+        "mr": "तोटा वाढू नये म्हणून आत्ता सगळे विकावे."
+      },
+      "goodOutcome": {
+        "en": "She remembers this money is for ten years away, keeps her plan and mutes the group. A year later her value has recovered and grown.",
+        "hi": "उसे याद है यह पैसा दस साल बाद के लिए है, योजना जारी रखती है और ग्रुप म्यूट करती है। एक साल बाद रकम वापस आ जाती है और बढ़ती है।",
+        "mr": "हे पैसे दहा वर्षांनंतरसाठी आहेत हे तिला आठवते, योजना चालू ठेवते आणि ग्रुप म्यूट करते. वर्षानंतर रक्कम परत येते आणि वाढते."
+      },
+      "okayOutcome": {
+        "en": "She misses several months of buying at lower prices, and restarts only after the market has already risen.",
+        "hi": "वह कई महीने कम दाम पर खरीदने से चूक जाती है, और बाज़ार चढ़ने के बाद ही फिर शुरू करती है।",
+        "mr": "ती अनेक महिने कमी किमतीत खरेदी करण्याची संधी गमावते, आणि बाजार वाढल्यावरच पुन्हा सुरू करते."
+      },
+      "costlyOutcome": {
+        "en": "She locks in a ₹7,000 loss. The market recovers within months, without her money in it.",
+        "hi": "वह ₹7,000 का नुकसान पक्का कर लेती है। बाज़ार कुछ महीनों में संभल जाता है, उसके पैसे के बिना।",
+        "mr": "ती ₹7,000 चा तोटा पक्का करते. बाजार काही महिन्यांत सावरतो, तिच्या पैशांशिवाय."
+      },
+      "lesson": {
+        "en": "Falls are part of investing. Money you will not need for years can wait out a bad month; money you need soon should not be in markets.",
+        "hi": "गिरावट निवेश का हिस्सा है। जिस पैसे की सालों तक ज़रूरत नहीं, वह बुरा महीना झेल सकता है; जिसकी जल्दी ज़रूरत है, वह बाज़ार में नहीं होना चाहिए।",
+        "mr": "घसरण हा गुंतवणुकीचा भाग आहे. वर्षानुवर्षे न लागणारे पैसे वाईट महिना सहन करू शकतात; लवकर लागणारे पैसे बाजारात नसावेत."
+      }
+    },
+    {
+      "id": "financial-security",
+      "source": "financial-security",
+      "stage": "financial-security",
+      "topic": "scams",
+      "age": 28,
+      "place": "home",
+      "title": {
+        "en": "15 · A financial scam",
+        "hi": "15 · आर्थिक ठगी",
+        "mr": "15 · आर्थिक फसवणूक"
+      },
+      "delta": {
+        "confidence": 5,
+        "resilience": 6
+      },
+      "guide": "scam-calls"
+    },
+    {
+      "id": "scam-consequences",
+      "stage": "financial-security",
+      "topic": "scams",
+      "age": 28,
+      "place": "home",
+      "title": {
+        "en": "16 · The consequences of a mistake",
+        "hi": "16 · गलती के नतीजे",
+        "mr": "16 · चुकीचे परिणाम"
+      },
+      "setup": {
+        "en": "Verena clicked the message but stopped before sharing an OTP. She now needs to secure the account and understand every warning sign she missed.",
+        "hi": "वेरेना ने लिंक खोला पर OTP देने से पहले रुक गई। अब उसे खाता सुरक्षित करना और छूटे संकेत समझना है।",
+        "mr": "वेरेनाने लिंक उघडली पण OTP देण्याआधी थांबली. आता तिला खाते सुरक्षित करून सुटलेल्या खुणा समजून घ्यायच्या आहेत."
+      },
+      "action": {
+        "en": "Contact the bank through its official channel, change exposed credentials and document the message.",
+        "hi": "बैंक के आधिकारिक माध्यम से संपर्क करें, उजागर जानकारी बदलें और संदेश का प्रमाण रखें।",
+        "mr": "बँकेच्या अधिकृत मार्गाने संपर्क करा, उघड झालेली माहिती बदला आणि संदेशाचा पुरावा ठेवा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 5,
+        "resilience": 6
+      },
+      "guide": "money-missing",
+      "more": {
+        "en": "The fake page now has her customer ID and the first half of her password. Nothing has been taken yet.",
+        "hi": "नकली पेज के पास अब उसकी कस्टमर ID और पासवर्ड का आधा हिस्सा है। अभी कुछ लिया नहीं गया।",
+        "mr": "बनावट पानाकडे आता तिचा ग्राहक ID आणि पासवर्डचा अर्धा भाग आहे. अजून काही घेतले गेलेले नाही."
+      },
+      "question": {
+        "en": "What should Verena do now?",
+        "hi": "वेरेना अब क्या करे?",
+        "mr": "वेरेनाने आता काय करावे?"
+      },
+      "okay": {
+        "en": "Change her password tomorrow, after she has calmed down.",
+        "hi": "शांत होने के बाद कल पासवर्ड बदले।",
+        "mr": "शांत झाल्यावर उद्या पासवर्ड बदलावा."
+      },
+      "costly": {
+        "en": "Do nothing. She did not share the OTP, so she must be safe.",
+        "hi": "कुछ न करे। उसने OTP नहीं दिया, तो वह सुरक्षित ही होगी।",
+        "mr": "काहीच करू नये. तिने OTP दिला नाही, म्हणजे ती सुरक्षित असेलच."
+      },
+      "goodOutcome": {
+        "en": "She changes her password at once, calls the bank on the number from its website, and reports the message at cybercrime.gov.in. Her account stays safe.",
+        "hi": "वह तुरंत पासवर्ड बदलती है, वेबसाइट वाले नंबर पर बैंक को कॉल करती है, और cybercrime.gov.in पर मैसेज की शिकायत करती है। खाता सुरक्षित रहता है।",
+        "mr": "ती लगेच पासवर्ड बदलते, वेबसाइटवरील नंबरवर बँकेला फोन करते, आणि cybercrime.gov.in वर मेसेजची तक्रार करते. खाते सुरक्षित राहते."
+      },
+      "okayOutcome": {
+        "en": "Overnight someone tries to log in eleven times. The bank blocks her account and it takes three days to restore.",
+        "hi": "रात भर में कोई ग्यारह बार लॉगिन की कोशिश करता है। बैंक खाता ब्लॉक करता है और चालू होने में तीन दिन लगते हैं।",
+        "mr": "रात्रीत कोणीतरी अकरा वेळा लॉगिनचा प्रयत्न करतो. बँक खाते ब्लॉक करते आणि सुरू व्हायला तीन दिवस लागतात."
+      },
+      "costlyOutcome": {
+        "en": "Two days later a new payee is added and ₹12,000 leaves her account. She has to file a complaint and wait.",
+        "hi": "दो दिन बाद एक नया लाभार्थी जुड़ता है और ₹12,000 खाते से निकल जाते हैं। उसे शिकायत करनी पड़ती है और इंतज़ार।",
+        "mr": "दोन दिवसांनी नवा लाभार्थी जोडला जातो आणि ₹12,000 खात्यातून जातात. तिला तक्रार करून वाट पाहावी लागते."
+      },
+      "lesson": {
+        "en": "A near miss is still a breach. Change credentials immediately, contact the bank through official channels, and report it.",
+        "hi": "बाल-बाल बचना भी सेंध है। तुरंत पासवर्ड बदलें, आधिकारिक रास्ते से बैंक से संपर्क करें, और शिकायत करें।",
+        "mr": "थोडक्यात वाचणे हीदेखील घुसखोरीच आहे. लगेच पासवर्ड बदला, अधिकृत मार्गाने बँकेशी संपर्क करा, आणि तक्रार करा."
+      }
+    },
+    {
+      "id": "medical-expense",
+      "stage": "insurance",
+      "topic": "insurance",
+      "age": 29,
+      "place": "home",
+      "title": {
+        "en": "17 · An unexpected medical expense",
+        "hi": "17 · अचानक चिकित्सा खर्च",
+        "mr": "17 · अचानक वैद्यकीय खर्च"
+      },
+      "setup": {
+        "en": "A medical bill arrives on a Sunday. Verena has some emergency savings and insurance, but the hospital asks for immediate payment.",
+        "hi": "रविवार को चिकित्सा बिल आता है। वेरेना के पास कुछ आपात बचत और बीमा है, पर अस्पताल तुरंत भुगतान माँगता है।",
+        "mr": "रविवारी वैद्यकीय बिल येते. वेरेनाकडे काही आणीबाणी बचत आणि विमा आहे, पण रुग्णालय त्वरित पैसे मागते."
+      },
+      "action": {
+        "en": "Confirm coverage, use liquid emergency money for the gap and keep every document for the claim.",
+        "hi": "कवरेज जाँचें, कमी के लिए उपलब्ध आपात धन इस्तेमाल करें और क्लेम के सारे दस्तावेज़ रखें।",
+        "mr": "कव्हर तपासा, तुटीसाठी सहज उपलब्ध आणीबाणी निधी वापरा आणि दाव्याची सर्व कागदपत्रे ठेवा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "emergency": -18000,
+        "cash": -6000,
+        "insurance": 8,
+        "resilience": 5
+      },
+      "guide": "health-cover",
+      "more": {
+        "en": "The bill is ₹42,000. Her health cover may pay most of it, but the hospital wants ₹15,000 deposited now.",
+        "hi": "बिल ₹42,000 का है। उसका स्वास्थ्य बीमा ज़्यादातर दे सकता है, पर अस्पताल अभी ₹15,000 जमा करवाना चाहता है।",
+        "mr": "बिल ₹42,000 चे आहे. तिचा आरोग्य विमा बराचसा भरू शकतो, पण रुग्णालय आत्ता ₹15,000 जमा करायला सांगते."
+      },
+      "question": {
+        "en": "How should Verena pay?",
+        "hi": "वेरेना भुगतान कैसे करे?",
+        "mr": "वेरेनाने पैसे कसे भरावे?"
+      },
+      "okay": {
+        "en": "Pay the whole bill from her emergency fund and claim later if she remembers.",
+        "hi": "पूरा बिल आपातकालीन फ़ंड से दे और याद रहे तो बाद में क्लेम करे।",
+        "mr": "संपूर्ण बिल आपत्कालीन निधीतून भरावे आणि आठवले तर नंतर दावा करावा."
+      },
+      "costly": {
+        "en": "Put it all on a credit card and deal with it next month.",
+        "hi": "सब क्रेडिट कार्ड पर डाल दे और अगले महीने देखे।",
+        "mr": "सगळे क्रेडिट कार्डवर टाकावे आणि पुढच्या महिन्यात पाहावे."
+      },
+      "goodOutcome": {
+        "en": "She calls the insurer's helpline, pays the ₹15,000 gap from her emergency fund, and keeps every bill. The claim covers ₹31,000.",
+        "hi": "वह बीमा हेल्पलाइन पर कॉल करती है, ₹15,000 का अंतर आपातकालीन फ़ंड से देती है, और हर बिल रखती है। क्लेम में ₹31,000 मिलते हैं।",
+        "mr": "ती विमा हेल्पलाइनला फोन करते, ₹15,000 चा फरक आपत्कालीन निधीतून भरते, आणि प्रत्येक बिल ठेवते. दाव्यात ₹31,000 मिळतात."
+      },
+      "okayOutcome": {
+        "en": "Her emergency fund is nearly empty, and the claim form sits unfilled for weeks.",
+        "hi": "उसका आपातकालीन फ़ंड लगभग ख़ाली हो जाता है, और क्लेम फ़ॉर्म हफ़्तों तक नहीं भरा जाता।",
+        "mr": "तिचा आपत्कालीन निधी जवळजवळ रिकामा होतो, आणि दावा फॉर्म आठवडे न भरलेला राहतो."
+      },
+      "costlyOutcome": {
+        "en": "She forgets to claim within the deadline. The card's interest adds ₹2,600 before she clears it.",
+        "hi": "वह समय-सीमा में क्लेम करना भूल जाती है। चुकाने से पहले कार्ड का ब्याज ₹2,600 बढ़ जाता है।",
+        "mr": "ती मुदतीत दावा करायला विसरते. फेडण्याआधी कार्डचे व्याज ₹2,600 वाढते."
+      },
+      "lesson": {
+        "en": "In an emergency, call the insurer first, use liquid savings for the gap, and keep every paper for the claim.",
+        "hi": "आपात स्थिति में पहले बीमा कंपनी को कॉल करें, अंतर के लिए तुरंत मिलने वाली बचत लगाएँ, और क्लेम के लिए हर काग़ज़ रखें।",
+        "mr": "आपत्कालीन स्थितीत आधी विमा कंपनीला फोन करा, फरकासाठी लगेच मिळणारी बचत वापरा, आणि दाव्यासाठी प्रत्येक कागद ठेवा."
+      }
+    },
+    {
+      "id": "money-tight",
+      "stage": "borrowing",
+      "topic": "budgeting",
+      "age": 30,
+      "place": "room",
+      "title": {
+        "en": "18 · Money is tight",
+        "hi": "18 · पैसों की तंगी",
+        "mr": "18 · पैशांची चणचण"
+      },
+      "setup": {
+        "en": "A repair and a family visit land in the same month. For the first time, Verena's planned expenses are above her income.",
+        "hi": "मरम्मत और परिवार की यात्रा एक ही महीने में आती हैं। पहली बार वेरेना का नियोजित खर्च आय से ऊपर है।",
+        "mr": "दुरुस्ती आणि कुटुंबाची भेट एकाच महिन्यात येतात. पहिल्यांदा वेरेनाचा नियोजित खर्च उत्पन्नापेक्षा जास्त आहे."
+      },
+      "action": {
+        "en": "Protect essentials, delay a flexible purchase and use only the emergency amount needed for the real gap.",
+        "hi": "ज़रूरी खर्च बचाएँ, टाल सकने वाली खरीद रोकें और वास्तविक कमी जितना ही आपात धन लें।",
+        "mr": "आवश्यक खर्च जपा, पुढे ढकलता येणारी खरेदी थांबवा आणि खरी तूट तेवढाच आणीबाणी निधी वापरा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 50000,
+        "needs": 46500
+      },
+      "delta": {
+        "emergency": -5000,
+        "debt": -2000,
+        "resilience": 4
+      },
+      "guide": "needs-wants",
+      "more": {
+        "en": "This month she needs ₹62,000 and earns ₹56,000. Her phone screen also cracked.",
+        "hi": "इस महीने उसे ₹62,000 चाहिए और कमाई ₹56,000 है। ऊपर से फ़ोन की स्क्रीन टूट गई।",
+        "mr": "या महिन्यात तिला ₹62,000 लागतात आणि कमाई ₹56,000 आहे. त्यात फोनची स्क्रीन फुटली."
+      },
+      "question": {
+        "en": "How should Verena close the gap?",
+        "hi": "वेरेना यह अंतर कैसे भरे?",
+        "mr": "वेरेनाने हा फरक कसा भरून काढावा?"
+      },
+      "okay": {
+        "en": "Use her emergency fund for the whole shortfall, including the phone upgrade she wanted.",
+        "hi": "पूरे अंतर के लिए आपातकालीन फ़ंड लगाए, उस फ़ोन अपग्रेड समेत जो वह चाहती थी।",
+        "mr": "संपूर्ण फरकासाठी आपत्कालीन निधी वापरावा, हव्या असलेल्या फोन अपग्रेडसह."
+      },
+      "costly": {
+        "en": "Take a small instant loan from an app to keep everything as it is.",
+        "hi": "सब कुछ वैसा ही रखने के लिए ऐप से छोटा तुरंत लोन ले।",
+        "mr": "सगळे तसेच ठेवण्यासाठी अ‍ॅपवरून छोटे झटपट कर्ज घ्यावे."
+      },
+      "goodOutcome": {
+        "en": "She repairs the screen instead of upgrading, skips two dinners out, and uses ₹3,000 of her fund. Next month she is back on track.",
+        "hi": "वह अपग्रेड की जगह स्क्रीन ठीक कराती है, दो बार बाहर खाना छोड़ती है, और फ़ंड से ₹3,000 लेती है। अगले महीने वह पटरी पर है।",
+        "mr": "ती अपग्रेडऐवजी स्क्रीन दुरुस्त करते, दोनदा बाहेरचे जेवण टाळते, आणि निधीतून ₹3,000 घेते. पुढच्या महिन्यात ती रुळावर येते."
+      },
+      "okayOutcome": {
+        "en": "The month balances, but her emergency fund drops by ₹22,000 for a phone she did not need.",
+        "hi": "महीना बराबर हो जाता है, पर बिना ज़रूरत के फ़ोन के लिए आपातकालीन फ़ंड ₹22,000 घट जाता है।",
+        "mr": "महिना जुळतो, पण गरज नसलेल्या फोनसाठी आपत्कालीन निधी ₹22,000 ने कमी होतो."
+      },
+      "costlyOutcome": {
+        "en": "The app charges fees she did not see and starts calling her contacts when a payment is two days late.",
+        "hi": "ऐप ऐसे शुल्क लेता है जो उसे दिखे नहीं, और भुगतान दो दिन लेट होने पर उसके कॉन्टैक्ट्स को फ़ोन करने लगता है।",
+        "mr": "अ‍ॅप न दिसलेले शुल्क घेते, आणि देयक दोन दिवस उशिरा झाल्यावर तिच्या संपर्कांना फोन करू लागते."
+      },
+      "lesson": {
+        "en": "When spending runs above income, cut the flexible things first and use the emergency fund only for the real emergency.",
+        "hi": "जब खर्च आमदनी से ज़्यादा हो, पहले लचीली चीज़ें काटें और आपातकालीन फ़ंड सिर्फ़ असली ज़रूरत पर लगाएँ।",
+        "mr": "खर्च उत्पन्नापेक्षा जास्त झाला की आधी लवचिक गोष्टी कमी करा आणि आपत्कालीन निधी फक्त खऱ्या गरजेसाठी वापरा."
+      }
+    },
+    {
+      "id": "borrowing",
+      "source": "borrowing",
+      "stage": "borrowing",
+      "topic": "borrowing",
+      "age": 31,
+      "place": "bank",
+      "title": {
+        "en": "19 · Verena needs a loan",
+        "hi": "19 · वेरेना को लोन चाहिए",
+        "mr": "19 · वेरेनाला कर्ज हवे आहे"
+      },
+      "delta": {
+        "cash": 240000,
+        "debt": 240000,
+        "confidence": 3
+      },
+      "guide": "what-emi"
+    },
+    {
+      "id": "bad-loan-offer",
+      "stage": "borrowing",
+      "topic": "borrowing",
+      "age": 31,
+      "place": "cafe",
+      "title": {
+        "en": "20 · The bad loan offer",
+        "hi": "20 · खराब लोन ऑफ़र",
+        "mr": "20 · वाईट कर्ज ऑफर"
+      },
+      "setup": {
+        "en": "A lender advertises a tiny monthly payment. The processing fee, flat rate and late charge are hidden in smaller text.",
+        "hi": "ऋणदाता बहुत छोटी मासिक किस्त दिखाता है। प्रोसेसिंग शुल्क, फ्लैट दर और देरी शुल्क छोटे अक्षरों में हैं।",
+        "mr": "कर्जदाता खूप छोटा मासिक हप्ता दाखवतो. प्रक्रिया शुल्क, फ्लॅट दर आणि उशीर शुल्क लहान अक्षरांत आहेत."
+      },
+      "action": {
+        "en": "Compare total repayment, APR or equivalent cost, fees, lender identity and late-payment terms.",
+        "hi": "कुल भुगतान, APR या बराबर लागत, शुल्क, ऋणदाता की पहचान और देरी की शर्तें तुलना करें।",
+        "mr": "एकूण परतफेड, APR किंवा समतुल्य खर्च, शुल्क, कर्जदात्याची ओळख आणि उशीराच्या अटी तुलना करा."
+      },
+      "sim": {
+        "kind": "emi",
+        "principal": 180000,
+        "rate": 18,
+        "months": [
+          12,
+          24,
+          36
+        ]
+      },
+      "delta": {
+        "debt": -25000,
+        "confidence": 5,
+        "resilience": 3
+      },
+      "guide": "reading-fees",
+      "more": {
+        "en": "'Just ₹2,999 a month!' For 36 months on ₹75,000, with a ₹4,500 fee and a 'flat' 14% rate.",
+        "hi": "'सिर्फ़ ₹2,999 महीना!' ₹75,000 पर 36 महीने, ₹4,500 शुल्क और 'फ़्लैट' 14% दर के साथ।",
+        "mr": "'फक्त ₹2,999 महिना!' ₹75,000 वर 36 महिने, ₹4,500 शुल्क आणि 'फ्लॅट' 14% दरासह."
+      },
+      "question": {
+        "en": "What should Verena do with this offer?",
+        "hi": "वेरेना इस पेशकश का क्या करे?",
+        "mr": "वेरेनाने या ऑफरचे काय करावे?"
+      },
+      "okay": {
+        "en": "Accept, since the monthly amount fits her budget.",
+        "hi": "मान ले, क्योंकि महीने की रकम बजट में आती है।",
+        "mr": "स्वीकारावी, कारण मासिक रक्कम बजेटमध्ये बसते."
+      },
+      "costly": {
+        "en": "Sign today, because the offer expires at midnight.",
+        "hi": "आज ही साइन करे, क्योंकि पेशकश आधी रात को ख़त्म हो रही है।",
+        "mr": "आजच सही करावी, कारण ऑफर मध्यरात्री संपते."
+      },
+      "goodOutcome": {
+        "en": "She works out the total: about ₹1.08 lakh plus the fee. A bank's reducing-rate loan costs ₹14,000 less, so she walks away.",
+        "hi": "वह कुल जोड़ती है: लगभग ₹1.08 लाख और शुल्क। बैंक का घटते ब्याज वाला लोन ₹14,000 सस्ता है, तो वह मना कर देती है।",
+        "mr": "ती एकूण मोजते: सुमारे ₹1.08 लाख आणि शुल्क. बँकेचे कमी होणाऱ्या व्याजाचे कर्ज ₹14,000 स्वस्त आहे, म्हणून ती नकार देते."
+      },
+      "okayOutcome": {
+        "en": "The EMI fits, but she pays far more in total than she realised, and the fee was taken on day one.",
+        "hi": "EMI बजट में है, पर कुल मिलाकर वह सोच से कहीं ज़्यादा देती है, और शुल्क पहले दिन ही कट गया।",
+        "mr": "EMI बसतो, पण एकूण ती अपेक्षेपेक्षा खूप जास्त भरते, आणि शुल्क पहिल्याच दिवशी कापले गेले."
+      },
+      "costlyOutcome": {
+        "en": "The late charge turns out to be 3% a month. One delayed payment costs her ₹2,250.",
+        "hi": "देर का शुल्क महीने का 3% निकलता है। एक देरी वाला भुगतान उसे ₹2,250 का पड़ता है।",
+        "mr": "उशिराचे शुल्क दरमहा 3% निघते. एक उशिराचे देयक तिला ₹2,250 ला पडते."
+      },
+      "lesson": {
+        "en": "A small EMI can hide a big loan. Compare the total repayment, fees, rate type and late charges before you sign.",
+        "hi": "छोटी EMI बड़ा कर्ज़ छिपा सकती है। साइन करने से पहले कुल चुकौती, शुल्क, दर का प्रकार और देर का जुर्माना मिलाएँ।",
+        "mr": "लहान EMI मोठे कर्ज लपवू शकतो. सही करण्याआधी एकूण परतफेड, शुल्क, दराचा प्रकार आणि उशिराचा दंड तुलना करा."
+      }
+    },
+    {
+      "id": "loan-repayment",
+      "stage": "borrowing",
+      "topic": "borrowing",
+      "age": 32,
+      "place": "room",
+      "title": {
+        "en": "21 · Loan repayment",
+        "hi": "21 · लोन की चुकौती",
+        "mr": "21 · कर्जाची परतफेड"
+      },
+      "setup": {
+        "en": "The first EMI is due beside rent, groceries and savings. Verena sees how debt narrows every later choice.",
+        "hi": "पहली EMI किराए, राशन और बचत के साथ देनी है। वेरेना देखती है कि कर्ज़ आगे के हर विकल्प को छोटा करता है।",
+        "mr": "पहिला EMI भाडे, किराणा आणि बचतीसोबत भरायचा आहे. कर्ज पुढचा प्रत्येक पर्याय कसा कमी करते ते वेरेनाला दिसते."
+      },
+      "action": {
+        "en": "Put the EMI into the monthly plan first, keep a small buffer and avoid new discretionary debt.",
+        "hi": "EMI को मासिक योजना में पहले रखें, थोड़ा बफ़र बचाएँ और नया गैर-ज़रूरी कर्ज़ न लें।",
+        "mr": "EMI मासिक योजनेत आधी ठेवा, थोडा राखीव ठेवा आणि नवे अनावश्यक कर्ज टाळा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 56000,
+        "needs": 44500
+      },
+      "delta": {
+        "debt": -18000,
+        "savings": 3000,
+        "confidence": 4
+      },
+      "guide": "prepayment",
+      "more": {
+        "en": "Her EMI is ₹6,800. Rent, food, travel and bills already take ₹44,500 of her ₹56,000.",
+        "hi": "उसकी EMI ₹6,800 है। किराया, खाना, सफ़र और बिल पहले ही ₹56,000 में से ₹44,500 ले लेते हैं।",
+        "mr": "तिचा EMI ₹6,800 आहे. भाडे, जेवण, प्रवास आणि बिले आधीच ₹56,000 पैकी ₹44,500 घेतात."
+      },
+      "question": {
+        "en": "How should Verena fit the EMI in?",
+        "hi": "वेरेना EMI को कैसे बिठाए?",
+        "mr": "वेरेनाने EMI कसा बसवावा?"
+      },
+      "okay": {
+        "en": "Pay the EMI from whatever is left at month end.",
+        "hi": "महीने के अंत में जो बचे उससे EMI दे।",
+        "mr": "महिन्याच्या शेवटी जे उरेल त्यातून EMI भरावा."
+      },
+      "costly": {
+        "en": "Skip savings entirely and use a credit card for anything extra.",
+        "hi": "बचत पूरी तरह बंद करे और बाकी सब के लिए क्रेडिट कार्ड लगाए।",
+        "mr": "बचत पूर्ण थांबवावी आणि बाकी सगळ्यासाठी क्रेडिट कार्ड वापरावे."
+      },
+      "goodOutcome": {
+        "en": "The EMI goes out by auto-debit on payday. She keeps ₹2,000 a month for savings and a small buffer. No payment is ever late.",
+        "hi": "EMI सैलरी के दिन ऑटो-डेबिट से जाती है। वह हर महीने ₹2,000 बचत और छोटा बफ़र रखती है। कोई भुगतान कभी लेट नहीं होता।",
+        "mr": "EMI पगाराच्या दिवशी ऑटो-डेबिटने जातो. ती दरमहा ₹2,000 बचत आणि छोटा राखीव ठेवते. एकही देयक कधी उशिरा होत नाही."
+      },
+      "okayOutcome": {
+        "en": "Most months it works, but in one busy month the money is gone by the 25th and the EMI bounces.",
+        "hi": "ज़्यादातर महीने ठीक चलता है, पर एक भागदौड़ वाले महीने 25 तक पैसा ख़त्म और EMI बाउंस।",
+        "mr": "बहुतेक महिने चालते, पण एका गडबडीच्या महिन्यात 25 तारखेपर्यंत पैसे संपतात आणि EMI बाउन्स होतो."
+      },
+      "costlyOutcome": {
+        "en": "She now carries a loan and a card balance at the same time, and the card's interest is higher than the loan's.",
+        "hi": "अब उस पर लोन और कार्ड बैलेंस दोनों हैं, और कार्ड का ब्याज लोन से ज़्यादा है।",
+        "mr": "आता तिच्यावर कर्ज आणि कार्ड शिल्लक दोन्ही आहेत, आणि कार्डचे व्याज कर्जापेक्षा जास्त आहे."
+      },
+      "lesson": {
+        "en": "Treat the EMI as a fixed need paid on payday. A late EMI costs fees and damages your credit record.",
+        "hi": "EMI को सैलरी के दिन चुकने वाली तय ज़रूरत मानें। लेट EMI से शुल्क लगता है और क्रेडिट रिकॉर्ड बिगड़ता है।",
+        "mr": "EMI ला पगाराच्या दिवशी भरायची ठरलेली गरज माना. उशिराच्या EMI ने शुल्क लागते आणि क्रेडिट नोंद बिघडते."
+      }
+    },
+    {
+      "id": "job-loss",
+      "stage": "financial-security",
+      "topic": "income",
+      "age": 33,
+      "place": "home",
+      "title": {
+        "en": "22 · Job loss",
+        "hi": "22 · नौकरी छूटना",
+        "mr": "22 · नोकरी जाणे"
+      },
+      "setup": {
+        "en": "Verena's role is removed without warning. The next salary will not come, but rent and the EMI still will.",
+        "hi": "वेरेना की नौकरी बिना चेतावनी चली जाती है। अगला वेतन नहीं आएगा, लेकिन किराया और EMI आएँगे।",
+        "mr": "वेरेनाची नोकरी कोणतीही सूचना न देता जाते. पुढचा पगार येणार नाही, पण भाडे आणि EMI येतील."
+      },
+      "action": {
+        "en": "Switch to a survival budget, use the emergency fund deliberately and avoid panic borrowing while she searches.",
+        "hi": "जीविका बजट अपनाएँ, आपात निधि सोचकर इस्तेमाल करें और नौकरी खोजते समय घबराकर कर्ज़ न लें।",
+        "mr": "जगण्यासाठीचे बजेट वापरा, आणीबाणी निधी विचारपूर्वक वापरा आणि नोकरी शोधताना घाईत कर्ज घेऊ नका."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 0,
+        "needs": 32000
+      },
+      "delta": {
+        "income": -56000,
+        "emergency": -30000,
+        "resilience": 8,
+        "confidence": -4
+      },
+      "guide": "emergency-fund",
+      "more": {
+        "en": "She has ₹90,000 in her emergency fund. Rent, food, bills and the EMI come to ₹38,000 a month.",
+        "hi": "उसके आपातकालीन फ़ंड में ₹90,000 हैं। किराया, खाना, बिल और EMI मिलाकर महीने के ₹38,000।",
+        "mr": "तिच्या आपत्कालीन निधीत ₹90,000 आहेत. भाडे, जेवण, बिले आणि EMI मिळून दरमहा ₹38,000."
+      },
+      "question": {
+        "en": "What should Verena do first?",
+        "hi": "वेरेना पहले क्या करे?",
+        "mr": "वेरेनाने आधी काय करावे?"
+      },
+      "okay": {
+        "en": "Keep spending as before; a new job will surely come within a month.",
+        "hi": "पहले जैसा खर्च जारी रखे; एक महीने में नई नौकरी तो मिल ही जाएगी।",
+        "mr": "आधीसारखा खर्च चालू ठेवावा; महिन्याभरात नवी नोकरी नक्की मिळेल."
+      },
+      "costly": {
+        "en": "Take a large personal loan so the fund stays untouched.",
+        "hi": "बड़ा पर्सनल लोन ले ताकि फ़ंड को हाथ न लगे।",
+        "mr": "मोठे वैयक्तिक कर्ज घ्यावे म्हणजे निधीला हात लागणार नाही."
+      },
+      "goodOutcome": {
+        "en": "She cuts to a ₹30,000 survival budget, which gives her three months of runway, and tells the lender early. She finds work in month four with money still left.",
+        "hi": "वह ₹30,000 के गुज़ारा बजट पर आती है, जिससे तीन महीने का सहारा मिलता है, और कर्ज़दाता को पहले बता देती है। चौथे महीने काम मिलता है और पैसे बचे रहते हैं।",
+        "mr": "ती ₹30,000 च्या गुजराण बजेटवर येते, ज्याने तीन महिन्यांचा आधार मिळतो, आणि कर्जदाराला आधी कळवते. चौथ्या महिन्यात काम मिळते आणि पैसे शिल्लक राहतात."
+      },
+      "okayOutcome": {
+        "en": "The search takes four months. By month three the fund is gone and she borrows from family.",
+        "hi": "नौकरी ढूँढने में चार महीने लगते हैं। तीसरे महीने तक फ़ंड ख़त्म और वह परिवार से उधार लेती है।",
+        "mr": "शोधायला चार महिने लागतात. तिसऱ्या महिन्यापर्यंत निधी संपतो आणि ती कुटुंबाकडून उसने घेते."
+      },
+      "costlyOutcome": {
+        "en": "With no income, the new EMI is impossible to repay. She misses payments and her credit record suffers for years.",
+        "hi": "बिना आय के नई EMI चुकाना नामुमकिन है। भुगतान छूटते हैं और उसका क्रेडिट रिकॉर्ड सालों तक ख़राब रहता है।",
+        "mr": "उत्पन्नाशिवाय नवा EMI फेडणे अशक्य आहे. देयके चुकतात आणि तिची क्रेडिट नोंद वर्षानुवर्षे बिघडते."
+      },
+      "lesson": {
+        "en": "After a job loss, shrink spending immediately, make the emergency fund last, and avoid new debt without income.",
+        "hi": "नौकरी जाने पर तुरंत खर्च घटाएँ, आपातकालीन फ़ंड को लंबा चलाएँ, और बिना आय के नया कर्ज़ न लें।",
+        "mr": "नोकरी गेल्यावर लगेच खर्च कमी करा, आपत्कालीन निधी जास्त काळ टिकवा, आणि उत्पन्नाशिवाय नवे कर्ज घेऊ नका."
+      }
+    },
+    {
+      "id": "recovery",
+      "stage": "financial-security",
+      "topic": "saving",
+      "age": 34,
+      "place": "office",
+      "title": {
+        "en": "23 · Recovery",
+        "hi": "23 · फिर से संभलना",
+        "mr": "23 · पुन्हा उभे राहणे"
+      },
+      "setup": {
+        "en": "A new job arrives after four difficult months. The salary is higher, but the emergency fund is almost empty.",
+        "hi": "चार कठिन महीनों बाद नई नौकरी मिलती है। वेतन अधिक है, लेकिन आपात निधि लगभग खाली है।",
+        "mr": "चार कठीण महिन्यांनंतर नवी नोकरी मिळते. पगार जास्त आहे, पण आणीबाणी निधी जवळजवळ रिकामा आहे."
+      },
+      "action": {
+        "en": "Rebuild the emergency fund before restoring every old expense, and review what the job loss revealed.",
+        "hi": "पुराने सारे खर्च लौटाने से पहले आपात निधि फिर बनाएँ और नौकरी छूटने से मिली सीख देखें।",
+        "mr": "जुने सर्व खर्च पुन्हा सुरू करण्याआधी आणीबाणी निधी उभा करा आणि नोकरी गेल्याने काय शिकवले ते पाहा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 64000,
+        "needs": 39000
+      },
+      "delta": {
+        "income": 64000,
+        "emergency": 24000,
+        "confidence": 7,
+        "resilience": 8
+      },
+      "guide": "pay-yourself",
+      "more": {
+        "en": "Her new salary is ₹64,000. Her fund has ₹6,000 left, and she wants her old lifestyle back.",
+        "hi": "नई सैलरी ₹64,000 है। फ़ंड में ₹6,000 बचे हैं, और वह पुरानी जीवनशैली वापस चाहती है।",
+        "mr": "नवा पगार ₹64,000 आहे. निधीत ₹6,000 उरले आहेत, आणि तिला जुनी जीवनशैली परत हवी आहे."
+      },
+      "question": {
+        "en": "What should Verena do with her new salary?",
+        "hi": "वेरेना नई सैलरी का क्या करे?",
+        "mr": "वेरेनाने नव्या पगाराचे काय करावे?"
+      },
+      "okay": {
+        "en": "Restore everything at once and rebuild the fund with whatever is left.",
+        "hi": "सब कुछ एक साथ पहले जैसा करे और जो बचे उससे फ़ंड बनाए।",
+        "mr": "सगळे एकदम पूर्वीसारखे करावे आणि उरलेल्यातून निधी उभारावा."
+      },
+      "costly": {
+        "en": "Celebrate with a holiday on her credit card; she has earned it.",
+        "hi": "क्रेडिट कार्ड पर छुट्टी मनाकर जश्न मनाए; उसने यह कमाया है।",
+        "mr": "क्रेडिट कार्डवर सुट्टी घेऊन आनंद साजरा करावा; तिने ते कमावले आहे."
+      },
+      "goodOutcome": {
+        "en": "She sends ₹12,000 a month to the fund first. In five months it is back to three months of expenses, and then she adds back small comforts.",
+        "hi": "वह पहले हर महीने ₹12,000 फ़ंड में डालती है। पाँच महीने में यह तीन महीने के खर्च जितना हो जाता है, फिर वह छोटे आराम जोड़ती है।",
+        "mr": "ती आधी दरमहा ₹12,000 निधीत टाकते. पाच महिन्यांत तो तीन महिन्यांच्या खर्चाइतका होतो, मग ती छोट्या सोयी पुन्हा सुरू करते."
+      },
+      "okayOutcome": {
+        "en": "Life feels normal again, but a year later the fund holds less than one month's costs.",
+        "hi": "ज़िंदगी फिर सामान्य लगती है, पर एक साल बाद फ़ंड में एक महीने के खर्च से भी कम है।",
+        "mr": "आयुष्य पुन्हा सामान्य वाटते, पण वर्षानंतर निधीत एका महिन्याच्या खर्चापेक्षाही कमी आहे."
+      },
+      "costlyOutcome": {
+        "en": "The holiday costs ₹45,000 at card interest, just when she has no cushion left.",
+        "hi": "छुट्टी कार्ड के ब्याज पर ₹45,000 की पड़ती है, ठीक तब जब उसके पास कोई सहारा नहीं।",
+        "mr": "सुट्टी कार्डच्या व्याजावर ₹45,000 ला पडते, नेमकी तेव्हा जेव्हा तिच्याकडे काहीच आधार नाही."
+      },
+      "lesson": {
+        "en": "After a setback, rebuild the cushion first. Comforts can come back gradually once you are protected again.",
+        "hi": "झटके के बाद पहले सहारा फिर से बनाएँ। सुरक्षित होने पर आराम धीरे-धीरे लौट सकते हैं।",
+        "mr": "धक्क्यानंतर आधी आधार पुन्हा उभारा. सुरक्षित झाल्यावर सोयी हळूहळू परत येऊ शकतात."
+      }
+    },
+    {
+      "id": "fraud-attempt",
+      "stage": "financial-security",
+      "topic": "scams",
+      "age": 34,
+      "place": "office",
+      "title": {
+        "en": "24 · A sophisticated fraud attempt",
+        "hi": "24 · एक चालाक धोखाधड़ी",
+        "mr": "24 · एक हुशार फसवणूक प्रयत्न"
+      },
+      "setup": {
+        "en": "A caller knows Verena's employer and recent purchase. They create urgency, then ask her to install a support app.",
+        "hi": "कॉलर को वेरेना के नियोक्ता और हाल की खरीद पता है। वह जल्दी कराता है और सहायता ऐप इंस्टॉल करने को कहता है।",
+        "mr": "फोन करणाऱ्याला वेरेनाचा नियोक्ता आणि अलीकडची खरेदी माहिती आहे. तो घाई निर्माण करून सपोर्ट अॅप बसवायला सांगतो."
+      },
+      "action": {
+        "en": "End the call, verify through an independently found number and never install remote-access software for a caller.",
+        "hi": "कॉल बंद करें, खुद खोजे आधिकारिक नंबर से जाँचें और कॉलर के लिए रिमोट-एक्सेस ऐप कभी न डालें।",
+        "mr": "फोन बंद करा, स्वतः शोधलेल्या अधिकृत नंबरवर तपासा आणि फोन करणाऱ्यासाठी रिमोट-अॅक्सेस अॅप कधीही बसवू नका."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 6,
+        "resilience": 8
+      },
+      "guide": "scam-calls",
+      "more": {
+        "en": "The caller says her new phone has a warranty problem and asks her to install a 'support' app so they can fix it remotely.",
+        "hi": "कॉल करने वाला कहता है उसके नए फ़ोन की वारंटी में दिक्कत है और दूर से ठीक करने के लिए 'सपोर्ट' ऐप इंस्टॉल करने को कहता है।",
+        "mr": "फोन करणारा म्हणतो तिच्या नव्या फोनच्या वॉरंटीत अडचण आहे आणि दुरून दुरुस्त करण्यासाठी 'सपोर्ट' अ‍ॅप इन्स्टॉल करायला सांगतो."
+      },
+      "question": {
+        "en": "What should Verena do?",
+        "hi": "वेरेना क्या करे?",
+        "mr": "वेरेनाने काय करावे?"
+      },
+      "okay": {
+        "en": "Install the app but watch the screen carefully while they work.",
+        "hi": "ऐप इंस्टॉल करे पर उनके काम करते समय स्क्रीन ध्यान से देखे।",
+        "mr": "अ‍ॅप इन्स्टॉल करावे पण ते काम करताना स्क्रीन नीट पाहावी."
+      },
+      "costly": {
+        "en": "Follow their steps quickly, since they already know her details.",
+        "hi": "उनके कदम जल्दी से माने, क्योंकि उन्हें उसकी जानकारी पहले से पता है।",
+        "mr": "त्यांच्या सूचना पटकन पाळाव्यात, कारण त्यांना तिची माहिती आधीच आहे."
+      },
+      "goodOutcome": {
+        "en": "She hangs up and calls the brand's number from its official website. There was no warranty problem. She reports the number.",
+        "hi": "वह फ़ोन काटकर कंपनी की आधिकारिक वेबसाइट वाले नंबर पर कॉल करती है। वारंटी में कोई दिक्कत नहीं थी। वह नंबर की शिकायत करती है।",
+        "mr": "ती फोन ठेवून कंपनीच्या अधिकृत वेबसाइटवरील नंबरवर फोन करते. वॉरंटीत काही अडचण नव्हती. ती नंबरची तक्रार करते."
+      },
+      "okayOutcome": {
+        "en": "While she watches, a banking app opens in the background. She panics and switches the phone off, then has to reset everything.",
+        "hi": "देखते-देखते पीछे बैंकिंग ऐप खुल जाता है। वह घबराकर फ़ोन बंद करती है, फिर सब कुछ रीसेट करना पड़ता है।",
+        "mr": "पाहताना पार्श्वभूमीत बँकिंग अ‍ॅप उघडते. ती घाबरून फोन बंद करते, मग सगळे रीसेट करावे लागते."
+      },
+      "costlyOutcome": {
+        "en": "The app gives them control of her screen. They read her OTP as it arrives and transfer ₹38,000.",
+        "hi": "ऐप उन्हें उसकी स्क्रीन का नियंत्रण दे देता है। वे आते ही उसका OTP पढ़ते हैं और ₹38,000 ट्रांसफ़र कर लेते हैं।",
+        "mr": "अ‍ॅप त्यांना तिच्या स्क्रीनचे नियंत्रण देते. ते आलेला OTP वाचतात आणि ₹38,000 हस्तांतरित करतात."
+      },
+      "lesson": {
+        "en": "Never install an app at a caller's request. Knowing your details proves nothing; verify through a number you find yourself.",
+        "hi": "किसी कॉल करने वाले के कहने पर कभी ऐप इंस्टॉल न करें। आपकी जानकारी पता होना कुछ साबित नहीं करता; खुद ढूँढे नंबर से जाँचें।",
+        "mr": "फोन करणाऱ्याच्या सांगण्यावरून कधीच अ‍ॅप इन्स्टॉल करू नका. तुमची माहिती माहीत असणे काहीच सिद्ध करत नाही; स्वतः शोधलेल्या नंबरवरून तपासा."
+      }
+    },
+    {
+      "id": "financial-reset",
+      "stage": "financial-security",
+      "topic": "budgeting",
+      "age": 35,
+      "place": "rooftop",
+      "title": {
+        "en": "25 · Financial reset",
+        "hi": "25 · आर्थिक रीसेट",
+        "mr": "25 · आर्थिक पुनर्रचना"
+      },
+      "setup": {
+        "en": "Verena pauses to review thirteen years of choices: what protected her, what cost more than expected and what still feels fragile.",
+        "hi": "वेरेना तेरह साल के फ़ैसले देखती है: किसने बचाया, क्या उम्मीद से महँगा पड़ा और क्या अब भी कमज़ोर है।",
+        "mr": "वेरेना तेरा वर्षांचे निर्णय पाहते: कशाने संरक्षण केले, काय अपेक्षेपेक्षा महाग पडले आणि काय अजून नाजूक आहे."
+      },
+      "action": {
+        "en": "Use the evidence to set three priorities: resilience, manageable debt and one meaningful goal.",
+        "hi": "सबूत से तीन प्राथमिकताएँ तय करें: मज़बूती, संभालने योग्य कर्ज़ और एक सार्थक लक्ष्य।",
+        "mr": "पुराव्यावरून तीन प्राधान्ये ठरवा: लवचिकता, सांभाळता येणारे कर्ज आणि एक अर्थपूर्ण लक्ष्य."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 8,
+        "resilience": 7
+      },
+      "guide": "budget",
+      "more": {
+        "en": "On paper: an emergency fund half rebuilt, one loan nearly paid, investments steady, insurance basic, documents scattered.",
+        "hi": "काग़ज़ पर: आधा बना आपातकालीन फ़ंड, एक लगभग चुका लोन, स्थिर निवेश, बुनियादी बीमा, बिखरे काग़ज़ात।",
+        "mr": "कागदावर: अर्धा उभारलेला आपत्कालीन निधी, जवळजवळ फेडलेले एक कर्ज, स्थिर गुंतवणूक, मूलभूत विमा, विखुरलेली कागदपत्रे."
+      },
+      "question": {
+        "en": "What should Verena focus on next?",
+        "hi": "वेरेना आगे किस पर ध्यान दे?",
+        "mr": "वेरेनाने पुढे कशावर लक्ष द्यावे?"
+      },
+      "okay": {
+        "en": "Work on everything a little at a time, with no particular order.",
+        "hi": "हर चीज़ पर थोड़ा-थोड़ा काम करे, बिना किसी क्रम के।",
+        "mr": "प्रत्येक गोष्टीवर थोडे थोडे काम करावे, कोणत्याही क्रमाशिवाय."
+      },
+      "costly": {
+        "en": "Put everything into investments, since they grow fastest.",
+        "hi": "सब कुछ निवेश में डाले, क्योंकि वह सबसे तेज़ बढ़ता है।",
+        "mr": "सगळे गुंतवणुकीत टाकावे, कारण ती सर्वात वेगाने वाढते."
+      },
+      "goodOutcome": {
+        "en": "She picks three priorities in order: finish the emergency fund, clear the loan, then raise her insurance. Each gets a date.",
+        "hi": "वह क्रम से तीन प्राथमिकताएँ चुनती है: आपातकालीन फ़ंड पूरा, लोन ख़त्म, फिर बीमा बढ़ाना। हर एक की तारीख तय।",
+        "mr": "ती क्रमाने तीन प्राधान्ये ठरवते: आपत्कालीन निधी पूर्ण, कर्ज फेडणे, मग विमा वाढवणे. प्रत्येकाला तारीख."
+      },
+      "okayOutcome": {
+        "en": "Progress is slow everywhere, and none of the weak spots closes this year.",
+        "hi": "हर जगह प्रगति धीमी है, और इस साल कोई भी कमज़ोरी दूर नहीं होती।",
+        "mr": "सगळीकडे प्रगती हळू आहे, आणि या वर्षी एकही कमकुवत बाजू दूर होत नाही."
+      },
+      "costlyOutcome": {
+        "en": "When a surprise bill arrives, she has to sell investments at a bad time because her cushion was never finished.",
+        "hi": "जब अचानक बिल आता है, उसे बुरे समय पर निवेश बेचना पड़ता है क्योंकि सहारा कभी पूरा नहीं हुआ।",
+        "mr": "अचानक बिल आल्यावर तिला वाईट वेळी गुंतवणूक विकावी लागते कारण आधार कधी पूर्ण झालाच नाही."
+      },
+      "lesson": {
+        "en": "Review your whole picture now and then. Order matters: protection and debt first, growth after.",
+        "hi": "बीच-बीच में पूरी तस्वीर देखें। क्रम मायने रखता है: पहले सुरक्षा और कर्ज़, फिर बढ़त।",
+        "mr": "मधूनमधून संपूर्ण चित्र पाहा. क्रम महत्त्वाचा: आधी सुरक्षा आणि कर्ज, मग वाढ."
+      }
+    },
+    {
+      "id": "budgeting",
+      "source": "budgeting",
+      "stage": "first-income",
+      "topic": "income",
+      "age": 36,
+      "place": "office",
+      "title": {
+        "en": "26 · Career growth",
+        "hi": "26 · करियर में बढ़त",
+        "mr": "26 · करिअरमधील वाढ"
+      },
+      "delta": {
+        "income": 18000,
+        "savings": 9000,
+        "confidence": 4
+      },
+      "guide": "pay-yourself"
+    },
+    {
+      "id": "moving-home",
+      "stage": "family-finances",
+      "topic": "family",
+      "age": 37,
+      "place": "home",
+      "title": {
+        "en": "27 · Moving to a new home",
+        "hi": "27 · नए घर में जाना",
+        "mr": "27 · नव्या घरात जाणे"
+      },
+      "setup": {
+        "en": "A new home offers space and a shorter commute. It also brings a deposit, moving costs and higher utilities.",
+        "hi": "नया घर जगह और छोटी यात्रा देता है। साथ में जमा राशि, शिफ़्टिंग और अधिक बिल भी आते हैं।",
+        "mr": "नवे घर जागा आणि कमी प्रवास देते. त्यासोबत ठेव, स्थलांतर खर्च आणि जास्त बिलेही येतात."
+      },
+      "action": {
+        "en": "Price the whole first year, not only the rent, and keep the emergency reserve intact.",
+        "hi": "सिर्फ़ किराया नहीं, पूरे पहले साल की लागत देखें और आपात बचत सुरक्षित रखें।",
+        "mr": "फक्त भाडे नाही, संपूर्ण पहिल्या वर्षाचा खर्च पाहा आणि आणीबाणी राखीव सुरक्षित ठेवा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 78000,
+        "needs": 57000
+      },
+      "delta": {
+        "cash": -30000,
+        "savings": 10000,
+        "resilience": 3
+      },
+      "guide": "true-cost",
+      "more": {
+        "en": "The new home's rent is ₹22,000. The deposit, moving and setup will cost about ₹95,000 in the first month.",
+        "hi": "नए घर का किराया ₹22,000 है। डिपॉज़िट, सामान और सेटअप में पहले महीने लगभग ₹95,000 लगेंगे।",
+        "mr": "नव्या घराचे भाडे ₹22,000 आहे. अनामत, सामान आणि मांडणी यात पहिल्या महिन्यात सुमारे ₹95,000 लागतील."
+      },
+      "question": {
+        "en": "How should Verena handle the move?",
+        "hi": "वेरेना घर बदलने को कैसे सँभाले?",
+        "mr": "वेरेनाने घर बदलणे कसे हाताळावे?"
+      },
+      "okay": {
+        "en": "Use most of the emergency fund for the deposit and refill it later.",
+        "hi": "डिपॉज़िट के लिए ज़्यादातर आपातकालीन फ़ंड लगाए और बाद में भरे।",
+        "mr": "अनामतीसाठी बहुतेक आपत्कालीन निधी वापरावा आणि नंतर भरावा."
+      },
+      "costly": {
+        "en": "Buy new furniture on no-cost EMIs to make the home perfect at once.",
+        "hi": "घर एक बार में सजाने के लिए नो-कॉस्ट EMI पर नया फ़र्नीचर ले।",
+        "mr": "घर एकदम सजवण्यासाठी नो-कॉस्ट EMI वर नवे फर्निचर घ्यावे."
+      },
+      "goodOutcome": {
+        "en": "She saves for the move over four months, keeps the emergency fund whole, and furnishes slowly. Year one costs exactly what she planned.",
+        "hi": "वह चार महीने में घर बदलने के लिए बचाती है, आपातकालीन फ़ंड पूरा रखती है, और धीरे-धीरे सामान लेती है। पहला साल ठीक योजना जितना पड़ता है।",
+        "mr": "ती चार महिन्यांत घर बदलण्यासाठी बचत करते, आपत्कालीन निधी पूर्ण ठेवते, आणि हळूहळू सामान घेते. पहिले वर्ष अगदी नियोजनाइतकेच पडते."
+      },
+      "okayOutcome": {
+        "en": "The move goes smoothly, but for eight months she has almost no cushion.",
+        "hi": "घर बदलना आसानी से होता है, पर आठ महीने उसके पास लगभग कोई सहारा नहीं रहता।",
+        "mr": "घर बदलणे सुरळीत होते, पण आठ महिने तिच्याकडे जवळजवळ आधार नसतो."
+      },
+      "costlyOutcome": {
+        "en": "Four EMIs now take ₹9,000 a month, and the 'no-cost' plans each carried a processing fee.",
+        "hi": "अब चार EMI महीने के ₹9,000 लेती हैं, और हर 'नो-कॉस्ट' योजना में प्रोसेसिंग फ़ीस थी।",
+        "mr": "आता चार EMI दरमहा ₹9,000 घेतात, आणि प्रत्येक 'नो-कॉस्ट' योजनेत प्रोसेसिंग फी होती."
+      },
+      "lesson": {
+        "en": "A move costs far more than the rent. Price the first year and keep your emergency fund separate from the deposit.",
+        "hi": "घर बदलना किराए से कहीं ज़्यादा महँगा है। पहले साल का खर्च जोड़ें और आपातकालीन फ़ंड को डिपॉज़िट से अलग रखें।",
+        "mr": "घर बदलणे भाड्यापेक्षा खूप महाग असते. पहिल्या वर्षाचा खर्च मोजा आणि आपत्कालीन निधी अनामतीपासून वेगळा ठेवा."
+      }
+    },
+    {
+      "id": "family-finances",
+      "source": "family-finances",
+      "stage": "family-finances",
+      "topic": "family",
+      "age": 38,
+      "place": "home",
+      "title": {
+        "en": "28 · Family finances",
+        "hi": "28 · परिवार के पैसे",
+        "mr": "28 · कुटुंबाचे पैसे"
+      },
+      "delta": {
+        "confidence": 5,
+        "resilience": 4
+      },
+      "guide": "family-money"
+    },
+    {
+      "id": "insurance-review",
+      "stage": "insurance",
+      "topic": "insurance",
+      "age": 39,
+      "place": "home",
+      "title": {
+        "en": "29 · Insurance review",
+        "hi": "29 · बीमा की समीक्षा",
+        "mr": "29 · विम्याचा आढावा"
+      },
+      "setup": {
+        "en": "Verena now shares a home and supports another person. The cover she bought at twenty-four may no longer match the risk.",
+        "hi": "वेरेना अब घर और ज़िम्मेदारी साझा करती है। चौबीस साल में लिया कवरेज अब जोखिम के लिए कम हो सकता है।",
+        "mr": "वेरेना आता घर आणि जबाबदारी वाटून घेते. चोवीसाव्या वर्षी घेतलेले कव्हर आता जोखमीला पुरेसे नसेल."
+      },
+      "action": {
+        "en": "Review coverage, exclusions, nominees and affordability against her changed responsibilities.",
+        "hi": "बदली ज़िम्मेदारियों के अनुसार कवरेज, अपवाद, नॉमिनी और वहनीयता जाँचें।",
+        "mr": "बदललेल्या जबाबदाऱ्यांनुसार कव्हर, अपवाद, नॉमिनी आणि परवड तपासा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "insurance": 15,
+        "resilience": 7,
+        "confidence": 4
+      },
+      "guide": "what-insurance",
+      "more": {
+        "en": "Her ₹3 lakh health cover was bought for one person. Her term life cover names her mother as nominee.",
+        "hi": "उसका ₹3 लाख का स्वास्थ्य बीमा एक व्यक्ति के लिए था। जीवन बीमे में नॉमिनी उसकी माँ हैं।",
+        "mr": "तिचा ₹3 लाखांचा आरोग्य विमा एका व्यक्तीसाठी घेतला होता. जीवन विम्यात नॉमिनी तिची आई आहे."
+      },
+      "question": {
+        "en": "What should Verena do about her insurance?",
+        "hi": "वेरेना अपने बीमे का क्या करे?",
+        "mr": "वेरेनाने तिच्या विम्याचे काय करावे?"
+      },
+      "okay": {
+        "en": "Keep the policies as they are; changing them is a lot of paperwork.",
+        "hi": "पॉलिसियाँ जैसी हैं वैसी रखे; बदलने में बहुत काग़ज़ी काम है।",
+        "mr": "पॉलिसी आहेत तशा ठेवाव्यात; बदलायला खूप कागदपत्रे लागतात."
+      },
+      "costly": {
+        "en": "Buy the policy an agent calls 'insurance plus investment' to cover everything at once.",
+        "hi": "एजेंट जिसे 'बीमा और निवेश' कहता है, वह पॉलिसी लेकर सब एक साथ कवर करे।",
+        "mr": "एजंट ज्याला 'विमा आणि गुंतवणूक' म्हणतो ती पॉलिसी घेऊन सगळे एकदम झाकावे."
+      },
+      "goodOutcome": {
+        "en": "She moves to a family floater with higher cover, raises her term cover to match her household's needs, and updates the nominee.",
+        "hi": "वह ज़्यादा कवर वाले फ़ैमिली फ़्लोटर पर जाती है, घर की ज़रूरत के हिसाब से जीवन बीमा बढ़ाती है, और नॉमिनी बदलती है।",
+        "mr": "ती जास्त संरक्षण असलेल्या फॅमिली फ्लोटरवर जाते, घराच्या गरजेनुसार जीवन विमा वाढवते, आणि नॉमिनी बदलते."
+      },
+      "okayOutcome": {
+        "en": "Nothing changes until a hospital stay for her partner is only partly covered.",
+        "hi": "कुछ नहीं बदलता, जब तक उसके साथी के अस्पताल का खर्च सिर्फ़ आंशिक रूप से कवर नहीं होता।",
+        "mr": "जोडीदाराचा रुग्णालयाचा खर्च फक्त अंशतः भरला जाईपर्यंत काहीच बदलत नाही."
+      },
+      "costlyOutcome": {
+        "en": "The premium is high, the cover is low, and leaving early would cost her most of what she paid.",
+        "hi": "प्रीमियम ज़्यादा है, कवर कम, और जल्दी छोड़ने पर दिया हुआ ज़्यादातर पैसा चला जाएगा।",
+        "mr": "प्रीमियम जास्त आहे, संरक्षण कमी, आणि लवकर सोडल्यास भरलेले बहुतेक पैसे जातील."
+      },
+      "lesson": {
+        "en": "Insurance needs change with life. Review cover and nominees after big events, and keep insurance separate from investing.",
+        "hi": "बीमे की ज़रूरत ज़िंदगी के साथ बदलती है। बड़ी घटनाओं के बाद कवर और नॉमिनी देखें, और बीमे को निवेश से अलग रखें।",
+        "mr": "विम्याची गरज आयुष्यासोबत बदलते. मोठ्या घटनांनंतर संरक्षण आणि नॉमिनी तपासा, आणि विमा गुंतवणुकीपासून वेगळा ठेवा."
+      }
+    },
+    {
+      "id": "taxes",
+      "stage": "first-income",
+      "topic": "tax",
+      "age": 39,
+      "place": "office",
+      "title": {
+        "en": "30 · Taxes",
+        "hi": "30 · कर",
+        "mr": "30 · कर"
+      },
+      "setup": {
+        "en": "Verena receives salary and tax documents with unfamiliar labels. She needs to understand what they record without guessing current rules.",
+        "hi": "वेरेना को अनजान शब्दों वाले वेतन और कर दस्तावेज़ मिलते हैं। उसे मौजूदा नियम गढ़े बिना उनका अर्थ समझना है।",
+        "mr": "वेरेनाला अनोळखी शब्दांचे पगार आणि कर कागद मिळतात. चालू नियमांचा अंदाज न लावता त्यांचा अर्थ समजून घ्यायचा आहे."
+      },
+      "action": {
+        "en": "Match each document to its purpose, keep records and verify current obligations on an official dated source.",
+        "hi": "हर दस्तावेज़ का उद्देश्य समझें, रिकॉर्ड रखें और मौजूदा दायित्व आधिकारिक दिनांकित स्रोत से जाँचें।",
+        "mr": "प्रत्येक कागदाचा उद्देश समजा, नोंदी ठेवा आणि चालू जबाबदाऱ्या अधिकृत दिनांकित स्रोतावर तपासा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 6,
+        "resilience": 3
+      },
+      "guide": "tax-basics",
+      "more": {
+        "en": "She has Form 16 from her employer, an AIS from the tax portal and bank interest certificates. A friend says she can skip filing.",
+        "hi": "उसके पास नियोक्ता का फ़ॉर्म 16, टैक्स पोर्टल का AIS और बैंक ब्याज प्रमाणपत्र हैं। एक दोस्त कहता है रिटर्न भरने की ज़रूरत नहीं।",
+        "mr": "तिच्याकडे नियोक्त्याचा फॉर्म 16, कर पोर्टलचा AIS आणि बँक व्याज प्रमाणपत्रे आहेत. एक मित्र म्हणतो विवरणपत्र भरायची गरज नाही."
+      },
+      "question": {
+        "en": "What should Verena do?",
+        "hi": "वेरेना क्या करे?",
+        "mr": "वेरेनाने काय करावे?"
+      },
+      "okay": {
+        "en": "Copy last year's return without checking what has changed.",
+        "hi": "बिना देखे कि क्या बदला, पिछले साल का रिटर्न कॉपी कर दे।",
+        "mr": "काय बदलले ते न पाहता मागच्या वर्षीचे विवरणपत्र कॉपी करावे."
+      },
+      "costly": {
+        "en": "Pay an agent ₹2,000 who promises a big refund.",
+        "hi": "बड़े रिफ़ंड का वादा करने वाले एजेंट को ₹2,000 दे।",
+        "mr": "मोठ्या रिफंडचे वचन देणाऱ्या एजंटला ₹2,000 द्यावे."
+      },
+      "goodOutcome": {
+        "en": "She matches Form 16 and her interest certificates with the AIS, checks this year's rules on the official portal, and files and verifies on time.",
+        "hi": "वह फ़ॉर्म 16 और ब्याज प्रमाणपत्र को AIS से मिलाती है, आधिकारिक पोर्टल पर इस साल के नियम देखती है, और समय पर रिटर्न भरकर सत्यापित करती है।",
+        "mr": "ती फॉर्म 16 आणि व्याज प्रमाणपत्रे AIS शी जुळवते, अधिकृत पोर्टलवर या वर्षीचे नियम पाहते, आणि वेळेत विवरणपत्र भरून पडताळते."
+      },
+      "okayOutcome": {
+        "en": "She leaves out her deposit interest, which has grown this year, and later gets a notice to explain it.",
+        "hi": "वह जमा का ब्याज छोड़ देती है, जो इस साल बढ़ा था, और बाद में समझाने का नोटिस आता है।",
+        "mr": "ती ठेवींचे व्याज सोडते, जे या वर्षी वाढले होते, आणि नंतर स्पष्टीकरणाची नोटीस येते."
+      },
+      "costlyOutcome": {
+        "en": "The agent claims deductions she does not have. The refund is reversed with interest and a notice.",
+        "hi": "एजेंट ऐसी कटौतियाँ दिखाता है जो उसकी हैं ही नहीं। रिफ़ंड ब्याज और नोटिस के साथ वापस हो जाता है।",
+        "mr": "एजंट तिच्याकडे नसलेल्या वजावटी दाखवतो. रिफंड व्याज आणि नोटिशीसह परत घेतला जातो."
+      },
+      "lesson": {
+        "en": "Know what each tax document records, match them, and check current rules on the official income tax portal. Never pay for an invented refund.",
+        "hi": "जानें हर टैक्स दस्तावेज़ क्या दर्ज करता है, उन्हें मिलाएँ, और मौजूदा नियम आधिकारिक इनकम टैक्स पोर्टल पर देखें। गढ़े हुए रिफ़ंड के लिए कभी पैसे न दें।",
+        "mr": "प्रत्येक कर दस्तऐवज काय नोंदवतो ते जाणा, ते जुळवा, आणि सध्याचे नियम अधिकृत इन्कम टॅक्स पोर्टलवर पाहा. बनावट रिफंडसाठी कधीच पैसे देऊ नका."
+      }
+    },
+    {
+      "id": "important-documents",
+      "stage": "family-finances",
+      "topic": "paperwork",
+      "age": 40,
+      "place": "home",
+      "title": {
+        "en": "31 · Important documents",
+        "hi": "31 · ज़रूरी दस्तावेज़",
+        "mr": "31 · महत्त्वाची कागदपत्रे"
+      },
+      "setup": {
+        "en": "A claim is delayed because a document is hard to find. Verena decides her financial papers need a simple system.",
+        "hi": "दस्तावेज़ न मिलने से क्लेम देर होता है। वेरेना तय करती है कि आर्थिक कागज़ों को आसान व्यवस्था चाहिए।",
+        "mr": "कागद न सापडल्याने दावा उशिरा होतो. वेरेना आर्थिक कागदांसाठी सोपी व्यवस्था ठरवते."
+      },
+      "action": {
+        "en": "Create a secure checklist for identity, bank, insurance, tax and investment records, with renewal dates.",
+        "hi": "पहचान, बैंक, बीमा, कर और निवेश रिकॉर्ड की सुरक्षित सूची बनाएँ, नवीनीकरण तारीखों सहित।",
+        "mr": "ओळख, बँक, विमा, कर आणि गुंतवणूक नोंदींची सुरक्षित यादी नूतनीकरण तारखांसह तयार करा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 5,
+        "resilience": 6
+      },
+      "guide": "payment-proof",
+      "more": {
+        "en": "The insurer wants her policy copy, an ID proof and a cancelled cheque. They are in three different bags and an old email account.",
+        "hi": "बीमा कंपनी पॉलिसी कॉपी, पहचान प्रमाण और रद्द चेक माँगती है। वे तीन अलग थैलों और एक पुराने ईमेल खाते में हैं।",
+        "mr": "विमा कंपनी पॉलिसीची प्रत, ओळखीचा पुरावा आणि रद्द धनादेश मागते. ते तीन वेगवेगळ्या पिशव्यांत आणि एका जुन्या ईमेल खात्यात आहेत."
+      },
+      "question": {
+        "en": "How should Verena organise her papers?",
+        "hi": "वेरेना अपने काग़ज़ कैसे सँभाले?",
+        "mr": "वेरेनाने तिची कागदपत्रे कशी व्यवस्थित करावीत?"
+      },
+      "okay": {
+        "en": "Find this one document now and sort the rest some other day.",
+        "hi": "अभी यह एक काग़ज़ ढूँढे और बाकी किसी और दिन।",
+        "mr": "आत्ता हा एक कागद शोधावा आणि बाकी दुसऱ्या दिवशी."
+      },
+      "costly": {
+        "en": "Send photos of everything to a family group chat so it is all in one place.",
+        "hi": "सब की फ़ोटो परिवार के ग्रुप चैट में भेज दे ताकि सब एक जगह रहे।",
+        "mr": "सगळ्याचे फोटो कुटुंबाच्या ग्रुप चॅटवर पाठवावे म्हणजे सगळे एका ठिकाणी राहील."
+      },
+      "goodOutcome": {
+        "en": "She makes one folder and one secure digital copy, with a checklist of every document and its renewal date, and tells her partner where it is.",
+        "hi": "वह एक फ़ोल्डर और एक सुरक्षित डिजिटल कॉपी बनाती है, हर काग़ज़ और नवीनीकरण की तारीख की सूची के साथ, और साथी को बताती है कहाँ है।",
+        "mr": "ती एक फोल्डर आणि एक सुरक्षित डिजिटल प्रत तयार करते, प्रत्येक कागद आणि नूतनीकरण तारखेच्या यादीसह, आणि जोडीदाराला ते कुठे आहे ते सांगते."
+      },
+      "okayOutcome": {
+        "en": "The claim goes through, but the next time a document is needed, the search starts again.",
+        "hi": "क्लेम पूरा हो जाता है, पर अगली बार कोई काग़ज़ चाहिए तो फिर से ढूँढना पड़ता है।",
+        "mr": "दावा पूर्ण होतो, पण पुढच्या वेळी कागद लागल्यावर पुन्हा शोधाशोध सुरू होते."
+      },
+      "costlyOutcome": {
+        "en": "Her PAN and Aadhaar images are now on several phones, and one of them is lost on a train.",
+        "hi": "उसके PAN और आधार की तस्वीरें अब कई फ़ोन में हैं, और उनमें से एक ट्रेन में खो जाता है।",
+        "mr": "तिच्या PAN आणि आधारच्या प्रतिमा आता अनेक फोनमध्ये आहेत, आणि त्यापैकी एक ट्रेनमध्ये हरवतो."
+      },
+      "lesson": {
+        "en": "Keep identity, bank, insurance, tax and investment papers in one known, secure place, with a list someone you trust can find.",
+        "hi": "पहचान, बैंक, बीमा, टैक्स और निवेश के काग़ज़ एक तय, सुरक्षित जगह रखें, ऐसी सूची के साथ जिसे कोई भरोसेमंद व्यक्ति ढूँढ सके।",
+        "mr": "ओळख, बँक, विमा, कर आणि गुंतवणुकीची कागदपत्रे एका ठरलेल्या, सुरक्षित ठिकाणी ठेवा, विश्वासू व्यक्तीला सापडेल अशा यादीसह."
+      }
+    },
+    {
+      "id": "government-form",
+      "stage": "family-finances",
+      "topic": "schemes",
+      "age": 40,
+      "place": "home",
+      "title": {
+        "en": "32 · The government form",
+        "hi": "32 · सरकारी फ़ॉर्म",
+        "mr": "32 · सरकारी अर्ज"
+      },
+      "setup": {
+        "en": "An application asks for identity, address, eligibility details and supporting documents. One unofficial agent offers to fill it for a fee.",
+        "hi": "आवेदन पहचान, पता, पात्रता और सहायक दस्तावेज़ माँगता है। एक अनौपचारिक एजेंट शुल्क लेकर भरने को कहता है।",
+        "mr": "अर्ज ओळख, पत्ता, पात्रता आणि जोड कागद मागतो. एक अनधिकृत एजंट पैसे घेऊन भरून देतो म्हणतो."
+      },
+      "action": {
+        "en": "Use the official form and instructions, identify every required document and leave no unexplained blank.",
+        "hi": "आधिकारिक फ़ॉर्म और निर्देश लें, हर ज़रूरी दस्तावेज़ पहचानें और कोई अस्पष्ट खाली जगह न छोड़ें।",
+        "mr": "अधिकृत अर्ज आणि सूचना वापरा, प्रत्येक आवश्यक कागद ओळखा आणि अस्पष्ट रिकामी जागा ठेवू नका."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "cash": 1500,
+        "confidence": 5
+      },
+      "guide": "govt-schemes",
+      "more": {
+        "en": "The agent wants ₹1,500 and her original documents for a week. Two boxes on the form are about income and category, which she is unsure of.",
+        "hi": "एजेंट ₹1,500 और एक हफ़्ते के लिए मूल काग़ज़ माँगता है। फ़ॉर्म के दो खाने आय और श्रेणी के बारे में हैं, जिनके बारे में वह पक्की नहीं।",
+        "mr": "एजंट ₹1,500 आणि आठवड्यासाठी मूळ कागदपत्रे मागतो. फॉर्मचे दोन रकाने उत्पन्न आणि प्रवर्गाबद्दल आहेत, ज्याबद्दल तिला खात्री नाही."
+      },
+      "question": {
+        "en": "How should Verena complete the form?",
+        "hi": "वेरेना फ़ॉर्म कैसे भरे?",
+        "mr": "वेरेनाने फॉर्म कसा भरावा?"
+      },
+      "okay": {
+        "en": "Fill in what she knows and leave the unclear boxes blank.",
+        "hi": "जो पता है वह भरे और अस्पष्ट खाने ख़ाली छोड़ दे।",
+        "mr": "माहीत असलेले भरावे आणि अस्पष्ट रकाने रिकामे सोडावेत."
+      },
+      "costly": {
+        "en": "Give the agent the fee and her original documents.",
+        "hi": "एजेंट को फ़ीस और मूल काग़ज़ दे दे।",
+        "mr": "एजंटला फी आणि मूळ कागदपत्रे द्यावीत."
+      },
+      "goodOutcome": {
+        "en": "She reads the official instructions, asks the help desk about the two boxes, attaches self-attested copies and keeps the acknowledgement.",
+        "hi": "वह आधिकारिक निर्देश पढ़ती है, दो खानों के बारे में हेल्प डेस्क से पूछती है, स्व-सत्यापित कॉपी लगाती है और पावती रखती है।",
+        "mr": "ती अधिकृत सूचना वाचते, दोन रकान्यांबद्दल मदत कक्षाला विचारते, स्वसाक्षांकित प्रती जोडते आणि पोचपावती ठेवते."
+      },
+      "okayOutcome": {
+        "en": "The form comes back a month later for the missing boxes, and the deadline is close.",
+        "hi": "ख़ाली खानों के लिए फ़ॉर्म एक महीने बाद लौट आता है, और आख़िरी तारीख पास है।",
+        "mr": "रिकाम्या रकान्यांसाठी फॉर्म महिन्यानंतर परत येतो, आणि अंतिम तारीख जवळ आहे."
+      },
+      "costlyOutcome": {
+        "en": "The agent disappears for two weeks. She has to apply for a duplicate certificate before she can try again.",
+        "hi": "एजेंट दो हफ़्ते के लिए ग़ायब हो जाता है। दोबारा कोशिश से पहले उसे डुप्लिकेट प्रमाणपत्र के लिए आवेदन करना पड़ता है।",
+        "mr": "एजंट दोन आठवडे गायब होतो. पुन्हा प्रयत्न करण्याआधी तिला डुप्लिकेट प्रमाणपत्रासाठी अर्ज करावा लागतो."
+      },
+      "lesson": {
+        "en": "Use the official form and instructions, ask the issuing office when unsure, attach copies not originals, and keep the acknowledgement.",
+        "hi": "आधिकारिक फ़ॉर्म और निर्देश इस्तेमाल करें, संदेह हो तो जारी करने वाले दफ़्तर से पूछें, मूल नहीं कॉपी लगाएँ, और पावती रखें।",
+        "mr": "अधिकृत फॉर्म आणि सूचना वापरा, शंका असल्यास देणाऱ्या कार्यालयाला विचारा, मूळ नाही तर प्रती जोडा, आणि पोचपावती ठेवा."
+      }
+    },
+    {
+      "id": "kyc",
+      "stage": "banking",
+      "topic": "paperwork",
+      "age": 41,
+      "place": "bank",
+      "title": {
+        "en": "33 · KYC",
+        "hi": "33 · KYC",
+        "mr": "33 · KYC"
+      },
+      "setup": {
+        "en": "A financial institution asks Verena to update identity and address details. A message link looks convenient but the domain is unfamiliar.",
+        "hi": "संस्था वेरेना से पहचान और पते की जानकारी अपडेट करने को कहती है। संदेश का लिंक आसान है, पर डोमेन अनजान है।",
+        "mr": "संस्था वेरेनाला ओळख आणि पत्ता अद्ययावत करायला सांगते. संदेशातील लिंक सोपी वाटते, पण डोमेन अनोळखी आहे."
+      },
+      "action": {
+        "en": "Use the institution's official app, site or branch and share only the documents that the verified process requests.",
+        "hi": "संस्था का आधिकारिक ऐप, साइट या शाखा इस्तेमाल करें और सत्यापित प्रक्रिया में माँगे दस्तावेज़ ही दें।",
+        "mr": "संस्थेचे अधिकृत अॅप, साइट किंवा शाखा वापरा आणि पडताळलेल्या प्रक्रियेत मागितलेले कागदच द्या."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 5,
+        "resilience": 4
+      },
+      "guide": "kyc-basics",
+      "more": {
+        "en": "The SMS link opens a page that looks like her bank and asks for her card number and an OTP to 'complete re-KYC'.",
+        "hi": "SMS का लिंक बैंक जैसा दिखने वाला पेज खोलता है और 'री-KYC पूरा करने' के लिए कार्ड नंबर और OTP माँगता है।",
+        "mr": "SMS ची लिंक बँकेसारखे दिसणारे पान उघडते आणि 're-KYC पूर्ण करण्यासाठी' कार्ड क्रमांक आणि OTP मागते."
+      },
+      "question": {
+        "en": "How should Verena update her KYC?",
+        "hi": "वेरेना अपना KYC कैसे अपडेट करे?",
+        "mr": "वेरेनाने तिचे KYC कसे अद्ययावत करावे?"
+      },
+      "okay": {
+        "en": "Ignore all KYC requests from now on, since they might be scams.",
+        "hi": "अब से सभी KYC अनुरोध अनदेखा करे, क्योंकि वे ठगी हो सकते हैं।",
+        "mr": "यापुढे सर्व KYC विनंत्या दुर्लक्षित कराव्यात, कारण त्या फसवणूक असू शकतात."
+      },
+      "costly": {
+        "en": "Use the link; it is quicker than visiting the branch.",
+        "hi": "लिंक इस्तेमाल करे; शाखा जाने से जल्दी है।",
+        "mr": "लिंक वापरावी; शाखेत जाण्यापेक्षा जलद आहे."
+      },
+      "goodOutcome": {
+        "en": "She opens the bank's own app, sees a genuine re-KYC request there, and updates her address with the right document. No OTP is shared with anyone.",
+        "hi": "वह बैंक का अपना ऐप खोलती है, वहाँ असली री-KYC अनुरोध देखती है, और सही दस्तावेज़ से पता अपडेट करती है। किसी को OTP नहीं दिया जाता।",
+        "mr": "ती बँकेचे स्वतःचे अ‍ॅप उघडते, तिथे खरी re-KYC विनंती पाहते, आणि योग्य कागदपत्राने पत्ता अद्ययावत करते. कोणालाही OTP दिला जात नाही."
+      },
+      "okayOutcome": {
+        "en": "A real request goes unanswered, and two months later her account is restricted until she visits the branch.",
+        "hi": "असली अनुरोध का जवाब नहीं जाता, और दो महीने बाद शाखा जाने तक उसका खाता सीमित कर दिया जाता है।",
+        "mr": "खऱ्या विनंतीला उत्तर जात नाही, आणि दोन महिन्यांनी शाखेत जाईपर्यंत तिचे खाते मर्यादित केले जाते."
+      },
+      "costlyOutcome": {
+        "en": "The page captures her card details and OTP. ₹24,000 is spent before she can block the card.",
+        "hi": "पेज उसके कार्ड का विवरण और OTP ले लेता है। कार्ड ब्लॉक करने से पहले ₹24,000 ख़र्च हो जाते हैं।",
+        "mr": "पान तिच्या कार्डचा तपशील आणि OTP घेते. कार्ड ब्लॉक करण्याआधी ₹24,000 खर्च होतात."
+      },
+      "lesson": {
+        "en": "KYC is real and required, but do it only through the bank's app, website or branch. A KYC link that asks for an OTP is a scam.",
+        "hi": "KYC असली और ज़रूरी है, पर इसे सिर्फ़ बैंक के ऐप, वेबसाइट या शाखा से करें। OTP माँगने वाला KYC लिंक ठगी है।",
+        "mr": "KYC खरे आणि आवश्यक आहे, पण ते फक्त बँकेच्या अ‍ॅप, वेबसाइट किंवा शाखेतून करा. OTP मागणारी KYC लिंक ही फसवणूक आहे."
+      }
+    },
+    {
+      "id": "gold-loan",
+      "stage": "borrowing",
+      "topic": "borrowing",
+      "age": 41,
+      "place": "bank",
+      "title": {
+        "en": "34 · A gold-loan decision",
+        "hi": "34 · गोल्ड लोन का फ़ैसला",
+        "mr": "34 · सोने कर्जाचा निर्णय"
+      },
+      "setup": {
+        "en": "A family expense makes a gold loan look fast. Verena must weigh the lower secured rate against the risk of losing the collateral.",
+        "hi": "परिवार के खर्च के लिए गोल्ड लोन तेज़ लगता है। वेरेना को कम सुरक्षित दर और गिरवी खोने के जोखिम को तौलना है।",
+        "mr": "कुटुंबाच्या खर्चासाठी सोने कर्ज जलद वाटते. वेरेनाला कमी सुरक्षित दर आणि तारण गमावण्याची जोखीम तोलायची आहे."
+      },
+      "action": {
+        "en": "Borrow only an affordable amount after comparing total cost, repayment plan and the default process in writing.",
+        "hi": "कुल लागत, भुगतान योजना और डिफ़ॉल्ट प्रक्रिया लिखित में देखकर ही वहनीय रकम लें।",
+        "mr": "एकूण खर्च, परतफेड योजना आणि थकबाकी प्रक्रिया लेखी पाहूनच परवडणारी रक्कम घ्या."
+      },
+      "sim": {
+        "kind": "emi",
+        "principal": 250000,
+        "rate": 12,
+        "months": [
+          12,
+          24,
+          36
+        ]
+      },
+      "delta": {
+        "debt": 80000,
+        "cash": 80000,
+        "confidence": 4,
+        "resilience": -2
+      },
+      "guide": "reading-agreement",
+      "more": {
+        "en": "She needs ₹80,000 for six months. Her mother's gold could secure it at a lower rate than a personal loan.",
+        "hi": "उसे छह महीने के लिए ₹80,000 चाहिए। माँ का सोना पर्सनल लोन से कम दर पर गिरवी रखा जा सकता है।",
+        "mr": "तिला सहा महिन्यांसाठी ₹80,000 लागतात. आईचे सोने वैयक्तिक कर्जापेक्षा कमी दराने तारण ठेवता येते."
+      },
+      "question": {
+        "en": "Should Verena take the gold loan?",
+        "hi": "क्या वेरेना गोल्ड लोन ले?",
+        "mr": "वेरेनाने सोने कर्ज घ्यावे का?"
+      },
+      "okay": {
+        "en": "Take the maximum the lender offers, in case she needs more later.",
+        "hi": "कर्ज़दाता जितना अधिकतम दे, वह ले, शायद बाद में ज़्यादा चाहिए।",
+        "mr": "कर्जदार देईल तितके जास्तीत जास्त घ्यावे, कदाचित नंतर जास्त लागेल."
+      },
+      "costly": {
+        "en": "Use the first lender she finds, without reading the auction terms.",
+        "hi": "नीलामी की शर्तें पढ़े बिना पहला मिला कर्ज़दाता चुन ले।",
+        "mr": "लिलावाच्या अटी न वाचता पहिला मिळालेला कर्जदार निवडावा."
+      },
+      "goodOutcome": {
+        "en": "She borrows only ₹80,000 from a regulated lender, reads the repayment and auction terms, and plans ₹14,000 a month to clear it in six months.",
+        "hi": "वह नियंत्रित कर्ज़दाता से सिर्फ़ ₹80,000 लेती है, चुकौती और नीलामी की शर्तें पढ़ती है, और छह महीने में चुकाने के लिए हर महीने ₹14,000 की योजना बनाती है।",
+        "mr": "ती नियंत्रित कर्जदाराकडून फक्त ₹80,000 घेते, परतफेड आणि लिलावाच्या अटी वाचते, आणि सहा महिन्यांत फेडण्यासाठी दरमहा ₹14,000 चे नियोजन करते."
+      },
+      "okayOutcome": {
+        "en": "The extra money gets spent. Repaying ₹1.3 lakh takes a year, and the interest keeps adding up.",
+        "hi": "अतिरिक्त पैसा ख़र्च हो जाता है। ₹1.3 लाख चुकाने में एक साल लगता है, और ब्याज बढ़ता रहता है।",
+        "mr": "जास्तीचे पैसे खर्च होतात. ₹1.3 लाख फेडायला वर्ष लागते, आणि व्याज वाढत राहते."
+      },
+      "costlyOutcome": {
+        "en": "She misses two payments. The lender sends an auction notice, and the family gold is at risk.",
+        "hi": "वह दो भुगतान चूक जाती है। कर्ज़दाता नीलामी का नोटिस भेजता है, और परिवार का सोना ख़तरे में है।",
+        "mr": "ती दोन देयके चुकवते. कर्जदार लिलावाची नोटीस पाठवतो, आणि कुटुंबाचे सोने धोक्यात येते."
+      },
+      "lesson": {
+        "en": "A secured loan is cheaper because something valuable is at stake. Borrow only what you need from a regulated lender, and know the default process.",
+        "hi": "गिरवी वाला कर्ज़ सस्ता इसलिए है क्योंकि कुछ क़ीमती दाँव पर है। नियंत्रित कर्ज़दाता से सिर्फ़ ज़रूरत भर लें, और चूक होने पर क्या होता है जानें।",
+        "mr": "तारण कर्ज स्वस्त असते कारण काहीतरी मौल्यवान पणाला लागलेले असते. नियंत्रित कर्जदाराकडून फक्त गरजेइतके घ्या, आणि चूक झाल्यास काय होते ते जाणा."
+      }
+    },
+    {
+      "id": "children",
+      "source": "children",
+      "stage": "children",
+      "topic": "family",
+      "age": 42,
+      "place": "home",
+      "title": {
+        "en": "35 · Having a child",
+        "hi": "35 · बच्चे का जन्म",
+        "mr": "35 · मूल होणे"
+      },
+      "delta": {
+        "dependents": 1,
+        "resilience": 3
+      },
+      "guide": "children-planning"
+    },
+    {
+      "id": "long-term-planning",
+      "source": "long-term-planning",
+      "stage": "long-term-planning",
+      "topic": "family",
+      "age": 44,
+      "place": "home",
+      "title": {
+        "en": "36 · Education planning",
+        "hi": "36 · शिक्षा की योजना",
+        "mr": "36 · शिक्षणाचे नियोजन"
+      },
+      "delta": {
+        "investments": 120000,
+        "confidence": 4
+      },
+      "guide": "children-planning"
+    },
+    {
+      "id": "family-emergency",
+      "stage": "financial-security",
+      "topic": "family",
+      "age": 46,
+      "place": "home",
+      "title": {
+        "en": "37 · A family emergency",
+        "hi": "37 · परिवार की आपात स्थिति",
+        "mr": "37 · कुटुंबातील आणीबाणी"
+      },
+      "setup": {
+        "en": "A parent needs urgent support while Verena is rebuilding savings. Care, cash flow and long-term stability pull in different directions.",
+        "hi": "माता-पिता को तुरंत मदद चाहिए, जबकि वेरेना बचत फिर बना रही है। देखभाल, नकदी और स्थिरता अलग दिशाओं में खींचते हैं।",
+        "mr": "पालकांना तातडीची मदत हवी आहे आणि वेरेना बचत पुन्हा उभी करत आहे. काळजी, रोख प्रवाह आणि स्थैर्य वेगवेगळ्या दिशांना ओढतात."
+      },
+      "action": {
+        "en": "Define the urgent need, share responsibility where possible and protect the household's essential floor.",
+        "hi": "तत्काल ज़रूरत तय करें, जहाँ संभव हो ज़िम्मेदारी बाँटें और घर की मूल आवश्यकताएँ बचाएँ।",
+        "mr": "तातडीची गरज ठरवा, शक्य तिथे जबाबदारी वाटा आणि घराच्या मूलभूत गरजा जपा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 92000,
+        "needs": 72000
+      },
+      "delta": {
+        "emergency": -12000,
+        "cash": -8000,
+        "resilience": 6,
+        "confidence": 3
+      },
+      "guide": "family-money",
+      "more": {
+        "en": "Her father needs care that will cost ₹60,000 over three months. Her brother can help, but he has not been asked yet.",
+        "hi": "उसके पिता को तीन महीने की देखभाल चाहिए जिसकी लागत ₹60,000 है। भाई मदद कर सकता है, पर अभी पूछा नहीं गया।",
+        "mr": "तिच्या वडिलांना तीन महिन्यांची काळजी लागते जिचा खर्च ₹60,000 आहे. भाऊ मदत करू शकतो, पण अजून विचारलेले नाही."
+      },
+      "question": {
+        "en": "How should Verena handle this?",
+        "hi": "वेरेना इसे कैसे सँभाले?",
+        "mr": "वेरेनाने हे कसे हाताळावे?"
+      },
+      "okay": {
+        "en": "Pay everything herself so the family does not argue.",
+        "hi": "सब कुछ ख़ुद दे ताकि परिवार में बहस न हो।",
+        "mr": "सगळे स्वतः भरावे म्हणजे कुटुंबात वाद होणार नाहीत."
+      },
+      "costly": {
+        "en": "Break her child's education savings to cover it at once.",
+        "hi": "तुरंत चुकाने के लिए बच्चे की शिक्षा की बचत तोड़ दे।",
+        "mr": "लगेच भरण्यासाठी मुलाच्या शिक्षणाची बचत मोडावी."
+      },
+      "goodOutcome": {
+        "en": "She checks what her father's insurance covers, splits the rest with her brother, and pays her share from her emergency fund.",
+        "hi": "वह देखती है पिता का बीमा क्या कवर करता है, बाकी भाई के साथ बाँटती है, और अपना हिस्सा आपातकालीन फ़ंड से देती है।",
+        "mr": "ती वडिलांचा विमा काय भरतो ते पाहते, उरलेले भावासोबत वाटून घेते, आणि तिचा वाटा आपत्कालीन निधीतून भरते."
+      },
+      "okayOutcome": {
+        "en": "Her father gets the care he needs, but her own fund is empty and resentment builds quietly.",
+        "hi": "पिता को ज़रूरी देखभाल मिलती है, पर उसका अपना फ़ंड ख़ाली है और मन में नाराज़गी चुपचाप बढ़ती है।",
+        "mr": "वडिलांना आवश्यक काळजी मिळते, पण तिचा स्वतःचा निधी रिकामा आहे आणि मनात नाराजी शांतपणे वाढते."
+      },
+      "costlyOutcome": {
+        "en": "The education fund loses years of growth, and restarting it now needs much larger monthly amounts.",
+        "hi": "शिक्षा फ़ंड की सालों की बढ़त चली जाती है, और अब फिर शुरू करने के लिए महीने की कहीं बड़ी रकम चाहिए।",
+        "mr": "शिक्षण निधीची वर्षानुवर्षांची वाढ जाते, आणि आता पुन्हा सुरू करायला खूप मोठी मासिक रक्कम लागते."
+      },
+      "lesson": {
+        "en": "In a family emergency, check insurance first, share the load openly, and protect long-term goals from short-term panic.",
+        "hi": "पारिवारिक आपात स्थिति में पहले बीमा देखें, बोझ खुलकर बाँटें, और लंबे लक्ष्यों को तुरंत की घबराहट से बचाएँ।",
+        "mr": "कौटुंबिक आपत्कालीन स्थितीत आधी विमा पाहा, भार मोकळेपणाने वाटून घ्या, आणि दीर्घकालीन उद्दिष्टे तात्कालिक घबराटीपासून वाचवा."
+      }
+    },
+    {
+      "id": "helping-relative",
+      "stage": "family-finances",
+      "topic": "family",
+      "age": 47,
+      "place": "cafe",
+      "title": {
+        "en": "38 · Helping a relative",
+        "hi": "38 · रिश्तेदार की मदद",
+        "mr": "38 · नातेवाईकाला मदत"
+      },
+      "setup": {
+        "en": "A relative asks Verena for money and promises to return it soon. She wants to help without risking rent or the relationship.",
+        "hi": "रिश्तेदार वेरेना से पैसे माँगता है और जल्दी लौटाने का वादा करता है। वह किराया या रिश्ता जोखिम में डाले बिना मदद करना चाहती है।",
+        "mr": "नातेवाईक वेरेनाकडे पैसे मागतो आणि लवकर परत देण्याचे म्हणतो. भाडे किंवा नाते धोक्यात न आणता तिला मदत करायची आहे."
+      },
+      "action": {
+        "en": "Offer only what she can afford to lose, agree the terms clearly and keep essential money separate.",
+        "hi": "उतना ही दें जितना खो सकें, शर्तें साफ़ करें और ज़रूरी पैसा अलग रखें।",
+        "mr": "गमावणे परवडेल तेवढेच द्या, अटी स्पष्ट करा आणि आवश्यक पैसे वेगळे ठेवा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 92000,
+        "needs": 70000
+      },
+      "delta": {
+        "cash": -10000,
+        "confidence": 5,
+        "resilience": 3
+      },
+      "guide": "lending-friends",
+      "more": {
+        "en": "Her cousin wants ₹50,000 for a business idea and says he will repay in three months. He has not repaid an earlier ₹10,000.",
+        "hi": "उसका चचेरा भाई कारोबार के लिए ₹50,000 चाहता है और तीन महीने में लौटाने को कहता है। उसने पिछले ₹10,000 अभी तक नहीं लौटाए।",
+        "mr": "तिचा चुलत भाऊ व्यवसायासाठी ₹50,000 मागतो आणि तीन महिन्यांत परत करू म्हणतो. त्याने आधीचे ₹10,000 अजून परत केलेले नाहीत."
+      },
+      "question": {
+        "en": "How should Verena respond?",
+        "hi": "वेरेना क्या जवाब दे?",
+        "mr": "वेरेनाने काय उत्तर द्यावे?"
+      },
+      "okay": {
+        "en": "Lend the full amount and hope he repays this time.",
+        "hi": "पूरी रकम उधार दे और उम्मीद करे कि इस बार लौटाएगा।",
+        "mr": "संपूर्ण रक्कम उसनी द्यावी आणि या वेळी परत करेल अशी आशा करावी."
+      },
+      "costly": {
+        "en": "Take a loan in her own name to lend him the money.",
+        "hi": "उसे पैसे देने के लिए अपने नाम पर कर्ज़ ले।",
+        "mr": "त्याला पैसे देण्यासाठी स्वतःच्या नावावर कर्ज घ्यावे."
+      },
+      "goodOutcome": {
+        "en": "She gives ₹10,000 that she can afford to lose, says so kindly and clearly, and helps him write a simple plan. The relationship stays intact.",
+        "hi": "वह ₹10,000 देती है जो खोना वह सह सकती है, यह प्यार से और साफ़ कहती है, और उसे सादी योजना लिखने में मदद करती है। रिश्ता बना रहता है।",
+        "mr": "ती ₹10,000 देते जे गमावणे तिला परवडते, हे प्रेमाने आणि स्पष्टपणे सांगते, आणि त्याला साधी योजना लिहायला मदत करते. नाते टिकून राहते."
+      },
+      "okayOutcome": {
+        "en": "Three months pass with no repayment, and her savings goal slips by half a year.",
+        "hi": "तीन महीने बीत जाते, कोई वापसी नहीं, और उसका बचत लक्ष्य आधा साल पीछे चला जाता है।",
+        "mr": "तीन महिने जातात, परतफेड नाही, आणि तिचे बचत लक्ष्य अर्धे वर्ष मागे जाते."
+      },
+      "costlyOutcome": {
+        "en": "The business fails. She is left repaying a loan for money she will never see again.",
+        "hi": "कारोबार डूब जाता है। उसे ऐसे पैसे का कर्ज़ चुकाना पड़ता है जो कभी वापस नहीं आएगा।",
+        "mr": "व्यवसाय बुडतो. कधीच परत न येणाऱ्या पैशांचे कर्ज तिला फेडावे लागते."
+      },
+      "lesson": {
+        "en": "Help family with what you can afford to lose, be clear about terms, and never borrow to lend.",
+        "hi": "परिवार की मदद उतनी करें जितना खोना सह सकें, शर्तें साफ़ रखें, और उधार देने के लिए कभी कर्ज़ न लें।",
+        "mr": "कुटुंबाला परवडेल तितकीच मदत करा, अटी स्पष्ट ठेवा, आणि उसने देण्यासाठी कधीच कर्ज घेऊ नका."
+      }
+    },
+    {
+      "id": "long-term-investing",
+      "stage": "long-term-planning",
+      "topic": "investing",
+      "age": 49,
+      "place": "office",
+      "title": {
+        "en": "39 · Long-term investing",
+        "hi": "39 · दीर्घकालिक निवेश",
+        "mr": "39 · दीर्घकालीन गुंतवणूक"
+      },
+      "setup": {
+        "en": "With steadier finances, Verena can invest regularly. She still needs to balance growth, volatility, time and diversification.",
+        "hi": "स्थिर वित्त के साथ वेरेना नियमित निवेश कर सकती है। उसे बढ़त, उतार-चढ़ाव, समय और विविधता संतुलित करनी है।",
+        "mr": "स्थिर आर्थिक स्थितीत वेरेना नियमित गुंतवणूक करू शकते. वाढ, चढउतार, वेळ आणि विविधता संतुलित करावी लागते."
+      },
+      "action": {
+        "en": "Use a diversified, consistent educational plan matched to the long horizon and her ability to tolerate falls.",
+        "hi": "लंबे समय और गिरावट सहने की क्षमता के अनुसार विविध, नियमित शैक्षिक योजना बनाएँ।",
+        "mr": "दीर्घ कालावधी आणि घसरण सहन करण्याच्या क्षमतेनुसार विविध, नियमित शैक्षणिक योजना वापरा."
+      },
+      "sim": {
+        "kind": "grow",
+        "monthly": 12000,
+        "rate": 7,
+        "years": [
+          5,
+          10,
+          15
+        ]
+      },
+      "delta": {
+        "investments": 144000,
+        "confidence": 5,
+        "resilience": 5
+      },
+      "guide": "risk-diversify",
+      "more": {
+        "en": "She can now invest ₹12,000 a month for at least fifteen years. A colleague is putting everything into one 'hot' sector.",
+        "hi": "अब वह कम से कम पंद्रह साल तक हर महीने ₹12,000 निवेश कर सकती है। एक साथी सब कुछ एक 'चर्चित' सेक्टर में डाल रहा है।",
+        "mr": "आता ती किमान पंधरा वर्षे दरमहा ₹12,000 गुंतवू शकते. एक सहकारी सगळे एका 'चर्चेतल्या' क्षेत्रात टाकत आहे."
+      },
+      "question": {
+        "en": "How should Verena invest?",
+        "hi": "वेरेना कैसे निवेश करे?",
+        "mr": "वेरेनाने गुंतवणूक कशी करावी?"
+      },
+      "okay": {
+        "en": "Invest only when the market seems to be doing well.",
+        "hi": "सिर्फ़ तब निवेश करे जब बाज़ार अच्छा चलता दिखे।",
+        "mr": "बाजार चांगला चालतो असे वाटेल तेव्हाच गुंतवणूक करावी."
+      },
+      "costly": {
+        "en": "Follow her colleague into the one sector everyone is talking about.",
+        "hi": "साथी के पीछे उस एक सेक्टर में जाए जिसकी सब बात कर रहे हैं।",
+        "mr": "सगळे ज्याबद्दल बोलतात त्या एकाच क्षेत्रात सहकाऱ्याच्या मागे जावे."
+      },
+      "goodOutcome": {
+        "en": "She invests the same amount every month in a diversified mix suited to fifteen years, and reviews it once a year. Over time, the ups and downs even out.",
+        "hi": "वह हर महीने उतनी ही रकम पंद्रह साल के हिसाब से विविध निवेश में लगाती है, और साल में एक बार देखती है। समय के साथ उतार-चढ़ाव बराबर हो जाते हैं।",
+        "mr": "ती दरमहा तितकीच रक्कम पंधरा वर्षांसाठी योग्य वैविध्यपूर्ण गुंतवणुकीत टाकते, आणि वर्षातून एकदा आढावा घेते. काळानुसार चढउतार समतोल होतात."
+      },
+      "okayOutcome": {
+        "en": "She keeps waiting for the right moment and invests in only five months of the first year.",
+        "hi": "वह सही मौके का इंतज़ार करती रहती है और पहले साल सिर्फ़ पाँच महीने निवेश करती है।",
+        "mr": "ती योग्य वेळेची वाट पाहत राहते आणि पहिल्या वर्षी फक्त पाच महिने गुंतवणूक करते."
+      },
+      "costlyOutcome": {
+        "en": "The sector falls 40% in a year. With no other holdings, her whole plan falls with it.",
+        "hi": "सेक्टर एक साल में 40% गिर जाता है। कोई और निवेश न होने से उसकी पूरी योजना साथ गिरती है।",
+        "mr": "क्षेत्र वर्षात 40% घसरते. दुसरी गुंतवणूक नसल्याने तिची पूर्ण योजना त्यासोबत घसरते."
+      },
+      "lesson": {
+        "en": "For long-term goals, consistency and diversification matter more than timing or tips. This is an educational example, not individual advice.",
+        "hi": "लंबे लक्ष्यों के लिए नियमितता और विविधता, सही समय या टिप्स से ज़्यादा मायने रखती है। यह शैक्षिक उदाहरण है, व्यक्तिगत सलाह नहीं।",
+        "mr": "दीर्घकालीन उद्दिष्टांसाठी सातत्य आणि वैविध्य हे वेळ साधण्यापेक्षा किंवा टिप्सपेक्षा जास्त महत्त्वाचे आहे. हे शैक्षणिक उदाहरण आहे, वैयक्तिक सल्ला नाही."
+      }
+    },
+    {
+      "id": "security-review",
+      "stage": "financial-security",
+      "topic": "saving",
+      "age": 51,
+      "place": "home",
+      "title": {
+        "en": "40 · Financial security",
+        "hi": "40 · आर्थिक सुरक्षा",
+        "mr": "40 · आर्थिक सुरक्षितता"
+      },
+      "setup": {
+        "en": "Verena now has emergency savings, manageable debt, insurance, investments and organised documents. The pieces finally support one another.",
+        "hi": "अब वेरेना के पास आपात बचत, संभालने योग्य कर्ज़, बीमा, निवेश और व्यवस्थित दस्तावेज़ हैं।",
+        "mr": "आता वेरेनाकडे आणीबाणी बचत, सांभाळता येणारे कर्ज, विमा, गुंतवणूक आणि नीट कागदपत्रे आहेत."
+      },
+      "action": {
+        "en": "Stress-test the plan against one lost income, one urgent expense and one major goal.",
+        "hi": "योजना को आय रुकने, अचानक खर्च और बड़े लक्ष्य के सामने परखें।",
+        "mr": "योजना एक उत्पन्न थांबणे, तातडीचा खर्च आणि मोठे लक्ष्य यांच्यासमोर तपासा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "emergency": 30000,
+        "debt": -30000,
+        "insurance": 8,
+        "resilience": 10
+      },
+      "guide": "emergency-fund",
+      "more": {
+        "en": "Her fund covers six months, the loan is nearly cleared, and insurance and investments are in place. Is it strong enough?",
+        "hi": "उसका फ़ंड छह महीने का खर्च चलाता है, लोन लगभग चुक गया, बीमा और निवेश तैयार हैं। क्या यह काफ़ी मज़बूत है?",
+        "mr": "तिचा निधी सहा महिन्यांचा खर्च भागवतो, कर्ज जवळजवळ फिटले, विमा आणि गुंतवणूक आहे. हे पुरेसे भक्कम आहे का?"
+      },
+      "question": {
+        "en": "How should Verena check her plan?",
+        "hi": "वेरेना अपनी योजना कैसे जाँचे?",
+        "mr": "वेरेनाने तिची योजना कशी तपासावी?"
+      },
+      "okay": {
+        "en": "Assume it is fine because every box is ticked.",
+        "hi": "मान ले सब ठीक है क्योंकि हर खाने में टिक है।",
+        "mr": "प्रत्येक रकान्यात खूण आहे म्हणून सगळे ठीक आहे असे मानावे."
+      },
+      "costly": {
+        "en": "Stop reviewing altogether; the hard part is over.",
+        "hi": "समीक्षा करना ही बंद कर दे; मुश्किल हिस्सा ख़त्म।",
+        "mr": "आढावा घेणेच थांबवावे; कठीण भाग संपला."
+      },
+      "goodOutcome": {
+        "en": "She tests three what-ifs: losing one income, a big hospital bill and her child's fees rising. Two pass; she raises her health cover to fix the third.",
+        "hi": "वह तीन 'अगर' जाँचती है: एक आय जाना, बड़ा अस्पताल बिल और बच्चे की फ़ीस बढ़ना। दो पास; तीसरे के लिए वह स्वास्थ्य कवर बढ़ाती है।",
+        "mr": "ती तीन 'जर' तपासते: एक उत्पन्न जाणे, मोठे रुग्णालय बिल आणि मुलाची फी वाढणे. दोन उत्तीर्ण; तिसऱ्यासाठी ती आरोग्य संरक्षण वाढवते."
+      },
+      "okayOutcome": {
+        "en": "A gap in her health cover goes unnoticed until a long hospital stay shows it.",
+        "hi": "स्वास्थ्य कवर की एक कमी तब तक नहीं दिखती जब तक लंबी अस्पताल भर्ती उसे सामने न ला दे।",
+        "mr": "आरोग्य संरक्षणातील एक कमतरता दीर्घ रुग्णालय मुक्कामापर्यंत लक्षात येत नाही."
+      },
+      "costlyOutcome": {
+        "en": "Over five years her expenses grow, but her cover and fund do not. The plan quietly weakens.",
+        "hi": "पाँच साल में खर्च बढ़ते हैं, पर कवर और फ़ंड नहीं। योजना चुपचाप कमज़ोर हो जाती है।",
+        "mr": "पाच वर्षांत खर्च वाढतात, पण संरक्षण आणि निधी नाही. योजना शांतपणे कमकुवत होते."
+      },
+      "lesson": {
+        "en": "Financial security is tested, not assumed. Run 'what if' checks every year as life changes.",
+        "hi": "आर्थिक सुरक्षा मान नहीं ली जाती, जाँची जाती है। ज़िंदगी बदलने के साथ हर साल 'अगर' वाली जाँच करें।",
+        "mr": "आर्थिक सुरक्षा गृहीत धरली जात नाही, तपासली जाते. आयुष्य बदलताना दरवर्षी 'जर' तपासणी करा."
+      }
+    },
+    {
+      "id": "thinking-retirement",
+      "stage": "retirement",
+      "topic": "retirement",
+      "age": 53,
+      "place": "garden",
+      "title": {
+        "en": "41 · Thinking about retirement",
+        "hi": "41 · सेवानिवृत्ति के बारे में सोचना",
+        "mr": "41 · निवृत्तीचा विचार"
+      },
+      "setup": {
+        "en": "Retirement is no longer abstract. Verena lists future expenses, possible income sources and the years her money may need to last.",
+        "hi": "सेवानिवृत्ति अब दूर की बात नहीं। वेरेना भविष्य के खर्च, आय स्रोत और धन चलने के वर्षों की सूची बनाती है।",
+        "mr": "निवृत्ती आता दूरची गोष्ट नाही. वेरेना भविष्यातील खर्च, उत्पन्नाचे स्रोत आणि पैसे किती वर्षे पुरावे लागतील याची यादी करते."
+      },
+      "action": {
+        "en": "Build from future expenses and several income sources, using cautious assumptions rather than one perfect number.",
+        "hi": "एक सही संख्या के बजाय सावधान मान्यताओं से भविष्य खर्च और कई आय स्रोत जोड़ें।",
+        "mr": "एका परिपूर्ण आकड्याऐवजी सावध गृहितकांनी भविष्यातील खर्च आणि अनेक उत्पन्न स्रोत जोडा."
+      },
+      "sim": {
+        "kind": "grow",
+        "monthly": 18000,
+        "rate": 6,
+        "years": [
+          5,
+          10,
+          12
+        ]
+      },
+      "delta": {
+        "investments": 216000,
+        "confidence": 5,
+        "resilience": 6
+      },
+      "guide": "retirement-basics",
+      "more": {
+        "en": "She expects to stop working at 60. Her monthly costs today are ₹45,000, and prices will be higher by then.",
+        "hi": "वह 60 पर काम छोड़ने की सोचती है। आज महीने का खर्च ₹45,000 है, और तब तक दाम बढ़ चुके होंगे।",
+        "mr": "ती 60 व्या वर्षी काम थांबवण्याचा विचार करते. आज मासिक खर्च ₹45,000 आहे, आणि तोपर्यंत किमती वाढलेल्या असतील."
+      },
+      "question": {
+        "en": "How should Verena start planning for retirement?",
+        "hi": "वेरेना सेवानिवृत्ति की योजना कैसे शुरू करे?",
+        "mr": "वेरेनाने निवृत्तीचे नियोजन कसे सुरू करावे?"
+      },
+      "okay": {
+        "en": "Pick a round number that sounds large enough and aim for that.",
+        "hi": "कोई गोल संख्या चुने जो काफ़ी बड़ी लगे और उसी का लक्ष्य रखे।",
+        "mr": "पुरेशी मोठी वाटणारी गोल संख्या निवडावी आणि तेच लक्ष्य ठेवावे."
+      },
+      "costly": {
+        "en": "Assume her children will support her, so no plan is needed.",
+        "hi": "मान ले बच्चे सँभाल लेंगे, तो योजना की ज़रूरत नहीं।",
+        "mr": "मुले सांभाळतील असे मानावे, म्हणजे नियोजनाची गरज नाही."
+      },
+      "goodOutcome": {
+        "en": "She lists future costs, allows for rising prices, adds pension, EPF and savings as separate sources, and finds the monthly gap to close.",
+        "hi": "वह भविष्य के खर्च लिखती है, बढ़ते दामों का ध्यान रखती है, पेंशन, EPF और बचत को अलग स्रोत मानती है, और महीने का अंतर निकालती है।",
+        "mr": "ती भविष्यातील खर्च लिहिते, वाढत्या किमती लक्षात घेते, पेन्शन, EPF आणि बचत वेगळे स्रोत मानते, आणि भरून काढायचा मासिक फरक शोधते."
+      },
+      "okayOutcome": {
+        "en": "The number turns out to cover only about ten years of retirement once prices rise.",
+        "hi": "दाम बढ़ने के बाद वह संख्या सिर्फ़ लगभग दस साल की सेवानिवृत्ति चलाती है।",
+        "mr": "किमती वाढल्यावर ती संख्या फक्त सुमारे दहा वर्षांची निवृत्ती भागवते."
+      },
+      "costlyOutcome": {
+        "en": "Ten years later her children have their own costs, and she has fewer working years left to catch up.",
+        "hi": "दस साल बाद बच्चों के अपने खर्च हैं, और उसके पास भरपाई के लिए कम साल बचे हैं।",
+        "mr": "दहा वर्षांनी मुलांचे स्वतःचे खर्च असतात, आणि तिच्याकडे भरपाई करायला कमी वर्षे उरतात."
+      },
+      "lesson": {
+        "en": "Plan retirement from expenses, rising prices and several income sources, using cautious assumptions. Starting earlier makes it easier.",
+        "hi": "सेवानिवृत्ति की योजना खर्च, बढ़ते दाम और कई आय स्रोतों से, सावधान अनुमानों के साथ बनाएँ। जल्दी शुरू करना इसे आसान बनाता है।",
+        "mr": "निवृत्तीचे नियोजन खर्च, वाढत्या किमती आणि अनेक उत्पन्न स्रोतांवरून, सावध अंदाजांसह करा. लवकर सुरुवात केल्याने ते सोपे होते."
+      }
+    },
+    {
+      "id": "retirement-plan",
+      "stage": "retirement",
+      "topic": "retirement",
+      "age": 55,
+      "place": "home",
+      "title": {
+        "en": "42 · The retirement plan",
+        "hi": "42 · सेवानिवृत्ति योजना",
+        "mr": "42 · निवृत्ती योजना"
+      },
+      "setup": {
+        "en": "Verena turns the retirement idea into a simple educational plan: likely expenses, a buffer, income sources and a review date.",
+        "hi": "वेरेना सेवानिवृत्ति विचार को सरल शैक्षिक योजना बनाती है: खर्च, बफ़र, आय स्रोत और समीक्षा तारीख।",
+        "mr": "वेरेना निवृत्तीच्या विचाराला सोप्या शैक्षणिक योजनेत बदलते: खर्च, राखीव, उत्पन्न स्रोत आणि आढावा तारीख."
+      },
+      "action": {
+        "en": "Choose a contribution she can sustain, diversify sources and schedule a yearly review.",
+        "hi": "टिकाऊ योगदान चुनें, आय स्रोत विविध करें और सालाना समीक्षा तय करें।",
+        "mr": "टिकणारे योगदान निवडा, उत्पन्न स्रोत विविध करा आणि वार्षिक आढावा ठरवा."
+      },
+      "sim": {
+        "kind": "grow",
+        "monthly": 22000,
+        "rate": 6,
+        "years": [
+          5,
+          8,
+          10
+        ]
+      },
+      "delta": {
+        "investments": 264000,
+        "confidence": 6,
+        "resilience": 7
+      },
+      "guide": "retirement-basics",
+      "more": {
+        "en": "Her plan needs ₹18,000 more a month for the next eight years. Her salary allows ₹12,000 without strain.",
+        "hi": "उसकी योजना को अगले आठ साल हर महीने ₹18,000 और चाहिए। सैलरी में बिना तंगी ₹12,000 संभव हैं।",
+        "mr": "तिच्या योजनेला पुढची आठ वर्षे दरमहा ₹18,000 आणखी लागतात. पगारात ताण न येता ₹12,000 शक्य आहेत."
+      },
+      "question": {
+        "en": "What should Verena commit to?",
+        "hi": "वेरेना किस पर टिके?",
+        "mr": "वेरेनाने कशाला वचनबद्ध व्हावे?"
+      },
+      "okay": {
+        "en": "Commit to the full ₹18,000 even though it will strain every month.",
+        "hi": "पूरे ₹18,000 पर टिके, भले हर महीने तंगी हो।",
+        "mr": "संपूर्ण ₹18,000 ला वचनबद्ध व्हावे, दरमहा ताण आला तरी."
+      },
+      "costly": {
+        "en": "Move everything into one high-return scheme to close the gap faster.",
+        "hi": "अंतर जल्दी भरने के लिए सब कुछ एक ऊँचे मुनाफ़े वाली योजना में डाले।",
+        "mr": "फरक लवकर भरून काढण्यासाठी सगळे एका जास्त परताव्याच्या योजनेत टाकावे."
+      },
+      "goodOutcome": {
+        "en": "She commits ₹12,000 now, adds half of every raise, plans to work two extra years part-time, and reviews yearly. The gap closes on paper.",
+        "hi": "वह अभी ₹12,000 तय करती है, हर बढ़ोतरी का आधा जोड़ती है, दो साल और पार्ट-टाइम काम की योजना बनाती है, और हर साल देखती है। काग़ज़ पर अंतर भर जाता है।",
+        "mr": "ती आत्ता ₹12,000 ठरवते, प्रत्येक वाढीचा अर्धा भाग जोडते, आणखी दोन वर्षे अर्धवेळ कामाचे नियोजन करते, आणि दरवर्षी आढावा घेते. कागदावर फरक भरून निघतो."
+      },
+      "okayOutcome": {
+        "en": "In month seven a big expense forces her to pause, and restarting is hard.",
+        "hi": "सातवें महीने एक बड़ा खर्च उसे रुकने पर मजबूर करता है, और फिर शुरू करना मुश्किल होता है।",
+        "mr": "सातव्या महिन्यात मोठ्या खर्चामुळे तिला थांबावे लागते, आणि पुन्हा सुरू करणे कठीण जाते."
+      },
+      "costlyOutcome": {
+        "en": "The scheme promised high returns and has no regulator. It stops paying within two years.",
+        "hi": "योजना ने ऊँचे मुनाफ़े का वादा किया था और उसका कोई नियामक नहीं। दो साल में भुगतान बंद।",
+        "mr": "योजनेने जास्त परताव्याचे वचन दिले होते आणि तिचा कोणी नियामक नाही. दोन वर्षांत देयके बंद होतात."
+      },
+      "lesson": {
+        "en": "A plan you can sustain beats a perfect plan you abandon. Combine steady saving, raises, time and diversified, regulated options.",
+        "hi": "जिस योजना पर टिक सकें, वह उस परफ़ेक्ट योजना से बेहतर है जिसे छोड़ दें। नियमित बचत, बढ़ोतरी, समय और विविध, नियंत्रित विकल्प मिलाएँ।",
+        "mr": "टिकवता येणारी योजना सोडून दिलेल्या परिपूर्ण योजनेपेक्षा चांगली. नियमित बचत, वाढ, वेळ आणि वैविध्यपूर्ण, नियंत्रित पर्याय एकत्र करा."
+      }
+    },
+    {
+      "id": "late-life-shock",
+      "stage": "financial-security",
+      "topic": "retirement",
+      "age": 59,
+      "place": "home",
+      "title": {
+        "en": "43 · A late-life financial shock",
+        "hi": "43 · जीवन के बाद के दौर का झटका",
+        "mr": "43 · आयुष्याच्या उत्तरार्धातील आर्थिक धक्का"
+      },
+      "setup": {
+        "en": "A major home repair arrives just before retirement. Verena must protect liquidity without dismantling the whole long-term plan.",
+        "hi": "सेवानिवृत्ति से पहले घर की बड़ी मरम्मत आती है। वेरेना को दीर्घ योजना तोड़े बिना नकदी बचानी है।",
+        "mr": "निवृत्तीच्या आधी घराची मोठी दुरुस्ती येते. दीर्घ योजना मोडून न काढता वेरेनाला रोख उपलब्धता जपायची आहे."
+      },
+      "action": {
+        "en": "Use the dedicated buffer first, phase non-urgent work and compare any borrowing against retirement cash flow.",
+        "hi": "पहले तय बफ़र लें, गैर-ज़रूरी काम चरणों में करें और कर्ज़ को सेवानिवृत्ति नकदी से तुलना करें।",
+        "mr": "आधी राखीव निधी वापरा, न तातडीचे काम टप्प्यांत करा आणि कर्जाची निवृत्ती रोख प्रवाहाशी तुलना करा."
+      },
+      "sim": {
+        "kind": "budget",
+        "income": 105000,
+        "needs": 85000
+      },
+      "delta": {
+        "emergency": -25000,
+        "cash": -15000,
+        "resilience": 7
+      },
+      "guide": "emergency-fund",
+      "more": {
+        "en": "The roof needs ₹2.4 lakh of work. Her retirement buffer has ₹1.5 lakh, and retirement is a year away.",
+        "hi": "छत की मरम्मत में ₹2.4 लाख लगेंगे। उसके सेवानिवृत्ति बफ़र में ₹1.5 लाख हैं, और सेवानिवृत्ति एक साल दूर है।",
+        "mr": "छताच्या कामाला ₹2.4 लाख लागतील. तिच्या निवृत्ती राखीवात ₹1.5 लाख आहेत, आणि निवृत्ती वर्षभरावर आहे."
+      },
+      "question": {
+        "en": "How should Verena pay for the repair?",
+        "hi": "वेरेना मरम्मत का पैसा कैसे दे?",
+        "mr": "वेरेनाने दुरुस्तीचे पैसे कसे भरावेत?"
+      },
+      "okay": {
+        "en": "Pay it all from her retirement investments and adjust later.",
+        "hi": "सब सेवानिवृत्ति निवेश से दे और बाद में देखे।",
+        "mr": "सगळे निवृत्ती गुंतवणुकीतून भरावे आणि नंतर पाहावे."
+      },
+      "costly": {
+        "en": "Take a top-up loan that will run five years into retirement.",
+        "hi": "ऐसा टॉप-अप लोन ले जो सेवानिवृत्ति के पाँच साल बाद तक चलेगा।",
+        "mr": "निवृत्तीनंतर पाच वर्षांपर्यंत चालणारे टॉप-अप कर्ज घ्यावे."
+      },
+      "goodOutcome": {
+        "en": "She fixes the urgent leak now from the buffer, schedules the rest after retirement savings settle, and gets two quotes. The core plan stays intact.",
+        "hi": "वह ज़रूरी रिसाव अभी बफ़र से ठीक कराती है, बाकी काम बाद में रखती है, और दो कोटेशन लेती है। मूल योजना बनी रहती है।",
+        "mr": "ती तातडीची गळती आत्ता राखीवातून दुरुस्त करते, उरलेले काम नंतर ठेवते, आणि दोन कोटेशन घेते. मूळ योजना टिकून राहते."
+      },
+      "okayOutcome": {
+        "en": "The repair is done, but selling investments in a weak market cuts her retirement income for good.",
+        "hi": "मरम्मत हो जाती है, पर कमज़ोर बाज़ार में निवेश बेचने से उसकी सेवानिवृत्ति आय हमेशा के लिए घट जाती है।",
+        "mr": "दुरुस्ती होते, पण कमकुवत बाजारात गुंतवणूक विकल्याने तिचे निवृत्ती उत्पन्न कायमचे कमी होते."
+      },
+      "costlyOutcome": {
+        "en": "Her pension now has to cover an EMI too, leaving little room for health costs.",
+        "hi": "अब उसकी पेंशन को EMI भी चुकानी है, स्वास्थ्य खर्च के लिए कम जगह बचती है।",
+        "mr": "आता तिच्या पेन्शनला EMI ही भरावा लागतो, आरोग्य खर्चासाठी कमी जागा उरते."
+      },
+      "lesson": {
+        "en": "Near retirement, protect your long-term plan: use the buffer, phase what can wait, and avoid debt that outlives your salary.",
+        "hi": "सेवानिवृत्ति के पास लंबी योजना बचाएँ: बफ़र इस्तेमाल करें, जो रुक सके उसे बाद में करें, और सैलरी से लंबा चलने वाला कर्ज़ न लें।",
+        "mr": "निवृत्तीजवळ दीर्घकालीन योजना जपा: राखीव वापरा, थांबू शकणारे नंतर करा, आणि पगारापेक्षा जास्त काळ चालणारे कर्ज टाळा."
+      }
+    },
+    {
+      "id": "retirement",
+      "source": "retirement",
+      "stage": "retirement",
+      "topic": "retirement",
+      "age": 62,
+      "place": "garden",
+      "title": {
+        "en": "44 · Retirement",
+        "hi": "44 · सेवानिवृत्ति",
+        "mr": "44 · निवृत्ती"
+      },
+      "delta": {
+        "income": 35000,
+        "confidence": 6,
+        "resilience": 8
+      },
+      "guide": "retirement-basics"
+    },
+    {
+      "id": "verena-looks-back",
+      "stage": "retirement",
+      "topic": "retirement",
+      "age": 63,
+      "place": "garden",
+      "title": {
+        "en": "45 · Verena looks back",
+        "hi": "45 · वेरेना पीछे मुड़कर देखती है",
+        "mr": "45 · वेरेना मागे वळून पाहते"
+      },
+      "setup": {
+        "en": "Verena compares her first offer letter with the life she built. The transformation came from many imperfect decisions, corrected over time.",
+        "hi": "वेरेना अपने पहले ऑफ़र पत्र की तुलना बनाई ज़िंदगी से करती है। बदलाव कई अधूरे फ़ैसलों और समय पर सुधार से आया।",
+        "mr": "वेरेना पहिल्या ऑफर पत्राची तुलना तिने उभ्या केलेल्या आयुष्याशी करते. बदल अनेक अपूर्ण निर्णय आणि वेळेवर केलेल्या सुधारणांनी आला."
+      },
+      "action": {
+        "en": "Name the habits that created resilience, the mistakes worth remembering and the next way to keep learning.",
+        "hi": "मज़बूती बनाने वाली आदतें, याद रखने योग्य गलतियाँ और आगे सीखते रहने का तरीका पहचानें।",
+        "mr": "लवचिकता घडवणाऱ्या सवयी, लक्षात ठेवण्यासारख्या चुका आणि पुढे शिकत राहण्याचा मार्ग ओळखा."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 10,
+        "resilience": 10
+      },
+      "guide": "retirement-basics",
+      "more": {
+        "en": "At 22 she had ₹350 left on the 18th. At 63 she has a pension, savings, insurance and a folder where every paper is easy to find.",
+        "hi": "22 की उम्र में 18 तारीख को उसके पास ₹350 बचे थे। 63 में उसके पास पेंशन, बचत, बीमा और एक फ़ोल्डर है जिसमें हर काग़ज़ आसानी से मिलता है।",
+        "mr": "22 व्या वर्षी 18 तारखेला तिच्याकडे ₹350 उरले होते. 63 व्या वर्षी तिच्याकडे पेन्शन, बचत, विमा आणि प्रत्येक कागद सहज सापडेल असा फोल्डर आहे."
+      },
+      "question": {
+        "en": "What does Verena want her niece to remember most?",
+        "hi": "वेरेना चाहती है उसकी भतीजी सबसे ज़्यादा क्या याद रखे?",
+        "mr": "वेरेनाला वाटते तिच्या पुतणीने सर्वात जास्त काय लक्षात ठेवावे?"
+      },
+      "okay": {
+        "en": "That she was lucky, and luck is what matters.",
+        "hi": "कि वह किस्मत वाली थी, और किस्मत ही मायने रखती है।",
+        "mr": "की ती नशीबवान होती, आणि नशीबच महत्त्वाचे असते."
+      },
+      "costly": {
+        "en": "That one big investment decision changed everything.",
+        "hi": "कि एक बड़े निवेश फ़ैसले ने सब बदल दिया।",
+        "mr": "की एका मोठ्या गुंतवणूक निर्णयाने सगळे बदलले."
+      },
+      "goodOutcome": {
+        "en": "She tells her niece the truth: no single decision did it. Hundreds of small ones did, including the mistakes she corrected.",
+        "hi": "वह भतीजी को सच बताती है: किसी एक फ़ैसले ने नहीं। सैकड़ों छोटे फ़ैसलों ने, उन गलतियों समेत जिन्हें उसने सुधारा।",
+        "mr": "ती पुतणीला खरे सांगते: एका निर्णयाने नाही. शेकडो छोट्या निर्णयांनी, तिने सुधारलेल्या चुकांसह."
+      },
+      "okayOutcome": {
+        "en": "Her niece hears that luck matters, and misses the habits that actually made the difference.",
+        "hi": "भतीजी सुनती है कि किस्मत मायने रखती है, और उन आदतों को नहीं समझती जिन्होंने असल में फ़र्क डाला।",
+        "mr": "पुतणी ऐकते की नशीब महत्त्वाचे असते, आणि खरोखर फरक पाडणाऱ्या सवयी तिच्या लक्षात येत नाहीत."
+      },
+      "costlyOutcome": {
+        "en": "Her niece goes looking for one big win, and skips the small habits that would have protected her.",
+        "hi": "भतीजी एक बड़ी जीत ढूँढने लगती है, और उन छोटी आदतों को छोड़ देती है जो उसे बचातीं।",
+        "mr": "पुतणी एका मोठ्या विजयाचा शोध घेते, आणि तिला वाचवणाऱ्या छोट्या सवयी सोडून देते."
+      },
+      "lesson": {
+        "en": "Financial freedom is not one decision. It is the accumulation of many, reviewed and corrected over a lifetime.",
+        "hi": "आर्थिक आज़ादी एक फ़ैसला नहीं है। यह जीवन भर लिए, परखे और सुधारे गए कई फ़ैसलों का जोड़ है।",
+        "mr": "आर्थिक स्वातंत्र्य हा एक निर्णय नाही. आयुष्यभर घेतलेल्या, तपासलेल्या आणि सुधारलेल्या अनेक निर्णयांची ती बेरीज आहे."
+      }
+    }
   ]
 }
