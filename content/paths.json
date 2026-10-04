@@ -589,9 +589,9 @@
           "mr": "तुमचे उत्पन्न नोंदवा"
         },
         "body": {
-          "en": "Log this month's income in Money Lab: salary, stipend or pocket money. Use the amount that reached your hand.",
-          "hi": "इस महीने की आय मनी लैब में लिखें: वेतन, स्टाइपेंड या जेब खर्च। वही रकम लिखें जो हाथ में आई।",
-          "mr": "या महिन्याचे उत्पन्न मनी लॅबमध्ये नोंदवा: पगार, स्टायपेंड किंवा खर्चाचे पैसे. हातात आलेली रक्कमच लिहा."
+          "en": "Log this month's income in Money Lab: salary, side work or support from family. Use the amount that reached your account.",
+          "hi": "इस महीने की आय मनी लैब में लिखें: वेतन, साइड काम या परिवार से मदद। वही रकम लिखें जो खाते में आई।",
+          "mr": "या महिन्याचे उत्पन्न मनी लॅबमध्ये नोंदवा: पगार, जोडकाम किंवा कुटुंबाकडून मदत. खात्यात आलेली रक्कमच लिहा."
         },
         "link": "tracker"
       },
