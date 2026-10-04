@@ -24,4 +24,7 @@ jobs:
           done
           other=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$URL" -H "origin: https://example.com" -H "content-type: application/json" -d '{}')
           echo "Request from another website: HTTP $other (403 expected)"
+          fb=$(curl -s -X POST "$URL/feedback" -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" -H "x-saath-check: 1" \
+            -d "{\"username\":\"SaathCheck\",\"feedback\":\"Test message from the Saath feedback check.\",\"requestId\":\"check-$(date +%s)-$RANDOM\"}")
+          echo "Feedback: $fb"
           [ "$code" = "200" ]

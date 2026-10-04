@@ -109,7 +109,7 @@ async function liveRoute(request, env, headers) {
   return new Response(response.body, { status: response.status, headers });
 }
 
-async function feedbackRoute(body, env, headers) {
+async function feedbackRoute(body, env, headers, checking = false) {
   const stub = stateStub(env);
   if (!stub) return json({ delivered: false, error: "not configured" }, 503, headers);
   const username = cleanHeader(body?.username);
@@ -144,7 +144,12 @@ async function feedbackRoute(body, env, headers) {
       body: JSON.stringify({ name: username, message: feedback, _subject: subject, _template: "table", _captcha: "false" }),
     }).catch(() => null);
     const result = relay ? await relay.json().catch(() => ({})) : {};
-    if (!relay || !relay.ok || String(result.success) !== "true") return json({ delivered: false, error: "relay" }, 502, headers);
+    if (!relay || !relay.ok || String(result.success) !== "true") {
+      const out = { delivered: false, error: "relay" };
+      // Only the repository's own check sees why, so a failure can be fixed without guessing.
+      if (checking) out.reason = `${relay ? relay.status : "no response"} ${String(result.message || "").slice(0, 300)}`;
+      return json(out, 502, headers);
+    }
   }
   await stub.fetch("https://saath-state/feedback/mark", { method: "POST", body: JSON.stringify({ requestId }) });
   return json({ delivered: true }, 200, headers);
@@ -229,7 +234,7 @@ export default {
       if (path === "/admin/live") return liveRoute(request, env, headers);
       const body = await request.json();
       if (path === "/heartbeat") return heartbeatRoute(body, env, headers);
-      if (path === "/feedback") return feedbackRoute(body, env, headers);
+      if (path === "/feedback") return feedbackRoute(body, env, headers, request.headers.get("x-saath-check") === "1");
       if (path !== "/") return json({ error: "not found" }, 404, headers);
       const text = await runModel(env, buildMessages(body));
       if (!text) throw new Error("empty");
