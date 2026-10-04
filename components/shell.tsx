@@ -30,7 +30,7 @@ import { Footer, PageSkeleton } from "./ui";
 type Nav = { href: string; key: string; icon: typeof Home; match: (path: string) => boolean };
 
 const TABS: Nav[] = [
-  { href: "/", key: "nav.home", icon: Home, match: (path) => path === "/" || /^\/(stories|privacy|about)/.test(path) },
+  { href: "/", key: "nav.home", icon: Home, match: (path) => path === "/" || /^\/(stories|privacy|about|games)/.test(path) },
   { href: "/journey", key: "nav.journey", icon: Route, match: (path) => path.startsWith("/journey") },
   { href: "/guide", key: "nav.guide", icon: BookOpen, match: (path) => /^\/(guide|paths|drills|handbook|comic|check)/.test(path) },
   { href: "/money-lab", key: "nav.money", icon: Wallet, match: (path) => path.startsWith("/money-lab") },

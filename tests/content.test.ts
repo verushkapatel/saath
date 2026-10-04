@@ -98,11 +98,11 @@ describe("content", () => {
 
   it("precaches the companion screens and their content, under the new cache name", () => {
     const worker = readFileSync(`${root}/public/sw.js`, "utf8");
-    expect(worker).toContain('const CACHE = "saath-v12"');
-    for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings"]) expect(worker).toContain(`"${page}"`);
+    expect(worker).toContain('const CACHE = "saath-v13"');
+    for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings", "/games"]) expect(worker).toContain(`"${page}"`);
     for (const id of STAGE_IDS) expect(worker).toContain(`/journey/${id}`);
     for (const id of FORM_IDS) expect(worker).toContain(`/forms/${id}`);
-    for (const file of ["journey", "forms", "form-fields", "stories"]) expect(worker).toContain(`/content/${file}.json`);
+    for (const file of ["journey", "forms", "form-fields", "stories", "challenges", "games"]) expect(worker).toContain(`/content/${file}.json`);
     // Only Saath's own caches are cleared, so a downloaded local model survives an update.
     expect(worker).toContain('key.startsWith("saath-")');
   });

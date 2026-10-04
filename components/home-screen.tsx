@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookOpen, Check, ChevronRight, FileText, LineChart, MessageCircle, Newspaper, RotateCcw, Snowflake, Wallet } from "lucide-react";
+import { BookOpen, Check, ChevronRight, FileText, Gamepad2, MessageCircle, Newspaper, RotateCcw, Snowflake, Wallet } from "lucide-react";
 import { QUESTION_TOPIC } from "@/lib/catalog";
 import { loadJson, type DailyQuestion, type MiniCheck, type StoriesFile } from "@/lib/content-types";
 import { nextAction, pickByDay } from "@/lib/daily";
@@ -251,7 +251,7 @@ export function HomeScreen() {
           <Link href="/forms" className="tile card tight" onClick={tap}><FileText aria-hidden size={22} /><span className="item-title">{t("nav.forms")}</span></Link>
           <Link href="/money-lab" className="tile card tight" onClick={tap}><Wallet aria-hidden size={22} /><span className="item-title">{t("nav.money")}</span></Link>
           <button type="button" className="tile card tight" onClick={() => { tap(); ai.openAsk(); }}><MessageCircle aria-hidden size={22} /><span className="item-title">{t("ai.ask")}</span></button>
-          <Link href="/progress" className="tile card tight" onClick={tap}><LineChart aria-hidden size={22} /><span className="item-title">{t("nav.progress")}</span></Link>
+          <Link href="/games" className="tile card tight" onClick={tap}><Gamepad2 aria-hidden size={22} /><span className="item-title">{t("games.title")}</span></Link>
           <Link href="/stories" className="tile card tight" onClick={tap}><Newspaper aria-hidden size={22} /><span className="item-title">{t("nav.stories")}</span></Link>
         </div>
       </section>

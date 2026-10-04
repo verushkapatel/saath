@@ -1419,5 +1419,42 @@
     "taskDone": "Done for today. Well done.",
     "askSaath": "Ask Saath how to do this",
     "askHow": "How do I do this: {task}"
+  },
+  "games": {
+    "title": "Games",
+    "kicker": "Play and learn",
+    "lead": "Quick rounds that train your money instincts. Your first round each day earns XP.",
+    "needs-wants": {
+      "title": "Needs or wants?",
+      "lead": "Sort everyday spends, fast.",
+      "ask": "Is this a need or a want?"
+    },
+    "scam-or-safe": {
+      "title": "Scam or safe?",
+      "lead": "Read the message. Would you trust it?",
+      "ask": "Is this message a scam or safe?"
+    },
+    "need": "Need",
+    "want": "Want",
+    "scam": "Scam",
+    "safe": "Safe",
+    "message": "New message",
+    "round": "Round {n} of {total}",
+    "right": "Right!",
+    "wrong": "Not quite. It's: {answer}",
+    "finish": "See my score",
+    "perfect": "Perfect round.",
+    "good": "Sharp instincts. Play again to beat it.",
+    "tryAgain": "Read the reasons, then try again. You will get faster.",
+    "best": "Best: {best}/{total}",
+    "xpOnce": "Game XP is earned once a day. The practice still counts.",
+    "shareText": "I scored {score}/{total} in \"{game}\" on Saath. Can you beat it?",
+    "back": "Back to games",
+    "opensAt": "Opens at level {level}.",
+    "more": "More games open as you level up.",
+    "drillsTitle": "Scam and form drills",
+    "drillsLead": "Longer practice with real-looking examples.",
+    "askNeeds": "How do I tell a need from a want?",
+    "askScam": "How do I spot a scam message?"
   }
 }

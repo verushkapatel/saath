@@ -185,3 +185,7 @@ export type Crisis = {
 /** Something small to do in real life today. */
 export type RealTask = { id: string; topic: Topic; text: Copy };
 export type ChallengesFile = { reviewed: string; crises: Crisis[]; tasks: RealTask[] };
+
+export type NeedsItem = { id: string; need: boolean; text: Copy; why: Copy };
+export type ScamItem = { id: string; scam: boolean; text: Copy; why: Copy };
+export type GamesFile = { needs: NeedsItem[]; scams: ScamItem[] };

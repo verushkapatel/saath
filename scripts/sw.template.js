@@ -25,6 +25,7 @@ const FILES = [
   "/content/journey.json",
   "/content/forms.json",
   "/content/challenges.json",
+  "/content/games.json",
   "/content/form-fields.json",
   "/content/stories.json",
   "/samples/personal-loan.png",
