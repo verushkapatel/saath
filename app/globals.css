@@ -2288,3 +2288,72 @@ html:has(.intro) { scroll-snap-type: y proximity; scroll-padding-top: 0; }
 .revise-tile.weak { border-color: var(--navy); }
 .revise-tile.weak .item-sub { color: var(--accent-text); font-weight: 650; }
 .revise-tile[aria-pressed="true"] { background: var(--navy-soft); border-color: var(--navy); }
+
+/* Points listed under each chapter of the immersion. */
+.act-points { display: grid; gap: var(--s-2); }
+.act-points li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: var(--s-2); align-items: start; line-height: 1.5; }
+.act-points svg { margin-top: 3px; padding: 3px; box-sizing: content-box; border-radius: var(--r-full); background: var(--accent); color: var(--accent-ink); width: 12px; height: 12px; }
+.act-navy .act-points svg { background: #fff; color: #0b2a5c; }
+.share-preview { display: flex; align-items: center; gap: var(--s-4); padding: var(--s-3) var(--s-4) 0; border-radius: var(--r-lg); background: var(--surface-2); }
+.act-navy .share-preview { background: rgba(255, 255, 255, 0.08); }
+
+/* Make Saath yours, the install step, and setup. */
+.welcome { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr; padding: calc(env(safe-area-inset-top) + var(--s-3)) var(--gutter) calc(env(safe-area-inset-bottom) + var(--s-6)); }
+.welcome-top { display: flex; align-items: center; justify-content: space-between; width: min(100%, 30rem); margin: 0 auto; }
+.welcome-body { display: grid; align-content: center; gap: var(--s-4); width: min(100%, 30rem); margin: 0 auto; padding-top: var(--s-4); }
+.welcome-body h1 { font-size: clamp(2.25rem, 10vw, 3rem); }
+.welcome-figure { justify-self: center; }
+.welcome-figure .character { animation: breathe 4.5s ease-in-out infinite; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35)); }
+.welcome .wordmark { display: inline-flex; align-items: center; gap: var(--s-2); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.02em; }
+.welcome-points { display: grid; gap: var(--s-2); margin-bottom: var(--s-2) !important; }
+.welcome-points li { display: flex; align-items: center; gap: var(--s-2); color: var(--text-muted); }
+.welcome-points svg { color: var(--navy); }
+.install-page { background: var(--bg); }
+.install-icon { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 22px; background: linear-gradient(150deg, #1d4489, #0b2a5c); color: #fff; box-shadow: 0 16px 34px rgba(11, 42, 92, 0.32); }
+.install-icon .logo-mark { color: #fff; }
+.install-steps { display: grid; gap: 0; padding: var(--s-2) var(--s-4); border-radius: var(--r-lg); background: var(--surface-1); box-shadow: var(--shadow-1); counter-reset: none; }
+.install-steps li { display: grid; grid-template-columns: 32px minmax(0, 1fr) 36px; gap: var(--s-3); align-items: center; padding: var(--s-3) 0; }
+.install-steps li + li { border-top: 0.5px solid var(--line-strong); }
+.install-num { display: grid; place-items: center; width: 28px; height: 28px; border-radius: var(--r-full); background: var(--accent); color: var(--accent-ink); font-weight: 750; font-size: var(--fs-label); }
+.install-glyph { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--navy-soft); color: var(--accent-text); }
+.install-text { line-height: 1.45; }
+.setup-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-bottom: var(--s-2) !important; }
+.setup-steps li { height: 4px; border-radius: var(--r-full); background: var(--surface-3); }
+.setup-steps li.was { background: var(--text-faint); }
+.setup-steps li.on { background: var(--navy); }
+.setup .setup-body { width: min(100%, 34rem); margin: 0 auto; padding-top: var(--s-6); }
+.auth { width: min(100%, 30rem); margin: 0 auto; }
+.seg button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; white-space: nowrap; }
+.seg button svg { margin-right: 0 !important; flex: none; }
+.card > .stack { gap: var(--s-4); }
+
+/* Dictation */
+.talk-row { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; font-size: var(--fs-label); }
+.talk-chip { min-height: 32px; padding: 0 12px; border: 0; border-radius: var(--r-full); background: var(--surface-1); color: var(--text-muted); font-size: var(--fs-label); font-weight: 650; box-shadow: var(--shadow-1); }
+.sheet .talk-chip { background: var(--surface-2); box-shadow: none; }
+.talk-chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.chat-input { grid-template-columns: minmax(0, 1fr) auto auto; }
+.chat-input .icon-btn.mic { width: 40px; height: 40px; background: var(--navy-soft); color: var(--accent-text); box-shadow: none; }
+.chat-input .icon-btn.mic.on { background: var(--accent); color: var(--accent-ink); animation: mic-pulse 1.2s ease-in-out infinite; }
+@keyframes mic-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(47, 91, 183, 0.5); } 50% { box-shadow: 0 0 0 8px rgba(47, 91, 183, 0); } }
+.chat-input.hearing { box-shadow: 0 0 0 2px var(--navy), var(--shadow-2); }
+.bubble-tools { display: flex; justify-content: flex-start; margin-top: 6px; }
+.bubble-tools .listen.icon-only { width: 34px; min-height: 34px; height: 34px; }
+.quick-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.quick-grid .tile { justify-items: center; text-align: center; padding: var(--s-3) var(--s-1); gap: var(--s-2); }
+.quick-grid .tile svg { padding: 10px; box-sizing: content-box; border-radius: 14px; background: var(--navy-soft); color: var(--accent-text); }
+.quick-grid .tile .item-title { font-size: 0.75rem; line-height: 1.25; }
+@media (min-width: 900px) { .quick-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+/* The logo on a navy badge: white and light navy rings. */
+.ai-orb, .install-icon { --text: #ffffff; --navy: #8fb0f0; }
+
+/* Laptops: the tour's navy chapters run edge to edge, like a product page. */
+@media (min-width: 900px) {
+  .intro { width: min(100%, 52rem); }
+  .intro-top, .intro-hero.navy-scene, .act-navy, .intro .finale.navy-scene { margin-inline: calc(50% - 50vw); padding-inline: max(var(--gutter), calc(50vw - 26rem + var(--gutter))); border-radius: 0; }
+  .intro-hero.navy-scene { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: var(--s-7); }
+  .intro-hero .hero-figure { order: 2; width: 100%; }
+  .act { min-height: 80dvh; }
+  .welcome-body { width: min(100%, 34rem); }
+}
+@media (min-width: 900px) { .intro-hero h1 { font-size: clamp(2.75rem, 4.2vw, 3.5rem); } .intro-hero.navy-scene { grid-template-columns: 1.2fr 1fr; } }

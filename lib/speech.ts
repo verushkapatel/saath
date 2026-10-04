@@ -102,10 +102,79 @@ export function hear(lang: Lang): Promise<string> {
 
 type SpeechRecognition = {
   lang: string;
+  interimResults?: boolean;
+  continuous?: boolean;
+  maxAlternatives?: number;
   start: () => void;
-  onresult: (event: { results: { [index: number]: { [index: number]: { transcript: string } } } }) => void;
-  onerror: () => void;
+  stop?: () => void;
+  abort?: () => void;
+  onresult: (event: { resultIndex?: number; results: { length?: number; [index: number]: { isFinal?: boolean; [index: number]: { transcript: string } } } }) => void;
+  onerror: (event?: { error?: string }) => void;
+  onend?: () => void;
 };
+
+export type DictationHandlers = {
+  /** Called as words arrive: the whole text heard so far. */
+  onText: (text: string, final: boolean) => void;
+  onEnd: () => void;
+  onError: (reason: string) => void;
+};
+
+/**
+ * Dictation for the chat: the words appear in the box while the person speaks, in English (India), Hindi or Marathi.
+ * The browser's own speech service does the listening. Returns a function that stops it.
+ */
+export function dictate(lang: Lang, handlers: DictationHandlers): () => void {
+  const root = window as Window & {
+    webkitSpeechRecognition?: new () => SpeechRecognition;
+    SpeechRecognition?: new () => SpeechRecognition;
+  };
+  const Ctor = root.SpeechRecognition || root.webkitSpeechRecognition;
+  if (!Ctor) {
+    handlers.onError("unsupported");
+    return () => undefined;
+  }
+  const recognition = new Ctor();
+  recognition.lang = SPEECH[lang];
+  recognition.interimResults = true;
+  recognition.continuous = false;
+  recognition.maxAlternatives = 1;
+  let finalText = "";
+  recognition.onresult = (event) => {
+    let interim = "";
+    const count = event.results.length ?? 0;
+    for (let index = event.resultIndex ?? 0; index < count; index += 1) {
+      const result = event.results[index];
+      const words = result?.[0]?.transcript ?? "";
+      if (result?.isFinal) finalText += words;
+      else interim += words;
+    }
+    handlers.onText(`${finalText}${interim}`.trim(), interim.length === 0);
+  };
+  recognition.onerror = (event) => handlers.onError(event?.error ?? "hear");
+  recognition.onend = () => handlers.onEnd();
+  try {
+    recognition.start();
+  } catch {
+    handlers.onError("busy");
+  }
+  return () => {
+    try {
+      recognition.stop?.();
+    } catch {
+      // Already stopped.
+    }
+  };
+}
+
+/** The language a typed or spoken question is written in, so Saath AI can answer in it. Devanagari alone cannot tell Hindi from Marathi, so the current choice is kept for those. */
+export function scriptLang(text: string, current: Lang): Lang {
+  const devanagari = (text.match(/[\u0900-\u097F]/g) ?? []).length;
+  const latin = (text.match(/[A-Za-z]/g) ?? []).length;
+  if (devanagari > latin) return current === "en" ? "hi" : current;
+  if (latin > devanagari * 2 && latin > 3) return "en";
+  return current;
+}
 
 export function tap(): void {
   if (typeof navigator === "undefined" || !navigator.vibrate || !hapticsOn()) return;

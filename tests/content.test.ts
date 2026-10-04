@@ -98,7 +98,7 @@ describe("content", () => {
 
   it("precaches the companion screens and their content, under the new cache name", () => {
     const worker = readFileSync(`${root}/public/sw.js`, "utf8");
-    expect(worker).toContain('const CACHE = "saath-v13"');
+    expect(worker).toContain('const CACHE = "saath-v14"');
     for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings", "/games"]) expect(worker).toContain(`"${page}"`);
     for (const id of STAGE_IDS) expect(worker).toContain(`/journey/${id}`);
     for (const id of FORM_IDS) expect(worker).toContain(`/forms/${id}`);

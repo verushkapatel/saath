@@ -3,7 +3,7 @@
     "hello": "Hello",
     "name": "English",
     "title": "Choose your language",
-    "cta": "Continue",
+    "cta": "Enter the Saath immersion",
     "line": "Live a financial life before you have to.",
     "change": "Language",
     "changeHint": "Change language"
@@ -362,8 +362,8 @@
     "addShort": "Add"
   },
   "categories": {
-    "pocket": "Pocket money",
-    "scholarship": "Scholarship",
+    "pocket": "Family support",
+    "scholarship": "Stipend or grant",
     "work": "Side work",
     "gift": "Gift",
     "otherIn": "Other income",
@@ -374,7 +374,7 @@
     "fees": "Fees",
     "family": "Family",
     "otherOut": "Other spending",
-    "jar": "Savings jar",
+    "jar": "Savings",
     "rent": "Rent",
     "bills": "Bills",
     "health": "Health",
@@ -647,7 +647,7 @@
   "about": {
     "1": "Story: live Verena's money life, one part a day, from her first month away from home to retirement.",
     "2": "Learn: 45 short guides, searchable and filtered by topic. Their facts were checked against official sources.",
-    "3": "Forms: fourteen common forms explained, and a photo reader for the one in front of you.",
+    "3": "Forms: twenty important forms explained, from KYC and loans to tax returns, insurance claims and government schemes, and a photo reader for the one in front of you.",
     "4": "Money Lab: track your own money, from receipts or by hand. It stays on this device.",
     "5": "Saath AI: ask in your own words. It answers only from Saath's checked content.",
     "6": "Progress: XP, levels, streaks and badges, and Verena's outfits and places to unlock.",
@@ -895,13 +895,13 @@
       "kicker": "Saath, from The Skyward Project",
       "title": "Live a financial life before you have to.",
       "lead": "Follow Verena from her first month away from home to retirement. Make her money decisions, see what follows, and learn why.",
-      "cta": "See how it works",
-      "note": "Free. No ads. Works on this phone, even offline once it has loaded.",
+      "cta": "Begin the tour",
+      "note": "{count} short chapters, each one something you can try. Free, no ads, works offline once loaded.",
       "figure": "Verena, the character in Saath's story"
     },
     "play": {
-      "title": "Decide, then see what happens",
-      "lead": "Every part of Verena's story ends in a choice. Try one now.",
+      "title": "Live Verena's money life, from first salary to retirement",
+      "lead": "Verena starts out knowing very little. One part of her life opens each day. You make her decisions and see what follows.",
       "kicker": "Verena, 19, in Pune",
       "story": "It is the 18th. Verena opens her banking app and sees ₹350. There are twelve days left in the month.",
       "question": "What should she do?",
@@ -916,7 +916,11 @@
       "xp": "+{xp} XP",
       "again": "Try another choice",
       "figure": "Verena looking at her phone",
-      "loopLabel": "How each part of the story works"
+      "loopLabel": "How each part of the story works",
+      "p1": "Fourteen life stages: first job and payslip, a bank account, budgeting, a first loan, insurance, investing, marriage and children, and retirement.",
+      "p2": "Each part plays like a short film: the scene, a simulation you can try, a decision, what happens next, and why.",
+      "p3": "Her mistakes are shown too, with what they cost her, so you can spot them before they happen to you.",
+      "p4": "Every part ends with a short drill of multiple-choice questions, and earns XP."
     },
     "loop": {
       "story": "Story",
@@ -928,16 +932,20 @@
       "xp": "XP"
     },
     "progress": {
-      "title": "Keep going and Verena changes",
-      "lead": "Each day you play adds XP and keeps your streak. New outfits, places and badges open as you go. Nothing is bought.",
+      "title": "Streaks, XP, levels and rewards",
+      "lead": "Every day you show up counts. Verena changes as you progress.",
       "figure": "Verena in the outfit and place you picked",
       "streakOn": "1-day streak. Come back tomorrow to keep it.",
       "streakOff": "Your streak starts with your first choice.",
-      "note": "In the app, these open as you finish parts of the story."
+      "note": "In the app, these open as you finish parts of the story.",
+      "p1": "Your streak grows with each day you finish something. One missed day a week is forgiven.",
+      "p2": "XP from the story, challenges, guides, real stories and games raises your level.",
+      "p3": "New outfits, accessories, places and badges for Verena open as you go. Nothing is ever bought.",
+      "p4": "Share your level, streak or Verena's look as a picture. Never your money."
     },
     "guides": {
-      "title": "Look anything up",
-      "lead": "45 short guides, from budgeting to retirement, checked against official sources.",
+      "title": "Guides: the full explanation, for depth and revision",
+      "lead": "Everything the story covers, explained plainly without the story, each checked against an official source.",
       "try": "Try a question",
       "q0": "What is an EMI?",
       "q1": "Is this loan app real?",
@@ -947,11 +955,15 @@
       "t1": "Loan apps that harm",
       "a1": "A real lender does not need your photo gallery or your contacts.",
       "t2": "An emergency fund",
-      "a2": "A small cash reserve keeps a bad week from becoming a loan."
+      "a2": "A small cash reserve keeps a bad week from becoming a loan.",
+      "p1": "45 guides across 13 topics: banking, budgeting, saving, salary, investing, insurance, loans, tax, schemes, paperwork, family, retirement and fraud.",
+      "p2": "Each has key points, a worked example and something to try in real life.",
+      "p3": "Revise topic by topic. The topics where you made mistakes are marked for you.",
+      "p4": "Every guide can be read aloud, searched by voice, and shared."
     },
     "forms": {
-      "title": "Read a form before you sign",
-      "lead": "Fourteen common forms explained line by line, or take a photo of the one in front of you. It is read on this phone.",
+      "title": "Every important form, explained before you sign",
+      "lead": "A library of the forms adults actually face, with what each one asks and what to bring.",
       "paper": "A sample loan form",
       "hint": "Tap a line to see what it means.",
       "more": "In the app, the library explains each form and what to check before you sign.",
@@ -963,46 +975,108 @@
       "n1": "Ask for the rupee amount, not only the percentage.",
       "f2": "Signature",
       "v2": "__________",
-      "n2": "Never sign a form with blank fields. Strike through any you do not use."
+      "n2": "Never sign a form with blank fields. Strike through any you do not use.",
+      "p1": "Twenty forms: account opening and KYC, loans, gold loans and credit cards, insurance proposals and health claims, government schemes, the ITR-1 tax return, PPF and EPF.",
+      "p2": "For each: who it is for, the documents you need, a field-by-field walkthrough and the mistakes to avoid.",
+      "p3": "Photograph any form and Saath AI explains it in plain words. The photo is read on your phone and never uploaded.",
+      "p4": "Each form links to the official source so you can check it yourself."
     },
     "ai": {
-      "title": "Ask Saath",
-      "lead": "Ask in your own words. Saath answers only from its checked guides, and says so when it does not know.",
-      "hello": "Ask me anything about money. I answer from Saath's checked guides.",
+      "title": "Saath AI: ask anything, in your language, by voice",
+      "lead": "A money tutor that is always there. Type or speak in English, Hindi or Marathi, and it answers in the same language.",
+      "hello": "Ask me anything about money, by typing or with the microphone.",
       "try": "Try a question",
       "q0": "What is a Key Fact Statement?",
       "q1": "Someone took my OTP and money is gone",
       "q2": "Which fund gives the best return?",
-      "note": "Saath AI never quotes today's rates and never tells you what to buy.",
+      "note": "Saath AI is a tutor, not a licensed financial adviser.",
       "a0": "A standard, plain-language summary of a loan: what you borrow, every charge, the annual percentage rate and the repayment schedule.",
       "a1": "If money has just been taken from you or you shared an OTP: call 1930 (the national cyber crime helpline) now and tell your bank straight away. You can also report at cybercrime.gov.in. Speed matters more than anything else.",
-      "a2": "I can't tell you what to buy or where to put your money. That depends on your whole situation, and I'm not a licensed adviser."
+      "a2": "I can't tell you what to buy or where to put your money. That depends on your whole situation, and I'm not a licensed adviser.",
+      "p1": "Clear answers: a direct reply, the key points, and one practical tip. It can read the answer aloud.",
+      "p2": "It knows what is on your screen: tap \"Explain this\" on a guide, a form, a story part or a wrong answer.",
+      "p3": "Facts about rates, limits and schemes come only from Saath's checked guides. It never guesses a number and never tells you what to buy.",
+      "p4": "It suggests what to revise and sums up your progress. ID numbers are removed before anything is sent, and Money Lab never leaves your phone."
     },
     "money": {
-      "title": "Track your own money",
-      "lead": "Log what comes in and goes out, or photograph a receipt. Saath shows where it went. It stays on this phone.",
+      "title": "Money Lab: your own spending, made clear",
+      "lead": "Log what comes in and goes out in a tap, or photograph a receipt. It starts with a short walkthrough.",
       "try": "Tap to log",
       "total": "Spent",
       "hint": "Tap a spend above to log it.",
-      "note": "Nothing you log here is ever shared or uploaded."
+      "note": "Nothing you log here is ever shared or uploaded.",
+      "p1": "Salary, rent, bills, groceries, health, travel and more, each with its own icon.",
+      "p2": "Photograph a receipt: Saath reads the amount and date on your phone, you check it, then save.",
+      "p3": "See what is left this month, where it went, repeating payments and a savings goal.",
+      "p4": "Everything stays on this device. It is never shared, uploaded or sent to Saath AI."
     },
     "stories": {
-      "title": "Real stories, with their sources",
-      "lead": "Each day, one real event, summarised from a regulator, the government or a news report, with a link to check it.",
+      "title": "A true story every day",
+      "lead": "A real adult's money mistake and what they learned, or advice that changed someone's life. Always true, always with its source.",
       "source": "Source: SEBI, 2024-09-23",
       "sample": "Nine in ten individual F&O traders lost money",
-      "sampleBody": "The screenshot of one good morning that gets shared in a group chat is the exception. The regulator's own numbers show what usually happens."
+      "sampleBody": "The screenshot of one good morning that gets shared in a group chat is the exception. The regulator's own numbers show what usually happens.",
+      "p1": "Taken from regulators, government records and reputable news reports.",
+      "p2": "Each ends with the lesson and one thing you can do about it.",
+      "p3": "Linked to the guide that goes deeper.",
+      "p4": "Reading it counts towards your streak."
     },
     "personal": {
-      "title": "Made around what you find hard",
-      "lead": "Tell Saath what feels hardest. It suggests what to read and what to revise, and remembers where you went wrong.",
+      "title": "Set up around what you find hard",
+      "lead": "After you make your account, pick the topics that worry you most. Saath plans around them.",
       "hint": "Pick a few topics.",
       "result": "Saath would start you with: {topics}.",
-      "share": "Share your level and streak as a picture, never your money."
+      "share": "Share your level and streak as a picture, never your money.",
+      "p1": "Your daily challenges turn through these topics.",
+      "p2": "Home recommends what to read or revise next, and why.",
+      "p3": "Every wrong answer is remembered, so weak topics come back for revision.",
+      "p4": "Change your topics any time in Settings."
     },
     "cta": "Make Saath yours today.",
     "ctaLead": "Make a username and password. It takes a minute and stays on this device.",
-    "ctaNote": "Your account and data stay in this browser."
+    "ctaNote": "Your account and data stay in this browser.",
+    "skipToEnd": "{left} chapters left · jump to the end",
+    "challenges": {
+      "title": "Daily challenges built around you",
+      "lead": "When you sign up, Saath asks which money topics feel hardest. Every day it sets three challenges on one of them.",
+      "p1": "A money crisis: a real-life situation to handle, like a fake bank call or a broken phone before payday.",
+      "p2": "A real-life task to do today, such as checking your last ten bank transactions.",
+      "p3": "A three-question quiz on the day's topic.",
+      "p4": "XP for each, and a bonus when all three are done.",
+      "crisisTitle": "The call from \"your bank\"",
+      "crisis": "A caller knows your name and card number. \"Tell me the OTP we just sent, or your account is blocked in 10 minutes.\"",
+      "o0": "Share it. They already know my details.",
+      "o1": "Hang up and call the number on the back of my card.",
+      "why0": "That is how most people lose money. Banks never ask for an OTP. If money has gone, call 1930.",
+      "why1": "Right. Knowing your details proves nothing. Banks never ask for an OTP."
+    },
+    "games": {
+      "title": "Games that sharpen your instincts",
+      "lead": "Quick rounds for the moments you have two minutes. More open as you level up.",
+      "p1": "Needs or wants: sort everyday spends against the clock of your own judgement.",
+      "p2": "Scam or safe: read real-looking messages and decide whether to trust them.",
+      "p3": "Every answer comes with the reason, so a wrong guess still teaches you.",
+      "p4": "Your best score is kept, and you can challenge friends.",
+      "g0": "This month's electricity bill",
+      "g1": "A new phone when yours works fine",
+      "g2": "Medicine the doctor prescribed",
+      "next": "Next item"
+    },
+    "yours": {
+      "title": "Your way: light or dark, your language, share anything",
+      "lead": "Try it now. These stay in Settings, along with text size and sound.",
+      "p1": "Light and dark mode, or follow your phone.",
+      "p2": "English, Hindi or Marathi, switched any time without losing anything.",
+      "p3": "Share buttons for your progress, Verena's look, story progress, guides, forms, stories and game scores.",
+      "p4": "Install it on your phone or laptop and it opens like an app, even offline.",
+      "shareCard": "My Verena on Saath",
+      "shareLine": "Level 4 · 12-day streak"
+    },
+    "done": {
+      "title": "That is all of Saath.",
+      "lead": "A story to live, a challenge each day, guides, forms, Saath AI and your own Money Lab. Next, make it yours.",
+      "cta": "Continue"
+    }
   },
   "journey": {
     "kicker": "The story",
@@ -1159,8 +1233,8 @@
     "ask": "Ask",
     "title": "Saath AI",
     "kicker": "Ask Saath",
-    "lead": "Ask about money in your own words. Answers come from Saath's checked guides, forms and story.",
-    "hello": "Hello. Ask me anything about money, or about what is on your screen. I answer from Saath's checked guides, and I say so when I do not know.",
+    "lead": "Type or speak your question in English, Hindi or Marathi. Saath AI answers in the same language, and can read the answer aloud.",
+    "hello": "Ask me anything about money: salaries, bank accounts, loans, insurance, schemes, forms or scams. Tap the microphone to speak. Facts about rates and rules come only from Saath's checked guides.",
     "placeholder": "Type your question",
     "send": "Send",
     "thinking": "Saath is thinking",
@@ -1196,7 +1270,14 @@
     "offerBody": "Your question goes to Saath's own server with ID numbers removed, so the answers are fuller. Money Lab, receipts and photos are never sent. You can change this any time in Settings.",
     "offerYes": "Fine, use online answers",
     "offerNo": "Keep it on this phone",
-    "helloTitle": "Ask Saath anything about money"
+    "helloTitle": "Ask Saath anything about money",
+    "talkIn": "Speak or type in",
+    "listening": "Listening… speak now",
+    "micStart": "Speak your question in {lang}",
+    "micStop": "Stop listening",
+    "micBlocked": "The microphone is blocked. Allow it for this site in your browser settings, then try again.",
+    "micNothing": "Nothing was heard. Tap the microphone and speak a little closer.",
+    "micFailed": "Voice input is not available right now. You can type instead."
   },
   "prog": {
     "kicker": "Your progress",
@@ -1463,5 +1544,49 @@
     "count": "{done} of {total} read",
     "weak": "Worth revising",
     "open": "Revise topic by topic"
+  },
+  "welcome": {
+    "title": "Make Saath yours.",
+    "lead": "Your own Verena, your own pace, your own progress, saved under a username and password only you know.",
+    "p1": "Two minutes to set up",
+    "p2": "No phone number, no email, no real name",
+    "p3": "Free, with nothing to buy",
+    "cta": "Make Saath yours"
+  },
+  "installStep": {
+    "kicker": "Before you begin",
+    "title": "Put Saath on your home screen",
+    "lead": "It then opens in one tap, full screen like an app, and keeps working without a connection.",
+    "device": "Your device",
+    "ios": "iPhone",
+    "android": "Android",
+    "desktop": "Laptop",
+    "ios1": "In Safari, tap the Share button at the bottom of the screen.",
+    "ios2": "Scroll down and tap Add to Home Screen.",
+    "ios3": "Tap Add in the top corner.",
+    "ios4": "Open Saath from your home screen and make your account there.",
+    "iosNote": "On iPhone, the home-screen Saath keeps its own storage, separate from Safari. Make your account after opening it from the home screen so your progress is saved there.",
+    "android1": "In Chrome, tap the menu (three dots) at the top right.",
+    "android2": "Tap Install app, or Add to Home screen.",
+    "android3": "Confirm with Install.",
+    "android4": "Open Saath from your home screen.",
+    "desktop1": "In Chrome or Edge, click the install icon at the right end of the address bar.",
+    "desktop2": "Or bookmark it: press Ctrl+D (Cmd+D on a Mac).",
+    "desktop3": "Open Saath from your apps or bookmarks next time.",
+    "done": "Done, set up my account",
+    "skip": "Skip and use it in the browser"
+  },
+  "setup": {
+    "progress": "Step {step} of {total}",
+    "nameTitle": "Choose a username",
+    "nameLead": "This is how you will log in and how Saath greets you. It does not have to be your real name.",
+    "passTitle": "Set a password",
+    "passLead": "It keeps {name}'s progress private on this device. Saath cannot reset it, so choose one you will remember.",
+    "confirm": "Type it again",
+    "mismatch": "The two passwords are not the same.",
+    "lookTitle": "How should Saath look?",
+    "lookLead": "Last step, {name}. Pick what is comfortable to read.",
+    "lookNote": "All of this can be changed later in Settings.",
+    "finish": "Start my Saath"
   }
 }

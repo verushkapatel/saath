@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookOpen, Check, ChevronRight, FileText, Gamepad2, MessageCircle, Newspaper, RotateCcw, Snowflake, Wallet } from "lucide-react";
+import { BookOpen, Check, ChevronRight, Gamepad2, LineChart, MessageCircle, Newspaper, RotateCcw, Snowflake } from "lucide-react";
 import { QUESTION_TOPIC } from "@/lib/catalog";
 import { loadJson, type DailyQuestion, type MiniCheck, type StoriesFile } from "@/lib/content-types";
 import { nextAction, pickByDay } from "@/lib/daily";
@@ -207,17 +207,6 @@ export function HomeScreen() {
         </div>
       </section>
 
-      {action.kind !== "question" && check && (
-        <section className="card tight stack-sm" aria-labelledby="q-h">
-          <p className="kicker" id="q-h">{t("home.todayQuestion")}</p>
-          <p>{check.question[code]}</p>
-          <button type="button" className="link" onClick={() => { tap(); setAsking(true); }}>
-            {picked !== null ? t("home.seeAnswer") : t("home.answer")}
-            <ChevronRight aria-hidden size={18} />
-          </button>
-        </section>
-      )}
-
       {realStory && action.kind !== "story" && (
         <Link href="/stories" className="card tight" onClick={tap}>
           <span className="stack-xs">
@@ -247,11 +236,9 @@ export function HomeScreen() {
       <section className="stack-sm" aria-labelledby="quick-h">
         <h2 id="quick-h">{t("home.quick")}</h2>
         <div className="quick-grid">
-          <Link href="/guide" className="tile card tight" onClick={tap}><BookOpen aria-hidden size={22} /><span className="item-title">{t("nav.guide")}</span></Link>
-          <Link href="/forms" className="tile card tight" onClick={tap}><FileText aria-hidden size={22} /><span className="item-title">{t("nav.forms")}</span></Link>
-          <Link href="/money-lab" className="tile card tight" onClick={tap}><Wallet aria-hidden size={22} /><span className="item-title">{t("nav.money")}</span></Link>
-          <button type="button" className="tile card tight" onClick={() => { tap(); ai.openAsk(); }}><MessageCircle aria-hidden size={22} /><span className="item-title">{t("ai.ask")}</span></button>
           <Link href="/games" className="tile card tight" onClick={tap}><Gamepad2 aria-hidden size={22} /><span className="item-title">{t("games.title")}</span></Link>
+          <button type="button" className="tile card tight" onClick={() => { tap(); ai.openAsk(); }}><MessageCircle aria-hidden size={22} /><span className="item-title">{t("nav.ai")}</span></button>
+          <Link href="/progress" className="tile card tight" onClick={tap}><LineChart aria-hidden size={22} /><span className="item-title">{t("nav.progress")}</span></Link>
           <Link href="/stories" className="tile card tight" onClick={tap}><Newspaper aria-hidden size={22} /><span className="item-title">{t("nav.stories")}</span></Link>
         </div>
       </section>

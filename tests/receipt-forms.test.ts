@@ -99,7 +99,7 @@ describe("explaining a form from a photo", () => {
 });
 
 describe("forms library", () => {
-  it("has the fourteen forms, each with an official https source and a check date", () => {
+  it("has every form in the library, each with an official https source and a check date", () => {
     expect(forms.forms.map((form) => form.id)).toEqual([...FORM_IDS]);
     const guideIds = new Set(lessons.map((lesson) => lesson.id));
     for (const form of forms.forms) {

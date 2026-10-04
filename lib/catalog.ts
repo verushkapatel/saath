@@ -153,7 +153,7 @@ export type StageId = (typeof STAGE_IDS)[number];
 export const FORM_IDS = [
   "savings-account", "kyc-update", "nomination", "pan-application", "no-pan-declaration", "salary-tds-certificate",
   "no-tds-declaration", "loan-kfs", "gold-loan", "insurance-proposal", "jan-suraksha", "atal-pension",
-  "sukanya-samriddhi", "epf-joining",
+  "sukanya-samriddhi", "epf-joining", "itr-1", "health-claim", "epf-claim", "ppf-account", "credit-card", "ayushman-card",
 ] as const;
 
 export const LANGS = ["en", "hi", "mr"] as const;

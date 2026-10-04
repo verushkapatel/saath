@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowDown, ArrowRight, BookOpen, Check, FileText, Flame as FlameIcon, MessageCircle, Search, Share2, Sparkles, Wallet } from "lucide-react";
 import { TOPICS } from "@/lib/catalog";
 import { inr } from "@/lib/format";
@@ -9,6 +9,7 @@ import { tap } from "@/lib/speech";
 import { Character } from "./character";
 import { LangSwitch } from "./lang-switch";
 import { Logo } from "./logo";
+import { usePrefs } from "./prefs";
 import { useI18n } from "./providers";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -283,11 +284,136 @@ function PersonalDemo() {
   );
 }
 
+/** A money crisis from the daily challenges, playable in one tap. */
+function ChallengeDemo() {
+  const { t } = useI18n();
+  const [pick, setPick] = useState<number | null>(null);
+  return (
+    <div className="demo">
+      <div className="crisis-card navy-scene">
+        <p className="kicker">{t("challenge.crisis")}</p>
+        <h3>{t("intro.challenges.crisisTitle")}</h3>
+        <p>{t("intro.challenges.crisis")}</p>
+      </div>
+      <div className="stack-sm" role="group" aria-label={t("intro.challenges.crisisTitle")}>
+        {[0, 1].map((index) => (
+          <button key={index} type="button" className={`option${pick === index ? (index === 1 ? " is-best" : " is-mine") : ""}`} aria-pressed={pick === index} onClick={() => { tap(); setPick(index); }}>
+            <span className="option-mark" aria-hidden>{pick === index ? <Check size={16} strokeWidth={3} /> : null}</span>
+            <span>{t(`intro.challenges.o${index}`)}</span>
+          </button>
+        ))}
+      </div>
+      <p role="status" className={pick === null ? "faint" : "muted"}>{pick === null ? t("intro.play.hint") : t(`intro.challenges.why${pick}`)}</p>
+    </div>
+  );
+}
+
+/** One round of "Needs or wants?". */
+function GameDemo() {
+  const { t } = useI18n();
+  const items = ["g0", "g1", "g2"] as const;
+  const answers = [true, false, true];
+  const [at, setAt] = useState(0);
+  const [pick, setPick] = useState<boolean | null>(null);
+  const right = pick !== null && pick === answers[at];
+  return (
+    <div className="demo">
+      <div className={`game-card${pick !== null ? (right ? " right" : " wrong") : ""}`} key={at}><p>{t(`intro.games.${items[at]}`)}</p></div>
+      {pick === null ? (
+        <div className="game-buttons">
+          <button type="button" className="game-btn yes" onClick={() => { tap(); setPick(true); }}>{t("games.need")}</button>
+          <button type="button" className="game-btn no" onClick={() => { tap(); setPick(false); }}>{t("games.want")}</button>
+        </div>
+      ) : (
+        <div className="stack-sm" role="status">
+          <p className={`game-verdict${right ? " right" : ""}`}>{right ? t("games.right") : t("games.wrong", { answer: answers[at] ? t("games.need") : t("games.want") })}</p>
+          <button type="button" className="link" onClick={() => { tap(); setPick(null); setAt((at + 1) % items.length); }}>{t("intro.games.next")}</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Light or dark, language, and sharing: tried here, kept in Settings. */
+function YoursDemo() {
+  const { t } = useI18n();
+  const { prefs, update } = usePrefs();
+  return (
+    <div className="demo">
+      <div className="stack-xs">
+        <p className="label">{t("theme.label")}</p>
+        <div className="seg" role="group" aria-label={t("theme.label")}>
+          {(["light", "dark"] as const).map((item) => (
+            <button key={item} type="button" aria-pressed={prefs.theme === item} onClick={() => { tap(); update({ theme: item }); }}>{t(`theme.${item}`)}</button>
+          ))}
+        </div>
+      </div>
+      <div className="stack-xs">
+        <p className="label">{t("profile.language")}</p>
+        <LangSwitch />
+      </div>
+      <div className="share-preview">
+        <Character look={{ outfit: "festive", extra: "earrings", place: "garden" }} age={30} size={96} mood="happy" />
+        <div className="stack-xs">
+          <strong>{t("intro.yours.shareCard")}</strong>
+          <span className="faint">{t("intro.yours.shareLine")}</span>
+          <span className="share-btn" aria-hidden><Share2 size={16} />{t("common.share")}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Points({ act, count }: { act: string; count: number }) {
+  const { t } = useI18n();
+  return (
+    <ul className="act-points">
+      {Array.from({ length: count }, (_, index) => (
+        <li key={index}><Check aria-hidden size={16} strokeWidth={3} /><span>{t(`intro.${act}.p${index + 1}`)}</span></li>
+      ))}
+    </ul>
+  );
+}
+
+const ACTS = ["play", "challenges", "progress", "games", "guides", "forms", "ai", "money", "stories", "personal", "yours"] as const;
+
 export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => void }) {
   const { t } = useI18n();
   const [xp, setXp] = useState(0);
   const [act, setAct] = useState(-1);
-  const acts = useMemo(() => ["play", "progress", "guides", "forms", "ai", "money", "stories", "personal"], []);
+  const total = ACTS.length;
+  const head = (index: number) => <ActHead n={String(index + 1).padStart(2, "0")} title={t(`intro.${ACTS[index]}.title`)} lead={t(`intro.${ACTS[index]}.lead`)} />;
+  const demo = (id: (typeof ACTS)[number]) => {
+    switch (id) {
+      case "play":
+        return (
+          <>
+            <PlayEpisode onXp={setXp} />
+            <ol className="loop" aria-label={t("intro.play.loopLabel")}>
+              {["story", "try", "decide", "outcome", "why", "drill", "xp"].map((step) => <li key={step}>{t(`intro.loop.${step}`)}</li>)}
+            </ol>
+          </>
+        );
+      case "challenges": return <ChallengeDemo />;
+      case "progress": return <ProgressDemo xp={xp} />;
+      case "games": return <GameDemo />;
+      case "guides": return <GuideDemo />;
+      case "forms": return <FormDemo />;
+      case "ai": return <AskDemo />;
+      case "money": return <MoneyDemo />;
+      case "stories":
+        return (
+          <div className="demo">
+            <p className="kicker">{t("stories.kind.official")}</p>
+            <h3>{t("intro.stories.sample")}</h3>
+            <p className="muted">{t("intro.stories.sampleBody")}</p>
+            <p className="faint">{t("intro.stories.source")}</p>
+          </div>
+        );
+      case "personal": return <PersonalDemo />;
+      case "yours": return <YoursDemo />;
+    }
+  };
 
   return (
     <main className="intro">
@@ -312,80 +438,39 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
             {t("intro.hero.cta")}
             <ArrowDown aria-hidden size={18} />
           </a>
-          <p className="faint">{t("intro.hero.note")}</p>
+          <p className="faint">{t("intro.hero.note", { count: total })}</p>
         </div>
       </section>
 
-      <Reveal id="act-play" navy onSeen={() => setAct(0)}>
-        <ActHead n="01" title={t("intro.play.title")} lead={t("intro.play.lead")} />
-        <PlayEpisode onXp={setXp} />
-        <ol className="loop" aria-label={t("intro.play.loopLabel")}>
-          {["story", "try", "decide", "outcome", "why", "drill", "xp"].map((step) => <li key={step}>{t(`intro.loop.${step}`)}</li>)}
-        </ol>
-      </Reveal>
+      {ACTS.map((id, index) => (
+        <Reveal key={id} id={`act-${id}`} navy={index % 2 === 0} onSeen={() => setAct(index)}>
+          {head(index)}
+          <Points act={id} count={4} />
+          {demo(id)}
+        </Reveal>
+      ))}
 
-      <Reveal onSeen={() => setAct(1)}>
-        <ActHead n="02" title={t("intro.progress.title")} lead={t("intro.progress.lead")} />
-        <ProgressDemo xp={xp} />
-      </Reveal>
-
-      <Reveal navy onSeen={() => setAct(2)}>
-        <ActHead n="03" title={t("intro.guides.title")} lead={t("intro.guides.lead")} />
-        <GuideDemo />
-      </Reveal>
-
-      <Reveal onSeen={() => setAct(3)}>
-        <ActHead n="04" title={t("intro.forms.title")} lead={t("intro.forms.lead")} />
-        <FormDemo />
-      </Reveal>
-
-      <Reveal navy onSeen={() => setAct(4)}>
-        <ActHead n="05" title={t("intro.ai.title")} lead={t("intro.ai.lead")} />
-        <AskDemo />
-      </Reveal>
-
-      <Reveal onSeen={() => setAct(5)}>
-        <ActHead n="06" title={t("intro.money.title")} lead={t("intro.money.lead")} />
-        <MoneyDemo />
-      </Reveal>
-
-      <Reveal navy onSeen={() => setAct(6)}>
-        <ActHead n="07" title={t("intro.stories.title")} lead={t("intro.stories.lead")} />
-        <div className="demo">
-          <p className="kicker">{t("stories.kind.official")}</p>
-          <h3>{t("intro.stories.sample")}</h3>
-          <p className="muted">{t("intro.stories.sampleBody")}</p>
-          <p className="faint">{t("intro.stories.source")}</p>
-        </div>
-      </Reveal>
-
-      <Reveal onSeen={() => setAct(7)}>
-        <ActHead n="08" title={t("intro.personal.title")} lead={t("intro.personal.lead")} />
-        <PersonalDemo />
-        <p className="faint"><Share2 aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("intro.personal.share")}</p>
-      </Reveal>
-
-      <Reveal id="join" onSeen={() => setAct(8)}>
+      <Reveal id="join" onSeen={() => setAct(total)}>
         <div className="finale navy-scene">
-          <h2>{t("intro.cta")}</h2>
-          <p className="lead">{t("intro.ctaLead")}</p>
+          <h2>{t("intro.done.title")}</h2>
+          <p className="lead">{t("intro.done.lead")}</p>
           <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }}>
-            {t("intro.cta")}
+            {t("intro.done.cta")}
             <ArrowRight aria-hidden size={18} />
           </button>
           <button type="button" className="btn btn-ghost" onClick={() => { tap(); onLogin(); }}>{t("auth.haveAccount")}</button>
           <p className="faint">{t("intro.ctaNote")} <Link href="/privacy">{t("profile.privacy")}</Link></p>
         </div>
       </Reveal>
-      {/* Where you are in the tour, and the way in, always within reach. */}
-      <nav className={`intro-dots${act >= 0 && act < acts.length ? " on" : ""}`} aria-hidden>
-        {acts.map((id, index) => <i key={id} className={index === act ? "on" : index < act ? "was" : undefined} />)}
+
+      <nav className={`intro-dots${act >= 0 && act < total ? " on" : ""}`} aria-hidden>
+        {ACTS.map((id, index) => <i key={id} className={index === act ? "on" : index < act ? "was" : undefined} />)}
       </nav>
-      <div className={`intro-float${act >= 0 && act < acts.length ? " on" : ""}`} aria-hidden={!(act >= 0 && act < acts.length)}>
-        <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }} tabIndex={act >= 0 && act < acts.length ? 0 : -1}>
-          {t("intro.cta")}
-          <ArrowRight aria-hidden size={18} />
-        </button>
+      <div className={`intro-float${act >= 0 && act < total ? " on" : ""}`} aria-hidden={!(act >= 0 && act < total)}>
+        <a className="btn btn-primary" href="#join" onClick={tap} tabIndex={act >= 0 && act < total ? 0 : -1}>
+          {t("intro.skipToEnd", { left: Math.max(1, total - act) })}
+          <ArrowDown aria-hidden size={18} />
+        </a>
       </div>
     </main>
   );

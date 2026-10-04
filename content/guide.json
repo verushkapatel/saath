@@ -105,9 +105,9 @@
       "mr": "गरजा आठवडा चालवतात. इच्छा थांबू शकतात."
     },
     "body": {
-      "en": "[[needs]] are the costs that break the day if you skip them: food, the bus, a required fee. [[wants]] are real, but they can move to next week.\n\nWhen money is tight, pay needs first. A want is not bad. It is just second.",
-      "hi": "[[needs]] वे खर्च हैं जिन्हें छोड़ने से दिन रुक जाता है: खाना, बस, ज़रूरी फीस। [[wants]] सच हैं, पर अगले हफ्ते जा सकते हैं।\n\nपैसे कम हों तो पहले ज़रूरत। इच्छा बुरी नहीं। वह दूसरी है।",
-      "mr": "[[needs]] असे खर्च आहेत की ते चुकवले तर दिवस थांबतो: जेवण, बस, आवश्यक फी. [[wants]] खऱ्या आहेत, पण पुढच्या आठवड्यात जाऊ शकतात.\n\nपैसे कमी असतील तर आधी गरज. इच्छा वाईट नाही. ती दुसऱ्या क्रमांकावर आहे."
+      "en": "[[needs]] are the costs that break your month if you skip them: rent, food, getting to work, a bill that cuts off a service. [[wants]] are real, but they can move to next week.\n\nWhen money is tight, pay needs first. A want is not bad. It is just second.",
+      "hi": "[[needs]] वे खर्च हैं जिन्हें छोड़ने से महीना बिगड़ जाता है: किराया, खाना, काम पर जाना, वह बिल जिससे सेवा कट जाए। [[wants]] सच हैं, पर अगले हफ्ते जा सकते हैं।\n\nपैसे कम हों तो पहले ज़रूरत। इच्छा बुरी नहीं। वह दूसरी है।",
+      "mr": "[[needs]] असे खर्च आहेत की ते चुकवले तर महिना बिघडतो: भाडे, जेवण, कामावर जाणे, सेवा बंद पाडणारे बिल. [[wants]] खऱ्या आहेत, पण पुढच्या आठवड्यात जाऊ शकतात.\n\nपैसे कमी असतील तर आधी गरज. इच्छा वाईट नाही. ती दुसऱ्या क्रमांकावर आहे."
     },
     "points": [
       {
@@ -132,9 +132,9 @@
       }
     ],
     "example": {
-      "en": "Ravi has ₹500 left. His exam form costs ₹350 and a movie costs ₹250. The form is a need. The movie moves to next month.",
-      "hi": "रवि के पास ₹500 बचे हैं। परीक्षा फॉर्म ₹350 का है और फिल्म ₹250 की। फॉर्म ज़रूरत है। फिल्म अगले महीने।",
-      "mr": "रवीकडे ₹500 उरले आहेत. परीक्षेचा फॉर्म ₹350 आणि सिनेमा ₹250. फॉर्म ही गरज आहे. सिनेमा पुढच्या महिन्यात."
+      "en": "Ravi has ₹1,500 left before payday. His electricity bill is ₹1,100 and a dinner out would cost ₹700. The bill is a need. The dinner moves to next month.",
+      "hi": "सैलरी से पहले रवि के पास ₹1,500 बचे हैं। बिजली का बिल ₹1,100 है और बाहर खाना ₹700 का। बिल ज़रूरत है। बाहर खाना अगले महीने।",
+      "mr": "पगाराआधी रवीकडे ₹1,500 उरले आहेत. वीज बिल ₹1,100 आणि बाहेर जेवण ₹700. बिल ही गरज आहे. बाहेरचे जेवण पुढच्या महिन्यात."
     },
     "tryIt": {
       "text": {
@@ -1356,14 +1356,14 @@
       "mr": "कर, सोप्या शब्दांत"
     },
     "summary": {
-      "en": "Most pocket money is not a tax problem. A job might be.",
-      "hi": "अधिकांश जेब खर्च कर की समस्या नहीं। नौकरी हो सकती है।",
-      "mr": "बहुतेक खिशाचे पैसे कराची अडचण नाहीत. नोकरी असू शकते."
+      "en": "Income tax applies above a yearly limit. Know where you stand and keep your records.",
+      "hi": "आयकर एक सालाना सीमा से ऊपर लगता है। जानें आप कहाँ हैं और रिकॉर्ड रखें।",
+      "mr": "आयकर वार्षिक मर्यादेपुढे लागतो. तुम्ही कुठे आहात ते जाणा आणि नोंदी जपा."
     },
     "body": {
-      "en": "[[tax]] is what the government takes from income above a threshold. A small part-time job may still be below it. Keep payslips anyway.\n\nDo not pay a stranger to “file and get a refund” if you never earned enough. That pitch is often a scam.",
-      "hi": "[[tax]] वह है जो सरकार सीमा से ऊपर की आय से लेती है। छोटी पार्ट-टाइम नौकरी अभी भी नीचे हो सकती है। फिर भी पेरोल स्लिप रखें।\n\nकाफी कमाई न हुई हो तो “रिटर्न भरकर रिफंड दिलाएँगे” वाले अजनबी को पैसे न दें। यह अक्सर ठगी होती है।",
-      "mr": "[[tax]] म्हणजे सरकार मर्यादेवरील उत्पन्नातून घेते ते. छोटी अर्धवेळ नोकरी अजून खाली असू शकते. तरी पेस्लिप ठेवा.\n\nपुरेसे कमावले नसेल तर “रिटर्न भरून रिफंड मिळवून देतो” म्हणणाऱ्या अनोळखीला पैसे देऊ नका. ही अनेकदा फसवणूक असते."
+      "en": "[[tax]] is what the government takes from income above a threshold. A first salary or part-time income may still be below it, but keep payslips and Form 16 anyway.\n\nDo not pay a stranger to “file and get a refund”. Refunds come from the official income tax portal to the account you registered there, and that pitch is often a scam.",
+      "hi": "[[tax]] वह है जो सरकार सीमा से ऊपर की आय से लेती है। पहली सैलरी या पार्ट-टाइम आय अभी भी नीचे हो सकती है, फिर भी सैलरी स्लिप और फ़ॉर्म 16 रखें।\n\n“रिटर्न भरकर रिफंड दिलाएँगे” वाले अजनबी को पैसे न दें। रिफंड आधिकारिक इनकम टैक्स पोर्टल से उसी खाते में आता है जो वहाँ दर्ज है, और यह पेशकश अक्सर ठगी होती है।",
+      "mr": "[[tax]] म्हणजे सरकार मर्यादेवरील उत्पन्नातून घेते ते. पहिला पगार किंवा अर्धवेळ उत्पन्न अजून खाली असू शकते, तरी पगार पावत्या आणि फॉर्म 16 जपा.\n\n“रिटर्न भरून रिफंड मिळवून देतो” म्हणणाऱ्या अनोळखीला पैसे देऊ नका. रिफंड अधिकृत इन्कम टॅक्स पोर्टलवरून तिथे नोंदवलेल्या खात्यातच येतो, आणि ही ऑफर अनेकदा फसवणूक असते."
     },
     "points": [
       {
@@ -1372,9 +1372,9 @@
         "mr": "आयकर फक्त वार्षिक उत्पन्नाच्या ठराविक मर्यादेपुढे लागतो."
       },
       {
-        "en": "Most students with pocket money or a small job owe nothing.",
-        "hi": "जेब खर्च या छोटी नौकरी वाले ज़्यादातर छात्रों पर कोई कर नहीं बनता।",
-        "mr": "खर्चाचे पैसे किंवा छोटी नोकरी असलेल्या बहुतेक विद्यार्थ्यांना कर लागत नाही."
+        "en": "Many people on a first salary or a small income owe little or nothing, but should still keep their papers.",
+        "hi": "पहली सैलरी या कम आय वाले कई लोगों पर बहुत कम या कोई कर नहीं बनता, फिर भी काग़ज़ रखने चाहिए।",
+        "mr": "पहिला पगार किंवा कमी उत्पन्न असलेल्या अनेकांना कमी किंवा काहीच कर लागत नाही, तरी कागदपत्रे जपावीत."
       },
       {
         "en": "GST is already inside the price of most things you buy.",
@@ -1388,9 +1388,9 @@
       }
     ],
     "example": {
-      "en": "Tara earns ₹8,000 a month from tuitions, ₹96,000 a year. That is far below the limit, so she owes no income tax. A caller offering a “refund” for ₹500 is lying.",
-      "hi": "तारा ट्यूशन से महीने के ₹8,000 कमाती है, साल के ₹96,000। यह सीमा से बहुत नीचे है, इसलिए उस पर कोई आयकर नहीं। ₹500 में “रिफंड” दिलाने वाला कॉलर झूठ बोल रहा है।",
-      "mr": "तारा शिकवणीतून महिन्याला ₹8,000 कमावते, वर्षाला ₹96,000. हे मर्यादेपेक्षा खूप कमी आहे, म्हणून तिला आयकर लागत नाही. ₹500 मध्ये “रिफंड” मिळवून देणारा कॉलर खोटे बोलत आहे."
+      "en": "Tara earns ₹8,000 a month from home tuitions, ₹96,000 a year. That is far below the limit, so she owes no income tax. A caller offering a “refund” for ₹500 is lying.",
+      "hi": "तारा घर पर ट्यूशन से महीने के ₹8,000 कमाती है, साल के ₹96,000। यह सीमा से बहुत नीचे है, इसलिए उस पर कोई आयकर नहीं। ₹500 में “रिफंड” दिलाने वाला कॉलर झूठ बोल रहा है।",
+      "mr": "तारा घरी शिकवण्या घेऊन महिन्याला ₹8,000 कमावते, वर्षाला ₹96,000. हे मर्यादेपेक्षा खूप कमी आहे, म्हणून तिला आयकर लागत नाही. ₹500 मध्ये “रिफंड” मिळवून देणारा कॉलर खोटे बोलत आहे."
     },
     "tryIt": {
       "text": {

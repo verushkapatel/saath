@@ -3,32 +3,32 @@
     "id": "q01",
     "topic": "budgeting",
     "prompt": {
-      "en": "You get 4,000 this month. Rent share is 1,500 and the bus pass is 800. What do you plan first?",
-      "hi": "इस महीने 4,000 मिलते हैं। किराए का हिस्सा 1,500 और बस पास 800 है। पहले क्या योजना बनाएँ?",
-      "mr": "या महिन्यात 4,000 मिळतात. भाड्याचा वाटा 1,500 आणि बस पास 800 आहे. आधी कशाचे नियोजन?"
+      "en": "Your salary of 18,000 arrives. Rent is 6,000 and the monthly bus pass is 800. What do you plan first?",
+      "hi": "18,000 की सैलरी आती है। किराया 6,000 और महीने का बस पास 800 है। पहले किसकी योजना बनाएँ?",
+      "mr": "18,000 पगार येतो. भाडे 6,000 आणि महिन्याचा बस पास 800 आहे. आधी कशाचे नियोजन करावे?"
     },
     "options": [
       {
-        "en": "The new earphones.",
-        "hi": "नए ईयरफोन।",
-        "mr": "नवे इयरफोन."
+        "en": "The new phone on sale.",
+        "hi": "सेल में नया फ़ोन।",
+        "mr": "सेलमधला नवा फोन."
       },
       {
-        "en": "Rent and the bus, then what is left.",
-        "hi": "किराया और बस, फिर जो बचे।",
-        "mr": "भाडे आणि बस, मग उरलेले."
+        "en": "Rent and the bus pass, then decide what is left.",
+        "hi": "किराया और बस पास, फिर जो बचे उसका फ़ैसला।",
+        "mr": "भाडे आणि बस पास, मग उरलेल्याचा निर्णय."
       },
       {
-        "en": "A gift for everyone in the class.",
-        "hi": "कक्षा के हर किसी के लिए तोहफा।",
-        "mr": "वर्गातील प्रत्येकासाठी भेट."
+        "en": "A weekend trip with colleagues.",
+        "hi": "साथियों के साथ वीकेंड ट्रिप।",
+        "mr": "सहकाऱ्यांसोबत वीकेंड ट्रिप."
       }
     ],
     "answer": 1,
     "why": {
-      "en": "Needs that keep the month moving come first. What is left can be chosen freely.",
-      "hi": "जो ज़रूरतें महीना चलाती हैं वे पहले। जो बचे वह आज़ादी से चुन सकते हैं।",
-      "mr": "महिना चालवणाऱ्या गरजा आधी. उरलेले मोकळेपणाने निवडता येते."
+      "en": "Fixed needs that keep you housed and at work come first. What is left can then be chosen freely.",
+      "hi": "जो ज़रूरतें छत और काम बनाए रखती हैं, वे पहले। फिर बचे पैसे अपनी मर्ज़ी से।",
+      "mr": "छप्पर आणि काम टिकवणाऱ्या गरजा आधी. मग उरलेले मनाप्रमाणे."
     }
   },
   {
@@ -68,31 +68,31 @@
     "topic": "budgeting",
     "prompt": {
       "en": "Which list is a budget?",
-      "hi": "कौन सी सूची बजट है?",
-      "mr": "कोणती यादी अंदाजपत्रक आहे?"
+      "hi": "बजट कौन सी सूची है?",
+      "mr": "बजेट कोणती यादी आहे?"
     },
     "options": [
       {
-        "en": "Only the things you wish to buy.",
-        "hi": "सिर्फ जो खरीदना चाहते हैं।",
-        "mr": "फक्त घ्यायचे आहे ते."
+        "en": "Only the things you plan to buy.",
+        "hi": "सिर्फ़ वे चीज़ें जो खरीदनी हैं।",
+        "mr": "फक्त विकत घ्यायच्या गोष्टी."
       },
       {
-        "en": "Money in, money that must go out, and what can wait.",
-        "hi": "पैसा आया, जो जाना ज़रूरी है, और जो रुक सकता है।",
-        "mr": "पैसे आले, जाणे आवश्यक आहे ते, आणि थांबू शकते ते."
+        "en": "Money coming in, money that must go out, and what can wait.",
+        "hi": "आने वाला पैसा, जो जाना ज़रूरी है, और जो रुक सकता है।",
+        "mr": "येणारे पैसे, जाणे आवश्यक असलेले पैसे, आणि जे थांबू शकते ते."
       },
       {
-        "en": "Last year’s festival photos.",
-        "hi": "पिछले साल की त्योहार तस्वीरें।",
-        "mr": "गेल्या वर्षीचे सण फोटो."
+        "en": "Last month's bank statement, unread.",
+        "hi": "पिछले महीने का बैंक स्टेटमेंट, बिना पढ़ा।",
+        "mr": "मागच्या महिन्याचे बँक स्टेटमेंट, न वाचलेले."
       }
     ],
     "answer": 1,
     "why": {
-      "en": "A budget is a plan for the money you actually have.",
-      "hi": "बजट उस पैसे की योजना है जो सच में आपके पास है।",
-      "mr": "अंदाजपत्रक म्हणजे प्रत्यक्षात असलेल्या पैशांची योजना."
+      "en": "A budget plans the month ahead: income, the costs that cannot be skipped, and what is flexible.",
+      "hi": "बजट आने वाले महीने की योजना है: आय, जो खर्च टल नहीं सकते, और जो लचीले हैं।",
+      "mr": "बजेट म्हणजे पुढच्या महिन्याचे नियोजन: उत्पन्न, टाळता न येणारे खर्च आणि लवचिक खर्च."
     }
   },
   {
@@ -131,9 +131,9 @@
     "id": "q05",
     "topic": "budgeting",
     "prompt": {
-      "en": "Pocket money arrives on the 1st. When should you note it?",
-      "hi": "जेब खर्च 1 तारीख को आता है। कब नोट करें?",
-      "mr": "खिशाचे पैसे 1 तारखेला येतात. केव्हा नोंद करावी?"
+      "en": "Your salary is credited on the 1st. When should you note it in your budget?",
+      "hi": "सैलरी 1 तारीख को आती है। बजट में कब लिखें?",
+      "mr": "पगार 1 तारखेला जमा होतो. बजेटमध्ये कधी नोंदवावा?"
     },
     "options": [
       {
@@ -143,20 +143,20 @@
       },
       {
         "en": "Only if something is left on the 30th.",
-        "hi": "सिर्फ अगर 30 को कुछ बचे।",
-        "mr": "फक्त 30 ला काही शिल्लक राहिले तर."
+        "hi": "सिर्फ़ तब, जब 30 तारीख को कुछ बचे।",
+        "mr": "30 तारखेला काही उरले तरच."
       },
       {
-        "en": "Never. Memory is enough.",
-        "hi": "कभी नहीं। याद काफी है।",
-        "mr": "कधीही नाही. आठवणी पुरेशा आहेत."
+        "en": "Never. The bank app is enough.",
+        "hi": "कभी नहीं। बैंक ऐप काफ़ी है।",
+        "mr": "कधीच नाही. बँक अ‍ॅप पुरेसे आहे."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "Money that is written on the day it arrives is harder to lose track of.",
-      "hi": "जो पैसा आने के दिन लिखा जाए, उसका हिसाब कम बिगड़ता है।",
-      "mr": "येत्या दिवशी लिहिलेल्या पैशांचा हिशोब कमी बिघडतो."
+      "en": "Noting income the day it arrives lets you plan the whole month before spending starts.",
+      "hi": "जिस दिन आय आए उसी दिन लिखने से खर्च शुरू होने से पहले पूरे महीने की योजना बनती है।",
+      "mr": "उत्पन्न आल्याच्या दिवशी नोंदवल्यास खर्च सुरू होण्याआधी पूर्ण महिन्याचे नियोजन होते."
     }
   },
   {
@@ -164,31 +164,31 @@
     "topic": "budgeting",
     "prompt": {
       "en": "Which spend belongs with needs?",
-      "hi": "कौन सा खर्च ज़रूरत के साथ है?",
-      "mr": "कोणता खर्च गरजेसोबत आहे?"
+      "hi": "कौन सा खर्च ज़रूरतों में आता है?",
+      "mr": "कोणता खर्च गरजांमध्ये येतो?"
     },
     "options": [
       {
         "en": "A second pair of festival shoes.",
-        "hi": "त्योहार के जूते की दूसरी जोड़ी।",
-        "mr": "सणाच्या बूटांची दुसरी जोडी."
+        "hi": "त्योहार के लिए दूसरी जोड़ी जूते।",
+        "mr": "सणासाठी दुसरी जोडी बूट."
       },
       {
-        "en": "The bus pass you need to reach class.",
-        "hi": "क्लास पहुँचने के लिए बस पास।",
-        "mr": "वर्गापर्यंत पोहोचण्यासाठी बस पास."
+        "en": "The travel pass you need to get to work.",
+        "hi": "काम पर जाने के लिए ज़रूरी पास।",
+        "mr": "कामावर जाण्यासाठी आवश्यक पास."
       },
       {
-        "en": "A limited-colour phone case.",
-        "hi": "सीमित रंग का फोन कवर।",
-        "mr": "मर्यादित रंगाचे फोन कव्हर."
+        "en": "A premium streaming plan.",
+        "hi": "प्रीमियम स्ट्रीमिंग प्लान।",
+        "mr": "प्रीमियम स्ट्रीमिंग प्लॅन."
       }
     ],
     "answer": 1,
     "why": {
-      "en": "A need breaks the day if you skip it. A second pair can wait.",
-      "hi": "ज़रूरत छोड़ने से दिन रुकता है। दूसरी जोड़ी रुक सकती है।",
-      "mr": "गरज चुकवली तर दिवस थांबतो. दुसरी जोडी थांबू शकते."
+      "en": "A need keeps your income and daily life going. The others are wants, however tempting.",
+      "hi": "ज़रूरत आपकी कमाई और रोज़ की ज़िंदगी चलाती है। बाकी चाहतें हैं, कितनी भी लुभावनी हों।",
+      "mr": "गरज तुमचे उत्पन्न आणि रोजचे आयुष्य चालू ठेवते. बाकी इच्छा आहेत, कितीही मोहक असल्या तरी."
     }
   },
   {
@@ -243,9 +243,9 @@
         "mr": "फक्त रांगेत किती लोक आहेत."
       },
       {
-        "en": "Which celebrity wore it.",
-        "hi": "किस सेलिब्रिटी ने पहना।",
-        "mr": "कोणत्या सेलिब्रिटीने घातले."
+        "en": "Whether the price is printed in red.",
+        "hi": "क्या दाम लाल रंग में छपा है।",
+        "mr": "किंमत लाल रंगात छापली आहे का."
       }
     ],
     "answer": 0,
@@ -355,9 +355,9 @@
     "id": "q12",
     "topic": "saving",
     "prompt": {
-      "en": "Where should money for this month’s bus sit?",
-      "hi": "इस महीने की बस का पैसा कहाँ रहे?",
-      "mr": "या महिन्याच्या बसचे पैसे कुठे राहावेत?"
+      "en": "Where should this month's rent money sit?",
+      "hi": "इस महीने के किराए का पैसा कहाँ रखें?",
+      "mr": "या महिन्याच्या भाड्याचे पैसे कुठे ठेवावे?"
     },
     "options": [
       {
@@ -366,21 +366,21 @@
         "mr": "पाच वर्षांच्या लॉक-इनमध्ये."
       },
       {
-        "en": "Where you can use it the same day.",
-        "hi": "जहाँ उसी दिन इस्तेमाल हो सके।",
-        "mr": "जिथे त्याच दिवशी वापरता येईल."
+        "en": "In your savings account, where you can pay it the same day.",
+        "hi": "बचत खाते में, जहाँ से उसी दिन भुगतान हो सके।",
+        "mr": "बचत खात्यात, जिथून त्याच दिवशी भरता येईल."
       },
       {
-        "en": "In a friend’s cash box.",
-        "hi": "दोस्त के नकद बक्से में।",
-        "mr": "मित्राच्या रोख पेटीत."
+        "en": "In shares, to grow it first.",
+        "hi": "शेयरों में, पहले बढ़ाने के लिए।",
+        "mr": "शेअरमध्ये, आधी वाढवण्यासाठी."
       }
     ],
     "answer": 1,
     "why": {
-      "en": "Soon money needs to be easy to reach. A lock helps only money you will not touch.",
-      "hi": "जल्दी चाहिए पैसा आसानी से मिलना चाहिए। ताला सिर्फ उस पैसे की मदद करता है जिसे नहीं छुएँगे।",
-      "mr": "लवकर हवे असलेले पैसे सहज मिळावेत. कुलूप फक्त न हात लावणाऱ्या पैशांना मदत करते."
+      "en": "Money you need within weeks should be safe and reachable, not locked away or exposed to market falls.",
+      "hi": "जिस पैसे की ज़रूरत कुछ हफ़्तों में है, वह सुरक्षित और हाथ में होना चाहिए, न बंद, न बाज़ार के उतार-चढ़ाव में।",
+      "mr": "काही आठवड्यांत लागणारे पैसे सुरक्षित आणि हाताशी असावेत, बंद किंवा बाजाराच्या चढउतारात नसावेत."
     }
   },
   {
@@ -419,9 +419,9 @@
     "id": "q14",
     "topic": "saving",
     "prompt": {
-      "en": "You want a 6,000 laptop fund in six months. A steady monthly set-aside is about:",
-      "hi": "आप छह महीने में 6,000 का लैपटॉप फंड चाहते हैं। स्थिर मासिक अलग रखने की रकम लगभग:",
-      "mr": "तुम्हाला सहा महिन्यांत 6,000 चा लॅपटॉप निधी हवा आहे. स्थिर मासिक बाजूला ठेवण्याची रक्कम सुमारे:"
+      "en": "You want 6,000 for a laptop repair fund in six months. A steady monthly set-aside is about:",
+      "hi": "छह महीने में लैपटॉप मरम्मत के लिए 6,000 चाहिए। हर महीने लगभग कितना अलग रखें?",
+      "mr": "सहा महिन्यांत लॅपटॉप दुरुस्तीसाठी 6,000 हवेत. दर महिन्याला साधारण किती बाजूला ठेवावे?"
     },
     "options": [
       {
@@ -435,16 +435,16 @@
         "mr": "1,000."
       },
       {
-        "en": "6,000 every week.",
-        "hi": "हर हफ्ते 6,000।",
-        "mr": "दर आठवड्याला 6,000."
+        "en": "6,000 every month.",
+        "hi": "हर महीने 6,000।",
+        "mr": "दर महिन्याला 6,000."
       }
     ],
     "answer": 1,
     "why": {
-      "en": "Six thousand divided by six months is one thousand a month, before interest.",
-      "hi": "छह हज़ार को छह महीने से भाग दें तो ब्याज से पहले महीने के एक हज़ार।",
-      "mr": "सहा हजार भागिले सहा महिने म्हणजे व्याजापूर्वी महिन्याला एक हजार."
+      "en": "6,000 over six months is 1,000 a month. Dividing a goal by the months left turns it into a habit.",
+      "hi": "छह महीने में 6,000 यानी हर महीने 1,000। लक्ष्य को बचे महीनों से बाँटने पर वह आदत बन जाता है।",
+      "mr": "सहा महिन्यांत 6,000 म्हणजे दरमहा 1,000. लक्ष्याला उरलेल्या महिन्यांनी भागल्यावर ती सवय बनते."
     }
   },
   {
@@ -452,31 +452,31 @@
     "topic": "saving",
     "prompt": {
       "en": "Keeping savings in cash at home is risky mainly because:",
-      "hi": "बचत घर पर नकद रखना मुख्य रूप से जोखिम है क्योंकि:",
-      "mr": "बचत घरी रोख ठेवणे मुख्यतः धोकादायक आहे कारण:"
+      "hi": "बचत को घर में नकद रखना मुख्य रूप से जोखिम भरा क्यों है?",
+      "mr": "बचत घरी रोख ठेवणे मुख्यतः धोक्याचे का आहे?"
     },
     "options": [
       {
-        "en": "Notes can be lost, spent, or taken.",
-        "hi": "नोट खो सकते हैं, खर्च हो सकते हैं, या ले जाए जा सकते हैं।",
-        "mr": "नोटा हरवू शकतात, खर्च होऊ शकतात किंवा नेल्या जाऊ शकतात."
+        "en": "Notes can be lost, spent or stolen, and they earn nothing.",
+        "hi": "नोट खो सकते हैं, खर्च हो सकते हैं या चोरी हो सकते हैं, और कुछ कमाते नहीं।",
+        "mr": "नोटा हरवू शकतात, खर्च होऊ शकतात किंवा चोरीला जाऊ शकतात, आणि काही कमवत नाहीत."
       },
       {
-        "en": "Banks refuse students.",
-        "hi": "बैंक छात्रों को मना करते हैं।",
-        "mr": "बँका विद्यार्थ्यांना नकार देतात."
+        "en": "Banks refuse small deposits.",
+        "hi": "बैंक छोटी जमा नहीं लेते।",
+        "mr": "बँक लहान ठेवी घेत नाहीत."
       },
       {
-        "en": "Coins expire.",
-        "hi": "सिक्के खत्म हो जाते हैं।",
-        "mr": "नाणी संपतात."
+        "en": "Cash is not legal tender at home.",
+        "hi": "घर पर नकद वैध नहीं होता।",
+        "mr": "घरी रोख वैध नसते."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "A bank account is not magic, but it is harder to misplace than a drawer.",
-      "hi": "बैंक खाता जादू नहीं, पर दराज़ से खोना कठिन है।",
-      "mr": "बँक खाते जादू नाही, पण खणापेक्षा हरवणे कठीण आहे."
+      "en": "Cash at home is easy to dip into and has no protection. A bank account keeps it safer and can pay interest.",
+      "hi": "घर का नकद आसानी से खर्च हो जाता है और सुरक्षित नहीं होता। बैंक खाता उसे सुरक्षित रखता है और ब्याज दे सकता है।",
+      "mr": "घरची रोख सहज खर्च होते आणि सुरक्षित नसते. बँक खाते ती सुरक्षित ठेवते आणि व्याज देऊ शकते."
     }
   },
   {
@@ -499,9 +499,9 @@
         "mr": "रोज फेडायचे कर्ज."
       },
       {
-        "en": "A tip group.",
-        "hi": "एक टिप समूह।",
-        "mr": "एक टीप गट."
+        "en": "A share you can sell any day.",
+        "hi": "एक शेयर जिसे किसी भी दिन बेच सकें।",
+        "mr": "कोणत्याही दिवशी विकता येणारा शेअर."
       }
     ],
     "answer": 0,
@@ -558,9 +558,9 @@
         "mr": "मूळ मुद्दलावर."
       },
       {
-        "en": "Your neighbour’s savings.",
-        "hi": "पड़ोसी की बचत पर।",
-        "mr": "शेजाऱ्याच्या बचतीवर."
+        "en": "Each year's interest as well.",
+        "hi": "हर साल के ब्याज पर भी।",
+        "mr": "दरवर्षीच्या व्याजावरही."
       },
       {
         "en": "Only the fees.",
@@ -622,9 +622,9 @@
         "mr": "तुम्ही व्याज देणाऱ्या खात्यात पैसे ठेवता."
       },
       {
-        "en": "You only walk past the branch.",
-        "hi": "आप सिर्फ शाखा के पास से गुज़रते हैं।",
-        "mr": "तुम्ही फक्त शाखेजवळून जाता."
+        "en": "You take a personal loan from them.",
+        "hi": "आप उनसे पर्सनल लोन लेते हैं।",
+        "mr": "तुम्ही त्यांच्याकडून वैयक्तिक कर्ज घेता."
       },
       {
         "en": "You owe them a late fee.",
@@ -707,32 +707,32 @@
     "id": "q23",
     "topic": "interest",
     "prompt": {
-      "en": "A processing fee changes the loan because:",
-      "hi": "प्रोसेसिंग शुल्क कर्ज को बदलता है क्योंकि:",
-      "mr": "प्रोसेसिंग शुल्क कर्ज बदलते कारण:"
+      "en": "A processing fee changes the cost of a loan because:",
+      "hi": "प्रोसेसिंग फ़ीस से लोन की लागत क्यों बदलती है?",
+      "mr": "प्रोसेसिंग फीमुळे कर्जाचा खर्च का बदलतो?"
     },
     "options": [
       {
         "en": "It is part of the real cost, often taken on day one.",
-        "hi": "यह असली लागत का हिस्सा है, अक्सर पहले दिन कटता है।",
-        "mr": "हा खऱ्या खर्चाचा भाग आहे, अनेकदा पहिल्या दिवशी कापला जातो."
+        "hi": "यह असली लागत का हिस्सा है, अक्सर पहले ही दिन कटती है।",
+        "mr": "तो खऱ्या खर्चाचा भाग आहे, अनेकदा पहिल्याच दिवशी कापला जातो."
       },
       {
         "en": "It replaces the interest.",
-        "hi": "यह ब्याज की जगह लेता है।",
-        "mr": "हे व्याजाची जागा घेते."
+        "hi": "यह ब्याज की जगह लेती है।",
+        "mr": "तो व्याजाची जागा घेतो."
       },
       {
-        "en": "The law erases it if you are a student.",
-        "hi": "छात्र हों तो कानून इसे मिटा देता है।",
-        "mr": "विद्यार्थी असाल तर कायदा हे पुसून टाकतो."
+        "en": "It is refunded when the loan ends.",
+        "hi": "लोन ख़त्म होने पर लौटा दी जाती है।",
+        "mr": "कर्ज संपल्यावर परत मिळतो."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "You may receive less than the principal. The yearly cost is then higher than the printed rate.",
-      "hi": "हाथ में मूलधन से कम आ सकता है। तब सालाना लागत छपी दर से ऊँची होती है।",
-      "mr": "हातात मुद्दलापेक्षा कमी येऊ शकते. मग वार्षिक खर्च छापलेल्या दरापेक्षा जास्त असतो."
+      "en": "Fees are paid on top of interest. Add them to the total before you compare loans.",
+      "hi": "शुल्क ब्याज के ऊपर देने होते हैं। लोन की तुलना से पहले इन्हें कुल में जोड़ें।",
+      "mr": "शुल्क व्याजाच्या वर भरावे लागतात. कर्जांची तुलना करण्याआधी ते एकूणात मिळवा."
     }
   },
   {
@@ -740,31 +740,31 @@
     "topic": "interest",
     "prompt": {
       "en": "Which question reveals the real price of a loan?",
-      "hi": "कौन सा सवाल कर्ज की असली कीमत खोलता है?",
-      "mr": "कोणता प्रश्न कर्जाची खरी किंमत उघडतो?"
+      "hi": "कौन सा सवाल लोन की असली कीमत बताता है?",
+      "mr": "कोणता प्रश्न कर्जाची खरी किंमत सांगतो?"
     },
     "options": [
       {
         "en": "What is the total I will pay back, in rupees?",
-        "hi": "मैं कुल कितने रुपये वापस दूँगा?",
-        "mr": "मी एकूण किती रुपये परत देणार?"
+        "hi": "कुल कितने रुपये लौटाने होंगे?",
+        "mr": "एकूण किती रुपये परत करावे लागतील?"
       },
       {
         "en": "Is the EMI a round number?",
         "hi": "क्या ईएमआई गोल संख्या है?",
-        "mr": "ईएमआय गोल संख्या आहे का?"
+        "mr": "ईएमआय पूर्ण आकडा आहे का?"
       },
       {
-        "en": "Does the app use gold colour?",
-        "hi": "क्या ऐप सुनहरे रंग का है?",
-        "mr": "अ‍ॅप सोनेरी रंगाचे आहे का?"
+        "en": "How fast is the approval?",
+        "hi": "मंज़ूरी कितनी जल्दी मिलती है?",
+        "mr": "मंजुरी किती लवकर मिळते?"
       }
     ],
     "answer": 0,
     "why": {
-      "en": "The total in rupees includes rate, time, and fees. The colour of an app does not.",
-      "hi": "रुपयों का कुल दर, समय और शुल्क समेटता है। ऐप का रंग नहीं।",
-      "mr": "रुपयांचा एकूण दर, काळ आणि शुल्क सामावतो. अ‍ॅपचा रंग नाही."
+      "en": "The total repayment, with every fee, is the one number that shows what the loan really costs.",
+      "hi": "सभी शुल्कों सहित कुल चुकाई गई रकम ही बताती है कि लोन की असली लागत क्या है।",
+      "mr": "सर्व शुल्कांसह एकूण परतफेड हाच आकडा कर्जाचा खरा खर्च दाखवतो."
     }
   },
   {
@@ -772,31 +772,31 @@
     "topic": "inflation",
     "prompt": {
       "en": "Inflation means:",
-      "hi": "मुद्रास्फीति मतलब:",
+      "hi": "महँगाई का मतलब है:",
       "mr": "महागाई म्हणजे:"
     },
     "options": [
       {
         "en": "Prices of everyday things tend to rise over time.",
-        "hi": "रोज़मर्रा की चीज़ों की कीमतें समय के साथ बढ़ती हैं।",
-        "mr": "दैनंदिन वस्तूंच्या किमती काळाने वाढतात."
+        "hi": "रोज़ की चीज़ों के दाम समय के साथ बढ़ते हैं।",
+        "mr": "रोजच्या वस्तूंच्या किमती काळानुसार वाढतात."
       },
       {
-        "en": "Your salary is frozen by law.",
-        "hi": "कानून आपकी तनख्वाह जमा देता है।",
-        "mr": "कायदा तुमचा पगार गोठवतो."
+        "en": "Your salary rises automatically each year.",
+        "hi": "आपकी सैलरी हर साल अपने आप बढ़ती है।",
+        "mr": "तुमचा पगार दरवर्षी आपोआप वाढतो."
       },
       {
-        "en": "Coins become heavier.",
-        "hi": "सिक्के भारी हो जाते हैं।",
-        "mr": "नाणी जड होतात."
+        "en": "Bank balances grow by law.",
+        "hi": "बैंक बैलेंस कानून से बढ़ता है।",
+        "mr": "बँक शिल्लक कायद्याने वाढते."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "The same rupee buys a little less later. That is why a stagnant cash pile shrinks in power.",
-      "hi": "वही रुपया बाद में थोड़ा कम खरीदता है। इसलिए रुकी नकदी की ताकत घटती है।",
-      "mr": "तोच रुपया नंतर थोडे कमी घेतो. म्हणून थांबलेल्या रोखाची ताकद कमी होते."
+      "en": "Over time the same money buys a little less. Savings need to grow at least as fast to keep their value.",
+      "hi": "समय के साथ उतने ही पैसे में थोड़ा कम आता है। बचत को अपनी कीमत बनाए रखने के लिए कम से कम उतनी तेज़ी से बढ़ना चाहिए।",
+      "mr": "काळानुसार तितक्याच पैशांत थोडे कमी मिळते. मूल्य टिकवण्यासाठी बचत किमान तितक्याच वेगाने वाढायला हवी."
     }
   },
   {
@@ -867,32 +867,32 @@
     "id": "q28",
     "topic": "inflation",
     "prompt": {
-      "en": "Which cost is most exposed to inflation for a student?",
-      "hi": "छात्र के लिए कौन सा खर्च मुद्रास्फीति से सबसे ज़्यादा प्रभावित होता है?",
-      "mr": "विद्यार्थ्यासाठी कोणता खर्च महागाईला सर्वात जास्त उघडा आहे?"
+      "en": "Which household costs feel inflation most, month to month?",
+      "hi": "महीने-दर-महीने महँगाई का असर किन घरेलू खर्चों पर सबसे ज़्यादा दिखता है?",
+      "mr": "महिन्यागणिक महागाईचा परिणाम कोणत्या घरखर्चावर सर्वाधिक दिसतो?"
     },
     "options": [
       {
-        "en": "Food and local travel.",
-        "hi": "खाना और स्थानीय यात्रा।",
-        "mr": "जेवण आणि स्थानिक प्रवास."
+        "en": "Food, fuel and local travel.",
+        "hi": "खाना, ईंधन और स्थानीय यात्रा।",
+        "mr": "अन्न, इंधन आणि स्थानिक प्रवास."
       },
       {
-        "en": "A coin you already spent.",
-        "hi": "सिक्का जो आप खर्च कर चुके।",
-        "mr": "नाणे जे तुम्ही आधीच खर्च केले."
+        "en": "A fixed loan EMI you already agreed.",
+        "hi": "पहले से तय लोन की ईएमआई।",
+        "mr": "आधीच ठरलेला कर्जाचा ईएमआय."
       },
       {
-        "en": "A story from ten years ago.",
-        "hi": "दस साल पुरानी कहानी।",
-        "mr": "दहा वर्षांपूर्वीची कहाणी."
+        "en": "A one-time purchase from last year.",
+        "hi": "पिछले साल की एक बार की खरीद।",
+        "mr": "मागच्या वर्षीची एकदाची खरेदी."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "You buy food and rides often. Those prices show up in the week, not in a textbook.",
-      "hi": "खाना और सवारी आप अक्सर खरीदते हैं। वे कीमतें हफ्ते में दिखती हैं, किताब में नहीं।",
-      "mr": "जेवण आणि प्रवास तुम्ही वारंवार घेता. त्या किमती आठवड्यात दिसतात, पाठ्यपुस्तकात नाही."
+      "en": "Prices you pay again and again show inflation first. A fixed EMI does not change once agreed.",
+      "hi": "जो दाम बार-बार देने पड़ते हैं, उनमें महँगाई पहले दिखती है। तय ईएमआई एक बार तय होने पर नहीं बदलती।",
+      "mr": "वारंवार भराव्या लागणाऱ्या किमतींत महागाई आधी दिसते. ठरलेला ईएमआय एकदा ठरल्यावर बदलत नाही."
     }
   },
   {
@@ -1059,32 +1059,32 @@
     "id": "q34",
     "topic": "scams",
     "prompt": {
-      "en": "A scholarship form asks you to pay first. You remember:",
-      "hi": "छात्रवृत्ति फॉर्म पहले भुगतान माँगता है। आप याद रखते हैं:",
-      "mr": "शिष्यवृत्ती अर्ज आधी पैसे मागतो. तुम्ही आठवता:"
+      "en": "A grant or subsidy form asks you to pay a fee to an agent first. You remember:",
+      "hi": "किसी अनुदान या सब्सिडी फ़ॉर्म के लिए एजेंट पहले फ़ीस माँगता है। आपको याद रहता है:",
+      "mr": "एखाद्या अनुदान किंवा सबसिडी फॉर्मसाठी एजंट आधी फी मागतो. तुम्हाला आठवते:"
     },
     "options": [
       {
-        "en": "A scholarship is money you receive.",
-        "hi": "छात्रवृत्ति वह पैसा है जो आपको मिलता है।",
-        "mr": "शिष्यवृत्ती म्हणजे तुम्हाला मिळणारे पैसे."
+        "en": "A grant is money you receive. Apply through the official portal or office.",
+        "hi": "अनुदान वह पैसा है जो आपको मिलता है। आधिकारिक पोर्टल या दफ़्तर से आवेदन करें।",
+        "mr": "अनुदान म्हणजे तुम्हाला मिळणारे पैसे. अधिकृत पोर्टल किंवा कार्यालयातून अर्ज करा."
       },
       {
-        "en": "Every grant starts with a token.",
-        "hi": "हर अनुदान टोकन से शुरू होता है।",
-        "mr": "प्रत्येक अनुदान टोकनने सुरू होते."
+        "en": "Every grant starts with a token payment.",
+        "hi": "हर अनुदान एक टोकन भुगतान से शुरू होता है।",
+        "mr": "प्रत्येक अनुदान टोकन रकमेने सुरू होते."
       },
       {
-        "en": "The loudest website is the official one.",
-        "hi": "सबसे शोर वाली साइट आधिकारिक है।",
-        "mr": "सर्वात गोंगाट करणारी साइट अधिकृत आहे."
+        "en": "Agents are faster, so the fee is worth it.",
+        "hi": "एजेंट तेज़ होते हैं, इसलिए फ़ीस ठीक है।",
+        "mr": "एजंट जलद असतात, म्हणून फी योग्य आहे."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "If money must leave your account before any award, stop and check the official notice yourself.",
-      "hi": "पुरस्कार से पहले पैसा खाते से जाए तो रुकें और आधिकारिक सूचना खुद देखें।",
-      "mr": "पुरस्कारापूर्वी पैसे खात्यातून जात असतील तर थांबा आणि अधिकृत सूचना स्वतः पाहा."
+      "en": "Paying to receive a grant is a common trick. Official schemes are applied for through official channels.",
+      "hi": "अनुदान पाने के लिए पैसे देना आम चाल है। आधिकारिक योजनाओं के लिए आधिकारिक रास्ते से आवेदन होता है।",
+      "mr": "अनुदान मिळवण्यासाठी पैसे देणे ही नेहमीची युक्ती आहे. अधिकृत योजनांसाठी अधिकृत मार्गानेच अर्ज होतो."
     }
   },
   {
@@ -1316,31 +1316,31 @@
     "topic": "loans",
     "prompt": {
       "en": "A penalty of 3 percent per month on overdue money is:",
-      "hi": "बकाया पर महीने के 3 प्रतिशत का जुर्माना है:",
-      "mr": "बाकी रकमेवर महिन्याला 3 टक्के दंड म्हणजे:"
+      "hi": "बकाया पर हर महीने 3 प्रतिशत जुर्माना:",
+      "mr": "थकबाकीवर दरमहा 3 टक्के दंड म्हणजे:"
     },
     "options": [
       {
-        "en": "A small courtesy.",
-        "hi": "एक छोटी शिष्टाचार।",
-        "mr": "एक छोटी सभ्यता."
+        "en": "A small courtesy charge.",
+        "hi": "छोटा सा शिष्टाचार शुल्क।",
+        "mr": "छोटेसे सौजन्य शुल्क."
       },
       {
         "en": "A very high extra cost if you miss a date.",
-        "hi": "तारीख छूटे तो बहुत ऊँची अतिरिक्त लागत।",
-        "mr": "तारीख चुकली तर खूप जास्त अतिरिक्त खर्च."
+        "hi": "तारीख चूकने पर बहुत ऊँची अतिरिक्त लागत।",
+        "mr": "तारीख चुकल्यास खूप जास्त अतिरिक्त खर्च."
       },
       {
-        "en": "Illegal to read.",
-        "hi": "पढ़ना गैरकानूनी।",
-        "mr": "वाचणे बेकायदेशीर."
+        "en": "Waived for a first-time borrower.",
+        "hi": "पहली बार उधार लेने वाले के लिए माफ़।",
+        "mr": "पहिल्यांदा कर्ज घेणाऱ्यासाठी माफ."
       }
     ],
     "answer": 1,
     "why": {
-      "en": "Three percent a month is harsh. One late month can cost more than a careful saving plan.",
-      "hi": "महीने के तीन प्रतिशत कठोर हैं। एक देर महीना सावधानी भरी बचत से महँगा पड़ सकता है।",
-      "mr": "महिन्याचे तीन टक्के कठोर आहेत. एक उशिरा महिना काळजीपूर्वक बचतीपेक्षा महाग पडू शकतो."
+      "en": "Three percent a month adds up to well over a third of the overdue amount in a year. Know the late charge before you sign.",
+      "hi": "हर महीने तीन प्रतिशत साल भर में बकाया के एक-तिहाई से कहीं ज़्यादा हो जाता है। साइन करने से पहले देर का शुल्क जानें।",
+      "mr": "दरमहा तीन टक्के वर्षभरात थकबाकीच्या एक-तृतीयांशपेक्षा बरेच जास्त होते. सही करण्याआधी उशिराचे शुल्क जाणून घ्या."
     }
   },
   {
@@ -1412,31 +1412,31 @@
     "topic": "loans",
     "prompt": {
       "en": "Collateral on a gold loan is:",
-      "hi": "सोने के कर्ज पर गिरवी है:",
-      "mr": "सोन्याच्या कर्जावरील तारण म्हणजे:"
+      "hi": "गोल्ड लोन में गिरवी क्या होती है?",
+      "mr": "सोने कर्जात तारण काय असते?"
     },
     "options": [
       {
         "en": "The gold the lender holds until you repay.",
-        "hi": "सोना जो ऋणदाता चुकौती तक रखता है।",
-        "mr": "सोने जे कर्ज देणारा परतफेडीपर्यंत ठेवतो."
+        "hi": "वह सोना जो लौटाने तक कर्ज़दाता के पास रहता है।",
+        "mr": "परतफेड होईपर्यंत कर्जदाराकडे राहणारे सोने."
       },
       {
-        "en": "A bonus gram they give you.",
-        "hi": "बोनस ग्राम जो वे आपको देते हैं।",
-        "mr": "बोनस ग्रॅम ते तुम्हाला देतात."
+        "en": "Extra gold the lender gives you as a bonus.",
+        "hi": "बोनस के रूप में कर्ज़दाता का दिया अतिरिक्त सोना।",
+        "mr": "कर्जदाराने बोनस म्हणून दिलेले जास्तीचे सोने."
       },
       {
-        "en": "Your phone contact list.",
-        "hi": "आपकी फोन संपर्क सूची।",
-        "mr": "तुमची फोन संपर्क यादी."
+        "en": "A guarantee from your employer.",
+        "hi": "आपके नियोक्ता की गारंटी।",
+        "mr": "तुमच्या नियोक्त्याची हमी."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "If you do not repay, the gold can be sold. Know the due date before you pledge it.",
-      "hi": "न चुकाएँ तो सोना बिक सकता है। गिरवी रखने से पहले तारीख जानें।",
-      "mr": "न फेडल्यास सोने विकले जाऊ शकते. गहाण ठेवण्यापूर्वी तारीख जाणा."
+      "en": "If the loan is not repaid, the lender can sell the gold to recover it. Know the repayment date and auction terms.",
+      "hi": "लोन न चुकाने पर कर्ज़दाता सोना बेचकर वसूली कर सकता है। चुकाने की तारीख और नीलामी की शर्तें जानें।",
+      "mr": "कर्ज न फेडल्यास कर्जदार सोने विकून वसुली करू शकतो. परतफेडीची तारीख आणि लिलावाच्या अटी जाणून घ्या."
     }
   },
   {
@@ -1444,31 +1444,31 @@
     "topic": "loans",
     "prompt": {
       "en": "Before you sign, the one page you want in rupees shows:",
-      "hi": "दस्तखत से पहले, रुपये में जो एक पन्ना चाहिए उस पर हो:",
-      "mr": "सही करण्यापूर्वी, रुपयांत हवा असलेला एक पान दाखवतो:"
+      "hi": "साइन करने से पहले रुपयों में एक पन्ना दिखाए:",
+      "mr": "सही करण्याआधी रुपयांत एक पान दाखवावे:"
     },
     "options": [
       {
-        "en": "Amount received, total repayment, fees, and the late charge.",
-        "hi": "मिली रकम, कुल चुकौती, शुल्क, और विलंब शुल्क।",
-        "mr": "मिळालेली रक्कम, एकूण परतफेड, शुल्क आणि विलंब शुल्क."
+        "en": "Amount received, total repayment, fees and the late charge.",
+        "hi": "मिलने वाली रकम, कुल चुकौती, शुल्क और देर का जुर्माना।",
+        "mr": "मिळणारी रक्कम, एकूण परतफेड, शुल्क आणि उशिराचा दंड."
       },
       {
-        "en": "Only the EMI in large type.",
-        "hi": "सिर्फ बड़ी ईएमआई।",
-        "mr": "फक्त मोठी ईएमआय."
+        "en": "Only the EMI, in large type.",
+        "hi": "सिर्फ़ ईएमआई, बड़े अक्षरों में।",
+        "mr": "फक्त ईएमआय, मोठ्या अक्षरांत."
       },
       {
-        "en": "The lender’s festival greeting.",
-        "hi": "ऋणदाता का त्योहार संदेश।",
-        "mr": "कर्ज देणाऱ्याचे सण अभिवादन."
+        "en": "The lender's ratings and awards.",
+        "hi": "कर्ज़दाता की रेटिंग और पुरस्कार।",
+        "mr": "कर्जदाराचे रेटिंग आणि पुरस्कार."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "If those four lines are missing, you do not yet know the price.",
-      "hi": "ये चार पंक्तियाँ न हों तो कीमत अभी पता नहीं।",
-      "mr": "या चार ओळी नसतील तर किंमत अजून माहीत नाही."
+      "en": "That page, often called the Key Fact Statement, is what lets you compare loans honestly.",
+      "hi": "वही पन्ना, जिसे अक्सर की फ़ैक्ट स्टेटमेंट कहते हैं, लोन की ईमानदार तुलना करने देता है।",
+      "mr": "तेच पान, ज्याला अनेकदा की फॅक्ट स्टेटमेंट म्हणतात, कर्जांची प्रामाणिक तुलना करू देते."
     }
   },
   {
@@ -1508,31 +1508,31 @@
     "topic": "insurance",
     "prompt": {
       "en": "The sum assured is:",
-      "hi": "बीमा राशि है:",
-      "mr": "विमा रक्कम म्हणजे:"
+      "hi": "बीमित राशि क्या है?",
+      "mr": "विमा रक्कम म्हणजे काय?"
     },
     "options": [
       {
         "en": "The most the policy agrees to pay for a covered loss.",
-        "hi": "कवर नुकसान पर पॉलिसी जितना अधिकतम देने को माने।",
-        "mr": "कव्हर नुकसानावर पॉलिसी कमाल किती देण्यास तयार आहे."
+        "hi": "किसी कवर किए गए नुकसान पर पॉलिसी जितना अधिकतम देने को तैयार है।",
+        "mr": "संरक्षित नुकसानासाठी पॉलिसी देण्यास तयार असलेली कमाल रक्कम."
       },
       {
-        "en": "The agent’s bonus.",
-        "hi": "एजेंट का बोनस।",
-        "mr": "एजंटचा बोनस."
+        "en": "The agent's commission.",
+        "hi": "एजेंट का कमीशन।",
+        "mr": "एजंटचे कमिशन."
       },
       {
-        "en": "Your monthly pocket money.",
-        "hi": "आपका मासिक जेब खर्च।",
-        "mr": "तुमचे मासिक खिशाचे पैसे."
+        "en": "The premium you pay each year.",
+        "hi": "हर साल दिया जाने वाला प्रीमियम।",
+        "mr": "दरवर्षी भरायचा प्रीमियम."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "A small sum assured may not cover a real hospital stay. Read the number.",
-      "hi": "छोटी बीमा राशि असली अस्पताल यात्रा न ढक सके। संख्या पढ़ें।",
-      "mr": "लहान विमा रक्कम खरी हॉस्पिटल मुक्काम कव्हर करणार नाही. संख्या वाचा."
+      "en": "Check that the sum assured would really cover the loss you are worried about, not just that the premium is low.",
+      "hi": "जाँचें कि बीमित राशि सच में उस नुकसान को कवर करेगी जिसकी चिंता है, सिर्फ़ प्रीमियम कम होना काफ़ी नहीं।",
+      "mr": "विमा रक्कम खरोखर चिंतेचे नुकसान भरून काढेल का ते तपासा, फक्त प्रीमियम कमी असणे पुरेसे नाही."
     }
   },
   {
@@ -1667,32 +1667,32 @@
     "id": "q53",
     "topic": "insurance",
     "prompt": {
-      "en": "A claim usually needs:",
-      "hi": "दावे के लिए आमतौर पर चाहिए:",
-      "mr": "दाव्यासाठी सहसा हवे:"
+      "en": "A health insurance claim usually needs:",
+      "hi": "स्वास्थ्य बीमा क्लेम के लिए आमतौर पर क्या चाहिए?",
+      "mr": "आरोग्य विमा दाव्यासाठी सहसा काय लागते?"
     },
     "options": [
       {
-        "en": "Papers such as bills and discharge notes.",
-        "hi": "बिल और डिस्चार्ज नोट जैसे कागज।",
-        "mr": "बिल आणि डिस्चार्ज नोट सारखे कागद."
+        "en": "Papers such as bills, prescriptions and the discharge summary.",
+        "hi": "बिल, पर्चे और डिस्चार्ज समरी जैसे काग़ज़।",
+        "mr": "बिले, प्रिस्क्रिप्शन आणि डिस्चार्ज सारांश यांसारखी कागदपत्रे."
       },
       {
-        "en": "Only a social media post.",
-        "hi": "सिर्फ सोशल मीडिया पोस्ट।",
-        "mr": "फक्त सोशल मीडिया पोस्ट."
+        "en": "Only a phone call to the agent.",
+        "hi": "सिर्फ़ एजेंट को एक फ़ोन।",
+        "mr": "फक्त एजंटला एक फोन."
       },
       {
-        "en": "The agent’s birthday.",
-        "hi": "एजेंट का जन्मदिन।",
-        "mr": "एजंटचा वाढदिवस."
+        "en": "A letter from your employer.",
+        "hi": "नियोक्ता का पत्र।",
+        "mr": "नियोक्त्याचे पत्र."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "Keep the papers. A real claim is a file, not a story in a chat.",
-      "hi": "कागज रखें। असली दावा फाइल है, चैट की कहानी नहीं।",
-      "mr": "कागद ठेवा. खरा दावा फाइल आहे, चॅटमधील कहाणी नाही."
+      "en": "Keep every bill and report from day one. Missing papers are the most common reason claims are delayed.",
+      "hi": "पहले दिन से हर बिल और रिपोर्ट रखें। काग़ज़ न होना क्लेम में देरी का सबसे आम कारण है।",
+      "mr": "पहिल्या दिवसापासून प्रत्येक बिल आणि अहवाल जपा. कागदपत्रे नसणे हे दावा उशिराचे सर्वात सामान्य कारण आहे."
     }
   },
   {
@@ -1796,31 +1796,31 @@
     "topic": "investing",
     "prompt": {
       "en": "Liquidity means:",
-      "hi": "तरलता मतलब:",
+      "hi": "तरलता का मतलब है:",
       "mr": "तरलता म्हणजे:"
     },
     "options": [
       {
-        "en": "How quickly you can turn the money back into cash.",
-        "hi": "पैसे को नकद में कितनी जल्दी बदल सकते हैं।",
-        "mr": "पैसे रोखेत किती लवकर बदलता येतात."
+        "en": "How quickly you can turn an investment back into cash without losing much.",
+        "hi": "कितनी जल्दी आप निवेश को बिना ज़्यादा नुकसान के नकद में बदल सकते हैं।",
+        "mr": "गुंतवणूक फारसे नुकसान न होता किती लवकर रोख करता येते."
       },
       {
-        "en": "How shiny the coin is.",
-        "hi": "सिक्का कितना चमकदार है।",
-        "mr": "नाणे किती चमकदार आहे."
+        "en": "How high the return is.",
+        "hi": "मुनाफ़ा कितना ऊँचा है।",
+        "mr": "परतावा किती जास्त आहे."
       },
       {
-        "en": "The number of apps on your phone.",
-        "hi": "फोन पर ऐप की संख्या।",
-        "mr": "फोनवरील अ‍ॅप्सची संख्या."
+        "en": "How many accounts you hold.",
+        "hi": "आपके कितने खाते हैं।",
+        "mr": "तुमची किती खाती आहेत."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "Money for emergencies should be liquid. Money for years ahead can wait.",
-      "hi": "आपात का पैसा तरल होना चाहिए। वर्षों आगे का पैसा रुक सकता है।",
-      "mr": "आणीबाणीचे पैसे तरल असावेत. वर्षे पुढचे पैसे थांबू शकतात."
+      "en": "An emergency fund needs high liquidity. Long-term money can accept less, in return for growth.",
+      "hi": "आपातकालीन फ़ंड को ऊँची तरलता चाहिए। लंबे समय का पैसा बढ़त के बदले कम तरलता सह सकता है।",
+      "mr": "आपत्कालीन निधीला जास्त तरलता हवी. दीर्घकालीन पैसे वाढीच्या बदल्यात कमी तरलता स्वीकारू शकतात."
     }
   },
   {
@@ -1859,64 +1859,64 @@
     "id": "q59",
     "topic": "investing",
     "prompt": {
-      "en": "Who is a sensible first investor while you are a student?",
-      "hi": "छात्र रहते समझदार पहला निवेशक कौन है?",
-      "mr": "विद्यार्थी असताना समंजस पहिला गुंतवणूकदार कोण?"
+      "en": "Who is ready to start investing for the long term?",
+      "hi": "लंबे समय के निवेश के लिए कौन तैयार है?",
+      "mr": "दीर्घकालीन गुंतवणुकीसाठी कोण तयार आहे?"
     },
     "options": [
       {
-        "en": "Someone who has an emergency fund and only then puts aside long-term money.",
-        "hi": "जिसके पास आपात निधि है और तब वह लंबे समय का पैसा अलग करता है।",
-        "mr": "ज्याच्याकडे आणीबाणी निधी आहे आणि मग तो दीर्घकालीन पैसे बाजूला करतो."
+        "en": "Someone with an emergency fund and no costly debt, investing money they will not need for years.",
+        "hi": "जिसके पास आपातकालीन फ़ंड है, महँगा कर्ज़ नहीं, और वह पैसा लगा रहा है जिसकी सालों तक ज़रूरत नहीं।",
+        "mr": "ज्याच्याकडे आपत्कालीन निधी आहे, महाग कर्ज नाही, आणि वर्षानुवर्षे न लागणारे पैसे गुंतवतो."
       },
       {
-        "en": "Someone who borrows to invest in a tip.",
-        "hi": "जो टिप में निवेश के लिए उधार लेता है।",
-        "mr": "जो टीपमध्ये गुंतवण्यासाठी उसने घेतो."
+        "en": "Someone who borrows to follow a tip.",
+        "hi": "जो टिप के पीछे उधार लेकर लगाता है।",
+        "mr": "जो टिपच्या मागे कर्ज काढून गुंतवतो."
       },
       {
         "en": "Someone who skips rent to buy one stock.",
-        "hi": "जो एक शेयर के लिए किराया छोड़ देता है।",
-        "mr": "जो एका शेअरसाठी भाडे चुकवतो."
+        "hi": "जो किराया छोड़कर एक शेयर खरीदता है।",
+        "mr": "जो भाडे टाळून एक शेअर घेतो."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "Investing comes after the month stands up. Rent and a small reserve come first.",
-      "hi": "निवेश तब जब महीना खड़ा हो। किराया और छोटी रिज़र्व पहले।",
-      "mr": "गुंतवणूक तेव्हा जेव्हा महिना उभा राहतो. भाडे आणि छोटी राखीव रक्कम आधी."
+      "en": "Investing comes after the basics: a cash cushion and no expensive loans. Otherwise one bad month forces you to sell at a loss.",
+      "hi": "निवेश बुनियादी चीज़ों के बाद आता है: नकद सहारा और कोई महँगा कर्ज़ नहीं। वरना एक बुरा महीना नुकसान में बेचने पर मजबूर करता है।",
+      "mr": "गुंतवणूक मूलभूत गोष्टींनंतर येते: रोख आधार आणि महाग कर्ज नाही. नाहीतर एक वाईट महिना तोट्यात विकायला भाग पाडतो."
     }
   },
   {
     "id": "q60",
     "topic": "investing",
     "prompt": {
-      "en": "Basic tax sense for a student job is:",
-      "hi": "छात्र नौकरी के लिए बुनियादी कर समझ है:",
-      "mr": "विद्यार्थी नोकरीसाठी मूलभूत कर समज आहे:"
+      "en": "Basic tax sense for your first job is:",
+      "hi": "पहली नौकरी के लिए टैक्स की बुनियादी समझ है:",
+      "mr": "पहिल्या नोकरीसाठी कराची मूलभूत समज म्हणजे:"
     },
     "options": [
       {
-        "en": "Keep payslips. Do not pay a stranger who promises a refund you did not earn.",
-        "hi": "पेरोल स्लिप रखें। अजनबी को पैसे न दें जो न कमाया रिफंड वादा करे।",
-        "mr": "पेस्लिप ठेवा. न कमावलेला रिफंड वचन देणाऱ्या अनोळखीला पैसे देऊ नका."
+        "en": "Keep payslips and Form 16, and never pay a stranger who promises a refund.",
+        "hi": "सैलरी स्लिप और फ़ॉर्म 16 रखें, और रिफ़ंड का वादा करने वाले अनजान को कभी पैसे न दें।",
+        "mr": "पगार पावत्या आणि फॉर्म 16 जपा, आणि रिफंडचे वचन देणाऱ्या अनोळखी व्यक्तीला कधीच पैसे देऊ नका."
       },
       {
-        "en": "Ignore every paper.",
-        "hi": "हर कागज अनदेखा करें।",
-        "mr": "प्रत्येक कागद दुर्लक्ष करा."
+        "en": "Ignore tax papers until someone asks.",
+        "hi": "जब तक कोई न पूछे, टैक्स के काग़ज़ अनदेखा करें।",
+        "mr": "कोणी विचारेपर्यंत कराच्या कागदपत्रांकडे दुर्लक्ष करा."
       },
       {
-        "en": "Share your PAN in a public story.",
-        "hi": "पैन सार्वजनिक स्टोरी में डालें।",
-        "mr": "पॅन सार्वजनिक स्टोरीत टाका."
+        "en": "Share your PAN in a public post to get help.",
+        "hi": "मदद के लिए PAN सार्वजनिक पोस्ट में डालें।",
+        "mr": "मदतीसाठी PAN सार्वजनिक पोस्टमध्ये टाका."
       }
     ],
     "answer": 0,
     "why": {
-      "en": "Most small jobs stay simple if you keep the papers and refuse refund pitches.",
-      "hi": "ज़्यादातर छोटी नौकरियाँ सरल रहती हैं अगर कागज रखें और रिफंड वाले पिच मना करें।",
-      "mr": "बहुतेक छोट्या नोकऱ्या सोप्या राहतात जर कागद ठेवले आणि रिफंडच्या सादरीकरणाला नकार दिला."
+      "en": "Your employer reports the tax deducted. Keep those records, and use only the official income tax portal.",
+      "hi": "आपका नियोक्ता काटा गया टैक्स दर्ज करता है। वे रिकॉर्ड रखें, और सिर्फ़ आधिकारिक इनकम टैक्स पोर्टल इस्तेमाल करें।",
+      "mr": "तुमचा नियोक्ता कापलेल्या कराची नोंद करतो. त्या नोंदी जपा, आणि फक्त अधिकृत इन्कम टॅक्स पोर्टल वापरा."
     }
   }
 ]

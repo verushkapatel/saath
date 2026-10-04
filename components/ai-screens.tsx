@@ -2,25 +2,26 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { ArrowUp, BookOpen, Eraser, MessageCircle, Settings, Sparkles } from "lucide-react";
+import { ArrowUp, BookOpen, Eraser, MessageCircle, Mic, Settings, Sparkles, Square } from "lucide-react";
 import { getProvider, onlineConfigured, providerMode, type AiAnswer, type AiProgress, type AiTurn, type Doc } from "@/lib/ai";
 import { buildDocs } from "@/lib/ai/knowledge";
 import type { Lang } from "@/lib/catalog";
 import { loadJson, type FormsFile, type GlossaryTerm, type StoriesFile } from "@/lib/content-types";
 import { recommend, weakTopics } from "@/lib/recommend";
-import { tap } from "@/lib/speech";
+import { canHear, dictate, scriptLang, tap } from "@/lib/speech";
 import { getMeta, setMeta } from "@/lib/storage";
 import { useAi } from "./ai-context";
 import { LogoMark } from "./logo";
 import { useApp } from "./app-state";
 import { usePrefs } from "./prefs";
 import { useI18n } from "./providers";
-import { Sheet } from "./ui";
+import { ListenButton, Sheet } from "./ui";
 
 /** One line of the conversation as it is shown and, when memory is on, saved. */
-export type ChatLine = { role: "user" | "saath"; text: string; sources?: AiAnswer["sources"]; via?: AiAnswer["via"] };
+export type ChatLine = { role: "user" | "saath"; text: string; sources?: AiAnswer["sources"]; via?: AiAnswer["via"]; lang?: Lang };
 
 const CHAT_KEY = "ai-chat";
+const LANG_SHORT: Record<Lang, string> = { en: "English", hi: "हिन्दी", mr: "मराठी" };
 const KEEP = 40;
 
 let extra: Promise<{ glossary: GlossaryTerm[]; forms: FormsFile | null; stories: StoriesFile | null }> | null = null;
@@ -196,6 +197,14 @@ function Chat({ compact }: { compact?: boolean }) {
   const [busy, setBusy] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [fresh, setFresh] = useState<number | null>(null);
+  // The language the person speaks or types in. Saath AI answers in the same one.
+  const [talk, setTalk] = useState<Lang>(code);
+  const [hearing, setHearing] = useState(false);
+  const [micNote, setMicNote] = useState<string | null>(null);
+  const stopRef = useRef<(() => void) | null>(null);
+  const micOk = useMemo(() => canHear(), []);
+  useEffect(() => setTalk(code), [code]);
+  useEffect(() => () => stopRef.current?.(), []);
   const endRef = useRef<HTMLDivElement | null>(null);
   const linesRef = useRef<ChatLine[]>([]);
   linesRef.current = lines;
@@ -235,20 +244,49 @@ function Chat({ compact }: { compact?: boolean }) {
     setDraft("");
     setBusy(true);
     const history: AiTurn[] = before.slice(-6).map((line) => ({ role: line.role, text: line.text }));
-    const request = { lang: code, context: ai.context, progress, history };
+    const replyLang = kind === "ask" ? scriptLang(text, talk) : talk;
+    const request = { lang: replyLang, context: ai.context, progress, history };
     try {
       const answer =
         kind === "revise" ? await provider.recommendRevision(request)
         : kind === "summary" ? await provider.summarizeProgress(request)
         : await provider.answerQuestion(text, request);
-      remember([...withQuestion, { role: "saath", text: answer.text, sources: answer.sources, via: answer.via }]);
+      remember([...withQuestion, { role: "saath", text: answer.text, sources: answer.sources, via: answer.via, lang: replyLang }]);
       setFresh(withQuestion.length);
     } catch {
       remember([...withQuestion, { role: "saath", text: t("ai.error") }]);
     } finally {
       setBusy(false);
     }
-  }, [busy, code, ai.context, progress, provider, remember, t]);
+  }, [busy, talk, ai.context, progress, provider, remember, t]);
+
+  function listen() {
+    tap();
+    if (hearing) {
+      stopRef.current?.();
+      return;
+    }
+    setMicNote(null);
+    setHearing(true);
+    let heard = "";
+    stopRef.current = dictate(talk, {
+      onText: (text) => {
+        heard = text;
+        setDraft(text);
+      },
+      onEnd: () => {
+        setHearing(false);
+        stopRef.current = null;
+        // Spoken questions are sent as soon as the person stops talking.
+        if (heard.trim()) void ask(heard);
+      },
+      onError: (reason) => {
+        setHearing(false);
+        stopRef.current = null;
+        setMicNote(reason === "not-allowed" || reason === "service-not-allowed" ? t("ai.micBlocked") : reason === "no-speech" ? t("ai.micNothing") : t("ai.micFailed"));
+      },
+    });
+  }
 
   // A question sent from another screen ("Explain this", "Why was I wrong?") is asked as soon as the chat is ready.
   useEffect(() => {
@@ -298,6 +336,7 @@ function Chat({ compact }: { compact?: boolean }) {
                 ))}
               </p>
             )}
+            {line.role === "saath" && <div className="bubble-tools"><ListenButton compact text={line.text.replace(/\*\*/g, "").replace(/^- /gm, "")} lang={line.lang} /></div>}
             {line.via && <p className="bubble-via">{t(`ai.via.${line.via}`)}</p>}
           </div>
         ))}
@@ -316,7 +355,13 @@ function Chat({ compact }: { compact?: boolean }) {
         <button type="button" className="chip" disabled={busy} onClick={() => { tap(); void ask(t("ai.summary"), "summary"); }}>{t("ai.summary")}</button>
       </div>
 
-      <form className="chat-input" onSubmit={submit}>
+      <div className="talk-row" role="group" aria-label={t("ai.talkIn")}>
+        <span className="faint">{t("ai.talkIn")}</span>
+        {(["en", "hi", "mr"] as const).map((item) => (
+          <button key={item} type="button" className="talk-chip" aria-pressed={talk === item} lang={item} onClick={() => { tap(); setTalk(item); }}>{LANG_SHORT[item]}</button>
+        ))}
+      </div>
+      <form className={`chat-input${hearing ? " hearing" : ""}`} onSubmit={submit}>
         <label className="visually-hidden" htmlFor={compact ? "ask-sheet-input" : "ask-page-input"}>{t("ai.placeholder")}</label>
         <input
           id={compact ? "ask-sheet-input" : "ask-page-input"}
@@ -324,13 +369,20 @@ function Chat({ compact }: { compact?: boolean }) {
           value={draft}
           maxLength={500}
           autoComplete="off"
-          placeholder={t("ai.placeholder")}
+          placeholder={hearing ? t("ai.listening") : t("ai.placeholder")}
+          lang={talk}
           onChange={(event) => setDraft(event.target.value)}
         />
+        {micOk && (
+          <button type="button" className={`icon-btn mic${hearing ? " on" : ""}`} aria-label={hearing ? t("ai.micStop") : t("ai.micStart", { lang: LANG_SHORT[talk] })} aria-pressed={hearing} disabled={busy} onClick={listen}>
+            {hearing ? <Square aria-hidden size={16} fill="currentColor" /> : <Mic aria-hidden size={20} />}
+          </button>
+        )}
         <button type="submit" className="icon-btn send" aria-label={t("ai.send")} disabled={busy || !draft.trim()}>
           <ArrowUp aria-hidden size={20} />
         </button>
       </form>
+      {micNote && <p role="status" className="note">{micNote}</p>}
 
       <div className="row-between chat-foot">
         <p className="faint">{t(`ai.mode.${mode}`)} {prefs.aiMemory ? t("ai.memoryOn") : t("ai.memoryOff")}</p>

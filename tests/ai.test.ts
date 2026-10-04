@@ -251,3 +251,13 @@ describe("invented numbers", () => {
     expect(inventedNumbers("Call 1930 now.", "")).toEqual([]);
   });
 });
+
+describe("the language a question is asked in", () => {
+  it("answers Devanagari in Hindi or keeps Marathi, and plain English in English", async () => {
+    const { scriptLang } = await import("@/lib/speech");
+    expect(scriptLang("EMI क्या होता है?", "en")).toBe("hi");
+    expect(scriptLang("ईएमआय म्हणजे काय?", "mr")).toBe("mr");
+    expect(scriptLang("What is an EMI?", "hi")).toBe("en");
+    expect(scriptLang("ok", "mr")).toBe("mr");
+  });
+});

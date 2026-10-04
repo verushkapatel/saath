@@ -30,15 +30,27 @@ export function AuthScreen({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [forgot, setForgot] = useState(false);
+  // Signing up is two short steps: a username, then a password typed twice.
+  const [stage, setStage] = useState<"name" | "password">("name");
+  const [confirm, setConfirm] = useState("");
 
   const signup = mode === "signup";
   const nameProblem = username ? checkUsername(username) : null;
   const taken = signup && username && !nameProblem ? usernameTaken(username) : false;
   const passProblem = signup && password ? checkPassword(password, username) : null;
 
+  const mismatch = signup && confirm.length > 0 && confirm !== password;
+
   async function submit(event: FormEvent) {
     event.preventDefault();
     if (busy) return;
+    if (signup && stage === "name") {
+      if (!username || nameProblem || taken) return;
+      tap();
+      setStage("password");
+      return;
+    }
+    if (signup && confirm !== password) return;
     setError(null);
     setBusy(true);
     try {
@@ -61,6 +73,8 @@ export function AuthScreen({
   function switchMode(next: AuthMode) {
     tap();
     setMode(next);
+    setStage("name");
+    setConfirm("");
     setError(null);
     setForgot(false);
   }
@@ -69,20 +83,33 @@ export function AuthScreen({
     <main className="page bare gate screen">
       <div className="auth">
         <div className="row-between">
-          <button type="button" className="link" onClick={() => { tap(); onBack(); }}>
+          <button type="button" className="link" onClick={() => { tap(); if (signup && stage === "password") setStage("name"); else onBack(); }}>
             <ChevronLeft aria-hidden size={18} />
             {t("auth.back")}
           </button>
           <span className="cluster"><LangSwitch /><ThemeToggle /></span>
         </div>
         <div className="stack-sm">
-          <LogoMark size={34} title="Saath" />
-          <h1>{signup ? t("auth.signupTitle") : t("auth.loginTitle")}</h1>
-          <p className="lead">{signup ? t("auth.signupLead") : t("auth.loginLead")}</p>
+          {signup ? (
+            <>
+              <ol className="setup-steps" aria-label={t("setup.progress", { step: stage === "name" ? 1 : 2, total: 4 })}>
+                {[1, 2, 3, 4].map((n) => <li key={n} className={n < (stage === "name" ? 1 : 2) ? "was" : n === (stage === "name" ? 1 : 2) ? "on" : undefined} />)}
+              </ol>
+              <p className="kicker">{t("setup.progress", { step: stage === "name" ? 1 : 2, total: 4 })}</p>
+              <h1>{stage === "name" ? t("setup.nameTitle") : t("setup.passTitle")}</h1>
+              <p className="lead">{stage === "name" ? t("setup.nameLead") : t("setup.passLead", { name: username })}</p>
+            </>
+          ) : (
+            <>
+              <LogoMark size={34} title="Saath" />
+              <h1>{t("auth.loginTitle")}</h1>
+              <p className="lead">{t("auth.loginLead")}</p>
+            </>
+          )}
         </div>
 
         <form className="stack" onSubmit={submit} noValidate>
-          <label>
+          {(!signup || stage === "name") && <label>
             <span className="label">{t("auth.username")}</span>
             <span className="field-wrap">
               <UserRound aria-hidden size={18} />
@@ -104,9 +131,9 @@ export function AuthScreen({
             <span id="username-help" className={`faint${nameProblem || taken ? " field-err" : ""}`} role={nameProblem || taken ? "alert" : undefined}>
               {taken ? t("auth.err.taken") : nameProblem ? t(`auth.err.${nameProblem}`) : signup ? t("auth.usernameHelp") : ""}
             </span>
-          </label>
+          </label>}
 
-          <label>
+          {(!signup || stage === "password") && <label>
             <span className="label">{t("auth.password")}</span>
             <span className="field-wrap">
               <KeyRound aria-hidden size={18} />
@@ -128,13 +155,37 @@ export function AuthScreen({
             <span id="password-help" className={`faint${passProblem ? " field-err" : ""}`} role={passProblem ? "alert" : undefined}>
               {passProblem ? t(`auth.err.${passProblem}`, { min: PASSWORD_MIN }) : signup ? t("auth.passwordHelp", { min: PASSWORD_MIN }) : ""}
             </span>
-          </label>
+          </label>}
+
+          {signup && stage === "password" && (
+            <label>
+              <span className="label">{t("setup.confirm")}</span>
+              <span className="field-wrap">
+                <KeyRound aria-hidden size={18} />
+                <input
+                  className="field text"
+                  name="confirm"
+                  type={show ? "text" : "password"}
+                  value={confirm}
+                  autoComplete="new-password"
+                  aria-invalid={mismatch}
+                  onChange={(event) => setConfirm(event.target.value)}
+                  required
+                />
+              </span>
+              <span className={`faint${mismatch ? " field-err" : ""}`} role={mismatch ? "alert" : undefined}>{mismatch ? t("setup.mismatch") : ""}</span>
+            </label>
+          )}
 
           {error && <p role="alert" className="note err">{error}</p>}
 
-          <button type="submit" className="btn btn-primary" disabled={busy || !username || !password || Boolean(nameProblem) || Boolean(signup && (taken || passProblem))}>
-            {busy ? t("auth.working") : signup ? t("auth.create") : t("auth.login")}
-          </button>
+          {signup && stage === "name" ? (
+            <button type="submit" className="btn btn-primary" disabled={!username || Boolean(nameProblem) || Boolean(taken)}>{t("common.next")}</button>
+          ) : (
+            <button type="submit" className="btn btn-primary" disabled={busy || !username || !password || Boolean(nameProblem) || Boolean(signup && (taken || passProblem || confirm !== password))}>
+              {busy ? t("auth.working") : signup ? t("auth.create") : t("auth.login")}
+            </button>
+          )}
         </form>
 
         <div className="stack-sm">

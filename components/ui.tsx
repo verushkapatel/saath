@@ -1,5 +1,7 @@
 "use client";
 
+import type { Lang } from "@/lib/catalog";
+
 import { useEffect, useId, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -163,8 +165,9 @@ export function CountUp({ value, format }: { value: number; format: (value: numb
 }
 
 /** Reads text aloud with the best voice the phone has. Says so kindly when there is none. */
-export function ListenButton({ text, label, primary, compact }: { text: string; label?: string; primary?: boolean; compact?: boolean }) {
-  const { t, code } = useI18n();
+export function ListenButton({ text, label, primary, compact, lang }: { text: string; label?: string; primary?: boolean; compact?: boolean; lang?: Lang }) {
+  const { t, code: uiCode } = useI18n();
+  const code = lang ?? uiCode;
   const [on, setOn] = useState(false);
   const [missing, setMissing] = useState(false);
   const stop = useRef<(() => void) | null>(null);

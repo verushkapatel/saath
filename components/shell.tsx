@@ -25,6 +25,7 @@ import { useI18n } from "./providers";
 import { RewardSheet } from "./reward-sheet";
 import { SessionCtx } from "./session";
 import { ThemeToggle } from "./theme-toggle";
+import { InstallStep, MakeYours } from "./welcome";
 import { Footer, PageSkeleton } from "./ui";
 
 type Nav = { href: string; key: string; icon: typeof Home; match: (path: string) => boolean };
@@ -179,7 +180,7 @@ function Frame({ children }: { children: React.ReactNode }) {
   const [booted, setBooted] = useState(false);
   const [account, setAccount] = useState<Account | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
-  const [view, setView] = useState<"intro" | AuthMode>("intro");
+  const [view, setView] = useState<"intro" | "yours" | "install" | AuthMode>("intro");
   const [printing, setPrinting] = useState(false);
 
   const clean = pathname.replace(/\/$/, "") || "/";
@@ -215,13 +216,21 @@ function Frame({ children }: { children: React.ReactNode }) {
     }
     const saved = currentAccount();
     enter(saved);
+    // Opened from the home screen: the immersion was seen in the browser, so go straight to making the account.
+    const standalone = window.matchMedia?.("(display-mode: standalone)").matches || (navigator as Navigator & { standalone?: boolean }).standalone === true;
     if (!saved && hasAccounts()) setView("login");
+    else if (!saved && standalone) setView("signup");
     setBooted(true);
   }, [enter]);
 
   useEffect(() => {
     if (ready && !lang && (partner || printing)) setLang("en", false);
   }, [ready, lang, partner, printing, setLang]);
+
+  const go = useCallback((next: "intro" | "yours" | "install" | AuthMode) => {
+    setView(next);
+    window.scrollTo({ top: 0 });
+  }, []);
 
   const logout = useCallback(() => {
     logOut();
@@ -262,12 +271,16 @@ function Frame({ children }: { children: React.ReactNode }) {
     return (
       <div className="no-rail">
         {view === "intro" ? (
-          <Intro onJoin={() => { setView("signup"); window.scrollTo({ top: 0 }); }} onLogin={() => { setView("login"); window.scrollTo({ top: 0 }); }} />
+          <Intro onJoin={() => go("yours")} onLogin={() => go("login")} />
+        ) : view === "yours" ? (
+          <MakeYours onNext={() => go("install")} onLogin={() => go("login")} onBack={() => go("intro")} />
+        ) : view === "install" ? (
+          <InstallStep onNext={() => go("signup")} onBack={() => go("yours")} />
         ) : (
           <AuthScreen
             key={view}
             initial={view}
-            onBack={() => { setView("intro"); window.scrollTo({ top: 0 }); }}
+            onBack={() => go(view === "signup" ? "install" : "intro")}
             onDone={(next) => { enter(next); window.scrollTo({ top: 0 }); }}
           />
         )}
