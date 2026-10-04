@@ -40,16 +40,39 @@ export async function heartbeat(): Promise<void> {
   if (!response.ok) throw new Error("heartbeat");
 }
 
-export async function sendFeedback(input: { username: string; feedback: string; requestId: string }): Promise<void> {
-  if (!SERVICE_URL) throw new Error("offline");
-  const response = await fetch(endpoint("/feedback"), {
+/**
+ * Where feedback goes. FormSubmit (formsubmit.co) is a free relay that only accepts submissions sent from a web page,
+ * so the browser sends it directly. NEXT_PUBLIC_SAATH_FEEDBACK_ID can hold the private alias FormSubmit gives after
+ * activation, so the address does not need to appear in the code at all.
+ */
+const FEEDBACK_ID = process.env.NEXT_PUBLIC_SAATH_FEEDBACK_ID || ["verushkapatel4", "gmail.com"].join("@");
+
+async function sendThroughRelay(input: { username: string; feedback: string }): Promise<void> {
+  const response = await fetch(`https://formsubmit.co/ajax/${FEEDBACK_ID}`, {
     method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(input),
+    headers: { "content-type": "application/json", accept: "application/json" },
+    body: JSON.stringify({ name: input.username, message: input.feedback, _subject: `Saath feedback from ${input.username}`, _template: "table", _captcha: "false" }),
   });
-  if (!response.ok) throw new Error("delivery");
-  const result = await response.json() as { delivered?: boolean };
-  if (!result.delivered) throw new Error("delivery");
+  const result = (await response.json().catch(() => ({}))) as { success?: string | boolean };
+  if (!response.ok || String(result.success) !== "true") throw new Error("delivery");
+}
+
+export async function sendFeedback(input: { username: string; feedback: string; requestId: string }): Promise<void> {
+  // The Saath server first, when it has email set up; otherwise straight to the relay from this page.
+  if (SERVICE_URL) {
+    try {
+      const response = await fetch(endpoint("/feedback"), {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(input),
+      });
+      const result = (await response.json().catch(() => ({}))) as { delivered?: boolean };
+      if (response.ok && result.delivered) return;
+    } catch {
+      // Fall through to the relay.
+    }
+  }
+  await sendThroughRelay(input);
 }
 
 export async function getLiveUsers(username: string, password: string): Promise<LiveUsers> {

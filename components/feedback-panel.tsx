@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState, type FormEvent } from "react";
 import { Mic, Send, Square } from "lucide-react";
-import { sendFeedback, serviceConfigured } from "@/lib/service";
+import { sendFeedback } from "@/lib/service";
 import { canHear, dictate, tap } from "@/lib/speech";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
@@ -47,7 +47,7 @@ export function FeedbackPanel() {
       setFeedback("");
       setNote({ ok: true, text: copy.sent });
     } catch {
-      setNote({ ok: false, text: serviceConfigured() ? copy.failed : copy.offline });
+      setNote({ ok: false, text: copy.failed });
     } finally {
       setBusy(false);
     }
