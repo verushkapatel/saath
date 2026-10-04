@@ -1,0 +1,24 @@
+# Asks the live Saath AI server one real question, the way the app does, and prints the answer.
+# Run it from Actions > Check Saath AI > Run workflow.
+name: Check Saath AI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask the server
+        env:
+          URL: ${{ vars.SAATH_AI_URL || 'https://saath-ai.verushkapatel4.workers.dev' }}
+        run: |
+          for lang in en hi; do
+            code=$(curl -s -o answer.json -w "%{http_code}" -X POST "$URL" \
+              -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" \
+              -d "{\"task\":\"answer\",\"lang\":\"$lang\",\"input\":\"What is an EMI?\",\"passages\":[{\"title\":\"What an EMI is\",\"text\":\"An EMI is the same payment every month until a loan is repaid. Each EMI has some loan and some interest inside it. EMI times months gives the real total.\"}]}")
+            echo "[$lang] HTTP $code"; cat answer.json; echo
+          done
+          other=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$URL" -H "origin: https://example.com" -H "content-type: application/json" -d '{}')
+          echo "Request from another website: HTTP $other (403 expected)"
+          [ "$code" = "200" ]
