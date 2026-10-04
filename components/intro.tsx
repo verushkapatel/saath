@@ -298,11 +298,11 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         </span>
       </div>
 
-      <section className="intro-hero">
+      <section className="intro-hero navy-scene">
         <div className="hero-figure stage">
           <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={220} label={t("intro.hero.figure")} />
         </div>
-        <div className="stack">
+        <div className="stack scene-in">
           <p className="masthead">{t("intro.hero.kicker")}</p>
           <h1>{t("intro.hero.title")}</h1>
           <p className="lead">{t("intro.hero.lead")}</p>
@@ -364,7 +364,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
       </Reveal>
 
       <Reveal id="join">
-        <div className="finale">
+        <div className="finale navy-scene">
           <h2>{t("intro.cta")}</h2>
           <p className="lead">{t("intro.ctaLead")}</p>
           <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }}>

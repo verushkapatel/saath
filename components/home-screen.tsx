@@ -79,7 +79,12 @@ export function HomeScreen() {
         const episode = story?.next;
         return (
           <>
-            <p className="kicker">{t("home.todayStory")}</p>
+            {episode && (
+              <div className="today-figure" aria-hidden>
+                <Character look={{ ...look, place: episode.place }} age={episode.age} size={96} />
+              </div>
+            )}
+            <p className="masthead">{t("home.todayStory")}</p>
             <h2>{episode?.title[code]}</h2>
             <p className="muted">{t("home.todayStoryLead", { stage: story?.stage?.title[code] ?? "", age: episode?.age ?? "" })}</p>
             <Link href={`/journey/${action.id}`} className="btn btn-primary" onClick={tap}>
@@ -147,7 +152,7 @@ export function HomeScreen() {
         </div>
       </div>
 
-      <section className="card hero today-card stack-sm" aria-labelledby="today-saath">
+      <section className="card hero today-card stack-sm scene-in" aria-labelledby="today-saath">
         <h2 id="today-saath" className="visually-hidden">{t("home.todaySaath")}</h2>
         {heroBody()}
       </section>

@@ -10,7 +10,7 @@ Saath is a financial-life companion for young people in India, from The Skyward 
 - **Saath AI.** Ask in your own words. It answers only from Saath's checked content, refuses to quote rates or give investment advice, and says so when it does not know.
 - **Progress.** XP, levels, a forgiving streak, badges, and outfits and places for Verena that unlock as you go. A share card shows level, streak, story stage, newest badge and Verena, and nothing else.
 
-The interface is black and white with hints of navy (the logo, the active tab, progress, links), in a light and a dark theme. The logo is two linked rings, ink and navy: *saath* means "together".
+The interface is black and white with navy accents, and the moments that matter (the language screen, the introduction, today's card, each chapter of the story, finishes) are set as deep-navy scenes with Verena in them. Navy also marks the logo, the active tab, progress and links. Light and dark themes. The logo is two linked rings, ink and navy: *saath* means "together".
 
 ## Language first
 
@@ -59,7 +59,7 @@ Before any cloud sync, server-side accounts or new data collection is added, a q
 Every screen talks to one interface, `SaathAIProvider` (`lib/ai/types.ts`). `getProvider` in `lib/ai/index.ts` picks, in order:
 
 1. **Model in this browser** (`lib/ai/local-provider.ts`), if the person downloaded it and switched it on in Settings. It runs Qwen 2.5 Instruct (0.5B or 1.5B, q4f16) with WebLLM on WebGPU. Nothing leaves the device. Settings shows the download size (read from the model's own file list before downloading), progress, and a button to remove it. WebLLM keeps the files in the browser's Cache Storage; the service worker leaves those caches alone.
-2. **Hosted model** (`lib/ai/remote-provider.ts`), if `NEXT_PUBLIC_SAATH_AI_URL` is set at build time, the person allows it, and the device is online. See `server/saath-ai-worker/` (a Cloudflare Worker template; not deployed).
+2. **Hosted model** (`lib/ai/remote-provider.ts`), if `NEXT_PUBLIC_SAATH_AI_URL` is set at build time, the person allows it, and the device is online. See `server/saath-ai-worker/` for the Cloudflare Worker (free Workers AI, no key). Once the address is set (repository variable `SAATH_AI_URL`, used by `.github/workflows/deploy-pages.yml`), every user sees a one-tap offer inside Saath AI; nothing is sent before they accept.
 3. **Rules on the device** (`lib/ai/rule-provider.ts`), always available. It retrieves the closest passages from Saath's content and answers by quoting them.
 
 Guardrails shared by all three:

@@ -186,6 +186,27 @@ describe("local model provider", () => {
   });
 });
 
+describe("online provider", () => {
+  it("sends grounded passages with identity numbers removed, and never sends rate, advice or emergency questions", async () => {
+    const sent: { input: string; passages: unknown[]; lang: string }[] = [];
+    const fetcher = (async (_url: string, init?: RequestInit) => {
+      sent.push(JSON.parse(String(init?.body)));
+      return new Response(JSON.stringify({ text: "An EMI is the same payment every month." }), { status: 200 });
+    }) as unknown as typeof fetch;
+    const { createRemoteProvider } = await import("@/lib/ai/remote-provider");
+    const online = createRemoteProvider("https://example.invalid", docsFor, fetcher, rules);
+    const answer = await online.answerQuestion("What is an EMI? My PAN is ABCDE1234F", request("hi"));
+    expect(answer.via).toBe("online");
+    expect(sent[0].lang).toBe("hi");
+    expect(sent[0].input).not.toContain("ABCDE1234F");
+    expect(sent[0].passages.length).toBeGreaterThan(0);
+    for (const question of ["What is the FD rate today?", "Should I buy this stock?", "I shared my OTP and money is gone", "hi"]) {
+      expect((await online.answerQuestion(question, request())).via).toBe("device");
+    }
+    expect(sent).toHaveLength(1);
+  });
+});
+
 describe("the Worker template", () => {
   it("uses exactly the same rules as the app", () => {
     const worker = readFileSync(`${process.cwd()}/server/saath-ai-worker/worker.js`, "utf8");

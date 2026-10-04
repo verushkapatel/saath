@@ -1,6 +1,7 @@
 import type { Lang } from "../catalog";
 import { redact } from "../redact";
 import { search } from "./knowledge";
+import { ADVICE_ASK, EMERGENCY, FAILED_PAYMENT, GREETING, RATE_ASK, THANKS } from "./rule-provider";
 import type { AiAnswer, AiRequest, Doc, MistakeInput, SaathAIProvider } from "./types";
 
 /**
@@ -16,7 +17,12 @@ type Task = "answer" | "lesson" | "form" | "mistake" | "revise" | "progress";
 
 const TIMEOUT_MS = 20_000;
 
-export function createRemoteProvider(url: string, docsFor: (lang: Lang) => Doc[], fetcher: typeof fetch = fetch): SaathAIProvider {
+export function createRemoteProvider(
+  url: string,
+  docsFor: (lang: Lang) => Doc[],
+  fetcher: typeof fetch = fetch,
+  fallback?: SaathAIProvider,
+): SaathAIProvider {
   async function call(task: Task, input: string, request: AiRequest, query: string): Promise<AiAnswer> {
     const docs = docsFor(request.lang);
     const hits = search(query, docs, request.context?.id ? { id: request.context.id } : undefined).slice(0, 5);
@@ -55,7 +61,13 @@ export function createRemoteProvider(url: string, docsFor: (lang: Lang) => Doc[]
 
   return {
     id: "online",
-    answerQuestion: (question, request) => call("answer", question, request, question),
+    answerQuestion: (question, request) => {
+      // The same fixed, checked wording as on the device for rates, advice, emergencies and small talk: these never go to a model.
+      const asked = question.trim();
+      const fixed = RATE_ASK.test(asked) || ADVICE_ASK.test(asked) || GREETING.test(asked) || THANKS.test(asked) || (EMERGENCY.test(asked) && !FAILED_PAYMENT.test(asked));
+      if (fixed && fallback) return fallback.answerQuestion(question, request);
+      return call("answer", question, request, question);
+    },
     explainLesson: (lessonId, request) => call("lesson", lessonId, request, request.context?.title ?? lessonId),
     explainForm: (formIdOrText, request) => call("form", formIdOrText, request, formIdOrText),
     explainMistake: (mistake: MistakeInput, request) =>

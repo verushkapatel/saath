@@ -1,7 +1,7 @@
 import type { Lang } from "../catalog";
 import { search, type Hit } from "./knowledge";
 import { buildMessages, inventedNumbers, tidy, type ChatMessage, type Passage, type Task } from "./prompt";
-import { ADVICE_ASK, EMERGENCY, MIN_SCORE, RATE_ASK, VAGUE } from "./rule-provider";
+import { ADVICE_ASK, EMERGENCY, GREETING, MIN_SCORE, RATE_ASK, THANKS, VAGUE } from "./rule-provider";
 import type { AiAnswer, AiRequest, AiSource, Doc, MistakeInput, SaathAIProvider } from "./types";
 
 /**
@@ -184,7 +184,7 @@ export function createLocalProvider(
   async function answerQuestion(question: string, request: AiRequest): Promise<AiAnswer> {
     const asked = question.trim();
     // Fixed, checked wording for the questions where a wrong word does harm.
-    if (EMERGENCY.test(asked) || RATE_ASK.test(asked) || ADVICE_ASK.test(asked)) return fallback.answerQuestion(question, request);
+    if (EMERGENCY.test(asked) || RATE_ASK.test(asked) || ADVICE_ASK.test(asked) || GREETING.test(asked) || THANKS.test(asked)) return fallback.answerQuestion(question, request);
     const docs = docsFor(request.lang);
     const context = request.context;
     const vague = VAGUE.test(asked) && Boolean(context?.text);

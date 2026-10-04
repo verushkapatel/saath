@@ -69,6 +69,6 @@ export function getProvider(options: ProviderOptions): SaathAIProvider {
     const generate = options.generate ?? webllmGenerate(options.localModel ?? DEFAULT_LOCAL_MODEL);
     return withFallback(createLocalProvider(options.docsFor, { generate, fallback: device }), device);
   }
-  if (mode === "online") return withFallback(createRemoteProvider(AI_URL, options.docsFor), device);
+  if (mode === "online") return withFallback(createRemoteProvider(AI_URL, options.docsFor, fetch, device), device);
   return device;
 }

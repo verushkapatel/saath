@@ -10,16 +10,19 @@ The Worker asks a model to answer from those passages only, and returns the text
 
 ## Deploy (about ten minutes, free tier)
 
-1. Make a free Cloudflare account.
-2. In this folder run `npx wrangler login`, then `npx wrangler deploy`.
+1. Make a free Cloudflare account at dash.cloudflare.com.
+2. In this folder run `npx wrangler login` (a browser window asks you to allow it), then `npx wrangler deploy`.
+   It uses Cloudflare Workers AI through the `[ai]` binding in `wrangler.toml`, so there is no API key to create or paste.
 3. Copy the address it prints, for example `https://saath-ai.yourname.workers.dev`.
-4. Build the app with that address:
-
-   ```bash
-   NEXT_PUBLIC_SAATH_AI_URL=https://saath-ai.yourname.workers.dev npm run build:pages
-   ```
-
-5. In the app, open Settings, Saath AI, and switch on "Use the online model".
+4. Check it: `curl -X POST https://saath-ai.yourname.workers.dev -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" -d '{"task":"answer","lang":"en","input":"What is an EMI?","passages":[{"title":"EMI","text":"An EMI is the same payment every month."}]}'`
+   should return `{"text": "..."}`.
+5. Give the app the address. Either:
+   - **On GitHub (recommended):** in the repository, Settings > Secrets and variables > Actions > Variables > New repository variable,
+     name `SAATH_AI_URL`, value the address. Then Actions > Deploy Saath > Run workflow. The site is rebuilt and published.
+   - **On your computer:** `NEXT_PUBLIC_BASE_PATH=/saath NEXT_PUBLIC_SAATH_AI_URL=https://saath-ai.yourname.workers.dev npm run build:pages`,
+     then publish `out/` to `main`.
+6. Everyone using the app now sees, inside Saath AI, a one-tap offer to use online answers. Nothing is sent until they tap it,
+   and they can switch it off in Settings > Saath AI.
 
 Edit `ALLOWED_ORIGIN` in `wrangler.toml` if the app is served from a different address.
 

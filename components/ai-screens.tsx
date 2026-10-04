@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { ArrowUp, BookOpen, Eraser, MessageCircle, Settings } from "lucide-react";
-import { getProvider, providerMode, type AiAnswer, type AiProgress, type AiTurn, type Doc } from "@/lib/ai";
+import { ArrowUp, BookOpen, Eraser, MessageCircle, Settings, Sparkles } from "lucide-react";
+import { getProvider, onlineConfigured, providerMode, type AiAnswer, type AiProgress, type AiTurn, type Doc } from "@/lib/ai";
 import { buildDocs } from "@/lib/ai/knowledge";
 import type { Lang } from "@/lib/catalog";
 import { loadJson, type FormsFile, type GlossaryTerm, type StoriesFile } from "@/lib/content-types";
@@ -89,6 +89,47 @@ export function useProvider() {
   return useMemo(
     () => getProvider({ docsFor, allowLocal: prefs.aiLocal, localModel: prefs.aiModel, allowOnline: prefs.aiOnline }),
     [docsFor, prefs.aiLocal, prefs.aiModel, prefs.aiOnline],
+  );
+}
+
+/**
+ * When this copy of Saath has an online model, offer it once, in plain words, inside the chat.
+ * Nothing is sent until the person taps yes. They can switch it off again in Settings.
+ */
+function OnlineOffer() {
+  const { t } = useI18n();
+  const { prefs, update } = usePrefs();
+  const [hidden, setHidden] = useState(() => {
+    try {
+      return window.localStorage.getItem("saath-online-offer") === "no";
+    } catch {
+      return false;
+    }
+  });
+  if (hidden || prefs.aiOnline || prefs.aiLocal || !onlineConfigured()) return null;
+  return (
+    <div className="online-offer navy-scene" role="note">
+      <p><Sparkles aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> <strong>{t("ai.offerTitle")}</strong></p>
+      <p className="faint">{t("ai.offerBody")}</p>
+      <div className="pair">
+        <button type="button" className="btn btn-primary" onClick={() => { tap(); update({ aiOnline: true }); }}>{t("ai.offerYes")}</button>
+        <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={() => {
+            tap();
+            setHidden(true);
+            try {
+              window.localStorage.setItem("saath-online-offer", "no");
+            } catch {
+              // Hidden for this visit.
+            }
+          }}
+        >
+          {t("ai.offerNo")}
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -180,6 +221,7 @@ function Chat({ compact }: { compact?: boolean }) {
           <BookOpen aria-hidden size={14} /> {t("ai.about", { title: ai.context.title ?? ai.context.screen })}
         </p>
       )}
+      <OnlineOffer />
       <div className="chat" aria-live="polite" aria-busy={busy}>
         {lines.length === 0 && <p className="bubble saath">{t("ai.hello")}</p>}
         {lines.map((line, index) => (

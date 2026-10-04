@@ -1,0 +1,66 @@
+# Builds Saath and publishes it to the main branch, which GitHub Pages serves at /saath.
+#
+# To give everyone Saath AI's online model: deploy server/saath-ai-worker (see its README), then in this repository
+# open Settings > Secrets and variables > Actions > Variables, add SAATH_AI_URL with the Worker's address, and run
+# this workflow (Actions > Deploy Saath > Run workflow). With no variable set, Saath AI answers on each device.
+name: Deploy Saath
+
+on:
+  push:
+    branches: [companion-rebuild]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check
+        run: |
+          npx tsc --noEmit
+          npm test
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /saath
+          NEXT_PUBLIC_SAATH_AI_URL: ${{ vars.SAATH_AI_URL }}
+        run: npm run build:pages
+
+      - name: Handbook PDFs
+        env:
+          NEXT_PUBLIC_BASE_PATH: /saath
+          CHROME_PATH: /usr/bin/google-chrome
+        run: npm run handbook:pdf || echo "Handbook PDFs were not made; the app's Print button still works."
+
+      - name: Publish to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git worktree add ../site origin/main
+          cd ../site
+          git checkout -B main origin/main
+          git rm -rq .
+          cp -a "$GITHUB_WORKSPACE/out/." .
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "Publish Saath from ${GITHUB_SHA::7}"
+          git push origin main

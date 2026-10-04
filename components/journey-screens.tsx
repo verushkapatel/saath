@@ -80,7 +80,7 @@ export function JourneyScreen() {
       </section>
 
       {story.finished && (
-        <section className="finale stack-sm" aria-labelledby="revision-h">
+        <section className="finale navy-scene stack-sm" aria-labelledby="revision-h">
           <h2 id="revision-h">{t("journey.revisionTitle")}</h2>
           <p className="lead">{t("journey.revisionLead")}</p>
           {weakTopics(progress).length > 0 && (
@@ -362,25 +362,29 @@ export function EpisodeScreen({ id }: { id: string }) {
 
   return (
     <article className="stack episode" ref={topRef}>
-      <div className="row-between">
-        <Link href="/journey" className="link"><ChevronLeft aria-hidden size={18} />{t("journey.backToMap")}</Link>
-        <span className="faint num">{position + 1} / {order.length}</span>
-      </div>
-      <ol className="loop-dots" aria-label={t("journey.loopLabel")}>
-        {order.map((item, at) => <li key={item} className={at < position ? "was" : at === position ? "on" : ""}><span className="visually-hidden">{t(`journey.step.${item}`)}</span></li>)}
-      </ol>
-      <div className="stack-xs">
-        <p className="kicker">{stage?.title[code]} · {t("journey.age", { age: episode.age })}</p>
-        <h1>{episode.title[code]}</h1>
-        {replaying && <p className="faint">{t("journey.replayNote")}</p>}
-      </div>
+      <header className="chapter navy-scene">
+        <div className="row-between">
+          <Link href="/journey" className="link"><ChevronLeft aria-hidden size={18} />{t("journey.backToMap")}</Link>
+          <span className="faint num">{position + 1} / {order.length}</span>
+        </div>
+        <ol className="loop-dots" aria-label={t("journey.loopLabel")}>
+          {order.map((item, at) => <li key={item} className={at < position ? "was" : at === position ? "on" : ""}><span className="visually-hidden">{t(`journey.step.${item}`)}</span></li>)}
+        </ol>
+        <div className="stack-xs">
+          <p className="masthead">{stage?.title[code]} · {t("journey.age", { age: episode.age })}</p>
+          <h1>{episode.title[code]}</h1>
+          {replaying && <p className="faint">{t("journey.replayNote")}</p>}
+        </div>
+        {step === "story" && (
+          <div className="stage">
+            <Character look={{ ...look, place: episode.place }} age={episode.age} size={160} label={t("journey.figure", { name: journey.name[code], age: episode.age })} />
+          </div>
+        )}
+      </header>
 
       {step === "story" && (
         <section className="stack">
-          <div className="stage">
-            <Character look={{ ...look, place: episode.place }} age={episode.age} size={150} label={t("journey.figure", { name: journey.name[code], age: episode.age })} />
-          </div>
-          <div className="prose">{episode.story.map((line, at) => <p key={at}>{line[code]}</p>)}</div>
+          <div className="prose scene-in">{episode.story.map((line, at) => <p key={at}>{line[code]}</p>)}</div>
           <ListenButton text={episode.story.map((line) => line[code]).join(" ")} />
           <button type="button" className="btn btn-primary" onClick={() => go(episode.slip ? "slip" : "sim")}>{t("common.next")}<ArrowRight aria-hidden size={18} /></button>
         </section>
@@ -443,7 +447,7 @@ export function EpisodeScreen({ id }: { id: string }) {
 
       {step === "outcome" && option && (
         <section className="stack">
-          <div className={`consequence ${option.verdict}`} role="status">
+          <div className={`consequence ${option.verdict} scene-in`} role="status">
             <p className="kicker">{t(`journey.verdict.${option.verdict}`)}</p>
             <p className="lead">{option.outcome[code]}</p>
           </div>
@@ -496,7 +500,7 @@ export function EpisodeScreen({ id }: { id: string }) {
 
       {step === "done" && option && (
         <section className="stack">
-          <div className="finale stack-sm">
+          <div className="finale navy-scene stack-sm scene-in">
             <div className="stage">
               <Character look={{ ...look, place: episode.place }} age={episode.age} size={130} />
             </div>

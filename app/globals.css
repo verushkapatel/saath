@@ -1820,3 +1820,96 @@ mark { padding: 0 2px; border-radius: 2px; background: var(--accent-soft); color
 }
 .finale .cluster { justify-content: center; }
 .share-brand { display: flex; align-items: center; gap: var(--s-2); }
+
+/* ───────────────────────────────────────────────────────────────
+   Navy scenes. The moments that matter (choosing a language, the
+   introduction, today's card, a chapter of Verena's story, a finish)
+   are set on deep navy, like a stage with the house lights down.
+   Inside a scene every token is redefined, so text, buttons, Verena
+   and the logo all follow without special cases.
+   ─────────────────────────────────────────────────────────────── */
+:root { --navy-deep: #0b1f45; --navy-deeper: #071533; }
+
+.navy-scene, .card.hero {
+  --bg: var(--navy-deep);
+  --surface-1: #11295a;
+  --surface-2: #163266;
+  --surface-3: #1f3e78;
+  --line: rgba(255, 255, 255, 0.14);
+  --line-strong: rgba(255, 255, 255, 0.32);
+  --text: #f5f7fc;
+  --text-muted: #cdd7ea;
+  --text-faint: #a3b3d2;
+  --accent: #ffffff;
+  --accent-hi: #ffffff;
+  --accent-press: #dde5f5;
+  --accent-ink: var(--navy-deep);
+  --accent-text: #ffffff;
+  --accent-soft: rgba(255, 255, 255, 0.1);
+  --navy: #a9c1ee;
+  --navy-soft: rgba(169, 193, 238, 0.16);
+  --navy-ink: var(--navy-deep);
+  --shadow-1: none;
+  --shadow-2: none;
+  background: var(--bg);
+  color: var(--text);
+  border-color: transparent;
+}
+.card.hero { box-shadow: 0 18px 40px rgba(7, 21, 51, 0.28); }
+.card.hero .stage, .navy-scene .stage { background: var(--navy-deeper); border-color: var(--line); }
+.navy-scene .masthead, .card.hero .masthead { color: var(--navy); }
+
+/* Full-bleed scenes stretch past the page gutter to the screen edge. */
+.bleed { margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+
+/* The language screen and the introduction open on navy. */
+.landing.navy-scene { min-height: 100dvh; }
+.landing.navy-scene .gate-list button { background: var(--surface-1); border-color: var(--line); color: var(--text); }
+.landing.navy-scene .gate-list button[aria-checked="true"] { border-color: var(--navy); box-shadow: inset 0 0 0 1px var(--navy); }
+.landing.navy-scene .icon-btn { background: var(--surface-1); color: var(--text); border-color: var(--line); }
+.intro-hero.navy-scene { margin-inline: calc(var(--gutter) * -1); padding: var(--s-6) var(--gutter) var(--s-7); border-radius: 0 0 var(--r-lg) var(--r-lg); }
+
+/* A chapter of the story: the title band. */
+.chapter { display: grid; gap: var(--s-3); padding: var(--s-5) var(--gutter) var(--s-5); margin-top: calc(var(--s-2) * -1); border-radius: var(--r-lg); }
+.chapter h1 { color: var(--text); }
+.chapter .loop-dots li { background: rgba(255, 255, 255, 0.16); }
+.chapter .loop-dots li.was { background: rgba(255, 255, 255, 0.5); }
+.chapter .loop-dots li.on { background: #ffffff; }
+.chapter .stage { justify-self: center; width: min(100%, 320px); }
+.chapter .link { color: var(--text); }
+
+/* Finishes: a part of the story, the whole story. */
+.finale.navy-scene { border: 0; }
+
+/* Ira's ground line and scene strokes stay visible on navy. */
+.navy-scene .ch-scene, .navy-scene .ch-scene *, .navy-scene .ch-ground,
+.card.hero .ch-scene, .card.hero .ch-scene *, .card.hero .ch-ground { stroke: rgba(255, 255, 255, 0.3); }
+
+/* Motion: things arrive one after another, like lines in a scene. Off when motion is reduced. */
+@keyframes rise-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.scene-in > * { animation: rise-in 520ms var(--ease-out) backwards; }
+.scene-in > *:nth-child(2) { animation-delay: 140ms; }
+.scene-in > *:nth-child(3) { animation-delay: 280ms; }
+.scene-in > *:nth-child(4) { animation-delay: 420ms; }
+.scene-in > *:nth-child(n + 5) { animation-delay: 560ms; }
+@keyframes breathe { 50% { transform: translateY(-3px); } }
+.chapter .character, .landing .character, .intro-hero .character { animation: breathe 4.5s ease-in-out infinite; }
+@keyframes glow-pop { 0% { transform: scale(0.6); opacity: 0; } 60% { transform: scale(1.08); opacity: 1; } 100% { transform: none; } }
+.finale .xp-pop { animation: glow-pop 640ms var(--ease-spring); }
+:root[data-motion="reduce"] .scene-in > *, :root[data-motion="reduce"] .character { animation: none !important; }
+@media (prefers-reduced-motion: reduce) { .scene-in > *, .character { animation: none !important; } }
+
+/* Dark theme: the scenes stay navy, a step lighter than the black page, so they still read as scenes. */
+:root[data-theme="dark"] .navy-scene, :root[data-theme="dark"] .card.hero { --bg: #0e2249; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .navy-scene, :root:not([data-theme="light"]) .card.hero { --bg: #0e2249; }
+}
+.online-offer { display: grid; gap: var(--s-2); padding: var(--s-4); border-radius: var(--r-md); }
+.online-offer p { margin: 0; }
+.today-card { position: relative; overflow: hidden; }
+.today-figure { float: right; margin: calc(var(--s-2) * -1) calc(var(--s-2) * -1) 0 var(--s-3); padding: var(--s-2); border-radius: var(--r-md); background: var(--navy-deeper); }
+.today-figure .character { animation: breathe 4.5s ease-in-out infinite; }
+.today-card.stack-sm { display: block; }
+.today-card > * + * { margin-top: var(--s-2); }
+.today-card > .today-figure + * { margin-top: 0; }
+.today-card .btn { clear: both; display: flex; }

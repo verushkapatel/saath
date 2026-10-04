@@ -66,9 +66,9 @@ function Landing() {
   const shown = pick ?? "en";
 
   return (
-    <main className="landing screen">
+    <main className="landing screen navy-scene">
       <div className="landing-top"><ThemeToggle /></div>
-      <div className="landing-body">
+      <div className="landing-body scene-in">
         <div className="landing-figure stage">
           <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={168} />
         </div>
