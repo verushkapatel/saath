@@ -1182,10 +1182,11 @@
       "local": "Model in this browser",
       "online": "Online model"
     },
-    "offerTitle": "Fuller answers are available",
-    "offerBody": "Saath can phrase answers with its online model. Your question goes to Saath's server with ID numbers removed, and Money Lab is never sent. Answers still come only from Saath's checked guides.",
-    "offerYes": "Use online answers",
-    "offerNo": "Keep it on this device"
+    "offerTitle": "Saath AI answers online",
+    "offerBody": "Your question goes to Saath's own server with ID numbers removed, so the answers are fuller. Money Lab, receipts and photos are never sent. You can change this any time in Settings.",
+    "offerYes": "Fine, use online answers",
+    "offerNo": "Keep it on this phone",
+    "helloTitle": "Ask Saath anything about money"
   },
   "prog": {
     "kicker": "Your progress",
@@ -1224,21 +1225,31 @@
       "kurta": "Kurta",
       "blazer": "Office blazer",
       "sari": "Sari",
-      "shawl": "Warm shawl"
+      "shawl": "Warm shawl",
+      "hoodie": "Hoodie",
+      "jacket": "Denim jacket",
+      "festive": "Festive lehenga",
+      "suit": "Trouser suit"
     },
     "extra": {
       "none": "Nothing extra",
       "bag": "Shoulder bag",
       "glasses": "Glasses",
       "scarf": "Scarf",
-      "watch": "Watch"
+      "watch": "Watch",
+      "earrings": "Jhumkas",
+      "sunglasses": "Sunglasses",
+      "backpack": "Backpack",
+      "headphones": "Headphones"
     },
     "place": {
       "room": "Her room",
       "office": "The office",
       "bank": "The bank",
       "home": "Family home",
-      "garden": "The garden"
+      "garden": "The garden",
+      "cafe": "The café",
+      "rooftop": "The rooftop"
     },
     "badge": {
       "first-step": "First step",

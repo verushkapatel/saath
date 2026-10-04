@@ -232,3 +232,22 @@ describe("the Worker template", () => {
     }
   });
 });
+
+describe("invented numbers", () => {
+  it("allows round amounts in a made-up example", () => {
+    expect(inventedNumbers("For example, if you earn ₹20,000 and spend ₹15,000, you keep ₹5,000.", "")).toEqual([]);
+    expect(inventedNumbers("मान लीजिए आप ₹10,000 कमाते हैं।", "")).toEqual([]);
+  });
+  it("still rejects rates, lakh limits, years and sections, even in an example", () => {
+    expect(inventedNumbers("For example, a PPF pays 7.1% a year.", "")).toEqual(["7.1"]);
+    expect(inventedNumbers("For example, you can claim up to 1.5 lakh.", "")).toEqual(["1.5"]);
+    expect(inventedNumbers("The rule changed in 2024.", "")).toEqual(["2024"]);
+    expect(inventedNumbers("For example, under 80C you save tax.", "")).toEqual(["80"]);
+  });
+  it("rejects a plain amount stated as a fact", () => {
+    expect(inventedNumbers("The premium is ₹436 a year.", "")).toEqual(["436"]);
+  });
+  it("knows the helpline the rules give", () => {
+    expect(inventedNumbers("Call 1930 now.", "")).toEqual([]);
+  });
+});

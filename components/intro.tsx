@@ -13,7 +13,7 @@ import { useI18n } from "./providers";
 import { ThemeToggle } from "./theme-toggle";
 
 /** Fades a section in the first time it scrolls into view. */
-function Reveal({ children, id }: { children: React.ReactNode; id?: string }) {
+function Reveal({ children, id, navy, onSeen }: { children: React.ReactNode; id?: string; navy?: boolean; onSeen?: () => void }) {
   const ref = useRef<HTMLElement | null>(null);
   const [seen, setSeen] = useState(false);
   useEffect(() => {
@@ -26,15 +26,16 @@ function Reveal({ children, id }: { children: React.ReactNode; id?: string }) {
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) {
           setSeen(true);
-          observer.disconnect();
+          onSeen?.();
         }
       },
-      { threshold: 0.18 },
+      { threshold: 0.35 },
     );
     observer.observe(node);
     return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  return <section ref={ref} id={id} className={`act${seen ? " in" : ""}`}>{children}</section>;
+  return <section ref={ref} id={id} className={`act${navy ? " act-navy navy-scene" : ""}${seen ? " in" : ""}`}>{children}</section>;
 }
 
 function ActHead({ n, title, lead }: { n: string; title: string; lead: string }) {
@@ -285,11 +286,12 @@ function PersonalDemo() {
 export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => void }) {
   const { t } = useI18n();
   const [xp, setXp] = useState(0);
+  const [act, setAct] = useState(-1);
   const acts = useMemo(() => ["play", "progress", "guides", "forms", "ai", "money", "stories", "personal"], []);
 
   return (
     <main className="intro">
-      <div className="intro-top">
+      <div className="intro-top navy-scene">
         <Logo size={24} />
         <span className="cluster">
           <LangSwitch />
@@ -314,7 +316,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         </div>
       </section>
 
-      <Reveal id="act-play">
+      <Reveal id="act-play" navy onSeen={() => setAct(0)}>
         <ActHead n="01" title={t("intro.play.title")} lead={t("intro.play.lead")} />
         <PlayEpisode onXp={setXp} />
         <ol className="loop" aria-label={t("intro.play.loopLabel")}>
@@ -322,32 +324,32 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         </ol>
       </Reveal>
 
-      <Reveal>
+      <Reveal onSeen={() => setAct(1)}>
         <ActHead n="02" title={t("intro.progress.title")} lead={t("intro.progress.lead")} />
         <ProgressDemo xp={xp} />
       </Reveal>
 
-      <Reveal>
+      <Reveal navy onSeen={() => setAct(2)}>
         <ActHead n="03" title={t("intro.guides.title")} lead={t("intro.guides.lead")} />
         <GuideDemo />
       </Reveal>
 
-      <Reveal>
+      <Reveal onSeen={() => setAct(3)}>
         <ActHead n="04" title={t("intro.forms.title")} lead={t("intro.forms.lead")} />
         <FormDemo />
       </Reveal>
 
-      <Reveal>
+      <Reveal navy onSeen={() => setAct(4)}>
         <ActHead n="05" title={t("intro.ai.title")} lead={t("intro.ai.lead")} />
         <AskDemo />
       </Reveal>
 
-      <Reveal>
+      <Reveal onSeen={() => setAct(5)}>
         <ActHead n="06" title={t("intro.money.title")} lead={t("intro.money.lead")} />
         <MoneyDemo />
       </Reveal>
 
-      <Reveal>
+      <Reveal navy onSeen={() => setAct(6)}>
         <ActHead n="07" title={t("intro.stories.title")} lead={t("intro.stories.lead")} />
         <div className="demo">
           <p className="kicker">{t("stories.kind.official")}</p>
@@ -357,13 +359,13 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         </div>
       </Reveal>
 
-      <Reveal>
+      <Reveal onSeen={() => setAct(7)}>
         <ActHead n="08" title={t("intro.personal.title")} lead={t("intro.personal.lead")} />
         <PersonalDemo />
         <p className="faint"><Share2 aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("intro.personal.share")}</p>
       </Reveal>
 
-      <Reveal id="join">
+      <Reveal id="join" onSeen={() => setAct(8)}>
         <div className="finale navy-scene">
           <h2>{t("intro.cta")}</h2>
           <p className="lead">{t("intro.ctaLead")}</p>
@@ -375,7 +377,16 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
           <p className="faint">{t("intro.ctaNote")} <Link href="/privacy">{t("profile.privacy")}</Link></p>
         </div>
       </Reveal>
-      <span hidden>{acts.length}</span>
+      {/* Where you are in the tour, and the way in, always within reach. */}
+      <nav className={`intro-dots${act >= 0 && act < acts.length ? " on" : ""}`} aria-hidden>
+        {acts.map((id, index) => <i key={id} className={index === act ? "on" : index < act ? "was" : undefined} />)}
+      </nav>
+      <div className={`intro-float${act >= 0 && act < acts.length ? " on" : ""}`}>
+        <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }} tabIndex={act >= 0 && act < acts.length ? 0 : -1}>
+          {t("intro.cta")}
+          <ArrowRight aria-hidden size={18} />
+        </button>
+      </div>
     </main>
   );
 }

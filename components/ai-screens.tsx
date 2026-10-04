@@ -11,6 +11,7 @@ import { recommend, weakTopics } from "@/lib/recommend";
 import { tap } from "@/lib/speech";
 import { getMeta, setMeta } from "@/lib/storage";
 import { useAi } from "./ai-context";
+import { LogoMark } from "./logo";
 import { useApp } from "./app-state";
 import { usePrefs } from "./prefs";
 import { useI18n } from "./providers";
@@ -93,44 +94,95 @@ export function useProvider() {
 }
 
 /**
- * When this copy of Saath has an online model, offer it once, in plain words, inside the chat.
- * Nothing is sent until the person taps yes. They can switch it off again in Settings.
+ * Online answers are on by default when this copy of Saath has a server. The first time, say plainly what that means,
+ * and offer to keep everything on this device instead. Settings can switch it either way at any time.
  */
-function OnlineOffer() {
+function OnlineNote() {
   const { t } = useI18n();
   const { prefs, update } = usePrefs();
   const [hidden, setHidden] = useState(() => {
     try {
-      return window.localStorage.getItem("saath-online-offer") === "no";
+      return window.localStorage.getItem("saath-online-note") === "seen";
     } catch {
       return false;
     }
   });
-  if (hidden || prefs.aiOnline || prefs.aiLocal || !onlineConfigured()) return null;
+  if (hidden || prefs.aiLocal || !onlineConfigured()) return null;
+  const close = (keepOnline: boolean) => {
+    tap();
+    setHidden(true);
+    if (keepOnline !== prefs.aiOnline) update({ aiOnline: keepOnline });
+    try {
+      window.localStorage.setItem("saath-online-note", "seen");
+    } catch {
+      // Hidden for this visit.
+    }
+  };
   return (
-    <div className="online-offer navy-scene" role="note">
+    <div className="online-offer" role="note">
       <p><Sparkles aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> <strong>{t("ai.offerTitle")}</strong></p>
       <p className="faint">{t("ai.offerBody")}</p>
-      <div className="pair">
-        <button type="button" className="btn btn-primary" onClick={() => { tap(); update({ aiOnline: true }); }}>{t("ai.offerYes")}</button>
-        <button
-          type="button"
-          className="btn btn-secondary"
-          onClick={() => {
-            tap();
-            setHidden(true);
-            try {
-              window.localStorage.setItem("saath-online-offer", "no");
-            } catch {
-              // Hidden for this visit.
-            }
-          }}
-        >
-          {t("ai.offerNo")}
-        </button>
+      <div className="cluster">
+        <button type="button" className="chip" aria-pressed={prefs.aiOnline} onClick={() => close(true)}>{t("ai.offerYes")}</button>
+        <button type="button" className="chip" aria-pressed={!prefs.aiOnline} onClick={() => close(false)}>{t("ai.offerNo")}</button>
       </div>
     </div>
   );
+}
+
+/** Bold words and "- " bullets, the only formatting Saath AI is asked to use. Everything else is plain text. */
+function inline(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) =>
+    part.startsWith("**") && part.endsWith("**") && part.length > 4 ? <strong key={index}>{part.slice(2, -2)}</strong> : part,
+  );
+}
+
+export function RichText({ text }: { text: string }) {
+  const blocks: React.ReactNode[] = [];
+  let bullets: string[] = [];
+  const flush = () => {
+    if (bullets.length) blocks.push(<ul key={`u${blocks.length}`}>{bullets.map((item, index) => <li key={index}>{inline(item)}</li>)}</ul>);
+    bullets = [];
+  };
+  for (const raw of text.split("\n")) {
+    const line = raw.trim();
+    const bullet = line.match(/^(?:[-•*]|\d+[.)])\s+(.*)$/);
+    if (bullet) {
+      bullets.push(bullet[1]);
+      continue;
+    }
+    flush();
+    if (line) blocks.push(<p key={`p${blocks.length}`}>{inline(line)}</p>);
+  }
+  flush();
+  return <>{blocks}</>;
+}
+
+/** The newest answer appears word by word, quickly, so it reads like a reply rather than a page. */
+function Typed({ text, onDone }: { text: string; onDone?: () => void }) {
+  const words = useMemo(() => text.split(/(\s+)/), [text]);
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const reduce = typeof window !== "undefined" && (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches || document.documentElement.dataset.motion === "reduce");
+    if (reduce) {
+      setCount(words.length);
+      onDone?.();
+      return;
+    }
+    let at = 0;
+    const step = Math.max(2, Math.ceil(words.length / 60));
+    const timer = window.setInterval(() => {
+      at = Math.min(words.length, at + step);
+      setCount(at);
+      if (at >= words.length) {
+        window.clearInterval(timer);
+        onDone?.();
+      }
+    }, 24);
+    return () => window.clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [words]);
+  return <RichText text={words.slice(0, count).join("")} />;
 }
 
 function Chat({ compact }: { compact?: boolean }) {
@@ -143,6 +195,7 @@ function Chat({ compact }: { compact?: boolean }) {
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [fresh, setFresh] = useState<number | null>(null);
   const endRef = useRef<HTMLDivElement | null>(null);
   const linesRef = useRef<ChatLine[]>([]);
   linesRef.current = lines;
@@ -189,6 +242,7 @@ function Chat({ compact }: { compact?: boolean }) {
         : kind === "summary" ? await provider.summarizeProgress(request)
         : await provider.answerQuestion(text, request);
       remember([...withQuestion, { role: "saath", text: answer.text, sources: answer.sources, via: answer.via }]);
+      setFresh(withQuestion.length);
     } catch {
       remember([...withQuestion, { role: "saath", text: t("ai.error") }]);
     } finally {
@@ -221,12 +275,18 @@ function Chat({ compact }: { compact?: boolean }) {
           <BookOpen aria-hidden size={14} /> {t("ai.about", { title: ai.context.title ?? ai.context.screen })}
         </p>
       )}
-      <OnlineOffer />
+      <OnlineNote />
       <div className="chat" aria-live="polite" aria-busy={busy}>
-        {lines.length === 0 && <p className="bubble saath">{t("ai.hello")}</p>}
+        {lines.length === 0 && (
+          <div className="ai-hello">
+            <span className="ai-orb" aria-hidden><LogoMark size={34} /></span>
+            <h2>{t("ai.helloTitle")}</h2>
+            <p className="muted">{t("ai.hello")}</p>
+          </div>
+        )}
         {lines.map((line, index) => (
           <div key={index} className={`bubble ${line.role === "user" ? "me" : "saath"}`}>
-            <p>{line.text}</p>
+            {line.role === "user" ? <p>{line.text}</p> : index === fresh ? <Typed text={line.text} onDone={() => endRef.current?.scrollIntoView({ block: "end" })} /> : <RichText text={line.text} />}
             {line.sources && line.sources.length > 0 && (
               <p className="bubble-sources">
                 <span className="faint">{t("ai.sources")}: </span>

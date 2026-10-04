@@ -28,7 +28,7 @@ export const DEFAULT_PREFS: Prefs = {
   sound: true,
   haptics: true,
   ai: true,
-  aiOnline: false,
+  aiOnline: true,
   aiMemory: true,
   aiLocal: false,
   aiModel: "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
@@ -106,7 +106,7 @@ export function applyPrefs(prefs: Prefs): void {
   if (prefs.contrast) root.setAttribute("data-contrast", "more");
   else root.removeAttribute("data-contrast");
   const dark = resolveTheme(prefs.theme, window.matchMedia("(prefers-color-scheme: dark)").matches) === "dark";
-  document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => meta.setAttribute("content", dark ? "#000000" : "#ffffff"));
+  document.querySelectorAll('meta[name="theme-color"]').forEach((meta) => meta.setAttribute("content", dark ? "#000000" : "#f2f2f7"));
 }
 
 /** Runs in the page head, before React. Kept as a string so it can be inlined. */

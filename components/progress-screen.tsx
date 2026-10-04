@@ -240,16 +240,6 @@ export function ProgressScreen() {
         <p className="faint">{t("prog.lockedHint")}</p>
       </section>
 
-      <Link href="/check" className="card tight" onClick={tap}>
-        <span className="item" style={{ padding: 0, minHeight: 0 }}>
-          <span className="item-body">
-            <span className="item-title">{t("prog.finlit")}</span>
-            <span className="item-sub">{t("prog.finlitSub")}</span>
-          </span>
-          <span className="item-end"><ChevronRight aria-hidden size={20} /></span>
-        </span>
-      </Link>
-
       {app.journey && <p className="faint">{t("prog.storyName", { name: app.journey.name[code] })}</p>}
       {sharing && <ShareSheet onClose={() => setSharing(false)} />}
     </div>

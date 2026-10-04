@@ -20,11 +20,19 @@ export type Reward = { id: string; kind: RewardKind; need: Need };
 
 export const REWARDS: Reward[] = [
   { id: "kurta", kind: "outfit", need: { type: "start" } },
+  { id: "hoodie", kind: "outfit", need: { type: "start" } },
+  { id: "jacket", kind: "outfit", need: { type: "level", value: 4 } },
+  { id: "festive", kind: "outfit", need: { type: "streak", value: 14 } },
+  { id: "suit", kind: "outfit", need: { type: "episode", id: "long-term-planning" } },
   { id: "blazer", kind: "outfit", need: { type: "episode", id: "first-job" } },
   { id: "sari", kind: "outfit", need: { type: "episode", id: "family-finances" } },
   { id: "shawl", kind: "outfit", need: { type: "episode", id: "retirement" } },
 
   { id: "none", kind: "extra", need: { type: "start" } },
+  { id: "earrings", kind: "extra", need: { type: "start" } },
+  { id: "sunglasses", kind: "extra", need: { type: "streak", value: 3 } },
+  { id: "backpack", kind: "extra", need: { type: "episodes", value: 3 } },
+  { id: "headphones", kind: "extra", need: { type: "level", value: 4 } },
   { id: "bag", kind: "extra", need: { type: "level", value: 2 } },
   { id: "glasses", kind: "extra", need: { type: "level", value: 3 } },
   { id: "scarf", kind: "extra", need: { type: "streak", value: 7 } },
@@ -35,6 +43,8 @@ export const REWARDS: Reward[] = [
   { id: "bank", kind: "place", need: { type: "episode", id: "banking" } },
   { id: "home", kind: "place", need: { type: "episode", id: "family-finances" } },
   { id: "garden", kind: "place", need: { type: "episode", id: "retirement" } },
+  { id: "cafe", kind: "place", need: { type: "stories", value: 5 } },
+  { id: "rooftop", kind: "place", need: { type: "level", value: 6 } },
 
   { id: "first-step", kind: "badge", need: { type: "episodes", value: 1 } },
   { id: "week", kind: "badge", need: { type: "streak", value: 7 } },

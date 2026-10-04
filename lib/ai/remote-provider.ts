@@ -1,7 +1,7 @@
 import type { Lang } from "../catalog";
 import { redact } from "../redact";
 import { search } from "./knowledge";
-import { inventedNumbers } from "./prompt";
+import { inventedNumbers, SYSTEM, tidy } from "./prompt";
 import { ADVICE_ASK, EMERGENCY, FAILED_PAYMENT, GREETING, RATE_ASK, THANKS } from "./rule-provider";
 import type { AiAnswer, AiRequest, Doc, MistakeInput, SaathAIProvider } from "./types";
 
@@ -48,7 +48,8 @@ export function createRemoteProvider(
       });
       if (!response.ok) throw new Error(`ai ${response.status}`);
       const data = (await response.json()) as { text?: unknown };
-      if (typeof data.text !== "string" || !data.text.trim()) throw new Error("ai empty");
+      if (typeof data.text !== "string" || !tidy(data.text)) throw new Error("ai empty");
+      const text = tidy(data.text);
       // As on the device: an answer with a number that is in none of the passages, the screen or the question is
       // thrown away, and the checked answer is used instead. A model must not invent a rate or an amount.
       const given = [
@@ -58,10 +59,11 @@ export function createRemoteProvider(
         input,
         request.progress ? JSON.stringify(request.progress) : "",
         ...request.history.map((turn) => turn.text),
+        SYSTEM,
       ].join(" ");
-      if (inventedNumbers(data.text, given).length > 0) throw new Error("ungrounded");
+      if (inventedNumbers(text, given).length > 0) throw new Error("ungrounded");
       return {
-        text: data.text.trim().slice(0, 4000),
+        text,
         sources: hits.filter((hit) => hit.doc.kind !== "term").slice(0, 3).map((hit) => ({ title: hit.doc.title, href: hit.doc.href })),
         via: "online",
         grounded: hits.length > 0,
@@ -78,7 +80,10 @@ export function createRemoteProvider(
       const asked = question.trim();
       const fixed = RATE_ASK.test(asked) || ADVICE_ASK.test(asked) || GREETING.test(asked) || THANKS.test(asked) || (EMERGENCY.test(asked) && !FAILED_PAYMENT.test(asked));
       if (fixed && fallback) return fallback.answerQuestion(question, request);
-      return call("answer", question, request, question);
+      // A short follow-up ("and the fees?") is searched together with the question before it.
+      const previous = [...request.history].reverse().find((turn) => turn.role === "user")?.text ?? "";
+      const query = asked.split(/\s+/).length <= 3 && previous ? `${previous} ${asked}` : asked;
+      return call("answer", question, request, query);
     },
     explainLesson: (lessonId, request) => call("lesson", lessonId, request, request.context?.title ?? lessonId),
     explainForm: (formIdOrText, request) => call("form", formIdOrText, request, formIdOrText),

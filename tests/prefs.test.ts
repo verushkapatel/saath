@@ -31,9 +31,9 @@ describe("preferences", () => {
     expect(odd.aiModel).toBe(DEFAULT_PREFS.aiModel);
   });
 
-  it("starts with the local model and the online model both off", () => {
+  it("starts with the local model off and online answers on", () => {
     expect(DEFAULT_PREFS.aiLocal).toBe(false);
-    expect(DEFAULT_PREFS.aiOnline).toBe(false);
+    expect(DEFAULT_PREFS.aiOnline).toBe(true);
   });
 
   it("follows the device until a theme is chosen", () => {

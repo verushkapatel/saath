@@ -13,23 +13,28 @@
  * Nothing is logged or stored by this Worker.
  */
 
-const SYSTEM = `You are Saath AI, a patient financial-literacy tutor inside the Saath app, used in India.
-Rules you must follow:
-- Answer ONLY from the PASSAGES and SCREEN text given to you. If they do not contain the answer, say you do not have a checked answer and suggest reading a Saath guide. Do not use outside knowledge for facts.
-- Never state an interest rate, return, price, tax rate, scheme benefit, eligibility rule, deadline or legal requirement unless that exact fact appears in the passages.
-- Never tell the user what to buy, sell or invest in, and never predict returns. Explain how things work and what to check.
+const SYSTEM = `You are Saath AI, a warm and clear money tutor inside the Saath app, used in India by people of every age.
+How to answer:
+- Start with a direct answer in one or two plain sentences. Then, if it helps, give 2 to 4 short bullet points starting with "- ". End with one practical tip or a question the user can check, when useful.
+- You may put a key term in **bold**. No headings, no tables, no long paragraphs. At most 170 words.
+- Talk like a kind elder sibling: simple words, short sentences, no jargon without a quick explanation. Use the user's name only if given.
+- Reply only in the language code given (en = English, hi = Hindi in Devanagari, mr = Marathi in Devanagari).
+What you may use:
+- Facts about Indian schemes, rules, limits, rates, fees, deadlines and documents must come from the PASSAGES or SCREEN text. If they are not there, say you do not have a checked figure and point to the official source or a Saath guide. Never guess a number.
+- You may explain general ideas (what a budget, EMI, interest, insurance or inflation is, and how they work) in your own words.
+- If you give an example with money, say it is an example and use simple round amounts.
+Safety:
+- Never tell the user what to buy, sell or invest in, and never predict returns. Explain how things work and what to check. You are not a licensed financial adviser; say so if asked for personal advice.
 - If the user says money was stolen or an OTP was shared, tell them first to call 1930 and their bank immediately.
-- Never ask for, repeat or store Aadhaar, PAN, account numbers, OTPs, PINs or passwords.
-- Reply in the language code given (en = English, hi = Hindi, mr = Marathi). Plain words, short sentences, at most 150 words. No markdown headings.
-- You are not a licensed financial adviser. Say so if asked for personal advice.`;
+- Never ask for, repeat or store Aadhaar, PAN, account numbers, OTPs, PINs or passwords.`;
 
 const TASKS = {
   answer: "Answer the user's question.",
-  lesson: "Explain the lesson on screen more simply, with one everyday example drawn from the passages.",
-  form: "Explain what this form is for and what to check before signing, using only the passages.",
-  mistake: "The user answered a practice question wrongly. Explain kindly why the correct answer is right.",
-  revise: "From the PROGRESS data, suggest what the user should revise next and why, in three short lines.",
-  progress: "Summarise the user's PROGRESS in three encouraging, honest lines and name one next step.",
+  lesson: "Explain the lesson on screen more simply, with one everyday example.",
+  form: "Explain in plain words what this form is for, what each important part asks, and what to check before signing.",
+  mistake: "The user answered a practice question wrongly. Kindly explain why the correct answer is right, in two or three lines, and give a way to remember it.",
+  revise: "From the PROGRESS data, suggest what the user should revise next and why, in three short bullet points.",
+  progress: "Summarise the user's PROGRESS in three encouraging, honest bullet points and name one next step.",
 };
 
 function cors(env, request) {
@@ -67,6 +72,9 @@ function buildMessages(body) {
 // Workers AI models are tried in order until one answers, so a model that is retired or not enabled on an
 // account does not take Saath AI down. AI_MODEL in wrangler.toml, if set, is tried first.
 const WORKERS_AI_MODELS = [
+  "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+  "@cf/meta/llama-4-scout-17b-16e-instruct",
+  "@cf/google/gemma-3-12b-it",
   "@cf/meta/llama-3.1-8b-instruct-fast",
   "@cf/meta/llama-3.1-8b-instruct",
   "@cf/meta/llama-3.2-3b-instruct",
@@ -87,7 +95,7 @@ async function runModel(env, messages) {
     const failures = [];
     for (const model of models) {
       try {
-        const text = textOf(await env.AI.run(model, { messages, max_tokens: 400, temperature: 0.2 }));
+        const text = textOf(await env.AI.run(model, { messages, max_tokens: 520, temperature: 0.3 }));
         if (text.trim()) return text;
         failures.push(`${model}: empty`);
       } catch (error) {
@@ -100,7 +108,7 @@ async function runModel(env, messages) {
     const response = await fetch(`${env.AI_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${env.AI_API_KEY}` },
-      body: JSON.stringify({ model: env.AI_MODEL, messages, max_tokens: 400, temperature: 0.2 }),
+      body: JSON.stringify({ model: env.AI_MODEL, messages, max_tokens: 520, temperature: 0.3 }),
     });
     if (!response.ok) throw new Error(`model ${response.status}`);
     const data = await response.json();

@@ -1,16 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { ChevronRight, Cpu, Download, Info, KeyRound, LogOut, School, ShieldCheck, Trash2, Upload } from "lucide-react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
+import { ChevronRight, Cpu, Download, Info, KeyRound, LogOut, ShieldCheck, Trash2, Upload } from "lucide-react";
 import { changePassword, deleteAccountData, PASSWORD_MIN } from "@/lib/account";
 import { isDownloaded, LOCAL_MODELS, loadModel, modelSizeBytes, onlineConfigured, removeModel, webgpuReady } from "@/lib/ai";
 import { parseBackup } from "@/lib/backup";
-import { GRADES, LANGS } from "@/lib/catalog";
-import { IMPACT_URL } from "@/lib/config";
-import { readFinLit, unitRatios } from "@/lib/finlit";
-import { share } from "@/lib/impact";
-import { cleanCode, saveJoin, setSharing } from "@/lib/profile";
+import { LANGS } from "@/lib/catalog";
 import { tap } from "@/lib/speech";
 import { entriesToCsv, eraseDevice, exportBackup, setMeta } from "@/lib/storage";
 import { useApp } from "./app-state";
@@ -198,87 +194,6 @@ function PasswordForm({ id }: { id: string }) {
   );
 }
 
-function SchoolPanel() {
-  const { t } = useI18n();
-  const app = useApp();
-  const { profile, setProfile } = useSession();
-  const prefill = useMemo(() => {
-    try {
-      return window.sessionStorage.getItem("saath-school-prefill") ?? "";
-    } catch {
-      return "";
-    }
-  }, []);
-  const [code, setCode] = useState(profile.schoolCode ?? prefill);
-  const [grade, setGrade] = useState<string>(profile.grade ?? "");
-  const [note, setNote] = useState<{ kind: "ok" | "err"; text: string } | null>(null);
-
-  function join(event: FormEvent) {
-    event.preventDefault();
-    const result = saveJoin({ nickname: profile.nickname, schoolCode: code, grade });
-    if (!result.ok) {
-      setNote({ kind: "err", text: t(`onboard.err.${result.error}`) });
-      return;
-    }
-    try {
-      window.sessionStorage.removeItem("saath-school-prefill");
-    } catch {
-      // Nothing to clear.
-    }
-    setProfile(result.profile);
-    setNote({ kind: "ok", text: result.profile.schoolCode ? t("onboard.joined") : t("settings.schoolLeft") });
-  }
-
-  function toggleShare() {
-    const next = setSharing(!profile.shareAggregates);
-    setProfile(next);
-    // Switching on sends what already exists, once: that this student joined, and any check already taken.
-    if (next.shareAggregates) {
-      share(next, "join");
-      const results = readFinLit();
-      if (results.before) share(next, "check-before", { units: unitRatios(results.before) });
-      if (results.after) share(next, "check-after", { units: unitRatios(results.after) });
-      if (app.progress.lessons.length) share(next, "lesson", { count: app.progress.lessons.length });
-      const paths = Object.keys(app.progress.milestones).length;
-      if (paths) share(next, "path", { count: paths });
-    }
-  }
-
-  return (
-    <div className="stack-sm">
-      <p className="faint">{t("settings.schoolLead")}</p>
-      <form className="stack-sm" onSubmit={join}>
-        <label>
-          <span className="label">{t("onboard.schoolCode")}</span>
-          <span className="field-wrap">
-            <School aria-hidden size={18} />
-            <input className="field text" value={code} maxLength={12} autoCapitalize="characters" autoComplete="off" onChange={(event) => setCode(cleanCode(event.target.value))} />
-          </span>
-        </label>
-        <div>
-          <p className="label" id="grade-label">{t("onboard.grade")}</p>
-          <div className="seg" role="group" aria-labelledby="grade-label">
-            {GRADES.map((item) => (
-              <button key={item} type="button" aria-pressed={grade === item} onClick={() => { tap(); setGrade(item); }}>{item}</button>
-            ))}
-          </div>
-        </div>
-        {note && <p role="status" className={`note ${note.kind}`}>{note.text}</p>}
-        <button type="submit" className="btn btn-secondary">{t("onboard.save")}</button>
-        {profile.schoolCode && (
-          <button type="button" className="btn btn-ghost" onClick={() => { setCode(""); setGrade(""); }}>{t("onboard.leave")}</button>
-        )}
-      </form>
-      {profile.schoolCode && (
-        <>
-          <Switch id="share-agg" label={t("profile.shareTitle")} sub={t("profile.shareBody")} on={profile.shareAggregates} onChange={toggleShare} />
-          {!IMPACT_URL && <p className="faint">{t("profile.shareNowhere")}</p>}
-        </>
-      )}
-    </div>
-  );
-}
-
 export function SettingsScreen() {
   const { t, lang, setLang } = useI18n();
   const { prefs, update } = usePrefs();
@@ -421,10 +336,6 @@ export function SettingsScreen() {
           <Trash2 aria-hidden size={18} />{t("settings.erase")}
         </button>
         {dataNote && <p role="status" className={`note ${dataNote.kind}`}>{dataNote.text}</p>}
-      </Group>
-
-      <Group id="school-h" title={t("settings.school")}>
-        <SchoolPanel />
       </Group>
 
       <Group id="install-h" title={t("install.title")}>
