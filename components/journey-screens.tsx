@@ -113,6 +113,7 @@ export function JourneyScreen() {
               );
             })}
           </ul>
+          <Link href="/guide#revise" className="btn btn-primary">{t("revise.open")}<ChevronRight aria-hidden size={18} /></Link>
           <p className="faint">{t("journey.revisionReplay")}</p>
         </section>
       )}

@@ -51,7 +51,7 @@ export function buildDocs(sources: Sources, lang: Lang): Doc[] {
 }
 
 const STOP = new Set([
-  // Words that describe the asker, not the question. "student" otherwise pulls in the guide titled "Tax, for a student".
+  // Words that describe the asker, not the question. "student" otherwise pulls in guides written with students in mind.
   "student", "students", "college", "school", "kid", "teen", "rs", "rupees", "rupee", "pay", "paid", "want", "make",
   "पैसे", "पैसा", "पैशांचे", "छात्र", "विद्यार्थी", "विद्यार्थ्यासाठी",
   "is", "on", "in", "of", "to", "an", "do", "it", "my", "me", "at", "be", "by", "or", "if", "so", "as", "we", "us", "am", "no", "up", "get", "got", "did", "its",

@@ -7,6 +7,7 @@ import { TOPICS, type Topic } from "@/lib/catalog";
 import { monthLabel } from "@/lib/format";
 import { linkHref, loadJson, type CaseStudy, type MiniCheck } from "@/lib/content-types";
 import { canHear, hear, tap } from "@/lib/speech";
+import { weakTopics } from "@/lib/recommend";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
@@ -22,6 +23,12 @@ export function GuideScreen() {
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<Topic | "all">("all");
   const [listening, setListening] = useState(false);
+
+  // "/guide?topic=saving" opens the list on one topic, for the revise-by-topic links elsewhere.
+  useEffect(() => {
+    const wanted = new URLSearchParams(window.location.search).get("topic");
+    if (wanted && (TOPICS as readonly string[]).includes(wanted)) setTopic(wanted as Topic);
+  }, []);
 
   async function voice() {
     if (listening) return;
@@ -78,9 +85,33 @@ export function GuideScreen() {
           <span className="item-sub">{t("comic.sub")}</span>
         </Link>
       </div>
-      <hr className="rule-double" />
+      <section className="stack-sm" id="revise" aria-labelledby="revise-h">
+        <h2 id="revise-h">{t("revise.title")}</h2>
+        <p className="faint">{t("revise.lead")}</p>
+        <div className="revise-grid">
+          {TOPICS.map((item) => {
+            const all = lessons.filter((lesson) => lesson.topic === item);
+            if (all.length === 0) return null;
+            const done = all.filter((lesson) => progress.lessons.includes(lesson.id)).length;
+            const weak = weakTopics(progress, 5).includes(item);
+            return (
+              <button
+                key={item}
+                type="button"
+                className={`revise-tile${weak ? " weak" : ""}`}
+                aria-pressed={topic === item}
+                onClick={() => { tap(); setTopic(item); document.getElementById("guide-list-h")?.scrollIntoView({ behavior: "smooth", block: "start" }); }}
+              >
+                <span className="item-title">{t(`topics.${item}`)}</span>
+                <span className="bar" aria-hidden><span style={{ width: `${Math.max(4, (done / all.length) * 100)}%` }} /></span>
+                <span className="item-sub">{weak ? t("revise.weak") : t("revise.count", { done, total: all.length })}</span>
+              </button>
+            );
+          })}
+        </div>
+      </section>
       <div className="row-between">
-        <h2>{t("guide.title")}</h2>
+        <h2 id="guide-list-h">{t("guide.title")}</h2>
         <p className="faint">{t("guide.read", { done: read, total: lessons.length })}</p>
       </div>
       <label>

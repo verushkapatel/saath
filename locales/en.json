@@ -1456,5 +1456,12 @@
     "drillsLead": "Longer practice with real-looking examples.",
     "askNeeds": "How do I tell a need from a want?",
     "askScam": "How do I spot a scam message?"
+  },
+  "revise": {
+    "title": "Revise topic by topic",
+    "lead": "Pick a topic to see its guides. Topics where you made mistakes are marked.",
+    "count": "{done} of {total} read",
+    "weak": "Worth revising",
+    "open": "Revise topic by topic"
   }
 }

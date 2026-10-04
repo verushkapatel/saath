@@ -2280,3 +2280,11 @@ html:has(.intro) { scroll-snap-type: y proximity; scroll-padding-top: 0; }
 .game-verdict.right { color: var(--accent-text); }
 .game-end { justify-items: center; text-align: center; padding: var(--s-6) var(--s-5); border-radius: var(--r-xl); }
 .game-end .btn { width: 100%; }
+
+/* Revise topic by topic */
+.revise-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-2); }
+.revise-tile { display: grid; gap: 6px; padding: var(--s-3) var(--s-4); border: 1.5px solid transparent; border-radius: var(--r-md); background: var(--surface-1); box-shadow: var(--shadow-1); color: var(--text); text-align: start; }
+.revise-tile .bar { height: 5px; }
+.revise-tile.weak { border-color: var(--navy); }
+.revise-tile.weak .item-sub { color: var(--accent-text); font-weight: 650; }
+.revise-tile[aria-pressed="true"] { background: var(--navy-soft); border-color: var(--navy); }
