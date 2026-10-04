@@ -59,6 +59,7 @@ function cors(env, request) {
 
 const clip = (value, max) => (typeof value === "string" ? value.slice(0, max) : "");
 const FEEDBACK_TO = "verushkapatel4@gmail.com";
+const SITE_ORIGIN = "https://verushkapatel.github.io";
 
 function stateStub(env) {
   if (!env.SAATH_STATE) return null;
@@ -110,7 +111,7 @@ async function liveRoute(request, env, headers) {
 
 async function feedbackRoute(body, env, headers) {
   const stub = stateStub(env);
-  if (!stub || !env.FEEDBACK_EMAIL || !env.FEEDBACK_FROM) return json({ delivered: false, error: "not configured" }, 503, headers);
+  if (!stub) return json({ delivered: false, error: "not configured" }, 503, headers);
   const username = cleanHeader(body?.username);
   const feedback = clip(body?.feedback, 2000).trim();
   const requestId = clip(body?.requestId, 80);
@@ -130,7 +131,21 @@ async function feedbackRoute(body, env, headers) {
     "",
     feedback,
   ].join("\r\n");
-  await env.FEEDBACK_EMAIL.send(new EmailMessage(env.FEEDBACK_FROM, FEEDBACK_TO, raw));
+  if (env.FEEDBACK_EMAIL && env.FEEDBACK_FROM) {
+    // Cloudflare Email Routing, when the account has a domain set up for it.
+    await env.FEEDBACK_EMAIL.send(new EmailMessage(env.FEEDBACK_FROM, FEEDBACK_TO, raw));
+  } else {
+    // Otherwise FormSubmit, a free relay that needs no account or key. The address stays here on the server.
+    // The very first message makes FormSubmit email an activation link to the owner; until it is clicked, nothing is
+    // delivered and the app says so instead of claiming success.
+    const relay = await fetch(`https://formsubmit.co/ajax/${FEEDBACK_TO}`, {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json", origin: SITE_ORIGIN, referer: `${SITE_ORIGIN}/saath/` },
+      body: JSON.stringify({ name: username, message: feedback, _subject: subject, _template: "table", _captcha: "false" }),
+    }).catch(() => null);
+    const result = relay ? await relay.json().catch(() => ({})) : {};
+    if (!relay || !relay.ok || String(result.success) !== "true") return json({ delivered: false, error: "relay" }, 502, headers);
+  }
   await stub.fetch("https://saath-state/feedback/mark", { method: "POST", body: JSON.stringify({ requestId }) });
   return json({ delivered: true }, 200, headers);
 }
