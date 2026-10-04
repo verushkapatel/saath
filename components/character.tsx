@@ -119,7 +119,7 @@ function HairFront({ age }: { age: number }) {
 
 function Face({ mood }: { mood: Mood }) {
   const brows =
-    mood === "worried" ? "M88 57l8 2M112 57l-8 2" : mood === "proud" ? "M88 58q4-3 8-1M104 57q4-2 8 1" : "M88 58q4-2 8 0M104 58q4-2 8 0";
+    mood === "worried" ? "M88 59.5q4-1 8-3.5M112 59.5q-4-1-8-3.5" : mood === "proud" ? "M88 58q4-3 8-1M104 57q4-2 8 1" : "M88 58q4-2 8 0M104 58q4-2 8 0";
   const eyes =
     mood === "happy" || mood === "proud" ? (
       <g stroke={INK} strokeWidth="2.2" fill="none" strokeLinecap="round">

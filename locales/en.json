@@ -1079,7 +1079,9 @@
       "why": "Why",
       "drill": "Two questions",
       "done": "XP"
-    }
+    },
+    "storyPlayer": "Story",
+    "learning": "Not every choice works out. {name} learns from this one, and so can you: the next part explains why."
   },
   "forms": {
     "kicker": "Forms",
@@ -1296,7 +1298,12 @@
     "text": "Share as text",
     "download": "Save the picture",
     "saved": "Picture saved to this device.",
-    "failed": "Sharing did not work on this device. Try saving the picture instead."
+    "failed": "Sharing did not work on this device. Try saving the picture instead.",
+    "storyButton": "Share story progress",
+    "storyText": "I just lived \"{title}\" in {name}'s money story on Saath. {done} of {total} parts done.",
+    "storyMap": "{name}'s money story on Saath: {done} of {total} parts lived. Now at: {stage}.",
+    "lookHead": "My {name} on Saath",
+    "lookButton": "Share her look"
   },
   "settings": {
     "title": "Settings",

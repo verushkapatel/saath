@@ -42,7 +42,7 @@ function download(blob: Blob, name: string) {
 }
 
 /** Shows exactly what will be shared, then shares only that. Money Lab data is never part of it. */
-export function ShareSheet({ onClose }: { onClose: () => void }) {
+export function ShareSheet({ onClose, kind = "progress" }: { onClose: () => void; kind?: "progress" | "look" }) {
   const { t, code } = useI18n();
   const app = useApp();
   const svgHost = useRef<HTMLDivElement | null>(null);
@@ -52,12 +52,24 @@ export function ShareSheet({ onClose }: { onClose: () => void }) {
   const look = safeLook(snapshot);
   const open = unlocked(snapshot);
   const badge = [...REWARDS].reverse().find((reward) => reward.kind === "badge" && open.has(`badge:${reward.id}`)) ?? null;
-  const lines = {
-    level: t("prog.level", { level: app.level.level }),
-    streak: app.streak.count ? t("home.streak", { count: app.streak.count }) : t("home.streakZero"),
-    stage: app.story?.stage ? t("share.stage", { stage: app.story.stage.title[code] }) : "",
-    badge: badge ? t("share.badge", { badge: rewardName(badge, t) }) : null,
+  const lookName = (reward: Exclude<RewardKind, "badge">) => {
+    const item = REWARDS.find((entry) => entry.kind === reward && entry.id === look[reward]);
+    return item ? rewardName(item, t) : "";
   };
+  const name = app.journey?.name[code] ?? "Verena";
+  const lines = kind === "look"
+    ? {
+        level: t("share.lookHead", { name }),
+        streak: [lookName("outfit"), look.extra !== "none" ? lookName("extra") : ""].filter(Boolean).join(" · "),
+        stage: lookName("place"),
+        badge: t("prog.level", { level: app.level.level }),
+      }
+    : {
+        level: t("prog.level", { level: app.level.level }),
+        streak: app.streak.count ? t("home.streak", { count: app.streak.count }) : t("home.streakZero"),
+        stage: app.story?.stage ? t("share.stage", { stage: app.story.stage.title[code] }) : "",
+        badge: badge ? t("share.badge", { badge: rewardName(badge, t) }) : null,
+      };
   const text = [`Saath: ${lines.level}`, lines.streak, lines.stage, lines.badge].filter(Boolean).join(". ");
 
   async function picture(): Promise<Blob | null> {
@@ -139,7 +151,7 @@ export function ProgressScreen() {
   const { t, code } = useI18n();
   const app = useApp();
   const needText = useNeedText();
-  const [sharing, setSharing] = useState(false);
+  const [sharing, setSharing] = useState<false | "progress" | "look">(false);
   const snapshot = useMemo(() => ({ progress: app.progress, streak: app.streak.count }), [app.progress, app.streak.count]);
 
   useAiContext({
@@ -182,7 +194,7 @@ export function ProgressScreen() {
             <span style={{ width: `${Math.max(3, level.ratio * 100)}%` }} />
           </div>
           <p className="streak-line"><Flame lit={app.streak.count > 0} /> {app.streak.count ? t("home.streak", { count: app.streak.count }) : t("home.streakZero")}</p>
-          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setSharing(true); }}>
+          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setSharing("progress"); }}>
             <Share2 aria-hidden size={18} />{t("share.open")}
           </button>
         </div>
@@ -212,8 +224,14 @@ export function ProgressScreen() {
       </section>
 
       <section className="stack-sm" aria-labelledby="look-h">
-        <h2 id="look-h">{t("prog.customise")}</h2>
+        <div className="row-between">
+          <h2 id="look-h">{t("prog.customise")}</h2>
+          <button type="button" className="share-btn" onClick={() => { tap(); setSharing("look"); }}><Share2 aria-hidden size={16} />{t("share.lookButton")}</button>
+        </div>
         <p className="faint">{t("prog.customiseLead")}</p>
+        <div className="look-preview navy-scene" aria-hidden>
+          <Character look={look} age={app.story?.age || 19} size={170} mood="happy" />
+        </div>
         {KINDS.map((kind) => (
           <div key={kind} className="stack-xs">
             <p className="label">{t(`prog.${kind}`)}</p>
@@ -241,7 +259,7 @@ export function ProgressScreen() {
       </section>
 
       {app.journey && <p className="faint">{t("prog.storyName", { name: app.journey.name[code] })}</p>}
-      {sharing && <ShareSheet onClose={() => setSharing(false)} />}
+      {sharing && <ShareSheet kind={sharing} onClose={() => setSharing(false)} />}
     </div>
   );
 }

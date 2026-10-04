@@ -10,6 +10,7 @@ import { canHear, hear, tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
+import { ShareButton } from "./share-button";
 import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary } from "./ui";
 
 const plain = (text: string) => text.replace(/\[\[|\]\]/g, "");
@@ -193,7 +194,7 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
         <ChevronLeft aria-hidden size={18} />
         {path ? path.title[code] : t("guide.title")}
       </Link>
-      <div className="pin-top"><ListenButton text={spoken} /></div>
+      <div className="pin-top cluster"><ListenButton text={spoken} /><ShareButton title={lesson.title[code]} text={`${lesson.title[code]}: ${lesson.points[0]?.[code] ?? ""}`} path={`/guide/${lesson.id}`} /></div>
       <div className="stack-sm">
         <span className="item-icon"><ContentIcon name={lesson.icon} /></span>
         <span className="unit-badge">{t(`topics.${lesson.topic}`)}</span>

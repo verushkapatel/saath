@@ -11,7 +11,8 @@ import { safeLook } from "@/lib/rewards";
 import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
-import { Character } from "./character";
+import { Character, type Mood } from "./character";
+import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
 import { CheckCard, ListenButton, PageSkeleton } from "./ui";
@@ -66,6 +67,14 @@ export function JourneyScreen() {
             <span className="faint">{t("journey.progress", { done: story.done, total: story.total })}</span>
           </div>
           <div className="bar" aria-hidden><span style={{ width: `${Math.max(3, (story.done / Math.max(1, story.total)) * 100)}%` }} /></div>
+          {story.done > 0 && (
+            <ShareButton
+              title="Saath"
+              text={t("share.storyMap", { name: journey.name[code], done: story.done, total: story.total, stage: story.stage?.title[code] ?? "" })}
+              path="/"
+              label={t("share.storyButton")}
+            />
+          )}
           {story.finished ? (
             <p className="note ok">{t("journey.finishedTitle")}</p>
           ) : next && story.open ? (
@@ -259,6 +268,42 @@ function SimBlock({ sim }: { sim: Sim }) {
   }
 }
 
+/**
+ * The story, told like a short film: Verena on a dark navy stage, one line at a time, tap to go on.
+ * Every line can be heard aloud. Her face follows the scene: calm as it opens, worried when the problem lands.
+ */
+function StoryPlayer({ episode, look, name, onDone }: { episode: Episode; look: { outfit: string; extra: string; place: string }; name: string; onDone: () => void }) {
+  const { t, code } = useI18n();
+  const [at, setAt] = useState(0);
+  const lines = episode.story;
+  const last = at >= lines.length - 1;
+  const mood: Mood = at === 0 ? "neutral" : last ? "worried" : "neutral";
+  const next = () => { tap(); if (last) onDone(); else setAt(at + 1); };
+  const back = () => { tap(); setAt(Math.max(0, at - 1)); };
+  return (
+    <section className="story-player navy-scene" aria-roledescription={t("journey.storyPlayer")}>
+      <ol className="story-segments" aria-hidden>
+        {lines.map((_, index) => <li key={index} className={index < at ? "was" : index === at ? "on" : undefined}><i /></li>)}
+      </ol>
+      <div className="story-stage">
+        <Character look={{ ...look, place: episode.place }} age={episode.age} size={230} mood={mood} label={t("journey.figure", { name, age: episode.age })} />
+        <button type="button" className="story-tap back" onClick={back} aria-label={t("common.back")} disabled={at === 0} />
+        <button type="button" className="story-tap fwd" onClick={next} aria-label={t("common.next")} />
+      </div>
+      <div className="story-caption" key={at} aria-live="polite">
+        <p>{lines[at][code]}</p>
+      </div>
+      <div className="story-controls">
+        <ListenButton text={lines[at][code]} compact />
+        <span className="faint num">{at + 1} / {lines.length}</span>
+        <button type="button" className="btn btn-primary btn-auto" onClick={next}>
+          {last ? t("journey.toDecision") : t("common.next")}<ArrowRight aria-hidden size={18} />
+        </button>
+      </div>
+    </section>
+  );
+}
+
 const STEPS = ["story", "slip", "sim", "decide", "outcome", "why", "drill", "done"] as const;
 type Step = (typeof STEPS)[number];
 
@@ -375,19 +420,10 @@ export function EpisodeScreen({ id }: { id: string }) {
           <h1>{episode.title[code]}</h1>
           {replaying && <p className="faint">{t("journey.replayNote")}</p>}
         </div>
-        {step === "story" && (
-          <div className="stage">
-            <Character look={{ ...look, place: episode.place }} age={episode.age} size={160} label={t("journey.figure", { name: journey.name[code], age: episode.age })} />
-          </div>
-        )}
       </header>
 
       {step === "story" && (
-        <section className="stack">
-          <div className="prose scene-in">{episode.story.map((line, at) => <p key={at}>{line[code]}</p>)}</div>
-          <ListenButton text={episode.story.map((line) => line[code]).join(" ")} />
-          <button type="button" className="btn btn-primary" onClick={() => go(episode.slip ? "slip" : "sim")}>{t("common.next")}<ArrowRight aria-hidden size={18} /></button>
-        </section>
+        <StoryPlayer episode={episode} look={look} name={journey.name[code]} onDone={() => go(episode.slip ? "slip" : "sim")} />
       )}
 
       {step === "slip" && episode.slip && (
@@ -447,9 +483,13 @@ export function EpisodeScreen({ id }: { id: string }) {
 
       {step === "outcome" && option && (
         <section className="stack">
-          <div className={`consequence ${option.verdict} scene-in`} role="status">
+          <div className={`consequence ${option.verdict} outcome-scene scene-in`} role="status">
+            <div className="outcome-figure" aria-hidden>
+              <Character look={{ ...look, place: episode.place }} age={episode.age} size={120} mood={option.verdict === "good" ? "happy" : option.verdict === "costly" ? "worried" : "neutral"} />
+            </div>
             <p className="kicker">{t(`journey.verdict.${option.verdict}`)}</p>
             <p className="lead">{option.outcome[code]}</p>
+            {option.verdict === "costly" && <p className="learning">{t("journey.learning", { name: journey.name[code] })}</p>}
           </div>
           <div className="stack-xs">
             <p className="faint">{t("journey.herMoneyNow")}</p>
@@ -502,7 +542,7 @@ export function EpisodeScreen({ id }: { id: string }) {
         <section className="stack">
           <div className="finale navy-scene stack-sm scene-in">
             <div className="stage">
-              <Character look={{ ...look, place: episode.place }} age={episode.age} size={130} />
+              <Character look={{ ...look, place: episode.place }} age={episode.age} size={130} mood="proud" />
             </div>
             <h2>{t("journey.doneTitle")}</h2>
             <p className="muted">{t("journey.drillScore", { right: drillRight, total: episode.drill.length })}</p>
@@ -519,6 +559,12 @@ export function EpisodeScreen({ id }: { id: string }) {
                 </ul>
               </div>
             )}
+            <ShareButton
+              title="Saath"
+              text={t("share.storyText", { name: journey.name[code], title: episode.title[code], done: Object.keys(progress.journey).length, total: journey.episodes.length })}
+              path="/"
+              label={t("share.storyButton")}
+            />
           </div>
           {(() => {
             const following = journey.episodes[index + 1];

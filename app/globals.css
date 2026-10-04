@@ -2179,3 +2179,41 @@ html:has(.intro) { scroll-snap-type: y proximity; scroll-padding-top: 0; }
 .task-card { display: grid; gap: var(--s-3); justify-items: start; padding: var(--s-5); border-radius: var(--r-lg); background: var(--navy-soft); }
 .task-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: var(--accent); color: var(--accent-ink); }
 .link.inline { display: inline; min-height: 0; }
+
+/* Share buttons: a quiet navy capsule wherever something can be shared. */
+.share-wrap { position: relative; display: inline-flex; align-items: center; gap: var(--s-2); }
+.share-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 14px; border: 0; border-radius: var(--r-full); background: var(--navy-soft); color: var(--accent-text); font-size: var(--fs-label); font-weight: 650; }
+.share-btn:active { transform: scale(0.96); }
+.navy-scene .share-btn, .card.hero .share-btn { background: rgba(255, 255, 255, 0.14); color: #fff; }
+.share-note { font-size: var(--fs-label); color: var(--text-faint); }
+
+/* The story player: a dark stage, Verena large, one line of the story at a time. */
+.story-player { position: relative; display: grid; gap: var(--s-4); margin-inline: calc(var(--gutter) * -1); padding: var(--s-4) var(--gutter) var(--s-5); border-radius: var(--r-xl); min-height: min(78dvh, 680px); grid-template-rows: auto 1fr auto auto; overflow: hidden; }
+.story-segments { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; }
+.story-segments li { height: 3px; border-radius: var(--r-full); background: rgba(255, 255, 255, 0.22); overflow: hidden; }
+.story-segments li i { display: block; height: 100%; width: 0; background: #fff; border-radius: inherit; }
+.story-segments li.was i { width: 100%; }
+.story-segments li.on i { width: 100%; animation: seg-fill 600ms var(--ease-out); }
+@keyframes seg-fill { from { width: 0; } to { width: 100%; } }
+.story-stage { position: relative; display: grid; place-items: end center; min-height: 240px; }
+.story-stage .character { animation: breathe 4.5s ease-in-out infinite; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35)); }
+.story-tap { position: absolute; top: 0; bottom: 0; width: 40%; border: 0; background: transparent; padding: 0; cursor: pointer; }
+.story-tap.back { left: 0; }
+.story-tap.fwd { right: 0; width: 60%; }
+.story-tap:disabled { cursor: default; }
+.story-caption { padding: var(--s-4) var(--s-5); border-radius: var(--r-lg); background: rgba(255, 255, 255, 0.1); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: inset 0 0 0 0.5px rgba(255, 255, 255, 0.18); animation: caption-in 420ms cubic-bezier(0.22, 1, 0.36, 1); }
+.story-caption p { font-size: 1.1875rem; line-height: 1.5; font-weight: 500; color: #fff; }
+:lang(hi) .story-caption p, :lang(mr) .story-caption p { line-height: 1.75; }
+@keyframes caption-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.story-controls { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); }
+.story-controls .btn { min-height: 48px; padding-inline: var(--s-5); border-radius: var(--r-full); }
+.outcome-scene { display: grid; gap: var(--s-2); }
+.outcome-figure { justify-self: center; padding: var(--s-2) var(--s-4) 0; border-radius: var(--r-lg); background: var(--navy-soft); }
+.learning { padding: var(--s-3) var(--s-4); border-left: 3px solid var(--navy); border-radius: 0 var(--r-sm) var(--r-sm) 0; background: var(--navy-soft); color: var(--text); font-weight: 600; }
+.consequence { padding: var(--s-5); border: 0; border-radius: var(--r-lg); background: var(--surface-1); box-shadow: var(--shadow-1); }
+:root[data-motion="reduce"] .story-caption, :root[data-motion="reduce"] .story-segments li.on i { animation: none; }
+.look-preview { display: grid; place-items: end center; padding: var(--s-4) var(--s-4) 0; border-radius: var(--r-lg); }
+.look-preview .character { animation: breathe 4.5s ease-in-out infinite; }
+.badge { border: 0 !important; background: var(--surface-1); box-shadow: var(--shadow-1); border-radius: var(--r-lg); }
+.badge:not(.have) { opacity: 0.72; }
+.badge:not(.have) .badge-art { border: 0; background: var(--surface-2); }

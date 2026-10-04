@@ -13,6 +13,7 @@ import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
+import { ShareButton } from "./share-button";
 import { ListenButton, PageSkeleton, Ring } from "./ui";
 
 function useForms() {
@@ -167,7 +168,7 @@ export function FormScreen({ id }: { id: string }) {
         <p className="kicker">{t(`topics.${form.topic}`)}</p>
         <h1>{form.name[code]}</h1>
         <p className="faint">{t("forms.alsoCalled")}: {form.alsoCalled[code]}</p>
-        <ListenButton text={spoken} />
+        <div className="cluster"><ListenButton text={spoken} /><ShareButton title={form.name[code]} text={`${form.name[code]}: ${form.purpose[code]}`} path={`/forms/${form.id}`} /></div>
       </div>
       <div className="card flat stack-sm">
         <p className="lead">{form.purpose[code]}</p>

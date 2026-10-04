@@ -10,6 +10,7 @@ import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
+import { ShareButton } from "./share-button";
 import { ListenButton, PageSkeleton } from "./ui";
 
 const host = (url: string) => {
@@ -74,6 +75,7 @@ function StoryView({ story }: { story: RealStory }) {
       ) : (
         <button type="button" className="btn btn-primary" onClick={() => { tap(); void app.markStory(story.id); }}>{t("stories.markRead")}</button>
       )}
+      <ShareButton title={story.title[code]} text={`${story.title[code]}. ${story.lesson[code]}`} path="/stories" />
       <button type="button" className="btn btn-ghost" onClick={() => { tap(); ai.openAsk(t("stories.askHow")); }}>
         <MessageCircle aria-hidden size={18} />{t("stories.askSaath")}
       </button>
