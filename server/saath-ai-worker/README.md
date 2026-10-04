@@ -8,7 +8,14 @@ Deploy this only if you want a language model to phrase the answers more natural
 One Cloudflare Worker. The app posts a question to it along with the passages it found in Saath's own content.
 The Worker asks a model to answer from those passages only, and returns the text. The model key, if there is one, stays on the Worker.
 
-## Deploy (about ten minutes, free tier)
+## Deploy without a computer (GitHub does it)
+
+1. Make a free Cloudflare account, open **Workers & Pages** once (this creates your `workers.dev` address).
+2. My Profile > API Tokens > Create Token > template **Edit Cloudflare Workers** > Continue > Create. Copy the token.
+3. In this GitHub repository: Settings > Secrets and variables > Actions > **New repository secret**, name `CLOUDFLARE_API_TOKEN`, paste the token.
+4. Actions > **Deploy Saath** > Run workflow. It deploys this Worker, checks it answers, and rebuilds the site with its address.
+
+## Deploy from your computer (about ten minutes, free tier)
 
 1. Make a free Cloudflare account at dash.cloudflare.com.
 2. In this folder run `npx wrangler login` (a browser window asks you to allow it), then `npx wrangler deploy`.
