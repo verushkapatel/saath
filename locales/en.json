@@ -1576,7 +1576,8 @@
     "android3": "Confirm.",
     "desktop1": "Look for the install icon at the right end of the address bar.",
     "desktop2": "Click it and confirm.",
-    "note": "Installing does not share anything. Your data stays on this device."
+    "note": "Installing does not share anything. Your data stays on this device.",
+    "notNow": "Not now"
   },
   "challenge": {
     "title": "Today's challenges",
