@@ -2646,3 +2646,32 @@ h1 { font-weight: 700; }
   .intro .act h2, .intro .act .lead { margin-inline: 0; }
   .intro .act .demo { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; }
 }
+
+/* Install card on Home. */
+.install-card { display: grid; gap: var(--s-3); padding: var(--s-4) var(--s-5); border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface-1); }
+.install-card-actions { display: flex; align-items: center; gap: var(--s-4); }
+.install-card .link { min-height: 40px; color: var(--text-muted); }
+
+/* Phones: one clear thing at a time. Eyebrow labels, duplicate shortcuts and decoration go; spacing grows. */
+@media (max-width: 640px) {
+  .page { padding-top: var(--s-4); }
+  .page .masthead, .greeting .masthead, .shell-top .skyward, .shell-top .brand img:not(:first-child) { display: none; }
+  .shell-top .ask-btn span { display: none; }
+  .shell-top .ask-btn { width: 44px; padding: 0; justify-content: center; }
+  .stack-lg { gap: var(--s-7); }
+  .stack { gap: var(--s-5); }
+  h1 { font-size: 1.875rem; }
+  section:has(> #quick-h), section:has(> #rev-h), section:has(> .row-between > #streak-h) .faint, .rail-note, footer, .foot { display: none !important; }
+  .card, .card.tight { padding: var(--s-4); }
+  .chips { gap: var(--s-2); }
+  .chip { min-height: 38px; padding-inline: var(--s-3); }
+  .item-sub.two, .item-sub { -webkit-line-clamp: 1; }
+  .lead { font-size: 1rem; }
+  .faint { font-size: 0.8125rem; }
+  .guide-tiles, .stack > .pair:has(.tile) { display: none; }
+  .badge-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .listen:not(.icon-only) { min-height: 38px; }
+  .share-btn { min-height: 34px; }
+  .feedback-panel { padding: var(--s-4); }
+}
+@media (max-width: 640px) { .shell-top .skyward-emblem, .shell-top .brand-divider { display: none; } }

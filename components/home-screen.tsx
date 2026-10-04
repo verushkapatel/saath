@@ -16,6 +16,7 @@ import { Character } from "./character";
 import { TodayChallenges } from "./challenges";
 import { Flame } from "./illustrations";
 import { FeedbackPanel } from "./feedback-panel";
+import { InstallCard } from "./install";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
 import { CheckCard, ListenButton, PageSkeleton, Sheet, Skeleton } from "./ui";
@@ -160,6 +161,8 @@ export function HomeScreen() {
         <h2 id="today-saath" className="visually-hidden">{t("home.todaySaath")}</h2>
         {heroBody()}
       </section>
+
+      <InstallCard />
 
       <TodayChallenges questions={questions} />
 

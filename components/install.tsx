@@ -113,3 +113,45 @@ export function InstallPanel() {
     </div>
   );
 }
+
+/**
+ * A quiet card on Home while Saath is still running in the browser. Where the browser allows it, one tap installs
+ * Saath; on an iPhone, which has no install button, it says where to tap. It disappears once installed or dismissed.
+ */
+export function InstallCard() {
+  const { t } = useI18n();
+  const { installed, platform, canPrompt, prompt } = useInstall();
+  const [hidden, setHidden] = useState(false);
+  useEffect(() => {
+    try {
+      setHidden(window.localStorage.getItem("saath-install-card") === "hidden");
+    } catch {
+      // Shown for this visit.
+    }
+  }, []);
+  if (installed || hidden || (!canPrompt && platform !== "ios")) return null;
+  const close = () => {
+    setHidden(true);
+    try {
+      window.localStorage.setItem("saath-install-card", "hidden");
+    } catch {
+      // Hidden for this visit.
+    }
+  };
+  return (
+    <section className="install-card" aria-label={t("install.title")}>
+      <div className="stack-xs">
+        <strong>{t("install.title")}</strong>
+        <span className="faint">{canPrompt ? t("install.why") : `${t("install.ios1")} ${t("install.ios2")}`}</span>
+      </div>
+      <div className="install-card-actions">
+        {canPrompt && (
+          <button type="button" className="btn btn-primary btn-auto" onClick={async () => { tap(); const result = await prompt(); if (result === "accepted") close(); }}>
+            <Download aria-hidden size={16} />{t("install.cta")}
+          </button>
+        )}
+        <button type="button" className="link" onClick={() => { tap(); close(); }}>{t("install.notNow")}</button>
+      </div>
+    </section>
+  );
+}
