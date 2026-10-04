@@ -1181,7 +1181,11 @@
       "device": "Checked guides, on this device",
       "local": "Model in this browser",
       "online": "Online model"
-    }
+    },
+    "offerTitle": "Fuller answers are available",
+    "offerBody": "Saath can phrase answers with its online model. Your question goes to Saath's server with ID numbers removed, and Money Lab is never sent. Answers still come only from Saath's checked guides.",
+    "offerYes": "Use online answers",
+    "offerNo": "Keep it on this device"
   },
   "prog": {
     "kicker": "Your progress",
