@@ -1412,6 +1412,43 @@
       "paths": "Opens after {n} finished path."
     }
   },
+  "postcards": {
+    "title": "Verena postcards",
+    "lead": "A picture of Verena for each stage of her life. A new one opens when you start that stage of the story.",
+    "sheetTitle": "Share a postcard",
+    "kicker": "Postcard {n} of {total} · {name}",
+    "range": "Chapters {from}–{to} · age {ageFrom}–{ageTo}",
+    "ages": "Age {ageFrom}–{ageTo}",
+    "unlockAt": "Opens at chapter {n}",
+    "open": "Open the postcard: {title}",
+    "shareHead": "My postcard of {name} on Saath: {title}",
+    "cards": {
+      "first-steps": {
+        "title": "First steps",
+        "lesson": "Net pay, not the offer letter, is what you actually live on."
+      },
+      "finding-balance": {
+        "title": "Finding her balance",
+        "lesson": "Small daily spends decide whether the month lasts."
+      },
+      "tested": {
+        "title": "Tested by life",
+        "lesson": "An emergency fund turns a crisis into an inconvenience."
+      },
+      "family": {
+        "title": "A family of her own",
+        "lesson": "Shared money needs shared plans, and protection grows with responsibility."
+      },
+      "long-view": {
+        "title": "The long view",
+        "lesson": "Time and consistency do more than chasing returns."
+      },
+      "retirement": {
+        "title": "Retirement",
+        "lesson": "Financial freedom is many small decisions, kept up for years."
+      }
+    }
+  },
   "share": {
     "open": "Share my progress",
     "title": "Share your progress",
