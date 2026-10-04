@@ -44,6 +44,8 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           SAATH_AI_URL: ${{ vars.SAATH_AI_URL }}
+          SAATH_ADMIN_USERNAME: ${{ secrets.SAATH_ADMIN_USERNAME }}
+          SAATH_ADMIN_PASSWORD: ${{ secrets.SAATH_ADMIN_PASSWORD }}
         run: |
           url="$SAATH_AI_URL"
           if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
@@ -51,6 +53,15 @@ jobs:
             npx --yes wrangler@3 deploy 2>&1 | tee deploy.log
             url=$(grep -oE 'https://[a-zA-Z0-9.-]+\.workers\.dev' deploy.log | head -1)
             if [ -z "$url" ]; then echo "::error::The Worker deployed but no workers.dev address was printed. Open Workers & Pages in the Cloudflare dashboard once to create your workers.dev subdomain, then run this again."; exit 1; fi
+            # The owner login for Live Users. Values come only from repository secrets and never reach the app's code.
+            if [ -n "$SAATH_ADMIN_USERNAME" ] && [ -n "$SAATH_ADMIN_PASSWORD" ]; then
+              printf '%s' "$SAATH_ADMIN_USERNAME" | npx --yes wrangler@3 secret put ADMIN_USERNAME >/dev/null
+              printf '%s' "$SAATH_ADMIN_PASSWORD" | npx --yes wrangler@3 secret put ADMIN_PASSWORD >/dev/null
+              echo "Owner login for Live Users updated."
+            else
+              echo "::notice::Add repository secrets SAATH_ADMIN_USERNAME and SAATH_ADMIN_PASSWORD to set the Live Users login."
+            fi
+            cd - >/dev/null
           fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
           if [ -n "$url" ]; then

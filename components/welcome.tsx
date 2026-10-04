@@ -6,7 +6,7 @@ import { tap } from "@/lib/speech";
 import { Character } from "./character";
 import { useInstall, type Platform } from "./install";
 import { LangSwitch } from "./lang-switch";
-import { LogoMark } from "./logo";
+import { LogoMark, SkywardEmblem } from "./logo";
 import { useI18n } from "./providers";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -32,7 +32,7 @@ export function MakeYours({ onNext, onLogin, onBack }: { onNext: () => void; onL
         <div className="welcome-figure">
           <Character look={{ outfit: "blazer", extra: "watch", place: "rooftop" }} age={27} size={210} mood="proud" />
         </div>
-        <p className="wordmark"><LogoMark size={34} /> Saath</p>
+        <p className="wordmark"><LogoMark size={34} /> Saath <span className="logo-divider" aria-hidden /><SkywardEmblem size={38} /></p>
         <h1>{t("welcome.title")}</h1>
         <p className="lead">{t("welcome.lead")}</p>
         <ul className="welcome-points">

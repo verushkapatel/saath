@@ -11,6 +11,7 @@ import { useApp } from "./app-state";
 import { Character } from "./character";
 import { Flame } from "./illustrations";
 import { LogoMark } from "./logo";
+import { Postcards } from "./postcards";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
 import { PageSkeleton, Sheet } from "./ui";
@@ -204,6 +205,8 @@ export function ProgressScreen() {
         <div><dt>{t("prog.stories")}</dt><dd>{app.progress.stories.length}</dd></div>
         <div><dt>{t("prog.forms")}</dt><dd>{app.progress.forms.length}</dd></div>
       </dl>
+
+      <Postcards />
 
       <section className="stack-sm" aria-labelledby="badges-h">
         <h2 id="badges-h">{t("prog.badges")}</h2>

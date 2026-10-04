@@ -18,7 +18,7 @@ import { AppStateProvider, useApp } from "./app-state";
 import { AuthScreen, type AuthMode } from "./auth";
 import { Character } from "./character";
 import { Intro } from "./intro";
-import { Logo, LogoMark } from "./logo";
+import { Logo, LogoMark, SkywardEmblem } from "./logo";
 import { Personalize } from "./personalize";
 import { PrefsProvider, usePrefs } from "./prefs";
 import { useI18n } from "./providers";
@@ -75,7 +75,7 @@ function Landing() {
           <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={168} />
         </div>
         <div className="gate-heading">
-          <p className="wordmark"><LogoMark size={40} /> Saath</p>
+          <p className="wordmark"><LogoMark size={40} /> Saath <span className="logo-divider" aria-hidden /><SkywardEmblem size={44} /></p>
           <h1 lang={shown}>{copy[shown].title}</h1>
           <p className="lead" lang={shown}>{copy[shown].line}</p>
         </div>

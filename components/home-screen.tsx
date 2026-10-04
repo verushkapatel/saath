@@ -146,7 +146,6 @@ export function HomeScreen() {
   return (
     <div className="stack-lg rise">
       <div className="stack-sm greeting">
-        <p className="masthead">{t("home.masthead")}</p>
         <div className="row-between">
           <h1>{t(greetingKey())}{name ? `, ${name}` : ""}</h1>
           <span className="streak-chip" role="img" aria-label={streakLabel}>

@@ -29,3 +29,11 @@ The Cloudflare Worker supports grounded AI, confirmed feedback delivery to the f
 
 ## Content safety
 Verena is fictional. Real stories are sourced. Current schemes, tax, forms and changing requirements must display authoritative source and review dates. Saath is educational and never recommends a specific investment or guarantees returns.
+## Verena postcards
+Six life-stage postcards (lib/postcards.ts): chapters 1–8, 9–16, 17–25, 26–35, 36–43, 44–45. A postcard unlocks when the first chapter of its range is finished. Shown on /progress; each opens a Share / Copy / Cancel sheet with a preview. Share produces a 1080px PNG (Verena at that stage, chapter range, ages, one lesson line, level, XP and streak, Saath mark and Skyward emblem). Never includes money, entries, name or username.
+
+## Brand and visual system
+EB Garamond throughout (Noto Sans Devanagari for Hindi/Marathi). Black and white first: ink buttons and selected states; navy only as a hint (logo ring, active tab icon, progress bars). The Skyward Project emblem sits to the right of the Saath name in the header, landing and postcards.
+
+## Owner login (Live Users)
+Worker secrets ADMIN_USERNAME / ADMIN_PASSWORD. The deploy workflow sets them from GitHub repository secrets SAATH_ADMIN_USERNAME / SAATH_ADMIN_PASSWORD when present.

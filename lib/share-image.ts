@@ -177,3 +177,75 @@ export async function progressImage(card: ProgressCard, character: SVGSVGElement
   ctx.fillText(card.credit, 110, 930);
   return toBlob(element);
 }
+
+function loadImage(src: string): Promise<HTMLImageElement | null> {
+  return new Promise((resolve) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => resolve(null);
+    image.src = src;
+  });
+}
+
+export type PostcardCard = {
+  kicker: string;
+  title: string;
+  range: string;
+  lesson: string;
+  stats: string;
+  credit: string;
+  font: string;
+  headFont: string;
+  /** Address of the Skyward Project emblem, drawn beside the Saath mark. */
+  emblem: string;
+};
+
+/** A Verena postcard: her picture at one life stage, the chapters and her age, one lesson, the user's level and streak. */
+export async function postcardImage(card: PostcardCard, character: SVGSVGElement | null): Promise<Blob | null> {
+  const made = canvas();
+  if (!made) return null;
+  const [element, ctx] = made;
+  frame(ctx);
+  ctx.textAlign = "left";
+  ctx.lineWidth = 9;
+  ctx.strokeStyle = INK;
+  ctx.beginPath(); ctx.arc(140, 150, 30, 0, Math.PI * 2); ctx.stroke();
+  ctx.strokeStyle = "#14336b";
+  ctx.beginPath(); ctx.arc(178, 150, 30, 0, Math.PI * 2); ctx.stroke();
+  ctx.strokeStyle = INK;
+  ctx.beginPath(); ctx.arc(140, 150, 30, -Math.PI / 3, -Math.PI / 6); ctx.stroke();
+  ctx.fillStyle = INK;
+  ctx.font = `700 60px ${card.headFont}`;
+  ctx.fillText("Saath", 230, 172);
+  const emblem = await loadImage(card.emblem);
+  if (emblem) ctx.drawImage(emblem, SIZE - 110 - 96, 102, 96, 96);
+
+  const picture = character ? await svgImage(character) : null;
+  if (picture) ctx.drawImage(picture, 80, 250, 400, 456);
+
+  const x = 520;
+  const width = SIZE - x - 110;
+  ctx.fillStyle = FAINT;
+  ctx.font = `600 28px ${card.font}`;
+  ctx.fillText(card.kicker.toUpperCase(), x, 300);
+  ctx.fillStyle = INK;
+  ctx.font = `700 64px ${card.headFont}`;
+  let y = 380;
+  for (const text of wrap(ctx, card.title, width)) { ctx.fillText(text, x, y); y += 72; }
+  ctx.fillStyle = MUTED;
+  ctx.font = `500 34px ${card.font}`;
+  for (const text of wrap(ctx, card.range, width)) { ctx.fillText(text, x, y + 6); y += 46; }
+  y += 30;
+  ctx.fillStyle = INK;
+  ctx.font = `italic 400 38px ${card.font}`;
+  for (const text of wrap(ctx, `\u201C${card.lesson}\u201D`, width)) { ctx.fillText(text, x, y); y += 50; }
+
+  ctx.fillStyle = INK;
+  ctx.fillRect(110, 820, SIZE - 220, 3);
+  ctx.font = `500 32px ${card.font}`;
+  ctx.fillText(card.stats, 110, 885);
+  ctx.fillStyle = FAINT;
+  ctx.font = `400 26px ${card.font}`;
+  ctx.fillText(card.credit, 110, 950);
+  return toBlob(element);
+}

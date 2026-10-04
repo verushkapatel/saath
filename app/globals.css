@@ -2415,3 +2415,72 @@ h1 { font-weight: 700; }
 :root[data-theme="dark"] :is(.masthead, .link, .tabs a[aria-current="page"] svg, .accent-text) { color: var(--text); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.masthead, .link, .tabs a[aria-current="page"] svg, .accent-text) { color: var(--text); } }
 :root[data-theme="dark"] :focus-visible { outline-color: #ffffff; }
+
+/* ───────────────────────────────────────────────────────────────
+   Monochrome layer (final word on colour).
+   Black and white do the work: buttons, selected states and text are ink.
+   Navy is only a hint: the logo ring, the active tab, progress and focus.
+   ─────────────────────────────────────────────────────────────── */
+:root, :root[data-theme="light"] {
+  --accent: #0a0a0a; --accent-hi: #000000; --accent-press: #2b2b2b; --accent-ink: #ffffff;
+  --accent-text: #0a0a0a; --accent-soft: rgba(0, 0, 0, 0.05);
+  --navy: #0b2a5c; --navy-soft: rgba(0, 0, 0, 0.04); --navy-ink: #ffffff;
+}
+:root[data-theme="dark"], .navy-scene, .card.hero {
+  --accent: #f5f5f7; --accent-hi: #ffffff; --accent-press: #d4d4d8; --accent-ink: #000000;
+  --accent-text: #f5f5f7; --accent-soft: rgba(255, 255, 255, 0.08);
+  --navy: #2c4f96; --navy-soft: rgba(255, 255, 255, 0.06); --navy-ink: #ffffff;
+}
+.navy-scene, .card.hero { --text-muted: #c7c7cc; --text-faint: #8e8e93; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --accent: #f5f5f7; --accent-hi: #ffffff; --accent-press: #d4d4d8; --accent-ink: #000000;
+    --accent-text: #f5f5f7; --accent-soft: rgba(255, 255, 255, 0.08);
+    --navy: #2c4f96; --navy-soft: rgba(255, 255, 255, 0.06); --navy-ink: #ffffff;
+  }
+}
+.btn-primary, .card.hero, .ask-btn, .profile-btn { box-shadow: none; }
+.card.hero { border: 1px solid var(--line); }
+.masthead, .navy-scene .masthead, .card.hero .masthead { color: var(--text-faint); }
+.rail a.nav[aria-current="page"] { background: var(--accent-soft); color: var(--text); }
+.rail a.nav[aria-current="page"] svg { color: var(--navy); }
+:root[data-theme="dark"] .rail a.nav[aria-current="page"] svg { color: var(--text); }
+
+/* The Skyward emblem beside the Saath name. */
+.logo-divider { width: 1px; align-self: stretch; margin: 2px var(--s-1); background: var(--line-strong); }
+.skyward-emblem { display: block; flex: none; border-radius: 50%; }
+
+/* Verena postcards */
+.postcard-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr)); gap: var(--s-2); list-style: none; margin: 0; padding: 0; }
+.postcard > button, .postcard.locked { display: grid; justify-items: center; gap: var(--s-1); width: 100%; min-height: 10.5rem; padding: var(--s-3) var(--s-2); text-align: center; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface-1); color: var(--text); font: inherit; cursor: pointer; transition: border-color 160ms ease, transform 160ms ease; }
+.postcard > button:hover, .postcard > button:focus-visible { border-color: var(--text); }
+.postcard > button:active { transform: scale(0.98); }
+.postcard.locked { cursor: default; opacity: 0.6; align-content: center; }
+.postcard-art { display: grid; place-items: center; min-height: 96px; }
+.postcard .faint { font-size: var(--fs-label, 0.875rem); }
+.postcard-lesson { font-style: italic; line-height: 1.35; }
+.postcard-preview .share-brand { font-size: 1.25rem; align-items: center; }
+.postcard-preview .kicker { font-size: 0.75rem; text-transform: uppercase; }
+@media (prefers-reduced-motion: reduce) { .postcard > button { transition: none; } }
+
+/* Sleek and quiet: pure white or true black pages, neutral surfaces, hairline borders, no tinted shadows. */
+:root, :root[data-theme="light"] {
+  --bg: #ffffff; --bg-top: #ffffff; --surface-1: #ffffff; --surface-2: #f4f4f5; --surface-3: #e7e7ea;
+  --line: rgba(0, 0, 0, 0.1); --line-strong: rgba(0, 0, 0, 0.22);
+  --shadow-1: none; --shadow-2: none;
+}
+:root[data-theme="dark"] {
+  --bg: #000000; --bg-top: #000000; --surface-1: #0e0e10; --surface-2: #17171a; --surface-3: #232327;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #000000; --bg-top: #000000; --surface-1: #0e0e10; --surface-2: #17171a; --surface-3: #232327; }
+}
+.navy-scene, .card.hero { --surface-1: #0e0e10; --surface-2: #17171a; --surface-3: #232327; }
+.card { box-shadow: none; border: 1px solid var(--line); }
+@media (hover: hover) { a.card:hover, button.card:hover { box-shadow: none; border-color: var(--line-strong); } }
+.card.hero { background: #000000; border-color: rgba(255, 255, 255, 0.12); }
+:root[data-theme="dark"] .card.hero { background: #0b0b0d; }
+.navy-scene .btn-primary, .card.hero .btn-primary { background: #ffffff; color: #000000; box-shadow: none; }
+.navy-scene .btn-primary:active, .card.hero .btn-primary:active { background: #d4d4d8; }
+.navy-scene .chip[aria-pressed="true"], .card.hero .chip[aria-pressed="true"], .navy-scene .option.is-best .option-mark { background: #ffffff; color: #000000; }
+.share-card { --text: #0a0a0a; --navy: #14336b; --line-strong: rgba(0, 0, 0, 0.22); }
