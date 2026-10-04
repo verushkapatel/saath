@@ -63,16 +63,18 @@ export function FormsScreen() {
         <p className="lead">{t("forms.lead")}</p>
       </div>
 
-      <Link href="/forms/explain" className="card hero tight" onClick={tap}>
-        <span className="item" style={{ padding: 0, minHeight: 0 }}>
-          <span className="item-icon"><Camera aria-hidden size={20} /></span>
-          <span className="item-body">
-            <span className="item-title">{t("forms.photoTitle")}</span>
-            <span className="item-sub">{t("forms.photoSub")}</span>
-          </span>
-          <span className="item-end"><ChevronRight aria-hidden size={20} /></span>
-        </span>
-      </Link>
+      <section className="card hero photo-cta stack-sm" aria-labelledby="photo-cta-h" data-testid="forms-photo-feature">
+        <span className="photo-cta-icon" aria-hidden><Camera size={22} /></span>
+        <h2 id="photo-cta-h">{t("forms.photoCtaTitle")}</h2>
+        <p className="muted">{t("forms.photoCtaLead")}</p>
+        <ol className="photo-steps">
+          {["how1", "how2", "how3"].map((key, index) => <li key={key}><span className="num">{index + 1}</span>{t(`forms.${key}`)}</li>)}
+        </ol>
+        <Link href="/forms/explain" className="btn btn-primary" onClick={tap} data-testid="forms-photo-start-button">
+          <Camera aria-hidden size={18} />{t("forms.takePhoto")}
+        </Link>
+        <p className="faint"><ShieldCheck aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("forms.photoSub")}</p>
+      </section>
 
       <label>
         <span className="visually-hidden">{t("forms.search")}</span>
@@ -349,21 +351,25 @@ export function FormExplainScreen() {
 
       {phase === "done" && reading?.readable && (
         <section className="stack-sm" aria-labelledby="found-h">
-          <h2 id="found-h">{t("forms.foundTitle", { count: found.length })}</h2>
-          <p className="faint">{t("forms.foundLead")}</p>
-          <ul className="stack-sm">
-            {found.map((item) => (
-              <li key={item.rule.id} className="card tight stack-xs">
-                <strong>{item.rule.label[code]}</strong>
-                <p>{item.rule.meaning[code]}</p>
-                <p className="muted"><ShieldCheck aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {item.rule.tip[code]}</p>
-                <p className="faint quote-line">{t("forms.readAs")}: “{item.line}”</p>
+          <p className="kicker">{t("forms.foundTitle", { count: found.length })}</p>
+          <h2 id="found-h">{t("forms.plainTitle")}</h2>
+          <p className="muted">{t("forms.plainLead")}</p>
+          <ol className="stack-sm plain-list" data-testid="form-plain-results">
+            {found.map((item, index) => (
+              <li key={item.rule.id} className="card tight plain-field">
+                <span className="plain-num num" aria-hidden>{index + 1}</span>
+                <div className="stack-xs">
+                  <strong>{item.rule.label[code]}</strong>
+                  <p><span className="label">{t("forms.whatItAsks")}</span> {item.rule.meaning[code]}</p>
+                  <p className="muted"><span className="label"><ShieldCheck aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("forms.check")}</span> {item.rule.tip[code]}</p>
+                  <p className="faint quote-line">{t("forms.readAs")}: “{item.line}”</p>
+                </div>
               </li>
             ))}
-          </ul>
-          <p className="faint">{t("forms.notAll")}</p>
-          <button type="button" className="btn btn-secondary" onClick={() => { tap(); ai.openAsk(t("forms.askBlank")); }}>
-            <MessageCircle aria-hidden size={18} />{t("forms.askSaath")}
+          </ol>
+          <p className="faint">{t("forms.accuracy")} {t("forms.notAll")}</p>
+          <button type="button" className="btn btn-primary" onClick={() => { tap(); ai.openAsk(t("forms.askBlank")); }} data-testid="form-ask-ai-button">
+            <MessageCircle aria-hidden size={18} />{t("forms.explainAll")}
           </button>
         </section>
       )}

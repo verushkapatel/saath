@@ -12,6 +12,7 @@ import { Character } from "./character";
 import { Flame } from "./illustrations";
 import { LogoMark } from "./logo";
 import { Postcards } from "./postcards";
+import { StoryTabs } from "./story-tabs";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
 import { PageSkeleton, Sheet } from "./ui";
@@ -174,6 +175,7 @@ export function ProgressScreen() {
 
   return (
     <div className="stack-lg rise">
+      <StoryTabs current="progress" />
       <div className="stack-xs">
         <p className="masthead">{t("prog.kicker")}</p>
         <h1>{t("prog.title")}</h1>

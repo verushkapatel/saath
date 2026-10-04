@@ -37,3 +37,12 @@ EB Garamond throughout (Noto Sans Devanagari for Hindi/Marathi). Black and white
 
 ## Owner login (Live Users)
 Worker secrets ADMIN_USERNAME / ADMIN_PASSWORD. The deploy workflow sets them from GitHub repository secrets SAATH_ADMIN_USERNAME / SAATH_ADMIN_PASSWORD when present.
+
+## Story and Progress
+Progress is a subtab of Story: /journey and /progress share a Story | Progress switch, and the Story nav item is active on both.
+
+## Saath AI chat
+Chat-first: a greeting, one composer (auto-growing textarea, Enter sends, mic dictation stays editable, Stop while thinking), and suggestion chips under it. Answers render as plain prose with Saath mark, listen and copy tools, guide links and the source label; failures show Try again. Online model: Workers AI Llama 3.3 70B first, with a shared system prompt (lib/ai/prompt.ts and the Worker must match).
+
+## Forms photo
+The Forms page leads with "Photograph a form. Get it in plain words." Results list each recognised field as "What it asks" and "Check before you fill", from the checked field guide only (content/form-fields.json); unrecognised parts are left out, never invented.

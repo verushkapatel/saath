@@ -2107,8 +2107,8 @@ a.card:active, button.card:active { transform: scale(0.98); }
 .seg { background: var(--surface-3); border-radius: 12px; padding: 3px; gap: 2px; }
 .seg button { border-radius: 9px; min-height: 40px; }
 .seg button[aria-pressed="true"] { background: var(--surface-1); color: var(--text); box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 0 0 0.5px rgba(0, 0, 0, 0.04); }
-:root[data-theme="dark"] .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; } }
+:root[data-theme="dark"] .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); } }
 .switch { border: 0 !important; background: var(--surface-3); }
 .switch i { background: #ffffff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
 .switch[aria-checked="true"] { background: var(--accent); }
@@ -2129,7 +2129,7 @@ a.card:active, button.card:active { transform: scale(0.98); }
 .bubble { border-radius: 20px; line-height: 1.5; box-shadow: var(--shadow-1); }
 .bubble.saath { border: 0; background: var(--surface-1); border-bottom-left-radius: 6px; }
 .card .bubble.saath, .sheet .bubble.saath { background: var(--surface-2); box-shadow: none; }
-.bubble.me { background: var(--accent); color: #fff; border-bottom-right-radius: 6px; box-shadow: none; }
+.bubble.me { background: var(--accent); color: var(--accent-ink); border-bottom-right-radius: 6px; box-shadow: none; }
 .bubble ul { display: grid; gap: 4px; margin: 6px 0; padding-left: 1.1em; list-style: disc; }
 .bubble li::marker { color: var(--navy); }
 .bubble strong { font-weight: 700; }
@@ -2484,3 +2484,80 @@ h1 { font-weight: 700; }
 .navy-scene .btn-primary:active, .card.hero .btn-primary:active { background: #d4d4d8; }
 .navy-scene .chip[aria-pressed="true"], .card.hero .chip[aria-pressed="true"], .navy-scene .option.is-best .option-mark { background: #ffffff; color: #000000; }
 .share-card { --text: #0a0a0a; --navy: #14336b; --line-strong: rgba(0, 0, 0, 0.22); }
+
+/* Selected segments and switches: always the theme's ink with the opposite colour on top, so labels stay readable. */
+.seg button[aria-pressed="true"],
+:root[data-theme="dark"] .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); box-shadow: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); } }
+.seg button[aria-pressed="true"] svg { color: currentColor; }
+.switch[aria-checked="true"] { background: var(--accent); border-color: var(--accent); }
+.switch[aria-checked="true"] i { background: var(--accent-ink); box-shadow: none; }
+.switch:not([aria-checked="true"]) i { background: var(--text-faint); box-shadow: none; }
+.story-tabs { display: grid; grid-template-columns: 1fr 1fr; max-width: 22rem; }
+.story-tabs a { display: grid; place-items: center; min-height: 44px; border-radius: 9px; font-weight: 600; color: var(--text-muted); text-decoration: none; transition: background-color 160ms ease, color 160ms ease; }
+.story-tabs a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+.story-tabs a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+/* ───────────────────────────────────────────────────────────────
+   Saath AI: a calm conversation. Answers read like a page, not bubbles;
+   the person's own words sit in a quiet pill on the right.
+   ─────────────────────────────────────────────────────────────── */
+.convo { max-width: 46rem; width: 100%; margin-inline: auto; gap: var(--s-4); }
+.convo.is-empty:not(.compact) { min-height: calc(100dvh - 15rem); align-content: center; }
+.convo .ai-hello { padding: var(--s-5) 0 var(--s-2); gap: var(--s-3); }
+.convo .ai-hello h2 { font-size: clamp(1.75rem, 4vw, 2.375rem); font-weight: 600; letter-spacing: -0.015em; line-height: 1.15; }
+.ai-mark { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface-1); }
+.ai-mark.sm { width: 30px; height: 30px; flex: none; }
+.ai-mark.thinking { animation: breathe 1.6s ease-in-out infinite; }
+.convo .chat { gap: var(--s-5); padding: 0; }
+.msg { display: flex; gap: var(--s-3); min-width: 0; animation: enter 260ms cubic-bezier(0.22, 1, 0.36, 1); }
+.msg.me { justify-content: flex-end; }
+.msg.me p { max-width: min(85%, 34rem); margin: 0; padding: 10px 16px; border-radius: 18px; background: var(--surface-2); color: var(--text); white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; }
+.msg.saath .msg-body { display: grid; gap: var(--s-2); min-width: 0; flex: 1; font-size: 1.0625rem; line-height: 1.65; }
+.msg.saath .msg-body p { margin: 0; }
+.msg.saath .msg-body ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.msg.saath .msg-body strong { font-weight: 700; }
+.thinking-text { margin: 4px 0 0; }
+.msg-tools { display: flex; align-items: center; gap: var(--s-1); margin-top: 2px; }
+.msg-tools .icon-btn, .icon-btn.ghost { width: 34px; height: 34px; min-height: 34px; background: transparent; box-shadow: none; border: 0; color: var(--text-faint); }
+.msg-tools .icon-btn:hover { color: var(--text); background: var(--surface-2); }
+.msg-tools .bubble-via { margin: 0 0 0 var(--s-1); font-size: 0.8125rem; color: var(--text-faint); }
+.composer { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: var(--s-2); padding: 10px 10px 10px 18px; border: 1px solid var(--line-strong); border-radius: 26px; background: var(--surface-1); transition: border-color 160ms ease; }
+.composer:focus-within { border-color: var(--text); }
+.composer.hearing { border-color: var(--navy); }
+.composer textarea { width: 100%; min-height: 28px; max-height: 168px; padding: 6px 0; border: 0; outline: 0; resize: none; background: transparent; color: var(--text); font: inherit; font-size: 1.0625rem; line-height: 1.5; }
+.composer textarea::placeholder { color: var(--text-faint); }
+.composer-actions { display: flex; gap: 6px; }
+.composer .icon-btn { width: 40px; height: 40px; min-height: 40px; border-radius: 50%; box-shadow: none; }
+.composer .icon-btn.mic { background: transparent; color: var(--text-muted); }
+.composer .icon-btn.mic.on { background: var(--navy); color: #fff; }
+.composer .icon-btn.send { background: var(--accent); color: var(--accent-ink); }
+.composer .icon-btn.send:disabled { background: var(--surface-3); color: var(--text-faint); opacity: 1; }
+.suggest { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.convo.is-empty .suggest { justify-content: center; }
+.suggest-chip { min-height: 40px; padding: 8px 16px; border: 1px solid var(--line); border-radius: var(--r-full); background: transparent; color: var(--text-muted); font: inherit; font-size: 0.9375rem; cursor: pointer; transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease; }
+.suggest-chip:hover, .suggest-chip:focus-visible { border-color: var(--text); color: var(--text); }
+.suggest-chip:active { background: var(--surface-2); }
+.convo .chat-foot { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--s-3); font-size: 0.8125rem; }
+.convo .chat-foot p { margin: 0; max-width: 34rem; }
+.convo.compact .chat { max-height: min(52dvh, 480px); overflow-y: auto; overscroll-behavior: contain; padding-right: 4px; }
+@media (prefers-reduced-motion: reduce) { .msg, .ai-mark.thinking { animation: none; } }
+
+/* Forms: photograph a form, get it in plain words. */
+.photo-cta { padding: var(--s-6) var(--s-5); }
+.photo-cta h2 { font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.15; }
+.photo-cta-icon { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line-strong); }
+.photo-steps { display: grid; gap: var(--s-2); margin: var(--s-2) 0; padding: 0; list-style: none; }
+.photo-steps li { display: flex; align-items: center; gap: var(--s-3); }
+.photo-steps .num { display: inline-grid; place-items: center; width: 28px; height: 28px; flex: none; border-radius: 50%; border: 1px solid var(--line-strong); font-size: 0.875rem; font-weight: 600; }
+.plain-list { list-style: none; padding: 0; margin: 0; }
+.plain-field { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--s-3); align-items: start; }
+.plain-num { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.plain-field .label { display: inline; font-weight: 600; margin-right: 4px; }
+.plain-field p { margin: 0; }
+.convo .chat { background: none; border: 0; box-shadow: none; border-radius: 0; }
+.convo:not(.compact) .chat { max-height: none; overflow: visible; }
+.msg.saath .msg-body ul { list-style: disc; }
+.msg.saath .msg-body ol { list-style: decimal; padding-left: 1.2em; margin: 0; }
+.msg.saath .msg-body li::marker { color: var(--text-faint); }
+.convo .msg { border: 0; background: none; padding: 0; margin: 0; border-radius: 0; box-shadow: none; max-width: none; }

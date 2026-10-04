@@ -11,6 +11,7 @@ import { safeLook } from "@/lib/rewards";
 import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
+import { StoryTabs } from "./story-tabs";
 import { Character, type Mood } from "./character";
 import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
@@ -79,6 +80,7 @@ export function JourneyScreen() {
 
   return (
     <div className="stack-lg rise">
+      <StoryTabs current="story" />
       <div className="stack-sm">
         <p className="masthead">{t("journey.kicker")}</p>
         <h1>{t("journey.title", { name: journey.name[code] })}</h1>

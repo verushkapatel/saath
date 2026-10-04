@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { ArrowUp, BookOpen, Eraser, MessageCircle, Mic, Settings, Sparkles, Square } from "lucide-react";
+import { ArrowUp, BookOpen, Check, Copy, Eraser, MessageCircle, Mic, Settings, Sparkles, Square } from "lucide-react";
 import { getProvider, onlineConfigured, providerMode, type AiAnswer, type AiProgress, type AiTurn, type Doc } from "@/lib/ai";
 import { buildDocs } from "@/lib/ai/knowledge";
 import type { Lang } from "@/lib/catalog";
@@ -18,7 +18,7 @@ import { useI18n } from "./providers";
 import { ListenButton, Sheet } from "./ui";
 
 /** One line of the conversation as it is shown and, when memory is on, saved. */
-export type ChatLine = { role: "user" | "saath"; text: string; sources?: AiAnswer["sources"]; via?: AiAnswer["via"]; lang?: Lang };
+export type ChatLine = { role: "user" | "saath"; text: string; sources?: AiAnswer["sources"]; via?: AiAnswer["via"]; lang?: Lang; retry?: string };
 
 const CHAT_KEY = "ai-chat";
 const LANG_SHORT: Record<Lang, string> = { en: "English", hi: "हिन्दी", mr: "मराठी" };
@@ -197,13 +197,15 @@ function Chat({ compact }: { compact?: boolean }) {
   const [busy, setBusy] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [fresh, setFresh] = useState<number | null>(null);
-  // The language the person speaks or types in. Saath AI answers in the same one.
-  const [talk, setTalk] = useState<Lang>(code);
+  const [copied, setCopied] = useState<number | null>(null);
+  // Spoken questions use the app's language; typed ones are answered in the script they are written in.
+  const talk: Lang = code;
   const [hearing, setHearing] = useState(false);
   const [micNote, setMicNote] = useState<string | null>(null);
   const stopRef = useRef<(() => void) | null>(null);
+  const runRef = useRef(0);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const micOk = useMemo(() => canHear(), []);
-  useEffect(() => setTalk(code), [code]);
   useEffect(() => () => stopRef.current?.(), []);
   const endRef = useRef<HTMLDivElement | null>(null);
   const linesRef = useRef<ChatLine[]>([]);
@@ -228,17 +230,26 @@ function Chat({ compact }: { compact?: boolean }) {
 
   const remember = useCallback((next: ChatLine[]) => {
     setLines(next);
-    if (prefs.aiMemory) void setMeta(CHAT_KEY, next.slice(-KEEP)).catch(() => undefined);
+    if (prefs.aiMemory) void setMeta(CHAT_KEY, next.filter((line) => !line.retry).slice(-KEEP)).catch(() => undefined);
   }, [prefs.aiMemory]);
 
   useEffect(() => {
-    endRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
+    if (lines.length || busy) endRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
   }, [lines, busy]);
+
+  // Grow the message box with what is typed, up to a few lines.
+  useEffect(() => {
+    const box = inputRef.current;
+    if (!box) return;
+    box.style.height = "auto";
+    box.style.height = `${Math.min(box.scrollHeight, 168)}px`;
+  }, [draft]);
 
   const ask = useCallback(async (question: string, kind: "ask" | "revise" | "summary" = "ask") => {
     const text = question.trim();
     if (!text || busy) return;
-    const before = linesRef.current;
+    const run = ++runRef.current;
+    const before = linesRef.current.filter((line) => !line.retry);
     const withQuestion: ChatLine[] = [...before, { role: "user", text }];
     setLines(withQuestion);
     setDraft("");
@@ -251,14 +262,23 @@ function Chat({ compact }: { compact?: boolean }) {
         kind === "revise" ? await provider.recommendRevision(request)
         : kind === "summary" ? await provider.summarizeProgress(request)
         : await provider.answerQuestion(text, request);
+      if (run !== runRef.current) return;
       remember([...withQuestion, { role: "saath", text: answer.text, sources: answer.sources, via: answer.via, lang: replyLang }]);
       setFresh(withQuestion.length);
     } catch {
-      remember([...withQuestion, { role: "saath", text: t("ai.error") }]);
+      if (run !== runRef.current) return;
+      setLines([...withQuestion, { role: "saath", text: t("ai.error"), retry: text }]);
     } finally {
-      setBusy(false);
+      if (run === runRef.current) setBusy(false);
     }
   }, [busy, talk, ai.context, progress, provider, remember, t]);
+
+  function stop() {
+    tap();
+    runRef.current += 1;
+    setBusy(false);
+    remember(linesRef.current);
+  }
 
   function listen() {
     tap();
@@ -268,17 +288,13 @@ function Chat({ compact }: { compact?: boolean }) {
     }
     setMicNote(null);
     setHearing(true);
-    let heard = "";
     stopRef.current = dictate(talk, {
-      onText: (text) => {
-        heard = text;
-        setDraft(text);
-      },
+      onText: (text) => setDraft(text),
       onEnd: () => {
         setHearing(false);
         stopRef.current = null;
-        // Spoken questions are sent as soon as the person stops talking.
-        if (heard.trim()) void ask(heard);
+        // The words stay in the box so they can be checked or edited before sending.
+        inputRef.current?.focus();
       },
       onError: (reason) => {
         setHearing(false);
@@ -295,113 +311,150 @@ function Chat({ compact }: { compact?: boolean }) {
     if (pending) void ask(pending);
   }, [loaded, ai, ask]);
 
-  function submit(event: FormEvent) {
-    event.preventDefault();
+  function submit(event?: FormEvent) {
+    event?.preventDefault();
+    if (busy) return;
     tap();
     void ask(draft);
   }
 
-  const suggestions = ai.context?.suggestions?.length
-    ? ai.context.suggestions
-    : [t("ai.s1"), t("ai.s2"), t("ai.s3")];
+  async function copy(text: string, index: number) {
+    tap();
+    try {
+      await navigator.clipboard.writeText(text.replace(/\*\*/g, ""));
+      setCopied(index);
+      window.setTimeout(() => setCopied(null), 1600);
+    } catch {
+      setCopied(null);
+    }
+  }
+
+  const empty = lines.length === 0;
+  const starters = [
+    ...(ai.context?.text ? [t("ai.explainThis")] : []),
+    ...(ai.context?.suggestions?.length ? ai.context.suggestions : [t("ai.s1"), t("ai.s2"), t("ai.s3")]),
+  ].slice(0, 4);
   const mode = providerMode({ allowLocal: prefs.aiLocal, allowOnline: prefs.aiOnline, ollamaUrl: prefs.aiOllamaUrl, ollamaModel: prefs.aiOllamaModel });
+  const inputId = compact ? "ask-sheet-input" : "ask-page-input";
 
   return (
-    <div className={`chat-wrap${compact ? " compact" : ""}`}>
-      {ai.context && (
-        <p className="ai-about faint">
-          <BookOpen aria-hidden size={14} /> {t("ai.about", { title: ai.context.title ?? ai.context.screen })}
-        </p>
-      )}
-      <OnlineNote />
-      <div className="chat" aria-live="polite" aria-busy={busy}>
-        {lines.length === 0 && (
-          <div className="ai-hello">
-            <span className="ai-orb" aria-hidden><LogoMark size={34} /></span>
-            <h2>{t("ai.helloTitle")}</h2>
-            <p className="muted">{t("ai.hello")}</p>
-          </div>
-        )}
-        {lines.map((line, index) => (
-          <div key={index} className={`bubble ${line.role === "user" ? "me" : "saath"}`}>
-            {line.role === "user" ? <p>{line.text}</p> : index === fresh ? <Typed text={line.text} onDone={() => endRef.current?.scrollIntoView({ block: "end" })} /> : <RichText text={line.text} />}
-            {line.sources && line.sources.length > 0 && (
-              <div className="bubble-guides" data-testid="ai-guide-recommendations">
-                <span className="faint">{t("ai.sources")}</span>
-                {line.sources.map((source, at) => (
-                  <Link key={source.href + at} href={source.href} className="ai-guide-card" onClick={() => ai.closeAsk()}>
-                    <BookOpen aria-hidden size={17} />
-                    <span>{source.title}</span>
-                    <ArrowUp aria-hidden size={15} className="guide-arrow" />
-                  </Link>
-                ))}
+    <div className={`chat-wrap convo${compact ? " compact" : ""}${empty ? " is-empty" : ""}`} data-testid="saath-ai-chat">
+      {empty ? (
+        <div className="ai-hello" data-testid="ai-empty-state">
+          <span className="ai-mark" aria-hidden><LogoMark size={28} /></span>
+          <h2>{t("ai.helloTitle")}</h2>
+          {ai.context && <p className="faint ai-about"><BookOpen aria-hidden size={14} /> {t("ai.about", { title: ai.context.title ?? ai.context.screen })}</p>}
+        </div>
+      ) : (
+        <div className="chat" aria-live="polite" aria-busy={busy} data-testid="ai-conversation">
+          {lines.map((line, index) => line.role === "user" ? (
+            <div key={index} className="msg me" data-testid="ai-user-message"><p>{line.text}</p></div>
+          ) : (
+            <div key={index} className="msg saath" data-testid="ai-answer">
+              <span className="ai-mark sm" aria-hidden><LogoMark size={16} /></span>
+              <div className="msg-body">
+                {index === fresh ? <Typed text={line.text} onDone={() => endRef.current?.scrollIntoView({ block: "end" })} /> : <RichText text={line.text} />}
+                {line.retry && (
+                  <button type="button" className="btn btn-secondary btn-auto" onClick={() => void ask(line.retry!)} data-testid="ai-retry-button">{t("ai.retry")}</button>
+                )}
+                {line.sources && line.sources.length > 0 && (
+                  <div className="bubble-guides" data-testid="ai-guide-recommendations">
+                    <span className="faint">{t("ai.sources")}</span>
+                    {line.sources.map((source, at) => (
+                      <Link key={source.href + at} href={source.href} className="ai-guide-card" onClick={() => ai.closeAsk()}>
+                        <BookOpen aria-hidden size={17} />
+                        <span>{source.title}</span>
+                        <ArrowUp aria-hidden size={15} className="guide-arrow" />
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                {!line.retry && (
+                  <div className="msg-tools">
+                    <ListenButton compact text={line.text.replace(/\*\*/g, "").replace(/^- /gm, "")} lang={line.lang} />
+                    <button type="button" className="icon-btn ghost" aria-label={t("common.copy")} onClick={() => void copy(line.text, index)} data-testid="ai-copy-answer-button">
+                      {copied === index ? <Check aria-hidden size={16} /> : <Copy aria-hidden size={16} />}
+                    </button>
+                    {line.via && <span className="bubble-via">{t(`ai.via.${line.via}`)}</span>}
+                  </div>
+                )}
               </div>
-            )}
-            {line.role === "saath" && <div className="bubble-tools"><ListenButton compact text={line.text.replace(/\*\*/g, "").replace(/^- /gm, "")} lang={line.lang} /></div>}
-            {line.via && <p className="bubble-via">{t(`ai.via.${line.via}`)}</p>}
-          </div>
-        ))}
-        {busy && <p className="bubble saath typing" aria-label={t("ai.thinking")}><i /><i /><i /></p>}
-        <div ref={endRef} />
-      </div>
+            </div>
+          ))}
+          {busy && (
+            <div className="msg saath" role="status" aria-label={t("ai.thinking")} data-testid="ai-thinking">
+              <span className="ai-mark sm thinking" aria-hidden><LogoMark size={16} /></span>
+              <p className="faint thinking-text">{t("ai.thinking")}…</p>
+            </div>
+          )}
+          <div ref={endRef} />
+        </div>
+      )}
 
-      <div className="chips" role="group" aria-label={t("ai.try")}>
-        {ai.context?.text && (
-          <button type="button" className="chip" disabled={busy} onClick={() => { tap(); void ask(t("ai.explainThis")); }}>{t("ai.explainThis")}</button>
-        )}
-        {suggestions.map((item) => (
-          <button key={item} type="button" className="chip" disabled={busy} onClick={() => { tap(); void ask(item); }}>{item}</button>
-        ))}
-        <button type="button" className="chip" disabled={busy} onClick={() => { tap(); void ask(t("ai.revise"), "revise"); }}>{t("ai.revise")}</button>
-        <button type="button" className="chip" disabled={busy} onClick={() => { tap(); void ask(t("ai.summary"), "summary"); }}>{t("ai.summary")}</button>
-      </div>
-
-      <div className="talk-row" role="group" aria-label={t("ai.talkIn")}>
-        <span className="faint">{t("ai.talkIn")}</span>
-        {(["en", "hi", "mr"] as const).map((item) => (
-          <button key={item} type="button" className="talk-chip" aria-pressed={talk === item} lang={item} onClick={() => { tap(); setTalk(item); }}>{LANG_SHORT[item]}</button>
-        ))}
-      </div>
-      <form className={`chat-input${hearing ? " hearing" : ""}`} onSubmit={submit}>
-        <label className="visually-hidden" htmlFor={compact ? "ask-sheet-input" : "ask-page-input"}>{t("ai.placeholder")}</label>
-        <input
-          id={compact ? "ask-sheet-input" : "ask-page-input"}
-          className="field text boxed"
+      <OnlineNote />
+      <form className={`composer${hearing ? " hearing" : ""}`} onSubmit={submit} data-testid="ai-composer">
+        <label className="visually-hidden" htmlFor={inputId}>{t("ai.placeholder")}</label>
+        <textarea
+          ref={inputRef}
+          id={inputId}
+          rows={1}
           value={draft}
-          maxLength={500}
+          maxLength={1000}
           autoComplete="off"
           placeholder={hearing ? t("ai.listening") : t("ai.placeholder")}
           lang={talk}
           onChange={(event) => setDraft(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" && !event.shiftKey && !event.nativeEvent.isComposing) {
+              event.preventDefault();
+              submit();
+            }
+          }}
+          data-testid="ai-chat-input"
         />
-        {micOk && (
-          <button type="button" className={`icon-btn mic${hearing ? " on" : ""}`} aria-label={hearing ? t("ai.micStop") : t("ai.micStart", { lang: LANG_SHORT[talk] })} aria-pressed={hearing} disabled={busy} onClick={listen}>
-            {hearing ? <Square aria-hidden size={16} fill="currentColor" /> : <Mic aria-hidden size={20} />}
-          </button>
-        )}
-        <button type="submit" className="icon-btn send" aria-label={t("ai.send")} disabled={busy || !draft.trim()}>
-          <ArrowUp aria-hidden size={20} />
-        </button>
+        <div className="composer-actions">
+          {micOk && (
+            <button type="button" className={`icon-btn mic${hearing ? " on" : ""}`} aria-label={hearing ? t("ai.micStop") : t("ai.micStart", { lang: LANG_SHORT[talk] })} aria-pressed={hearing} disabled={busy} onClick={listen} data-testid="ai-mic-button">
+              {hearing ? <Square aria-hidden size={14} fill="currentColor" /> : <Mic aria-hidden size={18} />}
+            </button>
+          )}
+          {busy ? (
+            <button type="button" className="icon-btn send" aria-label={t("ai.stop")} onClick={stop} data-testid="ai-stop-button">
+              <Square aria-hidden size={14} fill="currentColor" />
+            </button>
+          ) : (
+            <button type="submit" className="icon-btn send" aria-label={t("ai.send")} disabled={!draft.trim()} data-testid="ai-send-button">
+              <ArrowUp aria-hidden size={18} />
+            </button>
+          )}
+        </div>
       </form>
       {micNote && <p role="status" className="note">{micNote}</p>}
 
-      <div className="row-between chat-foot">
-        <p className="faint">{t(`ai.mode.${mode}`)} {prefs.aiMemory ? t("ai.memoryOn") : t("ai.memoryOff")}</p>
-        {lines.length > 0 && (
-          <button
-            type="button"
-            className="link"
-            onClick={() => {
-              tap();
-              remember([]);
-            }}
-          >
+      {!busy && (
+        <div className="suggest" role="group" aria-label={t("ai.try")} data-testid="ai-suggestions">
+          {(empty ? starters : [t("ai.revise"), t("ai.summary")]).map((item) => (
+            <button
+              key={item}
+              type="button"
+              className="suggest-chip"
+              onClick={() => { tap(); void ask(item, item === t("ai.revise") ? "revise" : item === t("ai.summary") ? "summary" : "ask"); }}
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+      )}
+
+      <div className="chat-foot">
+        <p className="faint">{t(`ai.mode.${mode}`)} {t("ai.notAdvice")}</p>
+        {!empty && (
+          <button type="button" className="link" onClick={() => { tap(); runRef.current += 1; setBusy(false); remember([]); }} data-testid="ai-new-chat-button">
             <Eraser aria-hidden size={16} />
             {t("ai.clear")}
           </button>
         )}
       </div>
-      <p className="faint">{t("ai.notAdvice")}</p>
     </div>
   );
 }
@@ -439,11 +492,7 @@ export function AiScreen() {
   const { prefs } = usePrefs();
   return (
     <div className="stack">
-      <div className="stack-xs">
-        <p className="masthead">{t("ai.kicker")}</p>
-        <h1>{t("ai.title")}</h1>
-        <p className="lead">{t("ai.lead")}</p>
-      </div>
+      <h1 className="visually-hidden">{t("ai.title")}</h1>
       {prefs.ai ? <Chat /> : <AiOff />}
     </div>
   );

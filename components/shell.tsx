@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { BookOpen, Check, FileText, Home, LineChart, MessageCircle, Route, Settings, Wallet } from "lucide-react";
+import { BookOpen, Check, FileText, Home, MessageCircle, Route, Settings, Wallet } from "lucide-react";
 import { currentAccount, hasAccounts, logOut, type Account } from "@/lib/account";
 import { asset } from "@/lib/config";
 import { LANGS, type Lang } from "@/lib/catalog";
@@ -33,14 +33,13 @@ type Nav = { href: string; key: string; icon: typeof Home; match: (path: string)
 
 const TABS: Nav[] = [
   { href: "/", key: "nav.home", icon: Home, match: (path) => path === "/" || /^\/(stories|privacy|about)/.test(path) },
-  { href: "/journey", key: "nav.journey", icon: Route, match: (path) => path.startsWith("/journey") },
+  { href: "/journey", key: "nav.journey", icon: Route, match: (path) => /^\/(journey|progress)/.test(path) },
   { href: "/guide", key: "nav.guide", icon: BookOpen, match: (path) => /^\/(guide|paths|drills|handbook|check)/.test(path) },
   { href: "/money-lab", key: "nav.money", icon: Wallet, match: (path) => path.startsWith("/money-lab") },
   { href: "/forms", key: "nav.forms", icon: FileText, match: (path) => /^\/(forms|scan)/.test(path) },
 ];
 const MORE: Nav[] = [
   { href: "/ai", key: "nav.ai", icon: MessageCircle, match: (path) => path.startsWith("/ai") },
-  { href: "/progress", key: "nav.progress", icon: LineChart, match: (path) => path.startsWith("/progress") },
   { href: "/settings", key: "nav.settings", icon: Settings, match: (path) => path.startsWith("/settings") },
 ];
 
