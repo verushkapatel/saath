@@ -1249,7 +1249,11 @@
     "askSaath": "Ask Saath about this form",
     "askCheck": "What should I check before signing this?",
     "askBlank": "Is it safe to sign a form with blank spaces?",
-    "askKfs": "What is a Key Fact Statement?"
+    "askKfs": "What is a Key Fact Statement?",
+    "aiReadyTitle": "Saath AI has read this form",
+    "aiReadyLead": "Get the whole form explained part by part, in plain words. ID numbers are removed before anything is sent, and the photo is never sent.",
+    "aiExplain": "Explain this form with Saath AI",
+    "aiExplainPrompt": "Explain this form to me in plain words, part by part, and tell me what to check before I sign."
   },
   "stories": {
     "title": "Real stories",

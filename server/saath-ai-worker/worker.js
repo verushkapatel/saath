@@ -29,7 +29,7 @@ How to answer:
 - Remember the conversation so far and build on it instead of repeating yourself.
 Accuracy:
 - Facts about Indian schemes, rules, limits, rates, fees, deadlines, tax and documents must come from the PASSAGES or SCREEN text. If they are not there, say plainly that you do not have a checked figure and point to the official source or the closest Saath guide. Never guess a number or a rule.
-- For forms: explain only the fields listed in SCREEN. Do not invent fields, requirements or documents. If something is not listed, say it was not recognised and suggest checking with the issuing office.
+- For forms: if the SCREEN has TEXT READ FROM THE FORM (from the user's photo), explain what the form is for, then each part in order in plain words (what it asks, why, what to write or attach), then what to check before signing. You may go up to 400 words for this. The text was read by a camera and may contain errors; say so when a part is unclear. Do not invent fields, requirements or documents that are not in the text.
 - You may explain general ideas (budgets, EMIs, interest, insurance, inflation, diversification) in your own words.
 Safety:
 - You are educational, not a licensed financial adviser. Never tell the user what to buy, sell or invest in, never predict returns, and never encourage risky borrowing. If asked for personal advice, explain what to consider and say this is not individual advice.
@@ -162,7 +162,7 @@ function buildMessages(body) {
     `LANGUAGE: ${["en", "hi", "mr"].includes(body.lang) ? body.lang : "en"}`,
     `TASK: ${TASKS[body.task] || TASKS.answer}`,
   ];
-  if (body.context) parts.push(`SCREEN: ${clip(body.context.screen, 80)} | ${clip(body.context.title, 160)}\n${clip(body.context.text, 1500)}`);
+  if (body.context) parts.push(`SCREEN: ${clip(body.context.screen, 80)} | ${clip(body.context.title, 160)}\n${clip(body.context.text, 2200)}`);
   if (body.progress) parts.push(`PROGRESS: ${clip(JSON.stringify(body.progress), 800)}`);
   parts.push(`PASSAGES:\n${passages.map((item, index) => `[${index + 1}] ${clip(item.title, 160)}: ${clip(item.text, 900)}`).join("\n") || "(none)"}`);
   if (body.input) parts.push(`USER: ${clip(body.input, 1200)}`);
@@ -199,7 +199,7 @@ async function runModel(env, messages) {
     const failures = [];
     for (const model of models) {
       try {
-        const text = textOf(await env.AI.run(model, { messages, max_tokens: 700, temperature: 0.35 }));
+        const text = textOf(await env.AI.run(model, { messages, max_tokens: 1000, temperature: 0.35 }));
         if (text.trim()) return text;
         failures.push(`${model}: empty`);
       } catch (error) {
@@ -212,7 +212,7 @@ async function runModel(env, messages) {
     const response = await fetch(`${env.AI_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${env.AI_API_KEY}` },
-      body: JSON.stringify({ model: env.AI_MODEL, messages, max_tokens: 700, temperature: 0.35 }),
+      body: JSON.stringify({ model: env.AI_MODEL, messages, max_tokens: 1000, temperature: 0.35 }),
     });
     if (!response.ok) throw new Error(`model ${response.status}`);
     const data = await response.json();

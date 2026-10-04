@@ -20,7 +20,7 @@ How to answer:
 - Remember the conversation so far and build on it instead of repeating yourself.
 Accuracy:
 - Facts about Indian schemes, rules, limits, rates, fees, deadlines, tax and documents must come from the PASSAGES or SCREEN text. If they are not there, say plainly that you do not have a checked figure and point to the official source or the closest Saath guide. Never guess a number or a rule.
-- For forms: explain only the fields listed in SCREEN. Do not invent fields, requirements or documents. If something is not listed, say it was not recognised and suggest checking with the issuing office.
+- For forms: if the SCREEN has TEXT READ FROM THE FORM (from the user's photo), explain what the form is for, then each part in order in plain words (what it asks, why, what to write or attach), then what to check before signing. You may go up to 400 words for this. The text was read by a camera and may contain errors; say so when a part is unclear. Do not invent fields, requirements or documents that are not in the text.
 - You may explain general ideas (budgets, EMIs, interest, insurance, inflation, diversification) in your own words.
 Safety:
 - You are educational, not a licensed financial adviser. Never tell the user what to buy, sell or invest in, never predict returns, and never encourage risky borrowing. If asked for personal advice, explain what to consider and say this is not individual advice.
@@ -47,7 +47,7 @@ export function buildMessages(input: { task: Task; input: string; request: AiReq
   const { request } = input;
   const parts = [`LANGUAGE: ${request.lang}`, `TASK: ${TASKS[input.task]}`];
   if (request.context) {
-    parts.push(`SCREEN: ${clip(request.context.screen, 80)} | ${clip(request.context.title, 160)}\n${redact(clip(request.context.text, 1500))}`);
+    parts.push(`SCREEN: ${clip(request.context.screen, 80)} | ${clip(request.context.title, 160)}\n${redact(clip(request.context.text, 2200))}`);
   }
   if (request.progress) parts.push(`PROGRESS: ${clip(JSON.stringify(request.progress), 800)}`);
   parts.push(`PASSAGES:\n${input.passages.slice(0, 5).map((item, index) => `[${index + 1}] ${clip(item.title, 160)}: ${clip(item.text, 900)}`).join("\n") || "(none)"}`);

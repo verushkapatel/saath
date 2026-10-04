@@ -2603,3 +2603,13 @@ h1 { font-weight: 700; }
 .feedback-panel .feedback-box { min-height: 120px; padding: var(--s-3) var(--s-4); resize: vertical; line-height: 1.55; font: inherit; }
 .feedback-mic { justify-self: start; display: inline-flex; align-items: center; gap: var(--s-2); min-height: 40px; padding: 0 var(--s-4); border: 1px solid var(--line-strong); border-radius: var(--r-full); background: transparent; color: var(--text); font-weight: 600; font-size: var(--fs-label); }
 .feedback-mic[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+/* Forms library: the photo card gets real breathing room; the AI prompt after a reading stands out. */
+.photo-cta { display: grid !important; gap: var(--s-4); padding: var(--s-6) !important; }
+.photo-cta h2 { margin-top: var(--s-2); }
+.photo-cta .photo-steps { gap: var(--s-3); margin: var(--s-2) 0 var(--s-3); }
+.photo-cta .btn { margin-top: var(--s-2); }
+.photo-note { display: flex; align-items: center; gap: var(--s-2); }
+@media (min-width: 900px) { .photo-cta .btn { justify-self: start; width: auto; padding-inline: var(--s-7); } }
+.ai-form-cta { display: grid; gap: var(--s-3); padding: var(--s-5); margin-bottom: var(--s-4); border: 1px solid var(--line-strong); border-radius: var(--r-lg); background: var(--surface-1); }
+.chips { padding-block: var(--s-1); }

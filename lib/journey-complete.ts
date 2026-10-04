@@ -14,6 +14,15 @@ export type ChapterSeed = {
   sim?: ({ kind: "inspect" } | { kind: "budget"; income: number; needs: number } | { kind: "grow"; monthly: number; rate: number; years: number[] } | { kind: "emi"; principal: number; rate: number; months: number[] });
   delta?: Effects;
   guide: string;
+  /** Chapter-specific scene, question, weaker choices, outcomes and lesson. Generic wording is used only where these are missing. */
+  more?: Copy;
+  question?: Copy;
+  okay?: Copy;
+  costly?: Copy;
+  goodOutcome?: Copy;
+  okayOutcome?: Copy;
+  costlyOutcome?: Copy;
+  lesson?: Copy;
 };
 
 export type ChaptersFile = { reviewed: string; chapters: ChapterSeed[] };
@@ -136,9 +145,9 @@ function makeSim(seed: ChapterSeed): Sim {
 function generated(seed: ChapterSeed, index: number): Episode {
   const delta = seed.delta ?? { confidence: 3 };
   const variants = [
-    { text: seed.action ?? PHRASES.okay, outcome: PHRASES.goodOutcome, verdict: "good" as const, effects: delta },
-    { text: PHRASES.okay, outcome: PHRASES.okayOutcome, verdict: "okay" as const, effects: okayEffects(delta) },
-    { text: PHRASES.costly, outcome: PHRASES.costlyOutcome, verdict: "costly" as const, effects: costlyEffects(delta) },
+    { text: seed.action ?? PHRASES.okay, outcome: seed.goodOutcome ?? PHRASES.goodOutcome, verdict: "good" as const, effects: delta },
+    { text: seed.okay ?? PHRASES.okay, outcome: seed.okayOutcome ?? PHRASES.okayOutcome, verdict: "okay" as const, effects: okayEffects(delta) },
+    { text: seed.costly ?? PHRASES.costly, outcome: seed.costlyOutcome ?? PHRASES.costlyOutcome, verdict: "costly" as const, effects: costlyEffects(delta) },
   ];
   const shift = index % variants.length;
   const options = [...variants.slice(shift), ...variants.slice(0, shift)];
@@ -149,11 +158,11 @@ function generated(seed: ChapterSeed, index: number): Episode {
     age: seed.age,
     place: seed.place,
     title: seed.title,
-    story: [seed.setup ?? PHRASES.moment, PHRASES.bridge, PHRASES.moment],
+    story: seed.more ? [seed.setup ?? PHRASES.moment, seed.more, PHRASES.bridge] : [seed.setup ?? PHRASES.moment, PHRASES.bridge, PHRASES.moment],
     sim: makeSim(seed),
-    question: PHRASES.question,
+    question: seed.question ?? PHRASES.question,
     options,
-    lesson: PHRASES.lesson,
+    lesson: seed.lesson ?? PHRASES.lesson,
     drill: CHECKS,
     guides: [seed.guide],
   };

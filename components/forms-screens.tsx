@@ -73,7 +73,7 @@ export function FormsScreen() {
         <Link href="/forms/explain" className="btn btn-primary" onClick={tap} data-testid="forms-photo-start-button">
           <Camera aria-hidden size={18} />{t("forms.takePhoto")}
         </Link>
-        <p className="faint"><ShieldCheck aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("forms.photoSub")}</p>
+        <p className="faint photo-note"><ShieldCheck aria-hidden size={14} /> {t("forms.photoSub")}</p>
       </section>
 
       <label>
@@ -259,6 +259,7 @@ export function FormExplainScreen() {
   const [phase, setPhase] = useState<Phase>("idle");
   const [progress, setProgress] = useState<OcrProgress | null>(null);
   const [reading, setReading] = useState<FormReading | null>(null);
+  const [rawText, setRawText] = useState("");
   const [quality, setQuality] = useState<{ dark: boolean; blurry: boolean } | null>(null);
   const cameraRef = useRef<HTMLInputElement | null>(null);
   const pickRef = useRef<HTMLInputElement | null>(null);
@@ -272,8 +273,9 @@ export function FormExplainScreen() {
     screen: t("nav.forms"),
     kind: "form-photo",
     title: t("forms.photoTitle"),
-    // Only the field names Saath recognised are shared with Saath AI, never the words read from the paper.
-    text: found.length ? found.map((item) => `${item.rule.label[code]}: ${item.rule.meaning[code]}`).join("\n") : undefined,
+    // Saath AI gets the parts Saath recognised and the words read from the paper. Aadhaar, PAN, phone and account
+    // numbers are removed before anything is sent (lib/redact.ts), and the photo itself is never sent.
+    text: rawText ? `${found.map((item) => `${item.rule.label[code]}: ${item.rule.meaning[code]}`).join("\n")}\nTEXT READ FROM THE FORM:\n${rawText.slice(0, 1400)}` : undefined,
     suggestions: [t("forms.askBlank"), t("forms.askCheck")],
   });
 
@@ -292,6 +294,7 @@ export function FormExplainScreen() {
         return reading.readable ? reading.found.length : 0;
       };
       const text = await readPhotoBest(file, cleaned, code, score, 5, setProgress);
+      setRawText(text.trim());
       setReading(explainFormText(text, rules));
       setPhase("done");
     } catch {
@@ -345,12 +348,24 @@ export function FormExplainScreen() {
           {quality?.dark && <p className="muted">{t("forms.tipDark")}</p>}
           {quality?.blurry && <p className="muted">{t("forms.tipBlur")}</p>}
           <p className="muted">{t("forms.tipFlat")}</p>
+          {rawText.length > 40 && (
+            <button type="button" className="btn btn-secondary" onClick={() => { tap(); ai.openAsk(t("forms.aiExplainPrompt")); }}>
+              <MessageCircle aria-hidden size={18} />{t("forms.aiExplain")}
+            </button>
+          )}
           <Link href="/forms" className="link">{t("forms.tryLibrary")}<ChevronRight aria-hidden size={18} /></Link>
         </div>
       )}
 
       {phase === "done" && reading?.readable && (
         <section className="stack-sm" aria-labelledby="found-h">
+          <div className="ai-form-cta">
+            <p><strong>{t("forms.aiReadyTitle")}</strong></p>
+            <p className="muted">{t("forms.aiReadyLead")}</p>
+            <button type="button" className="btn btn-primary" onClick={() => { tap(); ai.openAsk(t("forms.aiExplainPrompt")); }} data-testid="form-ai-explain">
+              <MessageCircle aria-hidden size={18} />{t("forms.aiExplain")}
+            </button>
+          </div>
           <p className="kicker">{t("forms.foundTitle", { count: found.length })}</p>
           <h2 id="found-h">{t("forms.plainTitle")}</h2>
           <p className="muted">{t("forms.plainLead")}</p>

@@ -39,7 +39,7 @@ export function createRemoteProvider(
           lang: request.lang,
           input: redact(input).slice(0, 1200),
           context: request.context
-            ? { screen: request.context.screen, kind: request.context.kind, title: request.context.title, text: redact(request.context.text ?? "").slice(0, 1500) }
+            ? { screen: request.context.screen, kind: request.context.kind, title: request.context.title, text: redact(request.context.text ?? "").slice(0, 2200) }
             : null,
           progress: request.progress,
           history: request.history.slice(-6).map((turn) => ({ role: turn.role, text: redact(turn.text).slice(0, 600) })),
