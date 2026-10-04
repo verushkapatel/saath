@@ -55,7 +55,7 @@ jobs:
           echo "url=$url" >> "$GITHUB_OUTPUT"
           if [ -n "$url" ]; then
             # A quick check that the server answers for this site, without failing the publish if the model is slow.
-            code=$(curl -s -o answer.json -w "%{http_code}" -X POST "$url" -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" \
+            code=$(curl -s -o answer.json -w "%{http_code}" -X POST "$url" -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" -H "x-saath-check: 1" \
               -d '{"task":"answer","lang":"en","input":"What is an EMI?","passages":[{"title":"EMI","text":"An EMI is the same payment every month until a loan is repaid."}]}' || true)
             echo "Saath AI server: $url answered HTTP $code"; cat answer.json || true; echo
             if [ "$code" != "200" ]; then echo "::warning::The Saath AI server did not answer with 200. The app falls back to on-device answers until it does."; fi

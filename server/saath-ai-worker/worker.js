@@ -64,10 +64,37 @@ function buildMessages(body) {
   ];
 }
 
+// Workers AI models are tried in order until one answers, so a model that is retired or not enabled on an
+// account does not take Saath AI down. AI_MODEL in wrangler.toml, if set, is tried first.
+const WORKERS_AI_MODELS = [
+  "@cf/meta/llama-3.1-8b-instruct-fast",
+  "@cf/meta/llama-3.1-8b-instruct",
+  "@cf/meta/llama-3.2-3b-instruct",
+  "@cf/mistral/mistral-7b-instruct-v0.2",
+];
+
+function textOf(result) {
+  if (!result) return "";
+  if (typeof result === "string") return result;
+  if (typeof result.response === "string") return result.response;
+  if (result.response && typeof result.response === "object") return JSON.stringify(result.response);
+  return result.result?.response || result.choices?.[0]?.message?.content || "";
+}
+
 async function runModel(env, messages) {
   if (env.AI && typeof env.AI.run === "function") {
-    const result = await env.AI.run(env.AI_MODEL || "@cf/meta/llama-3.1-8b-instruct", { messages, max_tokens: 400, temperature: 0.2 });
-    return result.response || "";
+    const models = [...new Set([env.AI_MODEL, ...WORKERS_AI_MODELS].filter(Boolean))];
+    const failures = [];
+    for (const model of models) {
+      try {
+        const text = textOf(await env.AI.run(model, { messages, max_tokens: 400, temperature: 0.2 }));
+        if (text.trim()) return text;
+        failures.push(`${model}: empty`);
+      } catch (error) {
+        failures.push(`${model}: ${String(error && error.message ? error.message : error).slice(0, 160)}`);
+      }
+    }
+    throw new Error(failures.join(" | "));
   }
   if (env.AI_BASE_URL && env.AI_API_KEY) {
     const response = await fetch(`${env.AI_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
@@ -95,9 +122,12 @@ export default {
       const text = await runModel(env, buildMessages(body));
       if (!text) throw new Error("empty");
       return new Response(JSON.stringify({ text }), { status: 200, headers });
-    } catch {
-      // The app falls back to its on-device answers when it sees any error.
-      return new Response(JSON.stringify({ error: "unavailable" }), { status: 502, headers });
+    } catch (error) {
+      // The app falls back to its on-device answers when it sees any error. The reason is only included for the
+      // repository's own check (header x-saath-check), so a failure can be fixed without guessing.
+      const body = { error: "unavailable" };
+      if (request.headers.get("x-saath-check") === "1") body.reason = String(error && error.message ? error.message : error).slice(0, 800);
+      return new Response(JSON.stringify(body), { status: 502, headers });
     }
   },
 };

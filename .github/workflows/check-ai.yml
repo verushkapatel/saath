@@ -18,7 +18,7 @@ jobs:
         run: |
           for lang in en hi; do
             code=$(curl -s -o answer.json -w "%{http_code}" -X POST "$URL" \
-              -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" \
+              -H "origin: https://verushkapatel.github.io" -H "content-type: application/json" -H "x-saath-check: 1" \
               -d "{\"task\":\"answer\",\"lang\":\"$lang\",\"input\":\"What is an EMI?\",\"passages\":[{\"title\":\"What an EMI is\",\"text\":\"An EMI is the same payment every month until a loan is repaid. Each EMI has some loan and some interest inside it. EMI times months gives the real total.\"}]}")
             echo "[$lang] HTTP $code"; cat answer.json; echo
           done
