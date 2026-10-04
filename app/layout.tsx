@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Noto_Sans_Devanagari } from "next/font/google";
+import { EB_Garamond, Noto_Sans_Devanagari } from "next/font/google";
 import { Providers } from "@/components/providers";
 import { RegisterSW, Shell } from "@/components/shell";
 import { asset } from "@/lib/config";
@@ -9,7 +9,7 @@ import "./simulations.css";
 
 // One clean sans for everything, as on Apple platforms: Inter for Latin, Noto Sans Devanagari for Hindi and Marathi.
 // They are downloaded at build time and served from this site, with size-matched fallbacks so text does not jump.
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "600", "700", "800"] });
+const sans = EB_Garamond({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "600", "700", "800"] });
 const dev = Noto_Sans_Devanagari({ subsets: ["devanagari"], variable: "--font-dev", display: "swap", weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
