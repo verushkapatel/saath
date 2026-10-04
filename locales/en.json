@@ -1381,5 +1381,28 @@
     "desktop1": "Look for the install icon at the right end of the address bar.",
     "desktop2": "Click it and confirm.",
     "note": "Installing does not share anything. Your data stays on this device."
+  },
+  "challenge": {
+    "title": "Today's challenges",
+    "lead": "Picked from what you find hardest. Today: {topic}.",
+    "leadAll": "A new topic each day. Today: {topic}.",
+    "change": "Change topics",
+    "doneOf": "{done} of {total} done",
+    "crisis": "Money crisis",
+    "task": "Real-life task",
+    "quiz": "Quick quiz",
+    "quizTitle": "{count} questions on {topic}",
+    "quizStep": "Question {n} of {total}",
+    "finishQuiz": "See my score",
+    "quizPerfect": "All right. You know this well.",
+    "quizGood": "Good effort. The ones you missed will come back for revision.",
+    "done": "Done",
+    "allDone": "All three done. +{xp} XP bonus.",
+    "readGuide": "Read the guide on this",
+    "taskNote": "Do it in real life, then come back and tick it off. Nothing you do is sent anywhere.",
+    "didIt": "I did it",
+    "taskDone": "Done for today. Well done.",
+    "askSaath": "Ask Saath how to do this",
+    "askHow": "How do I do this: {task}"
   }
 }

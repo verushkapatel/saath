@@ -11,6 +11,8 @@ import {
   completeLesson,
   completeStep,
   emptyProgress,
+  finishChallenge as completeChallenge,
+  finishGame as completeGame,
   levelFor,
   markTask,
   noteMistake,
@@ -80,6 +82,8 @@ type AppState = {
   saveLook: (look: Partial<Look>) => Promise<void>;
   finishMoneyIntro: () => Promise<void>;
   deleteEntry: (id: string) => Promise<void>;
+  finishChallenge: (id: string, xp: number, parts?: number) => Promise<void>;
+  finishGame: (game: string, score: number) => Promise<void>;
 };
 
 const Ctx = createContext<AppState | null>(null);
@@ -206,6 +210,11 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const saveLook = useCallback((look: Partial<Look>) => change((current) => setLook(current, look), false), [change]);
   const finishMoneyIntro = useCallback(() => change((current) => (current.moneyIntro ? current : { ...current, moneyIntro: true }), false), [change]);
   const clearFresh = useCallback(() => setFresh([]), []);
+  const finishChallenge = useCallback(
+    (id: string, xp: number, parts?: number) => change((current) => completeChallenge(current, id, xp, todayISO(), parts)),
+    [change],
+  );
+  const finishGame = useCallback((game: string, score: number) => change((current) => completeGame(current, game, score, todayISO())), [change]);
   const deleteEntry = useCallback(async (id: string) => {
     await removeEntry(id);
     setEntries((current) => current.filter((entry) => entry.id !== id));
@@ -249,12 +258,12 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
     logEntry, setGoal, addLoan, restore,
-    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry,
+    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
   }), [
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
     logEntry, setGoal, addLoan, restore,
-    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry,
+    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
   ]);
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

@@ -169,3 +169,19 @@ export function linkHref(link: ActionLink): string | null {
   if (link.startsWith("form:")) return `/forms/${link.slice(5)}`;
   return null;
 }
+
+/** A short money crisis to handle: a story, a choice and why the best choice is best. */
+export type Crisis = {
+  id: string;
+  topic: Topic;
+  title: Copy;
+  story: Copy;
+  question: Copy;
+  options: Copy[];
+  answer: number;
+  why: Copy;
+  guide: string;
+};
+/** Something small to do in real life today. */
+export type RealTask = { id: string; topic: Topic; text: Copy };
+export type ChallengesFile = { reviewed: string; crises: Crisis[]; tasks: RealTask[] };

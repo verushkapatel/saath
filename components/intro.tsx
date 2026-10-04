@@ -381,7 +381,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
       <nav className={`intro-dots${act >= 0 && act < acts.length ? " on" : ""}`} aria-hidden>
         {acts.map((id, index) => <i key={id} className={index === act ? "on" : index < act ? "was" : undefined} />)}
       </nav>
-      <div className={`intro-float${act >= 0 && act < acts.length ? " on" : ""}`}>
+      <div className={`intro-float${act >= 0 && act < acts.length ? " on" : ""}`} aria-hidden={!(act >= 0 && act < acts.length)}>
         <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }} tabIndex={act >= 0 && act < acts.length ? 0 : -1}>
           {t("intro.cta")}
           <ArrowRight aria-hidden size={18} />

@@ -13,6 +13,7 @@ import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { Character } from "./character";
+import { TodayChallenges } from "./challenges";
 import { Flame } from "./illustrations";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
@@ -156,6 +157,8 @@ export function HomeScreen() {
         <h2 id="today-saath" className="visually-hidden">{t("home.todaySaath")}</h2>
         {heroBody()}
       </section>
+
+      <TodayChallenges questions={questions} />
 
       {story && action.kind !== "episode" && (
         <Link href="/journey" className="card tight story-card" onClick={tap}>

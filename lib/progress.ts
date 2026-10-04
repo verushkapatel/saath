@@ -2,7 +2,7 @@ import type { Path } from "./content-types";
 import { addDays } from "./dates";
 import { computeStreak } from "./streak";
 
-export type TaskId = "question" | "log" | "lesson" | "fee" | "sample" | "case" | "step" | "drill" | "check" | "episode" | "story";
+export type TaskId = "question" | "log" | "lesson" | "fee" | "sample" | "case" | "step" | "drill" | "check" | "episode" | "story" | "challenge" | "game";
 
 export type Progress = {
   id: "progress";
@@ -43,6 +43,10 @@ export type Progress = {
   forms: string[];
   /** True once the first-use walk through Money Lab was finished. */
   moneyIntro: boolean;
+  /** Date to the parts of that day's challenges that were finished. Only recent days are kept. */
+  challenges: Record<string, string[]>;
+  /** Game id to the best score. */
+  games: Record<string, number>;
 };
 
 export type EpisodeResult = { choice: number; drill: number; at: string };
@@ -60,6 +64,11 @@ export const XP = {
   episode: 40,
   drillRight: 10,
   story: 10,
+  crisis: 20,
+  realTask: 15,
+  quiz: 20,
+  allChallenges: 25,
+  game: 10,
 } as const;
 
 /** Level n starts at 50 × n × (n − 1): 0, 100, 300, 600, 1000 … so each level takes a little longer than the last. */
@@ -103,6 +112,8 @@ export function emptyProgress(): Progress {
     stories: [],
     forms: [],
     moneyIntro: false,
+    challenges: {},
+    games: {},
   };
 }
 
@@ -143,6 +154,8 @@ export function normalizeProgress(raw: unknown): Progress {
     stories: strings(old.stories),
     forms: strings(old.forms),
     moneyIntro: old.moneyIntro === true,
+    challenges: isRecord(old.challenges) ? Object.fromEntries(Object.entries(old.challenges).map(([date, ids]) => [date, strings(ids)])) : {},
+    games: isRecord(old.games) ? Object.fromEntries(Object.entries(old.games).filter(([, score]) => typeof score === "number")) as Record<string, number> : {},
   };
   // Older builds only stored a count and the last day. Rebuild the days it stood for.
   if (next.days.length === 0 && next.lastAnswerDate && next.streak > 0) {
@@ -319,5 +332,30 @@ export function mergeProgress(local: Progress, remote: Progress, today: string):
     stories: [...new Set([...local.stories, ...remote.stories])],
     forms: [...new Set([...local.forms, ...remote.forms])],
     moneyIntro: local.moneyIntro || remote.moneyIntro,
+    challenges: prune(unionSteps(local.challenges, remote.challenges), today),
+    games: Object.fromEntries(
+      [...new Set([...Object.keys(local.games), ...Object.keys(remote.games)])].map((key) => [key, Math.max(local.games[key] ?? 0, remote.games[key] ?? 0)]),
+    ),
   };
+}
+
+/**
+ * One part of today's challenges finished. Each part counts once a day; finishing all three earns a bonus.
+ * "parts" is how many parts today's plan has, so the bonus is given when the last one is done.
+ */
+export function finishChallenge(progress: Progress, id: string, xp: number, today: string, parts = 3): Progress {
+  const done = progress.challenges[today] ?? [];
+  if (done.includes(id)) return progress;
+  const nextDone = [...done, id];
+  const bonus = nextDone.length === parts ? XP.allChallenges : 0;
+  const next = markTask(progress, "challenge", today);
+  return { ...next, xp: next.xp + xp + bonus, challenges: prune({ ...progress.challenges, [today]: nextDone }, today) };
+}
+
+/** A game round finished. The best score is kept; XP is earned once a day. */
+export function finishGame(progress: Progress, game: string, score: number, today: string): Progress {
+  const playedToday = (progress.tasks[today] ?? []).includes("game");
+  const best = Math.max(progress.games[game] ?? 0, score);
+  const next = markTask({ ...progress, games: { ...progress.games, [game]: best } }, "game", today);
+  return playedToday ? next : { ...next, xp: next.xp + XP.game + Math.min(score, 10) * 2 };
 }

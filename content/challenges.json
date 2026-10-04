@@ -1,0 +1,800 @@
+{
+ "reviewed": "2026-10",
+ "crises": [
+  {
+   "id": "crisis-banking",
+   "topic": "banking",
+   "title": {
+    "en": "The ₹1 request",
+    "hi": "₹1 की रिक्वेस्ट",
+    "mr": "₹1 ची रिक्वेस्ट"
+   },
+   "story": {
+    "en": "A stranger who wants to buy your old cycle online says: \"I sent you a ₹1 request to check your UPI. Just accept it and enter your PIN, then I will pay ₹4,000.\"",
+    "hi": "आपकी पुरानी साइकिल ऑनलाइन खरीदने वाला एक अनजान व्यक्ति कहता है: \"आपका UPI जाँचने के लिए ₹1 की रिक्वेस्ट भेजी है। बस स्वीकार करके PIN डालें, फिर मैं ₹4,000 भेजूँगा।\"",
+    "mr": "तुमची जुनी सायकल ऑनलाइन विकत घेणारी एक अनोळखी व्यक्ती म्हणते: \"तुमचा UPI तपासण्यासाठी ₹1 ची रिक्वेस्ट पाठवली आहे. फक्त स्वीकारा आणि PIN टाका, मग मी ₹4,000 पाठवतो.\""
+   },
+   "question": {
+    "en": "What do you do?",
+    "hi": "आप क्या करेंगे?",
+    "mr": "तुम्ही काय कराल?"
+   },
+   "options": [
+    {
+     "en": "Accept and enter the PIN. It is only ₹1.",
+     "hi": "स्वीकार करके PIN डाल दें। सिर्फ़ ₹1 है।",
+     "mr": "स्वीकारून PIN टाका. फक्त ₹1 आहे."
+    },
+    {
+     "en": "Decline. A PIN is only ever entered to send money, never to receive it.",
+     "hi": "मना कर दें। PIN सिर्फ़ पैसे भेजने के लिए डाला जाता है, पाने के लिए कभी नहीं।",
+     "mr": "नाकारा. PIN फक्त पैसे पाठवण्यासाठी टाकतात, घेण्यासाठी कधीच नाही."
+    },
+    {
+     "en": "Send your PIN in chat so they can do it for you.",
+     "hi": "चैट में PIN भेज दें ताकि वे कर दें।",
+     "mr": "चॅटमध्ये PIN पाठवा म्हणजे ते करतील."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "Entering your UPI PIN always takes money out. Someone paying you never needs your PIN or any request accepted.",
+    "hi": "UPI PIN डालने से पैसा हमेशा खाते से जाता है। जो आपको पैसे दे रहा है उसे कभी आपके PIN या रिक्वेस्ट स्वीकार करने की ज़रूरत नहीं होती।",
+    "mr": "UPI PIN टाकल्यावर पैसे नेहमी खात्यातून जातात. जो तुम्हाला पैसे देतो त्याला तुमचा PIN किंवा रिक्वेस्ट स्वीकारण्याची कधीच गरज नसते."
+   },
+   "guide": "upi-safety"
+  },
+  {
+   "id": "crisis-budgeting",
+   "topic": "budgeting",
+   "title": {
+    "en": "Ten days, ₹900 left",
+    "hi": "दस दिन, ₹900 बचे",
+    "mr": "दहा दिवस, ₹900 उरले"
+   },
+   "story": {
+    "en": "It is the 20th. You have ₹900 until the next payment on the 1st. Friends plan a ₹700 movie and dinner night this weekend.",
+    "hi": "आज 20 तारीख है। अगली 1 तारीख तक आपके पास ₹900 हैं। दोस्त इस हफ़्ते ₹700 की मूवी और डिनर की योजना बना रहे हैं।",
+    "mr": "आज 20 तारीख आहे. पुढच्या 1 तारखेपर्यंत तुमच्याकडे ₹900 आहेत. मित्र या आठवड्यात ₹700 चा सिनेमा आणि जेवणाचा बेत करत आहेत."
+   },
+   "question": {
+    "en": "What is the smartest move?",
+    "hi": "सबसे समझदारी क्या है?",
+    "mr": "सर्वात शहाणपणाचे काय?"
+   },
+   "options": [
+    {
+     "en": "Go. Borrow from someone later if needed.",
+     "hi": "जाएँ। ज़रूरत पड़ी तो बाद में उधार ले लेंगे।",
+     "mr": "जा. गरज पडली तर नंतर उसने घेऊ."
+    },
+    {
+     "en": "Work out what the next ten days need first, then decide what is left for fun, or suggest a cheaper plan.",
+     "hi": "पहले हिसाब लगाएँ कि अगले दस दिन किस चीज़ की ज़रूरत है, फिर देखें मज़े के लिए कितना बचता है, या सस्ता प्लान सुझाएँ।",
+     "mr": "आधी पुढच्या दहा दिवसांना काय लागेल ते मोजा, मग मजेसाठी किती उरते ते ठरवा, किंवा स्वस्त बेत सुचवा."
+    },
+    {
+     "en": "Skip meals for a few days to afford it.",
+     "hi": "इसके लिए कुछ दिन खाना छोड़ दें।",
+     "mr": "त्यासाठी काही दिवस जेवण टाळा."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "A budget is a plan for the days ahead, not a record of the past. Needs first, then wants with what is left. Saying \"let's do something cheaper\" is normal.",
+    "hi": "बजट आगे के दिनों की योजना है, सिर्फ़ पीछे का हिसाब नहीं। पहले ज़रूरतें, फिर बचे पैसों से चाहतें। \"कुछ सस्ता करते हैं\" कहना बिल्कुल सामान्य है।",
+    "mr": "बजेट म्हणजे पुढच्या दिवसांची योजना, फक्त मागचा हिशोब नाही. आधी गरजा, मग उरलेल्यातून इच्छा. \"काहीतरी स्वस्त करूया\" म्हणणे अगदी साधे आहे."
+   },
+   "guide": "budget"
+  },
+  {
+   "id": "crisis-saving",
+   "topic": "saving",
+   "title": {
+    "en": "The phone that cracked",
+    "hi": "जो फ़ोन टूट गया",
+    "mr": "जो फोन फुटला"
+   },
+   "story": {
+    "en": "Your phone screen cracks. The repair is ₹3,500. You have no money set aside, and a shop offers to put it on a \"no cost EMI\".",
+    "hi": "आपके फ़ोन की स्क्रीन टूट गई। मरम्मत ₹3,500 की है। आपके पास अलग रखे पैसे नहीं हैं, और दुकान \"नो कॉस्ट ईएमआई\" ऑफ़र करती है।",
+    "mr": "तुमच्या फोनची स्क्रीन फुटली. दुरुस्ती ₹3,500 ची आहे. तुमच्याकडे बाजूला ठेवलेले पैसे नाहीत आणि दुकान \"नो कॉस्ट ईएमआय\" देऊ करते."
+   },
+   "question": {
+    "en": "What does this teach for next time?",
+    "hi": "अगली बार के लिए इससे क्या सीख मिलती है?",
+    "mr": "पुढच्या वेळेसाठी यातून काय शिकायचे?"
+   },
+   "options": [
+    {
+     "en": "Keep a small emergency fund, even a little each month, for surprises like this.",
+     "hi": "छोटा आपातकालीन फ़ंड रखें, हर महीने थोड़ा ही सही, ऐसे झटकों के लिए।",
+     "mr": "छोटा आपत्कालीन निधी ठेवा, दर महिन्याला थोडा तरी, अशा धक्क्यांसाठी."
+    },
+    {
+     "en": "Always buy the most expensive phone so it never breaks.",
+     "hi": "हमेशा सबसे महँगा फ़ोन खरीदें ताकि कभी न टूटे।",
+     "mr": "नेहमी सर्वात महाग फोन घ्या म्हणजे कधी फुटणार नाही."
+    },
+    {
+     "en": "Saving is pointless because something always goes wrong.",
+     "hi": "बचत बेकार है क्योंकि कुछ न कुछ बिगड़ता ही है।",
+     "mr": "बचत व्यर्थ आहे कारण काहीतरी बिघडतेच."
+    }
+   ],
+   "answer": 0,
+   "why": {
+    "en": "An emergency fund turns a crisis into an inconvenience. Start small: what matters is that the habit is there before the surprise is. And read any EMI offer fully: \"no cost\" can still carry fees.",
+    "hi": "आपातकालीन फ़ंड संकट को सिर्फ़ असुविधा बना देता है। छोटे से शुरू करें: ज़रूरी यह है कि झटके से पहले आदत बन जाए। और कोई भी ईएमआई ऑफ़र पूरा पढ़ें: \"नो कॉस्ट\" में भी शुल्क हो सकते हैं।",
+    "mr": "आपत्कालीन निधी संकटाला फक्त गैरसोय बनवतो. लहान सुरुवात करा: धक्का येण्याआधी सवय असणे महत्त्वाचे. आणि कोणतीही ईएमआय ऑफर पूर्ण वाचा: \"नो कॉस्ट\" मध्येही शुल्क असू शकते."
+   },
+   "guide": "emergency-fund"
+  },
+  {
+   "id": "crisis-income",
+   "topic": "income",
+   "title": {
+    "en": "The first payslip",
+    "hi": "पहली सैलरी स्लिप",
+    "mr": "पहिली पगार पावती"
+   },
+   "story": {
+    "en": "Your offer letter said one amount a month, but the money in your account is less. The payslip lists deductions you do not recognise.",
+    "hi": "ऑफ़र लेटर में महीने की एक रकम लिखी थी, पर खाते में कम पैसे आए। सैलरी स्लिप में ऐसी कटौतियाँ हैं जो आप नहीं पहचानते।",
+    "mr": "ऑफर लेटरमध्ये महिन्याची एक रक्कम होती, पण खात्यात कमी पैसे आले. पगार पावतीत अशा कपाती आहेत ज्या तुम्हाला ओळखता येत नाहीत."
+   },
+   "question": {
+    "en": "What should you do?",
+    "hi": "आपको क्या करना चाहिए?",
+    "mr": "तुम्ही काय करावे?"
+   },
+   "options": [
+    {
+     "en": "Assume the company cheated you and quit.",
+     "hi": "मान लें कंपनी ने धोखा दिया और नौकरी छोड़ दें।",
+     "mr": "कंपनीने फसवले असे समजून नोकरी सोडा."
+    },
+    {
+     "en": "Ignore it. Payslips are too complicated.",
+     "hi": "अनदेखा करें। सैलरी स्लिप बहुत उलझी होती है।",
+     "mr": "दुर्लक्ष करा. पगार पावती खूप किचकट असते."
+    },
+    {
+     "en": "Read each line, learn the difference between gross and take-home pay, and ask HR about anything unclear.",
+     "hi": "हर लाइन पढ़ें, कुल वेतन और हाथ में आने वाले वेतन का फ़र्क समझें, और जो साफ़ न हो वह HR से पूछें।",
+     "mr": "प्रत्येक ओळ वाचा, एकूण पगार आणि हातात येणारा पगार यातला फरक समजून घ्या, आणि जे स्पष्ट नाही ते HR ला विचारा."
+    }
+   ],
+   "answer": 2,
+   "why": {
+    "en": "Offer letters often show gross pay. Deductions such as provident fund and tax are taken before the money reaches you. Asking HR to explain your payslip is your right.",
+    "hi": "ऑफ़र लेटर में अक्सर कुल वेतन होता है। भविष्य निधि और टैक्स जैसी कटौतियाँ पैसा आप तक पहुँचने से पहले होती हैं। HR से अपनी सैलरी स्लिप समझना आपका अधिकार है।",
+    "mr": "ऑफर लेटरमध्ये अनेकदा एकूण पगार असतो. भविष्य निर्वाह निधी आणि कर यांसारख्या कपाती पैसे तुमच्यापर्यंत येण्याआधी होतात. HR कडून पगार पावती समजून घेणे हा तुमचा हक्क आहे."
+   },
+   "guide": "salary-slip"
+  },
+  {
+   "id": "crisis-investing",
+   "topic": "investing",
+   "title": {
+    "en": "Double in a month",
+    "hi": "एक महीने में दोगुना",
+    "mr": "एका महिन्यात दुप्पट"
+   },
+   "story": {
+    "en": "A group on your phone shares screenshots of people who \"doubled their money in 30 days\" with a trading tip service. Joining costs ₹2,000.",
+    "hi": "आपके फ़ोन पर एक ग्रुप उन लोगों के स्क्रीनशॉट भेजता है जिन्होंने एक ट्रेडिंग टिप सर्विस से \"30 दिन में पैसा दोगुना\" किया। जुड़ने के ₹2,000 लगते हैं।",
+    "mr": "तुमच्या फोनवरचा एक ग्रुप अशा लोकांचे स्क्रीनशॉट पाठवतो ज्यांनी एका ट्रेडिंग टिप सेवेमुळे \"30 दिवसांत पैसे दुप्पट\" केले. सामील होण्यासाठी ₹2,000 लागतात."
+   },
+   "question": {
+    "en": "What is the red flag?",
+    "hi": "ख़तरे का निशान क्या है?",
+    "mr": "धोक्याची खूण कोणती?"
+   },
+   "options": [
+    {
+     "en": "Nothing. Screenshots prove it works.",
+     "hi": "कुछ नहीं। स्क्रीनशॉट से साबित होता है।",
+     "mr": "काही नाही. स्क्रीनशॉटमुळे सिद्ध होते."
+    },
+    {
+     "en": "A promise of quick, sure, big returns. Real investments carry risk and no one can promise doubling.",
+     "hi": "जल्दी, पक्का और बड़ा मुनाफ़ा देने का वादा। असली निवेश में जोखिम होता है और कोई दोगुना होने का वादा नहीं कर सकता।",
+     "mr": "झटपट, खात्रीशीर आणि मोठ्या परताव्याचे वचन. खऱ्या गुंतवणुकीत जोखीम असते आणि कोणीही दुप्पट होण्याचे वचन देऊ शकत नाही."
+    },
+    {
+     "en": "The fee is too low; good tips cost more.",
+     "hi": "फ़ीस बहुत कम है; अच्छी टिप्स महँगी होती हैं।",
+     "mr": "फी खूप कमी आहे; चांगल्या टिप्स महाग असतात."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "Screenshots are easy to fake. Guaranteed high returns are the most common sign of a scam. Check whether an adviser is registered with SEBI before trusting them.",
+    "hi": "स्क्रीनशॉट आसानी से नकली बनते हैं। पक्का ऊँचा मुनाफ़ा ठगी का सबसे आम निशान है। किसी सलाहकार पर भरोसा करने से पहले देखें कि वह SEBI में पंजीकृत है या नहीं।",
+    "mr": "स्क्रीनशॉट सहज खोटे बनवता येतात. खात्रीशीर मोठा परतावा हे फसवणुकीचे सर्वात सामान्य लक्षण आहे. सल्लागारावर विश्वास ठेवण्याआधी तो SEBI कडे नोंदणीकृत आहे का ते तपासा."
+   },
+   "guide": "double-money"
+  },
+  {
+   "id": "crisis-insurance",
+   "topic": "insurance",
+   "title": {
+    "en": "A night in hospital",
+    "hi": "अस्पताल में एक रात",
+    "mr": "रुग्णालयात एक रात्र"
+   },
+   "story": {
+    "en": "Your father needs to stay in hospital for two nights. At the desk they ask: \"Do you have health insurance or a government health card?\" Nobody at home knows.",
+    "hi": "आपके पिता को दो रात अस्पताल में रहना है। काउंटर पर पूछा जाता है: \"क्या आपके पास स्वास्थ्य बीमा या सरकारी स्वास्थ्य कार्ड है?\" घर में किसी को पता नहीं।",
+    "mr": "तुमच्या वडिलांना दोन रात्री रुग्णालयात राहावे लागणार आहे. काउंटरवर विचारतात: \"तुमच्याकडे आरोग्य विमा किंवा सरकारी आरोग्य कार्ड आहे का?\" घरात कुणालाच माहीत नाही."
+   },
+   "question": {
+    "en": "What is the lesson for every family?",
+    "hi": "हर परिवार के लिए क्या सीख है?",
+    "mr": "प्रत्येक कुटुंबासाठी काय धडा आहे?"
+   },
+   "options": [
+    {
+     "en": "Know what cover the family has, keep the policy or card details where everyone can find them, and check eligibility for government schemes.",
+     "hi": "जानें परिवार के पास कौन सा कवर है, पॉलिसी या कार्ड की जानकारी ऐसी जगह रखें जहाँ सब ढूँढ सकें, और सरकारी योजनाओं की पात्रता जाँचें।",
+     "mr": "कुटुंबाकडे कोणते संरक्षण आहे ते जाणा, पॉलिसी किंवा कार्डची माहिती सगळ्यांना सापडेल अशा ठिकाणी ठेवा, आणि सरकारी योजनांची पात्रता तपासा."
+    },
+    {
+     "en": "Insurance is only for rich people.",
+     "hi": "बीमा सिर्फ़ अमीरों के लिए है।",
+     "mr": "विमा फक्त श्रीमंतांसाठी असतो."
+    },
+    {
+     "en": "Pay cash now and worry about it later.",
+     "hi": "अभी नकद दें और बाद में सोचें।",
+     "mr": "आता रोख द्या आणि नंतर विचार करा."
+    }
+   ],
+   "answer": 0,
+   "why": {
+    "en": "Cover only helps if you know you have it. Private health insurance and government schemes for eligible families both exist; the Insurance and Government schemes guides show where to check.",
+    "hi": "कवर तभी काम आता है जब आपको पता हो कि वह है। निजी स्वास्थ्य बीमा और पात्र परिवारों के लिए सरकारी योजनाएँ दोनों होती हैं; बीमा और सरकारी योजनाओं की गाइड बताती हैं कहाँ जाँचें।",
+    "mr": "संरक्षण आहे हे माहीत असेल तरच ते उपयोगी पडते. खाजगी आरोग्य विमा आणि पात्र कुटुंबांसाठी सरकारी योजना दोन्ही असतात; विमा आणि सरकारी योजनांच्या मार्गदर्शिका कुठे तपासायचे ते सांगतात."
+   },
+   "guide": "health-cover"
+  },
+  {
+   "id": "crisis-borrowing",
+   "topic": "borrowing",
+   "title": {
+    "en": "The instant loan app",
+    "hi": "तुरंत लोन वाला ऐप",
+    "mr": "झटपट कर्जाचे अ‍ॅप"
+   },
+   "story": {
+    "en": "An app offers ₹5,000 in five minutes, no documents. To start, it wants access to your contacts and photos.",
+    "hi": "एक ऐप पाँच मिनट में ₹5,000 देने को कहता है, बिना कागज़। शुरू करने के लिए वह आपके कॉन्टैक्ट और फ़ोटो की अनुमति माँगता है।",
+    "mr": "एक अ‍ॅप पाच मिनिटांत ₹5,000 देऊ करते, कागदपत्रांशिवाय. सुरू करण्यासाठी ते तुमचे संपर्क आणि फोटो वापरण्याची परवानगी मागते."
+   },
+   "question": {
+    "en": "What do you do?",
+    "hi": "आप क्या करेंगे?",
+    "mr": "तुम्ही काय कराल?"
+   },
+   "options": [
+    {
+     "en": "Allow everything. It is quick money.",
+     "hi": "सब अनुमति दें। जल्दी पैसा है।",
+     "mr": "सगळ्या परवानग्या द्या. झटपट पैसे आहेत."
+    },
+    {
+     "en": "Allow only contacts, not photos.",
+     "hi": "सिर्फ़ कॉन्टैक्ट दें, फ़ोटो नहीं।",
+     "mr": "फक्त संपर्क द्या, फोटो नाही."
+    },
+    {
+     "en": "Do not install it. Check that a lender is a bank or an RBI-regulated lender, and read the total cost first.",
+     "hi": "इंस्टॉल न करें। जाँचें कि कर्ज़ देने वाला बैंक या RBI से नियंत्रित संस्था है, और पहले कुल लागत पढ़ें।",
+     "mr": "इन्स्टॉल करू नका. कर्ज देणारी बँक किंवा RBI नियंत्रित संस्था आहे का ते तपासा, आणि आधी एकूण खर्च वाचा."
+    }
+   ],
+   "answer": 2,
+   "why": {
+    "en": "Apps that want your contacts can use them to shame or threaten you. Borrow only from regulated lenders, and compare the total you will pay back, not just the EMI.",
+    "hi": "जो ऐप कॉन्टैक्ट माँगते हैं वे उनसे आपको शर्मिंदा कर सकते हैं या धमका सकते हैं। सिर्फ़ नियंत्रित संस्थाओं से उधार लें, और सिर्फ़ ईएमआई नहीं, कुल चुकाने वाली रकम देखें।",
+    "mr": "जे अ‍ॅप संपर्क मागतात ते त्यांचा वापर तुम्हाला लाजवण्यासाठी किंवा धमकावण्यासाठी करू शकतात. फक्त नियंत्रित संस्थांकडून कर्ज घ्या, आणि फक्त ईएमआय नाही तर एकूण परतफेड पाहा."
+   },
+   "guide": "fake-loan-apps"
+  },
+  {
+   "id": "crisis-tax",
+   "topic": "tax",
+   "title": {
+    "en": "The refund message",
+    "hi": "रिफ़ंड का मैसेज",
+    "mr": "रिफंडचा मेसेज"
+   },
+   "story": {
+    "en": "An SMS says: \"Your income tax refund is approved. Click this link and enter your bank details within 24 hours.\"",
+    "hi": "एक SMS आता है: \"आपका इनकम टैक्स रिफ़ंड मंज़ूर हुआ। 24 घंटे में इस लिंक पर क्लिक करके बैंक विवरण डालें।\"",
+    "mr": "एक SMS येतो: \"तुमचा इन्कम टॅक्स रिफंड मंजूर झाला. 24 तासांत या लिंकवर क्लिक करून बँक तपशील भरा.\""
+   },
+   "question": {
+    "en": "What is the safe step?",
+    "hi": "सुरक्षित कदम क्या है?",
+    "mr": "सुरक्षित पाऊल कोणते?"
+   },
+   "options": [
+    {
+     "en": "Click quickly before it expires.",
+     "hi": "ख़त्म होने से पहले जल्दी क्लिक करें।",
+     "mr": "मुदत संपण्याआधी पटकन क्लिक करा."
+    },
+    {
+     "en": "Do not click. Check refund status only by typing the official income tax website address yourself.",
+     "hi": "क्लिक न करें। रिफ़ंड की स्थिति सिर्फ़ आधिकारिक इनकम टैक्स वेबसाइट का पता खुद टाइप करके देखें।",
+     "mr": "क्लिक करू नका. रिफंडची स्थिती फक्त अधिकृत इन्कम टॅक्स वेबसाइटचा पत्ता स्वतः टाइप करून पाहा."
+    },
+    {
+     "en": "Reply with your PAN so they can verify.",
+     "hi": "जाँच के लिए PAN भेज दें।",
+     "mr": "पडताळणीसाठी PAN पाठवा."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "Refunds are paid to the bank account already linked on the official portal. Urgent links asking for bank details are a classic trick.",
+    "hi": "रिफ़ंड उसी खाते में आता है जो आधिकारिक पोर्टल पर पहले से जुड़ा है। बैंक विवरण माँगने वाले जल्दबाज़ी के लिंक पुरानी चाल हैं।",
+    "mr": "रिफंड अधिकृत पोर्टलवर आधीच जोडलेल्या खात्यात येतो. बँक तपशील मागणाऱ्या घाईच्या लिंक ही जुनी युक्ती आहे."
+   },
+   "guide": "scam-calls"
+  },
+  {
+   "id": "crisis-schemes",
+   "topic": "schemes",
+   "title": {
+    "en": "The agent with a scheme",
+    "hi": "योजना वाला एजेंट",
+    "mr": "योजनेचा एजंट"
+   },
+   "story": {
+    "en": "A man at the door says he can get your grandmother a government pension quickly. He wants ₹1,500 \"processing fee\" and her Aadhaar card.",
+    "hi": "दरवाज़े पर एक आदमी कहता है वह आपकी दादी की सरकारी पेंशन जल्दी करवा देगा। वह ₹1,500 \"प्रोसेसिंग फ़ीस\" और उनका आधार कार्ड माँगता है।",
+    "mr": "दारात एक माणूस म्हणतो तो तुमच्या आजीची सरकारी पेन्शन लवकर करून देईल. तो ₹1,500 \"प्रोसेसिंग फी\" आणि तिचे आधार कार्ड मागतो."
+   },
+   "question": {
+    "en": "What do you do?",
+    "hi": "आप क्या करेंगे?",
+    "mr": "तुम्ही काय कराल?"
+   },
+   "options": [
+    {
+     "en": "Pay him. Agents know how things work.",
+     "hi": "पैसे दे दें। एजेंट को सब पता होता है।",
+     "mr": "पैसे द्या. एजंटला सगळे माहीत असते."
+    },
+    {
+     "en": "Apply through the official portal, the bank or a Common Service Centre, and never hand over documents to a stranger.",
+     "hi": "आधिकारिक पोर्टल, बैंक या कॉमन सर्विस सेंटर से आवेदन करें, और किसी अनजान को कागज़ न दें।",
+     "mr": "अधिकृत पोर्टल, बँक किंवा कॉमन सर्व्हिस सेंटरमधून अर्ज करा, आणि अनोळखी व्यक्तीला कागदपत्रे देऊ नका."
+    },
+    {
+     "en": "Give the Aadhaar card but not the money.",
+     "hi": "आधार दे दें पर पैसे नहीं।",
+     "mr": "आधार द्या पण पैसे नाही."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "Government schemes are applied for through official channels. Anyone asking for a fee to \"speed up\" a scheme at your door is a warning sign.",
+    "hi": "सरकारी योजनाओं के लिए आवेदन आधिकारिक रास्तों से होता है। दरवाज़े पर योजना \"जल्दी\" करवाने की फ़ीस माँगने वाला ख़तरे का संकेत है।",
+    "mr": "सरकारी योजनांसाठी अर्ज अधिकृत मार्गांनी होतो. दारात योजना \"लवकर\" करण्यासाठी फी मागणारा धोक्याचे लक्षण आहे."
+   },
+   "guide": "govt-schemes"
+  },
+  {
+   "id": "crisis-paperwork",
+   "topic": "paperwork",
+   "title": {
+    "en": "Sign here, quickly",
+    "hi": "यहाँ साइन करें, जल्दी",
+    "mr": "इथे सही करा, पटकन"
+   },
+   "story": {
+    "en": "At a shop, the salesperson fills in a loan form for your new fridge and says, \"Just sign at the crosses, I filled everything.\" Some boxes are still blank.",
+    "hi": "दुकान पर सेल्समैन आपके नए फ़्रिज के लिए लोन फ़ॉर्म भरता है और कहता है, \"बस क्रॉस पर साइन कर दीजिए, मैंने सब भर दिया।\" कुछ खाने अभी खाली हैं।",
+    "mr": "दुकानात सेल्समन तुमच्या नव्या फ्रिजसाठी कर्जाचा फॉर्म भरतो आणि म्हणतो, \"फक्त फुलीवर सही करा, मी सगळे भरले आहे.\" काही रकाने अजून रिकामे आहेत."
+   },
+   "question": {
+    "en": "What do you do?",
+    "hi": "आप क्या करेंगे?",
+    "mr": "तुम्ही काय कराल?"
+   },
+   "options": [
+    {
+     "en": "Sign. He does this every day.",
+     "hi": "साइन कर दें। वह यह रोज़ करता है।",
+     "mr": "सही करा. तो हे रोज करतो."
+    },
+    {
+     "en": "Read every line, never sign a form with blank boxes, cross out what is empty, and keep a copy.",
+     "hi": "हर लाइन पढ़ें, खाली खानों वाले फ़ॉर्म पर कभी साइन न करें, खाली जगह काट दें, और एक कॉपी रखें।",
+     "mr": "प्रत्येक ओळ वाचा, रिकामे रकाने असलेल्या फॉर्मवर कधीच सही करू नका, रिकामी जागा खोडा, आणि प्रत ठेवा."
+    },
+    {
+     "en": "Sign only the first page.",
+     "hi": "सिर्फ़ पहले पन्ने पर साइन करें।",
+     "mr": "फक्त पहिल्या पानावर सही करा."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "Your signature means you agree to everything on the paper, including what someone writes in later. Blank boxes can be filled with anything.",
+    "hi": "आपका साइन मतलब आप काग़ज़ की हर बात से सहमत हैं, बाद में लिखी गई बात से भी। खाली खानों में कुछ भी भरा जा सकता है।",
+    "mr": "तुमची सही म्हणजे कागदावरील सगळ्याला तुमची संमती, नंतर लिहिलेल्यालाही. रिकाम्या रकान्यांत काहीही भरता येते."
+   },
+   "guide": "before-you-sign"
+  },
+  {
+   "id": "crisis-family",
+   "topic": "family",
+   "title": {
+    "en": "Lend to a cousin?",
+    "hi": "चचेरे भाई को उधार?",
+    "mr": "चुलत भावाला उसने?"
+   },
+   "story": {
+    "en": "A cousin asks to borrow ₹10,000 for \"one month\". Last year's ₹3,000 has not come back yet. Your parents say family must help family.",
+    "hi": "एक चचेरा भाई \"एक महीने\" के लिए ₹10,000 उधार माँगता है। पिछले साल के ₹3,000 अभी तक नहीं लौटे। माता-पिता कहते हैं परिवार को परिवार की मदद करनी चाहिए।",
+    "mr": "एक चुलत भाऊ \"एका महिन्यासाठी\" ₹10,000 उसने मागतो. मागच्या वर्षीचे ₹3,000 अजून परत आले नाहीत. आई-वडील म्हणतात कुटुंबाने कुटुंबाला मदत करायला हवी."
+   },
+   "question": {
+    "en": "What is a healthy way to handle it?",
+    "hi": "इसे सँभालने का अच्छा तरीका क्या है?",
+    "mr": "हे हाताळण्याचा चांगला मार्ग कोणता?"
+   },
+   "options": [
+    {
+     "en": "Give whatever amount you could live without if it never came back, and agree on a plan out loud.",
+     "hi": "उतनी ही रकम दें जो वापस न आए तो भी आप सह सकें, और लौटाने की योजना पर साफ़ बात करें।",
+     "mr": "परत आले नाहीत तरी चालेल एवढीच रक्कम द्या, आणि परतफेडीच्या योजनेवर स्पष्ट बोला."
+    },
+    {
+     "en": "Take a loan yourself to give him the full amount.",
+     "hi": "पूरी रकम देने के लिए खुद कर्ज़ लें।",
+     "mr": "पूर्ण रक्कम देण्यासाठी स्वतः कर्ज घ्या."
+    },
+    {
+     "en": "Stop talking to him.",
+     "hi": "उससे बात करना बंद कर दें।",
+     "mr": "त्याच्याशी बोलणे बंद करा."
+    }
+   ],
+   "answer": 0,
+   "why": {
+    "en": "Helping family is good, but not at the cost of your own needs. Lend only what you can afford to lose, and talk openly about when it comes back.",
+    "hi": "परिवार की मदद अच्छी है, पर अपनी ज़रूरतों की कीमत पर नहीं। उतना ही उधार दें जितना खो सकें, और लौटाने पर खुलकर बात करें।",
+    "mr": "कुटुंबाला मदत करणे चांगले, पण स्वतःच्या गरजांच्या किमतीवर नाही. गमावणे परवडेल एवढेच उसने द्या, आणि परतफेडीवर मोकळेपणाने बोला."
+   },
+   "guide": "lending-friends"
+  },
+  {
+   "id": "crisis-retirement",
+   "topic": "retirement",
+   "title": {
+    "en": "Too early to think about it?",
+    "hi": "इसके बारे में सोचना जल्दी है?",
+    "mr": "याचा विचार करणे लवकर आहे?"
+   },
+   "story": {
+    "en": "A colleague, 24, says retirement saving can wait until 40. Another, 50, says she wishes she had started at 25.",
+    "hi": "24 साल का एक साथी कहता है सेवानिवृत्ति की बचत 40 तक रुक सकती है। 50 साल की एक और साथी कहती है काश उसने 25 में शुरू किया होता।",
+    "mr": "24 वर्षांचा एक सहकारी म्हणतो निवृत्तीची बचत 40 पर्यंत थांबू शकते. 50 वर्षांची दुसरी सहकारी म्हणते, 25 व्या वर्षी सुरू केले असते तर बरे झाले असते."
+   },
+   "question": {
+    "en": "Why does starting early matter?",
+    "hi": "जल्दी शुरू करना क्यों मायने रखता है?",
+    "mr": "लवकर सुरू करणे का महत्त्वाचे?"
+   },
+   "options": [
+    {
+     "en": "It does not; the amount is all that matters.",
+     "hi": "नहीं रखता; सिर्फ़ रकम मायने रखती है।",
+     "mr": "नाही; फक्त रक्कम महत्त्वाची."
+    },
+    {
+     "en": "Money saved early has more years to grow, because growth is earned on earlier growth too.",
+     "hi": "जल्दी बचाया पैसा ज़्यादा साल बढ़ता है, क्योंकि बढ़त पर भी बढ़त मिलती है।",
+     "mr": "लवकर वाचवलेले पैसे जास्त वर्षे वाढतात, कारण वाढीवरही वाढ मिळते."
+    },
+    {
+     "en": "Because prices never rise.",
+     "hi": "क्योंकि दाम कभी नहीं बढ़ते।",
+     "mr": "कारण किमती कधीच वाढत नाहीत."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "This is compounding: earnings start earning too. Time is the one ingredient you cannot add later, so even small, steady amounts started young can matter a lot.",
+    "hi": "यही चक्रवृद्धि है: कमाई भी कमाने लगती है। समय वह चीज़ है जो बाद में नहीं जोड़ी जा सकती, इसलिए कम उम्र में शुरू की गई छोटी, नियमित रकम भी बहुत मायने रखती है।",
+    "mr": "हीच चक्रवाढ: कमाईही कमवू लागते. वेळ हा असा घटक आहे जो नंतर जोडता येत नाही, म्हणून लहान वयात सुरू केलेली छोटी, नियमित रक्कमही खूप महत्त्वाची ठरते."
+   },
+   "guide": "retirement-basics"
+  },
+  {
+   "id": "crisis-scams",
+   "topic": "scams",
+   "title": {
+    "en": "The call from \"your bank\"",
+    "hi": "\"आपके बैंक\" से कॉल",
+    "mr": "\"तुमच्या बँकेकडून\" फोन"
+   },
+   "story": {
+    "en": "A caller knows your name and the last four digits of your card. \"Your account will be blocked in 10 minutes. Tell me the OTP we just sent to stop it.\"",
+    "hi": "कॉल करने वाले को आपका नाम और कार्ड के आख़िरी चार अंक पता हैं। \"10 मिनट में आपका खाता बंद हो जाएगा। रोकने के लिए अभी भेजा OTP बताइए।\"",
+    "mr": "फोन करणाऱ्याला तुमचे नाव आणि कार्डचे शेवटचे चार अंक माहीत आहेत. \"10 मिनिटांत तुमचे खाते बंद होईल. थांबवण्यासाठी आत्ता पाठवलेला OTP सांगा.\""
+   },
+   "question": {
+    "en": "What do you do?",
+    "hi": "आप क्या करेंगे?",
+    "mr": "तुम्ही काय कराल?"
+   },
+   "options": [
+    {
+     "en": "Share the OTP; they already know your details.",
+     "hi": "OTP बता दें; उन्हें आपकी जानकारी पहले से पता है।",
+     "mr": "OTP सांगा; त्यांना तुमची माहिती आधीच माहीत आहे."
+    },
+    {
+     "en": "Hang up. Call the number on the back of your card. If money was taken, call 1930 at once.",
+     "hi": "फ़ोन काट दें। कार्ड के पीछे लिखे नंबर पर कॉल करें। पैसे कटे हों तो तुरंत 1930 पर कॉल करें।",
+     "mr": "फोन ठेवा. कार्डच्या मागे लिहिलेल्या नंबरवर फोन करा. पैसे गेले असतील तर लगेच 1930 वर फोन करा."
+    },
+    {
+     "en": "Ask them to call back later.",
+     "hi": "उन्हें बाद में कॉल करने को कहें।",
+     "mr": "त्यांना नंतर फोन करायला सांगा."
+    }
+   ],
+   "answer": 1,
+   "why": {
+    "en": "Banks never ask for your OTP, PIN or password. Knowing some details proves nothing. 1930 is the national cyber fraud helpline.",
+    "hi": "बैंक कभी OTP, PIN या पासवर्ड नहीं माँगते। कुछ जानकारी पता होना कुछ साबित नहीं करता। 1930 राष्ट्रीय साइबर धोखाधड़ी हेल्पलाइन है।",
+    "mr": "बँक कधीच OTP, PIN किंवा पासवर्ड मागत नाही. काही माहिती माहीत असणे काहीच सिद्ध करत नाही. 1930 ही राष्ट्रीय सायबर फसवणूक हेल्पलाइन आहे."
+   },
+   "guide": "otp-pin"
+  }
+ ],
+ "tasks": [
+  {
+   "id": "task-banking-1",
+   "topic": "banking",
+   "text": {
+    "en": "Open your bank app and read your last ten transactions. Do you recognise every one?",
+    "hi": "अपना बैंक ऐप खोलें और पिछले दस लेन-देन पढ़ें। क्या आप हर एक को पहचानते हैं?",
+    "mr": "तुमचे बँक अ‍ॅप उघडा आणि शेवटचे दहा व्यवहार वाचा. प्रत्येक ओळखता येतो का?"
+   }
+  },
+  {
+   "id": "task-banking-2",
+   "topic": "banking",
+   "text": {
+    "en": "Find your bank's official customer care number on its website or card and save it in your phone.",
+    "hi": "अपने बैंक का आधिकारिक कस्टमर केयर नंबर उसकी वेबसाइट या कार्ड से ढूँढकर फ़ोन में सेव करें।",
+    "mr": "तुमच्या बँकेचा अधिकृत ग्राहक सेवा क्रमांक तिच्या वेबसाइटवरून किंवा कार्डवरून शोधून फोनमध्ये सेव्ह करा."
+   }
+  },
+  {
+   "id": "task-budgeting-1",
+   "topic": "budgeting",
+   "text": {
+    "en": "Write down every rupee you spend today, even ₹10 tea. Log it in Money Lab tonight.",
+    "hi": "आज हर रुपया लिखें जो आप खर्च करते हैं, ₹10 की चाय भी। रात को मनी लैब में दर्ज करें।",
+    "mr": "आज खर्च केलेला प्रत्येक रुपया लिहा, ₹10 चा चहासुद्धा. रात्री मनी लॅबमध्ये नोंदवा."
+   }
+  },
+  {
+   "id": "task-budgeting-2",
+   "topic": "budgeting",
+   "text": {
+    "en": "List your three biggest needs for this month and what each will cost.",
+    "hi": "इस महीने की तीन सबसे बड़ी ज़रूरतें और हर एक की लागत लिखें।",
+    "mr": "या महिन्याच्या तीन सर्वात मोठ्या गरजा आणि प्रत्येकाचा खर्च लिहा."
+   }
+  },
+  {
+   "id": "task-saving-1",
+   "topic": "saving",
+   "text": {
+    "en": "Move a small amount, even ₹50, into savings today and give that pot a name.",
+    "hi": "आज थोड़ी सी रकम, ₹50 ही सही, बचत में डालें और उस बचत को एक नाम दें।",
+    "mr": "आज थोडी रक्कम, ₹50 तरी, बचतीत टाका आणि त्या बचतीला एक नाव द्या."
+   }
+  },
+  {
+   "id": "task-saving-2",
+   "topic": "saving",
+   "text": {
+    "en": "Pick one thing you buy often and skip it once this week. Note what you saved.",
+    "hi": "एक चीज़ चुनें जो आप अक्सर खरीदते हैं और इस हफ़्ते एक बार छोड़ दें। जो बचा वह लिखें।",
+    "mr": "तुम्ही नेहमी घेता अशी एक गोष्ट निवडा आणि या आठवड्यात एकदा टाळा. किती वाचले ते लिहा."
+   }
+  },
+  {
+   "id": "task-income-1",
+   "topic": "income",
+   "text": {
+    "en": "Look at a payslip, yours or a family member's, and find the gross pay, each deduction and the take-home pay.",
+    "hi": "एक सैलरी स्लिप देखें, अपनी या परिवार में किसी की, और कुल वेतन, हर कटौती और हाथ में आने वाला वेतन ढूँढें।",
+    "mr": "एक पगार पावती पाहा, तुमची किंवा कुटुंबातील कुणाची, आणि एकूण पगार, प्रत्येक कपात आणि हातात येणारा पगार शोधा."
+   }
+  },
+  {
+   "id": "task-income-2",
+   "topic": "income",
+   "text": {
+    "en": "Write down every way money comes in to you or your home in a month.",
+    "hi": "महीने में आपके या घर के पास पैसा जिन-जिन तरीकों से आता है, सब लिखें।",
+    "mr": "महिन्याला तुमच्याकडे किंवा घरात पैसे कोणकोणत्या मार्गांनी येतात ते सगळे लिहा."
+   }
+  },
+  {
+   "id": "task-investing-1",
+   "topic": "investing",
+   "text": {
+    "en": "Ask an adult you trust how they save for the long term, and what they wish they had known earlier.",
+    "hi": "किसी भरोसेमंद बड़े से पूछें वे लंबे समय के लिए कैसे बचाते हैं, और काश उन्हें पहले क्या पता होता।",
+    "mr": "विश्वासू मोठ्या व्यक्तीला विचारा ते दीर्घकाळासाठी कशी बचत करतात, आणि आधी काय माहीत असते तर बरे झाले असते."
+   }
+  },
+  {
+   "id": "task-investing-2",
+   "topic": "investing",
+   "text": {
+    "en": "Read the Saath guide on risk and return, then explain it to someone in two sentences.",
+    "hi": "जोखिम और मुनाफ़े पर साथ की गाइड पढ़ें, फिर किसी को दो वाक्यों में समझाएँ।",
+    "mr": "जोखीम आणि परताव्यावरची साथ मार्गदर्शिका वाचा, मग कुणाला दोन वाक्यांत समजावून सांगा."
+   }
+  },
+  {
+   "id": "task-insurance-1",
+   "topic": "insurance",
+   "text": {
+    "en": "Ask at home: does anyone in the family have health or life insurance? Where are the papers kept?",
+    "hi": "घर पर पूछें: क्या परिवार में किसी के पास स्वास्थ्य या जीवन बीमा है? काग़ज़ कहाँ रखे हैं?",
+    "mr": "घरी विचारा: कुटुंबात कुणाकडे आरोग्य किंवा जीवन विमा आहे का? कागदपत्रे कुठे ठेवली आहेत?"
+   }
+  },
+  {
+   "id": "task-insurance-2",
+   "topic": "insurance",
+   "text": {
+    "en": "Read one insurance form in the Forms tab and find the line about exclusions.",
+    "hi": "फ़ॉर्म टैब में एक बीमा फ़ॉर्म पढ़ें और अपवाद वाली लाइन ढूँढें।",
+    "mr": "फॉर्म टॅबमध्ये एक विमा फॉर्म वाचा आणि अपवादांबद्दलची ओळ शोधा."
+   }
+  },
+  {
+   "id": "task-borrowing-1",
+   "topic": "borrowing",
+   "text": {
+    "en": "If anyone at home has a loan or EMI, ask what the total repayment is, not just the monthly amount.",
+    "hi": "अगर घर में किसी का लोन या ईएमआई है, तो पूछें कुल कितना चुकाना है, सिर्फ़ महीने की रकम नहीं।",
+    "mr": "घरात कुणाचे कर्ज किंवा ईएमआय असेल तर एकूण परतफेड किती ते विचारा, फक्त महिन्याची रक्कम नाही."
+   }
+  },
+  {
+   "id": "task-borrowing-2",
+   "topic": "borrowing",
+   "text": {
+    "en": "Read the Saath guide on flat and reducing interest, then explain the difference to someone at home.",
+    "hi": "फ़्लैट और घटते ब्याज पर साथ की गाइड पढ़ें, फिर घर में किसी को फ़र्क समझाएँ।",
+    "mr": "फ्लॅट आणि कमी होणाऱ्या व्याजावरची साथ मार्गदर्शिका वाचा, मग घरी कुणाला फरक समजावून सांगा."
+   }
+  },
+  {
+   "id": "task-tax-1",
+   "topic": "tax",
+   "text": {
+    "en": "Find out what a PAN card is used for, and check where yours or a family member's is kept safely.",
+    "hi": "जानें PAN कार्ड किस काम आता है, और देखें आपका या परिवार का PAN सुरक्षित कहाँ रखा है।",
+    "mr": "PAN कार्ड कशासाठी वापरतात ते जाणून घ्या, आणि तुमचे किंवा कुटुंबाचे PAN सुरक्षित कुठे ठेवले आहे ते पाहा."
+   }
+  },
+  {
+   "id": "task-tax-2",
+   "topic": "tax",
+   "text": {
+    "en": "Read the Saath guide on income tax basics and write down one thing that surprised you.",
+    "hi": "इनकम टैक्स की बुनियादी बातों पर साथ की गाइड पढ़ें और एक चौंकाने वाली बात लिखें।",
+    "mr": "इन्कम टॅक्सच्या मूलभूत गोष्टींवरची साथ मार्गदर्शिका वाचा आणि आश्चर्य वाटलेली एक गोष्ट लिहा."
+   }
+  },
+  {
+   "id": "task-schemes-1",
+   "topic": "schemes",
+   "text": {
+    "en": "Open the Forms tab and read the requirements for one government scheme. Who in your family might be eligible?",
+    "hi": "फ़ॉर्म टैब खोलें और एक सरकारी योजना की ज़रूरतें पढ़ें। परिवार में कौन पात्र हो सकता है?",
+    "mr": "फॉर्म टॅब उघडा आणि एका सरकारी योजनेच्या अटी वाचा. कुटुंबात कोण पात्र असू शकते?"
+   }
+  },
+  {
+   "id": "task-schemes-2",
+   "topic": "schemes",
+   "text": {
+    "en": "Find the nearest Common Service Centre or bank branch where scheme forms can be submitted.",
+    "hi": "सबसे नज़दीकी कॉमन सर्विस सेंटर या बैंक शाखा ढूँढें जहाँ योजना के फ़ॉर्म जमा होते हैं।",
+    "mr": "योजनेचे फॉर्म जमा करता येतील असे जवळचे कॉमन सर्व्हिस सेंटर किंवा बँक शाखा शोधा."
+   }
+  },
+  {
+   "id": "task-paperwork-1",
+   "topic": "paperwork",
+   "text": {
+    "en": "Make a list of the important documents at home and where each one is kept.",
+    "hi": "घर के ज़रूरी काग़ज़ों की सूची बनाएँ और हर एक कहाँ रखा है।",
+    "mr": "घरातील महत्त्वाच्या कागदपत्रांची यादी करा आणि प्रत्येक कुठे ठेवले आहे ते लिहा."
+   }
+  },
+  {
+   "id": "task-paperwork-2",
+   "topic": "paperwork",
+   "text": {
+    "en": "Take a photo of any form at home and let Saath AI explain it. It stays on your phone.",
+    "hi": "घर के किसी फ़ॉर्म की फ़ोटो लें और साथ AI से समझें। फ़ोटो आपके फ़ोन पर ही रहती है।",
+    "mr": "घरातील कोणत्याही फॉर्मचा फोटो घ्या आणि साथ AI कडून समजून घ्या. फोटो तुमच्या फोनवरच राहतो."
+   }
+  },
+  {
+   "id": "task-family-1",
+   "topic": "family",
+   "text": {
+    "en": "Talk with someone at home about one money decision the family made this year and why.",
+    "hi": "घर में किसी से इस साल परिवार के एक पैसे के फ़ैसले के बारे में बात करें और क्यों लिया गया।",
+    "mr": "घरी कुणाशी तरी कुटुंबाने या वर्षी घेतलेल्या एका पैशाच्या निर्णयाबद्दल आणि तो का घेतला याबद्दल बोला."
+   }
+  },
+  {
+   "id": "task-family-2",
+   "topic": "family",
+   "text": {
+    "en": "Plan a small family expense, like a birthday, with a fixed budget, and stick to it.",
+    "hi": "एक छोटे पारिवारिक खर्च, जैसे जन्मदिन, का तय बजट बनाएँ और उसी में रहें।",
+    "mr": "वाढदिवसासारख्या छोट्या कौटुंबिक खर्चाचे ठरलेले बजेट करा आणि त्यातच राहा."
+   }
+  },
+  {
+   "id": "task-retirement-1",
+   "topic": "retirement",
+   "text": {
+    "en": "Ask an older relative how they pay for their needs after they stopped working.",
+    "hi": "किसी बुज़ुर्ग रिश्तेदार से पूछें काम छोड़ने के बाद वे अपनी ज़रूरतें कैसे पूरी करते हैं।",
+    "mr": "एखाद्या ज्येष्ठ नातेवाइकाला विचारा काम थांबवल्यानंतर ते आपल्या गरजा कशा भागवतात."
+   }
+  },
+  {
+   "id": "task-retirement-2",
+   "topic": "retirement",
+   "text": {
+    "en": "Read the Saath guide on retirement and write the one habit you could start now.",
+    "hi": "सेवानिवृत्ति पर साथ की गाइड पढ़ें और एक आदत लिखें जो आप अभी शुरू कर सकते हैं।",
+    "mr": "निवृत्तीवरची साथ मार्गदर्शिका वाचा आणि आत्ता सुरू करता येईल अशी एक सवय लिहा."
+   }
+  },
+  {
+   "id": "task-scams-1",
+   "topic": "scams",
+   "text": {
+    "en": "Tell one family member: banks never ask for an OTP or PIN, and 1930 is the cyber fraud helpline.",
+    "hi": "परिवार में किसी एक को बताएँ: बैंक कभी OTP या PIN नहीं माँगते, और 1930 साइबर धोखाधड़ी हेल्पलाइन है।",
+    "mr": "कुटुंबातील एकाला सांगा: बँक कधीच OTP किंवा PIN मागत नाही, आणि 1930 ही सायबर फसवणूक हेल्पलाइन आहे."
+   }
+  },
+  {
+   "id": "task-scams-2",
+   "topic": "scams",
+   "text": {
+    "en": "Look through your messages for one that might be a scam. What gave it away?",
+    "hi": "अपने मैसेज में कोई ऐसा ढूँढें जो ठगी हो सकता है। किस बात से पता चला?",
+    "mr": "तुमच्या मेसेजमध्ये फसवणूक असू शकेल असा एक शोधा. कशावरून कळले?"
+   }
+  }
+ ]
+}
