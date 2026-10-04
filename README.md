@@ -1,16 +1,22 @@
 # Saath
 
-Saath is a financial-life companion for young people in India, from The Skyward Project. It runs in a browser and installs as an app (PWA). It works in English, Hindi and Marathi.
+Saath is a financial-life companion for anyone in India who wants help with money in adult life, from The Skyward Project. It runs in a browser and installs as an app (PWA). It works in English, Hindi and Marathi.
 
 - **Story.** Follow Verena from her first month away from home (age 19) to retirement (age 60) across fourteen life stages. Each part is a loop: story, the slip she made, a hands-on sim (read a payslip, plan a budget, see compounding, compare loan lengths), a decision, what follows, why, two questions, then XP. One new part opens each calendar day. After retirement the story turns into a revision mode, "Stay financially capable".
 - **Learn.** 45 short guides, searchable and filtered by thirteen topics, each with the date its facts were checked and, where it states rules, the official sources.
-- **Forms.** Fourteen common forms (bank, KYC, PAN, TDS, loan KFS, gold loan, insurance, schemes, EPF) explained field by field, with official sources and a check date. A photo reader explains the fields it recognises on a printed form, on the device.
+- **Daily challenges.** Built from the topics each person says they find hardest: a money crisis to handle, a real-life task and a three-question quiz every day, with XP and a bonus for all three.
+- **Games.** Needs or wants? and Scam or safe?, with reasons for every answer, best scores and daily XP.
+- **Forms.** Twenty important forms (account opening, KYC, nomination, PAN, TDS and Form 15G/H, ITR-1, loan KFS, gold loan, credit card, insurance proposal, health claim, PMJJBY/PMSBY, PM-JAY, Atal Pension, Sukanya Samriddhi, PPF, EPF joining and withdrawal) explained field by field, with official sources and a check date. A photo reader explains the fields it recognises on a printed form, on the device.
 - **Real stories.** Eight real events, from a regulator, the government or a news report, each with its source link, kind and check date. One is shown each day.
 - **Money Lab.** Track your own money by hand or from a receipt photo (take photo, read, check, confirm, save; nothing is saved automatically). Notes, deleting entries, recurring-spend detection and simple patterns.
-- **Saath AI.** Ask in your own words. It answers only from Saath's checked content, refuses to quote rates or give investment advice, and says so when it does not know.
+- **Saath AI.** Type or speak a question in English, Hindi or Marathi; it answers in the same language, can read the answer aloud, knows what is on screen, and takes facts about rates and rules only from Saath's checked content.
 - **Progress.** XP, levels, a forgiving streak, badges, and outfits and places for Verena that unlock as you go. A share card shows level, streak, story stage, newest badge and Verena, and nothing else.
 
 The interface is black and white with navy accents, and the moments that matter (the language screen, the introduction, today's card, each chapter of the story, finishes) are set as deep-navy scenes with Verena in them. Navy also marks the logo, the active tab, progress and links. Light and dark themes. The logo is two linked rings, ink and navy: *saath* means "together".
+
+## First run
+
+Language, then "Enter the Saath immersion": an eleven-chapter tour that explains and lets people try every feature. Then a "Make Saath yours" page, then an install step (iPhone, Android and laptop instructions, one-tap install where the browser allows). Opened from the home screen, Saath skips straight to setup. Setup has four steps: username, password typed twice, hardest topics, and theme, language and text size (`components/intro.tsx`, `components/welcome.tsx`, `components/auth.tsx`, `components/personalize.tsx`).
 
 ## Language first
 
@@ -56,10 +62,12 @@ Before any cloud sync, server-side accounts or new data collection is added, a q
 
 ## Saath AI
 
+What people can do with it: ask anything about money in their own words; speak instead of typing (Web Speech API, `en-IN`, `hi-IN`, `mr-IN`, with live transcription); get the answer in the language they asked in (`scriptLang` in `lib/speech.ts`) and hear it read aloud; tap "Explain this" on a guide, form, story part or wrong answer; ask about a photographed form; get a revision suggestion and a progress summary. Answers are short: a direct reply, a few bullet points and one practical tip.
+
 Every screen talks to one interface, `SaathAIProvider` (`lib/ai/types.ts`). `getProvider` in `lib/ai/index.ts` picks, in order:
 
 1. **Model in this browser** (`lib/ai/local-provider.ts`), if the person downloaded it and switched it on in Settings. It runs Qwen 2.5 Instruct (0.5B or 1.5B, q4f16) with WebLLM on WebGPU. Nothing leaves the device. Settings shows the download size (read from the model's own file list before downloading), progress, and a button to remove it. WebLLM keeps the files in the browser's Cache Storage; the service worker leaves those caches alone.
-2. **Hosted model** (`lib/ai/remote-provider.ts`), if `NEXT_PUBLIC_SAATH_AI_URL` is set at build time, the person allows it, and the device is online. See `server/saath-ai-worker/` for the Cloudflare Worker (free Workers AI, no key). Once the address is set (repository variable `SAATH_AI_URL`, used by `.github/workflows/deploy-pages.yml`), every user sees a one-tap offer inside Saath AI; nothing is sent before they accept.
+2. **Hosted model** (`lib/ai/remote-provider.ts`), if `NEXT_PUBLIC_SAATH_AI_URL` is set at build time and the device is online. It is on by default; the first time, the chat explains what is sent (the question, with identity numbers removed, never Money Lab) and offers "Keep it on this phone". See `server/saath-ai-worker/` for the Cloudflare Worker (Workers AI, no key; Llama 3.3 70B first, with smaller fallbacks).
 3. **Rules on the device** (`lib/ai/rule-provider.ts`), always available. It retrieves the closest passages from Saath's content and answers by quoting them.
 
 Guardrails shared by all three:
@@ -67,7 +75,7 @@ Guardrails shared by all three:
 - Passages are retrieved first (`lib/ai/knowledge.ts`), and models are told, with the same system prompt (`lib/ai/prompt.ts`, copied verbatim into the Worker; a test checks they match), to answer only from them in the user's language.
 - Questions asking for rates, buy or sell advice, or reporting a just-happened fraud never reach a model. The rule provider answers them with fixed, checked wording (the fraud answer starts with the 1930 helpline).
 - If nothing relevant is found, the rule provider says it has no checked answer instead of letting a model guess.
-- A local-model answer containing a number that is not in the passages, the screen, or the question is thrown away and the rule answer is used.
+- An answer containing an invented figure (a rate, a lakh or crore limit, a year, a section number or a stated amount not in the passages, the screen or the question) is thrown away and the rule answer is used. Round amounts in a sentence that is plainly an example are allowed.
 - Any failure (no WebGPU, model not downloaded, generation error, server error) falls back to the rule provider.
 
 ## Content
@@ -130,6 +138,8 @@ The Skyward Handbook handed out in schools was not available as text when this w
 Saath supports exactly English, Hindi and Marathi, and a test requires the three locale files to have identical keys. To add another: add the code to `LANGS` in `lib/catalog.ts`; add a locale file and an entry in `locales/gate.json`; add the language to every record in `content/`; add speech, number and OCR codes in `lib/speech.ts`, `lib/format.ts` and `lib/ocr.ts`; add the name in `components/settings-screen.tsx`; and add the files to `scripts/sw.template.js`.
 
 ## How a school code works
+
+The app no longer shows a school code or the FinLit Check; the partner pages below are kept only for programmes that already use them.
 
 1. On Day 2 the Skyward team gives the class a code, for example `PUNE01`.
 2. A student opens Settings > School programme, types the code, picks a grade, and may add a nickname.
