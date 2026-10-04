@@ -1098,7 +1098,8 @@
       "title": "That is all of Saath.",
       "lead": "A story to live, a challenge each day, guides, forms, Saath AI and your own Money Lab. Next, make it yours.",
       "cta": "Continue"
-    }
+    },
+    "skipToEndOne": "{left} chapter left · jump to the end"
   },
   "journey": {
     "kicker": "The story",
