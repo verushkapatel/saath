@@ -105,8 +105,10 @@ jobs:
           git commit -m "Publish Saath from ${GITHUB_SHA::7}"
           git push origin main
 
-      # A short address as well: saath-app.pages.dev on Cloudflare Pages (free), built for the site root.
-      - name: Publish to saath-app.pages.dev
+      # A short address as well, on Cloudflare Pages (free), built for the site root. pages.dev names are global, so
+      # the first candidate Cloudflare gives us exactly (no random suffix) is used, then the page is fetched to confirm
+      # it really is Saath.
+      - name: Publish to a short pages.dev address
         continue-on-error: true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -115,5 +117,20 @@ jobs:
           NEXT_PUBLIC_SAATH_SERVICE_URL: ${{ steps.ai.outputs.url }}
         run: |
           npm run build:pages
-          npx --yes wrangler@3 pages project create saath-app --production-branch main || true
-          npx --yes wrangler@3 pages deploy out --project-name saath-app --branch main --commit-dirty=true
+          W="npx --yes wrangler@3"
+          for old in saath saath-app saathapp; do $W pages project delete "$old" --yes >/dev/null 2>&1 || true; done
+          chosen=""
+          for name in getsaath trysaath usesaath saathhq; do
+            out=$($W pages project create "$name" --production-branch main 2>&1 || true)
+            echo "$out" | tail -2
+            if echo "$out" | grep -q "https://$name.pages.dev"; then chosen="$name"; break; fi
+            if echo "$out" | grep -qi "already exists"; then
+              $W pages project list 2>/dev/null | grep -q "$name.pages.dev" && { chosen="$name"; break; }
+            fi
+            $W pages project delete "$name" --yes >/dev/null 2>&1 || true
+          done
+          [ -n "$chosen" ] || { echo "No exact short name was free."; exit 1; }
+          $W pages deploy out --project-name "$chosen" --branch main --commit-dirty=true
+          sleep 20
+          url="https://$chosen.pages.dev/"
+          if curl -sL "$url" | grep -q "skyward-logo\|The Skyward Project"; then echo "VERIFIED: $url serves Saath"; else echo "NOT VERIFIED: $url"; curl -sL "$url" | head -c 400; fi
