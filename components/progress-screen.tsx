@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
-import { Award, ChevronRight, Download, Lock, Share2 } from "lucide-react";
+import { Award, ChevronRight, Copy, Lock, Share2 } from "lucide-react";
 import { progressImage } from "@/lib/share-image";
 import { REWARDS, met, safeLook, unlocked, type Need, type Reward, type RewardKind } from "@/lib/rewards";
-import { shareText, tap } from "@/lib/speech";
+import { tap } from "@/lib/speech";
 import { useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { Character } from "./character";
@@ -123,22 +123,20 @@ export function ShareSheet({ onClose, kind = "progress" }: { onClose: () => void
         </figure>
         <p className="note">{t("share.never")}</p>
         <button type="button" className="btn btn-primary" disabled={busy} onClick={() => void shareImage()}>
-          <Share2 aria-hidden size={18} />{t("share.picture")}
+          <Share2 aria-hidden size={18} />{t("common.share")}
         </button>
         <button
           type="button"
           className="btn btn-secondary"
           onClick={async () => {
             tap();
-            const result = await shareText("Saath", text);
-            setNote(result === "copied" ? t("common.copied") : result === "none" ? t("share.failed") : null);
+            try { await navigator.clipboard.writeText(text); setNote(t("common.copied")); }
+            catch { setNote(t("share.failed")); }
           }}
         >
-          {t("share.text")}
+          <Copy aria-hidden size={18} />{t("common.copy")}
         </button>
-        <button type="button" className="btn btn-ghost" disabled={busy} onClick={async () => { tap(); const blob = await picture(); if (blob) download(blob, "saath-progress.png"); }}>
-          <Download aria-hidden size={18} />{t("share.download")}
-        </button>
+        <button type="button" className="btn btn-ghost" disabled={busy} onClick={onClose}>{t("common.cancel")}</button>
         {note && <p role="status" className="note">{note}</p>}
       </div>
     </Sheet>

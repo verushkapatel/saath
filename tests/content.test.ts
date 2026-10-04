@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { CASE_IDS, DRILL_IDS, FORM_IDS, LANGS, LESSON_IDS, PATH_IDS, STAGE_IDS, TOPICS, UNITS } from "@/lib/catalog";
+import { CASE_IDS, CHAPTER_IDS, DRILL_IDS, FORM_IDS, LANGS, LESSON_IDS, PATH_IDS, TOPICS, UNITS } from "@/lib/catalog";
 import { answerFromDocument } from "@/lib/ask";
 import { fill } from "@/lib/copy";
 import { ruleExtract } from "@/lib/extract";
@@ -99,10 +99,12 @@ describe("content", () => {
   it("precaches the companion screens and their content, under the new cache name", () => {
     const worker = readFileSync(`${root}/public/sw.js`, "utf8");
     expect(worker).toContain('const CACHE = "saath-v14"');
-    for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings", "/games"]) expect(worker).toContain(`"${page}"`);
-    for (const id of STAGE_IDS) expect(worker).toContain(`/journey/${id}`);
+    for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings"]) expect(worker).toContain(`"${page}"`);
+    expect(worker).not.toContain('"/games"');
+    expect(worker).not.toContain('"/comic"');
+    for (const id of CHAPTER_IDS) expect(worker).toContain(`/journey/${id}`);
     for (const id of FORM_IDS) expect(worker).toContain(`/forms/${id}`);
-    for (const file of ["journey", "forms", "form-fields", "stories", "challenges", "games"]) expect(worker).toContain(`/content/${file}.json`);
+    for (const file of ["journey", "forms", "form-fields", "stories", "challenges"]) expect(worker).toContain(`/content/${file}.json`);
     // Only Saath's own caches are cleared, so a downloaded local model survives an update.
     expect(worker).toContain('key.startsWith("saath-")');
   });
@@ -191,11 +193,6 @@ describe("the Skyward syllabus", () => {
     expect(drills.price.phones.length).toBeGreaterThanOrEqual(3);
   });
 
-  it("labels the comic episode as a sample", () => {
-    const comic = readJson("content/comic.json");
-    expect(comic.episodes[0].sample).toBe(true);
-    for (const panel of comic.episodes[0].panels) for (const lang of LANGS) expect(panel.caption[lang].length).toBeGreaterThan(5);
-  });
 });
 
 describe("language screen", () => {

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
-import { ChevronRight, Cpu, Download, Info, KeyRound, LogOut, ShieldCheck, Trash2, Upload } from "lucide-react";
+import { ChevronRight, Cpu, Download, Info, KeyRound, LogOut, Server, ShieldCheck, Trash2, Upload } from "lucide-react";
 import { changePassword, deleteAccountData, PASSWORD_MIN } from "@/lib/account";
 import { isDownloaded, LOCAL_MODELS, loadModel, modelSizeBytes, onlineConfigured, removeModel, webgpuReady } from "@/lib/ai";
 import { parseBackup } from "@/lib/backup";
@@ -16,6 +16,7 @@ import { usePrefs } from "./prefs";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
 import { ThemePicker } from "./theme-toggle";
+import { FeedbackPanel } from "./feedback-panel";
 
 const LANG_NAMES = { en: "English", hi: "हिन्दी", mr: "मराठी" } as const;
 
@@ -155,6 +156,37 @@ function LocalModelPanel() {
   );
 }
 
+function OllamaPanel() {
+  const { t } = useI18n();
+  const { prefs, update } = usePrefs();
+  const [url, setUrl] = useState(prefs.aiOllamaUrl);
+  const [model, setModel] = useState(prefs.aiOllamaModel);
+  const [note, setNote] = useState<"saved" | "cleared" | null>(null);
+
+  function save() {
+    const clean = url.trim().replace(/\/$/, "");
+    update({ aiOllamaUrl: clean, aiOllamaModel: model.trim() || "qwen2.5:3b" });
+    setNote(clean ? "saved" : "cleared");
+  }
+
+  return (
+    <div className="stack-sm ollama-panel">
+      <p className="faint">{t("settings.ollamaLead")}</p>
+      <label>
+        <span className="label">{t("settings.ollamaEndpoint")}</span>
+        <input className="field text boxed" inputMode="url" placeholder="http://localhost:11434" value={url} onChange={(event) => setUrl(event.target.value)} data-testid="ollama-endpoint-input" />
+      </label>
+      <label>
+        <span className="label">{t("settings.ollamaModel")}</span>
+        <input className="field text boxed" placeholder="qwen2.5:3b" value={model} onChange={(event) => setModel(event.target.value)} data-testid="ollama-model-input" />
+      </label>
+      <button type="button" className="btn btn-secondary" onClick={save} data-testid="ollama-save-button"><Server aria-hidden size={18} />{t("settings.ollamaSave")}</button>
+      {note && <p role="status" className="note ok">{t(`settings.ollama${note === "saved" ? "Saved" : "Cleared"}`)}</p>}
+      <p className="faint">{t("settings.ollamaPrivacy")}</p>
+    </div>
+  );
+}
+
 function PasswordForm({ id }: { id: string }) {
   const { t } = useI18n();
   const [current, setCurrent] = useState("");
@@ -253,6 +285,10 @@ export function SettingsScreen() {
               }}
             />
             <div className="stack-xs">
+              <p className="label"><Server aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> {t("settings.ollama")}</p>
+              <OllamaPanel />
+            </div>
+            <div className="stack-xs">
               <p className="label"><Cpu aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> {t("settings.local")}</p>
               <LocalModelPanel />
             </div>
@@ -341,6 +377,8 @@ export function SettingsScreen() {
       <Group id="install-h" title={t("install.title")}>
         <InstallPanel />
       </Group>
+
+      <FeedbackPanel />
 
       <ul className="list card tight">
         <li>

@@ -18,10 +18,14 @@ export type Prefs = {
   aiLocal: boolean;
   /** Which local model was chosen. */
   aiModel: string;
+  /** Optional Ollama-compatible endpoint running on the person's own computer or network. */
+  aiOllamaUrl: string;
+  /** Model name served by that endpoint. */
+  aiOllamaModel: string;
 };
 
 export const DEFAULT_PREFS: Prefs = {
-  theme: "system",
+  theme: "dark",
   text: "normal",
   motion: "system",
   contrast: false,
@@ -32,6 +36,8 @@ export const DEFAULT_PREFS: Prefs = {
   aiMemory: true,
   aiLocal: false,
   aiModel: "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
+  aiOllamaUrl: "",
+  aiOllamaModel: "qwen2.5:3b",
 };
 
 /** The device-wide copy, read by the tiny script in the page head so the right theme shows before the app loads. */
@@ -64,6 +70,8 @@ export function normalizePrefs(raw: unknown): Prefs {
     aiMemory: flag(value.aiMemory, DEFAULT_PREFS.aiMemory),
     aiLocal: flag(value.aiLocal, DEFAULT_PREFS.aiLocal),
     aiModel: typeof value.aiModel === "string" && /^[\w.-]{3,80}$/.test(value.aiModel) ? value.aiModel : DEFAULT_PREFS.aiModel,
+    aiOllamaUrl: typeof value.aiOllamaUrl === "string" && /^(https?:\/\/)?[\w.[\]:-]+(?:\/.*)?$/.test(value.aiOllamaUrl.trim()) ? value.aiOllamaUrl.trim().slice(0, 240) : "",
+    aiOllamaModel: typeof value.aiOllamaModel === "string" && /^[\w.:/-]{2,100}$/.test(value.aiOllamaModel.trim()) ? value.aiOllamaModel.trim() : DEFAULT_PREFS.aiOllamaModel,
   };
 }
 
@@ -110,4 +118,4 @@ export function applyPrefs(prefs: Prefs): void {
 }
 
 /** Runs in the page head, before React. Kept as a string so it can be inlined. */
-export const PREFS_BOOT = `(function(){try{var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");var r=document.documentElement;if(p.theme==="light"||p.theme==="dark")r.setAttribute("data-theme",p.theme);if(p.text)r.setAttribute("data-text",p.text);if(p.motion==="reduce")r.setAttribute("data-motion","reduce");if(p.contrast)r.setAttribute("data-contrast","more");}catch(e){}})();`;
+export const PREFS_BOOT = `(function(){try{var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");var r=document.documentElement;r.setAttribute("data-theme",p.theme==="light"?"light":"dark");if(p.text)r.setAttribute("data-text",p.text);if(p.motion==="reduce")r.setAttribute("data-motion","reduce");if(p.contrast)r.setAttribute("data-contrast","more");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();`;

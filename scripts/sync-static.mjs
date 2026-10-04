@@ -80,8 +80,8 @@ const load = (name) => JSON.parse(readFileSync(join(root, "content", name), "utf
 const read = (name) => load(name).map((item) => item.id);
 const pages = [
   "/", "/journey", "/guide", "/money-lab", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings",
-  "/scan", "/paths", "/privacy", "/privacy/partners", "/about", "/check", "/drills", "/handbook", "/comic", "/games",
-  ...load("journey.json").episodes.map((episode) => `/journey/${episode.id}`),
+  "/scan", "/paths", "/privacy", "/privacy/partners", "/about", "/admin", "/check", "/drills", "/handbook",
+  ...load("journey-chapters.json").chapters.map((chapter) => `/journey/${chapter.id}`),
   ...load("forms.json").forms.map((form) => `/forms/${form.id}`),
   ...["scam", "form", "price", "stories"].map((id) => `/drills/${id}`),
   ...read("guide.json").map((id) => `/guide/${id}`),

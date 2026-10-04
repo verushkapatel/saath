@@ -114,6 +114,7 @@ describe("falling back", () => {
   });
 
   it("picks local, then online, then rules, by settings", () => {
+    expect(providerMode({ ollamaUrl: "http://localhost:11434", allowLocal: true, allowOnline: true, online: true })).toBe("ollama");
     expect(providerMode({ allowLocal: true, allowOnline: true, online: true })).toBe("local");
     // No online server is configured in tests, so online is never chosen.
     expect(providerMode({ allowLocal: false, allowOnline: true, online: true })).toBe("device");

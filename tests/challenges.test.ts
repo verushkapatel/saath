@@ -91,15 +91,3 @@ describe("finishing challenges", () => {
   });
 });
 
-describe("game content", () => {
-  const games = JSON.parse(readFileSync(`${process.cwd()}/content/games.json`, "utf8")) as import("@/lib/content-types").GamesFile;
-  it("has enough rounds of both kinds, in all three languages", () => {
-    expect(games.needs.length).toBeGreaterThanOrEqual(8);
-    expect(games.scams.length).toBeGreaterThanOrEqual(8);
-    expect(games.needs.some((item) => item.need) && games.needs.some((item) => !item.need)).toBe(true);
-    expect(games.scams.some((item) => item.scam) && games.scams.some((item) => !item.scam)).toBe(true);
-    for (const item of [...games.needs, ...games.scams]) {
-      for (const copy of [item.text, item.why]) expect(copy.en && copy.hi && copy.mr).toBeTruthy();
-    }
-  });
-});

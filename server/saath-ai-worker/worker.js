@@ -1,3 +1,5 @@
+import { EmailMessage } from "cloudflare:email";
+
 /**
  * Saath AI server. A Cloudflare Worker that sits between the app and a language model.
  *
@@ -15,12 +17,12 @@
 
 const SYSTEM = `You are Saath AI, a warm and clear money tutor inside the Saath app, used in India by people of every age.
 How to answer:
-- Start with a direct answer in one or two plain sentences. Then, if it helps, give 2 to 4 short bullet points starting with "- ". End with one practical tip or a question the user can check, when useful.
-- You may put a key term in **bold**. No headings, no tables, no long paragraphs. At most 170 words.
-- Talk like a kind elder sibling: simple words, short sentences, no jargon without a quick explanation. Use the user's name only if given.
+- Start with a direct answer in one or two plain sentences. Then help the person picture the situation in real life, explain why it matters, and give clear next steps.
+- Use short headings and 3 to 5 useful bullet points when they make the answer easier. Include one simple everyday example and one practical action. At most 300 words.
+- Talk like a patient, thoughtful companion: simple words, short sentences, no jargon without a quick explanation. Never be shallow, vague or patronising. Use the user's name only if given.
 - Reply only in the language code given (en = English, hi = Hindi in Devanagari, mr = Marathi in Devanagari).
 What you may use:
-- Facts about Indian schemes, rules, limits, rates, fees, deadlines and documents must come from the PASSAGES or SCREEN text. If they are not there, say you do not have a checked figure and point to the official source or a Saath guide. Never guess a number.
+- Facts about Indian schemes, rules, limits, rates, fees, deadlines and documents must come from the PASSAGES or SCREEN text. If they are not there, say you do not have a checked figure and point to the official source or a Saath guide. Use the closest PASSAGE titles as guide recommendations. Never guess a number.
 - You may explain general ideas (what a budget, EMI, interest, insurance or inflation is, and how they work) in your own words.
 - If you give an example with money, say it is an example and use simple round amounts.
 Safety:
@@ -44,12 +46,88 @@ function cors(env, request) {
   return {
     "access-control-allow-origin": ok ? origin : "null",
     "access-control-allow-methods": "POST, OPTIONS",
-    "access-control-allow-headers": "content-type",
+    "access-control-allow-headers": "content-type, authorization",
     vary: "origin",
   };
 }
 
 const clip = (value, max) => (typeof value === "string" ? value.slice(0, max) : "");
+const FEEDBACK_TO = "verushkapatel4@gmail.com";
+
+function stateStub(env) {
+  if (!env.SAATH_STATE) return null;
+  return env.SAATH_STATE.get(env.SAATH_STATE.idFromName("saath-global"));
+}
+
+function json(body, status, headers) {
+  return new Response(JSON.stringify(body), { status, headers });
+}
+
+function cleanHeader(value) {
+  return clip(value, 80).replace(/[\r\n:]/g, " ").trim();
+}
+
+function same(a, b) {
+  if (typeof a !== "string" || typeof b !== "string" || a.length !== b.length) return false;
+  let diff = 0;
+  for (let index = 0; index < a.length; index += 1) diff |= a.charCodeAt(index) ^ b.charCodeAt(index);
+  return diff === 0;
+}
+
+function ownerAuthorized(request, env) {
+  const header = request.headers.get("authorization") || "";
+  if (!header.startsWith("Basic ") || !env.ADMIN_USERNAME || !env.ADMIN_PASSWORD) return false;
+  try {
+    const [username, ...rest] = atob(header.slice(6)).split(":");
+    return same(username, env.ADMIN_USERNAME) && same(rest.join(":"), env.ADMIN_PASSWORD);
+  } catch {
+    return false;
+  }
+}
+
+async function heartbeatRoute(body, env, headers) {
+  const stub = stateStub(env);
+  if (!stub) return json({ error: "not configured" }, 503, headers);
+  const session = clip(body?.session, 64);
+  if (!/^[a-f0-9]{24,64}$/.test(session)) return json({ error: "invalid" }, 400, headers);
+  await stub.fetch("https://saath-state/heartbeat", { method: "POST", body: JSON.stringify({ session }) });
+  return json({ active: true }, 200, headers);
+}
+
+async function liveRoute(request, env, headers) {
+  if (!ownerAuthorized(request, env)) return json({ error: "unauthorized" }, 401, { ...headers, "www-authenticate": "Basic realm=Saath owner" });
+  const stub = stateStub(env);
+  if (!stub) return json({ error: "not configured" }, 503, headers);
+  const response = await stub.fetch("https://saath-state/live", { method: "POST" });
+  return new Response(response.body, { status: response.status, headers });
+}
+
+async function feedbackRoute(body, env, headers) {
+  const stub = stateStub(env);
+  if (!stub || !env.FEEDBACK_EMAIL || !env.FEEDBACK_FROM) return json({ delivered: false, error: "not configured" }, 503, headers);
+  const username = cleanHeader(body?.username);
+  const feedback = clip(body?.feedback, 2000).trim();
+  const requestId = clip(body?.requestId, 80);
+  if (!/^[\p{L}\p{M}\p{N}._-]{3,20}$/u.test(username) || feedback.length < 5 || !/^[a-zA-Z0-9-]{12,80}$/.test(requestId)) return json({ delivered: false, error: "invalid" }, 400, headers);
+  const checked = await stub.fetch("https://saath-state/feedback/check", { method: "POST", body: JSON.stringify({ requestId }) });
+  if ((await checked.json()).duplicate) return json({ delivered: true, duplicate: true }, 200, headers);
+  const subject = `Saath feedback from ${username}`;
+  const raw = [
+    `From: Saath Feedback <${env.FEEDBACK_FROM}>`,
+    `To: ${FEEDBACK_TO}`,
+    `Subject: ${subject}`,
+    "MIME-Version: 1.0",
+    "Content-Type: text/plain; charset=UTF-8",
+    "Content-Transfer-Encoding: 8bit",
+    "",
+    `Username: ${username}`,
+    "",
+    feedback,
+  ].join("\r\n");
+  await env.FEEDBACK_EMAIL.send(new EmailMessage(env.FEEDBACK_FROM, FEEDBACK_TO, raw));
+  await stub.fetch("https://saath-state/feedback/mark", { method: "POST", body: JSON.stringify({ requestId }) });
+  return json({ delivered: true }, 200, headers);
+}
 
 function buildMessages(body) {
   const passages = Array.isArray(body.passages) ? body.passages.slice(0, 5) : [];
@@ -126,7 +204,12 @@ export default {
     const length = Number(request.headers.get("content-length") || 0);
     if (length > 20_000) return new Response(JSON.stringify({ error: "too large" }), { status: 413, headers });
     try {
+      const path = new URL(request.url).pathname.replace(/\/$/, "") || "/";
+      if (path === "/admin/live") return liveRoute(request, env, headers);
       const body = await request.json();
+      if (path === "/heartbeat") return heartbeatRoute(body, env, headers);
+      if (path === "/feedback") return feedbackRoute(body, env, headers);
+      if (path !== "/") return json({ error: "not found" }, 404, headers);
       const text = await runModel(env, buildMessages(body));
       if (!text) throw new Error("empty");
       return new Response(JSON.stringify({ text }), { status: 200, headers });
@@ -139,3 +222,47 @@ export default {
     }
   },
 };
+
+/** One privacy-minimal global state object: anonymous recent sessions and feedback delivery deduplication only. */
+export class SaathState {
+  constructor(state) {
+    this.state = state;
+  }
+
+  async fetch(request) {
+    const path = new URL(request.url).pathname;
+    const now = Date.now();
+    if (path === "/heartbeat") {
+      const { session } = await request.json();
+      await this.state.storage.put(`live:${session}`, now);
+      await this.state.storage.setAlarm(now + 10 * 60_000);
+      return Response.json({ active: true });
+    }
+    if (path === "/live") {
+      const rows = await this.state.storage.list({ prefix: "live:" });
+      const cutoff = now - 5 * 60_000;
+      const activeNow = [...rows.values()].filter((lastSeen) => Number(lastSeen) >= cutoff).length;
+      return Response.json({ activeNow, windowMinutes: 5, measuredAt: new Date(now).toISOString(), definition: "An anonymous browser session seen within the last five minutes." });
+    }
+    const body = await request.json();
+    if (path === "/feedback/check") return Response.json({ duplicate: Boolean(await this.state.storage.get(`feedback:${body.requestId}`)) });
+    if (path === "/feedback/mark") {
+      await this.state.storage.put(`feedback:${body.requestId}`, now);
+      await this.state.storage.setAlarm(now + 10 * 60_000);
+      return Response.json({ stored: true });
+    }
+    return Response.json({ error: "not found" }, { status: 404 });
+  }
+
+  async alarm() {
+    const now = Date.now();
+    const rows = await this.state.storage.list();
+    const expired = [];
+    for (const [key, value] of rows) {
+      if (key.startsWith("live:") && Number(value) < now - 10 * 60_000) expired.push(key);
+      if (key.startsWith("feedback:") && Number(value) < now - 30 * 24 * 60 * 60_000) expired.push(key);
+    }
+    if (expired.length) await this.state.storage.delete(expired);
+    if (rows.size > expired.length) await this.state.storage.setAlarm(now + 10 * 60_000);
+  }
+}

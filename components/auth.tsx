@@ -126,6 +126,7 @@ export function AuthScreen({
                 aria-invalid={Boolean(nameProblem || taken)}
                 onChange={(event) => setUsername(event.target.value)}
                 required
+                data-testid="account-username-input"
               />
             </span>
             <span id="username-help" className={`faint${nameProblem || taken ? " field-err" : ""}`} role={nameProblem || taken ? "alert" : undefined}>
@@ -147,6 +148,7 @@ export function AuthScreen({
                 aria-invalid={Boolean(passProblem)}
                 onChange={(event) => setPassword(event.target.value)}
                 required
+                data-testid="account-password-input"
               />
               <button type="button" className="icon-btn" style={{ border: 0 }} aria-label={show ? t("auth.hide") : t("auth.show")} aria-pressed={show} onClick={() => setShow((value) => !value)}>
                 {show ? <EyeOff aria-hidden size={18} /> : <Eye aria-hidden size={18} />}
@@ -171,6 +173,7 @@ export function AuthScreen({
                   aria-invalid={mismatch}
                   onChange={(event) => setConfirm(event.target.value)}
                   required
+                  data-testid="account-confirm-password-input"
                 />
               </span>
               <span className={`faint${mismatch ? " field-err" : ""}`} role={mismatch ? "alert" : undefined}>{mismatch ? t("setup.mismatch") : ""}</span>
@@ -180,9 +183,9 @@ export function AuthScreen({
           {error && <p role="alert" className="note err">{error}</p>}
 
           {signup && stage === "name" ? (
-            <button type="submit" className="btn btn-primary" disabled={!username || Boolean(nameProblem) || Boolean(taken)}>{t("common.next")}</button>
+            <button type="submit" className="btn btn-primary" disabled={!username || Boolean(nameProblem) || Boolean(taken)} data-testid="account-username-next-button">{t("common.next")}</button>
           ) : (
-            <button type="submit" className="btn btn-primary" disabled={busy || !username || !password || Boolean(nameProblem) || Boolean(signup && (taken || passProblem || confirm !== password))}>
+            <button type="submit" className="btn btn-primary" disabled={busy || !username || !password || Boolean(nameProblem) || Boolean(signup && (taken || passProblem || confirm !== password))} data-testid="account-submit-button">
               {busy ? t("auth.working") : signup ? t("auth.create") : t("auth.login")}
             </button>
           )}

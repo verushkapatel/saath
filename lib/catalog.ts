@@ -150,6 +150,15 @@ export const STAGE_IDS = [
 ] as const;
 export type StageId = (typeof STAGE_IDS)[number];
 
+/** The complete Verena journey, in narrative order. */
+export const CHAPTER_IDS = [
+  "first-job", "first-bank-account", "first-income", "early-adulthood", "saving", "insurance", "government-benefits", "first-goal", "tracking-spending", "receipt",
+  "subscription-trap", "rent-lifestyle", "investing", "market-fall", "financial-security", "scam-consequences", "medical-expense", "money-tight", "borrowing", "bad-loan-offer",
+  "loan-repayment", "job-loss", "recovery", "fraud-attempt", "financial-reset", "budgeting", "moving-home", "family-finances", "insurance-review", "taxes",
+  "important-documents", "government-form", "kyc", "gold-loan", "children", "long-term-planning", "family-emergency", "helping-relative", "long-term-investing", "security-review",
+  "thinking-retirement", "retirement-plan", "late-life-shock", "retirement", "verena-looks-back",
+] as const;
+
 export const FORM_IDS = [
   "savings-account", "kyc-update", "nomination", "pan-application", "no-pan-declaration", "salary-tds-certificate",
   "no-tds-declaration", "loan-kfs", "gold-loan", "insurance-proposal", "jan-suraksha", "atal-pension",

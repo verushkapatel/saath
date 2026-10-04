@@ -33,6 +33,17 @@ The Worker asks a model to answer from those passages only, and returns the text
 
 Edit `ALLOWED_ORIGIN` in `wrangler.toml` if the app is served from a different address.
 
+## Feedback and live users
+
+The same Worker can deliver feedback and count anonymous active sessions without an analytics service.
+
+1. The checked-in `SAATH_STATE` Durable Object stores anonymous heartbeat times and feedback request IDs. Wrangler creates it on the first deploy through migration `v1`.
+2. Verify `verushkapatel4@gmail.com` as an allowed destination in Cloudflare Email Routing, add the `FEEDBACK_EMAIL` send binding, and set `FEEDBACK_FROM` to an address on that verified domain.
+3. Add `ADMIN_USERNAME` and `ADMIN_PASSWORD` with `wrangler secret put`. They protect `/admin/live` and never enter the site bundle.
+4. Build the site with `NEXT_PUBLIC_SAATH_SERVICE_URL` set to this Worker URL. Feedback is then sent only after Cloudflare confirms delivery. `/admin` shows the measured count after owner login.
+
+A live user means an anonymous browser session whose heartbeat was received in the last five minutes. Heartbeats contain a random session value only—never a username, MoneyLab entry, answer or device fingerprint. The Durable Object deletes stale sessions automatically.
+
 ## What is sent
 
 The question, the name and text of the screen the person is on, their learning record (level, streak, which guides are done),

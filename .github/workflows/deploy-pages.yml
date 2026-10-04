@@ -35,7 +35,7 @@ jobs:
 
       - name: Check
         run: |
-          npx tsc --noEmit
+          npm run typecheck
           npm test
 
       - name: Deploy the Saath AI server
@@ -67,6 +67,7 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /saath
           NEXT_PUBLIC_SAATH_AI_URL: ${{ steps.ai.outputs.url }}
+          NEXT_PUBLIC_SAATH_SERVICE_URL: ${{ steps.ai.outputs.url }}
         run: npm run build:pages
 
       - name: Handbook PDFs

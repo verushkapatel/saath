@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
   Banknote, CalendarClock, Camera, Check, ChevronDown, ChevronRight, CircleAlert, HandCoins, ImagePlus, Info,
-  MessageCircleQuestion, Percent, Plus, Share2, TriangleAlert, type LucideIcon,
+  MessageCircleQuestion, Percent, Plus, TriangleAlert, type LucideIcon,
 } from "lucide-react";
 import { answerFromDocument } from "@/lib/ask";
 import { todayISO } from "@/lib/dates";
@@ -20,10 +20,11 @@ import { figuresFor } from "@/lib/pipeline";
 import { SAMPLES } from "@/lib/samples";
 import type { Extraction } from "@/lib/schema";
 import { getSessionDoc, setSessionDoc } from "@/lib/session";
-import { shareText, tap } from "@/lib/speech";
+import { tap } from "@/lib/speech";
 import { useApp } from "./app-state";
 import { ArtDone, ArtOffline, ArtScan } from "./illustrations";
 import { useI18n } from "./providers";
+import { ShareButton } from "./share-button";
 import { CountUp, GlossarySheet, ListenButton, Ring, Sheet, TermText, useGlossary } from "./ui";
 
 type Phase = "idle" | "warn" | "work" | "confirm" | "result" | "error";
@@ -98,7 +99,6 @@ export function ScanScreen({ initialSample }: { initialSample?: string }) {
   const [answer, setAnswer] = useState("");
   const [added, setAdded] = useState(false);
   const [allFlags, setAllFlags] = useState(false);
-  const [shareNote, setShareNote] = useState("");
   const [principalDraft, setPrincipalDraft] = useState("");
   const [rateDraft, setRateDraft] = useState("");
   const [monthsDraft, setMonthsDraft] = useState("");
@@ -563,21 +563,9 @@ export function ScanScreen({ initialSample }: { initialSample?: string }) {
             ))}
             {added && <p role="status" className="note ok">{t("result.added")}</p>}
             <div className="row-between">
-              <button
-                type="button"
-                className="link"
-                onClick={async () => {
-                  tap();
-                  const result = await shareText("Saath", spoken);
-                  setShareNote(result === "copied" ? t("result.shareCopied") : "");
-                }}
-              >
-                <Share2 aria-hidden size={18} />
-                {t("result.share")}
-              </button>
+              <ShareButton title="Saath" text={spoken} label={t("result.share")} className="link" />
               <button type="button" className="link" onClick={() => { setPhase("idle"); window.scrollTo({ top: 0 }); }}>{t("scan.another")}</button>
             </div>
-            {shareNote && <p role="status" className="note">{shareNote}</p>}
           </div>
 
           <p className="faint">{t("result.disclaimer")}</p>

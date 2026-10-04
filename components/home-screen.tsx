@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookOpen, Check, ChevronRight, Gamepad2, LineChart, MessageCircle, Newspaper, RotateCcw, Snowflake } from "lucide-react";
+import { BookOpen, ChevronRight, MessageCircle, Newspaper, RotateCcw } from "lucide-react";
 import { QUESTION_TOPIC } from "@/lib/catalog";
 import { loadJson, type DailyQuestion, type MiniCheck, type StoriesFile } from "@/lib/content-types";
 import { nextAction, pickByDay } from "@/lib/daily";
-import { dayLabel, weekdayLetter } from "@/lib/format";
+import { dayLabel } from "@/lib/format";
 import { recommend, topLesson } from "@/lib/recommend";
 import { safeLook } from "@/lib/rewards";
 import { tap } from "@/lib/speech";
@@ -70,7 +70,6 @@ export function HomeScreen() {
   if (!app.ready) return <PageSkeleton />;
 
   const look = safeLook({ progress, streak: streak.count });
-  const frozen = streak.week.some((day) => day.state === "frozen");
   const streakLabel = streak.count ? t("home.streak", { count: streak.count }) : t("home.streakZero");
   const name = account?.display ?? "";
 
@@ -79,20 +78,24 @@ export function HomeScreen() {
       case "episode": {
         const episode = story?.next;
         return (
-          <>
-            {episode && (
-              <div className="today-figure" aria-hidden>
-                <Character look={{ ...look, place: episode.place }} age={episode.age} size={96} />
+          <div className="home-quest">
+            {episode && <div className="home-quest-character stage" aria-hidden><Character look={{ ...look, place: episode.place }} age={episode.age} size={148} mood="neutral" /></div>}
+            <div className="home-quest-copy stack-sm">
+              <p className="masthead">{t("home.todayStory")}</p>
+              <div className="quest-progress">
+                <span>{t("journey.progress", { done: story?.done ?? 0, total: story?.total ?? 45 })}</span>
+                <span>{t("prog.level", { level: level.level })} · {progress.xp} XP</span>
               </div>
-            )}
-            <p className="masthead">{t("home.todayStory")}</p>
-            <h2>{episode?.title[code]}</h2>
-            <p className="muted">{t("home.todayStoryLead", { stage: story?.stage?.title[code] ?? "", age: episode?.age ?? "" })}</p>
-            <Link href={`/journey/${action.id}`} className="btn btn-primary" onClick={tap}>
-              {story?.done ? t("home.continueStory") : t("home.startStory")}
-              <ChevronRight aria-hidden size={20} />
-            </Link>
-          </>
+              <div className="bar" aria-hidden><span style={{ width: `${Math.max(3, ((story?.done ?? 0) / Math.max(1, story?.total ?? 45)) * 100)}%` }} /></div>
+              <p className="quest-next">{t("home.nextQuest")}</p>
+              <h2>{episode?.title[code]}</h2>
+              <p className="muted">{t("home.todayStoryLead", { stage: story?.stage?.title[code] ?? "", age: episode?.age ?? "" })}</p>
+              <Link href={`/journey/${action.id}`} className="btn btn-primary" onClick={tap} data-testid="home-start-journey-button">
+                {story?.done ? t("home.continueStory") : t("home.startStory")}
+                <ChevronRight aria-hidden size={20} />
+              </Link>
+            </div>
+          </div>
         );
       }
       case "question":
@@ -180,33 +183,6 @@ export function HomeScreen() {
         </Link>
       )}
 
-      <section className="stack-sm" aria-labelledby="streak-h">
-        <div className="row-between">
-          <h2 id="streak-h">{t("home.yourWeek")}</h2>
-          <Link href="/progress" className="link">{t("prog.level", { level: level.level })}<ChevronRight aria-hidden size={18} /></Link>
-        </div>
-        <div className="card tight stack-sm">
-          <ol className="week" aria-label={streakLabel}>
-            {streak.week.map((day) => (
-              <li key={day.date}>
-                <span className={`dot ${day.state}`}>
-                  {day.state === "done" ? <Check aria-hidden size={14} strokeWidth={3} /> : null}
-                  {day.state === "frozen" ? <Snowflake aria-hidden size={14} /> : null}
-                  <span className="visually-hidden">{t(`home.day${day.state.charAt(0).toUpperCase()}${day.state.slice(1)}`)}</span>
-                </span>
-                <span aria-hidden>{weekdayLetter(day.date, code)}</span>
-              </li>
-            ))}
-          </ol>
-          {frozen && <p className="faint">{t("home.freezeUsed")}</p>}
-          <div className="row-between">
-            <span className="faint">{streakLabel}</span>
-            <span className="num faint">{level.into} / {level.need} XP</span>
-          </div>
-          <div className="bar" aria-hidden><span style={{ width: `${Math.max(3, level.ratio * 100)}%` }} /></div>
-        </div>
-      </section>
-
       {realStory && action.kind !== "story" && (
         <Link href="/stories" className="card tight" onClick={tap}>
           <span className="stack-xs">
@@ -232,16 +208,6 @@ export function HomeScreen() {
           </Link>
         </section>
       )}
-
-      <section className="stack-sm" aria-labelledby="quick-h">
-        <h2 id="quick-h">{t("home.quick")}</h2>
-        <div className="quick-grid">
-          <Link href="/games" className="tile card tight" onClick={tap}><Gamepad2 aria-hidden size={22} /><span className="item-title">{t("games.title")}</span></Link>
-          <button type="button" className="tile card tight" onClick={() => { tap(); ai.openAsk(); }}><MessageCircle aria-hidden size={22} /><span className="item-title">{t("nav.ai")}</span></button>
-          <Link href="/progress" className="tile card tight" onClick={tap}><LineChart aria-hidden size={22} /><span className="item-title">{t("nav.progress")}</span></Link>
-          <Link href="/stories" className="tile card tight" onClick={tap}><Newspaper aria-hidden size={22} /><span className="item-title">{t("nav.stories")}</span></Link>
-        </div>
-      </section>
 
       {asking && (
         <Sheet title={t("home.todayQuestion")} onClose={() => setAsking(false)}>

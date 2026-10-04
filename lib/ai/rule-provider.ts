@@ -26,7 +26,8 @@ function sourcesOf(hits: Hit[], limit = 3): AiSource[] {
   const out: AiSource[] = [];
   // Only passages close to the best one are named as sources, so a weak match never appears as a "source".
   const floor = (hits[0]?.score ?? 0) * 0.55;
-  for (const hit of hits) {
+  const ordered = [...hits].sort((a, b) => Number(b.doc.kind === "guide") - Number(a.doc.kind === "guide") || b.score - a.score);
+  for (const hit of ordered) {
     if (hit.score < floor) break;
     if (hit.doc.kind === "term" || seen.has(hit.doc.href + hit.doc.title)) continue;
     seen.add(hit.doc.href + hit.doc.title);
@@ -36,11 +37,32 @@ function sourcesOf(hits: Hit[], limit = 3): AiSource[] {
   return out;
 }
 
-function passage(doc: Doc, phrases: Record<string, string>, maxPoints = 3): string {
+function passage(doc: Doc, phrases: Record<string, string>, maxPoints = 4): string {
   const lines = [`${doc.title}. ${doc.lead}`];
   const points = doc.points.slice(0, maxPoints);
   if (points.length) lines.push("", phrases.points, ...points.map((point) => `• ${point}`));
   return lines.join("\n");
+}
+
+const FRAME = {
+  en: { why: "**Why this matters**", picture: "**Picture it in real life**", do: "**What to do next**", guide: "Open the guide below for the full explanation." },
+  hi: { why: "**यह क्यों ज़रूरी है**", picture: "**असल ज़िंदगी में ऐसे समझें**", do: "**अब क्या करें**", guide: "पूरी जानकारी के लिए नीचे दिया गाइड खोलें।" },
+  mr: { why: "**हे का महत्त्वाचे आहे**", picture: "**खऱ्या आयुष्यात असे समजा**", do: "**आता काय करावे**", guide: "संपूर्ण स्पष्टीकरणासाठी खालील मार्गदर्शिका उघडा." },
+} as const;
+
+function immersive(best: Doc, second: Doc | undefined, lang: Lang): string {
+  const frame = FRAME[lang];
+  const point = best.points[0] ?? best.lead;
+  const action = best.points[1] ?? best.points[0] ?? best.lead;
+  const parts = [
+    `${best.title}. ${best.lead}`,
+    `${frame.why}\n- ${point}${best.points[2] ? `\n- ${best.points[2]}` : ""}`,
+    `${frame.picture}\n${best.points.at(-1) ?? best.lead}`,
+    `${frame.do}\n- ${action}`,
+  ];
+  if (second?.kind === "guide" && second.id !== best.id) parts.push(`- ${second.title}: ${second.lead}`);
+  parts.push(frame.guide);
+  return parts.join("\n\n");
 }
 
 export function createRuleProvider(docsFor: (lang: Lang) => Doc[]): SaathAIProvider {
@@ -99,12 +121,8 @@ export function createRuleProvider(docsFor: (lang: Lang) => Doc[]): SaathAIProvi
       return answer(`${phrases.unknown}\n${suggestions(docs, request)}`, [], false);
     }
 
-    const parts = [passage(best.doc, phrases)];
     const second = hits[1];
-    if (second && second.doc.kind !== "term" && second.score >= best.score * 0.6 && second.doc.id !== best.doc.id) {
-      parts.push(`${second.doc.title}. ${second.doc.lead}`);
-    }
-    return answer(parts.join("\n\n"), sourcesOf(hits), true);
+    return answer(immersive(best.doc, second?.score >= best.score * 0.55 ? second.doc : undefined, request.lang), sourcesOf(hits), true);
   }
 
   async function explainLesson(lessonId: string, request: AiRequest): Promise<AiAnswer> {

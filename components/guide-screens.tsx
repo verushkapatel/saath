@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookMarked, Check, ChevronLeft, ChevronRight, Images, Lightbulb, MessageCircle, Mic, Search } from "lucide-react";
+import { BookMarked, Check, ChevronLeft, ChevronRight, Lightbulb, MessageCircle, Mic, Search } from "lucide-react";
 import { TOPICS, type Topic } from "@/lib/catalog";
 import { monthLabel } from "@/lib/format";
 import { linkHref, loadJson, type CaseStudy, type MiniCheck } from "@/lib/content-types";
@@ -73,16 +73,11 @@ export function GuideScreen() {
         <h1>{t("nav.guide")}</h1>
         <p className="lead">{t("guide.intro")}</p>
       </div>
-      <div className="pair">
+      <div>
         <Link href="/handbook" className="card tight tile" onClick={tap}>
           <BookMarked aria-hidden size={22} />
           <span className="item-title">{t("handbook.open")}</span>
           <span className="item-sub">{t("handbook.sub")}</span>
-        </Link>
-        <Link href="/comic" className="card tight tile" onClick={tap}>
-          <Images aria-hidden size={22} />
-          <span className="item-title">{t("comic.open")}</span>
-          <span className="item-sub">{t("comic.sub")}</span>
         </Link>
       </div>
       <section className="stack-sm" id="revise" aria-labelledby="revise-h">

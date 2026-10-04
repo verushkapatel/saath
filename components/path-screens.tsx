@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Check, ChevronLeft, ChevronRight, Image as ImageIcon, Share2 } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import { linkHref, loadJson, type CaseStudy, type Path, type PathStep } from "@/lib/content-types";
 import { pathProgress } from "@/lib/progress";
-import { milestoneImage } from "@/lib/share-image";
-import { shareText, tap } from "@/lib/speech";
+import { tap } from "@/lib/speech";
 import { useApp } from "./app-state";
 import { ArtPath } from "./illustrations";
 import { useI18n } from "./providers";
+import { ShareButton } from "./share-button";
 import { UnitBadge } from "./unit-badge";
 import { CheckCard, ContentIcon, ListenButton, PageSkeleton, Ring, Sheet } from "./ui";
 
@@ -64,47 +64,8 @@ function linkLabel(link: string | null, t: (key: string) => string): string {
 
 function Milestone({ path }: { path: Path }) {
   const { t, code } = useI18n();
-  const [note, setNote] = useState("");
   const line = path.milestone[code];
   const text = t("path.shareLine", { title: path.title[code], milestone: line });
-
-  async function asText() {
-    tap();
-    const result = await shareText("Saath", text);
-    setNote(result === "copied" ? t("path.copied") : "");
-  }
-
-  async function asImage() {
-    tap();
-    const style = getComputedStyle(document.body);
-    const head = getComputedStyle(document.querySelector("h1") ?? document.body).fontFamily;
-    await document.fonts?.ready;
-    const blob = await milestoneImage({
-      kicker: t("path.milestone"),
-      line,
-      title: path.title[code],
-      credit: t("common.footer"),
-      font: style.fontFamily,
-      headFont: head,
-    });
-    if (!blob) return;
-    const file = new File([blob], "saath-milestone.png", { type: "image/png" });
-    try {
-      if (navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ files: [file], text });
-        return;
-      }
-    } catch {
-      // Fall through to saving the picture.
-    }
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = file.name;
-    link.click();
-    URL.revokeObjectURL(url);
-    setNote(t("path.imageSaved"));
-  }
 
   return (
     <section className="milestone" aria-label={t("path.milestone")}>
@@ -112,16 +73,8 @@ function Milestone({ path }: { path: Path }) {
       <p className="kicker accent-text">{t("path.milestone")}</p>
       <h2>{line}</h2>
       <div className="cluster" style={{ justifyContent: "center" }}>
-        <button type="button" className="btn btn-secondary btn-auto" onClick={asText}>
-          <Share2 aria-hidden size={18} />
-          {t("path.shareText")}
-        </button>
-        <button type="button" className="btn btn-secondary btn-auto" onClick={asImage}>
-          <ImageIcon aria-hidden size={18} />
-          {t("path.shareImage")}
-        </button>
+        <ShareButton title={path.title[code]} text={text} path={`/paths/${path.id}`} label={t("path.shareText")} className="btn btn-secondary btn-auto" />
       </div>
-      {note && <p role="status" className="note">{note}</p>}
     </section>
   );
 }

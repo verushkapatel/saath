@@ -26,6 +26,7 @@ export function TopicPicker({ value, onChange }: { value: string[]; onChange: (n
             aria-pressed={on}
             disabled={!on && value.length >= MAX}
             onClick={() => { tap(); onChange(on ? value.filter((id) => id !== topic) : [...value, topic]); }}
+            data-testid={`onboarding-topic-${topic}`}
           >
             <span>
               <strong>{t(`topics.${topic}`)}</strong>
@@ -65,7 +66,7 @@ export function Personalize({ name }: { name: string }) {
           <>
             <TopicPicker value={picked} onChange={setPicked} />
             <div className="stack-sm setup-actions">
-              <button type="button" className="btn btn-primary" disabled={picked.length === 0} onClick={() => go(4)}>
+              <button type="button" className="btn btn-primary" disabled={picked.length === 0} onClick={() => go(4)} data-testid="onboarding-topics-continue-button">
                 {picked.length ? t("personal.done", { count: picked.length }) : t("personal.pick")}
               </button>
               <button type="button" className="btn btn-ghost" onClick={() => { setPicked([]); go(4); }}>{t("personal.skip")}</button>
@@ -97,7 +98,7 @@ export function Personalize({ name }: { name: string }) {
               </div>
             </div></div>
             <div className="stack-sm setup-actions">
-              <button type="button" className="btn btn-primary" onClick={() => { tap(); void app.saveFocus(picked); window.scrollTo({ top: 0 }); }}>{t("setup.finish")}</button>
+              <button type="button" className="btn btn-primary" onClick={() => { tap(); void app.saveFocus(picked); window.scrollTo({ top: 0 }); }} data-testid="onboarding-finish-button">{t("setup.finish")}</button>
               <button type="button" className="btn btn-ghost" onClick={() => go(3)}>{t("auth.back")}</button>
               <p className="faint">{t("setup.lookNote")}</p>
             </div>

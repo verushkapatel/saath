@@ -1,6 +1,7 @@
 import type { Lang } from "../catalog";
 import { AI_URL } from "../config";
 import { createLocalProvider, DEFAULT_LOCAL_MODEL, webllmGenerate, type Generate } from "./local-provider";
+import { createOllamaProvider } from "./ollama-provider";
 import { createRemoteProvider } from "./remote-provider";
 import { createRuleProvider } from "./rule-provider";
 import type { Doc, SaathAIProvider } from "./types";
@@ -40,6 +41,9 @@ export type ProviderOptions = {
   allowLocal?: boolean;
   /** Which local model, when local is on. */
   localModel?: string;
+  /** Optional user-owned Ollama-compatible endpoint, tried before every other model. */
+  ollamaUrl?: string;
+  ollamaModel?: string;
   /** The person allowed questions to go to the hosted model. */
   allowOnline: boolean;
   online?: boolean;
@@ -47,10 +51,11 @@ export type ProviderOptions = {
   generate?: Generate;
 };
 
-export type ProviderMode = "local" | "online" | "device";
+export type ProviderMode = "ollama" | "local" | "online" | "device";
 
 /** Which provider getProvider will use first, for showing in Settings and under answers. */
 export function providerMode(options: Omit<ProviderOptions, "docsFor" | "generate">): ProviderMode {
+  if (options.ollamaUrl?.trim()) return "ollama";
   if (options.allowLocal) return "local";
   const connected = options.online ?? (typeof navigator === "undefined" ? false : navigator.onLine);
   if (options.allowOnline && onlineConfigured() && connected) return "online";
@@ -65,6 +70,14 @@ export function providerMode(options: Omit<ProviderOptions, "docsFor" | "generat
 export function getProvider(options: ProviderOptions): SaathAIProvider {
   const device = createRuleProvider(options.docsFor);
   const mode = providerMode(options);
+  if (mode === "ollama") {
+    const fallback = options.allowLocal
+      ? withFallback(createLocalProvider(options.docsFor, { generate: options.generate ?? webllmGenerate(options.localModel ?? DEFAULT_LOCAL_MODEL), fallback: device }), device)
+      : options.allowOnline && onlineConfigured() && (typeof navigator === "undefined" || navigator.onLine)
+        ? withFallback(createRemoteProvider(AI_URL, options.docsFor, fetch, device), device)
+        : device;
+    return withFallback(createOllamaProvider(options.ollamaUrl ?? "", options.ollamaModel ?? "qwen2.5:3b", options.docsFor), fallback);
+  }
   if (mode === "local") {
     const generate = options.generate ?? webllmGenerate(options.localModel ?? DEFAULT_LOCAL_MODEL);
     return withFallback(createLocalProvider(options.docsFor, { generate, fallback: device }), device);

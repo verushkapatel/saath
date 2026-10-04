@@ -375,7 +375,7 @@ function Points({ act, count }: { act: string; count: number }) {
   );
 }
 
-const ACTS = ["play", "challenges", "progress", "games", "guides", "forms", "ai", "money", "stories", "personal", "yours"] as const;
+const ACTS = ["play", "challenges", "progress", "guides", "forms", "ai", "money", "stories", "personal", "yours"] as const;
 
 export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => void }) {
   const { t } = useI18n();
@@ -396,7 +396,6 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         );
       case "challenges": return <ChallengeDemo />;
       case "progress": return <ProgressDemo xp={xp} />;
-      case "games": return <GameDemo />;
       case "guides": return <GuideDemo />;
       case "forms": return <FormDemo />;
       case "ai": return <AskDemo />;
@@ -454,7 +453,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         <div className="finale navy-scene">
           <h2>{t("intro.done.title")}</h2>
           <p className="lead">{t("intro.done.lead")}</p>
-          <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }}>
+          <button type="button" className="btn btn-primary" onClick={() => { tap(); onJoin(); }} data-testid="intro-make-yours-button">
             {t("intro.done.cta")}
             <ArrowRight aria-hidden size={18} />
           </button>
@@ -467,7 +466,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         {ACTS.map((id, index) => <i key={id} className={index === act ? "on" : index < act ? "was" : undefined} />)}
       </nav>
       <div className={`intro-float${act >= 0 && act < total ? " on" : ""}`} aria-hidden={!(act >= 0 && act < total)}>
-        <a className="btn btn-primary" href="#join" onClick={tap} tabIndex={act >= 0 && act < total ? 0 : -1}>
+        <a className="btn btn-primary" href="#join" onClick={tap} tabIndex={act >= 0 && act < total ? 0 : -1} data-testid="intro-skip-link">
           {t("intro.skipToEnd", { left: Math.max(1, total - act) })}
           <ArrowDown aria-hidden size={18} />
         </a>

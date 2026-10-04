@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Check, ChevronLeft, ChevronRight, Lock, MessageCircle, RotateCcw, Sparkles } from "lucide-react";
 import type { MiniCheck } from "@/lib/content-types";
 import { dayLabel, inr } from "@/lib/format";
-import { grownValue, loanCost, moneyAfter, type Episode, type Sim } from "@/lib/journey";
+import { applyEffects, grownValue, loanCost, moneyAfter, type Episode, type Money, type Sim } from "@/lib/journey";
 import { recommend, weakTopics } from "@/lib/recommend";
 import { safeLook } from "@/lib/rewards";
 import { tap } from "@/lib/speech";
@@ -28,6 +28,24 @@ function MoneyStrip({ money }: { money: { cash: number; savings: number; debt: n
   );
 }
 
+function LifeState({ state }: { state: Money }) {
+  const { t, code } = useI18n();
+  return (
+    <div className="life-state" data-testid="verena-life-state">
+      <dl>
+        <div><dt>{t("journey.income")}</dt><dd>{inr(state.income, code)}</dd></div>
+        <div><dt>{t("journey.emergency")}</dt><dd>{inr(state.emergency, code)}</dd></div>
+        <div><dt>{t("journey.investments")}</dt><dd>{inr(state.investments, code)}</dd></div>
+        <div><dt>{t("journey.protection")}</dt><dd>{Math.round(state.insurance)}%</dd></div>
+      </dl>
+      <div className="state-meters">
+        <div><span>{t("journey.confidence")}</span><div className="bar" role="progressbar" aria-valuenow={state.confidence} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${state.confidence}%` }} /></div></div>
+        <div><span>{t("journey.resilience")}</span><div className="bar" role="progressbar" aria-valuenow={state.resilience} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${state.resilience}%` }} /></div></div>
+      </div>
+    </div>
+  );
+}
+
 /** The story map: every life stage, what Verena chose in it, and what opens next. */
 export function JourneyScreen() {
   const { t, code } = useI18n();
@@ -46,6 +64,18 @@ export function JourneyScreen() {
   if (!app.ready || !journey || !story) return <PageSkeleton />;
   const look = safeLook({ progress, streak: streak.count });
   const next = story.next;
+  const drillRight = Object.values(progress.journey).reduce((sum, result) => sum + result.drill, 0);
+  const drillTotal = journey.episodes.reduce((sum, episode) => sum + (progress.journey[episode.id] ? episode.drill.length : 0), 0);
+  const topicScores = new Map<string, { right: number; total: number }>();
+  for (const episode of journey.episodes) {
+    const result = progress.journey[episode.id];
+    if (!result) continue;
+    const current = topicScores.get(episode.topic) ?? { right: 0, total: 0 };
+    current.right += result.drill;
+    current.total += episode.drill.length;
+    topicScores.set(episode.topic, current);
+  }
+  const strongest = [...topicScores.entries()].sort((a, b) => (b[1].right / b[1].total) - (a[1].right / a[1].total))[0]?.[0] ?? null;
 
   return (
     <div className="stack-lg rise">
@@ -63,6 +93,7 @@ export function JourneyScreen() {
           <p className="kicker">{story.stage?.title[code]} · {t("journey.age", { age: story.age })}</p>
           <p className="faint">{t("journey.herMoney")}</p>
           <MoneyStrip money={story.money} />
+          <LifeState state={story.money} />
           <div className="row-between">
             <span className="faint">{t("journey.progress", { done: story.done, total: story.total })}</span>
           </div>
@@ -90,8 +121,18 @@ export function JourneyScreen() {
 
       {story.finished && (
         <section className="finale navy-scene stack-sm" aria-labelledby="revision-h">
+          <div className="journey-transformation" aria-hidden>
+            <div><Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={105} /></div>
+            <ArrowRight size={22} />
+            <div><Character look={look} age={story.age} size={125} mood="proud" /></div>
+          </div>
           <h2 id="revision-h">{t("journey.revisionTitle")}</h2>
           <p className="lead">{t("journey.revisionLead")}</p>
+          <dl className="stats three journey-summary" data-testid="journey-end-summary">
+            <div><dt>{t("journey.summaryChapters")}</dt><dd>{story.done}</dd></div>
+            <div><dt>{t("journey.summaryDrills")}</dt><dd>{drillRight} / {drillTotal}</dd></div>
+            <div><dt>{t("journey.summaryStrong")}</dt><dd>{strongest ? t(`topics.${strongest}`) : "—"}</dd></div>
+          </dl>
           {weakTopics(progress).length > 0 && (
             <p className="muted">{t("journey.revisionWeak", { topics: weakTopics(progress).map((topic) => t(`topics.${topic}`)).join(", ") })}</p>
           )}
@@ -119,7 +160,8 @@ export function JourneyScreen() {
       )}
 
       <section className="stack-sm" aria-labelledby="map-h">
-        <h2 id="map-h">{t("journey.map")}</h2>
+        <h2 id="map-h">{t("journey.archive")}</h2>
+        <p className="faint">{t("journey.archiveLead")}</p>
         <ol className="stage-map">
           {journey.episodes.map((episode, index) => {
             const result = progress.journey[episode.id];
@@ -135,6 +177,7 @@ export function JourneyScreen() {
                   <span className="kicker">{stage?.title[code]} · {t("journey.age", { age: episode.age })}</span>
                   <strong>{state === "locked" ? t("journey.locked") : episode.title[code]}</strong>
                   {result && <span className="faint">{t(`journey.verdict.${episode.options[result.choice]?.verdict ?? "okay"}`)} · {t("journey.drillScore", { right: result.drill, total: episode.drill.length })}</span>}
+                  {result && <span className="archive-answer">{t("journey.originalAnswer", { answer: episode.options[result.choice]?.text[code] ?? "" })}</span>}
                   {state === "waiting" && <span className="faint">{t("journey.tomorrow", { date: story.opensOn ? dayLabel(story.opensOn, code) : "" })}</span>}
                 </span>
               </>
@@ -383,15 +426,7 @@ export function EpisodeScreen({ id }: { id: string }) {
   const order = STEPS.filter((item) => item !== "slip" || episode.slip);
   const position = order.indexOf(step);
   const go = (next: Step) => { tap(); setStep(next); };
-  const after = option
-    ? (() => {
-        const money = { cash: before.cash + (option.effects.cash ?? 0), savings: before.savings + (option.effects.savings ?? 0), debt: before.debt + (option.effects.debt ?? 0) };
-        if (money.savings < 0) { money.cash += money.savings; money.savings = 0; }
-        if (money.cash < 0) { money.debt += -money.cash; money.cash = 0; }
-        if (money.debt < 0) money.debt = 0;
-        return money;
-      })()
-    : before;
+  const after = option ? applyEffects(before, option.effects) : before;
 
   async function finish() {
     if (finishing.current || !episode || choice === null) return;
@@ -495,6 +530,7 @@ export function EpisodeScreen({ id }: { id: string }) {
           <div className="stack-xs">
             <p className="faint">{t("journey.herMoneyNow")}</p>
             <MoneyStrip money={after} />
+            <LifeState state={after} />
           </div>
           <button type="button" className="btn btn-primary" onClick={() => go("why")}>{t("journey.why")}<ArrowRight aria-hidden size={18} /></button>
         </section>
@@ -574,8 +610,12 @@ export function EpisodeScreen({ id }: { id: string }) {
             }
             return (
               <>
-                <p className="note">{following && !(following.id in progress.journey) ? t("journey.nextTomorrow", { title: following.title[code] }) : t("journey.mapNext")}</p>
-                <Link href="/journey" className="btn btn-primary" onClick={() => app.clearFresh()}>{t("journey.backToMap")}</Link>
+                <p className="note">{following && !(following.id in progress.journey) ? t("journey.nextReady", { title: following.title[code] }) : t("journey.mapNext")}</p>
+                {following && !(following.id in progress.journey) ? (
+                  <Link href={`/journey/${following.id}`} className="btn btn-primary" onClick={() => app.clearFresh()} data-testid="next-chapter-button">{t("journey.continueNow")}<ChevronRight aria-hidden size={18} /></Link>
+                ) : (
+                  <Link href="/journey" className="btn btn-primary" onClick={() => app.clearFresh()}>{t("journey.backToMap")}</Link>
+                )}
               </>
             );
           })()}

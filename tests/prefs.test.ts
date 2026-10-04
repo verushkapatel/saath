@@ -24,7 +24,7 @@ describe("preferences", () => {
   it("fills in defaults and drops values it does not know", () => {
     expect(normalizePrefs(undefined)).toEqual(DEFAULT_PREFS);
     const odd = normalizePrefs({ theme: "navy", text: "huge", sound: "yes", aiLocal: 1, aiModel: "../../etc" });
-    expect(odd.theme).toBe("system");
+    expect(odd.theme).toBe("dark");
     expect(odd.text).toBe("normal");
     expect(odd.sound).toBe(true);
     expect(odd.aiLocal).toBe(false);

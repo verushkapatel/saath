@@ -1,21 +1,24 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
-import { LANGS, STAGE_IDS, TOPICS } from "@/lib/catalog";
+import { CHAPTER_IDS, LANGS, TOPICS } from "@/lib/catalog";
 import type { Lesson } from "@/lib/content-types";
 import { grownValue, journeyState, loanCost, moneyAfter, type JourneyFile } from "@/lib/journey";
+import { completeJourney, type ChaptersFile } from "@/lib/journey-complete";
 import { completeEpisode, emptyProgress, levelFor, noteMistake, readStory, XP } from "@/lib/progress";
 
-const file = JSON.parse(readFileSync(`${process.cwd()}/content/journey.json`, "utf8")) as JourneyFile;
+const base = JSON.parse(readFileSync(`${process.cwd()}/content/journey.json`, "utf8")) as JourneyFile;
+const chapters = JSON.parse(readFileSync(`${process.cwd()}/content/journey-chapters.json`, "utf8")) as ChaptersFile;
+const file = completeJourney(base, chapters);
 const lessons = JSON.parse(readFileSync(`${process.cwd()}/content/guide.json`, "utf8")) as Lesson[];
 
 describe("the story file", () => {
-  it("has fourteen episodes, one per life stage, in order", () => {
-    expect(file.episodes.map((episode) => episode.id)).toEqual([...STAGE_IDS]);
-    expect(file.stages.map((stage) => stage.id)).toEqual([...STAGE_IDS]);
+  it("has all forty-five connected chapters in order", () => {
+    expect(file.episodes).toHaveLength(45);
+    expect(file.episodes.map((episode) => episode.id)).toEqual([...CHAPTER_IDS]);
     expect(file.reviewed).toMatch(/^\d{4}-\d{2}/);
   });
 
-  it("has every text in three languages, three options, two drill questions, and real guide links", () => {
+  it("has every text in three languages, three options, five drill questions, and real guide links", () => {
     const guideIds = new Set(lessons.map((lesson) => lesson.id));
     let age = 0;
     for (const episode of file.episodes) {
@@ -23,7 +26,7 @@ describe("the story file", () => {
       expect(episode.age).toBeGreaterThanOrEqual(age);
       age = episode.age;
       expect(episode.options).toHaveLength(3);
-      expect(episode.drill).toHaveLength(2);
+      expect(episode.drill).toHaveLength(5);
       expect(["inspect", "budget", "grow", "emi"]).toContain(episode.sim.kind);
       for (const id of episode.guides) expect(guideIds.has(id)).toBe(true);
       expect(episode.options.some((option) => option.verdict === "good")).toBe(true);
@@ -51,41 +54,31 @@ describe("the story file", () => {
   });
 });
 
-describe("the one-episode-a-day rule", () => {
+describe("continuous chapter progression", () => {
   it("opens the first episode at once", () => {
     const state = journeyState(file, emptyProgress(), "2026-10-05");
-    expect(state.next?.id).toBe(STAGE_IDS[0]);
+    expect(state.next?.id).toBe(CHAPTER_IDS[0]);
     expect(state.open).toBe(true);
     expect(state.done).toBe(0);
   });
 
-  it("holds the next episode until the next calendar day", () => {
-    const played = completeEpisode(emptyProgress(), STAGE_IDS[0], 2, 2, "2026-10-05");
+  it("opens the next chapter immediately after completion", () => {
+    const played = completeEpisode(emptyProgress(), CHAPTER_IDS[0], 2, 2, "2026-10-05");
     const sameDay = journeyState(file, played, "2026-10-05");
-    expect(sameDay.next?.id).toBe(STAGE_IDS[1]);
-    expect(sameDay.open).toBe(false);
-    expect(sameDay.opensOn).toBe("2026-10-06");
-    const nextDay = journeyState(file, played, "2026-10-06");
-    expect(nextDay.open).toBe(true);
-    expect(nextDay.opensOn).toBeNull();
-  });
-
-  it("does not let a skipped week unlock more than one episode", () => {
-    const played = completeEpisode(emptyProgress(), STAGE_IDS[0], 2, 2, "2026-10-05");
-    const later = journeyState(file, played, "2026-10-20");
-    expect(later.next?.id).toBe(STAGE_IDS[1]);
-    expect(later.open).toBe(true);
+    expect(sameDay.next?.id).toBe(CHAPTER_IDS[1]);
+    expect(sameDay.open).toBe(true);
+    expect(sameDay.opensOn).toBeNull();
   });
 
   it("is finished after the last episode", () => {
     let progress = emptyProgress();
-    STAGE_IDS.forEach((id, index) => {
+    CHAPTER_IDS.forEach((id, index) => {
       progress = completeEpisode(progress, id, 0, 1, `2026-11-${String(index + 1).padStart(2, "0")}`);
     });
     const state = journeyState(file, progress, "2026-12-31");
     expect(state.finished).toBe(true);
     expect(state.next).toBeNull();
-    expect(state.done).toBe(14);
+    expect(state.done).toBe(45);
   });
 });
 
@@ -99,7 +92,7 @@ describe("Verena's money", () => {
       ],
     };
     const money = moneyAfter(fake, { a: { choice: 0, drill: 0, at: "2026-10-05" } });
-    expect(money).toEqual({ cash: 0, savings: 0, debt: 500 });
+    expect(money).toMatchObject({ cash: 0, savings: 0, debt: 500 });
     expect(moneyAfter(fake, { a: { choice: 0, drill: 0, at: "x" }, b: { choice: 0, drill: 0, at: "y" } }).debt).toBe(0);
   });
 
@@ -127,10 +120,10 @@ describe("XP and levels", () => {
   });
 
   it("pays for an episode once, plus each right drill answer", () => {
-    const once = completeEpisode(emptyProgress(), STAGE_IDS[0], 1, 2, "2026-10-05");
+    const once = completeEpisode(emptyProgress(), CHAPTER_IDS[0], 1, 2, "2026-10-05");
     expect(once.xp).toBe(XP.task + XP.episode + 2 * XP.drillRight);
-    expect(once.journey[STAGE_IDS[0]]).toEqual({ choice: 1, drill: 2, at: "2026-10-05" });
-    const again = completeEpisode(once, STAGE_IDS[0], 2, 0, "2026-10-06");
+    expect(once.journey[CHAPTER_IDS[0]]).toEqual({ choice: 1, drill: 2, at: "2026-10-05" });
+    const again = completeEpisode(once, CHAPTER_IDS[0], 2, 0, "2026-10-06");
     expect(again).toBe(once);
   });
 

@@ -17,3 +17,6 @@ export const PUBLIC_URL = process.env.NEXT_PUBLIC_SAATH_URL ?? "";
  * This is an address, not a key. The model key lives only on that server.
  */
 export const AI_URL = process.env.NEXT_PUBLIC_SAATH_AI_URL ?? "";
+
+/** Optional free Cloudflare Worker used for feedback delivery and anonymous live-user counts. */
+export const SERVICE_URL = process.env.NEXT_PUBLIC_SAATH_SERVICE_URL ?? AI_URL;

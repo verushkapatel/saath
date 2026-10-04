@@ -27,6 +27,7 @@
     "loading": "Loading",
     "next": "Next",
     "share": "Share",
+    "copy": "Copy",
     "copied": "Copied.",
     "minutes": "About {n} minutes"
   },
@@ -75,9 +76,10 @@
     "masthead": "Saath · from The Skyward Project",
     "continue": "Continue: {path}",
     "pathsDone": "Every path is complete.",
-    "allDoneLead": "Come back tomorrow for the next part of Verena's story. Or read a guide while you are here.",
+    "allDoneLead": "Keep building your financial confidence with Guides, practice, MoneyLab and Saath AI.",
     "todaySaath": "Today's Saath",
-    "todayStory": "Today's part of the story",
+    "todayStory": "Verena's journey",
+    "nextQuest": "Next chapter",
     "todayStoryLead": "{stage}. Verena is {age}.",
     "startStory": "Start the story",
     "continueStory": "Continue the story",
@@ -360,6 +362,26 @@
     "today": "Today",
     "scan": "Scan a receipt",
     "addShort": "Add"
+    ,"atGlance": "Your money at a glance"
+    ,"whereNow": "What needs your attention"
+    ,"todaySpend": "Spent today"
+    ,"todaySpendHint": "Only today's outgoings"
+    ,"budgetRemaining": "Budget remaining"
+    ,"budgetRemainingHint": "Income minus spending and savings"
+    ,"categoryChange": "Largest category"
+    ,"recurringTotal": "Recurring costs"
+    ,"recurringReview": "Review what still earns its place"
+    ,"noneFound": "No repeated charge found yet"
+    ,"noBaseline": "Log spending to see change"
+    ,"newThisMonth": "New or not logged last month"
+    ,"upFromLast": "{amount} more than last month"
+    ,"downFromLast": "{amount} less than last month"
+    ,"oneAction": "One useful action"
+    ,"actionStart": "Log one thing you bought today. That is enough to start a useful picture."
+    ,"actionOver": "You are {amount} over this month's available money. Review the largest flexible expense first."
+    ,"actionRecurring": "Review the recurring {amount}. Cancel only what you no longer use."
+    ,"actionTop": "Look at {category}: {amount} this month. Decide whether that fits what matters to you."
+    ,"actionSave": "Your plan has room. Move a small amount to savings before it gets spent."
   },
   "categories": {
     "pocket": "Family support",
@@ -645,7 +667,7 @@
     "homeJoin": "Got a school code? Join your class."
   },
   "about": {
-    "1": "Story: live Verena's money life, one part a day, from her first month away from home to retirement.",
+    "1": "Story: live Verena's money life through 45 connected chapters, from her first job to retirement.",
     "2": "Learn: 45 short guides, searchable and filtered by topic. Their facts were checked against official sources.",
     "3": "Forms: twenty important forms explained, from KYC and loans to tax returns, insurance claims and government schemes, and a photo reader for the one in front of you.",
     "4": "Money Lab: track your own money, from receipts or by hand. It stays on this device.",
@@ -896,12 +918,12 @@
       "title": "Live a financial life before you have to.",
       "lead": "Follow Verena from her first month away from home to retirement. Make her money decisions, see what follows, and learn why.",
       "cta": "Begin the tour",
-      "note": "{count} short chapters, each one something you can try. Free, no ads, works offline once loaded.",
+      "note": "A {count}-step tour you can try right here, then 45 chapters of Verena's life. Free, no ads, works offline once loaded.",
       "figure": "Verena, the character in Saath's story"
     },
     "play": {
       "title": "Live Verena's money life, from first salary to retirement",
-      "lead": "Verena starts out knowing very little. One part of her life opens each day. You make her decisions and see what follows.",
+      "lead": "Verena starts out knowing very little. Complete her 45 connected chapters at your pace, make her decisions and see what follows.",
       "kicker": "Verena, 19, in Pune",
       "story": "It is the 18th. Verena opens her banking app and sees ₹350. There are twelve days left in the month.",
       "question": "What should she do?",
@@ -917,10 +939,10 @@
       "again": "Try another choice",
       "figure": "Verena looking at her phone",
       "loopLabel": "How each part of the story works",
-      "p1": "Fourteen life stages: first job and payslip, a bank account, budgeting, a first loan, insurance, investing, marriage and children, and retirement.",
+      "p1": "Forty-five connected chapters: first job and pay, banking, budgeting, setbacks, loans, family, resilience and retirement.",
       "p2": "Each part plays like a short film: the scene, a simulation you can try, a decision, what happens next, and why.",
       "p3": "Her mistakes are shown too, with what they cost her, so you can spot them before they happen to you.",
-      "p4": "Every part ends with a short drill of multiple-choice questions, and earns XP."
+      "p4": "Every part ends with five short, explained questions and earns XP."
     },
     "loop": {
       "story": "Story",
@@ -928,7 +950,7 @@
       "decide": "Decide",
       "outcome": "What follows",
       "why": "Why",
-      "drill": "Two questions",
+      "drill": "Five questions",
       "xp": "XP"
     },
     "progress": {
@@ -1091,7 +1113,7 @@
     "progress": "{done} of {total} parts lived",
     "start": "Start the story",
     "playNext": "Play: {title}",
-    "tomorrow": "The next part opens on {date}. One part opens each day.",
+    "tomorrow": "Finish the part before this one to unlock it.",
     "opensOn": "Opens {date}",
     "finishedTitle": "You have lived Verena's whole story.",
     "revisionTitle": "Stay financially capable",
@@ -1099,11 +1121,17 @@
     "revisionWeak": "Topics where you had wrong answers: {topics}.",
     "revisionReplay": "Every part of the story can be replayed from the map below.",
     "map": "Life stages",
+    "archive": "Journey Archive",
+    "archiveLead": "Replay any completed chapter and compare it with the decision you made the first time.",
+    "originalAnswer": "Your first decision: {answer}",
+    "summaryChapters": "Chapters lived",
+    "summaryDrills": "Drill answers",
+    "summaryStrong": "Strongest topic",
     "locked": "Not open yet",
     "lockedLead": "This part opens after the parts before it.",
     "replay": "Play again",
     "drillScore": "{right} of {total} questions right",
-    "rule": "One new part opens each calendar day. Parts you have finished can be replayed any time.",
+    "rule": "Complete chapters in order. Finished chapters stay open in your Journey Archive.",
     "reviewed": "Money facts in the story were checked against official sources in {date}.",
     "backToMap": "Back to the story",
     "loopLabel": "Steps in this part",
@@ -1119,12 +1147,20 @@
     "askWhy": "Why was that the better choice?",
     "askReal": "How does this work in real life?",
     "askWhatNext": "What happens next in Verena's story?",
-    "toDrill": "Two quick questions",
+    "toDrill": "Five quick questions",
     "finish": "Finish this part",
     "doneTitle": "Part complete",
     "xpEarned": "+{xp} XP",
     "replayNoXp": "Replays do not add XP. Your first result stays.",
-    "nextTomorrow": "Next: “{title}”. It opens tomorrow.",
+    "nextTomorrow": "Next: “{title}”.",
+    "nextReady": "Next chapter ready: “{title}”.",
+    "continueNow": "Continue the journey",
+    "income": "Monthly income",
+    "emergency": "Emergency fund",
+    "investments": "Investments",
+    "protection": "Protection",
+    "confidence": "Confidence",
+    "resilience": "Resilience",
     "mapNext": "See the story map for what comes next.",
     "toRevision": "See revision mode",
     "flag": "Check this",
@@ -1159,7 +1195,7 @@
       "decide": "Decide",
       "outcome": "What follows",
       "why": "Why",
-      "drill": "Two questions",
+      "drill": "Five questions",
       "done": "XP"
     },
     "storyPlayer": "Story",
@@ -1258,12 +1294,13 @@
     "whyWrong": "Why was my answer wrong? The question was: {question}",
     "mode": {
       "device": "Answering on this device from checked guides.",
+      "ollama": "Answering with your Ollama model, grounded in Saath guides.",
       "local": "Answering with the model in this browser. Nothing leaves this device.",
       "online": "Answering with the online model, from checked guides."
     },
     "via": {
       "device": "Checked guides, on this device",
-      "local": "Model in this browser",
+      "local": "Local open model",
       "online": "Online model"
     },
     "offerTitle": "Saath AI answers online",
@@ -1361,7 +1398,7 @@
       "scholar": "Read 30 guides.",
       "witness": "Read 3 real stories.",
       "pathfinder": "Finished a path.",
-      "halfway": "Lived 7 parts of the story.",
+      "halfway": "Lived 23 parts of the story.",
       "secure": "Reached retirement in the story."
     },
     "need": {
@@ -1415,6 +1452,14 @@
     "aiMemory": "Remember my chat",
     "aiMemorySub": "Keep the conversation on this device between visits. Turning this off deletes it.",
     "local": "Model in this browser",
+    "ollama": "Your Ollama model",
+    "ollamaLead": "Connect a free model you run yourself. Saath sends only your question, current learning context and relevant checked guides.",
+    "ollamaEndpoint": "Ollama endpoint",
+    "ollamaModel": "Model name",
+    "ollamaSave": "Save local connection",
+    "ollamaSaved": "Ollama will be tried first. If it is offline, Saath falls back safely.",
+    "ollamaCleared": "Ollama connection removed.",
+    "ollamaPrivacy": "Usually use http://localhost:11434. Ollama must allow this site's origin. The endpoint stays only on this device.",
     "localLead": "Download a small open model (Qwen 2.5 Instruct) to answer in fuller sentences. It runs on this device's graphics chip. It still answers only from Saath's checked guides.",
     "localModel": "Model size",
     "model": {
@@ -1441,7 +1486,7 @@
     "aiOnline": "Allow the online model",
     "aiOnlineSub": "Questions go to Saath's server with identity numbers removed. Money Lab data is never sent.",
     "aiOnlineNone": "This copy of Saath has no online model, so nothing you ask is sent anywhere.",
-    "aiOrder": "Saath uses the model in this browser if it is on, then the online model if allowed, then its checked guides.",
+    "aiOrder": "Saath tries your Ollama endpoint first, then the browser model, then the online model if allowed, and always falls back to checked guides.",
     "focus": "What feels hardest",
     "focusLead": "Saath uses this to suggest what to read and revise.",
     "account": "Account",

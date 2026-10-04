@@ -7,7 +7,7 @@ import { PREFS_BOOT } from "@/lib/prefs";
 import "./globals.css";
 import "./simulations.css";
 
-// One clean sans for everything, as on Apple platforms: Inter for Latin, Noto Sans Devanagari for Hindi and Marathi.
+// One formal serif throughout: EB Garamond for Latin, Noto Sans Devanagari for Hindi and Marathi.
 // They are downloaded at build time and served from this site, with size-matched fallbacks so text does not jump.
 const sans = EB_Garamond({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "600", "700", "800"] });
 const dev = Noto_Sans_Devanagari({ subsets: ["devanagari"], variable: "--font-dev", display: "swap", weight: ["400", "600", "700"] });
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f2f2f7" },
+    { media: "(prefers-color-scheme: light)", color: "#000000" },
     { media: "(prefers-color-scheme: dark)", color: "#000000" },
   ],
   colorScheme: "light dark",

@@ -53,7 +53,7 @@ export const REWARDS: Reward[] = [
   { id: "scholar", kind: "badge", need: { type: "lessons", value: 30 } },
   { id: "witness", kind: "badge", need: { type: "stories", value: 3 } },
   { id: "pathfinder", kind: "badge", need: { type: "paths", value: 1 } },
-  { id: "halfway", kind: "badge", need: { type: "episodes", value: 7 } },
+  { id: "halfway", kind: "badge", need: { type: "episodes", value: 23 } },
   { id: "secure", kind: "badge", need: { type: "episode", id: "retirement" } },
 ];
 

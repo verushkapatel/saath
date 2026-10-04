@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ChevronLeft, Download, Printer, Share2 } from "lucide-react";
+import { ChevronLeft, Download, Printer } from "lucide-react";
 import { UNITS, type Unit } from "@/lib/catalog";
 import { asset } from "@/lib/config";
 import type { Lesson } from "@/lib/content-types";
 import { monthLabel } from "@/lib/format";
-import { shareText, tap } from "@/lib/speech";
+import { tap } from "@/lib/speech";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
+import { ShareButton } from "./share-button";
 import { ListenButton, PageSkeleton } from "./ui";
 
 const plain = (text: string) => text.replace(/\[\[([a-z0-9-]+)\]\]/g, "$1");
@@ -23,7 +24,6 @@ export function HandbookScreen({ print }: { print?: boolean }) {
   const { lessons } = useApp();
   const [terms, setTerms] = useState<Record<string, string>>({});
   const [pdf, setPdf] = useState(false);
-  const [note, setNote] = useState("");
 
   useEffect(() => {
     fetch(asset("/content/glossary.json"))
@@ -78,20 +78,8 @@ export function HandbookScreen({ print }: { print?: boolean }) {
               <p className="lead">{t(`unitDesc.${unit}`)}</p>
               <div className="cluster no-print">
                 <ListenButton text={unitText(unit, list)} />
-                <button
-                  type="button"
-                  className="listen"
-                  onClick={async () => {
-                    tap();
-                    const result = await shareText(t("handbook.title"), unitText(unit, list));
-                    setNote(result === "copied" ? `${unit}` : "");
-                  }}
-                >
-                  <Share2 aria-hidden size={18} />
-                  {t("handbook.shareUnit")}
-                </button>
+                <ShareButton title={t("handbook.title")} text={unitText(unit, list)} path="/handbook" label={t("handbook.shareUnit")} className="listen" />
               </div>
-              {note === unit && <p role="status" className="note">{t("common.copied")}</p>}
             </div>
             {list.map((lesson) => (
               <section key={lesson.id} className="stack-sm handbook-lesson">

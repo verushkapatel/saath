@@ -4,6 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { loadJson, type Lesson, type Path } from "@/lib/content-types";
 import { todayISO } from "@/lib/dates";
 import { journeyState, type JourneyFile, type JourneyState } from "@/lib/journey";
+import { completeJourney, type ChaptersFile } from "@/lib/journey-complete";
 import {
   answerCase,
   answerQuestion,
@@ -125,7 +126,10 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       });
     loadJson<Lesson[]>("/content/guide.json").then((data) => live && setLessons(data)).catch(() => undefined);
     loadJson<Path[]>("/content/paths.json").then((data) => live && setPaths(data)).catch(() => undefined);
-    loadJson<JourneyFile>("/content/journey.json").then((data) => live && setJourney(data)).catch(() => undefined);
+    Promise.all([
+      loadJson<JourneyFile>("/content/journey.json"),
+      loadJson<ChaptersFile>("/content/journey-chapters.json"),
+    ]).then(([base, chapters]) => live && setJourney(completeJourney(base, chapters))).catch(() => undefined);
     const onVisible = () => {
       if (document.visibilityState === "visible") setToday(todayISO());
     };

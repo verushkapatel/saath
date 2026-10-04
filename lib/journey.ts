@@ -4,7 +4,18 @@ import { emiReducing } from "./finance";
 import type { Progress } from "./progress";
 
 /** What a decision does to the character's money. Amounts are rupees in her story, never the user's. */
-export type Effects = { cash?: number; savings?: number; debt?: number };
+export type Effects = {
+  cash?: number;
+  income?: number;
+  savings?: number;
+  emergency?: number;
+  investments?: number;
+  debt?: number;
+  insurance?: number;
+  dependents?: number;
+  confidence?: number;
+  resilience?: number;
+};
 
 export type EpisodeOption = {
   text: Copy;
@@ -53,7 +64,18 @@ export type JourneyFile = {
   episodes: Episode[];
 };
 
-export type Money = { cash: number; savings: number; debt: number };
+export type Money = {
+  cash: number;
+  income: number;
+  savings: number;
+  emergency: number;
+  investments: number;
+  debt: number;
+  insurance: number;
+  dependents: number;
+  confidence: number;
+  resilience: number;
+};
 
 export type JourneyState = {
   done: number;
@@ -70,56 +92,56 @@ export type JourneyState = {
   age: number;
 };
 
+export function applyEffects(current: Money, effects: Effects): Money {
+  const money = { ...current };
+  for (const key of Object.keys(money) as (keyof Money)[]) money[key] += effects[key] ?? 0;
+  if (money.savings < 0) {
+    money.cash += money.savings;
+    money.savings = 0;
+  }
+  if (money.cash < 0) {
+    money.debt += -money.cash;
+    money.cash = 0;
+  }
+  if (money.debt < 0) money.debt = 0;
+  for (const key of ["income", "emergency", "investments", "insurance", "dependents"] as const) if (money[key] < 0) money[key] = 0;
+  money.confidence = Math.max(0, Math.min(100, money.confidence));
+  money.resilience = Math.max(0, Math.min(100, money.resilience));
+  return money;
+}
+
 /** Adds up what her decisions have done so far. Savings and cash never show below zero: a shortfall becomes debt. */
 export function moneyAfter(file: JourneyFile, journey: Progress["journey"]): Money {
-  const money: Money = { cash: 0, savings: 0, debt: 0 };
+  const money: Money = { cash: 0, income: 0, savings: 0, emergency: 0, investments: 0, debt: 0, insurance: 0, dependents: 0, confidence: 20, resilience: 15 };
   for (const episode of file.episodes) {
     const result = journey[episode.id];
     if (!result) continue;
     const effects = episode.options[result.choice]?.effects ?? {};
-    money.cash += effects.cash ?? 0;
-    money.savings += effects.savings ?? 0;
-    money.debt += effects.debt ?? 0;
-    if (money.savings < 0) {
-      money.cash += money.savings;
-      money.savings = 0;
-    }
-    if (money.cash < 0) {
-      money.debt += -money.cash;
-      money.cash = 0;
-    }
-    if (money.debt < 0) money.debt = 0;
+    Object.assign(money, applyEffects(money, effects));
   }
   return money;
 }
 
 /**
- * Where the story stands. One new episode opens per calendar day, so the story is lived over weeks.
- * An episode already finished can be replayed at any time.
+ * Where the story stands. The next chapter opens as soon as the previous one is complete.
+ * Daily challenges still provide a gentle reason to return, while the main story never blocks a motivated learner.
  */
 export function journeyState(file: JourneyFile, progress: Progress, today: string): JourneyState {
   const finishedIds = file.episodes.filter((episode) => episode.id in progress.journey);
   const next = file.episodes.find((episode) => !(episode.id in progress.journey)) ?? null;
-  const lastDay = finishedIds.map((episode) => progress.journey[episode.id].at).sort().at(-1) ?? null;
-  const open = Boolean(next) && (lastDay === null || lastDay < today);
+  const open = Boolean(next);
   const current = next ?? file.episodes.at(-1) ?? null;
   return {
     done: finishedIds.length,
     total: file.episodes.length,
     next,
     open,
-    opensOn: next && !open ? nextDay(lastDay as string) : null,
+    opensOn: null,
     finished: file.episodes.length > 0 && !next,
     money: moneyAfter(file, progress.journey),
     stage: current ? file.stages.find((stage) => stage.id === current.stage) ?? null : null,
     age: current?.age ?? 0,
   };
-}
-
-function nextDay(iso: string): string {
-  const [year, month, day] = iso.split("-").map(Number);
-  const date = new Date(year, month - 1, day + 1);
-  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }
 
 /** What regular saving grows to. An illustration of compounding at an assumed rate, not a promise of any return. */

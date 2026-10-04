@@ -64,7 +64,7 @@ export function createRemoteProvider(
       if (inventedNumbers(text, given).length > 0) throw new Error("ungrounded");
       return {
         text,
-        sources: hits.filter((hit) => hit.doc.kind !== "term").slice(0, 3).map((hit) => ({ title: hit.doc.title, href: hit.doc.href })),
+        sources: [...hits].sort((a, b) => Number(b.doc.kind === "guide") - Number(a.doc.kind === "guide") || b.score - a.score).filter((hit) => hit.doc.kind !== "term").slice(0, 3).map((hit) => ({ title: hit.doc.title, href: hit.doc.href })),
         via: "online",
         grounded: hits.length > 0,
       };

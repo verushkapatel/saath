@@ -297,6 +297,19 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
   }, [entries, month]);
   const recurring = useMemo(() => recurringSpends(entries).slice(0, 4), [entries]);
   const weekend = useMemo(() => weekendShare(entries), [entries]);
+  const pulse = useMemo(() => {
+    const todaySpend = entries.filter((entry) => entry.kind === "out" && entry.date === app.today).reduce((sum, entry) => sum + entry.amount, 0);
+    const previous = shiftMonth(month, -1);
+    const priorByCategory = new Map<string, number>();
+    for (const entry of entries) {
+      if (entry.kind === "out" && entry.date.startsWith(previous)) priorByCategory.set(entry.category, (priorByCategory.get(entry.category) ?? 0) + entry.amount);
+    }
+    const top = view.spend[0] ?? null;
+    const prior = top ? priorByCategory.get(top[0]) ?? 0 : 0;
+    const change = top ? top[1] - prior : 0;
+    const recurringTotal = recurring.reduce((sum, item) => sum + item.amount, 0);
+    return { todaySpend, top, prior, change, recurringTotal };
+  }, [entries, app.today, month, view.spend, recurring]);
 
   if (!app.ready) return <PageSkeleton />;
   if (app.failed) {
@@ -321,6 +334,15 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
   const value = parseAmountInput(amount);
   const nextDue = (loan: Loan) => loan.schedule.find((row) => row.due >= app.today)?.due ?? loan.schedule.at(-1)?.due ?? "";
   const spoken = t("money.summary", { month: monthLabel(month, code), inn: money(view.totals.in), out: money(view.totals.out), save: money(view.totals.save) });
+  const clearAction = view.inMonth.length === 0
+    ? t("money.actionStart")
+    : view.left < 0
+      ? t("money.actionOver", { amount: money(Math.abs(view.left)) })
+      : pulse.recurringTotal > 0
+        ? t("money.actionRecurring", { amount: money(pulse.recurringTotal) })
+        : pulse.top
+          ? t("money.actionTop", { category: t(`categories.${pulse.top[0]}`), amount: money(pulse.top[1]) })
+          : t("money.actionSave");
 
   function openLogSheet() {
     tap();
@@ -389,6 +411,30 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
         <button type="button" className="money-action" onClick={() => { tap(); setSaved(false); setSheet("receipt"); }}><span><Camera aria-hidden size={22} /></span>{t("money.scan")}</button>
         <button type="button" className="money-action" onClick={() => { tap(); setGoalDraft(goal ? String(goal) : ""); setSheet("goal"); }}><span><Target aria-hidden size={22} /></span>{t("money.goal")}</button>
       </div>
+
+      <section className="money-pulse card stack-sm" aria-labelledby="money-pulse-title" data-testid="moneylab-useful-summary">
+        <div className="row-between">
+          <div className="stack-xs">
+            <p className="kicker">{t("money.atGlance")}</p>
+            <h2 id="money-pulse-title">{t("money.whereNow")}</h2>
+          </div>
+          <Sparkles aria-hidden size={20} />
+        </div>
+        <dl className="money-signal-grid">
+          <div><dt>{t("money.todaySpend")}</dt><dd>{money(pulse.todaySpend)}</dd><span>{t("money.todaySpendHint")}</span></div>
+          <div><dt>{t("money.budgetRemaining")}</dt><dd className={view.left < 0 ? "signal-danger" : ""}>{money(view.left)}</dd><span>{t("money.budgetRemainingHint")}</span></div>
+          <div>
+            <dt>{t("money.categoryChange")}</dt>
+            <dd>{pulse.top ? t(`categories.${pulse.top[0]}`) : "—"}</dd>
+            <span>{!pulse.top ? t("money.noBaseline") : pulse.prior === 0 ? t("money.newThisMonth") : pulse.change >= 0 ? t("money.upFromLast", { amount: money(pulse.change) }) : t("money.downFromLast", { amount: money(Math.abs(pulse.change)) })}</span>
+          </div>
+          <div><dt>{t("money.recurringTotal")}</dt><dd>{money(pulse.recurringTotal)}</dd><span>{pulse.recurringTotal ? t("money.recurringReview") : t("money.noneFound")}</span></div>
+        </dl>
+        <div className="money-next-action">
+          <span>{t("money.oneAction")}</span>
+          <strong>{clearAction}</strong>
+        </div>
+      </section>
 
       <section className="stack-sm" aria-labelledby="entries-h">
         <h2 id="entries-h">{t("money.entries")}</h2>

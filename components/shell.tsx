@@ -26,14 +26,15 @@ import { RewardSheet } from "./reward-sheet";
 import { SessionCtx } from "./session";
 import { ThemeToggle } from "./theme-toggle";
 import { InstallStep, MakeYours } from "./welcome";
+import { ActivityHeartbeat } from "./activity-heartbeat";
 import { Footer, PageSkeleton } from "./ui";
 
 type Nav = { href: string; key: string; icon: typeof Home; match: (path: string) => boolean };
 
 const TABS: Nav[] = [
-  { href: "/", key: "nav.home", icon: Home, match: (path) => path === "/" || /^\/(stories|privacy|about|games)/.test(path) },
+  { href: "/", key: "nav.home", icon: Home, match: (path) => path === "/" || /^\/(stories|privacy|about)/.test(path) },
   { href: "/journey", key: "nav.journey", icon: Route, match: (path) => path.startsWith("/journey") },
-  { href: "/guide", key: "nav.guide", icon: BookOpen, match: (path) => /^\/(guide|paths|drills|handbook|comic|check)/.test(path) },
+  { href: "/guide", key: "nav.guide", icon: BookOpen, match: (path) => /^\/(guide|paths|drills|handbook|check)/.test(path) },
   { href: "/money-lab", key: "nav.money", icon: Wallet, match: (path) => path.startsWith("/money-lab") },
   { href: "/forms", key: "nav.forms", icon: FileText, match: (path) => /^\/(forms|scan)/.test(path) },
 ];
@@ -80,7 +81,7 @@ function Landing() {
         </div>
         <div className="gate-list" role="radiogroup" aria-label={copy[shown].title}>
           {LANGS.map((lang) => (
-            <button key={lang} type="button" role="radio" lang={lang} aria-checked={pick === lang} onClick={() => { tap(); setPick(lang); }}>
+            <button key={lang} type="button" role="radio" lang={lang} aria-checked={pick === lang} onClick={() => { tap(); setPick(lang); }} data-testid={`language-option-${lang}`}>
               <span>
                 <b>{copy[lang].name}</b>
                 <span className="faint">{copy[lang].hello}</span>
@@ -91,7 +92,7 @@ function Landing() {
             </button>
           ))}
         </div>
-        <button type="button" className="btn btn-primary" lang={shown} disabled={!pick} onClick={() => { if (pick) { tap(); setLang(pick); window.scrollTo({ top: 0 }); } }}>
+        <button type="button" className="btn btn-primary" lang={shown} disabled={!pick} onClick={() => { if (pick) { tap(); setLang(pick); window.scrollTo({ top: 0 }); } }} data-testid="language-continue-button">
           {copy[shown].cta}
         </button>
       </div>
@@ -186,7 +187,7 @@ function Frame({ children }: { children: React.ReactNode }) {
   const clean = pathname.replace(/\/$/, "") || "/";
   // Partner pages and the print view need no login. Privacy and About can be read before signing up.
   const partner = /^\/(impact|link)/.test(clean);
-  const open = /^\/(privacy|about)/.test(clean);
+  const open = /^\/(privacy|about|admin)/.test(clean);
 
   const enter = useCallback((next: Account | null) => {
     setScope(next?.id ?? null);
@@ -292,6 +293,7 @@ function Frame({ children }: { children: React.ReactNode }) {
     <SessionCtx.Provider value={session}>
       <AppStateProvider key={account.id}>
         <AiContextProvider>
+          <ActivityHeartbeat />
           <AppFrame account={account}>{children}</AppFrame>
         </AiContextProvider>
       </AppStateProvider>

@@ -38,7 +38,7 @@ export function MakeYours({ onNext, onLogin, onBack }: { onNext: () => void; onL
         <ul className="welcome-points">
           {["p1", "p2", "p3"].map((key) => <li key={key}><Check aria-hidden size={16} strokeWidth={3} />{t(`welcome.${key}`)}</li>)}
         </ul>
-        <button type="button" className="btn btn-primary" onClick={() => { tap(); onNext(); }}>{t("welcome.cta")}<ArrowRight aria-hidden size={18} /></button>
+        <button type="button" className="btn btn-primary" onClick={() => { tap(); onNext(); }} data-testid="welcome-create-account-button">{t("welcome.cta")}<ArrowRight aria-hidden size={18} /></button>
         <button type="button" className="btn btn-ghost" onClick={() => { tap(); onLogin(); }}>{t("auth.haveAccount")}</button>
       </div>
     </main>
@@ -112,7 +112,7 @@ export function InstallStep({ onNext, onBack }: { onNext: () => void; onBack: ()
         {shown === "ios" && <p className="note">{t("installStep.iosNote")}</p>}
 
         <button type="button" className="btn btn-primary" onClick={() => { tap(); onNext(); }}>{t("installStep.done")}<ArrowRight aria-hidden size={18} /></button>
-        <button type="button" className="btn btn-ghost" onClick={() => { tap(); onNext(); }}>{t("installStep.skip")}</button>
+        <button type="button" className="btn btn-ghost" onClick={() => { tap(); onNext(); }} data-testid="install-skip-button">{t("installStep.skip")}</button>
         <p className="faint center">{t("install.note")}</p>
       </div>
     </main>

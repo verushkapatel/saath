@@ -89,8 +89,8 @@ export function useProvider() {
   const { prefs } = usePrefs();
   const docsFor = useAiDocs();
   return useMemo(
-    () => getProvider({ docsFor, allowLocal: prefs.aiLocal, localModel: prefs.aiModel, allowOnline: prefs.aiOnline }),
-    [docsFor, prefs.aiLocal, prefs.aiModel, prefs.aiOnline],
+    () => getProvider({ docsFor, allowLocal: prefs.aiLocal, localModel: prefs.aiModel, ollamaUrl: prefs.aiOllamaUrl, ollamaModel: prefs.aiOllamaModel, allowOnline: prefs.aiOnline }),
+    [docsFor, prefs.aiLocal, prefs.aiModel, prefs.aiOllamaUrl, prefs.aiOllamaModel, prefs.aiOnline],
   );
 }
 
@@ -120,14 +120,14 @@ function OnlineNote() {
     }
   };
   return (
-    <div className="online-offer" role="note">
-      <p><Sparkles aria-hidden size={16} style={{ verticalAlign: "-3px" }} /> <strong>{t("ai.offerTitle")}</strong></p>
+    <details className="online-offer" role="note">
+      <summary><Sparkles aria-hidden size={16} /> <strong>{t("ai.offerTitle")}</strong></summary>
       <p className="faint">{t("ai.offerBody")}</p>
-      <div className="cluster">
-        <button type="button" className="chip" aria-pressed={prefs.aiOnline} onClick={() => close(true)}>{t("ai.offerYes")}</button>
-        <button type="button" className="chip" aria-pressed={!prefs.aiOnline} onClick={() => close(false)}>{t("ai.offerNo")}</button>
+      <div className="pair">
+        <button type="button" className="btn btn-secondary" aria-pressed={prefs.aiOnline} onClick={() => close(true)}>{t("ai.offerYes")}</button>
+        <button type="button" className="btn btn-ghost" aria-pressed={!prefs.aiOnline} onClick={() => close(false)}>{t("ai.offerNo")}</button>
       </div>
-    </div>
+    </details>
   );
 }
 
@@ -304,7 +304,7 @@ function Chat({ compact }: { compact?: boolean }) {
   const suggestions = ai.context?.suggestions?.length
     ? ai.context.suggestions
     : [t("ai.s1"), t("ai.s2"), t("ai.s3")];
-  const mode = providerMode({ allowLocal: prefs.aiLocal, allowOnline: prefs.aiOnline });
+  const mode = providerMode({ allowLocal: prefs.aiLocal, allowOnline: prefs.aiOnline, ollamaUrl: prefs.aiOllamaUrl, ollamaModel: prefs.aiOllamaModel });
 
   return (
     <div className={`chat-wrap${compact ? " compact" : ""}`}>
@@ -326,15 +326,16 @@ function Chat({ compact }: { compact?: boolean }) {
           <div key={index} className={`bubble ${line.role === "user" ? "me" : "saath"}`}>
             {line.role === "user" ? <p>{line.text}</p> : index === fresh ? <Typed text={line.text} onDone={() => endRef.current?.scrollIntoView({ block: "end" })} /> : <RichText text={line.text} />}
             {line.sources && line.sources.length > 0 && (
-              <p className="bubble-sources">
-                <span className="faint">{t("ai.sources")}: </span>
+              <div className="bubble-guides" data-testid="ai-guide-recommendations">
+                <span className="faint">{t("ai.sources")}</span>
                 {line.sources.map((source, at) => (
-                  <span key={source.href + at}>
-                    {at > 0 ? ", " : ""}
-                    <Link href={source.href} onClick={() => ai.closeAsk()}>{source.title}</Link>
-                  </span>
+                  <Link key={source.href + at} href={source.href} className="ai-guide-card" onClick={() => ai.closeAsk()}>
+                    <BookOpen aria-hidden size={17} />
+                    <span>{source.title}</span>
+                    <ArrowUp aria-hidden size={15} className="guide-arrow" />
+                  </Link>
                 ))}
-              </p>
+              </div>
             )}
             {line.role === "saath" && <div className="bubble-tools"><ListenButton compact text={line.text.replace(/\*\*/g, "").replace(/^- /gm, "")} lang={line.lang} /></div>}
             {line.via && <p className="bubble-via">{t(`ai.via.${line.via}`)}</p>}

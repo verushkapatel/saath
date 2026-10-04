@@ -8,8 +8,22 @@ binding = "AI"
 
 [vars]
 # The app's address. Requests from anywhere else are refused. Separate several with commas.
-ALLOWED_ORIGIN = "https://verushkapatel.github.io"
+ALLOWED_ORIGIN = "https://verushkapatel.github.io,https://wealth-story-1.preview.emergentagent.com"
 # AI_MODEL = "@cf/meta/llama-3.1-8b-instruct"
+# FEEDBACK_FROM = "saath@your-verified-domain.example"
+
+[[durable_objects.bindings]]
+name = "SAATH_STATE"
+class_name = "SaathState"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["SaathState"]
+
+# After verifying the fixed destination address in Cloudflare Email Routing:
+# [[send_email]]
+# name = "FEEDBACK_EMAIL"
+# destination_address = "verushkapatel4@gmail.com"
 
 # Option 2: an OpenAI-compatible API instead. Remove the [ai] block above, then run:
 #   npx wrangler secret put AI_API_KEY
