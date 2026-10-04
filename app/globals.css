@@ -2613,3 +2613,19 @@ h1 { font-weight: 700; }
 @media (min-width: 900px) { .photo-cta .btn { justify-self: start; width: auto; padding-inline: var(--s-7); } }
 .ai-form-cta { display: grid; gap: var(--s-3); padding: var(--s-5); margin-bottom: var(--s-4); border: 1px solid var(--line-strong); border-radius: var(--r-lg); background: var(--surface-1); }
 .chips { padding-block: var(--s-1); }
+
+/* Landing: calm and premium. Each chapter is a title, one line and its key points; only the first chapter keeps one
+   playable decision. The rest of the buttons live inside the app, not on the welcome page. */
+.intro .act .demo, .intro .act .loop, .intro .act .faint:has(svg) { display: none; }
+.intro #act-play .demo { display: grid; }
+.intro .act { min-height: auto; padding-block: var(--s-8); gap: var(--s-4); }
+.intro .act-navy { background: var(--bg) !important; color: var(--text); margin-block: 0; }
+.intro .act-navy .act-num, .intro .act-navy h2, .intro .act-navy .lead { color: inherit; }
+.intro .act + .act { border-top: 1px solid var(--line); }
+.intro .act h2 { font-size: clamp(1.75rem, 6vw, 2.5rem); max-width: 22ch; }
+.intro .act .lead { max-width: 52ch; color: var(--text-muted); }
+.intro .act-points { gap: var(--s-2); }
+.intro .act-points li { color: var(--text-muted); }
+.intro .act-points svg, .intro .act-navy .act-points svg { background: transparent; color: var(--text); padding: 0; }
+.intro-dots { display: none; }
+.intro-top .lang-switch, .intro-top .icon-btn { background: transparent !important; border: 0 !important; }
