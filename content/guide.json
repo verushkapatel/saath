@@ -1351,9 +1351,9 @@
     "topic": "tax",
     "icon": "building",
     "title": {
-      "en": "Tax, for a student",
-      "hi": "कर, एक छात्र के लिए",
-      "mr": "कर, विद्यार्थ्यासाठी"
+      "en": "Tax, in plain words",
+      "hi": "टैक्स, आसान शब्दों में",
+      "mr": "कर, सोप्या शब्दांत"
     },
     "summary": {
       "en": "Most pocket money is not a tax problem. A job might be.",

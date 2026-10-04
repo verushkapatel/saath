@@ -1,0 +1,314 @@
+{
+ "needs": [
+  {
+   "id": "rent",
+   "need": true,
+   "text": {
+    "en": "This month's rent",
+    "hi": "इस महीने का किराया",
+    "mr": "या महिन्याचे भाडे"
+   },
+   "why": {
+    "en": "A roof is a need. Missing rent has real costs.",
+    "hi": "छत ज़रूरत है। किराया छूटने के असली नुकसान हैं।",
+    "mr": "छप्पर ही गरज आहे. भाडे चुकल्याचे खरे तोटे आहेत."
+   }
+  },
+  {
+   "id": "medicine",
+   "need": true,
+   "text": {
+    "en": "Medicine the doctor prescribed",
+    "hi": "डॉक्टर की लिखी दवा",
+    "mr": "डॉक्टरांनी लिहिलेले औषध"
+   },
+   "why": {
+    "en": "Health comes first. Prescribed medicine is a need.",
+    "hi": "सेहत पहले। लिखी हुई दवा ज़रूरत है।",
+    "mr": "आरोग्य आधी. लिहून दिलेले औषध ही गरज आहे."
+   }
+  },
+  {
+   "id": "bus",
+   "need": true,
+   "text": {
+    "en": "Bus pass to get to work",
+    "hi": "काम पर जाने का बस पास",
+    "mr": "कामावर जाण्यासाठी बस पास"
+   },
+   "why": {
+    "en": "It keeps your income coming. A need.",
+    "hi": "इससे कमाई चलती रहती है। ज़रूरत।",
+    "mr": "त्यामुळे कमाई चालू राहते. गरज."
+   }
+  },
+  {
+   "id": "power",
+   "need": true,
+   "text": {
+    "en": "The electricity bill",
+    "hi": "बिजली का बिल",
+    "mr": "विजेचे बिल"
+   },
+   "why": {
+    "en": "Unpaid bills bring late fees and cut-offs. A need.",
+    "hi": "बिल न भरने पर जुर्माना और कनेक्शन कटता है। ज़रूरत।",
+    "mr": "बिल न भरल्यास दंड आणि जोडणी तुटते. गरज."
+   }
+  },
+  {
+   "id": "groceries",
+   "need": true,
+   "text": {
+    "en": "Rice, dal and vegetables for the week",
+    "hi": "हफ़्ते भर का चावल, दाल और सब्ज़ी",
+    "mr": "आठवड्याचे तांदूळ, डाळ आणि भाजी"
+   },
+   "why": {
+    "en": "Basic food is a need.",
+    "hi": "बुनियादी खाना ज़रूरत है।",
+    "mr": "मूलभूत अन्न ही गरज आहे."
+   }
+  },
+  {
+   "id": "fees",
+   "need": true,
+   "text": {
+    "en": "Exam fee due this week",
+    "hi": "इस हफ़्ते की परीक्षा फ़ीस",
+    "mr": "या आठवड्यातील परीक्षा फी"
+   },
+   "why": {
+    "en": "Missing it costs far more later. A need.",
+    "hi": "छूटने पर बाद में बहुत ज़्यादा नुकसान। ज़रूरत।",
+    "mr": "चुकल्यास नंतर खूप जास्त नुकसान. गरज."
+   }
+  },
+  {
+   "id": "phone",
+   "need": false,
+   "text": {
+    "en": "A new phone when yours works fine",
+    "hi": "नया फ़ोन, जबकि पुराना ठीक चल रहा है",
+    "mr": "नवा फोन, जुना नीट चालत असताना"
+   },
+   "why": {
+    "en": "Nice to have, not needed today. A want.",
+    "hi": "अच्छा लगेगा, पर आज ज़रूरी नहीं। चाहत।",
+    "mr": "छान वाटेल, पण आज गरज नाही. इच्छा."
+   }
+  },
+  {
+   "id": "movie",
+   "need": false,
+   "text": {
+    "en": "A movie with friends",
+    "hi": "दोस्तों के साथ फ़िल्म",
+    "mr": "मित्रांसोबत सिनेमा"
+   },
+   "why": {
+    "en": "Fun matters, but it is a want. Plan it from what is left.",
+    "hi": "मज़ा ज़रूरी है, पर यह चाहत है। बचे पैसों से योजना बनाएँ।",
+    "mr": "मजा महत्त्वाची, पण ही इच्छा आहे. उरलेल्यातून नियोजन करा."
+   }
+  },
+  {
+   "id": "shoes",
+   "need": false,
+   "text": {
+    "en": "Branded shoes on sale",
+    "hi": "सेल में ब्रांडेड जूते",
+    "mr": "सेलमधले ब्रँडेड बूट"
+   },
+   "why": {
+    "en": "A sale does not turn a want into a need.",
+    "hi": "सेल चाहत को ज़रूरत नहीं बनाती।",
+    "mr": "सेल इच्छेला गरज बनवत नाही."
+   }
+  },
+  {
+   "id": "skin",
+   "need": false,
+   "text": {
+    "en": "A skin in your favourite game",
+    "hi": "पसंदीदा गेम में स्किन",
+    "mr": "आवडत्या गेममधील स्किन"
+   },
+   "why": {
+    "en": "A want. Small spends like this add up fast.",
+    "hi": "चाहत। ऐसे छोटे खर्च जल्दी जुड़ जाते हैं।",
+    "mr": "इच्छा. असे छोटे खर्च पटकन वाढतात."
+   }
+  },
+  {
+   "id": "coffee",
+   "need": false,
+   "text": {
+    "en": "Café coffee every day",
+    "hi": "रोज़ कैफ़े की कॉफ़ी",
+    "mr": "रोज कॅफेची कॉफी"
+   },
+   "why": {
+    "en": "A want. Daily habits are the biggest hidden spend.",
+    "hi": "चाहत। रोज़ की आदतें सबसे बड़ा छिपा खर्च होती हैं।",
+    "mr": "इच्छा. रोजच्या सवयी हा सर्वात मोठा लपलेला खर्च असतो."
+   }
+  },
+  {
+   "id": "upgrade",
+   "need": false,
+   "text": {
+    "en": "A faster data pack for streaming",
+    "hi": "स्ट्रीमिंग के लिए तेज़ डेटा पैक",
+    "mr": "स्ट्रीमिंगसाठी जलद डेटा पॅक"
+   },
+   "why": {
+    "en": "A basic plan is the need; the upgrade is a want.",
+    "hi": "बेसिक प्लान ज़रूरत है; अपग्रेड चाहत है।",
+    "mr": "बेसिक प्लॅन गरज; अपग्रेड इच्छा."
+   }
+  }
+ ],
+ "scams": [
+  {
+   "id": "kyc",
+   "scam": true,
+   "text": {
+    "en": "Dear customer, your KYC has expired. Your account will be blocked today. Update now: bit.ly/kyc-upd8",
+    "hi": "प्रिय ग्राहक, आपका KYC ख़त्म हो गया है। आज खाता बंद होगा। अभी अपडेट करें: bit.ly/kyc-upd8",
+    "mr": "प्रिय ग्राहक, तुमचे KYC संपले आहे. आज खाते बंद होईल. आत्ता अपडेट करा: bit.ly/kyc-upd8"
+   },
+   "why": {
+    "en": "Scam. Banks do not send short links asking you to update KYC. Visit the branch or the official app.",
+    "hi": "ठगी। बैंक KYC अपडेट के लिए छोटे लिंक नहीं भेजते। शाखा या आधिकारिक ऐप पर जाएँ।",
+    "mr": "फसवणूक. बँक KYC साठी छोट्या लिंक पाठवत नाही. शाखेत किंवा अधिकृत अ‍ॅपवर जा."
+   }
+  },
+  {
+   "id": "otp",
+   "scam": false,
+   "text": {
+    "en": "Your OTP for login is 482913. Do not share it with anyone, including bank staff.",
+    "hi": "लॉगिन के लिए आपका OTP 482913 है। इसे किसी से साझा न करें, बैंक कर्मचारी से भी नहीं।",
+    "mr": "लॉगिनसाठी तुमचा OTP 482913 आहे. तो कुणालाही सांगू नका, बँक कर्मचाऱ्यांनाही नाही."
+   },
+   "why": {
+    "en": "Safe, if you asked for it. It asks for nothing and tells you not to share. If you did not ask for it, someone may be trying your account.",
+    "hi": "सुरक्षित, अगर आपने माँगा था। यह कुछ नहीं माँगता और साझा न करने को कहता है। अगर नहीं माँगा था, तो कोई आपके खाते की कोशिश कर रहा हो सकता है।",
+    "mr": "सुरक्षित, तुम्ही मागितला असेल तर. तो काहीच मागत नाही आणि सांगू नका म्हणतो. मागितला नसेल तर कुणी तुमचे खाते वापरण्याचा प्रयत्न करत असेल."
+   }
+  },
+  {
+   "id": "lottery",
+   "scam": true,
+   "text": {
+    "en": "Congratulations! You have won ₹25,00,000 in the lucky draw. Pay ₹4,999 processing fee to claim.",
+    "hi": "बधाई हो! आपने लकी ड्रॉ में ₹25,00,000 जीते हैं। पाने के लिए ₹4,999 प्रोसेसिंग फ़ीस दें।",
+    "mr": "अभिनंदन! तुम्ही लकी ड्रॉमध्ये ₹25,00,000 जिंकले आहेत. मिळवण्यासाठी ₹4,999 प्रोसेसिंग फी भरा."
+   },
+   "why": {
+    "en": "Scam. You cannot win a draw you never entered, and real prizes never ask you to pay first.",
+    "hi": "ठगी। जिस ड्रॉ में हिस्सा नहीं लिया उसे जीत नहीं सकते, और असली इनाम पहले पैसे नहीं माँगते।",
+    "mr": "फसवणूक. ज्यात भाग घेतला नाही तो ड्रॉ जिंकता येत नाही, आणि खरी बक्षिसे आधी पैसे मागत नाहीत."
+   }
+  },
+  {
+   "id": "power",
+   "scam": true,
+   "text": {
+    "en": "Your electricity will be cut tonight at 9:30 pm because last month's bill was not updated. Call officer 98XXXXXX21 now.",
+    "hi": "पिछले महीने का बिल अपडेट नहीं हुआ, इसलिए आज रात 9:30 बजे बिजली कटेगी। तुरंत अधिकारी 98XXXXXX21 को कॉल करें।",
+    "mr": "मागच्या महिन्याचे बिल अपडेट झाले नाही, म्हणून आज रात्री 9:30 वाजता वीज कापली जाईल. लगेच अधिकारी 98XXXXXX21 ला फोन करा."
+   },
+   "why": {
+    "en": "Scam. Panic, a deadline tonight and a personal mobile number are the signs. Check in your power company's official app.",
+    "hi": "ठगी। घबराहट, आज रात की समय-सीमा और निजी मोबाइल नंबर इसके निशान हैं। बिजली कंपनी के आधिकारिक ऐप में जाँचें।",
+    "mr": "फसवणूक. घाबरवणे, आज रात्रीची मुदत आणि खाजगी मोबाईल नंबर ही लक्षणे. वीज कंपनीच्या अधिकृत अ‍ॅपमध्ये तपासा."
+   }
+  },
+  {
+   "id": "bill",
+   "scam": false,
+   "text": {
+    "en": "Your mobile bill of ₹299 is due on 12 Oct. Pay in the app or at any store. Ignore if already paid.",
+    "hi": "आपका ₹299 का मोबाइल बिल 12 अक्टूबर को देय है। ऐप में या किसी भी स्टोर पर भरें। भर दिया हो तो अनदेखा करें।",
+    "mr": "तुमचे ₹299 चे मोबाईल बिल 12 ऑक्टोबरला देय आहे. अ‍ॅपमध्ये किंवा कोणत्याही दुकानात भरा. भरले असेल तर दुर्लक्ष करा."
+   },
+   "why": {
+    "en": "Safe. No link, no pressure, and it tells you to pay through the usual app.",
+    "hi": "सुरक्षित। कोई लिंक नहीं, कोई दबाव नहीं, और सामान्य ऐप से भरने को कहता है।",
+    "mr": "सुरक्षित. लिंक नाही, दबाव नाही, आणि नेहमीच्या अ‍ॅपमधून भरायला सांगतो."
+   }
+  },
+  {
+   "id": "job",
+   "scam": true,
+   "text": {
+    "en": "Work from home! Earn ₹3,000 a day liking videos. Pay ₹500 registration to start. Limited seats.",
+    "hi": "घर से काम! वीडियो लाइक करके रोज़ ₹3,000 कमाएँ। शुरू करने के लिए ₹500 रजिस्ट्रेशन दें। सीटें सीमित।",
+    "mr": "घरून काम! व्हिडिओ लाइक करून रोज ₹3,000 कमवा. सुरू करण्यासाठी ₹500 नोंदणी भरा. जागा मर्यादित."
+   },
+   "why": {
+    "en": "Scam. Real jobs pay you; they do not charge you to join.",
+    "hi": "ठगी। असली नौकरी आपको पैसे देती है; जुड़ने के पैसे नहीं लेती।",
+    "mr": "फसवणूक. खरी नोकरी तुम्हाला पैसे देते; सामील होण्यासाठी पैसे घेत नाही."
+   }
+  },
+  {
+   "id": "parcel",
+   "scam": true,
+   "text": {
+    "en": "Your parcel is held at customs. Pay ₹149 within 2 hours or it will be returned: india-post-delivery.co",
+    "hi": "आपका पार्सल कस्टम में रुका है। 2 घंटे में ₹149 दें वरना लौटा दिया जाएगा: india-post-delivery.co",
+    "mr": "तुमचे पार्सल कस्टममध्ये अडकले आहे. 2 तासांत ₹149 भरा नाहीतर परत जाईल: india-post-delivery.co"
+   },
+   "why": {
+    "en": "Scam. A look-alike website and a tight deadline. Track parcels only on the official website you type yourself.",
+    "hi": "ठगी। मिलती-जुलती वेबसाइट और कम समय। पार्सल सिर्फ़ खुद टाइप की गई आधिकारिक वेबसाइट पर ट्रैक करें।",
+    "mr": "फसवणूक. सारखी दिसणारी वेबसाइट आणि कमी वेळ. पार्सल फक्त स्वतः टाइप केलेल्या अधिकृत वेबसाइटवर ट्रॅक करा."
+   }
+  },
+  {
+   "id": "credit",
+   "scam": false,
+   "text": {
+    "en": "₹2,500 credited to your account by NEFT from your employer. Available balance updated in the app.",
+    "hi": "आपके नियोक्ता से NEFT द्वारा ₹2,500 आपके खाते में जमा हुए। उपलब्ध बैलेंस ऐप में अपडेट है।",
+    "mr": "तुमच्या नियोक्त्याकडून NEFT ने ₹2,500 तुमच्या खात्यात जमा झाले. उपलब्ध शिल्लक अ‍ॅपमध्ये अपडेट आहे."
+   },
+   "why": {
+    "en": "Safe. It only informs you and asks for nothing. You can confirm it in your bank app.",
+    "hi": "सुरक्षित। यह सिर्फ़ जानकारी देता है और कुछ नहीं माँगता। बैंक ऐप में पुष्टि कर सकते हैं।",
+    "mr": "सुरक्षित. ते फक्त माहिती देते आणि काहीच मागत नाही. बँक अ‍ॅपमध्ये खात्री करता येते."
+   }
+  },
+  {
+   "id": "refund",
+   "scam": true,
+   "text": {
+    "en": "You were charged twice. To get your refund, scan this QR code and enter your UPI PIN.",
+    "hi": "आपसे दो बार पैसे कटे। रिफ़ंड पाने के लिए यह QR कोड स्कैन करें और UPI PIN डालें।",
+    "mr": "तुमच्याकडून दोनदा पैसे गेले. रिफंड मिळवण्यासाठी हा QR कोड स्कॅन करा आणि UPI PIN टाका."
+   },
+   "why": {
+    "en": "Scam. Scanning a QR code and entering a PIN sends money. You never need a PIN to receive a refund.",
+    "hi": "ठगी। QR स्कैन करके PIN डालने से पैसे जाते हैं। रिफ़ंड पाने के लिए PIN की कभी ज़रूरत नहीं।",
+    "mr": "फसवणूक. QR स्कॅन करून PIN टाकल्यास पैसे जातात. रिफंड मिळवण्यासाठी PIN ची कधीच गरज नसते."
+   }
+  },
+  {
+   "id": "friend",
+   "scam": true,
+   "text": {
+    "en": "Hi, it's me, new number. Stuck in an emergency, please send ₹8,000 now, will return tomorrow. Don't call, I can't talk.",
+    "hi": "हाय, मैं हूँ, नया नंबर। मुसीबत में फँसा हूँ, अभी ₹8,000 भेजो, कल लौटा दूँगा। कॉल मत करना, बात नहीं कर सकता।",
+    "mr": "हाय, मीच आहे, नवा नंबर. अडचणीत आहे, आत्ता ₹8,000 पाठव, उद्या परत देतो. फोन करू नकोस, बोलू शकत नाही."
+   },
+   "why": {
+    "en": "Scam. A new number, urgency and \"don't call\" are classic signs. Call your friend on the old number first.",
+    "hi": "ठगी। नया नंबर, जल्दबाज़ी और \"कॉल मत करना\" पुराने निशान हैं। पहले दोस्त को पुराने नंबर पर कॉल करें।",
+    "mr": "फसवणूक. नवा नंबर, घाई आणि \"फोन करू नको\" ही जुनी लक्षणे. आधी मित्राला जुन्या नंबरवर फोन करा."
+   }
+  }
+ ]
+}

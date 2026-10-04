@@ -300,7 +300,7 @@
     "onPath": "On the path “{title}”",
     "introKicker": "Money Lab, {step} of {total}",
     "intro0Title": "Log a spend in one tap",
-    "intro0Lead": "Try it. Tap each spend below and watch the total change.",
+    "intro0Lead": "Verena just paid for lunch, a bus ride and a phone recharge. Tap each one to log it for her and watch the total change.",
     "intro1Title": "Or photograph a receipt",
     "intro1Lead": "Saath reads the receipt on this phone and suggests what to log. You check it and press save yourself.",
     "intro2Title": "Your money stays yours",
@@ -356,12 +356,15 @@
         "confirm": "what will be saved.",
         "save": "only when you press save."
       }
-    }
+    },
+    "today": "Today",
+    "scan": "Scan a receipt",
+    "addShort": "Add"
   },
   "categories": {
     "pocket": "Pocket money",
     "scholarship": "Scholarship",
-    "work": "Work",
+    "work": "Side work",
     "gift": "Gift",
     "otherIn": "Other income",
     "food": "Food",
@@ -371,7 +374,12 @@
     "fees": "Fees",
     "family": "Family",
     "otherOut": "Other spending",
-    "jar": "Savings jar"
+    "jar": "Savings jar",
+    "rent": "Rent",
+    "bills": "Bills",
+    "health": "Health",
+    "shopping": "Shopping",
+    "salary": "Salary"
   },
   "guide": {
     "title": "Guide",
@@ -1079,7 +1087,9 @@
       "why": "Why",
       "drill": "Two questions",
       "done": "XP"
-    }
+    },
+    "storyPlayer": "Story",
+    "learning": "Not every choice works out. {name} learns from this one, and so can you: the next part explains why."
   },
   "forms": {
     "kicker": "Forms",
@@ -1182,10 +1192,11 @@
       "local": "Model in this browser",
       "online": "Online model"
     },
-    "offerTitle": "Fuller answers are available",
-    "offerBody": "Saath can phrase answers with its online model. Your question goes to Saath's server with ID numbers removed, and Money Lab is never sent. Answers still come only from Saath's checked guides.",
-    "offerYes": "Use online answers",
-    "offerNo": "Keep it on this device"
+    "offerTitle": "Saath AI answers online",
+    "offerBody": "Your question goes to Saath's own server with ID numbers removed, so the answers are fuller. Money Lab, receipts and photos are never sent. You can change this any time in Settings.",
+    "offerYes": "Fine, use online answers",
+    "offerNo": "Keep it on this phone",
+    "helloTitle": "Ask Saath anything about money"
   },
   "prog": {
     "kicker": "Your progress",
@@ -1224,21 +1235,31 @@
       "kurta": "Kurta",
       "blazer": "Office blazer",
       "sari": "Sari",
-      "shawl": "Warm shawl"
+      "shawl": "Warm shawl",
+      "hoodie": "Hoodie",
+      "jacket": "Denim jacket",
+      "festive": "Festive lehenga",
+      "suit": "Trouser suit"
     },
     "extra": {
       "none": "Nothing extra",
       "bag": "Shoulder bag",
       "glasses": "Glasses",
       "scarf": "Scarf",
-      "watch": "Watch"
+      "watch": "Watch",
+      "earrings": "Jhumkas",
+      "sunglasses": "Sunglasses",
+      "backpack": "Backpack",
+      "headphones": "Headphones"
     },
     "place": {
       "room": "Her room",
       "office": "The office",
       "bank": "The bank",
       "home": "Family home",
-      "garden": "The garden"
+      "garden": "The garden",
+      "cafe": "The café",
+      "rooftop": "The rooftop"
     },
     "badge": {
       "first-step": "First step",
@@ -1285,7 +1306,12 @@
     "text": "Share as text",
     "download": "Save the picture",
     "saved": "Picture saved to this device.",
-    "failed": "Sharing did not work on this device. Try saving the picture instead."
+    "failed": "Sharing did not work on this device. Try saving the picture instead.",
+    "storyButton": "Share story progress",
+    "storyText": "I just lived \"{title}\" in {name}'s money story on Saath. {done} of {total} parts done.",
+    "storyMap": "{name}'s money story on Saath: {done} of {total} parts lived. Now at: {stage}.",
+    "lookHead": "My {name} on Saath",
+    "lookButton": "Share her look"
   },
   "settings": {
     "title": "Settings",
@@ -1370,5 +1396,72 @@
     "desktop1": "Look for the install icon at the right end of the address bar.",
     "desktop2": "Click it and confirm.",
     "note": "Installing does not share anything. Your data stays on this device."
+  },
+  "challenge": {
+    "title": "Today's challenges",
+    "lead": "Picked from what you find hardest. Today: {topic}.",
+    "leadAll": "A new topic each day. Today: {topic}.",
+    "change": "Change topics",
+    "doneOf": "{done} of {total} done",
+    "crisis": "Money crisis",
+    "task": "Real-life task",
+    "quiz": "Quick quiz",
+    "quizTitle": "{count} questions on {topic}",
+    "quizStep": "Question {n} of {total}",
+    "finishQuiz": "See my score",
+    "quizPerfect": "All right. You know this well.",
+    "quizGood": "Good effort. The ones you missed will come back for revision.",
+    "done": "Done",
+    "allDone": "All three done. +{xp} XP bonus.",
+    "readGuide": "Read the guide on this",
+    "taskNote": "Do it in real life, then come back and tick it off. Nothing you do is sent anywhere.",
+    "didIt": "I did it",
+    "taskDone": "Done for today. Well done.",
+    "askSaath": "Ask Saath how to do this",
+    "askHow": "How do I do this: {task}"
+  },
+  "games": {
+    "title": "Games",
+    "kicker": "Play and learn",
+    "lead": "Quick rounds that train your money instincts. Your first round each day earns XP.",
+    "needs-wants": {
+      "title": "Needs or wants?",
+      "lead": "Sort everyday spends, fast.",
+      "ask": "Is this a need or a want?"
+    },
+    "scam-or-safe": {
+      "title": "Scam or safe?",
+      "lead": "Read the message. Would you trust it?",
+      "ask": "Is this message a scam or safe?"
+    },
+    "need": "Need",
+    "want": "Want",
+    "scam": "Scam",
+    "safe": "Safe",
+    "message": "New message",
+    "round": "Round {n} of {total}",
+    "right": "Right!",
+    "wrong": "Not quite. It's: {answer}",
+    "finish": "See my score",
+    "perfect": "Perfect round.",
+    "good": "Sharp instincts. Play again to beat it.",
+    "tryAgain": "Read the reasons, then try again. You will get faster.",
+    "best": "Best: {best}/{total}",
+    "xpOnce": "Game XP is earned once a day. The practice still counts.",
+    "shareText": "I scored {score}/{total} in \"{game}\" on Saath. Can you beat it?",
+    "back": "Back to games",
+    "opensAt": "Opens at level {level}.",
+    "more": "More games open as you level up.",
+    "drillsTitle": "Scam and form drills",
+    "drillsLead": "Longer practice with real-looking examples.",
+    "askNeeds": "How do I tell a need from a want?",
+    "askScam": "How do I spot a scam message?"
+  },
+  "revise": {
+    "title": "Revise topic by topic",
+    "lead": "Pick a topic to see its guides. Topics where you made mistakes are marked.",
+    "count": "{done} of {total} read",
+    "weak": "Worth revising",
+    "open": "Revise topic by topic"
   }
 }

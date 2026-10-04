@@ -1,5 +1,5 @@
 // Saath service worker. Written to public/sw.js by scripts/sync-static.mjs. Edit the template, not the output.
-const CACHE = "saath-v12";
+const CACHE = "saath-v13";
 // Works at the site root and in a sub-folder (for example /saath/ on GitHub Pages).
 const BASE = self.location.pathname.replace(/sw\.js$/, "");
 const PAGES = [
@@ -22,6 +22,7 @@ const PAGES = [
   "/drills",
   "/handbook",
   "/comic",
+  "/games",
   "/journey/early-adulthood",
   "/journey/first-job",
   "/journey/first-income",
@@ -144,6 +145,8 @@ const FILES = [
   "/content/comic.json",
   "/content/journey.json",
   "/content/forms.json",
+  "/content/challenges.json",
+  "/content/games.json",
   "/content/form-fields.json",
   "/content/stories.json",
   "/samples/personal-loan.png",
