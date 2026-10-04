@@ -134,3 +134,21 @@ jobs:
           sleep 20
           url="https://$chosen.pages.dev/"
           if curl -sL "$url" | grep -q "skyward-logo\|The Skyward Project"; then echo "VERIFIED: $url serves Saath"; else echo "NOT VERIFIED: $url"; curl -sL "$url" | head -c 400; fi
+
+      - name: Publish to Firebase (saath.web.app)
+        continue-on-error: true
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_PROJECT: ${{ vars.FIREBASE_PROJECT || 'saath' }}
+          FIREBASE_SITE: ${{ vars.FIREBASE_SITE || 'saath' }}
+        run: |
+          echo "saath.web.app right now: HTTP $(curl -s -o /dev/null -w '%{http_code}' https://saath.web.app/)"
+          curl -sL https://saath.web.app/ | head -c 300; echo
+          [ -n "$FIREBASE_SA" ] || { echo "No FIREBASE_SERVICE_ACCOUNT secret yet; skipping Firebase."; exit 0; }
+          echo "$FIREBASE_SA" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          printf '{"hosting":{"site":"%s","public":"out","trailingSlash":true}}' "$FIREBASE_SITE" > firebase.json
+          npx --yes firebase-tools@13 deploy --only hosting --project "$FIREBASE_PROJECT" --non-interactive
+          sleep 10
+          url="https://$FIREBASE_SITE.web.app/"
+          if curl -sL "$url" | grep -q "skyward-logo\|The Skyward Project"; then echo "VERIFIED: $url serves Saath"; else echo "NOT VERIFIED: $url"; fi
