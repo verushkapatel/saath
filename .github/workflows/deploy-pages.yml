@@ -120,7 +120,7 @@ jobs:
           W="npx --yes wrangler@3"
           for old in saath saath-app saathapp; do $W pages project delete "$old" --yes >/dev/null 2>&1 || true; done
           chosen=""
-          for name in getsaath trysaath usesaath saathhq; do
+          for name in sath saathi sathi saat getsaath; do
             out=$($W pages project create "$name" --production-branch main 2>&1 || true)
             echo "$out" | tail -2
             if echo "$out" | grep -q "https://$name.pages.dev"; then chosen="$name"; break; fi
