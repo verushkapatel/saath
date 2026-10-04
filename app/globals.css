@@ -2561,3 +2561,15 @@ h1 { font-weight: 700; }
 .msg.saath .msg-body ol { list-style: decimal; padding-left: 1.2em; margin: 0; }
 .msg.saath .msg-body li::marker { color: var(--text-faint); }
 .convo .msg { border: 0; background: none; padding: 0; margin: 0; border-radius: 0; box-shadow: none; max-width: none; }
+
+/* Dialogs on wider screens: centred in the content area without transforms, so the opening animation cannot push them off screen. */
+@media (min-width: 900px) {
+  .sheet {
+    top: 0; bottom: 0; left: var(--rail); right: 0;
+    margin: auto; height: fit-content;
+    width: min(var(--page), calc(100vw - var(--rail) - 48px)); max-width: calc(100vw - var(--rail) - 48px);
+    max-height: 86dvh; overflow-y: auto;
+    transform: none; border-radius: var(--r-xl);
+    animation: fade var(--dur-2) var(--ease-out) both;
+  }
+}
