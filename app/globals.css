@@ -2357,3 +2357,15 @@ html:has(.intro) { scroll-snap-type: y proximity; scroll-padding-top: 0; }
   .welcome-body { width: min(100%, 34rem); }
 }
 @media (min-width: 900px) { .intro-hero h1 { font-size: clamp(2.75rem, 4.2vw, 3.5rem); } .intro-hero.navy-scene { grid-template-columns: 1.2fr 1fr; } }
+
+/* Spec pass: black, white and deep navy only. No gradients, no light navy, restrained shadows. */
+:root { --shadow-1: none; --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.06); }
+:root[data-theme="dark"] { --navy: #3a5fa8; --accent-text: #e8e8ea; --navy-soft: rgba(255, 255, 255, 0.08); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --navy: #3a5fa8; --accent-text: #e8e8ea; --navy-soft: rgba(255, 255, 255, 0.08); } }
+.navy-scene, .card.hero, .intro-hero.navy-scene, .act-navy, .finale.navy-scene, .wallet, .story-player, .crisis-card, .game-end, .welcome.navy-scene { background: #0b1f45 !important; }
+.card, .chip, .money-action, .game-tile, .revise-tile, .install-steps, .lang-switch, .icon-btn, .profile-btn, .badge { box-shadow: none !important; border: 1px solid var(--line) !important; }
+.btn-primary, .money-action.primary span, .game-btn.yes, .intro-float .btn, .wallet, .card.hero, .ai-orb, .install-icon { box-shadow: none !important; }
+.ai-orb, .install-icon, .game-icon { background: #0b2a5c !important; }
+.bar > span { background: var(--accent) !important; }
+.wallet-bar .part-save { background: rgba(255, 255, 255, 0.55) !important; }
+.ai-orb, .install-icon { --navy: #ffffff; }
