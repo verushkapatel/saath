@@ -207,6 +207,18 @@ describe("online provider", () => {
   });
 });
 
+describe("online answers with invented numbers", () => {
+  it("are thrown away so the checked answer is used", async () => {
+    const fetcher = (async () => new Response(JSON.stringify({ text: "An EMI loan costs 11.5% a year at most banks." }), { status: 200 })) as unknown as typeof fetch;
+    const { createRemoteProvider } = await import("@/lib/ai/remote-provider");
+    const online = createRemoteProvider("https://example.invalid", docsFor, fetcher, rules);
+    await expect(online.answerQuestion("What is an EMI?", request())).rejects.toThrow("ungrounded");
+    const answer = await withFallback(online, rules).answerQuestion("What is an EMI?", request());
+    expect(answer.via).toBe("device");
+    expect(answer.text).not.toContain("11.5");
+  });
+});
+
 describe("the Worker template", () => {
   it("uses exactly the same rules as the app", () => {
     const worker = readFileSync(`${process.cwd()}/server/saath-ai-worker/worker.js`, "utf8");

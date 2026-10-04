@@ -1,6 +1,7 @@
 import type { Lang } from "../catalog";
 import { redact } from "../redact";
 import { search } from "./knowledge";
+import { inventedNumbers } from "./prompt";
 import { ADVICE_ASK, EMERGENCY, FAILED_PAYMENT, GREETING, RATE_ASK, THANKS } from "./rule-provider";
 import type { AiAnswer, AiRequest, Doc, MistakeInput, SaathAIProvider } from "./types";
 
@@ -48,6 +49,17 @@ export function createRemoteProvider(
       if (!response.ok) throw new Error(`ai ${response.status}`);
       const data = (await response.json()) as { text?: unknown };
       if (typeof data.text !== "string" || !data.text.trim()) throw new Error("ai empty");
+      // As on the device: an answer with a number that is in none of the passages, the screen or the question is
+      // thrown away, and the checked answer is used instead. A model must not invent a rate or an amount.
+      const given = [
+        ...hits.map((hit) => `${hit.doc.title} ${hit.doc.lead} ${hit.doc.points.join(" ")}`),
+        request.context?.text ?? "",
+        request.context?.title ?? "",
+        input,
+        request.progress ? JSON.stringify(request.progress) : "",
+        ...request.history.map((turn) => turn.text),
+      ].join(" ");
+      if (inventedNumbers(data.text, given).length > 0) throw new Error("ungrounded");
       return {
         text: data.text.trim().slice(0, 4000),
         sources: hits.filter((hit) => hit.doc.kind !== "term").slice(0, 3).map((hit) => ({ title: hit.doc.title, href: hit.doc.href })),
