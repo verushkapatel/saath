@@ -105,8 +105,8 @@ jobs:
           git commit -m "Publish Saath from ${GITHUB_SHA::7}"
           git push origin main
 
-      # A short address as well: saath.pages.dev on Cloudflare Pages (free), built for the site root.
-      - name: Publish to saath.pages.dev
+      # A short address as well: saathapp.pages.dev on Cloudflare Pages (free), built for the site root.
+      - name: Publish to saathapp.pages.dev
         continue-on-error: true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -115,5 +115,5 @@ jobs:
           NEXT_PUBLIC_SAATH_SERVICE_URL: ${{ steps.ai.outputs.url }}
         run: |
           npm run build:pages
-          npx --yes wrangler@3 pages project create saath --production-branch main || true
-          npx --yes wrangler@3 pages deploy out --project-name saath --branch main --commit-dirty=true
+          npx --yes wrangler@3 pages project create saathapp --production-branch main || true
+          npx --yes wrangler@3 pages deploy out --project-name saathapp --branch main --commit-dirty=true
