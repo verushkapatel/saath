@@ -471,6 +471,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
           <ArrowDown aria-hidden size={18} />
         </a>
       </div>
+      <p className="credit-line intro-credit" data-testid="landing-credit">By The Skyward Project, Verushka Patel</p>
     </main>
   );
 }

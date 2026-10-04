@@ -40,6 +40,7 @@ export function Footer() {
     <footer className="foot">
       <SkywardMark size={32} />
       <span>{t("common.footer")}</span>
+      <span className="credit-line" data-testid="footer-credit">By The Skyward Project, Verushka Patel</span>
     </footer>
   );
 }

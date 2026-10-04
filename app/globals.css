@@ -2573,3 +2573,6 @@ h1 { font-weight: 700; }
     animation: fade var(--dur-2) var(--ease-out) both;
   }
 }
+.credit-line { display: block; width: 100%; text-align: center; font-size: 0.875rem; color: var(--text-faint); letter-spacing: 0.02em; }
+.foot { flex-wrap: wrap; }
+.intro-credit { padding: var(--s-6) var(--s-4) var(--s-7, 48px); margin: 0; }
