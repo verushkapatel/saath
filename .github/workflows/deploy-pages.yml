@@ -118,9 +118,9 @@ jobs:
         run: |
           npm run build:pages
           W="npx --yes wrangler@3"
-          for old in sath saath-app saathapp; do $W pages project delete "$old" --yes >/dev/null 2>&1 || true; done
+          for old in sath saath-in mysaath saath-app saathapp; do $W pages project delete "$old" --yes >/dev/null 2>&1 || true; done
           chosen=""
-          for name in saath-in mysaath getsaath; do
+          for name in getsaath; do
             out=$($W pages project create "$name" --production-branch main 2>&1 || true)
             echo "$out" | tail -2
             if echo "$out" | grep -q "https://$name.pages.dev"; then chosen="$name"; break; fi
