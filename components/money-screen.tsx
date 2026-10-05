@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
-import { ArrowRight, Camera, Check, ChevronDown, ChevronLeft, ChevronRight, ImagePlus, Plus, Repeat, ShieldCheck, Sparkles, Target, Trash2 } from "lucide-react";
+import { ArrowRight, Camera, ClipboardPaste, Check, ChevronDown, ChevronLeft, ChevronRight, ImagePlus, Plus, Repeat, ShieldCheck, Sparkles, Target, Trash2 } from "lucide-react";
 import { todayISO } from "@/lib/dates";
 import { dayLabel, groupAmount, inr, monthLabel, parseAmountInput } from "@/lib/format";
 import { photoQuality, preprocessImage } from "@/lib/image";
@@ -18,6 +18,7 @@ import { CategoryIcon } from "./category-icon";
 import { Character } from "./character";
 import { ArtJar } from "./illustrations";
 import { NumPad } from "./numpad";
+import { PlanPanel, PlanSetup, SmsPaste, usePlan } from "./money-plan";
 import { useI18n } from "./providers";
 import { CountUp, ListenButton, PageSkeleton, Ring, Sheet } from "./ui";
 
@@ -281,6 +282,10 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
   const [note, setNote] = useState("");
   const [goalDraft, setGoalDraft] = useState("");
   const [saved, setSaved] = useState(false);
+  const planState = usePlan();
+  const [tab, setTab] = useState<"plan" | "activity">("plan");
+  const [setup, setSetup] = useState(false);
+  const [sms, setSms] = useState(false);
 
   // Saath AI sees that this is Money Lab, and nothing of what is in it.
   useAiContext({ screen: t("nav.money"), kind: "money", title: t("money.title"), suggestions: [t("money.askBudget"), t("money.askSave")] });
@@ -383,6 +388,32 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
         <ListenButton compact text={spoken} />
       </header>
 
+      {planState.loaded && !planState.plan && (
+        <button type="button" className="card plan-cta" onClick={() => { tap(); setSetup(true); }} data-testid="plan-start">
+          <span className="kicker">{t("plan.ctaKicker")}</span>
+          <strong>{t("plan.ctaTitle")}</strong>
+          <span className="faint">{t("plan.ctaLead")}</span>
+          <span className="walk-play">{t("plan.ctaBtn")}<ArrowRight aria-hidden size={16} /></span>
+        </button>
+      )}
+      {planState.plan && (
+        <div className="seg" role="tablist" aria-label={t("money.title")}>
+          {(["plan", "activity"] as const).map((item) => (
+            <button key={item} type="button" role="tab" aria-selected={tab === item} aria-pressed={tab === item} onClick={() => { tap(); setTab(item); }}>{t(`plan.tab.${item}`)}</button>
+          ))}
+        </div>
+      )}
+      {planState.plan && tab === "plan" && <PlanPanel plan={planState.plan} save={planState.save} onEdit={() => setSetup(true)} />}
+      {setup && <PlanSetup initial={planState.plan} onClose={() => setSetup(false)} onDone={(plan) => { planState.save(plan); setSetup(false); setTab("plan"); }} />}
+      {sms && <SmsPaste onClose={() => setSms(false)} />}
+
+      <div className="money-actions">
+        <button type="button" className="money-action primary" onClick={openLogSheet}><span><Plus aria-hidden size={24} /></span>{t("money.addShort")}</button>
+        <button type="button" className="money-action" onClick={() => { tap(); setSms(true); }} data-testid="sms-open"><span><ClipboardPaste aria-hidden size={22} /></span>{t("plan.smsShort")}</button>
+        <button type="button" className="money-action" onClick={() => { tap(); setSaved(false); setSheet("receipt"); }}><span><Camera aria-hidden size={22} /></span>{t("money.scan")}</button>
+      </div>
+
+      {(!planState.plan || tab === "activity") && (<>
       <section className="wallet navy-scene" aria-labelledby="wallet-h">
         <div className="wallet-month">
           <button type="button" className="icon-btn" aria-label={t("money.prevMonth")} onClick={() => { tap(); setMonth(shiftMonth(month, -1)); }}><ChevronLeft aria-hidden size={18} /></button>
@@ -406,11 +437,6 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
       </section>
       {saved && <p role="status" className="note ok">{t("money.logged")}</p>}
 
-      <div className="money-actions">
-        <button type="button" className="money-action primary" onClick={openLogSheet}><span><Plus aria-hidden size={24} /></span>{t("money.addShort")}</button>
-        <button type="button" className="money-action" onClick={() => { tap(); setSaved(false); setSheet("receipt"); }}><span><Camera aria-hidden size={22} /></span>{t("money.scan")}</button>
-        <button type="button" className="money-action" onClick={() => { tap(); setGoalDraft(goal ? String(goal) : ""); setSheet("goal"); }}><span><Target aria-hidden size={22} /></span>{t("money.goal")}</button>
-      </div>
 
       <section className="money-pulse card stack-sm" aria-labelledby="money-pulse-title" data-testid="moneylab-useful-summary">
         <div className="row-between">
@@ -575,6 +601,8 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
           </div>
         </section>
       )}
+
+      </>)}
 
       <p className="faint"><ShieldCheck aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("money.private")} <Link href="/settings">{t("money.backupLink")}</Link></p>
 

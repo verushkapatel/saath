@@ -2935,3 +2935,24 @@ h1 { font-weight: 700; }
 .resume-group legend { display: flex; align-items: center; gap: 6px; font-weight: 700; padding: 0 4px; }
 .journey-walk { --walk-h: 150px; --walk-time: 20s; background: linear-gradient(180deg, transparent 60%, var(--surface-2)); }
 .journey-walk::after { content: ""; position: absolute; left: 0; right: 0; bottom: 8px; height: 1.5px; background: var(--line-strong); }
+
+/* Money Lab plan: safe to spend, bills, budgets, goals */
+.plan-cta { display: grid; gap: 6px; text-align: left; border: 1px solid var(--line); cursor: pointer; color: var(--text); font: inherit; }
+.safe-card { position: relative; padding: 22px 20px; border-radius: var(--r-lg); }
+.safe-edit { position: absolute; top: 14px; right: 14px; display: inline-flex; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 99px; border: 1px solid rgba(255,255,255,0.3); background: transparent; color: inherit; font: inherit; font-size: 0.8rem; cursor: pointer; }
+.bill-row { align-items: center; }
+.bill-row.paid { opacity: 0.6; }
+.bill-row.late .item-sub { color: #b3261e; font-weight: 600; }
+.budget-list { list-style: none; display: grid; gap: 14px; padding: 16px; margin: 0; }
+.budget-row { display: grid; gap: 6px; }
+.budget-name { display: inline-flex; gap: 8px; align-items: center; }
+.budget-row.near .bar span { background: #b7791f; }
+.budget-row.over .bar span { background: #b3261e; }
+.budget-row.over .budget-left { color: #b3261e; }
+.pot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.pot { display: grid; gap: 4px; justify-items: center; text-align: center; padding: 14px 10px; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface-1); color: var(--text); font: inherit; cursor: pointer; }
+.plan-bill-row { display: grid; grid-template-columns: auto 1fr 90px 54px; gap: 8px; align-items: center; }
+.plan-bill-row input, .plan-budget-edit input { width: 100%; font: inherit; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line-strong); background: var(--surface-1); color: var(--text); }
+.plan-budget-edit { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.plan-budget-edit li { display: grid; grid-template-columns: auto 1fr 110px; gap: 10px; align-items: center; }
+.signal-danger { color: #b3261e; }
