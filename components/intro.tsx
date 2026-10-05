@@ -8,7 +8,7 @@ import { inr } from "@/lib/format";
 import { tap } from "@/lib/speech";
 import { Character } from "./character";
 import { LangSwitch } from "./lang-switch";
-import { Logo, LogoMark } from "./logo";
+import { Logo, LogoMark, SkywardBadge } from "./logo";
 import { usePrefs } from "./prefs";
 import { useI18n } from "./providers";
 import { ThemeToggle } from "./theme-toggle";
@@ -431,7 +431,7 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         </div>
         <div className="stack scene-in">
           <p className="hero-brand" data-testid="hero-brand"><LogoMark size={54} /><span>Saath</span></p>
-          <p className="masthead">{t("intro.hero.kicker")}</p>
+          <SkywardBadge size={48} />
           <h1>{t("intro.hero.title")}</h1>
           <p className="lead">{t("intro.hero.lead")}</p>
           <a className="btn btn-primary" href="#act-play" onClick={tap}>

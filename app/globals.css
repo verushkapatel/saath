@@ -3088,3 +3088,26 @@ button, a, [role="button"], .chip, .btn { touch-action: manipulation; -webkit-ta
 .hero-brand .logo-mark { --text: #ffffff; --navy: #5b7fd6; }
 .hero-brand span { font-family: var(--font-head); font-weight: 700; font-size: clamp(3.25rem, 12vw, 5rem); line-height: 0.95; letter-spacing: -0.03em; }
 @media (max-width: 420px) { .intro-top .brand-name { font-size: 1.4rem; } .intro-top .skyward-emblem { display: none; } .intro-top .logo-divider { display: none; } }
+
+/* The Skyward Project, clearly credited on the landing page and Home. */
+.skyward-badge { display: inline-flex; align-items: center; gap: 12px; width: fit-content; padding: 6px 16px 6px 6px; border: 1px solid var(--line-strong); border-radius: var(--r-full); background: color-mix(in srgb, var(--surface-1) 70%, transparent); color: var(--text); font-weight: 600; font-size: 1rem; line-height: 1.15; }
+.skyward-badge .skyward-emblem { box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9); }
+.skyward-badge small { display: block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); }
+.intro-hero .skyward-badge { color: #fff; border-color: rgba(255, 255, 255, 0.22); background: rgba(255, 255, 255, 0.05); }
+.intro-hero .skyward-badge small { color: rgba(255, 255, 255, 0.6); }
+.greeting .skyward-badge { margin-top: 2px; font-size: 0.95rem; }
+/* Keep the emblem in the top bar on phones too. */
+@media (max-width: 640px) { .shell-top .skyward-emblem, .shell-top .logo-divider { display: block !important; } }
+@media (max-width: 420px) { .intro-top .skyward-emblem, .intro-top .logo-divider { display: block !important; } .intro-top .brand-name { font-size: 1.3rem; } }
+.logo .skyward-emblem { box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.85); }
+/* The mark's navy half, brighter where the background is dark. */
+.intro-top .logo-mark, .intro-hero .logo-mark, :root[data-theme="dark"] .logo-mark { --navy: #5b7fd6; }
+/* Phones: the landing header stays on one line. */
+.intro-top, .intro-top * { white-space: nowrap; }
+@media (max-width: 420px) {
+  .intro-top .logo { gap: 6px; }
+  .intro-top .skyward-emblem { width: 34px !important; height: 34px !important; }
+  .intro-top .brand-name { font-size: 1.2rem !important; }
+  .intro-top .cluster { gap: 2px; }
+  .intro-top .btn-auto { padding: 0 8px; }
+}

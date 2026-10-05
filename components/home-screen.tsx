@@ -18,6 +18,7 @@ import { TodayChallenges } from "./challenges";
 import { Flame } from "./illustrations";
 import { FeedbackPanel } from "./feedback-panel";
 import { InstallCard } from "./install";
+import { SkywardBadge } from "./logo";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
 import { CheckCard, ListenButton, PageSkeleton, Sheet, Skeleton } from "./ui";
@@ -180,6 +181,7 @@ export function HomeScreen() {
             <span aria-hidden>{streak.count}</span>
           </span>
         </div>
+        <SkywardBadge size={36} />
       </div>
 
       <VerenaHud />
