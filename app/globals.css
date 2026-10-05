@@ -3054,3 +3054,19 @@ button, a, [role="button"], .chip, .btn { touch-action: manipulation; -webkit-ta
 .resume-actions { grid-template-columns: 1fr 1fr; }
 .resume-actions .btn { min-height: 48px; font-size: 0.95rem; }
 .home-feedback > summary { cursor: pointer; padding: 14px 16px; border-radius: var(--r-lg); border: 1px solid var(--line); color: var(--text-muted); list-style: none; } .home-feedback[open] > summary { margin-bottom: 12px; }
+
+/* Saath AI chat history */
+.chat-top { display: flex; justify-content: space-between; align-items: center; gap: var(--s-2); }
+.chip-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font: inherit; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: background 0.15s; }
+.chip-btn:hover { background: var(--surface-2); }
+.chat-history { display: grid; gap: var(--s-3); min-width: 0; }
+.chat-history-title { font-size: 1.15rem; margin: 0; }
+.chat-history-group h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 6px; }
+.chat-history-group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.chat-history-group li { display: flex; align-items: center; gap: 4px; border-radius: var(--r-md, 12px); }
+.chat-history-group li.is-current { background: var(--surface-2); }
+.chat-history-open { flex: 1; min-width: 0; display: grid; gap: 2px; text-align: left; padding: 10px 12px; border: 0; background: none; color: var(--text); font: inherit; cursor: pointer; border-radius: inherit; }
+.chat-history-open:hover { background: var(--surface-2); }
+.chat-history-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-history-open .faint { font-size: 0.8rem; }
+.chat-history-note { font-size: 0.8rem; }

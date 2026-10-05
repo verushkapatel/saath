@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { ArrowUp, AudioLines, BookOpen, Check, Copy, Eraser, MessageCircle, Mic, Settings, Sparkles, Square } from "lucide-react";
+import { ArrowLeft, ArrowUp, AudioLines, BookOpen, Check, Copy, History, MessageCircle, Mic, Settings, Sparkles, SquarePen, Square, Trash2 } from "lucide-react";
 import { getProvider, onlineConfigured, providerMode, type AiAnswer, type AiProgress, type AiTurn, type Doc } from "@/lib/ai";
 import { buildDocs } from "@/lib/ai/knowledge";
 import type { Lang } from "@/lib/catalog";
@@ -10,6 +10,7 @@ import { loadJson, type FormsFile, type GlossaryTerm, type StoriesFile } from "@
 import { recommend, weakTopics } from "@/lib/recommend";
 import { canHear, dictate, scriptLang, tap } from "@/lib/speech";
 import { getMeta, setMeta } from "@/lib/storage";
+import { chatGroup, CURRENT_ID_KEY, HISTORY_KEY, newChatId, removeChat, upsertChat, type SavedChat } from "@/lib/chat-history";
 import { useAi, type Attachment } from "./ai-context";
 import { AttachmentChip, PlusMenu, VoiceMode } from "./ai-extras";
 import { LogoMark } from "./logo";
@@ -205,6 +206,9 @@ function Chat({ compact }: { compact?: boolean }) {
   const [micNote, setMicNote] = useState<string | null>(null);
   const [attachment, setAttachment] = useState<Attachment | null>(null);
   const [voice, setVoice] = useState(false);
+  const [chatId, setChatId] = useState(newChatId);
+  const [past, setPast] = useState<SavedChat<ChatLine>[]>([]);
+  const [showPast, setShowPast] = useState(false);
   const stopRef = useRef<(() => void) | null>(null);
   const runRef = useRef(0);
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
@@ -220,9 +224,12 @@ function Chat({ compact }: { compact?: boolean }) {
       setLoaded(true);
       return;
     }
-    getMeta<ChatLine[]>(CHAT_KEY)
-      .then((saved) => {
-        if (live && Array.isArray(saved)) setLines(saved.slice(-KEEP));
+    Promise.all([getMeta<ChatLine[]>(CHAT_KEY), getMeta<string>(CURRENT_ID_KEY), getMeta<SavedChat<ChatLine>[]>(HISTORY_KEY)])
+      .then(([saved, id, list]) => {
+        if (!live) return;
+        if (Array.isArray(saved)) setLines(saved.slice(-KEEP));
+        if (typeof id === "string") setChatId(id);
+        if (Array.isArray(list)) setPast(list);
       })
       .catch(() => undefined)
       .finally(() => live && setLoaded(true));
@@ -231,10 +238,53 @@ function Chat({ compact }: { compact?: boolean }) {
     };
   }, [prefs.aiMemory]);
 
-  const remember = useCallback((next: ChatLine[]) => {
+  // The open chat is saved as it grows, and copied into the history list under its own id.
+  const remember = useCallback((next: ChatLine[], id = chatId) => {
     setLines(next);
-    if (prefs.aiMemory) void setMeta(CHAT_KEY, next.filter((line) => !line.retry).slice(-KEEP)).catch(() => undefined);
-  }, [prefs.aiMemory]);
+    if (!prefs.aiMemory) return;
+    void setMeta(CHAT_KEY, next.filter((line) => !line.retry).slice(-KEEP)).catch(() => undefined);
+    void setMeta(CURRENT_ID_KEY, id).catch(() => undefined);
+    setPast((list) => {
+      const updated = upsertChat(list, id, next, new Date().toISOString());
+      void setMeta(HISTORY_KEY, updated).catch(() => undefined);
+      return updated;
+    });
+  }, [prefs.aiMemory, chatId]);
+
+  const savePast = (list: SavedChat<ChatLine>[]) => {
+    setPast(list);
+    void setMeta(HISTORY_KEY, list).catch(() => undefined);
+  };
+  function newChat() {
+    tap();
+    runRef.current += 1;
+    setBusy(false);
+    setShowPast(false);
+    const id = newChatId();
+    setChatId(id);
+    remember([], id);
+  }
+  function openChat(chat: SavedChat<ChatLine>) {
+    tap();
+    runRef.current += 1;
+    setBusy(false);
+    setShowPast(false);
+    setChatId(chat.id);
+    setLines(chat.lines);
+    void setMeta(CHAT_KEY, chat.lines).catch(() => undefined);
+    void setMeta(CURRENT_ID_KEY, chat.id).catch(() => undefined);
+  }
+  function deleteChat(id: string) {
+    tap();
+    savePast(removeChat(past, id));
+    if (id === chatId) {
+      const fresh = newChatId();
+      setChatId(fresh);
+      setLines([]);
+      void setMeta(CHAT_KEY, []).catch(() => undefined);
+      void setMeta(CURRENT_ID_KEY, fresh).catch(() => undefined);
+    }
+  }
 
   useEffect(() => {
     if (lines.length || busy) endRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
@@ -351,8 +401,24 @@ function Chat({ compact }: { compact?: boolean }) {
   const mode = providerMode({ allowLocal: prefs.aiLocal, allowOnline: prefs.aiOnline, ollamaUrl: prefs.aiOllamaUrl, ollamaModel: prefs.aiOllamaModel });
   const inputId = compact ? "ask-sheet-input" : "ask-page-input";
 
+  if (showPast) return <PastChats chats={past} current={chatId} onOpen={openChat} onDelete={deleteChat} onBack={() => setShowPast(false)} onNew={newChat} />;
+
   return (
     <div className={`chat-wrap convo${compact ? " compact" : ""}${empty ? " is-empty" : ""}`} data-testid="saath-ai-chat">
+      {(prefs.aiMemory && past.length > 0) || !empty ? (
+        <div className="chat-top">
+          {prefs.aiMemory && past.length > 0 ? (
+            <button type="button" className="chip-btn" onClick={() => { tap(); setShowPast(true); }} data-testid="ai-history-button">
+              <History aria-hidden size={15} /> {t("ai.history.open")}
+            </button>
+          ) : <span />}
+          {!empty && (
+            <button type="button" className="chip-btn" onClick={newChat} data-testid="ai-new-chat-button">
+              <SquarePen aria-hidden size={15} /> {t("ai.history.new")}
+            </button>
+          )}
+        </div>
+      ) : null}
       {empty ? (
         <div className="ai-hello" data-testid="ai-empty-state">
           <span className="ai-mark" aria-hidden><LogoMark size={28} /></span>
@@ -469,13 +535,57 @@ function Chat({ compact }: { compact?: boolean }) {
 
       <div className="chat-foot">
         <p className="faint">{t(`ai.mode.${mode}`)} {t("ai.notAdvice")}</p>
-        {!empty && (
-          <button type="button" className="link" onClick={() => { tap(); runRef.current += 1; setBusy(false); remember([]); }} data-testid="ai-new-chat-button">
-            <Eraser aria-hidden size={16} />
-            {t("ai.clear")}
-          </button>
-        )}
       </div>
+    </div>
+  );
+}
+
+/** The list of earlier chats, grouped by day, kept on this device. */
+function PastChats({ chats, current, onOpen, onDelete, onBack, onNew }: {
+  chats: SavedChat<ChatLine>[];
+  current: string;
+  onOpen: (chat: SavedChat<ChatLine>) => void;
+  onDelete: (id: string) => void;
+  onBack: () => void;
+  onNew: () => void;
+}) {
+  const { t, code } = useI18n();
+  const now = new Date();
+  const groups = (["today", "yesterday", "week", "older"] as const)
+    .map((group) => ({ group, items: chats.filter((chat) => chatGroup(chat.at, now) === group) }))
+    .filter((entry) => entry.items.length);
+  const time = (at: string) => new Date(at).toLocaleString(code === "en" ? "en-IN" : `${code}-IN`, { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
+  return (
+    <div className="chat-history" data-testid="ai-history">
+      <div className="chat-top">
+        <button type="button" className="chip-btn" onClick={() => { tap(); onBack(); }} data-testid="ai-history-back">
+          <ArrowLeft aria-hidden size={15} /> {t("ai.history.back")}
+        </button>
+        <button type="button" className="chip-btn" onClick={onNew} data-testid="ai-history-new">
+          <SquarePen aria-hidden size={15} /> {t("ai.history.new")}
+        </button>
+      </div>
+      <h2 className="chat-history-title">{t("ai.history.title")}</h2>
+      {groups.length === 0 && <p className="faint">{t("ai.history.empty")}</p>}
+      {groups.map(({ group, items }) => (
+        <section key={group} className="chat-history-group">
+          <h3 className="faint">{t(`ai.history.${group}`)}</h3>
+          <ul>
+            {items.map((chat) => (
+              <li key={chat.id} className={chat.id === current ? "is-current" : undefined}>
+                <button type="button" className="chat-history-open" onClick={() => onOpen(chat)} data-testid="ai-history-item">
+                  <span className="chat-history-name">{chat.title}</span>
+                  <span className="faint">{time(chat.at)} · {t("ai.history.count", { n: chat.lines.length })}</span>
+                </button>
+                <button type="button" className="icon-btn ghost" aria-label={t("ai.history.delete", { title: chat.title })} onClick={() => onDelete(chat.id)} data-testid="ai-history-delete">
+                  <Trash2 aria-hidden size={16} />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <p className="faint chat-history-note">{t("ai.history.private")}</p>
     </div>
   );
 }

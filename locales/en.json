@@ -1371,6 +1371,20 @@
       "idle": "Tap to talk",
       "tap": "Tap the circle and speak",
       "unsupported": "This browser cannot listen. Try Chrome on Android or Safari on iPhone."
+    },
+    "history": {
+      "open": "Past chats",
+      "new": "New chat",
+      "back": "Back to chat",
+      "title": "Your chats",
+      "empty": "No saved chats yet.",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "week": "This week",
+      "older": "Older",
+      "count": "{n} messages",
+      "delete": "Delete chat: {title}",
+      "private": "Chats are kept only on this phone. Turn off chat memory in Settings to stop saving them."
     }
   },
   "prog": {
