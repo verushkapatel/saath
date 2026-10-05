@@ -3,7 +3,7 @@ export default {
   async fetch(request) {
     const url = new URL(request.url);
     if (url.hostname === "www.saath.cc") return Response.redirect(`https://saath.cc${url.pathname}${url.search}`, 301);
-    const upstream = new URL(url.pathname + url.search, "https://getsaath.pages.dev");
+    const upstream = new URL(url.pathname.replace(/^\/+/, "/") + url.search, "https://getsaath.pages.dev");
     const response = await fetch(new Request(upstream, request), { redirect: "manual", cf: { cacheTtl: 0 } });
     const headers = new Headers(response.headers);
     const location = headers.get("location");

@@ -161,7 +161,7 @@ jobs:
           a=$(curl -s https://getsaath.pages.dev/ | md5sum | cut -c1-12); b=$(curl -s -H 'cache-control: no-cache' https://saath.cc/ | md5sum | cut -c1-12)
           echo "home page on pages.dev: $a / on saath.cc: $b"; [ "$a" = "$b" ] && echo "SAME BUILD on saath.cc" || echo "::warning::saath.cc serves a different build"
           # Every main screen and the new features answer on saath.cc.
-          for path in / journey/ guide/ guide/what-insurance/ money-lab/ forms/ resume/ handbook/ ai/ content/guide.json sw.js; do
+          for path in "" journey/ guide/ guide/what-insurance/ money-lab/ forms/ resume/ handbook/ ai/ content/guide.json sw.js; do
             echo "saath.cc/$path -> HTTP $(curl -s -o /dev/null -L -w '%{http_code}' --max-time 20 "https://saath.cc/$path")"
           done
 
