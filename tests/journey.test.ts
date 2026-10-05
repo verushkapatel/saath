@@ -13,7 +13,7 @@ const lessons = JSON.parse(readFileSync(`${process.cwd()}/content/guide.json`, "
 
 describe("the story file", () => {
   it("has all forty-five connected chapters in order", () => {
-    expect(file.episodes).toHaveLength(45);
+    expect(file.episodes).toHaveLength(46);
     expect(file.episodes.map((episode) => episode.id)).toEqual([...CHAPTER_IDS]);
     expect(file.reviewed).toMatch(/^\d{4}-\d{2}/);
   });
@@ -78,7 +78,7 @@ describe("continuous chapter progression", () => {
     const state = journeyState(file, progress, "2026-12-31");
     expect(state.finished).toBe(true);
     expect(state.next).toBeNull();
-    expect(state.done).toBe(45);
+    expect(state.done).toBe(46);
   });
 });
 

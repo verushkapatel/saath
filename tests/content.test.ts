@@ -40,7 +40,7 @@ describe("content", () => {
     const glossary = readJson("content/glossary.json");
     expect(questions).toHaveLength(60);
     expect(cases).toHaveLength(12);
-    expect(guide).toHaveLength(45);
+    expect(guide).toHaveLength(47);
     expect(glossary).toHaveLength(60);
     expect(guide.map((item: { id: string }) => item.id)).toEqual([...LESSON_IDS]);
     expect(cases.map((item: { id: string }) => item.id)).toEqual([...CASE_IDS]);
@@ -98,7 +98,7 @@ describe("content", () => {
 
   it("precaches the companion screens and their content, under the new cache name", () => {
     const worker = readFileSync(`${root}/public/sw.js`, "utf8");
-    expect(worker).toContain('const CACHE = "saath-v14"');
+    expect(worker).toContain('const CACHE = "saath-v15"');
     for (const page of ["/journey", "/forms", "/forms/explain", "/stories", "/ai", "/progress", "/settings"]) expect(worker).toContain(`"${page}"`);
     expect(worker).not.toContain('"/games"');
     expect(worker).not.toContain('"/comic"');

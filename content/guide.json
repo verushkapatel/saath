@@ -1170,6 +1170,96 @@
     ]
   },
   {
+    "id": "choosing-card",
+    "unit": "bank-paper",
+    "topic": "banking",
+    "icon": "key",
+    "title": {
+      "en": "Debit or credit: choosing your first card",
+      "hi": "डेबिट या क्रेडिट: पहला कार्ड चुनना",
+      "mr": "डेबिट की क्रेडिट: पहिले कार्ड निवडणे"
+    },
+    "summary": {
+      "en": "Which card to take, and how to use it without paying interest.",
+      "hi": "कौन-सा कार्ड लें, और बिना ब्याज कैसे इस्तेमाल करें।",
+      "mr": "कोणते कार्ड घ्यावे, आणि व्याज न भरता कसे वापरावे."
+    },
+    "body": {
+      "en": "A debit card spends your own money. A credit card spends the bank's money, which you must repay in full by the due date.\n\nFor a first credit card, pick a lifetime-free card with a low limit, set an auto-debit for the total amount due, and never take cash on it.",
+      "hi": "डेबिट कार्ड आपका अपना पैसा ख़र्च करता है। क्रेडिट कार्ड बैंक का पैसा ख़र्च करता है, जिसे तय तारीख़ तक पूरा लौटाना होता है।\n\nपहले क्रेडिट कार्ड के लिए कम लिमिट वाला लाइफ़टाइम फ़्री कार्ड लें, कुल देय रकम का ऑटो-डेबिट लगाएँ, और उससे कभी नक़द न निकालें।",
+      "mr": "डेबिट कार्ड तुमचे स्वतःचे पैसे खर्च करते. क्रेडिट कार्ड बँकेचे पैसे खर्च करते, जे देय तारखेपर्यंत पूर्ण परत करायचे असतात.\n\nपहिल्या क्रेडिट कार्डसाठी कमी मर्यादेचे लाइफटाइम फ्री कार्ड घ्या, एकूण देय रकमेचे ऑटो-डेबिट लावा, आणि त्यावर कधीही रोख काढू नका."
+    },
+    "points": [
+      {
+        "en": "Apply only in your bank's official app or website.",
+        "hi": "आवेदन केवल बैंक के आधिकारिक ऐप या वेबसाइट से।",
+        "mr": "अर्ज फक्त बँकेच्या अधिकृत ॲप किंवा वेबसाइटवरून."
+      },
+      {
+        "en": "Compare joining fee, annual fee, interest and late fee in the MITC.",
+        "hi": "MITC में जॉइनिंग फ़ीस, सालाना फ़ीस, ब्याज और लेट फ़ीस मिलाएँ।",
+        "mr": "MITC मध्ये जॉइनिंग फी, वार्षिक फी, व्याज आणि विलंब शुल्क तुलना करा."
+      },
+      {
+        "en": "Always pay the total amount due, never only the minimum.",
+        "hi": "हमेशा कुल देय रकम भरें, केवल न्यूनतम कभी नहीं।",
+        "mr": "नेहमी एकूण देय रक्कम भरा, फक्त किमान कधीही नाही."
+      },
+      {
+        "en": "Keep usage under about 30% of your limit.",
+        "hi": "इस्तेमाल लिमिट के लगभग 30% से कम रखें।",
+        "mr": "वापर मर्यादेच्या साधारण 30% पेक्षा कमी ठेवा."
+      }
+    ],
+    "example": {
+      "en": "Verena spends ₹11,840 in a month. Paying ₹592 (the minimum) would start interest on ₹11,248. She pays ₹11,840 by auto-debit and pays no interest.",
+      "hi": "वेरेना महीने में ₹11,840 ख़र्च करती है। ₹592 (न्यूनतम) भरने से ₹11,248 पर ब्याज शुरू होता। वह ऑटो-डेबिट से ₹11,840 भरती है और कोई ब्याज नहीं देती।",
+      "mr": "वेरेना महिन्यात ₹11,840 खर्च करते. ₹592 (किमान) भरल्यास ₹11,248 वर व्याज सुरू झाले असते. ती ऑटो-डेबिटने ₹11,840 भरते आणि व्याज भरत नाही."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Live the full card decision in the simulation above.",
+        "hi": "ऊपर के सिमुलेशन में पूरा कार्ड फ़ैसला जिएँ।",
+        "mr": "वरील सिम्युलेशनमध्ये संपूर्ण कार्ड निर्णय अनुभवा."
+      },
+      "link": null
+    },
+    "check": {
+      "question": {
+        "en": "Your card bill is ₹8,000 and the minimum due is ₹400. What avoids interest?",
+        "hi": "कार्ड बिल ₹8,000 है और न्यूनतम ₹400। ब्याज से कौन बचाता है?",
+        "mr": "कार्ड बिल ₹8,000 आहे आणि किमान ₹400. व्याज कशाने टळते?"
+      },
+      "options": [
+        {
+          "en": "Paying ₹400 by the due date",
+          "hi": "तय तारीख़ तक ₹400 भरना",
+          "mr": "देय तारखेपर्यंत ₹400 भरणे"
+        },
+        {
+          "en": "Paying ₹8,000 by the due date",
+          "hi": "तय तारीख़ तक ₹8,000 भरना",
+          "mr": "देय तारखेपर्यंत ₹8,000 भरणे"
+        },
+        {
+          "en": "Paying ₹8,000 a week late",
+          "hi": "एक हफ़्ता देर से ₹8,000 भरना",
+          "mr": "आठवडाभर उशिरा ₹8,000 भरणे"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Only the full amount by the due date keeps the interest-free period.",
+        "hi": "केवल तय तारीख़ तक पूरी रकम से ही बिना-ब्याज अवधि बचती है।",
+        "mr": "फक्त देय तारखेपर्यंत पूर्ण रक्कम भरल्यानेच बिनव्याजी कालावधी टिकतो."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.rbi.org.in"
+    ]
+  },
+  {
     "id": "upi-safety",
     "unit": "bank-paper",
     "topic": "banking",
@@ -3317,6 +3407,96 @@
     "sources": [
       "https://www.dicgc.org.in/FAQs",
       "https://sachet.rbi.org.in/"
+    ]
+  },
+  {
+    "id": "resume",
+    "unit": "own-money",
+    "topic": "income",
+    "icon": "file",
+    "title": {
+      "en": "Making a resume that gets read",
+      "hi": "ऐसा रिज़्यूमे जो पढ़ा जाए",
+      "mr": "वाचला जाईल असा रेझ्युमे"
+    },
+    "summary": {
+      "en": "One clean page, results with numbers, tailored to each job.",
+      "hi": "एक साफ़ पन्ना, अंकों के साथ नतीजे, हर नौकरी के हिसाब से।",
+      "mr": "एक स्वच्छ पान, आकड्यांसह परिणाम, प्रत्येक नोकरीनुसार."
+    },
+    "body": {
+      "en": "Your resume is the first thing an employer sees, often for less than a minute.\n\nKeep it to one page for a first job, write what you achieved rather than what you were responsible for, and change the order for each job you apply to.",
+      "hi": "रिज़्यूमे वह पहली चीज़ है जो नियोक्ता देखता है, अक्सर एक मिनट से भी कम।\n\nपहली नौकरी के लिए इसे एक पन्ने का रखें, ज़िम्मेदारी नहीं बल्कि उपलब्धि लिखें, और हर नौकरी के लिए क्रम बदलें।",
+      "mr": "रेझ्युमे ही नियोक्ता पाहतो ती पहिली गोष्ट, अनेकदा एका मिनिटापेक्षा कमी.\n\nपहिल्या नोकरीसाठी तो एका पानाचा ठेवा, जबाबदारी नाही तर कामगिरी लिहा, आणि प्रत्येक नोकरीसाठी क्रम बदला."
+    },
+    "points": [
+      {
+        "en": "Contact, summary, education, experience, projects, skills.",
+        "hi": "संपर्क, सार, शिक्षा, अनुभव, प्रोजेक्ट, कौशल।",
+        "mr": "संपर्क, सारांश, शिक्षण, अनुभव, प्रकल्प, कौशल्ये."
+      },
+      {
+        "en": "Action + what + result, with a number where possible.",
+        "hi": "काम + क्या + नतीजा, जहाँ हो सके अंक के साथ।",
+        "mr": "कृती + काय + परिणाम, शक्य तिथे आकड्यासह."
+      },
+      {
+        "en": "Everything true; nothing you cannot explain.",
+        "hi": "सब सच; ऐसा कुछ नहीं जो समझा न सकें।",
+        "mr": "सगळे खरे; समजावता येणार नाही असे काही नाही."
+      },
+      {
+        "en": "Send a PDF named with your name.",
+        "hi": "अपने नाम वाली PDF भेजें।",
+        "mr": "तुमच्या नावाची PDF पाठवा."
+      }
+    ],
+    "example": {
+      "en": "'Handled fest accounts' becomes 'Managed a ₹4.2 lakh fest budget for 30 volunteers; closed ₹18,000 under budget.'",
+      "hi": "'फ़ेस्ट का हिसाब सँभाला' बनता है '30 स्वयंसेवकों के लिए ₹4.2 लाख का फ़ेस्ट बजट सँभाला; ₹18,000 कम में पूरा किया।'",
+      "mr": "'फेस्टचा हिशोब सांभाळला' होते '30 स्वयंसेवकांसाठी ₹4.2 लाखांचे फेस्ट बजेट सांभाळले; ₹18,000 कमी खर्चात पूर्ण केले.'"
+    },
+    "tryIt": {
+      "text": {
+        "en": "Build your own resume with Saath AI and download it as a PDF.",
+        "hi": "Saath AI के साथ अपना रिज़्यूमे बनाएँ और PDF डाउनलोड करें।",
+        "mr": "Saath AI सोबत तुमचा रेझ्युमे तयार करा आणि PDF डाउनलोड करा."
+      },
+      "link": "resume"
+    },
+    "check": {
+      "question": {
+        "en": "Which resume line is strongest?",
+        "hi": "रिज़्यूमे की कौन-सी लाइन सबसे मज़बूत है?",
+        "mr": "रेझ्युमेची कोणती ओळ सर्वात प्रभावी?"
+      },
+      "options": [
+        {
+          "en": "Hard-working team player",
+          "hi": "मेहनती टीम खिलाड़ी",
+          "mr": "मेहनती संघ खेळाडू"
+        },
+        {
+          "en": "Responsible for social media",
+          "hi": "सोशल मीडिया की ज़िम्मेदारी",
+          "mr": "सोशल मीडियाची जबाबदारी"
+        },
+        {
+          "en": "Grew the club page from 300 to 2,100 followers in 6 months",
+          "hi": "6 महीने में क्लब पेज 300 से 2,100 फ़ॉलोअर तक बढ़ाया",
+          "mr": "6 महिन्यांत क्लबचे पान 300 वरून 2,100 फॉलोअर्सपर्यंत वाढवले"
+        }
+      ],
+      "answer": 2,
+      "why": {
+        "en": "It shows a specific, measurable result.",
+        "hi": "यह ठोस, मापने योग्य नतीजा दिखाती है।",
+        "mr": "ती नेमका, मोजता येणारा परिणाम दाखवते."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.ncs.gov.in"
     ]
   },
   {

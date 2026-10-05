@@ -1,0 +1,172 @@
+{
+ "id": "children-planning",
+ "guide": "children-planning",
+ "title": {
+  "en": "Planning for a child's education 15 years away: the number, the plan, and the account",
+  "hi": "15 साल दूर बच्चे की पढ़ाई की योजना: रकम, योजना, और खाता",
+  "mr": "15 वर्षांनी असलेल्या मुलाच्या शिक्षणाचे नियोजन: रक्कम, योजना, आणि खाते"
+ },
+ "setting": {
+  "en": "Verena's daughter Mira is 3",
+  "hi": "वेरेना की बेटी मीरा 3 साल की है",
+  "mr": "वेरेनाची मुलगी मीरा 3 वर्षांची आहे"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Estimate the future cost, honestly",
+    "hi": "भविष्य की लागत का ईमानदार अनुमान",
+    "mr": "भविष्यातील खर्चाचा प्रामाणिक अंदाज"
+   },
+   "text": {
+    "en": "A degree that costs about ₹8 lakh today will cost much more in 15 years. Using an example education inflation of 8% a year, it becomes about ₹25 lakh.",
+    "hi": "जो डिग्री आज लगभग ₹8 लाख की है, 15 साल में बहुत महँगी होगी। शिक्षा महँगाई 8% सालाना मानकर (उदाहरण), यह लगभग ₹25 लाख हो जाती है।",
+    "mr": "आज साधारण ₹8 लाख खर्चाची पदवी 15 वर्षांत खूप महाग होईल. शिक्षण महागाई वर्षाला 8% धरून (उदाहरण), ती साधारण ₹25 लाख होते."
+   },
+   "screen": [
+    {
+     "en": "Education goal",
+     "hi": "शिक्षा लक्ष्य",
+     "mr": "शिक्षण उद्दिष्ट"
+    },
+    {
+     "en": "Today: ₹8,00,000",
+     "hi": "आज: ₹8,00,000",
+     "mr": "आज: ₹8,00,000"
+    },
+    {
+     "en": "In 15 yrs @8%: ~₹25 L",
+     "hi": "15 साल में @8%: ~₹25 लाख",
+     "mr": "15 वर्षांत @8%: ~₹25 लाख"
+    },
+    {
+     "en": "Monthly needed (example 10%): ~₹6,000",
+     "hi": "मासिक ज़रूरत (उदाहरण 10%): ~₹6,000",
+     "mr": "मासिक गरज (उदाहरण 10%): ~₹6,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "These are example rates to make a plan, not predictions. Review the plan every year.",
+     "hi": "ये योजना बनाने की उदाहरण दरें हैं, भविष्यवाणी नहीं। हर साल योजना देखें।",
+     "mr": "हे नियोजनासाठी उदाहरण दर आहेत, भाकीत नाही. दरवर्षी नियोजन पाहा."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "Pick the accounts, with the child's name where possible",
+    "hi": "खाते चुनें, जहाँ हो सके बच्चे के नाम पर",
+    "mr": "खाती निवडा, शक्य तिथे मुलाच्या नावावर"
+   },
+   "text": {
+    "en": "For a daughter under 10, Sukanya Samriddhi Yojana (SSY) is a government scheme with a fixed rate and tax benefits. Verena opens one at the post office and adds an equity SIP for growth.",
+    "hi": "10 साल से कम उम्र की बेटी के लिए सुकन्या समृद्धि योजना (SSY) एक सरकारी योजना है जिसमें तय दर और टैक्स लाभ हैं। वेरेना डाकघर में खाता खोलती है और विकास के लिए एक इक्विटी SIP जोड़ती है।",
+    "mr": "10 वर्षांखालील मुलीसाठी सुकन्या समृद्धी योजना (SSY) ही ठरावीक दर आणि कर लाभ असलेली सरकारी योजना आहे. वेरेना पोस्टात खाते उघडते आणि वाढीसाठी इक्विटी SIP जोडते."
+   },
+   "screen": [
+    {
+     "en": "Sukanya Samriddhi Account",
+     "hi": "सुकन्या समृद्धि खाता",
+     "mr": "सुकन्या समृद्धी खाते"
+    },
+    {
+     "en": "Girl child under 10",
+     "hi": "10 साल से कम की बेटी",
+     "mr": "10 वर्षांखालील मुलगी"
+    },
+    {
+     "en": "Docs: birth certificate, parent KYC",
+     "hi": "दस्तावेज़: जन्म प्रमाणपत्र, माता-पिता KYC",
+     "mr": "कागदपत्रे: जन्म दाखला, पालक KYC"
+    },
+    {
+     "en": "+ equity SIP ₹3,000",
+     "hi": "+ इक्विटी SIP ₹3,000",
+     "mr": "+ इक्विटी SIP ₹3,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "SSY accepts deposits for 15 years, matures at 21 years from opening, and allows partial withdrawal for education after the girl turns 18.",
+     "hi": "SSY में 15 साल जमा होता है, खोलने से 21 साल पर पूरा होता है, और बेटी के 18 होने के बाद पढ़ाई के लिए आंशिक निकासी हो सकती है।",
+     "mr": "SSY मध्ये 15 वर्षे ठेवी स्वीकारल्या जातात, उघडल्यापासून 21 वर्षांनी परिपक्व होते, आणि मुलगी 18 ची झाल्यावर शिक्षणासाठी अंशतः रक्कम काढता येते."
+    },
+    {
+     "en": "Protect the plan: term life insurance for the earning parent makes sure the goal survives if something happens.",
+     "hi": "योजना को बचाएँ: कमाने वाले माता-पिता का टर्म जीवन बीमा पक्का करता है कि कुछ हो जाए तो भी लक्ष्य बचा रहे।",
+     "mr": "नियोजन वाचवा: कमावत्या पालकाचा टर्म जीवन विमा काही झाले तरी उद्दिष्ट टिकेल याची खात्री करतो."
+    }
+   ],
+   "cost": {
+    "en": "1 morning",
+    "hi": "एक सुबह",
+    "mr": "एक सकाळ"
+   },
+   "choice": {
+    "prompt": {
+     "en": "A relative suggests a child 'money-back' insurance policy instead. What should Verena check?",
+     "hi": "एक रिश्तेदार बच्चे की 'मनी-बैक' बीमा पॉलिसी सुझाता है। वेरेना क्या जाँचे?",
+     "mr": "एक नातेवाईक मुलाची 'मनी-बॅक' विमा पॉलिसी सुचवतो. वेरेनाने काय तपासावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "The return after charges, and whether term cover plus separate investing does better",
+       "hi": "शुल्क के बाद रिटर्न, और क्या टर्म कवर और अलग निवेश बेहतर है",
+       "mr": "शुल्कानंतरचा परतावा, आणि टर्म कव्हर अधिक स्वतंत्र गुंतवणूक चांगली आहे का"
+      },
+      "good": true,
+      "result": {
+       "en": "Mixed insurance-investment policies often give modest returns. Comparing keeps her in control.",
+       "hi": "मिले-जुले बीमा-निवेश पॉलिसी अक्सर साधारण रिटर्न देती हैं। तुलना उसे नियंत्रण में रखती है।",
+       "mr": "मिश्र विमा-गुंतवणूक पॉलिसी अनेकदा माफक परतावा देतात. तुलना तिला नियंत्रणात ठेवते."
+      }
+     },
+     {
+      "text": {
+       "en": "Nothing, insurance is always safe",
+       "hi": "कुछ नहीं, बीमा हमेशा सुरक्षित है",
+       "mr": "काही नाही, विमा नेहमीच सुरक्षित"
+      },
+      "good": false,
+      "result": {
+       "en": "Safe is not the same as suitable. Read the benefit illustration.",
+       "hi": "सुरक्षित होना उपयुक्त होना नहीं। बेनिफ़िट इलस्ट्रेशन पढ़ें।",
+       "mr": "सुरक्षित म्हणजे योग्य असे नाही. बेनिफिट इलस्ट्रेशन वाचा."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Estimate the future cost with an example inflation rate, and review yearly.",
+   "hi": "उदाहरण महँगाई दर से भविष्य की लागत का अनुमान लगाएँ, और हर साल देखें।",
+   "mr": "उदाहरण महागाई दराने भविष्यातील खर्चाचा अंदाज करा, आणि दरवर्षी पाहा."
+  },
+  {
+   "en": "Combine safe accounts (like SSY for a daughter) with long-term growth.",
+   "hi": "सुरक्षित खाते (जैसे बेटी के लिए SSY) को लंबे विकास से जोड़ें।",
+   "mr": "सुरक्षित खाती (मुलीसाठी SSY सारखी) दीर्घकालीन वाढीशी जोडा."
+  },
+  {
+   "en": "Protect the goal with term insurance on the earning parent.",
+   "hi": "कमाने वाले माता-पिता के टर्म बीमे से लक्ष्य को सुरक्षित करें।",
+   "mr": "कमावत्या पालकाच्या टर्म विम्याने उद्दिष्ट सुरक्षित करा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.nsiindia.gov.in",
+  "https://www.indiapost.gov.in"
+ ]
+}

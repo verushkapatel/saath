@@ -1,0 +1,165 @@
+{
+ "id": "where-savings",
+ "guide": "where-savings",
+ "title": {
+  "en": "Choosing where each rupee of savings lives: savings account, FD, RD, PPF or a fund",
+  "hi": "बचत का हर रुपया कहाँ रहे: बचत खाता, FD, RD, PPF या फ़ंड",
+  "mr": "बचतीचा प्रत्येक रुपया कुठे ठेवायचा: बचत खाते, FD, RD, PPF किंवा फंड"
+ },
+ "setting": {
+  "en": "Verena sorts her money by when she will need it",
+  "hi": "वेरेना अपने पैसे को इस हिसाब से बाँटती है कि कब चाहिए",
+  "mr": "वेरेना तिचे पैसे कधी लागतील त्यानुसार विभागते"
+ },
+ "steps": [
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Sort by time, not by return",
+    "hi": "समय से बाँटें, रिटर्न से नहीं",
+    "mr": "वेळेनुसार विभागा, परताव्यानुसार नाही"
+   },
+   "text": {
+    "en": "She writes three goals with dates: emergency (any day), a trip in 18 months, and retirement in 30+ years. Each needs a different home.",
+    "hi": "वह तारीख़ों के साथ तीन लक्ष्य लिखती है: आपात (कभी भी), 18 महीने में एक यात्रा, और 30+ साल में रिटायरमेंट। हर एक को अलग जगह चाहिए।",
+    "mr": "ती तारखांसह तीन उद्दिष्टे लिहिते: आणीबाणी (कधीही), 18 महिन्यांत सहल, आणि 30+ वर्षांनी निवृत्ती. प्रत्येकाला वेगळे घर हवे."
+   },
+   "screen": [
+    {
+     "en": "Any day → savings / sweep FD",
+     "hi": "कभी भी → बचत / स्वीप FD",
+     "mr": "कधीही → बचत / स्वीप FD"
+    },
+    {
+     "en": "1–3 years → FD or RD",
+     "hi": "1–3 साल → FD या RD",
+     "mr": "1–3 वर्षे → FD किंवा RD"
+    },
+    {
+     "en": "15+ years, tax-free → PPF",
+     "hi": "15+ साल, कर-मुक्त → PPF",
+     "mr": "15+ वर्षे, करमुक्त → PPF"
+    },
+    {
+     "en": "7+ years growth → equity funds",
+     "hi": "7+ साल विकास → इक्विटी फ़ंड",
+     "mr": "7+ वर्षे वाढ → इक्विटी फंड"
+    }
+   ],
+   "details": [
+    {
+     "en": "PPF (Public Provident Fund) has a 15-year lock-in, government-set interest and tax benefits; deposits between ₹500 and ₹1.5 lakh a year.",
+     "hi": "PPF (पब्लिक प्रोविडेंट फ़ंड) में 15 साल का लॉक-इन, सरकार की तय ब्याज दर और टैक्स लाभ हैं; साल में ₹500 से ₹1.5 लाख तक जमा।",
+     "mr": "PPF (पब्लिक प्रॉव्हिडंट फंड) मध्ये 15 वर्षांचा लॉक-इन, सरकारने ठरवलेले व्याज आणि कर लाभ आहेत; वर्षाला ₹500 ते ₹1.5 लाख जमा."
+    },
+    {
+     "en": "FDs and RDs give a fixed rate; breaking them early may reduce interest.",
+     "hi": "FD और RD तय दर देते हैं; जल्दी तोड़ने पर ब्याज घट सकता है।",
+     "mr": "FD आणि RD ठरावीक दर देतात; लवकर मोडल्यास व्याज कमी होऊ शकते."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Where should the 18-month trip money go?",
+     "hi": "18 महीने की यात्रा का पैसा कहाँ जाए?",
+     "mr": "18 महिन्यांच्या सहलीचे पैसे कुठे ठेवावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "An RD or FD for 18 months",
+       "hi": "18 महीने का RD या FD",
+       "mr": "18 महिन्यांची RD किंवा FD"
+      },
+      "good": true,
+      "result": {
+       "en": "Known amount, known date. No risk of a market fall right before the trip.",
+       "hi": "पता रकम, पता तारीख़। यात्रा से ठीक पहले बाज़ार गिरने का जोखिम नहीं।",
+       "mr": "माहीत रक्कम, माहीत तारीख. सहलीच्या आधीच बाजार घसरण्याचा धोका नाही."
+      }
+     },
+     {
+      "text": {
+       "en": "An equity fund for higher growth",
+       "hi": "ऊँचे विकास के लिए इक्विटी फ़ंड",
+       "mr": "जास्त वाढीसाठी इक्विटी फंड"
+      },
+      "good": false,
+      "result": {
+       "en": "18 months is too short: a fall could cut the trip budget at the wrong moment.",
+       "hi": "18 महीने बहुत कम हैं: गिरावट ग़लत समय पर यात्रा का बजट काट सकती है।",
+       "mr": "18 महिने खूप कमी: घसरण चुकीच्या वेळी सहलीचे बजेट कापू शकते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "Open a PPF account at the bank or post office",
+    "hi": "बैंक या डाकघर में PPF खाता खोलें",
+    "mr": "बँक किंवा पोस्टात PPF खाते उघडा"
+   },
+   "text": {
+    "en": "Many banks let you open PPF in net banking; she does it in ten minutes, adds a nominee, and sets a standing instruction of ₹1,000 a month.",
+    "hi": "कई बैंक नेट बैंकिंग में PPF खोलने देते हैं; वह दस मिनट में खोलती है, नॉमिनी जोड़ती है, और ₹1,000 महीने का स्टैंडिंग इंस्ट्रक्शन लगाती है।",
+    "mr": "अनेक बँका नेट बँकिंगमध्ये PPF उघडू देतात; ती दहा मिनिटांत उघडते, नॉमिनी जोडते, आणि ₹1,000 महिन्याची स्टँडिंग इन्स्ट्रक्शन लावते."
+   },
+   "screen": [
+    {
+     "en": "PPF account",
+     "hi": "PPF खाता",
+     "mr": "PPF खाते"
+    },
+    {
+     "en": "Lock-in: 15 years",
+     "hi": "लॉक-इन: 15 साल",
+     "mr": "लॉक-इन: 15 वर्षे"
+    },
+    {
+     "en": "₹1,000 monthly",
+     "hi": "₹1,000 मासिक",
+     "mr": "₹1,000 मासिक"
+    },
+    {
+     "en": "Min ₹500/yr to stay active",
+     "hi": "चालू रखने को साल में न्यूनतम ₹500",
+     "mr": "सक्रिय ठेवायला वर्षाला किमान ₹500"
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Match each rupee to when you will need it.",
+   "hi": "हर रुपये को उस समय से मिलाएँ जब उसकी ज़रूरत होगी।",
+   "mr": "प्रत्येक रुपया तो कधी लागेल त्याच्याशी जुळवा."
+  },
+  {
+   "en": "Short term: savings, FD, RD. Long term: PPF and diversified equity funds.",
+   "hi": "कम समय: बचत, FD, RD। लंबा समय: PPF और विविधीकृत इक्विटी फ़ंड।",
+   "mr": "अल्प काळ: बचत, FD, RD. दीर्घ काळ: PPF आणि वैविध्यपूर्ण इक्विटी फंड."
+  },
+  {
+   "en": "Never put near-term money into investments that can fall.",
+   "hi": "जल्द चाहिए पैसा कभी गिर सकने वाले निवेश में न डालें।",
+   "mr": "लवकर लागणारे पैसे कधीही घसरू शकणाऱ्या गुंतवणुकीत टाकू नका."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.nsiindia.gov.in",
+  "https://www.rbi.org.in"
+ ]
+}

@@ -1,0 +1,487 @@
+{
+ "id": "what-emi",
+ "guide": "what-emi",
+ "title": {
+  "en": "Taking a personal loan, start to finish: comparing offers, the Key Fact Statement, signing, EMIs and closing it",
+  "hi": "पर्सनल लोन, शुरू से अंत तक: ऑफ़र मिलाना, की फ़ैक्ट स्टेटमेंट, हस्ताक्षर, EMI और लोन बंद करना",
+  "mr": "वैयक्तिक कर्ज, सुरुवातीपासून शेवटपर्यंत: ऑफर तुलना, की फॅक्ट स्टेटमेंट, सही, EMI आणि कर्ज बंद करणे"
+ },
+ "setting": {
+  "en": "Verena, 31, needs ₹1,50,000 for a family wedding",
+  "hi": "31 साल की वेरेना को परिवार की शादी के लिए ₹1,50,000 चाहिए",
+  "mr": "31 वर्षांच्या वेरेनाला कौटुंबिक लग्नासाठी ₹1,50,000 हवेत"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "First: can the EMI fit your month?",
+    "hi": "पहले: क्या EMI आपके महीने में फ़िट होगी?",
+    "mr": "आधी: EMI तुमच्या महिन्यात बसेल का?"
+   },
+   "text": {
+    "en": "Before applying anywhere she checks affordability. A common rule of thumb: all EMIs together should stay under about a third of take-home pay, and you should still be able to save something.",
+    "hi": "कहीं भी आवेदन से पहले वह देखती है कि वह झेल पाएगी या नहीं। आम नियम: सारी EMI मिलाकर हाथ में आने वाली तनख़्वाह के लगभग एक-तिहाई से कम रहें, और कुछ बचत फिर भी हो सके।",
+    "mr": "कुठेही अर्ज करण्यापूर्वी ती परवडते का ते तपासते. सामान्य नियम: सर्व EMI मिळून हातात येणाऱ्या पगाराच्या साधारण एक-तृतीयांशपेक्षा कमी राहाव्या, आणि तरीही थोडी बचत करता यावी."
+   },
+   "screen": [
+    {
+     "en": "Can I afford it?",
+     "hi": "क्या मैं झेल पाऊँगी?",
+     "mr": "मला परवडेल का?"
+    },
+    {
+     "en": "Take-home: ₹62,000",
+     "hi": "हाथ में: ₹62,000",
+     "mr": "हातात: ₹62,000"
+    },
+    {
+     "en": "Existing EMIs: ₹0",
+     "hi": "मौजूदा EMI: ₹0",
+     "mr": "सध्याच्या EMI: ₹0"
+    },
+    {
+     "en": "Safe EMI ceiling: ~₹20,000",
+     "hi": "सुरक्षित EMI सीमा: ~₹20,000",
+     "mr": "सुरक्षित EMI मर्यादा: ~₹20,000"
+    },
+    {
+     "en": "Planned EMI: ₹7,100 × 24",
+     "hi": "योजना EMI: ₹7,100 × 24",
+     "mr": "नियोजित EMI: ₹7,100 × 24"
+    }
+   ],
+   "details": [
+    {
+     "en": "Could you avoid the loan instead? Part of the cost from savings, a smaller budget, or more time often reduces what you borrow.",
+     "hi": "क्या लोन से बचा जा सकता है? कुछ ख़र्च बचत से, छोटा बजट, या ज़्यादा समय अक्सर उधार कम करता है।",
+     "mr": "कर्ज टाळता येईल का? काही खर्च बचतीतून, लहान बजेट, किंवा अधिक वेळ यांनी अनेकदा कर्ज कमी होते."
+    },
+    {
+     "en": "Borrow for the shortest tenure whose EMI you can comfortably pay. Longer tenure means a smaller EMI but more total interest.",
+     "hi": "सबसे कम अवधि के लिए उधार लें जिसकी EMI आराम से भर सकें। लंबी अवधि यानी छोटी EMI पर ज़्यादा कुल ब्याज।",
+     "mr": "ज्याची EMI आरामात भरता येईल अशा सर्वात कमी मुदतीसाठी कर्ज घ्या. जास्त मुदत म्हणजे लहान EMI पण जास्त एकूण व्याज."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Compare three offers by APR, not the headline rate",
+    "hi": "तीन ऑफ़र APR से मिलाएँ, मुख्य दर से नहीं",
+    "mr": "तीन ऑफर APR ने तुलना करा, जाहिरातीच्या दराने नाही"
+   },
+   "text": {
+    "en": "Her salary bank, another bank and an NBFC all show offers. She asks each for its Key Fact Statement (KFS), which RBI requires lenders to give before you sign, with the Annual Percentage Rate that includes fees.",
+    "hi": "उसके सैलरी बैंक, एक और बैंक, और एक NBFC, सब ऑफ़र दिखाते हैं। वह हर एक से की फ़ैक्ट स्टेटमेंट (KFS) माँगती है, जो RBI के नियम से हस्ताक्षर से पहले देना ज़रूरी है, जिसमें शुल्क समेत वार्षिक प्रतिशत दर (APR) होती है।",
+    "mr": "तिची पगार बँक, दुसरी एक बँक आणि एक NBFC, सगळे ऑफर दाखवतात. ती प्रत्येकाकडून की फॅक्ट स्टेटमेंट (KFS) मागते, जे RBI च्या नियमानुसार सही करण्यापूर्वी द्यावेच लागते, ज्यात शुल्कासह वार्षिक टक्केवारी दर (APR) असतो."
+   },
+   "screen": [
+    {
+     "en": "Bank A · Bank B · NBFC",
+     "hi": "बैंक A · B · NBFC",
+     "mr": "बँक A · B · NBFC"
+    },
+    {
+     "en": "Rate: 11.5% · 10.9% · 14%",
+     "hi": "दर: 11.5% · 10.9% · 14%",
+     "mr": "दर: 11.5% · 10.9% · 14%"
+    },
+    {
+     "en": "Fee: ₹1,500 · ₹4,500 · ₹3,000",
+     "hi": "शुल्क: ₹1,500 · ₹4,500 · ₹3,000",
+     "mr": "शुल्क: ₹1,500 · ₹4,500 · ₹3,000"
+    },
+    {
+     "en": "Insurance add-on: no · yes · yes",
+     "hi": "बीमा जोड़: नहीं · हाँ · हाँ",
+     "mr": "विमा जोड: नाही · हो · हो"
+    },
+    {
+     "en": "APR: 12.6% · 14.1% · 17.2%",
+     "hi": "APR: 12.6% · 14.1% · 17.2%",
+     "mr": "APR: 12.6% · 14.1% · 17.2%"
+    }
+   ],
+   "details": [
+    {
+     "en": "APR includes the interest rate plus fees and charges spread over the loan, so it shows the true yearly cost. A lower 'rate' with a big fee can cost more.",
+     "hi": "APR में ब्याज दर के साथ लोन भर में फैले शुल्क भी शामिल हैं, इसलिए यह असली सालाना लागत दिखाता है। कम 'दर' पर बड़ा शुल्क ज़्यादा महँगा पड़ सकता है।",
+     "mr": "APR मध्ये व्याजदरासोबत कर्जभर विभागलेले शुल्कही असतात, म्हणून तो खरा वार्षिक खर्च दाखवतो. कमी 'दर' पण मोठे शुल्क जास्त महाग पडू शकते."
+    },
+    {
+     "en": "Loan insurance added to the loan is optional. You may decline it.",
+     "hi": "लोन में जोड़ा गया बीमा वैकल्पिक है। आप मना कर सकते हैं।",
+     "mr": "कर्जात जोडलेला विमा ऐच्छिक आहे. तुम्ही नकार देऊ शकता."
+    },
+    {
+     "en": "Check the lender is a bank or an RBI-registered NBFC. Any lender's app must name its regulated lending partner.",
+     "hi": "जाँचें कि क़र्ज़दाता बैंक है या RBI में पंजीकृत NBFC। हर क़र्ज़ ऐप को अपने विनियमित भागीदार का नाम बताना होता है।",
+     "mr": "कर्जदाता बँक किंवा RBI नोंदणीकृत NBFC आहे का ते तपासा. प्रत्येक कर्ज ॲपने त्याच्या नियंत्रित भागीदाराचे नाव सांगायला हवे."
+    }
+   ],
+   "cost": {
+    "en": "1 evening",
+    "hi": "एक शाम",
+    "mr": "एक संध्याकाळ"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Which offer is cheapest overall?",
+     "hi": "कुल मिलाकर सबसे सस्ता ऑफ़र कौन-सा है?",
+     "mr": "एकूण सर्वात स्वस्त ऑफर कोणती?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Bank B, it has the lowest rate",
+       "hi": "बैंक B, सबसे कम दर",
+       "mr": "बँक B, सर्वात कमी दर"
+      },
+      "good": false,
+      "result": {
+       "en": "The ₹4,500 fee and bundled insurance push its APR to 14.1%.",
+       "hi": "₹4,500 शुल्क और जुड़ा बीमा इसका APR 14.1% तक ले जाते हैं।",
+       "mr": "₹4,500 शुल्क आणि जोडलेला विमा त्याचा APR 14.1% पर्यंत नेतात."
+      }
+     },
+     {
+      "text": {
+       "en": "Bank A, lowest APR",
+       "hi": "बैंक A, सबसे कम APR",
+       "mr": "बँक A, सर्वात कमी APR"
+      },
+      "good": true,
+      "result": {
+       "en": "APR is the honest comparison. Bank A costs least over the full loan.",
+       "hi": "APR ही ईमानदार तुलना है। पूरे लोन पर बैंक A सबसे कम पड़ता है।",
+       "mr": "APR हीच प्रामाणिक तुलना. संपूर्ण कर्जावर बँक A सर्वात कमी पडते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Apply, with the documents ready",
+    "hi": "आवेदन, दस्तावेज़ तैयार रखकर",
+    "mr": "अर्ज, कागदपत्रे तयार ठेवून"
+   },
+   "text": {
+    "en": "She applies only to Bank A, so only one hard enquiry hits her credit report. The bank asks for KYC, three months of payslips and six months of bank statements, and checks her credit report.",
+    "hi": "वह केवल बैंक A में आवेदन करती है, ताकि उसकी क्रेडिट रिपोर्ट पर एक ही हार्ड इन्क्वायरी आए। बैंक KYC, तीन महीने की सैलरी स्लिप और छह महीने के बैंक स्टेटमेंट माँगता है, और क्रेडिट रिपोर्ट देखता है।",
+    "mr": "ती फक्त बँक A कडे अर्ज करते, म्हणजे तिच्या क्रेडिट अहवालावर एकच हार्ड इन्क्वायरी येईल. बँक KYC, तीन महिन्यांच्या पगार पावत्या आणि सहा महिन्यांचे बँक स्टेटमेंट मागते, आणि क्रेडिट अहवाल पाहते."
+   },
+   "screen": [
+    {
+     "en": "PAN + Aadhaar",
+     "hi": "पैन + आधार",
+     "mr": "पॅन + आधार"
+    },
+    {
+     "en": "3 payslips",
+     "hi": "3 सैलरी स्लिप",
+     "mr": "3 पगार पावत्या"
+    },
+    {
+     "en": "6 months statement",
+     "hi": "6 महीने का स्टेटमेंट",
+     "mr": "6 महिन्यांचे स्टेटमेंट"
+    },
+    {
+     "en": "Employment proof",
+     "hi": "नौकरी का प्रमाण",
+     "mr": "नोकरीचा पुरावा"
+    },
+    {
+     "en": "Credit score: 768",
+     "hi": "क्रेडिट स्कोर: 768",
+     "mr": "क्रेडिट स्कोर: 768"
+    }
+   ],
+   "details": [
+    {
+     "en": "Apply to one lender at a time. Several applications in a week look like credit hunger and lower your score.",
+     "hi": "एक बार में एक ही क़र्ज़दाता को आवेदन करें। एक हफ़्ते में कई आवेदन क़र्ज़ की भूख जैसे दिखते हैं और स्कोर गिराते हैं।",
+     "mr": "एका वेळी एकाच कर्जदात्याकडे अर्ज करा. एका आठवड्यात अनेक अर्ज कर्जाची भूक दाखवतात आणि स्कोर कमी करतात."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "Read the sanction letter and KFS line by line",
+    "hi": "स्वीकृति पत्र और KFS लाइन-दर-लाइन पढ़ें",
+    "mr": "मंजुरी पत्र आणि KFS ओळीने वाचा"
+   },
+   "text": {
+    "en": "The approval comes with a sanction letter and the KFS. She checks that the numbers match what was offered, and reads the charges table carefully.",
+    "hi": "मंज़ूरी के साथ स्वीकृति पत्र और KFS आता है। वह जाँचती है कि अंक वही हैं जो बताए गए थे, और शुल्क की तालिका ध्यान से पढ़ती है।",
+    "mr": "मंजुरीसोबत मंजुरी पत्र आणि KFS येते. देऊ केलेले आकडेच आहेत का ते ती तपासते, आणि शुल्कांची तक्ता काळजीपूर्वक वाचते."
+   },
+   "screen": [
+    {
+     "en": "KEY FACT STATEMENT",
+     "hi": "की फ़ैक्ट स्टेटमेंट",
+     "mr": "की फॅक्ट स्टेटमेंट"
+    },
+    {
+     "en": "Loan ₹1,50,000 · 24 months",
+     "hi": "लोन ₹1,50,000 · 24 महीने",
+     "mr": "कर्ज ₹1,50,000 · 24 महिने"
+    },
+    {
+     "en": "Rate 11.5% (fixed) · APR 12.6%",
+     "hi": "दर 11.5% (स्थिर) · APR 12.6%",
+     "mr": "दर 11.5% (स्थिर) · APR 12.6%"
+    },
+    {
+     "en": "EMI ₹7,026 · 5th of month",
+     "hi": "EMI ₹7,026 · हर महीने 5 को",
+     "mr": "EMI ₹7,026 · दर महिन्याच्या 5 ला"
+    },
+    {
+     "en": "Total payable ₹1,68,624 + fee",
+     "hi": "कुल देय ₹1,68,624 + शुल्क",
+     "mr": "एकूण देय ₹1,68,624 + शुल्क"
+    },
+    {
+     "en": "Bounce charge ₹500 · Penal 2%/month",
+     "hi": "बाउंस शुल्क ₹500 · दंड 2%/महीना",
+     "mr": "बाउन्स शुल्क ₹500 · दंड 2%/महिना"
+    },
+    {
+     "en": "Foreclosure: see terms",
+     "hi": "फ़ोरक्लोज़र: शर्तें देखें",
+     "mr": "मुदतपूर्व बंद: अटी पाहा"
+    }
+   ],
+   "details": [
+    {
+     "en": "Fixed or floating rate? Fixed stays the same; floating moves with the market.",
+     "hi": "स्थिर या फ़्लोटिंग दर? स्थिर वही रहती है; फ़्लोटिंग बाज़ार के साथ बदलती है।",
+     "mr": "स्थिर की बदलता दर? स्थिर तसाच राहतो; बदलता बाजारासोबत बदलतो."
+    },
+    {
+     "en": "Note the bounce and penal charges: they apply if an EMI fails. Keep the balance on the debit date.",
+     "hi": "बाउंस और दंड शुल्क नोट करें: EMI न कटने पर लगते हैं। कटौती की तारीख़ को बैलेंस रखें।",
+     "mr": "बाउन्स आणि दंड शुल्क लक्षात घ्या: EMI न कापली गेल्यास लागतात. कपातीच्या तारखेला शिल्लक ठेवा."
+    },
+    {
+     "en": "Check the foreclosure (early closure) terms. Many lenders allow prepayment with a small charge or none.",
+     "hi": "फ़ोरक्लोज़र (जल्दी बंद) की शर्तें देखें। कई क़र्ज़दाता थोड़े या बिना शुल्क के पहले भुगतान की छूट देते हैं।",
+     "mr": "मुदतपूर्व बंद करण्याच्या अटी पाहा. अनेक कर्जदाते थोड्या किंवा शून्य शुल्कात आधी फेडण्याची मुभा देतात."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "signature",
+   "title": {
+    "en": "Sign, set up the EMI mandate, receive the money",
+    "hi": "हस्ताक्षर, EMI मैंडेट, और पैसा",
+    "mr": "सही, EMI मँडेट, आणि पैसे"
+   },
+   "text": {
+    "en": "She e-signs the agreement with Aadhaar OTP and approves an e-NACH mandate so EMIs are auto-debited on the 5th. ₹1,48,230 arrives the next day: the loan minus the processing fee and GST.",
+    "hi": "वह आधार OTP से अनुबंध पर ई-हस्ताक्षर करती है और ई-NACH मैंडेट मंज़ूर करती है ताकि EMI हर 5 तारीख़ को अपने आप कटे। अगले दिन ₹1,48,230 आते हैं: लोन में से प्रोसेसिंग शुल्क और GST घटाकर।",
+    "mr": "ती आधार OTP ने करारावर ई-सही करते आणि ई-NACH मँडेट मंजूर करते म्हणजे EMI दर 5 तारखेला आपोआप कापली जाईल. दुसऱ्या दिवशी ₹1,48,230 येतात: कर्जातून प्रक्रिया शुल्क आणि GST वजा करून."
+   },
+   "screen": [
+    {
+     "en": "Disbursed",
+     "hi": "जारी",
+     "mr": "वितरित"
+    },
+    {
+     "en": "Loan ₹1,50,000",
+     "hi": "लोन ₹1,50,000",
+     "mr": "कर्ज ₹1,50,000"
+    },
+    {
+     "en": "− Fee ₹1,500 − GST ₹270",
+     "hi": "− शुल्क ₹1,500 − GST ₹270",
+     "mr": "− शुल्क ₹1,500 − GST ₹270"
+    },
+    {
+     "en": "Credited ₹1,48,230",
+     "hi": "जमा ₹1,48,230",
+     "mr": "जमा ₹1,48,230"
+    },
+    {
+     "en": "e-NACH: EMI on 5th",
+     "hi": "ई-NACH: 5 को EMI",
+     "mr": "ई-NACH: 5 ला EMI"
+    }
+   ],
+   "details": [
+    {
+     "en": "Download and keep the signed agreement, KFS, sanction letter and repayment schedule.",
+     "hi": "हस्ताक्षरित अनुबंध, KFS, स्वीकृति पत्र और भुगतान अनुसूची डाउनलोड करके रखें।",
+     "mr": "सही केलेला करार, KFS, मंजुरी पत्र आणि परतफेड वेळापत्रक डाउनलोड करून ठेवा."
+    },
+    {
+     "en": "The repayment schedule shows how each EMI splits into interest and principal. Early EMIs are mostly interest.",
+     "hi": "भुगतान अनुसूची दिखाती है कि हर EMI में कितना ब्याज और कितना मूल है। शुरुआती EMI में ज़्यादातर ब्याज होता है।",
+     "mr": "परतफेड वेळापत्रक प्रत्येक EMI मध्ये किती व्याज आणि किती मुद्दल ते दाखवते. सुरुवातीच्या EMI मध्ये बहुतेक व्याज असते."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Pay every EMI on time, and prepay when you can",
+    "hi": "हर EMI समय पर, और हो सके तो पहले भुगतान",
+    "mr": "प्रत्येक EMI वेळेवर, आणि जमेल तेव्हा आधी फेड"
+   },
+   "text": {
+    "en": "She keeps ₹8,000 in the account before each 5th. In month nine she gets a bonus and prepays ₹40,000, which reduces the remaining principal. She asks the bank to keep the EMI the same and shorten the tenure.",
+    "hi": "वह हर 5 तारीख़ से पहले खाते में ₹8,000 रखती है। नौवें महीने उसे बोनस मिलता है और वह ₹40,000 पहले चुका देती है, जिससे बाक़ी मूलधन घटता है। वह बैंक से EMI वही रखकर अवधि घटाने को कहती है।",
+    "mr": "ती प्रत्येक 5 तारखेपूर्वी खात्यात ₹8,000 ठेवते. नवव्या महिन्यात तिला बोनस मिळतो आणि ती ₹40,000 आधी फेडते, ज्याने उरलेले मुद्दल कमी होते. ती बँकेला EMI तशीच ठेवून मुदत कमी करायला सांगते."
+   },
+   "screen": [
+    {
+     "en": "Month 9: prepay ₹40,000",
+     "hi": "महीना 9: ₹40,000 पहले भुगतान",
+     "mr": "महिना 9: ₹40,000 आधी फेड"
+    },
+    {
+     "en": "Principal left: ~₹58,000",
+     "hi": "बाक़ी मूलधन: ~₹58,000",
+     "mr": "उरलेले मुद्दल: ~₹58,000"
+    },
+    {
+     "en": "EMI same, tenure −6 months",
+     "hi": "EMI वही, अवधि −6 महीने",
+     "mr": "EMI तीच, मुदत −6 महिने"
+    },
+    {
+     "en": "Interest saved: ~₹5,000",
+     "hi": "ब्याज बचत: ~₹5,000",
+     "mr": "व्याज बचत: ~₹5,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Prepaying early in the loan saves the most interest, because interest is charged on the outstanding principal.",
+     "hi": "लोन की शुरुआत में पहले भुगतान सबसे ज़्यादा ब्याज बचाता है, क्योंकि ब्याज बाक़ी मूलधन पर लगता है।",
+     "mr": "कर्जाच्या सुरुवातीला आधी फेड केल्यास सर्वात जास्त व्याज वाचते, कारण व्याज उरलेल्या मुद्दलावर लागते."
+    },
+    {
+     "en": "If you ever cannot pay an EMI, call the lender before the date, not after. Ask about restructuring options.",
+     "hi": "अगर कभी EMI न भर सकें, तो तारीख़ से पहले क़र्ज़दाता को फ़ोन करें, बाद में नहीं। पुनर्गठन के विकल्प पूछें।",
+     "mr": "कधी EMI भरता आली नाही तर तारखेपूर्वी कर्जदात्याला फोन करा, नंतर नाही. पुनर्रचनेचे पर्याय विचारा."
+    }
+   ],
+   "cost": {
+    "en": "Interest saved",
+    "hi": "ब्याज बचा",
+    "mr": "व्याज वाचले"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "Close it properly: the NOC and the credit report",
+    "hi": "ठीक से बंद करें: NOC और क्रेडिट रिपोर्ट",
+    "mr": "योग्य रीतीने बंद करा: NOC आणि क्रेडिट अहवाल"
+   },
+   "text": {
+    "en": "After the last EMI she downloads the No Objection Certificate (NOC) / closure letter, cancels the e-NACH mandate in her bank app, and a month later checks that her credit report shows the loan as 'Closed', not 'Settled'.",
+    "hi": "आख़िरी EMI के बाद वह अनापत्ति प्रमाणपत्र (NOC) / बंद होने का पत्र डाउनलोड करती है, बैंक ऐप में ई-NACH मैंडेट रद्द करती है, और एक महीने बाद देखती है कि क्रेडिट रिपोर्ट में लोन 'Closed' दिख रहा है, 'Settled' नहीं।",
+    "mr": "शेवटच्या EMI नंतर ती ना-हरकत प्रमाणपत्र (NOC) / बंद पत्र डाउनलोड करते, बँकेच्या ॲपमध्ये ई-NACH मँडेट रद्द करते, आणि महिनाभराने क्रेडिट अहवालात कर्ज 'Closed' दिसते की नाही, 'Settled' नाही, ते तपासते."
+   },
+   "screen": [
+    {
+     "en": "LOAN CLOSURE",
+     "hi": "लोन बंद",
+     "mr": "कर्ज बंद"
+    },
+    {
+     "en": "Account ••8812: CLOSED",
+     "hi": "खाता ••8812: बंद",
+     "mr": "खाते ••8812: बंद"
+    },
+    {
+     "en": "No dues pending",
+     "hi": "कोई बकाया नहीं",
+     "mr": "थकबाकी नाही"
+    },
+    {
+     "en": "✓ NOC issued",
+     "hi": "✓ NOC जारी",
+     "mr": "✓ NOC दिले"
+    },
+    {
+     "en": "e-NACH: cancelled",
+     "hi": "ई-NACH: रद्द",
+     "mr": "ई-NACH: रद्द"
+    }
+   ],
+   "details": [
+    {
+     "en": "Keep the NOC for years. It is your proof if anyone ever claims you still owe money.",
+     "hi": "NOC सालों तक रखें। अगर कभी कोई कहे कि पैसा बाक़ी है, तो यही सबूत है।",
+     "mr": "NOC वर्षानुवर्षे ठेवा. कधी कोणी पैसे बाकी आहेत म्हटले तर हाच पुरावा."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Check the EMI fits comfortably before applying; borrow for the shortest tenure you can manage.",
+   "hi": "आवेदन से पहले देखें कि EMI आराम से फ़िट हो; जितनी कम अवधि संभाल सकें, उतनी लें।",
+   "mr": "अर्जापूर्वी EMI आरामात बसते का ते पाहा; पेलवेल तितकी कमी मुदत घ्या."
+  },
+  {
+   "en": "Compare offers by APR from the Key Fact Statement, not the headline rate.",
+   "hi": "ऑफ़र की फ़ैक्ट स्टेटमेंट के APR से मिलाएँ, मुख्य दर से नहीं।",
+   "mr": "ऑफर की फॅक्ट स्टेटमेंटमधील APR ने तुलना करा, जाहिरातीच्या दराने नाही."
+  },
+  {
+   "en": "Apply to one lender at a time, and decline optional add-ons.",
+   "hi": "एक बार में एक क़र्ज़दाता को आवेदन करें, और वैकल्पिक जोड़ मना करें।",
+   "mr": "एका वेळी एकाच कर्जदात्याकडे अर्ज करा, आणि ऐच्छिक जोड नाकारा."
+  },
+  {
+   "en": "Keep balance for every EMI date; prepay early when you can.",
+   "hi": "हर EMI की तारीख़ पर बैलेंस रखें; हो सके तो जल्दी पहले भुगतान करें।",
+   "mr": "प्रत्येक EMI तारखेला शिल्लक ठेवा; जमेल तेव्हा लवकर आधी फेड करा."
+  },
+  {
+   "en": "At the end, get the NOC, cancel the mandate and check your credit report says 'Closed'.",
+   "hi": "अंत में NOC लें, मैंडेट रद्द करें और देखें कि क्रेडिट रिपोर्ट में 'Closed' हो।",
+   "mr": "शेवटी NOC घ्या, मँडेट रद्द करा आणि क्रेडिट अहवालात 'Closed' आहे का ते पाहा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://sachet.rbi.org.in"
+ ]
+}

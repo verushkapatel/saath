@@ -1,0 +1,159 @@
+{
+ "id": "risk-diversify",
+ "guide": "risk-diversify",
+ "title": {
+  "en": "Spreading risk: building a simple mix and rebalancing it once a year",
+  "hi": "जोखिम बाँटना: एक सादा मिश्रण बनाना और साल में एक बार संतुलित करना",
+  "mr": "धोका विभागणे: साधे मिश्रण तयार करणे आणि वर्षातून एकदा समतोल साधणे"
+ },
+ "setting": {
+  "en": "Verena, 40, has all her savings in one company's shares a colleague recommended",
+  "hi": "40 साल की वेरेना की सारी बचत एक कंपनी के शेयर में है, जो एक सहकर्मी ने सुझाए थे",
+  "mr": "40 वर्षांच्या वेरेनाची सर्व बचत एका सहकाऱ्याने सुचवलेल्या एकाच कंपनीच्या शेअरमध्ये आहे"
+ },
+ "steps": [
+  {
+   "scene": "growth",
+   "title": {
+    "en": "See the risk of one basket",
+    "hi": "एक टोकरी का जोखिम देखें",
+    "mr": "एका टोपलीचा धोका पाहा"
+   },
+   "text": {
+    "en": "The company's share falls 40% after bad results. Her whole portfolio falls 40% with it. A mix would have fallen far less.",
+    "hi": "बुरे नतीजों के बाद कंपनी का शेयर 40% गिरता है। उसका पूरा पोर्टफ़ोलियो भी 40% गिरता है। मिश्रण होता तो बहुत कम गिरता।",
+    "mr": "वाईट निकालांनंतर कंपनीचा शेअर 40% घसरतो. तिचा संपूर्ण पोर्टफोलिओही 40% घसरतो. मिश्रण असते तर खूप कमी घसरले असते."
+   },
+   "screen": [
+    {
+     "en": "One share: −40%",
+     "hi": "एक शेयर: −40%",
+     "mr": "एक शेअर: −40%"
+    },
+    {
+     "en": "Mix (example): equity funds 60%",
+     "hi": "मिश्रण (उदाहरण): इक्विटी फ़ंड 60%",
+     "mr": "मिश्रण (उदाहरण): इक्विटी फंड 60%"
+    },
+    {
+     "en": "debt / FD / PPF 30% · gold 10%",
+     "hi": "डेट / FD / PPF 30% · सोना 10%",
+     "mr": "डेट / FD / PPF 30% · सोने 10%"
+    },
+    {
+     "en": "Mix in the same fall: much smaller",
+     "hi": "उसी गिरावट में मिश्रण: बहुत कम",
+     "mr": "त्याच घसरणीत मिश्रण: खूप कमी"
+    }
+   ],
+   "details": [
+    {
+     "en": "Diversification means owning different things that do not all fall together. It reduces risk but does not remove it.",
+     "hi": "विविधीकरण यानी अलग-अलग चीज़ें रखना जो एक साथ न गिरें। यह जोखिम घटाता है, ख़त्म नहीं करता।",
+     "mr": "वैविध्य म्हणजे एकत्र न घसरणाऱ्या वेगवेगळ्या गोष्टी ठेवणे. ते धोका कमी करते, संपवत नाही."
+    }
+   ],
+   "cost": {
+    "en": "A lesson",
+    "hi": "एक सबक़",
+    "mr": "एक धडा"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Rebalance once a year, on a fixed date",
+    "hi": "साल में एक बार, तय तारीख़ पर संतुलित करें",
+    "mr": "वर्षातून एकदा, ठरलेल्या तारखेला समतोल साधा"
+   },
+   "text": {
+    "en": "She sets a target mix and a date, her birthday. Each year, if equity has grown above 60%, she moves some to debt; if it has fallen below, she tops it up.",
+    "hi": "वह एक लक्ष्य मिश्रण और एक तारीख़ तय करती है, अपना जन्मदिन। हर साल अगर इक्विटी 60% से ऊपर बढ़ गई, तो कुछ डेट में डालती है; नीचे गिरी तो भरती है।",
+    "mr": "ती लक्ष्य मिश्रण आणि एक तारीख ठरवते, तिचा वाढदिवस. दरवर्षी इक्विटी 60% च्या वर वाढली तर थोडी डेटमध्ये हलवते; खाली गेली तर भरते."
+   },
+   "screen": [
+    {
+     "en": "Birthday check",
+     "hi": "जन्मदिन जाँच",
+     "mr": "वाढदिवस तपासणी"
+    },
+    {
+     "en": "Equity now: 68% (target 60)",
+     "hi": "इक्विटी अभी: 68% (लक्ष्य 60)",
+     "mr": "इक्विटी आता: 68% (लक्ष्य 60)"
+    },
+    {
+     "en": "Move 8% to debt",
+     "hi": "8% डेट में",
+     "mr": "8% डेटमध्ये"
+    },
+    {
+     "en": "Back to 60 / 30 / 10 ✓",
+     "hi": "फिर 60 / 30 / 10 ✓",
+     "mr": "पुन्हा 60 / 30 / 10 ✓"
+    }
+   ],
+   "cost": {
+    "en": "1 hour a year",
+    "hi": "साल में 1 घंटा",
+    "mr": "वर्षाला 1 तास"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Equity has had a great year and is now 68%. What does rebalancing do?",
+     "hi": "इक्विटी का साल शानदार रहा और अब 68% है। संतुलन क्या करता है?",
+     "mr": "इक्विटीचे वर्ष उत्तम गेले आणि ती आता 68% आहे. समतोल काय करतो?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Sells some of what rose and buys what lagged",
+       "hi": "जो बढ़ा उसमें से कुछ बेचकर पिछड़े को ख़रीदता है",
+       "mr": "जे वाढले त्यातील थोडे विकून मागे पडलेले घेतो"
+      },
+      "good": true,
+      "result": {
+       "en": "It keeps risk at the level she chose, and quietly 'sells high, buys low'.",
+       "hi": "यह जोखिम उसके चुने स्तर पर रखता है, और चुपचाप 'ऊँचे बेचो, नीचे ख़रीदो' करता है।",
+       "mr": "तो धोका तिने निवडलेल्या पातळीवर ठेवतो, आणि शांतपणे 'वर विका, खाली घ्या' करतो."
+      }
+     },
+     {
+      "text": {
+       "en": "Puts everything into equity since it is doing well",
+       "hi": "सब कुछ इक्विटी में, क्योंकि अच्छा चल रहा है",
+       "mr": "सगळे इक्विटीत, कारण चांगले चालले आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "Chasing what just rose raises risk right before a possible fall.",
+       "hi": "जो अभी बढ़ा उसके पीछे भागना संभावित गिरावट से ठीक पहले जोखिम बढ़ाता है।",
+       "mr": "नुकत्याच वाढलेल्याच्या मागे धावल्याने संभाव्य घसरणीच्या आधीच धोका वाढतो."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Never keep all savings in one share, one company or one product.",
+   "hi": "सारी बचत कभी एक शेयर, एक कंपनी या एक उत्पाद में न रखें।",
+   "mr": "सर्व बचत कधीही एकाच शेअरमध्ये, कंपनीत किंवा उत्पादनात ठेवू नका."
+  },
+  {
+   "en": "Choose a simple target mix that fits your age and goals.",
+   "hi": "उम्र और लक्ष्यों के हिसाब से एक सादा लक्ष्य मिश्रण चुनें।",
+   "mr": "वय आणि उद्दिष्टांनुसार साधे लक्ष्य मिश्रण निवडा."
+  },
+  {
+   "en": "Rebalance once a year on a fixed date.",
+   "hi": "साल में एक बार तय तारीख़ पर संतुलित करें।",
+   "mr": "वर्षातून एकदा ठरलेल्या तारखेला समतोल साधा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.sebi.gov.in"
+ ]
+}

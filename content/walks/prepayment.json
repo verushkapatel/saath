@@ -1,0 +1,176 @@
+{
+ "id": "prepayment",
+ "guide": "prepayment",
+ "title": {
+  "en": "Prepaying a home loan with a bonus: reduce the EMI or the tenure?",
+  "hi": "बोनस से होम लोन का पहले भुगतान: EMI घटाएँ या अवधि?",
+  "mr": "बोनसमधून गृहकर्जाची आधी फेड: EMI कमी करायची की मुदत?"
+ },
+ "setting": {
+  "en": "Verena, 38, has a ₹25 lakh home loan and a ₹2 lakh bonus",
+  "hi": "38 साल की वेरेना पर ₹25 लाख का होम लोन है और ₹2 लाख का बोनस मिला है",
+  "mr": "38 वर्षांच्या वेरेनावर ₹25 लाखांचे गृहकर्ज आहे आणि ₹2 लाख बोनस मिळाला आहे"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Check the emergency fund first",
+    "hi": "पहले आपात फ़ंड देखें",
+    "mr": "आधी आपत्कालीन निधी पाहा"
+   },
+   "text": {
+    "en": "Before prepaying, she confirms six months of expenses are safely set aside. Money put into a loan cannot easily come back out.",
+    "hi": "पहले भुगतान से पहले वह पक्का करती है कि छह महीने का ख़र्च अलग सुरक्षित है। लोन में डाला पैसा आसानी से वापस नहीं निकलता।",
+    "mr": "आधी फेड करण्यापूर्वी ती खात्री करते की सहा महिन्यांचा खर्च वेगळा सुरक्षित आहे. कर्जात टाकलेले पैसे सहज परत निघत नाहीत."
+   },
+   "screen": [
+    {
+     "en": "Before prepaying",
+     "hi": "पहले भुगतान से पहले",
+     "mr": "आधी फेडीपूर्वी"
+    },
+    {
+     "en": "Emergency fund: 6 months ✓",
+     "hi": "आपात फ़ंड: 6 महीने ✓",
+     "mr": "आपत्कालीन निधी: 6 महिने ✓"
+    },
+    {
+     "en": "No costly debt left ✓",
+     "hi": "कोई महँगा क़र्ज़ नहीं ✓",
+     "mr": "महागडे कर्ज नाही ✓"
+    },
+    {
+     "en": "Bonus: ₹2,00,000",
+     "hi": "बोनस: ₹2,00,000",
+     "mr": "बोनस: ₹2,00,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Clear costlier debt first (credit cards, personal loans) before prepaying a cheaper home loan.",
+     "hi": "सस्ते होम लोन के पहले भुगतान से पहले महँगा क़र्ज़ (क्रेडिट कार्ड, पर्सनल लोन) चुकाएँ।",
+     "mr": "स्वस्त गृहकर्जाची आधी फेड करण्यापूर्वी महागडे कर्ज (क्रेडिट कार्ड, वैयक्तिक कर्ज) फेडा."
+    },
+    {
+     "en": "For floating-rate home loans to individuals, RBI rules do not allow prepayment penalties. Fixed-rate loans may have them; check your agreement.",
+     "hi": "व्यक्तियों के फ़्लोटिंग दर वाले होम लोन पर RBI नियम पहले भुगतान का जुर्माना नहीं लगने देते। स्थिर दर वाले लोन पर हो सकता है; अनुबंध देखें।",
+     "mr": "व्यक्तींच्या बदलत्या दराच्या गृहकर्जावर RBI नियम आधी फेडीचा दंड लावू देत नाहीत. स्थिर दराच्या कर्जावर असू शकतो; करार पाहा."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "Make the part-payment and choose what it reduces",
+    "hi": "आंशिक भुगतान करें और चुनें कि क्या घटे",
+    "mr": "अंशतः फेड करा आणि काय कमी व्हावे ते निवडा"
+   },
+   "text": {
+    "en": "She pays ₹2 lakh through net banking's 'part prepayment' option, then writes to the bank asking it to keep the EMI the same and reduce the tenure. The bank sends a revised repayment schedule.",
+    "hi": "वह नेट बैंकिंग के 'part prepayment' विकल्प से ₹2 लाख भरती है, फिर बैंक को लिखती है कि EMI वही रखें और अवधि घटाएँ। बैंक नई भुगतान अनुसूची भेजता है।",
+    "mr": "ती नेट बँकिंगच्या 'part prepayment' पर्यायातून ₹2 लाख भरते, मग बँकेला लिहिते की EMI तीच ठेवा आणि मुदत कमी करा. बँक सुधारित परतफेड वेळापत्रक पाठवते."
+   },
+   "screen": [
+    {
+     "en": "Revised schedule",
+     "hi": "नई अनुसूची",
+     "mr": "सुधारित वेळापत्रक"
+    },
+    {
+     "en": "Option A: EMI −₹2,100, same tenure",
+     "hi": "विकल्प A: EMI −₹2,100, वही अवधि",
+     "mr": "पर्याय A: EMI −₹2,100, तीच मुदत"
+    },
+    {
+     "en": "Option B: same EMI, −27 months",
+     "hi": "विकल्प B: वही EMI, −27 महीने",
+     "mr": "पर्याय B: तीच EMI, −27 महिने"
+    },
+    {
+     "en": "Interest saved: A ~₹2.7 L · B ~₹5.6 L",
+     "hi": "ब्याज बचत: A ~₹2.7 लाख · B ~₹5.6 लाख",
+     "mr": "व्याज बचत: A ~₹2.7 लाख · B ~₹5.6 लाख"
+    }
+   ],
+   "details": [
+    {
+     "en": "Reducing the tenure saves more total interest. Reducing the EMI eases monthly cash flow. Both are valid; choose on purpose.",
+     "hi": "अवधि घटाने से कुल ब्याज ज़्यादा बचता है। EMI घटाने से हर महीने राहत मिलती है। दोनों ठीक हैं; सोच-समझकर चुनें।",
+     "mr": "मुदत कमी केल्याने एकूण व्याज जास्त वाचते. EMI कमी केल्याने दर महिन्याला दिलासा मिळतो. दोन्ही योग्य; जाणीवपूर्वक निवडा."
+    },
+    {
+     "en": "Keep the receipt and the revised schedule with your loan papers.",
+     "hi": "रसीद और नई अनुसूची लोन के काग़ज़ों के साथ रखें।",
+     "mr": "पावती आणि सुधारित वेळापत्रक कर्जाच्या कागदपत्रांसोबत ठेवा."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Verena's job is stable and her EMI is comfortable. Which option?",
+     "hi": "वेरेना की नौकरी स्थिर है और EMI आराम से भरती है। कौन-सा विकल्प?",
+     "mr": "वेरेनाची नोकरी स्थिर आहे आणि EMI आरामात भरते. कोणता पर्याय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Reduce tenure",
+       "hi": "अवधि घटाएँ",
+       "mr": "मुदत कमी करा"
+      },
+      "good": true,
+      "result": {
+       "en": "With a comfortable EMI, cutting the tenure saves the most interest and frees her years earlier.",
+       "hi": "आरामदायक EMI के साथ अवधि घटाना सबसे ज़्यादा ब्याज बचाता है और सालों पहले मुक्ति देता है।",
+       "mr": "आरामदायक EMI सह मुदत कमी केल्याने सर्वात जास्त व्याज वाचते आणि ती वर्षे आधी मोकळी होते."
+      }
+     },
+     {
+      "text": {
+       "en": "Reduce EMI",
+       "hi": "EMI घटाएँ",
+       "mr": "EMI कमी करा"
+      },
+      "good": false,
+      "result": {
+       "en": "Not wrong, but she does not need the monthly relief, so she gives up the bigger saving.",
+       "hi": "ग़लत नहीं, पर उसे मासिक राहत की ज़रूरत नहीं, तो बड़ी बचत छूट जाती है।",
+       "mr": "चूक नाही, पण तिला मासिक दिलाशाची गरज नाही, त्यामुळे मोठी बचत सुटते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Keep your emergency fund and clear costly debt before prepaying.",
+   "hi": "पहले भुगतान से पहले आपात फ़ंड रखें और महँगा क़र्ज़ चुकाएँ।",
+   "mr": "आधी फेडीपूर्वी आपत्कालीन निधी ठेवा आणि महागडे कर्ज फेडा."
+  },
+  {
+   "en": "Floating-rate home loans for individuals have no prepayment penalty under RBI rules.",
+   "hi": "RBI नियमों के तहत व्यक्तियों के फ़्लोटिंग दर होम लोन पर पहले भुगतान का जुर्माना नहीं।",
+   "mr": "RBI नियमांनुसार व्यक्तींच्या बदलत्या दराच्या गृहकर्जावर आधी फेडीचा दंड नाही."
+  },
+  {
+   "en": "Shorter tenure saves the most interest; lower EMI eases the month.",
+   "hi": "छोटी अवधि सबसे ज़्यादा ब्याज बचाती है; कम EMI महीना आसान करती है।",
+   "mr": "कमी मुदत सर्वात जास्त व्याज वाचवते; कमी EMI महिना सोपा करते."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in"
+ ]
+}

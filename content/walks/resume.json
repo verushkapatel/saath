@@ -1,0 +1,305 @@
+{
+ "id": "resume",
+ "guide": "resume",
+ "title": {
+  "en": "Making your resume, from a blank page to a PDF a recruiter actually reads",
+  "hi": "अपना रिज़्यूमे बनाना, ख़ाली पन्ने से उस PDF तक जिसे रिक्रूटर सच में पढ़े",
+  "mr": "तुमचा रेझ्युमे तयार करणे, कोऱ्या पानापासून रिक्रूटर खरोखर वाचेल अशा PDF पर्यंत"
+ },
+ "setting": {
+  "en": "Verena, 21, final year of college, applying for her first job",
+  "hi": "21 साल की वेरेना, कॉलेज का आख़िरी साल, पहली नौकरी के लिए आवेदन",
+  "mr": "21 वर्षांची वेरेना, कॉलेजचे शेवटचे वर्ष, पहिल्या नोकरीसाठी अर्ज"
+ },
+ "steps": [
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Collect the raw material first",
+    "hi": "पहले कच्चा माल इकट्ठा करें",
+    "mr": "आधी कच्चा माल गोळा करा"
+   },
+   "text": {
+    "en": "Before designing anything, Verena lists everything she has done: degree and marks, an internship, a college fest she helped run, a part-time tutoring job, skills, and certificates. Nothing is too small at this stage.",
+    "hi": "कुछ भी डिज़ाइन करने से पहले वेरेना अपना सब किया हुआ लिखती है: डिग्री और अंक, एक इंटर्नशिप, कॉलेज फ़ेस्ट जिसे चलाने में मदद की, पार्ट-टाइम ट्यूशन, कौशल और प्रमाणपत्र। इस चरण में कुछ भी छोटा नहीं।",
+    "mr": "काहीही डिझाइन करण्यापूर्वी वेरेना तिने केलेले सगळे लिहिते: पदवी आणि गुण, एक इंटर्नशिप, तिने चालवायला मदत केलेला कॉलेज फेस्ट, अर्धवेळ शिकवणी, कौशल्ये आणि प्रमाणपत्रे. या टप्प्यात काहीही लहान नाही."
+   },
+   "screen": [
+    {
+     "en": "B.Com, 2026 · 8.1 CGPA",
+     "hi": "B.Com, 2026 · 8.1 CGPA",
+     "mr": "B.Com, 2026 · 8.1 CGPA"
+    },
+    {
+     "en": "Intern, CA firm, 2 months",
+     "hi": "इंटर्न, CA फ़र्म, 2 महीने",
+     "mr": "इंटर्न, CA फर्म, 2 महिने"
+    },
+    {
+     "en": "Fest finance head",
+     "hi": "फ़ेस्ट फ़ाइनेंस प्रमुख",
+     "mr": "फेस्ट फायनान्स प्रमुख"
+    },
+    {
+     "en": "Tutoring, 3 students",
+     "hi": "ट्यूशन, 3 छात्र",
+     "mr": "शिकवणी, 3 विद्यार्थी"
+    },
+    {
+     "en": "Excel, Tally, English/Hindi/Marathi",
+     "hi": "Excel, Tally, अंग्रेज़ी/हिंदी/मराठी",
+     "mr": "Excel, Tally, इंग्रजी/हिंदी/मराठी"
+    },
+    {
+     "en": "NISM certificate",
+     "hi": "NISM प्रमाणपत्र",
+     "mr": "NISM प्रमाणपत्र"
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "resume",
+   "title": {
+    "en": "Use a clean one-page structure",
+    "hi": "साफ़ एक पन्ने का ढाँचा",
+    "mr": "स्वच्छ एका पानाची रचना"
+   },
+   "text": {
+    "en": "For a first job, one page is enough. She uses a simple order: name and contact, a two-line summary, education, experience, projects and activities, skills, certifications. No photo unless asked; no date of birth, religion or marital status.",
+    "hi": "पहली नौकरी के लिए एक पन्ना काफ़ी है। वह सादा क्रम रखती है: नाम और संपर्क, दो लाइन का सार, शिक्षा, अनुभव, प्रोजेक्ट और गतिविधियाँ, कौशल, प्रमाणपत्र। माँगा न जाए तो फ़ोटो नहीं; जन्म तिथि, धर्म या वैवाहिक स्थिति नहीं।",
+    "mr": "पहिल्या नोकरीसाठी एक पान पुरेसे. ती साधा क्रम ठेवते: नाव आणि संपर्क, दोन ओळींचा सारांश, शिक्षण, अनुभव, प्रकल्प आणि उपक्रम, कौशल्ये, प्रमाणपत्रे. मागितल्याशिवाय फोटो नाही; जन्मतारीख, धर्म किंवा वैवाहिक स्थिती नाही."
+   },
+   "screen": [
+    {
+     "en": "VERENA D'SOUZA",
+     "hi": "VERENA D'SOUZA",
+     "mr": "VERENA D'SOUZA"
+    },
+    {
+     "en": "Pune · email · phone · LinkedIn",
+     "hi": "पुणे · ईमेल · फ़ोन · LinkedIn",
+     "mr": "पुणे · ईमेल · फोन · LinkedIn"
+    },
+    {
+     "en": "Summary (2 lines)",
+     "hi": "सार (2 लाइन)",
+     "mr": "सारांश (2 ओळी)"
+    },
+    {
+     "en": "Education",
+     "hi": "शिक्षा",
+     "mr": "शिक्षण"
+    },
+    {
+     "en": "Experience",
+     "hi": "अनुभव",
+     "mr": "अनुभव"
+    },
+    {
+     "en": "Projects & activities",
+     "hi": "प्रोजेक्ट और गतिविधियाँ",
+     "mr": "प्रकल्प आणि उपक्रम"
+    },
+    {
+     "en": "Skills · Certifications",
+     "hi": "कौशल · प्रमाणपत्र",
+     "mr": "कौशल्ये · प्रमाणपत्रे"
+    }
+   ],
+   "details": [
+    {
+     "en": "Use a professional email address with your name, not a nickname.",
+     "hi": "उपनाम नहीं, अपने नाम वाला पेशेवर ईमेल पता इस्तेमाल करें।",
+     "mr": "टोपणनाव नाही, तुमच्या नावाचा व्यावसायिक ईमेल पत्ता वापरा."
+    },
+    {
+     "en": "Keep fonts simple and consistent. Many companies scan resumes with software, which reads plain layouts best.",
+     "hi": "फ़ॉन्ट सादे और एक जैसे रखें। कई कंपनियाँ सॉफ़्टवेयर से रिज़्यूमे स्कैन करती हैं, जो सादे लेआउट सबसे अच्छे पढ़ता है।",
+     "mr": "फॉन्ट साधे आणि एकसारखे ठेवा. अनेक कंपन्या सॉफ्टवेअरने रेझ्युमे स्कॅन करतात, जे साधे लेआउट उत्तम वाचते."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "resume",
+   "title": {
+    "en": "Turn duties into results, with numbers",
+    "hi": "ज़िम्मेदारियों को नतीजों में बदलें, अंकों के साथ",
+    "mr": "जबाबदाऱ्यांचे परिणामांत रूपांतर करा, आकड्यांसह"
+   },
+   "text": {
+    "en": "Her first draft says 'Handled fest accounts'. She rewrites each line as action + what + result: 'Managed a ₹4.2 lakh fest budget for 30 volunteers; closed ₹18,000 under budget with full receipts.'",
+    "hi": "उसका पहला मसौदा कहता है 'फ़ेस्ट का हिसाब सँभाला'। वह हर लाइन को काम + क्या + नतीजा बनाती है: '30 स्वयंसेवकों के लिए ₹4.2 लाख का फ़ेस्ट बजट सँभाला; पूरी रसीदों के साथ ₹18,000 कम में पूरा किया।'",
+    "mr": "तिचा पहिला मसुदा म्हणतो 'फेस्टचा हिशोब सांभाळला'. ती प्रत्येक ओळ कृती + काय + परिणाम अशी लिहिते: '30 स्वयंसेवकांसाठी ₹4.2 लाखांचे फेस्ट बजेट सांभाळले; पूर्ण पावत्यांसह ₹18,000 कमी खर्चात पूर्ण केले.'"
+   },
+   "screen": [
+    {
+     "en": "EXPERIENCE",
+     "hi": "अनुभव",
+     "mr": "अनुभव"
+    },
+    {
+     "en": "✗ Handled fest accounts",
+     "hi": "✗ फ़ेस्ट का हिसाब सँभाला",
+     "mr": "✗ फेस्टचा हिशोब सांभाळला"
+    },
+    {
+     "en": "✓ Managed ₹4.2 L budget, 30 people",
+     "hi": "✓ ₹4.2 लाख बजट, 30 लोग सँभाले",
+     "mr": "✓ ₹4.2 लाख बजेट, 30 लोक सांभाळले"
+    },
+    {
+     "en": "✓ Closed ₹18,000 under budget",
+     "hi": "✓ ₹18,000 कम में पूरा",
+     "mr": "✓ ₹18,000 कमी खर्चात पूर्ण"
+    },
+    {
+     "en": "✓ Reconciled 140 entries for a CA firm",
+     "hi": "✓ CA फ़र्म के 140 एंट्री मिलाए",
+     "mr": "✓ CA फर्मसाठी 140 नोंदी जुळवल्या"
+    }
+   ],
+   "details": [
+    {
+     "en": "Start lines with strong verbs: managed, built, reduced, organised, taught, analysed.",
+     "hi": "लाइनें मज़बूत क्रियाओं से शुरू करें: सँभाला, बनाया, घटाया, आयोजित किया, पढ़ाया, विश्लेषण किया।",
+     "mr": "ओळी ठोस क्रियापदांनी सुरू करा: सांभाळले, तयार केले, कमी केले, आयोजित केले, शिकवले, विश्लेषण केले."
+    },
+    {
+     "en": "Everything must be true and something you can explain in an interview.",
+     "hi": "सब कुछ सच हो और ऐसा जिसे आप इंटरव्यू में समझा सकें।",
+     "mr": "सगळे खरे हवे आणि मुलाखतीत समजावता येईल असे."
+    }
+   ],
+   "cost": {
+    "en": "1 hour",
+    "hi": "1 घंटा",
+    "mr": "1 तास"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Which line is stronger?",
+     "hi": "कौन-सी लाइन मज़बूत है?",
+     "mr": "कोणती ओळ जास्त प्रभावी?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "'Responsible for tutoring students'",
+       "hi": "'छात्रों को ट्यूशन देने की ज़िम्मेदारी'",
+       "mr": "'विद्यार्थ्यांना शिकवण्याची जबाबदारी'"
+      },
+      "good": false,
+      "result": {
+       "en": "It says what the role was, not what changed because of her.",
+       "hi": "यह बताती है कि भूमिका क्या थी, यह नहीं कि उसकी वजह से क्या बदला।",
+       "mr": "भूमिका काय होती ते सांगते, तिच्यामुळे काय बदलले ते नाही."
+      }
+     },
+     {
+      "text": {
+       "en": "'Tutored 3 Class 10 students in maths; all improved by 15+ marks'",
+       "hi": "'3 दसवीं के छात्रों को गणित पढ़ाया; सबके अंक 15+ बढ़े'",
+       "mr": "'दहावीच्या 3 विद्यार्थ्यांना गणित शिकवले; सर्वांचे गुण 15+ वाढले'"
+      },
+      "good": true,
+      "result": {
+       "en": "Specific, measurable and true. That is what recruiters remember.",
+       "hi": "ठोस, मापने योग्य और सच। यही रिक्रूटर याद रखते हैं।",
+       "mr": "नेमके, मोजता येणारे आणि खरे. हेच रिक्रूटर लक्षात ठेवतात."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Tailor it for each job, then save as PDF",
+    "hi": "हर नौकरी के लिए ढालें, फिर PDF बनाएँ",
+    "mr": "प्रत्येक नोकरीसाठी जुळवा, मग PDF करा"
+   },
+   "text": {
+    "en": "For a bank operations role, she moves her CA-firm internship and Excel skills to the top and uses words from the job description. She saves it as a PDF named 'Verena_DSouza_Resume.pdf' and checks it on her phone.",
+    "hi": "बैंक ऑपरेशंस की भूमिका के लिए वह CA फ़र्म की इंटर्नशिप और Excel कौशल ऊपर रखती है और नौकरी के विवरण के शब्द इस्तेमाल करती है। वह इसे 'Verena_DSouza_Resume.pdf' नाम से PDF सेव करती है और फ़ोन पर देखती है।",
+    "mr": "बँक ऑपरेशन्सच्या भूमिकेसाठी ती CA फर्मची इंटर्नशिप आणि Excel कौशल्ये वर आणते आणि नोकरीच्या वर्णनातील शब्द वापरते. ती 'Verena_DSouza_Resume.pdf' नावाने PDF सेव्ह करते आणि फोनवर पाहते."
+   },
+   "screen": [
+    {
+     "en": "Job: Operations Trainee, Bank",
+     "hi": "नौकरी: ऑपरेशंस ट्रेनी, बैंक",
+     "mr": "नोकरी: ऑपरेशन्स ट्रेनी, बँक"
+    },
+    {
+     "en": "Keywords: reconciliation, Excel, KYC",
+     "hi": "मुख्य शब्द: मिलान, Excel, KYC",
+     "mr": "मुख्य शब्द: जुळवणी, Excel, KYC"
+    },
+    {
+     "en": "Resume: moved internship up ✓",
+     "hi": "रिज़्यूमे: इंटर्नशिप ऊपर ✓",
+     "mr": "रेझ्युमे: इंटर्नशिप वर ✓"
+    },
+    {
+     "en": "Saved: Verena_DSouza_Resume.pdf",
+     "hi": "सेव: Verena_DSouza_Resume.pdf",
+     "mr": "सेव्ह: Verena_DSouza_Resume.pdf"
+    }
+   ],
+   "details": [
+    {
+     "en": "Spell-check twice and ask one person to read it. A single typo can cost an interview.",
+     "hi": "दो बार वर्तनी जाँचें और किसी एक से पढ़वाएँ। एक ग़लती इंटरव्यू गँवा सकती है।",
+     "mr": "दोनदा शुद्धलेखन तपासा आणि एकाला वाचायला सांगा. एक चूक मुलाखत गमावू शकते."
+    },
+    {
+     "en": "Never pay anyone to 'guarantee' a job, and never share bank details or OTPs during hiring.",
+     "hi": "किसी को नौकरी की 'गारंटी' के लिए कभी पैसा न दें, और भर्ती के दौरान बैंक विवरण या OTP कभी न दें।",
+     "mr": "नोकरीच्या 'हमी'साठी कोणालाही कधीही पैसे देऊ नका, आणि भरतीदरम्यान बँक तपशील किंवा OTP कधीही देऊ नका."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes per application",
+    "hi": "हर आवेदन पर 20 मिनट",
+    "mr": "प्रत्येक अर्जाला 20 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "List everything first; edit later.",
+   "hi": "पहले सब लिखें; काट-छाँट बाद में।",
+   "mr": "आधी सगळे लिहा; संपादन नंतर."
+  },
+  {
+   "en": "One clean page: contact, summary, education, experience, projects, skills.",
+   "hi": "एक साफ़ पन्ना: संपर्क, सार, शिक्षा, अनुभव, प्रोजेक्ट, कौशल।",
+   "mr": "एक स्वच्छ पान: संपर्क, सारांश, शिक्षण, अनुभव, प्रकल्प, कौशल्ये."
+  },
+  {
+   "en": "Write results with numbers, and keep everything true.",
+   "hi": "नतीजे अंकों के साथ लिखें, और सब सच रखें।",
+   "mr": "परिणाम आकड्यांसह लिहा, आणि सगळे खरे ठेवा."
+  },
+  {
+   "en": "Tailor for each job and send a well-named PDF.",
+   "hi": "हर नौकरी के लिए ढालें और ठीक नाम वाली PDF भेजें।",
+   "mr": "प्रत्येक नोकरीसाठी जुळवा आणि योग्य नावाची PDF पाठवा."
+  },
+  {
+   "en": "Saath's resume builder can fill a template from your answers.",
+   "hi": "Saath का रिज़्यूमे बिल्डर आपके जवाबों से टेम्पलेट भर सकता है।",
+   "mr": "Saath चा रेझ्युमे बिल्डर तुमच्या उत्तरांवरून टेम्पलेट भरू शकतो."
+  }
+ ],
+ "reviewed": "2026-10"
+}

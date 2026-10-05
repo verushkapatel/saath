@@ -166,6 +166,7 @@ export function GuideScreen() {
 
 function tryLabel(link: string | null, t: (key: string) => string): string {
   if (link === "tracker") return t("path.openTracker");
+  if (link === "resume") return t("resume.start");
   if (link?.startsWith("episode:")) return t("guide.openEpisode");
   if (link?.startsWith("form:")) return t("guide.openForm");
   if (link?.startsWith("drill:")) return t(`drills.${link.slice(6)}.title`);

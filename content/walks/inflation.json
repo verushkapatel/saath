@@ -1,0 +1,177 @@
+{
+ "id": "inflation",
+ "guide": "inflation",
+ "title": {
+  "en": "Why ₹1 lakh in a locker is worth less every year, and what Verena does instead",
+  "hi": "लॉकर में ₹1 लाख हर साल कम क़ीमत का क्यों होता है, और वेरेना क्या करती है",
+  "mr": "लॉकरमधील ₹1 लाख दरवर्षी कमी मोलाचे का होतात, आणि वेरेना त्याऐवजी काय करते"
+ },
+ "setting": {
+  "en": "Verena's grandmother keeps cash at home 'for safety'",
+  "hi": "वेरेना की दादी 'सुरक्षा के लिए' घर पर नक़द रखती हैं",
+  "mr": "वेरेनाची आजी 'सुरक्षेसाठी' घरी रोख ठेवते"
+ },
+ "steps": [
+  {
+   "scene": "shop",
+   "title": {
+    "en": "See inflation in a shopping bill",
+    "hi": "महँगाई को एक ख़रीदारी के बिल में देखें",
+    "mr": "महागाई एका खरेदीच्या बिलात पाहा"
+   },
+   "text": {
+    "en": "Verena compares her grandmother's grocery list from ten years ago with today's. The same basket costs far more.",
+    "hi": "वेरेना दादी की दस साल पुरानी राशन सूची को आज की सूची से मिलाती है। वही सामान अब बहुत महँगा है।",
+    "mr": "वेरेना आजीची दहा वर्षांपूर्वीची किराणा यादी आजच्या यादीशी जुळवते. तीच वस्तू आता खूप महाग आहे."
+   },
+   "screen": [
+    {
+     "en": "Same monthly basket",
+     "hi": "वही मासिक सामान",
+     "mr": "तोच मासिक किराणा"
+    },
+    {
+     "en": "10 years ago: ₹3,000",
+     "hi": "10 साल पहले: ₹3,000",
+     "mr": "10 वर्षांपूर्वी: ₹3,000"
+    },
+    {
+     "en": "Today: about ₹5,000",
+     "hi": "आज: लगभग ₹5,000",
+     "mr": "आज: साधारण ₹5,000"
+    },
+    {
+     "en": "Cash at home: still ₹1,00,000",
+     "hi": "घर पर नक़द: अब भी ₹1,00,000",
+     "mr": "घरी रोख: अजूनही ₹1,00,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Inflation is prices rising over time. If your money grows slower than prices, you can buy less with it each year.",
+     "hi": "महँगाई यानी समय के साथ क़ीमतें बढ़ना। अगर आपका पैसा क़ीमतों से धीमे बढ़ता है, तो हर साल उससे कम ख़रीद पाते हैं।",
+     "mr": "महागाई म्हणजे कालांतराने किमती वाढणे. तुमचे पैसे किमतींपेक्षा हळू वाढले तर दरवर्षी त्यातून कमी खरेदी करता येते."
+    }
+   ],
+   "cost": {
+    "en": "A comparison",
+    "hi": "एक तुलना",
+    "mr": "एक तुलना"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "Move it somewhere that at least keeps pace",
+    "hi": "इसे ऐसी जगह रखें जो कम से कम साथ चले",
+    "mr": "ते किमान बरोबरीने चालेल अशा ठिकाणी ठेवा"
+   },
+   "text": {
+    "en": "With her grandmother's agreement, they put most of the cash into a fixed deposit in her name, with Verena's mother as nominee, keeping some at home for daily needs.",
+    "hi": "दादी की सहमति से वे ज़्यादातर नक़द उनके नाम की FD में डालते हैं, वेरेना की माँ को नॉमिनी बनाकर, और रोज़ की ज़रूरत भर कुछ घर पर रखते हैं।",
+    "mr": "आजीच्या संमतीने ते बहुतेक रोख तिच्या नावे मुदत ठेवीत ठेवतात, वेरेनाच्या आईला नॉमिनी करून, आणि रोजच्या गरजेपुरते थोडे घरी ठेवतात."
+   },
+   "screen": [
+    {
+     "en": "Fixed deposit",
+     "hi": "फ़िक्स्ड डिपॉज़िट",
+     "mr": "मुदत ठेव"
+    },
+    {
+     "en": "₹80,000 · 1 year",
+     "hi": "₹80,000 · 1 साल",
+     "mr": "₹80,000 · 1 वर्ष"
+    },
+    {
+     "en": "Senior citizen rate (extra)",
+     "hi": "वरिष्ठ नागरिक दर (अतिरिक्त)",
+     "mr": "ज्येष्ठ नागरिक दर (जादा)"
+    },
+    {
+     "en": "Nominee ✓",
+     "hi": "नॉमिनी ✓",
+     "mr": "नॉमिनी ✓"
+    },
+    {
+     "en": "At home: ₹20,000",
+     "hi": "घर पर: ₹20,000",
+     "mr": "घरी: ₹20,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Bank deposits are insured up to ₹5 lakh per depositor per bank by DICGC.",
+     "hi": "बैंक जमा DICGC द्वारा हर बैंक में प्रति जमाकर्ता ₹5 लाख तक बीमित हैं।",
+     "mr": "बँक ठेवी DICGC कडून प्रत्येक बँकेत प्रति ठेवीदार ₹5 लाखांपर्यंत विमाकृत आहेत."
+    },
+    {
+     "en": "Many banks give senior citizens a slightly higher FD rate.",
+     "hi": "कई बैंक वरिष्ठ नागरिकों को FD पर थोड़ी ज़्यादा दर देते हैं।",
+     "mr": "अनेक बँका ज्येष्ठ नागरिकांना मुदत ठेवीवर थोडा जास्त दर देतात."
+    }
+   ],
+   "cost": {
+    "en": "1 hour at the bank",
+    "hi": "बैंक में 1 घंटा",
+    "mr": "बँकेत 1 तास"
+   },
+   "choice": {
+    "prompt": {
+     "en": "For money needed in 10+ years, what helps beat inflation?",
+     "hi": "10+ साल बाद चाहिए पैसे के लिए महँगाई को कौन हरा सकता है?",
+     "mr": "10+ वर्षांनी लागणाऱ्या पैशांसाठी महागाईवर मात करायला काय मदत करते?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Only cash and savings accounts",
+       "hi": "केवल नक़द और बचत खाते",
+       "mr": "फक्त रोख आणि बचत खाती"
+      },
+      "good": false,
+      "result": {
+       "en": "They are safe but usually grow slower than prices over long periods.",
+       "hi": "ये सुरक्षित हैं पर लंबे समय में आमतौर पर क़ीमतों से धीमे बढ़ते हैं।",
+       "mr": "ही सुरक्षित आहेत पण दीर्घ काळात सहसा किमतींपेक्षा हळू वाढतात."
+      }
+     },
+     {
+      "text": {
+       "en": "A mix that includes some long-term growth investments, like diversified equity funds",
+       "hi": "मिश्रण, जिसमें कुछ लंबे समय के विकास वाले निवेश हों, जैसे विविधीकृत इक्विटी फ़ंड",
+       "mr": "मिश्रण, ज्यात काही दीर्घकालीन वाढीच्या गुंतवणुका असतील, जसे वैविध्यपूर्ण इक्विटी फंड"
+      },
+      "good": true,
+      "result": {
+       "en": "Over long periods growth investments have historically tended to outpace inflation, with ups and downs along the way. Not a guarantee.",
+       "hi": "लंबे समय में विकास वाले निवेश ऐतिहासिक रूप से महँगाई से आगे निकलते रहे हैं, बीच में उतार-चढ़ाव के साथ। गारंटी नहीं।",
+       "mr": "दीर्घ काळात वाढीच्या गुंतवणुका ऐतिहासिकदृष्ट्या महागाईपेक्षा पुढे राहिल्या आहेत, मधे चढउतारांसह. हमी नाही."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Cash at home loses buying power every year.",
+   "hi": "घर पर नक़द हर साल ख़रीदने की ताक़त खोता है।",
+   "mr": "घरी रोख दरवर्षी खरेदीची ताकद गमावते."
+  },
+  {
+   "en": "Short-term money: bank deposits (insured up to ₹5 lakh per bank by DICGC).",
+   "hi": "कम समय का पैसा: बैंक जमा (DICGC से प्रति बैंक ₹5 लाख तक बीमित)।",
+   "mr": "अल्पकालीन पैसे: बँक ठेवी (DICGC कडून प्रति बँक ₹5 लाखांपर्यंत विमाकृत)."
+  },
+  {
+   "en": "Long-term goals need some growth investments to stay ahead of prices.",
+   "hi": "लंबे लक्ष्यों को क़ीमतों से आगे रहने के लिए कुछ विकास वाले निवेश चाहिए।",
+   "mr": "दीर्घकालीन उद्दिष्टांना किमतींच्या पुढे राहण्यासाठी काही वाढीच्या गुंतवणुका हव्यात."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.dicgc.org.in",
+  "https://www.rbi.org.in"
+ ]
+}

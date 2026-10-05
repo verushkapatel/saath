@@ -1,0 +1,183 @@
+{
+ "id": "fake-loan-apps",
+ "guide": "fake-loan-apps",
+ "title": {
+  "en": "A loan app that wants your contacts: spotting it, and what to do if it starts harassing you",
+  "hi": "कॉन्टैक्ट माँगने वाला लोन ऐप: पहचानना, और परेशान करे तो क्या करें",
+  "mr": "संपर्क यादी मागणारे कर्ज ॲप: ओळखणे, आणि छळ सुरू झाल्यास काय करावे"
+ },
+ "setting": {
+  "en": "A friend, Kabir, installed an 'instant ₹5,000 loan' app from an ad",
+  "hi": "एक दोस्त, कबीर, ने विज्ञापन से 'तुरंत ₹5,000 लोन' ऐप डाला",
+  "mr": "एका मित्राने, कबीरने, जाहिरातीतून 'झटपट ₹5,000 कर्ज' ॲप टाकले"
+ },
+ "steps": [
+  {
+   "scene": "phone",
+   "title": {
+    "en": "The warning signs before you tap 'Allow'",
+    "hi": "'Allow' दबाने से पहले चेतावनी के संकेत",
+    "mr": "'Allow' दाबण्यापूर्वी धोक्याच्या खुणा"
+   },
+   "text": {
+    "en": "The app asks for access to contacts, photos and SMS, shows no lender name, and offers money in minutes with no KYC.",
+    "hi": "ऐप कॉन्टैक्ट, फ़ोटो और SMS की अनुमति माँगता है, किसी क़र्ज़दाता का नाम नहीं दिखाता, और बिना KYC मिनटों में पैसा देता है।",
+    "mr": "ॲप संपर्क, फोटो आणि SMS ची परवानगी मागते, कोणत्याही कर्जदात्याचे नाव दाखवत नाही, आणि KYC शिवाय काही मिनिटांत पैसे देते."
+   },
+   "screen": [
+    {
+     "en": "Allow access to:",
+     "hi": "इसकी अनुमति दें:",
+     "mr": "याची परवानगी द्या:"
+    },
+    {
+     "en": "!Contacts",
+     "hi": "!कॉन्टैक्ट",
+     "mr": "!संपर्क"
+    },
+    {
+     "en": "!Photos and media",
+     "hi": "!फ़ोटो और मीडिया",
+     "mr": "!फोटो आणि मीडिया"
+    },
+    {
+     "en": "!SMS",
+     "hi": "!SMS",
+     "mr": "!SMS"
+    },
+    {
+     "en": "Lender: not shown",
+     "hi": "क़र्ज़दाता: नहीं दिखाया",
+     "mr": "कर्जदाता: दाखवला नाही"
+    }
+   ],
+   "details": [
+    {
+     "en": "Legitimate digital lenders name their RBI-regulated bank or NBFC, give a Key Fact Statement, and do not need your contacts or photos.",
+     "hi": "असली डिजिटल क़र्ज़दाता अपने RBI-विनियमित बैंक या NBFC का नाम बताते हैं, की फ़ैक्ट स्टेटमेंट देते हैं, और उन्हें आपके कॉन्टैक्ट या फ़ोटो की ज़रूरत नहीं होती।",
+     "mr": "खरे डिजिटल कर्जदाते त्यांच्या RBI-नियंत्रित बँक किंवा NBFC चे नाव सांगतात, की फॅक्ट स्टेटमेंट देतात, आणि त्यांना तुमचे संपर्क किंवा फोटो लागत नाहीत."
+    },
+    {
+     "en": "Check the lender's name on RBI's list of regulated entities and on the Sachet portal.",
+     "hi": "क़र्ज़दाता का नाम RBI की विनियमित संस्थाओं की सूची और सचेत पोर्टल पर देखें।",
+     "mr": "कर्जदात्याचे नाव RBI च्या नियंत्रित संस्थांच्या यादीत आणि सचेत पोर्टलवर तपासा."
+    }
+   ],
+   "cost": {
+    "en": "Stop here",
+    "hi": "यहीं रुकें",
+    "mr": "इथेच थांबा"
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "When the threats start",
+    "hi": "जब धमकियाँ शुरू हों",
+    "mr": "धमक्या सुरू झाल्यावर"
+   },
+   "text": {
+    "en": "Kabir got ₹3,200 of a '₹5,000' loan, was asked to repay ₹6,000 in 7 days, and now his contacts are getting messages calling him a thief. He is ashamed and scared. Verena helps him act.",
+    "hi": "कबीर को '₹5,000' के लोन में से ₹3,200 मिले, 7 दिन में ₹6,000 लौटाने को कहा गया, और अब उसके कॉन्टैक्ट्स को उसे चोर बताने वाले संदेश जा रहे हैं। वह शर्मिंदा और डरा हुआ है। वेरेना उसकी मदद करती है।",
+    "mr": "कबीरला '₹5,000' च्या कर्जातून ₹3,200 मिळाले, 7 दिवसांत ₹6,000 परत करायला सांगितले, आणि आता त्याच्या संपर्कांना तो चोर असल्याचे संदेश जात आहेत. तो लाजलेला आणि घाबरलेला आहे. वेरेना त्याला कृती करायला मदत करते."
+   },
+   "screen": [
+    {
+     "en": "Unknown: Pay ₹6,000 today",
+     "hi": "अज्ञात: आज ₹6,000 भरो",
+     "mr": "अज्ञात: आज ₹6,000 भरा"
+    },
+    {
+     "en": "!Or we send your photos to all contacts",
+     "hi": "!वरना तुम्हारी फ़ोटो सबको भेजेंगे",
+     "mr": "!नाहीतर तुझे फोटो सगळ्यांना पाठवू"
+    },
+    {
+     "en": "!Do not pay more. Report.",
+     "hi": "!और पैसा न दें। रिपोर्ट करें।",
+     "mr": "!आणखी पैसे देऊ नका. तक्रार करा."
+    }
+   ],
+   "details": [
+    {
+     "en": "Do not keep paying. Payments to illegal apps usually lead to more demands, not peace.",
+     "hi": "पैसा देते न रहें। अवैध ऐप को भुगतान से आमतौर पर और माँगें आती हैं, चैन नहीं।",
+     "mr": "पैसे देत राहू नका. बेकायदा ॲपला पैसे दिल्याने सहसा आणखी मागण्या येतात, शांतता नाही."
+    },
+    {
+     "en": "Report on 1930 and cybercrime.gov.in with screenshots, and on RBI's Sachet portal. Tell close contacts in advance that messages about you are fake.",
+     "hi": "स्क्रीनशॉट के साथ 1930 और cybercrime.gov.in पर, और RBI के सचेत पोर्टल पर रिपोर्ट करें। क़रीबी लोगों को पहले से बता दें कि आपके बारे में संदेश नक़ली हैं।",
+     "mr": "स्क्रीनशॉटसह 1930 आणि cybercrime.gov.in वर, आणि RBI च्या सचेत पोर्टलवर तक्रार करा. जवळच्या लोकांना आधीच सांगा की तुमच्याबद्दलचे संदेश बनावट आहेत."
+    },
+    {
+     "en": "Revoke the app's permissions, uninstall it, and change passwords if you shared any.",
+     "hi": "ऐप की अनुमतियाँ हटाएँ, उसे अनइंस्टॉल करें, और कोई पासवर्ड बताया हो तो बदलें।",
+     "mr": "ॲपच्या परवानग्या काढा, ते अनइन्स्टॉल करा, आणि कोणताही पासवर्ड सांगितला असल्यास बदला."
+    }
+   ],
+   "cost": {
+    "en": "Report today",
+    "hi": "आज रिपोर्ट करें",
+    "mr": "आजच तक्रार करा"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What does Verena tell Kabir first?",
+     "hi": "वेरेना कबीर से पहले क्या कहे?",
+     "mr": "वेरेनाने कबीरला आधी काय सांगावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Pay them quickly so it stops",
+       "hi": "जल्दी भर दो ताकि रुक जाए",
+       "mr": "लवकर भर म्हणजे थांबेल"
+      },
+      "good": false,
+      "result": {
+       "en": "It rarely stops. The demands usually grow.",
+       "hi": "यह शायद ही रुकता है। माँगें आमतौर पर बढ़ती हैं।",
+       "mr": "हे क्वचितच थांबते. मागण्या सहसा वाढतात."
+      }
+     },
+     {
+      "text": {
+       "en": "This is a crime against you. Let's report it together.",
+       "hi": "यह तुम्हारे ख़िलाफ़ अपराध है। चलो साथ में रिपोर्ट करते हैं।",
+       "mr": "हा तुझ्याविरुद्ध गुन्हा आहे. आपण मिळून तक्रार करू."
+      },
+      "good": true,
+      "result": {
+       "en": "Removing the shame is the first step. Harassment and threats are crimes; the victim has done nothing to be ashamed of.",
+       "hi": "शर्म हटाना पहला कदम है। उत्पीड़न और धमकी अपराध हैं; पीड़ित ने शर्मिंदा होने जैसा कुछ नहीं किया।",
+       "mr": "लाज दूर करणे ही पहिली पायरी. छळ आणि धमक्या हे गुन्हे आहेत; पीडिताने लाजण्यासारखे काही केलेले नाही."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "A real lender names its RBI-regulated partner and gives a Key Fact Statement.",
+   "hi": "असली क़र्ज़दाता अपने RBI-विनियमित भागीदार का नाम और की फ़ैक्ट स्टेटमेंट देता है।",
+   "mr": "खरा कर्जदाता त्याच्या RBI-नियंत्रित भागीदाराचे नाव आणि की फॅक्ट स्टेटमेंट देतो."
+  },
+  {
+   "en": "Never give a loan app access to contacts, photos or SMS.",
+   "hi": "किसी लोन ऐप को कॉन्टैक्ट, फ़ोटो या SMS की अनुमति कभी न दें।",
+   "mr": "कोणत्याही कर्ज ॲपला संपर्क, फोटो किंवा SMS ची परवानगी कधीही देऊ नका."
+  },
+  {
+   "en": "If harassed: stop paying, report on 1930, cybercrime.gov.in and Sachet, and warn your contacts.",
+   "hi": "परेशान किया जाए तो: भुगतान बंद, 1930, cybercrime.gov.in और सचेत पर रिपोर्ट, और कॉन्टैक्ट्स को सचेत करें।",
+   "mr": "छळ झाल्यास: पैसे देणे थांबवा, 1930, cybercrime.gov.in आणि सचेतवर तक्रार करा, आणि संपर्कांना सावध करा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://sachet.rbi.org.in",
+  "https://cybercrime.gov.in",
+  "https://www.rbi.org.in"
+ ]
+}

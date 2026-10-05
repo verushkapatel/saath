@@ -1,0 +1,160 @@
+{
+ "id": "double-money",
+ "guide": "double-money",
+ "title": {
+  "en": "'Double your money in 6 months': checking an investment offer before you put in a rupee",
+  "hi": "'6 महीने में पैसा दोगुना': एक रुपया लगाने से पहले निवेश ऑफ़र की जाँच",
+  "mr": "'6 महिन्यांत पैसे दुप्पट': एक रुपया टाकण्यापूर्वी गुंतवणूक ऑफरची तपासणी"
+ },
+ "setting": {
+  "en": "An uncle shares a 'trading club' that pays 10% a month",
+  "hi": "एक चाचा एक 'ट्रेडिंग क्लब' भेजते हैं जो 10% महीना देता है",
+  "mr": "एक काका एक 'ट्रेडिंग क्लब' पाठवतात जो महिन्याला 10% देतो"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Do the arithmetic on the promise",
+    "hi": "वादे का हिसाब लगाएँ",
+    "mr": "आश्वासनाचा हिशोब करा"
+   },
+   "text": {
+    "en": "10% a month compounds to over 200% a year. No legitimate investment promises that, and none guarantees returns.",
+    "hi": "10% महीना चक्रवृद्धि होकर साल का 200% से ज़्यादा बनता है। कोई असली निवेश इसका वादा नहीं करता, और कोई रिटर्न की गारंटी नहीं देता।",
+    "mr": "10% महिना चक्रवाढ होऊन वर्षाला 200% पेक्षा जास्त होतो. कोणतीही खरी गुंतवणूक असे वचन देत नाही, आणि कोणीही परताव्याची हमी देत नाही."
+   },
+   "screen": [
+    {
+     "en": "The promise",
+     "hi": "वादा",
+     "mr": "आश्वासन"
+    },
+    {
+     "en": "10% a month",
+     "hi": "10% महीना",
+     "mr": "10% महिना"
+    },
+    {
+     "en": "= about 214% a year",
+     "hi": "= लगभग 214% साल",
+     "mr": "= साधारण 214% वर्ष"
+    },
+    {
+     "en": "FD: about 6–7% a year",
+     "hi": "FD: लगभग 6–7% साल",
+     "mr": "FD: साधारण 6–7% वर्ष"
+    },
+    {
+     "en": "!Guaranteed high returns = red flag",
+     "hi": "!पक्का ऊँचा रिटर्न = ख़तरे का संकेत",
+     "mr": "!हमखास उच्च परतावा = धोक्याची खूण"
+    }
+   ],
+   "details": [
+    {
+     "en": "Early investors are often paid with new investors' money (a Ponzi scheme), which looks like proof until it collapses.",
+     "hi": "शुरुआती निवेशकों को अक्सर नए निवेशकों के पैसे से भुगतान होता है (पोंज़ी स्कीम), जो ढहने तक सबूत जैसा दिखता है।",
+     "mr": "सुरुवातीच्या गुंतवणूकदारांना अनेकदा नव्या गुंतवणूकदारांच्या पैशांतून पैसे दिले जातात (पॉन्झी योजना), जे कोसळेपर्यंत पुराव्यासारखे दिसते."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes",
+    "hi": "2 मिनट",
+    "mr": "2 मिनिटे"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Check registration in two places",
+    "hi": "दो जगह पंजीकरण जाँचें",
+    "mr": "दोन ठिकाणी नोंदणी तपासा"
+   },
+   "text": {
+    "en": "She searches the club's name on SEBI's list of registered intermediaries and RBI's list of regulated entities. It is on neither. Its 'office' address is a residential flat.",
+    "hi": "वह क्लब का नाम SEBI की पंजीकृत मध्यस्थों की सूची और RBI की विनियमित संस्थाओं की सूची में खोजती है। किसी में नहीं है। उसका 'दफ़्तर' एक रिहायशी फ़्लैट है।",
+    "mr": "ती क्लबचे नाव SEBI च्या नोंदणीकृत मध्यस्थांच्या यादीत आणि RBI च्या नियंत्रित संस्थांच्या यादीत शोधते. कुठेच नाही. त्याचे 'कार्यालय' एक निवासी फ्लॅट आहे."
+   },
+   "screen": [
+    {
+     "en": "SEBI registered? ✗",
+     "hi": "SEBI पंजीकृत? ✗",
+     "mr": "SEBI नोंदणीकृत? ✗"
+    },
+    {
+     "en": "RBI regulated? ✗",
+     "hi": "RBI विनियमित? ✗",
+     "mr": "RBI नियंत्रित? ✗"
+    },
+    {
+     "en": "Report: sachet.rbi.org.in",
+     "hi": "रिपोर्ट: sachet.rbi.org.in",
+     "mr": "तक्रार: sachet.rbi.org.in"
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The uncle has already received two months of 10%. Is it safe?",
+     "hi": "चाचा को दो महीने का 10% मिल चुका है। क्या यह सुरक्षित है?",
+     "mr": "काकांना दोन महिन्यांचे 10% मिळाले आहेत. हे सुरक्षित आहे का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, it has paid him",
+       "hi": "हाँ, उन्हें पैसा मिला है",
+       "mr": "हो, त्यांना पैसे मिळाले आहेत"
+      },
+      "good": false,
+      "result": {
+       "en": "Early payouts are how these schemes recruit. Unregistered plus guaranteed returns means stay out.",
+       "hi": "शुरुआती भुगतान से ही ये स्कीमें लोग जोड़ती हैं। अपंजीकृत और गारंटीड रिटर्न यानी दूर रहें।",
+       "mr": "सुरुवातीच्या पेमेंटनेच या योजना लोक जोडतात. नोंदणी नाही आणि हमखास परतावा म्हणजे दूर राहा."
+      }
+     },
+     {
+      "text": {
+       "en": "No, and he should try to withdraw and report it",
+       "hi": "नहीं, उन्हें निकालने की कोशिश और रिपोर्ट करनी चाहिए",
+       "mr": "नाही, त्यांनी पैसे काढण्याचा प्रयत्न करून तक्रार करावी"
+      },
+      "good": true,
+      "result": {
+       "en": "Reporting on Sachet helps regulators act before more families are hurt.",
+       "hi": "सचेत पर रिपोर्ट से नियामक और परिवारों के नुक़सान से पहले कार्रवाई कर सकते हैं।",
+       "mr": "सचेतवर तक्रार केल्याने आणखी कुटुंबांचे नुकसान होण्यापूर्वी नियामक कारवाई करू शकतात."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "No real investment guarantees high returns. 'Double in months' is a red flag.",
+   "hi": "कोई असली निवेश ऊँचे रिटर्न की गारंटी नहीं देता। 'महीनों में दोगुना' ख़तरे का संकेत है।",
+   "mr": "कोणतीही खरी गुंतवणूक उच्च परताव्याची हमी देत नाही. 'काही महिन्यांत दुप्पट' ही धोक्याची खूण."
+  },
+  {
+   "en": "Check SEBI and RBI registration before investing.",
+   "hi": "निवेश से पहले SEBI और RBI पंजीकरण देखें।",
+   "mr": "गुंतवणुकीपूर्वी SEBI आणि RBI नोंदणी तपासा."
+  },
+  {
+   "en": "Early payouts prove nothing. Report schemes on Sachet.",
+   "hi": "शुरुआती भुगतान कुछ साबित नहीं करते। स्कीमों की रिपोर्ट सचेत पर करें।",
+   "mr": "सुरुवातीची पेमेंट काहीच सिद्ध करत नाहीत. योजनांची तक्रार सचेतवर करा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://sachet.rbi.org.in",
+  "https://www.sebi.gov.in"
+ ]
+}

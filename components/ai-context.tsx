@@ -3,6 +3,9 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import type { AiContext } from "@/lib/ai";
 
+/** Something attached to a question: a document read on this device, or a part of Saath the person cited. */
+export type Attachment = { kind: "doc" | "cite"; title: string; text: string };
+
 type AiState = {
   /** What the open screen says the person is looking at. */
   context: AiContext | null;
@@ -10,9 +13,11 @@ type AiState = {
   askOpen: boolean;
   /** A question to send as soon as the sheet opens. */
   pending: string | null;
-  openAsk: (question?: string) => void;
+  openAsk: (question?: string, attachment?: Attachment) => void;
   closeAsk: () => void;
   takePending: () => string | null;
+  /** An attachment handed over with openAsk, taken once by the chat. */
+  takeAttachment: () => Attachment | null;
 };
 
 const Ctx = createContext<AiState | null>(null);
@@ -22,11 +27,18 @@ export function AiContextProvider({ children }: { children: React.ReactNode }) {
   const [askOpen, setAskOpen] = useState(false);
   const pendingRef = useRef<string | null>(null);
   const [pending, setPending] = useState<string | null>(null);
+  const attachmentRef = useRef<Attachment | null>(null);
 
-  const openAsk = useCallback((question?: string) => {
+  const openAsk = useCallback((question?: string, attachment?: Attachment) => {
     pendingRef.current = question ?? null;
+    attachmentRef.current = attachment ?? null;
     setPending(question ?? null);
     setAskOpen(true);
+  }, []);
+  const takeAttachment = useCallback(() => {
+    const value = attachmentRef.current;
+    attachmentRef.current = null;
+    return value;
   }, []);
   const closeAsk = useCallback(() => setAskOpen(false), []);
   const takePending = useCallback(() => {
@@ -37,8 +49,8 @@ export function AiContextProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const value = useMemo(
-    () => ({ context, publish: setContext, askOpen, pending, openAsk, closeAsk, takePending }),
-    [context, askOpen, pending, openAsk, closeAsk, takePending],
+    () => ({ context, publish: setContext, askOpen, pending, openAsk, closeAsk, takePending, takeAttachment }),
+    [context, askOpen, pending, openAsk, closeAsk, takePending, takeAttachment],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

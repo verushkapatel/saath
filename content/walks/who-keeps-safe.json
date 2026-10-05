@@ -1,0 +1,137 @@
+{
+ "id": "who-keeps-safe",
+ "guide": "who-keeps-safe",
+ "title": {
+  "en": "Who keeps your money safe: checking a bank, an NBFC, a fund or an insurer before trusting it",
+  "hi": "आपका पैसा कौन सुरक्षित रखता है: भरोसे से पहले बैंक, NBFC, फ़ंड या बीमा कंपनी की जाँच",
+  "mr": "तुमचे पैसे कोण सुरक्षित ठेवते: विश्वास ठेवण्यापूर्वी बँक, NBFC, फंड किंवा विमा कंपनीची तपासणी"
+ },
+ "setting": {
+  "en": "Verena's father is offered a '9.5% deposit' by a company he has never heard of",
+  "hi": "वेरेना के पिता को एक अनजान कंपनी '9.5% डिपॉज़िट' देती है",
+  "mr": "वेरेनाच्या वडिलांना एका अनोळखी कंपनीकडून '9.5% ठेव' देऊ केली जाते"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Find the regulator for what is being sold",
+    "hi": "जो बेचा जा रहा है, उसका नियामक ढूँढें",
+    "mr": "जे विकले जात आहे त्याचा नियामक शोधा"
+   },
+   "text": {
+    "en": "Each kind of product has a regulator: banks and NBFCs (RBI), mutual funds and brokers (SEBI), insurance (IRDAI), pensions (PFRDA). She checks the company on the right regulator's website.",
+    "hi": "हर तरह के उत्पाद का एक नियामक है: बैंक और NBFC (RBI), म्यूचुअल फ़ंड और ब्रोकर (SEBI), बीमा (IRDAI), पेंशन (PFRDA)। वह कंपनी को सही नियामक की वेबसाइट पर जाँचती है।",
+    "mr": "प्रत्येक प्रकारच्या उत्पादनाचा एक नियामक असतो: बँका आणि NBFC (RBI), म्युच्युअल फंड आणि ब्रोकर (SEBI), विमा (IRDAI), पेन्शन (PFRDA). ती कंपनी योग्य नियामकाच्या वेबसाइटवर तपासते."
+   },
+   "screen": [
+    {
+     "en": "Who regulates?",
+     "hi": "नियामक कौन?",
+     "mr": "नियामक कोण?"
+    },
+    {
+     "en": "Bank / NBFC deposit → RBI",
+     "hi": "बैंक / NBFC जमा → RBI",
+     "mr": "बँक / NBFC ठेव → RBI"
+    },
+    {
+     "en": "Mutual fund, broker → SEBI",
+     "hi": "म्यूचुअल फ़ंड, ब्रोकर → SEBI",
+     "mr": "म्युच्युअल फंड, ब्रोकर → SEBI"
+    },
+    {
+     "en": "Insurance → IRDAI",
+     "hi": "बीमा → IRDAI",
+     "mr": "विमा → IRDAI"
+    },
+    {
+     "en": "Pension (NPS, APY) → PFRDA",
+     "hi": "पेंशन (NPS, APY) → PFRDA",
+     "mr": "पेन्शन (NPS, APY) → PFRDA"
+    },
+    {
+     "en": "Company not found ✗",
+     "hi": "कंपनी नहीं मिली ✗",
+     "mr": "कंपनी सापडली नाही ✗"
+    }
+   ],
+   "details": [
+    {
+     "en": "Bank deposits are insured by DICGC up to ₹5 lakh per depositor per bank. Deposits with unregistered companies have no such protection.",
+     "hi": "बैंक जमा DICGC से प्रति बैंक प्रति जमाकर्ता ₹5 लाख तक बीमित हैं। अपंजीकृत कंपनियों में जमा की ऐसी कोई सुरक्षा नहीं।",
+     "mr": "बँक ठेवी DICGC कडून प्रति बँक प्रति ठेवीदार ₹5 लाखांपर्यंत विमाकृत. नोंदणी नसलेल्या कंपन्यांतील ठेवींना असे संरक्षण नाही."
+    },
+    {
+     "en": "A rate well above banks with 'no risk' is the classic warning.",
+     "hi": "बैंकों से काफ़ी ऊँची दर और 'कोई जोखिम नहीं' पुरानी चेतावनी है।",
+     "mr": "बँकांपेक्षा बराच जास्त दर आणि 'धोका नाही' ही जुनी धोक्याची खूण."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The company is not on RBI's list. What should her father do?",
+     "hi": "कंपनी RBI की सूची में नहीं। पिता क्या करें?",
+     "mr": "कंपनी RBI च्या यादीत नाही. वडिलांनी काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Invest a small amount to test it",
+       "hi": "परखने को थोड़ा लगाएँ",
+       "mr": "परखण्यासाठी थोडे गुंतवावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Small amounts are how people get drawn into bigger ones. Unregulated means no protection at any size.",
+       "hi": "छोटी रकम से ही लोग बड़ी में फँसते हैं। अनियमित यानी किसी भी रकम पर सुरक्षा नहीं।",
+       "mr": "लहान रकमेतूनच लोक मोठ्यात अडकतात. अनियंत्रित म्हणजे कोणत्याही रकमेला संरक्षण नाही."
+      }
+     },
+     {
+      "text": {
+       "en": "Decline, and report it on Sachet",
+       "hi": "मना करें, और सचेत पर रिपोर्ट करें",
+       "mr": "नकार द्यावा, आणि सचेतवर तक्रार करावी"
+      },
+      "good": true,
+      "result": {
+       "en": "A regulated bank FD at a slightly lower rate is far safer.",
+       "hi": "थोड़ी कम दर पर विनियमित बैंक की FD कहीं ज़्यादा सुरक्षित है।",
+       "mr": "थोड्या कमी दराने नियंत्रित बँकेची FD कितीतरी अधिक सुरक्षित."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Know the regulator: RBI, SEBI, IRDAI or PFRDA.",
+   "hi": "नियामक जानें: RBI, SEBI, IRDAI या PFRDA।",
+   "mr": "नियामक जाणा: RBI, SEBI, IRDAI किंवा PFRDA."
+  },
+  {
+   "en": "Check the company on that regulator's website before paying.",
+   "hi": "भुगतान से पहले उस नियामक की वेबसाइट पर कंपनी जाँचें।",
+   "mr": "पैसे देण्यापूर्वी त्या नियामकाच्या वेबसाइटवर कंपनी तपासा."
+  },
+  {
+   "en": "Bank deposits are DICGC-insured up to ₹5 lakh per bank; unregistered schemes are not.",
+   "hi": "बैंक जमा प्रति बैंक ₹5 लाख तक DICGC-बीमित; अपंजीकृत योजनाएँ नहीं।",
+   "mr": "बँक ठेवी प्रति बँक ₹5 लाखांपर्यंत DICGC-विमाकृत; नोंदणी नसलेल्या योजना नाहीत."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://www.sebi.gov.in",
+  "https://irdai.gov.in",
+  "https://www.dicgc.org.in"
+ ]
+}

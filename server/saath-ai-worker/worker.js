@@ -43,6 +43,8 @@ const TASKS = {
   mistake: "The user answered a practice question wrongly. Kindly explain why the correct answer is right, in two or three lines, and give a way to remember it.",
   revise: "From the PROGRESS data, suggest what the user should revise next and why, in three short bullet points.",
   progress: "Summarise the user's PROGRESS in three encouraging, honest bullet points and name one next step.",
+  photo: "The user sent a photo (attached). Describe what document or screen it is, explain each visible part in plain words in order, then what to check before signing or paying. Say clearly when something is unreadable.",
+  resume: "Turn the user's ANSWERS into a one-page resume. Reply with JSON only, no prose, in this shape: {\"name\":\"\",\"headline\":\"\",\"contact\":\"\",\"summary\":\"\",\"education\":[{\"title\":\"\",\"place\":\"\",\"dates\":\"\",\"detail\":\"\"}],\"experience\":[{\"title\":\"\",\"place\":\"\",\"dates\":\"\",\"bullets\":[\"\"]}],\"projects\":[{\"title\":\"\",\"bullets\":[\"\"]}],\"skills\":[\"\"],\"certifications\":[\"\"],\"languages\":[\"\"]}. Write in English. Use only facts from ANSWERS, never invent employers, dates, marks or numbers. Rewrite duties as action + what + result. Summary at most 2 sentences. At most 4 bullets per role, each under 22 words.",
 };
 
 function cors(env, request) {
@@ -165,17 +167,21 @@ function buildMessages(body) {
   if (body.context) parts.push(`SCREEN: ${clip(body.context.screen, 80)} | ${clip(body.context.title, 160)}\n${clip(body.context.text, 2200)}`);
   if (body.progress) parts.push(`PROGRESS: ${clip(JSON.stringify(body.progress), 800)}`);
   parts.push(`PASSAGES:\n${passages.map((item, index) => `[${index + 1}] ${clip(item.title, 160)}: ${clip(item.text, 900)}`).join("\n") || "(none)"}`);
-  if (body.input) parts.push(`USER: ${clip(body.input, 1200)}`);
+  if (body.input) parts.push(`${body.task === "resume" ? "ANSWERS" : "USER"}: ${clip(body.input, body.task === "resume" ? 5000 : 1500)}`);
+  const text = parts.join("\n\n");
+  // A photo goes to the model as an image part, for the models that can see.
+  const image = typeof body.image === "string" && /^data:image\/(jpeg|png|webp);base64,/.test(body.image) && body.image.length < 1_400_000 ? body.image : null;
   return [
     { role: "system", content: SYSTEM },
-    ...history.map((turn) => ({ role: turn.role === "user" ? "user" : "assistant", content: clip(turn.text, 600) })),
-    { role: "user", content: parts.join("\n\n") },
+    ...history.map((turn) => ({ role: turn.role === "user" ? "user" : "assistant", content: clip(turn.text, 800) })),
+    { role: "user", content: image ? [{ type: "text", text }, { type: "image_url", image_url: { url: image } }] : text },
   ];
 }
 
 // Workers AI models are tried in order until one answers, so a model that is retired or not enabled on an
 // account does not take Saath AI down. AI_MODEL in wrangler.toml, if set, is tried first.
 const WORKERS_AI_MODELS = [
+  "@cf/openai/gpt-oss-120b",
   "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
   "@cf/meta/llama-4-scout-17b-16e-instruct",
   "@cf/google/gemma-3-12b-it",
@@ -185,40 +191,87 @@ const WORKERS_AI_MODELS = [
   "@cf/mistral/mistral-7b-instruct-v0.2",
 ];
 
+// Models that can read a photo, tried first when one is attached.
+const VISION_MODELS = ["@cf/meta/llama-4-scout-17b-16e-instruct", "@cf/meta/llama-3.2-11b-vision-instruct"];
+
 function textOf(result) {
   if (!result) return "";
   if (typeof result === "string") return result;
+  // Responses-style output (gpt-oss): a list of items, the message item holds the text.
+  if (Array.isArray(result.output)) {
+    const parts = result.output.flatMap((item) => (Array.isArray(item.content) ? item.content : [])).filter((part) => typeof part.text === "string" && part.type !== "reasoning_text");
+    if (parts.length) return parts.map((part) => part.text).join("");
+  }
+  if (typeof result.output_text === "string") return result.output_text;
   if (typeof result.response === "string") return result.response;
   if (result.response && typeof result.response === "object") return JSON.stringify(result.response);
   return result.result?.response || result.choices?.[0]?.message?.content || "";
 }
 
-async function runModel(env, messages) {
-  if (env.AI && typeof env.AI.run === "function") {
-    const models = [...new Set([env.AI_MODEL, ...WORKERS_AI_MODELS].filter(Boolean))];
-    const failures = [];
-    for (const model of models) {
-      try {
-        const text = textOf(await env.AI.run(model, { messages, max_tokens: 1000, temperature: 0.35 }));
-        if (text.trim()) return text;
-        failures.push(`${model}: empty`);
-      } catch (error) {
-        failures.push(`${model}: ${String(error && error.message ? error.message : error).slice(0, 160)}`);
-      }
+/** An OpenAI-compatible chat call, for free hosted tiers whose keys are kept as Worker secrets. */
+async function compatible(base, key, model, messages, maxTokens) {
+  const response = await fetch(`${base.replace(/\/$/, "")}/chat/completions`, {
+    method: "POST",
+    headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+    body: JSON.stringify({ model, messages, max_tokens: maxTokens, temperature: 0.35 }),
+  });
+  if (!response.ok) throw new Error(`${model} ${response.status}`);
+  const data = await response.json();
+  return data.choices?.[0]?.message?.content || "";
+}
+
+/**
+ * Every free source of a strong model is tried in order, so Saath AI keeps answering when one daily quota runs out:
+ *   1. Groq (free tier) with GROQ_API_KEY: gpt-oss-120b and Llama 3.3 70B, very fast.
+ *   2. Google Gemini (free tier) with GEMINI_API_KEY: Gemini Flash, which can also read photos.
+ *   3. OpenRouter free models with OPENROUTER_API_KEY.
+ *   4. Cloudflare Workers AI (free daily allowance, no key): gpt-oss-120b, Llama 3.3 70B, Llama 4 Scout and smaller ones.
+ *   5. Any OpenAI-compatible API set with AI_BASE_URL, AI_MODEL and AI_API_KEY.
+ * Keys are Worker secrets only. They never reach the app.
+ */
+async function runModel(env, messages, maxTokens = 1200) {
+  const hasImage = messages.some((message) => Array.isArray(message.content));
+  const failures = [];
+  const attempt = async (label, fn) => {
+    try {
+      const text = await fn();
+      if (text && text.trim()) return text;
+      failures.push(`${label}: empty`);
+    } catch (error) {
+      failures.push(`${label}: ${String(error && error.message ? error.message : error).slice(0, 160)}`);
     }
-    throw new Error(failures.join(" | "));
+    return "";
+  };
+  const hosted = [];
+  if (env.GROQ_API_KEY && !hasImage) {
+    hosted.push(["groq gpt-oss", () => compatible("https://api.groq.com/openai/v1", env.GROQ_API_KEY, "openai/gpt-oss-120b", messages, maxTokens)]);
+    hosted.push(["groq llama", () => compatible("https://api.groq.com/openai/v1", env.GROQ_API_KEY, "llama-3.3-70b-versatile", messages, maxTokens)]);
+  }
+  if (env.GEMINI_API_KEY) hosted.push(["gemini", () => compatible("https://generativelanguage.googleapis.com/v1beta/openai", env.GEMINI_API_KEY, env.GEMINI_MODEL || "gemini-2.5-flash", messages, maxTokens)]);
+  if (env.OPENROUTER_API_KEY && !hasImage) hosted.push(["openrouter", () => compatible("https://openrouter.ai/api/v1", env.OPENROUTER_API_KEY, env.OPENROUTER_MODEL || "openai/gpt-oss-120b:free", messages, maxTokens)]);
+  for (const [label, fn] of hosted) {
+    const text = await attempt(label, fn);
+    if (text) return text;
+  }
+  if (env.AI && typeof env.AI.run === "function") {
+    const models = hasImage ? VISION_MODELS : [...new Set([env.AI_MODEL, ...WORKERS_AI_MODELS].filter(Boolean))];
+    for (const model of models) {
+      const text = await attempt(model, async () => {
+        if (model.includes("gpt-oss")) {
+          // gpt-oss on Workers AI takes the Responses format: instructions plus input.
+          const [system, ...rest] = messages;
+          return textOf(await env.AI.run(model, { instructions: system.content, input: rest.map((m) => ({ role: m.role, content: m.content })), max_output_tokens: maxTokens, reasoning: { effort: "low" } }));
+        }
+        return textOf(await env.AI.run(model, { messages, max_tokens: maxTokens, temperature: 0.35 }));
+      });
+      if (text) return text;
+    }
   }
   if (env.AI_BASE_URL && env.AI_API_KEY) {
-    const response = await fetch(`${env.AI_BASE_URL.replace(/\/$/, "")}/chat/completions`, {
-      method: "POST",
-      headers: { "content-type": "application/json", authorization: `Bearer ${env.AI_API_KEY}` },
-      body: JSON.stringify({ model: env.AI_MODEL, messages, max_tokens: 1000, temperature: 0.35 }),
-    });
-    if (!response.ok) throw new Error(`model ${response.status}`);
-    const data = await response.json();
-    return data.choices?.[0]?.message?.content || "";
+    const text = await attempt("custom", () => compatible(env.AI_BASE_URL, env.AI_API_KEY, env.AI_MODEL, messages, maxTokens));
+    if (text) return text;
   }
-  throw new Error("no model configured");
+  throw new Error(failures.join(" | ") || "no model configured");
 }
 
 export default {
@@ -228,7 +281,7 @@ export default {
     if (request.method !== "POST") return new Response(JSON.stringify({ error: "method" }), { status: 405, headers });
     if (headers["access-control-allow-origin"] === "null") return new Response(JSON.stringify({ error: "origin" }), { status: 403, headers });
     const length = Number(request.headers.get("content-length") || 0);
-    if (length > 20_000) return new Response(JSON.stringify({ error: "too large" }), { status: 413, headers });
+    if (length > 1_600_000) return new Response(JSON.stringify({ error: "too large" }), { status: 413, headers });
     try {
       const path = new URL(request.url).pathname.replace(/\/$/, "") || "/";
       if (path === "/admin/live") return liveRoute(request, env, headers);
@@ -236,7 +289,7 @@ export default {
       if (path === "/heartbeat") return heartbeatRoute(body, env, headers);
       if (path === "/feedback") return feedbackRoute(body, env, headers, request.headers.get("x-saath-check") === "1");
       if (path !== "/") return json({ error: "not found" }, 404, headers);
-      const text = await runModel(env, buildMessages(body));
+      const text = await runModel(env, buildMessages(body), body.task === "resume" ? 1600 : 1200);
       if (!text) throw new Error("empty");
       return new Response(JSON.stringify({ text }), { status: 200, headers });
     } catch (error) {

@@ -1,0 +1,166 @@
+{
+ "id": "flat-reducing",
+ "guide": "flat-reducing",
+ "title": {
+  "en": "Flat rate vs reducing balance: the 10% that is really 18%, worked out at a two-wheeler showroom",
+  "hi": "फ़्लैट दर बनाम घटता बैलेंस: वह 10% जो असल में 18% है, टू-व्हीलर शोरूम में हिसाब",
+  "mr": "फ्लॅट दर विरुद्ध कमी होणारी शिल्लक: खरा 18% असलेला 10%, दुचाकी शोरूममध्ये हिशोब"
+ },
+ "setting": {
+  "en": "Verena's brother wants a ₹90,000 scooter on a loan",
+  "hi": "वेरेना का भाई ₹90,000 का स्कूटर लोन पर चाहता है",
+  "mr": "वेरेनाच्या भावाला ₹90,000 ची स्कूटर कर्जावर हवी"
+ },
+ "steps": [
+  {
+   "scene": "shop",
+   "title": {
+    "en": "Two offers, two kinds of rate",
+    "hi": "दो ऑफ़र, दो तरह की दर",
+    "mr": "दोन ऑफर, दोन प्रकारचे दर"
+   },
+   "text": {
+    "en": "The showroom's dealer finance offers '10% flat'. Their bank offers 13% on reducing balance. 10% sounds cheaper. Verena asks for the EMI for each, for ₹60,000 over 24 months.",
+    "hi": "शोरूम की डीलर फ़ाइनेंस '10% फ़्लैट' देती है। बैंक घटते बैलेंस पर 13% देता है। 10% सस्ता लगता है। वेरेना 24 महीने में ₹60,000 के लिए दोनों की EMI पूछती है।",
+    "mr": "शोरूमचे डीलर फायनान्स '10% फ्लॅट' देते. बँक कमी होणाऱ्या शिलकीवर 13% देते. 10% स्वस्त वाटतो. वेरेना 24 महिन्यांत ₹60,000 साठी दोन्हींची EMI विचारते."
+   },
+   "screen": [
+    {
+     "en": "Dealer: 10% FLAT",
+     "hi": "डीलर: 10% फ़्लैट",
+     "mr": "डीलर: 10% फ्लॅट"
+    },
+    {
+     "en": "EMI ₹3,000",
+     "hi": "EMI ₹3,000",
+     "mr": "EMI ₹3,000"
+    },
+    {
+     "en": "Bank: 13% reducing",
+     "hi": "बैंक: 13% घटता",
+     "mr": "बँक: 13% कमी होणारी"
+    },
+    {
+     "en": "EMI ₹2,853",
+     "hi": "EMI ₹2,853",
+     "mr": "EMI ₹2,853"
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "See why: flat interest never shrinks",
+    "hi": "देखें क्यों: फ़्लैट ब्याज कभी नहीं घटता",
+    "mr": "का ते पाहा: फ्लॅट व्याज कधीच कमी होत नाही"
+   },
+   "text": {
+    "en": "Flat rate charges 10% every year on the full ₹60,000, even in the last month when almost nothing is owed. Reducing balance charges interest only on what is still unpaid.",
+    "hi": "फ़्लैट दर हर साल पूरे ₹60,000 पर 10% लगाती है, आख़िरी महीने में भी जब लगभग कुछ बाक़ी नहीं होता। घटता बैलेंस केवल बाक़ी रकम पर ब्याज लगाता है।",
+    "mr": "फ्लॅट दर दरवर्षी पूर्ण ₹60,000 वर 10% लावतो, शेवटच्या महिन्यातही जेव्हा जवळजवळ काहीच बाकी नसते. कमी होणारी शिल्लक फक्त अजून न फेडलेल्या रकमेवर व्याज लावते."
+   },
+   "screen": [
+    {
+     "en": "Flat 10%",
+     "hi": "फ़्लैट 10%",
+     "mr": "फ्लॅट 10%"
+    },
+    {
+     "en": "Interest = 60,000 × 10% × 2 = 12,000",
+     "hi": "ब्याज = 60,000 × 10% × 2 = 12,000",
+     "mr": "व्याज = 60,000 × 10% × 2 = 12,000"
+    },
+    {
+     "en": "Total 72,000 → EMI 3,000",
+     "hi": "कुल 72,000 → EMI 3,000",
+     "mr": "एकूण 72,000 → EMI 3,000"
+    },
+    {
+     "en": "Same as ~18% reducing",
+     "hi": "लगभग 18% घटते जितना",
+     "mr": "साधारण 18% कमी होणाऱ्याइतके"
+    },
+    {
+     "en": "Bank 13% reducing: total ~68,470",
+     "hi": "बैंक 13% घटता: कुल ~68,470",
+     "mr": "बँक 13% कमी होणारी: एकूण ~68,470"
+    }
+   ],
+   "details": [
+    {
+     "en": "A flat rate is roughly equal to almost double that rate on reducing balance, for typical loan lengths.",
+     "hi": "आम लोन अवधि में फ़्लैट दर घटते बैलेंस की लगभग दोगुनी दर के बराबर होती है।",
+     "mr": "सामान्य कर्ज मुदतीत फ्लॅट दर कमी होणाऱ्या शिलकीवरील जवळजवळ दुप्पट दराइतका असतो."
+    },
+    {
+     "en": "Ask any lender: 'Is this flat or reducing? What is the APR?' The Key Fact Statement must show the APR.",
+     "hi": "हर क़र्ज़दाता से पूछें: 'यह फ़्लैट है या घटता? APR क्या है?' की फ़ैक्ट स्टेटमेंट में APR होना ज़रूरी है।",
+     "mr": "प्रत्येक कर्जदात्याला विचारा: 'हा फ्लॅट आहे की कमी होणारा? APR किती?' की फॅक्ट स्टेटमेंटमध्ये APR असायलाच हवा."
+    }
+   ],
+   "cost": {
+    "en": "₹3,500 saved",
+    "hi": "₹3,500 बचे",
+    "mr": "₹3,500 वाचले"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Which loan should her brother take?",
+     "hi": "भाई कौन-सा लोन ले?",
+     "mr": "भावाने कोणते कर्ज घ्यावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Dealer 10% flat, the smaller number",
+       "hi": "डीलर 10% फ़्लैट, छोटा अंक",
+       "mr": "डीलर 10% फ्लॅट, लहान आकडा"
+      },
+      "good": false,
+      "result": {
+       "en": "It costs about ₹3,500 more over two years. The smaller number is the more expensive loan.",
+       "hi": "दो साल में लगभग ₹3,500 ज़्यादा पड़ता है। छोटा अंक ही महँगा लोन है।",
+       "mr": "दोन वर्षांत साधारण ₹3,500 जास्त पडते. लहान आकडाच महाग कर्ज आहे."
+      }
+     },
+     {
+      "text": {
+       "en": "Bank 13% reducing",
+       "hi": "बैंक 13% घटता",
+       "mr": "बँक 13% कमी होणारी"
+      },
+      "good": true,
+      "result": {
+       "en": "Lower total cost, and prepaying actually reduces the interest.",
+       "hi": "कुल लागत कम, और पहले भुगतान से ब्याज सच में घटता है।",
+       "mr": "एकूण खर्च कमी, आणि आधी फेडल्याने व्याज खरोखर कमी होते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Flat rate charges interest on the full loan for the whole term.",
+   "hi": "फ़्लैट दर पूरी अवधि में पूरे लोन पर ब्याज लगाती है।",
+   "mr": "फ्लॅट दर पूर्ण मुदतीत संपूर्ण कर्जावर व्याज लावतो."
+  },
+  {
+   "en": "Reducing balance charges only on what is still owed, so it is cheaper at the same number.",
+   "hi": "घटता बैलेंस केवल बाक़ी रकम पर लगाता है, इसलिए उसी अंक पर सस्ता है।",
+   "mr": "कमी होणारी शिल्लक फक्त थकीत रकमेवर लावते, म्हणून त्याच आकड्यावर स्वस्त."
+  },
+  {
+   "en": "Ask 'flat or reducing?' and compare the APR from the Key Fact Statement.",
+   "hi": "पूछें 'फ़्लैट या घटता?' और की फ़ैक्ट स्टेटमेंट का APR मिलाएँ।",
+   "mr": "विचारा 'फ्लॅट की कमी होणारा?' आणि की फॅक्ट स्टेटमेंटमधील APR तुलना करा."
+  }
+ ],
+ "reviewed": "2026-10"
+}

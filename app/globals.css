@@ -2690,12 +2690,12 @@ h1 { font-weight: 700; }
 @keyframes ch-wave { from { transform: translateY(0); } to { transform: translate(6px, -34px); } }
 
 /* A strip she walks along: left to right, turns, walks back, stops to look at you. */
-.walk-strip { position: relative; height: var(--walk-h, 150px); overflow: hidden; border-radius: var(--r-lg); }
+.walk-strip { position: relative; height: var(--walk-h, 150px); overflow: hidden; border-radius: var(--r-lg); container-type: inline-size; }
 .walk-strip .walker { position: absolute; bottom: 0; left: 0; animation: walk-x var(--walk-time, 16s) ease-in-out infinite; will-change: transform; }
 .walk-strip .walker-flip { animation: walk-flip var(--walk-time, 16s) steps(1, end) infinite; }
 .walk-strip .walker-bob { animation: walk-bob 0.55s ease-in-out infinite; }
-@keyframes walk-x { 0% { transform: translateX(4%); } 38% { transform: translateX(calc(var(--walk-w, 300px) - 100% - 4%)); } 50% { transform: translateX(calc(var(--walk-w, 300px) - 100% - 4%)); } 88% { transform: translateX(4%); } 100% { transform: translateX(4%); } }
-@keyframes walk-flip { 0% { transform: none; } 44% { transform: scaleX(-1); } 94% { transform: none; } }
+@keyframes walk-x { 0%, 6% { transform: translateX(4cqw); } 42%, 56% { transform: translateX(calc(96cqw - 100%)); } 92%, 100% { transform: translateX(4cqw); } }
+@keyframes walk-flip { 0%, 43% { transform: none; } 44%, 93% { transform: scaleX(-1); } 94%, 100% { transform: none; } }
 @keyframes walk-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 @media (prefers-reduced-motion: reduce) {
   .character.alive .ch-figure, .character.alive .ch-eyes, .character.alive .ch-head, .walk-strip .walker, .walk-strip .walker-flip, .walk-strip .walker-bob { animation: none !important; }
@@ -2842,3 +2842,96 @@ h1 { font-weight: 700; }
 .walk-nav .btn-primary { flex: 1; }
 .walk-back { width: 56px; flex: none; padding: 0; }
 @media (prefers-reduced-motion: reduce) { .walk *, .walk { animation: none !important; } }
+
+/* Home: Verena's HUD, and the Saath AI bar. */
+.verena-hud { display: grid; grid-template-columns: 1fr; gap: 0; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); background: var(--surface-1); color: var(--text); text-decoration: none; }
+.verena-hud .walk-strip { --walk-h: 128px; --walk-time: 18s; border-radius: 0; background: linear-gradient(180deg, var(--navy-soft), transparent 70%), var(--surface-2); }
+.verena-hud .walk-strip::after { content: ""; position: absolute; left: 0; right: 0; bottom: 10px; height: 1.5px; background: var(--line-strong); }
+.verena-hud .walker { bottom: 4px; }
+.hud-sky { position: absolute; inset: 0; background-image: radial-gradient(circle at 18% 30%, var(--line) 1.5px, transparent 2px), radial-gradient(circle at 62% 18%, var(--line) 1.5px, transparent 2px), radial-gradient(circle at 84% 40%, var(--line) 1.5px, transparent 2px); }
+.hud-stats { display: grid; gap: 6px; padding: 12px 16px 14px; }
+.hud-name { font-weight: 700; font-size: 1.05rem; }
+.hud-level { display: flex; justify-content: space-between; font-size: 0.92rem; }
+.xp-mini { display: block; height: 8px; border-radius: 99px; background: var(--surface-3); overflow: hidden; }
+.xp-mini span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--navy), var(--text)); transition: width 800ms var(--ease-out); }
+.hud-next { font-size: 0.85rem; }
+.home-ask { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 54px; padding: 0 16px; border-radius: 99px; border: 1px solid var(--line-strong); background: var(--surface-1); color: var(--text-faint); font: inherit; font-size: 1rem; text-align: left; cursor: text; box-shadow: var(--shadow-1); transition: border-color var(--dur-2), box-shadow var(--dur-2); }
+.home-ask span { flex: 1; }
+.home-ask:hover { border-color: var(--text); box-shadow: var(--shadow-2); }
+.home-ask-plus { color: var(--text); }
+.home-suggest { margin-top: -8px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.home-suggest::-webkit-scrollbar { display: none; }
+.home-suggest .suggest-chip { flex: none; display: inline-flex; gap: 6px; align-items: center; }
+
+/* Saath AI: the + menu, attachments, select-to-ask, voice mode. */
+.composer { position: relative; }
+.plus-btn { flex: none; align-self: flex-end; border: 0; }
+.plus-btn.on svg { transform: rotate(45deg); }
+.plus-btn svg { transition: transform var(--dur-2); }
+.plus-ring { width: 20px; height: 20px; border-radius: 50%; background: conic-gradient(var(--text) var(--p), var(--surface-3) 0); }
+.plus-menu { position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 5; display: grid; gap: 2px; width: min(320px, 92vw); padding: 6px; border-radius: 16px; background: var(--surface-1); border: 1px solid var(--line); box-shadow: var(--shadow-2); animation: step-in 200ms var(--ease-out); }
+.plus-menu button { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 0; border-radius: 12px; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; }
+.plus-menu button:hover, .plus-menu button:focus-visible { background: var(--surface-2); }
+.plus-menu button svg { margin-top: 2px; flex: none; }
+.plus-menu span { display: grid; gap: 2px; }
+.plus-menu small { color: var(--text-faint); font-size: 0.8rem; }
+.plus-note { margin: 6px 0 0; }
+.attach-chip { display: flex; align-items: center; gap: 10px; margin: 0 0 8px; padding: 8px 8px 8px 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); max-width: 100%; }
+.attach-chip span { flex: 1; min-width: 0; display: grid; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: 600; font-size: 0.9rem; }
+.attach-chip small { font-weight: 400; color: var(--text-faint); font-size: 0.75rem; }
+.cite-list { max-height: 56vh; overflow-y: auto; }
+.cite-list .item { width: 100%; border: 0; background: transparent; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.select-ask { position: fixed; z-index: 45; transform: translate(-50%, -100%); display: inline-flex; gap: 6px; align-items: center; padding: 8px 12px; border-radius: 99px; border: 0; background: var(--text); color: var(--bg); font: inherit; font-size: 0.85rem; font-weight: 600; box-shadow: var(--shadow-2); cursor: pointer; animation: glow-pop 260ms var(--ease-out); }
+.voice-btn { border: 0; }
+.voice-mode { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; align-content: center; gap: 18px; padding: 24px; text-align: center; color: #f4f5f8; background: radial-gradient(120% 80% at 50% 30%, #1b2f5c 0%, #0b1428 55%, #05070d 100%); animation: fade 220ms var(--ease-out); }
+.voice-orb { position: relative; width: 190px; height: 190px; border: 0; border-radius: 50%; background: transparent; cursor: pointer; display: grid; place-items: center; }
+.orb-core { position: relative; z-index: 2; width: 120px; height: 120px; border-radius: 50%; display: grid; place-items: center; background: radial-gradient(circle at 35% 30%, #ffffff, #9fb5e6 55%, #2c4f96); color: #0b1428; box-shadow: 0 0 60px rgba(143,168,220,0.55); transition: transform 300ms var(--ease-out); }
+.orb-ring { position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.25); }
+.voice-mode.listening .orb-ring { animation: orb-pulse 1.6s ease-out infinite; }
+.voice-mode.listening .r2 { animation-delay: 0.5s; } .voice-mode.listening .r3 { animation-delay: 1s; }
+.voice-mode.thinking .orb-core { animation: orb-think 1.2s ease-in-out infinite; }
+.voice-mode.speaking .orb-core { animation: orb-speak 0.5s ease-in-out infinite alternate; }
+@keyframes orb-pulse { from { transform: scale(0.65); opacity: 0.9; } to { transform: scale(1.25); opacity: 0; } }
+@keyframes orb-think { 0%, 100% { transform: scale(0.94) rotate(0); } 50% { transform: scale(1.02) rotate(8deg); } }
+@keyframes orb-speak { from { transform: scale(0.97); } to { transform: scale(1.07); } }
+.voice-state { margin: 0; font-weight: 700; font-size: 1.1rem; }
+.voice-heard { margin: 0; max-width: 520px; min-height: 3em; color: rgba(255,255,255,0.8); line-height: 1.5; }
+@media (prefers-reduced-motion: reduce) { .voice-mode *, .select-ask { animation: none !important; } }
+
+/* Resume builder */
+.resume-ask { display: grid; gap: 12px; }
+.resume-progress { display: flex; gap: 4px; }
+.resume-progress span { flex: 1; height: 4px; border-radius: 4px; background: var(--surface-3); }
+.resume-progress span.on { background: var(--text); }
+.resume-bubble { display: flex; gap: 10px; align-items: flex-start; font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
+.resume-bubble p { margin: 0; }
+.resume-hint { margin: -4px 0 0; font-style: italic; }
+.resume-answer { min-height: 110px; resize: vertical; }
+.resume-nav { display: flex; gap: 8px; }
+.resume-nav .btn-primary { flex: 1; }
+.resume-busy { display: flex; gap: 12px; align-items: center; }
+.resume-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.resume-actions .btn-primary { grid-column: 1 / -1; }
+.resume-intro { display: grid; gap: 16px; }
+.resume-thumb { max-height: 260px; overflow: hidden; border-radius: 12px; -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent); mask-image: linear-gradient(180deg, #000 70%, transparent); pointer-events: none; }
+.resume-stage { overflow-x: auto; padding: 4px 0 16px; }
+.resume-paper { width: min(100%, 640px); margin: 0 auto; background: #fff; color: #141416; border-radius: 6px; box-shadow: 0 18px 48px rgba(0,0,0,0.18); font-family: Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.45; overflow: hidden; }
+.resume-paper header { background: #14336b; color: #fff; padding: 22px 26px 16px; }
+.resume-paper h2 { margin: 0; font-size: 22px; font-family: inherit; color: #fff; }
+.resume-headline { margin: 4px 0 0; font-size: 13px; }
+.resume-contact { margin: 6px 0 0; font-size: 11px; opacity: 0.9; }
+.resume-paper section { padding: 10px 26px 2px; }
+.resume-paper h3 { margin: 6px 0 6px; padding-bottom: 3px; border-bottom: 1px solid #14336b; color: #14336b; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-family: inherit; }
+.resume-paper p { margin: 0 0 4px; }
+.resume-paper ul { margin: 2px 0 6px; padding-left: 16px; }
+.resume-row { display: flex; justify-content: space-between; gap: 10px; }
+.resume-row span { color: #5a5e66; white-space: nowrap; }
+.resume-detail { color: #5a5e66; }
+.resume-paper footer { padding: 14px 0 12px; text-align: center; color: #9a9ea6; font-size: 9px; }
+.resume-editor { padding: 14px; border-radius: var(--r-lg); background: var(--surface-2); }
+.resume-field { display: grid; gap: 4px; font-size: 0.85rem; color: var(--text-faint); }
+.resume-field input, .resume-field textarea { font: inherit; font-size: 1rem; color: var(--text); background: var(--surface-1); border: 1px solid var(--line-strong); border-radius: 10px; padding: 10px 12px; }
+.resume-group { border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; display: grid; gap: 8px; margin: 0; }
+.resume-group legend { display: flex; align-items: center; gap: 6px; font-weight: 700; padding: 0 4px; }
+.journey-walk { --walk-h: 150px; --walk-time: 20s; background: linear-gradient(180deg, transparent 60%, var(--surface-2)); }
+.journey-walk::after { content: ""; position: absolute; left: 0; right: 0; bottom: 8px; height: 1.5px; background: var(--line-strong); }

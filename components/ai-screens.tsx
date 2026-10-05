@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { ArrowUp, BookOpen, Check, Copy, Eraser, MessageCircle, Mic, Settings, Sparkles, Square } from "lucide-react";
+import { ArrowUp, AudioLines, BookOpen, Check, Copy, Eraser, MessageCircle, Mic, Settings, Sparkles, Square } from "lucide-react";
 import { getProvider, onlineConfigured, providerMode, type AiAnswer, type AiProgress, type AiTurn, type Doc } from "@/lib/ai";
 import { buildDocs } from "@/lib/ai/knowledge";
 import type { Lang } from "@/lib/catalog";
@@ -10,7 +10,8 @@ import { loadJson, type FormsFile, type GlossaryTerm, type StoriesFile } from "@
 import { recommend, weakTopics } from "@/lib/recommend";
 import { canHear, dictate, scriptLang, tap } from "@/lib/speech";
 import { getMeta, setMeta } from "@/lib/storage";
-import { useAi } from "./ai-context";
+import { useAi, type Attachment } from "./ai-context";
+import { AttachmentChip, PlusMenu, VoiceMode } from "./ai-extras";
 import { LogoMark } from "./logo";
 import { useApp } from "./app-state";
 import { usePrefs } from "./prefs";
@@ -202,6 +203,8 @@ function Chat({ compact }: { compact?: boolean }) {
   const talk: Lang = code;
   const [hearing, setHearing] = useState(false);
   const [micNote, setMicNote] = useState<string | null>(null);
+  const [attachment, setAttachment] = useState<Attachment | null>(null);
+  const [voice, setVoice] = useState(false);
   const stopRef = useRef<(() => void) | null>(null);
   const runRef = useRef(0);
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
@@ -247,16 +250,22 @@ function Chat({ compact }: { compact?: boolean }) {
 
   const ask = useCallback(async (question: string, kind: "ask" | "revise" | "summary" = "ask") => {
     const text = question.trim();
-    if (!text || busy) return;
+    if (!text || busy) return null;
     const run = ++runRef.current;
     const before = linesRef.current.filter((line) => !line.retry);
-    const withQuestion: ChatLine[] = [...before, { role: "user", text }];
+    const withQuestion: ChatLine[] = [...before, { role: "user", text: attachment ? `${text}\n📎 ${attachment.title}` : text }];
     setLines(withQuestion);
     setDraft("");
     setBusy(true);
     const history: AiTurn[] = before.slice(-6).map((line) => ({ role: line.role, text: line.text }));
     const replyLang = kind === "ask" ? scriptLang(text, talk) : talk;
-    const request = { lang: replyLang, context: ai.context, progress, history };
+    // An attached document or citation becomes what Saath AI is looking at, instead of the screen behind the chat.
+    const attached = attachment;
+    const context = attached
+      ? { screen: attached.kind === "doc" ? t("ai.plus.attachedDoc") : t("ai.plus.attachedCite"), kind: attached.kind === "doc" ? "form-photo" as const : "lesson" as const, title: attached.title, text: attached.kind === "doc" ? `TEXT READ FROM THE DOCUMENT:\n${attached.text}` : attached.text }
+      : ai.context;
+    if (attached) setAttachment(null);
+    const request = { lang: replyLang, context, progress, history };
     try {
       const answer =
         kind === "revise" ? await provider.recommendRevision(request)
@@ -265,13 +274,15 @@ function Chat({ compact }: { compact?: boolean }) {
       if (run !== runRef.current) return;
       remember([...withQuestion, { role: "saath", text: answer.text, sources: answer.sources, via: answer.via, lang: replyLang }]);
       setFresh(withQuestion.length);
+      return answer.text;
     } catch {
-      if (run !== runRef.current) return;
+      if (run !== runRef.current) return null;
       setLines([...withQuestion, { role: "saath", text: t("ai.error"), retry: text }]);
+      return null;
     } finally {
       if (run === runRef.current) setBusy(false);
     }
-  }, [busy, talk, ai.context, progress, provider, remember, t]);
+  }, [busy, talk, ai.context, attachment, progress, provider, remember, t]);
 
   function stop() {
     tap();
@@ -307,8 +318,11 @@ function Chat({ compact }: { compact?: boolean }) {
   // A question sent from another screen ("Explain this", "Why was I wrong?") is asked as soon as the chat is ready.
   useEffect(() => {
     if (!loaded) return;
+    const handed = ai.takeAttachment();
+    if (handed) setAttachment(handed);
     const pending = ai.takePending();
-    if (pending) void ask(pending);
+    if (pending && !handed) void ask(pending);
+    else if (pending) setDraft(pending);
   }, [loaded, ai, ask]);
 
   function submit(event?: FormEvent) {
@@ -391,7 +405,9 @@ function Chat({ compact }: { compact?: boolean }) {
         </div>
       )}
 
+      {attachment && <AttachmentChip attachment={attachment} onRemove={() => setAttachment(null)} />}
       <form className={`composer${hearing ? " hearing" : ""}`} onSubmit={submit} data-testid="ai-composer">
+        <PlusMenu disabled={busy} onAttach={(item) => { setAttachment(item); if (!draft) setDraft(item.kind === "doc" ? t("ai.plus.askDoc") : t("ai.plus.askCite")); inputRef.current?.focus(); }} />
         <label className="visually-hidden" htmlFor={inputId}>{t("ai.placeholder")}</label>
         <textarea
           ref={inputRef}
@@ -412,6 +428,11 @@ function Chat({ compact }: { compact?: boolean }) {
           data-testid="ai-chat-input"
         />
         <div className="composer-actions">
+          {micOk && !draft.trim() && (
+            <button type="button" className="icon-btn voice-btn" aria-label={t("ai.voice.open")} disabled={busy} onClick={() => { tap(); setVoice(true); }} data-testid="ai-voice-button">
+              <AudioLines aria-hidden size={18} />
+            </button>
+          )}
           {micOk && (
             <button type="button" className={`icon-btn mic${hearing ? " on" : ""}`} aria-label={hearing ? t("ai.micStop") : t("ai.micStart", { lang: LANG_SHORT[talk] })} aria-pressed={hearing} disabled={busy} onClick={listen} data-testid="ai-mic-button">
               {hearing ? <Square aria-hidden size={14} fill="currentColor" /> : <Mic aria-hidden size={18} />}
@@ -429,6 +450,7 @@ function Chat({ compact }: { compact?: boolean }) {
         </div>
       </form>
       {micNote && <p role="status" className="note">{micNote}</p>}
+      {voice && <VoiceMode ask={async (question) => (await ask(question)) ?? null} onClose={() => setVoice(false)} />}
 
       {!busy && (
         <div className="suggest" role="group" aria-label={t("ai.try")} data-testid="ai-suggestions">

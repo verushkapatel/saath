@@ -2,6 +2,76 @@
   "reviewed": "2026-03",
   "chapters": [
     {
+      "id": "first-resume",
+      "stage": "first-job",
+      "topic": "income",
+      "age": 21,
+      "place": "room",
+      "title": {
+        "en": "01 · Verena writes her first resume",
+        "hi": "01 · वेरेना का पहला रिज़्यूमे",
+        "mr": "01 · वेरेनाचा पहिला रेझ्युमे"
+      },
+      "setup": {
+        "en": "Final year of college. A bank is hiring operations trainees and applications close on Friday. Verena opens a blank page and types her name. Then nothing.",
+        "hi": "कॉलेज का आख़िरी साल। एक बैंक ऑपरेशंस ट्रेनी की भर्ती कर रहा है और आवेदन शुक्रवार को बंद होंगे। वेरेना एक ख़ाली पन्ना खोलकर अपना नाम टाइप करती है। फिर कुछ नहीं।",
+        "mr": "कॉलेजचे शेवटचे वर्ष. एक बँक ऑपरेशन्स ट्रेनींची भरती करत आहे आणि अर्ज शुक्रवारी बंद होतात. वेरेना कोरे पान उघडून तिचे नाव टाइप करते. मग काहीच नाही."
+      },
+      "more": {
+        "en": "She lists everything: B.Com, an internship at a CA firm, running the fest budget, tutoring three students, Excel and Tally. A friend says, 'Just copy my resume and change the name, it got me an interview.' His says 'hard-working team player' four times.",
+        "hi": "वह सब लिखती है: B.Com, CA फ़र्म में इंटर्नशिप, फ़ेस्ट का बजट चलाना, तीन छात्रों को ट्यूशन, Excel और Tally। एक दोस्त कहता है, 'बस मेरा रिज़्यूमे कॉपी करके नाम बदल दो, मुझे इससे इंटरव्यू मिला।' उसमें चार बार 'मेहनती टीम खिलाड़ी' लिखा है।",
+        "mr": "ती सगळे लिहिते: B.Com, CA फर्ममध्ये इंटर्नशिप, फेस्टचे बजेट सांभाळणे, तीन विद्यार्थ्यांना शिकवणे, Excel आणि Tally. एक मित्र म्हणतो, 'माझा रेझ्युमे कॉपी करून नाव बदल, मला त्याने मुलाखत मिळाली.' त्यात चार वेळा 'मेहनती संघ खेळाडू' लिहिले आहे."
+      },
+      "action": {
+        "en": "Write one true page: results with numbers, the internship and fest budget first, tailored to the bank role, saved as a clearly named PDF.",
+        "hi": "एक सच्चा पन्ना लिखे: अंकों के साथ नतीजे, इंटर्नशिप और फ़ेस्ट बजट पहले, बैंक की भूमिका के हिसाब से, साफ़ नाम वाली PDF में।",
+        "mr": "एक खरे पान लिहावे: आकड्यांसह परिणाम, इंटर्नशिप आणि फेस्ट बजेट आधी, बँकेच्या भूमिकेनुसार, स्पष्ट नावाच्या PDF मध्ये."
+      },
+      "okay": {
+        "en": "Use a flashy two-page template with a photo, skill bars and every certificate since school.",
+        "hi": "फ़ोटो, स्किल बार और स्कूल से हर प्रमाणपत्र वाला चमकीला दो-पन्ने का टेम्पलेट लगाए।",
+        "mr": "फोटो, कौशल पट्ट्या आणि शाळेपासूनची सर्व प्रमाणपत्रे असलेले भडक दोन पानी टेम्पलेट वापरावे."
+      },
+      "costly": {
+        "en": "Copy the friend's resume, change the name, and add a 'banking software' skill she has never used.",
+        "hi": "दोस्त का रिज़्यूमे कॉपी करे, नाम बदले, और 'बैंकिंग सॉफ़्टवेयर' का कौशल जोड़े जो उसने कभी नहीं चलाया।",
+        "mr": "मित्राचा रेझ्युमे कॉपी करावा, नाव बदलावे, आणि कधीही न वापरलेले 'बँकिंग सॉफ्टवेअर' कौशल्य जोडावे."
+      },
+      "goodOutcome": {
+        "en": "The recruiter calls on Tuesday. In the interview they ask about the ₹18,000 she saved on the fest, and she tells the story easily, because it is true.",
+        "hi": "मंगलवार को रिक्रूटर का फ़ोन आता है। इंटरव्यू में वे फ़ेस्ट पर बचाए ₹18,000 के बारे में पूछते हैं, और वह आराम से बताती है, क्योंकि यह सच है।",
+        "mr": "मंगळवारी रिक्रूटरचा फोन येतो. मुलाखतीत ते फेस्टवर वाचवलेल्या ₹18,000 बद्दल विचारतात, आणि ती सहज सांगते, कारण ते खरे आहे."
+      },
+      "okayOutcome": {
+        "en": "The application goes through, but the screening software reads little from the graphics. She gets one call out of six applications.",
+        "hi": "आवेदन जाता है, पर स्क्रीनिंग सॉफ़्टवेयर ग्राफ़िक्स से कम पढ़ पाता है। छह आवेदनों में से एक फ़ोन आता है।",
+        "mr": "अर्ज जातो, पण स्क्रीनिंग सॉफ्टवेअर ग्राफिक्समधून कमी वाचते. सहा अर्जांपैकी एक फोन येतो."
+      },
+      "costlyOutcome": {
+        "en": "She gets an interview, and the first question is about the banking software. She cannot answer, and the panel stops trusting the rest of the page.",
+        "hi": "उसे इंटरव्यू मिलता है, और पहला सवाल बैंकिंग सॉफ़्टवेयर पर है। वह जवाब नहीं दे पाती, और पैनल बाक़ी पन्ने पर भी भरोसा खो देता है।",
+        "mr": "तिला मुलाखत मिळते, आणि पहिला प्रश्न बँकिंग सॉफ्टवेअरवर असतो. तिला उत्तर देता येत नाही, आणि पॅनेल बाकी पानावरही विश्वास गमावते."
+      },
+      "question": {
+        "en": "Applications close Friday. How should Verena make her resume?",
+        "hi": "आवेदन शुक्रवार को बंद। वेरेना अपना रिज़्यूमे कैसे बनाए?",
+        "mr": "अर्ज शुक्रवारी बंद. वेरेनाने रेझ्युमे कसा करावा?"
+      },
+      "lesson": {
+        "en": "A resume is a true story told in results. One clean page, numbers where you have them, and nothing you cannot explain.",
+        "hi": "रिज़्यूमे नतीजों में कही गई सच्ची कहानी है। एक साफ़ पन्ना, जहाँ हों वहाँ अंक, और ऐसा कुछ नहीं जो समझा न सकें।",
+        "mr": "रेझ्युमे म्हणजे परिणामांतून सांगितलेली खरी गोष्ट. एक स्वच्छ पान, असतील तिथे आकडे, आणि समजावता येणार नाही असे काही नाही."
+      },
+      "sim": {
+        "kind": "inspect"
+      },
+      "delta": {
+        "confidence": 6,
+        "resilience": 2
+      },
+      "guide": "resume"
+    },
+    {
       "id": "first-job",
       "source": "first-job",
       "stage": "first-job",
@@ -9,9 +79,9 @@
       "age": 22,
       "place": "office",
       "title": {
-        "en": "01 · Verena's first job",
-        "hi": "01 · वेरेना की पहली नौकरी",
-        "mr": "01 · वेरेनाची पहिली नोकरी"
+        "en": "02 · Verena's first job",
+        "hi": "02 · वेरेना की पहली नौकरी",
+        "mr": "02 · वेरेनाची पहिली नोकरी"
       },
       "delta": {
         "income": 42000,
@@ -26,9 +96,9 @@
       "age": 22,
       "place": "bank",
       "title": {
-        "en": "02 · Her first bank account",
-        "hi": "02 · उसका पहला बैंक खाता",
-        "mr": "02 · तिचे पहिले बँक खाते"
+        "en": "03 · Her first bank account",
+        "hi": "03 · उसका पहला बैंक खाता",
+        "mr": "03 · तिचे पहिले बँक खाते"
       },
       "setup": {
         "en": "Verena's employer needs an account for salary. At the branch she sees account types, KYC fields, an IFSC code and a debit-card form.",
@@ -98,9 +168,9 @@
       "age": 22,
       "place": "room",
       "title": {
-        "en": "03 · First month's pay",
-        "hi": "03 · पहले महीने का वेतन",
-        "mr": "03 · पहिल्या महिन्याचा पगार"
+        "en": "04 · First month's pay",
+        "hi": "04 · पहले महीने का वेतन",
+        "mr": "04 · पहिल्या महिन्याचा पगार"
       },
       "delta": {
         "cash": 42000,
@@ -117,9 +187,9 @@
       "age": 23,
       "place": "room",
       "title": {
-        "en": "04 · The first bad spending decision",
-        "hi": "04 · खर्च का पहला गलत फ़ैसला",
-        "mr": "04 · खर्चाचा पहिला चुकीचा निर्णय"
+        "en": "05 · The first bad spending decision",
+        "hi": "05 · खर्च का पहला गलत फ़ैसला",
+        "mr": "05 · खर्चाचा पहिला चुकीचा निर्णय"
       },
       "delta": {
         "confidence": 2
@@ -134,9 +204,9 @@
       "age": 23,
       "place": "room",
       "title": {
-        "en": "05 · Building an emergency fund",
-        "hi": "05 · आपात निधि बनाना",
-        "mr": "05 · आणीबाणी निधी उभा करणे"
+        "en": "06 · Building an emergency fund",
+        "hi": "06 · आपात निधि बनाना",
+        "mr": "06 · आणीबाणी निधी उभा करणे"
       },
       "delta": {
         "emergency": 18000,
@@ -152,9 +222,9 @@
       "age": 24,
       "place": "office",
       "title": {
-        "en": "06 · Her first insurance decision",
-        "hi": "06 · बीमा का पहला फ़ैसला",
-        "mr": "06 · विम्याचा पहिला निर्णय"
+        "en": "07 · Her first insurance decision",
+        "hi": "07 · बीमा का पहला फ़ैसला",
+        "mr": "07 · विम्याचा पहिला निर्णय"
       },
       "delta": {
         "insurance": 25,
@@ -169,9 +239,9 @@
       "age": 24,
       "place": "home",
       "title": {
-        "en": "07 · Government benefits and eligibility",
-        "hi": "07 · सरकारी लाभ और पात्रता",
-        "mr": "07 · सरकारी लाभ आणि पात्रता"
+        "en": "08 · Government benefits and eligibility",
+        "hi": "08 · सरकारी लाभ और पात्रता",
+        "mr": "08 · सरकारी लाभ आणि पात्रता"
       },
       "setup": {
         "en": "A colleague sends Verena a scheme poster. It promises quick approval, but gives no department, date or official link.",
@@ -240,9 +310,9 @@
       "age": 25,
       "place": "cafe",
       "title": {
-        "en": "08 · Her first financial goal",
-        "hi": "08 · उसका पहला आर्थिक लक्ष्य",
-        "mr": "08 · तिचे पहिले आर्थिक लक्ष्य"
+        "en": "09 · Her first financial goal",
+        "hi": "09 · उसका पहला आर्थिक लक्ष्य",
+        "mr": "09 · तिचे पहिले आर्थिक लक्ष्य"
       },
       "setup": {
         "en": "Verena wants to fund a professional course in eighteen months. The fee is clear, but travel and study materials also matter.",
@@ -318,9 +388,9 @@
       "age": 25,
       "place": "room",
       "title": {
-        "en": "09 · Tracking everyday spending",
-        "hi": "09 · रोज़मर्रा के खर्च का हिसाब",
-        "mr": "09 · रोजच्या खर्चाची नोंद"
+        "en": "10 · Tracking everyday spending",
+        "hi": "10 · रोज़मर्रा के खर्च का हिसाब",
+        "mr": "10 · रोजच्या खर्चाची नोंद"
       },
       "setup": {
         "en": "Small payments keep disappearing from Verena's account. None looks serious alone, but together they are larger than her electricity bill.",
@@ -391,9 +461,9 @@
       "age": 25,
       "place": "cafe",
       "title": {
-        "en": "10 · The receipt",
-        "hi": "10 · रसीद",
-        "mr": "10 · पावती"
+        "en": "11 · The receipt",
+        "hi": "11 · रसीद",
+        "mr": "11 · पावती"
       },
       "setup": {
         "en": "A long receipt mixes item prices, tax, a service charge and a discount. Verena wants to know what she actually paid and why.",
@@ -461,9 +531,9 @@
       "age": 26,
       "place": "room",
       "title": {
-        "en": "11 · The subscription trap",
-        "hi": "11 · सब्सक्रिप्शन का जाल",
-        "mr": "11 · सबस्क्रिप्शनचा सापळा"
+        "en": "12 · The subscription trap",
+        "hi": "12 · सब्सक्रिप्शन का जाल",
+        "mr": "12 · सबस्क्रिप्शनचा सापळा"
       },
       "setup": {
         "en": "Three free trials became monthly charges. Verena uses one often, one sometimes and has forgotten the third completely.",
@@ -533,9 +603,9 @@
       "age": 26,
       "place": "home",
       "title": {
-        "en": "12 · Rent versus lifestyle",
-        "hi": "12 · किराया बनाम जीवनशैली",
-        "mr": "12 · भाडे विरुद्ध जीवनशैली"
+        "en": "13 · Rent versus lifestyle",
+        "hi": "13 · किराया बनाम जीवनशैली",
+        "mr": "13 · भाडे विरुद्ध जीवनशैली"
       },
       "setup": {
         "en": "A brighter flat cuts Verena's commute, but the rent and deposit would slow her emergency fund for a year.",
@@ -607,9 +677,9 @@
       "age": 27,
       "place": "cafe",
       "title": {
-        "en": "13 · Her first small investment",
-        "hi": "13 · उसका पहला छोटा निवेश",
-        "mr": "13 · तिची पहिली छोटी गुंतवणूक"
+        "en": "14 · Her first small investment",
+        "hi": "14 · उसका पहला छोटा निवेश",
+        "mr": "14 · तिची पहिली छोटी गुंतवणूक"
       },
       "delta": {
         "investments": 18000,
@@ -624,9 +694,9 @@
       "age": 27,
       "place": "room",
       "title": {
-        "en": "14 · Market fall",
-        "hi": "14 · बाज़ार में गिरावट",
-        "mr": "14 · बाजारातील घसरण"
+        "en": "15 · Market fall",
+        "hi": "15 · बाज़ार में गिरावट",
+        "mr": "15 · बाजारातील घसरण"
       },
       "setup": {
         "en": "Verena's diversified investment falls soon after she starts. A group chat says to sell everything before it gets worse.",
@@ -703,9 +773,9 @@
       "age": 28,
       "place": "home",
       "title": {
-        "en": "15 · A financial scam",
-        "hi": "15 · आर्थिक ठगी",
-        "mr": "15 · आर्थिक फसवणूक"
+        "en": "16 · A financial scam",
+        "hi": "16 · आर्थिक ठगी",
+        "mr": "16 · आर्थिक फसवणूक"
       },
       "delta": {
         "confidence": 5,
@@ -720,9 +790,9 @@
       "age": 28,
       "place": "home",
       "title": {
-        "en": "16 · The consequences of a mistake",
-        "hi": "16 · गलती के नतीजे",
-        "mr": "16 · चुकीचे परिणाम"
+        "en": "17 · The consequences of a mistake",
+        "hi": "17 · गलती के नतीजे",
+        "mr": "17 · चुकीचे परिणाम"
       },
       "setup": {
         "en": "Verena clicked the message but stopped before sharing an OTP. She now needs to secure the account and understand every warning sign she missed.",
@@ -790,9 +860,9 @@
       "age": 29,
       "place": "home",
       "title": {
-        "en": "17 · An unexpected medical expense",
-        "hi": "17 · अचानक चिकित्सा खर्च",
-        "mr": "17 · अचानक वैद्यकीय खर्च"
+        "en": "18 · An unexpected medical expense",
+        "hi": "18 · अचानक चिकित्सा खर्च",
+        "mr": "18 · अचानक वैद्यकीय खर्च"
       },
       "setup": {
         "en": "A medical bill arrives on a Sunday. Verena has some emergency savings and insurance, but the hospital asks for immediate payment.",
@@ -862,9 +932,9 @@
       "age": 30,
       "place": "room",
       "title": {
-        "en": "18 · Money is tight",
-        "hi": "18 · पैसों की तंगी",
-        "mr": "18 · पैशांची चणचण"
+        "en": "19 · Money is tight",
+        "hi": "19 · पैसों की तंगी",
+        "mr": "19 · पैशांची चणचण"
       },
       "setup": {
         "en": "A repair and a family visit land in the same month. For the first time, Verena's planned expenses are above her income.",
@@ -936,9 +1006,9 @@
       "age": 31,
       "place": "bank",
       "title": {
-        "en": "19 · Verena needs a loan",
-        "hi": "19 · वेरेना को लोन चाहिए",
-        "mr": "19 · वेरेनाला कर्ज हवे आहे"
+        "en": "20 · Verena needs a loan",
+        "hi": "20 · वेरेना को लोन चाहिए",
+        "mr": "20 · वेरेनाला कर्ज हवे आहे"
       },
       "delta": {
         "cash": 240000,
@@ -954,9 +1024,9 @@
       "age": 31,
       "place": "cafe",
       "title": {
-        "en": "20 · The bad loan offer",
-        "hi": "20 · खराब लोन ऑफ़र",
-        "mr": "20 · वाईट कर्ज ऑफर"
+        "en": "21 · The bad loan offer",
+        "hi": "21 · खराब लोन ऑफ़र",
+        "mr": "21 · वाईट कर्ज ऑफर"
       },
       "setup": {
         "en": "A lender advertises a tiny monthly payment. The processing fee, flat rate and late charge are hidden in smaller text.",
@@ -1032,9 +1102,9 @@
       "age": 32,
       "place": "room",
       "title": {
-        "en": "21 · Loan repayment",
-        "hi": "21 · लोन की चुकौती",
-        "mr": "21 · कर्जाची परतफेड"
+        "en": "22 · Loan repayment",
+        "hi": "22 · लोन की चुकौती",
+        "mr": "22 · कर्जाची परतफेड"
       },
       "setup": {
         "en": "The first EMI is due beside rent, groceries and savings. Verena sees how debt narrows every later choice.",
@@ -1105,9 +1175,9 @@
       "age": 33,
       "place": "home",
       "title": {
-        "en": "22 · Job loss",
-        "hi": "22 · नौकरी छूटना",
-        "mr": "22 · नोकरी जाणे"
+        "en": "23 · Job loss",
+        "hi": "23 · नौकरी छूटना",
+        "mr": "23 · नोकरी जाणे"
       },
       "setup": {
         "en": "Verena's role is removed without warning. The next salary will not come, but rent and the EMI still will.",
@@ -1179,9 +1249,9 @@
       "age": 34,
       "place": "office",
       "title": {
-        "en": "23 · Recovery",
-        "hi": "23 · फिर से संभलना",
-        "mr": "23 · पुन्हा उभे राहणे"
+        "en": "24 · Recovery",
+        "hi": "24 · फिर से संभलना",
+        "mr": "24 · पुन्हा उभे राहणे"
       },
       "setup": {
         "en": "A new job arrives after four difficult months. The salary is higher, but the emergency fund is almost empty.",
@@ -1253,9 +1323,9 @@
       "age": 34,
       "place": "office",
       "title": {
-        "en": "24 · A sophisticated fraud attempt",
-        "hi": "24 · एक चालाक धोखाधड़ी",
-        "mr": "24 · एक हुशार फसवणूक प्रयत्न"
+        "en": "25 · A sophisticated fraud attempt",
+        "hi": "25 · एक चालाक धोखाधड़ी",
+        "mr": "25 · एक हुशार फसवणूक प्रयत्न"
       },
       "setup": {
         "en": "A caller knows Verena's employer and recent purchase. They create urgency, then ask her to install a support app.",
@@ -1323,9 +1393,9 @@
       "age": 35,
       "place": "rooftop",
       "title": {
-        "en": "25 · Financial reset",
-        "hi": "25 · आर्थिक रीसेट",
-        "mr": "25 · आर्थिक पुनर्रचना"
+        "en": "26 · Financial reset",
+        "hi": "26 · आर्थिक रीसेट",
+        "mr": "26 · आर्थिक पुनर्रचना"
       },
       "setup": {
         "en": "Verena pauses to review thirteen years of choices: what protected her, what cost more than expected and what still feels fragile.",
@@ -1394,9 +1464,9 @@
       "age": 36,
       "place": "office",
       "title": {
-        "en": "26 · Career growth",
-        "hi": "26 · करियर में बढ़त",
-        "mr": "26 · करिअरमधील वाढ"
+        "en": "27 · Career growth",
+        "hi": "27 · करियर में बढ़त",
+        "mr": "27 · करिअरमधील वाढ"
       },
       "delta": {
         "income": 18000,
@@ -1412,9 +1482,9 @@
       "age": 37,
       "place": "home",
       "title": {
-        "en": "27 · Moving to a new home",
-        "hi": "27 · नए घर में जाना",
-        "mr": "27 · नव्या घरात जाणे"
+        "en": "28 · Moving to a new home",
+        "hi": "28 · नए घर में जाना",
+        "mr": "28 · नव्या घरात जाणे"
       },
       "setup": {
         "en": "A new home offers space and a shorter commute. It also brings a deposit, moving costs and higher utilities.",
@@ -1486,9 +1556,9 @@
       "age": 38,
       "place": "home",
       "title": {
-        "en": "28 · Family finances",
-        "hi": "28 · परिवार के पैसे",
-        "mr": "28 · कुटुंबाचे पैसे"
+        "en": "29 · Family finances",
+        "hi": "29 · परिवार के पैसे",
+        "mr": "29 · कुटुंबाचे पैसे"
       },
       "delta": {
         "confidence": 5,
@@ -1503,9 +1573,9 @@
       "age": 39,
       "place": "home",
       "title": {
-        "en": "29 · Insurance review",
-        "hi": "29 · बीमा की समीक्षा",
-        "mr": "29 · विम्याचा आढावा"
+        "en": "30 · Insurance review",
+        "hi": "30 · बीमा की समीक्षा",
+        "mr": "30 · विम्याचा आढावा"
       },
       "setup": {
         "en": "Verena now shares a home and supports another person. The cover she bought at twenty-four may no longer match the risk.",
@@ -1574,9 +1644,9 @@
       "age": 39,
       "place": "office",
       "title": {
-        "en": "30 · Taxes",
-        "hi": "30 · कर",
-        "mr": "30 · कर"
+        "en": "31 · Taxes",
+        "hi": "31 · कर",
+        "mr": "31 · कर"
       },
       "setup": {
         "en": "Verena receives salary and tax documents with unfamiliar labels. She needs to understand what they record without guessing current rules.",
@@ -1644,9 +1714,9 @@
       "age": 40,
       "place": "home",
       "title": {
-        "en": "31 · Important documents",
-        "hi": "31 · ज़रूरी दस्तावेज़",
-        "mr": "31 · महत्त्वाची कागदपत्रे"
+        "en": "32 · Important documents",
+        "hi": "32 · ज़रूरी दस्तावेज़",
+        "mr": "32 · महत्त्वाची कागदपत्रे"
       },
       "setup": {
         "en": "A claim is delayed because a document is hard to find. Verena decides her financial papers need a simple system.",
@@ -1714,9 +1784,9 @@
       "age": 40,
       "place": "home",
       "title": {
-        "en": "32 · The government form",
-        "hi": "32 · सरकारी फ़ॉर्म",
-        "mr": "32 · सरकारी अर्ज"
+        "en": "33 · The government form",
+        "hi": "33 · सरकारी फ़ॉर्म",
+        "mr": "33 · सरकारी अर्ज"
       },
       "setup": {
         "en": "An application asks for identity, address, eligibility details and supporting documents. One unofficial agent offers to fill it for a fee.",
@@ -1784,9 +1854,9 @@
       "age": 41,
       "place": "bank",
       "title": {
-        "en": "33 · KYC",
-        "hi": "33 · KYC",
-        "mr": "33 · KYC"
+        "en": "34 · KYC",
+        "hi": "34 · KYC",
+        "mr": "34 · KYC"
       },
       "setup": {
         "en": "A financial institution asks Verena to update identity and address details. A message link looks convenient but the domain is unfamiliar.",
@@ -1854,9 +1924,9 @@
       "age": 41,
       "place": "bank",
       "title": {
-        "en": "34 · A gold-loan decision",
-        "hi": "34 · गोल्ड लोन का फ़ैसला",
-        "mr": "34 · सोने कर्जाचा निर्णय"
+        "en": "35 · A gold-loan decision",
+        "hi": "35 · गोल्ड लोन का फ़ैसला",
+        "mr": "35 · सोने कर्जाचा निर्णय"
       },
       "setup": {
         "en": "A family expense makes a gold loan look fast. Verena must weigh the lower secured rate against the risk of losing the collateral.",
@@ -1934,9 +2004,9 @@
       "age": 42,
       "place": "home",
       "title": {
-        "en": "35 · Having a child",
-        "hi": "35 · बच्चे का जन्म",
-        "mr": "35 · मूल होणे"
+        "en": "36 · Having a child",
+        "hi": "36 · बच्चे का जन्म",
+        "mr": "36 · मूल होणे"
       },
       "delta": {
         "dependents": 1,
@@ -1952,9 +2022,9 @@
       "age": 44,
       "place": "home",
       "title": {
-        "en": "36 · Education planning",
-        "hi": "36 · शिक्षा की योजना",
-        "mr": "36 · शिक्षणाचे नियोजन"
+        "en": "37 · Education planning",
+        "hi": "37 · शिक्षा की योजना",
+        "mr": "37 · शिक्षणाचे नियोजन"
       },
       "delta": {
         "investments": 120000,
@@ -1969,9 +2039,9 @@
       "age": 46,
       "place": "home",
       "title": {
-        "en": "37 · A family emergency",
-        "hi": "37 · परिवार की आपात स्थिति",
-        "mr": "37 · कुटुंबातील आणीबाणी"
+        "en": "38 · A family emergency",
+        "hi": "38 · परिवार की आपात स्थिति",
+        "mr": "38 · कुटुंबातील आणीबाणी"
       },
       "setup": {
         "en": "A parent needs urgent support while Verena is rebuilding savings. Care, cash flow and long-term stability pull in different directions.",
@@ -2043,9 +2113,9 @@
       "age": 47,
       "place": "cafe",
       "title": {
-        "en": "38 · Helping a relative",
-        "hi": "38 · रिश्तेदार की मदद",
-        "mr": "38 · नातेवाईकाला मदत"
+        "en": "39 · Helping a relative",
+        "hi": "39 · रिश्तेदार की मदद",
+        "mr": "39 · नातेवाईकाला मदत"
       },
       "setup": {
         "en": "A relative asks Verena for money and promises to return it soon. She wants to help without risking rent or the relationship.",
@@ -2116,9 +2186,9 @@
       "age": 49,
       "place": "office",
       "title": {
-        "en": "39 · Long-term investing",
-        "hi": "39 · दीर्घकालिक निवेश",
-        "mr": "39 · दीर्घकालीन गुंतवणूक"
+        "en": "40 · Long-term investing",
+        "hi": "40 · दीर्घकालिक निवेश",
+        "mr": "40 · दीर्घकालीन गुंतवणूक"
       },
       "setup": {
         "en": "With steadier finances, Verena can invest regularly. She still needs to balance growth, volatility, time and diversification.",
@@ -2194,9 +2264,9 @@
       "age": 51,
       "place": "home",
       "title": {
-        "en": "40 · Financial security",
-        "hi": "40 · आर्थिक सुरक्षा",
-        "mr": "40 · आर्थिक सुरक्षितता"
+        "en": "41 · Financial security",
+        "hi": "41 · आर्थिक सुरक्षा",
+        "mr": "41 · आर्थिक सुरक्षितता"
       },
       "setup": {
         "en": "Verena now has emergency savings, manageable debt, insurance, investments and organised documents. The pieces finally support one another.",
@@ -2266,9 +2336,9 @@
       "age": 53,
       "place": "garden",
       "title": {
-        "en": "41 · Thinking about retirement",
-        "hi": "41 · सेवानिवृत्ति के बारे में सोचना",
-        "mr": "41 · निवृत्तीचा विचार"
+        "en": "42 · Thinking about retirement",
+        "hi": "42 · सेवानिवृत्ति के बारे में सोचना",
+        "mr": "42 · निवृत्तीचा विचार"
       },
       "setup": {
         "en": "Retirement is no longer abstract. Verena lists future expenses, possible income sources and the years her money may need to last.",
@@ -2344,9 +2414,9 @@
       "age": 55,
       "place": "home",
       "title": {
-        "en": "42 · The retirement plan",
-        "hi": "42 · सेवानिवृत्ति योजना",
-        "mr": "42 · निवृत्ती योजना"
+        "en": "43 · The retirement plan",
+        "hi": "43 · सेवानिवृत्ति योजना",
+        "mr": "43 · निवृत्ती योजना"
       },
       "setup": {
         "en": "Verena turns the retirement idea into a simple educational plan: likely expenses, a buffer, income sources and a review date.",
@@ -2422,9 +2492,9 @@
       "age": 59,
       "place": "home",
       "title": {
-        "en": "43 · A late-life financial shock",
-        "hi": "43 · जीवन के बाद के दौर का झटका",
-        "mr": "43 · आयुष्याच्या उत्तरार्धातील आर्थिक धक्का"
+        "en": "44 · A late-life financial shock",
+        "hi": "44 · जीवन के बाद के दौर का झटका",
+        "mr": "44 · आयुष्याच्या उत्तरार्धातील आर्थिक धक्का"
       },
       "setup": {
         "en": "A major home repair arrives just before retirement. Verena must protect liquidity without dismantling the whole long-term plan.",
@@ -2496,9 +2566,9 @@
       "age": 62,
       "place": "garden",
       "title": {
-        "en": "44 · Retirement",
-        "hi": "44 · सेवानिवृत्ति",
-        "mr": "44 · निवृत्ती"
+        "en": "45 · Retirement",
+        "hi": "45 · सेवानिवृत्ति",
+        "mr": "45 · निवृत्ती"
       },
       "delta": {
         "income": 35000,
@@ -2514,9 +2584,9 @@
       "age": 63,
       "place": "garden",
       "title": {
-        "en": "45 · Verena looks back",
-        "hi": "45 · वेरेना पीछे मुड़कर देखती है",
-        "mr": "45 · वेरेना मागे वळून पाहते"
+        "en": "46 · Verena looks back",
+        "hi": "46 · वेरेना पीछे मुड़कर देखती है",
+        "mr": "46 · वेरेना मागे वळून पाहते"
       },
       "setup": {
         "en": "Verena compares her first offer letter with the life she built. The transformation came from many imperfect decisions, corrected over time.",

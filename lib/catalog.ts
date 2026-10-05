@@ -15,7 +15,6 @@ export const UNIT_PATH: Record<Unit, string> = {
 
 /** Lessons, in syllabus order. The unit of each lesson is stored on the lesson in content/guide.json. */
 export const LESSON_IDS = [
-  // Handling your own money
   "budget",
   "needs-wants",
   "pay-yourself",
@@ -23,19 +22,18 @@ export const LESSON_IDS = [
   "subscription-traps",
   "lending-friends",
   "emergency-fund",
-  // Your bank and your paperwork
   "first-bank-account",
   "bank-charges",
   "money-missing",
   "why-pan",
   "payment-proof",
   "credit-score",
+  "choosing-card",
   "upi-safety",
   "otp-pin",
   "tax-basics",
   "what-insurance",
   "health-cover",
-  // Borrowing and staying safe
   "pay-later",
   "guarantor",
   "what-interest",
@@ -50,13 +48,12 @@ export const LESSON_IDS = [
   "scam-calls",
   "job-scams",
   "double-money",
-  // How money works
   "inflation",
   "simple-compound",
   "what-sip",
   "where-savings",
   "who-keeps-safe",
-  // Added for the life story: income, paperwork, family, schemes and retirement
+  "resume",
   "salary-slip",
   "kyc-basics",
   "nominee-matters",
@@ -152,6 +149,7 @@ export type StageId = (typeof STAGE_IDS)[number];
 
 /** The complete Verena journey, in narrative order. */
 export const CHAPTER_IDS = [
+  "first-resume",
   "first-job", "first-bank-account", "first-income", "early-adulthood", "saving", "insurance", "government-benefits", "first-goal", "tracking-spending", "receipt",
   "subscription-trap", "rent-lifestyle", "investing", "market-fall", "financial-security", "scam-consequences", "medical-expense", "money-tight", "borrowing", "bad-loan-offer",
   "loan-repayment", "job-loss", "recovery", "fraud-attempt", "financial-reset", "budgeting", "moving-home", "family-finances", "insurance-review", "taxes",

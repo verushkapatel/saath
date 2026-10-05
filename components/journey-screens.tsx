@@ -13,6 +13,8 @@ import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { StoryTabs } from "./story-tabs";
 import { Character, type Mood } from "./character";
+import { WalkCard, WalkPlayer, useWalk } from "./walkthrough";
+import { verenaAt } from "@/lib/verena";
 import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
@@ -88,8 +90,8 @@ export function JourneyScreen() {
       </div>
 
       <section className="card hero journey-hero">
-        <div className="stage">
-          <Character look={look} age={story.age || 19} size={160} label={t("journey.figure", { name: journey.name[code], age: story.age })} />
+        <div className="walk-strip journey-walk" role="img" aria-label={t("journey.figure", { name: journey.name[code], age: app.verena.age })}>
+          <div className="walker"><div className="walker-flip"><div className="walker-bob"><Character look={app.verena} age={app.verena.age} size={130} bare alive /></div></div></div>
         </div>
         <div className="stack-sm">
           <p className="kicker">{story.stage?.title[code]} · {t("journey.age", { age: story.age })}</p>
@@ -332,7 +334,7 @@ function StoryPlayer({ episode, look, name, onDone }: { episode: Episode; look: 
         {lines.map((_, index) => <li key={index} className={index < at ? "was" : index === at ? "on" : undefined}><i /></li>)}
       </ol>
       <div className="story-stage">
-        <Character look={{ ...look, place: episode.place }} age={episode.age} size={230} mood={mood} label={t("journey.figure", { name, age: episode.age })} />
+        <Character look={{ ...look, place: episode.place }} age={episode.age} size={230} mood={mood} label={t("journey.figure", { name, age: episode.age })} alive />
         <button type="button" className="story-tap back" onClick={back} aria-label={t("common.back")} disabled={at === 0} />
         <button type="button" className="story-tap fwd" onClick={next} aria-label={t("common.next")} />
       </div>
@@ -354,6 +356,19 @@ const STEPS = ["story", "slip", "sim", "decide", "outcome", "why", "drill", "don
 type Step = (typeof STEPS)[number];
 
 /** One episode, played as a loop: story, slip, try it, decide, see what follows, why, two questions, XP. */
+/** The step-by-step simulation behind a chapter: live the real process Verena just faced. */
+function ChapterWalk({ guideId }: { guideId: string }) {
+  const walk = useWalk(guideId);
+  const [open, setOpen] = useState(false);
+  if (!walk || walk === "missing") return null;
+  return (
+    <>
+      <WalkCard walk={walk} onOpen={() => setOpen(true)} />
+      {open && <WalkPlayer walk={walk} onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
 export function EpisodeScreen({ id }: { id: string }) {
   const { t, code } = useI18n();
   const app = useApp();
@@ -419,8 +434,9 @@ export function EpisodeScreen({ id }: { id: string }) {
   }
 
   const stage = journey.stages.find((item) => item.id === episode.stage);
-  const look = safeLook({ progress, streak: streak.count });
   const index = journey.episodes.findIndex((item) => item.id === episode.id);
+  // Every chapter dresses Verena differently, so the story itself shows her changing as life goes on.
+  const look = verenaAt(index * 2 + 1, journey.episodes.length * 2);
   const before = moneyAfter(journey, Object.fromEntries(Object.entries(progress.journey).filter(([key]) => journey.episodes.findIndex((item) => item.id === key) < index)));
   const option = choice !== null ? episode.options[choice] : null;
   const drillRight = drill.filter((pick, at) => pick !== null && pick === episode.drill[at].answer).length;
@@ -556,6 +572,7 @@ export function EpisodeScreen({ id }: { id: string }) {
               </ul>
             </div>
           )}
+          {episode.guides[0] && <ChapterWalk guideId={episode.guides[0]} />}
           <button type="button" className="btn btn-ghost" onClick={() => { tap(); ai.openAsk(t("journey.askWhy")); }}>
             <MessageCircle aria-hidden size={18} />{t("journey.askSaath")}
           </button>

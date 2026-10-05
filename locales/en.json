@@ -102,7 +102,8 @@
       "stale": "You read this a while ago.",
       "next": "Next unread guide.",
       "ahead": "Useful for the next part of the story."
-    }
+    },
+    "askBar": "Ask Saath AI anything…"
   },
   "scan": {
     "title": "Scan a document",
@@ -1331,7 +1332,42 @@
     "micStop": "Stop listening",
     "micBlocked": "The microphone is blocked. Allow it for this site in your browser settings, then try again.",
     "micNothing": "Nothing was heard. Tap the microphone and speak a little closer.",
-    "micFailed": "Voice input is not available right now. You can type instead."
+    "micFailed": "Voice input is not available right now. You can type instead.",
+    "askThis": "Ask Saath AI",
+    "selectAsk": "Explain this part simply: \"{text}\"",
+    "plus": {
+      "label": "Add a document, photo or citation",
+      "upload": "Upload a photo or document",
+      "uploadSub": "Read on your phone; only the words are used",
+      "camera": "Take a photo",
+      "cameraSub": "A form, a bill, a letter, a screen",
+      "cite": "Cite something in Saath",
+      "citeSub": "A guide, a story chapter or a form",
+      "citeSearch": "Search guides, chapters, forms",
+      "kind": {
+        "guide": "Guide",
+        "chapter": "Story",
+        "form": "Form"
+      },
+      "reading": "Reading the document… {share}%",
+      "unreadable": "Could not read words in that file. Try a clearer, well-lit photo.",
+      "wrongType": "Please add a photo (JPG, PNG) or a text file.",
+      "photo": "Photo",
+      "attachedDoc": "Your document",
+      "attachedCite": "From Saath",
+      "askDoc": "Explain this document to me, part by part.",
+      "askCite": "Explain this more simply, with a real example."
+    },
+    "voice": {
+      "open": "Voice mode",
+      "title": "Talk to Saath AI",
+      "listening": "Listening…",
+      "thinking": "Thinking…",
+      "speaking": "Speaking · tap to interrupt",
+      "idle": "Tap to talk",
+      "tap": "Tap the circle and speak",
+      "unsupported": "This browser cannot listen. Try Chrome on Android or Safari on iPhone."
+    }
   },
   "prog": {
     "kicker": "Your progress",
@@ -1770,5 +1806,83 @@
     "chooseFirst": "Make a choice first",
     "toEnd": "See what to remember",
     "next": "Next"
+  },
+  "hud": {
+    "label": "Verena, age {age}. Level {level}. Open your progress.",
+    "name": "Verena, {age}",
+    "next": "{left} steps to retirement · every guide or chapter changes her",
+    "done": "She made it to retirement with you.",
+    "era": {
+      "child": "Childhood",
+      "teen": "Teens",
+      "student": "College",
+      "young": "First jobs",
+      "adult": "Family years",
+      "middle": "Middle years",
+      "senior": "Silver years"
+    }
+  },
+  "resume": {
+    "kicker": "Saath AI · Resume builder",
+    "title": "Your resume, written with you",
+    "lead": "Answer ten short questions. Saath AI fills the template, you check it, and download a PDF.",
+    "backGuide": "Resume guide",
+    "how": "Write the way you talk. Lists, half sentences and Hinglish are fine. Saath AI turns it into clean resume lines and never adds anything you did not say.",
+    "start": "Build my resume with Saath AI",
+    "privacy": "Your answers stay on this device. Only the text, with ID numbers masked, is sent to write the resume.",
+    "qOf": "Question {n} of {total}",
+    "skip": "Skip",
+    "build": "Write my resume",
+    "writing": "Saath AI is writing your resume…",
+    "viaOnline": "Written by Saath AI from your answers. Check every line; it must all be true.",
+    "viaDevice": "Saath AI is offline, so your answers were placed in the template as written. Edit to polish them.",
+    "download": "Download PDF",
+    "edit": "Edit",
+    "doneEditing": "Done editing",
+    "again": "Answer again",
+    "addJob": "Add a role",
+    "remove": "Remove",
+    "askImprove": "How can I make my resume stronger?",
+    "askInterview": "What will they ask me in the interview?",
+    "f": {
+      "name": "Full name",
+      "headline": "Role you want",
+      "contact": "City · email · phone · link",
+      "summary": "Summary (2 lines)",
+      "job": "Experience {n}",
+      "edu": "Education {n}",
+      "title": "Title",
+      "place": "Organisation",
+      "dates": "Dates",
+      "detail": "Marks or detail",
+      "bullets": "Points (one per line)",
+      "skills": "Skills (commas)",
+      "certs": "Certifications (one per line)",
+      "languages": "Languages (commas)"
+    },
+    "q": {
+      "name": "What is your full name, as you want it on the resume?",
+      "contact": "Your city, email and phone. Add a LinkedIn or portfolio link if you have one.",
+      "role": "Which job or kind of role are you applying for?",
+      "education": "Your education: degree or class, college or school, years, and marks if good.",
+      "experience": "Any jobs, internships, part-time or family business work? What did you do there?",
+      "projects": "Projects, college activities, volunteering or things you organised?",
+      "achievements": "Anything you achieved with a number? Saved money, grew something, won something.",
+      "skills": "Your skills: software, tools, and things you are good at.",
+      "certifications": "Any certificates or courses?",
+      "languages": "Which languages can you speak and write?"
+    },
+    "h": {
+      "name": "Example: Verena D'Souza",
+      "contact": "Pune · verena.dsouza@email.com · 98xxxxxx21",
+      "role": "Operations trainee at a bank, or sales associate, or junior accountant",
+      "education": "B.Com, Pune University, 2023–2026, 8.1 CGPA (one per line)",
+      "experience": "Intern, CA firm, 2025: checked GST bills, reconciled 140 entries in Excel",
+      "projects": "Fest finance head: managed ₹4.2 lakh budget for 30 volunteers",
+      "achievements": "Finished the fest ₹18,000 under budget; 3 students I tutored improved by 15+ marks",
+      "skills": "Excel, Tally, customer handling, presentations",
+      "certifications": "NISM Mutual Fund Distributors, 2025",
+      "languages": "English, Hindi, Marathi"
+    }
   }
 }

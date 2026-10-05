@@ -1,0 +1,168 @@
+{
+ "id": "what-interest",
+ "guide": "what-interest",
+ "title": {
+  "en": "Interest from both sides: what your savings earn, and what a loan costs you",
+  "hi": "ब्याज दोनों तरफ़ से: आपकी बचत क्या कमाती है, और लोन आपको क्या ख़र्च कराता है",
+  "mr": "व्याज दोन्ही बाजूंनी: तुमची बचत काय कमावते, आणि कर्ज तुम्हाला किती पडते"
+ },
+ "setting": {
+  "en": "Verena compares her savings passbook with a friend's loan statement",
+  "hi": "वेरेना अपनी बचत पासबुक को एक दोस्त के लोन स्टेटमेंट से मिलाती है",
+  "mr": "वेरेना तिचे बचत पासबुक एका मैत्रिणीच्या कर्ज विवरणाशी जुळवते"
+ },
+ "steps": [
+  {
+   "scene": "receipt",
+   "title": {
+    "en": "Interest you earn: the small line in your passbook",
+    "hi": "जो ब्याज आप कमाते हैं: पासबुक की छोटी लाइन",
+    "mr": "तुम्ही कमावता ते व्याज: पासबुकमधील छोटी ओळ"
+   },
+   "text": {
+    "en": "Every quarter a line appears in Verena's passbook: 'SB INT'. That is the bank paying her for keeping money with it. On ₹40,000 at about 3% a year, it is around ₹300 a quarter.",
+    "hi": "हर तिमाही वेरेना की पासबुक में एक लाइन आती है: 'SB INT'। यह बैंक उसे अपने पास पैसा रखने के लिए दे रहा है। ₹40,000 पर लगभग 3% सालाना से यह हर तिमाही लगभग ₹300 है।",
+    "mr": "दर तिमाहीला वेरेनाच्या पासबुकमध्ये एक ओळ येते: 'SB INT'. बँक तिला पैसे ठेवल्याबद्दल देत आहे. ₹40,000 वर साधारण 3% वार्षिक दराने हे दर तिमाहीला साधारण ₹300."
+   },
+   "screen": [
+    {
+     "en": "PASSBOOK",
+     "hi": "पासबुक",
+     "mr": "पासबुक"
+    },
+    {
+     "en": "30 Jun  SB INT  +₹298",
+     "hi": "30 जून  SB INT  +₹298",
+     "mr": "30 जून  SB INT  +₹298"
+    },
+    {
+     "en": "Balance ₹40,298",
+     "hi": "बैलेंस ₹40,298",
+     "mr": "शिल्लक ₹40,298"
+    },
+    {
+     "en": "Rate ~3% p.a.",
+     "hi": "दर ~3% सालाना",
+     "mr": "दर ~3% वार्षिक"
+    }
+   ],
+   "details": [
+    {
+     "en": "'p.a.' means per annum, per year. A 3% p.a. rate on ₹100 earns ₹3 in a year.",
+     "hi": "'p.a.' यानी प्रति वर्ष। ₹100 पर 3% सालाना से साल में ₹3 मिलते हैं।",
+     "mr": "'p.a.' म्हणजे प्रतिवर्ष. ₹100 वर 3% वार्षिक दराने वर्षात ₹3 मिळतात."
+    }
+   ],
+   "cost": {
+    "en": "You earn",
+    "hi": "आप कमाते हैं",
+    "mr": "तुम्ही कमावता"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Interest you pay: the same idea, much bigger numbers",
+    "hi": "जो ब्याज आप भरते हैं: वही बात, बहुत बड़े अंक",
+    "mr": "तुम्ही भरता ते व्याज: तीच कल्पना, खूप मोठे आकडे"
+   },
+   "text": {
+    "en": "Her friend Riya owes ₹40,000 on a credit card at about 3.5% a month. In one month, interest alone is about ₹1,400, roughly what Verena's savings earn in a year.",
+    "hi": "उसकी दोस्त रिया पर क्रेडिट कार्ड का ₹40,000 बकाया है, लगभग 3.5% महीने की दर से। एक महीने में अकेले ब्याज लगभग ₹1,400 है, लगभग उतना जितना वेरेना की बचत साल भर में कमाती है।",
+    "mr": "तिची मैत्रीण रियाकडे क्रेडिट कार्डचे ₹40,000 थकीत आहेत, साधारण 3.5% महिना दराने. एका महिन्यात फक्त व्याज साधारण ₹1,400, वेरेनाची बचत वर्षभरात कमावते तितकेच."
+   },
+   "screen": [
+    {
+     "en": "Same ₹40,000",
+     "hi": "वही ₹40,000",
+     "mr": "तेच ₹40,000"
+    },
+    {
+     "en": "Saved at 3%/yr: +₹1,200 a year",
+     "hi": "3%/साल पर बचत: +₹1,200 साल में",
+     "mr": "3%/वर्ष बचत: +₹1,200 वर्षाला"
+    },
+    {
+     "en": "Owed at 3.5%/month: −₹1,400 a month",
+     "hi": "3.5%/माह पर बकाया: −₹1,400 महीने में",
+     "mr": "3.5%/महिना थकीत: −₹1,400 महिन्याला"
+    },
+    {
+     "en": "= about −₹16,800 a year",
+     "hi": "= लगभग −₹16,800 साल में",
+     "mr": "= साधारण −₹16,800 वर्षाला"
+    }
+   ],
+   "details": [
+    {
+     "en": "Always check whether a rate is per month or per year. 3% a month is about 36% a year, and more once interest compounds.",
+     "hi": "हमेशा देखें कि दर महीने की है या साल की। 3% महीना लगभग 36% साल है, और ब्याज पर ब्याज लगने पर उससे ज़्यादा।",
+     "mr": "दर महिन्याचा आहे की वर्षाचा ते नेहमी पाहा. 3% महिना म्हणजे साधारण 36% वर्ष, आणि व्याजावर व्याज लागल्यावर त्याहून जास्त."
+    },
+    {
+     "en": "Paying off expensive debt is often the best 'return' you can get.",
+     "hi": "महँगा क़र्ज़ चुकाना अक्सर सबसे अच्छा 'रिटर्न' है जो आपको मिल सकता है।",
+     "mr": "महागडे कर्ज फेडणे हा अनेकदा तुम्हाला मिळणारा सर्वोत्तम 'परतावा' असतो."
+    }
+   ],
+   "cost": {
+    "en": "You pay",
+    "hi": "आप भरते हैं",
+    "mr": "तुम्ही भरता"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Riya has ₹40,000 card debt and ₹30,000 in savings. What helps most?",
+     "hi": "रिया पर ₹40,000 कार्ड क़र्ज़ है और ₹30,000 बचत। सबसे ज़्यादा क्या मदद करेगा?",
+     "mr": "रियाकडे ₹40,000 कार्ड कर्ज आणि ₹30,000 बचत आहे. सर्वात जास्त काय मदत करेल?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Keep the savings, pay the minimum",
+       "hi": "बचत रखे, न्यूनतम भरे",
+       "mr": "बचत ठेवावी, किमान भरावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Her savings earn about 3% a year while the debt costs about 3.5% a month.",
+       "hi": "उसकी बचत साल में लगभग 3% कमाती है जबकि क़र्ज़ महीने में लगभग 3.5% लेता है।",
+       "mr": "तिची बचत वर्षाला साधारण 3% कमावते तर कर्ज महिन्याला साधारण 3.5% घेते."
+      }
+     },
+     {
+      "text": {
+       "en": "Use most of the savings to clear the card, keep a small cushion",
+       "hi": "बचत का ज़्यादातर हिस्सा कार्ड चुकाने में, थोड़ा सहारा रखे",
+       "mr": "बचतीचा बहुतेक भाग कार्ड फेडण्यात, थोडा आधार ठेवावा"
+      },
+      "good": true,
+      "result": {
+       "en": "Clearing 40%-a-year debt is like earning 40%. She keeps a small emergency cushion and clears the rest in two months.",
+       "hi": "40% सालाना क़र्ज़ चुकाना 40% कमाने जैसा है। वह थोड़ा आपात सहारा रखकर बाक़ी दो महीने में चुका देती है।",
+       "mr": "40% वार्षिक कर्ज फेडणे म्हणजे 40% कमावण्यासारखे. ती थोडा आपत्कालीन आधार ठेवून उरलेले दोन महिन्यांत फेडते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Interest is the price of money: you earn it on savings and pay it on loans.",
+   "hi": "ब्याज पैसे की क़ीमत है: बचत पर आप कमाते हैं और लोन पर भरते हैं।",
+   "mr": "व्याज ही पैशांची किंमत: बचतीवर तुम्ही कमावता आणि कर्जावर भरता."
+  },
+  {
+   "en": "Check per month vs per year; monthly rates hide large yearly costs.",
+   "hi": "महीने बनाम साल देखें; मासिक दरें बड़ी सालाना लागत छिपाती हैं।",
+   "mr": "महिना की वर्ष ते पाहा; मासिक दर मोठा वार्षिक खर्च लपवतात."
+  },
+  {
+   "en": "Clearing costly debt usually beats keeping low-interest savings, after a small cushion.",
+   "hi": "थोड़े सहारे के बाद महँगा क़र्ज़ चुकाना आमतौर पर कम ब्याज वाली बचत रखने से बेहतर है।",
+   "mr": "थोडा आधार ठेवून महागडे कर्ज फेडणे सहसा कमी व्याजाची बचत ठेवण्यापेक्षा चांगले."
+  }
+ ],
+ "reviewed": "2026-10"
+}

@@ -1,0 +1,224 @@
+{
+ "id": "fees",
+ "guide": "fees",
+ "title": {
+  "en": "Hidden fees on a loan: finding every charge before the money arrives",
+  "hi": "लोन पर छिपे शुल्क: पैसा आने से पहले हर शुल्क ढूँढना",
+  "mr": "कर्जावरील छुपे शुल्क: पैसे येण्याआधी प्रत्येक शुल्क शोधणे"
+ },
+ "setting": {
+  "en": "Verena's colleague gets a ₹50,000 loan offer and asks her to look at it",
+  "hi": "वेरेना के सहकर्मी को ₹50,000 का लोन ऑफ़र मिला और वह उससे देखने को कहता है",
+  "mr": "वेरेनाच्या सहकाऱ्याला ₹50,000 चे कर्ज ऑफर मिळाले आणि तो तिला पाहायला सांगतो"
+ },
+ "steps": [
+  {
+   "scene": "phone",
+   "title": {
+    "en": "The offer screen shows only the good numbers",
+    "hi": "ऑफ़र स्क्रीन केवल अच्छे अंक दिखाती है",
+    "mr": "ऑफर स्क्रीन फक्त चांगले आकडे दाखवते"
+   },
+   "text": {
+    "en": "'₹50,000 at just 1.5% per month, instant approval.' Verena scrolls to the bottom and taps 'View Key Fact Statement'.",
+    "hi": "'₹50,000 सिर्फ़ 1.5% महीने पर, तुरंत मंज़ूरी।' वेरेना नीचे तक स्क्रॉल करके 'View Key Fact Statement' दबाती है।",
+    "mr": "'₹50,000 फक्त 1.5% महिना, लगेच मंजुरी.' वेरेना खाली स्क्रोल करून 'View Key Fact Statement' दाबते."
+   },
+   "screen": [
+    {
+     "en": "₹50,000",
+     "hi": "₹50,000",
+     "mr": "₹50,000"
+    },
+    {
+     "en": "Just 1.5% per month!",
+     "hi": "सिर्फ़ 1.5% महीना!",
+     "mr": "फक्त 1.5% महिना!"
+    },
+    {
+     "en": "Instant approval",
+     "hi": "तुरंत मंज़ूरी",
+     "mr": "लगेच मंजुरी"
+    },
+    {
+     "en": "View Key Fact Statement ›",
+     "hi": "की फ़ैक्ट स्टेटमेंट देखें ›",
+     "mr": "की फॅक्ट स्टेटमेंट पाहा ›"
+    }
+   ],
+   "cost": {
+    "en": "1 minute",
+    "hi": "1 मिनट",
+    "mr": "1 मिनिट"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "List every charge from the KFS",
+    "hi": "KFS से हर शुल्क लिखें",
+    "mr": "KFS मधील प्रत्येक शुल्क लिहा"
+   },
+   "text": {
+    "en": "The KFS lists the charges that the big banner did not mention. She writes them all down.",
+    "hi": "KFS में वे शुल्क हैं जिनका बड़े बैनर में ज़िक्र नहीं था। वह सब लिख लेती है।",
+    "mr": "KFS मध्ये मोठ्या बॅनरमध्ये उल्लेख नसलेली शुल्के आहेत. ती सगळी लिहून घेते."
+   },
+   "screen": [
+    {
+     "en": "CHARGES",
+     "hi": "शुल्क",
+     "mr": "शुल्क"
+    },
+    {
+     "en": "Processing fee: 4% = ₹2,000",
+     "hi": "प्रोसेसिंग शुल्क: 4% = ₹2,000",
+     "mr": "प्रक्रिया शुल्क: 4% = ₹2,000"
+    },
+    {
+     "en": "GST on fee: ₹360",
+     "hi": "शुल्क पर GST: ₹360",
+     "mr": "शुल्कावर GST: ₹360"
+    },
+    {
+     "en": "Insurance: ₹1,200",
+     "hi": "बीमा: ₹1,200",
+     "mr": "विमा: ₹1,200"
+    },
+    {
+     "en": "Late fee: ₹500 + 3%/month",
+     "hi": "लेट फ़ीस: ₹500 + 3%/माह",
+     "mr": "विलंब शुल्क: ₹500 + 3%/महिना"
+    },
+    {
+     "en": "Foreclosure: 5%",
+     "hi": "फ़ोरक्लोज़र: 5%",
+     "mr": "मुदतपूर्व बंद: 5%"
+    },
+    {
+     "en": "APR: 31.8%",
+     "hi": "APR: 31.8%",
+     "mr": "APR: 31.8%"
+    }
+   ],
+   "details": [
+    {
+     "en": "1.5% a month is 18% a year before fees. With fees, the APR here is almost 32%.",
+     "hi": "1.5% महीना शुल्क से पहले 18% साल है। शुल्क के साथ यहाँ APR लगभग 32% है।",
+     "mr": "1.5% महिना शुल्कापूर्वी 18% वर्ष आहे. शुल्कासह इथे APR जवळजवळ 32% आहे."
+    },
+    {
+     "en": "Fees are often cut from the loan before it reaches you, so you receive less than you borrow but repay the full amount.",
+     "hi": "शुल्क अक्सर पैसा आप तक पहुँचने से पहले काट लिए जाते हैं, इसलिए आपको उधार से कम मिलता है पर चुकाना पूरा पड़ता है।",
+     "mr": "शुल्क अनेकदा पैसे तुमच्यापर्यंत पोहोचण्याआधीच कापले जातात, म्हणून तुम्हाला कर्जापेक्षा कमी मिळते पण फेडावे पूर्ण लागते."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Work out what actually reaches the account",
+    "hi": "हिसाब लगाएँ कि खाते में असल में क्या आएगा",
+    "mr": "खात्यात खरोखर किती येईल त्याचा हिशोब करा"
+   },
+   "text": {
+    "en": "₹50,000 minus ₹2,000 fee, ₹360 GST and ₹1,200 insurance: ₹46,440 arrives. He would repay EMIs calculated on the full ₹50,000.",
+    "hi": "₹50,000 में से ₹2,000 शुल्क, ₹360 GST और ₹1,200 बीमा घटाकर: ₹46,440 आएँगे। वह पूरे ₹50,000 पर बनी EMI चुकाएगा।",
+    "mr": "₹50,000 मधून ₹2,000 शुल्क, ₹360 GST आणि ₹1,200 विमा वजा: ₹46,440 येतील. तो संपूर्ण ₹50,000 वर ठरलेल्या EMI फेडेल."
+   },
+   "screen": [
+    {
+     "en": "Borrow ₹50,000",
+     "hi": "उधार ₹50,000",
+     "mr": "कर्ज ₹50,000"
+    },
+    {
+     "en": "− fee ₹2,000",
+     "hi": "− शुल्क ₹2,000",
+     "mr": "− शुल्क ₹2,000"
+    },
+    {
+     "en": "− GST ₹360",
+     "hi": "− GST ₹360",
+     "mr": "− GST ₹360"
+    },
+    {
+     "en": "− insurance ₹1,200",
+     "hi": "− बीमा ₹1,200",
+     "mr": "− विमा ₹1,200"
+    },
+    {
+     "en": "Arrives ₹46,440",
+     "hi": "आएगा ₹46,440",
+     "mr": "येईल ₹46,440"
+    }
+   ],
+   "cost": {
+    "en": "Thousands saved",
+    "hi": "हज़ारों बचे",
+    "mr": "हजारो वाचले"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What should her colleague do?",
+     "hi": "सहकर्मी क्या करे?",
+     "mr": "सहकाऱ्याने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Accept, approval is instant",
+       "hi": "स्वीकार करे, मंज़ूरी तुरंत है",
+       "mr": "स्वीकारावे, मंजुरी लगेच आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "Speed is what he would be paying for, at nearly 32% a year.",
+       "hi": "वह जल्दबाज़ी के लिए ही पैसा दे रहा होगा, लगभग 32% सालाना पर।",
+       "mr": "तो घाईसाठीच पैसे मोजत असेल, जवळजवळ 32% वार्षिक दराने."
+      }
+     },
+     {
+      "text": {
+       "en": "Ask his own bank for a quote and compare APRs",
+       "hi": "अपने बैंक से ऑफ़र लेकर APR मिलाए",
+       "mr": "स्वतःच्या बँकेकडून ऑफर घेऊन APR तुलना करावी"
+      },
+      "good": true,
+      "result": {
+       "en": "His bank quotes 13.9% APR with a ₹999 fee. Two days of patience saves thousands.",
+       "hi": "उसका बैंक ₹999 शुल्क के साथ 13.9% APR देता है। दो दिन का धैर्य हज़ारों बचाता है।",
+       "mr": "त्याची बँक ₹999 शुल्कासह 13.9% APR देते. दोन दिवसांचा संयम हजारो वाचवतो."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Open the Key Fact Statement before you accept any loan.",
+   "hi": "कोई भी लोन स्वीकार करने से पहले की फ़ैक्ट स्टेटमेंट खोलें।",
+   "mr": "कोणतेही कर्ज स्वीकारण्यापूर्वी की फॅक्ट स्टेटमेंट उघडा."
+  },
+  {
+   "en": "List processing fee, GST, insurance, late, bounce and foreclosure charges.",
+   "hi": "प्रोसेसिंग शुल्क, GST, बीमा, लेट, बाउंस और फ़ोरक्लोज़र शुल्क लिखें।",
+   "mr": "प्रक्रिया शुल्क, GST, विमा, विलंब, बाउन्स आणि मुदतपूर्व बंद शुल्क लिहा."
+  },
+  {
+   "en": "Check what will actually reach your account, and compare APRs.",
+   "hi": "देखें कि खाते में असल में क्या आएगा, और APR मिलाएँ।",
+   "mr": "खात्यात खरोखर किती येईल ते पाहा, आणि APR तुलना करा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in"
+ ]
+}

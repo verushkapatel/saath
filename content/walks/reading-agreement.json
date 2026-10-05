@@ -1,0 +1,241 @@
+{
+ "id": "reading-agreement",
+ "guide": "reading-agreement",
+ "title": {
+  "en": "A gold loan, from the counter to getting the jewellery back: reading the agreement before you hand over gold",
+  "hi": "गोल्ड लोन, काउंटर से गहने वापस मिलने तक: सोना देने से पहले अनुबंध पढ़ना",
+  "mr": "सोने कर्ज, काउंटरपासून दागिने परत मिळेपर्यंत: सोने देण्यापूर्वी करार वाचणे"
+ },
+ "setting": {
+  "en": "Verena's mother needs ₹80,000 for a few months and has gold bangles",
+  "hi": "वेरेना की माँ को कुछ महीनों के लिए ₹80,000 चाहिए और उनके पास सोने की चूड़ियाँ हैं",
+  "mr": "वेरेनाच्या आईला काही महिन्यांसाठी ₹80,000 हवेत आणि त्यांच्याकडे सोन्याच्या बांगड्या आहेत"
+ },
+ "steps": [
+  {
+   "scene": "gold",
+   "title": {
+    "en": "Valuation at the counter, in front of you",
+    "hi": "काउंटर पर मूल्यांकन, आपके सामने",
+    "mr": "काउंटरवर मूल्यांकन, तुमच्यासमोर"
+   },
+   "text": {
+    "en": "At a bank's gold loan counter, the appraiser tests the bangles and weighs them in front of them. The receipt shows gross weight, net weight (after stones and impurities), purity and the value used.",
+    "hi": "बैंक के गोल्ड लोन काउंटर पर मूल्यांकनकर्ता उनके सामने चूड़ियों की जाँच करके तौलते हैं। रसीद में कुल वज़न, शुद्ध वज़न (नग और अशुद्धि घटाकर), शुद्धता और इस्तेमाल हुआ मूल्य लिखा है।",
+    "mr": "बँकेच्या सोने कर्ज काउंटरवर मूल्यांकनकर्ता त्यांच्यासमोर बांगड्या तपासून वजन करतात. पावतीत एकूण वजन, निव्वळ वजन (खडे आणि अशुद्धता वजा), शुद्धता आणि वापरलेले मूल्य लिहिले आहे."
+   },
+   "screen": [
+    {
+     "en": "Gold appraisal",
+     "hi": "सोना मूल्यांकन",
+     "mr": "सोने मूल्यांकन"
+    },
+    {
+     "en": "Gross 32.4 g · Net 30.1 g",
+     "hi": "कुल 32.4 ग्रा · शुद्ध 30.1 ग्रा",
+     "mr": "एकूण 32.4 ग्रॅ · निव्वळ 30.1 ग्रॅ"
+    },
+    {
+     "en": "Purity 22 carat",
+     "hi": "शुद्धता 22 कैरेट",
+     "mr": "शुद्धता 22 कॅरेट"
+    },
+    {
+     "en": "Loan up to 75% of value",
+     "hi": "मूल्य का 75% तक लोन",
+     "mr": "मूल्याच्या 75% पर्यंत कर्ज"
+    },
+    {
+     "en": "Asked: ₹80,000",
+     "hi": "माँगा: ₹80,000",
+     "mr": "मागितले: ₹80,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Lenders give only part of the gold's value as a loan, so there is a cushion if the price falls.",
+     "hi": "क़र्ज़दाता सोने के मूल्य का केवल एक हिस्सा लोन देते हैं, ताकि क़ीमत गिरे तो गुंजाइश रहे।",
+     "mr": "कर्जदाते सोन्याच्या मूल्याचा फक्त एक भाग कर्ज म्हणून देतात, म्हणजे किंमत घसरली तर जागा राहील."
+    },
+    {
+     "en": "Stay at the counter during testing and weighing. Ask for the weights in writing.",
+     "hi": "जाँच और तौल के दौरान काउंटर पर ही रहें। वज़न लिखित में माँगें।",
+     "mr": "तपासणी आणि वजनाच्या वेळी काउंटरवरच थांबा. वजन लेखी मागा."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "signature",
+   "title": {
+    "en": "Read four things in the agreement",
+    "hi": "अनुबंध में चार बातें पढ़ें",
+    "mr": "करारात चार गोष्टी वाचा"
+   },
+   "text": {
+    "en": "Before signing, Verena reads the agreement with her mother and marks four things: the interest rate and how it is charged, the repayment type, what happens if they do not pay on time, and how the gold is returned.",
+    "hi": "हस्ताक्षर से पहले वेरेना माँ के साथ अनुबंध पढ़ती है और चार बातें चिह्नित करती है: ब्याज दर और कैसे लगती है, भुगतान का प्रकार, समय पर न भरने पर क्या होगा, और सोना कैसे लौटेगा।",
+    "mr": "सही करण्यापूर्वी वेरेना आईसोबत करार वाचते आणि चार गोष्टींवर खूण करते: व्याजदर आणि तो कसा लावला जातो, परतफेडीचा प्रकार, वेळेवर न भरल्यास काय होईल, आणि सोने कसे परत मिळेल."
+   },
+   "screen": [
+    {
+     "en": "GOLD LOAN AGREEMENT",
+     "hi": "गोल्ड लोन अनुबंध",
+     "mr": "सोने कर्ज करार"
+    },
+    {
+     "en": "Rate: 9.5% p.a., monthly",
+     "hi": "दर: 9.5% सालाना, मासिक",
+     "mr": "दर: 9.5% वार्षिक, मासिक"
+    },
+    {
+     "en": "Type: bullet, 12 months",
+     "hi": "प्रकार: बुलेट, 12 महीने",
+     "mr": "प्रकार: बुलेट, 12 महिने"
+    },
+    {
+     "en": "Default: notice, then auction",
+     "hi": "चूक: नोटिस, फिर नीलामी",
+     "mr": "चूक: सूचना, मग लिलाव"
+    },
+    {
+     "en": "Gold returned on full repayment",
+     "hi": "पूरा भुगतान पर सोना वापस",
+     "mr": "पूर्ण परतफेडीवर सोने परत"
+    },
+    {
+     "en": "Packet no. G-55xx sealed",
+     "hi": "पैकेट नं. G-55xx सील",
+     "mr": "पाकीट क्र. G-55xx सीलबंद"
+    }
+   ],
+   "details": [
+    {
+     "en": "'Bullet' repayment means interest and principal together at the end. The amount can grow; some prefer paying interest monthly to keep it small.",
+     "hi": "'बुलेट' भुगतान यानी ब्याज और मूल एक साथ अंत में। रकम बढ़ सकती है; कुछ लोग इसे छोटा रखने के लिए ब्याज हर महीने भरना पसंद करते हैं।",
+     "mr": "'बुलेट' परतफेड म्हणजे व्याज आणि मुद्दल एकत्र शेवटी. रक्कम वाढू शकते; काहीजण ती लहान ठेवण्यासाठी दर महिन्याला व्याज भरणे पसंत करतात."
+    },
+    {
+     "en": "If the gold's value falls a lot, the lender may ask for part repayment. Read how much notice they give before an auction.",
+     "hi": "अगर सोने का मूल्य बहुत गिरे, तो क़र्ज़दाता आंशिक भुगतान माँग सकता है। पढ़ें कि नीलामी से पहले वे कितनी सूचना देते हैं।",
+     "mr": "सोन्याचे मूल्य खूप घसरले तर कर्जदाता काही परतफेड मागू शकतो. लिलावापूर्वी ते किती सूचना देतात ते वाचा."
+    },
+    {
+     "en": "Keep the pledge receipt safe. It is your proof of what was handed over.",
+     "hi": "गिरवी की रसीद संभालकर रखें। यही सबूत है कि क्या सौंपा गया।",
+     "mr": "तारण पावती जपून ठेवा. काय सोपवले याचा तोच पुरावा."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "A local moneylender offers the same ₹80,000 'without any paperwork'. Better?",
+     "hi": "एक स्थानीय साहूकार वही ₹80,000 'बिना काग़ज़' देता है। बेहतर?",
+     "mr": "एक स्थानिक सावकार तेच ₹80,000 'कागदपत्रांशिवाय' देतो. चांगले?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, simpler",
+       "hi": "हाँ, आसान है",
+       "mr": "हो, सोपे आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "No agreement means no written rate, no auction notice and no proof of what was pledged.",
+       "hi": "कोई अनुबंध नहीं यानी न लिखी दर, न नीलामी की सूचना, और न गिरवी का सबूत।",
+       "mr": "करार नाही म्हणजे लिखित दर नाही, लिलावाची सूचना नाही, आणि तारणाचा पुरावा नाही."
+      }
+     },
+     {
+      "text": {
+       "en": "No, a regulated lender with a written agreement",
+       "hi": "नहीं, लिखित अनुबंध वाला विनियमित क़र्ज़दाता",
+       "mr": "नाही, लेखी करार असलेला नियंत्रित कर्जदाता"
+      },
+      "good": true,
+      "result": {
+       "en": "Paperwork is what protects the borrower here.",
+       "hi": "यहाँ काग़ज़ ही उधार लेने वाले की रक्षा करते हैं।",
+       "mr": "इथे कागदपत्रेच कर्जदाराचे संरक्षण करतात."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "receipt",
+   "title": {
+    "en": "Repay and collect the gold, and check it",
+    "hi": "चुकाएँ और सोना लें, और जाँचें",
+    "mr": "फेडा आणि सोने घ्या, आणि तपासा"
+   },
+   "text": {
+    "en": "They pay interest monthly and close the loan in eight months. At the counter the sealed packet is opened in front of them, and they check the bangles against the original weights before signing the release.",
+    "hi": "वे हर महीने ब्याज भरकर आठ महीने में लोन बंद करते हैं। काउंटर पर सील पैकेट उनके सामने खोला जाता है, और रिलीज़ पर हस्ताक्षर से पहले वे चूड़ियों को मूल वज़न से मिलाते हैं।",
+    "mr": "ते दर महिन्याला व्याज भरून आठ महिन्यांत कर्ज बंद करतात. काउंटरवर सीलबंद पाकीट त्यांच्यासमोर उघडले जाते, आणि सुटका पत्रावर सही करण्यापूर्वी ते बांगड्या मूळ वजनाशी जुळवतात."
+   },
+   "screen": [
+    {
+     "en": "Loan closed",
+     "hi": "लोन बंद",
+     "mr": "कर्ज बंद"
+    },
+    {
+     "en": "Packet G-55xx opened before you",
+     "hi": "पैकेट G-55xx आपके सामने खुला",
+     "mr": "पाकीट G-55xx तुमच्यासमोर उघडले"
+    },
+    {
+     "en": "Weight checked: 32.4 g ✓",
+     "hi": "वज़न जाँचा: 32.4 ग्रा ✓",
+     "mr": "वजन तपासले: 32.4 ग्रॅ ✓"
+    },
+    {
+     "en": "Release signed",
+     "hi": "रिलीज़ पर हस्ताक्षर",
+     "mr": "सुटका सही"
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Watch the gold being tested and weighed; get net weight and purity in writing.",
+   "hi": "सोने की जाँच और तौल देखें; शुद्ध वज़न और शुद्धता लिखित में लें।",
+   "mr": "सोन्याची तपासणी आणि वजन पाहा; निव्वळ वजन आणि शुद्धता लेखी घ्या."
+  },
+  {
+   "en": "Read rate, repayment type, default and auction terms, and return process.",
+   "hi": "दर, भुगतान का प्रकार, चूक और नीलामी की शर्तें, और वापसी की प्रक्रिया पढ़ें।",
+   "mr": "दर, परतफेडीचा प्रकार, चूक आणि लिलावाच्या अटी, आणि परत करण्याची प्रक्रिया वाचा."
+  },
+  {
+   "en": "Use a regulated lender with a written agreement, and keep the pledge receipt.",
+   "hi": "लिखित अनुबंध वाला विनियमित क़र्ज़दाता चुनें, और गिरवी रसीद रखें।",
+   "mr": "लेखी करार असलेला नियंत्रित कर्जदाता निवडा, आणि तारण पावती ठेवा."
+  },
+  {
+   "en": "Check the jewellery against the original weights before signing the release.",
+   "hi": "रिलीज़ पर हस्ताक्षर से पहले गहनों को मूल वज़न से मिलाएँ।",
+   "mr": "सुटका पत्रावर सही करण्यापूर्वी दागिने मूळ वजनाशी जुळवा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in"
+ ]
+}

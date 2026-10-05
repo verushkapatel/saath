@@ -43,6 +43,7 @@ export type ActionLink =
   | `drill:${string}`
   | `episode:${string}`
   | `form:${string}`
+  | "resume"
   | null;
 
 export type Lesson = {
@@ -159,6 +160,7 @@ export function loadJson<T>(path: string): Promise<T> {
 export function linkHref(link: ActionLink): string | null {
   if (!link) return null;
   if (link === "tracker") return "/money-lab";
+  if (link === "resume") return "/resume";
   if (link === "scan") return "/scan";
   if (link === "drills") return "/drills";
   if (link === "finlit") return "/check";

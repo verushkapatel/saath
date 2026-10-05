@@ -1,0 +1,206 @@
+{
+ "id": "job-scams",
+ "guide": "job-scams",
+ "title": {
+  "en": "The 'work from home, ₹3,000 a day' offer: how a task scam pulls you in, step by step",
+  "hi": "'घर से काम, ₹3,000 रोज़' ऑफ़र: टास्क स्कैम कैसे क़दम-दर-क़दम फँसाता है",
+  "mr": "'घरून काम, रोज ₹3,000' ऑफर: टास्क स्कॅम कसा पायरी-पायरीने ओढतो"
+ },
+ "setting": {
+  "en": "A WhatsApp message to Verena's younger cousin, a college student",
+  "hi": "वेरेना के छोटे चचेरे भाई को, जो कॉलेज में है, एक WhatsApp संदेश",
+  "mr": "वेरेनाच्या धाकट्या चुलत भावाला, जो कॉलेजमध्ये आहे, एक WhatsApp संदेश"
+ },
+ "steps": [
+  {
+   "scene": "sms",
+   "title": {
+    "en": "Stage 1: easy money for easy tasks",
+    "hi": "चरण 1: आसान काम के लिए आसान पैसा",
+    "mr": "टप्पा 1: सोप्या कामासाठी सोपे पैसे"
+   },
+   "text": {
+    "en": "'Like 3 videos, earn ₹150.' He does it and really receives ₹150. Then ₹300. The small payments are real: they are the bait.",
+    "hi": "'3 वीडियो लाइक करो, ₹150 कमाओ।' वह करता है और सच में ₹150 मिलते हैं। फिर ₹300। छोटे भुगतान असली हैं: वही चारा हैं।",
+    "mr": "'3 व्हिडिओ लाइक करा, ₹150 कमवा.' तो करतो आणि खरोखर ₹150 मिळतात. मग ₹300. छोटी पेमेंट खरी असतात: तीच आमिष असतात."
+   },
+   "screen": [
+    {
+     "en": "HR Priya: Part-time job!",
+     "hi": "HR प्रिया: पार्ट-टाइम जॉब!",
+     "mr": "HR प्रिया: अर्धवेळ नोकरी!"
+    },
+    {
+     "en": "HR Priya: Like 3 videos = ₹150",
+     "hi": "HR प्रिया: 3 वीडियो लाइक = ₹150",
+     "mr": "HR प्रिया: 3 व्हिडिओ लाइक = ₹150"
+    },
+    {
+     "en": ">Done",
+     "hi": ">हो गया",
+     "mr": ">झाले"
+    },
+    {
+     "en": "HR Priya: Paid ₹150 ✓",
+     "hi": "HR प्रिया: ₹150 भेजे ✓",
+     "mr": "HR प्रिया: ₹150 पाठवले ✓"
+    }
+   ],
+   "cost": {
+    "en": "Day 1",
+    "hi": "दिन 1",
+    "mr": "दिवस 1"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Stage 2: 'prepaid tasks' and a dashboard that grows",
+    "hi": "चरण 2: 'प्रीपेड टास्क' और बढ़ता डैशबोर्ड",
+    "mr": "टप्पा 2: 'प्रीपेड टास्क' आणि वाढणारा डॅशबोर्ड"
+   },
+   "text": {
+    "en": "He is added to a Telegram group and asked to 'invest' ₹1,000 in a task to earn ₹1,500. A website shows his balance growing. To withdraw, he must 'complete one more task' of ₹10,000, then a 'tax' of ₹25,000.",
+    "hi": "उसे एक टेलीग्राम ग्रुप में जोड़ा जाता है और ₹1,500 कमाने के लिए एक टास्क में ₹1,000 'निवेश' करने को कहा जाता है। एक वेबसाइट उसका बढ़ता बैलेंस दिखाती है। निकालने के लिए उसे ₹10,000 का 'एक और टास्क', फिर ₹25,000 'टैक्स' भरना है।",
+    "mr": "त्याला टेलिग्राम ग्रुपमध्ये जोडले जाते आणि ₹1,500 कमवण्यासाठी एका टास्कमध्ये ₹1,000 'गुंतवायला' सांगितले जाते. एक वेबसाइट त्याची वाढती शिल्लक दाखवते. काढण्यासाठी त्याला ₹10,000 चा 'आणखी एक टास्क', मग ₹25,000 'कर' भरायचा आहे."
+   },
+   "screen": [
+    {
+     "en": "Your earnings",
+     "hi": "आपकी कमाई",
+     "mr": "तुमची कमाई"
+    },
+    {
+     "en": "Balance: ₹48,600",
+     "hi": "बैलेंस: ₹48,600",
+     "mr": "शिल्लक: ₹48,600"
+    },
+    {
+     "en": "Withdraw: complete VIP task",
+     "hi": "निकासी: VIP टास्क पूरा करें",
+     "mr": "काढा: VIP टास्क पूर्ण करा"
+    },
+    {
+     "en": "!Pay ₹25,000 'tax' to unlock",
+     "hi": "!खोलने के लिए ₹25,000 'टैक्स'",
+     "mr": "!उघडण्यासाठी ₹25,000 'कर'"
+    }
+   ],
+   "details": [
+    {
+     "en": "A balance on a website is just a number on a screen. Real jobs never ask you to pay to work or to withdraw your earnings.",
+     "hi": "वेबसाइट पर बैलेंस बस स्क्रीन पर एक अंक है। असली नौकरी कभी काम करने या कमाई निकालने के लिए पैसे नहीं माँगती।",
+     "mr": "वेबसाइटवरील शिल्लक म्हणजे फक्त स्क्रीनवरचा आकडा. खरी नोकरी काम करण्यासाठी किंवा कमाई काढण्यासाठी कधीही पैसे मागत नाही."
+    }
+   ],
+   "cost": {
+    "en": "₹25,000 not lost",
+    "hi": "₹25,000 बचे",
+    "mr": "₹25,000 वाचले"
+   },
+   "choice": {
+    "prompt": {
+     "en": "He has paid ₹11,000 so far. Should he pay the ₹25,000 'tax' to get ₹48,600 out?",
+     "hi": "वह अब तक ₹11,000 दे चुका है। क्या ₹48,600 निकालने के लिए ₹25,000 'टैक्स' दे?",
+     "mr": "त्याने आतापर्यंत ₹11,000 दिले आहेत. ₹48,600 काढण्यासाठी ₹25,000 'कर' द्यावा का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, otherwise the ₹11,000 is lost",
+       "hi": "हाँ, वरना ₹11,000 डूब जाएँगे",
+       "mr": "हो, नाहीतर ₹11,000 बुडतील"
+      },
+      "good": false,
+      "result": {
+       "en": "That is the trap: each payment is justified by the last one. The ₹48,600 does not exist.",
+       "hi": "यही जाल है: हर भुगतान को पिछले से सही ठहराया जाता है। ₹48,600 का कोई अस्तित्व नहीं।",
+       "mr": "हाच सापळा: प्रत्येक पेमेंट मागच्यावरून योग्य ठरवले जाते. ₹48,600 अस्तित्वातच नाहीत."
+      }
+     },
+     {
+      "text": {
+       "en": "Stop now and report",
+       "hi": "अभी रुके और रिपोर्ट करे",
+       "mr": "आत्ताच थांबावे आणि तक्रार करावी"
+      },
+      "good": true,
+      "result": {
+       "en": "Stopping limits the loss at ₹11,000. Reporting quickly on 1930 gives the best chance of freezing some of it.",
+       "hi": "रुकने से नुक़सान ₹11,000 पर रुकता है। 1930 पर जल्दी रिपोर्ट से कुछ पैसा रोकने की सबसे अच्छी संभावना है।",
+       "mr": "थांबल्याने नुकसान ₹11,000 वर थांबते. 1930 वर लवकर तक्रार केल्यास काही रक्कम गोठवण्याची सर्वोत्तम शक्यता."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "police",
+   "title": {
+    "en": "Report with everything you have",
+    "hi": "जो कुछ है, उसके साथ रिपोर्ट करें",
+    "mr": "जे काही आहे त्यासह तक्रार करा"
+   },
+   "text": {
+    "en": "They call 1930, then file on cybercrime.gov.in with every UPI reference, the group name, the website address and screenshots.",
+    "hi": "वे 1930 पर कॉल करते हैं, फिर हर UPI संदर्भ, ग्रुप का नाम, वेबसाइट का पता और स्क्रीनशॉट के साथ cybercrime.gov.in पर शिकायत करते हैं।",
+    "mr": "ते 1930 वर कॉल करतात, मग प्रत्येक UPI संदर्भ, ग्रुपचे नाव, वेबसाइटचा पत्ता आणि स्क्रीनशॉटसह cybercrime.gov.in वर तक्रार करतात."
+   },
+   "screen": [
+    {
+     "en": "CYBER HELPLINE 1930",
+     "hi": "साइबर हेल्पलाइन 1930",
+     "mr": "सायबर हेल्पलाइन 1930"
+    },
+    {
+     "en": "UTRs of all 6 payments",
+     "hi": "सभी 6 भुगतानों के UTR",
+     "mr": "सर्व 6 पेमेंटचे UTR"
+    },
+    {
+     "en": "Group name, website, numbers",
+     "hi": "ग्रुप, वेबसाइट, नंबर",
+     "mr": "ग्रुप, वेबसाइट, नंबर"
+    }
+   ],
+   "details": [
+    {
+     "en": "Never let someone use your bank account to 'receive payments for the company'. That makes you part of a fraud chain (a money mule).",
+     "hi": "किसी को 'कंपनी के भुगतान लेने' के लिए अपना बैंक खाता इस्तेमाल न करने दें। इससे आप धोखे की कड़ी (मनी म्यूल) बन जाते हैं।",
+     "mr": "'कंपनीचे पैसे घेण्यासाठी' कोणालाही तुमचे बँक खाते वापरू देऊ नका. त्याने तुम्ही फसवणुकीच्या साखळीचा भाग (मनी म्यूल) बनता."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Real jobs never ask you to pay to work, to unlock earnings, or for 'tax' to withdraw.",
+   "hi": "असली नौकरी काम करने, कमाई खोलने या निकालने के 'टैक्स' के लिए कभी पैसे नहीं माँगती।",
+   "mr": "खरी नोकरी काम करण्यासाठी, कमाई उघडण्यासाठी किंवा काढण्याच्या 'करा'साठी कधीही पैसे मागत नाही."
+  },
+  {
+   "en": "Small early payouts are bait; a growing balance on a site is not money.",
+   "hi": "शुरुआती छोटे भुगतान चारा हैं; साइट पर बढ़ता बैलेंस पैसा नहीं।",
+   "mr": "सुरुवातीची छोटी पेमेंट आमिष; साइटवरील वाढती शिल्लक पैसे नाहीत."
+  },
+  {
+   "en": "Stop at the first deposit request and report on 1930 with every reference.",
+   "hi": "पहली जमा की माँग पर रुकें और हर संदर्भ के साथ 1930 पर रिपोर्ट करें।",
+   "mr": "पहिल्या ठेवीच्या मागणीला थांबा आणि प्रत्येक संदर्भासह 1930 वर तक्रार करा."
+  },
+  {
+   "en": "Never lend your bank account to anyone.",
+   "hi": "अपना बैंक खाता किसी को इस्तेमाल न करने दें।",
+   "mr": "तुमचे बँक खाते कोणालाही वापरू देऊ नका."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://cybercrime.gov.in"
+ ]
+}

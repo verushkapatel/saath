@@ -1,0 +1,166 @@
+{
+ "id": "reading-fees",
+ "guide": "reading-fees",
+ "title": {
+  "en": "Reading a fee table on any product, from a bank account to a mutual fund",
+  "hi": "किसी भी उत्पाद की शुल्क तालिका पढ़ना, बैंक खाते से म्यूचुअल फ़ंड तक",
+  "mr": "कोणत्याही उत्पादनाची शुल्क तक्ता वाचणे, बँक खात्यापासून म्युच्युअल फंडापर्यंत"
+ },
+ "setting": {
+  "en": "Verena compares two products on their fee pages, with a pencil",
+  "hi": "वेरेना पेंसिल लेकर दो उत्पादों के शुल्क पेज मिलाती है",
+  "mr": "वेरेना पेन्सिल घेऊन दोन उत्पादनांची शुल्क पाने तुलना करते"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Find the official fee page",
+    "hi": "आधिकारिक शुल्क पेज ढूँढें",
+    "mr": "अधिकृत शुल्क पान शोधा"
+   },
+   "text": {
+    "en": "Every bank publishes a 'Schedule of Charges'; every mutual fund shows its expense ratio; every card has its MITC. Verena opens the official pages, not a blog's summary.",
+    "hi": "हर बैंक 'Schedule of Charges' प्रकाशित करता है; हर म्यूचुअल फ़ंड अपना एक्सपेंस रेशियो दिखाता है; हर कार्ड का MITC होता है। वेरेना आधिकारिक पेज खोलती है, किसी ब्लॉग का सारांश नहीं।",
+    "mr": "प्रत्येक बँक 'Schedule of Charges' प्रसिद्ध करते; प्रत्येक म्युच्युअल फंड त्याचा खर्च गुणोत्तर दाखवतो; प्रत्येक कार्डचे MITC असते. वेरेना अधिकृत पाने उघडते, एखाद्या ब्लॉगचा सारांश नाही."
+   },
+   "screen": [
+    {
+     "en": "Where fees live",
+     "hi": "शुल्क कहाँ मिलते हैं",
+     "mr": "शुल्क कुठे असतात"
+    },
+    {
+     "en": "Bank: Schedule of Charges",
+     "hi": "बैंक: Schedule of Charges",
+     "mr": "बँक: Schedule of Charges"
+    },
+    {
+     "en": "Card: MITC",
+     "hi": "कार्ड: MITC",
+     "mr": "कार्ड: MITC"
+    },
+    {
+     "en": "Loan: Key Fact Statement",
+     "hi": "लोन: की फ़ैक्ट स्टेटमेंट",
+     "mr": "कर्ज: की फॅक्ट स्टेटमेंट"
+    },
+    {
+     "en": "Mutual fund: expense ratio, exit load",
+     "hi": "म्यूचुअल फ़ंड: एक्सपेंस रेशियो, एग्ज़िट लोड",
+     "mr": "म्युच्युअल फंड: खर्च गुणोत्तर, एक्झिट लोड"
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Turn each fee into rupees a year for you",
+    "hi": "हर शुल्क को अपने लिए सालाना रुपयों में बदलें",
+    "mr": "प्रत्येक शुल्क तुमच्यासाठी वार्षिक रुपयांत बदला"
+   },
+   "text": {
+    "en": "Percentages and 'per transaction' charges mean little until they are multiplied by how you actually use the product. She does that for a fund with a 1.5% expense ratio versus one with 0.5%, on ₹1,00,000.",
+    "hi": "प्रतिशत और 'हर लेन-देन' वाले शुल्क तब तक कुछ नहीं बताते जब तक आपके असली इस्तेमाल से गुणा न हों। वह ₹1,00,000 पर 1.5% एक्सपेंस रेशियो वाले फ़ंड बनाम 0.5% वाले के लिए यही करती है।",
+    "mr": "टक्केवारी आणि 'प्रति व्यवहार' शुल्क तुमच्या खऱ्या वापराने गुणल्याशिवाय काही सांगत नाहीत. ती ₹1,00,000 वर 1.5% खर्च गुणोत्तर असलेला फंड विरुद्ध 0.5% असलेला, यासाठी हेच करते."
+   },
+   "screen": [
+    {
+     "en": "On ₹1,00,000",
+     "hi": "₹1,00,000 पर",
+     "mr": "₹1,00,000 वर"
+    },
+    {
+     "en": "1.5% → ₹1,500 a year",
+     "hi": "1.5% → साल के ₹1,500",
+     "mr": "1.5% → वर्षाला ₹1,500"
+    },
+    {
+     "en": "0.5% → ₹500 a year",
+     "hi": "0.5% → साल के ₹500",
+     "mr": "0.5% → वर्षाला ₹500"
+    },
+    {
+     "en": "Over 15 years, the gap grows large",
+     "hi": "15 साल में फ़र्क़ बहुत बढ़ता है",
+     "mr": "15 वर्षांत फरक खूप वाढतो"
+    }
+   ],
+   "details": [
+    {
+     "en": "Fees that come out every year compound against you over long periods.",
+     "hi": "हर साल कटने वाले शुल्क लंबे समय में आपके ख़िलाफ़ चक्रवृद्धि करते हैं।",
+     "mr": "दरवर्षी कापले जाणारे शुल्क दीर्घ काळात तुमच्याविरुद्ध चक्रवाढ होतात."
+    },
+    {
+     "en": "Look for words like 'exit load', 'lock-in', 'surrender charge': fees for leaving early.",
+     "hi": "'एग्ज़िट लोड', 'लॉक-इन', 'सरेंडर चार्ज' जैसे शब्द देखें: जल्दी निकलने के शुल्क।",
+     "mr": "'एक्झिट लोड', 'लॉक-इन', 'सरेंडर चार्ज' असे शब्द पाहा: लवकर बाहेर पडण्याचे शुल्क."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Two similar funds: 1.5% vs 0.5% expense ratio. Which matters more over 15 years?",
+     "hi": "दो मिलते-जुलते फ़ंड: 1.5% बनाम 0.5% एक्सपेंस रेशियो। 15 साल में क्या ज़्यादा मायने रखता है?",
+     "mr": "दोन सारखे फंड: 1.5% विरुद्ध 0.5% खर्च गुणोत्तर. 15 वर्षांत काय जास्त महत्त्वाचे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Nothing, 1% is tiny",
+       "hi": "कुछ नहीं, 1% बहुत छोटा है",
+       "mr": "काही नाही, 1% खूप लहान आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "1% a year, compounded for 15 years, can take a noticeable share of the final amount.",
+       "hi": "15 साल तक चक्रवृद्धि होकर साल का 1% अंतिम रकम का बड़ा हिस्सा ले सकता है।",
+       "mr": "15 वर्षे चक्रवाढ होऊन वर्षाचा 1% अंतिम रकमेचा लक्षणीय भाग घेऊ शकतो."
+      }
+     },
+     {
+      "text": {
+       "en": "The lower fee, if the funds are otherwise similar",
+       "hi": "कम शुल्क, अगर फ़ंड बाक़ी बातों में समान हैं",
+       "mr": "कमी शुल्क, फंड इतर बाबतीत सारखे असल्यास"
+      },
+      "good": true,
+      "result": {
+       "en": "Fees are one of the few things you can control for certain.",
+       "hi": "शुल्क उन कुछ चीज़ों में से है जिन पर आपका पक्का नियंत्रण है।",
+       "mr": "शुल्क ही तुम्ही नक्की नियंत्रित करू शकता अशा मोजक्या गोष्टींपैकी एक."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Read the official fee document: Schedule of Charges, MITC, KFS, expense ratio.",
+   "hi": "आधिकारिक शुल्क दस्तावेज़ पढ़ें: Schedule of Charges, MITC, KFS, एक्सपेंस रेशियो।",
+   "mr": "अधिकृत शुल्क दस्तऐवज वाचा: Schedule of Charges, MITC, KFS, खर्च गुणोत्तर."
+  },
+  {
+   "en": "Convert every fee into rupees per year at your real usage.",
+   "hi": "हर शुल्क को अपने असली इस्तेमाल पर सालाना रुपयों में बदलें।",
+   "mr": "प्रत्येक शुल्क तुमच्या खऱ्या वापरावर वार्षिक रुपयांत बदला."
+  },
+  {
+   "en": "Watch for exit, lock-in and surrender charges.",
+   "hi": "एग्ज़िट, लॉक-इन और सरेंडर शुल्क पर नज़र रखें।",
+   "mr": "एक्झिट, लॉक-इन आणि सरेंडर शुल्कांवर लक्ष ठेवा."
+  }
+ ],
+ "reviewed": "2026-10"
+}

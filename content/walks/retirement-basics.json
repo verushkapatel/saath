@@ -1,0 +1,235 @@
+{
+ "id": "retirement-basics",
+ "guide": "retirement-basics",
+ "title": {
+  "en": "Planning retirement at 45: the number, EPF and NPS, and turning savings into a monthly income at 60",
+  "hi": "45 पर रिटायरमेंट की योजना: रकम, EPF और NPS, और 60 पर बचत को मासिक आय में बदलना",
+  "mr": "45 व्या वर्षी निवृत्तीचे नियोजन: रक्कम, EPF आणि NPS, आणि 60 ला बचतीचे मासिक उत्पन्नात रूपांतर"
+ },
+ "setting": {
+  "en": "Verena is 45 and wants to stop working at 60",
+  "hi": "वेरेना 45 की है और 60 पर काम छोड़ना चाहती है",
+  "mr": "वेरेना 45 वर्षांची आहे आणि 60 ला काम थांबवायचे आहे"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Estimate the monthly need in retirement",
+    "hi": "रिटायरमेंट में मासिक ज़रूरत का अनुमान",
+    "mr": "निवृत्तीतील मासिक गरजेचा अंदाज"
+   },
+   "text": {
+    "en": "Her household spends ₹50,000 a month today, but the home loan will be paid off by then. She estimates ₹40,000 in today's money, which with example inflation of 6% becomes about ₹96,000 a month at 60.",
+    "hi": "उसका घर आज ₹50,000 महीना ख़र्च करता है, पर तब तक होम लोन चुक जाएगा। वह आज के पैसे में ₹40,000 मानती है, जो उदाहरण 6% महँगाई से 60 पर लगभग ₹96,000 महीना बनता है।",
+    "mr": "तिचे घर आज महिन्याला ₹50,000 खर्च करते, पण तोपर्यंत गृहकर्ज फिटेल. ती आजच्या पैशांत ₹40,000 धरते, जे उदाहरण 6% महागाईने 60 ला साधारण ₹96,000 महिना होतात."
+   },
+   "screen": [
+    {
+     "en": "Retirement need",
+     "hi": "रिटायरमेंट ज़रूरत",
+     "mr": "निवृत्ती गरज"
+    },
+    {
+     "en": "Today's money: ₹40,000/mo",
+     "hi": "आज के पैसे में: ₹40,000/माह",
+     "mr": "आजच्या पैशांत: ₹40,000/महिना"
+    },
+    {
+     "en": "At 60 (6% example): ~₹96,000/mo",
+     "hi": "60 पर (6% उदाहरण): ~₹96,000/माह",
+     "mr": "60 ला (6% उदाहरण): ~₹96,000/महिना"
+    },
+    {
+     "en": "For ~25 years of retirement",
+     "hi": "लगभग 25 साल के लिए",
+     "mr": "साधारण 25 वर्षांसाठी"
+    }
+   ],
+   "details": [
+    {
+     "en": "Plan for a long life. Running out at 80 is worse than leaving some unused.",
+     "hi": "लंबी उम्र मानकर योजना बनाएँ। 80 पर पैसा ख़त्म होना कुछ बचा रह जाने से बुरा है।",
+     "mr": "दीर्घ आयुष्य धरून नियोजन करा. 80 ला पैसे संपणे काही उरण्यापेक्षा वाईट."
+    },
+    {
+     "en": "Health costs rise with age. Keep a separate health cover that will continue after you stop working.",
+     "hi": "उम्र के साथ इलाज का ख़र्च बढ़ता है। ऐसा अलग स्वास्थ्य कवर रखें जो काम छोड़ने के बाद भी चले।",
+     "mr": "वयासोबत उपचारांचा खर्च वाढतो. काम थांबवल्यानंतरही चालू राहील असे वेगळे आरोग्य कव्हर ठेवा."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Count what is already building: EPF and NPS",
+    "hi": "जो बन रहा है उसे गिनें: EPF और NPS",
+    "mr": "आधीच तयार होत आहे ते मोजा: EPF आणि NPS"
+   },
+   "text": {
+    "en": "She checks her EPF passbook and opens NPS (National Pension System) online with a small monthly contribution. NPS has a lock-in until 60 and extra tax benefits in some cases.",
+    "hi": "वह EPF पासबुक देखती है और छोटे मासिक योगदान के साथ ऑनलाइन NPS (नेशनल पेंशन सिस्टम) खोलती है। NPS में 60 तक लॉक-इन है और कुछ मामलों में अतिरिक्त टैक्स लाभ।",
+    "mr": "ती EPF पासबुक पाहते आणि थोड्या मासिक योगदानासह ऑनलाइन NPS (नॅशनल पेन्शन सिस्टम) उघडते. NPS मध्ये 60 पर्यंत लॉक-इन आणि काही प्रकरणांत जादा कर लाभ आहेत."
+   },
+   "screen": [
+    {
+     "en": "Retirement pots",
+     "hi": "रिटायरमेंट जमा",
+     "mr": "निवृत्ती बचत"
+    },
+    {
+     "en": "EPF: ₹14.2 L",
+     "hi": "EPF: ₹14.2 लाख",
+     "mr": "EPF: ₹14.2 लाख"
+    },
+    {
+     "en": "PPF: ₹6.8 L",
+     "hi": "PPF: ₹6.8 लाख",
+     "mr": "PPF: ₹6.8 लाख"
+    },
+    {
+     "en": "Equity funds: ₹11 L",
+     "hi": "इक्विटी फ़ंड: ₹11 लाख",
+     "mr": "इक्विटी फंड: ₹11 लाख"
+    },
+    {
+     "en": "NPS: new, ₹5,000/mo",
+     "hi": "NPS: नया, ₹5,000/माह",
+     "mr": "NPS: नवीन, ₹5,000/महिना"
+    }
+   ],
+   "details": [
+    {
+     "en": "When changing jobs, transfer EPF to the new employer through the EPFO portal instead of withdrawing it.",
+     "hi": "नौकरी बदलते समय EPF निकालने के बजाय EPFO पोर्टल से नए नियोक्ता के पास ट्रांसफ़र करें।",
+     "mr": "नोकरी बदलताना EPF काढण्याऐवजी EPFO पोर्टलवरून नव्या नियोक्त्याकडे हस्तांतरित करा."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "garden",
+   "title": {
+    "en": "At 60: turn the pots into a monthly income",
+    "hi": "60 पर: जमा को मासिक आय में बदलें",
+    "mr": "60 ला: बचतीचे मासिक उत्पन्नात रूपांतर"
+   },
+   "text": {
+    "en": "Fifteen years later, Verena sets up three layers: two years of expenses in FDs and savings, a steady income from an annuity (part of NPS must buy one) and senior-citizen schemes, and the rest invested for growth, withdrawn slowly.",
+    "hi": "पंद्रह साल बाद वेरेना तीन परतें बनाती है: दो साल का ख़र्च FD और बचत में, एन्युटी (NPS का एक हिस्सा इसमें लगाना ज़रूरी है) और वरिष्ठ नागरिक योजनाओं से स्थिर आय, और बाक़ी विकास के लिए निवेश, धीरे-धीरे निकालते हुए।",
+    "mr": "पंधरा वर्षांनी वेरेना तीन थर तयार करते: दोन वर्षांचा खर्च FD आणि बचतीत, ॲन्युइटी (NPS चा एक भाग यात घालावाच लागतो) आणि ज्येष्ठ नागरिक योजनांमधून स्थिर उत्पन्न, आणि उरलेले वाढीसाठी गुंतवलेले, हळूहळू काढत."
+   },
+   "screen": [
+    {
+     "en": "At 60",
+     "hi": "60 पर",
+     "mr": "60 ला"
+    },
+    {
+     "en": "Layer 1: 2 years cash/FD",
+     "hi": "परत 1: 2 साल नक़द/FD",
+     "mr": "थर 1: 2 वर्षे रोख/FD"
+    },
+    {
+     "en": "Layer 2: annuity + senior schemes",
+     "hi": "परत 2: एन्युटी + वरिष्ठ योजनाएँ",
+     "mr": "थर 2: ॲन्युइटी + ज्येष्ठ योजना"
+    },
+    {
+     "en": "Layer 3: growth, slow withdrawals",
+     "hi": "परत 3: विकास, धीमी निकासी",
+     "mr": "थर 3: वाढ, हळू काढणे"
+    }
+   ],
+   "details": [
+    {
+     "en": "The Senior Citizens' Savings Scheme (SCSS) at banks and post offices pays interest every quarter for people aged 60 and above.",
+     "hi": "बैंकों और डाकघरों में वरिष्ठ नागरिक बचत योजना (SCSS) 60 और ऊपर के लोगों को हर तिमाही ब्याज देती है।",
+     "mr": "बँका आणि पोस्टातील ज्येष्ठ नागरिक बचत योजना (SCSS) 60 आणि त्यावरील लोकांना दर तिमाहीला व्याज देते."
+    },
+    {
+     "en": "Beware of people who target new retirees with 'safe high returns'. The rules from every earlier guide apply even more now.",
+     "hi": "नए रिटायर्ड लोगों को 'सुरक्षित ऊँचे रिटर्न' से निशाना बनाने वालों से सावधान। पिछली हर गाइड के नियम अब और भी ज़्यादा लागू हैं।",
+     "mr": "नव्याने निवृत्त झालेल्यांना 'सुरक्षित उच्च परतावा' देऊन लक्ष्य करणाऱ्यांपासून सावध. आधीच्या प्रत्येक मार्गदर्शकाचे नियम आता अधिकच लागू."
+    }
+   ],
+   "cost": {
+    "en": "A plan that lasts decades",
+    "hi": "दशकों चलने वाली योजना",
+    "mr": "दशकांचे नियोजन"
+   },
+   "choice": {
+    "prompt": {
+     "en": "A relative wants Verena's retirement money for a 'sure-shot' business. What does she do?",
+     "hi": "एक रिश्तेदार वेरेना का रिटायरमेंट पैसा एक 'पक्के' व्यापार के लिए चाहता है। वह क्या करे?",
+     "mr": "एका नातेवाइकाला वेरेनाचे निवृत्तीचे पैसे एका 'हमखास' व्यवसायासाठी हवेत. तिने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Keep the retirement money for retirement; help in other ways if she wants",
+       "hi": "रिटायरमेंट का पैसा रिटायरमेंट के लिए रखे; चाहे तो दूसरे तरीक़े से मदद करे",
+       "mr": "निवृत्तीचे पैसे निवृत्तीसाठीच ठेवावे; हवे तर दुसऱ्या प्रकारे मदत करावी"
+      },
+      "good": true,
+      "result": {
+       "en": "At 60 there is no salary to rebuild losses. This money has one job.",
+       "hi": "60 पर नुक़सान भरने को कोई तनख़्वाह नहीं। इस पैसे का एक ही काम है।",
+       "mr": "60 ला तोटा भरून काढायला पगार नाही. या पैशांचे एकच काम आहे."
+      }
+     },
+     {
+      "text": {
+       "en": "Invest a large part; family is trustworthy",
+       "hi": "बड़ा हिस्सा लगा दे; परिवार भरोसेमंद है",
+       "mr": "मोठा भाग गुंतवावा; कुटुंब विश्वासू आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "Trust is not a business plan. Losing retirement savings late in life is very hard to recover from.",
+       "hi": "भरोसा व्यापार की योजना नहीं। उम्र के आख़िर में रिटायरमेंट बचत खोना संभालना बहुत मुश्किल है।",
+       "mr": "विश्वास म्हणजे व्यवसाय योजना नाही. आयुष्याच्या उत्तरार्धात निवृत्तीची बचत गमावणे भरून काढणे खूप कठीण."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Estimate monthly needs in today's money, then grow them with an example inflation rate.",
+   "hi": "मासिक ज़रूरत आज के पैसे में आँकें, फिर उदाहरण महँगाई से बढ़ाएँ।",
+   "mr": "मासिक गरज आजच्या पैशांत ठरवा, मग उदाहरण महागाईने वाढवा."
+  },
+  {
+   "en": "Build EPF, PPF, NPS and long-term investments; transfer EPF when changing jobs.",
+   "hi": "EPF, PPF, NPS और लंबे निवेश बनाएँ; नौकरी बदलने पर EPF ट्रांसफ़र करें।",
+   "mr": "EPF, PPF, NPS आणि दीर्घ गुंतवणुका तयार करा; नोकरी बदलताना EPF हस्तांतरित करा."
+  },
+  {
+   "en": "Keep health cover that continues after you stop working.",
+   "hi": "ऐसा स्वास्थ्य कवर रखें जो काम छोड़ने के बाद भी चले।",
+   "mr": "काम थांबवल्यानंतरही चालू राहील असे आरोग्य कव्हर ठेवा."
+  },
+  {
+   "en": "At retirement, use layers: cash for 2 years, steady income, and growth withdrawn slowly.",
+   "hi": "रिटायरमेंट पर परतें: 2 साल का नक़द, स्थिर आय, और धीरे निकाला गया विकास।",
+   "mr": "निवृत्तीला थर: 2 वर्षांची रोख, स्थिर उत्पन्न, आणि हळू काढलेली वाढ."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.npscra.nsdl.co.in",
+  "https://www.epfindia.gov.in",
+  "https://www.indiapost.gov.in"
+ ]
+}

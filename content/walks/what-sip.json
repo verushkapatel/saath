@@ -1,0 +1,234 @@
+{
+ "id": "what-sip",
+ "guide": "what-sip",
+ "title": {
+  "en": "Starting your first SIP: KYC, picking a simple fund, the mandate, and the first statement",
+  "hi": "पहला SIP शुरू करना: KYC, सादा फ़ंड चुनना, मैंडेट, और पहला स्टेटमेंट",
+  "mr": "पहिला SIP सुरू करणे: KYC, साधा फंड निवडणे, मँडेट, आणि पहिले स्टेटमेंट"
+ },
+ "setting": {
+  "en": "Verena, 25, wants to invest ₹2,000 a month for the long term",
+  "hi": "25 साल की वेरेना लंबे समय के लिए ₹2,000 महीना लगाना चाहती है",
+  "mr": "25 वर्षांची वेरेना दीर्घकाळासाठी महिन्याला ₹2,000 गुंतवू इच्छिते"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Complete KYC once, on a regulated platform",
+    "hi": "एक बार KYC, किसी विनियमित प्लेटफ़ॉर्म पर",
+    "mr": "एकदाच KYC, नियंत्रित प्लॅटफॉर्मवर"
+   },
+   "text": {
+    "en": "She uses the fund house's own website (or a SEBI-registered platform). KYC needs PAN, Aadhaar, a selfie or short video, and her bank account. It is done once and works across funds.",
+    "hi": "वह फ़ंड हाउस की अपनी वेबसाइट (या SEBI-पंजीकृत प्लेटफ़ॉर्म) इस्तेमाल करती है। KYC के लिए पैन, आधार, एक सेल्फ़ी या छोटा वीडियो, और बैंक खाता चाहिए। यह एक बार होता है और सभी फ़ंड में चलता है।",
+    "mr": "ती फंड हाउसची स्वतःची वेबसाइट (किंवा SEBI-नोंदणीकृत प्लॅटफॉर्म) वापरते. KYC साठी पॅन, आधार, सेल्फी किंवा छोटा व्हिडिओ, आणि बँक खाते लागते. ते एकदाच होते आणि सर्व फंडांमध्ये चालते."
+   },
+   "screen": [
+    {
+     "en": "Investor KYC",
+     "hi": "निवेशक KYC",
+     "mr": "गुंतवणूकदार KYC"
+    },
+    {
+     "en": "PAN ✓ Aadhaar ✓",
+     "hi": "पैन ✓ आधार ✓",
+     "mr": "पॅन ✓ आधार ✓"
+    },
+    {
+     "en": "Video verification ✓",
+     "hi": "वीडियो सत्यापन ✓",
+     "mr": "व्हिडिओ पडताळणी ✓"
+    },
+    {
+     "en": "Bank linked ✓",
+     "hi": "बैंक जुड़ा ✓",
+     "mr": "बँक जोडली ✓"
+    },
+    {
+     "en": "Nominee added ✓",
+     "hi": "नॉमिनी जोड़ा ✓",
+     "mr": "नॉमिनी जोडला ✓"
+    }
+   ],
+   "details": [
+    {
+     "en": "SIP (systematic investment plan) means investing a fixed amount in a mutual fund every month, automatically.",
+     "hi": "SIP (सिस्टमैटिक इन्वेस्टमेंट प्लान) यानी हर महीने एक तय रकम म्यूचुअल फ़ंड में अपने आप लगाना।",
+     "mr": "SIP (सिस्टिमॅटिक इन्व्हेस्टमेंट प्लॅन) म्हणजे दर महिन्याला ठरावीक रक्कम म्युच्युअल फंडात आपोआप गुंतवणे."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes, once",
+    "hi": "20 मिनट, एक बार",
+    "mr": "20 मिनिटे, एकदा"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Pick a simple, low-cost, diversified fund",
+    "hi": "सादा, कम लागत वाला, विविधीकृत फ़ंड चुनें",
+    "mr": "साधा, कमी खर्चाचा, वैविध्यपूर्ण फंड निवडा"
+   },
+   "text": {
+    "en": "For a first long-term SIP she reads about broad index funds, which simply follow a market index like the Nifty 50. She compares expense ratios and picks a 'Direct plan', which has no distributor commission.",
+    "hi": "पहले लंबे SIP के लिए वह ब्रॉड इंडेक्स फ़ंड के बारे में पढ़ती है, जो बस Nifty 50 जैसे बाज़ार सूचकांक का पालन करते हैं। वह एक्सपेंस रेशियो मिलाती है और 'Direct plan' चुनती है, जिसमें वितरक का कमीशन नहीं होता।",
+    "mr": "पहिल्या दीर्घ SIP साठी ती ब्रॉड इंडेक्स फंडांबद्दल वाचते, जे फक्त Nifty 50 सारख्या बाजार निर्देशांकाचे अनुसरण करतात. ती खर्च गुणोत्तर तुलना करते आणि 'Direct plan' निवडते, ज्यात वितरकाचे कमिशन नसते."
+   },
+   "screen": [
+    {
+     "en": "Nifty 50 Index Fund",
+     "hi": "Nifty 50 इंडेक्स फ़ंड",
+     "mr": "Nifty 50 इंडेक्स फंड"
+    },
+    {
+     "en": "Plan: Direct · Growth",
+     "hi": "प्लान: डायरेक्ट · ग्रोथ",
+     "mr": "प्लॅन: डायरेक्ट · ग्रोथ"
+    },
+    {
+     "en": "Expense ratio: low",
+     "hi": "एक्सपेंस रेशियो: कम",
+     "mr": "खर्च गुणोत्तर: कमी"
+    },
+    {
+     "en": "Risk: Very High (riskometer)",
+     "hi": "जोखिम: बहुत ऊँचा (रिस्कोमीटर)",
+     "mr": "धोका: खूप जास्त (रिस्कोमीटर)"
+    },
+    {
+     "en": "Horizon: 7+ years",
+     "hi": "अवधि: 7+ साल",
+     "mr": "कालावधी: 7+ वर्षे"
+    }
+   ],
+   "details": [
+    {
+     "en": "Equity funds go up and down, sometimes 20% or more in a year. Use them only for money you will not need for many years.",
+     "hi": "इक्विटी फ़ंड ऊपर-नीचे होते हैं, कभी-कभी साल में 20% या ज़्यादा। इन्हें केवल उस पैसे के लिए इस्तेमाल करें जिसकी कई साल ज़रूरत न हो।",
+     "mr": "इक्विटी फंड वरखाली होतात, कधी कधी वर्षात 20% किंवा जास्त. फक्त अनेक वर्षे लागणार नाहीत अशा पैशांसाठी ते वापरा."
+    },
+    {
+     "en": "This is an example of how to choose, not a recommendation of any fund.",
+     "hi": "यह चुनने का तरीक़ा है, किसी फ़ंड की सिफ़ारिश नहीं।",
+     "mr": "ही निवडण्याची पद्धत आहे, कोणत्याही फंडाची शिफारस नाही."
+    }
+   ],
+   "cost": {
+    "en": "1 evening",
+    "hi": "एक शाम",
+    "mr": "एक संध्याकाळ"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Set the date and approve the mandate",
+    "hi": "तारीख़ तय करें और मैंडेट मंज़ूर करें",
+    "mr": "तारीख ठरवा आणि मँडेट मंजूर करा"
+   },
+   "text": {
+    "en": "She sets ₹2,000 on the 5th, after salary, and approves a UPI AutoPay / bank mandate. The first instalment is debited and units are allotted at that day's NAV.",
+    "hi": "वह तनख़्वाह के बाद 5 तारीख़ को ₹2,000 तय करती है और UPI AutoPay / बैंक मैंडेट मंज़ूर करती है। पहली किस्त कटती है और उस दिन के NAV पर यूनिट मिलती हैं।",
+    "mr": "ती पगारानंतर 5 तारखेला ₹2,000 ठरवते आणि UPI AutoPay / बँक मँडेट मंजूर करते. पहिला हप्ता कापला जातो आणि त्या दिवसाच्या NAV वर युनिट्स मिळतात."
+   },
+   "screen": [
+    {
+     "en": "SIP confirmed",
+     "hi": "SIP पक्का",
+     "mr": "SIP निश्चित"
+    },
+    {
+     "en": "₹2,000 every 5th",
+     "hi": "हर 5 को ₹2,000",
+     "mr": "दर 5 ला ₹2,000"
+    },
+    {
+     "en": "NAV ₹24.81 · units 80.6",
+     "hi": "NAV ₹24.81 · यूनिट 80.6",
+     "mr": "NAV ₹24.81 · युनिट 80.6"
+    },
+    {
+     "en": "Statement via email",
+     "hi": "स्टेटमेंट ईमेल पर",
+     "mr": "स्टेटमेंट ईमेलवर"
+    }
+   ],
+   "details": [
+    {
+     "en": "NAV (net asset value) is the price of one unit that day. When markets fall, the same ₹2,000 buys more units.",
+     "hi": "NAV (नेट एसेट वैल्यू) उस दिन एक यूनिट की क़ीमत है। बाज़ार गिरे तो वही ₹2,000 ज़्यादा यूनिट ख़रीदते हैं।",
+     "mr": "NAV (नेट ॲसेट व्हॅल्यू) म्हणजे त्या दिवशी एका युनिटची किंमत. बाजार घसरला की तेच ₹2,000 जास्त युनिट्स घेतात."
+    }
+   ],
+   "cost": {
+    "en": "₹2,000 a month",
+    "hi": "₹2,000 महीना",
+    "mr": "₹2,000 महिना"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Six months in, the fund is down 8%. What does Verena do?",
+     "hi": "छह महीने बाद फ़ंड 8% नीचे है। वेरेना क्या करे?",
+     "mr": "सहा महिन्यांनी फंड 8% खाली आहे. वेरेनाने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Stop the SIP and sell",
+       "hi": "SIP बंद करके बेच दे",
+       "mr": "SIP थांबवून विकावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Selling in a fall locks in the loss, and she stops buying at lower prices.",
+       "hi": "गिरावट में बेचने से नुक़सान पक्का होता है, और वह कम दाम पर ख़रीदना बंद कर देती है।",
+       "mr": "घसरणीत विकल्याने तोटा पक्का होतो, आणि ती कमी किमतीत खरेदी थांबवते."
+      }
+     },
+     {
+      "text": {
+       "en": "Keep going; this was money for 7+ years",
+       "hi": "जारी रखे; यह 7+ साल का पैसा था",
+       "mr": "चालू ठेवावे; हे 7+ वर्षांचे पैसे होते"
+      },
+      "good": true,
+      "result": {
+       "en": "Falls are expected along the way. Her plan was built for them.",
+       "hi": "रास्ते में गिरावट अपेक्षित है। उसकी योजना इन्हीं के लिए बनी थी।",
+       "mr": "वाटेत घसरण अपेक्षित आहे. तिचे नियोजन यासाठीच केले होते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Do KYC once on the fund house's site or a SEBI-registered platform, and add a nominee.",
+   "hi": "फ़ंड हाउस की साइट या SEBI-पंजीकृत प्लेटफ़ॉर्म पर एक बार KYC करें, और नॉमिनी जोड़ें।",
+   "mr": "फंड हाउसच्या साइटवर किंवा SEBI-नोंदणीकृत प्लॅटफॉर्मवर एकदा KYC करा, आणि नॉमिनी जोडा."
+  },
+  {
+   "en": "For a first long-term SIP, simple, low-cost, diversified funds are easy to understand.",
+   "hi": "पहले लंबे SIP के लिए सादे, कम लागत, विविधीकृत फ़ंड समझना आसान है।",
+   "mr": "पहिल्या दीर्घ SIP साठी साधे, कमी खर्चाचे, वैविध्यपूर्ण फंड समजायला सोपे."
+  },
+  {
+   "en": "Equity is for money you will not need for many years; expect falls.",
+   "hi": "इक्विटी उस पैसे के लिए है जिसकी कई साल ज़रूरत न हो; गिरावट की उम्मीद रखें।",
+   "mr": "इक्विटी अनेक वर्षे न लागणाऱ्या पैशांसाठी; घसरण अपेक्षित धरा."
+  },
+  {
+   "en": "Automate the SIP after payday and keep going through falls.",
+   "hi": "SIP को तनख़्वाह के बाद ऑटोमैटिक करें और गिरावट में भी जारी रखें।",
+   "mr": "SIP पगारानंतर आपोआप करा आणि घसरणीतही चालू ठेवा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.sebi.gov.in",
+  "https://www.amfiindia.com"
+ ]
+}

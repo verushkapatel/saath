@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookOpen, ChevronRight, MessageCircle, Newspaper, RotateCcw } from "lucide-react";
+import { BookOpen, ChevronRight, Mic, MessageCircle, Newspaper, Plus, RotateCcw, Sparkles } from "lucide-react";
 import { QUESTION_TOPIC } from "@/lib/catalog";
 import { loadJson, type DailyQuestion, type MiniCheck, type StoriesFile } from "@/lib/content-types";
 import { nextAction, pickByDay } from "@/lib/daily";
@@ -26,6 +26,30 @@ function greetingKey(date = new Date()) {
   if (hour < 12) return "home.greetingMorning";
   if (hour < 17) return "home.greetingAfternoon";
   return "home.greetingEvening";
+}
+
+/**
+ * Verena on Home, like a game's character screen: she walks along, and the bar shows the XP to the next level and how
+ * close her next change is. She is exactly as the person's progress has made her.
+ */
+function VerenaHud() {
+  const { t } = useI18n();
+  const app = useApp();
+  const { verena, level, progress, totalSteps } = app;
+  return (
+    <Link href="/progress" className="verena-hud" onClick={tap} data-testid="verena-hud" aria-label={t("hud.label", { age: verena.age, level: level.level })}>
+      <div className="walk-strip" aria-hidden>
+        <span className="hud-sky" />
+        <div className="walker"><div className="walker-flip"><div className="walker-bob"><Character look={verena} age={verena.age} size={96} bare alive /></div></div></div>
+      </div>
+      <div className="hud-stats">
+        <span className="hud-name">{t("hud.name", { age: verena.age })} · {t(`hud.era.${verena.era}`)}</span>
+        <span className="hud-level"><b>{t("prog.level", { level: level.level })}</b><span className="num">{progress.xp} XP</span></span>
+        <span className="xp-mini" aria-hidden><span style={{ width: `${Math.max(4, level.ratio * 100)}%` }} /></span>
+        <span className="faint hud-next">{verena.step >= totalSteps ? t("hud.done") : t("hud.next", { left: totalSteps - verena.step })}</span>
+      </div>
+    </Link>
+  );
 }
 
 export function HomeScreen() {
@@ -155,6 +179,19 @@ export function HomeScreen() {
             <span aria-hidden>{streak.count}</span>
           </span>
         </div>
+      </div>
+
+      <VerenaHud />
+
+      <button type="button" className="home-ask" onClick={() => { tap(); ai.openAsk(); }} data-testid="home-ask-bar">
+        <Plus aria-hidden size={18} className="home-ask-plus" />
+        <span>{t("home.askBar")}</span>
+        <Mic aria-hidden size={18} />
+      </button>
+      <div className="suggest home-suggest" role="group" aria-label={t("ai.try")}>
+        {[t("ai.s1"), t("ai.s2"), t("ai.s3")].map((item) => (
+          <button key={item} type="button" className="suggest-chip" onClick={() => { tap(); ai.openAsk(item); }}><Sparkles aria-hidden size={13} /> {item}</button>
+        ))}
       </div>
 
       <section className="card hero today-card stack-sm scene-in" aria-labelledby="today-saath">

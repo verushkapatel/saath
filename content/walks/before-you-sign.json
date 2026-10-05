@@ -1,0 +1,216 @@
+{
+ "id": "before-you-sign",
+ "guide": "before-you-sign",
+ "title": {
+  "en": "Any agreement, any desk: the five-minute check before your signature",
+  "hi": "कोई भी अनुबंध, कोई भी मेज़: हस्ताक्षर से पहले पाँच मिनट की जाँच",
+  "mr": "कोणताही करार, कोणतेही टेबल: सहीपूर्वी पाच मिनिटांची तपासणी"
+ },
+ "setting": {
+  "en": "Verena is handed a 14-page rent agreement and a pen",
+  "hi": "वेरेना को 14 पन्नों का किराया-नामा और एक पेन थमाया जाता है",
+  "mr": "वेरेनाच्या हातात 14 पानांचा भाडेकरार आणि पेन दिला जातो"
+ },
+ "steps": [
+  {
+   "scene": "signature",
+   "title": {
+    "en": "Slow down: you are allowed to read",
+    "hi": "धीरे चलें: आपको पढ़ने का हक़ है",
+    "mr": "सावकाश: तुम्हाला वाचण्याचा हक्क आहे"
+   },
+   "text": {
+    "en": "The broker says 'standard format, sign on each page'. Verena says she will read it first and takes a seat. Nobody can insist that you sign unread.",
+    "hi": "ब्रोकर कहता है 'स्टैंडर्ड फ़ॉर्मेट, हर पन्ने पर हस्ताक्षर करें'। वेरेना कहती है कि वह पहले पढ़ेगी और बैठ जाती है। कोई ज़िद नहीं कर सकता कि आप बिना पढ़े हस्ताक्षर करें।",
+    "mr": "दलाल म्हणतो 'नेहमीचा नमुना, प्रत्येक पानावर सही करा'. वेरेना म्हणते की ती आधी वाचेल आणि बसते. वाचल्याशिवाय सही करायचा आग्रह कोणी धरू शकत नाही."
+   },
+   "screen": [
+    {
+     "en": "Check before signing",
+     "hi": "हस्ताक्षर से पहले जाँचें",
+     "mr": "सहीपूर्वी तपासा"
+    },
+    {
+     "en": "1. Names, dates, amounts",
+     "hi": "1. नाम, तारीख़ें, रकम",
+     "mr": "1. नावे, तारखा, रकमा"
+    },
+    {
+     "en": "2. What you must pay, when",
+     "hi": "2. क्या भरना है, कब",
+     "mr": "2. काय भरायचे, कधी"
+    },
+    {
+     "en": "3. What happens if you leave early",
+     "hi": "3. जल्दी छोड़ें तो क्या होगा",
+     "mr": "3. लवकर सोडल्यास काय"
+    },
+    {
+     "en": "4. Penalties",
+     "hi": "4. जुर्माने",
+     "mr": "4. दंड"
+    },
+    {
+     "en": "5. Blank spaces: cross out",
+     "hi": "5. ख़ाली जगह: काट दें",
+     "mr": "5. रिकाम्या जागा: खोडा"
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "signature",
+   "title": {
+    "en": "Find the clauses that matter to you",
+    "hi": "आपके लिए ज़रूरी धाराएँ ढूँढें",
+    "mr": "तुमच्यासाठी महत्त्वाची कलमे शोधा"
+   },
+   "text": {
+    "en": "She finds: deposit ₹40,000 'refundable after deductions as decided by the owner', a lock-in of 11 months with full rent payable if she leaves early, and a blank space for 'maintenance charges'.",
+    "hi": "उसे मिलता है: डिपॉज़िट ₹40,000 'मालिक के तय की गई कटौतियों के बाद वापसी योग्य', 11 महीने का लॉक-इन जिसमें जल्दी छोड़ने पर पूरा किराया देना होगा, और 'मेंटेनेंस शुल्क' के लिए ख़ाली जगह।",
+    "mr": "तिला सापडते: अनामत ₹40,000 'मालकाने ठरवलेल्या कपातीनंतर परतयोग्य', 11 महिन्यांचा लॉक-इन ज्यात लवकर सोडल्यास पूर्ण भाडे द्यावे लागेल, आणि 'देखभाल शुल्क' साठी रिकामी जागा."
+   },
+   "screen": [
+    {
+     "en": "Clause 4: deposit refundable",
+     "hi": "धारा 4: डिपॉज़िट वापसी",
+     "mr": "कलम 4: अनामत परत"
+    },
+    {
+     "en": "'after deductions decided by owner'",
+     "hi": "'मालिक की तय कटौती के बाद'",
+     "mr": "'मालकाने ठरवलेल्या कपातीनंतर'"
+    },
+    {
+     "en": "Clause 7: lock-in 11 months",
+     "hi": "धारा 7: लॉक-इन 11 महीने",
+     "mr": "कलम 7: लॉक-इन 11 महिने"
+    },
+    {
+     "en": "Clause 9: maintenance ₹____",
+     "hi": "धारा 9: मेंटेनेंस ₹____",
+     "mr": "कलम 9: देखभाल ₹____"
+    }
+   ],
+   "details": [
+    {
+     "en": "Ask for vague words to be made specific: 'deductions for damage beyond normal wear, with bills shown'.",
+     "hi": "अस्पष्ट शब्दों को साफ़ करवाएँ: 'सामान्य घिसाव से ज़्यादा नुक़सान के लिए कटौती, बिल दिखाकर'।",
+     "mr": "अस्पष्ट शब्द नेमके करून घ्या: 'सामान्य झिजेपेक्षा जास्त नुकसानासाठी कपात, बिले दाखवून'."
+    },
+    {
+     "en": "Fill or strike out every blank before signing, so nothing can be added later.",
+     "hi": "हस्ताक्षर से पहले हर ख़ाली जगह भरें या काटें, ताकि बाद में कुछ जोड़ा न जा सके।",
+     "mr": "सहीपूर्वी प्रत्येक रिकामी जागा भरा किंवा खोडा, म्हणजे नंतर काहीही जोडता येणार नाही."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The broker says 'just sign, we'll fill maintenance later'. What does Verena do?",
+     "hi": "ब्रोकर कहता है 'बस हस्ताक्षर करो, मेंटेनेंस बाद में भर देंगे'। वेरेना क्या करे?",
+     "mr": "दलाल म्हणतो 'फक्त सही करा, देखभाल नंतर भरू'. वेरेनाने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Sign; it's probably small",
+       "hi": "हस्ताक्षर करे; शायद कम होगा",
+       "mr": "सही करावी; बहुधा कमी असेल"
+      },
+      "good": false,
+      "result": {
+       "en": "A blank can become any number after she signs.",
+       "hi": "उसके हस्ताक्षर के बाद ख़ाली जगह कोई भी अंक बन सकती है।",
+       "mr": "तिने सही केल्यानंतर रिकामी जागा कोणताही आकडा होऊ शकते."
+      }
+     },
+     {
+      "text": {
+       "en": "Ask for the amount to be written now, or strike it out and initial",
+       "hi": "रकम अभी लिखवाए, या काटकर हस्ताक्षर करे",
+       "mr": "रक्कम आत्ताच लिहून घ्यावी, किंवा खोडून आद्याक्षरे करावीत"
+      },
+      "good": true,
+      "result": {
+       "en": "The broker writes ₹1,200 a month. Now it is fixed and visible to both sides.",
+       "hi": "ब्रोकर ₹1,200 महीना लिखता है। अब यह तय है और दोनों तरफ़ दिख रहा है।",
+       "mr": "दलाल ₹1,200 महिना लिहितो. आता ते ठरले आणि दोन्ही बाजूंना दिसते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Keep your own signed copy",
+    "hi": "अपनी हस्ताक्षरित कॉपी रखें",
+    "mr": "स्वतःची सही केलेली प्रत ठेवा"
+   },
+   "text": {
+    "en": "She asks for a copy signed by both sides, with the date on every page, and photographs each page before leaving.",
+    "hi": "वह दोनों पक्षों के हस्ताक्षर वाली कॉपी माँगती है, हर पन्ने पर तारीख़ के साथ, और निकलने से पहले हर पन्ने की फ़ोटो लेती है।",
+    "mr": "ती दोन्ही बाजूंची सही असलेली प्रत मागते, प्रत्येक पानावर तारखेसह, आणि निघण्यापूर्वी प्रत्येक पानाचा फोटो काढते."
+   },
+   "screen": [
+    {
+     "en": "Your copy",
+     "hi": "आपकी कॉपी",
+     "mr": "तुमची प्रत"
+    },
+    {
+     "en": "Signed by both",
+     "hi": "दोनों के हस्ताक्षर",
+     "mr": "दोघांच्या सह्या"
+    },
+    {
+     "en": "Every page dated",
+     "hi": "हर पन्ने पर तारीख़",
+     "mr": "प्रत्येक पानावर तारीख"
+    },
+    {
+     "en": "Photos saved",
+     "hi": "फ़ोटो सेव",
+     "mr": "फोटो जतन"
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "You are allowed to read before you sign, every time.",
+   "hi": "हर बार, हस्ताक्षर से पहले पढ़ने का आपका हक़ है।",
+   "mr": "प्रत्येक वेळी, सहीपूर्वी वाचण्याचा तुमचा हक्क आहे."
+  },
+  {
+   "en": "Check names, amounts, payments, early-exit terms and penalties.",
+   "hi": "नाम, रकम, भुगतान, जल्दी छोड़ने की शर्तें और जुर्माने देखें।",
+   "mr": "नावे, रकमा, देयके, लवकर सोडण्याच्या अटी आणि दंड तपासा."
+  },
+  {
+   "en": "Make vague words specific; fill or strike every blank.",
+   "hi": "अस्पष्ट शब्द साफ़ करवाएँ; हर ख़ाली जगह भरें या काटें।",
+   "mr": "अस्पष्ट शब्द नेमके करा; प्रत्येक रिकामी जागा भरा किंवा खोडा."
+  },
+  {
+   "en": "Keep a copy signed by both sides.",
+   "hi": "दोनों के हस्ताक्षर वाली कॉपी रखें।",
+   "mr": "दोघांची सही असलेली प्रत ठेवा."
+  }
+ ],
+ "reviewed": "2026-10"
+}

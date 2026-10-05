@@ -24,6 +24,7 @@ import { PrefsProvider, usePrefs } from "./prefs";
 import { useI18n } from "./providers";
 import { RewardSheet } from "./reward-sheet";
 import { Celebrate } from "./celebrate";
+import { SelectAsk } from "./select-ask";
 import { SessionCtx } from "./session";
 import { ThemeToggle } from "./theme-toggle";
 import { InstallStep, MakeYours } from "./welcome";
@@ -40,7 +41,6 @@ const TABS: Nav[] = [
   { href: "/forms", key: "nav.forms", icon: FileText, match: (path) => /^\/(forms|scan)/.test(path) },
 ];
 const MORE: Nav[] = [
-  { href: "/ai", key: "nav.ai", icon: MessageCircle, match: (path) => path.startsWith("/ai") },
   { href: "/settings", key: "nav.settings", icon: Settings, match: (path) => path.startsWith("/settings") },
 ];
 
@@ -168,6 +168,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
         })}
       </nav>
       {ai.askOpen && <AskSheet />}
+      {prefs.ai && <SelectAsk />}
       {app.celebration ? <Celebrate /> : !inEpisode && app.fresh.length > 0 && <RewardSheet />}
     </div>
   );

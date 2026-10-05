@@ -1,0 +1,121 @@
+{
+ "id": "simple-compound",
+ "guide": "simple-compound",
+ "title": {
+  "en": "Starting at 22 vs starting at 32: the same ₹2,000 a month, a very different result",
+  "hi": "22 पर शुरू बनाम 32 पर: वही ₹2,000 महीना, बहुत अलग नतीजा",
+  "mr": "22 व्या वर्षी सुरुवात विरुद्ध 32 व्या: तेच ₹2,000 महिना, खूप वेगळा निकाल"
+ },
+ "setting": {
+  "en": "Verena and her friend Riya compare notes at 50",
+  "hi": "50 की उम्र में वेरेना और उसकी दोस्त रिया हिसाब मिलाती हैं",
+  "mr": "50 व्या वर्षी वेरेना आणि तिची मैत्रीण रिया हिशोब जुळवतात"
+ },
+ "steps": [
+  {
+   "scene": "growth",
+   "title": {
+    "en": "Simple vs compound, in one picture",
+    "hi": "साधारण बनाम चक्रवृद्धि, एक तस्वीर में",
+    "mr": "सरळ विरुद्ध चक्रवाढ, एका चित्रात"
+   },
+   "text": {
+    "en": "Simple interest pays only on the original amount. Compound interest also pays on past interest, so growth speeds up the longer it runs.",
+    "hi": "साधारण ब्याज केवल मूल रकम पर मिलता है। चक्रवृद्धि ब्याज पिछले ब्याज पर भी मिलता है, इसलिए जितना लंबा चले, बढ़त उतनी तेज़।",
+    "mr": "सरळ व्याज फक्त मूळ रकमेवर मिळते. चक्रवाढ व्याज मागच्या व्याजावरही मिळते, म्हणून जितके जास्त काळ चालेल तितकी वाढ वेगवान."
+   },
+   "screen": [
+    {
+     "en": "₹2,000/month at 10% (example rate)",
+     "hi": "₹2,000/महीना 10% पर (उदाहरण दर)",
+     "mr": "₹2,000/महिना 10% वर (उदाहरण दर)"
+    },
+    {
+     "en": "Verena from 22 → at 50: ~₹37 L",
+     "hi": "वेरेना 22 से → 50 पर: ~₹37 लाख",
+     "mr": "वेरेना 22 पासून → 50 ला: ~₹37 लाख"
+    },
+    {
+     "en": "Riya from 32 → at 50: ~₹12 L",
+     "hi": "रिया 32 से → 50 पर: ~₹12 लाख",
+     "mr": "रिया 32 पासून → 50 ला: ~₹12 लाख"
+    },
+    {
+     "en": "Extra put in by Verena: ₹2.4 L",
+     "hi": "वेरेना ने ज़्यादा डाला: ₹2.4 लाख",
+     "mr": "वेरेनाने जास्त टाकले: ₹2.4 लाख"
+    }
+   ],
+   "details": [
+    {
+     "en": "The 10% here is only an example to show the effect. Real returns vary year to year and are not guaranteed.",
+     "hi": "यहाँ 10% केवल असर दिखाने का उदाहरण है। असली रिटर्न साल-दर-साल बदलते हैं और गारंटीड नहीं।",
+     "mr": "इथे 10% फक्त परिणाम दाखवण्यासाठी उदाहरण आहे. खरा परतावा वर्षागणिक बदलतो आणि हमी नसते."
+    },
+    {
+     "en": "Ten extra years of time did more than any extra amount could.",
+     "hi": "दस साल के ज़्यादा समय ने किसी भी ज़्यादा रकम से ज़्यादा काम किया।",
+     "mr": "दहा वर्षांच्या जादा वेळेने कोणत्याही जादा रकमेपेक्षा जास्त काम केले."
+    }
+   ],
+   "cost": {
+    "en": "Time is the cost",
+    "hi": "समय ही क़ीमत है",
+    "mr": "वेळ हीच किंमत"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What is the main lesson for a 22-year-old?",
+     "hi": "22 साल के व्यक्ति के लिए मुख्य सीख क्या है?",
+     "mr": "22 वर्षांच्या व्यक्तीसाठी मुख्य धडा काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Start small now rather than big later",
+       "hi": "बाद में बड़ा नहीं, अभी छोटा शुरू करें",
+       "mr": "नंतर मोठे नाही, आत्ता लहान सुरू करा"
+      },
+      "good": true,
+      "result": {
+       "en": "Time is the ingredient you cannot buy back.",
+       "hi": "समय वह चीज़ है जो वापस ख़रीदी नहीं जा सकती।",
+       "mr": "वेळ ही परत विकत घेता न येणारी गोष्ट आहे."
+      }
+     },
+     {
+      "text": {
+       "en": "Wait until salary is higher",
+       "hi": "तनख़्वाह बढ़ने तक रुकें",
+       "mr": "पगार वाढेपर्यंत थांबा"
+      },
+      "good": false,
+      "result": {
+       "en": "Waiting ten years cost Riya most of the growth.",
+       "hi": "दस साल रुकने से रिया की ज़्यादातर बढ़त चली गई।",
+       "mr": "दहा वर्षे थांबल्याने रियाची बहुतेक वाढ गेली."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Compound interest earns on past interest, so time matters most.",
+   "hi": "चक्रवृद्धि पिछले ब्याज पर भी कमाता है, इसलिए समय सबसे अहम है।",
+   "mr": "चक्रवाढ मागच्या व्याजावरही कमावते, म्हणून वेळ सर्वात महत्त्वाचा."
+  },
+  {
+   "en": "Starting small early can beat starting big late.",
+   "hi": "जल्दी छोटा शुरू करना देर से बड़ा शुरू करने से बेहतर हो सकता है।",
+   "mr": "लवकर लहान सुरुवात उशिरा मोठ्या सुरुवातीपेक्षा चांगली ठरू शकते."
+  },
+  {
+   "en": "Example rates show the effect; real returns are not guaranteed.",
+   "hi": "उदाहरण दरें असर दिखाती हैं; असली रिटर्न गारंटीड नहीं।",
+   "mr": "उदाहरण दर परिणाम दाखवतात; खरा परतावा हमी नसतो."
+  }
+ ],
+ "reviewed": "2026-10"
+}

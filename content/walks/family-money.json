@@ -1,0 +1,166 @@
+{
+ "id": "family-money",
+ "guide": "family-money",
+ "title": {
+  "en": "The family money meeting: one evening that puts everyone on the same page",
+  "hi": "परिवार की पैसों वाली बैठक: एक शाम जो सबको एक पन्ने पर लाती है",
+  "mr": "कुटुंबाची पैशांची बैठक: सगळ्यांना एकाच पानावर आणणारी एक संध्याकाळ"
+ },
+ "setting": {
+  "en": "Verena, 38, her husband and her parents, around the dining table",
+  "hi": "38 साल की वेरेना, उसके पति और माता-पिता, खाने की मेज़ के चारों ओर",
+  "mr": "38 वर्षांची वेरेना, तिचा नवरा आणि आई-वडील, जेवणाच्या टेबलाभोवती"
+ },
+ "steps": [
+  {
+   "scene": "family",
+   "title": {
+    "en": "Agree on what you will talk about",
+    "hi": "तय करें कि किस पर बात होगी",
+    "mr": "कशावर बोलायचे ते ठरवा"
+   },
+   "text": {
+    "en": "Money talks go badly when they start with blame. Verena opens with a short list and one rule: nobody is judged for past decisions.",
+    "hi": "पैसों की बात तब बिगड़ती है जब दोष से शुरू हो। वेरेना एक छोटी सूची और एक नियम से शुरू करती है: पुराने फ़ैसलों पर किसी को परखा नहीं जाएगा।",
+    "mr": "पैशांचे बोलणे दोषारोपाने सुरू झाले की बिघडते. वेरेना एका छोट्या यादीने आणि एका नियमाने सुरुवात करते: जुन्या निर्णयांवरून कोणालाही दोष दिला जाणार नाही."
+   },
+   "screen": [
+    {
+     "en": "Tonight",
+     "hi": "आज रात",
+     "mr": "आज रात्री"
+    },
+    {
+     "en": "1. Where is everything?",
+     "hi": "1. सब कहाँ है?",
+     "mr": "1. सगळे कुठे आहे?"
+    },
+    {
+     "en": "2. Who pays what?",
+     "hi": "2. कौन क्या भरता है?",
+     "mr": "2. कोण काय भरते?"
+    },
+    {
+     "en": "3. If someone falls ill",
+     "hi": "3. अगर कोई बीमार हो",
+     "mr": "3. कोणी आजारी पडले तर"
+    },
+    {
+     "en": "4. Goals for 5 years",
+     "hi": "4. 5 साल के लक्ष्य",
+     "mr": "4. 5 वर्षांची उद्दिष्टे"
+    }
+   ],
+   "cost": {
+    "en": "1 evening",
+    "hi": "एक शाम",
+    "mr": "एक संध्याकाळ"
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Make one shared list of every account and policy",
+    "hi": "हर खाते और पॉलिसी की एक साझा सूची",
+    "mr": "प्रत्येक खाते आणि पॉलिसीची एक सामायिक यादी"
+   },
+   "text": {
+    "en": "They list bank accounts, FDs, insurance policies, PF, loans, property papers and where each document is kept, with nominees. Passwords and PINs are never written on it.",
+    "hi": "वे बैंक खाते, FD, बीमा पॉलिसी, PF, लोन, संपत्ति के काग़ज़ और हर दस्तावेज़ कहाँ रखा है, नॉमिनी के साथ सूची बनाते हैं। पासवर्ड और PIN उस पर कभी नहीं लिखे जाते।",
+    "mr": "ते बँक खाती, FD, विमा पॉलिसी, PF, कर्जे, मालमत्तेची कागदपत्रे आणि प्रत्येक कागद कुठे ठेवला आहे, नॉमिनीसह, यांची यादी करतात. पासवर्ड आणि PIN त्यावर कधीही लिहिले जात नाहीत."
+   },
+   "screen": [
+    {
+     "en": "Family money map",
+     "hi": "परिवार का पैसा-नक्शा",
+     "mr": "कुटुंबाचा पैसा-नकाशा"
+    },
+    {
+     "en": "Accounts: 6 · nominees ✓",
+     "hi": "खाते: 6 · नॉमिनी ✓",
+     "mr": "खाती: 6 · नॉमिनी ✓"
+    },
+    {
+     "en": "Health cover: parents? ✗",
+     "hi": "स्वास्थ्य कवर: माता-पिता? ✗",
+     "mr": "आरोग्य कव्हर: आई-वडील? ✗"
+    },
+    {
+     "en": "Home loan: ₹18 L left",
+     "hi": "होम लोन: ₹18 लाख बाक़ी",
+     "mr": "गृहकर्ज: ₹18 लाख बाकी"
+    },
+    {
+     "en": "Will: not made",
+     "hi": "वसीयत: नहीं बनी",
+     "mr": "मृत्युपत्र: केले नाही"
+    }
+   ],
+   "details": [
+    {
+     "en": "The gap they find: her parents have no health insurance of their own. That becomes the first action.",
+     "hi": "उन्हें जो कमी मिलती है: माता-पिता का अपना स्वास्थ्य बीमा नहीं। यही पहला काम बनता है।",
+     "mr": "त्यांना सापडलेली उणीव: आई-वडिलांचा स्वतःचा आरोग्य विमा नाही. तेच पहिले काम ठरते."
+    }
+   ],
+   "cost": {
+    "en": "2 hours, once a year",
+    "hi": "2 घंटे, साल में एक बार",
+    "mr": "2 तास, वर्षातून एकदा"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What is the most useful outcome of the meeting?",
+     "hi": "बैठक का सबसे उपयोगी नतीजा क्या है?",
+     "mr": "बैठकीचा सर्वात उपयुक्त निकाल काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "A list of three actions with names and dates",
+       "hi": "नाम और तारीख़ के साथ तीन कामों की सूची",
+       "mr": "नाव आणि तारखेसह तीन कामांची यादी"
+      },
+      "good": true,
+      "result": {
+       "en": "Parents' health cover by month-end (Verena), will draft (father), nominees checked (husband).",
+       "hi": "महीने के अंत तक माता-पिता का स्वास्थ्य बीमा (वेरेना), वसीयत का मसौदा (पिता), नॉमिनी जाँच (पति)।",
+       "mr": "महिनाअखेरपर्यंत आई-वडिलांचा आरोग्य विमा (वेरेना), मृत्युपत्राचा मसुदा (वडील), नॉमिनी तपासणी (नवरा)."
+      }
+     },
+     {
+      "text": {
+       "en": "A general agreement to 'save more'",
+       "hi": "'ज़्यादा बचाने' पर सहमति",
+       "mr": "'जास्त बचत' वर सहमती"
+      },
+      "good": false,
+      "result": {
+       "en": "Vague agreements rarely turn into action.",
+       "hi": "अस्पष्ट सहमति शायद ही काम में बदलती है।",
+       "mr": "अस्पष्ट सहमती क्वचितच कृतीत उतरते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Start money talks with a list and a no-blame rule.",
+   "hi": "पैसों की बात सूची और बिना-दोष नियम से शुरू करें।",
+   "mr": "पैशांचे बोलणे यादी आणि दोषारोप नाही या नियमाने सुरू करा."
+  },
+  {
+   "en": "Keep one family list of every account, policy, loan and document location, never passwords.",
+   "hi": "हर खाते, पॉलिसी, लोन और दस्तावेज़ की जगह की एक पारिवारिक सूची रखें, पासवर्ड कभी नहीं।",
+   "mr": "प्रत्येक खाते, पॉलिसी, कर्ज आणि कागदपत्राच्या जागेची एक कौटुंबिक यादी ठेवा, पासवर्ड कधीही नाही."
+  },
+  {
+   "en": "End with actions, owners and dates. Repeat yearly.",
+   "hi": "कामों, ज़िम्मेदारों और तारीख़ों के साथ ख़त्म करें। हर साल दोहराएँ।",
+   "mr": "कामे, जबाबदार आणि तारखांसह संपवा. दरवर्षी पुन्हा करा."
+  }
+ ],
+ "reviewed": "2026-10"
+}
