@@ -156,7 +156,7 @@ function scene(kind: SceneKind, lines: string[], verena: (x: number, y: number, 
           <rect className="sc-navy-fill" x="110" y="16" width="100" height="22" rx="9" />
           <Screen x={113} y={20} w={94} h={160} lines={lines} size={9} ink />
           <path className="sc" d="M216 120c18 0 26 10 34 30l20 34M104 140c-14 4-22 14-26 44" />
-          {verena(18, 112, 0.36)}
+          {verena(4, 112, 0.36)}
         </g>
       );
     case "laptop":
@@ -184,7 +184,7 @@ function scene(kind: SceneKind, lines: string[], verena: (x: number, y: number, 
               ))}
             </div>
           </foreignObject>
-          {verena(14, 108, 0.36)}
+          {verena(4, 108, 0.36)}
         </g>
       );
     case "call":

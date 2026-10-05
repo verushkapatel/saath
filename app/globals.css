@@ -2969,3 +2969,48 @@ h1 { font-weight: 700; }
 .filled-value { font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive; color: #1f3d7a; font-size: 0.98rem; }
 .filled-row small { color: #6b5d3a; font-size: 0.78rem; }
 .sample-stamp { position: absolute; right: -10px; top: 40%; transform: rotate(-18deg); padding: 4px 18px; border: 3px solid rgba(179,38,30,0.35); color: rgba(179,38,30,0.35); font-weight: 900; letter-spacing: 0.3em; font-size: 1.6rem; pointer-events: none; }
+
+/* Handbook: a cover, the walkthroughs with their pictures, and a print theme that is always ink on paper. */
+.hb-cover { display: none; }
+.print-view .hb-cover { display: block; }
+.print-view .hb-screen-head { display: none; }
+.hb-cover-band { background: #14336b; color: #fff; padding: 48px 36px 40px; border-radius: 0 0 24px 24px; }
+.hb-cover-brand { display: flex; align-items: center; gap: 10px; margin: 0 0 28px; font-weight: 700; font-size: 1.3rem; color: #fff; }
+.hb-cover-title { color: #fff; font-size: 2.6rem; margin: 0; line-height: 1.1; }
+.hb-cover-lead { color: rgba(255,255,255,0.85); margin: 12px 0 0; font-size: 1.05rem; max-width: 520px; }
+.hb-cover-row { display: flex; justify-content: center; align-items: flex-end; gap: 4px; padding: 28px 0 8px; border-bottom: 1.5px solid #c9ccd3; }
+.hb-toc { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 10px; }
+.hb-toc li { display: flex; gap: 14px; align-items: baseline; font-size: 1.1rem; border-bottom: 1px dotted #c9ccd3; padding-bottom: 6px; }
+.hb-toc span { color: #14336b; font-weight: 800; }
+.hb-toc em { margin-left: auto; font-style: normal; color: #6a6a6a; font-size: 0.9rem; }
+.hb-walk { margin-top: 10px; padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
+.hb-walk-title { margin: 0 0 10px; font-weight: 800; color: var(--navy); }
+.hb-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.hb-step { display: grid; grid-template-columns: 34% 1fr; gap: 14px; align-items: start; break-inside: avoid; }
+.hb-step-art { border-radius: 10px; background: var(--surface-1); padding: 6px 8px 0; }
+.hb-step h4 { margin: 0 0 4px; font-size: 1rem; display: flex; gap: 8px; align-items: baseline; }
+.hb-step h4 span { display: inline-grid; place-items: center; width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--navy); color: #fff; font-size: 0.75rem; }
+.hb-step p, .hb-step li { font-size: 0.92rem; line-height: 1.5; margin: 0 0 4px; }
+.hb-step ul { margin: 2px 0 4px; padding-left: 18px; }
+.hb-say { font-style: italic; }
+.hb-watch { border-left: 3px solid var(--navy); padding-left: 8px; }
+.hb-remember { margin: 12px 0 0; font-size: 0.92rem; }
+@media (max-width: 560px) { .hb-step { grid-template-columns: 1fr; } }
+@media print {
+  :root, :root[data-theme], :root[data-theme="dark"], :root:not([data-theme="light"]) {
+    --bg: #ffffff !important; --bg-top: #ffffff !important; --surface-1: #ffffff !important; --surface-2: #f3f4f7 !important; --surface-3: #e4e6ea !important;
+    --text: #111114 !important; --text-muted: #2b2b2b !important; --text-faint: #555555 !important; --line: #d6d8dd !important; --line-strong: #9a9ea6 !important;
+    --accent: #111114 !important; --accent-ink: #ffffff !important; --accent-text: #111114 !important; --navy: #14336b !important; --navy-soft: rgba(20,51,107,0.08) !important;
+    color-scheme: light !important;
+  }
+  html, body, .page, .screen, #content { background: #ffffff !important; color: #111114 !important; }
+  .handbook, .handbook * { opacity: 1 !important; transform: none !important; filter: none !important; }
+  .hb-cover { display: block !important; break-after: page; }
+  .hb-screen-head { display: none !important; }
+  .hb-walk { background: #f3f4f7 !important; }
+  .hb-step { grid-template-columns: 30% 1fr; }
+  .handbook-lesson { break-inside: auto; }
+  .hb-walk { break-before: auto; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+.hb-logo { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #fff; color: #0a0a0a; }

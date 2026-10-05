@@ -12,6 +12,11 @@ import { useApp } from "./app-state";
 import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
 import { ListenButton, PageSkeleton } from "./ui";
+import { loadWalk, type Walkthrough } from "@/lib/content-types";
+import { Character } from "./character";
+import { LogoMark, SkywardEmblem } from "./logo";
+import { SceneArt } from "./scenes";
+import { verenaAt } from "@/lib/verena";
 
 const plain = (text: string) => text.replace(/\[\[([a-z0-9-]+)\]\]/g, "$1");
 
@@ -24,6 +29,7 @@ export function HandbookScreen({ print }: { print?: boolean }) {
   const { lessons } = useApp();
   const [terms, setTerms] = useState<Record<string, string>>({});
   const [pdf, setPdf] = useState(false);
+  const [walks, setWalks] = useState<Record<string, Walkthrough>>({});
 
   useEffect(() => {
     fetch(asset("/content/glossary.json"))
@@ -32,6 +38,16 @@ export function HandbookScreen({ print }: { print?: boolean }) {
       .catch(() => undefined);
     fetch(asset(`/handbook/saath-handbook-${code}.pdf`), { method: "HEAD" }).then((response) => setPdf(response.ok)).catch(() => setPdf(false));
   }, [code]);
+
+  // Every guide's step-by-step walkthrough is part of the book.
+  useEffect(() => {
+    if (lessons.length === 0) return;
+    let live = true;
+    Promise.all(lessons.map((lesson) => loadWalk(lesson.id).then((walk) => [lesson.id, walk] as const).catch(() => null))).then((list) => {
+      if (live) setWalks(Object.fromEntries(list.filter((item): item is readonly [string, Walkthrough] => item !== null)));
+    });
+    return () => { live = false; };
+  }, [lessons]);
 
   if (lessons.length === 0) return <PageSkeleton />;
 
@@ -48,7 +64,23 @@ export function HandbookScreen({ print }: { print?: boolean }) {
   return (
     <article className="stack-lg handbook">
       {!print && <Link href="/guide" className="link no-print"><ChevronLeft aria-hidden size={18} />{t("nav.guide")}</Link>}
-      <header className="stack-sm">
+      <section className="hb-cover" aria-hidden={!print}>
+        <div className="hb-cover-band">
+          <p className="hb-cover-brand"><span className="hb-logo"><LogoMark size={30} /></span> Saath <span className="logo-divider" aria-hidden /><SkywardEmblem size={34} /></p>
+          <h1 className="hb-cover-title">{t("handbook.title")}</h1>
+          <p className="hb-cover-lead">{t("handbook.coverLead")}</p>
+        </div>
+        <div className="hb-cover-row">
+          {[0, 12, 30, 52, 72, 92].map((step) => {
+            const look = verenaAt(step, 92);
+            return <Character key={step} look={look} age={look.age} size={92} bare />;
+          })}
+        </div>
+        <ol className="hb-toc">
+          {UNITS.map((unit, index) => <li key={unit}><span>{String(index + 1).padStart(2, "0")}</span>{t(`unit.${unit}`)}<em>{lessons.filter((lesson) => lesson.unit === unit).length}</em></li>)}
+        </ol>
+      </section>
+      <header className="stack-sm hb-screen-head">
         <p className="masthead">{t("home.masthead")}</p>
         <h1>{t("handbook.title")}</h1>
         <p className="lead">{t("handbook.lead")}</p>
@@ -89,6 +121,26 @@ export function HandbookScreen({ print }: { print?: boolean }) {
                   {lesson.points.map((point, at) => <li key={at}>{point[code]}</li>)}
                 </ul>
                 <p className="muted"><strong>{t("handbook.example")}.</strong> {lesson.example[code]}</p>
+                {walks[lesson.id] && (
+                  <div className="hb-walk">
+                    <p className="hb-walk-title">{t("handbook.liveIt")}: {walks[lesson.id].title[code]}</p>
+                    <ol className="hb-steps">
+                      {walks[lesson.id].steps.map((step, at) => (
+                        <li key={at} className="hb-step">
+                          <div className="hb-step-art"><SceneArt kind={step.scene} lines={(step.screen ?? []).map((line) => line[code] ?? line.en)} look={verenaAt(at * 7 + 30, 92)} /></div>
+                          <div className="hb-step-body">
+                            <h4><span>{at + 1}</span>{step.title[code]}</h4>
+                            <p>{step.text[code]}</p>
+                            {step.details && <ul>{step.details.map((line, i) => <li key={i}>{line[code]}</li>)}</ul>}
+                            {step.say && <p className="hb-say">{step.say.who[code]} {step.say.line[code]}</p>}
+                            {step.watch && <p className="hb-watch"><strong>{t("walk.watch")}</strong> {step.watch[code]}</p>}
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                    <p className="hb-remember"><strong>{t("walk.remember")}:</strong> {walks[lesson.id].takeaways.map((line) => line[code]).join(" · ")}</p>
+                  </div>
+                )}
               </section>
             ))}
           </section>

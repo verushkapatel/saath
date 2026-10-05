@@ -781,7 +781,9 @@
     "example": "Example",
     "reviewed": "Facts last checked against official sources: {month}.",
     "open": "Handbook",
-    "sub": "All four units, to keep"
+    "sub": "All four units, to keep",
+    "coverLead": "Every guide in Saath, lived step by step: banks, cards, insurance, loans, tax, scams, saving and retirement.",
+    "liveIt": "Live it step by step"
   },
   "comic": {
     "title": "The Skyward comic",
