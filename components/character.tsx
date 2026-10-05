@@ -461,14 +461,16 @@ export function Character({
       <path className="ch-ground" d="M10 214h180" />
       <ellipse className="ch-shadow" cx="100" cy="214" rx={38 * scale} ry="4" fill="#000" opacity="0.12" />
       <g className="ch-figure">
-        <g transform={headMove}><HairBack age={age} /></g>
+        <g transform={headMove}><g className="ch-head"><HairBack age={age} /></g></g>
         <g transform={body}>
           <ExtraBack extra={look.extra} />
           <g className="ch-arms"><Limbs /></g>
           <Outfit outfit={look.outfit} tint={look.tint} />
           <Extra extra={look.extra} part="body" />
         </g>
-        <g className="ch-head" transform={headMove}>
+        {/* The position sits on the outer group; the nod animates the inner one, so CSS never replaces the position. */}
+        <g transform={headMove}>
+          <g className="ch-head">
           {/* Neck, ears and face */}
           <path d="M94 80h12v14c-4 3-8 3-12 0z" fill={SKIN_SHADE} />
           <circle cx="81" cy="66" r="4.2" fill={SKIN} />
@@ -477,6 +479,7 @@ export function Character({
           <HairFront age={age} />
           <Face mood={mood} />
           <Extra extra={look.extra} part="head" />
+          </g>
         </g>
       </g>
     </svg>
