@@ -1954,6 +1954,11 @@
     "smsPlaceholder": "Rs.450.00 debited from A/c XX2741 to SWIGGY on 12-10-26…",
     "smsNone": "उस टेक्स्ट में कोई रकम नहीं मिली।",
     "smsSave": "एंट्री सेव करें",
-    "smsPrivate": "केवल इसी फ़ोन पर पढ़ा जाता है। SMS कहीं रखा या भेजा नहीं जाता।"
+    "smsPrivate": "केवल इसी फ़ोन पर पढ़ा जाता है। SMS कहीं रखा या भेजा नहीं जाता।",
+    "allBudgets": "सभी {count} बजट दिखाएँ",
+    "fewer": "कम दिखाएँ"
+  },
+  "feedback": {
+    "open": "Saath टीम को फ़ीडबैक भेजें"
   }
 }

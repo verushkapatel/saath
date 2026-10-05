@@ -1954,6 +1954,11 @@
     "smsPlaceholder": "Rs.450.00 debited from A/c XX2741 to SWIGGY on 12-10-26…",
     "smsNone": "No amount found in that text.",
     "smsSave": "Save entry",
-    "smsPrivate": "Read on this phone only. The SMS is not stored or sent anywhere."
+    "smsPrivate": "Read on this phone only. The SMS is not stored or sent anywhere.",
+    "allBudgets": "Show all {count} budgets",
+    "fewer": "Show fewer"
+  },
+  "feedback": {
+    "open": "Send feedback to the Saath team"
   }
 }

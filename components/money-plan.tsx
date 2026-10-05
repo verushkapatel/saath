@@ -130,6 +130,7 @@ export function PlanPanel({ plan, save, onEdit }: { plan: MoneyPlan; save: (plan
   const [potName, setPotName] = useState("");
   const [potTarget, setPotTarget] = useState("");
   const [potAdd, setPotAdd] = useState("");
+  const [allBudgets, setAllBudgets] = useState(false);
   const month = app.today.slice(0, 7);
 
   async function payBill(bill: Bill) {
@@ -158,8 +159,11 @@ export function PlanPanel({ plan, save, onEdit }: { plan: MoneyPlan; save: (plan
     setPotSheet(null);
   }
 
+  // Categories with spending come first, then the rest; only five show until asked, so the screen stays calm.
   const budgetIds = Object.keys(plan.budgets).filter((id) => plan.budgets[id] > 0 || view.spent[id]);
   const extraSpent = Object.keys(view.spent).filter((id) => !budgetIds.includes(id));
+  const ordered = [...budgetIds, ...extraSpent].sort((a, b) => (view.spent[b] ?? 0) / Math.max(1, plan.budgets[b] ?? 1) - (view.spent[a] ?? 0) / Math.max(1, plan.budgets[a] ?? 1));
+  const shownBudgets = allBudgets ? ordered : ordered.slice(0, 5);
 
   return (
     <div className="stack plan-panel" data-testid="plan-panel">
@@ -192,7 +196,7 @@ export function PlanPanel({ plan, save, onEdit }: { plan: MoneyPlan; save: (plan
       <section className="stack-sm" aria-labelledby="budgets-h">
         <h2 id="budgets-h"><Wallet aria-hidden size={18} style={{ verticalAlign: "-3px" }} /> {t("plan.budgets")}</h2>
         <ul className="card budget-list">
-          {[...budgetIds, ...extraSpent].map((id) => {
+          {shownBudgets.map((id) => {
             const limit = plan.budgets[id] ?? 0;
             const spent = view.spent[id] ?? 0;
             const ratio = limit ? spent / limit : spent ? 1.2 : 0;
@@ -209,6 +213,7 @@ export function PlanPanel({ plan, save, onEdit }: { plan: MoneyPlan; save: (plan
             );
           })}
         </ul>
+        {ordered.length > 5 && <button type="button" className="link" onClick={() => { tap(); setAllBudgets((value) => !value); }}>{allBudgets ? t("plan.fewer") : t("plan.allBudgets", { count: ordered.length })}</button>}
       </section>
 
       <section className="stack-sm" aria-labelledby="pots-h">

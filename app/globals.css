@@ -3014,3 +3014,43 @@ h1 { font-weight: 700; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 .hb-logo { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #fff; color: #0a0a0a; }
+
+/* ───────────────────────────────────────────────────────────────
+   Smoothness pass: no scroll snapping, no blur behind moving bars on phones,
+   no tap delay, and long pages render only what is on screen.
+   ─────────────────────────────────────────────────────────────── */
+html:has(.intro) { scroll-snap-type: none; }
+.act, .intro-hero.navy-scene { scroll-snap-align: none; }
+button, a, [role="button"], .chip, .btn { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.handbook-lesson, .walk-card, .list > li, .postcard, .entry { content-visibility: auto; contain-intrinsic-size: auto 120px; }
+.handbook-lesson { contain-intrinsic-size: auto 900px; }
+.screen { animation-duration: 180ms !important; }
+@media (max-width: 900px) {
+  .shell-top, .tabs, .pin-top .listen, .story-caption { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+  .shell-top { background: var(--bg) !important; }
+  .tabs { background: var(--surface-1) !important; }
+  .story-caption { background: rgba(10, 16, 30, 0.82); }
+}
+
+/* Motion with character (inspired by reactbits.dev): headings blur in, primary buttons glint once,
+   hero scenes drift like slow aurora, and pressing a primary button sends out a small ring. */
+.screen h1 { animation: blur-in 520ms var(--ease-out) both; }
+@keyframes blur-in { from { opacity: 0; filter: blur(8px); transform: translateY(6px); letter-spacing: 0.02em; } to { opacity: 1; filter: none; transform: none; } }
+.btn-primary { position: relative; overflow: hidden; isolation: isolate; }
+.btn-primary::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.28) 45%, transparent 60%); transform: translateX(-120%); animation: glint 1.6s 0.6s var(--ease-out) 1 both; pointer-events: none; }
+@keyframes glint { to { transform: translateX(120%); } }
+.btn-primary:active::before { content: ""; position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; border: 2px solid currentColor; opacity: 0.6; animation: spark 420ms var(--ease-out) forwards; pointer-events: none; }
+@keyframes spark { to { transform: scale(18); opacity: 0; } }
+.navy-scene, .card.hero, .safe-card { background-size: 180% 180% !important; animation: aurora 18s ease-in-out infinite alternate; }
+@keyframes aurora { from { background-position: 0% 30%; } to { background-position: 100% 70%; } }
+.card, .walk-card, .pot, .verena-hud { transition: transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out); }
+@media (hover: hover) { .walk-card:hover, .pot:hover, .verena-hud:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); } }
+@media (prefers-reduced-motion: reduce) {
+  .screen h1, .btn-primary::after, .btn-primary:active::before, .navy-scene, .card.hero, .safe-card { animation: none !important; }
+}
+.composer { grid-template-columns: auto minmax(0, 1fr) auto; padding-left: 8px; }
+.composer .plus-note, .composer .plus-menu { grid-column: 1 / -1; }
+.composer .plus-btn { background: var(--surface-2); color: var(--text); }
+.resume-actions { grid-template-columns: 1fr 1fr; }
+.resume-actions .btn { min-height: 48px; font-size: 0.95rem; }
+.home-feedback > summary { cursor: pointer; padding: 14px 16px; border-radius: var(--r-lg); border: 1px solid var(--line); color: var(--text-muted); list-style: none; } .home-feedback[open] > summary { margin-bottom: 12px; }

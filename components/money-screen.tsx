@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Camera, ClipboardPaste, Check, ChevronDown, ChevronLeft, ChevronRight, ImagePlus, Plus, Repeat, ShieldCheck, Sparkles, Target, Trash2 } from "lucide-react";
 import { todayISO } from "@/lib/dates";
 import { dayLabel, groupAmount, inr, monthLabel, parseAmountInput } from "@/lib/format";
@@ -283,6 +283,10 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
   const [goalDraft, setGoalDraft] = useState("");
   const [saved, setSaved] = useState(false);
   const planState = usePlan();
+  // The plan setup is now the first thing a new person sees, so the old practice walk is marked done.
+  useEffect(() => {
+    if (app.ready && !progress.moneyIntro) void app.finishMoneyIntro();
+  }, [app, progress.moneyIntro]);
   const [tab, setTab] = useState<"plan" | "activity">("plan");
   const [setup, setSetup] = useState(false);
   const [sms, setSms] = useState(false);
@@ -326,7 +330,6 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
       </div>
     );
   }
-  if (!progress.moneyIntro) return <MoneyIntro />;
 
   const money = (value: number) => inr(value, code);
   const savedTotal = entries.filter((entry) => entry.kind === "save").reduce((sum, entry) => sum + entry.amount, 0);
@@ -397,9 +400,9 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
         </button>
       )}
       {planState.plan && (
-        <div className="seg" role="tablist" aria-label={t("money.title")}>
+        <div className="seg" role="group" aria-label={t("money.title")}>
           {(["plan", "activity"] as const).map((item) => (
-            <button key={item} type="button" role="tab" aria-selected={tab === item} aria-pressed={tab === item} onClick={() => { tap(); setTab(item); }}>{t(`plan.tab.${item}`)}</button>
+            <button key={item} type="button" aria-pressed={tab === item} onClick={() => { tap(); setTab(item); }}>{t(`plan.tab.${item}`)}</button>
           ))}
         </div>
       )}

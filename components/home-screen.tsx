@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { BookOpen, ChevronRight, Mic, MessageCircle, Newspaper, Plus, RotateCcw, Sparkles } from "lucide-react";
+import { ChevronRight, Mic, MessageCircle, Newspaper, Plus } from "lucide-react";
 import { QUESTION_TOPIC } from "@/lib/catalog";
 import { loadJson, type DailyQuestion, type MiniCheck, type StoriesFile } from "@/lib/content-types";
 import { nextAction, pickByDay } from "@/lib/daily";
 import { dayLabel } from "@/lib/format";
 import { recommend, topLesson } from "@/lib/recommend";
 import { safeLook } from "@/lib/rewards";
+import { verenaAt } from "@/lib/verena";
 import { tap } from "@/lib/speech";
 import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
@@ -105,7 +106,7 @@ export function HomeScreen() {
         const episode = story?.next;
         return (
           <div className="home-quest">
-            {episode && <div className="home-quest-character stage" aria-hidden><Character look={{ ...look, place: episode.place }} age={episode.age} size={148} mood="neutral" /></div>}
+            {episode && <div className="home-quest-character stage" aria-hidden><Character look={{ ...verenaAt((story?.done ?? 0) * 2 + 1, Math.max(2, (story?.total ?? 46) * 2)), place: episode.place }} age={episode.age} size={148} mood="neutral" alive /></div>}
             <div className="home-quest-copy stack-sm">
               <p className="masthead">{t("home.todayStory")}</p>
               <div className="quest-progress">
@@ -188,11 +189,6 @@ export function HomeScreen() {
         <span>{t("home.askBar")}</span>
         <Mic aria-hidden size={18} />
       </button>
-      <div className="suggest home-suggest" role="group" aria-label={t("ai.try")}>
-        {[t("ai.s1"), t("ai.s2"), t("ai.s3")].map((item) => (
-          <button key={item} type="button" className="suggest-chip" onClick={() => { tap(); ai.openAsk(item); }}><Sparkles aria-hidden size={13} /> {item}</button>
-        ))}
-      </div>
 
       <section className="card hero today-card stack-sm scene-in" aria-labelledby="today-saath">
         <h2 id="today-saath" className="visually-hidden">{t("home.todaySaath")}</h2>
@@ -233,23 +229,11 @@ export function HomeScreen() {
         </Link>
       )}
 
-      {best && bestLesson && action.kind !== "lesson" && (
-        <section className="stack-sm" aria-labelledby="rev-h">
-          <h2 id="rev-h">{t("home.recommended")}</h2>
-          <Link href={`/guide/${bestLesson.id}`} className="card tight" onClick={tap}>
-            <span className="item" style={{ padding: 0, minHeight: 0 }}>
-              <span className="item-icon">{best.kind === "revise" ? <RotateCcw aria-hidden size={20} /> : <BookOpen aria-hidden size={20} />}</span>
-              <span className="item-body">
-                <span className="item-title">{bestLesson.title[code]}</span>
-                <span className="item-sub">{t(`home.reason.${best.reason}`)}</span>
-              </span>
-              <span className="item-end"><ChevronRight aria-hidden size={20} /></span>
-            </span>
-          </Link>
-        </section>
-      )}
 
-      <FeedbackPanel />
+      <details className="home-feedback">
+        <summary>{t("feedback.open")}</summary>
+        <FeedbackPanel />
+      </details>
 
       {asking && (
         <Sheet title={t("home.todayQuestion")} onClose={() => setAsking(false)}>
