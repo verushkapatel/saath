@@ -1254,7 +1254,9 @@
     "aiReadyTitle": "Saath AI has read this form",
     "aiReadyLead": "Get the whole form explained part by part, in plain words. ID numbers are removed before anything is sent, and the photo is never sent.",
     "aiExplain": "Explain this form with Saath AI",
-    "aiExplainPrompt": "Explain this form to me in plain words, part by part, and tell me what to check before I sign."
+    "aiExplainPrompt": "Explain this form to me in plain words, part by part, and tell me what to check before I sign.",
+    "example": "A filled example",
+    "exampleLead": "How this form looks when filled correctly. The people and numbers are examples; use your own details."
   },
   "stories": {
     "title": "Real stories",

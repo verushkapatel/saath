@@ -128,6 +128,37 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
+
+type ExampleRow = { label: Record<string, string>; value: string; note?: Record<string, string> };
+
+/** A filled-in sample of the form, as a person like Verena would fill it, stamped SAMPLE so it is never mistaken for a real one. */
+function FilledExample({ id, title }: { id: string; title: string }) {
+  const { t, code } = useI18n();
+  const [rows, setRows] = useState<ExampleRow[] | null>(null);
+  useEffect(() => {
+    loadJson<Record<string, ExampleRow[]>>("/content/form-examples.json").then((all) => setRows(all[id] ?? null)).catch(() => setRows(null));
+  }, [id]);
+  if (!rows) return null;
+  return (
+    <section className="stack-sm" aria-labelledby={`ex-${id}`}>
+      <h2 id={`ex-${id}`}>{t("forms.example")}</h2>
+      <p className="faint">{t("forms.exampleLead")}</p>
+      <figure className="filled-form" data-testid="filled-example">
+        <figcaption>{title}</figcaption>
+        <span className="sample-stamp" aria-hidden>SAMPLE</span>
+        <dl>
+          {rows.map((row, at) => (
+            <div key={at} className="filled-row">
+              <dt>{row.label[code] ?? row.label.en}</dt>
+              <dd><span className="filled-value">{row.value}</span>{row.note && <small>{row.note[code] ?? row.note.en}</small>}</dd>
+            </div>
+          ))}
+        </dl>
+      </figure>
+    </section>
+  );
+}
+
 export function FormScreen({ id }: { id: string }) {
   const { t, code } = useI18n();
   const app = useApp();
@@ -177,6 +208,8 @@ export function FormScreen({ id }: { id: string }) {
         <p className="muted">{form.authority[code]}</p>
         <p className="faint">{t("forms.who")}: {form.audience[code]}</p>
       </div>
+
+      <FilledExample id={form.id} title={form.name[code]} />
 
       <Section title={t("forms.fields")}>
         <dl className="field-list">
