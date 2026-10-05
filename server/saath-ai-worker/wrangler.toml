@@ -8,7 +8,7 @@ binding = "AI"
 
 [vars]
 # The app's address. Requests from anywhere else are refused. Separate several with commas.
-ALLOWED_ORIGIN = "https://saath.web.app,https://saath.firebaseapp.com,https://getsaath.pages.dev,https://trysaath.pages.dev,https://usesaath.pages.dev,https://saathhq.pages.dev,https://verushkapatel.github.io,https://wealth-story-1.preview.emergentagent.com"
+ALLOWED_ORIGIN = "https://saath.cc,https://www.saath.cc,https://saath.web.app,https://saath.firebaseapp.com,https://getsaath.pages.dev,https://trysaath.pages.dev,https://usesaath.pages.dev,https://saathhq.pages.dev,https://verushkapatel.github.io,https://wealth-story-1.preview.emergentagent.com"
 # AI_MODEL = "@cf/meta/llama-3.1-8b-instruct"
 # FEEDBACK_FROM = "saath@your-verified-domain.example"
 
