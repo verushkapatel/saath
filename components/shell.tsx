@@ -313,7 +313,15 @@ export function Shell({ children }: { children: React.ReactNode }) {
 export function RegisterSW() {
   useEffect(() => {
     if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;
-    navigator.serviceWorker.register(asset("/sw.js"), { scope: asset("/") }).catch(() => undefined);
+    // When a new version of Saath takes over, reload once so the page matches it.
+    const hadController = Boolean(navigator.serviceWorker.controller);
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (!hadController || reloaded) return;
+      reloaded = true;
+      window.location.reload();
+    });
+    navigator.serviceWorker.register(asset("/sw.js"), { scope: asset("/") }).then((reg) => reg.update()).catch(() => undefined);
   }, []);
   return null;
 }

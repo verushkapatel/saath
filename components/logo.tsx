@@ -1,25 +1,24 @@
 import { asset } from "@/lib/config";
 
 /**
- * The Saath mark: an S drawn as two companions walking together, each curve with its own head, one in ink and one
- * in navy. "Saath" means "together". Colours come from the theme, so the mark works on white and on black.
+ * The Saath mark: two rings that overlap, one in ink and one in navy. "Saath" means "together".
+ * Colours come from the theme, so the mark works on white and on black.
  */
 export function LogoMark({ size = 32, title }: { size?: number; title?: string }) {
-  const box = Math.round(size * 1.15);
   return (
     <svg
       className="logo-mark"
-      viewBox="0 0 32 32"
-      width={box}
-      height={box}
+      viewBox="0 0 44 30"
+      width={(size * 44) / 30}
+      height={size}
       role={title ? "img" : undefined}
       aria-label={title}
       aria-hidden={title ? undefined : true}
     >
-      <path d="M22.2 8.6 A6.4 6.4 0 1 0 16 16" fill="none" stroke="var(--text)" strokeWidth="3.2" strokeLinecap="round" />
-      <path d="M16 16 A6.4 6.4 0 1 1 9.8 23.4" fill="none" stroke="var(--navy)" strokeWidth="3.2" strokeLinecap="round" />
-      <circle cx="26.4" cy="4.6" r="2.5" fill="var(--text)" />
-      <circle cx="5.6" cy="27.4" r="2.5" fill="var(--navy)" />
+      <circle cx="15" cy="15" r="11" fill="none" stroke="var(--text)" strokeWidth="3.4" />
+      <circle cx="29" cy="15" r="11" fill="none" stroke="var(--navy)" strokeWidth="3.4" />
+      {/* The ink ring passes over the navy one at the top, so the two read as linked rather than stacked. */}
+      <path d="M20.5 5.47 A11 11 0 0 1 24.53 9.5" fill="none" stroke="var(--text)" strokeWidth="3.4" strokeLinecap="butt" />
     </svg>
   );
 }

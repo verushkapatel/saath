@@ -157,6 +157,9 @@ jobs:
             echo "saath.cc not serving yet (try $i): HTTP $(curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://saath.cc/)"; sleep 20
           done
           curl -s -H "$H" "$API/accounts/$acct/workers/domains" | jq -c '.result[]? | {hostname, service}'
+          # saath.cc must serve this exact build, not an older copy.
+          a=$(curl -s https://getsaath.pages.dev/ | md5sum | cut -c1-12); b=$(curl -s -H 'cache-control: no-cache' https://saath.cc/ | md5sum | cut -c1-12)
+          echo "home page on pages.dev: $a / on saath.cc: $b"; [ "$a" = "$b" ] && echo "SAME BUILD on saath.cc" || echo "::warning::saath.cc serves a different build"
           # Every main screen and the new features answer on saath.cc.
           for path in / journey/ guide/ guide/what-insurance/ money-lab/ forms/ resume/ handbook/ ai/ content/guide.json sw.js; do
             echo "saath.cc/$path -> HTTP $(curl -s -o /dev/null -L -w '%{http_code}' --max-time 20 "https://saath.cc/$path")"

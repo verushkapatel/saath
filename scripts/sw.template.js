@@ -1,5 +1,5 @@
 // Saath service worker. Written to public/sw.js by scripts/sync-static.mjs. Edit the template, not the output.
-const CACHE = "saath-v15";
+const CACHE = "saath-v16";
 // Works at the site root and in a sub-folder (for example /saath/ on GitHub Pages).
 const BASE = self.location.pathname.replace(/sw\.js$/, "");
 const PAGES = [
@@ -119,7 +119,7 @@ self.addEventListener("fetch", (event) => {
 
   // Everything else: fresh when there is a connection, saved copy when there is not.
   event.respondWith(
-    fetch(request)
+    fetch(request, request.mode === "navigate" ? { cache: "no-cache" } : undefined)
       .then((response) => {
         if (response.ok) {
           const copy = response.clone();
