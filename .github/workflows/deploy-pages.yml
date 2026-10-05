@@ -146,22 +146,17 @@ jobs:
           sleep 20
           url="https://$chosen.pages.dev/"
           if curl -sL "$url" | grep -q "skyward-logo\|The Skyward Project"; then echo "VERIFIED: $url serves Saath"; else echo "NOT VERIFIED: $url"; curl -sL "$url" | head -c 400; fi
-          # saath.cc: attach the domain to this Pages project and point its DNS here.
+          # saath.cc: a small Worker on the domain serves this site. Workers custom domains create their own DNS records.
           API=https://api.cloudflare.com/client/v4; H="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
           acct=$(curl -s -H "$H" "$API/accounts" | jq -r '.result[0].id')
-          zone=$(curl -s -H "$H" "$API/zones?name=saath.cc" | jq -r '.result[0].id // empty')
-          echo "account found: $([ -n "$acct" ] && echo yes), saath.cc zone found: $([ -n "$zone" ] && echo yes || echo no)"
-          for d in saath.cc www.saath.cc; do
-            echo "attach $d: $(curl -s -X POST -H "$H" -H 'content-type: application/json' "$API/accounts/$acct/pages/projects/$chosen/domains" -d "{\"name\":\"$d\"}" | jq -c '{success, errors}')"
-            if [ -n "$zone" ]; then
-              echo "dns $d: $(curl -s -X POST -H "$H" -H 'content-type: application/json' "$API/zones/$zone/dns_records" -d "{\"type\":\"CNAME\",\"name\":\"$d\",\"content\":\"$chosen.pages.dev\",\"proxied\":true}" | jq -c '{success, errors}')"
-            fi
-          done
-          for i in 1 2 3 4 5 6; do
+          # Release the earlier Pages attachment so the Worker can take the hostnames.
+          for d in saath.cc www.saath.cc; do curl -s -X DELETE -H "$H" "$API/accounts/$acct/pages/projects/$chosen/domains/$d" >/dev/null || true; done
+          (cd server/saath-cc && $W deploy 2>&1 | tail -15) || echo "saath.cc Worker deploy failed"
+          for i in 1 2 3 4 5 6 7 8 9; do
             if curl -sL --max-time 15 https://saath.cc/ | grep -q "skyward-logo\|The Skyward Project"; then echo "VERIFIED: https://saath.cc/ serves Saath"; break; fi
             echo "saath.cc not serving yet (try $i): HTTP $(curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://saath.cc/)"; sleep 20
           done
-          curl -s -H "$H" "$API/accounts/$acct/pages/projects/$chosen/domains" | jq -c '.result[]? | {name, status, verification: .verification_data.status, validation: .validation_data.status}'
+          curl -s -H "$H" "$API/accounts/$acct/workers/domains" | jq -c '.result[]? | {hostname, service}'
 
       - name: Publish to Firebase (saath.web.app)
         continue-on-error: true
