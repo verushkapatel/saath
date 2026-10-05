@@ -47,6 +47,8 @@ export type Progress = {
   challenges: Record<string, string[]>;
   /** Game id to the best score. */
   games: Record<string, number>;
+  /** Walkthroughs lived to the end. */
+  walks: string[];
 };
 
 export type EpisodeResult = { choice: number; drill: number; at: string };
@@ -69,6 +71,8 @@ export const XP = {
   quiz: 20,
   allChallenges: 25,
   game: 10,
+  walk: 30,
+  walkChoice: 5,
 } as const;
 
 /** Level n starts at 50 × n × (n − 1): 0, 100, 300, 600, 1000 … so each level takes a little longer than the last. */
@@ -114,6 +118,7 @@ export function emptyProgress(): Progress {
     moneyIntro: false,
     challenges: {},
     games: {},
+    walks: [],
   };
 }
 
@@ -156,6 +161,7 @@ export function normalizeProgress(raw: unknown): Progress {
     moneyIntro: old.moneyIntro === true,
     challenges: isRecord(old.challenges) ? Object.fromEntries(Object.entries(old.challenges).map(([date, ids]) => [date, strings(ids)])) : {},
     games: isRecord(old.games) ? Object.fromEntries(Object.entries(old.games).filter(([, score]) => typeof score === "number")) as Record<string, number> : {},
+    walks: strings((old as { walks?: unknown }).walks),
   };
   // Older builds only stored a count and the last day. Rebuild the days it stood for.
   if (next.days.length === 0 && next.lastAnswerDate && next.streak > 0) {
@@ -243,6 +249,17 @@ export function completeLesson(progress: Progress, lessonId: string, paths: Path
   }
   next = markTask({ ...next, paths: nextPaths }, "lesson", today);
   return awardMilestones(next, paths, today);
+}
+
+/**
+ * Living a walkthrough to the end also finishes its guide. The first time is worth the walk's XP plus a little for each
+ * decision made well; walking it again later only counts as revising the guide.
+ */
+export function completeWalk(progress: Progress, walkId: string, lessonId: string, goodChoices: number, paths: Path[], today: string): Progress {
+  const first = !progress.walks.includes(walkId);
+  let next = completeLesson(progress, lessonId, paths, today);
+  if (first) next = { ...next, walks: [...next.walks, walkId], xp: next.xp + XP.walk + goodChoices * XP.walkChoice };
+  return next;
 }
 
 export function answerCase(progress: Progress, caseId: string, choice: number, today: string): Progress {
@@ -336,6 +353,7 @@ export function mergeProgress(local: Progress, remote: Progress, today: string):
     games: Object.fromEntries(
       [...new Set([...Object.keys(local.games), ...Object.keys(remote.games)])].map((key) => [key, Math.max(local.games[key] ?? 0, remote.games[key] ?? 0)]),
     ),
+    walks: [...new Set([...local.walks, ...remote.walks])],
   };
 }
 

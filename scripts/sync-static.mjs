@@ -7,9 +7,10 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 function copyDirJson(from, to) {
   mkdirSync(to, { recursive: true });
-  for (const name of readdirSync(from)) {
-    if (!name.endsWith(".json")) continue;
-    copyFileSync(join(from, name), join(to, name));
+  for (const entry of readdirSync(from, { withFileTypes: true })) {
+    // Sub-folders (content/walks) are copied too, so each walkthrough can load on its own.
+    if (entry.isDirectory()) copyDirJson(join(from, entry.name), join(to, entry.name));
+    else if (entry.name.endsWith(".json")) copyFileSync(join(from, entry.name), join(to, entry.name));
   }
 }
 

@@ -189,3 +189,45 @@ export type ChallengesFile = { reviewed: string; crises: Crisis[]; tasks: RealTa
 export type NeedsItem = { id: string; need: boolean; text: Copy; why: Copy };
 export type ScamItem = { id: string; scam: boolean; text: Copy; why: Copy };
 export type GamesFile = { needs: NeedsItem[]; scams: ScamItem[] };
+
+/**
+ * A walkthrough: one real process lived from start to finish, step by step, the way Verena does it.
+ * Each step has a scene (the picture), what happens, the small details that matter, words people say,
+ * a trap to watch for, and sometimes a decision to make before moving on.
+ */
+export type WalkChoice = { prompt: Copy; options: { text: Copy; good: boolean; result: Copy }[] };
+
+export type WalkStep = {
+  scene: string;
+  title: Copy;
+  text: Copy;
+  /** The words printed on the screen or paper in the picture. First line is the heading. */
+  screen?: Copy[];
+  details?: Copy[];
+  say?: { who: Copy; line: Copy };
+  watch?: Copy;
+  /** Time, money or documents this step costs, in a few words. */
+  cost?: Copy;
+  choice?: WalkChoice;
+};
+
+export type Walkthrough = {
+  id: string;
+  /** The guide this walkthrough belongs to. */
+  guide: string;
+  title: Copy;
+  /** Where and when it happens, in one line. */
+  setting: Copy;
+  steps: WalkStep[];
+  takeaways: Copy[];
+  /** YYYY-MM the facts were last checked. */
+  reviewed?: string;
+  sources?: string[];
+};
+
+/** Which walkthroughs exist, so lists can show them without loading every file. */
+export type WalkIndex = { id: string; guide: string; title: Copy; steps: number }[];
+
+export function loadWalk(id: string): Promise<Walkthrough> {
+  return loadJson<Walkthrough>(`/content/walks/${id}.json`);
+}

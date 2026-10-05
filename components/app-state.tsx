@@ -11,6 +11,7 @@ import {
   completeEpisode,
   completeLesson,
   completeStep,
+  completeWalk,
   emptyProgress,
   finishChallenge as completeChallenge,
   finishGame as completeGame,
@@ -43,6 +44,20 @@ import {
 import { computeStreak, type StreakView } from "@/lib/streak";
 import { share } from "@/lib/impact";
 import { currentProfile } from "@/lib/profile";
+import { stepsDone, verenaAt, type VerenaLook } from "@/lib/verena";
+
+/** One finished thing, played back as XP, then Verena's change, then a postcard. */
+export type Celebration = {
+  id: number;
+  kind: "lesson" | "chapter" | "walk" | "resume";
+  title: string;
+  /** Where the finished thing lives, for the share link. */
+  path: string;
+  xpBefore: number;
+  xpAfter: number;
+  before: VerenaLook;
+  after: VerenaLook;
+};
 
 type AppState = {
   ready: boolean;
@@ -85,6 +100,16 @@ type AppState = {
   deleteEntry: (id: string) => Promise<void>;
   finishChallenge: (id: string, xp: number, parts?: number) => Promise<void>;
   finishGame: (game: string, score: number) => Promise<void>;
+  /** A walkthrough lived to the end: finishes its guide and plays the celebration. */
+  finishWalk: (walkId: string, lessonId: string, goodChoices: number) => Promise<void>;
+  /** Steps a person can take in all: every guide plus every chapter. */
+  totalSteps: number;
+  /** Verena as she is now. */
+  verena: VerenaLook;
+  celebration: Celebration | null;
+  endCelebration: () => void;
+  /** Plays the celebration for something finished outside the usual calls (a walkthrough, the resume). */
+  celebrate: (kind: Celebration["kind"], title: string, path: string, xpBefore: number) => void;
 };
 
 const Ctx = createContext<AppState | null>(null);
@@ -102,6 +127,8 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [cheer, setCheer] = useState(0);
   const [journey, setJourney] = useState<JourneyFile | null>(null);
   const [fresh, setFresh] = useState<Reward[]>([]);
+  const [celebration, setCelebration] = useState<Celebration | null>(null);
+  const celebrationId = useRef(0);
 
   const progressRef = useRef(progress);
   const pathsRef = useRef(paths);
@@ -179,12 +206,38 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     if (pathsNew > 0) share(profile, "path", { count: pathsNew });
   }, []);
 
+  const totalRef = useRef(1);
+
+  const play = useCallback((kind: Celebration["kind"], title: string, path: string, before: Progress, xpBefore = before.xp) => {
+    const after = progressRef.current;
+    const total = totalRef.current;
+    celebrationId.current += 1;
+    setCelebration({
+      id: celebrationId.current,
+      kind,
+      title,
+      path,
+      xpBefore,
+      xpAfter: after.xp,
+      before: verenaAt(stepsDone(before), total),
+      after: verenaAt(stepsDone(after), total),
+    });
+  }, []);
+
+  const celebrate = useCallback((kind: Celebration["kind"], title: string, path: string, xpBefore: number) => {
+    play(kind, title, path, progressRef.current, xpBefore);
+  }, [play]);
+
   const finishLesson = useCallback(async (lessonId: string) => {
     const before = progressRef.current;
     const fresh = !before.lessons.includes(lessonId);
     await change((current) => completeLesson(current, lessonId, pathsRef.current, todayISO()), fresh);
     note(before);
-  }, [change, note]);
+    if (fresh) {
+      // The title is the lesson id; the celebration looks up the words in the person's language.
+      play("lesson", lessonId, `/guide/${lessonId}`, before);
+    }
+  }, [change, note, play]);
   const finishStep = useCallback(async (pathId: string, stepId: string) => {
     const before = progressRef.current;
     await change((current) => completeStep(current, pathId, stepId, pathsRef.current, todayISO()));
@@ -203,10 +256,19 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     [change],
   );
 
-  const finishEpisode = useCallback(
-    (episodeId: string, choice: number, drillRight: number) => change((current) => completeEpisode(current, episodeId, choice, drillRight, todayISO())),
-    [change],
-  );
+  const finishEpisode = useCallback(async (episodeId: string, choice: number, drillRight: number) => {
+    const before = progressRef.current;
+    const fresh = !(episodeId in before.journey);
+    await change((current) => completeEpisode(current, episodeId, choice, drillRight, todayISO()));
+    if (fresh) play("chapter", episodeId, `/journey/${episodeId}`, before);
+  }, [change, play]);
+  const endCelebration = useCallback(() => setCelebration(null), []);
+  const finishWalk = useCallback(async (walkId: string, lessonId: string, goodChoices: number) => {
+    const before = progressRef.current;
+    await change((current) => completeWalk(current, walkId, lessonId, goodChoices, pathsRef.current, todayISO()));
+    note(before);
+    play("lesson", lessonId, `/guide/${lessonId}`, before);
+  }, [change, note, play]);
   const mistake = useCallback((topic: string | null | undefined) => change((current) => noteMistake(current, topic), false), [change]);
   const markStory = useCallback((storyId: string) => change((current) => readStory(current, storyId, todayISO())), [change]);
   const markForm = useCallback((formId: string) => change((current) => openForm(current, formId), false), [change]);
@@ -257,17 +319,22 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const streak = useMemo(() => computeStreak(progress.days, today), [progress.days, today]);
   const story = useMemo(() => (journey ? journeyState(journey, progress, today) : null), [journey, progress, today]);
   const level = useMemo(() => levelFor(progress.xp), [progress.xp]);
+  const totalSteps = Math.max(1, lessons.length + (journey?.episodes.length ?? 0));
+  totalRef.current = totalSteps;
+  const verena = useMemo(() => verenaAt(stepsDone(progress), totalSteps), [progress, totalSteps]);
 
   const value = useMemo<AppState>(() => ({
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
     logEntry, setGoal, addLoan, restore,
     journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
+    totalSteps, verena, celebration, endCelebration, celebrate, finishWalk,
   }), [
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
     logEntry, setGoal, addLoan, restore,
     journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
+    totalSteps, verena, celebration, endCelebration, celebrate, finishWalk,
   ]);
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

@@ -1,0 +1,972 @@
+{
+ "id": "first-bank-account",
+ "guide": "first-bank-account",
+ "title": {
+  "en": "Opening your first bank account, from the door to your first UPI payment",
+  "hi": "पहला बैंक खाता खोलना, दरवाज़े से पहले UPI भुगतान तक",
+  "mr": "पहिले बँक खाते उघडणे, दारापासून पहिल्या UPI पेमेंटपर्यंत"
+ },
+ "setting": {
+  "en": "A Monday morning at a public-sector bank branch in Pune",
+  "hi": "सोमवार सुबह, पुणे की एक सरकारी बैंक शाखा",
+  "mr": "सोमवारी सकाळी, पुण्यातील एका सरकारी बँकेची शाखा"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Decide which account you actually need",
+    "hi": "तय करें कि आपको असल में कौन-सा खाता चाहिए",
+    "mr": "तुम्हाला नेमके कोणते खाते हवे ते ठरवा"
+   },
+   "text": {
+    "en": "Verena has a stipend of ₹9,000 coming from her internship and nowhere to receive it. Before going anywhere, she spends ten minutes on the bank's website comparing the three accounts a branch will offer a person like her.",
+    "hi": "वेरेना की इंटर्नशिप से ₹9,000 का स्टाइपेंड आने वाला है और उसे लेने के लिए कोई खाता नहीं है। कहीं जाने से पहले वह बैंक की वेबसाइट पर दस मिनट लगाकर वे तीन खाते मिलाती है जो शाखा उसके जैसे व्यक्ति को देगी।",
+    "mr": "वेरेनाला इंटर्नशिपचे ₹9,000 स्टायपेंड येणार आहे आणि ते घेण्यासाठी खाते नाही. कुठेही जाण्यापूर्वी ती बँकेच्या वेबसाइटवर दहा मिनिटे घालवून शाखा तिच्यासारख्या व्यक्तीला देईल अशी तीन खाती तुलना करते."
+   },
+   "screen": [
+    {
+     "en": "Compare savings accounts",
+     "hi": "बचत खातों की तुलना",
+     "mr": "बचत खात्यांची तुलना"
+    },
+    {
+     "en": "Regular: min. balance applies",
+     "hi": "सामान्य: न्यूनतम बैलेंस लागू",
+     "mr": "सामान्य: किमान शिल्लक लागू"
+    },
+    {
+     "en": "BSBDA: zero balance",
+     "hi": "BSBDA: शून्य बैलेंस",
+     "mr": "BSBDA: शून्य शिल्लक"
+    },
+    {
+     "en": "Salary: needs an employer",
+     "hi": "सैलरी: नियोक्ता ज़रूरी",
+     "mr": "पगार खाते: नियोक्ता हवा"
+    }
+   ],
+   "details": [
+    {
+     "en": "Regular savings account: you must keep an average monthly balance (often ₹1,000 to ₹10,000 depending on the bank and area). Fall below it and a charge is taken every month.",
+     "hi": "सामान्य बचत खाता: आपको हर महीने औसत बैलेंस रखना होता है (बैंक और इलाके के हिसाब से अक्सर ₹1,000 से ₹10,000)। उससे कम हुआ तो हर महीने शुल्क कटता है।",
+     "mr": "सामान्य बचत खाते: दर महिन्याला सरासरी शिल्लक ठेवावी लागते (बँक आणि भागानुसार साधारण ₹1,000 ते ₹10,000). त्यापेक्षा कमी झाली तर दर महिन्याला शुल्क कापले जाते."
+    },
+    {
+     "en": "Basic Savings Bank Deposit Account (BSBDA): no minimum balance at all, a free basic debit card, and at least four free withdrawals a month. The one rule: you cannot hold another savings account in the same bank.",
+     "hi": "बेसिक सेविंग्स बैंक डिपॉज़िट अकाउंट (BSBDA): कोई न्यूनतम बैलेंस नहीं, मुफ़्त बेसिक डेबिट कार्ड, और महीने में कम से कम चार मुफ़्त निकासी। एक ही नियम: उसी बैंक में दूसरा बचत खाता नहीं रख सकते।",
+     "mr": "बेसिक सेव्हिंग्ज बँक डिपॉझिट अकाउंट (BSBDA): किमान शिल्लक नाही, मोफत बेसिक डेबिट कार्ड, आणि महिन्याला किमान चार मोफत पैसे काढणे. एकच नियम: त्याच बँकेत दुसरे बचत खाते ठेवता येत नाही."
+    },
+    {
+     "en": "Salary account: zero balance while salary keeps coming in, but it is opened through an employer. If the salary stops for a few months, the bank can turn it into a regular account with a minimum balance.",
+     "hi": "सैलरी खाता: जब तक तनख़्वाह आती है, शून्य बैलेंस चलता है, पर यह नियोक्ता के ज़रिए खुलता है। कुछ महीने तनख़्वाह रुकी तो बैंक इसे न्यूनतम बैलेंस वाले सामान्य खाते में बदल सकता है।",
+     "mr": "पगार खाते: पगार येत असेपर्यंत शून्य शिल्लक चालते, पण ते नियोक्त्यामार्फत उघडले जाते. काही महिने पगार थांबला तर बँक ते किमान शिल्लक असलेल्या सामान्य खात्यात बदलू शकते."
+    },
+    {
+     "en": "Check the bank's 'Schedule of charges' page for the exact minimum balance and the penalty. It is public on every bank's website.",
+     "hi": "सही न्यूनतम बैलेंस और जुर्माने के लिए बैंक का 'Schedule of charges' पेज देखें। यह हर बैंक की वेबसाइट पर खुला होता है।",
+     "mr": "नेमकी किमान शिल्लक आणि दंडासाठी बँकेचे 'Schedule of charges' पान पाहा. ते प्रत्येक बँकेच्या वेबसाइटवर उघडपणे असते."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes, at home",
+    "hi": "10 मिनट, घर पर",
+    "mr": "10 मिनिटे, घरी"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Verena's balance will often drop to a few hundred rupees by month-end. Which account suits her?",
+     "hi": "महीने के आख़िर तक वेरेना का बैलेंस अक्सर कुछ सौ रुपये रह जाएगा। उसके लिए कौन-सा खाता ठीक है?",
+     "mr": "महिन्याच्या शेवटी वेरेनाची शिल्लक अनेकदा काहीशे रुपये उरेल. तिच्यासाठी कोणते खाते योग्य?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "A regular account with a ₹5,000 minimum balance",
+       "hi": "₹5,000 न्यूनतम बैलेंस वाला सामान्य खाता",
+       "mr": "₹5,000 किमान शिलकीचे सामान्य खाते"
+      },
+      "good": false,
+      "result": {
+       "en": "She would pay a shortfall charge almost every month. On a ₹9,000 stipend that is money lost for nothing.",
+       "hi": "उसे लगभग हर महीने कमी बैलेंस का शुल्क देना पड़ेगा। ₹9,000 के स्टाइपेंड में यह बेकार का नुकसान है।",
+       "mr": "तिला जवळजवळ दर महिन्याला कमी शिलकीचे शुल्क भरावे लागेल. ₹9,000 स्टायपेंडमध्ये हे विनाकारण नुकसान आहे."
+      }
+     },
+     {
+      "text": {
+       "en": "A zero-balance BSBDA",
+       "hi": "शून्य बैलेंस वाला BSBDA",
+       "mr": "शून्य शिलकीचे BSBDA"
+      },
+      "good": true,
+      "result": {
+       "en": "No penalty when the balance is low, a free card and enough free withdrawals for her needs. She can upgrade later when her income grows.",
+       "hi": "बैलेंस कम हो तो कोई जुर्माना नहीं, मुफ़्त कार्ड और ज़रूरत भर की मुफ़्त निकासी। आमदनी बढ़ने पर बाद में अपग्रेड कर सकती है।",
+       "mr": "शिल्लक कमी असली तरी दंड नाही, मोफत कार्ड आणि गरजेइतके मोफत पैसे काढणे. उत्पन्न वाढल्यावर नंतर अपग्रेड करता येईल."
+      }
+     },
+     {
+      "text": {
+       "en": "A salary account",
+       "hi": "सैलरी खाता",
+       "mr": "पगार खाते"
+      },
+      "good": false,
+      "result": {
+       "en": "An internship stipend usually does not qualify, and the branch cannot open a salary account without the employer's tie-up.",
+       "hi": "इंटर्नशिप स्टाइपेंड पर आमतौर पर यह नहीं मिलता, और नियोक्ता के करार के बिना शाखा सैलरी खाता नहीं खोल सकती।",
+       "mr": "इंटर्नशिप स्टायपेंडवर हे सहसा मिळत नाही, आणि नियोक्त्याच्या कराराशिवाय शाखा पगार खाते उघडू शकत नाही."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Put the documents in one folder the night before",
+    "hi": "एक रात पहले कागज़ात एक फ़ोल्डर में रख लें",
+    "mr": "आदल्या रात्री कागदपत्रे एका फोल्डरमध्ये ठेवा"
+   },
+   "text": {
+    "en": "Banks open an account only after KYC, 'Know Your Customer'. Verena lays everything on her bed and checks each item against the list on the bank's website, so she does not need a second trip.",
+    "hi": "बैंक KYC, यानी 'अपने ग्राहक को जानें', के बाद ही खाता खोलते हैं। वेरेना सब कुछ बिस्तर पर रखकर बैंक की वेबसाइट की सूची से एक-एक चीज़ मिलाती है, ताकि दूसरा चक्कर न लगे।",
+    "mr": "बँका KYC, म्हणजे 'तुमच्या ग्राहकाला ओळखा', झाल्यावरच खाते उघडतात. वेरेना सगळे पलंगावर मांडून बँकेच्या वेबसाइटवरील यादीशी एकेक गोष्ट जुळवते, म्हणजे दुसरी फेरी लागू नये."
+   },
+   "screen": [
+    {
+     "en": "Aadhaar card",
+     "hi": "आधार कार्ड",
+     "mr": "आधार कार्ड"
+    },
+    {
+     "en": "Original + 2 copies",
+     "hi": "मूल + 2 कॉपी",
+     "mr": "मूळ + 2 प्रती"
+    },
+    {
+     "en": "PAN card",
+     "hi": "पैन कार्ड",
+     "mr": "पॅन कार्ड"
+    },
+    {
+     "en": "or Form 60",
+     "hi": "या फ़ॉर्म 60",
+     "mr": "किंवा फॉर्म 60"
+    },
+    {
+     "en": "2 passport photos",
+     "hi": "2 पासपोर्ट फ़ोटो",
+     "mr": "2 पासपोर्ट फोटो"
+    },
+    {
+     "en": "Address proof",
+     "hi": "पते का प्रमाण",
+     "mr": "पत्त्याचा पुरावा"
+    },
+    {
+     "en": "Mobile linked to Aadhaar · ₹500 to deposit",
+     "hi": "आधार से जुड़ा मोबाइल · जमा करने को ₹500",
+     "mr": "आधारशी जोडलेला मोबाइल · भरण्यासाठी ₹500"
+    }
+   ],
+   "details": [
+    {
+     "en": "Aadhaar: original plus two self-attested photocopies (sign across each copy and write 'self-attested').",
+     "hi": "आधार: मूल और दो स्व-सत्यापित फ़ोटोकॉपी (हर कॉपी पर हस्ताक्षर करें और 'self-attested' लिखें)।",
+     "mr": "आधार: मूळ आणि दोन स्वसाक्षांकित झेरॉक्स (प्रत्येक प्रतीवर सही करून 'self-attested' लिहा)."
+    },
+    {
+     "en": "PAN card. If you do not have one yet, the bank gives you Form 60 to fill instead, and you can add PAN later.",
+     "hi": "पैन कार्ड। अगर अभी नहीं है, तो बैंक बदले में फ़ॉर्म 60 भरवाता है, और पैन बाद में जोड़ सकते हैं।",
+     "mr": "पॅन कार्ड. अजून नसेल तर बँक त्याऐवजी फॉर्म 60 भरायला देते, आणि पॅन नंतर जोडता येतो."
+    },
+    {
+     "en": "Two recent passport-size photos. Many branches still paste one on the form.",
+     "hi": "दो हाल के पासपोर्ट साइज़ फ़ोटो। कई शाखाएँ अब भी एक फ़ोटो फ़ॉर्म पर चिपकाती हैं।",
+     "mr": "दोन अलीकडचे पासपोर्ट साइज फोटो. अनेक शाखा अजूनही एक फोटो फॉर्मवर चिकटवतात."
+    },
+    {
+     "en": "If you live somewhere other than the Aadhaar address (a hostel or a rented flat), carry proof of the current address too, such as a rent agreement or a utility bill in your name, or be ready to declare it on the form.",
+     "hi": "अगर आप आधार वाले पते से अलग जगह रहते हैं (हॉस्टल या किराए का फ़्लैट), तो मौजूदा पते का प्रमाण भी रखें, जैसे किराया-नामा या अपने नाम का बिल, या फ़ॉर्म पर उसे घोषित करने को तैयार रहें।",
+     "mr": "आधारवरील पत्त्यापेक्षा वेगळ्या ठिकाणी राहत असाल (वसतिगृह किंवा भाड्याचा फ्लॅट), तर सध्याच्या पत्त्याचा पुरावा जवळ ठेवा, जसे भाडेकरार किंवा तुमच्या नावावरचे बिल, किंवा फॉर्मवर तो जाहीर करायची तयारी ठेवा."
+    },
+    {
+     "en": "Your phone, with the number that is linked to Aadhaar. OTPs for e-KYC go to that number.",
+     "hi": "अपना फ़ोन, जिस नंबर से आधार जुड़ा है। e-KYC के OTP उसी नंबर पर आते हैं।",
+     "mr": "तुमचा फोन, ज्या नंबरला आधार जोडलेले आहे. e-KYC चे OTP त्याच नंबरवर येतात."
+    }
+   ],
+   "watch": {
+    "en": "Never hand anyone loose, unsigned copies of Aadhaar or PAN. Write on each copy what it is for: 'For account opening at ___ Bank only, date'.",
+    "hi": "किसी को बिना हस्ताक्षर वाली आधार या पैन की खुली कॉपी न दें। हर कॉपी पर लिखें कि वह किसलिए है: 'केवल ___ बैंक में खाता खोलने हेतु, तारीख'।",
+    "mr": "कोणालाही सही नसलेल्या आधार किंवा पॅनच्या प्रती देऊ नका. प्रत्येक प्रतीवर ती कशासाठी आहे ते लिहा: 'फक्त ___ बँकेत खाते उघडण्यासाठी, तारीख'."
+   },
+   "cost": {
+    "en": "20 minutes, ₹20 for photocopies",
+    "hi": "20 मिनट, फ़ोटोकॉपी के ₹20",
+    "mr": "20 मिनिटे, झेरॉक्ससाठी ₹20"
+   }
+  },
+  {
+   "scene": "queue",
+   "title": {
+    "en": "Walk in, take a token, find the right desk",
+    "hi": "अंदर जाएँ, टोकन लें, सही डेस्क ढूँढें",
+    "mr": "आत जा, टोकन घ्या, योग्य डेस्क शोधा"
+   },
+   "text": {
+    "en": "The branch opens at 10. Verena arrives at 10:15, when the first rush has passed. A guard points her to the token machine. She presses 'Account opening' and gets A-27. The board shows A-21. She sits where she can see it.",
+    "hi": "शाखा 10 बजे खुलती है। वेरेना 10:15 पर पहुँचती है, जब पहली भीड़ निकल चुकी होती है। गार्ड उसे टोकन मशीन दिखाता है। वह 'Account opening' दबाती है और A-27 मिलता है। बोर्ड पर A-21 चल रहा है। वह ऐसी जगह बैठती है जहाँ से बोर्ड दिखे।",
+    "mr": "शाखा 10 वाजता उघडते. वेरेना 10:15 ला पोहोचते, पहिली गर्दी ओसरल्यावर. गार्ड तिला टोकन मशीन दाखवतो. ती 'Account opening' दाबते आणि A-27 मिळते. बोर्डवर A-21 चालू आहे. बोर्ड दिसेल अशा ठिकाणी ती बसते."
+   },
+   "screen": [
+    {
+     "en": "NOW SERVING",
+     "hi": "अभी",
+     "mr": "आता"
+    },
+    {
+     "en": "A-21  ·  Counter 3",
+     "hi": "A-21  ·  काउंटर 3",
+     "mr": "A-21  ·  काउंटर 3"
+    },
+    {
+     "en": "Your token: A-27",
+     "hi": "आपका टोकन: A-27",
+     "mr": "तुमचे टोकन: A-27"
+    }
+   ],
+   "details": [
+    {
+     "en": "If there is no token machine, ask the guard or the enquiry desk: 'Which counter opens a new savings account?'",
+     "hi": "अगर टोकन मशीन नहीं है, तो गार्ड या पूछताछ काउंटर से पूछें: 'नया बचत खाता किस काउंटर पर खुलता है?'",
+     "mr": "टोकन मशीन नसेल तर गार्ड किंवा चौकशी काउंटरला विचारा: 'नवीन बचत खाते कोणत्या काउंटरवर उघडते?'"
+    },
+    {
+     "en": "Mid-morning on a weekday, avoiding the first days of the month, usually means shorter queues.",
+     "hi": "हफ़्ते के किसी दिन सुबह के बीच का समय, और महीने के शुरुआती दिन छोड़कर, अक्सर कतार छोटी मिलती है।",
+     "mr": "आठवड्याच्या दिवशी सकाळच्या मधल्या वेळी, आणि महिन्याचे सुरुवातीचे दिवस टाळून, रांग सहसा लहान असते."
+    },
+    {
+     "en": "Many banks now open accounts on a tablet instead of paper. If they offer it, the steps are the same, only typed instead of written.",
+     "hi": "कई बैंक अब काग़ज़ की जगह टैबलेट पर खाता खोलते हैं। अगर वे यह दें, तो कदम वही हैं, बस लिखने की जगह टाइप होते हैं।",
+     "mr": "अनेक बँका आता कागदाऐवजी टॅबलेटवर खाते उघडतात. तसे दिले तर पायऱ्या त्याच, फक्त लिहिण्याऐवजी टाइप करायचे."
+    }
+   ],
+   "watch": {
+    "en": "Nobody inside the branch needs to 'help' you for a fee. Opening an account is free. Talk only to staff at the counters.",
+    "hi": "शाखा के अंदर किसी को फ़ीस देकर 'मदद' लेने की ज़रूरत नहीं। खाता खोलना मुफ़्त है। केवल काउंटर पर बैठे कर्मचारियों से बात करें।",
+    "mr": "शाखेत कोणालाही पैसे देऊन 'मदत' घ्यायची गरज नाही. खाते उघडणे मोफत आहे. फक्त काउंटरवरील कर्मचाऱ्यांशी बोला."
+   },
+   "cost": {
+    "en": "Waiting: about 25 minutes",
+    "hi": "इंतज़ार: लगभग 25 मिनट",
+    "mr": "थांबणे: साधारण 25 मिनिटे"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "Say exactly what you want",
+    "hi": "साफ़ बताएँ कि आपको क्या चाहिए",
+    "mr": "तुम्हाला काय हवे ते स्पष्ट सांगा"
+   },
+   "text": {
+    "en": "At counter 3, the officer asks what she needs. Verena keeps it short and specific, so she is not sold an account she did not ask for.",
+    "hi": "काउंटर 3 पर अधिकारी पूछते हैं कि उसे क्या चाहिए। वेरेना छोटा और साफ़ जवाब देती है, ताकि उसे ऐसा खाता न बेचा जाए जो उसने माँगा ही नहीं।",
+    "mr": "काउंटर 3 वर अधिकारी विचारतात की तिला काय हवे. वेरेना थोडक्यात आणि नेमके सांगते, म्हणजे तिने न मागितलेले खाते तिच्या गळ्यात पडू नये."
+   },
+   "screen": [
+    {
+     "en": "SAVINGS · NEW ACCOUNTS",
+     "hi": "बचत · नए खाते",
+     "mr": "बचत · नवीन खाती"
+    },
+    {
+     "en": "Ask before you sign:",
+     "hi": "हस्ताक्षर से पहले पूछें:",
+     "mr": "सही करण्यापूर्वी विचारा:"
+    },
+    {
+     "en": "1. Minimum balance?",
+     "hi": "1. न्यूनतम बैलेंस?",
+     "mr": "1. किमान शिल्लक?"
+    },
+    {
+     "en": "2. Card annual fee?",
+     "hi": "2. कार्ड का सालाना शुल्क?",
+     "mr": "2. कार्डचे वार्षिक शुल्क?"
+    },
+    {
+     "en": "3. SMS charges?",
+     "hi": "3. SMS शुल्क?",
+     "mr": "3. SMS शुल्क?"
+    }
+   ],
+   "details": [
+    {
+     "en": "If the officer suggests a different account, ask: 'What is the minimum balance and what is the charge if I go below it?' Get the number, not 'it's very small'.",
+     "hi": "अगर अधिकारी दूसरा खाता सुझाएँ, तो पूछें: 'न्यूनतम बैलेंस कितना है और उससे कम होने पर शुल्क कितना?' जवाब में अंक लें, 'बहुत कम है' नहीं।",
+     "mr": "अधिकाऱ्यांनी दुसरे खाते सुचवले तर विचारा: 'किमान शिल्लक किती आणि त्यापेक्षा कमी झाल्यास शुल्क किती?' उत्तरात आकडा घ्या, 'खूप कमी आहे' नाही."
+    },
+    {
+     "en": "Every bank must offer the BSBDA. You can say: 'I understand every bank offers BSBDA under RBI rules.'",
+     "hi": "हर बैंक को BSBDA देना होता है। आप कह सकते हैं: 'मुझे पता है कि RBI के नियम से हर बैंक BSBDA देता है।'",
+     "mr": "प्रत्येक बँकेला BSBDA द्यावे लागते. तुम्ही म्हणू शकता: 'RBI च्या नियमानुसार प्रत्येक बँक BSBDA देते हे मला माहीत आहे.'"
+    },
+    {
+     "en": "Say no to add-ons you do not understand on day one: insurance riders, recurring deposits, mutual fund forms. You can always add them later.",
+     "hi": "पहले दिन जो समझ न आए, ऐसे ऐड-ऑन को मना करें: बीमा, रेकरिंग डिपॉज़िट, म्यूचुअल फ़ंड फ़ॉर्म। ये बाद में कभी भी जोड़ सकते हैं।",
+     "mr": "पहिल्या दिवशी न समजणाऱ्या ॲड-ऑनना नाही म्हणा: विमा, आवर्ती ठेव, म्युच्युअल फंड फॉर्म. हे नंतर कधीही जोडता येतात."
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "Verena:",
+     "hi": "वेरेना:",
+     "mr": "वेरेना:"
+    },
+    "line": {
+     "en": "\"I'd like to open a Basic Savings Bank Deposit Account, the zero-balance one. I have my Aadhaar and PAN with me.\"",
+     "hi": "\"मुझे बेसिक सेविंग्स बैंक डिपॉज़िट अकाउंट खुलवाना है, शून्य बैलेंस वाला। मेरे पास आधार और पैन है।\"",
+     "mr": "\"मला बेसिक सेव्हिंग्ज बँक डिपॉझिट अकाउंट उघडायचे आहे, शून्य शिलकीचे. माझ्याकडे आधार आणि पॅन आहे.\""
+    }
+   },
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "form",
+   "title": {
+    "en": "Fill the account opening form, box by box",
+    "hi": "खाता खोलने का फ़ॉर्म, एक-एक खाना भरें",
+    "mr": "खाते उघडण्याचा फॉर्म, एकेक चौकट भरा"
+   },
+   "text": {
+    "en": "She gets a four-page Account Opening Form. She uses a black ball pen, writes in capital letters, and copies her name exactly as it is printed on Aadhaar, including the middle name.",
+    "hi": "उसे चार पन्नों का खाता खोलने का फ़ॉर्म मिलता है। वह काले बॉल पेन से, बड़े अक्षरों में लिखती है, और अपना नाम ठीक वैसे ही लिखती है जैसा आधार पर छपा है, बीच के नाम समेत।",
+    "mr": "तिला चार पानांचा खाते उघडण्याचा फॉर्म मिळतो. ती काळ्या बॉल पेनने, कॅपिटल अक्षरांत लिहिते, आणि आधारवर छापलेले नाव जसेच्या तसे लिहिते, मधल्या नावासह."
+   },
+   "screen": [
+    {
+     "en": "ACCOUNT OPENING FORM",
+     "hi": "खाता खोलने का फ़ॉर्म",
+     "mr": "खाते उघडण्याचा फॉर्म"
+    },
+    {
+     "en": "Name: VERENA ANIL D'SOUZA",
+     "hi": "नाम: VERENA ANIL D'SOUZA",
+     "mr": "नाव: VERENA ANIL D'SOUZA"
+    },
+    {
+     "en": "DOB: 14/03/2004",
+     "hi": "जन्म तिथि: 14/03/2004",
+     "mr": "जन्मतारीख: 14/03/2004"
+    },
+    {
+     "en": "Occupation: Student/Intern",
+     "hi": "पेशा: छात्र/इंटर्न",
+     "mr": "व्यवसाय: विद्यार्थी/इंटर्न"
+    },
+    {
+     "en": "Annual income: below ₹1 lakh",
+     "hi": "सालाना आय: ₹1 लाख से कम",
+     "mr": "वार्षिक उत्पन्न: ₹1 लाखापेक्षा कमी"
+    },
+    {
+     "en": "Nominee: ANITA D'SOUZA (Mother)",
+     "hi": "नॉमिनी: ANITA D'SOUZA (माँ)",
+     "mr": "नॉमिनी: ANITA D'SOUZA (आई)"
+    },
+    {
+     "en": "Signature: inside box only",
+     "hi": "हस्ताक्षर: केवल खाने के अंदर",
+     "mr": "सही: फक्त चौकटीच्या आत"
+    }
+   ],
+   "details": [
+    {
+     "en": "Personal details: full name, parents' names, date of birth, gender, marital status, nationality.",
+     "hi": "निजी जानकारी: पूरा नाम, माता-पिता के नाम, जन्म तिथि, लिंग, वैवाहिक स्थिति, नागरिकता।",
+     "mr": "वैयक्तिक माहिती: पूर्ण नाव, आई-वडिलांची नावे, जन्मतारीख, लिंग, वैवाहिक स्थिती, नागरिकत्व."
+    },
+    {
+     "en": "Addresses: permanent (as on Aadhaar) and current. Tick 'same as above' only if it really is.",
+     "hi": "पते: स्थायी (आधार जैसा) और मौजूदा। 'ऊपर वाला ही' तभी टिक करें जब सच में वही हो।",
+     "mr": "पत्ते: कायमचा (आधारप्रमाणे) आणि सध्याचा. 'वरीलप्रमाणेच' तेव्हाच टिक करा जेव्हा खरोखर तोच असेल."
+    },
+    {
+     "en": "Occupation and income range: tick the honest band. Banks use it to judge whether your transactions look normal.",
+     "hi": "पेशा और आय की श्रेणी: सही श्रेणी पर टिक करें। बैंक इससे देखता है कि आपके लेन-देन सामान्य हैं या नहीं।",
+     "mr": "व्यवसाय आणि उत्पन्नाचा गट: खरा गट टिक करा. तुमचे व्यवहार सामान्य आहेत का हे बँक यावरून पाहते."
+    },
+    {
+     "en": "Signature: sign inside the box, the same way every time. This signature is what the bank matches on cheques and forms for years.",
+     "hi": "हस्ताक्षर: खाने के अंदर करें, हर बार एक जैसा। यही हस्ताक्षर बैंक सालों तक चेक और फ़ॉर्म पर मिलाता है।",
+     "mr": "सही: चौकटीच्या आत करा, प्रत्येक वेळी सारखीच. हीच सही बँक वर्षानुवर्षे चेक आणि फॉर्मवर जुळवते."
+    },
+    {
+     "en": "Cut mistakes with one line and sign beside the correction. Do not use whitener.",
+     "hi": "ग़लती को एक लकीर से काटें और सुधार के पास हस्ताक्षर करें। व्हाइटनर न लगाएँ।",
+     "mr": "चूक एका रेषेने खोडा आणि दुरुस्तीशेजारी सही करा. व्हाइटनर वापरू नका."
+    }
+   ],
+   "watch": {
+    "en": "Never sign a blank or half-filled form and leave it 'for the staff to complete'. Fill every box yourself or strike it out.",
+    "hi": "कभी खाली या आधा भरा फ़ॉर्म हस्ताक्षर करके 'स्टाफ़ भर देगा' कहकर न छोड़ें। हर खाना ख़ुद भरें या काट दें।",
+    "mr": "कधीही कोरा किंवा अर्धवट फॉर्म सही करून 'स्टाफ भरेल' म्हणून सोडू नका. प्रत्येक चौकट स्वतः भरा किंवा खोडा."
+   },
+   "cost": {
+    "en": "15 to 20 minutes",
+    "hi": "15 से 20 मिनट",
+    "mr": "15 ते 20 मिनिटे"
+   }
+  },
+  {
+   "scene": "family",
+   "title": {
+    "en": "Add a nominee, the step most people skip",
+    "hi": "नॉमिनी जोड़ें, वह कदम जो ज़्यादातर लोग छोड़ देते हैं",
+    "mr": "नॉमिनी जोडा, बहुतेक लोक वगळतात ती पायरी"
+   },
+   "text": {
+    "en": "Page three asks for a nominee. Verena almost leaves it blank, then remembers her aunt's family spending months with lawyers to reach her uncle's bank balance. She names her mother.",
+    "hi": "तीसरे पन्ने पर नॉमिनी माँगा गया है। वेरेना इसे लगभग खाली छोड़ देती है, फिर उसे याद आता है कि उसकी बुआ के परिवार को उसके फूफा के बैंक बैलेंस तक पहुँचने में वकीलों के साथ महीनों लगे थे। वह अपनी माँ का नाम लिखती है।",
+    "mr": "तिसऱ्या पानावर नॉमिनी विचारला आहे. वेरेना तो जवळजवळ रिकामा सोडते, मग तिला आठवते की तिच्या आत्याच्या कुटुंबाला काकांची बँक शिल्लक मिळवायला वकिलांसोबत महिने लागले होते. ती आईचे नाव लिहिते."
+   },
+   "screen": [
+    {
+     "en": "Nominee: Anita D'Souza",
+     "hi": "नॉमिनी: अनीता डिसूज़ा",
+     "mr": "नॉमिनी: अनिता डिसूझा"
+    },
+    {
+     "en": "Relation: Mother",
+     "hi": "रिश्ता: माँ",
+     "mr": "नाते: आई"
+    }
+   ],
+   "details": [
+    {
+     "en": "A nominee is the person the bank pays if something happens to you. Without one, your family may need legal papers such as a succession certificate.",
+     "hi": "नॉमिनी वह व्यक्ति है जिसे आपके साथ कुछ होने पर बैंक पैसा देता है। नॉमिनी न हो तो परिवार को उत्तराधिकार प्रमाणपत्र जैसे क़ानूनी काग़ज़ लगाने पड़ सकते हैं।",
+     "mr": "नॉमिनी म्हणजे तुमचे काही बरेवाईट झाल्यास बँक ज्याला पैसे देते ती व्यक्ती. नॉमिनी नसेल तर कुटुंबाला वारस प्रमाणपत्रासारखी कायदेशीर कागदपत्रे लागू शकतात."
+    },
+    {
+     "en": "You need the nominee's full name, relationship, date of birth and address. If the nominee is a minor, you also name an adult guardian.",
+     "hi": "नॉमिनी का पूरा नाम, रिश्ता, जन्म तिथि और पता चाहिए। नॉमिनी नाबालिग हो, तो एक बालिग़ अभिभावक का नाम भी देना होता है।",
+     "mr": "नॉमिनीचे पूर्ण नाव, नाते, जन्मतारीख आणि पत्ता लागतो. नॉमिनी अल्पवयीन असेल तर एका प्रौढ पालकाचे नावही द्यावे लागते."
+    },
+    {
+     "en": "Ask the officer to confirm the nominee is registered, and check that it shows on your passbook or account statement.",
+     "hi": "अधिकारी से पुष्टि करवाएँ कि नॉमिनी दर्ज हो गया है, और पासबुक या खाते के स्टेटमेंट पर देखें कि वह दिख रहा है।",
+     "mr": "नॉमिनी नोंदवला गेला याची अधिकाऱ्यांकडून खात्री करा, आणि पासबुक किंवा खाते विवरणावर तो दिसतो का ते तपासा."
+    }
+   ],
+   "cost": {
+    "en": "1 minute",
+    "hi": "1 मिनट",
+    "mr": "1 मिनिट"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Should Verena leave the nominee blank for now and 'do it later'?",
+     "hi": "क्या वेरेना अभी नॉमिनी खाली छोड़कर 'बाद में कर लेगी'?",
+     "mr": "वेरेनाने नॉमिनी आत्ता रिकामा सोडून 'नंतर करू' म्हणावे का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, she is young, it can wait",
+       "hi": "हाँ, वह जवान है, बाद में हो जाएगा",
+       "mr": "हो, ती तरुण आहे, नंतर करता येईल"
+      },
+      "good": false,
+      "result": {
+       "en": "'Later' is how most accounts end up with no nominee. It takes one minute now and saves a family months.",
+       "hi": "'बाद में' ही वह वजह है जिससे ज़्यादातर खातों में नॉमिनी नहीं होता। अभी एक मिनट लगता है और परिवार के महीने बचते हैं।",
+       "mr": "'नंतर' म्हणूनच बहुतेक खात्यांना नॉमिनी नसतो. आत्ता एक मिनिट लागतो आणि कुटुंबाचे महिने वाचतात."
+      }
+     },
+     {
+      "text": {
+       "en": "No, she names her mother today",
+       "hi": "नहीं, वह आज ही माँ का नाम लिखती है",
+       "mr": "नाही, ती आजच आईचे नाव लिहिते"
+      },
+      "good": true,
+      "result": {
+       "en": "Right. A nominee can be changed any time later with a simple form, so there is no reason to wait.",
+       "hi": "सही। नॉमिनी बाद में एक साधारण फ़ॉर्म से कभी भी बदला जा सकता है, इसलिए रुकने की कोई वजह नहीं।",
+       "mr": "बरोबर. नॉमिनी नंतर कधीही साध्या फॉर्मने बदलता येतो, त्यामुळे थांबण्याचे कारण नाही."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "KYC check: fingerprint, OTP or document match",
+    "hi": "KYC जाँच: अंगूठा, OTP या दस्तावेज़ मिलान",
+    "mr": "KYC तपासणी: ठसा, OTP किंवा कागदपत्र जुळवणी"
+   },
+   "text": {
+    "en": "The officer verifies who she is. At this branch it is Aadhaar e-KYC: Verena places her thumb on a small scanner, her Aadhaar details appear on the screen, and the officer compares the photo with her face. Then the officer checks the originals against her copies and returns the originals.",
+    "hi": "अधिकारी उसकी पहचान की जाँच करते हैं। इस शाखा में आधार e-KYC होता है: वेरेना एक छोटे स्कैनर पर अंगूठा रखती है, स्क्रीन पर उसकी आधार जानकारी आती है, और अधिकारी फ़ोटो को उसके चेहरे से मिलाते हैं। फिर वे मूल काग़ज़ों को कॉपियों से मिलाकर मूल लौटा देते हैं।",
+    "mr": "अधिकारी तिची ओळख पडताळतात. या शाखेत आधार e-KYC होते: वेरेना एका छोट्या स्कॅनरवर अंगठा ठेवते, स्क्रीनवर तिची आधार माहिती येते, आणि अधिकारी फोटो तिच्या चेहऱ्याशी जुळवतात. मग ते मूळ कागदपत्रे प्रतींशी जुळवून मूळ परत करतात."
+   },
+   "screen": [
+    {
+     "en": "e-KYC",
+     "hi": "e-KYC",
+     "mr": "e-KYC"
+    },
+    {
+     "en": "✓ Aadhaar verified",
+     "hi": "✓ आधार सत्यापित",
+     "mr": "✓ आधार पडताळले"
+    },
+    {
+     "en": "✓ PAN verified",
+     "hi": "✓ पैन सत्यापित",
+     "mr": "✓ पॅन पडताळले"
+    },
+    {
+     "en": "Photo match: OK",
+     "hi": "फ़ोटो मिलान: ठीक",
+     "mr": "फोटो जुळणी: ठीक"
+    }
+   ],
+   "details": [
+    {
+     "en": "If your fingerprint does not read, the bank can use an OTP sent to your Aadhaar-linked mobile, or check the physical documents instead.",
+     "hi": "अगर अंगूठा नहीं पढ़ा जाए, तो बैंक आधार से जुड़े मोबाइल पर OTP भेजकर, या मूल काग़ज़ देखकर जाँच कर सकता है।",
+     "mr": "ठसा वाचला गेला नाही तर बँक आधारशी जोडलेल्या मोबाइलवर OTP पाठवून, किंवा मूळ कागदपत्रे पाहून पडताळणी करू शकते."
+    },
+    {
+     "en": "The OTP for KYC is shared only with the officer sitting in front of you, at the counter, for this purpose. Never read out an OTP to anyone on the phone.",
+     "hi": "KYC का OTP केवल सामने बैठे अधिकारी को, काउंटर पर, इसी काम के लिए बताएँ। फ़ोन पर किसी को OTP कभी न बताएँ।",
+     "mr": "KYC चा OTP फक्त समोर बसलेल्या अधिकाऱ्यांना, काउंटरवर, याच कामासाठी सांगा. फोनवर कोणालाही OTP कधीही सांगू नका."
+    },
+    {
+     "en": "Make sure the originals come back to you before you leave the counter.",
+     "hi": "काउंटर छोड़ने से पहले पक्का करें कि मूल काग़ज़ आपको वापस मिल गए।",
+     "mr": "काउंटर सोडण्यापूर्वी मूळ कागदपत्रे परत मिळाली याची खात्री करा."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "cards",
+   "title": {
+    "en": "Pick the services, and the debit card",
+    "hi": "सेवाएँ चुनें, और डेबिट कार्ड",
+    "mr": "सेवा निवडा, आणि डेबिट कार्ड"
+   },
+   "text": {
+    "en": "The last page lists services to tick: debit card, cheque book, net banking, mobile banking, SMS alerts. The officer mentions a 'platinum' debit card with lounge access. Verena asks what it costs per year.",
+    "hi": "आख़िरी पन्ने पर टिक करने के लिए सेवाएँ हैं: डेबिट कार्ड, चेक बुक, नेट बैंकिंग, मोबाइल बैंकिंग, SMS अलर्ट। अधिकारी लाउंज वाले 'प्लैटिनम' डेबिट कार्ड का ज़िक्र करते हैं। वेरेना पूछती है कि इसका सालाना ख़र्च कितना है।",
+    "mr": "शेवटच्या पानावर टिक करायच्या सेवा आहेत: डेबिट कार्ड, चेकबुक, नेट बँकिंग, मोबाइल बँकिंग, SMS अलर्ट. अधिकारी लाउंज असलेल्या 'प्लॅटिनम' डेबिट कार्डचा उल्लेख करतात. वेरेना विचारते की त्याचा वार्षिक खर्च किती."
+   },
+   "screen": [
+    {
+     "en": "RuPay Classic",
+     "hi": "RuPay क्लासिक",
+     "mr": "RuPay क्लासिक"
+    },
+    {
+     "en": "Basic · low or no fee",
+     "hi": "बेसिक · कम या कोई शुल्क नहीं",
+     "mr": "बेसिक · कमी किंवा शून्य शुल्क"
+    },
+    {
+     "en": "Platinum",
+     "hi": "प्लैटिनम",
+     "mr": "प्लॅटिनम"
+    },
+    {
+     "en": "Annual fee ₹500+ GST",
+     "hi": "सालाना शुल्क ₹500+ GST",
+     "mr": "वार्षिक शुल्क ₹500+ GST"
+    },
+    {
+     "en": "A card fee comes out of your balance every year, used or not.",
+     "hi": "कार्ड शुल्क हर साल बैलेंस से कटता है, इस्तेमाल हो या न हो।",
+     "mr": "कार्ड शुल्क दरवर्षी शिलकीतून कापले जाते, वापरा किंवा नका."
+    }
+   ],
+   "details": [
+    {
+     "en": "Debit card: the basic card is enough for ATMs, shops and online payments. Premium cards charge a yearly fee for perks most young people never use.",
+     "hi": "डेबिट कार्ड: ATM, दुकान और ऑनलाइन भुगतान के लिए बेसिक कार्ड काफ़ी है। प्रीमियम कार्ड ऐसी सुविधाओं के लिए सालाना शुल्क लेते हैं जो ज़्यादातर युवा कभी इस्तेमाल नहीं करते।",
+     "mr": "डेबिट कार्ड: ATM, दुकाने आणि ऑनलाइन पेमेंटसाठी बेसिक कार्ड पुरेसे. प्रीमियम कार्ड अशा सुविधांसाठी वार्षिक शुल्क घेतात ज्या बहुतेक तरुण कधीच वापरत नाहीत."
+    },
+    {
+     "en": "SMS alerts: always yes. They are your first warning of any wrong debit. Some banks charge a small quarterly fee for them; it is worth it.",
+     "hi": "SMS अलर्ट: हमेशा हाँ। किसी भी ग़लत कटौती की पहली चेतावनी यही हैं। कुछ बैंक इनके लिए हर तिमाही थोड़ा शुल्क लेते हैं; वह फ़ायदे का सौदा है।",
+     "mr": "SMS अलर्ट: नेहमी हो. चुकीच्या कपातीची पहिली सूचना हेच देतात. काही बँका यासाठी दर तिमाही थोडे शुल्क घेतात; ते फायद्याचे आहे."
+    },
+    {
+     "en": "Cheque book: useful for rent deposits and some fees. Tick it if you might need it; a few leaves are often free.",
+     "hi": "चेक बुक: किराए के डिपॉज़िट और कुछ फ़ीस के काम आती है। ज़रूरत हो सकती है तो टिक करें; कुछ पन्ने अक्सर मुफ़्त होते हैं।",
+     "mr": "चेकबुक: भाड्याची अनामत आणि काही फीसाठी उपयोगी. गरज पडू शकते तर टिक करा; काही पाने अनेकदा मोफत असतात."
+    },
+    {
+     "en": "Mobile and net banking: yes, but you will set the passwords yourself later, never at the counter and never with anyone's help.",
+     "hi": "मोबाइल और नेट बैंकिंग: हाँ, पर पासवर्ड बाद में आप ख़ुद बनाएँगे, काउंटर पर नहीं और किसी की मदद से नहीं।",
+     "mr": "मोबाइल आणि नेट बँकिंग: हो, पण पासवर्ड नंतर तुम्ही स्वतः ठेवाल, काउंटरवर नाही आणि कोणाच्या मदतीने नाही."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Which card should Verena take?",
+     "hi": "वेरेना कौन-सा कार्ड ले?",
+     "mr": "वेरेनाने कोणते कार्ड घ्यावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Platinum, for lounge access",
+       "hi": "प्लैटिनम, लाउंज के लिए",
+       "mr": "प्लॅटिनम, लाउंजसाठी"
+      },
+      "good": false,
+      "result": {
+       "en": "She flies maybe once a year. She would pay the fee every year for a perk she barely uses.",
+       "hi": "वह शायद साल में एक बार हवाई सफ़र करती है। एक बमुश्किल इस्तेमाल होने वाली सुविधा के लिए वह हर साल शुल्क देगी।",
+       "mr": "ती वर्षातून कदाचित एकदा विमानाने जाते. क्वचित वापरल्या जाणाऱ्या सुविधेसाठी ती दरवर्षी शुल्क भरेल."
+      }
+     },
+     {
+      "text": {
+       "en": "The basic RuPay card",
+       "hi": "बेसिक RuPay कार्ड",
+       "mr": "बेसिक RuPay कार्ड"
+      },
+      "good": true,
+      "result": {
+       "en": "It does everything she needs. She can upgrade whenever a feature is genuinely worth the fee.",
+       "hi": "उसकी हर ज़रूरत इससे पूरी होती है। जब कोई सुविधा सच में शुल्क के लायक हो, तब अपग्रेड कर सकती है।",
+       "mr": "तिच्या सगळ्या गरजा यातून भागतात. एखादी सुविधा खरोखर शुल्काइतकी मोलाची वाटेल तेव्हा अपग्रेड करता येईल."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "receipt",
+   "title": {
+    "en": "Leave with the welcome kit, and check it",
+    "hi": "वेलकम किट लेकर निकलें, और उसे जाँचें",
+    "mr": "वेलकम किट घेऊन निघा, आणि ते तपासा"
+   },
+   "text": {
+    "en": "Twenty minutes later she has an acknowledgement slip, and at this branch an instant welcome kit: passbook, account number, customer ID and a sealed card envelope. Before standing up, she reads every printed line.",
+    "hi": "बीस मिनट बाद उसके पास पावती है, और इस शाखा में तुरंत वेलकम किट: पासबुक, खाता नंबर, ग्राहक ID और सील बंद कार्ड का लिफ़ाफ़ा। उठने से पहले वह हर छपी लाइन पढ़ती है।",
+    "mr": "वीस मिनिटांनी तिच्याकडे पोचपावती आहे, आणि या शाखेत लगेच वेलकम किट: पासबुक, खाते क्रमांक, ग्राहक ID आणि सीलबंद कार्डचे पाकीट. उठण्यापूर्वी ती प्रत्येक छापील ओळ वाचते."
+   },
+   "screen": [
+    {
+     "en": "PASSBOOK",
+     "hi": "पासबुक",
+     "mr": "पासबुक"
+    },
+    {
+     "en": "Name: VERENA ANIL D'SOUZA",
+     "hi": "नाम: VERENA ANIL D'SOUZA",
+     "mr": "नाव: VERENA ANIL D'SOUZA"
+    },
+    {
+     "en": "A/c No: 3xxxxxxx2741",
+     "hi": "खाता संख्या: 3xxxxxxx2741",
+     "mr": "खाते क्र.: 3xxxxxxx2741"
+    },
+    {
+     "en": "CIF: 8xxxxx904",
+     "hi": "CIF: 8xxxxx904",
+     "mr": "CIF: 8xxxxx904"
+    },
+    {
+     "en": "IFSC: XXXX0001234",
+     "hi": "IFSC: XXXX0001234",
+     "mr": "IFSC: XXXX0001234"
+    },
+    {
+     "en": "Nominee: Registered",
+     "hi": "नॉमिनी: दर्ज",
+     "mr": "नॉमिनी: नोंदवला"
+    },
+    {
+     "en": "Balance: ₹500.00",
+     "hi": "बैलेंस: ₹500.00",
+     "mr": "शिल्लक: ₹500.00"
+    }
+   ],
+   "details": [
+    {
+     "en": "Name spelled exactly as on Aadhaar and PAN. A one-letter difference causes trouble later with salary, tax refunds and KYC.",
+     "hi": "नाम की स्पेलिंग ठीक आधार और पैन जैसी हो। एक अक्षर का फ़र्क़ भी बाद में तनख़्वाह, टैक्स रिफ़ंड और KYC में परेशानी देता है।",
+     "mr": "नावाचे स्पेलिंग आधार आणि पॅनप्रमाणेच हवे. एका अक्षराचा फरकही नंतर पगार, कर परतावा आणि KYC मध्ये त्रास देतो."
+    },
+    {
+     "en": "IFSC: the code of this branch. You will give it, with the account number, to anyone sending you money by bank transfer.",
+     "hi": "IFSC: इस शाखा का कोड। जो भी आपको बैंक ट्रांसफ़र से पैसे भेजेगा, उसे खाता नंबर के साथ यह देना होगा।",
+     "mr": "IFSC: या शाखेचा कोड. बँक ट्रान्सफरने पैसे पाठवणाऱ्याला खाते क्रमांकासोबत हा द्यावा लागेल."
+    },
+    {
+     "en": "CIF or Customer ID: your number as a customer of this bank. Net banking often asks for it.",
+     "hi": "CIF या ग्राहक ID: इस बैंक में ग्राहक के रूप में आपका नंबर। नेट बैंकिंग में अक्सर यही माँगा जाता है।",
+     "mr": "CIF किंवा ग्राहक ID: या बँकेचा ग्राहक म्हणून तुमचा क्रमांक. नेट बँकिंगमध्ये अनेकदा हाच विचारला जातो."
+    },
+    {
+     "en": "If the card or PIN will come by post, ask how many days it takes and what to do if it does not arrive.",
+     "hi": "अगर कार्ड या PIN डाक से आएगा, तो पूछें कितने दिन लगेंगे और न आए तो क्या करें।",
+     "mr": "कार्ड किंवा PIN पोस्टाने येणार असेल तर विचारा किती दिवस लागतील आणि न आल्यास काय करायचे."
+    }
+   ],
+   "watch": {
+    "en": "Take a photo of the passbook's first page and store it safely. Do not post it anywhere, even in a family group.",
+    "hi": "पासबुक के पहले पन्ने की फ़ोटो लेकर सुरक्षित रखें। उसे कहीं पोस्ट न करें, फ़ैमिली ग्रुप में भी नहीं।",
+    "mr": "पासबुकच्या पहिल्या पानाचा फोटो काढून सुरक्षित ठेवा. तो कुठेही पोस्ट करू नका, कौटुंबिक ग्रुपमध्येही नाही."
+   },
+   "cost": {
+    "en": "₹500 first deposit (optional for BSBDA)",
+    "hi": "₹500 पहली जमा (BSBDA में वैकल्पिक)",
+    "mr": "₹500 पहिली ठेव (BSBDA साठी ऐच्छिक)"
+   }
+  },
+  {
+   "scene": "atm",
+   "title": {
+    "en": "Activate the card and set a PIN at the ATM",
+    "hi": "ATM पर कार्ड चालू करें और PIN बनाएँ",
+    "mr": "ATM वर कार्ड सुरू करा आणि PIN ठेवा"
+   },
+   "text": {
+    "en": "Outside the branch is the bank's own ATM. She inserts the new card, chooses 'Green PIN / Generate PIN', enters the OTP that arrives on her phone, and sets a four-digit PIN that is not her birthday.",
+    "hi": "शाखा के बाहर बैंक का अपना ATM है। वह नया कार्ड डालती है, 'Green PIN / Generate PIN' चुनती है, फ़ोन पर आए OTP को डालती है, और चार अंकों का ऐसा PIN बनाती है जो उसका जन्मदिन नहीं है।",
+    "mr": "शाखेबाहेर बँकेचे स्वतःचे ATM आहे. ती नवीन कार्ड घालते, 'Green PIN / Generate PIN' निवडते, फोनवर आलेला OTP टाकते, आणि तिच्या वाढदिवसाचा नसलेला चार अंकी PIN ठेवते."
+   },
+   "screen": [
+    {
+     "en": "GENERATE PIN",
+     "hi": "PIN बनाएँ",
+     "mr": "PIN तयार करा"
+    },
+    {
+     "en": "Enter OTP: ••••••",
+     "hi": "OTP डालें: ••••••",
+     "mr": "OTP टाका: ••••••"
+    },
+    {
+     "en": "New PIN: ••••",
+     "hi": "नया PIN: ••••",
+     "mr": "नवीन PIN: ••••"
+    },
+    {
+     "en": "✓ PIN set successfully",
+     "hi": "✓ PIN बन गया",
+     "mr": "✓ PIN यशस्वी"
+    }
+   ],
+   "details": [
+    {
+     "en": "Cover the keypad with your other hand while typing. Cameras and people can see it.",
+     "hi": "टाइप करते समय दूसरे हाथ से कीपैड ढकें। कैमरे और लोग देख सकते हैं।",
+     "mr": "टाइप करताना दुसऱ्या हाताने कीपॅड झाका. कॅमेरे आणि लोक पाहू शकतात."
+    },
+    {
+     "en": "Avoid birthdays, 1234, 0000 and repeated digits.",
+     "hi": "जन्मदिन, 1234, 0000 और दोहराए अंकों से बचें।",
+     "mr": "वाढदिवस, 1234, 0000 आणि पुनरावृत्ती अंक टाळा."
+    },
+    {
+     "en": "Do a small balance enquiry to confirm the card works. Using your own bank's ATM a few times a month is free; extra transactions beyond the free limit carry a charge.",
+     "hi": "कार्ड चल रहा है यह जानने के लिए बैलेंस देखें। अपने बैंक का ATM महीने में कुछ बार मुफ़्त है; मुफ़्त सीमा से ज़्यादा लेन-देन पर शुल्क लगता है।",
+     "mr": "कार्ड चालते का हे पाहण्यासाठी शिल्लक तपासा. स्वतःच्या बँकेचे ATM महिन्यात काही वेळा मोफत असते; मोफत मर्यादेपेक्षा जास्त व्यवहारांवर शुल्क लागते."
+    },
+    {
+     "en": "Never accept help from a stranger at the ATM, even if the machine seems stuck. Cancel and walk into the branch.",
+     "hi": "ATM पर किसी अजनबी की मदद कभी न लें, मशीन अटकी लगे तब भी। रद्द करें और शाखा में जाएँ।",
+     "mr": "ATM वर अनोळखी व्यक्तीची मदत कधीही घेऊ नका, मशीन अडकल्यासारखे वाटले तरी. रद्द करा आणि शाखेत जा."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Set up mobile banking and UPI, safely",
+    "hi": "मोबाइल बैंकिंग और UPI सुरक्षित ढंग से चालू करें",
+    "mr": "मोबाइल बँकिंग आणि UPI सुरक्षितपणे सुरू करा"
+   },
+   "text": {
+    "en": "That evening, at home and alone, she installs the bank's official app from the Play Store (checking the publisher name is the bank), registers with her card details and OTP, and links the account in a UPI app. She sets a six-digit UPI PIN.",
+    "hi": "उस शाम, घर पर अकेले, वह Play Store से बैंक का आधिकारिक ऐप इंस्टॉल करती है (प्रकाशक का नाम बैंक ही है, यह जाँचकर), कार्ड की जानकारी और OTP से रजिस्टर करती है, और एक UPI ऐप में खाता जोड़ती है। वह छह अंकों का UPI PIN बनाती है।",
+    "mr": "त्या संध्याकाळी, घरी एकटी असताना, ती Play Store वरून बँकेचे अधिकृत ॲप इन्स्टॉल करते (प्रकाशकाचे नाव बँकच आहे हे तपासून), कार्ड माहिती आणि OTP ने नोंदणी करते, आणि एका UPI ॲपमध्ये खाते जोडते. ती सहा अंकी UPI PIN ठेवते."
+   },
+   "screen": [
+    {
+     "en": "Link bank account",
+     "hi": "बैंक खाता जोड़ें",
+     "mr": "बँक खाते जोडा"
+    },
+    {
+     "en": "✓ Mobile number verified",
+     "hi": "✓ मोबाइल नंबर सत्यापित",
+     "mr": "✓ मोबाइल नंबर पडताळला"
+    },
+    {
+     "en": "Bank: XXXX Bank ••2741",
+     "hi": "बैंक: XXXX Bank ••2741",
+     "mr": "बँक: XXXX Bank ••2741"
+    },
+    {
+     "en": "Set UPI PIN",
+     "hi": "UPI PIN बनाएँ",
+     "mr": "UPI PIN ठेवा"
+    },
+    {
+     "en": "!Never share your UPI PIN",
+     "hi": "!UPI PIN कभी साझा न करें",
+     "mr": "!UPI PIN कधीही शेअर करू नका"
+    }
+   ],
+   "details": [
+    {
+     "en": "The SIM in the phone must be the number registered with the bank; UPI checks this by sending an SMS from your phone.",
+     "hi": "फ़ोन में वही SIM होना चाहिए जो बैंक में दर्ज है; UPI आपके फ़ोन से SMS भेजकर यह जाँचता है।",
+     "mr": "फोनमध्ये बँकेत नोंदवलेलेच SIM हवे; UPI तुमच्या फोनवरून SMS पाठवून हे तपासते."
+    },
+    {
+     "en": "Your UPI PIN is needed only to send money, never to receive it. Anyone asking for your PIN 'to send you money' is a fraudster.",
+     "hi": "UPI PIN केवल पैसे भेजने के लिए चाहिए, लेने के लिए कभी नहीं। जो 'आपको पैसे भेजने' के लिए PIN माँगे, वह धोखेबाज़ है।",
+     "mr": "UPI PIN फक्त पैसे पाठवण्यासाठी लागतो, घेण्यासाठी कधीच नाही. 'तुम्हाला पैसे पाठवण्यासाठी' PIN मागणारा फसवणूक करणारा आहे."
+    },
+    {
+     "en": "Make a first ₹1 payment to a family member to see the whole loop: debit SMS, the app's history, the receiver's credit.",
+     "hi": "परिवार के किसी सदस्य को पहला ₹1 भेजकर पूरा चक्र देखें: कटौती का SMS, ऐप का इतिहास, पाने वाले के खाते में जमा।",
+     "mr": "कुटुंबातील कोणाला पहिले ₹1 पाठवून पूर्ण चक्र पाहा: कपातीचा SMS, ॲपचा इतिहास, घेणाऱ्याच्या खात्यात जमा."
+    }
+   ],
+   "watch": {
+    "en": "Download banking apps only from the official store, never from a link in an SMS or WhatsApp.",
+    "hi": "बैंकिंग ऐप केवल आधिकारिक स्टोर से डाउनलोड करें, SMS या WhatsApp की लिंक से कभी नहीं।",
+    "mr": "बँकिंग ॲप फक्त अधिकृत स्टोअरवरून डाउनलोड करा, SMS किंवा WhatsApp लिंकवरून कधीही नाही."
+   },
+   "cost": {
+    "en": "15 minutes, at home",
+    "hi": "15 मिनट, घर पर",
+    "mr": "15 मिनिटे, घरी"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "The first month: watch it like a hawk",
+    "hi": "पहला महीना: बाज़ की तरह नज़र रखें",
+    "mr": "पहिला महिना: बारकाईने लक्ष ठेवा"
+   },
+   "text": {
+    "en": "For the first month Verena checks every SMS against what she actually did. On day 9 her stipend lands. On day 30 she downloads the statement and reads every line, including the small charges.",
+    "hi": "पहले महीने वेरेना हर SMS को अपने असली लेन-देन से मिलाती है। 9वें दिन स्टाइपेंड आता है। 30वें दिन वह स्टेटमेंट डाउनलोड करके हर लाइन पढ़ती है, छोटे शुल्क भी।",
+    "mr": "पहिला महिना वेरेना प्रत्येक SMS तिच्या खऱ्या व्यवहारांशी जुळवते. 9 व्या दिवशी स्टायपेंड येते. 30 व्या दिवशी ती स्टेटमेंट डाउनलोड करून प्रत्येक ओळ वाचते, लहान शुल्कही."
+   },
+   "screen": [
+    {
+     "en": "Day 1: account opened",
+     "hi": "दिन 1: खाता खुला",
+     "mr": "दिवस 1: खाते उघडले"
+    },
+    {
+     "en": "Day 9: stipend ₹9,000 in",
+     "hi": "दिन 9: स्टाइपेंड ₹9,000 आया",
+     "mr": "दिवस 9: स्टायपेंड ₹9,000 आले"
+    },
+    {
+     "en": "Day 30: read statement",
+     "hi": "दिन 30: स्टेटमेंट पढ़ें",
+     "mr": "दिवस 30: स्टेटमेंट वाचा"
+    },
+    {
+     "en": "Every 6 months: one transaction",
+     "hi": "हर 6 महीने: एक लेन-देन",
+     "mr": "दर 6 महिन्यांनी: एक व्यवहार"
+    }
+   ],
+   "details": [
+    {
+     "en": "Any debit you do not recognise: call the bank's number printed on the card or passbook the same day.",
+     "hi": "कोई कटौती जो आप नहीं पहचानते: उसी दिन कार्ड या पासबुक पर छपे बैंक के नंबर पर फ़ोन करें।",
+     "mr": "ओळख न पटणारी कोणतीही कपात: त्याच दिवशी कार्ड किंवा पासबुकवर छापलेल्या बँकेच्या नंबरवर फोन करा."
+    },
+    {
+     "en": "An account with no customer transaction for two years becomes 'inoperative'. Keep it alive with at least one small transaction now and then.",
+     "hi": "जिस खाते में दो साल तक ग्राहक का कोई लेन-देन न हो, वह 'निष्क्रिय' हो जाता है। बीच-बीच में कम से कम एक छोटा लेन-देन करते रहें।",
+     "mr": "दोन वर्षे ग्राहकाचा कोणताही व्यवहार न झालेले खाते 'निष्क्रिय' होते. अधूनमधून किमान एक छोटा व्यवहार करत राहा."
+    },
+    {
+     "en": "When her income grows, she can ask the branch to convert the BSBDA into a regular savings account with more features.",
+     "hi": "आमदनी बढ़ने पर वह शाखा से BSBDA को ज़्यादा सुविधाओं वाले सामान्य बचत खाते में बदलने को कह सकती है।",
+     "mr": "उत्पन्न वाढल्यावर ती शाखेला BSBDA अधिक सुविधा असलेल्या सामान्य बचत खात्यात बदलायला सांगू शकते."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes a week",
+    "hi": "हफ़्ते में 2 मिनट",
+    "mr": "आठवड्याला 2 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Choose the account by your lowest balance, not your best month. A zero-balance BSBDA has no penalty.",
+   "hi": "खाता अपने सबसे कम बैलेंस के हिसाब से चुनें, सबसे अच्छे महीने के हिसाब से नहीं। शून्य बैलेंस वाले BSBDA में कोई जुर्माना नहीं।",
+   "mr": "खाते तुमच्या सर्वात कमी शिलकीनुसार निवडा, सर्वोत्तम महिन्यानुसार नाही. शून्य शिलकीच्या BSBDA ला दंड नाही."
+  },
+  {
+   "en": "Carry Aadhaar, PAN (or Form 60), two photos and current address proof, with the phone linked to Aadhaar.",
+   "hi": "आधार, पैन (या फ़ॉर्म 60), दो फ़ोटो और मौजूदा पते का प्रमाण, आधार से जुड़े फ़ोन के साथ ले जाएँ।",
+   "mr": "आधार, पॅन (किंवा फॉर्म 60), दोन फोटो आणि सध्याच्या पत्त्याचा पुरावा, आधारशी जोडलेल्या फोनसह न्या."
+  },
+  {
+   "en": "Name exactly as on Aadhaar, signature inside the box, and always a nominee.",
+   "hi": "नाम ठीक आधार जैसा, हस्ताक्षर खाने के अंदर, और नॉमिनी हमेशा।",
+   "mr": "नाव अगदी आधारप्रमाणे, सही चौकटीच्या आत, आणि नॉमिनी नेहमी."
+  },
+  {
+   "en": "Basic debit card, SMS alerts on, passwords set by you alone at home.",
+   "hi": "बेसिक डेबिट कार्ड, SMS अलर्ट चालू, पासवर्ड घर पर केवल आप ख़ुद बनाएँ।",
+   "mr": "बेसिक डेबिट कार्ड, SMS अलर्ट सुरू, पासवर्ड घरी फक्त तुम्ही स्वतः ठेवा."
+  },
+  {
+   "en": "Read your first statement line by line, and keep the account active.",
+   "hi": "पहला स्टेटमेंट लाइन-दर-लाइन पढ़ें, और खाता चालू रखें।",
+   "mr": "पहिले स्टेटमेंट ओळीने वाचा, आणि खाते सक्रिय ठेवा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://rbikehtahai.rbi.org.in"
+ ]
+}

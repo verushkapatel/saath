@@ -11,6 +11,22 @@ import type { Look } from "@/lib/progress";
 
 export type Mood = "neutral" | "happy" | "worried" | "proud";
 
+/** Body proportions by age: a child is smaller with a bigger head, a teenager a little smaller than an adult. */
+function bodyScale(age: number): number {
+  if (age < 13) return 0.74;
+  if (age < 17) return 0.88;
+  return 1;
+}
+
+/** A darker shade of a tint, for lapels, seams and trousers. */
+function shade(hex: string, amount = 0.28): string {
+  const value = hex.replace("#", "");
+  if (!/^[0-9a-f]{6}$/i.test(value)) return hex;
+  const n = parseInt(value, 16);
+  const ch = (shift: number) => Math.round(((n >> shift) & 255) * (1 - amount));
+  return `#${[16, 8, 0].map((shift) => ch(shift).toString(16).padStart(2, "0")).join("")}`;
+}
+
 const SKIN = "#C98F65";
 const SKIN_SHADE = "#B47A52";
 const CHEEK = "#E08A72";
@@ -93,6 +109,16 @@ function Place({ place }: { place: string }) {
 /** Hair behind the head: drawn first, so the face sits in front of it. */
 function HairBack({ age }: { age: number }) {
   const colour = age >= 60 ? "#B9BBC0" : INK;
+  if (age < 13) {
+    return (
+      <g fill={colour}>
+        <path d="M80 50c-9 0-14 8-13 18 1 5 5 8 9 7-3-7-1-17 4-25z" />
+        <path d="M120 50c9 0 14 8 13 18-1 5-5 8-9 7 3-7 1-17-4-25z" />
+        <circle cx="70" cy="56" r="3" fill={NAVY} />
+        <circle cx="130" cy="56" r="3" fill={NAVY} />
+      </g>
+    );
+  }
   if (age >= 46) return <circle cx="100" cy="36" r="11" fill={colour} />;
   if (age >= 26) return <path d="M78 62c-2-26 8-40 22-40s24 14 22 40l2 26c-6 4-12 4-16 0V62H92v26c-4 4-10 4-16 0z" fill={colour} />;
   return (
@@ -105,6 +131,7 @@ function HairBack({ age }: { age: number }) {
 /** Hair over the forehead. */
 function HairFront({ age }: { age: number }) {
   const colour = age >= 60 ? "#B9BBC0" : INK;
+  if (age < 13) return <path d="M79 64c-1-24 9-36 21-36s22 12 21 36c-3-6-6-10-10-12-4 4-14 6-24 4-4 2-6 4-8 8z" fill={colour} />;
   const front = <path d="M79 62c-1-22 9-34 21-34s22 12 21 34c-5-12-12-17-21-17-6 0-11 3-14 8-2-3-5-2-7 9z" fill={colour} />;
   if (age >= 50 && age < 60) {
     return (
@@ -126,7 +153,7 @@ function Face({ mood }: { mood: Mood }) {
         <path d="M89.5 65q3-3 6 0M104.5 65q3-3 6 0" />
       </g>
     ) : (
-      <g>
+      <g className="ch-eyes">
         <ellipse cx="92.5" cy="65" rx="2.3" ry="2.9" fill={INK} />
         <ellipse cx="107.5" cy="65" rx="2.3" ry="2.9" fill={INK} />
         <circle cx="93.3" cy="64" r="0.8" fill="#fff" />
@@ -169,29 +196,101 @@ function Shoes({ colour = INK }: { colour?: string }) {
   return <path d="M80 208h16v5H78zM104 208h16l2 5h-18z" fill={colour} />;
 }
 
-function Outfit({ outfit }: { outfit: string }) {
+function Outfit({ outfit, tint }: { outfit: string; tint?: string }) {
   const sleeves = (fill: string) => <path d="M77 100 64 142l8 3 11-34zM123 100l13 42-8 3-11-34z" fill={fill} />;
+  const main = tint ?? NAVY;
+  const dark = shade(main);
   switch (outfit) {
+    case "uniform":
+      return (
+        <g>
+          <path d="M86 186h12v22H87zM102 186h12v22h-11z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
+          <Shoes />
+          <path d="M80 99q20-8 40 0l2 40H78z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
+          <path d="M84 112h32l14 76H70z" fill={main} />
+          <path d="M88 112v-10M112 112v-10" stroke={main} strokeWidth="4" strokeLinecap="round" />
+          <path d="M97 98l3 14 3-14z" fill={dark} />
+          {sleeves(WHITE)}
+        </g>
+      );
+    case "frock":
+      return (
+        <g>
+          <path d="M88 180h9v28h-9zM103 180h9v28h-9z" fill={SKIN} />
+          <Shoes colour={main} />
+          <path d="M80 99q20-8 40 0l18 86H62z" fill={main} />
+          <path d="M66 176h68" stroke={WHITE} strokeWidth="2.4" />
+          <path d="M92 94l8 8 8-8" fill="none" stroke={WHITE} strokeWidth="2.2" strokeLinejoin="round" />
+          {sleeves(main)}
+        </g>
+      );
+    case "tee":
+      return (
+        <g>
+          <path d="M83 168h15l-1 40H85zM102 168h15l-1 40h-13z" fill="#3F5A86" />
+          <Shoes colour={WHITE} />
+          <path d="M78 99q22-9 44 0l3 72H75z" fill={main} />
+          <path d="M92 95q8 6 16 0" fill="none" stroke={dark} strokeWidth="2" />
+          <path d="M77 100 66 126l9 4 6-18zM123 100l11 26-9 4-6-18z" fill={main} />
+          <path d="M66 126 64 142l8 3 3-15zM134 126l2 16-8 3-3-15z" fill={SKIN} />
+        </g>
+      );
+    case "shirt":
+      return (
+        <g>
+          <path d="M84 176h14l-1 32H85zM102 176h14l-1 32h-12z" fill={GREY_DARK} />
+          <Shoes />
+          <path d="M78 99q22-9 44 0l4 78H74z" fill={main} />
+          <path d="M90 95l10 10 10-10-4-3-6 5-6-5z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
+          <path d="M100 106v66" stroke={dark} strokeWidth="1.6" />
+          <circle cx="100" cy="122" r="1.4" fill={WHITE} /><circle cx="100" cy="140" r="1.4" fill={WHITE} /><circle cx="100" cy="158" r="1.4" fill={WHITE} />
+          {sleeves(main)}
+        </g>
+      );
+    case "cardigan":
+      return (
+        <g>
+          <path d="M84 176h14l-1 32H85zM102 176h14l-1 32h-12z" fill={INK} />
+          <Shoes />
+          <path d="M80 99q20-8 40 0l2 78H78z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
+          <path d="M78 99q10-4 17-5l1 83H74zM122 99q-10-4-17-5l-1 83h22z" fill={main} />
+          <path d="M77 168h21M102 168h21" stroke={dark} strokeWidth="2" />
+          {sleeves(main)}
+        </g>
+      );
+    case "coat":
+      return (
+        <g>
+          <path d="M86 190h12v18H87zM102 190h12v18h-11z" fill={INK} />
+          <Shoes />
+          <path d="M78 99q22-9 44 0l8 92H70z" fill={main} />
+          <path d="M100 104v86" stroke={dark} strokeWidth="2" />
+          <path d="M88 96l12 14 12-14" fill="none" stroke={dark} strokeWidth="3" strokeLinejoin="round" />
+          <circle cx="94" cy="130" r="1.8" fill={dark} /><circle cx="94" cy="150" r="1.8" fill={dark} /><circle cx="106" cy="130" r="1.8" fill={dark} /><circle cx="106" cy="150" r="1.8" fill={dark} />
+          <path d="M74 160h52" stroke={dark} strokeWidth="2" />
+          {sleeves(main)}
+        </g>
+      );
     case "blazer":
       return (
         <g>
           <path d="M84 178h14l-1 30H85zM102 178h14l-1 30h-12z" fill={GREY_DARK} />
           <Shoes />
           <path d="M78 99q22-9 44 0l4 80H74z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
-          <path d="M78 99q10-4 18-5l4 22-6 62H74zM122 99q-10-4-18-5l-4 22 6 62h20z" fill={NAVY_DARK} />
-          <path d="M96 94l4 14 4-14" fill="none" stroke={NAVY} strokeWidth="2" />
-          {sleeves(NAVY_DARK)}
+          <path d="M78 99q10-4 18-5l4 22-6 62H74zM122 99q-10-4-18-5l-4 22 6 62h20z" fill={tint ? dark : NAVY_DARK} />
+          <path d="M96 94l4 14 4-14" fill="none" stroke={main} strokeWidth="2" />
+          {sleeves(tint ? dark : NAVY_DARK)}
         </g>
       );
     case "sari":
       return (
         <g>
           <path d="M76 120h48l10 92H66z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
-          <path d="M67 202h66l1 10H66z" fill={NAVY} />
-          <path d="M78 99q22-9 44 0l2 24H76z" fill={NAVY} />
+          <path d="M67 202h66l1 10H66z" fill={main} />
+          <path d="M78 99q22-9 44 0l2 24H76z" fill={main} />
           <path d="M122 98c-6-4-12-5-18-6-8 40-24 70-40 86l-2 30h18c18-26 36-66 42-110z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
-          <path d="M104 92c-8 40-24 70-40 86" fill="none" stroke={NAVY} strokeWidth="3" />
-          {sleeves(NAVY)}
+          <path d="M104 92c-8 40-24 70-40 86" fill="none" stroke={main} strokeWidth="3" />
+          {sleeves(main)}
         </g>
       );
     case "shawl":
@@ -210,11 +309,11 @@ function Outfit({ outfit }: { outfit: string }) {
         <g>
           <path d="M83 172h15l-1 36H85zM102 172h15l-1 36h-13z" fill="#2C4A80" />
           <Shoes colour={WHITE} />
-          <path d="M84 96q16-8 32 0l-4 8q-12-5-24 0z" fill="#7E848E" />
-          <path d="M78 99q22-9 44 0l4 74H74z" fill="#9AA0AA" />
-          <path d="M88 150h24v12H88z" fill="#878D97" />
+          <path d="M84 96q16-8 32 0l-4 8q-12-5-24 0z" fill={tint ? dark : "#7E848E"} />
+          <path d="M78 99q22-9 44 0l4 74H74z" fill={tint ?? "#9AA0AA"} />
+          <path d="M88 150h24v12H88z" fill={tint ? dark : "#878D97"} />
           <path d="M96 104v18M104 104v18" stroke={WHITE} strokeWidth="1.6" strokeLinecap="round" />
-          {sleeves("#9AA0AA")}
+          {sleeves(tint ?? "#9AA0AA")}
         </g>
       );
     case "jacket":
@@ -223,9 +322,9 @@ function Outfit({ outfit }: { outfit: string }) {
           <path d="M83 172h15l-1 36H85zM102 172h15l-1 36h-13z" fill={INK} />
           <Shoes />
           <path d="M80 99q20-8 40 0l2 74H78z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
-          <path d="M78 99q10-4 16-5l2 79H74zM122 99q-10-4-16-5l-2 79h22z" fill="#3A5A99" />
-          <path d="M80 130h12M108 130h12" stroke="#2A467E" strokeWidth="2" />
-          {sleeves("#3A5A99")}
+          <path d="M78 99q10-4 16-5l2 79H74zM122 99q-10-4-16-5l-2 79h22z" fill={tint ?? "#3A5A99"} />
+          <path d="M80 130h12M108 130h12" stroke={tint ? dark : "#2A467E"} strokeWidth="2" />
+          {sleeves(tint ?? "#3A5A99")}
         </g>
       );
     case "suit":
@@ -236,6 +335,7 @@ function Outfit({ outfit }: { outfit: string }) {
           <path d="M78 99q22-9 44 0l4 78H74z" fill="#1C1C1E" />
           <path d="M94 95l6 20 6-20z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
           <path d="M94 95l6 20M106 95l-6 20" stroke="#3A3A3E" strokeWidth="1.5" />
+          {tint && <circle cx="112" cy="112" r="2.4" fill={tint} />}
           {sleeves("#1C1C1E")}
         </g>
       );
@@ -256,10 +356,10 @@ function Outfit({ outfit }: { outfit: string }) {
         <g>
           <path d="M84 176h13l-1 32H85zM103 176h13v32h-12z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
           <Shoes />
-          <path d="M78 99q22-9 44 0l8 79H70z" fill={NAVY} />
+          <path d="M78 99q22-9 44 0l8 79H70z" fill={main} />
           <path d="M92 94l8 14 8-14" fill="none" stroke={WHITE} strokeWidth="2.2" strokeLinejoin="round" />
           <path d="M71 170h58" stroke={WHITE} strokeWidth="2" />
-          {sleeves(NAVY)}
+          {sleeves(main)}
         </g>
       );
   }
@@ -271,7 +371,10 @@ function ExtraBack({ extra }: { extra: string }) {
   return null;
 }
 
-function Extra({ extra }: { extra: string }) {
+const HEAD_EXTRAS = new Set(["glasses", "sunglasses", "earrings"]);
+
+function Extra({ extra, part }: { extra: string; part: "head" | "body" }) {
+  if (HEAD_EXTRAS.has(extra) !== (part === "head")) return null;
   switch (extra) {
     case "glasses":
       return <path d="M85 65a6 6 0 1 0 12 0 6 6 0 1 0-12 0zM103 65a6 6 0 1 0 12 0 6 6 0 1 0-12 0zM97 65h6M85 64h-5M115 64h5" stroke={INK} strokeWidth="1.6" fill="none" />;
@@ -323,8 +426,10 @@ export function Character({
   label,
   bare,
   mood = "neutral",
+  alive,
+  wave,
 }: {
-  look: Look;
+  look: Look & { tint?: string };
   age?: number;
   size?: number;
   /** Spoken description. Leave it out when the figure sits beside text that already says who she is. */
@@ -332,10 +437,19 @@ export function Character({
   /** No background scene: just the figure. */
   bare?: boolean;
   mood?: Mood;
+  /** Breathing and blinking, for the places where she is the centre of the screen. */
+  alive?: boolean;
+  /** One wave of the hand, for a celebration. */
+  wave?: boolean;
 }) {
+  const scale = bodyScale(age);
+  const rise = 115 * (1 - scale);
+  const head = scale < 1 ? 0.94 : 1;
+  const body = `translate(${(100 * (1 - scale)).toFixed(2)} ${(214 * (1 - scale)).toFixed(2)}) scale(${scale})`;
+  const headMove = `translate(0 ${rise.toFixed(2)}) translate(100 94) scale(${head}) translate(-100 -94)`;
   return (
     <svg
-      className="character"
+      className={`character${alive ? " alive" : ""}${wave ? " waving" : ""}`}
       viewBox="0 0 200 228"
       width={size}
       height={(size * 228) / 200}
@@ -345,19 +459,26 @@ export function Character({
     >
       {!bare && <Place place={look.place} />}
       <path className="ch-ground" d="M10 214h180" />
-      <ellipse cx="100" cy="214" rx="38" ry="4" fill="#000" opacity="0.12" />
-      <HairBack age={age} />
-      <ExtraBack extra={look.extra} />
-      <Limbs />
-      <Outfit outfit={look.outfit} />
-      {/* Neck, ears and face */}
-      <path d="M94 80h12v14c-4 3-8 3-12 0z" fill={SKIN_SHADE} />
-      <circle cx="81" cy="66" r="4.2" fill={SKIN} />
-      <circle cx="119" cy="66" r="4.2" fill={SKIN} />
-      <ellipse cx="100" cy="63" rx="19.5" ry="21.5" fill={SKIN} />
-      <HairFront age={age} />
-      <Face mood={mood} />
-      <Extra extra={look.extra} />
+      <ellipse className="ch-shadow" cx="100" cy="214" rx={38 * scale} ry="4" fill="#000" opacity="0.12" />
+      <g className="ch-figure">
+        <g transform={headMove}><HairBack age={age} /></g>
+        <g transform={body}>
+          <ExtraBack extra={look.extra} />
+          <g className="ch-arms"><Limbs /></g>
+          <Outfit outfit={look.outfit} tint={look.tint} />
+          <Extra extra={look.extra} part="body" />
+        </g>
+        <g className="ch-head" transform={headMove}>
+          {/* Neck, ears and face */}
+          <path d="M94 80h12v14c-4 3-8 3-12 0z" fill={SKIN_SHADE} />
+          <circle cx="81" cy="66" r="4.2" fill={SKIN} />
+          <circle cx="119" cy="66" r="4.2" fill={SKIN} />
+          <ellipse cx="100" cy="63" rx="19.5" ry="21.5" fill={SKIN} />
+          <HairFront age={age} />
+          <Face mood={mood} />
+          <Extra extra={look.extra} part="head" />
+        </g>
+      </g>
     </svg>
   );
 }

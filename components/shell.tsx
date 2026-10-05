@@ -23,6 +23,7 @@ import { Personalize } from "./personalize";
 import { PrefsProvider, usePrefs } from "./prefs";
 import { useI18n } from "./providers";
 import { RewardSheet } from "./reward-sheet";
+import { Celebrate } from "./celebrate";
 import { SessionCtx } from "./session";
 import { ThemeToggle } from "./theme-toggle";
 import { InstallStep, MakeYours } from "./welcome";
@@ -167,7 +168,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
         })}
       </nav>
       {ai.askOpen && <AskSheet />}
-      {!inEpisode && app.fresh.length > 0 && <RewardSheet />}
+      {app.celebration ? <Celebrate /> : !inEpisode && app.fresh.length > 0 && <RewardSheet />}
     </div>
   );
 }

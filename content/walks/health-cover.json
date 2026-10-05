@@ -1,0 +1,580 @@
+{
+ "id": "health-cover",
+ "guide": "health-cover",
+ "title": {
+  "en": "When you need your health insurance: a hospital admission and a claim, from the first phone call to the money settled",
+  "hi": "जब स्वास्थ्य बीमा की ज़रूरत पड़े: अस्पताल में भर्ती और क्लेम, पहले फ़ोन से भुगतान होने तक",
+  "mr": "आरोग्य विम्याची गरज पडते तेव्हा: रुग्णालयात दाखल होणे आणि क्लेम, पहिल्या फोनपासून पैसे मिळेपर्यंत"
+ },
+ "setting": {
+  "en": "A Thursday night: Verena's father has chest pain and is taken to hospital",
+  "hi": "गुरुवार की रात: वेरेना के पिता के सीने में दर्द है और उन्हें अस्पताल ले जाया जाता है",
+  "mr": "गुरुवारची रात्र: वेरेनाच्या वडिलांच्या छातीत दुखते आणि त्यांना रुग्णालयात नेले जाते"
+ },
+ "steps": [
+  {
+   "scene": "hospital",
+   "title": {
+    "en": "Choose the hospital, if there is time to choose",
+    "hi": "अस्पताल चुनें, अगर चुनने का समय हो",
+    "mr": "रुग्णालय निवडा, निवडायला वेळ असेल तर"
+   },
+   "text": {
+    "en": "In an emergency, the nearest good hospital comes first, always. Here there are ten minutes to decide, so Verena checks the one-page note: City Care is a network hospital of her father's insurer and is 12 minutes away.",
+    "hi": "आपात स्थिति में सबसे पास का अच्छा अस्पताल सबसे पहले, हमेशा। यहाँ फ़ैसले के लिए दस मिनट हैं, इसलिए वेरेना एक पन्ने का नोट देखती है: सिटी केयर उसके पिता की बीमा कंपनी का नेटवर्क अस्पताल है और 12 मिनट दूर है।",
+    "mr": "आणीबाणीत जवळचे चांगले रुग्णालय सर्वात आधी, नेहमी. इथे ठरवायला दहा मिनिटे आहेत, म्हणून वेरेना एका पानाची नोंद पाहते: सिटी केअर हे वडिलांच्या विमा कंपनीचे नेटवर्क रुग्णालय आहे आणि 12 मिनिटांवर आहे."
+   },
+   "screen": [
+    {
+     "en": "EMERGENCY",
+     "hi": "इमरजेंसी",
+     "mr": "आपत्कालीन"
+    },
+    {
+     "en": "Network hospital = cashless",
+     "hi": "नेटवर्क अस्पताल = कैशलेस",
+     "mr": "नेटवर्क रुग्णालय = कॅशलेस"
+    },
+    {
+     "en": "Other hospital = pay, then claim",
+     "hi": "दूसरा अस्पताल = भरें, फिर क्लेम",
+     "mr": "इतर रुग्णालय = भरा, मग क्लेम"
+    }
+   ],
+   "details": [
+    {
+     "en": "Cashless: at a network hospital, the insurer pays the hospital directly after approving the treatment. You pay only what is not covered.",
+     "hi": "कैशलेस: नेटवर्क अस्पताल में इलाज को मंज़ूरी देने के बाद बीमा कंपनी सीधे अस्पताल को भुगतान करती है। आप केवल वह देते हैं जो कवर नहीं है।",
+     "mr": "कॅशलेस: नेटवर्क रुग्णालयात उपचार मंजूर केल्यावर विमा कंपनी थेट रुग्णालयाला पैसे देते. तुम्ही फक्त कव्हर नसलेले भरता."
+    },
+    {
+     "en": "Reimbursement: at any other hospital, you pay the bill and then claim it back with documents.",
+     "hi": "रीइम्बर्समेंट: किसी दूसरे अस्पताल में आप बिल भरते हैं और फिर दस्तावेज़ों के साथ पैसा वापस माँगते हैं।",
+     "mr": "परतफेड: इतर कोणत्याही रुग्णालयात तुम्ही बिल भरता आणि मग कागदपत्रांसह पैसे परत मागता."
+    },
+    {
+     "en": "Take the health insurance e-card (or policy number), the patient's Aadhaar or another photo ID, and any current prescriptions.",
+     "hi": "स्वास्थ्य बीमा ई-कार्ड (या पॉलिसी नंबर), मरीज़ का आधार या कोई फ़ोटो ID, और मौजूदा दवाओं के पर्चे साथ लें।",
+     "mr": "आरोग्य विमा ई-कार्ड (किंवा पॉलिसी क्रमांक), रुग्णाचे आधार किंवा दुसरे फोटो ओळखपत्र, आणि सध्याची औषधांची चिठ्ठी सोबत घ्या."
+    }
+   ],
+   "watch": {
+    "en": "Never delay emergency treatment to find a network hospital. You can still claim by reimbursement.",
+    "hi": "नेटवर्क अस्पताल ढूँढने के लिए आपात इलाज में कभी देर न करें। आप रीइम्बर्समेंट से फिर भी क्लेम कर सकते हैं।",
+    "mr": "नेटवर्क रुग्णालय शोधण्यासाठी आपत्कालीन उपचारात कधीही उशीर करू नका. परतफेडीने तरीही क्लेम करता येतो."
+   },
+   "cost": {
+    "en": "Minutes matter",
+    "hi": "हर मिनट क़ीमती",
+    "mr": "प्रत्येक मिनिट महत्त्वाचे"
+   }
+  },
+  {
+   "scene": "hospital",
+   "title": {
+    "en": "Go to the insurance (TPA) desk the same night",
+    "hi": "उसी रात बीमा (TPA) डेस्क पर जाएँ",
+    "mr": "त्याच रात्री विमा (TPA) डेस्कवर जा"
+   },
+   "text": {
+    "en": "Her father is in the emergency ward. Verena finds the 'Insurance / TPA' desk near admissions. The desk staff take the e-card, the patient's ID and the doctor's admission note, and send a pre-authorisation request to the insurer.",
+    "hi": "पिता इमरजेंसी वार्ड में हैं। वेरेना भर्ती काउंटर के पास 'Insurance / TPA' डेस्क ढूँढती है। डेस्क वाले ई-कार्ड, मरीज़ की ID और डॉक्टर का भर्ती नोट लेकर बीमा कंपनी को प्री-ऑथराइज़ेशन का अनुरोध भेजते हैं।",
+    "mr": "वडील आपत्कालीन विभागात आहेत. वेरेना प्रवेश काउंटरजवळ 'Insurance / TPA' डेस्क शोधते. डेस्कवरील कर्मचारी ई-कार्ड, रुग्णाचे ओळखपत्र आणि डॉक्टरांची दाखल नोंद घेऊन विमा कंपनीला पूर्व-मंजुरीची विनंती पाठवतात."
+   },
+   "screen": [
+    {
+     "en": "INSURANCE / TPA DESK",
+     "hi": "बीमा / TPA डेस्क",
+     "mr": "विमा / TPA डेस्क"
+    },
+    {
+     "en": "Pre-auth request sent",
+     "hi": "प्री-ऑथ अनुरोध भेजा",
+     "mr": "पूर्व-मंजुरी विनंती पाठवली"
+    },
+    {
+     "en": "Estimate: ₹1,80,000",
+     "hi": "अनुमान: ₹1,80,000",
+     "mr": "अंदाज: ₹1,80,000"
+    },
+    {
+     "en": "Ref: PA-77xxxx",
+     "hi": "संदर्भ: PA-77xxxx",
+     "mr": "संदर्भ: PA-77xxxx"
+    }
+   ],
+   "details": [
+    {
+     "en": "TPA (Third Party Administrator) is a company many insurers use to process claims. The hospital desk deals with them for you.",
+     "hi": "TPA (थर्ड पार्टी एडमिनिस्ट्रेटर) एक कंपनी है जिससे कई बीमा कंपनियाँ क्लेम निपटवाती हैं। अस्पताल का डेस्क आपकी ओर से उनसे बात करता है।",
+     "mr": "TPA (थर्ड पार्टी ॲडमिनिस्ट्रेटर) ही अनेक विमा कंपन्या क्लेम हाताळण्यासाठी वापरतात ती कंपनी. रुग्णालयाचा डेस्क तुमच्या वतीने त्यांच्याशी व्यवहार करतो."
+    },
+    {
+     "en": "Also call the insurer's helpline yourself and report the admission. Note the call reference number.",
+     "hi": "बीमा कंपनी की हेल्पलाइन पर ख़ुद भी फ़ोन करके भर्ती की सूचना दें। कॉल का संदर्भ नंबर लिख लें।",
+     "mr": "विमा कंपनीच्या हेल्पलाइनवर स्वतःही फोन करून दाखल झाल्याची माहिती द्या. कॉलचा संदर्भ क्रमांक लिहून घ्या."
+    },
+    {
+     "en": "Under IRDAI's rules, insurers are expected to decide a cashless request quickly, within about an hour of receiving it.",
+     "hi": "IRDAI के नियमों के तहत बीमा कंपनियों से उम्मीद है कि वे कैशलेस अनुरोध पर जल्दी, लगभग एक घंटे में फ़ैसला करें।",
+     "mr": "IRDAI च्या नियमांनुसार विमा कंपन्यांनी कॅशलेस विनंतीवर लवकर, साधारण एका तासात निर्णय घेणे अपेक्षित आहे."
+    },
+    {
+     "en": "The hospital may ask for a deposit until approval comes. Ask for a receipt; it is adjusted in the final bill.",
+     "hi": "मंज़ूरी आने तक अस्पताल डिपॉज़िट माँग सकता है। रसीद लें; यह अंतिम बिल में समायोजित होता है।",
+     "mr": "मंजुरी येईपर्यंत रुग्णालय अनामत रक्कम मागू शकते. पावती घ्या; ती अंतिम बिलात समायोजित होते."
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "TPA desk:",
+     "hi": "TPA डेस्क:",
+     "mr": "TPA डेस्क:"
+    },
+    "line": {
+     "en": "\"Your initial approval is ₹1,20,000. If the bill goes higher, we will request an enhancement before discharge.\"",
+     "hi": "\"शुरुआती मंज़ूरी ₹1,20,000 की है। बिल ज़्यादा हुआ तो डिस्चार्ज से पहले हम बढ़ाने का अनुरोध करेंगे।\"",
+     "mr": "\"सुरुवातीची मंजुरी ₹1,20,000 ची आहे. बिल जास्त झाले तर डिस्चार्जपूर्वी आम्ही वाढीची विनंती करू.\""
+    }
+   },
+   "cost": {
+    "en": "30 to 60 minutes at the desk",
+    "hi": "डेस्क पर 30 से 60 मिनट",
+    "mr": "डेस्कवर 30 ते 60 मिनिटे"
+   }
+  },
+  {
+   "scene": "hospital",
+   "title": {
+    "en": "During the stay: watch the room and the bill",
+    "hi": "भर्ती के दौरान: कमरे और बिल पर नज़र",
+    "mr": "दाखल असताना: खोली आणि बिलावर लक्ष"
+   },
+   "text": {
+    "en": "The nurse offers a deluxe room. Verena remembers the room rent limit in her father's policy, checks it in the policy PDF on her phone, and asks for a room within the limit.",
+    "hi": "नर्स डीलक्स कमरा देती है। वेरेना को पिता की पॉलिसी की कमरा-किराया सीमा याद आती है, वह फ़ोन पर पॉलिसी PDF में देखती है, और सीमा के अंदर का कमरा माँगती है।",
+    "mr": "नर्स डीलक्स खोली देऊ करते. वेरेनाला वडिलांच्या पॉलिसीतील खोलीभाडे मर्यादा आठवते, ती फोनवर पॉलिसी PDF मध्ये पाहते, आणि मर्यादेतील खोली मागते."
+   },
+   "screen": [
+    {
+     "en": "Room rent limit",
+     "hi": "कमरा किराया सीमा",
+     "mr": "खोलीभाडे मर्यादा"
+    },
+    {
+     "en": "Policy: ₹5,000/day",
+     "hi": "पॉलिसी: ₹5,000/दिन",
+     "mr": "पॉलिसी: ₹5,000/दिवस"
+    },
+    {
+     "en": "Deluxe: ₹8,000/day",
+     "hi": "डीलक्स: ₹8,000/दिन",
+     "mr": "डीलक्स: ₹8,000/दिवस"
+    },
+    {
+     "en": "!Bigger room = other bills cut too",
+     "hi": "!बड़ा कमरा = दूसरे बिल भी कटेंगे",
+     "mr": "!मोठी खोली = इतर बिलेही कापली जातील"
+    }
+   ],
+   "details": [
+    {
+     "en": "A costlier room than the policy allows can reduce many other charges in the same ratio (proportionate deduction), not just the room.",
+     "hi": "पॉलिसी की सीमा से महँगा कमरा केवल कमरे का नहीं, कई दूसरे ख़र्चों का भुगतान भी उसी अनुपात में घटा सकता है (आनुपातिक कटौती)।",
+     "mr": "पॉलिसीच्या मर्यादेपेक्षा महागडी खोली फक्त खोलीचेच नाही, तर इतर अनेक खर्चांचे पैसेही त्याच प्रमाणात कमी करू शकते (प्रमाणशीर कपात)."
+    },
+    {
+     "en": "Keep a simple log: date, tests done, medicines given. It helps when you check the final bill.",
+     "hi": "एक सादा लॉग रखें: तारीख़, जाँचें, दी गई दवाएँ। अंतिम बिल जाँचते समय काम आता है।",
+     "mr": "एक साधी नोंद ठेवा: तारीख, झालेल्या तपासण्या, दिलेली औषधे. अंतिम बिल तपासताना उपयोगी पडते."
+    },
+    {
+     "en": "Items like gloves, masks and some consumables are often not paid by the policy. Ask the desk for an estimate of the non-payable part.",
+     "hi": "दस्ताने, मास्क और कुछ उपभोग्य चीज़ें अक्सर पॉलिसी में नहीं मिलतीं। डेस्क से न मिलने वाले हिस्से का अनुमान पूछें।",
+     "mr": "हातमोजे, मास्क आणि काही उपभोग्य वस्तू अनेकदा पॉलिसीत मिळत नाहीत. न मिळणाऱ्या भागाचा अंदाज डेस्कला विचारा."
+    }
+   ],
+   "cost": {
+    "en": "4 days",
+    "hi": "4 दिन",
+    "mr": "4 दिवस"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The deluxe room is free tonight. Take it?",
+     "hi": "आज रात डीलक्स कमरा ख़ाली है। ले लें?",
+     "mr": "आज रात्री डीलक्स खोली रिकामी आहे. घ्यावी का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, insurance will pay anyway",
+       "hi": "हाँ, बीमा तो देगा ही",
+       "mr": "हो, विमा तसाही देईल"
+      },
+      "good": false,
+      "result": {
+       "en": "Insurance pays up to the limit, and may cut doctor fees, tests and other charges proportionately too. The family could pay tens of thousands extra.",
+       "hi": "बीमा सीमा तक देता है, और डॉक्टर की फ़ीस, जाँचें और दूसरे ख़र्च भी अनुपात में काट सकता है। परिवार को हज़ारों रुपये ज़्यादा देने पड़ सकते हैं।",
+       "mr": "विमा मर्यादेपर्यंत देतो, आणि डॉक्टरांची फी, तपासण्या आणि इतर खर्चही प्रमाणात कापू शकतो. कुटुंबाला हजारो रुपये जास्त भरावे लागू शकतात."
+      }
+     },
+     {
+      "text": {
+       "en": "No, a room within the policy limit",
+       "hi": "नहीं, पॉलिसी सीमा के अंदर का कमरा",
+       "mr": "नाही, पॉलिसी मर्यादेतील खोली"
+      },
+      "good": true,
+      "result": {
+       "en": "The treatment is the same; the bill stays fully within cover.",
+       "hi": "इलाज वही है; बिल पूरी तरह कवर के अंदर रहता है।",
+       "mr": "उपचार तोच; बिल पूर्णपणे कव्हरमध्ये राहते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "receipt",
+   "title": {
+    "en": "Discharge day: the final bill and the approval",
+    "hi": "डिस्चार्ज का दिन: अंतिम बिल और मंज़ूरी",
+    "mr": "डिस्चार्जचा दिवस: अंतिम बिल आणि मंजुरी"
+   },
+   "text": {
+    "en": "On day four the doctor clears discharge at 11 am. The hospital sends the final bill to the insurer. Verena asks for an itemised bill and reads it at the desk while they wait for final approval.",
+    "hi": "चौथे दिन डॉक्टर सुबह 11 बजे डिस्चार्ज की अनुमति देते हैं। अस्पताल अंतिम बिल बीमा कंपनी को भेजता है। अंतिम मंज़ूरी का इंतज़ार करते हुए वेरेना मदवार बिल माँगकर डेस्क पर ही पढ़ती है।",
+    "mr": "चौथ्या दिवशी डॉक्टर सकाळी 11 वाजता डिस्चार्जची परवानगी देतात. रुग्णालय अंतिम बिल विमा कंपनीला पाठवते. अंतिम मंजुरीची वाट पाहताना वेरेना तपशीलवार बिल मागून डेस्कवरच वाचते."
+   },
+   "screen": [
+    {
+     "en": "FINAL BILL",
+     "hi": "अंतिम बिल",
+     "mr": "अंतिम बिल"
+    },
+    {
+     "en": "Room (4 days) ₹20,000",
+     "hi": "कमरा (4 दिन) ₹20,000",
+     "mr": "खोली (4 दिवस) ₹20,000"
+    },
+    {
+     "en": "Angiography ₹38,000",
+     "hi": "एंजियोग्राफ़ी ₹38,000",
+     "mr": "अँजिओग्राफी ₹38,000"
+    },
+    {
+     "en": "Medicines ₹21,400",
+     "hi": "दवाएँ ₹21,400",
+     "mr": "औषधे ₹21,400"
+    },
+    {
+     "en": "Consumables ₹6,200",
+     "hi": "उपभोग्य ₹6,200",
+     "mr": "उपभोग्य वस्तू ₹6,200"
+    },
+    {
+     "en": "Total ₹1,46,900",
+     "hi": "कुल ₹1,46,900",
+     "mr": "एकूण ₹1,46,900"
+    },
+    {
+     "en": "Insurer pays ₹1,41,300",
+     "hi": "बीमा देगा ₹1,41,300",
+     "mr": "विमा देईल ₹1,41,300"
+    },
+    {
+     "en": "You pay ₹5,600",
+     "hi": "आप देंगे ₹5,600",
+     "mr": "तुम्ही भराल ₹5,600"
+    }
+   ],
+   "details": [
+    {
+     "en": "IRDAI's rules expect insurers to give final discharge authorisation within about three hours of the hospital's request. If it takes much longer, ask the desk for the status and note the time.",
+     "hi": "IRDAI के नियम उम्मीद करते हैं कि अस्पताल के अनुरोध के लगभग तीन घंटे में बीमा कंपनी डिस्चार्ज की अंतिम मंज़ूरी दे। बहुत देर हो तो डेस्क से स्थिति पूछें और समय नोट करें।",
+     "mr": "IRDAI चे नियम अपेक्षा करतात की रुग्णालयाच्या विनंतीनंतर साधारण तीन तासांत विमा कंपनी डिस्चार्जची अंतिम मंजुरी देईल. खूप उशीर झाल्यास डेस्कला स्थिती विचारा आणि वेळ नोंदवा."
+    },
+    {
+     "en": "Check each line: days charged, tests you know were done, medicines. Ask about anything you do not recognise.",
+     "hi": "हर लाइन जाँचें: कितने दिन जोड़े, जो जाँचें हुईं, दवाएँ। जो समझ न आए, उसके बारे में पूछें।",
+     "mr": "प्रत्येक ओळ तपासा: किती दिवस लावले, झालेल्या तपासण्या, औषधे. ओळख न पटणाऱ्या गोष्टीबद्दल विचारा."
+    },
+    {
+     "en": "Before leaving, collect: discharge summary, final itemised bill, payment receipts, all reports, and the insurer's settlement letter.",
+     "hi": "जाने से पहले लें: डिस्चार्ज समरी, मदवार अंतिम बिल, भुगतान की रसीदें, सारी रिपोर्टें, और बीमा कंपनी का सेटलमेंट पत्र।",
+     "mr": "निघण्यापूर्वी घ्या: डिस्चार्ज सारांश, तपशीलवार अंतिम बिल, भरलेल्या रकमेच्या पावत्या, सर्व अहवाल, आणि विमा कंपनीचे सेटलमेंट पत्र."
+    }
+   ],
+   "cost": {
+    "en": "You pay only the non-payable part",
+    "hi": "आप केवल न मिलने वाला हिस्सा देते हैं",
+    "mr": "तुम्ही फक्त न मिळणारा भाग भरता"
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "If it was not cashless: build the reimbursement file",
+    "hi": "अगर कैशलेस नहीं था: रीइम्बर्समेंट फ़ाइल बनाएँ",
+    "mr": "कॅशलेस नसेल तर: परतफेडीची फाइल तयार करा"
+   },
+   "text": {
+    "en": "Suppose the ambulance had taken her father to a non-network hospital and the family paid ₹1.2 lakh. Verena would then claim it back. She lays out the documents the claim form lists.",
+    "hi": "मान लीजिए एम्बुलेंस पिता को किसी नॉन-नेटवर्क अस्पताल ले गई होती और परिवार ने ₹1.2 लाख भरे होते। तब वेरेना पैसा वापस माँगती। वह क्लेम फ़ॉर्म में लिखे दस्तावेज़ सामने रखती है।",
+    "mr": "समजा रुग्णवाहिकेने वडिलांना नॉन-नेटवर्क रुग्णालयात नेले असते आणि कुटुंबाने ₹1.2 लाख भरले असते. तर वेरेनाने पैसे परत मागितले असते. क्लेम फॉर्ममध्ये दिलेली कागदपत्रे ती समोर मांडते."
+   },
+   "screen": [
+    {
+     "en": "Claim form",
+     "hi": "क्लेम फ़ॉर्म",
+     "mr": "क्लेम फॉर्म"
+    },
+    {
+     "en": "Part A (you) + Part B (hospital)",
+     "hi": "भाग A (आप) + भाग B (अस्पताल)",
+     "mr": "भाग A (तुम्ही) + भाग B (रुग्णालय)"
+    },
+    {
+     "en": "Discharge summary",
+     "hi": "डिस्चार्ज समरी",
+     "mr": "डिस्चार्ज सारांश"
+    },
+    {
+     "en": "Original bills + receipts",
+     "hi": "मूल बिल + रसीदें",
+     "mr": "मूळ बिले + पावत्या"
+    },
+    {
+     "en": "Reports, prescriptions",
+     "hi": "रिपोर्ट, पर्चे",
+     "mr": "अहवाल, चिठ्ठ्या"
+    },
+    {
+     "en": "Cancelled cheque, KYC",
+     "hi": "रद्द चेक, KYC",
+     "mr": "रद्द केलेला चेक, KYC"
+    },
+    {
+     "en": "Send within the policy's time limit",
+     "hi": "पॉलिसी की समय-सीमा में भेजें",
+     "mr": "पॉलिसीच्या मुदतीत पाठवा"
+    }
+   ],
+   "details": [
+    {
+     "en": "Claim form Part A is filled by the patient's side; Part B by the hospital. Ask the hospital's billing desk for Part B before you leave.",
+     "hi": "क्लेम फ़ॉर्म का भाग A मरीज़ की ओर से भरा जाता है; भाग B अस्पताल भरता है। निकलने से पहले अस्पताल के बिलिंग डेस्क से भाग B ले लें।",
+     "mr": "क्लेम फॉर्मचा भाग A रुग्णाच्या बाजूने भरला जातो; भाग B रुग्णालय भरते. निघण्यापूर्वी रुग्णालयाच्या बिलिंग डेस्ककडून भाग B घ्या."
+    },
+    {
+     "en": "Policies set a deadline for sending documents after discharge, commonly a few weeks. Send early; keep photocopies of everything.",
+     "hi": "पॉलिसी डिस्चार्ज के बाद दस्तावेज़ भेजने की समय-सीमा तय करती है, आमतौर पर कुछ हफ़्ते। जल्दी भेजें; हर चीज़ की फ़ोटोकॉपी रखें।",
+     "mr": "पॉलिसी डिस्चार्जनंतर कागदपत्रे पाठवण्याची मुदत ठरवते, सहसा काही आठवडे. लवकर पाठवा; प्रत्येक गोष्टीची झेरॉक्स ठेवा."
+    },
+    {
+     "en": "Pre- and post-hospitalisation costs (tests before admission, medicines after) are often covered for a set number of days. Keep those bills too.",
+     "hi": "भर्ती से पहले और बाद के ख़र्च (भर्ती से पहले की जाँचें, बाद की दवाएँ) अक्सर तय दिनों के लिए कवर होते हैं। वे बिल भी रखें।",
+     "mr": "दाखल होण्यापूर्वीचे आणि नंतरचे खर्च (आधीच्या तपासण्या, नंतरची औषधे) अनेकदा ठरावीक दिवसांसाठी कव्हर असतात. ती बिलेही ठेवा."
+    }
+   ],
+   "watch": {
+    "en": "Send documents by a trackable method (insurer's app, email with acknowledgement, or courier with proof), never just by hand to an agent.",
+    "hi": "दस्तावेज़ ट्रैक हो सकने वाले तरीक़े से भेजें (कंपनी का ऐप, पावती वाला ईमेल, या सबूत वाला कूरियर), केवल एजेंट को हाथ में देकर कभी नहीं।",
+    "mr": "कागदपत्रे मागोवा घेता येईल अशा पद्धतीने पाठवा (कंपनीचे ॲप, पोच असलेला ईमेल, किंवा पुराव्यासह कुरिअर), फक्त एजंटच्या हातात देऊन कधीही नाही."
+   },
+   "cost": {
+    "en": "2 hours to assemble",
+    "hi": "जुटाने में 2 घंटे",
+    "mr": "जमवायला 2 तास"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "Read the settlement letter, line by line",
+    "hi": "सेटलमेंट पत्र लाइन-दर-लाइन पढ़ें",
+    "mr": "सेटलमेंट पत्र ओळीने वाचा"
+   },
+   "text": {
+    "en": "The letter lists what was claimed, what was paid and each deduction with a reason. Verena sees ₹2,100 cut as 'non-medical items', which matches the policy list, and ₹3,500 cut as 'not related to ailment', which does not look right.",
+    "hi": "पत्र में लिखा है कि कितना माँगा, कितना मिला और हर कटौती का कारण। वेरेना देखती है कि ₹2,100 'गैर-चिकित्सा वस्तुएँ' कहकर कटे, जो पॉलिसी सूची से मेल खाता है, और ₹3,500 'बीमारी से संबंधित नहीं' कहकर कटे, जो सही नहीं लगता।",
+    "mr": "पत्रात किती मागितले, किती मिळाले आणि प्रत्येक कपातीचे कारण दिले आहे. वेरेना पाहते की ₹2,100 'वैद्यकीय नसलेल्या वस्तू' म्हणून कापले, जे पॉलिसीच्या यादीशी जुळते, आणि ₹3,500 'आजाराशी संबंधित नाही' म्हणून कापले, जे बरोबर वाटत नाही."
+   },
+   "screen": [
+    {
+     "en": "CLAIM SETTLEMENT",
+     "hi": "क्लेम सेटलमेंट",
+     "mr": "क्लेम सेटलमेंट"
+    },
+    {
+     "en": "Claimed: ₹1,46,900",
+     "hi": "माँगा: ₹1,46,900",
+     "mr": "मागितले: ₹1,46,900"
+    },
+    {
+     "en": "Non-medical: −₹2,100",
+     "hi": "गैर-चिकित्सा: −₹2,100",
+     "mr": "वैद्यकीय नसलेले: −₹2,100"
+    },
+    {
+     "en": "Not related: −₹3,500 ?",
+     "hi": "असंबंधित: −₹3,500 ?",
+     "mr": "असंबंधित: −₹3,500 ?"
+    },
+    {
+     "en": "Paid: ₹1,41,300",
+     "hi": "भुगतान: ₹1,41,300",
+     "mr": "दिले: ₹1,41,300"
+    }
+   ],
+   "details": [
+    {
+     "en": "Every deduction must have a reason linked to the policy terms. If one does not make sense, you can ask for it to be reviewed.",
+     "hi": "हर कटौती का कारण पॉलिसी की शर्तों से जुड़ा होना चाहिए। अगर कोई समझ न आए, तो उसकी समीक्षा माँग सकते हैं।",
+     "mr": "प्रत्येक कपातीचे कारण पॉलिसीच्या अटींशी जोडलेले हवे. एखादी पटली नाही तर तिचा पुनर्विचार मागू शकता."
+    },
+    {
+     "en": "Write to the insurer's grievance cell with the claim number, the deduction, and why you think it is wrong (for example, the doctor's note showing the test was for this illness).",
+     "hi": "क्लेम नंबर, कटौती, और आपको वह ग़लत क्यों लगती है (जैसे डॉक्टर का नोट कि जाँच इसी बीमारी के लिए थी) लिखकर बीमा कंपनी के शिकायत प्रकोष्ठ को भेजें।",
+     "mr": "क्लेम क्रमांक, कपात, आणि ती चुकीची का वाटते (उदा. तपासणी याच आजारासाठी होती असे डॉक्टरांचे पत्र) लिहून विमा कंपनीच्या तक्रार कक्षाला पाठवा."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "If the insurer does not fix it: escalate",
+    "hi": "अगर बीमा कंपनी न सुधारे: ऊपर ले जाएँ",
+    "mr": "विमा कंपनीने सुधारले नाही तर: वरिष्ठांकडे न्या"
+   },
+   "text": {
+    "en": "The insurer replies in two weeks and keeps the deduction. Verena takes the next steps calmly, in order, keeping copies of every letter.",
+    "hi": "बीमा कंपनी दो हफ़्ते में जवाब देकर कटौती बनाए रखती है। वेरेना शांति से, क्रम से अगले कदम उठाती है, हर पत्र की कॉपी रखकर।",
+    "mr": "विमा कंपनी दोन आठवड्यांत उत्तर देऊन कपात कायम ठेवते. वेरेना शांतपणे, क्रमाने पुढची पावले उचलते, प्रत्येक पत्राची प्रत ठेवून."
+   },
+   "screen": [
+    {
+     "en": "Complaint path",
+     "hi": "शिकायत का रास्ता",
+     "mr": "तक्रारीचा मार्ग"
+    },
+    {
+     "en": "1. Insurer grievance cell",
+     "hi": "1. कंपनी का शिकायत प्रकोष्ठ",
+     "mr": "1. कंपनीचा तक्रार कक्ष"
+    },
+    {
+     "en": "2. Bima Bharosa (IRDAI)",
+     "hi": "2. बीमा भरोसा (IRDAI)",
+     "mr": "2. बीमा भरोसा (IRDAI)"
+    },
+    {
+     "en": "3. Insurance Ombudsman",
+     "hi": "3. बीमा लोकपाल",
+     "mr": "3. विमा लोकपाल"
+    },
+    {
+     "en": "Free of cost",
+     "hi": "निःशुल्क",
+     "mr": "निःशुल्क"
+    }
+   ],
+   "details": [
+    {
+     "en": "First the insurer's grievance officer. If there is no reply in time or the reply is unsatisfactory, register on IRDAI's Bima Bharosa portal.",
+     "hi": "पहले बीमा कंपनी का शिकायत अधिकारी। समय पर जवाब न आए या जवाब संतोषजनक न हो, तो IRDAI के बीमा भरोसा पोर्टल पर दर्ज करें।",
+     "mr": "आधी विमा कंपनीचा तक्रार अधिकारी. वेळेत उत्तर न आल्यास किंवा उत्तर समाधानकारक नसल्यास IRDAI च्या बीमा भरोसा पोर्टलवर नोंदवा."
+    },
+    {
+     "en": "After that, the Insurance Ombudsman for your area hears complaints without any fee and without a lawyer.",
+     "hi": "उसके बाद आपके इलाक़े का बीमा लोकपाल बिना फ़ीस और बिना वकील के शिकायत सुनता है।",
+     "mr": "त्यानंतर तुमच्या भागाचा विमा लोकपाल कोणत्याही शुल्काशिवाय आणि वकिलाशिवाय तक्रार ऐकतो."
+    },
+    {
+     "en": "Keep it factual: dates, claim number, amounts, the policy clause, the doctor's note. Facts win these cases, not anger.",
+     "hi": "बात तथ्यों पर रखें: तारीख़ें, क्लेम नंबर, रकम, पॉलिसी की धारा, डॉक्टर का नोट। ऐसे मामले तथ्यों से जीते जाते हैं, ग़ुस्से से नहीं।",
+     "mr": "मुद्दे तथ्यांवर ठेवा: तारखा, क्लेम क्रमांक, रकमा, पॉलिसीचे कलम, डॉक्टरांचे पत्र. अशी प्रकरणे तथ्यांनी जिंकली जातात, रागाने नाही."
+    }
+   ],
+   "cost": {
+    "en": "Free, but takes weeks",
+    "hi": "मुफ़्त, पर हफ़्ते लगते हैं",
+    "mr": "मोफत, पण आठवडे लागतात"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What should Verena do first about the ₹3,500?",
+     "hi": "₹3,500 के लिए वेरेना सबसे पहले क्या करे?",
+     "mr": "₹3,500 साठी वेरेनाने आधी काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Post an angry review online",
+       "hi": "ऑनलाइन ग़ुस्से वाला रिव्यू लिखे",
+       "mr": "ऑनलाइन रागाने रिव्ह्यू लिहावा"
+      },
+      "good": false,
+      "result": {
+       "en": "It may feel good but does not reopen the claim. The formal complaint does.",
+       "hi": "मन हल्का होगा, पर क्लेम दोबारा नहीं खुलेगा। औपचारिक शिकायत से खुलेगा।",
+       "mr": "मन हलके होईल, पण क्लेम पुन्हा उघडणार नाही. औपचारिक तक्रारीने उघडेल."
+      }
+     },
+     {
+      "text": {
+       "en": "Write to the insurer's grievance cell with the doctor's note",
+       "hi": "डॉक्टर के नोट के साथ कंपनी के शिकायत प्रकोष्ठ को लिखे",
+       "mr": "डॉक्टरांच्या पत्रासह कंपनीच्या तक्रार कक्षाला लिहावे"
+      },
+      "good": true,
+      "result": {
+       "en": "That is the first formal step, and the one the later steps depend on.",
+       "hi": "यही पहला औपचारिक कदम है, और आगे के कदम इसी पर टिके हैं।",
+       "mr": "हीच पहिली औपचारिक पायरी आहे, आणि पुढच्या पायऱ्या हिच्यावर अवलंबून आहेत."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "In an emergency, treatment first. Network hospital means cashless; any other means pay and claim.",
+   "hi": "आपात स्थिति में पहले इलाज। नेटवर्क अस्पताल यानी कैशलेस; दूसरा यानी भरें और क्लेम करें।",
+   "mr": "आणीबाणीत आधी उपचार. नेटवर्क रुग्णालय म्हणजे कॅशलेस; इतर म्हणजे भरा आणि क्लेम करा."
+  },
+  {
+   "en": "Go to the TPA desk the same day and also inform the insurer yourself. Note every reference number.",
+   "hi": "उसी दिन TPA डेस्क जाएँ और कंपनी को ख़ुद भी बताएँ। हर संदर्भ नंबर लिखें।",
+   "mr": "त्याच दिवशी TPA डेस्कवर जा आणि कंपनीला स्वतःही कळवा. प्रत्येक संदर्भ क्रमांक लिहा."
+  },
+  {
+   "en": "Stay within the room rent limit, or many other charges are cut too.",
+   "hi": "कमरा-किराया सीमा के अंदर रहें, वरना कई दूसरे ख़र्च भी कटेंगे।",
+   "mr": "खोलीभाडे मर्यादेत राहा, नाहीतर इतर अनेक खर्चही कापले जातील."
+  },
+  {
+   "en": "Leave with the discharge summary, itemised bill, receipts, reports and settlement letter.",
+   "hi": "डिस्चार्ज समरी, मदवार बिल, रसीदें, रिपोर्टें और सेटलमेंट पत्र लेकर निकलें।",
+   "mr": "डिस्चार्ज सारांश, तपशीलवार बिल, पावत्या, अहवाल आणि सेटलमेंट पत्र घेऊन निघा."
+  },
+  {
+   "en": "Question unclear deductions: insurer grievance cell, then Bima Bharosa, then the Insurance Ombudsman, all free.",
+   "hi": "अस्पष्ट कटौतियों पर सवाल करें: कंपनी का शिकायत प्रकोष्ठ, फिर बीमा भरोसा, फिर बीमा लोकपाल, सब मुफ़्त।",
+   "mr": "अस्पष्ट कपातींवर प्रश्न विचारा: कंपनीचा तक्रार कक्ष, मग बीमा भरोसा, मग विमा लोकपाल, सर्व मोफत."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://irdai.gov.in",
+  "https://bimabharosa.irdai.gov.in",
+  "https://www.cioins.co.in"
+ ]
+}

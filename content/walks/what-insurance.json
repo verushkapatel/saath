@@ -1,0 +1,661 @@
+{
+ "id": "what-insurance",
+ "guide": "what-insurance",
+ "title": {
+  "en": "Buying your first health insurance, online or at an office, from 'how much cover?' to the policy in your hand",
+  "hi": "पहला स्वास्थ्य बीमा ख़रीदना, ऑनलाइन या दफ़्तर में, 'कितना कवर?' से पॉलिसी हाथ में आने तक",
+  "mr": "पहिला आरोग्य विमा घेणे, ऑनलाइन किंवा कार्यालयात, 'किती कव्हर?' पासून पॉलिसी हातात येईपर्यंत"
+ },
+ "setting": {
+  "en": "Verena is 24, has her first job, and her company cover ends the day she leaves",
+  "hi": "वेरेना 24 की है, पहली नौकरी है, और कंपनी का कवर नौकरी छोड़ते ही ख़त्म हो जाता है",
+  "mr": "वेरेना 24 वर्षांची आहे, पहिली नोकरी आहे, आणि कंपनीचे कव्हर नोकरी सोडताच संपते"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Work out how much cover you need",
+    "hi": "हिसाब लगाएँ कि कितना कवर चाहिए",
+    "mr": "किती कव्हर हवे याचा हिशोब करा"
+   },
+   "text": {
+    "en": "Her employer's group policy covers ₹3 lakh, but only while she works there. Verena asks the nearest private hospital what a common surgery stay costs. Appendix removal with four days in a room: about ₹1.6 lakh. A serious accident or ICU stay can cross ₹5 lakh in a week.",
+    "hi": "नियोक्ता की ग्रुप पॉलिसी ₹3 लाख का कवर देती है, पर तभी तक जब तक वह वहाँ काम करती है। वेरेना पास के प्राइवेट अस्पताल से पूछती है कि एक आम सर्जरी में कितना ख़र्च आता है। अपेंडिक्स का ऑपरेशन और चार दिन कमरा: लगभग ₹1.6 लाख। गंभीर दुर्घटना या ICU में एक हफ़्ते में ₹5 लाख पार हो सकता है।",
+    "mr": "नियोक्त्याची ग्रुप पॉलिसी ₹3 लाखांचे कव्हर देते, पण ती तिथे काम करेपर्यंतच. वेरेना जवळच्या खाजगी रुग्णालयात विचारते की एका सामान्य शस्त्रक्रियेला किती खर्च येतो. अपेंडिक्सची शस्त्रक्रिया आणि चार दिवस खोली: साधारण ₹1.6 लाख. गंभीर अपघात किंवा ICU मध्ये एका आठवड्यात ₹5 लाख ओलांडू शकतात."
+   },
+   "screen": [
+    {
+     "en": "How much cover?",
+     "hi": "कितना कवर?",
+     "mr": "किती कव्हर?"
+    },
+    {
+     "en": "Surgery + 4 days: ₹1.6 L",
+     "hi": "सर्जरी + 4 दिन: ₹1.6 लाख",
+     "mr": "शस्त्रक्रिया + 4 दिवस: ₹1.6 लाख"
+    },
+    {
+     "en": "ICU week: ₹5 L+",
+     "hi": "ICU एक हफ़्ता: ₹5 लाख+",
+     "mr": "ICU एक आठवडा: ₹5 लाख+"
+    },
+    {
+     "en": "Company cover: ends with job",
+     "hi": "कंपनी कवर: नौकरी के साथ ख़त्म",
+     "mr": "कंपनी कव्हर: नोकरीसोबत संपते"
+    },
+    {
+     "en": "Own policy: ₹5–10 L",
+     "hi": "अपनी पॉलिसी: ₹5–10 लाख",
+     "mr": "स्वतःची पॉलिसी: ₹5–10 लाख"
+    }
+   ],
+   "details": [
+    {
+     "en": "Sum insured is the most the insurer will pay in a policy year. Pick it by the cost of a bad hospital stay in your city, not by the lowest premium.",
+     "hi": "सम इंश्योर्ड वह अधिकतम रकम है जो बीमा कंपनी एक पॉलिसी वर्ष में देगी। इसे अपने शहर में एक बुरे अस्पताल-ख़र्च के हिसाब से चुनें, सबसे कम प्रीमियम के हिसाब से नहीं।",
+     "mr": "विमा रक्कम म्हणजे एका पॉलिसी वर्षात विमा कंपनी देईल अशी कमाल रक्कम. ती तुमच्या शहरातील रुग्णालयाच्या मोठ्या खर्चानुसार निवडा, सर्वात कमी प्रीमियमनुसार नाही."
+    },
+    {
+     "en": "A company policy is a bonus, not a plan. It stops when the job stops, often exactly when you can least afford a gap.",
+     "hi": "कंपनी की पॉलिसी एक बोनस है, योजना नहीं। नौकरी रुकते ही यह रुक जाती है, अक्सर ठीक तब जब बीच का खालीपन सबसे भारी पड़ता है।",
+     "mr": "कंपनीची पॉलिसी ही बोनस आहे, योजना नाही. नोकरी थांबली की ती थांबते, नेमकी तेव्हा जेव्हा मधला खंड सर्वात जड पडतो."
+    },
+    {
+     "en": "Buying young is cheaper: premiums rise with age, and fewer health conditions means fewer exclusions.",
+     "hi": "कम उम्र में ख़रीदना सस्ता है: उम्र के साथ प्रीमियम बढ़ता है, और कम बीमारियाँ यानी कम बहिष्करण।",
+     "mr": "लहान वयात घेणे स्वस्त: वयासोबत प्रीमियम वाढतो, आणि कमी आजार म्हणजे कमी वगळणी."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes of asking around",
+    "hi": "30 मिनट की पूछताछ",
+    "mr": "30 मिनिटांची चौकशी"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Compare plans by the fine print, not the price",
+    "hi": "योजनाओं की तुलना बारीक शर्तों से करें, क़ीमत से नहीं",
+    "mr": "योजनांची तुलना बारीक अटींवरून करा, किमतीवरून नाही"
+   },
+   "text": {
+    "en": "On an aggregator site and two insurers' own websites, Verena shortlists three ₹5 lakh plans. The premiums differ by only ₹1,900 a year, but the conditions differ a lot. She makes a small table.",
+    "hi": "एक तुलना वेबसाइट और दो बीमा कंपनियों की अपनी वेबसाइटों पर वेरेना ₹5 लाख की तीन योजनाएँ चुनती है। प्रीमियम में साल का सिर्फ़ ₹1,900 फ़र्क़ है, पर शर्तों में बहुत फ़र्क़ है। वह एक छोटी तालिका बनाती है।",
+    "mr": "एका तुलना वेबसाइटवर आणि दोन विमा कंपन्यांच्या स्वतःच्या वेबसाइटवर वेरेना ₹5 लाखांच्या तीन योजना निवडते. प्रीमियममध्ये वर्षाला फक्त ₹1,900 फरक आहे, पण अटींमध्ये खूप फरक आहे. ती एक छोटी तक्ता बनवते."
+   },
+   "screen": [
+    {
+     "en": "Plan A · Plan B · Plan C",
+     "hi": "योजना A · B · C",
+     "mr": "योजना A · B · C"
+    },
+    {
+     "en": "Room rent cap: 1% · none · single",
+     "hi": "कमरा किराया सीमा: 1% · नहीं · सिंगल",
+     "mr": "खोली भाडे मर्यादा: 1% · नाही · सिंगल"
+    },
+    {
+     "en": "Co-pay: 20% · 0 · 0",
+     "hi": "को-पे: 20% · 0 · 0",
+     "mr": "को-पे: 20% · 0 · 0"
+    },
+    {
+     "en": "Pre-existing wait: 4y · 3y · 3y",
+     "hi": "पहले की बीमारी: 4 साल · 3 · 3",
+     "mr": "आधीचे आजार: 4 वर्षे · 3 · 3"
+    },
+    {
+     "en": "Network hospitals near me: 6 · 14 · 11",
+     "hi": "पास के नेटवर्क अस्पताल: 6 · 14 · 11",
+     "mr": "जवळची नेटवर्क रुग्णालये: 6 · 14 · 11"
+    },
+    {
+     "en": "Premium/yr: ₹6,100 · ₹8,000 · ₹7,400",
+     "hi": "प्रीमियम/साल: ₹6,100 · ₹8,000 · ₹7,400",
+     "mr": "प्रीमियम/वर्ष: ₹6,100 · ₹8,000 · ₹7,400"
+    }
+   ],
+   "details": [
+    {
+     "en": "Room rent limit: if the policy pays only, say, 1% of sum insured per day for the room and you take a costlier room, many other bills are cut in the same proportion. 'No cap' or 'single private room' is safer.",
+     "hi": "कमरे के किराए की सीमा: अगर पॉलिसी रोज़ाना कमरे के लिए, मान लीजिए, सम इंश्योर्ड का 1% ही देती है और आप महँगा कमरा लेते हैं, तो कई दूसरे बिल भी उसी अनुपात में कट जाते हैं। 'कोई सीमा नहीं' या 'सिंगल प्राइवेट कमरा' ज़्यादा सुरक्षित है।",
+     "mr": "खोलीभाड्याची मर्यादा: पॉलिसी खोलीसाठी रोज, समजा, विमा रकमेच्या 1% च देत असेल आणि तुम्ही महागडी खोली घेतली, तर इतर अनेक बिलेही त्याच प्रमाणात कापली जातात. 'मर्यादा नाही' किंवा 'सिंगल प्रायव्हेट खोली' अधिक सुरक्षित."
+    },
+    {
+     "en": "Co-payment: the share of every claim you pay yourself. 20% co-pay on a ₹2 lakh bill is ₹40,000 from your pocket.",
+     "hi": "को-पेमेंट: हर क्लेम का वह हिस्सा जो आप ख़ुद देते हैं। ₹2 लाख के बिल पर 20% को-पे यानी ₹40,000 आपकी जेब से।",
+     "mr": "को-पेमेंट: प्रत्येक क्लेमचा तुम्ही स्वतः भरायचा भाग. ₹2 लाखांच्या बिलावर 20% को-पे म्हणजे ₹40,000 तुमच्या खिशातून."
+    },
+    {
+     "en": "Waiting periods: most plans do not pay for some illnesses in the first 30 days, for listed conditions for one or two years, and for pre-existing diseases for up to three years. Shorter is better.",
+     "hi": "प्रतीक्षा अवधि: ज़्यादातर योजनाएँ पहले 30 दिनों में कुछ बीमारियों का, कुछ सूचीबद्ध बीमारियों का एक-दो साल, और पहले से मौजूद बीमारियों का तीन साल तक भुगतान नहीं करतीं। जितनी छोटी, उतना अच्छा।",
+     "mr": "प्रतीक्षा कालावधी: बहुतेक योजना पहिल्या 30 दिवसांत काही आजारांसाठी, यादीतील काही आजारांसाठी एक-दोन वर्षे, आणि आधीपासूनच्या आजारांसाठी तीन वर्षांपर्यंत पैसे देत नाहीत. जितका कमी, तितका चांगला."
+    },
+    {
+     "en": "Network hospitals: hospitals where the insurer pays directly (cashless). Check that two or three hospitals you would actually go to are on the list.",
+     "hi": "नेटवर्क अस्पताल: जहाँ बीमा कंपनी सीधे भुगतान करती है (कैशलेस)। देखें कि जिन दो-तीन अस्पतालों में आप सच में जाएँगे, वे सूची में हों।",
+     "mr": "नेटवर्क रुग्णालये: जिथे विमा कंपनी थेट पैसे देते (कॅशलेस). तुम्ही खरोखर जाल अशी दोन-तीन रुग्णालये यादीत आहेत का ते पाहा."
+    }
+   ],
+   "cost": {
+    "en": "1 evening",
+    "hi": "एक शाम",
+    "mr": "एक संध्याकाळ"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Which plan should Verena pick?",
+     "hi": "वेरेना कौन-सी योजना चुने?",
+     "mr": "वेरेनाने कोणती योजना निवडावी?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Plan A, it is the cheapest",
+       "hi": "योजना A, सबसे सस्ती है",
+       "mr": "योजना A, सर्वात स्वस्त"
+      },
+      "good": false,
+      "result": {
+       "en": "The ₹1,300 saved a year can cost ₹40,000 on one claim, because of the 20% co-pay and the room-rent cap.",
+       "hi": "साल के बचे ₹1,300 एक क्लेम पर ₹40,000 का नुक़सान करा सकते हैं, 20% को-पे और कमरा-किराया सीमा की वजह से।",
+       "mr": "वर्षाला वाचलेले ₹1,300 एका क्लेमवर ₹40,000 चे नुकसान करू शकतात, 20% को-पे आणि खोलीभाडे मर्यादेमुळे."
+      }
+     },
+     {
+      "text": {
+       "en": "Plan C: no co-pay, single room, many hospitals nearby",
+       "hi": "योजना C: को-पे नहीं, सिंगल कमरा, पास में कई अस्पताल",
+       "mr": "योजना C: को-पे नाही, सिंगल खोली, जवळ अनेक रुग्णालये"
+      },
+      "good": true,
+      "result": {
+       "en": "It balances price and protection. Plan B is also fine; Plan A is the one to avoid.",
+       "hi": "यह क़ीमत और सुरक्षा का संतुलन है। योजना B भी ठीक है; बचना योजना A से है।",
+       "mr": "ही किंमत आणि सुरक्षिततेचा समतोल आहे. योजना B ही ठीक; टाळायची ती योजना A."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "insurance",
+   "title": {
+    "en": "Or buy at an office, with the same questions",
+    "hi": "या दफ़्तर में ख़रीदें, उन्हीं सवालों के साथ",
+    "mr": "किंवा कार्यालयात घ्या, त्याच प्रश्नांसह"
+   },
+   "text": {
+    "en": "Verena's father prefers face to face, so they visit the insurer's branch on Saturday. An agent explains a plan. Verena does not argue; she reads out her list of questions and writes down each answer.",
+    "hi": "वेरेना के पिता आमने-सामने बात पसंद करते हैं, इसलिए वे शनिवार को बीमा कंपनी की शाखा जाते हैं। एक एजेंट योजना समझाता है। वेरेना बहस नहीं करती; वह अपने सवालों की सूची पढ़ती है और हर जवाब लिख लेती है।",
+    "mr": "वेरेनाच्या वडिलांना समोरासमोर बोलणे आवडते, म्हणून ते शनिवारी विमा कंपनीच्या शाखेत जातात. एक एजंट योजना समजावतो. वेरेना वाद घालत नाही; ती तिच्या प्रश्नांची यादी वाचते आणि प्रत्येक उत्तर लिहून घेते."
+   },
+   "screen": [
+    {
+     "en": "Ask, and write it down:",
+     "hi": "पूछें, और लिख लें:",
+     "mr": "विचारा, आणि लिहून घ्या:"
+    },
+    {
+     "en": "Room rent limit?",
+     "hi": "कमरा किराया सीमा?",
+     "mr": "खोलीभाडे मर्यादा?"
+    },
+    {
+     "en": "Co-pay? Sub-limits?",
+     "hi": "को-पे? उप-सीमाएँ?",
+     "mr": "को-पे? उप-मर्यादा?"
+    },
+    {
+     "en": "Waiting periods?",
+     "hi": "प्रतीक्षा अवधि?",
+     "mr": "प्रतीक्षा कालावधी?"
+    },
+    {
+     "en": "Show me in the policy wording",
+     "hi": "पॉलिसी शब्दों में दिखाइए",
+     "mr": "पॉलिसीच्या शब्दांत दाखवा"
+    }
+   ],
+   "details": [
+    {
+     "en": "Ask for the 'policy wording' and the 'Customer Information Sheet'. Every insurer must give a short Customer Information Sheet that lists what is covered, excluded and limited.",
+     "hi": "'पॉलिसी वर्डिंग' और 'कस्टमर इन्फ़ॉर्मेशन शीट' माँगें। हर बीमा कंपनी को एक छोटी कस्टमर इन्फ़ॉर्मेशन शीट देनी होती है जिसमें लिखा हो कि क्या कवर है, क्या बाहर है और क्या सीमित है।",
+     "mr": "'पॉलिसी वर्डिंग' आणि 'कस्टमर इन्फॉर्मेशन शीट' मागा. प्रत्येक विमा कंपनीला काय कव्हर आहे, काय वगळले आहे आणि काय मर्यादित आहे हे सांगणारी छोटी कस्टमर इन्फॉर्मेशन शीट द्यावी लागते."
+    },
+    {
+     "en": "Note the agent's name and licence code. Agents are licensed; you can ask to see it.",
+     "hi": "एजेंट का नाम और लाइसेंस कोड नोट करें। एजेंट लाइसेंसधारी होते हैं; आप उसे दिखाने को कह सकते हैं।",
+     "mr": "एजंटचे नाव आणि परवाना कोड लिहून घ्या. एजंट परवानाधारक असतात; तो दाखवायला सांगू शकता."
+    },
+    {
+     "en": "If the agent pushes a 'savings plus insurance' policy when you came for health cover, say no. You came for one thing.",
+     "hi": "अगर आप स्वास्थ्य कवर लेने आए हैं और एजेंट 'बचत और बीमा' वाली पॉलिसी पर ज़ोर दे, तो मना करें। आप एक चीज़ के लिए आए हैं।",
+     "mr": "तुम्ही आरोग्य कव्हरसाठी आला असताना एजंट 'बचत आणि विमा' पॉलिसीवर जोर देत असेल तर नाही म्हणा. तुम्ही एकाच गोष्टीसाठी आला आहात."
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "Verena:",
+     "hi": "वेरेना:",
+     "mr": "वेरेना:"
+    },
+    "line": {
+     "en": "\"Could you show me the room rent limit and the waiting periods in the policy wording itself, not the brochure?\"",
+     "hi": "\"क्या आप कमरे के किराए की सीमा और प्रतीक्षा अवधि पॉलिसी के असली शब्दों में दिखा सकते हैं, ब्रोशर में नहीं?\"",
+     "mr": "\"खोलीभाड्याची मर्यादा आणि प्रतीक्षा कालावधी पॉलिसीच्या मूळ शब्दांत दाखवाल का, माहितीपत्रकात नाही?\""
+    }
+   },
+   "watch": {
+    "en": "Verbal promises do not count. If it is not in the policy wording, it is not in your policy.",
+    "hi": "ज़बानी वादों का कोई मोल नहीं। जो पॉलिसी वर्डिंग में नहीं, वह आपकी पॉलिसी में नहीं।",
+    "mr": "तोंडी आश्वासनांना किंमत नाही. जे पॉलिसी वर्डिंगमध्ये नाही, ते तुमच्या पॉलिसीत नाही."
+   },
+   "cost": {
+    "en": "1 hour, Saturday",
+    "hi": "1 घंटा, शनिवार",
+    "mr": "1 तास, शनिवार"
+   }
+  },
+  {
+   "scene": "form",
+   "title": {
+    "en": "Fill the proposal form, and tell the truth about your health",
+    "hi": "प्रपोज़ल फ़ॉर्म भरें, और अपनी सेहत के बारे में सच बताएँ",
+    "mr": "प्रस्ताव फॉर्म भरा, आणि आरोग्याबद्दल खरे सांगा"
+   },
+   "text": {
+    "en": "Online it is a series of screens; at the office it is paper. Either way it is the 'proposal form'. The health questions ask about any illness, treatment, medicine or test in the last few years. Verena had mild asthma as a teenager and still keeps an inhaler. She ticks yes and writes the details.",
+    "hi": "ऑनलाइन यह कई स्क्रीन होती हैं; दफ़्तर में काग़ज़। दोनों में यह 'प्रपोज़ल फ़ॉर्म' है। सेहत के सवाल पिछले कुछ सालों की किसी बीमारी, इलाज, दवा या जाँच के बारे में पूछते हैं। वेरेना को किशोर उम्र में हल्का अस्थमा था और वह अब भी इनहेलर रखती है। वह 'हाँ' पर टिक करती है और विवरण लिखती है।",
+    "mr": "ऑनलाइन या अनेक स्क्रीन असतात; कार्यालयात कागद. दोन्हीकडे हा 'प्रस्ताव फॉर्म'. आरोग्याचे प्रश्न गेल्या काही वर्षांतील कोणताही आजार, उपचार, औषध किंवा तपासणीबद्दल विचारतात. वेरेनाला किशोरवयात सौम्य दमा होता आणि ती अजूनही इनहेलर ठेवते. ती 'हो' वर टिक करते आणि तपशील लिहिते."
+   },
+   "screen": [
+    {
+     "en": "PROPOSAL FORM",
+     "hi": "प्रपोज़ल फ़ॉर्म",
+     "mr": "प्रस्ताव फॉर्म"
+    },
+    {
+     "en": "Height/Weight: 162 cm / 54 kg",
+     "hi": "क़द/वज़न: 162 सेमी / 54 किग्रा",
+     "mr": "उंची/वजन: 162 सेमी / 54 किग्रा"
+    },
+    {
+     "en": "Any illness in last 4 yrs? YES",
+     "hi": "पिछले 4 साल कोई बीमारी? हाँ",
+     "mr": "गेल्या 4 वर्षांत आजार? हो"
+    },
+    {
+     "en": "Details: mild asthma, inhaler",
+     "hi": "विवरण: हल्का अस्थमा, इनहेलर",
+     "mr": "तपशील: सौम्य दमा, इनहेलर"
+    },
+    {
+     "en": "Smoker: NO · Alcohol: NO",
+     "hi": "धूम्रपान: नहीं · शराब: नहीं",
+     "mr": "धूम्रपान: नाही · मद्य: नाही"
+    },
+    {
+     "en": "Nominee: Anil D'Souza (Father)",
+     "hi": "नॉमिनी: अनिल डिसूज़ा (पिता)",
+     "mr": "नॉमिनी: अनिल डिसूझा (वडील)"
+    }
+   ],
+   "details": [
+    {
+     "en": "Hiding a condition is the most common reason a claim is rejected later. Disclosing it may add a waiting period or a small loading, but the cover will hold.",
+     "hi": "किसी बीमारी को छुपाना बाद में क्लेम ख़ारिज होने की सबसे आम वजह है। बताने पर प्रतीक्षा अवधि या थोड़ा अतिरिक्त प्रीमियम लग सकता है, पर कवर टिका रहेगा।",
+     "mr": "आजार लपवणे हे नंतर क्लेम नाकारला जाण्याचे सर्वात सामान्य कारण आहे. सांगितल्यास प्रतीक्षा कालावधी किंवा थोडा जादा प्रीमियम लागू शकतो, पण कव्हर टिकेल."
+    },
+    {
+     "en": "If someone else fills the form for you, read every answer before you sign or click 'I agree'. The declaration is yours, not theirs.",
+     "hi": "अगर कोई और आपके लिए फ़ॉर्म भरे, तो हस्ताक्षर करने या 'I agree' दबाने से पहले हर जवाब पढ़ें। घोषणा आपकी है, उनकी नहीं।",
+     "mr": "दुसऱ्या कोणी तुमचा फॉर्म भरला तर सही करण्यापूर्वी किंवा 'I agree' दाबण्यापूर्वी प्रत्येक उत्तर वाचा. घोषणा तुमची आहे, त्यांची नाही."
+    },
+    {
+     "en": "Depending on age and cover, the insurer may ask for a medical check-up, sometimes at home. It is usually paid by the insurer.",
+     "hi": "उम्र और कवर के हिसाब से बीमा कंपनी मेडिकल जाँच माँग सकती है, कभी-कभी घर पर। इसका ख़र्च आमतौर पर कंपनी उठाती है।",
+     "mr": "वय आणि कव्हरनुसार विमा कंपनी वैद्यकीय तपासणी मागू शकते, कधी कधी घरी. तिचा खर्च सहसा कंपनी करते."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Should Verena mention the old asthma?",
+     "hi": "क्या वेरेना पुराने अस्थमा का ज़िक्र करे?",
+     "mr": "वेरेनाने जुन्या दम्याचा उल्लेख करावा का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "No, it was years ago and the premium might rise",
+       "hi": "नहीं, सालों पुरानी बात है और प्रीमियम बढ़ सकता है",
+       "mr": "नाही, वर्षांपूर्वीची गोष्ट आहे आणि प्रीमियम वाढू शकतो"
+      },
+      "good": false,
+      "result": {
+       "en": "If she is ever admitted for breathing trouble, the insurer will see the history in hospital records and can reject the claim for non-disclosure.",
+       "hi": "अगर कभी साँस की तकलीफ़ से भर्ती हुई, तो बीमा कंपनी अस्पताल के रिकॉर्ड में इतिहास देखेगी और न बताने के कारण क्लेम ख़ारिज कर सकती है।",
+       "mr": "कधी श्वासाच्या त्रासामुळे दाखल झाली तर विमा कंपनी रुग्णालयाच्या नोंदींमध्ये इतिहास पाहील आणि न सांगितल्याबद्दल क्लेम नाकारू शकते."
+      }
+     },
+     {
+      "text": {
+       "en": "Yes, with the details",
+       "hi": "हाँ, विवरण के साथ",
+       "mr": "हो, तपशिलासह"
+      },
+      "good": true,
+      "result": {
+       "en": "A truthful form is what makes the policy reliable when it matters.",
+       "hi": "सच्चा फ़ॉर्म ही ज़रूरत के वक़्त पॉलिसी को भरोसेमंद बनाता है।",
+       "mr": "खरा फॉर्मच गरजेच्या वेळी पॉलिसी विश्वासार्ह बनवतो."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Pay the premium the right way, and keep the receipt",
+    "hi": "प्रीमियम सही तरीक़े से भरें, और रसीद रखें",
+    "mr": "प्रीमियम योग्य पद्धतीने भरा, आणि पावती ठेवा"
+   },
+   "text": {
+    "en": "The quote for Plan C is ₹7,400 for the year, with 18% GST already included in the total shown. Verena pays on the insurer's own payment page by UPI from her account. The receipt arrives by email within minutes.",
+    "hi": "योजना C का एक साल का प्रीमियम ₹7,400 है, दिखाए गए कुल में 18% GST पहले से जुड़ा है। वेरेना बीमा कंपनी के अपने भुगतान पेज पर अपने खाते से UPI से भुगतान करती है। मिनटों में ईमेल पर रसीद आ जाती है।",
+    "mr": "योजना C चा वर्षाचा प्रीमियम ₹7,400 आहे, दाखवलेल्या एकूण रकमेत 18% GST आधीच धरलेला आहे. वेरेना विमा कंपनीच्या स्वतःच्या पेमेंट पानावर तिच्या खात्यातून UPI ने पैसे भरते. काही मिनिटांत ईमेलवर पावती येते."
+   },
+   "screen": [
+    {
+     "en": "Payment successful",
+     "hi": "भुगतान सफल",
+     "mr": "पेमेंट यशस्वी"
+    },
+    {
+     "en": "Premium: ₹6,271",
+     "hi": "प्रीमियम: ₹6,271",
+     "mr": "प्रीमियम: ₹6,271"
+    },
+    {
+     "en": "GST 18%: ₹1,129",
+     "hi": "GST 18%: ₹1,129",
+     "mr": "GST 18%: ₹1,129"
+    },
+    {
+     "en": "Total paid: ₹7,400",
+     "hi": "कुल भुगतान: ₹7,400",
+     "mr": "एकूण भरले: ₹7,400"
+    },
+    {
+     "en": "✓ Receipt emailed",
+     "hi": "✓ रसीद ईमेल हुई",
+     "mr": "✓ पावती ईमेल केली"
+    }
+   ],
+   "details": [
+    {
+     "en": "Pay only to the insurer: on its website or app, at its office, or by cheque in the insurer's name. Never to an agent's personal account or UPI ID.",
+     "hi": "भुगतान केवल बीमा कंपनी को करें: उसकी वेबसाइट या ऐप पर, उसके दफ़्तर में, या कंपनी के नाम चेक से। एजेंट के निजी खाते या UPI ID पर कभी नहीं।",
+     "mr": "पैसे फक्त विमा कंपनीलाच भरा: तिच्या वेबसाइट किंवा ॲपवर, कार्यालयात, किंवा कंपनीच्या नावे चेकने. एजंटच्या वैयक्तिक खात्यावर किंवा UPI ID वर कधीही नाही."
+    },
+    {
+     "en": "Pay from your own account. The receipt in your name is also proof for the income tax deduction on health insurance premium under section 80D, if you file under the old tax regime.",
+     "hi": "अपने खाते से भुगतान करें। आपके नाम की रसीद धारा 80D के तहत स्वास्थ्य बीमा प्रीमियम की टैक्स छूट का सबूत भी है, अगर आप पुरानी कर व्यवस्था में रिटर्न भरते हैं।",
+     "mr": "स्वतःच्या खात्यातून पैसे भरा. तुमच्या नावाची पावती कलम 80D अंतर्गत आरोग्य विमा प्रीमियमच्या कर सवलतीचा पुरावाही आहे, जर तुम्ही जुन्या कर पद्धतीत विवरणपत्र भरत असाल."
+    },
+    {
+     "en": "Choose yearly payment if you can. Some insurers allow monthly or quarterly payments, but missing one can put the policy at risk.",
+     "hi": "हो सके तो सालाना भुगतान चुनें। कुछ कंपनियाँ मासिक या तिमाही भुगतान देती हैं, पर एक भी छूटा तो पॉलिसी ख़तरे में पड़ सकती है।",
+     "mr": "जमल्यास वार्षिक भरणा निवडा. काही कंपन्या मासिक किंवा तिमाही भरणा देतात, पण एकही चुकला तर पॉलिसी धोक्यात येऊ शकते."
+    }
+   ],
+   "watch": {
+    "en": "Cash to an agent with a handwritten receipt is how many people end up with no policy at all.",
+    "hi": "एजेंट को नक़द और हाथ से लिखी रसीद, यहीं से कई लोग बिना पॉलिसी के रह जाते हैं।",
+    "mr": "एजंटला रोख आणि हाताने लिहिलेली पावती, यामुळेच अनेकजण पॉलिसीशिवाय राहतात."
+   },
+   "cost": {
+    "en": "₹7,400 a year (example)",
+    "hi": "₹7,400 सालाना (उदाहरण)",
+    "mr": "₹7,400 वार्षिक (उदाहरण)"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "Read the policy in the free-look period",
+    "hi": "फ़्री-लुक अवधि में पॉलिसी पढ़ें",
+    "mr": "फ्री-लुक कालावधीत पॉलिसी वाचा"
+   },
+   "text": {
+    "en": "Five days later the policy PDF and an e-card arrive by email. Verena opens the schedule page first and checks every line against what she chose. Then she reads the exclusions section with a cup of tea. She has a window to change her mind.",
+    "hi": "पाँच दिन बाद ईमेल पर पॉलिसी की PDF और ई-कार्ड आता है। वेरेना पहले शेड्यूल पेज खोलकर हर लाइन को अपने चुनाव से मिलाती है। फिर चाय के साथ बहिष्करण वाला भाग पढ़ती है। उसके पास मन बदलने का एक मौक़ा है।",
+    "mr": "पाच दिवसांनी ईमेलवर पॉलिसीची PDF आणि ई-कार्ड येते. वेरेना आधी शेड्यूल पान उघडून प्रत्येक ओळ तिच्या निवडीशी जुळवते. मग चहासोबत वगळणींचा भाग वाचते. तिच्याकडे मन बदलण्याची एक संधी आहे."
+   },
+   "screen": [
+    {
+     "en": "POLICY SCHEDULE",
+     "hi": "पॉलिसी शेड्यूल",
+     "mr": "पॉलिसी शेड्यूल"
+    },
+    {
+     "en": "Insured: Verena D'Souza, 24",
+     "hi": "बीमित: वेरेना डिसूज़ा, 24",
+     "mr": "विमाधारक: वेरेना डिसूझा, 24"
+    },
+    {
+     "en": "Sum insured: ₹5,00,000",
+     "hi": "सम इंश्योर्ड: ₹5,00,000",
+     "mr": "विमा रक्कम: ₹5,00,000"
+    },
+    {
+     "en": "Period: 12 Oct 2026 – 11 Oct 2027",
+     "hi": "अवधि: 12 अक्टू 2026 – 11 अक्टू 2027",
+     "mr": "कालावधी: 12 ऑक्टो 2026 – 11 ऑक्टो 2027"
+    },
+    {
+     "en": "Pre-existing: asthma, 3-yr wait",
+     "hi": "पहले की बीमारी: अस्थमा, 3 साल",
+     "mr": "आधीचा आजार: दमा, 3 वर्षे"
+    },
+    {
+     "en": "Nominee: Anil D'Souza",
+     "hi": "नॉमिनी: अनिल डिसूज़ा",
+     "mr": "नॉमिनी: अनिल डिसूझा"
+    },
+    {
+     "en": "Free look: 30 days",
+     "hi": "फ़्री लुक: 30 दिन",
+     "mr": "फ्री लुक: 30 दिवस"
+    }
+   ],
+   "details": [
+    {
+     "en": "Free-look period: a set number of days after you receive the policy (shown on the document) when you can cancel it if the terms are not what you were told. You get the premium back, minus small costs like medical tests and the days of cover used.",
+     "hi": "फ़्री-लुक अवधि: पॉलिसी मिलने के बाद तय दिनों का समय (दस्तावेज़ पर लिखा होता है) जिसमें शर्तें बताई गई बातों से अलग हों तो आप उसे रद्द कर सकते हैं। प्रीमियम वापस मिलता है, मेडिकल जाँच जैसे छोटे ख़र्च और इस्तेमाल हुए कवर के दिन घटाकर।",
+     "mr": "फ्री-लुक कालावधी: पॉलिसी मिळाल्यानंतरचे ठरावीक दिवस (कागदपत्रावर लिहिलेले) ज्यात अटी सांगितल्यापेक्षा वेगळ्या असल्यास तुम्ही ती रद्द करू शकता. प्रीमियम परत मिळतो, वैद्यकीय तपासणीसारखे छोटे खर्च आणि वापरलेल्या कव्हरचे दिवस वजा करून."
+    },
+    {
+     "en": "Check: name, date of birth, sum insured, start and end dates, the disclosed condition, the nominee, the premium. A wrong date of birth can cause trouble at claim time.",
+     "hi": "जाँचें: नाम, जन्म तिथि, सम इंश्योर्ड, शुरू और ख़त्म होने की तारीख़, बताई गई बीमारी, नॉमिनी, प्रीमियम। ग़लत जन्म तिथि क्लेम के समय मुश्किल खड़ी कर सकती है।",
+     "mr": "तपासा: नाव, जन्मतारीख, विमा रक्कम, सुरू आणि संपण्याची तारीख, सांगितलेला आजार, नॉमिनी, प्रीमियम. चुकीची जन्मतारीख क्लेमच्या वेळी अडचण आणू शकते."
+    },
+    {
+     "en": "Save the e-card in your phone and give your family the insurer's claim helpline number. In an emergency, someone else may be the one calling.",
+     "hi": "ई-कार्ड फ़ोन में रखें और परिवार को बीमा कंपनी का क्लेम हेल्पलाइन नंबर दें। आपात स्थिति में फ़ोन करने वाला कोई और हो सकता है।",
+     "mr": "ई-कार्ड फोनमध्ये ठेवा आणि कुटुंबाला विमा कंपनीचा क्लेम हेल्पलाइन क्रमांक द्या. आणीबाणीत फोन करणारी दुसरी व्यक्ती असू शकते."
+    }
+   ],
+   "cost": {
+    "en": "1 hour of reading",
+    "hi": "1 घंटा पढ़ना",
+    "mr": "1 तास वाचन"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Renew on time, every year",
+    "hi": "हर साल समय पर रिन्यू करें",
+    "mr": "दरवर्षी वेळेवर नूतनीकरण करा"
+   },
+   "text": {
+    "en": "Verena puts two reminders in her phone: 30 days and 7 days before 11 October. Renewing on time keeps the waiting periods she has already served. A break can reset them.",
+    "hi": "वेरेना फ़ोन में दो रिमाइंडर लगाती है: 11 अक्टूबर से 30 दिन और 7 दिन पहले। समय पर रिन्यू करने से जो प्रतीक्षा अवधि वह पूरी कर चुकी है, वह बनी रहती है। बीच में टूटने पर वह फिर से शुरू हो सकती है।",
+    "mr": "वेरेना फोनमध्ये दोन स्मरणपत्रे लावते: 11 ऑक्टोबरच्या 30 दिवस आणि 7 दिवस आधी. वेळेवर नूतनीकरण केल्याने तिने पूर्ण केलेला प्रतीक्षा कालावधी टिकतो. खंड पडला तर तो पुन्हा सुरू होऊ शकतो."
+   },
+   "screen": [
+    {
+     "en": "11 Sep: renewal reminder",
+     "hi": "11 सित: रिन्यूअल रिमाइंडर",
+     "mr": "11 सप्टें: नूतनीकरण स्मरण"
+    },
+    {
+     "en": "4 Oct: pay renewal",
+     "hi": "4 अक्टू: रिन्यूअल भरें",
+     "mr": "4 ऑक्टो: नूतनीकरण भरा"
+    },
+    {
+     "en": "11 Oct: policy ends",
+     "hi": "11 अक्टू: पॉलिसी ख़त्म",
+     "mr": "11 ऑक्टो: पॉलिसी संपते"
+    },
+    {
+     "en": "Grace period exists, but no cover during the gap",
+     "hi": "छूट अवधि होती है, पर बीच के समय कवर नहीं",
+     "mr": "सवलत कालावधी असतो, पण खंडाच्या काळात कव्हर नाही"
+    }
+   ],
+   "details": [
+    {
+     "en": "Health policies have a short grace period after the due date to renew without losing benefits, but treatment during that gap is usually not covered.",
+     "hi": "स्वास्थ्य पॉलिसी में नियत तारीख़ के बाद थोड़ी छूट अवधि होती है जिसमें फ़ायदे खोए बिना रिन्यू कर सकते हैं, पर उस बीच का इलाज आमतौर पर कवर नहीं होता।",
+     "mr": "आरोग्य पॉलिसीत देय तारखेनंतर फायदे न गमावता नूतनीकरण करता येईल असा छोटा सवलत कालावधी असतो, पण त्या खंडातील उपचार सहसा कव्हर होत नाहीत."
+    },
+    {
+     "en": "Each claim-free year, many plans add a 'no-claim bonus' to the sum insured. Check it on the renewal notice.",
+     "hi": "हर बिना क्लेम वाले साल में कई योजनाएँ सम इंश्योर्ड में 'नो-क्लेम बोनस' जोड़ती हैं। रिन्यूअल नोटिस पर देखें।",
+     "mr": "प्रत्येक क्लेम-मुक्त वर्षी अनेक योजना विमा रकमेत 'नो-क्लेम बोनस' जोडतात. नूतनीकरण सूचनेवर पाहा."
+    },
+    {
+     "en": "If you are unhappy with your insurer, you can move to another one at renewal (portability) and carry over the waiting period already served. Apply before the renewal date.",
+     "hi": "अगर अपनी बीमा कंपनी से नाख़ुश हैं, तो रिन्यूअल पर दूसरी कंपनी में जा सकते हैं (पोर्टेबिलिटी) और पूरी हो चुकी प्रतीक्षा अवधि साथ ले जा सकते हैं। रिन्यूअल तारीख़ से पहले आवेदन करें।",
+     "mr": "विमा कंपनीवर नाखूश असाल तर नूतनीकरणाच्या वेळी दुसऱ्या कंपनीत जाऊ शकता (पोर्टेबिलिटी) आणि पूर्ण झालेला प्रतीक्षा कालावधी सोबत नेऊ शकता. नूतनीकरण तारखेपूर्वी अर्ज करा."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes to set reminders",
+    "hi": "रिमाइंडर लगाने में 2 मिनट",
+    "mr": "स्मरणपत्रे लावायला 2 मिनिटे"
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Make a one-page 'if something happens' note",
+    "hi": "एक पन्ने का 'अगर कुछ हो जाए' नोट बनाएँ",
+    "mr": "एका पानाची 'काही झाले तर' नोंद बनवा"
+   },
+   "text": {
+    "en": "The policy only helps if the people around her can use it. Verena writes one page and puts it in the family folder, with a copy on her mother's phone.",
+    "hi": "पॉलिसी तभी काम आती है जब आसपास के लोग उसका इस्तेमाल कर सकें। वेरेना एक पन्ना लिखकर परिवार के फ़ोल्डर में रखती है, और एक कॉपी माँ के फ़ोन में।",
+    "mr": "पॉलिसी तेव्हाच उपयोगी पडते जेव्हा आजूबाजूचे लोक ती वापरू शकतात. वेरेना एक पान लिहून कुटुंबाच्या फोल्डरमध्ये ठेवते, आणि एक प्रत आईच्या फोनमध्ये."
+   },
+   "screen": [
+    {
+     "en": "Health policy",
+     "hi": "स्वास्थ्य पॉलिसी",
+     "mr": "आरोग्य पॉलिसी"
+    },
+    {
+     "en": "No. 2xxxx/48/27",
+     "hi": "नं. 2xxxx/48/27",
+     "mr": "क्र. 2xxxx/48/27"
+    },
+    {
+     "en": "Insurer + helpline",
+     "hi": "बीमा कंपनी + हेल्पलाइन",
+     "mr": "विमा कंपनी + हेल्पलाइन"
+    },
+    {
+     "en": "Valid till 11 Oct 2027",
+     "hi": "11 अक्टू 2027 तक",
+     "mr": "11 ऑक्टो 2027 पर्यंत"
+    },
+    {
+     "en": "Network hospitals: City Care, Sahyadri",
+     "hi": "नेटवर्क अस्पताल: सिटी केयर, सह्याद्री",
+     "mr": "नेटवर्क रुग्णालये: सिटी केअर, सह्याद्री"
+    },
+    {
+     "en": "Call insurer within 24 h of admission",
+     "hi": "भर्ती के 24 घंटे में कंपनी को फ़ोन",
+     "mr": "दाखल झाल्यावर 24 तासांत कंपनीला फोन"
+    }
+   ],
+   "details": [
+    {
+     "en": "Policy number, insurer name and claim helpline, sum insured, renewal date.",
+     "hi": "पॉलिसी नंबर, कंपनी का नाम और क्लेम हेल्पलाइन, सम इंश्योर्ड, रिन्यूअल तारीख़।",
+     "mr": "पॉलिसी क्रमांक, कंपनीचे नाव आणि क्लेम हेल्पलाइन, विमा रक्कम, नूतनीकरण तारीख."
+    },
+    {
+     "en": "Two nearby network hospitals where cashless works.",
+     "hi": "पास के दो नेटवर्क अस्पताल जहाँ कैशलेस चलता है।",
+     "mr": "जवळची दोन नेटवर्क रुग्णालये जिथे कॅशलेस चालते."
+    },
+    {
+     "en": "The rule to inform the insurer quickly after an emergency admission (the policy states the time limit, often 24 hours) and 48 to 72 hours before a planned one.",
+     "hi": "आपात भर्ती के बाद जल्दी कंपनी को सूचित करने का नियम (पॉलिसी में समय-सीमा लिखी होती है, अक्सर 24 घंटे) और योजनाबद्ध भर्ती से 48 से 72 घंटे पहले।",
+     "mr": "आपत्कालीन दाखल झाल्यावर कंपनीला लवकर कळवण्याचा नियम (पॉलिसीत वेळमर्यादा लिहिलेली असते, अनेकदा 24 तास) आणि नियोजित दाखल होण्यापूर्वी 48 ते 72 तास."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Choose the sum insured by what a bad hospital stay costs in your city. ₹5 lakh is a common starting point for a young single person.",
+   "hi": "सम इंश्योर्ड अपने शहर में एक बुरे अस्पताल-ख़र्च के हिसाब से चुनें। अकेले युवा के लिए ₹5 लाख एक आम शुरुआत है।",
+   "mr": "विमा रक्कम तुमच्या शहरातील रुग्णालयाच्या मोठ्या खर्चानुसार निवडा. एकट्या तरुणासाठी ₹5 लाख ही सामान्य सुरुवात आहे."
+  },
+  {
+   "en": "Compare room rent limits, co-pay, waiting periods and nearby network hospitals before price.",
+   "hi": "क़ीमत से पहले कमरा-किराया सीमा, को-पे, प्रतीक्षा अवधि और पास के नेटवर्क अस्पताल मिलाएँ।",
+   "mr": "किमतीआधी खोलीभाडे मर्यादा, को-पे, प्रतीक्षा कालावधी आणि जवळची नेटवर्क रुग्णालये तुलना करा."
+  },
+  {
+   "en": "Disclose every health condition on the proposal form.",
+   "hi": "प्रपोज़ल फ़ॉर्म पर हर स्वास्थ्य स्थिति बताएँ।",
+   "mr": "प्रस्ताव फॉर्मवर प्रत्येक आरोग्य स्थिती सांगा."
+  },
+  {
+   "en": "Pay only the insurer, from your own account, and keep the receipt.",
+   "hi": "भुगतान केवल बीमा कंपनी को, अपने खाते से, और रसीद संभालकर।",
+   "mr": "पैसे फक्त विमा कंपनीला, स्वतःच्या खात्यातून, आणि पावती जपून."
+  },
+  {
+   "en": "Read the policy in the free-look period, renew before the due date, and leave a one-page note for your family.",
+   "hi": "फ़्री-लुक अवधि में पॉलिसी पढ़ें, नियत तारीख़ से पहले रिन्यू करें, और परिवार के लिए एक पन्ने का नोट छोड़ें।",
+   "mr": "फ्री-लुक कालावधीत पॉलिसी वाचा, देय तारखेपूर्वी नूतनीकरण करा, आणि कुटुंबासाठी एका पानाची नोंद ठेवा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://irdai.gov.in",
+  "https://bimabharosa.irdai.gov.in"
+ ]
+}

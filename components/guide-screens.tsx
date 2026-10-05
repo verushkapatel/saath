@@ -13,6 +13,7 @@ import { useApp } from "./app-state";
 import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
 import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary } from "./ui";
+import { WalkCard, WalkPlayer, useWalk } from "./walkthrough";
 
 const plain = (text: string) => text.replace(/\[\[|\]\]/g, "");
 
@@ -179,6 +180,12 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
   const ai = useAi();
   const [picked, setPicked] = useState<number | null>(null);
   const lesson = app.lessons.find((item) => item.id === id) ?? null;
+  const walk = useWalk(id);
+  const [living, setLiving] = useState(false);
+  // A shared link ending in ?live=1 opens the simulation straight away.
+  useEffect(() => {
+    if (walk && walk !== "missing" && new URLSearchParams(window.location.search).get("live") === "1") setLiving(true);
+  }, [walk]);
 
   useAiContext(lesson ? {
     screen: t("nav.guide"),
@@ -220,12 +227,15 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
         <ChevronLeft aria-hidden size={18} />
         {path ? path.title[code] : t("guide.title")}
       </Link>
-      <div className="pin-top cluster"><ListenButton text={spoken} /><ShareButton title={lesson.title[code]} text={`${lesson.title[code]}: ${lesson.points[0]?.[code] ?? ""}`} path={`/guide/${lesson.id}`} /></div>
+      <div className="pin-top cluster"><ListenButton text={spoken} /><ShareButton title={lesson.title[code]} text={`${lesson.title[code]}: ${lesson.points[0]?.[code] ?? ""}`} path={walk && walk !== "missing" ? `/guide/${lesson.id}/?live=1` : `/guide/${lesson.id}`} /></div>
       <div className="stack-sm">
         <span className="item-icon"><ContentIcon name={lesson.icon} /></span>
         <span className="unit-badge">{t(`topics.${lesson.topic}`)}</span>
         <h1>{lesson.title[code]}</h1>
       </div>
+
+      {walk && walk !== "missing" && <WalkCard walk={walk} onOpen={() => setLiving(true)} />}
+      {living && walk && walk !== "missing" && <WalkPlayer walk={walk} onClose={() => setLiving(false)} />}
 
       <div className="prose">
         {paragraphs.map((paragraph, at) => (
