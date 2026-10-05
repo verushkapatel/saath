@@ -19,6 +19,18 @@ export const metadata: Metadata = {
   manifest: asset("/manifest.webmanifest"),
   appleWebApp: { capable: true, title: "Saath", statusBarStyle: "black-translucent" },
   icons: { icon: asset("/icon-192.png"), apple: asset("/icon-192.png") },
+  // The card WhatsApp, iMessage, X and others show when a Saath link is shared.
+  metadataBase: new URL("https://saath.cc"),
+  openGraph: {
+    type: "website",
+    url: "https://saath.cc/",
+    siteName: "Saath",
+    title: "Saath · your companion for money",
+    description: "Live Verena's money story from first salary to retirement, ask Saath AI anything, understand forms before you sign, and run your own Money Lab. Free, in English, Hindi and Marathi.",
+    images: [{ url: "https://saath.cc/og.jpg", width: 1200, height: 630, type: "image/jpeg", alt: "Saath, your companion for money, by The Skyward Project" }],
+    locale: "en_IN",
+  },
+  twitter: { card: "summary_large_image", title: "Saath · your companion for money", description: "Verena's money story, Saath AI, forms explained and your own Money Lab.", images: ["https://saath.cc/og.jpg"] },
 };
 
 export const viewport: Viewport = {

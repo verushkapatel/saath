@@ -3080,3 +3080,11 @@ button, a, [role="button"], .chip, .btn { touch-action: manipulation; -webkit-ta
 .intro-float .btn.intro-skip:hover { background: rgba(32, 35, 44, 0.9); }
 .intro #join .finale { justify-items: center; text-align: center; }
 .intro #join .finale > * { margin-inline: auto; justify-self: center; text-align: center; }
+
+/* Landing: the Saath name is the first thing you see. */
+.intro-top .brand-name { display: inline !important; font-size: 1.6rem; }
+.intro-top .logo { gap: 10px; }
+.hero-brand { display: flex; align-items: center; gap: 14px; margin: 0 0 var(--s-2); color: #fff; }
+.hero-brand .logo-mark { --text: #ffffff; --navy: #5b7fd6; }
+.hero-brand span { font-family: var(--font-head); font-weight: 700; font-size: clamp(3.25rem, 12vw, 5rem); line-height: 0.95; letter-spacing: -0.03em; }
+@media (max-width: 420px) { .intro-top .brand-name { font-size: 1.4rem; } .intro-top .skyward-emblem { display: none; } .intro-top .logo-divider { display: none; } }
