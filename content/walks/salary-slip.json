@@ -1,0 +1,413 @@
+{
+ "id": "salary-slip",
+ "guide": "salary-slip",
+ "title": {
+  "en": "Your first job, from the offer letter to the first salary credit: CTC, joining forms, PF and the payslip",
+  "hi": "पहली नौकरी, ऑफ़र लेटर से पहली तनख़्वाह तक: CTC, जॉइनिंग फ़ॉर्म, PF और सैलरी स्लिप",
+  "mr": "पहिली नोकरी, ऑफर लेटरपासून पहिल्या पगारापर्यंत: CTC, रुजू होण्याचे फॉर्म, PF आणि पगार पावती"
+ },
+ "setting": {
+  "en": "Verena, 22, gets an offer from a Pune company",
+  "hi": "22 साल की वेरेना को पुणे की एक कंपनी से ऑफ़र मिलता है",
+  "mr": "22 वर्षांच्या वेरेनाला पुण्यातील एका कंपनीकडून ऑफर मिळते"
+ },
+ "steps": [
+  {
+   "scene": "letter",
+   "title": {
+    "en": "Read the offer letter before you say yes",
+    "hi": "हाँ कहने से पहले ऑफ़र लेटर पढ़ें",
+    "mr": "होकार देण्यापूर्वी ऑफर लेटर वाचा"
+   },
+   "text": {
+    "en": "The email says 'CTC ₹4,20,000 per annum'. Verena opens the attached annexure, the salary breakup, because CTC is not what reaches the bank.",
+    "hi": "ईमेल में लिखा है 'CTC ₹4,20,000 सालाना'। वेरेना साथ का अनुलग्नक, यानी सैलरी ब्रेकअप खोलती है, क्योंकि CTC वह नहीं जो बैंक में आता है।",
+    "mr": "ईमेलमध्ये लिहिले आहे 'CTC ₹4,20,000 वार्षिक'. वेरेना सोबतचे परिशिष्ट, म्हणजे पगाराची विभागणी उघडते, कारण बँकेत येतो तो CTC नसतो."
+   },
+   "screen": [
+    {
+     "en": "SALARY ANNEXURE (per year)",
+     "hi": "सैलरी अनुलग्नक (सालाना)",
+     "mr": "पगार परिशिष्ट (वार्षिक)"
+    },
+    {
+     "en": "Basic ₹1,80,000",
+     "hi": "बेसिक ₹1,80,000",
+     "mr": "मूळ वेतन ₹1,80,000"
+    },
+    {
+     "en": "HRA ₹72,000 · Special ₹1,08,000",
+     "hi": "HRA ₹72,000 · स्पेशल ₹1,08,000",
+     "mr": "HRA ₹72,000 · विशेष ₹1,08,000"
+    },
+    {
+     "en": "Employer PF ₹21,600",
+     "hi": "नियोक्ता PF ₹21,600",
+     "mr": "नियोक्ता PF ₹21,600"
+    },
+    {
+     "en": "Gratuity ₹8,658",
+     "hi": "ग्रेच्युटी ₹8,658",
+     "mr": "ग्रॅच्युइटी ₹8,658"
+    },
+    {
+     "en": "Variable pay (max) ₹29,742",
+     "hi": "वेरिएबल पे (अधिकतम) ₹29,742",
+     "mr": "बदलता पगार (कमाल) ₹29,742"
+    },
+    {
+     "en": "CTC ₹4,20,000",
+     "hi": "CTC ₹4,20,000",
+     "mr": "CTC ₹4,20,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "CTC (cost to company) includes things you do not get monthly: the employer's PF share, gratuity (paid only after about five years of service), and variable pay that depends on performance.",
+     "hi": "CTC (कंपनी की लागत) में वे चीज़ें शामिल हैं जो हर महीने नहीं मिलतीं: नियोक्ता का PF हिस्सा, ग्रेच्युटी (लगभग पाँच साल की सेवा के बाद ही), और प्रदर्शन पर टिका वेरिएबल पे।",
+     "mr": "CTC (कंपनीचा खर्च) मध्ये दर महिन्याला न मिळणाऱ्या गोष्टी असतात: नियोक्त्याचा PF वाटा, ग्रॅच्युइटी (साधारण पाच वर्षांच्या सेवेनंतरच), आणि कामगिरीवर अवलंबून बदलता पगार."
+    },
+    {
+     "en": "Ask HR for the expected monthly in-hand amount in writing. Plan rent on that number.",
+     "hi": "HR से हर महीने हाथ में आने वाली अनुमानित रकम लिखित में माँगें। किराया उसी अंक पर तय करें।",
+     "mr": "HR कडून दर महिन्याला हातात येणारी अंदाजे रक्कम लेखी मागा. भाडे त्याच आकड्यावर ठरवा."
+    },
+    {
+     "en": "Read the notice period, probation and any bond or training-cost clause. Ask about anything unclear before signing.",
+     "hi": "नोटिस पीरियड, प्रोबेशन और कोई बॉन्ड या ट्रेनिंग-ख़र्च की शर्त पढ़ें। हस्ताक्षर से पहले जो साफ़ न हो, पूछें।",
+     "mr": "नोटीस कालावधी, प्रोबेशन आणि कोणतीही बाँड किंवा प्रशिक्षण-खर्चाची अट वाचा. सही करण्यापूर्वी अस्पष्ट गोष्टी विचारा."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Verena found a room for ₹14,000 a month. Is it safe to sign?",
+     "hi": "वेरेना को ₹14,000 महीने का कमरा मिला। क्या हस्ताक्षर करना ठीक है?",
+     "mr": "वेरेनाला ₹14,000 महिन्याची खोली मिळाली. सही करणे सुरक्षित आहे का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, ₹4.2 lakh is ₹35,000 a month",
+       "hi": "हाँ, ₹4.2 लाख यानी ₹35,000 महीना",
+       "mr": "हो, ₹4.2 लाख म्हणजे ₹35,000 महिना"
+      },
+      "good": false,
+      "result": {
+       "en": "Her in-hand will be closer to ₹28,000 after PF and tax, and variable pay is not monthly. ₹14,000 would be half her pay.",
+       "hi": "PF और टैक्स के बाद हाथ में लगभग ₹28,000 आएँगे, और वेरिएबल पे हर महीने नहीं। ₹14,000 तनख़्वाह का आधा होगा।",
+       "mr": "PF आणि करानंतर हातात साधारण ₹28,000 येतील, आणि बदलता पगार दर महिन्याला नाही. ₹14,000 म्हणजे पगाराचा अर्धा."
+      }
+     },
+     {
+      "text": {
+       "en": "Wait for the in-hand figure first",
+       "hi": "पहले हाथ में आने वाली रकम जान ले",
+       "mr": "आधी हातात येणारी रक्कम कळू द्यावी"
+      },
+      "good": true,
+      "result": {
+       "en": "With about ₹28,000 in hand, she looks for rent nearer ₹8,000 to ₹9,000.",
+       "hi": "लगभग ₹28,000 हाथ में आने पर वह ₹8,000 से ₹9,000 के आसपास का किराया ढूँढती है।",
+       "mr": "हातात साधारण ₹28,000 येणार असल्याने ती ₹8,000 ते ₹9,000 च्या आसपास भाडे शोधते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "office",
+   "title": {
+    "en": "Joining day: the forms HR hands you",
+    "hi": "जॉइनिंग का दिन: HR के दिए फ़ॉर्म",
+    "mr": "रुजू होण्याचा दिवस: HR देत असलेले फॉर्म"
+   },
+   "text": {
+    "en": "On day one HR gives her a folder of forms. She fills them at a desk, slowly, asking about each one.",
+    "hi": "पहले दिन HR उसे फ़ॉर्मों का एक फ़ोल्डर देता है। वह एक मेज़ पर बैठकर, आराम से, हर एक के बारे में पूछते हुए भरती है।",
+    "mr": "पहिल्या दिवशी HR तिला फॉर्मचे एक फोल्डर देतो. ती एका टेबलावर बसून, सावकाश, प्रत्येकाबद्दल विचारत भरते."
+   },
+   "screen": [
+    {
+     "en": "Joining kit",
+     "hi": "जॉइनिंग किट",
+     "mr": "रुजू किट"
+    },
+    {
+     "en": "Bank details + cancelled cheque",
+     "hi": "बैंक विवरण + रद्द चेक",
+     "mr": "बँक तपशील + रद्द चेक"
+    },
+    {
+     "en": "PAN, Aadhaar copies",
+     "hi": "पैन, आधार कॉपी",
+     "mr": "पॅन, आधार प्रती"
+    },
+    {
+     "en": "EPF Form 11 (declaration)",
+     "hi": "EPF फ़ॉर्म 11 (घोषणा)",
+     "mr": "EPF फॉर्म 11 (घोषणा)"
+    },
+    {
+     "en": "Nomination (Form 2 / e-nomination)",
+     "hi": "नामांकन (फ़ॉर्म 2 / ई-नामांकन)",
+     "mr": "नामनिर्देशन (फॉर्म 2 / ई-नामनिर्देशन)"
+    },
+    {
+     "en": "Tax regime choice",
+     "hi": "टैक्स व्यवस्था का चुनाव",
+     "mr": "कर पद्धतीची निवड"
+    },
+    {
+     "en": "Previous UAN, if any",
+     "hi": "पुराना UAN, अगर हो",
+     "mr": "जुना UAN, असल्यास"
+    }
+   ],
+   "details": [
+    {
+     "en": "Form 11 tells the employer whether you already have a PF account (UAN). If you had one from an internship, give that UAN so the account continues.",
+     "hi": "फ़ॉर्म 11 नियोक्ता को बताता है कि क्या आपका पहले से PF खाता (UAN) है। इंटर्नशिप से कोई था, तो वही UAN दें ताकि खाता जारी रहे।",
+     "mr": "फॉर्म 11 नियोक्त्याला सांगतो की तुमचे आधीच PF खाते (UAN) आहे का. इंटर्नशिपमधले असेल तर तोच UAN द्या म्हणजे खाते पुढे चालू राहील."
+    },
+    {
+     "en": "Tax regime: you tell the employer which income tax regime to use for monthly tax deduction. The new regime is the default. You can still choose differently when you file your return.",
+     "hi": "टैक्स व्यवस्था: आप नियोक्ता को बताते हैं कि हर महीने टैक्स काटने में कौन-सी व्यवस्था इस्तेमाल हो। नई व्यवस्था डिफ़ॉल्ट है। रिटर्न भरते समय आप अलग चुन सकते हैं।",
+     "mr": "कर पद्धत: दर महिन्याच्या कर कपातीसाठी कोणती पद्धत वापरायची ते तुम्ही नियोक्त्याला सांगता. नवी पद्धत डीफॉल्ट आहे. विवरणपत्र भरताना वेगळी निवडता येते."
+    },
+    {
+     "en": "Bank account in your own name only, matching your PAN name.",
+     "hi": "बैंक खाता केवल अपने नाम पर, पैन वाले नाम से मेल खाता।",
+     "mr": "बँक खाते फक्त स्वतःच्या नावावर, पॅनवरील नावाशी जुळणारे."
+    }
+   ],
+   "cost": {
+    "en": "1 hour",
+    "hi": "1 घंटा",
+    "mr": "1 तास"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Activate your UAN and see your PF",
+    "hi": "अपना UAN चालू करें और PF देखें",
+    "mr": "तुमचा UAN सक्रिय करा आणि PF पाहा"
+   },
+   "text": {
+    "en": "HR shares her UAN (Universal Account Number). That evening she activates it on the EPFO member portal with Aadhaar OTP, and installs the government's UMANG app to see her passbook.",
+    "hi": "HR उसका UAN (यूनिवर्सल अकाउंट नंबर) देता है। उसी शाम वह आधार OTP से EPFO सदस्य पोर्टल पर इसे चालू करती है, और पासबुक देखने के लिए सरकार का UMANG ऐप इंस्टॉल करती है।",
+    "mr": "HR तिचा UAN (युनिव्हर्सल अकाउंट नंबर) देतो. त्याच संध्याकाळी ती आधार OTP ने EPFO सदस्य पोर्टलवर तो सक्रिय करते, आणि पासबुक पाहण्यासाठी सरकारचे UMANG ॲप इन्स्टॉल करते."
+   },
+   "screen": [
+    {
+     "en": "EPFO passbook",
+     "hi": "EPFO पासबुक",
+     "mr": "EPFO पासबुक"
+    },
+    {
+     "en": "Employee share: ₹1,800",
+     "hi": "कर्मचारी हिस्सा: ₹1,800",
+     "mr": "कर्मचारी वाटा: ₹1,800"
+    },
+    {
+     "en": "Employer (EPF): ₹550",
+     "hi": "नियोक्ता (EPF): ₹550",
+     "mr": "नियोक्ता (EPF): ₹550"
+    },
+    {
+     "en": "Employer (pension): ₹1,250",
+     "hi": "नियोक्ता (पेंशन): ₹1,250",
+     "mr": "नियोक्ता (पेन्शन): ₹1,250"
+    },
+    {
+     "en": "Credited monthly",
+     "hi": "हर महीने जमा",
+     "mr": "दर महिन्याला जमा"
+    }
+   ],
+   "details": [
+    {
+     "en": "12% of basic pay is deducted for your PF, and the employer adds 12% too; part of the employer's share goes to the pension scheme (EPS).",
+     "hi": "बेसिक का 12% आपके PF के लिए कटता है, और नियोक्ता भी 12% जोड़ता है; नियोक्ता के हिस्से का एक भाग पेंशन योजना (EPS) में जाता है।",
+     "mr": "मूळ वेतनाचा 12% तुमच्या PF साठी कापला जातो, आणि नियोक्ताही 12% जोडतो; नियोक्त्याच्या वाट्याचा काही भाग पेन्शन योजनेत (EPS) जातो."
+    },
+    {
+     "en": "Check the passbook every few months. If deductions appear on your payslip but not in the passbook, ask HR at once.",
+     "hi": "हर कुछ महीने पासबुक देखें। अगर सैलरी स्लिप पर कटौती दिखे पर पासबुक में नहीं, तो तुरंत HR से पूछें।",
+     "mr": "दर काही महिन्यांनी पासबुक पाहा. पगार पावतीवर कपात दिसली पण पासबुकमध्ये नाही, तर लगेच HR ला विचारा."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  },
+  {
+   "scene": "payslip",
+   "title": {
+    "en": "Payday: read the first payslip line by line",
+    "hi": "तनख़्वाह का दिन: पहली सैलरी स्लिप लाइन-दर-लाइन पढ़ें",
+    "mr": "पगाराचा दिवस: पहिली पगार पावती ओळीने वाचा"
+   },
+   "text": {
+    "en": "On the last working day ₹28,800 arrives with the SMS 'SALARY OCT'. The payslip comes by email as a password-protected PDF. She reads it against the annexure.",
+    "hi": "आख़िरी कामकाजी दिन ₹28,800 आते हैं, SMS 'SALARY OCT' के साथ। सैलरी स्लिप पासवर्ड वाली PDF के रूप में ईमेल पर आती है। वह इसे अनुलग्नक से मिलाकर पढ़ती है।",
+    "mr": "शेवटच्या कामकाजाच्या दिवशी ₹28,800 येतात, 'SALARY OCT' SMS सह. पगार पावती पासवर्ड असलेल्या PDF स्वरूपात ईमेलवर येते. ती परिशिष्टाशी जुळवून वाचते."
+   },
+   "screen": [
+    {
+     "en": "PAYSLIP · OCT 2026",
+     "hi": "सैलरी स्लिप · अक्टू 2026",
+     "mr": "पगार पावती · ऑक्टो 2026"
+    },
+    {
+     "en": "Basic 15,000 · HRA 6,000",
+     "hi": "बेसिक 15,000 · HRA 6,000",
+     "mr": "मूळ 15,000 · HRA 6,000"
+    },
+    {
+     "en": "Special 9,000 · Gross 30,000",
+     "hi": "स्पेशल 9,000 · सकल 30,000",
+     "mr": "विशेष 9,000 · एकूण 30,000"
+    },
+    {
+     "en": "PF −1,800 · PT −200",
+     "hi": "PF −1,800 · PT −200",
+     "mr": "PF −1,800 · PT −200"
+    },
+    {
+     "en": "TDS −0",
+     "hi": "TDS −0",
+     "mr": "TDS −0"
+    },
+    {
+     "en": "NET PAY ₹28,000",
+     "hi": "शुद्ध वेतन ₹28,000",
+     "mr": "निव्वळ पगार ₹28,000"
+    },
+    {
+     "en": "+ joining bonus ₹800",
+     "hi": "+ जॉइनिंग बोनस ₹800",
+     "mr": "+ रुजू बोनस ₹800"
+    }
+   ],
+   "details": [
+    {
+     "en": "Gross pay: everything earned this month. Deductions: PF, professional tax (a small state tax in many states), and TDS, tax deducted at source if your yearly income is taxable.",
+     "hi": "सकल वेतन: इस महीने की सारी कमाई। कटौतियाँ: PF, प्रोफ़ेशनल टैक्स (कई राज्यों में छोटा राज्य कर), और TDS, यानी स्रोत पर कटा टैक्स, अगर सालाना आय कर-योग्य है।",
+     "mr": "एकूण पगार: या महिन्याची सर्व कमाई. कपाती: PF, व्यवसाय कर (अनेक राज्यांतील छोटा राज्य कर), आणि TDS, म्हणजे वार्षिक उत्पन्न करपात्र असल्यास उगमस्थानी कापलेला कर."
+    },
+    {
+     "en": "Net pay is what is credited. Plan everything on this number.",
+     "hi": "शुद्ध वेतन वह है जो खाते में आता है। हर योजना इसी अंक पर बनाएँ।",
+     "mr": "निव्वळ पगार म्हणजे खात्यात जमा होणारी रक्कम. प्रत्येक नियोजन याच आकड्यावर करा."
+    },
+    {
+     "en": "Save every payslip in one folder. Banks ask for the last three when you apply for a loan or card.",
+     "hi": "हर सैलरी स्लिप एक फ़ोल्डर में रखें। लोन या कार्ड के आवेदन पर बैंक पिछली तीन माँगते हैं।",
+     "mr": "प्रत्येक पगार पावती एका फोल्डरमध्ये ठेवा. कर्ज किंवा कार्डच्या अर्जावेळी बँका मागच्या तीन मागतात."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  },
+  {
+   "scene": "jar",
+   "title": {
+    "en": "Before spending a rupee: move the plan into place",
+    "hi": "एक रुपया ख़र्च करने से पहले: योजना को जगह पर रखें",
+    "mr": "एक रुपया खर्च करण्यापूर्वी: नियोजन जागेवर ठेवा"
+   },
+   "text": {
+    "en": "The same evening, before shopping, she moves ₹3,000 to a separate savings pot, pays rent, and writes down fixed bills. Only then does she buy something small to celebrate.",
+    "hi": "उसी शाम, ख़रीदारी से पहले, वह ₹3,000 एक अलग बचत खाते में डालती है, किराया देती है, और तय बिल लिखती है। तभी वह जश्न के लिए कुछ छोटा ख़रीदती है।",
+    "mr": "त्याच संध्याकाळी, खरेदीपूर्वी, ती ₹3,000 वेगळ्या बचतीत टाकते, भाडे भरते, आणि ठरलेली बिले लिहून ठेवते. त्यानंतरच ती आनंद साजरा करायला काहीतरी छोटे घेते."
+   },
+   "screen": [
+    {
+     "en": "Net pay ₹28,000",
+     "hi": "शुद्ध ₹28,000",
+     "mr": "निव्वळ ₹28,000"
+    },
+    {
+     "en": "Save first: ₹3,000",
+     "hi": "पहले बचत: ₹3,000",
+     "mr": "आधी बचत: ₹3,000"
+    },
+    {
+     "en": "Rent: ₹9,000",
+     "hi": "किराया: ₹9,000",
+     "mr": "भाडे: ₹9,000"
+    },
+    {
+     "en": "Bills + travel: ₹5,500",
+     "hi": "बिल + आना-जाना: ₹5,500",
+     "mr": "बिले + प्रवास: ₹5,500"
+    },
+    {
+     "en": "Food: ₹6,000",
+     "hi": "खाना: ₹6,000",
+     "mr": "जेवण: ₹6,000"
+    },
+    {
+     "en": "Free to spend: ₹4,500",
+     "hi": "खुलकर ख़र्च: ₹4,500",
+     "mr": "मोकळा खर्च: ₹4,500"
+    }
+   ],
+   "details": [
+    {
+     "en": "A first salary feels large for about a week. Deciding the plan on day one is what makes it last the month.",
+     "hi": "पहली तनख़्वाह लगभग एक हफ़्ता बड़ी लगती है। पहले ही दिन योजना तय करना उसे महीने भर चलाता है।",
+     "mr": "पहिला पगार साधारण आठवडाभर मोठा वाटतो. पहिल्याच दिवशी नियोजन ठरवल्याने तो महिनाभर पुरतो."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "CTC is not take-home. Ask for the monthly in-hand amount in writing and plan on it.",
+   "hi": "CTC हाथ में आने वाली तनख़्वाह नहीं। हर महीने हाथ में आने वाली रकम लिखित में माँगें और उसी पर योजना बनाएँ।",
+   "mr": "CTC म्हणजे हातात येणारा पगार नाही. दर महिन्याची हातात येणारी रक्कम लेखी मागा आणि तिच्यावर नियोजन करा."
+  },
+  {
+   "en": "Give your old UAN, add a PF nominee, and choose your tax regime at joining.",
+   "hi": "जॉइनिंग पर पुराना UAN दें, PF नॉमिनी जोड़ें, और टैक्स व्यवस्था चुनें।",
+   "mr": "रुजू होताना जुना UAN द्या, PF नॉमिनी जोडा, आणि कर पद्धत निवडा."
+  },
+  {
+   "en": "Activate your UAN and check the PF passbook every few months.",
+   "hi": "UAN चालू करें और हर कुछ महीने PF पासबुक देखें।",
+   "mr": "UAN सक्रिय करा आणि दर काही महिन्यांनी PF पासबुक पाहा."
+  },
+  {
+   "en": "Read each payslip: gross, deductions, net. Keep them all.",
+   "hi": "हर सैलरी स्लिप पढ़ें: सकल, कटौतियाँ, शुद्ध। सब सँभालकर रखें।",
+   "mr": "प्रत्येक पगार पावती वाचा: एकूण, कपाती, निव्वळ. सगळ्या जपून ठेवा."
+  },
+  {
+   "en": "Save first, then pay fixed bills, then spend.",
+   "hi": "पहले बचत, फिर तय बिल, फिर ख़र्च।",
+   "mr": "आधी बचत, मग ठरलेली बिले, मग खर्च."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.epfindia.gov.in",
+  "https://www.incometax.gov.in"
+ ]
+}

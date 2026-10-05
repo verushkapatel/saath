@@ -1,0 +1,294 @@
+{
+ "id": "otp-pin",
+ "guide": "otp-pin",
+ "title": {
+  "en": "The call from 'your bank': how a perfectly convincing fraud call goes, and where Verena hangs up",
+  "hi": "'आपके बैंक' से कॉल: एक बेहद भरोसेमंद लगने वाली धोखे की कॉल कैसे चलती है, और वेरेना कहाँ फ़ोन काटती है",
+  "mr": "'तुमच्या बँकेतून' फोन: अगदी खरा वाटणारा फसवणुकीचा फोन कसा चालतो, आणि वेरेना कुठे फोन ठेवते"
+ },
+ "setting": {
+  "en": "A weekday afternoon, at her office desk",
+  "hi": "एक कामकाजी दोपहर, दफ़्तर की मेज़ पर",
+  "mr": "कामाच्या दिवशी दुपारी, ऑफिसच्या टेबलावर"
+ },
+ "steps": [
+  {
+   "scene": "call",
+   "title": {
+    "en": "The call: a polite voice that knows your name",
+    "hi": "कॉल: एक शालीन आवाज़ जो आपका नाम जानता है",
+    "mr": "फोन: तुमचे नाव माहीत असलेला नम्र आवाज"
+   },
+   "text": {
+    "en": "\"Good afternoon, Ms Verena D'Souza? I am calling from your bank's card security team.\" The caller knows her name and the last four digits of her card. That is enough to sound real; such details leak in many ways.",
+    "hi": "\"नमस्ते, सुश्री वेरेना डिसूज़ा? मैं आपके बैंक की कार्ड सुरक्षा टीम से बोल रहा हूँ।\" कॉल करने वाले को उसका नाम और कार्ड के आख़िरी चार अंक पता हैं। असली लगने के लिए इतना काफ़ी है; ऐसी जानकारी कई तरह से लीक होती है।",
+    "mr": "\"नमस्कार, सुश्री वेरेना डिसूझा? मी तुमच्या बँकेच्या कार्ड सुरक्षा टीममधून बोलतोय.\" फोन करणाऱ्याला तिचे नाव आणि कार्डचे शेवटचे चार अंक माहीत आहेत. खरे वाटण्यासाठी इतके पुरेसे; अशी माहिती अनेक मार्गांनी फुटते."
+   },
+   "screen": [
+    {
+     "en": "Incoming call",
+     "hi": "आने वाली कॉल",
+     "mr": "येणारा कॉल"
+    },
+    {
+     "en": "+91 9xxxx xxx21",
+     "hi": "+91 9xxxx xxx21",
+     "mr": "+91 9xxxx xxx21"
+    },
+    {
+     "en": "'Bank security'",
+     "hi": "'बैंक सुरक्षा'",
+     "mr": "'बँक सुरक्षा'"
+    }
+   ],
+   "details": [
+    {
+     "en": "Knowing your name and part of your card number proves nothing. Fraudsters buy such data.",
+     "hi": "आपका नाम और कार्ड नंबर का हिस्सा जानना कुछ साबित नहीं करता। धोखेबाज़ ऐसा डेटा ख़रीदते हैं।",
+     "mr": "तुमचे नाव आणि कार्ड क्रमांकाचा भाग माहीत असणे काहीच सिद्ध करत नाही. फसवणारे असा डेटा विकत घेतात."
+    },
+    {
+     "en": "Fear plus a deadline is the method: you are meant to act before you think.",
+     "hi": "डर और समय-सीमा, यही तरीक़ा है: आपको सोचने से पहले काम करवाना।",
+     "mr": "भीती आणि मुदत, हीच पद्धत: विचार करण्याआधी तुमच्याकडून कृती करून घ्यायची."
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "Caller:",
+     "hi": "कॉल करने वाला:",
+     "mr": "फोन करणारा:"
+    },
+    "line": {
+     "en": "\"There's a suspicious ₹48,000 transaction on your card ending 2741. I need to block it right now.\"",
+     "hi": "\"आपके 2741 वाले कार्ड पर ₹48,000 का संदिग्ध लेन-देन है। मुझे इसे अभी रोकना है।\"",
+     "mr": "\"तुमच्या 2741 ने संपणाऱ्या कार्डवर ₹48,000 चा संशयास्पद व्यवहार आहे. मला तो लगेच थांबवायचा आहे.\""
+    }
+   },
+   "cost": {
+    "en": "0:45 into the call",
+    "hi": "कॉल के 0:45 पर",
+    "mr": "कॉलला 0:45"
+   }
+  },
+  {
+   "scene": "call",
+   "title": {
+    "en": "The ask: 'just read me the OTP to cancel it'",
+    "hi": "माँग: 'रद्द करने के लिए बस OTP बता दीजिए'",
+    "mr": "मागणी: 'रद्द करायला फक्त OTP सांगा'"
+   },
+   "text": {
+    "en": "An OTP arrives on her phone. The caller says it is a 'cancellation code' and she must read it out within 60 seconds or the ₹48,000 will go. Verena reads the SMS itself instead.",
+    "hi": "उसके फ़ोन पर एक OTP आता है। कॉल करने वाला कहता है कि यह 'रद्द करने का कोड' है और 60 सेकंड में न बताया तो ₹48,000 चले जाएँगे। वेरेना बोलने के बजाय SMS ख़ुद पढ़ती है।",
+    "mr": "तिच्या फोनवर एक OTP येतो. फोन करणारा म्हणतो की हा 'रद्द करण्याचा कोड' आहे आणि 60 सेकंदांत सांगितला नाही तर ₹48,000 जातील. वेरेना सांगण्याऐवजी SMS स्वतः वाचते."
+   },
+   "screen": [
+    {
+     "en": "SMS from bank",
+     "hi": "बैंक से SMS",
+     "mr": "बँकेकडून SMS"
+    },
+    {
+     "en": "OTP 482913 for payment of",
+     "hi": "भुगतान के लिए OTP 482913",
+     "mr": "पेमेंटसाठी OTP 482913"
+    },
+    {
+     "en": "₹48,000 at XYZ Merchant.",
+     "hi": "₹48,000, XYZ मर्चेंट पर।",
+     "mr": "₹48,000, XYZ मर्चंटकडे."
+    },
+    {
+     "en": "!Do not share with anyone, incl. bank staff",
+     "hi": "!किसी को न बताएँ, बैंक कर्मचारी को भी नहीं",
+     "mr": "!कोणालाही सांगू नका, बँक कर्मचाऱ्यालाही नाही"
+    }
+   ],
+   "details": [
+    {
+     "en": "The SMS says what the OTP is for: a payment, not a cancellation. Reading it slowly breaks the spell.",
+     "hi": "SMS बताता है कि OTP किसलिए है: भुगतान के लिए, रद्द करने के लिए नहीं। उसे आराम से पढ़ना जादू तोड़ देता है।",
+     "mr": "SMS सांगतो की OTP कशासाठी आहे: पेमेंटसाठी, रद्द करण्यासाठी नाही. तो सावकाश वाचला की भुरळ तुटते."
+    },
+    {
+     "en": "No bank, police, courier or government officer ever needs your OTP, PIN, CVV or password.",
+     "hi": "किसी बैंक, पुलिस, कूरियर या सरकारी अफ़सर को कभी आपके OTP, PIN, CVV या पासवर्ड की ज़रूरत नहीं होती।",
+     "mr": "कोणत्याही बँक, पोलीस, कुरिअर किंवा सरकारी अधिकाऱ्याला तुमचा OTP, PIN, CVV किंवा पासवर्ड कधीही लागत नाही."
+    }
+   ],
+   "cost": {
+    "en": "60 seconds of pressure",
+    "hi": "60 सेकंड का दबाव",
+    "mr": "60 सेकंदांचा दबाव"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The caller is shouting that time is running out. What now?",
+     "hi": "कॉल करने वाला चिल्ला रहा है कि समय ख़त्म हो रहा है। अब क्या?",
+     "mr": "फोन करणारा ओरडतोय की वेळ संपतेय. आता काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Read the OTP, the bank will reverse it anyway",
+       "hi": "OTP बता दे, बैंक वैसे भी लौटा देगा",
+       "mr": "OTP सांगावा, बँक तसेही परत करेल"
+      },
+      "good": false,
+      "result": {
+       "en": "Sharing an OTP is treated as authorising the payment. Getting it back becomes very hard.",
+       "hi": "OTP बताना भुगतान को मंज़ूरी देने जैसा माना जाता है। पैसा वापस पाना बहुत मुश्किल हो जाता है।",
+       "mr": "OTP सांगणे म्हणजे पेमेंटला मंजुरी दिल्यासारखे मानले जाते. पैसे परत मिळवणे खूप कठीण होते."
+      }
+     },
+     {
+      "text": {
+       "en": "Hang up without a word",
+       "hi": "बिना कुछ कहे फ़ोन काट दे",
+       "mr": "काहीही न बोलता फोन ठेवावा"
+      },
+      "good": true,
+      "result": {
+       "en": "Hanging up is always allowed. A real bank never makes you choose between your OTP and your money.",
+       "hi": "फ़ोन काटने की हमेशा छूट है। असली बैंक आपको OTP और पैसे के बीच कभी चुनने को नहीं कहता।",
+       "mr": "फोन ठेवण्याची नेहमी मुभा आहे. खरी बँक तुम्हाला OTP आणि पैसे यांच्यात कधीही निवड करायला लावत नाही."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "cards",
+   "title": {
+    "en": "Call the bank yourself, on the number printed on the card",
+    "hi": "बैंक को ख़ुद फ़ोन करें, कार्ड पर छपे नंबर पर",
+    "mr": "बँकेला स्वतः फोन करा, कार्डवर छापलेल्या नंबरवर"
+   },
+   "text": {
+    "en": "She turns the card over and dials the customer care number printed on the back, not a number from the call log or from a web search. The real bank confirms there was no suspicious transaction, and blocks nothing because nothing happened.",
+    "hi": "वह कार्ड पलटकर पीछे छपा ग्राहक सेवा नंबर डायल करती है, कॉल लॉग या वेब सर्च का नंबर नहीं। असली बैंक बताता है कि कोई संदिग्ध लेन-देन नहीं था, और कुछ ब्लॉक नहीं करता क्योंकि कुछ हुआ ही नहीं।",
+    "mr": "ती कार्ड उलटून मागे छापलेला ग्राहक सेवा क्रमांक लावते, कॉल लॉग किंवा वेब सर्चमधला नंबर नाही. खरी बँक सांगते की कोणताही संशयास्पद व्यवहार झाला नव्हता, आणि काहीच ब्लॉक करत नाही कारण काही झालेच नव्हते."
+   },
+   "screen": [
+    {
+     "en": "Back of card",
+     "hi": "कार्ड का पिछला हिस्सा",
+     "mr": "कार्डची मागची बाजू"
+    },
+    {
+     "en": "Customer care 1800-xxx-xxxx",
+     "hi": "ग्राहक सेवा 1800-xxx-xxxx",
+     "mr": "ग्राहक सेवा 1800-xxx-xxxx"
+    },
+    {
+     "en": "CREDIT/DEBIT",
+     "hi": "क्रेडिट/डेबिट",
+     "mr": "क्रेडिट/डेबिट"
+    },
+    {
+     "en": "Use only this number",
+     "hi": "केवल यही नंबर",
+     "mr": "फक्त हाच नंबर"
+    },
+    {
+     "en": "Search results can show fake helplines",
+     "hi": "सर्च में नक़ली हेल्पलाइन दिख सकती हैं",
+     "mr": "सर्चमध्ये बनावट हेल्पलाइन दिसू शकतात"
+    }
+   ],
+   "details": [
+    {
+     "en": "Fake 'customer care' numbers are planted in search results and social media. Use the number on the card, passbook or the bank's official app.",
+     "hi": "नक़ली 'कस्टमर केयर' नंबर सर्च नतीजों और सोशल मीडिया पर डाले जाते हैं। कार्ड, पासबुक या बैंक के आधिकारिक ऐप वाला नंबर इस्तेमाल करें।",
+     "mr": "बनावट 'कस्टमर केअर' नंबर सर्च निकाल आणि सोशल मीडियावर टाकले जातात. कार्ड, पासबुक किंवा बँकेच्या अधिकृत ॲपवरील नंबर वापरा."
+    },
+    {
+     "en": "Report the fraud number on Sanchar Saathi (Chakshu) so it can be checked and blocked.",
+     "hi": "धोखेबाज़ नंबर को संचार साथी (चक्षु) पर रिपोर्ट करें ताकि उसकी जाँच और ब्लॉकिंग हो सके।",
+     "mr": "फसवणाऱ्याचा नंबर संचार साथी (चक्षू) वर नोंदवा म्हणजे त्याची तपासणी करून तो ब्लॉक करता येईल."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "family",
+   "title": {
+    "en": "Tell one person, so it does not happen to them",
+    "hi": "एक व्यक्ति को बताएँ, ताकि उनके साथ न हो",
+    "mr": "एका व्यक्तीला सांगा, म्हणजे त्यांच्यासोबत होणार नाही"
+   },
+   "text": {
+    "en": "That evening Verena tells her parents exactly how the call went, word for word, and saves the bank's real number in her mother's phone as 'BANK - real'.",
+    "hi": "उस शाम वेरेना माता-पिता को बताती है कि कॉल ठीक कैसे चली, शब्दशः, और माँ के फ़ोन में बैंक का असली नंबर 'BANK - real' नाम से सेव करती है।",
+    "mr": "त्या संध्याकाळी वेरेना आई-बाबांना फोन नेमका कसा झाला ते शब्दशः सांगते, आणि आईच्या फोनमध्ये बँकेचा खरा नंबर 'BANK - real' नावाने सेव्ह करते."
+   },
+   "screen": [
+    {
+     "en": "The family rule",
+     "hi": "परिवार का नियम",
+     "mr": "कुटुंबाचा नियम"
+    },
+    {
+     "en": "No OTP, PIN or CVV to anyone, ever",
+     "hi": "OTP, PIN या CVV किसी को कभी नहीं",
+     "mr": "OTP, PIN किंवा CVV कोणालाही कधीही नाही"
+    },
+    {
+     "en": "Hang up, call the card number",
+     "hi": "फ़ोन काटें, कार्ड वाले नंबर पर कॉल",
+     "mr": "फोन ठेवा, कार्डवरच्या नंबरवर कॉल"
+    }
+   ],
+   "details": [
+    {
+     "en": "Older relatives are targeted more often. One shared family rule protects everyone.",
+     "hi": "बुज़ुर्ग रिश्तेदार ज़्यादा निशाने पर होते हैं। परिवार का एक साझा नियम सबको बचाता है।",
+     "mr": "वयस्कर नातेवाईक जास्त लक्ष्य होतात. कुटुंबाचा एक सामायिक नियम सगळ्यांना वाचवतो."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "A caller knowing your name or card digits proves nothing.",
+   "hi": "कॉल करने वाले को आपका नाम या कार्ड के अंक पता होना कुछ साबित नहीं करता।",
+   "mr": "फोन करणाऱ्याला तुमचे नाव किंवा कार्डचे अंक माहीत असणे काहीच सिद्ध करत नाही."
+  },
+  {
+   "en": "Read what the OTP SMS says it is for. A 'cancellation OTP' does not exist.",
+   "hi": "OTP वाला SMS पढ़ें कि वह किसलिए है। 'रद्द करने का OTP' जैसा कुछ नहीं होता।",
+   "mr": "OTP चा SMS कशासाठी आहे ते वाचा. 'रद्द करण्याचा OTP' असे काही नसते."
+  },
+  {
+   "en": "Never share OTP, PIN, CVV or passwords, not even with someone who says they are from the bank.",
+   "hi": "OTP, PIN, CVV या पासवर्ड कभी साझा न करें, बैंक से होने का दावा करने वाले से भी नहीं।",
+   "mr": "OTP, PIN, CVV किंवा पासवर्ड कधीही शेअर करू नका, बँकेतून असल्याचे सांगणाऱ्यालाही नाही."
+  },
+  {
+   "en": "Hang up and call the number printed on your card.",
+   "hi": "फ़ोन काटें और कार्ड पर छपे नंबर पर कॉल करें।",
+   "mr": "फोन ठेवा आणि कार्डवर छापलेल्या नंबरवर कॉल करा."
+  },
+  {
+   "en": "Report the number, and teach your family the same rule.",
+   "hi": "नंबर रिपोर्ट करें, और परिवार को भी यही नियम सिखाएँ।",
+   "mr": "नंबर नोंदवा, आणि कुटुंबालाही हाच नियम शिकवा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://sancharsaathi.gov.in",
+  "https://cybercrime.gov.in",
+  "https://rbikehtahai.rbi.org.in"
+ ]
+}

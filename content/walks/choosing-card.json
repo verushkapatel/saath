@@ -1,0 +1,570 @@
+{
+ "id": "choosing-card",
+ "guide": "choosing-card",
+ "title": {
+  "en": "Debit card or credit card, and which credit card: Verena's first card decision, from offer to first bill",
+  "hi": "डेबिट कार्ड या क्रेडिट कार्ड, और कौन-सा क्रेडिट कार्ड: वेरेना का पहला कार्ड फ़ैसला, ऑफ़र से पहले बिल तक",
+  "mr": "डेबिट कार्ड की क्रेडिट कार्ड, आणि कोणते क्रेडिट कार्ड: वेरेनाचा पहिला कार्ड निर्णय, ऑफरपासून पहिल्या बिलापर्यंत"
+ },
+ "setting": {
+  "en": "Six months into her first job, a 'pre-approved card' SMS arrives",
+  "hi": "पहली नौकरी के छह महीने बाद, 'प्री-अप्रूव्ड कार्ड' का SMS आता है",
+  "mr": "पहिल्या नोकरीला सहा महिने झाल्यावर 'प्री-अप्रूव्ह्ड कार्ड' चा SMS येतो"
+ },
+ "steps": [
+  {
+   "scene": "cards",
+   "title": {
+    "en": "Know the difference before anything else",
+    "hi": "सबसे पहले फ़र्क़ समझें",
+    "mr": "आधी फरक समजून घ्या"
+   },
+   "text": {
+    "en": "A debit card spends money already in your account. A credit card spends the bank's money, which you must repay by a due date. Same plastic, completely different risk.",
+    "hi": "डेबिट कार्ड आपके खाते में पहले से मौजूद पैसा ख़र्च करता है। क्रेडिट कार्ड बैंक का पैसा ख़र्च करता है, जो तय तारीख़ तक लौटाना होता है। प्लास्टिक एक जैसा, जोखिम बिल्कुल अलग।",
+    "mr": "डेबिट कार्ड तुमच्या खात्यात आधीच असलेले पैसे खर्च करते. क्रेडिट कार्ड बँकेचे पैसे खर्च करते, जे ठरलेल्या तारखेपर्यंत परत करावे लागतात. प्लास्टिक सारखेच, धोका पूर्ण वेगळा."
+   },
+   "screen": [
+    {
+     "en": "DEBIT",
+     "hi": "डेबिट",
+     "mr": "डेबिट"
+    },
+    {
+     "en": "Your own money",
+     "hi": "आपका अपना पैसा",
+     "mr": "तुमचेच पैसे"
+    },
+    {
+     "en": "CREDIT",
+     "hi": "क्रेडिट",
+     "mr": "क्रेडिट"
+    },
+    {
+     "en": "Bank's money · repay by due date",
+     "hi": "बैंक का पैसा · तय तारीख़ तक लौटाएँ",
+     "mr": "बँकेचे पैसे · देय तारखेपर्यंत परत"
+    },
+    {
+     "en": "Unpaid credit card dues can cost around 3–4% a month in interest",
+     "hi": "क्रेडिट कार्ड का बकाया न भरने पर ब्याज लगभग 3–4% महीना हो सकता है",
+     "mr": "क्रेडिट कार्डची थकबाकी न भरल्यास व्याज साधारण 3–4% महिना असू शकते"
+    }
+   ],
+   "details": [
+    {
+     "en": "Debit: no bill, no interest, but also no credit history built.",
+     "hi": "डेबिट: कोई बिल नहीं, कोई ब्याज नहीं, पर क्रेडिट इतिहास भी नहीं बनता।",
+     "mr": "डेबिट: बिल नाही, व्याज नाही, पण क्रेडिट इतिहासही तयार होत नाही."
+    },
+    {
+     "en": "Credit: an interest-free period of up to about 45 to 50 days if you pay the full bill by the due date. Pay less and interest is charged on the whole outstanding amount, often from the purchase date.",
+     "hi": "क्रेडिट: पूरा बिल तय तारीख़ तक भरें तो लगभग 45 से 50 दिन तक बिना ब्याज की अवधि। कम भरा तो पूरी बकाया रकम पर ब्याज लगता है, अक्सर ख़रीद की तारीख़ से।",
+     "mr": "क्रेडिट: पूर्ण बिल देय तारखेपर्यंत भरल्यास साधारण 45 ते 50 दिवसांपर्यंत बिनव्याजी कालावधी. कमी भरले तर संपूर्ण थकबाकीवर व्याज लागते, अनेकदा खरेदीच्या तारखेपासून."
+    },
+    {
+     "en": "Used well, a credit card builds a credit score that later makes home and education loans cheaper.",
+     "hi": "सही इस्तेमाल से क्रेडिट कार्ड एक क्रेडिट स्कोर बनाता है जिससे आगे घर और पढ़ाई के लोन सस्ते मिलते हैं।",
+     "mr": "योग्य वापरल्यास क्रेडिट कार्ड क्रेडिट स्कोर तयार करते, ज्यामुळे पुढे घर आणि शिक्षण कर्ज स्वस्त मिळते."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes to understand",
+    "hi": "समझने में 5 मिनट",
+    "mr": "समजायला 5 मिनिटे"
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "Ignore the SMS link. Go to the source.",
+    "hi": "SMS लिंक को नज़रअंदाज़ करें। सीधे स्रोत पर जाएँ।",
+    "mr": "SMS लिंककडे दुर्लक्ष करा. थेट स्रोताकडे जा."
+   },
+   "text": {
+    "en": "The message says she is 'pre-approved for a Platinum card, limit ₹1,50,000, click to claim in 10 minutes'. Verena does not click. If the offer is real, it will also be inside her bank's own app.",
+    "hi": "संदेश कहता है कि वह 'प्लैटिनम कार्ड के लिए प्री-अप्रूव्ड है, लिमिट ₹1,50,000, 10 मिनट में पाने के लिए क्लिक करें'। वेरेना क्लिक नहीं करती। ऑफ़र असली हुआ तो उसके बैंक के अपने ऐप में भी होगा।",
+    "mr": "संदेश म्हणतो की ती 'प्लॅटिनम कार्डसाठी प्री-अप्रूव्ह्ड आहे, मर्यादा ₹1,50,000, 10 मिनिटांत मिळवण्यासाठी क्लिक करा'. वेरेना क्लिक करत नाही. ऑफर खरी असेल तर ती तिच्या बँकेच्या स्वतःच्या ॲपमध्येही असेल."
+   },
+   "screen": [
+    {
+     "en": "Congrats! Pre-approved Platinum card",
+     "hi": "बधाई! प्री-अप्रूव्ड प्लैटिनम कार्ड",
+     "mr": "अभिनंदन! प्री-अप्रूव्ह्ड प्लॅटिनम कार्ड"
+    },
+    {
+     "en": "Limit ₹1,50,000. Claim now: bit.ly/xx",
+     "hi": "लिमिट ₹1,50,000. अभी पाएँ: bit.ly/xx",
+     "mr": "मर्यादा ₹1,50,000. आता मिळवा: bit.ly/xx"
+    },
+    {
+     "en": "!Short links in bank SMS = warning sign",
+     "hi": "!बैंक SMS में शॉर्ट लिंक = चेतावनी",
+     "mr": "!बँक SMS मध्ये शॉर्ट लिंक = धोक्याची खूण"
+    },
+    {
+     "en": ">I'll check in my bank app instead",
+     "hi": ">मैं बैंक ऐप में ही देखूँगी",
+     "mr": ">मी बँकेच्या ॲपमध्येच पाहीन"
+    }
+   ],
+   "details": [
+    {
+     "en": "Fake card offers are used to collect card numbers, OTPs and KYC documents. The safest path is always your bank's official app or website, typed by you.",
+     "hi": "नक़ली कार्ड ऑफ़र से कार्ड नंबर, OTP और KYC दस्तावेज़ इकट्ठा किए जाते हैं। सबसे सुरक्षित रास्ता हमेशा आपके बैंक का आधिकारिक ऐप या वेबसाइट है, जिसे आप ख़ुद टाइप करें।",
+     "mr": "बनावट कार्ड ऑफर कार्ड क्रमांक, OTP आणि KYC कागदपत्रे गोळा करण्यासाठी वापरल्या जातात. सर्वात सुरक्षित मार्ग नेहमी तुमच्या बँकेचे अधिकृत ॲप किंवा तुम्ही स्वतः टाइप केलेली वेबसाइट."
+    },
+    {
+     "en": "'Pre-approved' does not mean free or right for you. It only means the bank is willing to lend.",
+     "hi": "'प्री-अप्रूव्ड' का मतलब मुफ़्त या आपके लिए सही नहीं है। इसका मतलब बस इतना है कि बैंक उधार देने को तैयार है।",
+     "mr": "'प्री-अप्रूव्ह्ड' म्हणजे मोफत किंवा तुमच्यासाठी योग्य असे नाही. फक्त बँक कर्ज द्यायला तयार आहे इतकेच."
+    }
+   ],
+   "watch": {
+    "en": "No genuine bank will ask for your card PIN, CVV or OTP on a call or a link to 'activate' a card.",
+    "hi": "कोई असली बैंक कार्ड 'चालू' करने के लिए कॉल या लिंक पर आपका PIN, CVV या OTP नहीं माँगेगा।",
+    "mr": "कोणतीही खरी बँक कार्ड 'सुरू' करण्यासाठी कॉल किंवा लिंकवर तुमचा PIN, CVV किंवा OTP मागणार नाही."
+   },
+   "cost": {
+    "en": "0 rupees, 1 minute",
+    "hi": "0 रुपये, 1 मिनट",
+    "mr": "0 रुपये, 1 मिनिट"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Compare three cards on the four numbers that matter",
+    "hi": "चार ज़रूरी अंकों पर तीन कार्ड मिलाएँ",
+    "mr": "चार महत्त्वाच्या आकड्यांवर तीन कार्डांची तुलना करा"
+   },
+   "text": {
+    "en": "In her bank app there is an offer, and two other banks' websites have entry-level cards. Verena opens each card's 'Most Important Terms and Conditions' (MITC) document, which every issuer must publish, and copies four numbers.",
+    "hi": "उसके बैंक ऐप में एक ऑफ़र है, और दो दूसरे बैंकों की वेबसाइट पर शुरुआती कार्ड हैं। वेरेना हर कार्ड का 'Most Important Terms and Conditions' (MITC) दस्तावेज़ खोलती है, जो हर जारीकर्ता को प्रकाशित करना होता है, और चार अंक लिखती है।",
+    "mr": "तिच्या बँकेच्या ॲपमध्ये एक ऑफर आहे, आणि दोन इतर बँकांच्या वेबसाइटवर सुरुवातीची कार्डे आहेत. वेरेना प्रत्येक कार्डचे 'Most Important Terms and Conditions' (MITC) दस्तऐवज उघडते, जे प्रत्येक जारीकर्त्याला प्रसिद्ध करावे लागते, आणि चार आकडे लिहून घेते."
+   },
+   "screen": [
+    {
+     "en": "Card X · Card Y · Card Z",
+     "hi": "कार्ड X · Y · Z",
+     "mr": "कार्ड X · Y · Z"
+    },
+    {
+     "en": "Joining fee: ₹0 · ₹499 · ₹2,999",
+     "hi": "जॉइनिंग फ़ीस: ₹0 · ₹499 · ₹2,999",
+     "mr": "जॉइनिंग फी: ₹0 · ₹499 · ₹2,999"
+    },
+    {
+     "en": "Annual fee: ₹0 · ₹499* · ₹2,999",
+     "hi": "सालाना फ़ीस: ₹0 · ₹499* · ₹2,999",
+     "mr": "वार्षिक फी: ₹0 · ₹499* · ₹2,999"
+    },
+    {
+     "en": "*waived if you spend ₹1 L/yr",
+     "hi": "*₹1 लाख/साल ख़र्च पर माफ़",
+     "mr": "*₹1 लाख/वर्ष खर्चावर माफ"
+    },
+    {
+     "en": "Interest: ~3.6%/month on unpaid dues",
+     "hi": "ब्याज: बकाया पर ~3.6%/महीना",
+     "mr": "व्याज: थकबाकीवर ~3.6%/महिना"
+    },
+    {
+     "en": "Late fee: up to ₹1,300",
+     "hi": "लेट फ़ीस: ₹1,300 तक",
+     "mr": "विलंब शुल्क: ₹1,300 पर्यंत"
+    }
+   ],
+   "details": [
+    {
+     "en": "Joining and annual fees: a lifetime-free card is ideal for a first card. A 'waiver on spending ₹X' tempts you to spend more just to save the fee.",
+     "hi": "जॉइनिंग और सालाना फ़ीस: पहले कार्ड के लिए लाइफ़टाइम फ़्री कार्ड सबसे अच्छा है। 'इतना ख़र्च करने पर माफ़' वाला कार्ड फ़ीस बचाने के लिए ज़्यादा ख़र्च करने को उकसाता है।",
+     "mr": "जॉइनिंग आणि वार्षिक फी: पहिल्या कार्डसाठी लाइफटाइम फ्री कार्ड उत्तम. 'इतका खर्च केल्यास माफ' असलेले कार्ड फी वाचवण्यासाठी जास्त खर्च करायला भुलवते."
+    },
+    {
+     "en": "Interest (finance charge) on unpaid dues: written monthly, it is around 40% a year or more. This is the number that hurts.",
+     "hi": "बकाया पर ब्याज (फ़ाइनेंस चार्ज): महीने के हिसाब से लिखा होता है, साल में लगभग 40% या ज़्यादा। यही अंक चोट करता है।",
+     "mr": "थकबाकीवरील व्याज (फायनान्स चार्ज): महिन्याच्या हिशोबाने लिहिलेले, वर्षाला साधारण 40% किंवा जास्त. हाच आकडा भारी पडतो."
+    },
+    {
+     "en": "Late payment fee and cash withdrawal fee: cash from a credit card at an ATM is charged a fee and interest from day one. Never do it.",
+     "hi": "लेट पेमेंट फ़ीस और नक़द निकासी शुल्क: क्रेडिट कार्ड से ATM में नक़द निकालने पर फ़ीस और पहले दिन से ब्याज लगता है। ऐसा कभी न करें।",
+     "mr": "विलंब शुल्क आणि रोख काढण्याचे शुल्क: क्रेडिट कार्डने ATM मधून रोख काढल्यास फी आणि पहिल्या दिवसापासून व्याज लागते. असे कधीही करू नका."
+    },
+    {
+     "en": "Rewards come last. A 1% cashback means nothing if you ever pay one month of interest.",
+     "hi": "रिवॉर्ड सबसे आख़िर में। एक महीने का भी ब्याज भरा तो 1% कैशबैक का कोई मतलब नहीं।",
+     "mr": "रिवॉर्ड सर्वात शेवटी. एक महिन्याचे जरी व्याज भरले तरी 1% कॅशबॅकला काही अर्थ नाही."
+    }
+   ],
+   "cost": {
+    "en": "1 evening",
+    "hi": "एक शाम",
+    "mr": "एक संध्याकाळ"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Which card fits a first-time user who wants to build a score?",
+     "hi": "स्कोर बनाने वाले पहली बार के यूज़र के लिए कौन-सा कार्ड ठीक है?",
+     "mr": "स्कोर तयार करू इच्छिणाऱ्या पहिल्यांदा वापरणाऱ्यासाठी कोणते कार्ड योग्य?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Card Z: airport lounges and 5x points",
+       "hi": "कार्ड Z: एयरपोर्ट लाउंज और 5x पॉइंट",
+       "mr": "कार्ड Z: विमानतळ लाउंज आणि 5x पॉइंट"
+      },
+      "good": false,
+      "result": {
+       "en": "₹2,999 a year for perks she rarely uses. Premium cards make sense only when you already spend that much anyway.",
+       "hi": "कभी-कभार इस्तेमाल होने वाली सुविधाओं के लिए साल के ₹2,999। प्रीमियम कार्ड तभी समझदारी है जब आप वैसे भी उतना ख़र्च करते हों।",
+       "mr": "क्वचित वापरल्या जाणाऱ्या सुविधांसाठी वर्षाला ₹2,999. प्रीमियम कार्ड तेव्हाच योग्य जेव्हा तुम्ही तसाही तितका खर्च करता."
+      }
+     },
+     {
+      "text": {
+       "en": "Card X: lifetime free, simple cashback",
+       "hi": "कार्ड X: लाइफ़टाइम फ़्री, सीधा कैशबैक",
+       "mr": "कार्ड X: लाइफटाइम फ्री, साधा कॅशबॅक"
+      },
+      "good": true,
+      "result": {
+       "en": "No fee pressure, builds history, easy to keep for years. The age of your oldest card helps your score too.",
+       "hi": "फ़ीस का दबाव नहीं, इतिहास बनता है, सालों तक रखना आसान। सबसे पुराने कार्ड की उम्र भी स्कोर में मदद करती है।",
+       "mr": "फीचा दबाव नाही, इतिहास तयार होतो, वर्षानुवर्षे ठेवणे सोपे. सर्वात जुन्या कार्डचे वयही स्कोरला मदत करते."
+      }
+     },
+     {
+      "text": {
+       "en": "Card Y: fee waived if she spends ₹1 lakh a year",
+       "hi": "कार्ड Y: ₹1 लाख सालाना ख़र्च पर फ़ीस माफ़",
+       "mr": "कार्ड Y: वर्षाला ₹1 लाख खर्चावर फी माफ"
+      },
+      "good": false,
+      "result": {
+       "en": "Not terrible, but it nudges extra spending to reach the waiver. Card X does the same job without the nudge.",
+       "hi": "बुरा नहीं, पर माफ़ी पाने के लिए ज़्यादा ख़र्च की ओर धकेलता है। कार्ड X बिना इस दबाव के वही काम करता है।",
+       "mr": "वाईट नाही, पण माफीसाठी जास्त खर्च करायला ढकलते. कार्ड X हेच काम या दबावाशिवाय करते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Apply inside the bank app, and choose a low limit",
+    "hi": "बैंक ऐप के अंदर आवेदन करें, और कम लिमिट चुनें",
+    "mr": "बँकेच्या ॲपमध्येच अर्ज करा, आणि कमी मर्यादा निवडा"
+   },
+   "text": {
+    "en": "She applies for Card X in the official app. KYC is already done through her account, so it asks for PAN, income and employer. It offers a ₹1,20,000 limit. Verena asks for ₹40,000, about a month's salary.",
+    "hi": "वह आधिकारिक ऐप में कार्ड X के लिए आवेदन करती है। खाते से KYC पहले ही हो चुकी है, इसलिए ऐप पैन, आय और नियोक्ता पूछता है। ₹1,20,000 की लिमिट दी जाती है। वेरेना ₹40,000 माँगती है, लगभग एक महीने की तनख़्वाह।",
+    "mr": "ती अधिकृत ॲपमध्ये कार्ड X साठी अर्ज करते. खात्यामुळे KYC आधीच झाले आहे, म्हणून ॲप पॅन, उत्पन्न आणि नियोक्ता विचारते. ₹1,20,000 मर्यादा देऊ केली जाते. वेरेना ₹40,000 मागते, साधारण एका महिन्याचा पगार."
+   },
+   "screen": [
+    {
+     "en": "Card X application",
+     "hi": "कार्ड X आवेदन",
+     "mr": "कार्ड X अर्ज"
+    },
+    {
+     "en": "PAN: ✓ verified",
+     "hi": "पैन: ✓ सत्यापित",
+     "mr": "पॅन: ✓ पडताळले"
+    },
+    {
+     "en": "Income: ₹42,000/month",
+     "hi": "आय: ₹42,000/महीना",
+     "mr": "उत्पन्न: ₹42,000/महिना"
+    },
+    {
+     "en": "Offered limit: ₹1,20,000",
+     "hi": "प्रस्तावित लिमिट: ₹1,20,000",
+     "mr": "प्रस्तावित मर्यादा: ₹1,20,000"
+    },
+    {
+     "en": "Requested limit: ₹40,000",
+     "hi": "माँगी गई लिमिट: ₹40,000",
+     "mr": "मागितलेली मर्यादा: ₹40,000"
+    },
+    {
+     "en": "Statement date: 5th · Due: 25th",
+     "hi": "स्टेटमेंट तारीख़: 5 · देय: 25",
+     "mr": "स्टेटमेंट तारीख: 5 · देय: 25"
+    }
+   ],
+   "details": [
+    {
+     "en": "Every application causes a 'hard enquiry' on your credit report. Several applications in a short time lower your score, so apply for one card, not five.",
+     "hi": "हर आवेदन से आपकी क्रेडिट रिपोर्ट पर 'हार्ड इन्क्वायरी' होती है। कम समय में कई आवेदन स्कोर गिराते हैं, इसलिए एक कार्ड के लिए आवेदन करें, पाँच के लिए नहीं।",
+     "mr": "प्रत्येक अर्जामुळे तुमच्या क्रेडिट अहवालावर 'हार्ड इन्क्वायरी' होते. थोड्या काळात अनेक अर्ज स्कोर कमी करतात, म्हणून एका कार्डसाठी अर्ज करा, पाचसाठी नाही."
+    },
+    {
+     "en": "A limit you can repay in one salary keeps mistakes small while you learn.",
+     "hi": "जो लिमिट एक तनख़्वाह में चुकाई जा सके, वह सीखते समय ग़लतियाँ छोटी रखती है।",
+     "mr": "एका पगारात फेडता येईल अशी मर्यादा शिकताना चुका लहान ठेवते."
+    },
+    {
+     "en": "Note the statement date and the due date. The bill is made on the statement date; you must pay by the due date.",
+     "hi": "स्टेटमेंट तारीख़ और देय तारीख़ लिख लें। बिल स्टेटमेंट तारीख़ को बनता है; भुगतान देय तारीख़ तक करना है।",
+     "mr": "स्टेटमेंट तारीख आणि देय तारीख लिहून ठेवा. बिल स्टेटमेंट तारखेला तयार होते; पैसे देय तारखेपर्यंत भरायचे."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes, ₹0",
+    "hi": "10 मिनट, ₹0",
+    "mr": "10 मिनिटे, ₹0"
+   }
+  },
+  {
+   "scene": "atm",
+   "title": {
+    "en": "Card arrives: activate it, then lock what you do not need",
+    "hi": "कार्ड आया: चालू करें, फिर जो ज़रूरी नहीं उसे बंद करें",
+    "mr": "कार्ड आले: सुरू करा, मग नको ते बंद करा"
+   },
+   "text": {
+    "en": "The card comes by courier in a sealed envelope. Verena signs the back, sets the PIN in the app, and opens 'Card controls'. She keeps domestic online and shop payments on, and turns off international use and ATM cash withdrawal.",
+    "hi": "कार्ड सील बंद लिफ़ाफ़े में कूरियर से आता है। वेरेना पीछे हस्ताक्षर करती है, ऐप में PIN बनाती है, और 'Card controls' खोलती है। वह देश के अंदर ऑनलाइन और दुकान भुगतान चालू रखती है, और अंतरराष्ट्रीय इस्तेमाल और ATM से नक़द निकासी बंद करती है।",
+    "mr": "कार्ड सीलबंद पाकिटात कुरिअरने येते. वेरेना मागे सही करते, ॲपमध्ये PIN ठेवते, आणि 'Card controls' उघडते. ती देशांतर्गत ऑनलाइन आणि दुकानातील पेमेंट सुरू ठेवते, आणि आंतरराष्ट्रीय वापर आणि ATM मधून रोख काढणे बंद करते."
+   },
+   "screen": [
+    {
+     "en": "CARD CONTROLS",
+     "hi": "कार्ड कंट्रोल",
+     "mr": "कार्ड नियंत्रण"
+    },
+    {
+     "en": "Online (India): ON",
+     "hi": "ऑनलाइन (भारत): चालू",
+     "mr": "ऑनलाइन (भारत): सुरू"
+    },
+    {
+     "en": "Shops (tap/PIN): ON",
+     "hi": "दुकान (टैप/PIN): चालू",
+     "mr": "दुकाने (टॅप/PIN): सुरू"
+    },
+    {
+     "en": "International: OFF",
+     "hi": "अंतरराष्ट्रीय: बंद",
+     "mr": "आंतरराष्ट्रीय: बंद"
+    },
+    {
+     "en": "ATM cash: OFF",
+     "hi": "ATM नक़द: बंद",
+     "mr": "ATM रोख: बंद"
+    }
+   ],
+   "details": [
+    {
+     "en": "Turning off what you do not use limits the damage if the card details ever leak.",
+     "hi": "जो इस्तेमाल नहीं करते उसे बंद रखने से कार्ड की जानकारी लीक होने पर नुक़सान सीमित रहता है।",
+     "mr": "जे वापरत नाही ते बंद ठेवल्याने कार्डची माहिती फुटली तरी नुकसान मर्यादित राहते."
+    },
+    {
+     "en": "Set up an auto-debit (standing instruction) from your savings account for the 'total amount due', so a busy month never becomes a late payment.",
+     "hi": "बचत खाते से 'कुल देय रकम' का ऑटो-डेबिट (स्टैंडिंग इंस्ट्रक्शन) लगाएँ, ताकि व्यस्त महीना कभी लेट पेमेंट न बने।",
+     "mr": "बचत खात्यातून 'एकूण देय रक्कम' साठी ऑटो-डेबिट (स्टँडिंग इन्स्ट्रक्शन) लावा, म्हणजे गडबडीचा महिना कधी विलंब भरणा होणार नाही."
+    },
+    {
+     "en": "Save the card's 24x7 block number in your phone contacts now, not after you lose it.",
+     "hi": "कार्ड का 24x7 ब्लॉक नंबर अभी फ़ोन में सेव करें, खोने के बाद नहीं।",
+     "mr": "कार्डचा 24x7 ब्लॉक क्रमांक आत्ताच फोनमध्ये सेव्ह करा, हरवल्यानंतर नाही."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "receipt",
+   "title": {
+    "en": "The first bill: pay the total, not the minimum",
+    "hi": "पहला बिल: पूरी रकम भरें, न्यूनतम नहीं",
+    "mr": "पहिले बिल: पूर्ण रक्कम भरा, किमान नाही"
+   },
+   "text": {
+    "en": "On the 5th the statement arrives: she spent ₹11,840 in the month. It shows two numbers in large print. One of them is a trap.",
+    "hi": "5 तारीख़ को स्टेटमेंट आता है: महीने में उसने ₹11,840 ख़र्च किए। उसमें बड़े अक्षरों में दो अंक हैं। उनमें से एक जाल है।",
+    "mr": "5 तारखेला स्टेटमेंट येते: महिन्यात तिने ₹11,840 खर्च केले. त्यात मोठ्या अक्षरांत दोन आकडे आहेत. त्यापैकी एक सापळा आहे."
+   },
+   "screen": [
+    {
+     "en": "CARD STATEMENT",
+     "hi": "कार्ड स्टेटमेंट",
+     "mr": "कार्ड स्टेटमेंट"
+    },
+    {
+     "en": "Total amount due: ₹11,840",
+     "hi": "कुल देय रकम: ₹11,840",
+     "mr": "एकूण देय रक्कम: ₹11,840"
+    },
+    {
+     "en": "Minimum amount due: ₹592",
+     "hi": "न्यूनतम देय रकम: ₹592",
+     "mr": "किमान देय रक्कम: ₹592"
+    },
+    {
+     "en": "Payment due date: 25 Nov",
+     "hi": "भुगतान की आख़िरी तारीख़: 25 नव",
+     "mr": "भरण्याची शेवटची तारीख: 25 नोव्हें"
+    },
+    {
+     "en": "Credit limit: ₹40,000",
+     "hi": "क्रेडिट लिमिट: ₹40,000",
+     "mr": "क्रेडिट मर्यादा: ₹40,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Paying only the minimum avoids a late fee, but interest is charged on the rest, and new purchases lose the interest-free period until the dues are cleared.",
+     "hi": "केवल न्यूनतम भरने से लेट फ़ीस नहीं लगती, पर बाक़ी पर ब्याज लगता है, और बकाया साफ़ होने तक नई ख़रीद पर बिना ब्याज की अवधि नहीं मिलती।",
+     "mr": "फक्त किमान भरल्यास विलंब शुल्क लागत नाही, पण उरलेल्यावर व्याज लागते, आणि थकबाकी फिटेपर्यंत नव्या खरेदीला बिनव्याजी कालावधी मिळत नाही."
+    },
+    {
+     "en": "Try to use less than about 30% of your limit. Using most of the limit every month can pull your score down even if you pay on time.",
+     "hi": "कोशिश करें कि लिमिट का लगभग 30% से कम इस्तेमाल हो। हर महीने ज़्यादातर लिमिट इस्तेमाल करने से समय पर भुगतान के बावजूद स्कोर गिर सकता है।",
+     "mr": "मर्यादेच्या साधारण 30% पेक्षा कमी वापरण्याचा प्रयत्न करा. दर महिन्याला बहुतेक मर्यादा वापरल्यास वेळेवर भरले तरी स्कोर घसरू शकतो."
+    },
+    {
+     "en": "Check every line of the statement. Report any charge you do not recognise immediately; the sooner you report, the better your protection.",
+     "hi": "स्टेटमेंट की हर लाइन जाँचें। जो शुल्क पहचान में न आए, उसकी तुरंत शिकायत करें; जितनी जल्दी, उतनी बेहतर सुरक्षा।",
+     "mr": "स्टेटमेंटची प्रत्येक ओळ तपासा. ओळख न पटणाऱ्या शुल्काची लगेच तक्रार करा; जितक्या लवकर, तितके चांगले संरक्षण."
+    }
+   ],
+   "cost": {
+    "en": "₹0 interest if paid in full",
+    "hi": "पूरा भरें तो ₹0 ब्याज",
+    "mr": "पूर्ण भरल्यास ₹0 व्याज"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Salary came in. What does Verena pay?",
+     "hi": "तनख़्वाह आ गई। वेरेना कितना भरे?",
+     "mr": "पगार आला. वेरेनाने किती भरावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "₹592, the minimum, and keep the rest",
+       "hi": "₹592, न्यूनतम, और बाक़ी रख ले",
+       "mr": "₹592, किमान, आणि बाकी ठेवावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Interest starts on ₹11,248 at roughly 3.5% a month, and her next purchases are charged interest from day one.",
+       "hi": "₹11,248 पर लगभग 3.5% महीने का ब्याज शुरू होता है, और अगली ख़रीद पर पहले दिन से ब्याज लगेगा।",
+       "mr": "₹11,248 वर साधारण 3.5% महिन्याचे व्याज सुरू होते, आणि पुढच्या खरेदीवर पहिल्या दिवसापासून व्याज लागेल."
+      }
+     },
+     {
+      "text": {
+       "en": "₹11,840, the total, before the 25th",
+       "hi": "₹11,840, पूरी रकम, 25 से पहले",
+       "mr": "₹11,840, पूर्ण रक्कम, 25 पूर्वी"
+      },
+      "good": true,
+      "result": {
+       "en": "Zero interest, a clean on-time record, and the card stays a free tool instead of a loan.",
+       "hi": "शून्य ब्याज, समय पर भुगतान का साफ़ रिकॉर्ड, और कार्ड क़र्ज़ नहीं, एक मुफ़्त औज़ार बना रहता है।",
+       "mr": "शून्य व्याज, वेळेवर भरण्याची स्वच्छ नोंद, आणि कार्ड कर्ज न बनता मोफत साधन राहते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "A year later: the habit that built her score",
+    "hi": "एक साल बाद: वह आदत जिसने स्कोर बनाया",
+    "mr": "एक वर्षानंतर: स्कोर तयार करणारी सवय"
+   },
+   "text": {
+    "en": "Twelve statements, twelve full payments by auto-debit, usage under ₹12,000 a month. When she checks her free credit report a year later, her score is above 750 and the report shows no late payments.",
+    "hi": "बारह स्टेटमेंट, ऑटो-डेबिट से बारह पूरे भुगतान, महीने का इस्तेमाल ₹12,000 से कम। साल भर बाद जब वह अपनी मुफ़्त क्रेडिट रिपोर्ट देखती है, स्कोर 750 से ऊपर है और रिपोर्ट में कोई देर से भुगतान नहीं।",
+    "mr": "बारा स्टेटमेंट, ऑटो-डेबिटने बारा पूर्ण भरणे, महिन्याचा वापर ₹12,000 पेक्षा कमी. वर्षभराने ती मोफत क्रेडिट अहवाल पाहते तेव्हा स्कोर 750 च्या वर आहे आणि अहवालात एकही विलंब भरणा नाही."
+   },
+   "screen": [
+    {
+     "en": "Every month:",
+     "hi": "हर महीने:",
+     "mr": "दर महिन्याला:"
+    },
+    {
+     "en": "5th: read statement",
+     "hi": "5: स्टेटमेंट पढ़ें",
+     "mr": "5: स्टेटमेंट वाचा"
+    },
+    {
+     "en": "20th: auto-debit full amount",
+     "hi": "20: पूरी रकम ऑटो-डेबिट",
+     "mr": "20: पूर्ण रक्कम ऑटो-डेबिट"
+    },
+    {
+     "en": "Use < 30% of limit",
+     "hi": "लिमिट का < 30% इस्तेमाल",
+     "mr": "मर्यादेचा < 30% वापर"
+    },
+    {
+     "en": "Score after 1 year: 750+",
+     "hi": "1 साल बाद स्कोर: 750+",
+     "mr": "1 वर्षानंतर स्कोर: 750+"
+    }
+   ],
+   "details": [
+    {
+     "en": "You can get a free credit report from each credit bureau at least once a year. Check it for loans or cards that are not yours.",
+     "hi": "हर क्रेडिट ब्यूरो से साल में कम से कम एक बार मुफ़्त क्रेडिट रिपोर्ट मिल सकती है। देखें कि उसमें कोई ऐसा लोन या कार्ड तो नहीं जो आपका नहीं।",
+     "mr": "प्रत्येक क्रेडिट ब्युरोकडून वर्षातून किमान एकदा मोफत क्रेडिट अहवाल मिळू शकतो. तुमचे नसलेले कर्ज किंवा कार्ड त्यात नाही ना ते तपासा."
+    },
+    {
+     "en": "Do not close your first card when you get a better one. An old account with a clean history keeps helping.",
+     "hi": "बेहतर कार्ड मिलने पर पहला कार्ड बंद न करें। साफ़ इतिहास वाला पुराना खाता मदद करता रहता है।",
+     "mr": "चांगले कार्ड मिळाल्यावर पहिले कार्ड बंद करू नका. स्वच्छ इतिहास असलेले जुने खाते मदत करत राहते."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes a month",
+    "hi": "महीने में 2 मिनट",
+    "mr": "महिन्याला 2 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Debit spends your money; credit spends the bank's money that you must repay in full by the due date.",
+   "hi": "डेबिट आपका पैसा ख़र्च करता है; क्रेडिट बैंक का पैसा, जो तय तारीख़ तक पूरा लौटाना है।",
+   "mr": "डेबिट तुमचे पैसे खर्च करते; क्रेडिट बँकेचे, जे देय तारखेपर्यंत पूर्ण परत करायचे."
+  },
+  {
+   "en": "Apply only through your bank's official app or website, never an SMS link.",
+   "hi": "आवेदन केवल बैंक के आधिकारिक ऐप या वेबसाइट से, SMS लिंक से कभी नहीं।",
+   "mr": "अर्ज फक्त बँकेच्या अधिकृत ॲप किंवा वेबसाइटवरून, SMS लिंकवरून कधीही नाही."
+  },
+  {
+   "en": "For a first card: lifetime free, simple, a low limit you can repay in one salary.",
+   "hi": "पहले कार्ड के लिए: लाइफ़टाइम फ़्री, सादा, ऐसी कम लिमिट जो एक तनख़्वाह में चुक जाए।",
+   "mr": "पहिल्या कार्डसाठी: लाइफटाइम फ्री, साधे, एका पगारात फेडता येईल अशी कमी मर्यादा."
+  },
+  {
+   "en": "Pay the total amount due, never only the minimum. Set an auto-debit.",
+   "hi": "हमेशा कुल देय रकम भरें, केवल न्यूनतम कभी नहीं। ऑटो-डेबिट लगाएँ।",
+   "mr": "नेहमी एकूण देय रक्कम भरा, फक्त किमान कधीही नाही. ऑटो-डेबिट लावा."
+  },
+  {
+   "en": "Never withdraw cash on a credit card, keep usage under about 30%, and check your credit report yearly.",
+   "hi": "क्रेडिट कार्ड से कभी नक़द न निकालें, इस्तेमाल लगभग 30% से कम रखें, और हर साल क्रेडिट रिपोर्ट देखें।",
+   "mr": "क्रेडिट कार्डने कधीही रोख काढू नका, वापर साधारण 30% पेक्षा कमी ठेवा, आणि दरवर्षी क्रेडिट अहवाल पाहा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://rbikehtahai.rbi.org.in"
+ ]
+}

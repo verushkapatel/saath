@@ -1,0 +1,306 @@
+{
+ "id": "govt-schemes",
+ "guide": "govt-schemes",
+ "title": {
+  "en": "Enrolling in PMJJBY, PMSBY and Atal Pension Yojana at the bank: forms, premiums and claims",
+  "hi": "बैंक में PMJJBY, PMSBY और अटल पेंशन योजना में नामांकन: फ़ॉर्म, प्रीमियम और क्लेम",
+  "mr": "बँकेत PMJJBY, PMSBY आणि अटल पेन्शन योजनेत नावनोंदणी: फॉर्म, प्रीमियम आणि क्लेम"
+ },
+ "setting": {
+  "en": "Verena helps Sunita, the woman who cooks for her family, to enrol",
+  "hi": "वेरेना अपने परिवार के लिए खाना बनाने वाली सुनीता को नामांकन में मदद करती है",
+  "mr": "वेरेना तिच्या कुटुंबासाठी स्वयंपाक करणाऱ्या सुनीताला नावनोंदणीत मदत करते"
+ },
+ "steps": [
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Know what each scheme gives, and costs",
+    "hi": "जानें कि हर योजना क्या देती है, और कितने की है",
+    "mr": "प्रत्येक योजना काय देते आणि किती खर्च येतो ते जाणून घ्या"
+   },
+   "text": {
+    "en": "Sunita is 34, has a savings account, and no insurance. Verena explains the three government-backed schemes on a single sheet of paper, with the numbers from the official scheme pages.",
+    "hi": "सुनीता 34 की हैं, उनका बचत खाता है, और कोई बीमा नहीं। वेरेना आधिकारिक योजना पेजों के अंकों के साथ एक ही काग़ज़ पर तीनों सरकारी योजनाएँ समझाती है।",
+    "mr": "सुनीता 34 वर्षांच्या आहेत, त्यांचे बचत खाते आहे, आणि विमा नाही. वेरेना अधिकृत योजना पानांवरील आकड्यांसह एकाच कागदावर तिन्ही सरकारी योजना समजावते."
+   },
+   "screen": [
+    {
+     "en": "PMJJBY (life)",
+     "hi": "PMJJBY (जीवन)",
+     "mr": "PMJJBY (जीवन)"
+    },
+    {
+     "en": "₹2 lakh on death · ₹436/yr",
+     "hi": "मृत्यु पर ₹2 लाख · ₹436/साल",
+     "mr": "मृत्यूवर ₹2 लाख · ₹436/वर्ष"
+    },
+    {
+     "en": "PMSBY (accident)",
+     "hi": "PMSBY (दुर्घटना)",
+     "mr": "PMSBY (अपघात)"
+    },
+    {
+     "en": "₹2 lakh death/disability · ₹20/yr",
+     "hi": "मृत्यु/विकलांगता ₹2 लाख · ₹20/साल",
+     "mr": "मृत्यू/अपंगत्व ₹2 लाख · ₹20/वर्ष"
+    },
+    {
+     "en": "Atal Pension Yojana",
+     "hi": "अटल पेंशन योजना",
+     "mr": "अटल पेन्शन योजना"
+    },
+    {
+     "en": "₹1,000–5,000/month from 60",
+     "hi": "60 से ₹1,000–5,000/महीना",
+     "mr": "60 पासून ₹1,000–5,000/महिना"
+    }
+   ],
+   "details": [
+    {
+     "en": "PMJJBY: life cover for people aged 18 to 50 at joining, renewed every year by auto-debit.",
+     "hi": "PMJJBY: जुड़ते समय 18 से 50 साल वालों के लिए जीवन बीमा, हर साल ऑटो-डेबिट से नवीनीकरण।",
+     "mr": "PMJJBY: सामील होताना 18 ते 50 वयोगटातील लोकांसाठी जीवन विमा, दरवर्षी ऑटो-डेबिटने नूतनीकरण."
+    },
+    {
+     "en": "PMSBY: accident cover for ages 18 to 70; ₹1 lakh for partial permanent disability.",
+     "hi": "PMSBY: 18 से 70 साल के लिए दुर्घटना बीमा; आंशिक स्थायी विकलांगता पर ₹1 लाख।",
+     "mr": "PMSBY: 18 ते 70 वयोगटासाठी अपघात विमा; आंशिक कायम अपंगत्वावर ₹1 लाख."
+    },
+    {
+     "en": "APY: for ages 18 to 40 who are not income tax payers. The monthly contribution depends on joining age and the pension chosen; joining young costs much less.",
+     "hi": "APY: 18 से 40 साल के लोगों के लिए जो आयकरदाता नहीं हैं। मासिक योगदान जुड़ने की उम्र और चुनी पेंशन पर निर्भर है; कम उम्र में जुड़ना बहुत सस्ता है।",
+     "mr": "APY: 18 ते 40 वयोगटातील आयकर न भरणाऱ्यांसाठी. मासिक योगदान सामील होण्याच्या वयावर आणि निवडलेल्या पेन्शनवर अवलंबून; लहान वयात सामील होणे खूप स्वस्त."
+    }
+   ],
+   "cost": {
+    "en": "Premiums are deducted yearly",
+    "hi": "प्रीमियम हर साल कटते हैं",
+    "mr": "प्रीमियम दरवर्षी कापले जातात"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "At the branch: one form per scheme",
+    "hi": "शाखा में: हर योजना का एक फ़ॉर्म",
+    "mr": "शाखेत: प्रत्येक योजनेचा एक फॉर्म"
+   },
+   "text": {
+    "en": "At Sunita's bank, the officer gives three short forms: consent-cum-declaration for PMJJBY and PMSBY, and the APY registration form. Sunita writes her nominee (her daughter, with Sunita's sister as guardian) and signs. Many banks also allow enrolment through net banking or the app.",
+    "hi": "सुनीता के बैंक में अधिकारी तीन छोटे फ़ॉर्म देते हैं: PMJJBY और PMSBY के लिए सहमति-सह-घोषणा, और APY पंजीकरण फ़ॉर्म। सुनीता नॉमिनी लिखती हैं (बेटी, और अभिभावक के रूप में सुनीता की बहन) और हस्ताक्षर करती हैं। कई बैंक नेट बैंकिंग या ऐप से भी नामांकन देते हैं।",
+    "mr": "सुनीताच्या बँकेत अधिकारी तीन छोटे फॉर्म देतात: PMJJBY आणि PMSBY साठी संमती-नि-घोषणापत्र, आणि APY नोंदणी फॉर्म. सुनीता नॉमिनी लिहितात (मुलगी, आणि पालक म्हणून सुनीताची बहीण) आणि सही करतात. अनेक बँका नेट बँकिंग किंवा ॲपद्वारेही नोंदणी देतात."
+   },
+   "screen": [
+    {
+     "en": "PMJJBY / PMSBY",
+     "hi": "PMJJBY / PMSBY",
+     "mr": "PMJJBY / PMSBY"
+    },
+    {
+     "en": "Consent for auto-debit: YES",
+     "hi": "ऑटो-डेबिट सहमति: हाँ",
+     "mr": "ऑटो-डेबिट संमती: हो"
+    },
+    {
+     "en": "Nominee: Pooja (minor)",
+     "hi": "नॉमिनी: पूजा (नाबालिग)",
+     "mr": "नॉमिनी: पूजा (अल्पवयीन)"
+    },
+    {
+     "en": "Guardian: Meena (sister)",
+     "hi": "अभिभावक: मीना (बहन)",
+     "mr": "पालक: मीना (बहीण)"
+    },
+    {
+     "en": "APY: pension ₹3,000/month",
+     "hi": "APY: पेंशन ₹3,000/महीना",
+     "mr": "APY: पेन्शन ₹3,000/महिना"
+    }
+   ],
+   "details": [
+    {
+     "en": "The premium for PMJJBY and PMSBY is auto-debited once a year, usually around the start of June. Keep enough balance then, or the cover lapses.",
+     "hi": "PMJJBY और PMSBY का प्रीमियम साल में एक बार ऑटो-डेबिट होता है, आमतौर पर जून की शुरुआत के आसपास। तब पर्याप्त बैलेंस रखें, वरना कवर ख़त्म हो जाता है।",
+     "mr": "PMJJBY आणि PMSBY चा प्रीमियम वर्षातून एकदा ऑटो-डेबिट होतो, सहसा जूनच्या सुरुवातीला. तेव्हा पुरेशी शिल्लक ठेवा, नाहीतर कव्हर संपते."
+    },
+    {
+     "en": "For PMJJBY, deaths in the first 30 days after joining are covered only if due to an accident.",
+     "hi": "PMJJBY में जुड़ने के पहले 30 दिनों में मृत्यु केवल दुर्घटना से होने पर कवर होती है।",
+     "mr": "PMJJBY मध्ये सामील झाल्यानंतर पहिल्या 30 दिवसांत मृत्यू फक्त अपघाताने झाल्यासच कव्हर होतो."
+    },
+    {
+     "en": "Take the acknowledgement slip, which acts as the certificate of insurance.",
+     "hi": "पावती लें, जो बीमा का प्रमाणपत्र मानी जाती है।",
+     "mr": "पोचपावती घ्या, ती विम्याचे प्रमाणपत्र म्हणून काम करते."
+    }
+   ],
+   "cost": {
+    "en": "₹456 a year for both insurances",
+    "hi": "दोनों बीमों के लिए साल के ₹456",
+    "mr": "दोन्ही विम्यांसाठी वर्षाला ₹456"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Keep it running every year",
+    "hi": "हर साल चालू रखें",
+    "mr": "दरवर्षी सुरू ठेवा"
+   },
+   "text": {
+    "en": "Verena puts a reminder in Sunita's phone for 25 May every year: 'Keep ₹500 extra in the bank for insurance'. The APY amount is deducted monthly, so it goes on the calendar too.",
+    "hi": "वेरेना सुनीता के फ़ोन में हर साल 25 मई का रिमाइंडर लगाती है: 'बीमा के लिए बैंक में ₹500 ज़्यादा रखें'। APY की रकम हर महीने कटती है, इसलिए वह भी कैलेंडर पर जाती है।",
+    "mr": "वेरेना सुनीताच्या फोनमध्ये दरवर्षी 25 मेचे स्मरणपत्र लावते: 'विम्यासाठी बँकेत ₹500 जास्त ठेवा'. APY ची रक्कम दर महिन्याला कापली जाते, म्हणून तीही कॅलेंडरवर जाते."
+   },
+   "screen": [
+    {
+     "en": "25 May: keep ₹500 extra",
+     "hi": "25 मई: ₹500 ज़्यादा रखें",
+     "mr": "25 मे: ₹500 जास्त ठेवा"
+    },
+    {
+     "en": "1 Jun: PMJJBY + PMSBY renew",
+     "hi": "1 जून: PMJJBY + PMSBY नवीनीकरण",
+     "mr": "1 जून: PMJJBY + PMSBY नूतनीकरण"
+    },
+    {
+     "en": "Monthly: APY debit",
+     "hi": "हर महीने: APY कटौती",
+     "mr": "दर महिन्याला: APY कपात"
+    }
+   ],
+   "details": [
+    {
+     "en": "Missed APY contributions attract a small penalty and, if left too long, the account can be frozen or closed. Keep the balance for the debit date.",
+     "hi": "APY का योगदान छूटने पर थोड़ा जुर्माना लगता है, और ज़्यादा समय तक छूटा रहे तो खाता रोका या बंद किया जा सकता है। कटौती की तारीख़ के लिए बैलेंस रखें।",
+     "mr": "APY चे योगदान चुकल्यास थोडा दंड लागतो, आणि फार काळ राहिल्यास खाते गोठवले किंवा बंद केले जाऊ शकते. कपातीच्या तारखेसाठी शिल्लक ठेवा."
+    }
+   ],
+   "cost": {
+    "en": "A reminder a year",
+    "hi": "साल में एक रिमाइंडर",
+    "mr": "वर्षाला एक स्मरण"
+   }
+  },
+  {
+   "scene": "hospital",
+   "title": {
+    "en": "If the worst happens: how the family claims",
+    "hi": "अगर सबसे बुरा हो जाए: परिवार कैसे क्लेम करे",
+    "mr": "सर्वात वाईट घडले तर: कुटुंबाने क्लेम कसा करावा"
+   },
+   "text": {
+    "en": "Verena also writes, on the back of the sheet, what Sunita's family would do. The claim is made at the same bank branch where the account is.",
+    "hi": "वेरेना काग़ज़ के पीछे यह भी लिखती है कि सुनीता का परिवार क्या करेगा। क्लेम उसी बैंक शाखा में होता है जहाँ खाता है।",
+    "mr": "वेरेना कागदाच्या मागे सुनीताच्या कुटुंबाने काय करावे तेही लिहिते. क्लेम ज्या शाखेत खाते आहे तिथेच केला जातो."
+   },
+   "screen": [
+    {
+     "en": "To claim:",
+     "hi": "क्लेम के लिए:",
+     "mr": "क्लेमसाठी:"
+    },
+    {
+     "en": "Claim form (from bank)",
+     "hi": "क्लेम फ़ॉर्म (बैंक से)",
+     "mr": "क्लेम फॉर्म (बँकेकडून)"
+    },
+    {
+     "en": "Death certificate",
+     "hi": "मृत्यु प्रमाणपत्र",
+     "mr": "मृत्यू प्रमाणपत्र"
+    },
+    {
+     "en": "Accident: FIR, post-mortem",
+     "hi": "दुर्घटना: FIR, पोस्टमार्टम",
+     "mr": "अपघात: FIR, शवविच्छेदन"
+    },
+    {
+     "en": "Nominee's ID + bank details",
+     "hi": "नॉमिनी की ID + बैंक विवरण",
+     "mr": "नॉमिनीचे ओळखपत्र + बँक तपशील"
+    }
+   ],
+   "details": [
+    {
+     "en": "For PMSBY accident claims, the FIR and post-mortem or hospital records are needed. For disability, a certificate from a government doctor.",
+     "hi": "PMSBY दुर्घटना क्लेम के लिए FIR और पोस्टमार्टम या अस्पताल के रिकॉर्ड चाहिए। विकलांगता के लिए सरकारी डॉक्टर का प्रमाणपत्र।",
+     "mr": "PMSBY अपघात क्लेमसाठी FIR आणि शवविच्छेदन किंवा रुग्णालयाच्या नोंदी लागतात. अपंगत्वासाठी सरकारी डॉक्टरांचे प्रमाणपत्र."
+    },
+    {
+     "en": "The nominee should know these schemes exist. Unknown cover is unclaimed cover.",
+     "hi": "नॉमिनी को पता होना चाहिए कि ये योजनाएँ हैं। जिसका पता न हो, उसका क्लेम भी नहीं होता।",
+     "mr": "नॉमिनीला या योजना असल्याचे माहीत असायला हवे. माहीत नसलेल्या कव्हरचा क्लेमही होत नाही."
+    }
+   ],
+   "cost": {
+    "en": "Claims are free",
+    "hi": "क्लेम मुफ़्त है",
+    "mr": "क्लेम मोफत"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Sunita's account will have ₹200 on 1 June. What happens?",
+     "hi": "1 जून को सुनीता के खाते में ₹200 होंगे। क्या होगा?",
+     "mr": "1 जूनला सुनीताच्या खात्यात ₹200 असतील. काय होईल?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Nothing, the bank will debit later",
+       "hi": "कुछ नहीं, बैंक बाद में काट लेगा",
+       "mr": "काही नाही, बँक नंतर कापेल"
+      },
+      "good": false,
+      "result": {
+       "en": "If the debit fails, the cover can lapse for that year. Re-joining is possible, but there can be a gap without cover.",
+       "hi": "अगर कटौती न हो पाए, तो उस साल का कवर ख़त्म हो सकता है। दोबारा जुड़ सकते हैं, पर बीच में बिना कवर का समय हो सकता है।",
+       "mr": "कपात न झाल्यास त्या वर्षाचे कव्हर संपू शकते. पुन्हा सामील होता येते, पण मध्ये कव्हरशिवाय काळ जाऊ शकतो."
+      }
+     },
+     {
+      "text": {
+       "en": "Top up ₹500 before the debit date",
+       "hi": "कटौती की तारीख़ से पहले ₹500 डाल दें",
+       "mr": "कपातीच्या तारखेपूर्वी ₹500 भरावे"
+      },
+      "good": true,
+      "result": {
+       "en": "₹456 keeps ₹4 lakh of combined cover running for another year.",
+       "hi": "₹456 से ₹4 लाख का संयुक्त कवर एक और साल चलता रहता है।",
+       "mr": "₹456 मध्ये ₹4 लाखांचे एकत्रित कव्हर आणखी एक वर्ष चालू राहते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "PMJJBY: ₹2 lakh life cover for ₹436 a year (join at 18 to 50).",
+   "hi": "PMJJBY: साल के ₹436 में ₹2 लाख जीवन बीमा (18 से 50 में जुड़ें)।",
+   "mr": "PMJJBY: वर्षाला ₹436 मध्ये ₹2 लाख जीवन विमा (18 ते 50 मध्ये सामील व्हा)."
+  },
+  {
+   "en": "PMSBY: ₹2 lakh accident cover for ₹20 a year (18 to 70).",
+   "hi": "PMSBY: साल के ₹20 में ₹2 लाख दुर्घटना बीमा (18 से 70)।",
+   "mr": "PMSBY: वर्षाला ₹20 मध्ये ₹2 लाख अपघात विमा (18 ते 70)."
+  },
+  {
+   "en": "APY: a fixed monthly pension from 60 for non-taxpayers who join at 18 to 40.",
+   "hi": "APY: 18 से 40 में जुड़ने वाले ग़ैर-करदाताओं के लिए 60 से तय मासिक पेंशन।",
+   "mr": "APY: 18 ते 40 मध्ये सामील होणाऱ्या करदात्या नसलेल्यांसाठी 60 पासून ठरावीक मासिक पेन्शन."
+  },
+  {
+   "en": "Enrol at your bank branch or app, name a nominee, and keep the balance on the debit dates.",
+   "hi": "बैंक शाखा या ऐप से नामांकन करें, नॉमिनी जोड़ें, और कटौती की तारीख़ों पर बैलेंस रखें।",
+   "mr": "बँक शाखा किंवा ॲपद्वारे नोंदणी करा, नॉमिनी जोडा, आणि कपातीच्या तारखांना शिल्लक ठेवा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.jansuraksha.gov.in",
+  "https://www.npscra.nsdl.co.in"
+ ]
+}

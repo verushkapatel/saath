@@ -1,0 +1,429 @@
+{
+ "id": "tax-basics",
+ "guide": "tax-basics",
+ "title": {
+  "en": "Filing your first income tax return, screen by screen, and getting the refund",
+  "hi": "पहला इनकम टैक्स रिटर्न भरना, स्क्रीन-दर-स्क्रीन, और रिफ़ंड पाना",
+  "mr": "पहिले आयकर विवरणपत्र भरणे, स्क्रीननुसार, आणि परतावा मिळवणे"
+ },
+ "setting": {
+  "en": "June, a year after her first job, on the Income Tax e-filing portal",
+  "hi": "जून, पहली नौकरी के एक साल बाद, आयकर ई-फ़ाइलिंग पोर्टल पर",
+  "mr": "जून, पहिल्या नोकरीनंतर एक वर्षाने, आयकर ई-फायलिंग पोर्टलवर"
+ },
+ "steps": [
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Collect three documents",
+    "hi": "तीन दस्तावेज़ इकट्ठा करें",
+    "mr": "तीन कागदपत्रे गोळा करा"
+   },
+   "text": {
+    "en": "Verena's employer gives her Form 16 in June. She also downloads two statements from the e-filing portal that show what the tax department already knows about her income.",
+    "hi": "जून में नियोक्ता उसे फ़ॉर्म 16 देता है। वह ई-फ़ाइलिंग पोर्टल से दो स्टेटमेंट भी डाउनलोड करती है जो दिखाते हैं कि टैक्स विभाग को उसकी आय के बारे में पहले से क्या पता है।",
+    "mr": "जूनमध्ये नियोक्ता तिला फॉर्म 16 देतो. ती ई-फायलिंग पोर्टलवरून दोन विवरणेही डाउनलोड करते, जी कर विभागाला तिच्या उत्पन्नाबद्दल आधीच काय माहीत आहे ते दाखवतात."
+   },
+   "screen": [
+    {
+     "en": "Form 16 (from employer)",
+     "hi": "फ़ॉर्म 16 (नियोक्ता से)",
+     "mr": "फॉर्म 16 (नियोक्त्याकडून)"
+    },
+    {
+     "en": "Salary + TDS deducted",
+     "hi": "तनख़्वाह + कटा TDS",
+     "mr": "पगार + कापलेला TDS"
+    },
+    {
+     "en": "AIS (Annual Information Statement)",
+     "hi": "AIS (वार्षिक सूचना विवरण)",
+     "mr": "AIS (वार्षिक माहिती विवरण)"
+    },
+    {
+     "en": "Salary, bank interest, etc.",
+     "hi": "तनख़्वाह, बैंक ब्याज आदि",
+     "mr": "पगार, बँक व्याज इ."
+    },
+    {
+     "en": "Form 26AS",
+     "hi": "फ़ॉर्म 26AS",
+     "mr": "फॉर्म 26AS"
+    },
+    {
+     "en": "All TDS credited to your PAN",
+     "hi": "आपके पैन पर जमा सारा TDS",
+     "mr": "तुमच्या पॅनवर जमा सर्व TDS"
+    },
+    {
+     "en": "Bank interest certificate",
+     "hi": "बैंक ब्याज प्रमाणपत्र",
+     "mr": "बँक व्याज प्रमाणपत्र"
+    }
+   ],
+   "details": [
+    {
+     "en": "Compare AIS with your own records. If AIS shows income that is not yours, you can submit feedback on the portal.",
+     "hi": "AIS को अपने रिकॉर्ड से मिलाएँ। अगर AIS में ऐसी आय दिखे जो आपकी नहीं, तो पोर्टल पर फ़ीडबैक दे सकते हैं।",
+     "mr": "AIS तुमच्या नोंदींशी जुळवा. AIS मध्ये तुमचे नसलेले उत्पन्न दिसले तर पोर्टलवर अभिप्राय देऊ शकता."
+    },
+    {
+     "en": "Savings account interest counts as income too, even if it is small.",
+     "hi": "बचत खाते का ब्याज भी आय गिना जाता है, भले कम हो।",
+     "mr": "बचत खात्याचे व्याजही उत्पन्न मानले जाते, कमी असले तरी."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Log in, choose the year and the right form",
+    "hi": "लॉगिन करें, वर्ष और सही फ़ॉर्म चुनें",
+    "mr": "लॉगिन करा, वर्ष आणि योग्य फॉर्म निवडा"
+   },
+   "text": {
+    "en": "She logs into incometax.gov.in with her PAN, goes to 'File Income Tax Return', picks the assessment year, and chooses ITR-1 (Sahaj), meant for people with salary, one house and interest income within the form's limits.",
+    "hi": "वह पैन से incometax.gov.in पर लॉगिन करती है, 'File Income Tax Return' में जाती है, निर्धारण वर्ष चुनती है, और ITR-1 (सहज) चुनती है, जो तनख़्वाह, एक मकान और फ़ॉर्म की सीमा के अंदर ब्याज आय वालों के लिए है।",
+    "mr": "ती पॅनने incometax.gov.in वर लॉगिन करते, 'File Income Tax Return' मध्ये जाते, निर्धारण वर्ष निवडते, आणि ITR-1 (सहज) निवडते, जे पगार, एक घर आणि फॉर्मच्या मर्यादेतील व्याज उत्पन्न असणाऱ्यांसाठी आहे."
+   },
+   "screen": [
+    {
+     "en": "File ITR",
+     "hi": "ITR दाखिल करें",
+     "mr": "ITR दाखल करा"
+    },
+    {
+     "en": "Assessment Year: 2026-27",
+     "hi": "निर्धारण वर्ष: 2026-27",
+     "mr": "निर्धारण वर्ष: 2026-27"
+    },
+    {
+     "en": "Mode: Online",
+     "hi": "मोड: ऑनलाइन",
+     "mr": "पद्धत: ऑनलाइन"
+    },
+    {
+     "en": "Status: Individual",
+     "hi": "स्थिति: व्यक्ति",
+     "mr": "स्थिती: वैयक्तिक"
+    },
+    {
+     "en": "Form: ITR-1 (Sahaj)",
+     "hi": "फ़ॉर्म: ITR-1 (सहज)",
+     "mr": "फॉर्म: ITR-1 (सहज)"
+    }
+   ],
+   "details": [
+    {
+     "en": "The assessment year is the year after the financial year in which you earned. Income from April 2025 to March 2026 is filed in assessment year 2026-27.",
+     "hi": "निर्धारण वर्ष उस वित्त वर्ष के बाद वाला वर्ष है जिसमें आपने कमाया। अप्रैल 2025 से मार्च 2026 की आय निर्धारण वर्ष 2026-27 में भरी जाती है।",
+     "mr": "निर्धारण वर्ष म्हणजे तुम्ही कमावले त्या आर्थिक वर्षानंतरचे वर्ष. एप्रिल 2025 ते मार्च 2026 चे उत्पन्न निर्धारण वर्ष 2026-27 मध्ये भरले जाते."
+    },
+    {
+     "en": "If you sold shares or have more than one house or business income, a different ITR form applies. The portal's questions guide you.",
+     "hi": "अगर आपने शेयर बेचे हैं या एक से ज़्यादा मकान या व्यापार की आय है, तो दूसरा ITR फ़ॉर्म लगता है। पोर्टल के सवाल रास्ता दिखाते हैं।",
+     "mr": "शेअर विकले असतील किंवा एकापेक्षा जास्त घर किंवा व्यवसायाचे उत्पन्न असेल तर दुसरा ITR फॉर्म लागतो. पोर्टलचे प्रश्न मार्गदर्शन करतात."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Check the pre-filled numbers against Form 16",
+    "hi": "पहले से भरे अंकों को फ़ॉर्म 16 से मिलाएँ",
+    "mr": "आधीच भरलेले आकडे फॉर्म 16 शी जुळवा"
+   },
+   "text": {
+    "en": "Most fields are already filled from her employer's reports and AIS. Verena does not just click 'confirm'. She checks salary, the TDS amount and bank interest against Form 16 and her bank's certificate, and adds the ₹1,240 savings interest that was missing.",
+    "hi": "ज़्यादातर खाने नियोक्ता की रिपोर्ट और AIS से पहले से भरे हैं। वेरेना बस 'confirm' नहीं दबाती। वह तनख़्वाह, TDS और बैंक ब्याज को फ़ॉर्म 16 और बैंक प्रमाणपत्र से मिलाती है, और छूटा हुआ ₹1,240 बचत ब्याज जोड़ती है।",
+    "mr": "बहुतेक रकाने नियोक्त्याच्या अहवालांतून आणि AIS मधून आधीच भरलेले आहेत. वेरेना फक्त 'confirm' दाबत नाही. ती पगार, TDS आणि बँक व्याज फॉर्म 16 आणि बँकेच्या प्रमाणपत्राशी जुळवते, आणि राहून गेलेले ₹1,240 बचत व्याज जोडते."
+   },
+   "screen": [
+    {
+     "en": "Gross total income",
+     "hi": "सकल कुल आय",
+     "mr": "एकूण उत्पन्न"
+    },
+    {
+     "en": "Salary ₹3,60,000 ✓",
+     "hi": "तनख़्वाह ₹3,60,000 ✓",
+     "mr": "पगार ₹3,60,000 ✓"
+    },
+    {
+     "en": "Savings interest ₹1,240 (added)",
+     "hi": "बचत ब्याज ₹1,240 (जोड़ा)",
+     "mr": "बचत व्याज ₹1,240 (जोडले)"
+    },
+    {
+     "en": "TDS ₹4,200 ✓",
+     "hi": "TDS ₹4,200 ✓",
+     "mr": "TDS ₹4,200 ✓"
+    },
+    {
+     "en": "Regime: New (default)",
+     "hi": "व्यवस्था: नई (डिफ़ॉल्ट)",
+     "mr": "पद्धत: नवी (डीफॉल्ट)"
+    }
+   ],
+   "details": [
+    {
+     "en": "Under the new regime most deductions do not apply, but there is a standard deduction for salaried people and a rebate that makes tax zero up to a certain income. The portal computes it.",
+     "hi": "नई व्यवस्था में ज़्यादातर छूटें लागू नहीं होतीं, पर वेतनभोगियों के लिए स्टैंडर्ड डिडक्शन है और एक छूट (रिबेट) जो एक तय आय तक टैक्स शून्य कर देती है। पोर्टल इसका हिसाब करता है।",
+     "mr": "नव्या पद्धतीत बहुतेक वजावटी लागू होत नाहीत, पण पगारदारांसाठी प्रमाणित वजावट आहे आणि ठरावीक उत्पन्नापर्यंत कर शून्य करणारी सवलत (रिबेट). पोर्टल हिशोब करते."
+    },
+    {
+     "en": "Leaving out income, even small interest, can bring a notice later. Including it rarely changes the tax for small amounts.",
+     "hi": "आय छोड़ना, भले थोड़ा ब्याज हो, बाद में नोटिस ला सकता है। छोटी रकम जोड़ने से टैक्स शायद ही बदलता है।",
+     "mr": "उत्पन्न वगळल्यास, थोडे व्याज जरी असले तरी, नंतर नोटीस येऊ शकते. लहान रक्कम जोडल्याने कर क्वचितच बदलतो."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "See the result: tax due, nil, or refund",
+    "hi": "नतीजा देखें: टैक्स बाक़ी, शून्य, या रिफ़ंड",
+    "mr": "निकाल पाहा: कर देय, शून्य, किंवा परतावा"
+   },
+   "text": {
+    "en": "The summary shows her tax for the year is nil after the rebate, but her employer deducted ₹4,200 as TDS in the last months. So she is due a refund of ₹4,200.",
+    "hi": "सारांश दिखाता है कि रिबेट के बाद उसका साल का टैक्स शून्य है, पर नियोक्ता ने आख़िरी महीनों में ₹4,200 TDS काटा था। इसलिए उसे ₹4,200 का रिफ़ंड मिलना है।",
+    "mr": "सारांश दाखवतो की सवलतीनंतर तिचा वर्षाचा कर शून्य आहे, पण नियोक्त्याने शेवटच्या महिन्यांत ₹4,200 TDS कापला होता. म्हणून तिला ₹4,200 परतावा मिळायचा आहे."
+   },
+   "screen": [
+    {
+     "en": "Tax computation",
+     "hi": "टैक्स गणना",
+     "mr": "कर गणना"
+    },
+    {
+     "en": "Tax on income: as per slabs",
+     "hi": "आय पर टैक्स: स्लैब अनुसार",
+     "mr": "उत्पन्नावर कर: टप्प्यांनुसार"
+    },
+    {
+     "en": "Rebate u/s 87A: applied",
+     "hi": "धारा 87A रिबेट: लागू",
+     "mr": "कलम 87A सवलत: लागू"
+    },
+    {
+     "en": "Tax payable: ₹0",
+     "hi": "देय टैक्स: ₹0",
+     "mr": "देय कर: ₹0"
+    },
+    {
+     "en": "TDS paid: ₹4,200",
+     "hi": "भरा TDS: ₹4,200",
+     "mr": "भरलेला TDS: ₹4,200"
+    },
+    {
+     "en": "Refund: ₹4,200",
+     "hi": "रिफ़ंड: ₹4,200",
+     "mr": "परतावा: ₹4,200"
+    }
+   ],
+   "details": [
+    {
+     "en": "The refund goes only to a bank account that is pre-validated on the portal and linked to your PAN. Check this under 'My Bank Account' before submitting.",
+     "hi": "रिफ़ंड केवल उस बैंक खाते में जाता है जो पोर्टल पर पहले से सत्यापित और पैन से जुड़ा हो। जमा करने से पहले 'My Bank Account' में देखें।",
+     "mr": "परतावा फक्त पोर्टलवर आधीच पडताळलेल्या आणि पॅनशी जोडलेल्या बँक खात्यातच जातो. सादर करण्यापूर्वी 'My Bank Account' मध्ये पाहा."
+    },
+    {
+     "en": "If tax is payable instead, pay it on the portal (challan) before filing and enter the challan details.",
+     "hi": "अगर टैक्स बाक़ी हो, तो रिटर्न से पहले पोर्टल पर भरें (चालान) और चालान का विवरण डालें।",
+     "mr": "कर देय असल्यास विवरणपत्राआधी पोर्टलवर भरा (चलन) आणि चलनाचा तपशील टाका."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Submit, then e-verify: the step people forget",
+    "hi": "जमा करें, फिर ई-वेरिफ़ाई: वह कदम जो लोग भूल जाते हैं",
+    "mr": "सादर करा, मग ई-व्हेरिफाय: लोक विसरतात ती पायरी"
+   },
+   "text": {
+    "en": "She submits and chooses 'e-verify now using Aadhaar OTP'. The OTP arrives, she enters it, and the screen confirms the return is verified. An acknowledgement (ITR-V) arrives by email.",
+    "hi": "वह जमा करती है और 'Aadhaar OTP से अभी ई-वेरिफ़ाई' चुनती है। OTP आता है, वह डालती है, और स्क्रीन पुष्टि करती है कि रिटर्न सत्यापित हो गया। पावती (ITR-V) ईमेल पर आती है।",
+    "mr": "ती सादर करते आणि 'आधार OTP ने आत्ता ई-व्हेरिफाय' निवडते. OTP येतो, ती टाकते, आणि स्क्रीन विवरणपत्र पडताळले गेल्याची पुष्टी करते. पोच (ITR-V) ईमेलवर येते."
+   },
+   "screen": [
+    {
+     "en": "e-Verify",
+     "hi": "ई-वेरिफ़ाई",
+     "mr": "ई-व्हेरिफाय"
+    },
+    {
+     "en": "Aadhaar OTP: ••••••",
+     "hi": "आधार OTP: ••••••",
+     "mr": "आधार OTP: ••••••"
+    },
+    {
+     "en": "✓ Return verified",
+     "hi": "✓ रिटर्न सत्यापित",
+     "mr": "✓ विवरणपत्र पडताळले"
+    },
+    {
+     "en": "Ack no: 7xxxxxxxxx",
+     "hi": "पावती नं: 7xxxxxxxxx",
+     "mr": "पोच क्र: 7xxxxxxxxx"
+    }
+   ],
+   "details": [
+    {
+     "en": "A return that is not verified within the allowed time is treated as not filed. Verify the same day.",
+     "hi": "जो रिटर्न तय समय में सत्यापित न हो, उसे भरा हुआ नहीं माना जाता। उसी दिन वेरिफ़ाई करें।",
+     "mr": "ठरलेल्या वेळेत पडताळले न गेलेले विवरणपत्र भरलेले मानले जात नाही. त्याच दिवशी व्हेरिफाय करा."
+    },
+    {
+     "en": "File before the due date (usually 31 July for salaried individuals) to avoid a late fee.",
+     "hi": "लेट फ़ीस से बचने के लिए नियत तारीख़ (वेतनभोगियों के लिए आमतौर पर 31 जुलाई) से पहले भरें।",
+     "mr": "विलंब शुल्क टाळण्यासाठी देय तारखेपूर्वी (पगारदारांसाठी सहसा 31 जुलै) भरा."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Her income is below the taxable limit. Should she still file?",
+     "hi": "उसकी आय कर-योग्य सीमा से कम है। क्या फिर भी रिटर्न भरे?",
+     "mr": "तिचे उत्पन्न करपात्र मर्यादेपेक्षा कमी आहे. तरीही विवरणपत्र भरावे का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "No, nothing is payable",
+       "hi": "नहीं, कुछ देना नहीं है",
+       "mr": "नाही, काही भरायचे नाही"
+      },
+      "good": false,
+      "result": {
+       "en": "Then her ₹4,200 TDS stays with the government. Filing is how she gets it back.",
+       "hi": "तब उसका ₹4,200 TDS सरकार के पास ही रह जाएगा। रिटर्न भरकर ही वह वापस मिलता है।",
+       "mr": "मग तिचा ₹4,200 TDS सरकारकडेच राहील. विवरणपत्र भरूनच तो परत मिळतो."
+      }
+     },
+     {
+      "text": {
+       "en": "Yes, to claim the refund and build a record",
+       "hi": "हाँ, रिफ़ंड पाने और रिकॉर्ड बनाने के लिए",
+       "mr": "हो, परतावा मिळवण्यासाठी आणि नोंद तयार करण्यासाठी"
+      },
+      "good": true,
+      "result": {
+       "en": "Returns are also asked for in visa applications and loan applications. A clean filing history helps.",
+       "hi": "वीज़ा और लोन आवेदन में भी रिटर्न माँगे जाते हैं। साफ़ रिटर्न इतिहास मदद करता है।",
+       "mr": "व्हिसा आणि कर्ज अर्जांतही विवरणपत्रे मागितली जातात. स्वच्छ इतिहास उपयोगी पडतो."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "Track the refund",
+    "hi": "रिफ़ंड पर नज़र रखें",
+    "mr": "परताव्याचा मागोवा घ्या"
+   },
+   "text": {
+    "en": "Three weeks later an email says the return is processed under section 143(1) and a refund is issued. Two days after that ₹4,200 lands with the description 'TAX REFUND'.",
+    "hi": "तीन हफ़्ते बाद ईमेल आता है कि रिटर्न धारा 143(1) के तहत प्रोसेस हुआ और रिफ़ंड जारी किया गया। उसके दो दिन बाद ₹4,200 'TAX REFUND' विवरण के साथ आ जाते हैं।",
+    "mr": "तीन आठवड्यांनी ईमेल येतो की विवरणपत्र कलम 143(1) अंतर्गत प्रक्रिया झाले आणि परतावा दिला गेला. त्यानंतर दोन दिवसांनी ₹4,200 'TAX REFUND' वर्णनासह येतात."
+   },
+   "screen": [
+    {
+     "en": "Intimation u/s 143(1)",
+     "hi": "धारा 143(1) सूचना",
+     "mr": "कलम 143(1) सूचना"
+    },
+    {
+     "en": "Refund issued: ₹4,200",
+     "hi": "रिफ़ंड जारी: ₹4,200",
+     "mr": "परतावा दिला: ₹4,200"
+    },
+    {
+     "en": ">Credited: TAX REFUND ₹4,200",
+     "hi": ">जमा: TAX REFUND ₹4,200",
+     "mr": ">जमा: TAX REFUND ₹4,200"
+    },
+    {
+     "en": "!Fake 'refund' SMS with links exist. Check only on the portal.",
+     "hi": "!लिंक वाले नक़ली 'रिफ़ंड' SMS होते हैं। केवल पोर्टल पर जाँचें।",
+     "mr": "!लिंक असलेले बनावट 'परतावा' SMS असतात. फक्त पोर्टलवर तपासा."
+    }
+   ],
+   "details": [
+    {
+     "en": "Read the intimation: it shows the department's calculation. If it differs from yours, you can respond on the portal.",
+     "hi": "सूचना पढ़ें: इसमें विभाग की गणना होती है। अगर वह आपकी गणना से अलग हो, तो पोर्टल पर जवाब दे सकते हैं।",
+     "mr": "सूचना वाचा: त्यात विभागाची गणना असते. ती तुमच्याहून वेगळी असेल तर पोर्टलवर उत्तर देऊ शकता."
+    },
+    {
+     "en": "The tax department never asks for card details or OTPs to 'release your refund'.",
+     "hi": "टैक्स विभाग 'रिफ़ंड जारी करने' के लिए कभी कार्ड विवरण या OTP नहीं माँगता।",
+     "mr": "कर विभाग 'परतावा देण्यासाठी' कधीही कार्ड तपशील किंवा OTP मागत नाही."
+    }
+   ],
+   "cost": {
+    "en": "Wait: a few weeks",
+    "hi": "इंतज़ार: कुछ हफ़्ते",
+    "mr": "प्रतीक्षा: काही आठवडे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Gather Form 16, AIS and Form 26AS, and your bank interest certificate.",
+   "hi": "फ़ॉर्म 16, AIS, फ़ॉर्म 26AS और बैंक ब्याज प्रमाणपत्र जुटाएँ।",
+   "mr": "फॉर्म 16, AIS, फॉर्म 26AS आणि बँक व्याज प्रमाणपत्र गोळा करा."
+  },
+  {
+   "en": "Pick the right assessment year and form (ITR-1 for simple salary income).",
+   "hi": "सही निर्धारण वर्ष और फ़ॉर्म चुनें (सादी तनख़्वाह आय के लिए ITR-1)।",
+   "mr": "योग्य निर्धारण वर्ष आणि फॉर्म निवडा (साध्या पगार उत्पन्नासाठी ITR-1)."
+  },
+  {
+   "en": "Check every pre-filled number; add missing interest.",
+   "hi": "हर पहले से भरा अंक जाँचें; छूटा ब्याज जोड़ें।",
+   "mr": "प्रत्येक आधीच भरलेला आकडा तपासा; राहिलेले व्याज जोडा."
+  },
+  {
+   "en": "Validate your bank account for refunds, submit, and e-verify the same day.",
+   "hi": "रिफ़ंड के लिए बैंक खाता सत्यापित करें, जमा करें, और उसी दिन ई-वेरिफ़ाई करें।",
+   "mr": "परताव्यासाठी बँक खाते पडताळा, सादर करा, आणि त्याच दिवशी ई-व्हेरिफाय करा."
+  },
+  {
+   "en": "File even if tax is nil, if TDS was cut or you want a filing record.",
+   "hi": "टैक्स शून्य हो तब भी भरें, अगर TDS कटा हो या रिकॉर्ड चाहिए।",
+   "mr": "कर शून्य असला तरी भरा, TDS कापला असल्यास किंवा नोंद हवी असल्यास."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.incometax.gov.in"
+ ]
+}

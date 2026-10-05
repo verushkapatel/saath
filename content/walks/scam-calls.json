@@ -1,0 +1,292 @@
+{
+ "id": "scam-calls",
+ "guide": "scam-calls",
+ "title": {
+  "en": "The 'digital arrest' video call: the most frightening scam, and the one sentence that ends it",
+  "hi": "'डिजिटल अरेस्ट' वीडियो कॉल: सबसे डरावना धोखा, और वह एक वाक्य जो इसे ख़त्म करता है",
+  "mr": "'डिजिटल अरेस्ट' व्हिडिओ कॉल: सर्वात भीतीदायक फसवणूक, आणि ती संपवणारे एक वाक्य"
+ },
+ "setting": {
+  "en": "Verena's father, 58, gets a call about a 'parcel with drugs' in his name",
+  "hi": "वेरेना के 58 वर्षीय पिता को उनके नाम पर 'ड्रग्स वाले पार्सल' की कॉल आती है",
+  "mr": "वेरेनाच्या 58 वर्षांच्या वडिलांना त्यांच्या नावावर 'ड्रग्ज असलेल्या पार्सल' बद्दल फोन येतो"
+ },
+ "steps": [
+  {
+   "scene": "call",
+   "title": {
+    "en": "It starts with a courier",
+    "hi": "शुरुआत एक कूरियर से",
+    "mr": "सुरुवात एका कुरिअरपासून"
+   },
+   "text": {
+    "en": "A recorded voice says a parcel booked with his Aadhaar was seized at customs. Press 9 to speak to an officer. The 'officer' says it contained drugs and fake passports, and transfers him to 'police'.",
+    "hi": "एक रिकॉर्डेड आवाज़ कहती है कि उनके आधार से बुक एक पार्सल कस्टम में पकड़ा गया है। अफ़सर से बात के लिए 9 दबाएँ। 'अफ़सर' कहता है कि उसमें ड्रग्स और नक़ली पासपोर्ट थे, और उन्हें 'पुलिस' को ट्रांसफ़र करता है।",
+    "mr": "एक रेकॉर्ड केलेला आवाज सांगतो की त्यांच्या आधारने बुक केलेले पार्सल कस्टम्समध्ये पकडले गेले. अधिकाऱ्याशी बोलण्यासाठी 9 दाबा. 'अधिकारी' म्हणतो की त्यात ड्रग्ज आणि बनावट पासपोर्ट होते, आणि त्यांना 'पोलिसां'कडे जोडतो."
+   },
+   "screen": [
+    {
+     "en": "+92 / unknown",
+     "hi": "+92 / अज्ञात",
+     "mr": "+92 / अज्ञात"
+    },
+    {
+     "en": "'Customs department'",
+     "hi": "'कस्टम विभाग'",
+     "mr": "'कस्टम्स विभाग'"
+    },
+    {
+     "en": "'Your parcel is seized'",
+     "hi": "'आपका पार्सल ज़ब्त'",
+     "mr": "'तुमचे पार्सल जप्त'"
+    },
+    {
+     "en": "Press 9 →",
+     "hi": "9 दबाएँ →",
+     "mr": "9 दाबा →"
+    }
+   ],
+   "details": [
+    {
+     "en": "Government departments do not call you with recorded messages asking you to press a key about a case.",
+     "hi": "सरकारी विभाग किसी केस के बारे में रिकॉर्डेड संदेश से बटन दबाने को नहीं कहते।",
+     "mr": "सरकारी विभाग एखाद्या प्रकरणाबद्दल रेकॉर्ड केलेल्या संदेशाने बटण दाबायला सांगत नाहीत."
+    },
+    {
+     "en": "Every next person sounds more senior. The goal is fear, not information.",
+     "hi": "हर अगला व्यक्ति ज़्यादा बड़ा अफ़सर लगता है। मक़सद डर है, जानकारी नहीं।",
+     "mr": "प्रत्येक पुढची व्यक्ती अधिक वरिष्ठ वाटते. उद्देश भीती, माहिती नाही."
+    }
+   ],
+   "cost": {
+    "en": "Minute 1",
+    "hi": "पहला मिनट",
+    "mr": "पहिले मिनिट"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "The video call with a uniform and a 'warrant'",
+    "hi": "वर्दी और 'वारंट' वाला वीडियो कॉल",
+    "mr": "गणवेश आणि 'वॉरंट' असलेला व्हिडिओ कॉल"
+   },
+   "text": {
+    "en": "A video call opens: a man in police uniform, an office behind him, a logo on the wall. He shows an 'arrest warrant' with her father's name, says he is under 'digital arrest', must not tell anyone, and must stay on camera.",
+    "hi": "एक वीडियो कॉल खुलता है: पुलिस की वर्दी में एक आदमी, पीछे दफ़्तर, दीवार पर लोगो। वह पिता के नाम का 'गिरफ़्तारी वारंट' दिखाता है, कहता है कि वे 'डिजिटल अरेस्ट' में हैं, किसी को नहीं बताना है, और कैमरे पर बने रहना है।",
+    "mr": "एक व्हिडिओ कॉल सुरू होतो: पोलिसांच्या गणवेशात एक माणूस, मागे कार्यालय, भिंतीवर बोधचिन्ह. तो वडिलांच्या नावाचे 'अटक वॉरंट' दाखवतो, म्हणतो ते 'डिजिटल अरेस्ट' मध्ये आहेत, कोणालाही सांगायचे नाही, आणि कॅमेऱ्यासमोर राहायचे."
+   },
+   "screen": [
+    {
+     "en": "Video call",
+     "hi": "वीडियो कॉल",
+     "mr": "व्हिडिओ कॉल"
+    },
+    {
+     "en": "'CBI / Police'",
+     "hi": "'CBI / पुलिस'",
+     "mr": "'CBI / पोलीस'"
+    },
+    {
+     "en": "'ARREST WARRANT'",
+     "hi": "'गिरफ़्तारी वारंट'",
+     "mr": "'अटक वॉरंट'"
+    },
+    {
+     "en": "!'Do not disconnect'",
+     "hi": "!'कॉल मत काटो'",
+     "mr": "!'कॉल कट करू नका'"
+    },
+    {
+     "en": "!'Do not tell family'",
+     "hi": "!'परिवार को मत बताओ'",
+     "mr": "!'कुटुंबाला सांगू नका'"
+    }
+   ],
+   "details": [
+    {
+     "en": "'Digital arrest' does not exist in Indian law. Police do not arrest anyone over a video call.",
+     "hi": "भारतीय क़ानून में 'डिजिटल अरेस्ट' जैसा कुछ नहीं है। पुलिस वीडियो कॉल पर किसी को गिरफ़्तार नहीं करती।",
+     "mr": "भारतीय कायद्यात 'डिजिटल अरेस्ट' असे काही नाही. पोलीस व्हिडिओ कॉलवर कोणालाही अटक करत नाहीत."
+    },
+    {
+     "en": "'Do not tell anyone' is the giveaway. Isolation is how the scam works.",
+     "hi": "'किसी को मत बताओ' यही पोल खोलता है। अकेला करना ही इस धोखे का तरीक़ा है।",
+     "mr": "'कोणालाही सांगू नका' यानेच पोल खुलते. एकटे पाडणे हीच या फसवणुकीची पद्धत."
+    },
+    {
+     "en": "Uniforms, logos and documents on video are easy to fake.",
+     "hi": "वीडियो पर वर्दी, लोगो और काग़ज़ नक़ली बनाना आसान है।",
+     "mr": "व्हिडिओवर गणवेश, बोधचिन्ह आणि कागदपत्रे बनावट करणे सोपे आहे."
+    }
+   ],
+   "cost": {
+    "en": "Hour 1",
+    "hi": "पहला घंटा",
+    "mr": "पहिला तास"
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "The money demand: 'transfer to an RBI verification account'",
+    "hi": "पैसे की माँग: 'RBI सत्यापन खाते में ट्रांसफ़र'",
+    "mr": "पैशांची मागणी: 'RBI पडताळणी खात्यात ट्रान्सफर'"
+   },
+   "text": {
+    "en": "After two hours of fear, the 'officer' says that to prove innocence, his savings must be 'verified': transfer them to a 'secure RBI account', to be returned in 24 hours.",
+    "hi": "दो घंटे के डर के बाद 'अफ़सर' कहता है कि बेगुनाही साबित करने के लिए उनकी बचत का 'सत्यापन' होगा: उसे एक 'सुरक्षित RBI खाते' में ट्रांसफ़र करें, 24 घंटे में लौटा दी जाएगी।",
+    "mr": "दोन तासांच्या भीतीनंतर 'अधिकारी' म्हणतो की निर्दोषत्व सिद्ध करण्यासाठी त्यांच्या बचतीची 'पडताळणी' करावी लागेल: ती 'सुरक्षित RBI खात्यात' ट्रान्सफर करा, 24 तासांत परत मिळेल."
+   },
+   "screen": [
+    {
+     "en": "'Officer': Transfer ₹6,50,000",
+     "hi": "'अफ़सर': ₹6,50,000 ट्रांसफ़र करें",
+     "mr": "'अधिकारी': ₹6,50,000 ट्रान्सफर करा"
+    },
+    {
+     "en": "'Officer': to RBI safe account",
+     "hi": "'अफ़सर': RBI सुरक्षित खाते में",
+     "mr": "'अधिकारी': RBI सुरक्षित खात्यात"
+    },
+    {
+     "en": "'Officer': refunded in 24 hrs",
+     "hi": "'अफ़सर': 24 घंटे में वापस",
+     "mr": "'अधिकारी': 24 तासांत परत"
+    },
+    {
+     "en": "!RBI never holds money for citizens",
+     "hi": "!RBI कभी नागरिकों का पैसा नहीं रखता",
+     "mr": "!RBI कधीही नागरिकांचे पैसे ठेवत नाही"
+    }
+   ],
+   "details": [
+    {
+     "en": "No agency 'verifies' money by asking you to transfer it. RBI does not hold individuals' accounts.",
+     "hi": "कोई एजेंसी पैसा ट्रांसफ़र करवाकर उसका 'सत्यापन' नहीं करती। RBI आम लोगों के खाते नहीं रखता।",
+     "mr": "कोणतीही यंत्रणा पैसे ट्रान्सफर करायला लावून त्यांची 'पडताळणी' करत नाही. RBI सामान्य लोकांची खाती ठेवत नाही."
+    }
+   ],
+   "cost": {
+    "en": "₹6.5 lakh at stake",
+    "hi": "₹6.5 लाख दाँव पर",
+    "mr": "₹6.5 लाख पणाला"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Verena walks in and sees her father on the video call, shaking. What does she do?",
+     "hi": "वेरेना अंदर आती है और पिता को वीडियो कॉल पर काँपते देखती है। वह क्या करे?",
+     "mr": "वेरेना आत येते आणि वडिलांना व्हिडिओ कॉलवर थरथरताना पाहते. तिने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Let them finish, the officer sounds real",
+       "hi": "बात पूरी होने दे, अफ़सर असली लगता है",
+       "mr": "बोलणे पूर्ण होऊ द्यावे, अधिकारी खरा वाटतो"
+      },
+      "good": false,
+      "result": {
+       "en": "Every minute on the call makes the fear stronger and the transfer more likely.",
+       "hi": "कॉल का हर मिनट डर बढ़ाता है और ट्रांसफ़र की संभावना भी।",
+       "mr": "कॉलचा प्रत्येक मिनिट भीती वाढवतो आणि ट्रान्सफरची शक्यताही."
+      }
+     },
+     {
+      "text": {
+       "en": "End the call, and say: 'This is a scam. Real police never do this.'",
+       "hi": "कॉल काटे, और कहे: 'यह धोखा है। असली पुलिस ऐसा कभी नहीं करती।'",
+       "mr": "कॉल बंद करावा, आणि म्हणावे: 'ही फसवणूक आहे. खरे पोलीस असे कधीच करत नाहीत.'"
+      },
+      "good": true,
+      "result": {
+       "en": "One calm, certain sentence from someone they trust breaks the isolation the scam depends on.",
+       "hi": "भरोसेमंद व्यक्ति का एक शांत, पक्का वाक्य उस अकेलेपन को तोड़ देता है जिस पर धोखा टिका है।",
+       "mr": "विश्वासू व्यक्तीचे एक शांत, ठाम वाक्य फसवणूक ज्या एकटेपणावर अवलंबून आहे ते तोडते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "police",
+   "title": {
+    "en": "Report it, even though no money went",
+    "hi": "रिपोर्ट करें, भले पैसा न गया हो",
+    "mr": "पैसे गेले नसले तरी तक्रार करा"
+   },
+   "text": {
+    "en": "They call 1930 and then file on cybercrime.gov.in with the numbers, screenshots of the 'warrant' and the time of the calls. Reports help police trace the groups and warn others.",
+    "hi": "वे 1930 पर कॉल करते हैं और फिर नंबरों, 'वारंट' के स्क्रीनशॉट और कॉल के समय के साथ cybercrime.gov.in पर शिकायत करते हैं। रिपोर्ट से पुलिस गिरोहों तक पहुँचती है और दूसरों को चेतावनी मिलती है।",
+    "mr": "ते 1930 वर कॉल करतात आणि मग नंबर, 'वॉरंट' चे स्क्रीनशॉट आणि कॉलच्या वेळेसह cybercrime.gov.in वर तक्रार नोंदवतात. तक्रारींमुळे पोलीस टोळ्यांपर्यंत पोहोचतात आणि इतरांना सावध केले जाते."
+   },
+   "screen": [
+    {
+     "en": "CYBER HELPLINE 1930",
+     "hi": "साइबर हेल्पलाइन 1930",
+     "mr": "सायबर हेल्पलाइन 1930"
+    },
+    {
+     "en": "File: cybercrime.gov.in",
+     "hi": "दर्ज: cybercrime.gov.in",
+     "mr": "नोंदवा: cybercrime.gov.in"
+    },
+    {
+     "en": "Report number: Chakshu",
+     "hi": "नंबर रिपोर्ट: चक्षु",
+     "mr": "नंबर नोंदवा: चक्षू"
+    },
+    {
+     "en": "Keep screenshots",
+     "hi": "स्क्रीनशॉट रखें",
+     "mr": "स्क्रीनशॉट ठेवा"
+    }
+   ],
+   "details": [
+    {
+     "en": "If money was transferred, speed matters most: 1930 and the bank within the first hour.",
+     "hi": "पैसा ट्रांसफ़र हुआ हो तो तेज़ी सबसे ज़रूरी: पहले घंटे में 1930 और बैंक।",
+     "mr": "पैसे ट्रान्सफर झाले असल्यास वेग सर्वात महत्त्वाचा: पहिल्या तासात 1930 आणि बँक."
+    },
+    {
+     "en": "Shame keeps many victims quiet. These scams fool doctors, engineers and retired officers. Talking about it is how families protect each other.",
+     "hi": "शर्म के कारण कई पीड़ित चुप रहते हैं। ये धोखे डॉक्टरों, इंजीनियरों और रिटायर्ड अफ़सरों को भी फँसाते हैं। इस पर बात करना ही परिवारों की सुरक्षा है।",
+     "mr": "लाजेमुळे अनेक पीडित गप्प राहतात. ही फसवणूक डॉक्टर, इंजिनिअर आणि निवृत्त अधिकाऱ्यांनाही फसवते. याबद्दल बोलणे हेच कुटुंबांचे संरक्षण."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "There is no 'digital arrest' in law. Police never arrest or question you on a video call.",
+   "hi": "क़ानून में 'डिजिटल अरेस्ट' नहीं है। पुलिस वीडियो कॉल पर न गिरफ़्तार करती है, न पूछताछ।",
+   "mr": "कायद्यात 'डिजिटल अरेस्ट' नाही. पोलीस व्हिडिओ कॉलवर अटक किंवा चौकशी करत नाहीत."
+  },
+  {
+   "en": "'Do not tell anyone' and 'stay on camera' are the scam's signature.",
+   "hi": "'किसी को मत बताओ' और 'कैमरे पर रहो' इस धोखे की पहचान हैं।",
+   "mr": "'कोणालाही सांगू नका' आणि 'कॅमेऱ्यासमोर राहा' ही या फसवणुकीची ओळख."
+  },
+  {
+   "en": "No agency asks you to transfer money to 'verify' it.",
+   "hi": "कोई एजेंसी 'सत्यापन' के लिए पैसा ट्रांसफ़र करने को नहीं कहती।",
+   "mr": "कोणतीही यंत्रणा 'पडताळणी' साठी पैसे ट्रान्सफर करायला सांगत नाही."
+  },
+  {
+   "en": "End the call, talk to family, then report on 1930 and cybercrime.gov.in.",
+   "hi": "कॉल काटें, परिवार से बात करें, फिर 1930 और cybercrime.gov.in पर रिपोर्ट करें।",
+   "mr": "कॉल बंद करा, कुटुंबाशी बोला, मग 1930 आणि cybercrime.gov.in वर तक्रार करा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://cybercrime.gov.in",
+  "https://sancharsaathi.gov.in",
+  "https://www.pib.gov.in"
+ ]
+}

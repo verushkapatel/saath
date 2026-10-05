@@ -1,0 +1,349 @@
+{
+ "id": "money-missing",
+ "guide": "money-missing",
+ "title": {
+  "en": "Money missing from your account: the complaint, the timeline and how Verena got ₹12,400 back",
+  "hi": "खाते से पैसा ग़ायब: शिकायत, समय-सीमा, और वेरेना को ₹12,400 वापस कैसे मिले",
+  "mr": "खात्यातून पैसे गायब: तक्रार, मुदत, आणि वेरेनाला ₹12,400 परत कसे मिळाले"
+ },
+ "setting": {
+  "en": "A Sunday morning, an SMS for a payment she never made",
+  "hi": "रविवार सुबह, एक ऐसे भुगतान का SMS जो उसने कभी किया ही नहीं",
+  "mr": "रविवारी सकाळी, तिने कधीच न केलेल्या पेमेंटचा SMS"
+ },
+ "steps": [
+  {
+   "scene": "sms",
+   "title": {
+    "en": "An alert you do not recognise",
+    "hi": "एक अलर्ट जिसे आप नहीं पहचानते",
+    "mr": "ओळख न पटणारा अलर्ट"
+   },
+   "text": {
+    "en": "At 7:42 am an SMS says ₹12,400 was spent on her debit card at an online store. Verena is still in bed; her card is in her wallet. She does not panic and does not click anything in the SMS.",
+    "hi": "सुबह 7:42 पर SMS आता है कि उसके डेबिट कार्ड से एक ऑनलाइन स्टोर पर ₹12,400 ख़र्च हुए। वेरेना अभी बिस्तर पर है; कार्ड बटुए में है। वह घबराती नहीं और SMS में किसी चीज़ पर क्लिक नहीं करती।",
+    "mr": "सकाळी 7:42 ला SMS येतो की तिच्या डेबिट कार्डने एका ऑनलाइन दुकानात ₹12,400 खर्च झाले. वेरेना अजून पलंगावर आहे; कार्ड पाकिटात आहे. ती घाबरत नाही आणि SMS मधील कशावरही क्लिक करत नाही."
+   },
+   "screen": [
+    {
+     "en": "Bank alert 07:42",
+     "hi": "बैंक अलर्ट 07:42",
+     "mr": "बँक अलर्ट 07:42"
+    },
+    {
+     "en": "₹12,400 debited, card ••2741",
+     "hi": "₹12,400 कटे, कार्ड ••2741",
+     "mr": "₹12,400 कापले, कार्ड ••2741"
+    },
+    {
+     "en": "at ONLINE STORE",
+     "hi": "ONLINE STORE पर",
+     "mr": "ONLINE STORE वर"
+    },
+    {
+     "en": "Not you? Call 1800-xxx-xxxx",
+     "hi": "आप नहीं? 1800-xxx-xxxx पर कॉल",
+     "mr": "तुम्ही नाही? 1800-xxx-xxxx वर कॉल"
+    },
+    {
+     "en": ">This was not me",
+     "hi": ">यह मैंने नहीं किया",
+     "mr": ">हे मी केले नाही"
+    }
+   ],
+   "details": [
+    {
+     "en": "RBI's rules on unauthorised electronic transactions protect you best when you report fast: within three working days, your liability can be zero if you were not careless.",
+     "hi": "अनधिकृत इलेक्ट्रॉनिक लेन-देन पर RBI के नियम सबसे अच्छी सुरक्षा तब देते हैं जब आप जल्दी रिपोर्ट करें: तीन कामकाजी दिनों के अंदर, और लापरवाही न हो, तो आपकी ज़िम्मेदारी शून्य हो सकती है।",
+     "mr": "अनधिकृत इलेक्ट्रॉनिक व्यवहारांवरील RBI चे नियम तुम्ही लवकर कळवल्यास सर्वोत्तम संरक्षण देतात: तीन कामकाजाच्या दिवसांत, आणि तुमची निष्काळजी नसल्यास, तुमची जबाबदारी शून्य असू शकते."
+    },
+    {
+     "en": "Reporting later can leave you liable for part of the loss. Delay is the expensive part.",
+     "hi": "देर से रिपोर्ट करने पर नुक़सान का एक हिस्सा आप पर आ सकता है। महँगी चीज़ देरी है।",
+     "mr": "उशिरा कळवल्यास नुकसानाचा काही भाग तुमच्यावर येऊ शकतो. महाग पडते ती उशीर."
+    }
+   ],
+   "cost": {
+    "en": "Minute 0",
+    "hi": "मिनट 0",
+    "mr": "मिनिट 0"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Block the card in the app, right now",
+    "hi": "ऐप में अभी कार्ड ब्लॉक करें",
+    "mr": "ॲपमध्ये लगेच कार्ड ब्लॉक करा"
+   },
+   "text": {
+    "en": "She opens the bank app, goes to Cards, and taps 'Block card permanently'. A second charge attempt at 7:51 is declined. Then she calls the number printed on the card to report the transaction as fraud.",
+    "hi": "वह बैंक ऐप खोलकर कार्ड में जाती है और 'कार्ड स्थायी रूप से ब्लॉक करें' दबाती है। 7:51 पर दूसरी कटौती की कोशिश अस्वीकार हो जाती है। फिर वह कार्ड पर छपे नंबर पर कॉल करके लेन-देन को धोखाधड़ी के रूप में रिपोर्ट करती है।",
+    "mr": "ती बँक ॲप उघडून कार्ड्समध्ये जाते आणि 'कार्ड कायमचे ब्लॉक करा' दाबते. 7:51 ला दुसरा कपातीचा प्रयत्न नाकारला जातो. मग ती कार्डवर छापलेल्या नंबरवर फोन करून व्यवहार फसवणूक म्हणून नोंदवते."
+   },
+   "screen": [
+    {
+     "en": "Card ••2741",
+     "hi": "कार्ड ••2741",
+     "mr": "कार्ड ••2741"
+    },
+    {
+     "en": "✓ Blocked permanently",
+     "hi": "✓ स्थायी रूप से ब्लॉक",
+     "mr": "✓ कायमचे ब्लॉक"
+    },
+    {
+     "en": "07:51 ₹9,999 attempt: DECLINED",
+     "hi": "07:51 ₹9,999 कोशिश: अस्वीकार",
+     "mr": "07:51 ₹9,999 प्रयत्न: नाकारला"
+    },
+    {
+     "en": "Complaint no: CRN-58xxxx",
+     "hi": "शिकायत नंबर: CRN-58xxxx",
+     "mr": "तक्रार क्रमांक: CRN-58xxxx"
+    }
+   ],
+   "details": [
+    {
+     "en": "Ask for, and write down, a complaint reference number with the date and time. That timestamp is what proves you reported quickly.",
+     "hi": "तारीख़ और समय के साथ शिकायत संदर्भ नंबर माँगें और लिख लें। यही समय साबित करता है कि आपने जल्दी रिपोर्ट किया।",
+     "mr": "तारीख आणि वेळेसह तक्रार संदर्भ क्रमांक मागा आणि लिहून घ्या. हाच वेळ सिद्ध करतो की तुम्ही लवकर कळवले."
+    },
+    {
+     "en": "The bank must acknowledge your complaint. You can also reply to the bank's alert SMS or email if it offers that route.",
+     "hi": "बैंक को आपकी शिकायत की पावती देनी होती है। अगर बैंक की SMS या ईमेल में जवाब देने का रास्ता हो, तो उससे भी रिपोर्ट कर सकते हैं।",
+     "mr": "बँकेला तुमच्या तक्रारीची पोच द्यावी लागते. बँकेच्या अलर्ट SMS किंवा ईमेलमध्ये उत्तर देण्याचा मार्ग असल्यास तोही वापरू शकता."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "Put it in writing, the same day",
+    "hi": "उसी दिन लिखित में दें",
+    "mr": "त्याच दिवशी लेखी द्या"
+   },
+   "text": {
+    "en": "She sends an email to the bank's official complaint address and fills the dispute form in the app: date, time, amount, merchant, card number ending, and a clear line that she did not make or authorise it and has not shared any OTP or PIN.",
+    "hi": "वह बैंक के आधिकारिक शिकायत पते पर ईमेल भेजती है और ऐप में विवाद फ़ॉर्म भरती है: तारीख़, समय, रकम, मर्चेंट, कार्ड के आख़िरी अंक, और साफ़ लाइन कि उसने यह न किया न अनुमति दी, और कोई OTP या PIN साझा नहीं किया।",
+    "mr": "ती बँकेच्या अधिकृत तक्रार पत्त्यावर ईमेल पाठवते आणि ॲपमध्ये वाद फॉर्म भरते: तारीख, वेळ, रक्कम, मर्चंट, कार्डचे शेवटचे अंक, आणि स्पष्ट ओळ की तिने हे केले नाही, परवानगी दिली नाही, आणि कोणताही OTP किंवा PIN शेअर केला नाही."
+   },
+   "screen": [
+    {
+     "en": "To: bank complaints",
+     "hi": "प्रति: बैंक शिकायत",
+     "mr": "प्रति: बँक तक्रार"
+    },
+    {
+     "en": "Unauthorised debit ₹12,400",
+     "hi": "अनधिकृत कटौती ₹12,400",
+     "mr": "अनधिकृत कपात ₹12,400"
+    },
+    {
+     "en": "Card ••2741, 12 Oct, 07:42",
+     "hi": "कार्ड ••2741, 12 अक्टू, 07:42",
+     "mr": "कार्ड ••2741, 12 ऑक्टो, 07:42"
+    },
+    {
+     "en": "Ref CRN-58xxxx",
+     "hi": "रेफ़ CRN-58xxxx",
+     "mr": "संदर्भ CRN-58xxxx"
+    },
+    {
+     "en": "No OTP/PIN shared. Card with me.",
+     "hi": "कोई OTP/PIN साझा नहीं। कार्ड मेरे पास।",
+     "mr": "कोणताही OTP/PIN शेअर नाही. कार्ड माझ्याकडे."
+    },
+    {
+     "en": "Please reverse under RBI rules.",
+     "hi": "कृपया RBI नियमों के तहत लौटाएँ।",
+     "mr": "कृपया RBI नियमांनुसार परत करा."
+    }
+   ],
+   "details": [
+    {
+     "en": "Under RBI's framework the bank should credit the amount to your account (as a shadow credit) within 10 working days of your report, while it investigates.",
+     "hi": "RBI के ढाँचे के तहत बैंक को जाँच के दौरान आपकी रिपोर्ट के 10 कामकाजी दिनों में रकम आपके खाते में (शैडो क्रेडिट के रूप में) जमा करनी चाहिए।",
+     "mr": "RBI च्या चौकटीनुसार चौकशी सुरू असताना तुमच्या तक्रारीपासून 10 कामकाजाच्या दिवसांत बँकेने रक्कम तुमच्या खात्यात (शॅडो क्रेडिट म्हणून) जमा करायला हवी."
+    },
+    {
+     "en": "The complaint should be resolved within 90 days. Keep copies of everything you send.",
+     "hi": "शिकायत 90 दिनों में निपटनी चाहिए। जो भी भेजें, उसकी कॉपी रखें।",
+     "mr": "तक्रार 90 दिवसांत निकाली निघायला हवी. पाठवलेल्या प्रत्येक गोष्टीची प्रत ठेवा."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "police",
+   "title": {
+    "en": "Report the cyber fraud too",
+    "hi": "साइबर धोखाधड़ी की भी रिपोर्ट करें",
+    "mr": "सायबर फसवणुकीचीही तक्रार करा"
+   },
+   "text": {
+    "en": "Because it is a fraud, she also calls 1930 and files on cybercrime.gov.in. The acknowledgement number goes into her email to the bank.",
+    "hi": "क्योंकि यह धोखाधड़ी है, वह 1930 पर भी कॉल करती है और cybercrime.gov.in पर शिकायत करती है। पावती नंबर वह बैंक को भेजे ईमेल में जोड़ती है।",
+    "mr": "ही फसवणूक असल्याने ती 1930 वरही कॉल करते आणि cybercrime.gov.in वर तक्रार करते. पोच क्रमांक ती बँकेला पाठवलेल्या ईमेलमध्ये जोडते."
+   },
+   "screen": [
+    {
+     "en": "CYBER HELPLINE 1930",
+     "hi": "साइबर हेल्पलाइन 1930",
+     "mr": "सायबर हेल्पलाइन 1930"
+    },
+    {
+     "en": "Ack no: 2xxxxxxxxxxx",
+     "hi": "पावती नं: 2xxxxxxxxxxx",
+     "mr": "पोच क्र: 2xxxxxxxxxxx"
+    },
+    {
+     "en": "Attach: SMS, statement",
+     "hi": "जोड़ें: SMS, स्टेटमेंट",
+     "mr": "जोडा: SMS, स्टेटमेंट"
+    }
+   ],
+   "details": [
+    {
+     "en": "A police or cyber complaint number is often asked for by banks in fraud cases. Filing early saves a second trip.",
+     "hi": "धोखाधड़ी के मामलों में बैंक अक्सर पुलिस या साइबर शिकायत नंबर माँगते हैं। जल्दी दर्ज करने से दूसरा चक्कर बचता है।",
+     "mr": "फसवणुकीच्या प्रकरणांत बँका अनेकदा पोलीस किंवा सायबर तक्रार क्रमांक मागतात. लवकर नोंदवल्याने दुसरी फेरी वाचते."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes",
+    "hi": "20 मिनट",
+    "mr": "20 मिनिटे"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Follow up on fixed days, then escalate",
+    "hi": "तय दिनों पर फ़ॉलो-अप करें, फिर ऊपर ले जाएँ",
+    "mr": "ठरलेल्या दिवशी पाठपुरावा करा, मग वरिष्ठांकडे न्या"
+   },
+   "text": {
+    "en": "On day 8 the ₹12,400 appears in her account as a temporary credit. On day 41 the bank confirms the chargeback and makes it permanent. Had it not, she knew her next steps.",
+    "hi": "8वें दिन ₹12,400 उसके खाते में अस्थायी क्रेडिट के रूप में दिखते हैं। 41वें दिन बैंक चार्जबैक की पुष्टि करके इसे स्थायी कर देता है। ऐसा न होता तो उसे अगले कदम पता थे।",
+    "mr": "8 व्या दिवशी ₹12,400 तिच्या खात्यात तात्पुरते क्रेडिट म्हणून दिसतात. 41 व्या दिवशी बँक चार्जबॅकची पुष्टी करून ते कायमचे करते. तसे झाले नसते तर तिला पुढची पावले माहीत होती."
+   },
+   "screen": [
+    {
+     "en": "Day 0: reported",
+     "hi": "दिन 0: रिपोर्ट",
+     "mr": "दिवस 0: कळवले"
+    },
+    {
+     "en": "Day 8: ₹12,400 shadow credit",
+     "hi": "दिन 8: ₹12,400 शैडो क्रेडिट",
+     "mr": "दिवस 8: ₹12,400 शॅडो क्रेडिट"
+    },
+    {
+     "en": "Day 30: no reply? → escalate",
+     "hi": "दिन 30: जवाब नहीं? → ऊपर",
+     "mr": "दिवस 30: उत्तर नाही? → वर"
+    },
+    {
+     "en": "Day 41: ✓ final credit",
+     "hi": "दिन 41: ✓ अंतिम क्रेडिट",
+     "mr": "दिवस 41: ✓ अंतिम क्रेडिट"
+    }
+   ],
+   "details": [
+    {
+     "en": "If the bank does not reply within 30 days, or you are not satisfied, complain to the RBI Ombudsman through cms.rbi.org.in. It is free.",
+     "hi": "अगर बैंक 30 दिनों में जवाब न दे, या आप संतुष्ट न हों, तो cms.rbi.org.in पर RBI लोकपाल से शिकायत करें। यह मुफ़्त है।",
+     "mr": "बँकेने 30 दिवसांत उत्तर दिले नाही, किंवा तुम्ही समाधानी नसाल, तर cms.rbi.org.in वर RBI लोकपालाकडे तक्रार करा. ती मोफत आहे."
+    },
+    {
+     "en": "A new card is issued free or for a small fee. Update it on subscriptions and saved payments.",
+     "hi": "नया कार्ड मुफ़्त या कम शुल्क पर मिलता है। सब्सक्रिप्शन और सेव भुगतान में इसे अपडेट करें।",
+     "mr": "नवे कार्ड मोफत किंवा थोड्या शुल्कात मिळते. सबस्क्रिप्शन आणि सेव्ह केलेल्या पेमेंटमध्ये ते अद्ययावत करा."
+    }
+   ],
+   "cost": {
+    "en": "Weeks, but free",
+    "hi": "हफ़्ते, पर मुफ़्त",
+    "mr": "आठवडे, पण मोफत"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Day 20: the bank says 'under investigation'. What should Verena do?",
+     "hi": "दिन 20: बैंक कहता है 'जाँच चल रही है'। वेरेना क्या करे?",
+     "mr": "दिवस 20: बँक म्हणते 'चौकशी सुरू आहे'. वेरेनाने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Give up, it was probably her fault",
+       "hi": "छोड़ दे, शायद ग़लती उसी की थी",
+       "mr": "सोडून द्यावे, कदाचित चूक तिचीच होती"
+      },
+      "good": false,
+      "result": {
+       "en": "She reported within hours and shared nothing. The rules are on her side; giving up is the only way to lose.",
+       "hi": "उसने घंटों में रिपोर्ट किया और कुछ साझा नहीं किया। नियम उसके पक्ष में हैं; हार मानना ही हारने का अकेला तरीक़ा है।",
+       "mr": "तिने काही तासांत कळवले आणि काहीही शेअर केले नाही. नियम तिच्या बाजूने आहेत; हार मानणे हाच हरण्याचा एकमेव मार्ग."
+      }
+     },
+     {
+      "text": {
+       "en": "Wait until day 30, then go to the RBI Ombudsman if needed",
+       "hi": "दिन 30 तक इंतज़ार, फिर ज़रूरत हो तो RBI लोकपाल",
+       "mr": "दिवस 30 पर्यंत थांबावे, मग गरज असल्यास RBI लोकपाल"
+      },
+      "good": true,
+      "result": {
+       "en": "Calm, dated follow-up with the complaint number is what gets results.",
+       "hi": "शिकायत नंबर के साथ शांत, तारीख़वार फ़ॉलो-अप से ही नतीजा मिलता है।",
+       "mr": "तक्रार क्रमांकासह शांत, तारखेनुसार पाठपुरावा केल्यानेच निकाल मिळतो."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Do not click anything in the alert. Block the card in the app at once.",
+   "hi": "अलर्ट में किसी चीज़ पर क्लिक न करें। तुरंत ऐप में कार्ड ब्लॉक करें।",
+   "mr": "अलर्टमधील कशावरही क्लिक करू नका. लगेच ॲपमध्ये कार्ड ब्लॉक करा."
+  },
+  {
+   "en": "Report to the bank on the card's number the same day and get a complaint number.",
+   "hi": "उसी दिन कार्ड वाले नंबर पर बैंक को रिपोर्ट करें और शिकायत नंबर लें।",
+   "mr": "त्याच दिवशी कार्डवरील नंबरवर बँकेला कळवा आणि तक्रार क्रमांक घ्या."
+  },
+  {
+   "en": "Reporting within three working days, without carelessness, can mean zero liability.",
+   "hi": "लापरवाही के बिना तीन कामकाजी दिनों में रिपोर्ट करने पर ज़िम्मेदारी शून्य हो सकती है।",
+   "mr": "निष्काळजीपणा न करता तीन कामकाजाच्या दिवसांत कळवल्यास जबाबदारी शून्य असू शकते."
+  },
+  {
+   "en": "Write it down, file on 1930 and cybercrime.gov.in, and keep copies.",
+   "hi": "लिखित में दें, 1930 और cybercrime.gov.in पर दर्ज करें, और कॉपी रखें।",
+   "mr": "लेखी द्या, 1930 आणि cybercrime.gov.in वर नोंदवा, आणि प्रती ठेवा."
+  },
+  {
+   "en": "No answer in 30 days: RBI Ombudsman at cms.rbi.org.in, free.",
+   "hi": "30 दिनों में जवाब नहीं: cms.rbi.org.in पर RBI लोकपाल, मुफ़्त।",
+   "mr": "30 दिवसांत उत्तर नाही: cms.rbi.org.in वर RBI लोकपाल, मोफत."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://cms.rbi.org.in",
+  "https://cybercrime.gov.in"
+ ]
+}

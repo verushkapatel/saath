@@ -1,0 +1,388 @@
+{
+ "id": "credit-score",
+ "guide": "credit-score",
+ "title": {
+  "en": "Checking and fixing your credit score, from the first free report to a corrected mistake",
+  "hi": "क्रेडिट स्कोर देखना और सुधारना, पहली मुफ़्त रिपोर्ट से ग़लती ठीक होने तक",
+  "mr": "क्रेडिट स्कोर पाहणे आणि सुधारणे, पहिल्या मोफत अहवालापासून चूक दुरुस्त होईपर्यंत"
+ },
+ "setting": {
+  "en": "Verena is 30 and about to apply for a home loan",
+  "hi": "वेरेना 30 की है और होम लोन के लिए आवेदन करने वाली है",
+  "mr": "वेरेना 30 वर्षांची आहे आणि गृहकर्जासाठी अर्ज करणार आहे"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Get the free report from a credit bureau's own website",
+    "hi": "क्रेडिट ब्यूरो की अपनी वेबसाइट से मुफ़्त रिपोर्ट लें",
+    "mr": "क्रेडिट ब्युरोच्या स्वतःच्या वेबसाइटवरून मोफत अहवाल घ्या"
+   },
+   "text": {
+    "en": "India has four credit bureaus licensed by RBI: TransUnion CIBIL, Experian, Equifax and CRIF High Mark. Each must give you one free full report a year. Verena types the bureau's address herself and requests the free report with her PAN and mobile OTP.",
+    "hi": "भारत में RBI से लाइसेंस प्राप्त चार क्रेडिट ब्यूरो हैं: TransUnion CIBIL, Experian, Equifax और CRIF High Mark। हर एक को साल में एक मुफ़्त पूरी रिपोर्ट देनी होती है। वेरेना ब्यूरो का पता ख़ुद टाइप करती है और पैन और मोबाइल OTP से मुफ़्त रिपोर्ट माँगती है।",
+    "mr": "भारतात RBI परवानाधारक चार क्रेडिट ब्युरो आहेत: TransUnion CIBIL, Experian, Equifax आणि CRIF High Mark. प्रत्येकाने वर्षातून एक मोफत पूर्ण अहवाल द्यायलाच हवा. वेरेना ब्युरोचा पत्ता स्वतः टाइप करते आणि पॅन आणि मोबाइल OTP ने मोफत अहवाल मागते."
+   },
+   "screen": [
+    {
+     "en": "Free credit report",
+     "hi": "मुफ़्त क्रेडिट रिपोर्ट",
+     "mr": "मोफत क्रेडिट अहवाल"
+    },
+    {
+     "en": "PAN: ABCPD••••K",
+     "hi": "पैन: ABCPD••••K",
+     "mr": "पॅन: ABCPD••••K"
+    },
+    {
+     "en": "Mobile OTP: ✓",
+     "hi": "मोबाइल OTP: ✓",
+     "mr": "मोबाइल OTP: ✓"
+    },
+    {
+     "en": "Score: 712",
+     "hi": "स्कोर: 712",
+     "mr": "स्कोर: 712"
+    },
+    {
+     "en": "Range 300–900",
+     "hi": "सीमा 300–900",
+     "mr": "मर्यादा 300–900"
+    }
+   ],
+   "details": [
+    {
+     "en": "Checking your own score is a 'soft enquiry' and does not lower it.",
+     "hi": "अपना स्कोर ख़ुद देखना 'सॉफ़्ट इन्क्वायरी' है और इससे स्कोर नहीं गिरता।",
+     "mr": "स्वतःचा स्कोर पाहणे ही 'सॉफ्ट इन्क्वायरी' आहे आणि त्याने स्कोर कमी होत नाही."
+    },
+    {
+     "en": "Avoid unknown apps that ask for many permissions just to 'show your score'. Use the bureau's site or your bank's app.",
+     "hi": "केवल 'स्कोर दिखाने' के लिए ढेर सारी अनुमति माँगने वाले अनजान ऐप से बचें। ब्यूरो की साइट या अपने बैंक का ऐप इस्तेमाल करें।",
+     "mr": "फक्त 'स्कोर दाखवण्यासाठी' अनेक परवानग्या मागणाऱ्या अनोळखी ॲपपासून दूर राहा. ब्युरोची साइट किंवा तुमच्या बँकेचे ॲप वापरा."
+    },
+    {
+     "en": "Most lenders treat 750 or above as good. 712 is fair; something in the report is pulling it down.",
+     "hi": "ज़्यादातर क़र्ज़दाता 750 या ऊपर को अच्छा मानते हैं। 712 ठीक-ठाक है; रिपोर्ट में कुछ है जो इसे नीचे खींच रहा है।",
+     "mr": "बहुतेक कर्जदाते 750 किंवा त्यापेक्षा जास्त चांगला मानतात. 712 बरा आहे; अहवालात काहीतरी त्याला खाली ओढत आहे."
+    }
+   ],
+   "cost": {
+    "en": "Free, 10 minutes",
+    "hi": "मुफ़्त, 10 मिनट",
+    "mr": "मोफत, 10 मिनिटे"
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Read the report section by section",
+    "hi": "रिपोर्ट को हिस्सा-दर-हिस्सा पढ़ें",
+    "mr": "अहवाल विभागवार वाचा"
+   },
+   "text": {
+    "en": "The score is only the summary. Verena prints the report and goes through it with a pencil: personal details, every account, payment history, and the list of enquiries.",
+    "hi": "स्कोर तो बस सारांश है। वेरेना रिपोर्ट प्रिंट करके पेंसिल के साथ पढ़ती है: निजी जानकारी, हर खाता, भुगतान का इतिहास, और पूछताछ की सूची।",
+    "mr": "स्कोर हा फक्त सारांश. वेरेना अहवाल छापून पेन्सिलसह वाचते: वैयक्तिक माहिती, प्रत्येक खाते, भरण्याचा इतिहास, आणि चौकशींची यादी."
+   },
+   "screen": [
+    {
+     "en": "CREDIT REPORT",
+     "hi": "क्रेडिट रिपोर्ट",
+     "mr": "क्रेडिट अहवाल"
+    },
+    {
+     "en": "Name/DOB/PAN: ✓",
+     "hi": "नाम/जन्म तिथि/पैन: ✓",
+     "mr": "नाव/जन्मतारीख/पॅन: ✓"
+    },
+    {
+     "en": "Credit card X: 0 days late",
+     "hi": "क्रेडिट कार्ड X: 0 दिन देरी",
+     "mr": "क्रेडिट कार्ड X: 0 दिवस उशीर"
+    },
+    {
+     "en": "Two-wheeler loan: CLOSED",
+     "hi": "टू-व्हीलर लोन: बंद",
+     "mr": "दुचाकी कर्ज: बंद"
+    },
+    {
+     "en": "!Consumer loan ₹18,000: 90+ DPD",
+     "hi": "!कंज़्यूमर लोन ₹18,000: 90+ DPD",
+     "mr": "!ग्राहक कर्ज ₹18,000: 90+ DPD"
+    },
+    {
+     "en": "Enquiries (12 months): 1",
+     "hi": "पूछताछ (12 महीने): 1",
+     "mr": "चौकशी (12 महिने): 1"
+    }
+   ],
+   "details": [
+    {
+     "en": "DPD means 'days past due': how late a payment was. '000' every month is what you want to see.",
+     "hi": "DPD का मतलब 'days past due': भुगतान कितने दिन देर से हुआ। हर महीने '000' दिखना अच्छा है।",
+     "mr": "DPD म्हणजे 'days past due': पैसे किती दिवस उशिरा भरले. दर महिन्याला '000' दिसणे चांगले."
+    },
+    {
+     "en": "Verena has never taken a consumer loan. A loan she does not recognise is either a reporting error or identity misuse. Both must be disputed.",
+     "hi": "वेरेना ने कभी कंज़्यूमर लोन नहीं लिया। जो लोन वह नहीं पहचानती, वह या तो रिपोर्टिंग की ग़लती है या पहचान का दुरुपयोग। दोनों पर विवाद दर्ज करना ज़रूरी है।",
+     "mr": "वेरेनाने कधीही ग्राहक कर्ज घेतले नाही. तिला ओळख न पटणारे कर्ज एकतर नोंदीची चूक आहे किंवा ओळखीचा गैरवापर. दोन्हीवर वाद नोंदवायलाच हवा."
+    },
+    {
+     "en": "Also check that addresses and phone numbers listed are ones you have actually used.",
+     "hi": "यह भी देखें कि सूचीबद्ध पते और फ़ोन नंबर वही हैं जो आपने सच में इस्तेमाल किए।",
+     "mr": "सूचीतील पत्ते आणि फोन नंबर तुम्ही खरोखर वापरलेलेच आहेत का तेही तपासा."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Raise a dispute with the bureau, online",
+    "hi": "ब्यूरो के पास ऑनलाइन विवाद दर्ज करें",
+    "mr": "ब्युरोकडे ऑनलाइन वाद नोंदवा"
+   },
+   "text": {
+    "en": "On the bureau's dispute page she selects the account, chooses 'Account does not belong to me', and adds a short note. The bureau forwards it to the lender that reported it.",
+    "hi": "ब्यूरो के विवाद पेज पर वह खाता चुनती है, 'यह खाता मेरा नहीं है' चुनती है, और एक छोटा नोट जोड़ती है। ब्यूरो इसे रिपोर्ट करने वाले क़र्ज़दाता को भेजता है।",
+    "mr": "ब्युरोच्या वाद पानावर ती खाते निवडते, 'हे खाते माझे नाही' निवडते, आणि एक छोटी नोंद जोडते. ब्युरो ती अहवाल देणाऱ्या कर्जदात्याकडे पाठवतो."
+   },
+   "screen": [
+    {
+     "en": "Raise a dispute",
+     "hi": "विवाद दर्ज करें",
+     "mr": "वाद नोंदवा"
+    },
+    {
+     "en": "Account: Consumer loan ••4417",
+     "hi": "खाता: कंज़्यूमर लोन ••4417",
+     "mr": "खाते: ग्राहक कर्ज ••4417"
+    },
+    {
+     "en": "Reason: Not my account",
+     "hi": "कारण: मेरा खाता नहीं",
+     "mr": "कारण: माझे खाते नाही"
+    },
+    {
+     "en": "Dispute ID: DS-23xxxx",
+     "hi": "विवाद ID: DS-23xxxx",
+     "mr": "वाद ID: DS-23xxxx"
+    },
+    {
+     "en": "Status: sent to lender",
+     "hi": "स्थिति: क़र्ज़दाता को भेजा",
+     "mr": "स्थिती: कर्जदात्याकडे पाठवले"
+    }
+   ],
+   "details": [
+    {
+     "en": "Under RBI's rules, the bureau and the lender must resolve a complaint within 30 days in total, and you can be compensated for delays beyond that.",
+     "hi": "RBI के नियमों के तहत ब्यूरो और क़र्ज़दाता को कुल 30 दिनों में शिकायत निपटानी होती है, और उससे ज़्यादा देरी पर आपको मुआवज़ा मिल सकता है।",
+     "mr": "RBI च्या नियमांनुसार ब्युरो आणि कर्जदात्याने एकूण 30 दिवसांत तक्रार निकाली काढायला हवी, आणि त्यापेक्षा उशीर झाल्यास तुम्हाला भरपाई मिळू शकते."
+    },
+    {
+     "en": "If you suspect someone used your identity, also report it on cybercrime.gov.in and keep the acknowledgement.",
+     "hi": "अगर लगता है कि किसी ने आपकी पहचान का इस्तेमाल किया, तो cybercrime.gov.in पर भी रिपोर्ट करें और पावती रखें।",
+     "mr": "कोणी तुमची ओळख वापरली असा संशय असल्यास cybercrime.gov.in वरही तक्रार करा आणि पोच ठेवा."
+    },
+    {
+     "en": "Save the dispute ID and screenshots. You will need them if you escalate.",
+     "hi": "विवाद ID और स्क्रीनशॉट सेव करें। आगे ले जाने पर इनकी ज़रूरत होगी।",
+     "mr": "वाद ID आणि स्क्रीनशॉट जतन करा. पुढे नेल्यास त्यांची गरज लागेल."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  },
+  {
+   "scene": "letter",
+   "title": {
+    "en": "The correction, and what to do if it does not come",
+    "hi": "सुधार, और न हो तो क्या करें",
+    "mr": "दुरुस्ती, आणि ती न झाल्यास काय करावे"
+   },
+   "text": {
+    "en": "Twenty-two days later an email arrives: the lender found the account was opened with a misread PAN and has asked for it to be removed. Her updated report shows 768.",
+    "hi": "बाईस दिन बाद ईमेल आता है: क़र्ज़दाता ने पाया कि खाता ग़लत पढ़े गए पैन से खुला था और उसे हटाने को कहा है। अपडेटेड रिपोर्ट में स्कोर 768 है।",
+    "mr": "बावीस दिवसांनी ईमेल येतो: कर्जदात्याला आढळले की खाते चुकीच्या वाचलेल्या पॅनने उघडले होते आणि त्याने ते काढायला सांगितले आहे. अद्ययावत अहवालात स्कोर 768 आहे."
+   },
+   "screen": [
+    {
+     "en": "Dispute resolved",
+     "hi": "विवाद सुलझा",
+     "mr": "वाद मिटला"
+    },
+    {
+     "en": "Account removed from your report",
+     "hi": "खाता रिपोर्ट से हटाया गया",
+     "mr": "खाते अहवालातून काढले"
+    },
+    {
+     "en": "New score: 768",
+     "hi": "नया स्कोर: 768",
+     "mr": "नवा स्कोर: 768"
+    }
+   ],
+   "details": [
+    {
+     "en": "If the bureau or lender does not resolve it within 30 days, complain to the lender's grievance officer, then on the RBI complaint portal (cms.rbi.org.in).",
+     "hi": "अगर ब्यूरो या क़र्ज़दाता 30 दिनों में हल न करे, तो क़र्ज़दाता के शिकायत अधिकारी से, फिर RBI के शिकायत पोर्टल (cms.rbi.org.in) पर शिकायत करें।",
+     "mr": "ब्युरो किंवा कर्जदात्याने 30 दिवसांत सोडवले नाही, तर कर्जदात्याच्या तक्रार अधिकाऱ्याकडे, मग RBI च्या तक्रार पोर्टलवर (cms.rbi.org.in) तक्रार करा."
+    },
+    {
+     "en": "Pull the report from another bureau too. Lenders report to all four, and an error can sit in one but not the others.",
+     "hi": "दूसरे ब्यूरो से भी रिपोर्ट निकालें। क़र्ज़दाता चारों को रिपोर्ट करते हैं, और कोई ग़लती एक में हो सकती है, दूसरों में नहीं।",
+     "mr": "दुसऱ्या ब्युरोकडूनही अहवाल काढा. कर्जदाते चारींना माहिती देतात, आणि एखादी चूक एकात असू शकते, इतरांत नाही."
+    }
+   ],
+   "cost": {
+    "en": "Free",
+    "hi": "मुफ़्त",
+    "mr": "मोफत"
+   }
+  },
+  {
+   "scene": "growth",
+   "title": {
+    "en": "What actually moves a score, month after month",
+    "hi": "स्कोर को असल में क्या बदलता है, महीने-दर-महीने",
+    "mr": "स्कोर खरोखर कशाने बदलतो, महिन्यामागून महिना"
+   },
+   "text": {
+    "en": "There is no trick to a good score, only a few habits kept for a long time. Verena writes them on a sticky note above her desk.",
+    "hi": "अच्छे स्कोर की कोई तरकीब नहीं, बस कुछ आदतें जो लंबे समय तक निभाई जाएँ। वेरेना उन्हें अपनी मेज़ के ऊपर एक चिट पर लिखती है।",
+    "mr": "चांगल्या स्कोरची कोणतीही युक्ती नाही, फक्त काही सवयी दीर्घकाळ टिकवायच्या. वेरेना त्या तिच्या टेबलावर एका चिठ्ठीवर लिहिते."
+   },
+   "screen": [
+    {
+     "en": "Score habits",
+     "hi": "स्कोर की आदतें",
+     "mr": "स्कोरच्या सवयी"
+    },
+    {
+     "en": "Pay every EMI and card on time",
+     "hi": "हर EMI और कार्ड समय पर",
+     "mr": "प्रत्येक EMI आणि कार्ड वेळेवर"
+    },
+    {
+     "en": "Use < 30% of card limits",
+     "hi": "कार्ड लिमिट का < 30%",
+     "mr": "कार्ड मर्यादेचा < 30%"
+    },
+    {
+     "en": "Few loan applications",
+     "hi": "कम लोन आवेदन",
+     "mr": "कमी कर्ज अर्ज"
+    },
+    {
+     "en": "Keep old cards open",
+     "hi": "पुराने कार्ड चालू रखें",
+     "mr": "जुनी कार्डे चालू ठेवा"
+    },
+    {
+     "en": "Check report yearly",
+     "hi": "हर साल रिपोर्ट देखें",
+     "mr": "दरवर्षी अहवाल पाहा"
+    }
+   ],
+   "details": [
+    {
+     "en": "Payment history matters most. One payment 30 or more days late can stay on the report for years.",
+     "hi": "भुगतान का इतिहास सबसे अहम है। 30 या ज़्यादा दिन देर से हुआ एक भुगतान भी सालों तक रिपोर्ट पर रह सकता है।",
+     "mr": "भरण्याचा इतिहास सर्वात महत्त्वाचा. 30 किंवा जास्त दिवस उशिरा झालेला एक भरणाही वर्षानुवर्षे अहवालावर राहू शकतो."
+    },
+    {
+     "en": "Standing as a guarantor for someone's loan puts that loan on your report too. If they miss, your score drops.",
+     "hi": "किसी के लोन में गारंटर बनने पर वह लोन आपकी रिपोर्ट पर भी आता है। वे चूकें तो आपका स्कोर गिरता है।",
+     "mr": "कोणाच्या कर्जाला जामीनदार झाल्यास ते कर्ज तुमच्या अहवालावरही येते. त्यांनी चुकवले तर तुमचा स्कोर घसरतो."
+    },
+    {
+     "en": "A 'settled' loan (closed for less than owed) looks worse than a 'closed' one. Avoid settlements if you can pay in full.",
+     "hi": "'सेटल्ड' लोन (बकाया से कम पर बंद) 'क्लोज़्ड' से बुरा दिखता है। पूरा चुका सकें तो सेटलमेंट से बचें।",
+     "mr": "'सेटल्ड' कर्ज (थकबाकीपेक्षा कमी रकमेत बंद) 'क्लोज्ड' पेक्षा वाईट दिसते. पूर्ण फेडता येत असेल तर सेटलमेंट टाळा."
+    }
+   ],
+   "cost": {
+    "en": "A habit, not a cost",
+    "hi": "आदत, ख़र्च नहीं",
+    "mr": "सवय, खर्च नाही"
+   },
+   "choice": {
+    "prompt": {
+     "en": "A friend asks Verena to be guarantor for a ₹3 lakh bike loan. What is the real risk to her?",
+     "hi": "एक दोस्त ₹3 लाख के बाइक लोन में वेरेना से गारंटर बनने को कहता है। उसके लिए असली जोखिम क्या है?",
+     "mr": "एक मित्र ₹3 लाखांच्या बाइक कर्जासाठी वेरेनाला जामीनदार व्हायला सांगतो. तिच्यासाठी खरा धोका काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "None, she only signs a form",
+       "hi": "कोई नहीं, बस एक फ़ॉर्म पर हस्ताक्षर",
+       "mr": "काही नाही, फक्त एका फॉर्मवर सही"
+      },
+      "good": false,
+      "result": {
+       "en": "A guarantor is legally liable to repay if the borrower does not, and the loan appears on her credit report.",
+       "hi": "उधार लेने वाला न चुकाए तो गारंटर क़ानूनी रूप से चुकाने का ज़िम्मेदार है, और लोन उसकी क्रेडिट रिपोर्ट पर दिखता है।",
+       "mr": "कर्जदाराने न फेडल्यास जामीनदार कायदेशीररीत्या फेडायला जबाबदार असतो, आणि कर्ज तिच्या क्रेडिट अहवालावर दिसते."
+      }
+     },
+     {
+      "text": {
+       "en": "She may have to repay it, and missed EMIs hurt her score",
+       "hi": "उसे चुकाना पड़ सकता है, और छूटी EMI उसका स्कोर गिराएँगी",
+       "mr": "तिला फेडावे लागू शकते, आणि चुकलेल्या EMI तिचा स्कोर घसरवतील"
+      },
+      "good": true,
+      "result": {
+       "en": "Exactly. Only stand guarantor for an amount you could afford to repay yourself.",
+       "hi": "बिल्कुल। गारंटर केवल उतनी रकम के लिए बनें जितनी आप ख़ुद चुका सकें।",
+       "mr": "अगदी बरोबर. जामीनदार फक्त तुम्ही स्वतः फेडू शकाल इतक्याच रकमेसाठी व्हा."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Get your free report from a bureau's own website once a year; checking your own score does not lower it.",
+   "hi": "साल में एक बार ब्यूरो की अपनी वेबसाइट से मुफ़्त रिपोर्ट लें; अपना स्कोर देखने से वह नहीं गिरता।",
+   "mr": "वर्षातून एकदा ब्युरोच्या स्वतःच्या वेबसाइटवरून मोफत अहवाल घ्या; स्वतःचा स्कोर पाहिल्याने तो कमी होत नाही."
+  },
+  {
+   "en": "Read every account and its DPD row, not just the score.",
+   "hi": "केवल स्कोर नहीं, हर खाता और उसकी DPD पंक्ति पढ़ें।",
+   "mr": "फक्त स्कोर नाही, प्रत्येक खाते आणि त्याची DPD ओळ वाचा."
+  },
+  {
+   "en": "Dispute anything wrong online; it must be resolved within 30 days, then escalate to the lender and RBI.",
+   "hi": "हर ग़लत चीज़ पर ऑनलाइन विवाद करें; 30 दिनों में हल होना चाहिए, फिर क़र्ज़दाता और RBI तक ले जाएँ।",
+   "mr": "प्रत्येक चुकीच्या गोष्टीवर ऑनलाइन वाद नोंदवा; 30 दिवसांत सुटायला हवा, मग कर्जदाता आणि RBI कडे न्या."
+  },
+  {
+   "en": "On-time payments, low card usage, few applications and old accounts build a strong score.",
+   "hi": "समय पर भुगतान, कार्ड का कम इस्तेमाल, कम आवेदन और पुराने खाते मज़बूत स्कोर बनाते हैं।",
+   "mr": "वेळेवर भरणे, कार्डचा कमी वापर, कमी अर्ज आणि जुनी खाती मजबूत स्कोर तयार करतात."
+  },
+  {
+   "en": "Being a guarantor puts someone else's loan on your report.",
+   "hi": "गारंटर बनना किसी और का लोन आपकी रिपोर्ट पर डाल देता है।",
+   "mr": "जामीनदार होणे दुसऱ्याचे कर्ज तुमच्या अहवालावर टाकते."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://cms.rbi.org.in"
+ ]
+}

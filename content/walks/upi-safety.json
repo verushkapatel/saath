@@ -1,0 +1,364 @@
+{
+ "id": "upi-safety",
+ "guide": "upi-safety",
+ "title": {
+  "en": "A UPI payment done safely, and a 'collect request' trap spotted in time",
+  "hi": "UPI भुगतान सुरक्षित ढंग से, और 'कलेक्ट रिक्वेस्ट' का जाल समय पर पहचानना",
+  "mr": "UPI पेमेंट सुरक्षितपणे, आणि 'कलेक्ट रिक्वेस्ट' चा सापळा वेळेवर ओळखणे"
+ },
+ "setting": {
+  "en": "Verena sells her old cycle on a resale site",
+  "hi": "वेरेना अपनी पुरानी साइकिल एक रीसेल साइट पर बेचती है",
+  "mr": "वेरेना तिची जुनी सायकल एका रीसेल साइटवर विकते"
+ },
+ "steps": [
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Paying at a shop: scan, check the name, then the PIN",
+    "hi": "दुकान पर भुगतान: स्कैन, नाम जाँचें, फिर PIN",
+    "mr": "दुकानात पेमेंट: स्कॅन, नाव तपासा, मग PIN"
+   },
+   "text": {
+    "en": "At the grocery shop she scans the QR code on the counter. Before typing the PIN, she reads the name the app shows: 'Shree Ganesh Provisions'. It matches the board. She enters ₹486 and her PIN, and waits for the green tick and the shopkeeper's speaker to announce it.",
+    "hi": "किराने की दुकान पर वह काउंटर का QR कोड स्कैन करती है। PIN डालने से पहले वह ऐप में दिखा नाम पढ़ती है: 'श्री गणेश प्रोविज़न्स'। यह बोर्ड से मेल खाता है। वह ₹486 और PIN डालती है, और हरे टिक और दुकानदार के स्पीकर की आवाज़ का इंतज़ार करती है।",
+    "mr": "किराणा दुकानात ती काउंटरवरचा QR कोड स्कॅन करते. PIN टाकण्याआधी ती ॲपमध्ये दिसणारे नाव वाचते: 'श्री गणेश प्रोव्हिजन्स'. ते फलकाशी जुळते. ती ₹486 आणि PIN टाकते, आणि हिरव्या टिकची आणि दुकानदाराच्या स्पीकरच्या आवाजाची वाट पाहते."
+   },
+   "screen": [
+    {
+     "en": "Pay to",
+     "hi": "भुगतान",
+     "mr": "पेमेंट"
+    },
+    {
+     "en": "Shree Ganesh Provisions",
+     "hi": "श्री गणेश प्रोविज़न्स",
+     "mr": "श्री गणेश प्रोव्हिजन्स"
+    },
+    {
+     "en": "₹486",
+     "hi": "₹486",
+     "mr": "₹486"
+    },
+    {
+     "en": "Enter UPI PIN to PAY",
+     "hi": "भुगतान के लिए UPI PIN",
+     "mr": "पैसे देण्यासाठी UPI PIN"
+    },
+    {
+     "en": "✓ Paid · Ref 4021xxxx",
+     "hi": "✓ भुगतान हुआ · रेफ़ 4021xxxx",
+     "mr": "✓ पैसे गेले · संदर्भ 4021xxxx"
+    }
+   ],
+   "details": [
+    {
+     "en": "The name shown after scanning is the real receiver. If it does not match the shop, stop.",
+     "hi": "स्कैन के बाद दिखा नाम असली पाने वाला है। दुकान से मेल न खाए तो रुक जाएँ।",
+     "mr": "स्कॅननंतर दिसणारे नाव खरा प्राप्तकर्ता आहे. दुकानाशी जुळले नाही तर थांबा."
+    },
+    {
+     "en": "Wait for the 'success' screen. If it says 'pending', do not pay again; it usually resolves itself or is refunded.",
+     "hi": "'सफल' स्क्रीन का इंतज़ार करें। 'पेंडिंग' दिखे तो दोबारा भुगतान न करें; यह अक्सर अपने आप ठीक होता है या पैसा लौटता है।",
+     "mr": "'यशस्वी' स्क्रीनची वाट पाहा. 'पेंडिंग' दिसले तर पुन्हा पैसे भरू नका; ते सहसा आपोआप सुटते किंवा परत येते."
+    }
+   ],
+   "cost": {
+    "en": "20 seconds",
+    "hi": "20 सेकंड",
+    "mr": "20 सेकंद"
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "A buyer messages about the cycle",
+    "hi": "साइकिल के लिए एक ख़रीदार का संदेश",
+    "mr": "सायकलसाठी एका खरेदीदाराचा संदेश"
+   },
+   "text": {
+    "en": "A buyer agrees to ₹3,500 without bargaining and says he is in the army, posted far away, so he will 'send the money by UPI first'.",
+    "hi": "एक ख़रीदार बिना मोल-भाव ₹3,500 पर राज़ी हो जाता है और कहता है कि वह फ़ौज में है, दूर तैनात है, इसलिए 'पहले UPI से पैसे भेज देगा'।",
+    "mr": "एक खरेदीदार घासाघीस न करता ₹3,500 ला तयार होतो आणि म्हणतो की तो सैन्यात आहे, दूर तैनात आहे, म्हणून 'आधी UPI ने पैसे पाठवेल'."
+   },
+   "screen": [
+    {
+     "en": "Buyer: Deal at ₹3,500",
+     "hi": "ख़रीदार: ₹3,500 में डील",
+     "mr": "खरेदीदार: ₹3,500 ला डील"
+    },
+    {
+     "en": "Buyer: I'm army, transferred",
+     "hi": "ख़रीदार: मैं फ़ौज में हूँ, तबादला हुआ",
+     "mr": "खरेदीदार: मी सैन्यात आहे, बदली झाली"
+    },
+    {
+     "en": "Buyer: Sending payment request, accept it",
+     "hi": "ख़रीदार: पेमेंट रिक्वेस्ट भेज रहा हूँ, स्वीकार करो",
+     "mr": "खरेदीदार: पेमेंट रिक्वेस्ट पाठवतो, स्वीकारा"
+    },
+    {
+     "en": "!No bargaining + urgency + 'accept request' = scam pattern",
+     "hi": "!मोल-भाव नहीं + जल्दी + 'रिक्वेस्ट स्वीकारो' = धोखे का तरीक़ा",
+     "mr": "!घासाघीस नाही + घाई + 'रिक्वेस्ट स्वीकारा' = फसवणुकीचा प्रकार"
+    }
+   ],
+   "details": [
+    {
+     "en": "A buyer who never bargains and pushes speed is the first warning sign.",
+     "hi": "जो ख़रीदार मोल-भाव न करे और जल्दी मचाए, वह पहली चेतावनी है।",
+     "mr": "घासाघीस न करणारा आणि घाई करणारा खरेदीदार ही पहिली धोक्याची खूण."
+    },
+    {
+     "en": "'Army officer, transferred' is a common story used in these frauds to explain why he cannot meet.",
+     "hi": "'फ़ौजी अफ़सर, तबादला' ऐसे धोखों की आम कहानी है, यह बताने के लिए कि वह मिल क्यों नहीं सकता।",
+     "mr": "'सैन्य अधिकारी, बदली' ही अशा फसवणुकीतील नेहमीची कथा, तो का भेटू शकत नाही हे सांगण्यासाठी."
+    }
+   ],
+   "cost": {
+    "en": "Stay calm",
+    "hi": "शांत रहें",
+    "mr": "शांत राहा"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "The collect request: read the word on the button",
+    "hi": "कलेक्ट रिक्वेस्ट: बटन पर लिखा शब्द पढ़ें",
+    "mr": "कलेक्ट रिक्वेस्ट: बटणावरील शब्द वाचा"
+   },
+   "text": {
+    "en": "A notification pops up: '₹3,500 request from Rajesh K'. Verena opens it. The screen says 'Pay ₹3,500' and asks for her UPI PIN. Receiving money never needs a PIN. This request would take ₹3,500 from her.",
+    "hi": "एक सूचना आती है: 'राजेश के. से ₹3,500 का अनुरोध'। वेरेना खोलती है। स्क्रीन पर 'Pay ₹3,500' लिखा है और UPI PIN माँगा जा रहा है। पैसा पाने के लिए कभी PIN नहीं लगता। यह अनुरोध उसके ₹3,500 ले लेता।",
+    "mr": "एक सूचना येते: 'राजेश के. कडून ₹3,500 ची विनंती'. वेरेना उघडते. स्क्रीनवर 'Pay ₹3,500' लिहिले आहे आणि UPI PIN विचारत आहे. पैसे मिळवण्यासाठी कधीही PIN लागत नाही. ही विनंती तिचे ₹3,500 घेऊन गेली असती."
+   },
+   "screen": [
+    {
+     "en": "Payment request",
+     "hi": "पेमेंट रिक्वेस्ट",
+     "mr": "पेमेंट विनंती"
+    },
+    {
+     "en": "From: Rajesh K",
+     "hi": "से: राजेश के.",
+     "mr": "कडून: राजेश के."
+    },
+    {
+     "en": "Pay ₹3,500",
+     "hi": "भुगतान ₹3,500",
+     "mr": "भरा ₹3,500"
+    },
+    {
+     "en": "!You are SENDING money",
+     "hi": "!आप पैसा भेज रहे हैं",
+     "mr": "!तुम्ही पैसे पाठवत आहात"
+    },
+    {
+     "en": "Decline · Pay",
+     "hi": "अस्वीकार · भुगतान",
+     "mr": "नाकारा · भरा"
+    }
+   ],
+   "details": [
+    {
+     "en": "UPI PIN = money leaves your account. Always. There is no PIN for receiving.",
+     "hi": "UPI PIN = पैसा आपके खाते से जाता है। हमेशा। पाने के लिए कोई PIN नहीं।",
+     "mr": "UPI PIN = पैसे तुमच्या खात्यातून जातात. नेहमी. मिळवण्यासाठी PIN नाही."
+    },
+    {
+     "en": "The same is true for QR codes sent to you 'to receive money'. Scanning a QR and entering a PIN always pays.",
+     "hi": "'पैसे पाने के लिए' भेजे गए QR कोड पर भी यही लागू है। QR स्कैन करके PIN डालना हमेशा भुगतान है।",
+     "mr": "'पैसे मिळवण्यासाठी' पाठवलेल्या QR कोडलाही हेच लागू. QR स्कॅन करून PIN टाकणे म्हणजे नेहमी पैसे देणे."
+    }
+   ],
+   "cost": {
+    "en": "₹3,500 saved",
+    "hi": "₹3,500 बचे",
+    "mr": "₹3,500 वाचले"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What does Verena do with the request?",
+     "hi": "वेरेना इस अनुरोध का क्या करे?",
+     "mr": "वेरेनाने या विनंतीचे काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Accept, he said it is for receiving",
+       "hi": "स्वीकार करे, उसने कहा पाने के लिए है",
+       "mr": "स्वीकारावी, तो म्हणाला मिळवण्यासाठी आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "₹3,500 would leave her account. The buyer would then send another request 'to fix it'.",
+       "hi": "₹3,500 उसके खाते से चले जाते। फिर ख़रीदार 'ठीक करने' के लिए एक और अनुरोध भेजता।",
+       "mr": "₹3,500 तिच्या खात्यातून गेले असते. मग खरेदीदाराने 'दुरुस्त करण्यासाठी' आणखी विनंती पाठवली असती."
+      }
+     },
+     {
+      "text": {
+       "en": "Decline, block and report the number",
+       "hi": "अस्वीकार, ब्लॉक, और नंबर रिपोर्ट करे",
+       "mr": "नाकारावी, ब्लॉक करावे आणि नंबर तक्रार करावा"
+      },
+      "good": true,
+      "result": {
+       "en": "Declining costs nothing. She can report the number on Sanchar Saathi's Chakshu and the listing site.",
+       "hi": "अस्वीकार करने में कुछ नहीं जाता। वह नंबर संचार साथी के चक्षु और साइट पर रिपोर्ट कर सकती है।",
+       "mr": "नाकारण्यात काही जात नाही. ती नंबर संचार साथीच्या चक्षूवर आणि साइटवर तक्रार करू शकते."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "alert",
+   "title": {
+    "en": "If money ever does go: the first hour",
+    "hi": "अगर पैसा चला ही जाए: पहला घंटा",
+    "mr": "पैसे गेलेच तर: पहिला तास"
+   },
+   "text": {
+    "en": "Speed decides how much can be frozen. If Verena had paid, this is the order she would follow, starting within minutes.",
+    "hi": "कितना पैसा रोका जा सकता है, यह तेज़ी तय करती है। अगर वेरेना भुगतान कर देती, तो वह मिनटों के अंदर यह क्रम अपनाती।",
+    "mr": "किती पैसे गोठवता येतील हे वेग ठरवतो. वेरेनाने पैसे भरले असते तर ती काही मिनिटांत हा क्रम पाळली असती."
+   },
+   "screen": [
+    {
+     "en": "Call 1930",
+     "hi": "1930 पर कॉल",
+     "mr": "1930 वर कॉल"
+    },
+    {
+     "en": "National cyber fraud helpline",
+     "hi": "राष्ट्रीय साइबर धोखाधड़ी हेल्पलाइन",
+     "mr": "राष्ट्रीय सायबर फसवणूक हेल्पलाइन"
+    },
+    {
+     "en": "Then: bank's helpline",
+     "hi": "फिर: बैंक की हेल्पलाइन",
+     "mr": "मग: बँकेची हेल्पलाइन"
+    },
+    {
+     "en": "Then: cybercrime.gov.in",
+     "hi": "फिर: cybercrime.gov.in",
+     "mr": "मग: cybercrime.gov.in"
+    },
+    {
+     "en": "Keep: UTR, screenshots, number",
+     "hi": "रखें: UTR, स्क्रीनशॉट, नंबर",
+     "mr": "ठेवा: UTR, स्क्रीनशॉट, नंबर"
+    }
+   ],
+   "details": [
+    {
+     "en": "Call 1930 first. They can alert the banks involved to hold the money while it is still in an account.",
+     "hi": "पहले 1930 पर कॉल करें। वे संबंधित बैंकों को सूचित कर सकते हैं कि पैसा किसी खाते में रहते हुए रोक लें।",
+     "mr": "आधी 1930 वर कॉल करा. पैसे एखाद्या खात्यात असतानाच रोखून ठेवण्यासाठी ते संबंधित बँकांना कळवू शकतात."
+    },
+    {
+     "en": "Then call your bank to report the transaction and block UPI if needed. Note the complaint number.",
+     "hi": "फिर बैंक को फ़ोन करके लेन-देन की सूचना दें और ज़रूरत हो तो UPI ब्लॉक कराएँ। शिकायत नंबर नोट करें।",
+     "mr": "मग बँकेला फोन करून व्यवहाराची माहिती द्या आणि गरज असल्यास UPI ब्लॉक करा. तक्रार क्रमांक लिहून घ्या."
+    },
+    {
+     "en": "Within 24 hours, file the complaint on cybercrime.gov.in with the UTR (transaction reference), screenshots and the fraudster's number.",
+     "hi": "24 घंटे के अंदर UTR (लेन-देन संदर्भ), स्क्रीनशॉट और धोखेबाज़ के नंबर के साथ cybercrime.gov.in पर शिकायत करें।",
+     "mr": "24 तासांच्या आत UTR (व्यवहार संदर्भ), स्क्रीनशॉट आणि फसवणाऱ्याच्या नंबरसह cybercrime.gov.in वर तक्रार करा."
+    }
+   ],
+   "cost": {
+    "en": "Every minute counts",
+    "hi": "हर मिनट मायने रखता है",
+    "mr": "प्रत्येक मिनिट महत्त्वाचा"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Set your own limits so a mistake stays small",
+    "hi": "अपनी सीमाएँ ख़ुद तय करें ताकि ग़लती छोटी रहे",
+    "mr": "स्वतःच्या मर्यादा ठेवा म्हणजे चूक लहान राहील"
+   },
+   "text": {
+    "en": "After this, Verena opens her UPI app settings. She lowers her daily UPI limit to what she actually uses, checks the list of active 'AutoPay' mandates, and sets a strong phone lock.",
+    "hi": "इसके बाद वेरेना UPI ऐप की सेटिंग खोलती है। वह रोज़ की UPI सीमा उतनी कर देती है जितनी वह सच में इस्तेमाल करती है, चालू 'AutoPay' मैंडेट की सूची देखती है, और फ़ोन पर मज़बूत लॉक लगाती है।",
+    "mr": "यानंतर वेरेना UPI ॲपची सेटिंग उघडते. ती रोजची UPI मर्यादा ती खरोखर वापरते तितकी कमी करते, सुरू असलेल्या 'AutoPay' मँडेटची यादी पाहते, आणि फोनला मजबूत लॉक लावते."
+   },
+   "screen": [
+    {
+     "en": "UPI settings",
+     "hi": "UPI सेटिंग",
+     "mr": "UPI सेटिंग"
+    },
+    {
+     "en": "Daily limit: ₹10,000",
+     "hi": "रोज़ की सीमा: ₹10,000",
+     "mr": "दैनिक मर्यादा: ₹10,000"
+    },
+    {
+     "en": "AutoPay mandates: 2 active",
+     "hi": "AutoPay मैंडेट: 2 चालू",
+     "mr": "AutoPay मँडेट: 2 सुरू"
+    },
+    {
+     "en": "App lock: ON",
+     "hi": "ऐप लॉक: चालू",
+     "mr": "ॲप लॉक: सुरू"
+    }
+   ],
+   "details": [
+    {
+     "en": "A lower daily limit caps the loss if your phone or PIN is ever misused.",
+     "hi": "कम दैनिक सीमा फ़ोन या PIN के दुरुपयोग पर नुक़सान को सीमित रखती है।",
+     "mr": "कमी दैनिक मर्यादा फोन किंवा PIN चा गैरवापर झाल्यास नुकसान मर्यादित ठेवते."
+    },
+    {
+     "en": "Never install screen-sharing apps on a stranger's request. They let the other person see your PIN as you type.",
+     "hi": "किसी अजनबी के कहने पर स्क्रीन-शेयरिंग ऐप कभी इंस्टॉल न करें। इनसे सामने वाला आपका PIN टाइप होते देख सकता है।",
+     "mr": "अनोळखी व्यक्तीच्या सांगण्यावरून स्क्रीन-शेअरिंग ॲप कधीही इन्स्टॉल करू नका. त्याने समोरच्याला तुम्ही टाइप करताना PIN दिसतो."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Read the receiver's name before entering your PIN.",
+   "hi": "PIN डालने से पहले पाने वाले का नाम पढ़ें।",
+   "mr": "PIN टाकण्यापूर्वी प्राप्तकर्त्याचे नाव वाचा."
+  },
+  {
+   "en": "A UPI PIN or a scanned QR always sends money. Receiving needs neither.",
+   "hi": "UPI PIN या स्कैन किया QR हमेशा पैसा भेजता है। पाने के लिए दोनों की ज़रूरत नहीं।",
+   "mr": "UPI PIN किंवा स्कॅन केलेला QR नेहमी पैसे पाठवतो. मिळवण्यासाठी दोन्हींची गरज नाही."
+  },
+  {
+   "en": "No bargaining, urgency and 'accept my request' together mean a scam.",
+   "hi": "मोल-भाव नहीं, जल्दी, और 'मेरी रिक्वेस्ट स्वीकारो' साथ हों तो धोखा है।",
+   "mr": "घासाघीस नाही, घाई, आणि 'माझी विनंती स्वीकारा' एकत्र असतील तर फसवणूक."
+  },
+  {
+   "en": "If money goes: 1930 first, then your bank, then cybercrime.gov.in, with the UTR and screenshots.",
+   "hi": "पैसा जाए तो: पहले 1930, फिर बैंक, फिर cybercrime.gov.in, UTR और स्क्रीनशॉट के साथ।",
+   "mr": "पैसे गेले तर: आधी 1930, मग बँक, मग cybercrime.gov.in, UTR आणि स्क्रीनशॉटसह."
+  },
+  {
+   "en": "Keep a sensible daily limit and never install screen-sharing apps for strangers.",
+   "hi": "समझदारी वाली दैनिक सीमा रखें और अजनबियों के लिए स्क्रीन-शेयरिंग ऐप कभी न डालें।",
+   "mr": "योग्य दैनिक मर्यादा ठेवा आणि अनोळखी लोकांसाठी स्क्रीन-शेअरिंग ॲप कधीही टाकू नका."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.npci.org.in",
+  "https://cybercrime.gov.in",
+  "https://sancharsaathi.gov.in"
+ ]
+}

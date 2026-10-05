@@ -1,0 +1,198 @@
+{
+ "id": "why-pan",
+ "guide": "why-pan",
+ "title": {
+  "en": "Getting your PAN card online, from the application to linking it with Aadhaar",
+  "hi": "ऑनलाइन पैन कार्ड बनवाना, आवेदन से आधार से लिंक करने तक",
+  "mr": "ऑनलाइन पॅन कार्ड काढणे, अर्जापासून आधारशी जोडण्यापर्यंत"
+ },
+ "setting": {
+  "en": "Verena, 18, needs a PAN for her first bank job form",
+  "hi": "18 साल की वेरेना को पहली नौकरी के फ़ॉर्म के लिए पैन चाहिए",
+  "mr": "18 वर्षांच्या वेरेनाला पहिल्या नोकरीच्या फॉर्मसाठी पॅन हवा"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Use the official route",
+    "hi": "आधिकारिक रास्ता अपनाएँ",
+    "mr": "अधिकृत मार्ग वापरा"
+   },
+   "text": {
+    "en": "PAN (Permanent Account Number) is your tax identity. It is needed for salary, bank deposits above certain limits, investments and filing returns. If you have Aadhaar with a linked mobile, the Income Tax Department's e-filing portal can issue an instant e-PAN free of cost.",
+    "hi": "पैन (स्थायी खाता संख्या) आपकी टैक्स पहचान है। तनख़्वाह, कुछ सीमा से ऊपर के बैंक जमा, निवेश और रिटर्न भरने के लिए यह ज़रूरी है। अगर मोबाइल से जुड़ा आधार है, तो आयकर विभाग का ई-फ़ाइलिंग पोर्टल मुफ़्त में तुरंत ई-पैन दे सकता है।",
+    "mr": "पॅन (कायम खाते क्रमांक) ही तुमची कर ओळख आहे. पगार, ठरावीक मर्यादेवरील बँक ठेवी, गुंतवणूक आणि विवरणपत्र भरण्यासाठी तो लागतो. मोबाइलशी जोडलेले आधार असल्यास आयकर विभागाचे ई-फायलिंग पोर्टल मोफत लगेच ई-पॅन देऊ शकते."
+   },
+   "screen": [
+    {
+     "en": "e-Filing portal",
+     "hi": "ई-फ़ाइलिंग पोर्टल",
+     "mr": "ई-फायलिंग पोर्टल"
+    },
+    {
+     "en": "Instant e-PAN",
+     "hi": "तुरंत ई-पैन",
+     "mr": "तात्काळ ई-पॅन"
+    },
+    {
+     "en": "Aadhaar OTP based",
+     "hi": "आधार OTP से",
+     "mr": "आधार OTP वर आधारित"
+    },
+    {
+     "en": "Fee: ₹0",
+     "hi": "शुल्क: ₹0",
+     "mr": "शुल्क: ₹0"
+    }
+   ],
+   "details": [
+    {
+     "en": "Physical PAN cards can be ordered through NSDL (Protean) or UTIITSL for a small fee. Both are authorised by the department.",
+     "hi": "प्लास्टिक पैन कार्ड NSDL (Protean) या UTIITSL से थोड़े शुल्क पर मँगाया जा सकता है। दोनों विभाग से अधिकृत हैं।",
+     "mr": "प्लास्टिक पॅन कार्ड NSDL (Protean) किंवा UTIITSL कडून थोड्या शुल्कात मागवता येते. दोन्ही विभागाकडून अधिकृत आहेत."
+    },
+    {
+     "en": "Avoid 'PAN in 10 minutes' agents and look-alike sites that charge extra and keep your documents.",
+     "hi": "'10 मिनट में पैन' वाले एजेंट और मिलती-जुलती साइटों से बचें जो ज़्यादा पैसे लेती हैं और काग़ज़ रख लेती हैं।",
+     "mr": "'10 मिनिटांत पॅन' एजंट आणि सारख्या दिसणाऱ्या साइट टाळा, ज्या जास्त पैसे घेतात आणि कागदपत्रे ठेवतात."
+    }
+   ],
+   "cost": {
+    "en": "Free for e-PAN",
+    "hi": "ई-पैन मुफ़्त",
+    "mr": "ई-पॅन मोफत"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Aadhaar OTP, check the details, submit",
+    "hi": "आधार OTP, विवरण जाँचें, जमा करें",
+    "mr": "आधार OTP, तपशील तपासा, सादर करा"
+   },
+   "text": {
+    "en": "She enters her Aadhaar number, receives an OTP on the linked mobile, and the portal pulls her name, date of birth and photo from Aadhaar. She checks each one carefully before confirming, because PAN will carry exactly these details.",
+    "hi": "वह आधार नंबर डालती है, जुड़े मोबाइल पर OTP आता है, और पोर्टल आधार से नाम, जन्म तिथि और फ़ोटो लेता है। पुष्टि से पहले वह हर चीज़ ध्यान से जाँचती है, क्योंकि पैन पर यही विवरण आएँगे।",
+    "mr": "ती आधार क्रमांक टाकते, जोडलेल्या मोबाइलवर OTP येतो, आणि पोर्टल आधारमधून नाव, जन्मतारीख आणि फोटो घेते. पुष्टी करण्यापूर्वी ती प्रत्येक गोष्ट नीट तपासते, कारण पॅनवर हेच तपशील येतील."
+   },
+   "screen": [
+    {
+     "en": "Validate Aadhaar details",
+     "hi": "आधार विवरण सत्यापित करें",
+     "mr": "आधार तपशील पडताळा"
+    },
+    {
+     "en": "Name: Verena Anil D'Souza",
+     "hi": "नाम: Verena Anil D'Souza",
+     "mr": "नाव: Verena Anil D'Souza"
+    },
+    {
+     "en": "DOB: 14-03-2004",
+     "hi": "जन्म तिथि: 14-03-2004",
+     "mr": "जन्मतारीख: 14-03-2004"
+    },
+    {
+     "en": "✓ e-PAN request submitted",
+     "hi": "✓ ई-पैन अनुरोध जमा",
+     "mr": "✓ ई-पॅन विनंती सादर"
+    }
+   ],
+   "details": [
+    {
+     "en": "If Aadhaar has a spelling mistake or an old date of birth, fix Aadhaar first. Otherwise the mistake travels into PAN and every account later.",
+     "hi": "अगर आधार में स्पेलिंग की ग़लती या पुरानी जन्म तिथि है, तो पहले आधार ठीक करें। वरना ग़लती पैन और बाद के हर खाते में चली जाएगी।",
+     "mr": "आधारमध्ये स्पेलिंगची चूक किंवा जुनी जन्मतारीख असेल तर आधी आधार दुरुस्त करा. नाहीतर ती चूक पॅन आणि पुढच्या प्रत्येक खात्यात जाईल."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Download it, store it, and use it carefully",
+    "hi": "डाउनलोड करें, सँभालें, और सावधानी से इस्तेमाल करें",
+    "mr": "डाउनलोड करा, जपा, आणि काळजीपूर्वक वापरा"
+   },
+   "text": {
+    "en": "Within a short while the e-PAN PDF is ready to download. She saves it in a password-protected folder and gives copies only where PAN is genuinely required, writing the purpose on each copy.",
+    "hi": "थोड़ी देर में ई-पैन PDF डाउनलोड के लिए तैयार है। वह इसे पासवर्ड वाले फ़ोल्डर में रखती है और कॉपी केवल वहीं देती है जहाँ पैन सच में ज़रूरी हो, हर कॉपी पर मक़सद लिखकर।",
+    "mr": "थोड्याच वेळात ई-पॅन PDF डाउनलोडसाठी तयार असते. ती ती पासवर्ड असलेल्या फोल्डरमध्ये ठेवते आणि पॅन खरोखर आवश्यक असेल तिथेच प्रत देते, प्रत्येक प्रतीवर उद्देश लिहून."
+   },
+   "screen": [
+    {
+     "en": "e-PAN",
+     "hi": "ई-पैन",
+     "mr": "ई-पॅन"
+    },
+    {
+     "en": "ABCPD1234K",
+     "hi": "ABCPD1234K",
+     "mr": "ABCPD1234K"
+    },
+    {
+     "en": "Income Tax Dept.",
+     "hi": "आयकर विभाग",
+     "mr": "आयकर विभाग"
+    },
+    {
+     "en": "Name, DOB, photo, signature",
+     "hi": "नाम, जन्म तिथि, फ़ोटो, हस्ताक्षर",
+     "mr": "नाव, जन्मतारीख, फोटो, सही"
+    },
+    {
+     "en": "Valid like the plastic card",
+     "hi": "प्लास्टिक कार्ड जितना मान्य",
+     "mr": "प्लास्टिक कार्डइतकेच वैध"
+    }
+   ],
+   "details": [
+    {
+     "en": "One person may hold only one PAN. Having two is an offence with a penalty; surrender any extra one.",
+     "hi": "एक व्यक्ति के पास केवल एक पैन हो सकता है। दो रखना जुर्माने वाला अपराध है; अतिरिक्त पैन लौटा दें।",
+     "mr": "एका व्यक्तीकडे एकच पॅन असू शकतो. दोन ठेवणे दंडनीय गुन्हा आहे; अतिरिक्त पॅन परत करा."
+    },
+    {
+     "en": "PAN must be linked with Aadhaar. An unlinked PAN can become inoperative, which blocks refunds and raises tax deducted at source. Check the status on the e-filing portal.",
+     "hi": "पैन का आधार से लिंक होना ज़रूरी है। बिना लिंक वाला पैन निष्क्रिय हो सकता है, जिससे रिफ़ंड रुकते हैं और स्रोत पर ज़्यादा टैक्स कटता है। ई-फ़ाइलिंग पोर्टल पर स्थिति देखें।",
+     "mr": "पॅन आधारशी जोडणे आवश्यक आहे. न जोडलेला पॅन निष्क्रिय होऊ शकतो, ज्यामुळे परतावे थांबतात आणि उगमस्थानी जास्त कर कापला जातो. ई-फायलिंग पोर्टलवर स्थिती पाहा."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "e-PAN with Aadhaar OTP is free on the Income Tax e-filing portal.",
+   "hi": "आधार OTP से ई-पैन आयकर ई-फ़ाइलिंग पोर्टल पर मुफ़्त है।",
+   "mr": "आधार OTP ने ई-पॅन आयकर ई-फायलिंग पोर्टलवर मोफत आहे."
+  },
+  {
+   "en": "Fix any Aadhaar mistakes before applying; PAN copies them.",
+   "hi": "आवेदन से पहले आधार की ग़लतियाँ ठीक करें; पैन उन्हें ही उतारता है।",
+   "mr": "अर्जापूर्वी आधारमधील चुका दुरुस्त करा; पॅन त्याच उचलतो."
+  },
+  {
+   "en": "One person, one PAN, linked with Aadhaar.",
+   "hi": "एक व्यक्ति, एक पैन, आधार से जुड़ा।",
+   "mr": "एक व्यक्ती, एक पॅन, आधारशी जोडलेला."
+  },
+  {
+   "en": "Share copies only where required, with the purpose written on them.",
+   "hi": "कॉपी केवल ज़रूरत की जगह दें, उस पर मक़सद लिखकर।",
+   "mr": "प्रत फक्त आवश्यक तिथे द्या, त्यावर उद्देश लिहून."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.incometax.gov.in"
+ ]
+}

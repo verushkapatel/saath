@@ -1,0 +1,204 @@
+{
+ "id": "nominee-matters",
+ "guide": "nominee-matters",
+ "title": {
+  "en": "Adding nominees everywhere in one afternoon: bank, insurance, investments, PF",
+  "hi": "एक दोपहर में हर जगह नॉमिनी जोड़ना: बैंक, बीमा, निवेश, PF",
+  "mr": "एका दुपारी सगळीकडे नॉमिनी जोडणे: बँक, विमा, गुंतवणूक, PF"
+ },
+ "setting": {
+  "en": "After a cousin's family struggled for a year, Verena checks her own accounts",
+  "hi": "एक चचेरे भाई के परिवार के साल भर परेशान होने के बाद वेरेना अपने खाते जाँचती है",
+  "mr": "एका चुलत भावाच्या कुटुंबाचा वर्षभर त्रास पाहिल्यानंतर वेरेना तिची खाती तपासते"
+ },
+ "steps": [
+  {
+   "scene": "documents",
+   "title": {
+    "en": "List every place your money sits",
+    "hi": "हर वह जगह लिखें जहाँ आपका पैसा है",
+    "mr": "तुमचे पैसे जिथे जिथे आहेत ती प्रत्येक जागा लिहा"
+   },
+   "text": {
+    "en": "Verena writes a list: savings account, a fixed deposit, her health policy, her term insurance, a mutual fund SIP, and her EPF from work. Next to each she writes 'nominee: ?'.",
+    "hi": "वेरेना एक सूची बनाती है: बचत खाता, एक FD, स्वास्थ्य पॉलिसी, टर्म बीमा, एक म्यूचुअल फ़ंड SIP, और काम का EPF। हर एक के आगे वह लिखती है 'नॉमिनी: ?'।",
+    "mr": "वेरेना यादी करते: बचत खाते, एक मुदत ठेव, आरोग्य पॉलिसी, टर्म विमा, एक म्युच्युअल फंड SIP, आणि कामाचा EPF. प्रत्येकासमोर ती लिहिते 'नॉमिनी: ?'."
+   },
+   "screen": [
+    {
+     "en": "Savings account: ✓ Mother",
+     "hi": "बचत खाता: ✓ माँ",
+     "mr": "बचत खाते: ✓ आई"
+    },
+    {
+     "en": "Fixed deposit: ✗",
+     "hi": "FD: ✗",
+     "mr": "मुदत ठेव: ✗"
+    },
+    {
+     "en": "Term insurance: ✓",
+     "hi": "टर्म बीमा: ✓",
+     "mr": "टर्म विमा: ✓"
+    },
+    {
+     "en": "Mutual fund: ✗ (opted out?)",
+     "hi": "म्यूचुअल फ़ंड: ✗ (ऑप्ट-आउट?)",
+     "mr": "म्युच्युअल फंड: ✗ (ऑप्ट-आउट?)"
+    },
+    {
+     "en": "EPF: ✗",
+     "hi": "EPF: ✗",
+     "mr": "EPF: ✗"
+    },
+    {
+     "en": "Health policy: ✓",
+     "hi": "स्वास्थ्य पॉलिसी: ✓",
+     "mr": "आरोग्य पॉलिसी: ✓"
+    }
+   ],
+   "details": [
+    {
+     "en": "A nominee is the person who receives the money; the law of succession decides who finally owns it. Nomination makes the payout quick and simple.",
+     "hi": "नॉमिनी वह व्यक्ति है जिसे पैसा मिलता है; अंत में मालिक कौन होगा, यह उत्तराधिकार क़ानून तय करता है। नामांकन से भुगतान जल्दी और आसान होता है।",
+     "mr": "नॉमिनी म्हणजे पैसे मिळणारी व्यक्ती; शेवटी मालक कोण हे वारसा कायदा ठरवतो. नामनिर्देशनाने पैसे लवकर आणि सोपेपणाने मिळतात."
+    },
+    {
+     "en": "Each account needs its own nomination. One does not cover the others.",
+     "hi": "हर खाते में अलग नामांकन चाहिए। एक दूसरे को कवर नहीं करता।",
+     "mr": "प्रत्येक खात्याला स्वतंत्र नामनिर्देशन हवे. एक दुसऱ्याला लागू होत नाही."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Add them online, one by one",
+    "hi": "एक-एक करके ऑनलाइन जोड़ें",
+    "mr": "एकेक करून ऑनलाइन जोडा"
+   },
+   "text": {
+    "en": "FD: the bank app has 'Nominee update'. Mutual fund: the fund's or registrar's portal asks to add a nominee or formally opt out. EPF: she logs into the EPFO member portal with her UAN and adds an e-nomination, confirmed with Aadhaar OTP.",
+    "hi": "FD: बैंक ऐप में 'नॉमिनी अपडेट' है। म्यूचुअल फ़ंड: फ़ंड या रजिस्ट्रार का पोर्टल नॉमिनी जोड़ने या औपचारिक रूप से मना करने को कहता है। EPF: वह UAN से EPFO सदस्य पोर्टल पर लॉगिन करके ई-नामांकन जोड़ती है, आधार OTP से पुष्टि करके।",
+    "mr": "FD: बँकेच्या ॲपमध्ये 'नॉमिनी अपडेट' आहे. म्युच्युअल फंड: फंडाचे किंवा रजिस्ट्रारचे पोर्टल नॉमिनी जोडायला किंवा औपचारिकपणे नाकारायला सांगते. EPF: ती UAN ने EPFO सदस्य पोर्टलवर लॉगिन करून ई-नामनिर्देशन जोडते, आधार OTP ने पुष्टी करून."
+   },
+   "screen": [
+    {
+     "en": "EPFO e-Nomination",
+     "hi": "EPFO ई-नामांकन",
+     "mr": "EPFO ई-नामनिर्देशन"
+    },
+    {
+     "en": "UAN: 10xxxxxxxx21",
+     "hi": "UAN: 10xxxxxxxx21",
+     "mr": "UAN: 10xxxxxxxx21"
+    },
+    {
+     "en": "Nominee: Anita D'Souza",
+     "hi": "नॉमिनी: अनीता डिसूज़ा",
+     "mr": "नॉमिनी: अनिता डिसूझा"
+    },
+    {
+     "en": "Share: 100%",
+     "hi": "हिस्सा: 100%",
+     "mr": "वाटा: 100%"
+    },
+    {
+     "en": "✓ e-Sign with Aadhaar OTP",
+     "hi": "✓ आधार OTP से ई-साइन",
+     "mr": "✓ आधार OTP ने ई-सही"
+    }
+   ],
+   "details": [
+    {
+     "en": "Where more than one nominee is allowed, write each person's share in percent so it adds to 100.",
+     "hi": "जहाँ एक से ज़्यादा नॉमिनी की छूट हो, हर व्यक्ति का हिस्सा प्रतिशत में लिखें ताकि कुल 100 हो।",
+     "mr": "जिथे एकापेक्षा जास्त नॉमिनी चालतात, तिथे प्रत्येकाचा वाटा टक्क्यांत लिहा म्हणजे बेरीज 100 होईल."
+    },
+    {
+     "en": "A minor nominee needs a guardian named alongside.",
+     "hi": "नाबालिग नॉमिनी के साथ एक अभिभावक का नाम ज़रूरी है।",
+     "mr": "अल्पवयीन नॉमिनीसोबत पालकाचे नाव आवश्यक आहे."
+    }
+   ],
+   "cost": {
+    "en": "1 hour for everything",
+    "hi": "सब के लिए 1 घंटा",
+    "mr": "सगळ्यासाठी 1 तास"
+   }
+  },
+  {
+   "scene": "family",
+   "title": {
+    "en": "Tell the nominee, and update after life changes",
+    "hi": "नॉमिनी को बताएँ, और ज़िंदगी बदलने पर अपडेट करें",
+    "mr": "नॉमिनीला सांगा, आणि आयुष्यात बदल झाल्यावर अद्ययावत करा"
+   },
+   "text": {
+    "en": "She tells her mother where the list is kept. Years later, after marriage, she reviews the nominations again, deciding on purpose rather than by default.",
+    "hi": "वह माँ को बताती है कि सूची कहाँ रखी है। सालों बाद, शादी के बाद, वह नामांकन फिर से देखती है, और जानबूझकर फ़ैसला करती है, अपने आप जैसा था वैसा नहीं छोड़ती।",
+    "mr": "ती आईला यादी कुठे ठेवली आहे ते सांगते. वर्षांनी, लग्नानंतर, ती नामनिर्देशने पुन्हा पाहते, आणि जसे होते तसे न सोडता जाणीवपूर्वक निर्णय घेते."
+   },
+   "screen": [
+    {
+     "en": "Review nominees when:",
+     "hi": "नॉमिनी देखें जब:",
+     "mr": "नॉमिनी पाहा जेव्हा:"
+    },
+    {
+     "en": "marriage · child · divorce",
+     "hi": "शादी · बच्चा · तलाक",
+     "mr": "लग्न · मूल · घटस्फोट"
+    },
+    {
+     "en": "a nominee passes away",
+     "hi": "नॉमिनी का निधन",
+     "mr": "नॉमिनीचे निधन"
+    }
+   ],
+   "details": [
+    {
+     "en": "A nominee who does not know the account exists cannot claim it. Unclaimed money sits for years.",
+     "hi": "जिस नॉमिनी को खाते का पता ही नहीं, वह दावा नहीं कर सकता। बिना दावे का पैसा सालों पड़ा रहता है।",
+     "mr": "ज्या नॉमिनीला खाते असल्याचेच माहीत नाही तो दावा करू शकत नाही. दावा न केलेले पैसे वर्षानुवर्षे पडून राहतात."
+    },
+    {
+     "en": "A short will, alongside nominations, makes the family's path clearest.",
+     "hi": "नामांकन के साथ एक छोटी वसीयत परिवार का रास्ता सबसे साफ़ करती है।",
+     "mr": "नामनिर्देशनासोबत एक छोटे मृत्युपत्राने कुटुंबाचा मार्ग सर्वात स्पष्ट होतो."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Each account, policy, fund and PF needs its own nomination.",
+   "hi": "हर खाते, पॉलिसी, फ़ंड और PF में अलग नामांकन चाहिए।",
+   "mr": "प्रत्येक खाते, पॉलिसी, फंड आणि PF ला स्वतंत्र नामनिर्देशन हवे."
+  },
+  {
+   "en": "Most can be done online in minutes: bank app, fund portal, EPFO e-nomination.",
+   "hi": "ज़्यादातर मिनटों में ऑनलाइन हो जाते हैं: बैंक ऐप, फ़ंड पोर्टल, EPFO ई-नामांकन।",
+   "mr": "बहुतेक काही मिनिटांत ऑनलाइन होतात: बँक ॲप, फंड पोर्टल, EPFO ई-नामनिर्देशन."
+  },
+  {
+   "en": "Tell your nominees where the list is, and review it after marriage, children or loss.",
+   "hi": "नॉमिनी को बताएँ कि सूची कहाँ है, और शादी, बच्चे या किसी के जाने के बाद उसे फिर देखें।",
+   "mr": "नॉमिनींना यादी कुठे आहे ते सांगा, आणि लग्न, मूल किंवा कोणाच्या जाण्यानंतर ती पुन्हा पाहा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.epfindia.gov.in",
+  "https://www.rbi.org.in"
+ ]
+}

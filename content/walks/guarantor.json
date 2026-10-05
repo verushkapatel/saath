@@ -1,0 +1,213 @@
+{
+ "id": "guarantor",
+ "guide": "guarantor",
+ "title": {
+  "en": "Asked to sign as a guarantor: what the bank will make you sign, and what it means for 5 years",
+  "hi": "गारंटर बनने को कहा गया: बैंक क्या हस्ताक्षर करवाएगा, और 5 साल तक इसका क्या मतलब",
+  "mr": "जामीनदार व्हायला सांगितले: बँक कशावर सही करायला लावेल, आणि 5 वर्षे त्याचा अर्थ काय"
+ },
+ "setting": {
+  "en": "Verena's cousin Rohan wants a ₹6 lakh education loan and needs a guarantor",
+  "hi": "वेरेना के चचेरे भाई रोहन को ₹6 लाख का एजुकेशन लोन चाहिए और एक गारंटर",
+  "mr": "वेरेनाच्या चुलत भावाला, रोहनला, ₹6 लाखांचे शैक्षणिक कर्ज हवे आणि जामीनदार हवा"
+ },
+ "steps": [
+  {
+   "scene": "family",
+   "title": {
+    "en": "The request, at a family dinner",
+    "hi": "परिवार के खाने पर अनुरोध",
+    "mr": "कौटुंबिक जेवणात विनंती"
+   },
+   "text": {
+    "en": "In front of everyone, Rohan's father asks Verena to 'just sign' as guarantor. Everyone nods. Verena says she is happy to help and wants to read the papers first.",
+    "hi": "सबके सामने रोहन के पिता वेरेना से गारंटर के रूप में 'बस हस्ताक्षर' करने को कहते हैं। सब सिर हिलाते हैं। वेरेना कहती है कि वह ख़ुशी से मदद करेगी और पहले काग़ज़ पढ़ना चाहती है।",
+    "mr": "सगळ्यांसमोर रोहनचे वडील वेरेनाला जामीनदार म्हणून 'फक्त सही' करायला सांगतात. सगळे मान डोलवतात. वेरेना म्हणते की ती आनंदाने मदत करेल आणि आधी कागदपत्रे वाचू इच्छिते."
+   },
+   "screen": [
+    {
+     "en": "'Just sign, it's a formality'",
+     "hi": "'बस हस्ताक्षर करो, औपचारिकता है'",
+     "mr": "'फक्त सही कर, औपचारिकता आहे'"
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "Verena:",
+     "hi": "वेरेना:",
+     "mr": "वेरेना:"
+    },
+    "line": {
+     "en": "\"Of course I want to help Rohan. Can I see the loan papers and the guarantee agreement before I sign?\"",
+     "hi": "\"बेशक मैं रोहन की मदद करना चाहती हूँ। क्या हस्ताक्षर से पहले मैं लोन के काग़ज़ और गारंटी अनुबंध देख सकती हूँ?\"",
+     "mr": "\"नक्कीच मला रोहनला मदत करायची आहे. सही करण्यापूर्वी मी कर्जाची कागदपत्रे आणि हमी करार पाहू शकते का?\""
+    }
+   },
+   "cost": {
+    "en": "A polite pause",
+    "hi": "एक शालीन ठहराव",
+    "mr": "एक नम्र विराम"
+   }
+  },
+  {
+   "scene": "signature",
+   "title": {
+    "en": "Read what a guarantee really says",
+    "hi": "पढ़ें कि गारंटी असल में क्या कहती है",
+    "mr": "हमी खरोखर काय सांगते ते वाचा"
+   },
+   "text": {
+    "en": "The guarantee deed has one sentence that matters most: if the borrower does not pay, the bank can recover the full amount, interest and charges from the guarantor, without first exhausting every option against the borrower.",
+    "hi": "गारंटी डीड में एक वाक्य सबसे अहम है: अगर उधार लेने वाला नहीं चुकाता, तो बैंक पूरी रकम, ब्याज और शुल्क गारंटर से वसूल सकता है, उधार लेने वाले के ख़िलाफ़ हर रास्ता आज़माए बिना भी।",
+    "mr": "हमीपत्रात एक वाक्य सर्वात महत्त्वाचे: कर्जदाराने न फेडल्यास बँक संपूर्ण रक्कम, व्याज आणि शुल्क जामीनदाराकडून वसूल करू शकते, कर्जदाराविरुद्ध प्रत्येक मार्ग वापरण्यापूर्वीही."
+   },
+   "screen": [
+    {
+     "en": "DEED OF GUARANTEE",
+     "hi": "गारंटी डीड",
+     "mr": "हमीपत्र"
+    },
+    {
+     "en": "The guarantor shall pay on demand",
+     "hi": "गारंटर माँगने पर भुगतान करेगा",
+     "mr": "मागणीनुसार जामीनदार पैसे देईल"
+    },
+    {
+     "en": "all sums due under the loan",
+     "hi": "लोन के तहत सारी बकाया रकम",
+     "mr": "कर्जाखालील सर्व थकीत रकमा"
+    },
+    {
+     "en": "including interest and charges",
+     "hi": "ब्याज और शुल्क समेत",
+     "mr": "व्याज आणि शुल्कासह"
+    },
+    {
+     "en": "Liability: co-extensive",
+     "hi": "दायित्व: बराबर",
+     "mr": "दायित्व: समव्याप्त"
+    }
+   ],
+   "details": [
+    {
+     "en": "'Co-extensive' means your liability is as large as the borrower's.",
+     "hi": "'Co-extensive' का मतलब है आपका दायित्व उधार लेने वाले जितना ही बड़ा है।",
+     "mr": "'Co-extensive' म्हणजे तुमचे दायित्व कर्जदाराइतकेच मोठे आहे."
+    },
+    {
+     "en": "The loan appears on your credit report. Missed EMIs lower your score too, and banks count it when you apply for your own loans.",
+     "hi": "लोन आपकी क्रेडिट रिपोर्ट पर दिखता है। छूटी EMI आपका स्कोर भी गिराती हैं, और आपके अपने लोन के आवेदन पर बैंक इसे गिनते हैं।",
+     "mr": "कर्ज तुमच्या क्रेडिट अहवालावर दिसते. चुकलेल्या EMI तुमचा स्कोरही घसरवतात, आणि तुमच्या स्वतःच्या कर्ज अर्जावेळी बँका ते मोजतात."
+    }
+   ],
+   "cost": {
+    "en": "20 minutes of reading",
+    "hi": "20 मिनट पढ़ना",
+    "mr": "20 मिनिटे वाचन"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Ask the questions that change the risk",
+    "hi": "वे सवाल पूछें जो जोखिम बदलते हैं",
+    "mr": "धोका बदलणारे प्रश्न विचारा"
+   },
+   "text": {
+    "en": "She asks the bank and Rohan's family: Is there a moratorium until the course ends? What is the EMI after it? Is there a co-borrower (his father)? Is there collateral? Can I get loan statements every year?",
+    "hi": "वह बैंक और रोहन के परिवार से पूछती है: क्या कोर्स ख़त्म होने तक मोरेटोरियम है? उसके बाद EMI कितनी है? क्या कोई सह-उधारकर्ता (उसके पिता) है? कोई गिरवी है? क्या मुझे हर साल लोन स्टेटमेंट मिल सकते हैं?",
+    "mr": "ती बँकेला आणि रोहनच्या कुटुंबाला विचारते: अभ्यासक्रम संपेपर्यंत स्थगिती आहे का? त्यानंतर EMI किती? सह-कर्जदार (त्याचे वडील) आहेत का? तारण आहे का? मला दरवर्षी कर्ज विवरण मिळेल का?"
+   },
+   "screen": [
+    {
+     "en": "Loan ₹6,00,000",
+     "hi": "लोन ₹6,00,000",
+     "mr": "कर्ज ₹6,00,000"
+    },
+    {
+     "en": "Moratorium: course + 1 yr",
+     "hi": "मोरेटोरियम: कोर्स + 1 साल",
+     "mr": "स्थगिती: अभ्यासक्रम + 1 वर्ष"
+    },
+    {
+     "en": "EMI after: ~₹9,800 × 84",
+     "hi": "बाद में EMI: ~₹9,800 × 84",
+     "mr": "नंतर EMI: ~₹9,800 × 84"
+    },
+    {
+     "en": "Co-borrower: father ✓",
+     "hi": "सह-उधारकर्ता: पिता ✓",
+     "mr": "सह-कर्जदार: वडील ✓"
+    },
+    {
+     "en": "Verena's max risk: ₹6 L + interest",
+     "hi": "वेरेना का अधिकतम जोखिम: ₹6 लाख + ब्याज",
+     "mr": "वेरेनाचा कमाल धोका: ₹6 लाख + व्याज"
+    }
+   ],
+   "cost": {
+    "en": "A decision for years",
+    "hi": "सालों का फ़ैसला",
+    "mr": "वर्षानुवर्षांचा निर्णय"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Verena could not repay ₹6 lakh herself. Should she sign?",
+     "hi": "वेरेना ख़ुद ₹6 लाख नहीं चुका सकती। क्या हस्ताक्षर करे?",
+     "mr": "वेरेना स्वतः ₹6 लाख फेडू शकत नाही. तिने सही करावी का?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Yes, family is family",
+       "hi": "हाँ, परिवार तो परिवार है",
+       "mr": "हो, कुटुंब ते कुटुंब"
+      },
+      "good": false,
+      "result": {
+       "en": "If things go wrong, she would owe money she does not have, and family relationships usually suffer more, not less.",
+       "hi": "बात बिगड़ी तो वह ऐसा पैसा देनदार होगी जो उसके पास नहीं, और परिवार के रिश्ते आमतौर पर ज़्यादा बिगड़ते हैं।",
+       "mr": "बिघडले तर तिच्याकडे नसलेल्या पैशांची ती देणेकरी होईल, आणि कौटुंबिक नाती सहसा अधिकच बिघडतात."
+      }
+     },
+     {
+      "text": {
+       "en": "Offer another kind of help instead: a smaller gift, help finding a scholarship",
+       "hi": "दूसरी तरह की मदद दे: छोटा तोहफ़ा, स्कॉलरशिप ढूँढने में मदद",
+       "mr": "दुसऱ्या प्रकारची मदत द्यावी: छोटी भेट, शिष्यवृत्ती शोधायला मदत"
+      },
+      "good": true,
+      "result": {
+       "en": "Help she can afford, without taking on a risk she cannot carry. Many education loans also need no third-party guarantor below certain amounts; the bank can confirm.",
+       "hi": "ऐसी मदत जो वह दे सके, बिना ऐसे जोखिम के जो वह उठा न सके। कई एजुकेशन लोन एक सीमा से कम पर किसी बाहरी गारंटर के बिना भी मिलते हैं; बैंक पुष्टि कर सकता है।",
+       "mr": "तिला परवडेल अशी मदत, ती पेलू शकणार नाही असा धोका न घेता. अनेक शैक्षणिक कर्जांना ठरावीक रकमेखाली बाहेरच्या जामीनदाराची गरजही नसते; बँक खात्री करू शकते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "A guarantor can be asked to pay the full loan, interest and charges.",
+   "hi": "गारंटर से पूरा लोन, ब्याज और शुल्क चुकाने को कहा जा सकता है।",
+   "mr": "जामीनदाराकडून संपूर्ण कर्ज, व्याज आणि शुल्क फेडायला सांगितले जाऊ शकते."
+  },
+  {
+   "en": "The loan shows on your credit report and affects your own borrowing.",
+   "hi": "लोन आपकी क्रेडिट रिपोर्ट पर दिखता है और आपके अपने उधार पर असर डालता है।",
+   "mr": "कर्ज तुमच्या क्रेडिट अहवालावर दिसते आणि तुमच्या स्वतःच्या कर्जावर परिणाम करते."
+  },
+  {
+   "en": "Read the guarantee deed and ask about EMI, co-borrowers and collateral.",
+   "hi": "गारंटी डीड पढ़ें और EMI, सह-उधारकर्ता और गिरवी के बारे में पूछें।",
+   "mr": "हमीपत्र वाचा आणि EMI, सह-कर्जदार आणि तारण याबद्दल विचारा."
+  },
+  {
+   "en": "Only guarantee an amount you could repay yourself.",
+   "hi": "केवल उतनी रकम की गारंटी दें जितनी आप ख़ुद चुका सकें।",
+   "mr": "फक्त स्वतः फेडू शकाल इतक्याच रकमेची हमी द्या."
+  }
+ ],
+ "reviewed": "2026-10"
+}

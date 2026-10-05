@@ -1,0 +1,218 @@
+{
+ "id": "pay-yourself",
+ "guide": "pay-yourself",
+ "title": {
+  "en": "Paying yourself first: setting up an automatic saving that runs on payday, every month",
+  "hi": "पहले ख़ुद को भुगतान: एक ऑटोमैटिक बचत जो हर महीने तनख़्वाह के दिन चले",
+  "mr": "आधी स्वतःला पैसे: दर महिन्याला पगाराच्या दिवशी चालणारी आपोआप बचत"
+ },
+ "setting": {
+  "en": "Verena keeps 'saving whatever is left', and nothing is ever left",
+  "hi": "वेरेना 'जो बचे वह बचाती' है, और कभी कुछ नहीं बचता",
+  "mr": "वेरेना 'जे उरेल ते वाचवते', आणि कधीच काही उरत नाही"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Pick a number small enough to never skip",
+    "hi": "इतना छोटा अंक चुनें कि कभी न छूटे",
+    "mr": "कधीच चुकणार नाही इतका छोटा आकडा निवडा"
+   },
+   "text": {
+    "en": "Instead of a heroic 30%, she picks ₹2,000, about 7% of her pay, an amount she will not feel by the 15th.",
+    "hi": "बहादुरी वाले 30% के बजाय वह ₹2,000 चुनती है, तनख़्वाह का लगभग 7%, इतनी रकम जो 15 तारीख़ तक महसूस भी न हो।",
+    "mr": "शूरपणाच्या 30% ऐवजी ती ₹2,000 निवडते, पगाराच्या साधारण 7%, इतकी रक्कम जी 15 तारखेपर्यंत जाणवणारही नाही."
+   },
+   "screen": [
+    {
+     "en": "Pay yourself first",
+     "hi": "पहले ख़ुद को",
+     "mr": "आधी स्वतःला"
+    },
+    {
+     "en": "Pay: ₹28,000",
+     "hi": "तनख़्वाह: ₹28,000",
+     "mr": "पगार: ₹28,000"
+    },
+    {
+     "en": "Save: ₹2,000 (7%)",
+     "hi": "बचत: ₹2,000 (7%)",
+     "mr": "बचत: ₹2,000 (7%)"
+    },
+    {
+     "en": "Raise it by ₹500 each appraisal",
+     "hi": "हर अप्रेज़ल पर ₹500 बढ़ाएँ",
+     "mr": "प्रत्येक मूल्यांकनाला ₹500 वाढवा"
+    }
+   ],
+   "details": [
+    {
+     "en": "The habit matters more than the size. A saving that runs every month for years beats a big one that stops in month three.",
+     "hi": "आदत आकार से ज़्यादा ज़रूरी है। सालों तक हर महीने चलने वाली बचत तीसरे महीने रुक जाने वाली बड़ी बचत से बेहतर है।",
+     "mr": "सवय आकारापेक्षा महत्त्वाची. वर्षानुवर्षे दर महिन्याला चालणारी बचत तिसऱ्या महिन्यात थांबणाऱ्या मोठ्या बचतीपेक्षा चांगली."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Make it automatic, the day after salary",
+    "hi": "इसे ऑटोमैटिक बनाएँ, तनख़्वाह के अगले दिन",
+    "mr": "ते आपोआप करा, पगाराच्या दुसऱ्या दिवशी"
+   },
+   "text": {
+    "en": "In her bank app she opens a recurring deposit (RD) of ₹2,000 a month with auto-debit on the 1st, the day after salary lands. She never has to decide again.",
+    "hi": "बैंक ऐप में वह ₹2,000 महीने का रेकरिंग डिपॉज़िट (RD) खोलती है, 1 तारीख़ को ऑटो-डेबिट के साथ, तनख़्वाह आने के अगले दिन। उसे फिर कभी फ़ैसला नहीं करना पड़ता।",
+    "mr": "बँकेच्या ॲपमध्ये ती ₹2,000 महिन्याची आवर्ती ठेव (RD) उघडते, 1 तारखेला ऑटो-डेबिटसह, पगार आल्याच्या दुसऱ्या दिवशी. तिला पुन्हा कधीच निर्णय घ्यावा लागत नाही."
+   },
+   "screen": [
+    {
+     "en": "Open Recurring Deposit",
+     "hi": "रेकरिंग डिपॉज़िट खोलें",
+     "mr": "आवर्ती ठेव उघडा"
+    },
+    {
+     "en": "Amount: ₹2,000/month",
+     "hi": "रकम: ₹2,000/महीना",
+     "mr": "रक्कम: ₹2,000/महिना"
+    },
+    {
+     "en": "Debit date: 1st",
+     "hi": "कटौती तारीख़: 1",
+     "mr": "कपात तारीख: 1"
+    },
+    {
+     "en": "Tenure: 12 months",
+     "hi": "अवधि: 12 महीने",
+     "mr": "मुदत: 12 महिने"
+    },
+    {
+     "en": "Nominee: Mother ✓",
+     "hi": "नॉमिनी: माँ ✓",
+     "mr": "नॉमिनी: आई ✓"
+    },
+    {
+     "en": "✓ RD opened",
+     "hi": "✓ RD खुला",
+     "mr": "✓ RD उघडली"
+    }
+   ],
+   "details": [
+    {
+     "en": "An RD earns a fixed interest rate, shown before you confirm. Breaking it early may reduce the interest a little.",
+     "hi": "RD पर तय ब्याज मिलता है, जो पुष्टि से पहले दिखता है। समय से पहले तोड़ने पर ब्याज थोड़ा कम हो सकता है।",
+     "mr": "RD वर ठरावीक व्याज मिळते, जे पुष्टीपूर्वी दिसते. मुदतीआधी मोडल्यास व्याज थोडे कमी होऊ शकते."
+    },
+    {
+     "en": "Other options: a separate savings account you do not use for spending, or a SIP if the goal is many years away.",
+     "hi": "दूसरे विकल्प: एक अलग बचत खाता जिससे आप ख़र्च नहीं करते, या SIP अगर लक्ष्य कई साल दूर है।",
+     "mr": "इतर पर्याय: खर्चासाठी न वापरलेले वेगळे बचत खाते, किंवा उद्दिष्ट अनेक वर्षे दूर असल्यास SIP."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes, once",
+    "hi": "5 मिनट, एक बार",
+    "mr": "5 मिनिटे, एकदा"
+   }
+  },
+  {
+   "scene": "jar",
+   "title": {
+    "en": "A year later: the pot she never missed",
+    "hi": "एक साल बाद: वह जमा जिसकी कमी कभी नहीं खली",
+    "mr": "एक वर्षानंतर: कधीच न जाणवलेली बचत"
+   },
+   "text": {
+    "en": "Twelve months on, the RD matures at a little over ₹24,000 with interest. When her laptop dies in month fourteen, she pays for the repair without a loan.",
+    "hi": "बारह महीने बाद RD ब्याज समेत ₹24,000 से थोड़ा ज़्यादा होकर पूरा होता है। चौदहवें महीने जब लैपटॉप ख़राब होता है, वह बिना लोन के मरम्मत करवाती है।",
+    "mr": "बारा महिन्यांनी RD व्याजासह ₹24,000 पेक्षा थोडी जास्त होऊन पूर्ण होते. चौदाव्या महिन्यात लॅपटॉप बिघडतो तेव्हा ती कर्जाशिवाय दुरुस्ती करते."
+   },
+   "screen": [
+    {
+     "en": "RD matured",
+     "hi": "RD पूरा हुआ",
+     "mr": "RD पूर्ण"
+    },
+    {
+     "en": "Paid in: ₹24,000",
+     "hi": "जमा किया: ₹24,000",
+     "mr": "भरले: ₹24,000"
+    },
+    {
+     "en": "+ interest",
+     "hi": "+ ब्याज",
+     "mr": "+ व्याज"
+    },
+    {
+     "en": "Laptop repair: paid, no loan",
+     "hi": "लैपटॉप मरम्मत: बिना लोन",
+     "mr": "लॅपटॉप दुरुस्ती: कर्जाशिवाय"
+    }
+   ],
+   "cost": {
+    "en": "₹0 extra effort",
+    "hi": "₹0 अतिरिक्त मेहनत",
+    "mr": "₹0 जादा कष्ट"
+   },
+   "choice": {
+    "prompt": {
+     "en": "A friend says 'Why save in an RD? Spend now, you're young.' What's the answer?",
+     "hi": "एक दोस्त कहता है 'RD में क्यों बचाना? अभी ख़र्च करो, जवान हो।' जवाब क्या है?",
+     "mr": "एक मित्र म्हणतो 'RD मध्ये कशाला वाचवायचे? आत्ता खर्च कर, तरुण आहेस.' उत्तर काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "He's right, saving can start later",
+       "hi": "वह सही है, बचत बाद में शुरू हो सकती है",
+       "mr": "तो बरोबर आहे, बचत नंतर सुरू करता येईल"
+      },
+      "good": false,
+      "result": {
+       "en": "'Later' rarely gets easier: rent and responsibilities grow. The habit is easiest to start small, now.",
+       "hi": "'बाद में' शायद ही आसान होता है: किराया और ज़िम्मेदारियाँ बढ़ती हैं। आदत अभी, छोटे से शुरू करना सबसे आसान है।",
+       "mr": "'नंतर' क्वचितच सोपे होते: भाडे आणि जबाबदाऱ्या वाढतात. सवय आत्ता, लहानशी सुरू करणे सर्वात सोपे."
+      }
+     },
+     {
+      "text": {
+       "en": "She still spends; she just saves first",
+       "hi": "वह ख़र्च भी करती है; बस पहले बचाती है",
+       "mr": "ती खर्चही करते; फक्त आधी वाचवते"
+      },
+      "good": true,
+      "result": {
+       "en": "Exactly. Paying yourself first leaves plenty to enjoy, and a cushion when life surprises you.",
+       "hi": "बिल्कुल। पहले ख़ुद को भुगतान करने के बाद मज़े के लिए काफ़ी बचता है, और ज़िंदगी के झटकों के लिए एक सहारा।",
+       "mr": "अगदी. आधी स्वतःला पैसे दिल्यावरही आनंदासाठी भरपूर उरते, आणि आयुष्याच्या धक्क्यांसाठी आधार."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Save on payday, not at month-end.",
+   "hi": "महीने के अंत में नहीं, तनख़्वाह के दिन बचाएँ।",
+   "mr": "महिनाअखेरीस नाही, पगाराच्या दिवशी वाचवा."
+  },
+  {
+   "en": "Start with an amount small enough never to skip; raise it with each raise.",
+   "hi": "इतनी छोटी रकम से शुरू करें कि कभी न छूटे; हर बढ़ोतरी पर बढ़ाएँ।",
+   "mr": "कधीही चुकणार नाही इतक्या लहान रकमेपासून सुरू करा; प्रत्येक पगारवाढीसोबत वाढवा."
+  },
+  {
+   "en": "Automate it with an RD, a separate account, or a SIP.",
+   "hi": "इसे RD, अलग खाते, या SIP से ऑटोमैटिक करें।",
+   "mr": "ती RD, वेगळे खाते, किंवा SIP ने आपोआप करा."
+  }
+ ],
+ "reviewed": "2026-10"
+}

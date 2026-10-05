@@ -1,0 +1,213 @@
+{
+ "id": "lending-friends",
+ "guide": "lending-friends",
+ "title": {
+  "en": "A friend asks to borrow ₹8,000: saying yes safely, or no kindly",
+  "hi": "एक दोस्त ₹8,000 उधार माँगता है: सुरक्षित हाँ, या प्यार से ना",
+  "mr": "एक मित्र ₹8,000 उसने मागतो: सुरक्षितपणे हो, किंवा प्रेमाने नाही"
+ },
+ "setting": {
+  "en": "A late-night call from her college friend Aman",
+  "hi": "कॉलेज के दोस्त अमन की देर रात की कॉल",
+  "mr": "कॉलेजचा मित्र अमनचा रात्री उशिराचा फोन"
+ },
+ "steps": [
+  {
+   "scene": "call",
+   "title": {
+    "en": "Listen first, decide tomorrow",
+    "hi": "पहले सुनें, फ़ैसला कल",
+    "mr": "आधी ऐका, निर्णय उद्या"
+   },
+   "text": {
+    "en": "Aman needs ₹8,000 for his sister's exam fee, due in three days. Verena listens fully, asks when he could repay, and says she will reply in the morning. Decisions made at midnight under guilt are rarely good ones.",
+    "hi": "अमन को बहन की परीक्षा फ़ीस के लिए ₹8,000 चाहिए, तीन दिन में भरनी है। वेरेना पूरी बात सुनती है, पूछती है कि वह कब लौटा सकेगा, और कहती है कि सुबह जवाब देगी। आधी रात को अपराध-बोध में लिए फ़ैसले शायद ही अच्छे होते हैं।",
+    "mr": "अमनला बहिणीच्या परीक्षा फीसाठी ₹8,000 हवेत, तीन दिवसांत भरायची आहे. वेरेना पूर्ण ऐकते, तो कधी परत करू शकेल ते विचारते, आणि सकाळी उत्तर देईन म्हणते. मध्यरात्री अपराधीपणात घेतलेले निर्णय क्वचितच चांगले असतात."
+   },
+   "screen": [
+    {
+     "en": "Aman",
+     "hi": "अमन",
+     "mr": "अमन"
+    },
+    {
+     "en": "Need ₹8,000",
+     "hi": "₹8,000 चाहिए",
+     "mr": "₹8,000 हवेत"
+    },
+    {
+     "en": "by Friday",
+     "hi": "शुक्रवार तक",
+     "mr": "शुक्रवारपर्यंत"
+    }
+   ],
+   "cost": {
+    "en": "Sleep on it",
+    "hi": "एक रात सोचें",
+    "mr": "एक रात्र विचार करा"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "The one test: could I live without it if it never came back?",
+    "hi": "एक कसौटी: अगर कभी न लौटे तो क्या मैं इसके बिना रह सकती हूँ?",
+    "mr": "एकच कसोटी: कधीच परत आले नाहीत तर मी त्याशिवाय राहू शकेन का?"
+   },
+   "text": {
+    "en": "Her emergency fund is ₹22,000. Rent is due in ten days. She works out that she could give ₹5,000 without touching rent or going below a safe floor.",
+    "hi": "उसका आपात फ़ंड ₹22,000 है। किराया दस दिन में देना है। वह हिसाब लगाती है कि किराए को छुए बिना या सुरक्षित सीमा से नीचे गए बिना वह ₹5,000 दे सकती है।",
+    "mr": "तिचा आपत्कालीन निधी ₹22,000 आहे. भाडे दहा दिवसांत द्यायचे आहे. भाड्याला हात न लावता किंवा सुरक्षित पातळीखाली न जाता ती ₹5,000 देऊ शकते असा हिशोब ती करते."
+   },
+   "screen": [
+    {
+     "en": "Can I lend?",
+     "hi": "क्या उधार दूँ?",
+     "mr": "उसने देऊ का?"
+    },
+    {
+     "en": "Emergency fund: ₹22,000",
+     "hi": "आपात फ़ंड: ₹22,000",
+     "mr": "आपत्कालीन निधी: ₹22,000"
+    },
+    {
+     "en": "Must keep: ₹15,000",
+     "hi": "रखना ज़रूरी: ₹15,000",
+     "mr": "ठेवायलाच हवे: ₹15,000"
+    },
+    {
+     "en": "Rent in 10 days: covered",
+     "hi": "10 दिन में किराया: ठीक",
+     "mr": "10 दिवसांत भाडे: भागेल"
+    },
+    {
+     "en": "Can lend: ₹5,000",
+     "hi": "उधार दे सकती: ₹5,000",
+     "mr": "उसने देऊ शकते: ₹5,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Lend only what you could afford to lose. That protects both your month and the friendship.",
+     "hi": "केवल उतना उधार दें जितना खोना सह सकें। इससे आपका महीना और दोस्ती दोनों बचते हैं।",
+     "mr": "फक्त गमावणे परवडेल इतकेच उसने द्या. त्याने तुमचा महिना आणि मैत्री दोन्ही वाचतात."
+    },
+    {
+     "en": "Never borrow from an app or a credit card to lend to someone else.",
+     "hi": "किसी और को उधार देने के लिए ऐप या क्रेडिट कार्ड से कभी उधार न लें।",
+     "mr": "दुसऱ्याला उसने देण्यासाठी ॲप किंवा क्रेडिट कार्डवरून कधीही कर्ज घेऊ नका."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "Say it clearly, send it by UPI, write the date",
+    "hi": "साफ़ कहें, UPI से भेजें, तारीख़ लिखें",
+    "mr": "स्पष्ट सांगा, UPI ने पाठवा, तारीख लिहा"
+   },
+   "text": {
+    "en": "In the morning she messages Aman with the amount, the return date he suggested, and sends ₹5,000 by UPI with a note.",
+    "hi": "सुबह वह अमन को रकम, उसकी सुझाई लौटाने की तारीख़ लिखकर संदेश भेजती है, और नोट के साथ UPI से ₹5,000 भेजती है।",
+    "mr": "सकाळी ती अमनला रक्कम आणि त्याने सुचवलेली परतफेडीची तारीख लिहून संदेश पाठवते, आणि टिपेसह UPI ने ₹5,000 पाठवते."
+   },
+   "screen": [
+    {
+     "en": ">I can do ₹5,000, not 8. Back by 10 Dec like you said?",
+     "hi": ">मैं ₹5,000 दे सकती हूँ, 8 नहीं। 10 दिस तक वापस, जैसा तुमने कहा?",
+     "mr": ">मी ₹5,000 देऊ शकते, 8 नाही. 10 डिसेंपर्यंत परत, तू म्हणालास तसे?"
+    },
+    {
+     "en": "Aman: Yes! Thank you so much",
+     "hi": "अमन: हाँ! बहुत शुक्रिया",
+     "mr": "अमन: हो! खूप धन्यवाद"
+    },
+    {
+     "en": ">Sent ₹5,000 · note: loan to Aman, due 10 Dec",
+     "hi": ">₹5,000 भेजे · नोट: अमन को उधार, 10 दिस तक",
+     "mr": ">₹5,000 पाठवले · टीप: अमनला उसने, 10 डिसें पर्यंत"
+    }
+   ],
+   "details": [
+    {
+     "en": "A written amount and date avoids the most common fight: two people remembering different things.",
+     "hi": "लिखी हुई रकम और तारीख़ सबसे आम झगड़े से बचाती है: दो लोगों को अलग-अलग बातें याद रहना।",
+     "mr": "लिहिलेली रक्कम आणि तारीख सर्वात सामान्य भांडण टाळते: दोघांना वेगवेगळे आठवणे."
+    },
+    {
+     "en": "Lending less than asked, with a reason, is still a real help.",
+     "hi": "माँगे से कम उधार, कारण के साथ, फिर भी असली मदद है।",
+     "mr": "मागितल्यापेक्षा कमी, कारणासह, ही तरीही खरी मदत आहे."
+    }
+   ],
+   "cost": {
+    "en": "₹5,000 lent with a record",
+    "hi": "रिकॉर्ड के साथ ₹5,000 उधार",
+    "mr": "नोंदीसह ₹5,000 उसने"
+   },
+   "choice": {
+    "prompt": {
+     "en": "10 December passes with no money and no message. What next?",
+     "hi": "10 दिसंबर निकल जाता है, न पैसा, न संदेश। आगे क्या?",
+     "mr": "10 डिसेंबर उलटतो, ना पैसे, ना संदेश. पुढे काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Post about it in the friends' group",
+       "hi": "दोस्तों के ग्रुप में लिख दे",
+       "mr": "मित्रांच्या ग्रुपमध्ये लिहावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Public shaming ends friendships and rarely brings money back.",
+       "hi": "सबके सामने शर्मिंदा करना दोस्ती ख़त्म करता है और शायद ही पैसा लौटाता है।",
+       "mr": "सर्वांसमोर लाजवणे मैत्री संपवते आणि क्वचितच पैसे परत आणते."
+      }
+     },
+     {
+      "text": {
+       "en": "A private, friendly reminder, and agree a new date",
+       "hi": "अकेले में, दोस्ताना याद दिलाना, और नई तारीख़ तय करना",
+       "mr": "खासगीत, मैत्रीपूर्ण आठवण, आणि नवी तारीख ठरवणे"
+      },
+      "good": true,
+      "result": {
+       "en": "Most late repayments are embarrassment, not bad intent. A calm message keeps both the friend and a chance of the money.",
+       "hi": "ज़्यादातर देरी शर्मिंदगी से होती है, बुरी नीयत से नहीं। शांत संदेश दोस्त और पैसे की उम्मीद दोनों बचाता है।",
+       "mr": "बहुतेक उशीर लाजेमुळे होतो, वाईट हेतूने नाही. शांत संदेश मित्र आणि पैशांची आशा दोन्ही टिकवतो."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Do not decide at midnight. Listen, then decide calmly.",
+   "hi": "आधी रात को फ़ैसला न करें। सुनें, फिर शांति से तय करें।",
+   "mr": "मध्यरात्री निर्णय घेऊ नका. ऐका, मग शांतपणे ठरवा."
+  },
+  {
+   "en": "Lend only what you could manage without, even if it never returns.",
+   "hi": "केवल उतना दें जिसके बिना काम चल जाए, भले वह कभी न लौटे।",
+   "mr": "फक्त ज्याशिवाय भागेल तेवढेच द्या, ते कधीच परत आले नाही तरी."
+  },
+  {
+   "en": "Agree the amount and date in a message, and send by UPI for a record.",
+   "hi": "रकम और तारीख़ संदेश में तय करें, और रिकॉर्ड के लिए UPI से भेजें।",
+   "mr": "रक्कम आणि तारीख संदेशात ठरवा, आणि नोंदीसाठी UPI ने पाठवा."
+  },
+  {
+   "en": "Never borrow to lend.",
+   "hi": "उधार देने के लिए कभी उधार न लें।",
+   "mr": "उसने देण्यासाठी कधीही कर्ज घेऊ नका."
+  }
+ ],
+ "reviewed": "2026-10"
+}

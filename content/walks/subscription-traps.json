@@ -1,0 +1,226 @@
+{
+ "id": "subscription-traps",
+ "guide": "subscription-traps",
+ "title": {
+  "en": "Finding and cancelling every subscription you forgot, in 20 minutes",
+  "hi": "20 मिनट में हर भूली हुई सब्सक्रिप्शन ढूँढना और रद्द करना",
+  "mr": "20 मिनिटांत विसरलेली प्रत्येक सबस्क्रिप्शन शोधणे आणि रद्द करणे"
+ },
+ "setting": {
+  "en": "Verena sees ₹149, ₹199 and ₹99 leave her account every month and does not know why",
+  "hi": "वेरेना देखती है कि हर महीने ₹149, ₹199 और ₹99 खाते से जाते हैं और उसे पता नहीं क्यों",
+  "mr": "वेरेना पाहते की दर महिन्याला ₹149, ₹199 आणि ₹99 खात्यातून जातात आणि तिला माहीत नाही का"
+ },
+ "steps": [
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Open the AutoPay list in your UPI app",
+    "hi": "UPI ऐप में AutoPay की सूची खोलें",
+    "mr": "UPI ॲपमध्ये AutoPay यादी उघडा"
+   },
+   "text": {
+    "en": "In her UPI app, under 'AutoPay' or 'Mandates', she finds four active ones. Two are apps she opened twice after a free trial.",
+    "hi": "UPI ऐप में 'AutoPay' या 'Mandates' में उसे चार चालू मिलते हैं। दो ऐसे ऐप हैं जिन्हें फ़्री ट्रायल के बाद उसने बस दो बार खोला।",
+    "mr": "UPI ॲपमध्ये 'AutoPay' किंवा 'Mandates' खाली तिला चार सुरू सापडतात. दोन असे ॲप आहेत जे फ्री ट्रायलनंतर तिने फक्त दोनदा उघडले."
+   },
+   "screen": [
+    {
+     "en": "AutoPay (active)",
+     "hi": "AutoPay (चालू)",
+     "mr": "AutoPay (सुरू)"
+    },
+    {
+     "en": "Music app ₹149/mo",
+     "hi": "म्यूज़िक ऐप ₹149/माह",
+     "mr": "संगीत ॲप ₹149/महिना"
+    },
+    {
+     "en": "Video app ₹199/mo",
+     "hi": "वीडियो ऐप ₹199/माह",
+     "mr": "व्हिडिओ ॲप ₹199/महिना"
+    },
+    {
+     "en": "Fitness app ₹99/mo",
+     "hi": "फ़िटनेस ऐप ₹99/माह",
+     "mr": "फिटनेस ॲप ₹99/महिना"
+    },
+    {
+     "en": "Cloud storage ₹59/mo",
+     "hi": "क्लाउड स्टोरेज ₹59/माह",
+     "mr": "क्लाउड स्टोरेज ₹59/महिना"
+    },
+    {
+     "en": "Total ₹506/mo = ₹6,072/yr",
+     "hi": "कुल ₹506/माह = ₹6,072/साल",
+     "mr": "एकूण ₹506/महिना = ₹6,072/वर्ष"
+    }
+   ],
+   "details": [
+    {
+     "en": "Also check your card's 'standing instructions' in the bank app and the subscriptions page of your phone's app store.",
+     "hi": "बैंक ऐप में कार्ड के 'स्टैंडिंग इंस्ट्रक्शन' और फ़ोन के ऐप स्टोर का सब्सक्रिप्शन पेज भी देखें।",
+     "mr": "बँकेच्या ॲपमध्ये कार्डच्या 'स्टँडिंग इन्स्ट्रक्शन' आणि फोनच्या ॲप स्टोअरचे सबस्क्रिप्शन पानही पाहा."
+    },
+    {
+     "en": "Multiply each monthly charge by 12. Small monthly numbers look very different as a yearly total.",
+     "hi": "हर मासिक शुल्क को 12 से गुणा करें। छोटे मासिक अंक सालाना जोड़ में बहुत अलग दिखते हैं।",
+     "mr": "प्रत्येक मासिक शुल्काला 12 ने गुणा. लहान मासिक आकडे वार्षिक बेरजेत खूप वेगळे दिसतात."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Cancel the payment itself, not just the app",
+    "hi": "भुगतान ही रद्द करें, सिर्फ़ ऐप नहीं",
+    "mr": "पेमेंटच रद्द करा, फक्त ॲप नाही"
+   },
+   "text": {
+    "en": "Deleting an app does not stop the charge. She cancels the subscription inside each app's account settings, then revokes the mandate in the UPI app and checks it shows 'Revoked'.",
+    "hi": "ऐप हटाने से शुल्क नहीं रुकता। वह हर ऐप की अकाउंट सेटिंग में सब्सक्रिप्शन रद्द करती है, फिर UPI ऐप में मैंडेट हटाती है और देखती है कि 'Revoked' दिखे।",
+    "mr": "ॲप डिलीट केल्याने शुल्क थांबत नाही. ती प्रत्येक ॲपच्या खाते सेटिंगमध्ये सबस्क्रिप्शन रद्द करते, मग UPI ॲपमध्ये मँडेट काढते आणि 'Revoked' दिसते का ते तपासते."
+   },
+   "screen": [
+    {
+     "en": "Fitness app mandate",
+     "hi": "फ़िटनेस ऐप मैंडेट",
+     "mr": "फिटनेस ॲप मँडेट"
+    },
+    {
+     "en": "₹99 monthly",
+     "hi": "₹99 मासिक",
+     "mr": "₹99 मासिक"
+    },
+    {
+     "en": "Revoke? Enter UPI PIN",
+     "hi": "हटाएँ? UPI PIN डालें",
+     "mr": "काढायचे? UPI PIN टाका"
+    },
+    {
+     "en": "✓ Revoked",
+     "hi": "✓ हटाया गया",
+     "mr": "✓ काढले"
+    }
+   ],
+   "details": [
+    {
+     "en": "Keep one subscription you actually use. The point is choosing, not giving everything up.",
+     "hi": "एक सब्सक्रिप्शन रखें जो आप सच में इस्तेमाल करते हैं। बात चुनने की है, सब छोड़ने की नहीं।",
+     "mr": "खरोखर वापरता ती एक सबस्क्रिप्शन ठेवा. मुद्दा निवडीचा आहे, सगळे सोडण्याचा नाही."
+    }
+   ],
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Before the next free trial, set the trap for yourself",
+    "hi": "अगले फ़्री ट्रायल से पहले, अपने लिए अलार्म",
+    "mr": "पुढच्या फ्री ट्रायलपूर्वी, स्वतःसाठी गजर"
+   },
+   "text": {
+    "en": "Next time she starts a trial, she immediately puts a reminder two days before it converts to paid, with the price in the reminder text.",
+    "hi": "अगली बार ट्रायल शुरू करते ही वह पेड होने से दो दिन पहले का रिमाइंडर लगाती है, रिमाइंडर में क़ीमत लिखकर।",
+    "mr": "पुढच्या वेळी ट्रायल सुरू करताच ती सशुल्क होण्याच्या दोन दिवस आधीचे स्मरणपत्र लावते, स्मरणपत्रात किंमत लिहून."
+   },
+   "screen": [
+    {
+     "en": "Trial started: 3 Dec",
+     "hi": "ट्रायल शुरू: 3 दिस",
+     "mr": "ट्रायल सुरू: 3 डिसें"
+    },
+    {
+     "en": "Reminder: 8 Dec",
+     "hi": "रिमाइंडर: 8 दिस",
+     "mr": "स्मरण: 8 डिसें"
+    },
+    {
+     "en": "'Cancel or pay ₹149/mo?'",
+     "hi": "'रद्द करें या ₹149/माह?'",
+     "mr": "'रद्द करायचे की ₹149/महिना?'"
+    },
+    {
+     "en": "Converts: 10 Dec",
+     "hi": "पेड होगा: 10 दिस",
+     "mr": "सशुल्क: 10 डिसें"
+    }
+   ],
+   "cost": {
+    "en": "₹6,072 a year saved",
+    "hi": "साल के ₹6,072 बचे",
+    "mr": "वर्षाला ₹6,072 वाचले"
+   },
+   "choice": {
+    "prompt": {
+     "en": "A trial asks for a UPI AutoPay of up to ₹15,000 'for verification'. What does Verena do?",
+     "hi": "एक ट्रायल 'सत्यापन के लिए' ₹15,000 तक का UPI AutoPay माँगता है। वेरेना क्या करे?",
+     "mr": "एक ट्रायल 'पडताळणीसाठी' ₹15,000 पर्यंतचे UPI AutoPay मागतो. वेरेनाने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Approve, it's just verification",
+       "hi": "मंज़ूर करे, बस सत्यापन है",
+       "mr": "मंजूर करावे, फक्त पडताळणी आहे"
+      },
+      "good": false,
+      "result": {
+       "en": "A mandate allows charges up to that limit. A real subscription needs a limit close to its price.",
+       "hi": "मैंडेट उस सीमा तक शुल्क लेने देता है। असली सब्सक्रिप्शन की सीमा उसकी क़ीमत के क़रीब होती है।",
+       "mr": "मँडेट त्या मर्यादेपर्यंत शुल्क घेऊ देते. खऱ्या सबस्क्रिप्शनची मर्यादा तिच्या किमतीच्या जवळ असते."
+      }
+     },
+     {
+      "text": {
+       "en": "Skip the trial, or pay once without AutoPay",
+       "hi": "ट्रायल छोड़े, या AutoPay के बिना एक बार भरे",
+       "mr": "ट्रायल सोडावा, किंवा AutoPay शिवाय एकदा भरावे"
+      },
+      "good": true,
+      "result": {
+       "en": "An oversized mandate is a risk she does not need to take.",
+       "hi": "बहुत बड़ा मैंडेट एक बेवजह का जोखिम है।",
+       "mr": "खूप मोठे मँडेट हा विनाकारणचा धोका आहे."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Check AutoPay in your UPI app, card standing instructions, and app store subscriptions.",
+   "hi": "UPI ऐप में AutoPay, कार्ड के स्टैंडिंग इंस्ट्रक्शन, और ऐप स्टोर की सब्सक्रिप्शन देखें।",
+   "mr": "UPI ॲपमधील AutoPay, कार्डचे स्टँडिंग इन्स्ट्रक्शन, आणि ॲप स्टोअरमधील सबस्क्रिप्शन पाहा."
+  },
+  {
+   "en": "Multiply monthly charges by 12 to see the real cost.",
+   "hi": "असली लागत देखने के लिए मासिक शुल्क को 12 से गुणा करें।",
+   "mr": "खरा खर्च पाहण्यासाठी मासिक शुल्काला 12 ने गुणा."
+  },
+  {
+   "en": "Cancel inside the app and revoke the mandate; deleting the app is not enough.",
+   "hi": "ऐप के अंदर रद्द करें और मैंडेट हटाएँ; ऐप हटाना काफ़ी नहीं।",
+   "mr": "ॲपमध्ये रद्द करा आणि मँडेट काढा; ॲप डिलीट करणे पुरेसे नाही."
+  },
+  {
+   "en": "Set a reminder two days before any free trial ends.",
+   "hi": "हर फ़्री ट्रायल ख़त्म होने से दो दिन पहले रिमाइंडर लगाएँ।",
+   "mr": "प्रत्येक फ्री ट्रायल संपण्याच्या दोन दिवस आधी स्मरणपत्र लावा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.npci.org.in"
+ ]
+}

@@ -1,0 +1,261 @@
+{
+ "id": "bank-charges",
+ "guide": "bank-charges",
+ "title": {
+  "en": "Finding every charge in a year of bank statements, and stopping the ones you do not need",
+  "hi": "एक साल के बैंक स्टेटमेंट में हर शुल्क ढूँढना, और ग़ैर-ज़रूरी शुल्क रोकना",
+  "mr": "वर्षभराच्या बँक स्टेटमेंटमधील प्रत्येक शुल्क शोधणे, आणि नको असलेली थांबवणे"
+ },
+ "setting": {
+  "en": "A rainy Sunday, a laptop and twelve monthly statements",
+  "hi": "एक बारिश वाला रविवार, एक लैपटॉप और बारह मासिक स्टेटमेंट",
+  "mr": "पावसाळी रविवार, एक लॅपटॉप आणि बारा मासिक स्टेटमेंट"
+ },
+ "steps": [
+  {
+   "scene": "laptop",
+   "title": {
+    "en": "Download a year of statements and search for the words",
+    "hi": "एक साल के स्टेटमेंट डाउनलोड करें और शब्द खोजें",
+    "mr": "वर्षभराचे स्टेटमेंट डाउनलोड करा आणि शब्द शोधा"
+   },
+   "text": {
+    "en": "Verena downloads a 12-month PDF from net banking and uses the search box for words banks use for fees: CHG, CHRG, FEE, AMC, SMS, GST, MAB, PENAL.",
+    "hi": "वेरेना नेट बैंकिंग से 12 महीने की PDF डाउनलोड करती है और बैंकों के शुल्क वाले शब्द खोजती है: CHG, CHRG, FEE, AMC, SMS, GST, MAB, PENAL।",
+    "mr": "वेरेना नेट बँकिंगमधून 12 महिन्यांची PDF डाउनलोड करते आणि बँका शुल्कासाठी वापरतात ते शब्द शोधते: CHG, CHRG, FEE, AMC, SMS, GST, MAB, PENAL."
+   },
+   "screen": [
+    {
+     "en": "Statement search: CHG",
+     "hi": "स्टेटमेंट खोज: CHG",
+     "mr": "स्टेटमेंट शोध: CHG"
+    },
+    {
+     "en": "Debit card AMC ₹590",
+     "hi": "डेबिट कार्ड AMC ₹590",
+     "mr": "डेबिट कार्ड AMC ₹590"
+    },
+    {
+     "en": "SMS charges ×4 ₹70.80",
+     "hi": "SMS शुल्क ×4 ₹70.80",
+     "mr": "SMS शुल्क ×4 ₹70.80"
+    },
+    {
+     "en": "MAB penalty ×3 ₹1,062",
+     "hi": "MAB जुर्माना ×3 ₹1,062",
+     "mr": "MAB दंड ×3 ₹1,062"
+    },
+    {
+     "en": "ATM other bank ×6 ₹138",
+     "hi": "दूसरे बैंक ATM ×6 ₹138",
+     "mr": "इतर बँक ATM ×6 ₹138"
+    },
+    {
+     "en": "Total: ₹1,860.80",
+     "hi": "कुल: ₹1,860.80",
+     "mr": "एकूण: ₹1,860.80"
+    }
+   ],
+   "details": [
+    {
+     "en": "AMC = annual maintenance charge on the debit card. MAB = minimum average balance shortfall penalty. GST of 18% is added on top of most fees.",
+     "hi": "AMC = डेबिट कार्ड का सालाना रखरखाव शुल्क। MAB = न्यूनतम औसत बैलेंस कमी का जुर्माना। ज़्यादातर शुल्कों पर 18% GST ऊपर से जुड़ता है।",
+     "mr": "AMC = डेबिट कार्डचे वार्षिक देखभाल शुल्क. MAB = किमान सरासरी शिल्लक कमी पडल्याचा दंड. बहुतेक शुल्कांवर 18% GST वरून जोडला जातो."
+    },
+    {
+     "en": "Small amounts hide well. Add them up for the year to see what they really cost.",
+     "hi": "छोटी रकमें आसानी से छिप जाती हैं। साल भर का जोड़ें तब असली ख़र्च दिखता है।",
+     "mr": "लहान रकमा सहज लपतात. वर्षभराची बेरीज केली की खरा खर्च दिसतो."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes",
+    "hi": "30 मिनट",
+    "mr": "30 मिनिटे"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Sort them: avoidable, worth it, or wrong",
+    "hi": "छाँटें: टाले जा सकने वाले, ठीक, या ग़लत",
+    "mr": "वर्गवारी करा: टाळता येणारे, योग्य, किंवा चुकीचे"
+   },
+   "text": {
+    "en": "She makes three columns. The minimum balance penalty and the other-bank ATM charges were avoidable. SMS alerts are worth keeping. One AMC was charged twice in the same year, which looks wrong.",
+    "hi": "वह तीन कॉलम बनाती है। न्यूनतम बैलेंस का जुर्माना और दूसरे बैंक के ATM शुल्क टाले जा सकते थे। SMS अलर्ट रखने लायक हैं। एक AMC एक ही साल में दो बार कटा, जो ग़लत लगता है।",
+    "mr": "ती तीन स्तंभ करते. किमान शिलकीचा दंड आणि इतर बँकांच्या ATM चे शुल्क टाळता आले असते. SMS अलर्ट ठेवण्यासारखे आहेत. एकच AMC एकाच वर्षात दोनदा कापले, जे चुकीचे वाटते."
+   },
+   "screen": [
+    {
+     "en": "Avoidable",
+     "hi": "टाले जा सकते",
+     "mr": "टाळता येणारे"
+    },
+    {
+     "en": "MAB penalty ₹1,062",
+     "hi": "MAB जुर्माना ₹1,062",
+     "mr": "MAB दंड ₹1,062"
+    },
+    {
+     "en": "Other-bank ATM ₹138",
+     "hi": "दूसरे बैंक ATM ₹138",
+     "mr": "इतर बँक ATM ₹138"
+    },
+    {
+     "en": "Worth it: SMS ₹70.80",
+     "hi": "ठीक: SMS ₹70.80",
+     "mr": "योग्य: SMS ₹70.80"
+    },
+    {
+     "en": "Wrong? AMC twice",
+     "hi": "ग़लत? AMC दो बार",
+     "mr": "चूक? AMC दोनदा"
+    },
+    {
+     "en": "₹1,200",
+     "hi": "₹1,200",
+     "mr": "₹1,200"
+    }
+   ],
+   "details": [
+    {
+     "en": "Most banks allow a set number of free ATM withdrawals a month (more at your own bank's ATMs than at others). Beyond that each one costs money.",
+     "hi": "ज़्यादातर बैंक महीने में तय संख्या में मुफ़्त ATM निकासी देते हैं (अपने बैंक के ATM पर दूसरों से ज़्यादा)। उसके बाद हर निकासी पर पैसा लगता है।",
+     "mr": "बहुतेक बँका महिन्याला ठरावीक संख्येने मोफत ATM व्यवहार देतात (स्वतःच्या बँकेच्या ATM वर इतरांपेक्षा जास्त). त्यानंतर प्रत्येकाला पैसे लागतात."
+    },
+    {
+     "en": "A charge that breaks the bank's own published schedule of charges can be challenged and reversed.",
+     "hi": "जो शुल्क बैंक के ख़ुद के प्रकाशित शुल्क-सूची के ख़िलाफ़ हो, उसे चुनौती देकर लौटवाया जा सकता है।",
+     "mr": "बँकेच्याच प्रसिद्ध शुल्क यादीविरुद्ध असलेले शुल्क आव्हान देऊन परत मिळवता येते."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "Ask for the wrong charge to be reversed",
+    "hi": "ग़लत शुल्क लौटाने का अनुरोध करें",
+    "mr": "चुकीचे शुल्क परत करण्याची विनंती करा"
+   },
+   "text": {
+    "en": "She raises a service request in the app for the duplicate AMC, with both statement lines. The bank reverses ₹590 in four days. She also asks the branch whether her account can be moved to one with a lower minimum balance.",
+    "hi": "वह दोहरी AMC के लिए ऐप में दोनों स्टेटमेंट लाइनों के साथ सर्विस रिक्वेस्ट डालती है। बैंक चार दिन में ₹590 लौटा देता है। वह शाखा से यह भी पूछती है कि क्या उसका खाता कम न्यूनतम बैलेंस वाले खाते में बदल सकता है।",
+    "mr": "दुहेरी AMC साठी ती ॲपमध्ये दोन्ही स्टेटमेंट ओळींसह सेवा विनंती नोंदवते. बँक चार दिवसांत ₹590 परत करते. तिचे खाते कमी किमान शिलकीच्या खात्यात बदलता येईल का हेही ती शाखेला विचारते."
+   },
+   "screen": [
+    {
+     "en": "SERVICE REQUEST",
+     "hi": "सर्विस रिक्वेस्ट",
+     "mr": "सेवा विनंती"
+    },
+    {
+     "en": "Duplicate AMC on 3 Mar & 3 Sep",
+     "hi": "3 मार्च और 3 सित को दोहरी AMC",
+     "mr": "3 मार्च आणि 3 सप्टें ला दुहेरी AMC"
+    },
+    {
+     "en": "✓ Reversed ₹590",
+     "hi": "✓ ₹590 लौटाए",
+     "mr": "✓ ₹590 परत"
+    },
+    {
+     "en": "Ask: switch to lower-MAB account",
+     "hi": "पूछें: कम-MAB खाते में बदलें",
+     "mr": "विचारा: कमी-MAB खात्यात बदला"
+    }
+   ],
+   "details": [
+    {
+     "en": "Banks must tell you before charging for not keeping the minimum balance and give you time to restore it. If you got no notice, ask about it.",
+     "hi": "न्यूनतम बैलेंस न रखने का शुल्क लगाने से पहले बैंक को आपको सूचना देकर उसे पूरा करने का समय देना होता है। अगर कोई सूचना नहीं मिली, तो इसके बारे में पूछें।",
+     "mr": "किमान शिल्लक न ठेवल्याबद्दल शुल्क लावण्यापूर्वी बँकेने तुम्हाला सूचना देऊन ती भरून काढायला वेळ द्यायला हवा. सूचना मिळाली नसेल तर त्याबद्दल विचारा."
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "Verena:",
+     "hi": "वेरेना:",
+     "mr": "वेरेना:"
+    },
+    "line": {
+     "en": "\"I keep falling below ₹5,000 in the last week of the month. Which account here has a lower minimum balance or none?\"",
+     "hi": "\"महीने के आख़िरी हफ़्ते में मेरा बैलेंस ₹5,000 से नीचे चला जाता है। यहाँ किस खाते में न्यूनतम बैलेंस कम है या नहीं है?\"",
+     "mr": "\"महिन्याच्या शेवटच्या आठवड्यात माझी शिल्लक ₹5,000 च्या खाली जाते. इथे कोणत्या खात्यात किमान शिल्लक कमी आहे किंवा नाही?\""
+    }
+   },
+   "cost": {
+    "en": "10 minutes",
+    "hi": "10 मिनट",
+    "mr": "10 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "How should Verena stop the ₹1,062 minimum balance penalty next year?",
+     "hi": "अगले साल ₹1,062 का न्यूनतम बैलेंस जुर्माना कैसे रोके?",
+     "mr": "पुढच्या वर्षी ₹1,062 चा किमान शिल्लक दंड कसा थांबवावा?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Move to an account with no or lower minimum balance, or keep a buffer",
+       "hi": "कोई या कम न्यूनतम बैलेंस वाले खाते में जाए, या एक बफ़र रखे",
+       "mr": "किमान शिल्लक नसलेल्या किंवा कमी असलेल्या खात्यात जावे, किंवा राखीव रक्कम ठेवावी"
+      },
+      "good": true,
+      "result": {
+       "en": "Matching the account to her real balance is a permanent fix.",
+       "hi": "खाते को उसके असली बैलेंस के हिसाब से चुनना पक्का इलाज है।",
+       "mr": "खाते तिच्या खऱ्या शिलकीनुसार निवडणे हा कायमचा उपाय."
+      }
+     },
+     {
+      "text": {
+       "en": "Open a second savings account elsewhere",
+       "hi": "कहीं और दूसरा बचत खाता खोले",
+       "mr": "दुसरीकडे दुसरे बचत खाते उघडावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Two accounts with minimum balances can mean two penalties. Fewer, better-fitting accounts are cheaper.",
+       "hi": "न्यूनतम बैलेंस वाले दो खाते यानी दो जुर्माने हो सकते हैं। कम और सही खाते सस्ते पड़ते हैं।",
+       "mr": "किमान शिलकीची दोन खाती म्हणजे दोन दंड होऊ शकतात. कमी आणि योग्य खाती स्वस्त पडतात."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Search a year of statements for CHG, FEE, AMC, SMS, MAB and GST.",
+   "hi": "एक साल के स्टेटमेंट में CHG, FEE, AMC, SMS, MAB और GST खोजें।",
+   "mr": "वर्षभराच्या स्टेटमेंटमध्ये CHG, FEE, AMC, SMS, MAB आणि GST शोधा."
+  },
+  {
+   "en": "Sort charges into avoidable, worth it, and wrong.",
+   "hi": "शुल्कों को टाले जा सकने वाले, ठीक, और ग़लत में बाँटें।",
+   "mr": "शुल्क टाळता येणारे, योग्य आणि चुकीचे असे विभागा."
+  },
+  {
+   "en": "Ask for wrong charges to be reversed with the statement lines as proof.",
+   "hi": "ग़लत शुल्कों को स्टेटमेंट लाइनों के सबूत के साथ लौटाने को कहें।",
+   "mr": "चुकीची शुल्के स्टेटमेंट ओळींच्या पुराव्यासह परत करायला सांगा."
+  },
+  {
+   "en": "Match your account type to your real lowest balance, and stay within free ATM limits.",
+   "hi": "खाते का प्रकार अपने असली सबसे कम बैलेंस से मिलाएँ, और मुफ़्त ATM सीमा में रहें।",
+   "mr": "खात्याचा प्रकार तुमच्या खऱ्या सर्वात कमी शिलकीशी जुळवा, आणि मोफत ATM मर्यादेत राहा."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://rbikehtahai.rbi.org.in"
+ ]
+}

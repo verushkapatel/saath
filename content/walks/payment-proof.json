@@ -1,0 +1,220 @@
+{
+ "id": "payment-proof",
+ "guide": "payment-proof",
+ "title": {
+  "en": "Keeping proof of every payment that matters, and using it when a landlord says 'you never paid'",
+  "hi": "हर ज़रूरी भुगतान का सबूत रखना, और मकान मालिक के 'तुमने कभी दिया ही नहीं' कहने पर उसका इस्तेमाल",
+  "mr": "प्रत्येक महत्त्वाच्या पेमेंटचा पुरावा ठेवणे, आणि घरमालक 'तुम्ही कधी दिलेच नाही' म्हणतो तेव्हा तो वापरणे"
+ },
+ "setting": {
+  "en": "Verena moves out of her first rented room and wants her ₹20,000 deposit back",
+  "hi": "वेरेना अपना पहला किराए का कमरा छोड़ती है और ₹20,000 डिपॉज़िट वापस चाहती है",
+  "mr": "वेरेना तिची पहिली भाड्याची खोली सोडते आणि ₹20,000 अनामत परत हवी आहे"
+ },
+ "steps": [
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Pay rent so it leaves a trail",
+    "hi": "किराया ऐसे दें कि निशान रहे",
+    "mr": "भाडे असे द्या की मागोवा राहील"
+   },
+   "text": {
+    "en": "From the first month, Verena pays rent by bank transfer or UPI to the landlord's own account, with a note: 'Rent Nov 2026, Room 3B'. Never cash without a receipt.",
+    "hi": "पहले महीने से वेरेना किराया मकान मालिक के अपने खाते में बैंक ट्रांसफ़र या UPI से देती है, नोट के साथ: 'किराया नव 2026, कमरा 3B'। बिना रसीद नक़द कभी नहीं।",
+    "mr": "पहिल्या महिन्यापासून वेरेना भाडे घरमालकाच्या स्वतःच्या खात्यात बँक ट्रान्सफर किंवा UPI ने देते, टिपेसह: 'भाडे नोव्हें 2026, खोली 3B'. पावतीशिवाय रोख कधीही नाही."
+   },
+   "screen": [
+    {
+     "en": "Paid ₹9,000",
+     "hi": "भुगतान ₹9,000",
+     "mr": "दिले ₹9,000"
+    },
+    {
+     "en": "To: R. Kulkarni",
+     "hi": "को: आर. कुलकर्णी",
+     "mr": "ला: आर. कुलकर्णी"
+    },
+    {
+     "en": "Note: Rent Nov 2026, Room 3B",
+     "hi": "नोट: किराया नव 2026, कमरा 3B",
+     "mr": "टीप: भाडे नोव्हें 2026, खोली 3B"
+    },
+    {
+     "en": "UTR: 6301xxxxxx",
+     "hi": "UTR: 6301xxxxxx",
+     "mr": "UTR: 6301xxxxxx"
+    }
+   ],
+   "details": [
+    {
+     "en": "The UTR (unique transaction reference) is the bank's proof that the money reached that account.",
+     "hi": "UTR (यूनिक ट्रांज़ैक्शन रेफ़रेंस) बैंक का सबूत है कि पैसा उस खाते में पहुँचा।",
+     "mr": "UTR (युनिक ट्रान्झॅक्शन रेफरन्स) हा बँकेचा पुरावा आहे की पैसे त्या खात्यात पोहोचले."
+    },
+    {
+     "en": "If you must pay cash, ask for a signed, dated receipt with the amount in words.",
+     "hi": "अगर नक़द देना ही पड़े, तो हस्ताक्षर, तारीख़ और शब्दों में रकम वाली रसीद माँगें।",
+     "mr": "रोख द्यावेच लागले तर सही, तारीख आणि अक्षरी रक्कम असलेली पावती मागा."
+    }
+   ],
+   "cost": {
+    "en": "1 minute a month",
+    "hi": "महीने में 1 मिनट",
+    "mr": "महिन्याला 1 मिनिट"
+   }
+  },
+  {
+   "scene": "documents",
+   "title": {
+    "en": "Keep a 'proof' folder that takes two minutes a month",
+    "hi": "एक 'सबूत' फ़ोल्डर रखें, महीने में दो मिनट",
+    "mr": "एक 'पुरावा' फोल्डर ठेवा, महिन्याला दोन मिनिटे"
+   },
+   "text": {
+    "en": "She keeps one phone folder and one paper folder: rent agreement, the deposit receipt, monthly payment screenshots, electricity bills she paid, and the photos she took of the room on day one.",
+    "hi": "वह एक फ़ोन फ़ोल्डर और एक काग़ज़ी फ़ोल्डर रखती है: किराया-नामा, डिपॉज़िट की रसीद, हर महीने के भुगतान के स्क्रीनशॉट, भरे गए बिजली बिल, और पहले दिन कमरे की खींची तस्वीरें।",
+    "mr": "ती एक फोन फोल्डर आणि एक कागदी फोल्डर ठेवते: भाडेकरार, अनामतीची पावती, दर महिन्याच्या पेमेंटचे स्क्रीनशॉट, भरलेली वीज बिले, आणि पहिल्या दिवशी काढलेले खोलीचे फोटो."
+   },
+   "screen": [
+    {
+     "en": "Rent agreement",
+     "hi": "किराया-नामा",
+     "mr": "भाडेकरार"
+    },
+    {
+     "en": "11 months, signed",
+     "hi": "11 महीने, हस्ताक्षरित",
+     "mr": "11 महिने, सही केलेला"
+    },
+    {
+     "en": "Deposit receipt",
+     "hi": "डिपॉज़िट रसीद",
+     "mr": "अनामत पावती"
+    },
+    {
+     "en": "₹20,000 · 1 Nov",
+     "hi": "₹20,000 · 1 नव",
+     "mr": "₹20,000 · 1 नोव्हें"
+    },
+    {
+     "en": "Rent: 11 UTRs",
+     "hi": "किराया: 11 UTR",
+     "mr": "भाडे: 11 UTR"
+    },
+    {
+     "en": "Room photos, day 1",
+     "hi": "कमरे की फ़ोटो, दिन 1",
+     "mr": "खोलीचे फोटो, दिवस 1"
+    }
+   ],
+   "details": [
+    {
+     "en": "Photos of walls, fittings and furniture on the day you move in settle most 'damage' arguments at move-out.",
+     "hi": "रहने आने के दिन दीवारों, फ़िटिंग और फ़र्नीचर की फ़ोटो ज़्यादातर 'नुक़सान' वाली बहस को जाते समय ख़त्म कर देती हैं।",
+     "mr": "राहायला आल्याच्या दिवशी भिंती, फिटिंग आणि फर्निचरचे फोटो निघताना बहुतेक 'नुकसान' वाद मिटवतात."
+    },
+    {
+     "en": "Keep proofs of big payments (deposits, fees, insurance, loan closure letters) for years, not months.",
+     "hi": "बड़े भुगतानों (डिपॉज़िट, फ़ीस, बीमा, लोन बंद होने के पत्र) के सबूत महीनों नहीं, सालों तक रखें।",
+     "mr": "मोठ्या पेमेंटचे पुरावे (अनामत, फी, विमा, कर्ज बंद झाल्याची पत्रे) महिने नाही, वर्षानुवर्षे ठेवा."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes a month",
+    "hi": "महीने में 2 मिनट",
+    "mr": "महिन्याला 2 मिनिटे"
+   }
+  },
+  {
+   "scene": "family",
+   "title": {
+    "en": "Move-out day: the deposit conversation",
+    "hi": "घर छोड़ने का दिन: डिपॉज़िट की बात",
+    "mr": "घर सोडण्याचा दिवस: अनामतीचे बोलणे"
+   },
+   "text": {
+    "en": "The landlord says two months' rent were never paid and he will keep the deposit. Verena does not argue loudly. She opens the folder and shows the UTRs for those months, and the day-one photos of the cracked tile he now calls 'new damage'.",
+    "hi": "मकान मालिक कहता है कि दो महीने का किराया कभी मिला ही नहीं और वह डिपॉज़िट रखेगा। वेरेना ज़ोर से बहस नहीं करती। वह फ़ोल्डर खोलकर उन महीनों के UTR दिखाती है, और पहले दिन की वह फ़ोटो जिसमें टूटी टाइल है जिसे वह अब 'नया नुक़सान' कह रहा है।",
+    "mr": "घरमालक म्हणतो की दोन महिन्यांचे भाडे कधी मिळालेच नाही आणि तो अनामत ठेवेल. वेरेना मोठ्याने वाद घालत नाही. ती फोल्डर उघडून त्या महिन्यांचे UTR दाखवते, आणि तो आता 'नवे नुकसान' म्हणतो त्या तडकलेल्या टाइलचा पहिल्या दिवशीचा फोटो."
+   },
+   "screen": [
+    {
+     "en": "Proof wins, not volume",
+     "hi": "सबूत जीतता है, आवाज़ नहीं",
+     "mr": "पुरावा जिंकतो, आवाज नाही"
+    }
+   ],
+   "say": {
+    "who": {
+     "en": "Verena:",
+     "hi": "वेरेना:",
+     "mr": "वेरेना:"
+    },
+    "line": {
+     "en": "\"Here are the transfers for August and September with the bank reference numbers. And this photo of the tile is from the day I moved in.\"",
+     "hi": "\"ये अगस्त और सितंबर के ट्रांसफ़र हैं, बैंक संदर्भ नंबरों के साथ। और टाइल की यह फ़ोटो मेरे आने के दिन की है।\"",
+     "mr": "\"हे ऑगस्ट आणि सप्टेंबरचे ट्रान्सफर, बँक संदर्भ क्रमांकांसह. आणि टाइलचा हा फोटो मी आले त्या दिवसाचा.\""
+    }
+   },
+   "cost": {
+    "en": "₹20,000 at stake",
+    "hi": "₹20,000 दाँव पर",
+    "mr": "₹20,000 पणाला"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The landlord still stalls. What next?",
+     "hi": "मकान मालिक फिर भी टालता है। आगे क्या?",
+     "mr": "घरमालक तरीही टाळाटाळ करतो. पुढे काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Leave it, ₹20,000 is not worth the fight",
+       "hi": "छोड़ दे, ₹20,000 के लिए लड़ाई क्यों",
+       "mr": "सोडून द्यावे, ₹20,000 साठी भांडण कशाला"
+      },
+      "good": false,
+      "result": {
+       "en": "It is two months of her savings, and she has clear proof. A written request often settles it.",
+       "hi": "यह उसकी दो महीने की बचत है, और उसके पास साफ़ सबूत है। एक लिखित अनुरोध से अक्सर बात बन जाती है।",
+       "mr": "ही तिची दोन महिन्यांची बचत आहे, आणि तिच्याकडे स्पष्ट पुरावा आहे. लेखी विनंतीने अनेकदा प्रश्न सुटतो."
+      }
+     },
+     {
+      "text": {
+       "en": "Send a polite written request with the proofs and a date",
+       "hi": "सबूतों और एक तारीख़ के साथ शालीन लिखित अनुरोध भेजे",
+       "mr": "पुराव्यांसह आणि एका तारखेसह नम्र लेखी विनंती पाठवावी"
+      },
+      "good": true,
+      "result": {
+       "en": "A dated message with proof attached is often enough. If not, it is the first document a consumer or rent forum will ask for.",
+       "hi": "सबूत के साथ तारीख़वार संदेश अक्सर काफ़ी होता है। न हो, तो उपभोक्ता या किराया मंच यही पहला दस्तावेज़ माँगेगा।",
+       "mr": "पुराव्यासह तारखेचा संदेश अनेकदा पुरेसा ठरतो. नाही तर ग्राहक किंवा भाडे मंच हाच पहिला दस्तऐवज मागेल."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Pay important money by bank transfer or UPI with a clear note, or get a signed receipt.",
+   "hi": "ज़रूरी पैसे बैंक ट्रांसफ़र या UPI से साफ़ नोट के साथ दें, या हस्ताक्षरित रसीद लें।",
+   "mr": "महत्त्वाचे पैसे बँक ट्रान्सफर किंवा UPI ने स्पष्ट टिपेसह द्या, किंवा सही केलेली पावती घ्या."
+  },
+  {
+   "en": "Keep one proof folder: agreements, receipts, UTRs, and day-one photos.",
+   "hi": "एक सबूत फ़ोल्डर रखें: अनुबंध, रसीदें, UTR, और पहले दिन की फ़ोटो।",
+   "mr": "एक पुरावा फोल्डर ठेवा: करार, पावत्या, UTR, आणि पहिल्या दिवसाचे फोटो."
+  },
+  {
+   "en": "In a dispute, show proof calmly and follow up in writing with a date.",
+   "hi": "विवाद में शांति से सबूत दिखाएँ और तारीख़ के साथ लिखित में आगे बढ़ें।",
+   "mr": "वादात शांतपणे पुरावा दाखवा आणि तारखेसह लेखी पाठपुरावा करा."
+  }
+ ],
+ "reviewed": "2026-10"
+}

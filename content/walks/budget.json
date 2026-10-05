@@ -1,0 +1,307 @@
+{
+ "id": "budget",
+ "guide": "budget",
+ "title": {
+  "en": "Building your first real budget in one sitting, and living it for a month",
+  "hi": "एक बैठक में पहला असली बजट बनाना, और उसे एक महीना जीना",
+  "mr": "एका बैठकीत पहिले खरे बजेट तयार करणे, आणि ते महिनाभर जगणे"
+ },
+ "setting": {
+  "en": "The first Sunday after payday, with a notebook and the bank app",
+  "hi": "तनख़्वाह के बाद का पहला रविवार, एक नोटबुक और बैंक ऐप के साथ",
+  "mr": "पगारानंतरचा पहिला रविवार, एक वही आणि बँक ॲपसह"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Write the one number that comes in",
+    "hi": "जो एक अंक आता है, उसे लिखें",
+    "mr": "जो एक आकडा येतो तो लिहा"
+   },
+   "text": {
+    "en": "Verena writes the money that actually arrives this month, not her salary on paper: ₹28,000 net pay. Then she adds nothing else, because there is nothing else she can count on.",
+    "hi": "वेरेना इस महीने असल में आने वाला पैसा लिखती है, काग़ज़ वाली तनख़्वाह नहीं: ₹28,000 शुद्ध वेतन। फिर वह कुछ और नहीं जोड़ती, क्योंकि और किसी पर भरोसा नहीं किया जा सकता।",
+    "mr": "वेरेना या महिन्यात खरोखर येणारे पैसे लिहिते, कागदावरचा पगार नाही: ₹28,000 निव्वळ पगार. मग ती दुसरे काही जोडत नाही, कारण दुसऱ्या कशावर विसंबता येत नाही."
+   },
+   "screen": [
+    {
+     "en": "Money in this month",
+     "hi": "इस महीने आमद",
+     "mr": "या महिन्यात येणारे"
+    },
+    {
+     "en": "Net salary ₹28,000",
+     "hi": "शुद्ध तनख़्वाह ₹28,000",
+     "mr": "निव्वळ पगार ₹28,000"
+    },
+    {
+     "en": "Maybe-money: not counted",
+     "hi": "शायद वाला पैसा: नहीं गिना",
+     "mr": "कदाचितचे पैसे: मोजले नाहीत"
+    },
+    {
+     "en": "₹28,000",
+     "hi": "₹28,000",
+     "mr": "₹28,000"
+    }
+   ],
+   "details": [
+    {
+     "en": "Bonuses, gifts or money a friend 'will return' are not income until they arrive.",
+     "hi": "बोनस, तोहफ़े या दोस्त का 'लौटाने वाला' पैसा आने तक आय नहीं है।",
+     "mr": "बोनस, भेटी किंवा मित्र 'परत देणार' असलेले पैसे येईपर्यंत उत्पन्न नाहीत."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes",
+    "hi": "2 मिनट",
+    "mr": "2 मिनिटे"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Find out where last month went",
+    "hi": "जानें पिछला महीना कहाँ गया",
+    "mr": "मागचा महिना कुठे गेला ते शोधा"
+   },
+   "text": {
+    "en": "She scrolls last month's UPI history and bank statement and puts each payment into a few buckets. It takes 25 minutes and is slightly uncomfortable. Food delivery alone was ₹4,300.",
+    "hi": "वह पिछले महीने का UPI इतिहास और बैंक स्टेटमेंट देखकर हर भुगतान को कुछ खानों में डालती है। 25 मिनट लगते हैं और थोड़ा असहज लगता है। अकेले खाना मँगाने में ₹4,300 गए।",
+    "mr": "ती मागच्या महिन्याचा UPI इतिहास आणि बँक स्टेटमेंट पाहून प्रत्येक पेमेंट काही गटांत टाकते. 25 मिनिटे लागतात आणि थोडे अस्वस्थ वाटते. फक्त जेवण मागवण्यावर ₹4,300 गेले."
+   },
+   "screen": [
+    {
+     "en": "Last month",
+     "hi": "पिछला महीना",
+     "mr": "मागचा महिना"
+    },
+    {
+     "en": "Rent ₹9,000",
+     "hi": "किराया ₹9,000",
+     "mr": "भाडे ₹9,000"
+    },
+    {
+     "en": "Groceries ₹3,900",
+     "hi": "राशन ₹3,900",
+     "mr": "किराणा ₹3,900"
+    },
+    {
+     "en": "Food delivery ₹4,300",
+     "hi": "खाना मँगाना ₹4,300",
+     "mr": "जेवण मागवणे ₹4,300"
+    },
+    {
+     "en": "Travel ₹2,100",
+     "hi": "आना-जाना ₹2,100",
+     "mr": "प्रवास ₹2,100"
+    },
+    {
+     "en": "Shopping ₹5,600",
+     "hi": "ख़रीदारी ₹5,600",
+     "mr": "खरेदी ₹5,600"
+    },
+    {
+     "en": "Unknown ₹1,700",
+     "hi": "पता नहीं ₹1,700",
+     "mr": "माहीत नाही ₹1,700"
+    }
+   ],
+   "details": [
+    {
+     "en": "You do not need perfect categories. Five or six buckets are enough to see the pattern.",
+     "hi": "बिल्कुल सही श्रेणियाँ ज़रूरी नहीं। पैटर्न देखने के लिए पाँच-छह खाने काफ़ी हैं।",
+     "mr": "अचूक वर्गवारीची गरज नाही. नमुना दिसायला पाच-सहा गट पुरेसे."
+    },
+    {
+     "en": "Money Lab in Saath can do this sorting for you as you log or import spends.",
+     "hi": "Saath की मनी लैब ख़र्च लिखते या इम्पोर्ट करते समय यह छँटाई आपके लिए कर सकती है।",
+     "mr": "Saath ची मनी लॅब खर्च नोंदवताना किंवा आयात करताना ही वर्गवारी तुमच्यासाठी करू शकते."
+    }
+   ],
+   "cost": {
+    "en": "25 minutes",
+    "hi": "25 मिनट",
+    "mr": "25 मिनिटे"
+   }
+  },
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "Plan this month: musts, saving, then the rest",
+    "hi": "यह महीना तय करें: ज़रूरी, बचत, फिर बाक़ी",
+    "mr": "हा महिना ठरवा: आवश्यक, बचत, मग उरलेले"
+   },
+   "text": {
+    "en": "She writes the plan in order. Musts first: rent, groceries, travel, phone, electricity. Then saving, as if it were a bill. Whatever is left is hers to spend without guilt.",
+    "hi": "वह योजना क्रम से लिखती है। पहले ज़रूरी: किराया, राशन, आना-जाना, फ़ोन, बिजली। फिर बचत, जैसे वह भी एक बिल हो। जो बचे, वह बिना अपराध-बोध के ख़र्च करने के लिए है।",
+    "mr": "ती नियोजन क्रमाने लिहिते. आधी आवश्यक: भाडे, किराणा, प्रवास, फोन, वीज. मग बचत, जणू तेही एक बिल आहे. जे उरेल ते अपराधीपणाशिवाय खर्च करण्यासाठी."
+   },
+   "screen": [
+    {
+     "en": "This month's plan",
+     "hi": "इस महीने की योजना",
+     "mr": "या महिन्याचे नियोजन"
+    },
+    {
+     "en": "Rent 9,000 · Groceries 4,000",
+     "hi": "किराया 9,000 · राशन 4,000",
+     "mr": "भाडे 9,000 · किराणा 4,000"
+    },
+    {
+     "en": "Travel 2,000 · Phone+power 1,200",
+     "hi": "आना-जाना 2,000 · फ़ोन+बिजली 1,200",
+     "mr": "प्रवास 2,000 · फोन+वीज 1,200"
+    },
+    {
+     "en": "Save 3,000 (moved on payday)",
+     "hi": "बचत 3,000 (तनख़्वाह के दिन)",
+     "mr": "बचत 3,000 (पगाराच्या दिवशी)"
+    },
+    {
+     "en": "Eating out 3,000",
+     "hi": "बाहर खाना 3,000",
+     "mr": "बाहेर जेवण 3,000"
+    },
+    {
+     "en": "Free 5,800",
+     "hi": "खुला 5,800",
+     "mr": "मोकळे 5,800"
+    },
+    {
+     "en": "Total 28,000 ✓",
+     "hi": "कुल 28,000 ✓",
+     "mr": "एकूण 28,000 ✓"
+    }
+   ],
+   "details": [
+    {
+     "en": "A budget is a plan for every rupee before the month spends it for you.",
+     "hi": "बजट हर रुपये की योजना है, इससे पहले कि महीना उसे आपके लिए ख़र्च कर दे।",
+     "mr": "बजेट म्हणजे महिना तुमच्यासाठी प्रत्येक रुपया खर्च करण्याआधी त्याचे नियोजन."
+    },
+    {
+     "en": "Give fun spending its own line. A budget with no room for joy gets abandoned by week two.",
+     "hi": "मौज-मस्ती के ख़र्च की अपनी लाइन रखें। जिस बजट में ख़ुशी की जगह न हो, वह दूसरे हफ़्ते तक छूट जाता है।",
+     "mr": "मौजमजेच्या खर्चाला स्वतःची ओळ द्या. आनंदाला जागा नसलेले बजेट दुसऱ्या आठवड्यापर्यंत सुटते."
+    }
+   ],
+   "cost": {
+    "en": "15 minutes",
+    "hi": "15 मिनट",
+    "mr": "15 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "Food delivery was ₹4,300. What is a realistic plan for it?",
+     "hi": "खाना मँगाना ₹4,300 था। इसके लिए सच्ची योजना क्या है?",
+     "mr": "जेवण मागवणे ₹4,300 होते. त्यासाठी वास्तववादी नियोजन काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Zero. No more delivery, ever",
+       "hi": "शून्य। अब कभी नहीं मँगाना",
+       "mr": "शून्य. पुन्हा कधीच मागवायचे नाही"
+      },
+      "good": false,
+      "result": {
+       "en": "Extreme cuts rarely last. One tired week later, the whole budget breaks.",
+       "hi": "बहुत ज़्यादा कटौती शायद ही टिकती है। एक थके हफ़्ते के बाद पूरा बजट टूट जाता है।",
+       "mr": "टोकाची कपात क्वचितच टिकते. एका थकलेल्या आठवड्यानंतर संपूर्ण बजेट मोडते."
+      }
+     },
+     {
+      "text": {
+       "en": "A limit of ₹3,000 for eating out, tracked weekly",
+       "hi": "बाहर खाने की ₹3,000 सीमा, हर हफ़्ते देखी",
+       "mr": "बाहेर जेवणाची ₹3,000 मर्यादा, दर आठवड्याला पाहिलेली"
+      },
+      "good": true,
+      "result": {
+       "en": "₹1,300 saved without giving up what she enjoys. Small, real changes are the ones that stick.",
+       "hi": "पसंद की चीज़ छोड़े बिना ₹1,300 की बचत। छोटे, सच्चे बदलाव ही टिकते हैं।",
+       "mr": "आवडती गोष्ट न सोडता ₹1,300 बचत. लहान, खरे बदलच टिकतात."
+      }
+     }
+    ]
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Live it: a two-minute check every Sunday",
+    "hi": "इसे जिएँ: हर रविवार दो मिनट की जाँच",
+    "mr": "ते जगा: दर रविवारी दोन मिनिटांची तपासणी"
+   },
+   "text": {
+    "en": "Every Sunday she opens Money Lab, looks at three numbers (spent so far, left in 'eating out', left in 'free') and adjusts the coming week. On day 20 she notices 'free' is almost gone and skips a weekend mall trip.",
+    "hi": "हर रविवार वह मनी लैब खोलकर तीन अंक देखती है (अब तक ख़र्च, 'बाहर खाना' में बचा, 'खुला' में बचा) और अगला हफ़्ता ठीक करती है। 20वें दिन उसे दिखता है कि 'खुला' लगभग ख़त्म है और वह सप्ताहांत का मॉल जाना छोड़ देती है।",
+    "mr": "दर रविवारी ती मनी लॅब उघडून तीन आकडे पाहते (आतापर्यंत खर्च, 'बाहेर जेवण' मध्ये उरलेले, 'मोकळे' मध्ये उरलेले) आणि पुढचा आठवडा जुळवते. 20 व्या दिवशी तिला दिसते की 'मोकळे' जवळजवळ संपले आहे आणि ती शनिवार-रविवारची मॉल सफर टाळते."
+   },
+   "screen": [
+    {
+     "en": "Sun 3: on track",
+     "hi": "रवि 3: ठीक",
+     "mr": "रवि 3: योग्य मार्गावर"
+    },
+    {
+     "en": "Sun 10: eating out 60% used",
+     "hi": "रवि 10: बाहर खाना 60% इस्तेमाल",
+     "mr": "रवि 10: बाहेर जेवण 60% वापरले"
+    },
+    {
+     "en": "Sun 17: free ₹900 left",
+     "hi": "रवि 17: खुला ₹900 बचा",
+     "mr": "रवि 17: मोकळे ₹900 उरले"
+    },
+    {
+     "en": "Day 30: ₹3,000 saved ✓",
+     "hi": "दिन 30: ₹3,000 बचत ✓",
+     "mr": "दिवस 30: ₹3,000 बचत ✓"
+    }
+   ],
+   "details": [
+    {
+     "en": "A weekly look catches overspending while there is still time to adjust.",
+     "hi": "हर हफ़्ते देखने से ज़्यादा ख़र्च तभी पकड़ में आ जाता है जब सुधारने का समय हो।",
+     "mr": "दर आठवड्याला पाहिल्याने जास्त खर्च जुळवायला वेळ असतानाच लक्षात येतो."
+    },
+    {
+     "en": "At month-end, carry what you learned into next month's plan. Budgets get accurate in about three months.",
+     "hi": "महीने के अंत में जो सीखा, उसे अगले महीने की योजना में ले जाएँ। बजट लगभग तीन महीनों में सटीक होने लगता है।",
+     "mr": "महिनाअखेरीस शिकलेले पुढच्या महिन्याच्या नियोजनात न्या. बजेट साधारण तीन महिन्यांत अचूक होऊ लागते."
+    }
+   ],
+   "cost": {
+    "en": "2 minutes a week",
+    "hi": "हफ़्ते में 2 मिनट",
+    "mr": "आठवड्याला 2 मिनिटे"
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Start with money that will actually arrive.",
+   "hi": "उस पैसे से शुरू करें जो सच में आएगा।",
+   "mr": "खरोखर येणाऱ्या पैशांपासून सुरुवात करा."
+  },
+  {
+   "en": "Look honestly at last month before planning this one.",
+   "hi": "यह महीना तय करने से पहले पिछले महीने को ईमानदारी से देखें।",
+   "mr": "हा महिना ठरवण्यापूर्वी मागचा महिना प्रामाणिकपणे पाहा."
+  },
+  {
+   "en": "Plan in order: musts, saving, then guilt-free spending.",
+   "hi": "क्रम से योजना: ज़रूरी, बचत, फिर बिना अपराध-बोध का ख़र्च।",
+   "mr": "क्रमाने नियोजन: आवश्यक, बचत, मग अपराधीपणाशिवाय खर्च."
+  },
+  {
+   "en": "Check for two minutes every week and adjust.",
+   "hi": "हर हफ़्ते दो मिनट देखें और सुधारें।",
+   "mr": "दर आठवड्याला दोन मिनिटे पाहा आणि जुळवा."
+  }
+ ],
+ "reviewed": "2026-10"
+}

@@ -1,0 +1,228 @@
+{
+ "id": "needs-wants",
+ "guide": "needs-wants",
+ "title": {
+  "en": "₹1,500 left and nine days to payday: sorting needs from wants, one bill at a time",
+  "hi": "₹1,500 बचे और तनख़्वाह में नौ दिन: एक-एक बिल करके ज़रूरत और चाहत अलग करना",
+  "mr": "₹1,500 उरले आणि पगाराला नऊ दिवस: एकेक बिल करून गरज आणि इच्छा वेगळ्या करणे"
+ },
+ "setting": {
+  "en": "The 21st of the month, and too many things want money",
+  "hi": "महीने की 21 तारीख़, और बहुत सी चीज़ों को पैसा चाहिए",
+  "mr": "महिन्याची 21 तारीख, आणि अनेक गोष्टींना पैसे हवेत"
+ },
+ "steps": [
+  {
+   "scene": "calculator",
+   "title": {
+    "en": "List everything asking for money",
+    "hi": "पैसा माँगने वाली हर चीज़ लिखें",
+    "mr": "पैसे मागणारी प्रत्येक गोष्ट लिहा"
+   },
+   "text": {
+    "en": "Verena has ₹1,500. She lists every claim on it for the next nine days, without judging yet.",
+    "hi": "वेरेना के पास ₹1,500 हैं। वह अगले नौ दिनों में उस पर हर दावेदार की सूची बनाती है, अभी बिना फ़ैसला किए।",
+    "mr": "वेरेनाकडे ₹1,500 आहेत. पुढच्या नऊ दिवसांत त्यावर हक्क सांगणाऱ्या प्रत्येक गोष्टीची ती यादी करते, अजून निर्णय न घेता."
+   },
+   "screen": [
+    {
+     "en": "₹1,500, 9 days",
+     "hi": "₹1,500, 9 दिन",
+     "mr": "₹1,500, 9 दिवस"
+    },
+    {
+     "en": "Electricity bill ₹640 (due 25th)",
+     "hi": "बिजली बिल ₹640 (25 तक)",
+     "mr": "वीज बिल ₹640 (25 पर्यंत)"
+    },
+    {
+     "en": "Bus pass top-up ₹300",
+     "hi": "बस पास टॉप-अप ₹300",
+     "mr": "बस पास टॉप-अप ₹300"
+    },
+    {
+     "en": "Groceries ₹500",
+     "hi": "राशन ₹500",
+     "mr": "किराणा ₹500"
+    },
+    {
+     "en": "Friend's dinner ₹700",
+     "hi": "दोस्त का डिनर ₹700",
+     "mr": "मैत्रिणीचे डिनर ₹700"
+    },
+    {
+     "en": "Concert ticket ₹999",
+     "hi": "कॉन्सर्ट टिकट ₹999",
+     "mr": "कॉन्सर्ट तिकीट ₹999"
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "calendar",
+   "title": {
+    "en": "Ask one question of each: what breaks if I skip it?",
+    "hi": "हर एक से एक सवाल: छोड़ दूँ तो क्या टूटेगा?",
+    "mr": "प्रत्येकाला एक प्रश्न: वगळले तर काय मोडेल?"
+   },
+   "text": {
+    "en": "A need is something whose absence breaks your days: power, getting to work, food. A want can move to next week without harm. She marks each one.",
+    "hi": "ज़रूरत वह है जिसके न होने से आपके दिन टूटें: बिजली, काम पर पहुँचना, खाना। चाहत अगले हफ़्ते तक खिसक सकती है, बिना नुक़सान। वह हर एक पर निशान लगाती है।",
+    "mr": "गरज म्हणजे जिच्याशिवाय तुमचे दिवस मोडतात: वीज, कामावर पोहोचणे, अन्न. इच्छा पुढच्या आठवड्यापर्यंत सरकू शकते, नुकसान न होता. ती प्रत्येकावर खूण करते."
+   },
+   "screen": [
+    {
+     "en": "NEED: electricity ₹640",
+     "hi": "ज़रूरत: बिजली ₹640",
+     "mr": "गरज: वीज ₹640"
+    },
+    {
+     "en": "NEED: bus pass ₹300",
+     "hi": "ज़रूरत: बस पास ₹300",
+     "mr": "गरज: बस पास ₹300"
+    },
+    {
+     "en": "NEED: groceries ₹500",
+     "hi": "ज़रूरत: राशन ₹500",
+     "mr": "गरज: किराणा ₹500"
+    },
+    {
+     "en": "WANT: dinner, concert",
+     "hi": "चाहत: डिनर, कॉन्सर्ट",
+     "mr": "इच्छा: डिनर, कॉन्सर्ट"
+    },
+    {
+     "en": "Needs total ₹1,440",
+     "hi": "ज़रूरतें कुल ₹1,440",
+     "mr": "गरजा एकूण ₹1,440"
+    }
+   ],
+   "details": [
+    {
+     "en": "Late bills often cost more than they look: late fees, reconnection charges, a hit to your record.",
+     "hi": "देर से भरे बिल दिखने से ज़्यादा महँगे पड़ते हैं: लेट फ़ीस, दोबारा कनेक्शन का शुल्क, रिकॉर्ड पर असर।",
+     "mr": "उशिरा भरलेली बिले दिसतात त्यापेक्षा महाग पडतात: विलंब शुल्क, पुन्हा जोडणीचे शुल्क, नोंदीवर परिणाम."
+    },
+    {
+     "en": "Wants are not bad. They simply wait their turn.",
+     "hi": "चाहतें बुरी नहीं। वे बस अपनी बारी का इंतज़ार करती हैं।",
+     "mr": "इच्छा वाईट नाहीत. त्या फक्त त्यांच्या पाळीची वाट पाहतात."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "sms",
+   "title": {
+    "en": "Say no to a friend without losing the friend",
+    "hi": "दोस्त को ना कहें, दोस्ती खोए बिना",
+    "mr": "मैत्री न गमावता मैत्रिणीला नाही म्हणा"
+   },
+   "text": {
+    "en": "Her friend Riya messages about Saturday dinner. Verena replies honestly and suggests something cheaper.",
+    "hi": "उसकी दोस्त रिया शनिवार के डिनर के बारे में संदेश भेजती है। वेरेना ईमानदारी से जवाब देती है और कुछ सस्ता सुझाती है।",
+    "mr": "तिची मैत्रीण रिया शनिवारच्या डिनरबद्दल संदेश पाठवते. वेरेना प्रामाणिकपणे उत्तर देते आणि काहीतरी स्वस्त सुचवते."
+   },
+   "screen": [
+    {
+     "en": "Riya: Dinner Sat? New place, ₹700 each",
+     "hi": "रिया: शनिवार डिनर? नई जगह, ₹700 हर एक",
+     "mr": "रिया: शनिवारी डिनर? नवी जागा, ₹700 प्रत्येकी"
+    },
+    {
+     "en": ">Payday is the 30th, I'm tight till then",
+     "hi": ">तनख़्वाह 30 को है, तब तक तंगी है",
+     "mr": ">पगार 30 ला आहे, तोपर्यंत तंगी आहे"
+    },
+    {
+     "en": ">Chai and a walk at the lake instead? Dinner on the 1st, my treat-ish",
+     "hi": ">इसके बदले झील पर चाय और टहलना? डिनर 1 तारीख़ को",
+     "mr": ">त्याऐवजी तलावावर चहा आणि फेरफटका? डिनर 1 तारखेला"
+    },
+    {
+     "en": "Riya: Done 😊",
+     "hi": "रिया: पक्का 😊",
+     "mr": "रिया: ठरले 😊"
+    }
+   ],
+   "details": [
+    {
+     "en": "Most friends respect a clear, specific reason and an alternative. Vague excuses feel worse to both.",
+     "hi": "ज़्यादातर दोस्त साफ़ और ठोस वजह और एक विकल्प का सम्मान करते हैं। गोल-मोल बहाने दोनों को बुरे लगते हैं।",
+     "mr": "बहुतेक मित्र स्पष्ट, नेमके कारण आणि पर्यायाचा आदर करतात. गोलमटोल कारणे दोघांनाही वाईट वाटतात."
+    }
+   ],
+   "cost": {
+    "en": "₹1,699 not spent",
+    "hi": "₹1,699 बचे",
+    "mr": "₹1,699 वाचले"
+   },
+   "choice": {
+    "prompt": {
+     "en": "The concert ticket is ₹999 and 'selling fast'. What now?",
+     "hi": "कॉन्सर्ट टिकट ₹999 का है और 'जल्दी बिक रहा है'। अब क्या?",
+     "mr": "कॉन्सर्टचे तिकीट ₹999 आहे आणि 'झपाट्याने विकले जात आहे'. आता काय?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Buy it on Pay Later, pay next month",
+       "hi": "पे लेटर पर ले, अगले महीने चुकाए",
+       "mr": "पे लेटरवर घ्यावे, पुढच्या महिन्यात फेडावे"
+      },
+      "good": false,
+      "result": {
+       "en": "Next month then starts ₹999 short, plus any fees, and the squeeze repeats.",
+       "hi": "तब अगला महीना ₹999 कम से शुरू होता है, ऊपर से शुल्क, और तंगी दोहराती है।",
+       "mr": "मग पुढचा महिना ₹999 कमी पासून सुरू होतो, शिवाय शुल्क, आणि तंगी पुन्हा येते."
+      }
+     },
+     {
+      "text": {
+       "en": "Let it go, or buy it on payday if tickets remain",
+       "hi": "छोड़ दे, या टिकट बचें तो तनख़्वाह पर ले",
+       "mr": "सोडून द्यावे, किंवा तिकिटे उरली तर पगाराच्या दिवशी घ्यावे"
+      },
+      "good": true,
+      "result": {
+       "en": "Needs are paid, the month ends calm, and 'selling fast' is very often just a sales line.",
+       "hi": "ज़रूरतें पूरी, महीना शांति से ख़त्म, और 'जल्दी बिक रहा है' अक्सर बस बिक्री की लाइन होती है।",
+       "mr": "गरजा भागल्या, महिना शांततेत संपला, आणि 'झपाट्याने विकले जात आहे' बहुतेक वेळा फक्त विक्रीची ओळ असते."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "A need breaks your days if skipped; a want can wait a week.",
+   "hi": "ज़रूरत छोड़ने पर दिन टूटते हैं; चाहत एक हफ़्ता रुक सकती है।",
+   "mr": "गरज वगळल्यास दिवस मोडतात; इच्छा आठवडाभर थांबू शकते."
+  },
+  {
+   "en": "Pay needs first, the day money arrives or when the bill comes.",
+   "hi": "ज़रूरतें पहले, पैसा आते ही या बिल आते ही।",
+   "mr": "गरजा आधी, पैसे येताच किंवा बिल येताच."
+  },
+  {
+   "en": "Say no clearly and offer a cheaper alternative.",
+   "hi": "साफ़ ना कहें और सस्ता विकल्प दें।",
+   "mr": "स्पष्ट नाही म्हणा आणि स्वस्त पर्याय द्या."
+  },
+  {
+   "en": "Do not borrow for wants when you are short.",
+   "hi": "तंगी में चाहतों के लिए उधार न लें।",
+   "mr": "तंगीत इच्छांसाठी उधार घेऊ नका."
+  }
+ ],
+ "reviewed": "2026-10"
+}

@@ -1,0 +1,234 @@
+{
+ "id": "kyc-basics",
+ "guide": "kyc-basics",
+ "title": {
+  "en": "Updating your KYC (re-KYC) without falling for a fake 'KYC expired' message",
+  "hi": "अपनी KYC अपडेट करना (री-KYC), नक़ली 'KYC ख़त्म' संदेश के झाँसे में आए बिना",
+  "mr": "तुमचे KYC अद्ययावत करणे (री-KYC), बनावट 'KYC संपले' संदेशाला बळी न पडता"
+ },
+ "setting": {
+  "en": "Verena's bank asks her to update KYC, the same week a fraud SMS says the same",
+  "hi": "वेरेना का बैंक KYC अपडेट करने को कहता है, उसी हफ़्ते एक धोखे का SMS भी यही कहता है",
+  "mr": "वेरेनाची बँक KYC अद्ययावत करायला सांगते, त्याच आठवड्यात एक फसवा SMS हेच सांगतो"
+ },
+ "steps": [
+  {
+   "scene": "sms",
+   "title": {
+    "en": "Two messages, one real, one fake",
+    "hi": "दो संदेश, एक असली, एक नक़ली",
+    "mr": "दोन संदेश, एक खरा, एक बनावट"
+   },
+   "text": {
+    "en": "One SMS, from her bank's usual sender name, says her periodic KYC update is due and asks her to visit the branch or use the bank's app. Another, from a mobile number, says her account 'will be blocked today' and gives a link.",
+    "hi": "एक SMS, बैंक के सामान्य सेंडर नाम से, कहता है कि समय-समय पर होने वाला KYC अपडेट बाक़ी है और शाखा जाने या बैंक ऐप इस्तेमाल करने को कहता है। दूसरा, एक मोबाइल नंबर से, कहता है कि खाता 'आज ब्लॉक हो जाएगा' और एक लिंक देता है।",
+    "mr": "एक SMS, बँकेच्या नेहमीच्या प्रेषक नावाने, सांगतो की ठरावीक कालावधीने होणारे KYC अद्ययावतीकरण बाकी आहे आणि शाखेत जायला किंवा बँकेचे ॲप वापरायला सांगतो. दुसरा, एका मोबाइल नंबरवरून, सांगतो की खाते 'आज ब्लॉक होईल' आणि एक लिंक देतो."
+   },
+   "screen": [
+    {
+     "en": "XX-BANK: Your KYC update is due.",
+     "hi": "XX-BANK: आपका KYC अपडेट बाक़ी है।",
+     "mr": "XX-BANK: तुमचे KYC अद्ययावत करणे बाकी."
+    },
+    {
+     "en": "Visit branch or use our app.",
+     "hi": "शाखा जाएँ या हमारा ऐप।",
+     "mr": "शाखेत या किंवा आमचे ॲप वापरा."
+    },
+    {
+     "en": "+91 98xxx: KYC EXPIRED! Account blocked today.",
+     "hi": "+91 98xxx: KYC ख़त्म! खाता आज ब्लॉक।",
+     "mr": "+91 98xxx: KYC संपले! खाते आज ब्लॉक."
+    },
+    {
+     "en": "!Update now: kyc-upd8.xyz",
+     "hi": "!अभी अपडेट: kyc-upd8.xyz",
+     "mr": "!आता अद्ययावत करा: kyc-upd8.xyz"
+    }
+   ],
+   "details": [
+    {
+     "en": "Real banks send messages from a registered sender ID (like XX-BANK), not a personal number, and never send links to unknown sites.",
+     "hi": "असली बैंक पंजीकृत सेंडर ID (जैसे XX-BANK) से संदेश भेजते हैं, किसी निजी नंबर से नहीं, और अनजान साइट की लिंक कभी नहीं भेजते।",
+     "mr": "खऱ्या बँका नोंदणीकृत प्रेषक ID (उदा. XX-BANK) वरून संदेश पाठवतात, वैयक्तिक नंबरवरून नाही, आणि अनोळखी साइटची लिंक कधीही पाठवत नाहीत."
+    },
+    {
+     "en": "'Today', 'immediately', 'blocked' are pressure words. Real KYC updates come with time to act.",
+     "hi": "'आज', 'तुरंत', 'ब्लॉक' दबाव वाले शब्द हैं। असली KYC अपडेट के लिए समय दिया जाता है।",
+     "mr": "'आज', 'लगेच', 'ब्लॉक' हे दबावाचे शब्द आहेत. खऱ्या KYC अद्ययावतीकरणासाठी वेळ दिला जातो."
+    }
+   ],
+   "cost": {
+    "en": "Read slowly",
+    "hi": "धीरे पढ़ें",
+    "mr": "सावकाश वाचा"
+   }
+  },
+  {
+   "scene": "phone",
+   "title": {
+    "en": "Do it in the bank's own app, or at the branch",
+    "hi": "बैंक के अपने ऐप में करें, या शाखा में",
+    "mr": "बँकेच्या स्वतःच्या ॲपमध्ये करा, किंवा शाखेत"
+   },
+   "text": {
+    "en": "If nothing has changed in her details, RBI allows a simple self-declaration. In the bank's app she goes to Service Requests, chooses 'Re-KYC: no change in details', confirms with an OTP, and the request is logged.",
+    "hi": "अगर उसके विवरण में कुछ नहीं बदला, तो RBI सादे स्व-घोषणा की अनुमति देता है। बैंक ऐप में वह सर्विस रिक्वेस्ट में जाकर 'Re-KYC: विवरण में कोई बदलाव नहीं' चुनती है, OTP से पुष्टि करती है, और अनुरोध दर्ज हो जाता है।",
+    "mr": "तिच्या तपशिलात काहीही बदल नसेल तर RBI साध्या स्वघोषणेला परवानगी देते. बँकेच्या ॲपमध्ये ती सेवा विनंत्यांमध्ये जाऊन 'Re-KYC: तपशिलात बदल नाही' निवडते, OTP ने पुष्टी करते, आणि विनंती नोंदवली जाते."
+   },
+   "screen": [
+    {
+     "en": "Re-KYC",
+     "hi": "री-KYC",
+     "mr": "री-KYC"
+    },
+    {
+     "en": "No change in details",
+     "hi": "विवरण में कोई बदलाव नहीं",
+     "mr": "तपशिलात बदल नाही"
+    },
+    {
+     "en": "Address: same ✓",
+     "hi": "पता: वही ✓",
+     "mr": "पत्ता: तोच ✓"
+    },
+    {
+     "en": "OTP ✓ · Request logged",
+     "hi": "OTP ✓ · अनुरोध दर्ज",
+     "mr": "OTP ✓ · विनंती नोंदवली"
+    }
+   ],
+   "details": [
+    {
+     "en": "Only the address changed? Many banks accept a self-declaration of the new address and verify it within a set time.",
+     "hi": "केवल पता बदला? कई बैंक नए पते की स्व-घोषणा मानते हैं और तय समय में उसकी जाँच करते हैं।",
+     "mr": "फक्त पत्ता बदलला? अनेक बँका नव्या पत्त्याची स्वघोषणा स्वीकारतात आणि ठरावीक वेळेत ती पडताळतात."
+    },
+    {
+     "en": "Changed name or other details? Visit the branch with the original documents, or use video KYC if the bank offers it in its app.",
+     "hi": "नाम या दूसरी जानकारी बदली? मूल दस्तावेज़ों के साथ शाखा जाएँ, या बैंक ऐप में वीडियो KYC हो तो उसका इस्तेमाल करें।",
+     "mr": "नाव किंवा इतर तपशील बदलले? मूळ कागदपत्रांसह शाखेत जा, किंवा बँकेच्या ॲपमध्ये व्हिडिओ KYC असल्यास ते वापरा."
+    }
+   ],
+   "cost": {
+    "en": "5 minutes",
+    "hi": "5 मिनट",
+    "mr": "5 मिनिटे"
+   }
+  },
+  {
+   "scene": "counter",
+   "title": {
+    "en": "At the branch: give documents only at the counter",
+    "hi": "शाखा में: दस्तावेज़ केवल काउंटर पर दें",
+    "mr": "शाखेत: कागदपत्रे फक्त काउंटरवर द्या"
+   },
+   "text": {
+    "en": "Her mother's account needs a full KYC because her surname changed after marriage long ago and never got updated. At the branch, they fill the KYC form, attach self-attested copies of Aadhaar and PAN, and get an acknowledgement slip with a date.",
+    "hi": "उसकी माँ के खाते में पूरी KYC चाहिए क्योंकि बहुत पहले शादी के बाद उनका उपनाम बदला था और अपडेट नहीं हुआ। शाखा में वे KYC फ़ॉर्म भरते हैं, आधार और पैन की स्व-सत्यापित कॉपी लगाते हैं, और तारीख़ वाली पावती लेते हैं।",
+    "mr": "तिच्या आईच्या खात्याला पूर्ण KYC हवे कारण खूप पूर्वी लग्नानंतर त्यांचे आडनाव बदलले होते आणि ते अद्ययावत झाले नव्हते. शाखेत ते KYC फॉर्म भरतात, आधार आणि पॅनच्या स्वसाक्षांकित प्रती जोडतात, आणि तारखेची पोचपावती घेतात."
+   },
+   "screen": [
+    {
+     "en": "KYC UPDATE",
+     "hi": "KYC अपडेट",
+     "mr": "KYC अद्ययावतीकरण"
+    },
+    {
+     "en": "Name change: marriage",
+     "hi": "नाम बदलाव: विवाह",
+     "mr": "नाव बदल: विवाह"
+    },
+    {
+     "en": "Docs: Aadhaar, PAN, marriage cert.",
+     "hi": "दस्तावेज़: आधार, पैन, विवाह प्रमाणपत्र",
+     "mr": "कागदपत्रे: आधार, पॅन, विवाह प्रमाणपत्र"
+    },
+    {
+     "en": "✓ Acknowledgement slip",
+     "hi": "✓ पावती",
+     "mr": "✓ पोचपावती"
+    }
+   ],
+   "details": [
+    {
+     "en": "Ask for an acknowledgement. If the account gets restricted later, it proves you complied on time.",
+     "hi": "पावती माँगें। अगर बाद में खाते पर रोक लगे, तो यह साबित करती है कि आपने समय पर पालन किया।",
+     "mr": "पोच मागा. नंतर खात्यावर निर्बंध आले तर ती सिद्ध करते की तुम्ही वेळेवर पालन केले."
+    },
+    {
+     "en": "KYC is shared across some products (like a central KYC number for investments), so keeping it correct helps everywhere.",
+     "hi": "KYC कुछ सेवाओं में साझा होती है (जैसे निवेश के लिए केंद्रीय KYC नंबर), इसलिए इसे सही रखना हर जगह काम आता है।",
+     "mr": "KYC काही सेवांमध्ये सामायिक असते (उदा. गुंतवणुकीसाठी केंद्रीय KYC क्रमांक), त्यामुळे ते बरोबर ठेवणे सर्वत्र उपयोगी पडते."
+    }
+   ],
+   "cost": {
+    "en": "30 minutes at the branch",
+    "hi": "शाखा में 30 मिनट",
+    "mr": "शाखेत 30 मिनिटे"
+   },
+   "choice": {
+    "prompt": {
+     "en": "What should Verena do with the 'KYC EXPIRED' link SMS?",
+     "hi": "'KYC ख़त्म' लिंक वाले SMS का वेरेना क्या करे?",
+     "mr": "'KYC संपले' लिंक असलेल्या SMS चे वेरेनाने काय करावे?"
+    },
+    "options": [
+     {
+      "text": {
+       "en": "Open it just to check if it is real",
+       "hi": "बस देखने के लिए खोले कि असली है या नहीं",
+       "mr": "खरा आहे का हे पाहण्यासाठी उघडावा"
+      },
+      "good": false,
+      "result": {
+       "en": "These pages copy bank logos perfectly and ask for login details and OTPs. Opening is the first step to typing.",
+       "hi": "ये पेज बैंक का लोगो हूबहू नक़ल करते हैं और लॉगिन और OTP माँगते हैं। खोलना ही टाइप करने की पहली सीढ़ी है।",
+       "mr": "ही पाने बँकेचे बोधचिन्ह हुबेहूब नक्कल करतात आणि लॉगिन आणि OTP मागतात. उघडणे हीच टाइप करण्याची पहिली पायरी."
+      }
+     },
+     {
+      "text": {
+       "en": "Delete it and report the number",
+       "hi": "मिटा दे और नंबर रिपोर्ट करे",
+       "mr": "पुसून टाकावा आणि नंबर नोंदवावा"
+      },
+      "good": true,
+      "result": {
+       "en": "She has already done her real re-KYC in the bank app. The fake one has nothing left to offer.",
+       "hi": "वह बैंक ऐप में असली री-KYC पहले ही कर चुकी है। नक़ली के पास देने को कुछ नहीं बचा।",
+       "mr": "तिने बँकेच्या ॲपमध्ये खरे री-KYC आधीच केले आहे. बनावटीकडे देण्यासारखे काहीच उरले नाही."
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Real KYC requests come from the bank's registered sender name and never with outside links.",
+   "hi": "असली KYC अनुरोध बैंक के पंजीकृत सेंडर नाम से आते हैं, कभी बाहरी लिंक के साथ नहीं।",
+   "mr": "खऱ्या KYC विनंत्या बँकेच्या नोंदणीकृत प्रेषक नावाने येतात, कधीही बाहेरच्या लिंकसह नाही."
+  },
+  {
+   "en": "No change in details: self-declare in the bank's app or at the branch.",
+   "hi": "विवरण में बदलाव नहीं: बैंक ऐप या शाखा में स्व-घोषणा करें।",
+   "mr": "तपशिलात बदल नाही: बँकेच्या ॲपमध्ये किंवा शाखेत स्वघोषणा करा."
+  },
+  {
+   "en": "Details changed: branch with originals, or the bank's own video KYC.",
+   "hi": "विवरण बदला: मूल दस्तावेज़ों के साथ शाखा, या बैंक का अपना वीडियो KYC।",
+   "mr": "तपशील बदलले: मूळ कागदपत्रांसह शाखा, किंवा बँकेचे स्वतःचे व्हिडिओ KYC."
+  },
+  {
+   "en": "Always take an acknowledgement.",
+   "hi": "हमेशा पावती लें।",
+   "mr": "नेहमी पोच घ्या."
+  }
+ ],
+ "reviewed": "2026-10",
+ "sources": [
+  "https://www.rbi.org.in",
+  "https://rbikehtahai.rbi.org.in"
+ ]
+}
