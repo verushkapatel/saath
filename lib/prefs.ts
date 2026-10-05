@@ -119,4 +119,4 @@ export function applyPrefs(prefs: Prefs): void {
 }
 
 /** Runs in the page head, before React. Kept as a string so it can be inlined. */
-export const PREFS_BOOT = `(function(){try{var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");var r=document.documentElement;r.setAttribute("data-theme",p.theme==="light"?"light":"dark");if(p.text)r.setAttribute("data-text",p.text);if(p.motion==="reduce")r.setAttribute("data-motion","reduce");if(p.contrast)r.setAttribute("data-contrast","more");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();`;
+export const PREFS_BOOT = `(function(){try{var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");var r=document.documentElement;if(p.theme==="system"){r.removeAttribute("data-theme");}else{r.setAttribute("data-theme",p.theme==="light"?"light":"dark");}if(p.text)r.setAttribute("data-text",p.text);if(p.motion==="reduce")r.setAttribute("data-motion","reduce");if(p.contrast)r.setAttribute("data-contrast","more");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();`;

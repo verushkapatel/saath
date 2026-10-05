@@ -3111,3 +3111,33 @@ button, a, [role="button"], .chip, .btn { touch-action: manipulation; -webkit-ta
   .intro-top .cluster { gap: 2px; }
   .intro-top .btn-auto { padding: 0 8px; }
 }
+
+/* Light mode: the landing header and opening section follow the theme too. */
+:root[data-theme="light"] :is(.intro-top, .intro-hero.navy-scene) { --bg: inherit; --surface-1: inherit; --surface-2: inherit; --surface-3: inherit; --line: inherit; --line-strong: inherit; --text: inherit; --text-muted: inherit; --text-faint: inherit; --accent: inherit; --accent-hi: inherit; --accent-press: inherit; --accent-ink: inherit; --accent-text: inherit; --accent-soft: inherit; --navy: inherit; --navy-soft: inherit; --navy-ink: inherit; --shadow-1: inherit; --shadow-2: inherit; }
+:root[data-theme="light"] .intro-top { background: color-mix(in srgb, var(--bg) 90%, transparent) !important; border-bottom: 1px solid var(--line); }
+:root[data-theme="light"] .intro-top .btn-ghost, :root[data-theme="light"] .intro-top .logo-mark, :root[data-theme="light"] .hero-brand, :root[data-theme="light"] .intro-hero .skyward-badge { color: var(--text); }
+:root[data-theme="light"] .intro-top .logo-mark, :root[data-theme="light"] .intro-hero .logo-mark { --text: #0b0b0f; --navy: #1f3f8f; }
+:root[data-theme="light"] .intro-hero .skyward-badge { border-color: var(--line-strong); background: var(--surface-1); }
+:root[data-theme="light"] .intro-hero .skyward-badge small { color: var(--text-faint); }
+:root[data-theme="light"] .intro-hero .stage { background: var(--surface-1); box-shadow: inset 0 0 0 1px var(--line); }
+:root[data-theme="light"] .skyward-emblem { box-shadow: 0 0 0 1.5px var(--line-strong) !important; }
+@media (prefers-color-scheme: light) {
+/* Light mode: the landing header and opening section follow the theme too. */
+:root:not([data-theme]) :is(.intro-top, .intro-hero.navy-scene) { --bg: inherit; --surface-1: inherit; --surface-2: inherit; --surface-3: inherit; --line: inherit; --line-strong: inherit; --text: inherit; --text-muted: inherit; --text-faint: inherit; --accent: inherit; --accent-hi: inherit; --accent-press: inherit; --accent-ink: inherit; --accent-text: inherit; --accent-soft: inherit; --navy: inherit; --navy-soft: inherit; --navy-ink: inherit; --shadow-1: inherit; --shadow-2: inherit; }
+:root:not([data-theme]) .intro-top { background: color-mix(in srgb, var(--bg) 90%, transparent) !important; border-bottom: 1px solid var(--line); }
+:root:not([data-theme]) .intro-top .btn-ghost, :root:not([data-theme]) .intro-top .logo-mark, :root:not([data-theme]) .hero-brand, :root:not([data-theme]) .intro-hero .skyward-badge { color: var(--text); }
+:root:not([data-theme]) .intro-top .logo-mark, :root:not([data-theme]) .intro-hero .logo-mark { --text: #0b0b0f; --navy: #1f3f8f; }
+:root:not([data-theme]) .intro-hero .skyward-badge { border-color: var(--line-strong); background: var(--surface-1); }
+:root:not([data-theme]) .intro-hero .skyward-badge small { color: var(--text-faint); }
+:root:not([data-theme]) .intro-hero .stage { background: var(--surface-1); box-shadow: inset 0 0 0 1px var(--line); }
+:root:not([data-theme]) .skyward-emblem { box-shadow: 0 0 0 1.5px var(--line-strong) !important; }
+}
+
+:root[data-theme="light"] .intro-hero.navy-scene { background: var(--bg) !important; }
+:root[data-theme="light"] .intro-top .icon-btn, :root[data-theme="light"] .intro-top .lang-switch { color: var(--text) !important; background: transparent !important; }
+:root[data-theme="light"] .intro-hero .btn-primary { background: var(--text); color: var(--bg); }
+@media (prefers-color-scheme: light) {
+:root:not([data-theme]) .intro-hero.navy-scene { background: var(--bg) !important; }
+:root:not([data-theme]) .intro-top .icon-btn, :root:not([data-theme]) .intro-top .lang-switch { color: var(--text) !important; background: transparent !important; }
+:root:not([data-theme]) .intro-hero .btn-primary { background: var(--text); color: var(--bg); }
+}
