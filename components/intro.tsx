@@ -466,9 +466,23 @@ export function Intro({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => 
         {ACTS.map((id, index) => <i key={id} className={index === act ? "on" : index < act ? "was" : undefined} />)}
       </nav>
       <div className={`intro-float${act >= 0 && act < total ? " on" : ""}`} aria-hidden={!(act >= 0 && act < total)}>
-        <a className="btn btn-primary" href="#join" onClick={tap} tabIndex={act >= 0 && act < total ? 0 : -1} data-testid="intro-skip-link">
-          {t("intro.skipToEnd", { left: Math.max(1, total - act) })}
-          <ArrowDown aria-hidden size={18} />
+        <a
+          className="btn intro-skip"
+          href="#join"
+          onClick={(event) => {
+            event.preventDefault();
+            tap();
+            const end = document.getElementById("join");
+            if (!end) return;
+            setAct(total);
+            end.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" });
+            window.setTimeout(() => document.querySelector<HTMLElement>('[data-testid="intro-make-yours-button"]')?.focus({ preventScroll: true }), 700);
+          }}
+          tabIndex={act >= 0 && act < total ? 0 : -1}
+          data-testid="intro-skip-link"
+        >
+          {t("intro.skipShort")}
+          <ArrowDown aria-hidden size={16} />
         </a>
       </div>
       <p className="credit-line intro-credit" data-testid="landing-credit">By The Skyward Project, Verushka Patel</p>

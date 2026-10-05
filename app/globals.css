@@ -3070,3 +3070,13 @@ button, a, [role="button"], .chip, .btn { touch-action: manipulation; -webkit-ta
 .chat-history-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .chat-history-open .faint { font-size: 0.8rem; }
 .chat-history-note { font-size: 0.8rem; }
+
+/* Tour ending: one centred card on every screen size. */
+.intro #join { display: block; min-height: auto; text-align: center; }
+.intro #join .finale.navy-scene { width: 100%; max-width: 40rem; margin-inline: auto !important; padding: var(--s-7) var(--s-6) !important; border: 1px solid var(--line-strong); border-radius: var(--r-xl) !important; }
+.intro #join .finale .btn-primary { width: min(100%, 22rem); justify-self: center; }
+/* Skip: a small, quiet pill instead of a full-width bar. */
+.intro-float .btn.intro-skip { width: auto; min-height: 42px; padding: 0 16px 0 18px; gap: 6px; border-radius: var(--r-full); font-size: 0.95rem; font-weight: 600; color: #fff; background: rgba(20, 22, 28, 0.82); border: 1px solid rgba(255, 255, 255, 0.16); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.intro-float .btn.intro-skip:hover { background: rgba(32, 35, 44, 0.9); }
+.intro #join .finale { justify-items: center; text-align: center; }
+.intro #join .finale > * { margin-inline: auto; justify-self: center; text-align: center; }

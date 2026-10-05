@@ -157,6 +157,10 @@ jobs:
             echo "saath.cc not serving yet (try $i): HTTP $(curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://saath.cc/)"; sleep 20
           done
           curl -s -H "$H" "$API/accounts/$acct/workers/domains" | jq -c '.result[]? | {hostname, service}'
+          # Every main screen and the new features answer on saath.cc.
+          for path in / journey/ guide/ guide/what-insurance/ money-lab/ forms/ resume/ handbook/ ai/ content/guide.json sw.js; do
+            echo "saath.cc/$path -> HTTP $(curl -s -o /dev/null -L -w '%{http_code}' --max-time 20 "https://saath.cc/$path")"
+          done
 
       - name: Publish to Firebase (saath.web.app)
         continue-on-error: true
