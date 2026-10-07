@@ -39,7 +39,7 @@ export function LogoMark({ size = 32, title }: { size?: number; title?: string }
 export function SkywardEmblem({ size = 28 }: { size?: number }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img className="skyward-emblem" src={asset("/skyward-logo.png")} alt="The Skyward Project" width={size} height={size} data-testid="skyward-emblem" />
+    <img className="skyward-emblem" src={asset("/skyward-logo-navy.png")} alt="The Skyward Project" width={size} height={size} data-testid="skyward-emblem" />
   );
 }
 
@@ -60,11 +60,11 @@ export function Logo({ size = 28, emblem = true }: { size?: number; emblem?: boo
 }
 
 /** "A Skyward Project initiative", with the emblem large enough to read. */
-export function SkywardBadge({ size = 44 }: { size?: number }) {
+export function SkywardBadge({ size = 44, label = "A project by" }: { size?: number; label?: string }) {
   return (
     <span className="skyward-badge" data-testid="skyward-badge">
       <SkywardEmblem size={size} />
-      <span><small>A project by</small> The Skyward Project</span>
+      <span><small>{label}</small> The Skyward Project</span>
     </span>
   );
 }

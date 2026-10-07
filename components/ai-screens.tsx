@@ -464,7 +464,7 @@ function Chat({ compact }: { compact?: boolean }) {
           {busy && (
             <div className="msg saath" role="status" aria-label={t("ai.thinking")} data-testid="ai-thinking">
               <span className="ai-mark sm thinking" aria-hidden><LogoMark size={16} /></span>
-              <p className="faint thinking-text">{t("ai.thinking")}…</p>
+              <ThinkingBar />
             </div>
           )}
           <div ref={endRef} />
@@ -625,6 +625,28 @@ export function AiScreen() {
     <div className="stack">
       <h1 className="visually-hidden">{t("ai.title")}</h1>
       {prefs.ai ? <Chat /> : <AiOff />}
+    </div>
+  );
+}
+
+/** While Saath AI works: a bar that fills as the answer is prepared, with the step it is on. */
+function ThinkingBar() {
+  const { t } = useI18n();
+  const [elapsed, setElapsed] = useState(0);
+  useEffect(() => {
+    const start = performance.now();
+    const timer = window.setInterval(() => setElapsed(performance.now() - start), 120);
+    return () => window.clearInterval(timer);
+  }, []);
+  // Fills quickly at first, then slows, never reaching the end until the answer arrives.
+  const progress = Math.round(94 * (1 - Math.exp(-elapsed / 3200)));
+  const stage = elapsed < 1400 ? 1 : elapsed < 4200 ? 2 : 3;
+  return (
+    <div className="think-bar" data-testid="ai-progress">
+      <p className="faint thinking-text">{t(`ai.stage${stage}`)}<span className="think-pct">{progress}%</span></p>
+      <div className="think-track" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress} aria-label={t("ai.thinking")}>
+        <i style={{ width: `${progress}%` }} />
+      </div>
     </div>
   );
 }

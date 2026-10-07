@@ -122,9 +122,11 @@ export type DictationHandlers = {
 
 /**
  * Dictation for the chat: the words appear in the box while the person speaks, in English (India), Hindi or Marathi.
- * The browser's own speech service does the listening. Returns a function that stops it.
+ * The browser's own speech service does the listening. Browsers end a listening session on their own after a short
+ * pause (and report "no-speech" or "aborted"), which made the mic switch itself off; so the session is quietly restarted
+ * until the person stops it, or until they have spoken and then paused for `silenceMs`. Returns a function that stops it.
  */
-export function dictate(lang: Lang, handlers: DictationHandlers): () => void {
+export function dictate(lang: Lang, handlers: DictationHandlers, options: { silenceMs?: number; maxMs?: number } = {}): () => void {
   const root = window as Window & {
     webkitSpeechRecognition?: new () => SpeechRecognition;
     SpeechRecognition?: new () => SpeechRecognition;
@@ -134,37 +136,68 @@ export function dictate(lang: Lang, handlers: DictationHandlers): () => void {
     handlers.onError("unsupported");
     return () => undefined;
   }
-  const recognition = new Ctor();
-  recognition.lang = SPEECH[lang];
-  recognition.interimResults = true;
-  recognition.continuous = false;
-  recognition.maxAlternatives = 1;
+  const silenceMs = options.silenceMs ?? 2200;
+  const maxMs = options.maxMs ?? 60000;
+  const started = Date.now();
   let finalText = "";
-  recognition.onresult = (event) => {
-    let interim = "";
-    const count = event.results.length ?? 0;
-    for (let index = event.resultIndex ?? 0; index < count; index += 1) {
-      const result = event.results[index];
-      const words = result?.[0]?.transcript ?? "";
-      if (result?.isFinal) finalText += words;
-      else interim += words;
-    }
-    handlers.onText(`${finalText}${interim}`.trim(), interim.length === 0);
+  let latest = "";
+  let done = false;
+  let quietTimer = 0;
+  let current: SpeechRecognition | null = null;
+
+  const finish = (error?: string) => {
+    if (done) return;
+    done = true;
+    window.clearTimeout(quietTimer);
+    try { current?.stop?.(); } catch { /* Already stopped. */ }
+    if (error) handlers.onError(error);
+    else handlers.onEnd();
   };
-  recognition.onerror = (event) => handlers.onError(event?.error ?? "hear");
-  recognition.onend = () => handlers.onEnd();
-  try {
-    recognition.start();
-  } catch {
-    handlers.onError("busy");
-  }
-  return () => {
+
+  const begin = () => {
+    if (done) return;
+    const recognition = new Ctor();
+    current = recognition;
+    recognition.lang = SPEECH[lang];
+    recognition.interimResults = true;
+    recognition.continuous = true;
+    recognition.maxAlternatives = 1;
+    let sessionFinal = "";
+    recognition.onresult = (event) => {
+      let interim = "";
+      const count = event.results.length ?? 0;
+      sessionFinal = "";
+      for (let index = 0; index < count; index += 1) {
+        const result = event.results[index];
+        const words = result?.[0]?.transcript ?? "";
+        if (result?.isFinal) sessionFinal += words;
+        else interim += words;
+      }
+      latest = `${finalText}${sessionFinal}${interim}`.trim();
+      handlers.onText(latest, interim.length === 0);
+      window.clearTimeout(quietTimer);
+      if (latest) quietTimer = window.setTimeout(() => finish(), silenceMs);
+    };
+    recognition.onerror = (event) => {
+      const reason = event?.error ?? "hear";
+      // Permission problems are real; silence and the browser's own time-outs are not.
+      if (reason === "not-allowed" || reason === "service-not-allowed" || reason === "audio-capture") finish(reason);
+    };
+    recognition.onend = () => {
+      finalText = `${finalText}${sessionFinal}`;
+      if (finalText && !finalText.endsWith(" ")) finalText += " ";
+      if (done) return;
+      if (Date.now() - started > maxMs) finish(latest ? undefined : "no-speech");
+      else window.setTimeout(begin, 120);
+    };
     try {
-      recognition.stop?.();
+      recognition.start();
     } catch {
-      // Already stopped.
+      window.setTimeout(begin, 300);
     }
   };
+  begin();
+  return () => finish();
 }
 
 /** The language a typed or spoken question is written in, so Saath AI can answer in it. Devanagari alone cannot tell Hindi from Marathi, so the current choice is kept for those. */

@@ -3287,3 +3287,117 @@ h2 { letter-spacing: -0.02em; }
 .ask-chips-row button svg { color: var(--text-faint); flex: none; }
 .g-step > a, .g-step > div { max-width: calc(100% - 8px); }
 @media (max-width: 520px) { .g-step { transform: translateX(calc(var(--x, 0) * 0.18)); } .g-step > a, .g-step > div { grid-template-columns: 56px minmax(0, 1fr); } .g-node { width: 56px; height: 56px; } }
+
+/* ───────────────────────────────────────────────────────────────
+   Saath 4: cleaner opening, an immersive Home header, logos that pop, the navy voice orb,
+   Saath AI's progress bar, the form walk-through and the chapter vault.
+   ─────────────────────────────────────────────────────────────── */
+:root { --sky-navy: #102054; --sky-glow: rgba(98, 132, 255, 0.45); }
+
+/* The Skyward emblem is navy with white now: a thin light rim instead of a heavy white ring. */
+.skyward-emblem, .logo .skyward-emblem, .skyward-badge .skyward-emblem { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28), 0 6px 18px -6px rgba(16, 32, 84, 0.9) !important; }
+:root[data-theme="light"] .skyward-emblem { box-shadow: 0 0 0 1px rgba(16, 32, 84, 0.25), 0 6px 16px -8px rgba(16, 32, 84, 0.6) !important; }
+
+/* Logos in the side rail and top bar: brighter rings and a soft glow. */
+.rail .logo, .shell-top .logo { gap: 12px; }
+.rail .logo .brand-name, .shell-top .logo .brand-name { font-size: 1.55rem; font-weight: 700; letter-spacing: -0.03em; }
+.rail .logo-mark, .shell-top .logo-mark { filter: drop-shadow(0 0 10px var(--sky-glow)); transition: transform 400ms var(--ease-out), filter 400ms; }
+.rail .logo:hover .logo-mark { transform: rotate(-8deg) scale(1.06); filter: drop-shadow(0 0 16px var(--sky-glow)); }
+.rail .logo-divider, .shell-top .logo-divider { opacity: 0.5; }
+
+/* The language picker: calm and centred, the figure on a soft glow instead of a boxed card. */
+.landing .landing-body { gap: 22px; }
+.landing .landing-figure.stage { border: 0 !important; background: radial-gradient(closest-side, rgba(70, 100, 220, 0.28), transparent 75%) !important; box-shadow: none !important; padding: 0; width: 200px; height: 200px; display: grid; place-items: center; margin: 0 auto; }
+.landing .landing-figure.stage > *:not(svg) { display: none; }
+.landing .wordmark { gap: 12px; font-size: 2.3rem; font-weight: 700; letter-spacing: -0.03em; }
+.landing .gate-heading h1 { font-size: clamp(1.7rem, 5vw, 2.1rem); margin-top: 6px; }
+.landing .gate-heading .lead { opacity: 0.75; }
+.landing .gate-list { gap: 10px; }
+.landing .gate-list button { min-height: 68px; border-radius: 16px; transition: border-color 220ms, background 220ms, transform 200ms; }
+.landing .gate-list button:hover { transform: translateY(-1px); }
+.landing .gate-list button[aria-checked="true"] { border-color: #5b7cf0 !important; background: linear-gradient(90deg, rgba(60, 92, 220, 0.22), rgba(60, 92, 220, 0.06)) !important; }
+.landing .btn-primary:not(:disabled) { background: linear-gradient(180deg, #2f4fc4, #1c3290) !important; color: #fff !important; box-shadow: 0 14px 32px -14px rgba(47, 79, 196, 0.9); }
+.landing .btn-primary:disabled { opacity: 0.35; }
+
+/* Home: an immersive header with a slow navy aurora behind the greeting. */
+.home-hero { position: relative; isolation: isolate; overflow: hidden; padding: 26px 22px 22px; border-radius: 28px; border: 1px solid rgba(120, 150, 255, 0.16); background: linear-gradient(160deg, #0f1c4d 0%, #0a1233 55%, #070b1f 100%); color: #fff; }
+.home-hero h1 { color: #fff; font-size: clamp(1.9rem, 5vw, 2.6rem); }
+.home-hero .streak-chip { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.18); color: #fff; }
+.home-aurora { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.home-aurora i { position: absolute; border-radius: 50%; filter: blur(42px); opacity: 0.55; animation: aurora 14s ease-in-out infinite alternate; }
+.home-aurora i:nth-child(1) { width: 60%; height: 140%; left: -10%; top: -40%; background: #2f56e0; }
+.home-aurora i:nth-child(2) { width: 45%; height: 110%; right: -8%; top: -20%; background: #6b4fd8; opacity: 0.35; animation-duration: 18s; }
+.home-aurora i:nth-child(3) { width: 40%; height: 80%; left: 35%; bottom: -55%; background: #1fa3c9; opacity: 0.25; animation-duration: 22s; }
+.home-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1.4px); background-size: 22px 22px; mask-image: linear-gradient(180deg, transparent, #000 40%, transparent); -webkit-mask-image: linear-gradient(180deg, transparent, #000 40%, transparent); }
+@keyframes aurora { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(8%, 6%, 0) scale(1.15); } }
+:root[data-theme="light"] .home-hero { background: linear-gradient(160deg, #1a2d72 0%, #12215a 60%, #0c1640 100%); }
+
+/* "An initiative by The Skyward Project": a clear navy pill with a moving sheen. */
+.home-hero .skyward-badge { position: relative; overflow: hidden; margin-top: 10px; padding: 7px 20px 7px 7px; gap: 14px; color: #fff; border: 1px solid rgba(150, 175, 255, 0.35); background: linear-gradient(90deg, rgba(16, 32, 84, 0.95), rgba(36, 62, 160, 0.75)); box-shadow: 0 12px 30px -16px rgba(47, 86, 224, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.12); font-size: 1.08rem; font-weight: 700; letter-spacing: -0.01em; }
+.home-hero .skyward-badge small { color: #a9bcff; font-size: 0.72rem; letter-spacing: 0.12em; font-weight: 600; margin-bottom: 2px; }
+.home-hero .skyward-badge::after { content: ""; position: absolute; top: 0; bottom: 0; width: 40%; left: -60%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.18), transparent); animation: sheen 5.5s ease-in-out 1.2s infinite; }
+@keyframes sheen { 0%, 60% { left: -60%; } 100% { left: 130%; } }
+
+/* Voice mode: a navy and black orb with the Saath rings, clean. */
+.voice-mode { background: radial-gradient(90% 70% at 50% 35%, #12204f 0%, #070b1d 55%, #000 100%) !important; }
+.orb-core { width: 128px !important; height: 128px !important; background: radial-gradient(circle at 50% 30%, #2a438f 0%, #142357 45%, #05081a 100%) !important; border: 1px solid rgba(140, 165, 255, 0.35); box-shadow: 0 0 0 10px rgba(30, 50, 130, 0.25), 0 30px 70px -20px rgba(47, 86, 224, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important; }
+.orb-core .logo-mark { --text: #ffffff; --navy: #8ea6ff; }
+.orb-ring { border-color: rgba(110, 140, 255, 0.28) !important; }
+
+/* Saath AI is thinking: a progress bar with the step it is on. */
+.think-bar { display: grid; gap: 8px; min-width: min(260px, 70vw); }
+.think-bar .thinking-text { display: flex; justify-content: space-between; gap: 12px; margin: 0; }
+.think-pct { font-variant-numeric: tabular-nums; color: var(--text-faint); }
+.think-track { height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.think-track i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #2f56e0, #8ea6ff, #2f56e0); background-size: 200% 100%; animation: think-flow 1.4s linear infinite; transition: width 300ms ease-out; }
+@keyframes think-flow { to { background-position: -200% 0; } }
+
+/* A form, walked through one part at a time. */
+.form-sim { display: grid; gap: 14px; }
+.form-sim-top { display: flex; justify-content: space-between; align-items: center; }
+.form-sim-count { font-weight: 700; color: var(--label-blue); }
+.form-sim-track { display: flex; gap: 4px; }
+.form-sim-track i { flex: 1; height: 5px; border-radius: 999px; background: var(--line); transition: background 300ms; }
+.form-sim-track i.done { background: var(--blue); }
+.form-sim-track i.now { background: linear-gradient(90deg, var(--blue), #8ea6ff); }
+.form-sim-card { display: grid; gap: 14px; padding: 18px; border-radius: 22px; border: 1px solid var(--line); background: var(--surface-1); animation: g-row 450ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.form-sim-card h3 { margin: 0; font-size: 1.35rem; }
+.form-paper { position: relative; padding: 16px 16px 14px; border-radius: 10px; background: #fbf8f1; color: #1d2230; box-shadow: 0 16px 30px -18px rgba(0, 0, 0, 0.6); transform: rotate(-0.6deg); background-image: repeating-linear-gradient(transparent 0 27px, rgba(30, 50, 120, 0.08) 27px 28px); }
+.form-paper-label { position: absolute; top: -10px; left: 12px; font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; background: var(--blue); color: #fff; }
+.form-paper-line { margin: 4px 0 0; font-family: ui-monospace, Menlo, monospace; font-size: 0.95rem; line-height: 1.6; }
+.form-paper-line mark { background: linear-gradient(transparent 55%, rgba(255, 196, 61, 0.7) 55%); color: inherit; padding: 0 2px; }
+.form-sim-row { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+.form-sim-row p { margin: 0; line-height: 1.55; }
+.form-sim-tag { font-size: 0.75rem; font-weight: 700; padding: 4px 9px; border-radius: 8px; white-space: nowrap; }
+.form-sim-tag.ask { background: rgba(47, 86, 224, 0.14); color: var(--label-blue); }
+.form-sim-tag.check { background: rgba(52, 196, 135, 0.14); color: #2aa874; }
+.ask-field { display: inline-flex; align-items: center; gap: 8px; justify-self: start; padding: 10px 14px; border-radius: 999px; border: 1px dashed var(--line-strong); background: transparent; color: var(--text); font: inherit; font-size: 0.92rem; cursor: pointer; }
+.ask-field:hover { border-color: var(--blue); border-style: solid; }
+.form-sim-checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.form-sim-checks label { display: flex; gap: 12px; align-items: flex-start; padding: 12px; border-radius: 14px; border: 1px solid var(--line); cursor: pointer; line-height: 1.45; }
+.form-sim-checks input { width: 20px; height: 20px; accent-color: var(--blue); flex: none; margin-top: 2px; }
+.form-sim-checks label:has(input:checked) { border-color: var(--blue); background: rgba(47, 86, 224, 0.08); }
+
+/* The chapter vault: collectible cards. */
+.g-switch { display: inline-flex; padding: 4px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); width: fit-content; }
+.g-switch button { border: 0; background: transparent; color: var(--text-muted); font: inherit; font-weight: 600; padding: 8px 18px; border-radius: 999px; cursor: pointer; }
+.g-switch button.on { background: var(--blue); color: #fff; }
+.g-vault-wrap { display: grid; gap: 14px; }
+.g-vault-meter { display: grid; grid-template-columns: auto auto 1fr auto; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface-1); }
+.g-vault-meter b { font-size: 1.3rem; } .g-vault-meter small { color: var(--text-faint); font-weight: 400; }
+.g-vault-bar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.g-vault-bar i { display: block; height: 100%; background: linear-gradient(90deg, #2f56e0, #f5b942); border-radius: inherit; }
+.g-vault { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px; }
+.g-card > a, .g-card > div { position: relative; display: grid; gap: 6px; align-content: end; aspect-ratio: 1 / 1.12; padding: 10px; border-radius: 16px; color: var(--text); text-decoration: none; overflow: hidden; border: 1.5px solid var(--line); background: var(--surface-1); transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 350ms; animation: g-row 500ms cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(var(--i) * 40ms); }
+.g-card > a:hover { transform: translateY(-4px) rotate(-1deg); }
+.g-card strong { font-size: 0.92rem; line-height: 1.25; font-weight: 600; }
+.g-card-num { position: absolute; top: 10px; left: 12px; font-size: 1.6rem; font-weight: 800; letter-spacing: -0.04em; opacity: 0.85; }
+.g-card-age { font-size: 0.75rem; color: var(--text-faint); }
+.g-card.gold > a { border-color: #f5b942; background: linear-gradient(160deg, rgba(245, 185, 66, 0.28), var(--surface-1) 55%); box-shadow: 0 14px 30px -18px rgba(245, 185, 66, 0.9); }
+.g-card.silver > a { border-color: #b8c2d8; background: linear-gradient(160deg, rgba(184, 194, 216, 0.25), var(--surface-1) 55%); }
+.g-card.bronze > a { border-color: #c98a5a; background: linear-gradient(160deg, rgba(201, 138, 90, 0.25), var(--surface-1) 55%); }
+.g-card.gold > a::after { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.22) 45%, transparent 60%); transform: translateX(-100%); animation: sheen-card 4s ease-in-out infinite; }
+@keyframes sheen-card { 0%, 55% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+.g-card.sealed > div { border-style: dashed; color: var(--text-faint); background: repeating-linear-gradient(135deg, var(--surface-1) 0 10px, var(--surface-2) 10px 20px); }
+.g-card.sealed strong { font-size: 1.4rem; }
+@media (prefers-reduced-motion: reduce) { .home-aurora i, .home-hero .skyward-badge::after, .g-card.gold > a::after, .think-track i { animation: none !important; } }

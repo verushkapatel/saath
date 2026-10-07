@@ -403,25 +403,95 @@ export function FormExplainScreen() {
           </div>
           <p className="kicker">{t("forms.foundTitle", { count: found.length })}</p>
           <h2 id="found-h">{t("forms.plainTitle")}</h2>
-          <p className="muted">{t("forms.plainLead")}</p>
-          <ol className="stack-sm plain-list" data-testid="form-plain-results">
-            {found.map((item, index) => (
-              <li key={item.rule.id} className="card tight plain-field">
-                <span className="plain-num num" aria-hidden>{index + 1}</span>
-                <div className="stack-xs">
-                  <strong>{item.rule.label[code]}</strong>
-                  <p><span className="label">{t("forms.whatItAsks")}</span> {item.rule.meaning[code]}</p>
-                  <p className="muted"><span className="label"><ShieldCheck aria-hidden size={14} style={{ verticalAlign: "-2px" }} /> {t("forms.check")}</span> {item.rule.tip[code]}</p>
-                  <p className="faint quote-line">{t("forms.readAs")}: “{item.line}”</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+          <FormSim found={found} />
           <p className="faint">{t("forms.accuracy")} {t("forms.notAll")}</p>
           <button type="button" className="btn btn-primary" onClick={() => { tap(); ai.openAsk(t("forms.askBlank")); }} data-testid="form-ask-ai-button">
             <MessageCircle aria-hidden size={18} />{t("forms.explainAll")}
           </button>
         </section>
+      )}
+    </div>
+  );
+}
+
+/**
+ * The form as a guided walk: one part at a time, the words exactly as they were read from the paper, what the part
+ * asks, what to check, and a question for Saath AI about that part. It ends with a before-you-sign checklist.
+ */
+function FormSim({ found }: { found: FormReading["found"] }) {
+  const { t, code } = useI18n();
+  const ai = useAi();
+  const [at, setAt] = useState(0);
+  const [all, setAll] = useState(false);
+  const [ticked, setTicked] = useState<Record<string, boolean>>({});
+  const total = found.length;
+  const finished = at >= total;
+  const item = found[Math.min(at, total - 1)];
+  if (!total) return null;
+
+  if (all) {
+    return (
+      <div className="stack-sm">
+        <button type="button" className="link" onClick={() => { tap(); setAll(false); }}>{t("forms.sim.walk")}</button>
+        <ol className="stack-sm plain-list" data-testid="form-plain-results">
+          {found.map((entry, index) => (
+            <li key={entry.rule.id} className="card tight plain-field">
+              <span className="plain-num num" aria-hidden>{index + 1}</span>
+              <div className="stack-xs">
+                <strong>{entry.rule.label[code]}</strong>
+                <p><span className="label">{t("forms.whatItAsks")}</span> {entry.rule.meaning[code]}</p>
+                <p className="muted"><span className="label">{t("forms.check")}</span> {entry.rule.tip[code]}</p>
+                <p className="faint quote-line">{t("forms.readAs")}: “{entry.line}”</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    );
+  }
+
+  return (
+    <div className="form-sim" data-testid="form-sim">
+      <div className="form-sim-top">
+        <span className="form-sim-count">{finished ? t("forms.sim.doneShort") : t("forms.sim.step", { n: at + 1, total })}</span>
+        <button type="button" className="link" onClick={() => { tap(); setAll(true); }}>{t("forms.sim.all")}</button>
+      </div>
+      <div className="form-sim-track" aria-hidden>{found.map((entry, index) => <i key={entry.rule.id} className={index < at ? "done" : index === at ? "now" : ""} />)}</div>
+
+      {!finished ? (
+        <div key={at} className="form-sim-card">
+          <div className="form-paper" aria-label={t("forms.readAs")}>
+            <span className="form-paper-label">{t("forms.sim.onPaper")}</span>
+            <p className="form-paper-line"><mark>{item.line}</mark></p>
+          </div>
+          <h3>{item.rule.label[code]}</h3>
+          <div className="form-sim-row"><span className="form-sim-tag ask">{t("forms.whatItAsks")}</span><p>{item.rule.meaning[code]}</p></div>
+          <div className="form-sim-row"><span className="form-sim-tag check">{t("forms.check")}</span><p>{item.rule.tip[code]}</p></div>
+          <button type="button" className="ask-field" onClick={() => { tap(); ai.openAsk(t("forms.sim.askField", { field: item.rule.label[code] })); }} data-testid="form-sim-ask">
+            <MessageCircle aria-hidden size={16} /> {t("forms.sim.askField", { field: item.rule.label[code] })}
+          </button>
+          <div className="pair">
+            <button type="button" className="btn btn-secondary" disabled={at === 0} onClick={() => { tap(); setAt(at - 1); }}>{t("forms.sim.back")}</button>
+            <button type="button" className="btn btn-primary" onClick={() => { tap(); setAt(at + 1); }} data-testid="form-sim-next">{at + 1 === total ? t("forms.sim.finish") : t("forms.sim.next")}</button>
+          </div>
+        </div>
+      ) : (
+        <div className="form-sim-card" data-testid="form-sim-done">
+          <h3>{t("forms.sim.doneTitle")}</h3>
+          <p className="muted">{t("forms.sim.doneLead")}</p>
+          <ul className="form-sim-checks">
+            {found.map((entry) => (
+              <li key={entry.rule.id}>
+                <label>
+                  <input type="checkbox" checked={!!ticked[entry.rule.id]} onChange={(event) => setTicked({ ...ticked, [entry.rule.id]: event.target.checked })} />
+                  <span><strong>{entry.rule.label[code]}</strong> {entry.rule.tip[code]}</span>
+                </label>
+              </li>
+            ))}
+          </ul>
+          <p className="faint">{t("forms.sim.ticked", { n: Object.values(ticked).filter(Boolean).length, total })}</p>
+          <button type="button" className="btn btn-secondary" onClick={() => { tap(); setAt(0); }}>{t("forms.sim.again")}</button>
+        </div>
       )}
     </div>
   );

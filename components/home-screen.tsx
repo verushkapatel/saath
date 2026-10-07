@@ -173,7 +173,8 @@ export function HomeScreen() {
 
   return (
     <div className="stack-lg rise">
-      <div className="stack-sm greeting">
+      <header className="stack-sm greeting home-hero">
+        <span className="home-aurora" aria-hidden><i /><i /><i /></span>
         <div className="row-between">
           <h1>{t(greetingKey())}{name ? `, ${name}` : ""}</h1>
           <span className="streak-chip" role="img" aria-label={streakLabel}>
@@ -181,8 +182,8 @@ export function HomeScreen() {
             <span aria-hidden>{streak.count}</span>
           </span>
         </div>
-        <SkywardBadge size={36} />
-      </div>
+        <SkywardBadge size={46} label={t("home.initiative")} />
+      </header>
 
       <VerenaHud />
 

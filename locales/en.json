@@ -103,7 +103,8 @@
       "next": "Next unread guide.",
       "ahead": "Useful for the next part of the story."
     },
-    "askBar": "Ask Saath AI anything…"
+    "askBar": "Ask Saath AI anything…",
+    "initiative": "An initiative by"
   },
   "scan": {
     "title": "Scan a document",
@@ -1203,7 +1204,9 @@
       "done": "XP"
     },
     "storyPlayer": "Story",
-    "learning": "Not every choice works out. {name} learns from this one, and so can you: the next part explains why."
+    "learning": "Not every choice works out. {name} learns from this one, and so can you: the next part explains why.",
+    "vault": "Chapter vault",
+    "pathView": "Path"
   },
   "forms": {
     "accuracy": "Explanations come from Saath’s checked form guide, not guesses. If a part is not recognised, it is left out rather than made up.",
@@ -1259,7 +1262,22 @@
     "aiExplain": "Explain this form with Saath AI",
     "aiExplainPrompt": "Explain this form to me in plain words, part by part, and tell me what to check before I sign.",
     "example": "A filled example",
-    "exampleLead": "How this form looks when filled correctly. The people and numbers are examples; use your own details."
+    "exampleLead": "How this form looks when filled correctly. The people and numbers are examples; use your own details.",
+    "sim": {
+      "step": "Part {n} of {total}",
+      "doneShort": "All parts read",
+      "all": "See all at once",
+      "walk": "Back to the step-by-step walk",
+      "onPaper": "On your paper",
+      "askField": "How do I fill “{field}”?",
+      "back": "Back",
+      "next": "Next part",
+      "finish": "Finish",
+      "doneTitle": "Before you sign",
+      "doneLead": "Tick each one as you check it on the paper.",
+      "ticked": "{n} of {total} checked",
+      "again": "Walk through again"
+    }
   },
   "stories": {
     "title": "Real stories",
@@ -1386,7 +1404,10 @@
       "count": "{n} messages",
       "delete": "Delete chat: {title}",
       "private": "Chats are kept only on this phone. Turn off chat memory in Settings to stop saving them."
-    }
+    },
+    "stage1": "Reading your question",
+    "stage2": "Checking Saath's guides",
+    "stage3": "Writing your answer"
   },
   "prog": {
     "kicker": "Your progress",

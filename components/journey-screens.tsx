@@ -19,7 +19,7 @@ import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
 import { CheckCard, ListenButton, PageSkeleton } from "./ui";
-import { AskChips, GameHud, MissionPanel, StatDeltas, Stars, StoryBoard } from "./game";
+import { AskChips, ChapterVault, GameHud, MissionPanel, StatDeltas, Stars, StoryBoard } from "./game";
 import { starsFor } from "@/lib/game";
 
 function MoneyStrip({ money }: { money: { cash: number; savings: number; debt: number } }) {
@@ -56,6 +56,7 @@ export function JourneyScreen() {
   const { t, code } = useI18n();
   const app = useApp();
   const { journey, story, progress, streak, lessons, today } = app;
+  const [archiveView, setArchiveView] = useState<"path" | "vault">("path");
   const recs = useMemo(() => recommend({ progress, lessons, journey: story, today }).filter((rec) => rec.kind !== "episode").slice(0, 3), [progress, lessons, story, today]);
 
   useAiContext(journey && story ? {
@@ -170,7 +171,11 @@ export function JourneyScreen() {
       <section className="stack-sm" aria-labelledby="map-h">
         <h2 id="map-h">{t("journey.archive")}</h2>
         <p className="faint">{t("journey.archiveLead")}</p>
-        <StoryBoard
+        <div className="seg g-switch" role="tablist">
+          <button type="button" role="tab" aria-selected={archiveView === "path"} className={archiveView === "path" ? "on" : ""} onClick={() => { tap(); setArchiveView("path"); }}>{t("journey.pathView")}</button>
+          <button type="button" role="tab" aria-selected={archiveView === "vault"} className={archiveView === "vault" ? "on" : ""} onClick={() => { tap(); setArchiveView("vault"); }} data-testid="vault-tab">{t("journey.vault")}</button>
+        </div>
+        {archiveView === "vault" ? <ChapterVault episodes={journey.episodes} results={progress.journey} /> : <StoryBoard
           episodes={journey.episodes}
           stages={journey.stages}
           results={progress.journey}
@@ -178,7 +183,7 @@ export function JourneyScreen() {
           open={story.open}
           look={app.verena}
           age={app.verena.age}
-        />
+        />}
         <AskChips prompts={[t("aiask.story1"), t("aiask.story2"), t("journey.askWhatNext")]} />
         <p className="faint">{t("journey.rule")}</p>
         <p className="faint">{t("journey.reviewed", { date: journey.reviewed })}</p>

@@ -176,7 +176,7 @@ export function VoiceMode({ ask, onClose }: { ask: (question: string) => Promise
         void respond(said);
       },
       onError: () => { stopRef.current = null; setState("idle"); },
-    });
+    }, { silenceMs: 1500 });
   }
 
   async function respond(question: string) {

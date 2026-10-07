@@ -150,7 +150,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
       <a className="skip" href="#content">{t("common.skip")}</a>
       <header className="shell-top">
         <Link href="/" className="brand" aria-label="Saath">
-          <Logo size={26} />
+          <Logo size={30} />
         </Link>
         <span className="cluster">
           {prefs.ai && (
@@ -166,7 +166,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
       </header>
       <nav className="rail" aria-label={t("nav.label")}>
         <Link href="/" className="brand" aria-label="Saath">
-          <Logo size={26} />
+          <Logo size={30} />
         </Link>
         {[...TABS, ...MORE].map((tab, index) => {
           const Icon = tab.icon;

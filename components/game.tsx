@@ -189,3 +189,44 @@ export function GameHud({ level, ratio, xp, episodes, results, streak }: { level
     </div>
   );
 }
+
+/**
+ * The chapter vault: every finished chapter as a collectible card, framed bronze, silver or gold by its stars.
+ * Chapters not yet played show as sealed cards, so the collection is something to complete.
+ */
+export function ChapterVault({ episodes, results }: { episodes: Episode[]; results: Record<string, EpisodeResult> }) {
+  const { t, code } = useI18n();
+  const stars = starTotals(episodes, results);
+  const owned = episodes.filter((episode) => results[episode.id]).length;
+  return (
+    <div className="g-vault-wrap" data-testid="chapter-vault">
+      <div className="g-vault-meter">
+        <span className="g-label">{t("journey.vault")}</span>
+        <b>{owned}<small>/{episodes.length}</small></b>
+        <span className="g-vault-bar"><i style={{ width: `${(owned / Math.max(1, episodes.length)) * 100}%` }} /></span>
+        <span className="g-world-stars"><Star size={13} fill="currentColor" aria-hidden /> {stars.earned}/{stars.max}</span>
+      </div>
+      <ol className="g-vault">
+        {episodes.map((episode, index) => {
+          const result = results[episode.id];
+          const earned = starsFor(episode, result);
+          const tier = !result ? "sealed" : earned >= 3 ? "gold" : earned === 2 ? "silver" : "bronze";
+          const title = episode.title[code].replace(/^\d+\s*·\s*/, "");
+          const body = (
+            <>
+              <span className="g-card-num">{String(index + 1).padStart(2, "0")}</span>
+              <span className="g-card-age">{t("journey.age", { age: episode.age })}</span>
+              <strong>{result ? title : "?"}</strong>
+              {result ? <Stars value={earned} size={12} /> : <Lock size={14} aria-hidden />}
+            </>
+          );
+          return (
+            <li key={episode.id} className={`g-card ${tier}`} style={{ "--i": index % 12 } as CSSProperties}>
+              {result ? <Link href={`/journey/${episode.id}`} onClick={tap} aria-label={episode.title[code]}>{body}</Link> : <div aria-label={t("journey.locked")}>{body}</div>}
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+}
