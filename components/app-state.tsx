@@ -41,6 +41,7 @@ import {
   type Entry,
   type Loan,
 } from "@/lib/storage";
+import { safeLook } from "@/lib/rewards";
 import { computeStreak, type StreakView } from "@/lib/streak";
 import { share } from "@/lib/impact";
 import { currentProfile } from "@/lib/profile";
@@ -321,7 +322,13 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const level = useMemo(() => levelFor(progress.xp), [progress.xp]);
   const totalSteps = Math.max(1, lessons.length + (journey?.episodes.length ?? 0));
   totalRef.current = totalSteps;
-  const verena = useMemo(() => verenaAt(stepsDone(progress), totalSteps), [progress, totalSteps]);
+  // Verena grows with progress; once the person dresses her in the wardrobe, that outfit is the one shown everywhere.
+  const verena = useMemo(() => {
+    const grown = verenaAt(stepsDone(progress), totalSteps);
+    if (!progress.look.dressed) return grown;
+    const chosen = safeLook({ progress, streak: streak.count });
+    return { ...grown, outfit: chosen.outfit, extra: chosen.extra };
+  }, [progress, totalSteps, streak.count]);
 
   const value = useMemo<AppState>(() => ({
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,

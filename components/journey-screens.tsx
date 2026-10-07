@@ -68,7 +68,7 @@ export function JourneyScreen() {
   } : null);
 
   if (!app.ready || !journey || !story) return <PageSkeleton />;
-  const look = safeLook({ progress, streak: streak.count });
+  const look = app.verena;
   const next = story.next;
   const drillRight = Object.values(progress.journey).reduce((sum, result) => sum + result.drill, 0);
   const drillTotal = journey.episodes.reduce((sum, episode) => sum + (progress.journey[episode.id] ? episode.drill.length : 0), 0);
@@ -427,8 +427,8 @@ export function EpisodeScreen({ id }: { id: string }) {
 
   const stage = journey.stages.find((item) => item.id === episode.stage);
   const index = journey.episodes.findIndex((item) => item.id === episode.id);
-  // Every chapter dresses Verena differently, so the story itself shows her changing as life goes on.
-  const look = verenaAt(index * 2 + 1, journey.episodes.length * 2);
+  // The same Verena as everywhere else in the app: grown with progress, in the outfit the person chose for her.
+  const look = app.verena;
   const before = moneyAfter(journey, Object.fromEntries(Object.entries(progress.journey).filter(([key]) => journey.episodes.findIndex((item) => item.id === key) < index)));
   const option = choice !== null ? episode.options[choice] : null;
   const drillRight = drill.filter((pick, at) => pick !== null && pick === episode.drill[at].answer).length;

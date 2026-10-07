@@ -509,6 +509,7 @@ export function Character({
   return (
     <svg
       className={`character${alive ? " alive" : ""}${wave ? " waving" : ""}`}
+      data-outfit={look.outfit}
       viewBox="0 0 200 228"
       width={size}
       height={(size * 228) / 200}

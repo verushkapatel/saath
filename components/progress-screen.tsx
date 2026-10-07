@@ -183,7 +183,7 @@ export function ProgressScreen() {
 
       <section className="card hero journey-hero">
         <div className="stage">
-          <Character look={look} age={app.story?.age || 19} size={150} label={t("prog.figure")} />
+          <Character look={app.verena} age={app.verena.age} size={150} label={t("prog.figure")} />
         </div>
         <div className="stack-sm">
           <p className="hero-num md">{t("prog.level", { level: level.level })}</p>
@@ -233,7 +233,7 @@ export function ProgressScreen() {
         </div>
         <p className="faint">{t("prog.customiseLead")}</p>
         <div className="look-preview navy-scene" aria-hidden>
-          <Character look={look} age={app.story?.age || 19} size={170} mood="happy" />
+          <Character look={{ ...app.verena, place: look.place }} age={app.verena.age} size={170} mood="happy" />
         </div>
         {KINDS.map((kind) => (
           <div key={kind} className="stack-xs">

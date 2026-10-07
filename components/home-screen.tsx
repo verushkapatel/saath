@@ -97,7 +97,7 @@ export function HomeScreen() {
 
   if (!app.ready) return <PageSkeleton />;
 
-  const look = safeLook({ progress, streak: streak.count });
+  const look = app.verena;
   const streakLabel = streak.count ? t("home.streak", { count: streak.count }) : t("home.streakZero");
   const name = account?.display ?? "";
 
@@ -107,7 +107,7 @@ export function HomeScreen() {
         const episode = story?.next;
         return (
           <div className="home-quest">
-            {episode && <div className="home-quest-character stage" aria-hidden><Character look={{ ...verenaAt((story?.done ?? 0) * 2 + 1, Math.max(2, (story?.total ?? 46) * 2)), place: episode.place }} age={episode.age} size={148} mood="neutral" alive /></div>}
+            {episode && <div className="home-quest-character stage" aria-hidden><Character look={{ ...app.verena, place: episode.place }} age={episode.age} size={148} mood="neutral" alive /></div>}
             <div className="home-quest-copy stack-sm">
               <p className="masthead">{t("home.todayStory")}</p>
               <div className="quest-progress">

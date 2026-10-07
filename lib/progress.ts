@@ -52,7 +52,8 @@ export type Progress = {
 };
 
 export type EpisodeResult = { choice: number; drill: number; at: string };
-export type Look = { outfit: string; extra: string; place: string };
+/** `dressed` is set once the person chooses an outfit themselves; from then on that outfit is shown everywhere. */
+export type Look = { outfit: string; extra: string; place: string; dressed?: boolean };
 
 /** What each kind of finished work is worth. */
 export const XP = {
@@ -150,6 +151,7 @@ export function normalizeProgress(raw: unknown): Progress {
           outfit: typeof old.look.outfit === "string" ? old.look.outfit : base.look.outfit,
           extra: typeof old.look.extra === "string" ? old.look.extra : base.look.extra,
           place: typeof old.look.place === "string" ? old.look.place : base.look.place,
+          ...(old.look.dressed === true ? { dressed: true } : {}),
         }
       : base.look,
     focus: strings(old.focus),
@@ -299,7 +301,7 @@ export function setFocus(progress: Progress, focus: string[]): Progress {
 }
 
 export function setLook(progress: Progress, look: Partial<Look>): Progress {
-  return { ...progress, look: { ...progress.look, ...look } };
+  return { ...progress, look: { ...progress.look, ...look, dressed: true } };
 }
 
 function unionSteps(a: Record<string, string[]>, b: Record<string, string[]>): Record<string, string[]> {

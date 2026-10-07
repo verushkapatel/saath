@@ -80,7 +80,7 @@ function MoneyIntro() {
   return (
     <div className="stack rise">
       <div className="money-intro-stage navy-scene" aria-hidden>
-        <Character look={{ outfit: "hoodie", extra: "backpack", place: "cafe" }} age={20} size={150} mood={step === 0 && tried.length === 0 ? "neutral" : step === 2 ? "proud" : "happy"} />
+        <Character look={{ ...app.verena, place: "cafe" }} age={app.verena.age} size={150} mood={step === 0 && tried.length === 0 ? "neutral" : step === 2 ? "proud" : "happy"} />
       </div>
       <div className="stack-xs">
         <p className="masthead">{t("money.introKicker", { step: step + 1, total: 3 })}</p>
