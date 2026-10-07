@@ -3196,63 +3196,11 @@ h2 { letter-spacing: -0.02em; }
   .screen, .rv { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; filter: none !important; }
 }
 
-/* ───────────────────────────────────────────────────────────────
-   Saath 3: one design language with the landing page. A light geometric sans, blue monospace labels,
-   pure black in dark mode, blue pill buttons, and quiet bordered cards.
-   ─────────────────────────────────────────────────────────────── */
-:root {
-  --font-display: var(--font-sans);
-  --font-body: var(--font-sans), var(--font-dev), system-ui, -apple-system, sans-serif;
-  --font-head: var(--font-sans), var(--font-dev), system-ui, -apple-system, sans-serif;
-  --mono: var(--font-mono), ui-monospace, Menlo, monospace;
-  --blue: #2449d8;
-  --blue-hi: #2f56e6;
-  --label-blue: #2449d8;
-}
-:root[data-theme="dark"] { --bg: #000000; --bg-top: #000000; --surface-1: #0b0b0d; --surface-2: #141417; --surface-3: #1f1f24; --blue: #2c55e0; --blue-hi: #3d66f0; --label-blue: #5b85ff; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --bg: #000000; --bg-top: #000000; --surface-1: #0b0b0d; --surface-2: #141417; --blue: #2c55e0; --label-blue: #5b85ff; } }
-:root[data-theme="dark"] body { background: var(--bg); }
-body { font-family: var(--font-body); font-size: 1rem; font-weight: 400; letter-spacing: -0.005em; -webkit-font-smoothing: antialiased; }
-h1, h2, h3 { font-family: var(--font-head); font-weight: 500; }
-h1 { font-weight: 400; letter-spacing: -0.04em; line-height: 1.06; }
-h2 { letter-spacing: -0.03em; }
-.lead { font-weight: 300; }
-.brand-name { font-weight: 600; letter-spacing: -0.03em; }
-
-/* Labels: small blue monospace capitals, the signature of the new look. */
-.kicker, .masthead, .label, .eyebrow, .act-num, .stage-map .kicker, .chip-label {
-  font-family: var(--mono) !important; font-size: 0.74rem !important; font-weight: 500 !important;
-  letter-spacing: 0.16em !important; text-transform: uppercase; color: var(--label-blue) !important;
-}
-
-/* Buttons: blue pills for the main action, quiet outlines for the rest. */
-.btn { border-radius: 999px; font-weight: 500; letter-spacing: -0.01em; }
-.btn-primary { background: var(--blue) !important; color: #ffffff !important; border-color: transparent !important; }
-.btn-primary:hover:not(:disabled) { background: var(--blue-hi) !important; box-shadow: 0 12px 30px -14px rgba(44, 85, 224, 0.75); }
-.btn-primary:disabled { opacity: 0.45; }
-.btn-secondary { border-radius: 999px; }
-
-/* Cards: near-black panels with a hairline, like the product cards on the landing page. */
-:root[data-theme="dark"] .card { background: var(--surface-1); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: none; }
-.card { border-radius: 22px; }
-:root[data-theme="dark"] .card.hero, :root[data-theme="dark"] .navy-scene { --bg: #050508; }
-
-/* The language picker: the big rings, then the languages as large rows. */
-.landing.gate { background: #000 !important; }
-.gate .landing-body { width: min(100%, 30rem); gap: 28px; }
-.gate .gate-heading { display: grid; justify-items: center; text-align: center; gap: 14px; }
-.gate-mark .logo-mark { --text: #ffffff; --navy: #5b82ff; }
-.gate-by { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: #6f8fff; margin: 0; }
-.gate-by .skyward-emblem { box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.8); }
-.gate h1 { font-size: clamp(2.2rem, 8vw, 3rem); font-weight: 400; letter-spacing: -0.045em; color: #fff; }
-.gate .lead { color: #a7abb4; }
-.gate .gate-list button { border-radius: 18px; background: #0b0b0d !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: #fff !important; min-height: 76px; transition: border-color 250ms, background 250ms, transform 200ms; }
-.gate .gate-list button:hover { border-color: rgba(255, 255, 255, 0.24) !important; }
-.gate .gate-list button[aria-checked="true"] { border-color: #2c55e0 !important; background: rgba(44, 85, 224, 0.12) !important; box-shadow: none !important; }
-.gate .gate-list b { font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02em; }
-.gate .dot.done { background: #2c55e0; border-color: #2c55e0; color: #fff; }
-.gate .landing-top .icon-btn { color: #fff !important; background: transparent !important; border: 0 !important; }
-.gate .btn-primary { min-height: 58px; font-size: 1.05rem; }
+/* Tokens the story game and Saath AI chips use, in Saath's own navy. */
+:root { --mono: var(--font-body, system-ui), sans-serif; --blue: #2b4bb8; --blue-hi: #3558cc; --label-blue: #2b4bb8; }
+:root[data-theme="dark"] { --blue: #4f6fe0; --blue-hi: #6382f0; --label-blue: #8ea6ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --blue: #4f6fe0; --label-blue: #8ea6ff; } }
+.g-label, .g-hud dt, .g-num, .g-here, .ask-chips-head, .g-world-stars { letter-spacing: 0.04em !important; text-transform: none !important; font-weight: 600; }
 
 /* ───────────────────────────────────────────────────────────────
    Game layer: the story header, the board of worlds, the chapter mission, stars, and what changed.

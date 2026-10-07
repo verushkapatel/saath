@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { JetBrains_Mono, Manrope, Noto_Sans_Devanagari } from "next/font/google";
+import { EB_Garamond, Noto_Sans_Devanagari } from "next/font/google";
 import { Providers } from "@/components/providers";
 import { RegisterSW, Shell } from "@/components/shell";
 import { asset } from "@/lib/config";
@@ -8,10 +8,9 @@ import "./globals.css";
 import "./simulations.css";
 import "./landing.css";
 
-// A light, geometric sans for Latin (Manrope), Noto Sans Devanagari for Hindi and Marathi, and a monospace for labels.
+// One formal serif throughout: EB Garamond for Latin, Noto Sans Devanagari for Hindi and Marathi.
 // They are downloaded at build time and served from this site, with size-matched fallbacks so text does not jump.
-const sans = Manrope({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["300", "400", "500", "600", "700", "800"] });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap", weight: ["400", "500"] });
+const sans = EB_Garamond({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "600", "700", "800"] });
 const dev = Noto_Sans_Devanagari({ subsets: ["devanagari"], variable: "--font-dev", display: "swap", weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
@@ -48,7 +47,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${dev.variable} ${mono.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} ${dev.variable}`} suppressHydrationWarning>
       <head>
         {/* Applies the saved theme and text size before anything is drawn, so there is no flash of the wrong theme. */}
         <script dangerouslySetInnerHTML={{ __html: PREFS_BOOT }} />

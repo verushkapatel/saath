@@ -69,12 +69,14 @@ function Landing() {
   const shown = pick ?? "en";
 
   return (
-    <main className="landing gate screen navy-scene">
+    <main className="landing screen navy-scene">
       <div className="landing-top"><ThemeToggle /></div>
       <div className="landing-body scene-in">
+        <div className="landing-figure stage">
+          <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={168} />
+        </div>
         <div className="gate-heading">
-          <span className="gate-mark" aria-hidden><LogoMark size={64} /></span>
-          <p className="gate-by"><SkywardEmblem size={26} /> Saath · The Skyward Project</p>
+          <p className="wordmark"><LogoMark size={40} /> Saath <span className="logo-divider" aria-hidden /><SkywardEmblem size={44} /></p>
           <h1 lang={shown}>{copy[shown].title}</h1>
           <p className="lead" lang={shown}>{copy[shown].line}</p>
         </div>
