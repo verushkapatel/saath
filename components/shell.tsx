@@ -17,7 +17,7 @@ import { AskSheet } from "./ai-screens";
 import { AppStateProvider, useApp } from "./app-state";
 import { AuthScreen, type AuthMode } from "./auth";
 import { Character } from "./character";
-import { Intro } from "./intro";
+import { Landing as ProductLanding } from "./landing";
 import { Logo, LogoMark, SkywardEmblem } from "./logo";
 import { Personalize } from "./personalize";
 import { PrefsProvider, usePrefs } from "./prefs";
@@ -102,6 +102,36 @@ function Landing() {
 
 const WITH_FOOTER = ["/", "/privacy", "/privacy/partners", "/about", "/handbook", "/settings"];
 
+/**
+ * Cards rise gently into place the first time they scroll into view, on every screen. Anything already on screen
+ * when the page opens is shown at once, so nothing waits for a scroll.
+ */
+function ScrollReveal({ path }: { path: string }) {
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add("rv-in");
+        observer.unobserve(entry.target);
+      }
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0.08 });
+    const timer = window.setTimeout(() => {
+      document.querySelectorAll<HTMLElement>("#content .card:not(.rv), #content .list > li:not(.rv)").forEach((node) => {
+        const box = node.getBoundingClientRect();
+        if (box.top < window.innerHeight) return;
+        node.classList.add("rv");
+        observer.observe(node);
+      });
+    }, 60);
+    return () => {
+      window.clearTimeout(timer);
+      observer.disconnect();
+    };
+  }, [path]);
+  return null;
+}
+
 function AppFrame({ children, account }: { children: React.ReactNode; account: Account }) {
   const { t } = useI18n();
   const app = useApp();
@@ -150,6 +180,7 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
         <p className="faint rail-note">{t("common.footer")}</p>
       </nav>
       <main id="content" className="page">
+        <ScrollReveal path={pathname} />
         <div key={pathname} className="screen">
           {children}
           {WITH_FOOTER.includes(clean) && <Footer />}
@@ -273,7 +304,7 @@ function Frame({ children }: { children: React.ReactNode }) {
     return (
       <div className="no-rail">
         {view === "intro" ? (
-          <Intro onJoin={() => go("yours")} onLogin={() => go("login")} />
+          <ProductLanding onJoin={() => go("yours")} onLogin={() => go("login")} />
         ) : view === "yours" ? (
           <MakeYours onNext={() => go("install")} onLogin={() => go("login")} onBack={() => go("intro")} />
         ) : view === "install" ? (

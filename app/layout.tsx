@@ -6,6 +6,7 @@ import { asset } from "@/lib/config";
 import { PREFS_BOOT } from "@/lib/prefs";
 import "./globals.css";
 import "./simulations.css";
+import "./landing.css";
 
 // One formal serif throughout: EB Garamond for Latin, Noto Sans Devanagari for Hindi and Marathi.
 // They are downloaded at build time and served from this site, with size-matched fallbacks so text does not jump.

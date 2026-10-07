@@ -1975,5 +1975,151 @@
   },
   "feedback": {
     "open": "Send feedback to the Saath team"
+  },
+  "lp": {
+    "nav": {
+      "how": "How it works",
+      "features": "Features",
+      "privacy": "Privacy",
+      "start": "Start free"
+    },
+    "hero": {
+      "badge": "A project by The Skyward Project",
+      "title1": "Live a financial life",
+      "title2": "before you have to.",
+      "lead": "Saath is your companion for money. Follow Verena from her first salary to retirement, ask Saath AI anything, understand every form before you sign, and run your own Money Lab.",
+      "cta": "Start free",
+      "secondary": "See how it works",
+      "note": "Free · No ads · Works offline · English, हिंदी, मराठी",
+      "chip1": "₹350 left · 12 days to go",
+      "chip2": "Plan: ₹29 a day until the 1st",
+      "chip3": "+30 XP · Verena grew up",
+      "figure": "Verena, the young woman whose money story you live in Saath"
+    },
+    "topics": "Budgeting|UPI safety|Bank accounts|Choosing a card|Credit score|EMIs|Insurance claims|Health cover|KYC|Income tax|Salary slips|Emergency fund|SIPs|Scams|Your first resume|Retirement",
+    "problem": {
+      "label": "The problem",
+      "text": "Nobody hands you a manual for money. You learn about EMIs, insurance claims and scams the expensive way: after they happen to you."
+    },
+    "how": {
+      "label": "How it works",
+      "title": "Learn it by living it.",
+      "lead": "Every topic moves through three layers: you live it in a story, you ask about it, and you practise it with your own money."
+    },
+    "step1": {
+      "tag": "01 · Story",
+      "title": "Live Verena's decisions",
+      "body": "46 chapters from her first resume to retirement. You choose, you see what follows, and you learn why."
+    },
+    "step2": {
+      "tag": "02 · Saath AI",
+      "title": "Ask anything, in your language",
+      "body": "Type, speak or snap a photo of a document. Answers come from checked guides, with the source beside them."
+    },
+    "step3": {
+      "tag": "03 · Money Lab",
+      "title": "Practise with your own money",
+      "body": "Set a plan in three steps. See what is safe to spend today, bills that are due, and goals filling up. It all stays on your phone."
+    },
+    "demo": {
+      "story": {
+        "where": "Verena, 19 · Pune",
+        "scene": "It is the 18th. She opens her banking app: ₹350 left, twelve days to go.",
+        "a": "Borrow ₹2,000 from a friend",
+        "b": "Write down every rupee, plan ₹29 a day",
+        "c": "Ask parents to send money early",
+        "result": "Good call. She reaches the 1st with ₹12 to spare, and knows where it all went."
+      },
+      "ai": {
+        "q": "My insurer rejected my claim. What do I do?",
+        "a": "Ask for the rejection reason in writing. If you disagree, write to the insurer's grievance cell first. If there is no reply in 30 days, or you are not satisfied, you can go to the Insurance Ombudsman for free.",
+        "source": "Guide · Making an insurance claim"
+      },
+      "money": {
+        "safe": "Safe to spend today",
+        "e1": "Groceries",
+        "e2": "Metro card",
+        "e3": "Salary",
+        "bill": "Phone bill due in 3 days",
+        "goal": "Emergency fund"
+      }
+    },
+    "belief": {
+      "label": "What we believe",
+      "text": "Money confidence is not taught in a lecture. It is lived, one decision at a time."
+    },
+    "cap": {
+      "label": "Everything inside",
+      "title": "Built for real life, not a classroom.",
+      "forms": {
+        "title": "Forms, explained line by line",
+        "body": "20 bank, tax and insurance forms, each with a filled sample. Photograph your own and Saath reads it on your phone.",
+        "field": "Nominee",
+        "tip": "Who receives the money if something happens to you. Always fill this in."
+      },
+      "grow": {
+        "title": "Verena grows with you",
+        "body": "Every guide and chapter earns XP. Watch her go from school uniform to a retired woman in a suit."
+      },
+      "resume": {
+        "title": "Your first resume, done",
+        "body": "Saath AI asks ten questions and hands you a clean PDF."
+      },
+      "lang": {
+        "title": "Three languages, voice included",
+        "body": "Read, listen and speak in English, Hindi or Marathi."
+      },
+      "guides": {
+        "title": "47 guides, simulated end to end",
+        "body": "Opening an account, choosing a card, buying insurance, filing a claim: every step drawn and explained."
+      }
+    },
+    "pillars": {
+      "label": "What you get",
+      "title": "Four pillars. One companion."
+    },
+    "p1": {
+      "title": "A story to live",
+      "body": "Decisions with consequences, before the stakes are real."
+    },
+    "p2": {
+      "title": "Answers you can trust",
+      "body": "Saath AI cites the guide it used. No made-up rates or rules."
+    },
+    "p3": {
+      "title": "Your money, your plan",
+      "body": "A budget, bills and goals in a Money Lab that takes a minute to set up."
+    },
+    "p4": {
+      "title": "Progress you can see",
+      "body": "XP, levels, streaks and postcards to share when you finish a topic."
+    },
+    "trust": {
+      "label": "Privacy",
+      "title": "Your money stays yours.",
+      "lead": "Saath was designed around privacy from the first line of code, not patched on later.",
+      "t1": "Your account and money data stay on your phone",
+      "t2": "Photos are read on your phone; only masked text goes to Saath AI",
+      "t3": "No ads, no selling, no tracking of your spending"
+    },
+    "final": {
+      "label": "Get started",
+      "title": "Start with one chapter. Grow from there.",
+      "login": "I already have an account"
+    },
+    "footer": {
+      "tag": "Your companion for money, from first salary to retirement.",
+      "product": "Product",
+      "project": "Project",
+      "languages": "Languages",
+      "story": "Verena's story",
+      "guides": "Guides",
+      "money": "Money Lab",
+      "forms": "Forms",
+      "ai": "Saath AI",
+      "about": "About",
+      "privacy": "Privacy, in plain words",
+      "rights": "Made in India by The Skyward Project."
+    }
   }
 }

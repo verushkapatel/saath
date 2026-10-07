@@ -1,3 +1,4 @@
+import { useId } from "react";
 import type { Look } from "@/lib/progress";
 
 /**
@@ -132,7 +133,16 @@ function HairBack({ age }: { age: number }) {
 function HairFront({ age }: { age: number }) {
   const colour = age >= 60 ? "#B9BBC0" : INK;
   if (age < 13) return <path d="M79 64c-1-24 9-36 21-36s22 12 21 36c-3-6-6-10-10-12-4 4-14 6-24 4-4 2-6 4-8 8z" fill={colour} />;
-  const front = <path d="M79 62c-1-22 9-34 21-34s22 12 21 34c-5-12-12-17-21-17-6 0-11 3-14 8-2-3-5-2-7 9z" fill={colour} />;
+  const shine = age >= 60 ? "#D9DBDF" : "#4A3A35";
+  const front = (
+    <g>
+      <path d="M79 62c-1-22 9-34 21-34s22 12 21 34c-5-12-12-17-21-17-6 0-11 3-14 8-2-3-5-2-7 9z" fill={colour} />
+      <path d="M86 40q7-6 16-5M84 47q4-7 11-9M108 36q7 2 10 9" stroke={shine} strokeWidth="1.1" fill="none" strokeLinecap="round" opacity="0.8" />
+      <path d="M82.4 58q.8-6 3.6-9" stroke={shine} strokeWidth="0.9" fill="none" strokeLinecap="round" opacity="0.6" />
+      <path d="M80.6 55q-1.6 7 .4 13.4q.6-6 1.8-10.4zM119.4 55q1.6 7-.4 13.4q-.6-6-1.8-10.4z" fill={colour} />
+      <path d="M100.6 34.2q-3 4-3.4 9" stroke={shine} strokeWidth="0.8" fill="none" strokeLinecap="round" opacity="0.55" />
+    </g>
+  );
   if (age >= 50 && age < 60) {
     return (
       <g>
@@ -144,39 +154,75 @@ function HairFront({ age }: { age: number }) {
   return front;
 }
 
+const BROW = "#2A1D18";
+const IRIS = "#4A2C1A";
+const LIP = "#A9564C";
+const LIP_DARK = "#8E433B";
+
 function Face({ mood }: { mood: Mood }) {
+  // Tapered brows: thick at the inner end, thin at the tail. Worried brows tilt up in the middle; proud ones arch.
   const brows =
-    mood === "worried" ? "M88 59.5q4-1 8-3.5M112 59.5q-4-1-8-3.5" : mood === "proud" ? "M88 58q4-3 8-1M104 57q4-2 8 1" : "M88 58q4-2 8 0M104 58q4-2 8 0";
+    mood === "worried"
+      ? "M86.6 58.6q4.6-2.6 9.8-4.2l.5 1.6q-5 1.2-9.6 3.6zM113.4 58.6q-4.6-2.6-9.8-4.2l-.5 1.6q5 1.2 9.6 3.6z"
+      : mood === "proud"
+        ? "M86.5 58.2q4.8-4.4 10.2-2.8l-.3 1.6q-5-.9-9.4 2.1zM113.5 58.2q-4.8-4.4-10.2-2.8l.3 1.6q5-.9 9.4 2.1z"
+        : "M86.6 58.4q4.8-3.2 10-2l-.3 1.6q-4.9-.8-9.3 1.4zM113.4 58.4q-4.8-3.2-10-2l.3 1.6q4.9-.8 9.3 1.4z";
   const eyes =
     mood === "happy" || mood === "proud" ? (
-      <g stroke={INK} strokeWidth="2.2" fill="none" strokeLinecap="round">
-        <path d="M89.5 65q3-3 6 0M104.5 65q3-3 6 0" />
+      <g fill="none" strokeLinecap="round">
+        {/* Smiling eyes: curved lids with a short lash at the outer corner. */}
+        <path d="M88.8 65.6q3.7-3.6 7.4 0M103.8 65.6q3.7-3.6 7.4 0" stroke={INK} strokeWidth="1.9" />
+        <path d="M88.8 65.6l-1.4-.9M111.2 65.6l1.4-.9" stroke={INK} strokeWidth="1.2" />
       </g>
     ) : (
       <g className="ch-eyes">
-        <ellipse cx="92.5" cy="65" rx="2.3" ry="2.9" fill={INK} />
-        <ellipse cx="107.5" cy="65" rx="2.3" ry="2.9" fill={INK} />
-        <circle cx="93.3" cy="64" r="0.8" fill="#fff" />
-        <circle cx="108.3" cy="64" r="0.8" fill="#fff" />
+        {/* Whites, a brown iris, the pupil, a catch-light, then the upper lid line with a small outer lash. */}
+        <path d="M88.2 65.2q4.3-4.4 8.6 0q-4.3 3.4-8.6 0z" fill="#FBF8F4" />
+        <path d="M103.2 65.2q4.3-4.4 8.6 0q-4.3 3.4-8.6 0z" fill="#FBF8F4" />
+        <circle cx="92.6" cy="65" r="2.25" fill={IRIS} />
+        <circle cx="107.6" cy="65" r="2.25" fill={IRIS} />
+        <circle cx="92.6" cy="65" r="1.05" fill={INK} />
+        <circle cx="107.6" cy="65" r="1.05" fill={INK} />
+        <circle cx="93.4" cy="64.2" r="0.62" fill="#fff" />
+        <circle cx="108.4" cy="64.2" r="0.62" fill="#fff" />
+        <path d="M87.9 65.3q4.6-4.9 9.2-.2M102.9 65.1q4.6-4.7 9.2.2" fill="none" stroke={INK} strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M87.9 65.3l-1.3-.8M112.1 65.3l1.3-.8" stroke={INK} strokeWidth="1.1" strokeLinecap="round" />
+        <path d="M89 67.6q3.6 1.6 7.2 0M104 67.6q3.6 1.6 7.2 0" fill="none" stroke={SKIN_SHADE} strokeWidth="0.8" opacity="0.7" />
       </g>
     );
   const mouth =
     mood === "happy" ? (
-      <path d="M93.5 74.5q6.5 7 13 0z" fill="#7A2E2A" stroke={INK} strokeWidth="1.2" strokeLinejoin="round" />
+      <g>
+        <path d="M93.2 74.4q6.8 7.6 13.6 0q-6.8 1.4-13.6 0z" fill="#6E2723" />
+        <path d="M94.6 74.9q5.4 1.1 10.8 0l-.8 1.6q-4.6.8-9.2 0z" fill="#FBF8F4" />
+        <path d="M93.2 74.4q6.8 7.6 13.6 0" fill="none" stroke={LIP_DARK} strokeWidth="1.1" strokeLinecap="round" />
+      </g>
     ) : mood === "worried" ? (
-      <path d="M95 77.5q5-3.5 10 0" stroke={INK} strokeWidth="1.8" fill="none" strokeLinecap="round" />
+      <path d="M95.4 77.6q4.6-2.6 9.2 0q-4.6-.6-9.2 0z" fill={LIP} stroke={LIP_DARK} strokeWidth="0.9" strokeLinejoin="round" />
     ) : mood === "proud" ? (
-      <path d="M94 74.5q6 5 12 0" stroke={INK} strokeWidth="2" fill="none" strokeLinecap="round" />
+      <g>
+        <path d="M94.2 74.6q5.8 4.6 11.6 0q-5.8 1.6-11.6 0z" fill={LIP} />
+        <path d="M94.2 74.6q5.8 4.6 11.6 0" fill="none" stroke={LIP_DARK} strokeWidth="1.1" strokeLinecap="round" />
+      </g>
     ) : (
-      <path d="M95 75q5 3.5 10 0" stroke={INK} strokeWidth="1.8" fill="none" strokeLinecap="round" />
+      <g>
+        {/* Upper lip with a gentle bow, a fuller lower lip, and the line where they meet. */}
+        <path d="M95 75q2.4-1.6 4.1-.6q.9.5 1.8 0q1.7-1 4.1.6q-5 .9-10 0z" fill={LIP_DARK} />
+        <path d="M95 75q5 3.8 10 0q-5 .9-10 0z" fill={LIP} />
+        <path d="M95 75q5 1.2 10 0" fill="none" stroke="#6E2723" strokeWidth="0.7" strokeLinecap="round" />
+      </g>
     );
   return (
     <g>
-      <path d={brows} stroke={INK} strokeWidth="1.8" fill="none" strokeLinecap="round" />
+      <path d={brows} fill={BROW} />
       {eyes}
-      <path d="M100.5 68q1.5 3-1 4" stroke={SKIN_SHADE} strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      <circle cx="87" cy="72" r="3.2" fill={CHEEK} opacity="0.35" />
-      <circle cx="113" cy="72" r="3.2" fill={CHEEK} opacity="0.35" />
+      {/* Nose: the bridge as a soft shadow, then the tip and nostrils. */}
+      <path d="M99.2 66.5q-.6 3.6-1.8 5.6" fill="none" stroke={SKIN_SHADE} strokeWidth="1.1" strokeLinecap="round" opacity="0.8" />
+      <path d="M97.2 71.6q2.8 1.9 5.6 0" fill="none" stroke={SKIN_SHADE} strokeWidth="1.3" strokeLinecap="round" />
+      <circle cx="98.4" cy="71.4" r="0.6" fill="#8A5A3C" />
+      <circle cx="101.6" cy="71.4" r="0.6" fill="#8A5A3C" />
+      <ellipse cx="87" cy="71.6" rx="3.6" ry="2.4" fill={CHEEK} opacity="0.3" />
+      <ellipse cx="113" cy="71.6" rx="3.6" ry="2.4" fill={CHEEK} opacity="0.3" />
       {mouth}
     </g>
   );
@@ -186,14 +232,24 @@ function Face({ mood }: { mood: Mood }) {
 function Limbs() {
   return (
     <g fill={SKIN}>
-      <circle cx="64" cy="148" r="5.5" />
-      <circle cx="136" cy="148" r="5.5" />
+      {/* Relaxed open hands hanging at the sides, fingers together, thumb along the front. */}
+      <path d="M60.2 143.4q4.2-2 8.6.2l-.2 7.8q-.4 4.2-4.2 4.4-3.8-.2-4.2-4.4z" />
+      <path d="M139.8 143.4q-4.2-2-8.6.2l.2 7.8q.4 4.2 4.2 4.4 3.8-.2 4.2-4.4z" />
+      <path d="M68.4 146.4q1.8 2.4.2 5.2M131.6 146.4q-1.8 2.4-.2 5.2" stroke={SKIN_SHADE} strokeWidth="0.9" fill="none" strokeLinecap="round" />
+      <path d="M62.4 152.6l.2 2M64.6 153l.1 2M135.4 153l-.1 2M137.6 152.6l-.2 2" stroke={SKIN_SHADE} strokeWidth="0.6" strokeLinecap="round" opacity="0.7" />
     </g>
   );
 }
 
 function Shoes({ colour = INK }: { colour?: string }) {
-  return <path d="M80 208h16v5H78zM104 208h16l2 5h-18z" fill={colour} />;
+  return (
+    <g>
+      <path d="M79.6 207.4q8.4-1.6 16.8.2l.2 4.8H78.2q-.6-3.4 1.4-5z" fill={colour} />
+      <path d="M103.6 207.6q8.4-1.8 16.8-.2 2 1.6 1.4 5h-18.4z" fill={colour} />
+      <path d="M78.2 212.4h18.4M103.4 212.4h18.4" stroke="#000" strokeOpacity="0.35" strokeWidth="1.2" />
+      <path d="M82 209q4-.8 8-.4M107 208.6q4-.4 8 .4" stroke="#fff" strokeOpacity="0.28" strokeWidth="0.9" strokeLinecap="round" />
+    </g>
+  );
 }
 
 function Outfit({ outfit, tint }: { outfit: string; tint?: string }) {
@@ -356,8 +412,9 @@ function Outfit({ outfit, tint }: { outfit: string; tint?: string }) {
         <g>
           <path d="M84 176h13l-1 32H85zM103 176h13v32h-12z" fill={WHITE} stroke={EDGE} strokeWidth="1" />
           <Shoes />
-          <path d="M78 99q22-9 44 0l8 79H70z" fill={main} />
+          <path d="M78 99q22-9 44 0l2.4 34q-1.6 3 0 6l5.6 39H70l5.6-39q1.6-3 0-6z" fill={main} />
           <path d="M92 94l8 14 8-14" fill="none" stroke={WHITE} strokeWidth="2.2" strokeLinejoin="round" />
+          <path d="M88 140q4 18 2 36M112 140q-4 18-2 36" stroke={dark} strokeWidth="0.9" fill="none" opacity="0.45" />
           <path d="M71 170h58" stroke={WHITE} strokeWidth="2" />
           {sleeves(main)}
         </g>
@@ -447,6 +504,8 @@ export function Character({
   const head = scale < 1 ? 0.94 : 1;
   const body = `translate(${(100 * (1 - scale)).toFixed(2)} ${(214 * (1 - scale)).toFixed(2)}) scale(${scale})`;
   const headMove = `translate(0 ${rise.toFixed(2)}) translate(100 94) scale(${head}) translate(-100 -94)`;
+  // Soft shading: light comes from the upper left, so the right and lower edges of every shape fall into shadow.
+  const shadeId = `vs${useId().replace(/:/g, "")}`;
   return (
     <svg
       className={`character${alive ? " alive" : ""}${wave ? " waving" : ""}`}
@@ -457,12 +516,23 @@ export function Character({
       aria-label={label}
       aria-hidden={label ? undefined : true}
     >
+      <defs>
+        <filter id={shadeId} x="-10%" y="-10%" width="120%" height="120%" colorInterpolationFilters="sRGB">
+          <feComponentTransfer in="SourceAlpha" result="inverse"><feFuncA type="table" tableValues="1 0" /></feComponentTransfer>
+          <feGaussianBlur in="inverse" stdDeviation="2.6" />
+          <feOffset dx="-2.6" dy="-1.8" result="edge" />
+          <feFlood floodColor="#000" floodOpacity="0.2" />
+          <feComposite in2="edge" operator="in" />
+          <feComposite in2="SourceAlpha" operator="in" result="shadow" />
+          <feMerge><feMergeNode in="SourceGraphic" /><feMergeNode in="shadow" /></feMerge>
+        </filter>
+      </defs>
       {!bare && <Place place={look.place} />}
       <path className="ch-ground" d="M10 214h180" />
       <ellipse className="ch-shadow" cx="100" cy="214" rx={38 * scale} ry="4" fill="#000" opacity="0.12" />
       <g className="ch-figure">
         <g transform={headMove}><g className="ch-head"><HairBack age={age} /></g></g>
-        <g transform={body}>
+        <g transform={body} filter={`url(#${shadeId})`}>
           <ExtraBack extra={look.extra} />
           <g className="ch-arms"><Limbs /></g>
           <Outfit outfit={look.outfit} tint={look.tint} />
@@ -470,12 +540,14 @@ export function Character({
         </g>
         {/* The position sits on the outer group; the nod animates the inner one, so CSS never replaces the position. */}
         <g transform={headMove}>
-          <g className="ch-head">
-          {/* Neck, ears and face */}
-          <path d="M94 80h12v14c-4 3-8 3-12 0z" fill={SKIN_SHADE} />
-          <circle cx="81" cy="66" r="4.2" fill={SKIN} />
-          <circle cx="119" cy="66" r="4.2" fill={SKIN} />
-          <ellipse cx="100" cy="63" rx="19.5" ry="21.5" fill={SKIN} />
+          <g className="ch-head" filter={`url(#${shadeId})`}>
+          {/* Neck, ears and face: a real jaw and chin rather than an oval. */}
+          <path d="M93.6 78h12.8v15.6c-4.2 3.2-8.6 3.2-12.8 0z" fill={SKIN} />
+          <path d="M93.6 80.4q6.4 5.6 12.8 0v4.4q-6.4 4-12.8 0z" fill={SKIN_SHADE} />
+          <path d="M80.4 61.6q-4.6-1.2-4.6 3.8 0 4.8 5.2 6.2z" fill={SKIN} />
+          <path d="M119.6 61.6q4.6-1.2 4.6 3.8 0 4.8-5.2 6.2z" fill={SKIN} />
+          <path d="M78.6 64.2q1.6.6 1.6 3.2M121.4 64.2q-1.6.6-1.6 3.2" stroke={SKIN_SHADE} strokeWidth="1" fill="none" strokeLinecap="round" />
+          <path d="M80.4 60.6C80.4 48 88.8 41.4 100 41.4s19.6 6.6 19.6 19.2c0 7.4-2.2 13.4-5.8 17.6-3.8 4.4-8.6 6.6-13.8 6.6s-10-2.2-13.8-6.6c-3.6-4.2-5.8-10.2-5.8-17.6z" fill={SKIN} />
           <HairFront age={age} />
           <Face mood={mood} />
           <Extra extra={look.extra} part="head" />
