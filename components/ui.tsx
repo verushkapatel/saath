@@ -321,3 +321,13 @@ export function PageSkeleton() {
     </div>
   );
 }
+
+/** The navy glow and faint rings behind a screen's title, the same light as the landing page. */
+export function PageGlow() {
+  return (
+    <span className="page-glow" aria-hidden>
+      <i /><i /><i />
+      <svg className="page-glow-rings" viewBox="0 0 36.2 25.2"><circle cx="12.6" cy="12.6" r="10" /><circle cx="23.6" cy="12.6" r="10" /></svg>
+    </span>
+  );
+}

@@ -12,7 +12,7 @@ import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
-import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary } from "./ui";
+import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary, PageGlow } from "./ui";
 import { WalkCard, WalkPlayer, useWalk } from "./walkthrough";
 import { AskChips } from "./game";
 
@@ -70,7 +70,8 @@ export function GuideScreen() {
 
   return (
     <div className="stack rise">
-      <div className="stack-xs">
+      <div className="stack-xs page-hero">
+        <PageGlow />
         <p className="masthead">{t("home.masthead")}</p>
         <h1>{t("nav.guide")}</h1>
         <p className="lead">{t("guide.intro")}</p>

@@ -18,7 +18,7 @@ import { verenaAt } from "@/lib/verena";
 import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
-import { CheckCard, ListenButton, PageSkeleton } from "./ui";
+import { CheckCard, ListenButton, PageSkeleton, PageGlow } from "./ui";
 import { AskChips, ChapterVault, GameHud, MissionPanel, StatDeltas, Stars, StoryBoard } from "./game";
 import { starsFor } from "@/lib/game";
 
@@ -86,7 +86,8 @@ export function JourneyScreen() {
   return (
     <div className="stack-lg rise">
       <StoryTabs current="story" />
-      <div className="stack-sm">
+      <div className="stack-sm page-hero">
+        <PageGlow />
         <p className="masthead">{t("journey.kicker")}</p>
         <h1>{t("journey.title", { name: journey.name[code] })}</h1>
         <p className="lead">{journey.intro[code]}</p>

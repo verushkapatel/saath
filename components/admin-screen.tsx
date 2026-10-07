@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { Activity, LockKeyhole, RefreshCw } from "lucide-react";
 import { getLiveUsers, serviceConfigured, type LiveUsers } from "@/lib/service";
 import { useI18n } from "./providers";
+import { PageGlow } from "./ui";
 
 const COPY = {
   en: { kicker: "Owner", title: "Live users", lead: "A privacy-conscious count of anonymous active sessions. No usernames or financial information are collected.", user: "Owner username", pass: "Owner password", open: "View live count", refresh: "Refresh", active: "Active in the last {n} minutes", measured: "Measured {time}", fail: "The count could not be loaded. Check the owner credentials and service setup.", offline: "Live-user measurement is not connected in this build." },
@@ -32,7 +33,8 @@ export function AdminScreen() {
 
   return (
     <div className="stack-lg admin-screen" data-testid="admin-live-users-screen">
-      <header className="stack-sm">
+      <header className="stack-sm page-hero">
+        <PageGlow />
         <p className="masthead">{copy.kicker}</p>
         <h1 data-testid="admin-live-users-title">{copy.title}</h1>
         <p className="lead">{copy.lead}</p>

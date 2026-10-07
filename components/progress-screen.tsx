@@ -15,7 +15,7 @@ import { Postcards } from "./postcards";
 import { StoryTabs } from "./story-tabs";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
-import { PageSkeleton, Sheet } from "./ui";
+import { PageSkeleton, Sheet, PageGlow } from "./ui";
 
 function useNeedText() {
   const { t, code } = useI18n();
@@ -176,7 +176,8 @@ export function ProgressScreen() {
   return (
     <div className="stack-lg rise">
       <StoryTabs current="progress" />
-      <div className="stack-xs">
+      <div className="stack-xs page-hero">
+        <PageGlow />
         <p className="masthead">{t("prog.kicker")}</p>
         <h1>{t("prog.title")}</h1>
       </div>

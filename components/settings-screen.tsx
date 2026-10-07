@@ -13,6 +13,7 @@ import { useApp } from "./app-state";
 import { InstallPanel } from "./install";
 import { TopicPicker } from "./personalize";
 import { usePrefs } from "./prefs";
+import { PageGlow } from "./ui";
 import { useI18n } from "./providers";
 import { useSession } from "./session";
 import { ThemePicker } from "./theme-toggle";
@@ -237,7 +238,8 @@ export function SettingsScreen() {
 
   return (
     <div className="stack-lg">
-      <div className="stack-xs">
+      <div className="stack-xs page-hero">
+        <PageGlow />
         <p className="masthead">{account?.display}</p>
         <h1>{t("settings.title")}</h1>
       </div>

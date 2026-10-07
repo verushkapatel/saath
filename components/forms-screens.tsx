@@ -14,7 +14,7 @@ import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
-import { ListenButton, PageSkeleton, Ring } from "./ui";
+import { ListenButton, PageSkeleton, Ring, PageGlow } from "./ui";
 import { AskChips } from "./game";
 
 function useForms() {
@@ -58,7 +58,8 @@ export function FormsScreen() {
 
   return (
     <div className="stack rise">
-      <div className="stack-xs">
+      <div className="stack-xs page-hero">
+        <PageGlow />
         <p className="masthead">{t("forms.kicker")}</p>
         <h1>{t("forms.title")}</h1>
         <p className="lead">{t("forms.lead")}</p>

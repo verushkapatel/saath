@@ -20,7 +20,7 @@ import { ArtJar } from "./illustrations";
 import { NumPad } from "./numpad";
 import { PlanPanel, PlanSetup, SmsPaste, usePlan } from "./money-plan";
 import { useI18n } from "./providers";
-import { CountUp, ListenButton, PageSkeleton, Ring, Sheet } from "./ui";
+import { CountUp, ListenButton, PageSkeleton, Ring, Sheet, PageGlow } from "./ui";
 import { AskChips } from "./game";
 
 const GROUPS: Record<Entry["kind"], string[]> = {
@@ -387,7 +387,8 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
 
   return (
     <div className="stack rise">
-      <header className="row-between">
+      <header className="row-between page-hero">
+        <PageGlow />
         <h1>{t("money.title")}</h1>
         <ListenButton compact text={spoken} />
       </header>

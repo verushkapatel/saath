@@ -11,7 +11,7 @@ import { useAi, useAiContext } from "./ai-context";
 import { useApp } from "./app-state";
 import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
-import { ListenButton, PageSkeleton } from "./ui";
+import { ListenButton, PageSkeleton, PageGlow } from "./ui";
 
 const host = (url: string) => {
   try {
@@ -111,7 +111,8 @@ export function StoriesScreen() {
 
   return (
     <div className="stack-lg rise">
-      <div className="stack-xs">
+      <div className="stack-xs page-hero">
+        <PageGlow />
         <p className="masthead">{shown.id === today?.id ? t("stories.today") : t("stories.fromArchive")}</p>
         <h1>{t("stories.title")}</h1>
         <p className="lead">{t("stories.lead")}</p>
