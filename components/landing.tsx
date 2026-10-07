@@ -249,6 +249,7 @@ export function Landing({ onJoin, onLogin }: { onJoin: () => void; onLogin: () =
 
       <section id="top" className="lp-hero" ref={heroRef}>
         <div className="lp-glow" aria-hidden />
+        <span className="home-aurora lp-aurora" aria-hidden><i /><i /><i /></span>
         <div className="lp-grid" aria-hidden />
         <div className="lp-hero-copy">
           <p className="lp-badge lp-fade" style={{ "--d": "0ms" } as CSSProperties}><SkywardEmblem size={22} /> {t("lp.hero.badge")}</p>
@@ -285,7 +286,7 @@ export function Landing({ onJoin, onLogin }: { onJoin: () => void; onLogin: () =
 
       <Reveal as="section" className="lp-problem">
         <p className="lp-label">{t("lp.problem.label")}</p>
-        <p className="lp-statement">{t("lp.problem.text")}</p>
+        <p className="lp-statement">{t("lp.problem.a")} <span className="lp-ink">{t("lp.problem.hl")}</span></p>
       </Reveal>
 
       <section id="how" className="lp-how">

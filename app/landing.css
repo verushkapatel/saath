@@ -340,3 +340,13 @@
 @keyframes splash-rise { from { opacity: 0; transform: translateY(16px); filter: blur(8px); } to { opacity: 1; transform: none; filter: none; } }
 .splash-name { color: #fff; font-size: clamp(3rem, 12vw, 5rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1; opacity: 0; animation: splash-rise 900ms cubic-bezier(0.22, 1, 0.36, 1) 700ms forwards; }
 .splash-by { color: #b9c6f5; font-size: 0.95rem; letter-spacing: 0.06em; opacity: 0; animation: splash-rise 800ms cubic-bezier(0.22, 1, 0.36, 1) 1000ms forwards; }
+
+/* Saath 4 touches: a slow navy aurora in the hero, an ink underline that draws itself, ring markers on labels. */
+.lp-hero { isolation: isolate; }
+.lp-aurora { z-index: -1; opacity: 0.8; }
+.lp-ink { position: relative; white-space: normal; background-image: linear-gradient(90deg, #5b7cf0, #8ea6ff); background-repeat: no-repeat; background-position: 0 92%; background-size: 0% 0.14em; transition: background-size 1200ms cubic-bezier(0.65, 0, 0.35, 1) 300ms; padding-bottom: 0.04em; }
+.lp-reveal.in .lp-ink { background-size: 100% 0.14em; }
+.lp-label { display: inline-flex; align-items: center; gap: 10px; }
+.lp-label::before { content: ""; flex: none; width: 22px; height: 12px; background: radial-gradient(circle at 6px 6px, transparent 3.2px, currentColor 3.4px, currentColor 5px, transparent 5.2px), radial-gradient(circle at 16px 6px, transparent 3.2px, currentColor 3.4px, currentColor 5px, transparent 5.2px); opacity: 0.9; }
+.lp-hero .lp-label::before, .lp-hero .lp-kicker::before { content: none; }
+@media (prefers-reduced-motion: reduce) { .lp-ink { transition: none; background-size: 100% 0.14em; } }
