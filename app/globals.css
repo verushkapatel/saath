@@ -3295,8 +3295,8 @@ h2 { letter-spacing: -0.02em; }
 :root { --sky-navy: #102054; --sky-glow: rgba(98, 132, 255, 0.45); }
 
 /* The Skyward emblem is navy with white now: a thin light rim instead of a heavy white ring. */
-.skyward-emblem, .logo .skyward-emblem, .skyward-badge .skyward-emblem { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28), 0 6px 18px -6px rgba(16, 32, 84, 0.9) !important; }
-:root[data-theme="light"] .skyward-emblem { box-shadow: 0 0 0 1px rgba(16, 32, 84, 0.25), 0 6px 16px -8px rgba(16, 32, 84, 0.6) !important; }
+.skyward-emblem, .logo .skyward-emblem, .skyward-badge .skyward-emblem, .gate-by .skyward-emblem, .lp-badge .skyward-emblem { box-shadow: 0 6px 18px -8px rgba(16, 32, 84, 0.9) !important; border: 0 !important; outline: 0 !important; }
+:root[data-theme="light"] .skyward-emblem { box-shadow: 0 6px 16px -8px rgba(16, 32, 84, 0.6) !important; }
 
 /* Logos in the side rail and top bar: brighter rings and a soft glow. */
 .rail .logo, .shell-top .logo { gap: 12px; }

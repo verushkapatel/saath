@@ -1201,7 +1201,8 @@
       "outcome": "What follows",
       "why": "Why",
       "drill": "Five questions",
-      "done": "XP"
+      "done": "XP",
+      "live": "Live it"
     },
     "storyPlayer": "Story",
     "learning": "Not every choice works out. {name} learns from this one, and so can you: the next part explains why.",
