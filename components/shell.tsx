@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import { BookOpen, Check, FileText, Home, MessageCircle, Route, Settings, Wallet } from "lucide-react";
+import { useCallback, useEffect, useMemo, useState, type CSSProperties } from "react";
+import { ArrowRight, BookOpen, Check, FileText, Home, MessageCircle, Route, Settings, Wallet } from "lucide-react";
 import { currentAccount, hasAccounts, logOut, type Account } from "@/lib/account";
 import { asset } from "@/lib/config";
 import { LANGS, type Lang } from "@/lib/catalog";
@@ -69,37 +69,41 @@ function Landing({ onDone }: { onDone?: () => void } = {}) {
   const shown = pick ?? "en";
 
   return (
-    <main className="landing screen navy-scene">
+    <main className="landing gate2 screen" lang={shown}>
+      <span className="gate2-sky" aria-hidden><i /><i /><i /></span>
       <div className="landing-top"><ThemeToggle /></div>
-      <div className="landing-body scene-in">
-        <div className="landing-figure stage">
-          <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={168} />
-        </div>
-        <div className="gate-heading">
-          <p className="wordmark"><LogoMark size={40} /> Saath <span className="logo-divider" aria-hidden /><SkywardEmblem size={44} /></p>
+      <div className="landing-body gate2-body">
+        <div className="gate2-head">
+          <span className="gate2-mark" aria-hidden><span className="gate2-orbit" /><LogoMark size={74} /></span>
+          <p className="gate2-hello" aria-hidden>
+            {LANGS.map((lang, index) => <span key={lang} lang={lang} style={{ "--i": index } as CSSProperties}>{copy[lang].hello}</span>)}
+          </p>
           <h1 lang={shown}>{copy[shown].title}</h1>
-          <p className="lead" lang={shown}>{copy[shown].line}</p>
+          <p className="gate2-line" lang={shown}>{copy[shown].line}</p>
         </div>
-        <div className="gate-list" role="radiogroup" aria-label={copy[shown].title}>
-          {LANGS.map((lang) => (
-            <button key={lang} type="button" role="radio" lang={lang} aria-checked={pick === lang} onClick={() => { tap(); setPick(lang); }} data-testid={`language-option-${lang}`}>
-              <span>
+        <div className="gate2-list" role="radiogroup" aria-label={copy[shown].title}>
+          {LANGS.map((lang, index) => (
+            <button key={lang} type="button" role="radio" lang={lang} aria-checked={pick === lang} style={{ "--i": index } as CSSProperties} onClick={() => { tap(); setPick(lang); }} data-testid={`language-option-${lang}`}>
+              <span className="gate2-glyph" aria-hidden>{GLYPH[lang]}</span>
+              <span className="gate2-name">
                 <b>{copy[lang].name}</b>
-                <span className="faint">{copy[lang].hello}</span>
+                <span>{copy[lang].hello}</span>
               </span>
-              <span className={`dot${pick === lang ? " done" : ""}`} aria-hidden>
-                {pick === lang ? <Check size={16} strokeWidth={3} /> : null}
-              </span>
+              <span className="gate2-tick" aria-hidden>{pick === lang ? <Check size={16} strokeWidth={3} /> : null}</span>
             </button>
           ))}
         </div>
-        <button type="button" className="btn btn-primary" lang={shown} disabled={!pick} onClick={() => { if (pick) { tap(); setLang(pick); onDone?.(); window.scrollTo({ top: 0 }); } }} data-testid="language-continue-button">
-          {copy[shown].cta}
+        <button type="button" className="gate2-go" lang={shown} disabled={!pick} onClick={() => { if (pick) { tap(); setLang(pick); onDone?.(); window.scrollTo({ top: 0 }); } }} data-testid="language-continue-button">
+          {copy[shown].cta}<ArrowRight aria-hidden size={18} />
         </button>
+        <p className="gate2-by"><SkywardEmblem size={26} /> Saath · The Skyward Project</p>
       </div>
     </main>
   );
 }
+
+/** One letter that stands for each language on the picker. */
+const GLYPH: Record<Lang, string> = { en: "Aa", hi: "अ", mr: "म" };
 
 const WITH_FOOTER = ["/", "/privacy", "/privacy/partners", "/about", "/handbook", "/settings"];
 
