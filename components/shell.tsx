@@ -49,7 +49,7 @@ const PREFILL = "saath-school-prefill";
 type GateCopy = Record<Lang, { hello: string; name: string; title: string; cta: string; line: string }>;
 
 /** The first screen: choose a language. The page does not move as the choice changes. */
-function Landing() {
+function Landing({ onDone }: { onDone?: () => void } = {}) {
   const { setLang } = useI18n();
   const [copy, setCopy] = useState<GateCopy | null>(null);
   const [pick, setPick] = useState<Lang | null>(null);
@@ -93,7 +93,7 @@ function Landing() {
             </button>
           ))}
         </div>
-        <button type="button" className="btn btn-primary" lang={shown} disabled={!pick} onClick={() => { if (pick) { tap(); setLang(pick); window.scrollTo({ top: 0 }); } }} data-testid="language-continue-button">
+        <button type="button" className="btn btn-primary" lang={shown} disabled={!pick} onClick={() => { if (pick) { tap(); setLang(pick); onDone?.(); window.scrollTo({ top: 0 }); } }} data-testid="language-continue-button">
           {copy[shown].cta}
         </button>
       </div>
@@ -215,6 +215,15 @@ function Frame({ children }: { children: React.ReactNode }) {
   const [account, setAccount] = useState<Account | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [view, setView] = useState<"intro" | "yours" | "install" | AuthMode>("intro");
+  // After the logo opening, every new visit is asked its language first, even if one was saved before.
+  const [langAsked, setLangAsked] = useState(true);
+  useEffect(() => {
+    try { setLangAsked(window.sessionStorage.getItem("saath-lang-asked") === "1"); } catch { setLangAsked(false); }
+  }, []);
+  const langDone = () => {
+    try { window.sessionStorage.setItem("saath-lang-asked", "1"); } catch { /* Storage blocked: ask again next time. */ }
+    setLangAsked(true);
+  };
   const [printing, setPrinting] = useState(false);
 
   const clean = pathname.replace(/\/$/, "") || "/";
@@ -281,7 +290,7 @@ function Frame({ children }: { children: React.ReactNode }) {
   );
 
   if (!ready || !booted || !profile || !session) return <main className="page bare" />;
-  if (!lang) return partner || printing ? <main className="page bare" /> : <div className="no-rail"><Splash /><Landing /></div>;
+  if (!lang) return partner || printing ? <main className="page bare" /> : <div className="no-rail"><Splash /><Landing onDone={langDone} /></div>;
   if (!copyReady) return <main className="page bare"><PageSkeleton /></main>;
 
   if (partner || printing || (!account && open)) {
@@ -305,7 +314,9 @@ function Frame({ children }: { children: React.ReactNode }) {
     return (
       <div className="no-rail">
         {view === "intro" && <Splash />}
-        {view === "intro" ? (
+        {view === "intro" && !langAsked ? (
+          <Landing onDone={langDone} />
+        ) : view === "intro" ? (
           <ProductLanding onJoin={() => go("yours")} onLogin={() => go("login")} />
         ) : view === "yours" ? (
           <MakeYours onNext={() => go("install")} onLogin={() => go("login")} onBack={() => go("intro")} />
