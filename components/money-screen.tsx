@@ -21,6 +21,7 @@ import { NumPad } from "./numpad";
 import { PlanPanel, PlanSetup, SmsPaste, usePlan } from "./money-plan";
 import { useI18n } from "./providers";
 import { CountUp, ListenButton, PageSkeleton, Ring, Sheet } from "./ui";
+import { AskChips } from "./game";
 
 const GROUPS: Record<Entry["kind"], string[]> = {
   out: ["food", "travel", "rent", "bills", "phone", "health", "shopping", "fun", "fees", "family", "otherOut"],
@@ -649,6 +650,7 @@ export function MoneyScreen({ openLog }: { openLog?: boolean }) {
           </div>
         </Sheet>
       )}
+      <AskChips prompts={[t("aiask.money1"), t("aiask.money2"), t("aiask.money3")]} />
     </div>
   );
 }

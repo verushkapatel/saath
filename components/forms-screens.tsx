@@ -15,6 +15,7 @@ import { useApp } from "./app-state";
 import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
 import { ListenButton, PageSkeleton, Ring } from "./ui";
+import { AskChips } from "./game";
 
 function useForms() {
   const [file, setFile] = useState<FormsFile | null>(null);
@@ -275,6 +276,7 @@ export function FormScreen({ id }: { id: string }) {
         </p>
         <p className="faint">{file.note[code]}</p>
       </div>
+      <AskChips prompts={[t("aiask.form1"), t("aiask.form2"), t("aiask.guide1")]} />
     </article>
   );
 }

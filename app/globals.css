@@ -3195,3 +3195,147 @@ h2 { letter-spacing: -0.02em; }
 @media (prefers-reduced-motion: reduce) {
   .screen, .rv { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; filter: none !important; }
 }
+
+/* ───────────────────────────────────────────────────────────────
+   Saath 3: one design language with the landing page. A light geometric sans, blue monospace labels,
+   pure black in dark mode, blue pill buttons, and quiet bordered cards.
+   ─────────────────────────────────────────────────────────────── */
+:root {
+  --font-display: var(--font-sans);
+  --font-body: var(--font-sans), var(--font-dev), system-ui, -apple-system, sans-serif;
+  --font-head: var(--font-sans), var(--font-dev), system-ui, -apple-system, sans-serif;
+  --mono: var(--font-mono), ui-monospace, Menlo, monospace;
+  --blue: #2449d8;
+  --blue-hi: #2f56e6;
+  --label-blue: #2449d8;
+}
+:root[data-theme="dark"] { --bg: #000000; --bg-top: #000000; --surface-1: #0b0b0d; --surface-2: #141417; --surface-3: #1f1f24; --blue: #2c55e0; --blue-hi: #3d66f0; --label-blue: #5b85ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --bg: #000000; --bg-top: #000000; --surface-1: #0b0b0d; --surface-2: #141417; --blue: #2c55e0; --label-blue: #5b85ff; } }
+:root[data-theme="dark"] body { background: var(--bg); }
+body { font-family: var(--font-body); font-size: 1rem; font-weight: 400; letter-spacing: -0.005em; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 500; }
+h1 { font-weight: 400; letter-spacing: -0.04em; line-height: 1.06; }
+h2 { letter-spacing: -0.03em; }
+.lead { font-weight: 300; }
+.brand-name { font-weight: 600; letter-spacing: -0.03em; }
+
+/* Labels: small blue monospace capitals, the signature of the new look. */
+.kicker, .masthead, .label, .eyebrow, .act-num, .stage-map .kicker, .chip-label {
+  font-family: var(--mono) !important; font-size: 0.74rem !important; font-weight: 500 !important;
+  letter-spacing: 0.16em !important; text-transform: uppercase; color: var(--label-blue) !important;
+}
+
+/* Buttons: blue pills for the main action, quiet outlines for the rest. */
+.btn { border-radius: 999px; font-weight: 500; letter-spacing: -0.01em; }
+.btn-primary { background: var(--blue) !important; color: #ffffff !important; border-color: transparent !important; }
+.btn-primary:hover:not(:disabled) { background: var(--blue-hi) !important; box-shadow: 0 12px 30px -14px rgba(44, 85, 224, 0.75); }
+.btn-primary:disabled { opacity: 0.45; }
+.btn-secondary { border-radius: 999px; }
+
+/* Cards: near-black panels with a hairline, like the product cards on the landing page. */
+:root[data-theme="dark"] .card { background: var(--surface-1); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: none; }
+.card { border-radius: 22px; }
+:root[data-theme="dark"] .card.hero, :root[data-theme="dark"] .navy-scene { --bg: #050508; }
+
+/* The language picker: the big rings, then the languages as large rows. */
+.landing.gate { background: #000 !important; }
+.gate .landing-body { width: min(100%, 30rem); gap: 28px; }
+.gate .gate-heading { display: grid; justify-items: center; text-align: center; gap: 14px; }
+.gate-mark .logo-mark { --text: #ffffff; --navy: #5b82ff; }
+.gate-by { display: inline-flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: #6f8fff; margin: 0; }
+.gate-by .skyward-emblem { box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.8); }
+.gate h1 { font-size: clamp(2.2rem, 8vw, 3rem); font-weight: 400; letter-spacing: -0.045em; color: #fff; }
+.gate .lead { color: #a7abb4; }
+.gate .gate-list button { border-radius: 18px; background: #0b0b0d !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: #fff !important; min-height: 76px; transition: border-color 250ms, background 250ms, transform 200ms; }
+.gate .gate-list button:hover { border-color: rgba(255, 255, 255, 0.24) !important; }
+.gate .gate-list button[aria-checked="true"] { border-color: #2c55e0 !important; background: rgba(44, 85, 224, 0.12) !important; box-shadow: none !important; }
+.gate .gate-list b { font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02em; }
+.gate .dot.done { background: #2c55e0; border-color: #2c55e0; color: #fff; }
+.gate .landing-top .icon-btn { color: #fff !important; background: transparent !important; border: 0 !important; }
+.gate .btn-primary { min-height: 58px; font-size: 1.05rem; }
+
+/* ───────────────────────────────────────────────────────────────
+   Game layer: the story header, the board of worlds, the chapter mission, stars, and what changed.
+   ─────────────────────────────────────────────────────────────── */
+.g-label { font-family: var(--mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--label-blue); }
+.g-faint { color: var(--text-faint); font-size: 0.85rem; }
+.g-stars { display: inline-flex; gap: 2px; color: color-mix(in srgb, var(--text-faint) 60%, transparent); }
+.g-stars .on { color: #f5b942; filter: drop-shadow(0 0 6px rgba(245, 185, 66, 0.45)); }
+
+.g-hud { display: flex; align-items: center; gap: 18px; padding: 16px 18px; border-radius: 22px; border: 1px solid var(--line); background: radial-gradient(80% 140% at 0% 0%, rgba(44, 85, 224, 0.18), transparent 60%), var(--surface-1); }
+.g-level { display: flex; align-items: center; gap: 12px; }
+.g-level > span:last-child { display: grid; gap: 2px; }
+.g-xp { font-size: 0.95rem; font-weight: 500; }
+.g-ring { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(var(--blue) var(--p), var(--line) 0); position: relative; }
+.g-ring::before { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: var(--surface-1); }
+.g-ring b { position: relative; font-size: 1.3rem; font-weight: 600; }
+.g-hud dl { margin: 0 0 0 auto; display: flex; gap: 18px; }
+.g-hud dt { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-faint); }
+.g-hud dd { margin: 2px 0 0; display: flex; align-items: center; gap: 5px; font-size: 1.15rem; font-weight: 600; }
+.g-hud dd small { color: var(--text-faint); font-weight: 400; font-size: 0.8rem; }
+.g-hud dd svg { color: #f5b942; }
+@media (max-width: 520px) { .g-hud { flex-wrap: wrap; } .g-hud dl { margin-left: 0; width: 100%; justify-content: space-between; } }
+
+/* The board: each world is a section, its chapters a winding path of round nodes. */
+.g-board { display: grid; gap: 28px; }
+.g-world { border-radius: 26px; border: 1px solid var(--line); background: linear-gradient(180deg, rgba(44, 85, 224, 0.07), transparent 40%), var(--surface-1); padding: 18px 16px 8px; }
+.g-world-head { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: end; padding: 0 4px 14px; border-bottom: 1px solid var(--line); }
+.g-world-head .g-label { grid-column: 1 / -1; }
+.g-world-head h3 { font-size: 1.35rem; font-weight: 500; letter-spacing: -0.03em; margin: 0; }
+.g-world-stars { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 0.8rem; color: #f5b942; }
+.g-path { list-style: none; margin: 0; padding: 18px 0 6px; display: grid; gap: 4px; position: relative; }
+.g-path::before { content: ""; position: absolute; left: 50%; top: 18px; bottom: 18px; width: 2px; transform: translateX(-50%); background: repeating-linear-gradient(var(--line-strong) 0 6px, transparent 6px 12px); }
+.g-step { position: relative; display: flex; justify-content: center; transform: translateX(var(--x, 0)); }
+.g-step > a, .g-step > div { position: relative; display: grid; grid-template-columns: 64px minmax(0, 15rem); align-items: center; gap: 12px; padding: 8px 12px 8px 8px; border-radius: 999px; color: var(--text); text-decoration: none; background: var(--bg); border: 1px solid transparent; transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), border-color 300ms, background 300ms; }
+.g-step > a:hover { border-color: var(--line-strong); transform: translateY(-2px); }
+.g-node { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; font-weight: 600; font-size: 1.1rem; border: 2px solid var(--line-strong); color: var(--text-faint); background: var(--surface-2); box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.25); }
+.g-node.done { background: linear-gradient(180deg, #3d66f0, #2449d8); border-color: transparent; color: #fff; box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.25), 0 10px 24px -12px rgba(44, 85, 224, 0.9); }
+.g-node.open { background: #fff; color: #0b0c0f; border-color: transparent; box-shadow: 0 0 0 6px rgba(44, 85, 224, 0.35), 0 12px 30px -10px rgba(44, 85, 224, 0.9); animation: g-pulse 1.8s ease-in-out infinite; }
+:root[data-theme="light"] .g-node.open { background: #0b0c0f; color: #fff; }
+.g-node.waiting { border-style: dashed; color: var(--text-muted); }
+@keyframes g-pulse { 0%, 100% { box-shadow: 0 0 0 6px rgba(44, 85, 224, 0.35), 0 12px 30px -10px rgba(44, 85, 224, 0.9); } 50% { box-shadow: 0 0 0 12px rgba(44, 85, 224, 0.12), 0 12px 30px -10px rgba(44, 85, 224, 0.9); } }
+.g-node-text { display: grid; gap: 3px; min-width: 0; }
+.g-node-text strong { font-weight: 500; line-height: 1.25; letter-spacing: -0.01em; }
+.g-step.locked .g-node-text strong { color: var(--text-faint); font-weight: 400; }
+.g-num { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.1em; color: var(--text-faint); text-transform: uppercase; }
+.g-here { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--label-blue); }
+.g-avatar { position: absolute; right: -54px; bottom: -6px; pointer-events: none; }
+@media (max-width: 520px) { .g-step { transform: translateX(calc(var(--x, 0) * 0.35)); } .g-avatar { right: -30px; } }
+
+/* The chapter's mission panel. */
+.g-mission { margin-top: 14px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.03); padding: 12px 14px; display: grid; gap: 10px; }
+.g-mission-head { display: flex; justify-content: space-between; align-items: center; }
+.g-mission ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
+.g-mission li { display: flex; align-items: center; gap: 8px; font-size: 0.92rem; color: var(--text-muted); transition: color 300ms; }
+.g-mission li.now { color: var(--text); font-weight: 500; }
+.g-mission li.done { color: var(--text-faint); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--text-faint) 50%, transparent); }
+.g-tick { width: 18px; height: 18px; flex: none; border-radius: 50%; border: 1.5px solid var(--line-strong); display: grid; place-items: center; transition: all 300ms; }
+.g-mission li.done .g-tick { background: var(--blue); border-color: var(--blue); color: #fff; }
+.g-mission li.now .g-tick { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(44, 85, 224, 0.25); }
+
+/* What changed after a decision. */
+.g-deltas { border-radius: 18px; border: 1px solid var(--line); background: var(--surface-1); padding: 14px 16px; display: grid; gap: 10px; }
+.g-deltas ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.g-deltas li { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px dashed var(--line); animation: g-row 600ms cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(var(--i) * 90ms); }
+.g-deltas li:last-child { border-bottom: 0; }
+.g-deltas b { font-variant-numeric: tabular-nums; font-size: 1.1rem; font-weight: 600; }
+.g-deltas li.up b { color: #34c487; }
+.g-deltas li.down b { color: #f0644a; }
+@keyframes g-row { from { opacity: 0; transform: translateX(-8px); } }
+.g-done-stars { margin: 4px 0; }
+.g-done-stars .g-stars svg { animation: g-star 700ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+.g-done-stars .g-stars svg:nth-child(2) { animation-delay: 160ms; } .g-done-stars .g-stars svg:nth-child(3) { animation-delay: 320ms; }
+@keyframes g-star { from { opacity: 0; transform: scale(0.2) rotate(-40deg); } }
+
+/* Saath AI question chips, on every screen that teaches something. */
+.ask-chips { display: grid; gap: 10px; padding: 14px; border-radius: 20px; border: 1px solid var(--line); background: radial-gradient(90% 120% at 100% 0%, rgba(44, 85, 224, 0.14), transparent 60%), var(--surface-1); }
+.ask-chips-head { display: flex; align-items: center; gap: 8px; margin: 0; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--label-blue); }
+.ask-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--blue); display: grid; place-items: center; }
+.ask-dot .logo-mark { --text: #fff; --navy: #c7d6ff; }
+.ask-chips-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.ask-chips-row button { display: inline-flex; align-items: center; gap: 6px; padding: 10px 12px 10px 14px; border-radius: 999px; border: 1px solid var(--line-strong); background: var(--bg); color: var(--text); font: inherit; font-size: 0.92rem; text-align: left; cursor: pointer; transition: border-color 200ms, background 200ms, transform 200ms; }
+.ask-chips-row button:hover { border-color: var(--blue); background: rgba(44, 85, 224, 0.1); }
+.ask-chips-row button:active { transform: scale(0.98); }
+.ask-chips-row button svg { color: var(--text-faint); flex: none; }
+.g-step > a, .g-step > div { max-width: calc(100% - 8px); }
+@media (max-width: 520px) { .g-step { transform: translateX(calc(var(--x, 0) * 0.18)); } .g-step > a, .g-step > div { grid-template-columns: 56px minmax(0, 1fr); } .g-node { width: 56px; height: 56px; } }

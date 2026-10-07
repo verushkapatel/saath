@@ -14,6 +14,7 @@ import { useI18n } from "./providers";
 import { ShareButton } from "./share-button";
 import { CheckCard, ContentIcon, GlossarySheet, ListenButton, PageSkeleton, TermText, useGlossary } from "./ui";
 import { WalkCard, WalkPlayer, useWalk } from "./walkthrough";
+import { AskChips } from "./game";
 
 const plain = (text: string) => text.replace(/\[\[|\]\]/g, "");
 
@@ -329,6 +330,7 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
           ) : null}
         </div>
       )}
+      <AskChips prompts={[t("aiask.guide1"), t("aiask.guide2"), t("aiask.guide3")]} />
       <GlossarySheet term={glossary.term} onClose={glossary.close} />
     </article>
   );

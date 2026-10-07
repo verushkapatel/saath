@@ -18,6 +18,7 @@ import { AppStateProvider, useApp } from "./app-state";
 import { AuthScreen, type AuthMode } from "./auth";
 import { Character } from "./character";
 import { Landing as ProductLanding } from "./landing";
+import { Splash } from "./splash";
 import { Logo, LogoMark, SkywardEmblem } from "./logo";
 import { Personalize } from "./personalize";
 import { PrefsProvider, usePrefs } from "./prefs";
@@ -68,14 +69,12 @@ function Landing() {
   const shown = pick ?? "en";
 
   return (
-    <main className="landing screen navy-scene">
+    <main className="landing gate screen navy-scene">
       <div className="landing-top"><ThemeToggle /></div>
       <div className="landing-body scene-in">
-        <div className="landing-figure stage">
-          <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={168} />
-        </div>
         <div className="gate-heading">
-          <p className="wordmark"><LogoMark size={40} /> Saath <span className="logo-divider" aria-hidden /><SkywardEmblem size={44} /></p>
+          <span className="gate-mark" aria-hidden><LogoMark size={64} /></span>
+          <p className="gate-by"><SkywardEmblem size={26} /> Saath · The Skyward Project</p>
           <h1 lang={shown}>{copy[shown].title}</h1>
           <p className="lead" lang={shown}>{copy[shown].line}</p>
         </div>
@@ -280,7 +279,7 @@ function Frame({ children }: { children: React.ReactNode }) {
   );
 
   if (!ready || !booted || !profile || !session) return <main className="page bare" />;
-  if (!lang) return partner || printing ? <main className="page bare" /> : <div className="no-rail"><Landing /></div>;
+  if (!lang) return partner || printing ? <main className="page bare" /> : <div className="no-rail"><Splash /><Landing /></div>;
   if (!copyReady) return <main className="page bare"><PageSkeleton /></main>;
 
   if (partner || printing || (!account && open)) {
@@ -303,6 +302,7 @@ function Frame({ children }: { children: React.ReactNode }) {
   if (!account) {
     return (
       <div className="no-rail">
+        {view === "intro" && <Splash />}
         {view === "intro" ? (
           <ProductLanding onJoin={() => go("yours")} onLogin={() => go("login")} />
         ) : view === "yours" ? (

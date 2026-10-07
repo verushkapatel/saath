@@ -19,6 +19,8 @@ import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
 import { rewardName } from "./reward-sheet";
 import { CheckCard, ListenButton, PageSkeleton } from "./ui";
+import { AskChips, GameHud, MissionPanel, StatDeltas, Stars, StoryBoard } from "./game";
+import { starsFor } from "@/lib/game";
 
 function MoneyStrip({ money }: { money: { cash: number; savings: number; debt: number } }) {
   const { t, code } = useI18n();
@@ -88,6 +90,8 @@ export function JourneyScreen() {
         <h1>{t("journey.title", { name: journey.name[code] })}</h1>
         <p className="lead">{journey.intro[code]}</p>
       </div>
+
+      <GameHud level={app.level.level} ratio={app.level.ratio} xp={progress.xp} episodes={journey.episodes} results={progress.journey} streak={streak.count} />
 
       <section className="card hero journey-hero">
         <div className="walk-strip journey-walk" role="img" aria-label={t("journey.figure", { name: journey.name[code], age: app.verena.age })}>
@@ -166,37 +170,16 @@ export function JourneyScreen() {
       <section className="stack-sm" aria-labelledby="map-h">
         <h2 id="map-h">{t("journey.archive")}</h2>
         <p className="faint">{t("journey.archiveLead")}</p>
-        <ol className="stage-map">
-          {journey.episodes.map((episode, index) => {
-            const result = progress.journey[episode.id];
-            const isNext = next?.id === episode.id;
-            const stage = journey.stages.find((item) => item.id === episode.stage);
-            const state = result ? "done" : isNext ? (story.open ? "open" : "waiting") : "locked";
-            const body = (
-              <>
-                <span className={`stage-mark ${state}`} aria-hidden>
-                  {state === "done" ? <Check size={16} strokeWidth={3} /> : state === "locked" ? <Lock size={14} /> : index + 1}
-                </span>
-                <span className="stack-xs">
-                  <span className="kicker">{stage?.title[code]} · {t("journey.age", { age: episode.age })}</span>
-                  <strong>{state === "locked" ? t("journey.locked") : episode.title[code]}</strong>
-                  {result && <span className="faint">{t(`journey.verdict.${episode.options[result.choice]?.verdict ?? "okay"}`)} · {t("journey.drillScore", { right: result.drill, total: episode.drill.length })}</span>}
-                  {result && <span className="archive-answer">{t("journey.originalAnswer", { answer: episode.options[result.choice]?.text[code] ?? "" })}</span>}
-                  {state === "waiting" && <span className="faint">{t("journey.tomorrow", { date: story.opensOn ? dayLabel(story.opensOn, code) : "" })}</span>}
-                </span>
-              </>
-            );
-            return (
-              <li key={episode.id} className={`stage-row ${state}`}>
-                {state === "done" || state === "open" ? (
-                  <Link href={`/journey/${episode.id}`} onClick={tap} aria-label={`${episode.title[code]}${result ? `. ${t("journey.replay")}` : ""}`}>{body}<ChevronRight aria-hidden size={18} /></Link>
-                ) : (
-                  <div>{body}</div>
-                )}
-              </li>
-            );
-          })}
-        </ol>
+        <StoryBoard
+          episodes={journey.episodes}
+          stages={journey.stages}
+          results={progress.journey}
+          nextId={next?.id ?? null}
+          open={story.open}
+          look={app.verena}
+          age={app.verena.age}
+        />
+        <AskChips prompts={[t("aiask.story1"), t("aiask.story2"), t("journey.askWhatNext")]} />
         <p className="faint">{t("journey.rule")}</p>
         <p className="faint">{t("journey.reviewed", { date: journey.reviewed })}</p>
       </section>
@@ -352,7 +335,7 @@ function StoryPlayer({ episode, look, name, onDone }: { episode: Episode; look: 
   );
 }
 
-const STEPS = ["story", "slip", "sim", "decide", "outcome", "why", "drill", "done"] as const;
+const STEPS = ["story", "slip", "sim", "live", "decide", "outcome", "why", "drill", "done"] as const;
 type Step = (typeof STEPS)[number];
 
 /** One episode, played as a loop: story, slip, try it, decide, see what follows, why, two questions, XP. */
@@ -386,6 +369,10 @@ export function EpisodeScreen({ id }: { id: string }) {
   const [xpBefore, setXpBefore] = useState<number | null>(null);
   const finishing = useRef(false);
   const topRef = useRef<HTMLDivElement | null>(null);
+  const walk = useWalk(episode?.guides[0]);
+  const hasLive = Boolean(walk && walk !== "missing");
+  const [simOpen, setSimOpen] = useState(false);
+  const [simRan, setSimRan] = useState(false);
 
   useEffect(() => {
     if (episode) setDrill(episode.drill.map(() => null));
@@ -441,7 +428,7 @@ export function EpisodeScreen({ id }: { id: string }) {
   const option = choice !== null ? episode.options[choice] : null;
   const drillRight = drill.filter((pick, at) => pick !== null && pick === episode.drill[at].answer).length;
   const drillDone = drill.length > 0 && drill.every((pick) => pick !== null);
-  const order = STEPS.filter((item) => item !== "slip" || episode.slip);
+  const order = STEPS.filter((item) => (item !== "slip" || episode.slip) && (item !== "live" || hasLive));
   const position = order.indexOf(step);
   const go = (next: Step) => { tap(); setStep(next); };
   const after = option ? applyEffects(before, option.effects) : before;
@@ -474,6 +461,7 @@ export function EpisodeScreen({ id }: { id: string }) {
           <h1>{episode.title[code]}</h1>
           {replaying && <p className="faint">{t("journey.replayNote")}</p>}
         </div>
+        <MissionPanel step={step} order={order} stars={step === "done" ? starsFor(episode, progress.journey[episode.id]) : null} />
       </header>
 
       {step === "story" && (
@@ -498,7 +486,30 @@ export function EpisodeScreen({ id }: { id: string }) {
             <p className="muted">{episode.sim.hint[code]}</p>
             <SimBlock sim={episode.sim} />
           </div>
-          <button type="button" className="btn btn-primary" onClick={() => go("decide")}>{t("journey.toDecision")}<ArrowRight aria-hidden size={18} /></button>
+          <button type="button" className="btn btn-primary" onClick={() => go(hasLive ? "live" : "decide")}>{hasLive ? t("game.live.start") : t("journey.toDecision")}<ArrowRight aria-hidden size={18} /></button>
+        </section>
+      )}
+
+      {step === "live" && walk && walk !== "missing" && (
+        <section className="stack g-live">
+          <div className="card stack-sm">
+            <p className="kicker">{t("game.live.title")}</p>
+            <h2>{walk.title[code]}</h2>
+            <p className="muted">{t("game.live.lead")}</p>
+            <WalkCard walk={walk} onOpen={() => { tap(); setSimOpen(true); }} />
+            {simRan && <p className="note ok"><Check aria-hidden size={16} /> {t("game.live.done")}</p>}
+          </div>
+          {simRan ? (
+            <button type="button" className="btn btn-primary" onClick={() => go("decide")} data-testid="live-next">{t("game.live.next")}<ArrowRight aria-hidden size={18} /></button>
+          ) : (
+            <button type="button" className="btn btn-primary" onClick={() => { tap(); setSimOpen(true); }} data-testid="live-start">{t("game.live.start")}<ArrowRight aria-hidden size={18} /></button>
+          )}
+          {simRan ? (
+            <button type="button" className="btn btn-ghost" onClick={() => { tap(); setSimOpen(true); }}>{t("game.live.again")}</button>
+          ) : (
+            <button type="button" className="btn btn-ghost" onClick={() => go("decide")} data-testid="live-skip">{t("game.live.skip")}</button>
+          )}
+          {simOpen && <WalkPlayer walk={walk} onClose={() => { setSimOpen(false); setSimRan(true); }} />}
         </section>
       )}
 
@@ -520,6 +531,7 @@ export function EpisodeScreen({ id }: { id: string }) {
             ))}
           </div>
           {replaying && already && <p className="faint">{t("journey.firstChoice", { choice: episode.options[already.choice]?.text[code] ?? "" })}</p>}
+          <AskChips prompts={[t("aiask.decide"), t("aiask.real")]} />
           <button
             type="button"
             className="btn btn-primary"
@@ -545,11 +557,13 @@ export function EpisodeScreen({ id }: { id: string }) {
             <p className="lead">{option.outcome[code]}</p>
             {option.verdict === "costly" && <p className="learning">{t("journey.learning", { name: journey.name[code] })}</p>}
           </div>
+          <StatDeltas before={before} after={after} />
           <div className="stack-xs">
             <p className="faint">{t("journey.herMoneyNow")}</p>
             <MoneyStrip money={after} />
             <LifeState state={after} />
           </div>
+          <AskChips prompts={[t("aiask.outcome"), t("aiask.real")]} />
           <button type="button" className="btn btn-primary" onClick={() => go("why")}>{t("journey.why")}<ArrowRight aria-hidden size={18} /></button>
         </section>
       )}
@@ -572,10 +586,8 @@ export function EpisodeScreen({ id }: { id: string }) {
               </ul>
             </div>
           )}
-          {episode.guides[0] && <ChapterWalk guideId={episode.guides[0]} />}
-          <button type="button" className="btn btn-ghost" onClick={() => { tap(); ai.openAsk(t("journey.askWhy")); }}>
-            <MessageCircle aria-hidden size={18} />{t("journey.askSaath")}
-          </button>
+          {episode.guides[0] && !hasLive && <ChapterWalk guideId={episode.guides[0]} />}
+          <AskChips prompts={[t("journey.askWhy"), t("journey.askReal"), t("aiask.guide3")]} />
           <button type="button" className="btn btn-primary" onClick={() => go("drill")}>{t("journey.toDrill")}<ArrowRight aria-hidden size={18} /></button>
         </section>
       )}
@@ -601,6 +613,7 @@ export function EpisodeScreen({ id }: { id: string }) {
               <Character look={{ ...look, place: episode.place }} age={episode.age} size={130} mood="proud" />
             </div>
             <h2>{t("journey.doneTitle")}</h2>
+            <p className="g-done-stars"><Stars value={starsFor(episode, progress.journey[episode.id])} size={30} label={t("game.starsEarned")} /></p>
             <p className="muted">{t("journey.drillScore", { right: drillRight, total: episode.drill.length })}</p>
             {xpBefore !== null && progress.xp > xpBefore ? (
               <p className="xp-pop" role="status"><Sparkles aria-hidden size={18} /> {t("journey.xpEarned", { xp: progress.xp - xpBefore })}</p>
