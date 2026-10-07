@@ -5,7 +5,7 @@ import { POSTCARDS, postcards } from "../lib/postcards";
 const episodes = (chapters as { chapters: { id: string; age: number }[] }).chapters;
 
 describe("Verena postcards", () => {
-  it("cover all 46 chapters once, in order, without gaps", () => {
+  it("cover every chapter once, in order, without gaps", () => {
     expect(POSTCARDS[0].from).toBe(1);
     expect(POSTCARDS.at(-1)?.to).toBe(episodes.length);
     POSTCARDS.slice(1).forEach((card, index) => expect(card.from).toBe(POSTCARDS[index].to + 1));
@@ -16,7 +16,7 @@ describe("Verena postcards", () => {
   });
 
   it("unlock when the first chapter of a stage is finished, and show her ages", () => {
-    const journey = { [episodes[0].id]: { choice: 0 }, [episodes[9].id]: { choice: 1 } } as never;
+    const journey = { [episodes[0].id]: { choice: 0 }, [episodes[11].id]: { choice: 1 } } as never;
     const cards = postcards(episodes, journey);
     expect(cards.map((card) => card.unlocked)).toEqual([true, true, false, false, false, false]);
     expect(cards[0].ageFrom).toBe(21);

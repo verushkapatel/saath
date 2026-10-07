@@ -23,6 +23,9 @@ export type ChapterSeed = {
   okayOutcome?: Copy;
   costlyOutcome?: Copy;
   lesson?: Copy;
+  /** Chapter-specific lines for the "look closer" simulation, and its own five drill questions. */
+  lines?: { label: Copy; value: Copy; note: Copy; flag?: boolean }[];
+  drill?: Episode["drill"];
 };
 
 export type ChaptersFile = { reviewed: string; chapters: ChapterSeed[] };
@@ -132,6 +135,7 @@ function makeSim(seed: ChapterSeed): Sim {
   if (sim.kind === "budget") return { ...sim, title, hint };
   if (sim.kind === "grow") return { ...sim, title, hint };
   if (sim.kind === "emi") return { ...sim, title, hint };
+  if (seed.lines?.length) return { kind: "inspect", title: C("Look closer before deciding", "फ़ैसले से पहले ध्यान से देखें", "निर्णयाआधी नीट पाहा"), hint: C("Tap each line to see what it really means. These are educational examples.", "हर पंक्ति पर टैप करके देखें कि असल में इसका मतलब क्या है। ये शैक्षिक उदाहरण हैं।", "प्रत्येक ओळीवर टॅप करून तिचा खरा अर्थ पाहा. ही शैक्षणिक उदाहरणे आहेत."), lines: seed.lines };
   return {
     kind: "inspect", title, hint,
     lines: [
@@ -163,7 +167,7 @@ function generated(seed: ChapterSeed, index: number): Episode {
     question: seed.question ?? PHRASES.question,
     options,
     lesson: seed.lesson ?? PHRASES.lesson,
-    drill: CHECKS,
+    drill: seed.drill?.length === 5 ? seed.drill : CHECKS,
     guides: [seed.guide],
   };
 }

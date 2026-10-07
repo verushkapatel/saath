@@ -4266,5 +4266,912 @@
       "https://pfrda.org.in/schemes/national-pension-system/nps-for-all-citizen-models",
       "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2127981"
     ]
+  },
+  {
+    "id": "stock-market",
+    "unit": "how-money",
+    "topic": "investing",
+    "icon": "trending",
+    "title": {
+      "en": "How the stock market works",
+      "hi": "शेयर बाज़ार कैसे काम करता है",
+      "mr": "शेअर बाजार कसा चालतो"
+    },
+    "summary": {
+      "en": "A share is a small piece of a company. Its price moves every day.",
+      "hi": "शेयर किसी कंपनी का छोटा हिस्सा है। इसकी कीमत रोज़ बदलती है।",
+      "mr": "शेअर म्हणजे कंपनीचा छोटा हिस्सा. त्याची किंमत रोज बदलते."
+    },
+    "body": {
+      "en": "When you buy a share, you own a tiny part of a company. Shares are bought and sold on stock exchanges, mainly the NSE and the BSE, and the market regulator SEBI writes the rules that protect investors.\n\nTo buy shares you need three things: a demat account that holds your shares electronically, a trading account to place orders, and a bank account linked to both. A SEBI-registered broker opens the first two for you. Prices rise and fall with company results, news and mood, so money you need within a few years does not belong in single shares.",
+      "hi": "जब आप शेयर खरीदते हैं, तो आप किसी कंपनी के एक छोटे हिस्से के मालिक बनते हैं। शेयर स्टॉक एक्सचेंज पर खरीदे-बेचे जाते हैं, मुख्य रूप से NSE और BSE पर, और बाज़ार नियामक SEBI निवेशकों की सुरक्षा के नियम बनाता है।\n\nशेयर खरीदने के लिए तीन चीज़ें चाहिए: डीमैट खाता जो आपके शेयर इलेक्ट्रॉनिक रूप में रखता है, ट्रेडिंग खाता जिससे ऑर्डर दिए जाते हैं, और दोनों से जुड़ा बैंक खाता। SEBI में पंजीकृत ब्रोकर पहले दो खाते खोलता है। कंपनी के नतीजों, खबरों और माहौल से कीमतें ऊपर-नीचे होती हैं, इसलिए जिस पैसे की कुछ सालों में ज़रूरत है, वह अकेले शेयरों में नहीं होना चाहिए।",
+      "mr": "तुम्ही शेअर विकत घेता तेव्हा तुम्ही कंपनीच्या छोट्या हिश्श्याचे मालक होता. शेअर स्टॉक एक्सचेंजवर खरेदी-विक्री होतात, मुख्यतः NSE आणि BSE वर, आणि बाजार नियामक SEBI गुंतवणूकदारांच्या संरक्षणाचे नियम ठरवते.\n\nशेअर घेण्यासाठी तीन गोष्टी लागतात: तुमचे शेअर इलेक्ट्रॉनिक स्वरूपात ठेवणारे डिमॅट खाते, ऑर्डर देण्यासाठी ट्रेडिंग खाते, आणि दोन्हीशी जोडलेले बँक खाते. SEBI नोंदणीकृत ब्रोकर पहिली दोन खाती उघडतो. कंपनीचे निकाल, बातम्या आणि वातावरण यानुसार किमती वर-खाली होतात, म्हणून काही वर्षांत लागणारे पैसे एकेका शेअरमध्ये ठेवू नयेत."
+    },
+    "points": [
+      {
+        "en": "Open accounts only through a SEBI-registered broker. Check the registration number on SEBI's website.",
+        "hi": "खाते सिर्फ़ SEBI में पंजीकृत ब्रोकर से खोलें। पंजीकरण संख्या SEBI की वेबसाइट पर जाँचें।",
+        "mr": "खाती फक्त SEBI नोंदणीकृत ब्रोकरकडूनच उघडा. नोंदणी क्रमांक SEBI च्या वेबसाइटवर तपासा."
+      },
+      {
+        "en": "Never share your login, OTP or demat password with anyone, including 'advisors' on chat apps.",
+        "hi": "अपना लॉगिन, OTP या डीमैट पासवर्ड किसी को न दें, चैट ऐप वाले 'सलाहकारों' को भी नहीं।",
+        "mr": "तुमचे लॉगिन, OTP किंवा डिमॅट पासवर्ड कोणालाही देऊ नका, चॅट अॅपवरील 'सल्लागारांना' सुद्धा नाही."
+      },
+      {
+        "en": "Tips that promise sure profit are a warning sign, not an opportunity.",
+        "hi": "पक्के मुनाफ़े का वादा करने वाली टिप चेतावनी है, मौका नहीं।",
+        "mr": "निश्चित नफ्याचे वचन देणारी टिप ही धोक्याची घंटा आहे, संधी नाही."
+      },
+      {
+        "en": "Spread money across many companies, or use a mutual fund, instead of betting on one share.",
+        "hi": "एक शेयर पर दाँव लगाने के बजाय पैसा कई कंपनियों में बाँटें, या म्यूचुअल फ़ंड लें।",
+        "mr": "एका शेअरवर पैज लावण्याऐवजी पैसे अनेक कंपन्यांत वाटा, किंवा म्युच्युअल फंड घ्या."
+      }
+    ],
+    "example": {
+      "en": "Rohit buys 10 shares of a company at ₹500 each, ₹5,000 in all. A month later bad results push the price to ₹420. He has not lost money unless he sells, but he now knows why money for next month's rent should never be in shares.",
+      "hi": "रोहित एक कंपनी के 10 शेयर ₹500 के भाव से खरीदता है, कुल ₹5,000। एक महीने बाद खराब नतीजों से भाव ₹420 हो जाता है। बेचे बिना उसका पैसा डूबा नहीं, पर अब वह समझता है कि अगले महीने के किराए का पैसा कभी शेयरों में नहीं होना चाहिए।",
+      "mr": "रोहित एका कंपनीचे 10 शेअर ₹500 दराने घेतो, एकूण ₹5,000. महिन्यानंतर वाईट निकालांमुळे भाव ₹420 होतो. विकल्याशिवाय त्याचे पैसे बुडाले नाहीत, पण पुढच्या महिन्याच्या भाड्याचे पैसे शेअरमध्ये का नसावेत हे त्याला आता कळते."
+    },
+    "tryIt": {
+      "text": {
+        "en": "See what a demat and trading account form asks for.",
+        "hi": "देखें कि डीमैट और ट्रेडिंग खाते का फ़ॉर्म क्या पूछता है।",
+        "mr": "डिमॅट आणि ट्रेडिंग खात्याचा फॉर्म काय विचारतो ते पाहा."
+      },
+      "link": "form:demat-account"
+    },
+    "check": {
+      "question": {
+        "en": "What does a demat account do?",
+        "hi": "डीमैट खाता क्या करता है?",
+        "mr": "डिमॅट खाते काय करते?"
+      },
+      "options": [
+        {
+          "en": "Holds your shares electronically",
+          "hi": "आपके शेयर इलेक्ट्रॉनिक रूप में रखता है",
+          "mr": "तुमचे शेअर इलेक्ट्रॉनिक स्वरूपात ठेवते"
+        },
+        {
+          "en": "Guarantees profit",
+          "hi": "मुनाफ़े की गारंटी देता है",
+          "mr": "नफ्याची हमी देते"
+        },
+        {
+          "en": "Replaces your bank account",
+          "hi": "बैंक खाते की जगह लेता है",
+          "mr": "बँक खात्याची जागा घेते"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "Shares today exist as electronic records, and the demat account is where they sit.",
+        "hi": "आज शेयर इलेक्ट्रॉनिक रिकॉर्ड हैं, और डीमैट खाता वह जगह है जहाँ वे रहते हैं।",
+        "mr": "आज शेअर इलेक्ट्रॉनिक नोंदी आहेत, आणि डिमॅट खाते ही त्यांची जागा आहे."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://investor.sebi.gov.in/"
+    ]
+  },
+  {
+    "id": "mutual-funds",
+    "unit": "how-money",
+    "topic": "investing",
+    "icon": "sprout",
+    "title": {
+      "en": "Mutual funds, explained",
+      "hi": "म्यूचुअल फ़ंड, आसान भाषा में",
+      "mr": "म्युच्युअल फंड, सोप्या भाषेत"
+    },
+    "summary": {
+      "en": "Many people pool money; a professional invests it; you own units.",
+      "hi": "कई लोग पैसा मिलाते हैं; एक पेशेवर निवेश करता है; आपके पास यूनिट होते हैं।",
+      "mr": "अनेक लोक पैसे एकत्र करतात; एक व्यावसायिक गुंतवणूक करतो; तुमच्याकडे युनिट्स असतात."
+    },
+    "body": {
+      "en": "A mutual fund collects money from many investors and puts it into shares, bonds or both, according to a stated plan. You get units, and the price of one unit is the NAV, declared every working day. Funds are run by asset management companies and regulated by SEBI.\n\nEquity funds can grow more but swing more. Debt funds swing less. Every fund shows a riskometer and a yearly cost called the expense ratio. A 'direct' plan, bought straight from the fund house, costs less than a 'regular' plan bought through a distributor, because no commission is paid from your money.",
+      "hi": "म्यूचुअल फ़ंड कई निवेशकों से पैसा इकट्ठा करके एक तय योजना के अनुसार शेयरों, बॉन्ड या दोनों में लगाता है। आपको यूनिट मिलते हैं, और एक यूनिट की कीमत NAV कहलाती है, जो हर कामकाजी दिन घोषित होती है। फ़ंड एसेट मैनेजमेंट कंपनियाँ चलाती हैं और SEBI इन पर नज़र रखता है।\n\nइक्विटी फ़ंड ज़्यादा बढ़ सकते हैं पर ज़्यादा ऊपर-नीचे होते हैं। डेट फ़ंड कम ऊपर-नीचे होते हैं। हर फ़ंड एक रिस्कोमीटर और सालाना खर्च दिखाता है जिसे एक्सपेंस रेशियो कहते हैं। सीधे फ़ंड हाउस से लिया 'डायरेक्ट' प्लान, वितरक से लिए 'रेगुलर' प्लान से सस्ता होता है, क्योंकि आपके पैसे से कमीशन नहीं जाता।",
+      "mr": "म्युच्युअल फंड अनेक गुंतवणूकदारांकडून पैसे गोळा करून ठरलेल्या योजनेनुसार शेअर, बाँड किंवा दोन्हींत गुंतवतो. तुम्हाला युनिट्स मिळतात, आणि एका युनिटची किंमत NAV म्हणतात, जी प्रत्येक कामकाजाच्या दिवशी जाहीर होते. फंड अॅसेट मॅनेजमेंट कंपन्या चालवतात आणि SEBI त्यांचे नियमन करते.\n\nइक्विटी फंड जास्त वाढू शकतात पण जास्त हेलकावे खातात. डेट फंड कमी हेलकावे खातात. प्रत्येक फंड एक रिस्कोमीटर आणि एक्सपेन्स रेशो नावाचा वार्षिक खर्च दाखवतो. थेट फंड हाऊसकडून घेतलेला 'डायरेक्ट' प्लॅन वितरकाकडून घेतलेल्या 'रेग्युलर' प्लॅनपेक्षा स्वस्त असतो, कारण तुमच्या पैशांतून कमिशन जात नाही."
+    },
+    "points": [
+      {
+        "en": "Read the riskometer and match it to when you need the money.",
+        "hi": "रिस्कोमीटर पढ़ें और उसे इस बात से मिलाएँ कि पैसा कब चाहिए।",
+        "mr": "रिस्कोमीटर वाचा आणि पैसे कधी लागणार त्याच्याशी जुळवा."
+      },
+      {
+        "en": "Compare the expense ratio. A small yearly difference adds up over many years.",
+        "hi": "एक्सपेंस रेशियो की तुलना करें। सालाना छोटा अंतर कई सालों में बड़ा हो जाता है।",
+        "mr": "एक्सपेन्स रेशोची तुलना करा. वार्षिक छोटा फरक अनेक वर्षांत मोठा होतो."
+      },
+      {
+        "en": "Past returns are shown, but they are never a promise.",
+        "hi": "पिछला रिटर्न दिखाया जाता है, पर वह कभी वादा नहीं होता।",
+        "mr": "मागील परतावा दाखवला जातो, पण तो कधीही वचन नसतो."
+      },
+      {
+        "en": "ELSS tax-saving funds lock your money for three years.",
+        "hi": "ELSS टैक्स-बचत फ़ंड में पैसा तीन साल के लिए बंद रहता है।",
+        "mr": "ELSS कर-बचत फंडात पैसे तीन वर्षे बंद राहतात."
+      }
+    ],
+    "example": {
+      "en": "Meena puts ₹2,000 a month into an equity index fund through a SIP. When the market falls, the same ₹2,000 buys more units; when it rises, fewer. After five years she judges the fund by its cost and steadiness, not by one bad month.",
+      "hi": "मीना SIP से हर महीने ₹2,000 एक इक्विटी इंडेक्स फ़ंड में डालती है। बाज़ार गिरने पर वही ₹2,000 ज़्यादा यूनिट खरीदते हैं; चढ़ने पर कम। पाँच साल बाद वह फ़ंड को उसके खर्च और स्थिरता से परखती है, एक खराब महीने से नहीं।",
+      "mr": "मीना SIP ने दरमहा ₹2,000 एका इक्विटी इंडेक्स फंडात टाकते. बाजार घसरल्यावर तेच ₹2,000 जास्त युनिट्स घेतात; वाढल्यावर कमी. पाच वर्षांनी ती फंडाला त्याच्या खर्चावरून आणि स्थिरतेवरून पारखते, एका वाईट महिन्यावरून नाही."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Walk through a mutual fund application, field by field.",
+        "hi": "म्यूचुअल फ़ंड आवेदन को एक-एक खाने से समझें।",
+        "mr": "म्युच्युअल फंड अर्ज एकेका रकान्याने समजून घ्या."
+      },
+      "link": "form:mutual-fund"
+    },
+    "check": {
+      "question": {
+        "en": "Why is a direct plan cheaper than a regular plan?",
+        "hi": "डायरेक्ट प्लान रेगुलर प्लान से सस्ता क्यों है?",
+        "mr": "डायरेक्ट प्लॅन रेग्युलर प्लॅनपेक्षा स्वस्त का?"
+      },
+      "options": [
+        {
+          "en": "It invests in worse companies",
+          "hi": "यह खराब कंपनियों में निवेश करता है",
+          "mr": "तो वाईट कंपन्यांत गुंतवतो"
+        },
+        {
+          "en": "No distributor commission is paid from it",
+          "hi": "इससे वितरक का कमीशन नहीं जाता",
+          "mr": "त्यातून वितरकाचे कमिशन जात नाही"
+        },
+        {
+          "en": "It has no risk",
+          "hi": "इसमें कोई जोखिम नहीं",
+          "mr": "त्यात जोखीम नाही"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Same fund, same portfolio; the regular plan simply carries a commission inside its expense ratio.",
+        "hi": "फ़ंड और पोर्टफ़ोलियो वही है; रेगुलर प्लान के खर्च में बस कमीशन जुड़ा होता है।",
+        "mr": "फंड आणि पोर्टफोलिओ तोच; रेग्युलर प्लॅनच्या खर्चात फक्त कमिशन असते."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.sebi.gov.in/",
+      "https://investor.sebi.gov.in/"
+    ]
+  },
+  {
+    "id": "aif-pms",
+    "unit": "how-money",
+    "topic": "investing",
+    "icon": "briefcase",
+    "title": {
+      "en": "AIFs and PMS: for large sums only",
+      "hi": "AIF और PMS: सिर्फ़ बड़ी रकम के लिए",
+      "mr": "AIF आणि PMS: फक्त मोठ्या रकमेसाठी"
+    },
+    "summary": {
+      "en": "High minimums, higher fees and more risk. Know them so a sales pitch cannot rush you.",
+      "hi": "ऊँची न्यूनतम राशि, ज़्यादा फ़ीस और ज़्यादा जोखिम। इन्हें जानें ताकि कोई सेल्स पिच आपको जल्दी न कराए।",
+      "mr": "जास्त किमान रक्कम, जास्त शुल्क आणि जास्त जोखीम. यांची माहिती ठेवा म्हणजे कोणतीही विक्री तुम्हाला घाई करायला लावणार नाही."
+    },
+    "body": {
+      "en": "A Portfolio Management Service (PMS) is a manager who buys and sells shares in your own name, for you. SEBI sets the minimum at ₹50 lakh. An Alternative Investment Fund (AIF) pools money from wealthy investors into things like start-ups, private companies or complex strategies; the usual minimum is ₹1 crore.\n\nBoth must be registered with SEBI and must give you a disclosure document before you invest. Fees can include a fixed yearly charge and a share of profits, and exits can be slow or locked for years. For most people, mutual funds do the same job with more protection and lower cost.",
+      "hi": "पोर्टफ़ोलियो मैनेजमेंट सर्विस (PMS) एक मैनेजर है जो आपके नाम पर आपके लिए शेयर खरीदता-बेचता है। SEBI ने इसकी न्यूनतम राशि ₹50 लाख रखी है। ऑल्टरनेटिव इन्वेस्टमेंट फ़ंड (AIF) धनी निवेशकों का पैसा स्टार्ट-अप, निजी कंपनियों या जटिल रणनीतियों में लगाता है; आम तौर पर न्यूनतम ₹1 करोड़ होता है।\n\nदोनों का SEBI में पंजीकरण ज़रूरी है और निवेश से पहले आपको डिस्क्लोज़र डॉक्यूमेंट देना होता है। फ़ीस में तय सालाना शुल्क और मुनाफ़े का हिस्सा हो सकता है, और पैसा निकालना धीमा या सालों तक बंद हो सकता है। ज़्यादातर लोगों के लिए म्यूचुअल फ़ंड यही काम ज़्यादा सुरक्षा और कम खर्च में करते हैं।",
+      "mr": "पोर्टफोलिओ मॅनेजमेंट सर्व्हिस (PMS) म्हणजे एक व्यवस्थापक जो तुमच्या नावावर तुमच्यासाठी शेअर खरेदी-विक्री करतो. SEBI ने किमान रक्कम ₹50 लाख ठरवली आहे. अल्टरनेटिव्ह इन्व्हेस्टमेंट फंड (AIF) श्रीमंत गुंतवणूकदारांचे पैसे स्टार्ट-अप, खासगी कंपन्या किंवा गुंतागुंतीच्या धोरणांत गुंतवतो; साधारण किमान ₹1 कोटी असते.\n\nदोघांची SEBI कडे नोंदणी आवश्यक आहे आणि गुंतवणुकीपूर्वी तुम्हाला डिस्क्लोजर डॉक्युमेंट द्यावे लागते. शुल्कात ठराविक वार्षिक रक्कम आणि नफ्याचा हिस्सा असू शकतो, आणि पैसे काढणे संथ किंवा वर्षानुवर्षे बंद असू शकते. बहुतेकांसाठी म्युच्युअल फंड हेच काम जास्त संरक्षणाने आणि कमी खर्चात करतात."
+    },
+    "points": [
+      {
+        "en": "Check the SEBI registration of the PMS or AIF before anything else.",
+        "hi": "सबसे पहले PMS या AIF का SEBI पंजीकरण जाँचें।",
+        "mr": "सर्वात आधी PMS किंवा AIF ची SEBI नोंदणी तपासा."
+      },
+      {
+        "en": "Ask for every fee in writing: fixed fee, profit share, exit load.",
+        "hi": "हर फ़ीस लिखित में माँगें: तय फ़ीस, मुनाफ़े का हिस्सा, निकासी शुल्क।",
+        "mr": "प्रत्येक शुल्क लेखी मागा: ठराविक शुल्क, नफ्याचा हिस्सा, बाहेर पडण्याचे शुल्क."
+      },
+      {
+        "en": "Find out how and when you can take money out.",
+        "hi": "पता करें कि पैसा कैसे और कब निकाल सकते हैं।",
+        "mr": "पैसे कसे आणि केव्हा काढता येतील ते शोधा."
+      },
+      {
+        "en": "Never put in money you might need, or money borrowed to reach the minimum.",
+        "hi": "वह पैसा न डालें जिसकी ज़रूरत पड़ सकती है, या न्यूनतम राशि पूरी करने के लिए उधार लिया पैसा।",
+        "mr": "लागू शकणारे पैसे किंवा किमान रक्कम गाठण्यासाठी घेतलेले कर्ज टाकू नका."
+      }
+    ],
+    "example": {
+      "en": "A relationship manager tells Kiran that a PMS 'beat the market by 20%' last year and asks her to sell her house plot to reach ₹50 lakh. Kiran asks for the SEBI registration, the disclosure document and all fees, and sees that after fees the five-year result was close to a simple index fund. She keeps her plot.",
+      "hi": "एक रिलेशनशिप मैनेजर किरण से कहता है कि एक PMS ने पिछले साल 'बाज़ार को 20% से हराया' और ₹50 लाख पूरे करने के लिए प्लॉट बेचने को कहता है। किरण SEBI पंजीकरण, डिस्क्लोज़र डॉक्यूमेंट और सारी फ़ीस माँगती है, और देखती है कि फ़ीस के बाद पाँच साल का नतीजा एक साधारण इंडेक्स फ़ंड जैसा ही था। वह प्लॉट रखती है।",
+      "mr": "एक रिलेशनशिप मॅनेजर किरणला सांगतो की एका PMS ने गेल्या वर्षी 'बाजाराला 20% ने मागे टाकले' आणि ₹50 लाख पूर्ण करण्यासाठी प्लॉट विकायला सांगतो. किरण SEBI नोंदणी, डिस्क्लोजर डॉक्युमेंट आणि सर्व शुल्क मागते, आणि पाहते की शुल्कानंतर पाच वर्षांचा निकाल साध्या इंडेक्स फंडाइतकाच होता. ती प्लॉट ठेवते."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Read what to check in a PMS or AIF agreement.",
+        "hi": "देखें कि PMS या AIF समझौते में क्या जाँचना है।",
+        "mr": "PMS किंवा AIF करारात काय तपासायचे ते पाहा."
+      },
+      "link": "form:pms-aif-agreement"
+    },
+    "check": {
+      "question": {
+        "en": "What is the minimum investment for a PMS under SEBI rules?",
+        "hi": "SEBI नियमों के तहत PMS में न्यूनतम निवेश कितना है?",
+        "mr": "SEBI नियमांनुसार PMS मध्ये किमान गुंतवणूक किती?"
+      },
+      "options": [
+        {
+          "en": "₹5,000",
+          "hi": "₹5,000",
+          "mr": "₹5,000"
+        },
+        {
+          "en": "₹50 lakh",
+          "hi": "₹50 लाख",
+          "mr": "₹50 लाख"
+        },
+        {
+          "en": "There is no minimum",
+          "hi": "कोई न्यूनतम नहीं",
+          "mr": "किमान मर्यादा नाही"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "PMS is designed for large portfolios, which is why the entry point is so high.",
+        "hi": "PMS बड़े पोर्टफ़ोलियो के लिए बना है, इसलिए शुरुआती राशि इतनी ऊँची है।",
+        "mr": "PMS मोठ्या पोर्टफोलिओसाठी आहे, म्हणून सुरुवातीची रक्कम इतकी जास्त आहे."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.sebi.gov.in/",
+      "https://investor.sebi.gov.in/"
+    ]
+  },
+  {
+    "id": "ppf-explained",
+    "unit": "how-money",
+    "topic": "saving",
+    "icon": "jar",
+    "title": {
+      "en": "PPF: slow, safe and tax-free",
+      "hi": "PPF: धीमा, सुरक्षित और टैक्स-मुक्त",
+      "mr": "PPF: संथ, सुरक्षित आणि करमुक्त"
+    },
+    "summary": {
+      "en": "A 15-year government savings account for steady, long goals.",
+      "hi": "लंबे, स्थिर लक्ष्यों के लिए 15 साल का सरकारी बचत खाता।",
+      "mr": "दीर्घ, स्थिर उद्दिष्टांसाठी 15 वर्षांचे सरकारी बचत खाते."
+    },
+    "body": {
+      "en": "The Public Provident Fund is a savings scheme backed by the Government of India. You can open it at a post office or a bank, put in between ₹500 and ₹1.5 lakh each financial year, and it runs for 15 years. The interest rate is set by the government every quarter, and the interest and the final amount are tax-free.\n\nThe trade-off is time. Your money is locked: you can take a loan against it from the third year and part of it out from the seventh. After 15 years you can close it or extend it in blocks of five years. It suits money for far-off goals, not emergencies.",
+      "hi": "पब्लिक प्रोविडेंट फ़ंड भारत सरकार द्वारा समर्थित बचत योजना है। इसे डाकघर या बैंक में खोला जा सकता है, हर वित्त वर्ष में ₹500 से ₹1.5 लाख तक जमा कर सकते हैं, और यह 15 साल चलता है। ब्याज दर सरकार हर तिमाही तय करती है, और ब्याज व अंतिम रकम टैक्स-मुक्त होते हैं।\n\nबदले में समय देना पड़ता है। पैसा बंद रहता है: तीसरे साल से इस पर लोन ले सकते हैं और सातवें साल से कुछ हिस्सा निकाल सकते हैं। 15 साल बाद इसे बंद कर सकते हैं या पाँच-पाँच साल के लिए बढ़ा सकते हैं। यह दूर के लक्ष्यों के लिए है, आपात स्थिति के लिए नहीं।",
+      "mr": "पब्लिक प्रॉव्हिडंट फंड ही भारत सरकारची हमी असलेली बचत योजना आहे. ती पोस्ट ऑफिस किंवा बँकेत उघडता येते, प्रत्येक आर्थिक वर्षात ₹500 ते ₹1.5 लाख भरता येतात, आणि ती 15 वर्षे चालते. व्याजदर सरकार दर तिमाहीला ठरवते, आणि व्याज व अंतिम रक्कम करमुक्त असते.\n\nत्याबदल्यात वेळ द्यावा लागतो. पैसे बंद राहतात: तिसऱ्या वर्षापासून त्यावर कर्ज घेता येते आणि सातव्या वर्षापासून काही भाग काढता येतो. 15 वर्षांनंतर ते बंद करता येते किंवा पाच-पाच वर्षांनी वाढवता येते. हे दूरच्या उद्दिष्टांसाठी आहे, आणीबाणीसाठी नाही."
+    },
+    "points": [
+      {
+        "en": "Deposit at least ₹500 every financial year, or the account becomes inactive.",
+        "hi": "हर वित्त वर्ष में कम से कम ₹500 जमा करें, वरना खाता निष्क्रिय हो जाता है।",
+        "mr": "प्रत्येक आर्थिक वर्षात किमान ₹500 भरा, नाहीतर खाते निष्क्रिय होते."
+      },
+      {
+        "en": "One person can hold only one PPF account in their own name.",
+        "hi": "एक व्यक्ति अपने नाम पर सिर्फ़ एक PPF खाता रख सकता है।",
+        "mr": "एका व्यक्तीला स्वतःच्या नावावर फक्त एक PPF खाते ठेवता येते."
+      },
+      {
+        "en": "Check the current rate on the government's small savings page; it changes.",
+        "hi": "मौजूदा दर सरकार के लघु बचत पृष्ठ पर देखें; यह बदलती रहती है।",
+        "mr": "सध्याचा दर सरकारच्या अल्प बचत पानावर तपासा; तो बदलत राहतो."
+      },
+      {
+        "en": "Add a nominee the day you open it.",
+        "hi": "खाता खोलने के दिन ही नॉमिनी जोड़ें।",
+        "mr": "खाते उघडतानाच नॉमिनी जोडा."
+      }
+    ],
+    "example": {
+      "en": "Verena sets a standing instruction of ₹1,000 a month into PPF at 26. She barely notices it. At 41 the account matures, the whole amount comes out tax-free, and she extends it for five more years because she does not need it yet.",
+      "hi": "वेरेना 26 की उम्र में PPF में हर महीने ₹1,000 का स्टैंडिंग इंस्ट्रक्शन लगाती है। उसे पता भी नहीं चलता। 41 पर खाता परिपक्व होता है, पूरी रकम टैक्स-मुक्त मिलती है, और वह इसे पाँच साल और बढ़ा देती है क्योंकि अभी ज़रूरत नहीं।",
+      "mr": "वेरेना 26 व्या वर्षी PPF मध्ये दरमहा ₹1,000 चा स्टँडिंग इन्स्ट्रक्शन लावते. तिला जाणवतही नाही. 41 व्या वर्षी खाते परिपक्व होते, संपूर्ण रक्कम करमुक्त मिळते, आणि ती ते आणखी पाच वर्षे वाढवते कारण अजून गरज नाही."
+    },
+    "tryIt": {
+      "text": {
+        "en": "See how to fill a PPF account opening form.",
+        "hi": "देखें कि PPF खाता खोलने का फ़ॉर्म कैसे भरें।",
+        "mr": "PPF खाते उघडण्याचा फॉर्म कसा भरायचा ते पाहा."
+      },
+      "link": "form:ppf-account"
+    },
+    "check": {
+      "question": {
+        "en": "When can you first take part of your PPF money out?",
+        "hi": "PPF से कुछ पैसा सबसे पहले कब निकाल सकते हैं?",
+        "mr": "PPF मधून काही पैसे सर्वात आधी केव्हा काढता येतात?"
+      },
+      "options": [
+        {
+          "en": "Any time",
+          "hi": "कभी भी",
+          "mr": "केव्हाही"
+        },
+        {
+          "en": "From the seventh year",
+          "hi": "सातवें साल से",
+          "mr": "सातव्या वर्षापासून"
+        },
+        {
+          "en": "Only after 30 years",
+          "hi": "सिर्फ़ 30 साल बाद",
+          "mr": "फक्त 30 वर्षांनंतर"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "PPF is built for patience; partial withdrawals start from the seventh financial year.",
+        "hi": "PPF धैर्य के लिए बना है; आंशिक निकासी सातवें वित्त वर्ष से शुरू होती है।",
+        "mr": "PPF संयमासाठी आहे; आंशिक काढणी सातव्या आर्थिक वर्षापासून सुरू होते."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.nsiindia.gov.in/",
+      "https://www.indiapost.gov.in/"
+    ]
+  },
+  {
+    "id": "retirement-accounts",
+    "unit": "how-money",
+    "topic": "retirement",
+    "icon": "umbrella",
+    "title": {
+      "en": "EPF, NPS and APY: your retirement accounts",
+      "hi": "EPF, NPS और APY: आपके रिटायरमेंट खाते",
+      "mr": "EPF, NPS आणि APY: तुमची निवृत्ती खाती"
+    },
+    "summary": {
+      "en": "Three government-backed ways to build a pension, each for different people.",
+      "hi": "पेंशन बनाने के तीन सरकारी रास्ते, हर एक अलग लोगों के लिए।",
+      "mr": "पेन्शन उभारण्याचे तीन सरकारी मार्ग, प्रत्येक वेगळ्या लोकांसाठी."
+    },
+    "body": {
+      "en": "If you work for an organisation covered by the EPFO, 12% of your basic pay goes into the Employees' Provident Fund each month and your employer adds a matching contribution, part of which goes to a pension scheme. Your UAN follows you from job to job, so the account keeps growing.\n\nThe National Pension System (NPS), regulated by PFRDA, is open to any Indian aged 18 to 70. You choose how much goes into shares and bonds. At 60, at least 40% of the corpus must buy an annuity, a monthly pension; the rest can be taken out. The Atal Pension Yojana (APY) is for people aged 18 to 40, mostly in informal work: small monthly payments now for a fixed pension of ₹1,000 to ₹5,000 a month from 60.",
+      "hi": "अगर आप EPFO के दायरे वाले संगठन में काम करते हैं, तो हर महीने मूल वेतन का 12% कर्मचारी भविष्य निधि में जाता है और नियोक्ता भी उतना ही जोड़ता है, जिसका एक हिस्सा पेंशन योजना में जाता है। आपका UAN हर नौकरी में साथ चलता है, इसलिए खाता बढ़ता रहता है।\n\nनेशनल पेंशन सिस्टम (NPS), जिसका नियामक PFRDA है, 18 से 70 साल के किसी भी भारतीय के लिए खुला है। आप तय करते हैं कि कितना शेयरों और कितना बॉन्ड में जाए। 60 पर जमा राशि का कम से कम 40% एन्युटी यानी मासिक पेंशन खरीदने में लगाना होता है; बाकी निकाला जा सकता है। अटल पेंशन योजना (APY) 18 से 40 साल के लोगों के लिए है, ज़्यादातर असंगठित काम में: अभी छोटी मासिक किस्तें, और 60 से हर महीने ₹1,000 से ₹5,000 की तय पेंशन।",
+      "mr": "तुम्ही EPFO च्या कक्षेतील संस्थेत काम करत असाल, तर दरमहा मूळ वेतनाचे 12% कर्मचारी भविष्य निधीत जाते आणि मालकही तेवढेच भरतो, ज्याचा काही भाग पेन्शन योजनेत जातो. तुमचा UAN प्रत्येक नोकरीत सोबत येतो, त्यामुळे खाते वाढत राहते.\n\nनॅशनल पेन्शन सिस्टम (NPS), ज्याचे नियामक PFRDA आहे, 18 ते 70 वयाच्या कोणत्याही भारतीयासाठी खुली आहे. किती शेअरमध्ये आणि किती बाँडमध्ये जावे हे तुम्ही ठरवता. 60 व्या वर्षी जमा रकमेपैकी किमान 40% अॅन्युइटी म्हणजे मासिक पेन्शन घेण्यासाठी वापरावे लागते; उरलेले काढता येते. अटल पेन्शन योजना (APY) 18 ते 40 वयोगटासाठी आहे, बहुतेक असंघटित कामातील लोकांसाठी: आता छोटे मासिक हप्ते, आणि 60 पासून दरमहा ₹1,000 ते ₹5,000 ची ठराविक पेन्शन."
+    },
+    "points": [
+      {
+        "en": "Check your EPF passbook on the EPFO portal using your UAN.",
+        "hi": "अपने UAN से EPFO पोर्टल पर EPF पासबुक देखें।",
+        "mr": "तुमच्या UAN ने EPFO पोर्टलवर EPF पासबुक पाहा."
+      },
+      {
+        "en": "When you change jobs, transfer your EPF instead of withdrawing it.",
+        "hi": "नौकरी बदलने पर EPF निकालने के बजाय ट्रांसफ़र करें।",
+        "mr": "नोकरी बदलताना EPF काढण्याऐवजी ट्रान्सफर करा."
+      },
+      {
+        "en": "NPS lets you start small and add more as income grows.",
+        "hi": "NPS में छोटी रकम से शुरू करके आमदनी बढ़ने पर ज़्यादा जोड़ सकते हैं।",
+        "mr": "NPS मध्ये छोट्या रकमेपासून सुरू करून उत्पन्न वाढल्यावर जास्त जोडता येते."
+      },
+      {
+        "en": "Starting in your twenties matters more than the amount you start with.",
+        "hi": "बीस की उम्र में शुरू करना, शुरुआती रकम से ज़्यादा मायने रखता है।",
+        "mr": "विशीत सुरुवात करणे हे सुरुवातीच्या रकमेपेक्षा जास्त महत्त्वाचे आहे."
+      }
+    ],
+    "example": {
+      "en": "Verena changes jobs at 30 and is tempted to withdraw her EPF for a holiday. She transfers it instead using her UAN, and opens an NPS account with ₹2,000 a month. At 53 she sees that the money she did not touch at 30 is now the largest part of her retirement plan.",
+      "hi": "30 पर नौकरी बदलते समय वेरेना छुट्टी के लिए EPF निकालने का सोचती है। इसके बजाय वह UAN से उसे ट्रांसफ़र करती है, और ₹2,000 महीने से NPS खाता खोलती है। 53 पर उसे दिखता है कि 30 पर जो पैसा उसने नहीं छुआ, वही अब उसकी रिटायरमेंट योजना का सबसे बड़ा हिस्सा है।",
+      "mr": "30 व्या वर्षी नोकरी बदलताना वेरेनाला सुट्टीसाठी EPF काढावेसे वाटते. त्याऐवजी ती UAN वापरून ते ट्रान्सफर करते, आणि दरमहा ₹2,000 ने NPS खाते उघडते. 53 व्या वर्षी तिला दिसते की 30 व्या वर्षी न शिवलेले पैसे आता तिच्या निवृत्ती योजनेचा सर्वात मोठा भाग आहेत."
+    },
+    "tryIt": {
+      "text": {
+        "en": "See what the NPS account form asks for.",
+        "hi": "देखें कि NPS खाते का फ़ॉर्म क्या पूछता है।",
+        "mr": "NPS खात्याचा फॉर्म काय विचारतो ते पाहा."
+      },
+      "link": "form:nps-account"
+    },
+    "check": {
+      "question": {
+        "en": "What happens to your EPF when you change jobs?",
+        "hi": "नौकरी बदलने पर आपके EPF का क्या होता है?",
+        "mr": "नोकरी बदलल्यावर तुमच्या EPF चे काय होते?"
+      },
+      "options": [
+        {
+          "en": "It is lost",
+          "hi": "वह डूब जाता है",
+          "mr": "ते बुडते"
+        },
+        {
+          "en": "You can transfer it using your UAN",
+          "hi": "आप UAN से उसे ट्रांसफ़र कर सकते हैं",
+          "mr": "UAN वापरून ते ट्रान्सफर करता येते"
+        },
+        {
+          "en": "It must be withdrawn",
+          "hi": "उसे निकालना ही पड़ता है",
+          "mr": "ते काढावेच लागते"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "Your UAN stays the same across jobs, so the savings can keep compounding.",
+        "hi": "UAN हर नौकरी में वही रहता है, इसलिए बचत बढ़ती रहती है।",
+        "mr": "UAN प्रत्येक नोकरीत तोच राहतो, त्यामुळे बचत वाढत राहते."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.epfindia.gov.in/",
+      "https://www.pfrda.org.in/"
+    ]
+  },
+  {
+    "id": "govt-bonds",
+    "unit": "how-money",
+    "topic": "investing",
+    "icon": "landmark",
+    "title": {
+      "en": "Government bonds: lending to the government",
+      "hi": "सरकारी बॉन्ड: सरकार को उधार देना",
+      "mr": "सरकारी बाँड: सरकारला कर्ज देणे"
+    },
+    "summary": {
+      "en": "You lend; the government pays interest and returns the money on a fixed date.",
+      "hi": "आप उधार देते हैं; सरकार ब्याज देती है और तय तारीख पर पैसा लौटाती है।",
+      "mr": "तुम्ही कर्ज देता; सरकार व्याज देते आणि ठरलेल्या तारखेला पैसे परत करते."
+    },
+    "body": {
+      "en": "When the government needs to borrow, it sells securities: Treasury Bills for under a year, and longer bonds called government securities (G-Secs), plus State Development Loans from states. You lend money, receive interest, and get the full amount back at maturity. The chance of the Government of India not repaying is considered the lowest of any borrower in the country.\n\nOrdinary people can buy them directly through the RBI Retail Direct portal, without a broker. Bonds are not risk-free in one way: if you sell before maturity, the price you get depends on interest rates that day and can be lower than what you paid.",
+      "hi": "जब सरकार को उधार चाहिए, तो वह प्रतिभूतियाँ बेचती है: एक साल से कम के लिए ट्रेज़री बिल, लंबे समय के लिए सरकारी प्रतिभूतियाँ (G-Sec), और राज्यों के स्टेट डेवलपमेंट लोन। आप पैसा उधार देते हैं, ब्याज पाते हैं, और परिपक्वता पर पूरी रकम वापस मिलती है। भारत सरकार के न लौटाने की संभावना देश में किसी भी उधारकर्ता से सबसे कम मानी जाती है।\n\nआम लोग इन्हें बिना ब्रोकर के सीधे RBI रिटेल डायरेक्ट पोर्टल से खरीद सकते हैं। एक मायने में बॉन्ड जोखिम-मुक्त नहीं: परिपक्वता से पहले बेचें तो उस दिन की ब्याज दरों के हिसाब से मिलने वाली कीमत आपकी खरीद से कम हो सकती है।",
+      "mr": "सरकारला कर्ज हवे असते तेव्हा ती रोखे विकते: एका वर्षापेक्षा कमी काळासाठी ट्रेझरी बिल, दीर्घ काळासाठी सरकारी रोखे (G-Sec), आणि राज्यांचे स्टेट डेव्हलपमेंट लोन. तुम्ही पैसे कर्जाऊ देता, व्याज मिळवता, आणि मुदतपूर्तीला पूर्ण रक्कम परत मिळते. भारत सरकारने परतफेड न करण्याची शक्यता देशातील कोणत्याही कर्जदारापेक्षा सर्वात कमी मानली जाते.\n\nसामान्य लोक ब्रोकरशिवाय थेट RBI रिटेल डायरेक्ट पोर्टलवरून ते घेऊ शकतात. एका अर्थाने बाँड जोखीममुक्त नाहीत: मुदतपूर्तीपूर्वी विकल्यास त्या दिवशीच्या व्याजदरानुसार मिळणारी किंमत तुम्ही दिलेल्यापेक्षा कमी असू शकते."
+    },
+    "points": [
+      {
+        "en": "Hold to maturity if you want the full amount back with certainty.",
+        "hi": "पूरी रकम पक्के तौर पर वापस चाहिए तो परिपक्वता तक रखें।",
+        "mr": "पूर्ण रक्कम खात्रीने परत हवी असेल तर मुदतपूर्तीपर्यंत ठेवा."
+      },
+      {
+        "en": "Use only the official RBI Retail Direct website, never a link from a message.",
+        "hi": "सिर्फ़ आधिकारिक RBI रिटेल डायरेक्ट वेबसाइट इस्तेमाल करें, संदेश वाला लिंक नहीं।",
+        "mr": "फक्त अधिकृत RBI रिटेल डायरेक्ट वेबसाइट वापरा, संदेशातील लिंक नाही."
+      },
+      {
+        "en": "Interest is taxed as income in most cases.",
+        "hi": "ज़्यादातर मामलों में ब्याज पर आय के रूप में टैक्स लगता है।",
+        "mr": "बहुतेक बाबतीत व्याजावर उत्पन्न म्हणून कर लागतो."
+      },
+      {
+        "en": "Bonds steady a plan; they are not meant to make you rich quickly.",
+        "hi": "बॉन्ड योजना को स्थिर करते हैं; ये जल्दी अमीर बनाने के लिए नहीं।",
+        "mr": "बाँड योजनेला स्थैर्य देतात; ते पटकन श्रीमंत करण्यासाठी नाहीत."
+      }
+    ],
+    "example": {
+      "en": "At 44 Verena wants part of her savings to be steady while the rest stays in equity funds. She opens an RBI Retail Direct account and buys a government bond that matures when her daughter turns 18. She does not need to watch its price; she plans to hold it to the end.",
+      "hi": "44 पर वेरेना चाहती है कि उसकी बचत का एक हिस्सा स्थिर रहे जबकि बाकी इक्विटी फ़ंड में रहे। वह RBI रिटेल डायरेक्ट खाता खोलती है और ऐसा सरकारी बॉन्ड खरीदती है जो बेटी के 18 होने पर परिपक्व होगा। उसे कीमत देखने की ज़रूरत नहीं; वह इसे अंत तक रखेगी।",
+      "mr": "44 व्या वर्षी वेरेनाला बचतीचा एक भाग स्थिर हवा आहे आणि उरलेला इक्विटी फंडात. ती RBI रिटेल डायरेक्ट खाते उघडते आणि मुलगी 18 ची झाल्यावर मुदत संपणारा सरकारी बाँड घेते. तिला किंमत पाहण्याची गरज नाही; ती तो शेवटपर्यंत ठेवणार आहे."
+    },
+    "tryIt": {
+      "text": {
+        "en": "See what RBI Retail Direct registration asks for.",
+        "hi": "देखें कि RBI रिटेल डायरेक्ट पंजीकरण क्या पूछता है।",
+        "mr": "RBI रिटेल डायरेक्ट नोंदणी काय विचारते ते पाहा."
+      },
+      "link": "form:rbi-retail-direct"
+    },
+    "check": {
+      "question": {
+        "en": "What can make a bond lose value?",
+        "hi": "बॉन्ड की कीमत किस वजह से घट सकती है?",
+        "mr": "बाँडची किंमत कशामुळे कमी होऊ शकते?"
+      },
+      "options": [
+        {
+          "en": "Selling before maturity when rates have risen",
+          "hi": "दरें बढ़ने पर परिपक्वता से पहले बेचना",
+          "mr": "दर वाढल्यावर मुदतपूर्तीपूर्वी विकणे"
+        },
+        {
+          "en": "Holding it to maturity",
+          "hi": "परिपक्वता तक रखना",
+          "mr": "मुदतपूर्तीपर्यंत ठेवणे"
+        },
+        {
+          "en": "Receiving interest",
+          "hi": "ब्याज पाना",
+          "mr": "व्याज मिळणे"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "New bonds then pay more, so buyers pay less for older ones; holding to the end avoids this.",
+        "hi": "तब नए बॉन्ड ज़्यादा देते हैं, इसलिए पुराने के लिए खरीदार कम देते हैं; अंत तक रखने से यह नहीं होता।",
+        "mr": "तेव्हा नवे बाँड जास्त देतात, म्हणून जुन्यासाठी खरेदीदार कमी देतात; शेवटपर्यंत ठेवल्यास हे टळते."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.rbi.org.in/"
+    ]
+  },
+  {
+    "id": "cheques",
+    "unit": "bank-paper",
+    "topic": "banking",
+    "icon": "pen",
+    "title": {
+      "en": "Cheques: writing one that cannot be misused",
+      "hi": "चेक: ऐसा लिखें जिसका दुरुपयोग न हो",
+      "mr": "चेक: गैरवापर होणार नाही असा लिहा"
+    },
+    "summary": {
+      "en": "A cheque is an order to your bank. Every blank space is an opportunity for someone else.",
+      "hi": "चेक आपके बैंक को दिया आदेश है। हर खाली जगह किसी और के लिए मौका है।",
+      "mr": "चेक म्हणजे तुमच्या बँकेला दिलेला आदेश. प्रत्येक रिकामी जागा दुसऱ्यासाठी संधी असते."
+    },
+    "body": {
+      "en": "A cheque tells your bank to pay a named person a stated amount from your account. A bearer cheque can be cashed by whoever holds it. Striking out 'or bearer' makes it an order cheque. Drawing two lines across the corner makes it crossed, so it can only go into a bank account, and writing 'A/c Payee' between the lines means only the named person's account.\n\nA cheque is valid for three months from its date. If it bounces for lack of funds, the person who wrote it can face a criminal case under Section 138 of the Negotiable Instruments Act, as well as bank charges. For large cheques your bank may ask you to confirm the details in advance through Positive Pay.",
+      "hi": "चेक आपके बैंक से कहता है कि आपके खाते से एक नामित व्यक्ति को तय रकम दे। बेयरर चेक जिसके हाथ में हो, वह भुना सकता है। 'or bearer' काटने से यह ऑर्डर चेक बन जाता है। कोने पर दो लकीरें खींचने से यह क्रॉस्ड हो जाता है, यानी सिर्फ़ बैंक खाते में जा सकता है, और लकीरों के बीच 'A/c Payee' लिखने से सिर्फ़ नामित व्यक्ति के खाते में।\n\nचेक अपनी तारीख से तीन महीने तक मान्य रहता है। पैसे न होने से बाउंस हो जाए तो लिखने वाले पर बैंक शुल्क के साथ नेगोशिएबल इंस्ट्रूमेंट्स एक्ट की धारा 138 के तहत आपराधिक मामला हो सकता है। बड़े चेक के लिए बैंक पॉज़िटिव पे के ज़रिए पहले से विवरण पुष्टि करने को कह सकता है।",
+      "mr": "चेक तुमच्या बँकेला सांगतो की तुमच्या खात्यातून ठराविक व्यक्तीला ठराविक रक्कम द्यावी. बेअरर चेक ज्याच्या हातात असेल तो वटवू शकतो. 'or bearer' खोडल्यास तो ऑर्डर चेक होतो. कोपऱ्यावर दोन रेषा काढल्यास तो क्रॉस्ड होतो, म्हणजे फक्त बँक खात्यातच जाऊ शकतो, आणि रेषांमध्ये 'A/c Payee' लिहिल्यास फक्त नावाच्या व्यक्तीच्याच खात्यात.\n\nचेक त्याच्या तारखेपासून तीन महिने वैध असतो. पैसे नसल्यामुळे तो परत आला तर लिहिणाऱ्यावर बँक शुल्कासह निगोशिएबल इन्स्ट्रुमेंट्स अॅक्टच्या कलम 138 खाली फौजदारी खटला होऊ शकतो. मोठ्या चेकसाठी बँक पॉझिटिव्ह पेद्वारे आधीच तपशील निश्चित करायला सांगू शकते."
+    },
+    "points": [
+      {
+        "en": "Write the amount in words right after 'Rupees' and end with 'only', leaving no gaps.",
+        "hi": "रकम शब्दों में 'Rupees' के ठीक बाद लिखें और अंत में 'only' लिखें, कोई जगह न छोड़ें।",
+        "mr": "रक्कम अक्षरी 'Rupees' नंतर लगेच लिहा आणि शेवटी 'only' लिहा, जागा सोडू नका."
+      },
+      {
+        "en": "Cross it and write 'A/c Payee' unless the person must cash it at the counter.",
+        "hi": "जब तक काउंटर पर भुनाना ज़रूरी न हो, क्रॉस करें और 'A/c Payee' लिखें।",
+        "mr": "काउंटरवर वटवणे आवश्यक नसेल तर क्रॉस करा आणि 'A/c Payee' लिहा."
+      },
+      {
+        "en": "Never sign a blank cheque, and note each cheque in the counterfoil.",
+        "hi": "कोरे चेक पर कभी दस्तखत न करें, और हर चेक काउंटरफ़ॉयल में लिखें।",
+        "mr": "कोऱ्या चेकवर कधीही सही करू नका, आणि प्रत्येक चेक काउंटरफॉइलमध्ये नोंदवा."
+      },
+      {
+        "en": "Keep enough balance on the date the cheque can be presented.",
+        "hi": "जिस तारीख को चेक पेश हो सकता है, उस दिन पर्याप्त पैसा रखें।",
+        "mr": "चेक सादर होऊ शकतो त्या तारखेला पुरेशी शिल्लक ठेवा."
+      }
+    ],
+    "example": {
+      "en": "Verena pays her landlord's security deposit of ₹30,000 by cheque. She writes 'Rupees Thirty Thousand only', crosses it, adds 'A/c Payee', and notes the cheque number. Two days later she sees it cleared in her statement. Nobody could have changed the amount or cashed it in another name.",
+      "hi": "वेरेना मकान मालिक को ₹30,000 की सिक्योरिटी डिपॉज़िट चेक से देती है। वह 'Rupees Thirty Thousand only' लिखती है, क्रॉस करती है, 'A/c Payee' जोड़ती है और चेक नंबर लिख लेती है। दो दिन बाद स्टेटमेंट में चेक क्लियर दिखता है। कोई रकम नहीं बदल सकता था, न किसी और नाम पर भुना सकता था।",
+      "mr": "वेरेना घरमालकाला ₹30,000 ची अनामत रक्कम चेकने देते. ती 'Rupees Thirty Thousand only' लिहिते, क्रॉस करते, 'A/c Payee' जोडते आणि चेक क्रमांक नोंदवते. दोन दिवसांनी स्टेटमेंटमध्ये चेक क्लिअर दिसतो. कोणीही रक्कम बदलू शकत नव्हते किंवा दुसऱ्या नावावर वटवू शकत नव्हते."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Learn to fill each part of a cheque leaf.",
+        "hi": "चेक के हर हिस्से को भरना सीखें।",
+        "mr": "चेकचा प्रत्येक भाग भरायला शिका."
+      },
+      "link": "form:cheque"
+    },
+    "check": {
+      "question": {
+        "en": "What does writing 'A/c Payee' between the crossing lines do?",
+        "hi": "क्रॉसिंग लकीरों के बीच 'A/c Payee' लिखने से क्या होता है?",
+        "mr": "क्रॉसिंग रेषांमध्ये 'A/c Payee' लिहिल्याने काय होते?"
+      },
+      "options": [
+        {
+          "en": "Makes it cashable by anyone",
+          "hi": "कोई भी भुना सकता है",
+          "mr": "कोणीही वटवू शकतो"
+        },
+        {
+          "en": "Pays only into the named person's account",
+          "hi": "सिर्फ़ नामित व्यक्ति के खाते में जाता है",
+          "mr": "फक्त नावाच्या व्यक्तीच्याच खात्यात जातो"
+        },
+        {
+          "en": "Makes it valid for a year",
+          "hi": "एक साल तक मान्य बनाता है",
+          "mr": "एक वर्ष वैध करतो"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "It stops anyone else from depositing the cheque, even if it is lost or stolen.",
+        "hi": "खो जाने या चोरी होने पर भी कोई और इसे जमा नहीं कर सकता।",
+        "mr": "हरवला किंवा चोरीला गेला तरी दुसरा कोणी तो जमा करू शकत नाही."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/"
+    ]
+  },
+  {
+    "id": "demand-draft",
+    "unit": "bank-paper",
+    "topic": "banking",
+    "icon": "receipt",
+    "title": {
+      "en": "Demand drafts and pay orders",
+      "hi": "डिमांड ड्राफ़्ट और पे ऑर्डर",
+      "mr": "डिमांड ड्राफ्ट आणि पे ऑर्डर"
+    },
+    "summary": {
+      "en": "A cheque from the bank itself, paid for in advance, so it cannot bounce.",
+      "hi": "बैंक का अपना चेक, पहले से चुकाया हुआ, इसलिए बाउंस नहीं होता।",
+      "mr": "बँकेचाच चेक, आधीच पैसे भरलेला, म्हणून तो परत येत नाही."
+    },
+    "body": {
+      "en": "A demand draft (DD) is a payment instrument issued by a bank after you pay it the money. Because the bank has already been paid, a DD cannot bounce, which is why colleges, landlords and government offices often ask for one. It names the person to be paid and the city where it is payable. A pay order or banker's cheque works the same way within the same city.\n\nYou fill a request form, pay by cash or from your account, and the bank charges a small commission. For ₹50,000 or more the bank will issue it only from your account, not against cash. A DD is generally valid for three months. Keep the receipt: if it is lost, you will need it to cancel the DD and get your money back.",
+      "hi": "डिमांड ड्राफ़्ट (DD) वह भुगतान साधन है जो बैंक आपसे पैसा लेकर जारी करता है। बैंक को पैसा पहले ही मिल चुका है, इसलिए DD बाउंस नहीं हो सकता, इसी कारण कॉलेज, मकान मालिक और सरकारी दफ़्तर अक्सर DD माँगते हैं। इसमें पाने वाले का नाम और वह शहर लिखा होता है जहाँ यह देय है। पे ऑर्डर या बैंकर्स चेक उसी शहर में इसी तरह काम करता है।\n\nआप एक अनुरोध फ़ॉर्म भरते हैं, नकद या खाते से भुगतान करते हैं, और बैंक थोड़ा कमीशन लेता है। ₹50,000 या उससे ज़्यादा का DD बैंक सिर्फ़ आपके खाते से बनाता है, नकद से नहीं। DD आम तौर पर तीन महीने मान्य रहता है। रसीद सँभालें: DD खो जाए तो रद्द कराने और पैसा वापस पाने के लिए इसकी ज़रूरत होगी।",
+      "mr": "डिमांड ड्राफ्ट (DD) हे बँक तुमच्याकडून पैसे घेऊन देते ते पेमेंट साधन आहे. बँकेला पैसे आधीच मिळालेले असतात, म्हणून DD परत येऊ शकत नाही, त्यामुळेच कॉलेज, घरमालक आणि सरकारी कार्यालये अनेकदा DD मागतात. त्यात पैसे घेणाऱ्याचे नाव आणि तो कुठल्या शहरात देय आहे ते असते. पे ऑर्डर किंवा बँकर्स चेक त्याच शहरात असेच काम करतो.\n\nतुम्ही विनंती फॉर्म भरता, रोख किंवा खात्यातून पैसे देता, आणि बँक थोडे कमिशन घेते. ₹50,000 किंवा त्याहून जास्त रकमेचा DD बँक फक्त तुमच्या खात्यातूनच देते, रोख रकमेवर नाही. DD साधारणपणे तीन महिने वैध असतो. पावती जपून ठेवा: DD हरवल्यास तो रद्द करून पैसे परत मिळवण्यासाठी ती लागेल."
+    },
+    "points": [
+      {
+        "en": "Spell the payee's name exactly as the receiver asked, or it may be refused.",
+        "hi": "पाने वाले का नाम ठीक वैसा लिखें जैसा माँगा गया, वरना लौटाया जा सकता है।",
+        "mr": "घेणाऱ्याचे नाव मागितल्याप्रमाणेच लिहा, नाहीतर तो नाकारला जाऊ शकतो."
+      },
+      {
+        "en": "Write the city where it will be deposited, not where you live.",
+        "hi": "वह शहर लिखें जहाँ यह जमा होगा, जहाँ आप रहते हैं वह नहीं।",
+        "mr": "तो जिथे जमा होणार ते शहर लिहा, तुम्ही राहता ते नाही."
+      },
+      {
+        "en": "Keep the counterfoil and DD number until the payment is confirmed.",
+        "hi": "भुगतान पक्का होने तक काउंटरफ़ॉयल और DD नंबर रखें।",
+        "mr": "पेमेंट निश्चित होईपर्यंत काउंटरफॉइल आणि DD क्रमांक ठेवा."
+      },
+      {
+        "en": "Where NEFT, RTGS or UPI are accepted, they are quicker and cheaper.",
+        "hi": "जहाँ NEFT, RTGS या UPI चलता है, वे तेज़ और सस्ते हैं।",
+        "mr": "जिथे NEFT, RTGS किंवा UPI चालते, ते जलद आणि स्वस्त आहेत."
+      }
+    ],
+    "example": {
+      "en": "Verena's college asks for a ₹45,000 DD in favour of 'The Registrar, Pune University', payable at Pune. She fills the request form at her branch, pays from her account, and gets the DD with a counterfoil. When the college loses it, her DD number and receipt let the bank cancel it and issue a new one.",
+      "hi": "वेरेना का कॉलेज 'The Registrar, Pune University' के नाम पुणे में देय ₹45,000 का DD माँगता है। वह शाखा में अनुरोध फ़ॉर्म भरती है, खाते से भुगतान करती है, और काउंटरफ़ॉयल के साथ DD लेती है। जब कॉलेज इसे खो देता है, तो उसके DD नंबर और रसीद से बैंक इसे रद्द करके नया जारी कर देता है।",
+      "mr": "वेरेनाचे कॉलेज 'The Registrar, Pune University' यांच्या नावे पुण्यात देय ₹45,000 चा DD मागते. ती शाखेत विनंती फॉर्म भरते, खात्यातून पैसे देते, आणि काउंटरफॉइलसह DD घेते. कॉलेजकडून तो हरवतो, तेव्हा तिचा DD क्रमांक आणि पावती वापरून बँक तो रद्द करून नवा देते."
+    },
+    "tryIt": {
+      "text": {
+        "en": "See how to fill a demand draft request form.",
+        "hi": "देखें कि डिमांड ड्राफ़्ट अनुरोध फ़ॉर्म कैसे भरें।",
+        "mr": "डिमांड ड्राफ्ट विनंती फॉर्म कसा भरायचा ते पाहा."
+      },
+      "link": "form:demand-draft"
+    },
+    "check": {
+      "question": {
+        "en": "Why can a demand draft not bounce?",
+        "hi": "डिमांड ड्राफ़्ट बाउंस क्यों नहीं हो सकता?",
+        "mr": "डिमांड ड्राफ्ट परत का येऊ शकत नाही?"
+      },
+      "options": [
+        {
+          "en": "The bank was paid before issuing it",
+          "hi": "जारी करने से पहले बैंक को पैसा मिल चुका है",
+          "mr": "देण्यापूर्वीच बँकेला पैसे मिळालेले असतात"
+        },
+        {
+          "en": "It has no expiry",
+          "hi": "इसकी कोई समय-सीमा नहीं",
+          "mr": "त्याला मुदत नसते"
+        },
+        {
+          "en": "It is signed by the RBI",
+          "hi": "इस पर RBI के दस्तखत होते हैं",
+          "mr": "त्यावर RBI ची सही असते"
+        }
+      ],
+      "answer": 0,
+      "why": {
+        "en": "The money leaves your hands first, so the bank is only paying what it already holds.",
+        "hi": "पैसा पहले आपसे जाता है, इसलिए बैंक वही देता है जो उसके पास पहले से है।",
+        "mr": "पैसे आधी तुमच्याकडून जातात, म्हणून बँक जे आधीच तिच्याकडे आहे तेच देते."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.rbi.org.in/"
+    ]
+  },
+  {
+    "id": "rbi-explained",
+    "unit": "bank-paper",
+    "topic": "banking",
+    "icon": "building",
+    "title": {
+      "en": "What the RBI does for you",
+      "hi": "RBI आपके लिए क्या करता है",
+      "mr": "RBI तुमच्यासाठी काय करते"
+    },
+    "summary": {
+      "en": "The banks' bank: it prints the notes, sets the key rate and watches every lender.",
+      "hi": "बैंकों का बैंक: यह नोट छापता है, मुख्य दर तय करता है और हर कर्जदाता पर नज़र रखता है।",
+      "mr": "बँकांची बँक: ती नोटा छापते, मुख्य दर ठरवते आणि प्रत्येक कर्जदात्यावर लक्ष ठेवते."
+    },
+    "body": {
+      "en": "The Reserve Bank of India is the country's central bank. It issues currency notes, decides the repo rate (the rate at which it lends to banks) through its Monetary Policy Committee, and licenses and supervises banks and non-bank lenders. It also manages the government's borrowing and India's foreign exchange.\n\nThe RBI does not open accounts for the public or give personal loans, so a call or message 'from the RBI' asking for your details is a scam. What it does give you is a complaint route: if your bank, NBFC or payment app does not solve a complaint within 30 days, or you are unhappy with the reply, you can complain free of cost to the RBI Ombudsman at cms.rbi.org.in.",
+      "hi": "भारतीय रिज़र्व बैंक देश का केंद्रीय बैंक है। यह नोट जारी करता है, अपनी मौद्रिक नीति समिति के ज़रिए रेपो दर (जिस दर पर यह बैंकों को उधार देता है) तय करता है, और बैंकों व गैर-बैंक कर्जदाताओं को लाइसेंस देकर उन पर नज़र रखता है। यह सरकार के कर्ज़ और देश की विदेशी मुद्रा का प्रबंधन भी करता है।\n\nRBI आम लोगों के खाते नहीं खोलता और निजी लोन नहीं देता, इसलिए 'RBI से' आया कॉल या संदेश जो आपकी जानकारी माँगे, धोखा है। यह आपको शिकायत का रास्ता देता है: अगर आपका बैंक, NBFC या भुगतान ऐप 30 दिन में शिकायत हल न करे, या जवाब से आप संतुष्ट न हों, तो cms.rbi.org.in पर RBI लोकपाल से मुफ़्त शिकायत कर सकते हैं।",
+      "mr": "भारतीय रिझर्व्ह बँक ही देशाची मध्यवर्ती बँक आहे. ती चलनी नोटा जारी करते, तिच्या पतधोरण समितीमार्फत रेपो दर (ज्या दराने ती बँकांना कर्ज देते) ठरवते, आणि बँका व बिगर-बँक कर्जदात्यांना परवाना देऊन त्यांचे पर्यवेक्षण करते. ती सरकारचे कर्ज आणि देशाचे परकीय चलनही सांभाळते.\n\nRBI सामान्य लोकांची खाती उघडत नाही किंवा वैयक्तिक कर्ज देत नाही, म्हणून तुमची माहिती मागणारा 'RBI कडून' आलेला कॉल किंवा संदेश फसवणूक आहे. ती तुम्हाला तक्रारीचा मार्ग देते: तुमची बँक, NBFC किंवा पेमेंट अॅप 30 दिवसांत तक्रार सोडवत नसेल, किंवा उत्तराने समाधान झाले नसेल, तर cms.rbi.org.in वर RBI लोकपालाकडे मोफत तक्रार करता येते."
+    },
+    "points": [
+      {
+        "en": "When the repo rate goes up, loan interest usually rises too, and deposit rates may follow.",
+        "hi": "रेपो दर बढ़ने पर आम तौर पर लोन का ब्याज भी बढ़ता है, और जमा दरें भी बढ़ सकती हैं।",
+        "mr": "रेपो दर वाढल्यावर साधारणपणे कर्जाचे व्याजही वाढते, आणि ठेवींचे दरही वाढू शकतात."
+      },
+      {
+        "en": "Check whether a lender or app is RBI-regulated on the RBI's website before borrowing.",
+        "hi": "उधार लेने से पहले RBI की वेबसाइट पर देखें कि कर्जदाता या ऐप RBI के दायरे में है या नहीं।",
+        "mr": "कर्ज घेण्यापूर्वी RBI च्या वेबसाइटवर कर्जदाता किंवा अॅप RBI नियमनाखाली आहे का ते तपासा."
+      },
+      {
+        "en": "Complain to your bank first and keep the complaint number.",
+        "hi": "पहले अपने बैंक से शिकायत करें और शिकायत संख्या रखें।",
+        "mr": "आधी तुमच्या बँकेकडे तक्रार करा आणि तक्रार क्रमांक ठेवा."
+      },
+      {
+        "en": "The RBI Ombudsman charges nothing and needs no lawyer.",
+        "hi": "RBI लोकपाल कोई शुल्क नहीं लेता और वकील की ज़रूरत नहीं।",
+        "mr": "RBI लोकपाल शुल्क घेत नाही आणि वकिलाची गरज नसते."
+      }
+    ],
+    "example": {
+      "en": "Verena's bank charges her ₹590 for 'card replacement' she never asked for. She complains to the bank and gets no reply in 30 days. She files on cms.rbi.org.in with her complaint number and statement. Within weeks the bank reverses the charge.",
+      "hi": "वेरेना का बैंक उससे बिना माँगे 'कार्ड रिप्लेसमेंट' के ₹590 काट लेता है। वह बैंक से शिकायत करती है और 30 दिन में जवाब नहीं आता। वह शिकायत संख्या और स्टेटमेंट के साथ cms.rbi.org.in पर शिकायत दर्ज करती है। कुछ हफ़्तों में बैंक शुल्क लौटा देता है।",
+      "mr": "वेरेनाची बँक तिने न मागितलेल्या 'कार्ड रिप्लेसमेंट' साठी ₹590 कापते. ती बँकेकडे तक्रार करते आणि 30 दिवसांत उत्तर येत नाही. ती तक्रार क्रमांक आणि स्टेटमेंटसह cms.rbi.org.in वर तक्रार नोंदवते. काही आठवड्यांत बँक शुल्क परत करते."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Play the chapter where Verena takes a wrong charge to the RBI Ombudsman.",
+        "hi": "वह अध्याय खेलें जिसमें वेरेना गलत शुल्क की शिकायत RBI लोकपाल से करती है।",
+        "mr": "वेरेना चुकीच्या शुल्काची तक्रार RBI लोकपालाकडे करते तो अध्याय खेळा."
+      },
+      "link": "episode:rbi-ombudsman"
+    },
+    "check": {
+      "question": {
+        "en": "Someone calls 'from the RBI' to verify your account. What is it?",
+        "hi": "कोई 'RBI से' आपका खाता सत्यापित करने के लिए कॉल करता है। यह क्या है?",
+        "mr": "कोणी 'RBI कडून' तुमचे खाते पडताळण्यासाठी कॉल करतो. हे काय आहे?"
+      },
+      "options": [
+        {
+          "en": "A routine RBI check",
+          "hi": "RBI की सामान्य जाँच",
+          "mr": "RBI ची नेहमीची तपासणी"
+        },
+        {
+          "en": "A scam",
+          "hi": "धोखा",
+          "mr": "फसवणूक"
+        },
+        {
+          "en": "A new account offer",
+          "hi": "नए खाते का ऑफ़र",
+          "mr": "नव्या खात्याची ऑफर"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "The RBI does not hold accounts for the public, so it never calls to verify one.",
+        "hi": "RBI आम लोगों के खाते नहीं रखता, इसलिए वह कभी खाता सत्यापित करने के लिए कॉल नहीं करता।",
+        "mr": "RBI सामान्य लोकांची खाती ठेवत नाही, म्हणून ती खाते पडताळण्यासाठी कधीही कॉल करत नाही."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.rbi.org.in/",
+      "https://cms.rbi.org.in/"
+    ]
+  },
+  {
+    "id": "kinds-of-banks",
+    "unit": "bank-paper",
+    "topic": "banking",
+    "icon": "landmark",
+    "title": {
+      "en": "Kinds of banks, and how safe your deposit is",
+      "hi": "बैंकों के प्रकार, और आपकी जमा कितनी सुरक्षित है",
+      "mr": "बँकांचे प्रकार, आणि तुमची ठेव किती सुरक्षित आहे"
+    },
+    "summary": {
+      "en": "Public, private, small finance, payments and cooperative banks are not all the same.",
+      "hi": "सरकारी, निजी, स्मॉल फ़ाइनेंस, पेमेंट्स और सहकारी बैंक एक जैसे नहीं।",
+      "mr": "सरकारी, खासगी, स्मॉल फायनान्स, पेमेंट्स आणि सहकारी बँका सारख्या नसतात."
+    },
+    "body": {
+      "en": "Commercial banks include public sector banks (mostly owned by the government), private banks, foreign banks and regional rural banks. Small finance banks serve small businesses and people with less access to banking. Payments banks can take deposits of up to ₹2 lakh per customer and offer payments, but cannot give loans or credit cards. Cooperative banks are owned by their members and are regulated by both the RBI and state authorities.\n\nDeposits in all these banks are insured by the DICGC, a subsidiary of the RBI, up to ₹5 lakh per depositor in each bank, covering principal and interest together. An NBFC is not a bank: deposits with it are not covered by this insurance.",
+      "hi": "वाणिज्यिक बैंकों में सरकारी बैंक (ज़्यादातर सरकार के स्वामित्व वाले), निजी बैंक, विदेशी बैंक और क्षेत्रीय ग्रामीण बैंक आते हैं। स्मॉल फ़ाइनेंस बैंक छोटे व्यवसायों और कम बैंकिंग पहुँच वाले लोगों की सेवा करते हैं। पेमेंट्स बैंक हर ग्राहक से ₹2 लाख तक जमा ले सकते हैं और भुगतान सेवाएँ देते हैं, पर लोन या क्रेडिट कार्ड नहीं दे सकते। सहकारी बैंक अपने सदस्यों के होते हैं और इन पर RBI व राज्य दोनों की निगरानी होती है।\n\nइन सभी बैंकों की जमा राशि RBI की सहायक संस्था DICGC द्वारा हर बैंक में हर जमाकर्ता के लिए ₹5 लाख तक बीमित है, मूलधन और ब्याज मिलाकर। NBFC बैंक नहीं है: उसके पास जमा पैसा इस बीमे में नहीं आता।",
+      "mr": "व्यावसायिक बँकांमध्ये सरकारी बँका (बहुतांश सरकारच्या मालकीच्या), खासगी बँका, परदेशी बँका आणि प्रादेशिक ग्रामीण बँका येतात. स्मॉल फायनान्स बँका छोटे व्यवसाय आणि बँकिंग सुविधा कमी असलेल्या लोकांना सेवा देतात. पेमेंट्स बँका प्रत्येक ग्राहकाकडून ₹2 लाखांपर्यंत ठेवी घेऊ शकतात आणि पेमेंट सेवा देतात, पण कर्ज किंवा क्रेडिट कार्ड देऊ शकत नाहीत. सहकारी बँका त्यांच्या सभासदांच्या मालकीच्या असतात आणि त्यांच्यावर RBI व राज्य दोघांचे नियमन असते.\n\nया सर्व बँकांतील ठेवींना RBI ची उपकंपनी DICGC कडून प्रत्येक बँकेत प्रत्येक ठेवीदारासाठी ₹5 लाखांपर्यंत विमा असतो, मुद्दल आणि व्याज मिळून. NBFC ही बँक नाही: तिच्याकडील ठेवींना हा विमा लागू नाही."
+    },
+    "points": [
+      {
+        "en": "Above ₹5 lakh, spreading deposits across banks keeps more of them insured.",
+        "hi": "₹5 लाख से ज़्यादा हो तो जमा कई बैंकों में बाँटने से ज़्यादा हिस्सा बीमित रहता है।",
+        "mr": "₹5 लाखांपेक्षा जास्त असल्यास ठेवी अनेक बँकांत वाटल्याने जास्त भाग विमाधारक राहतो."
+      },
+      {
+        "en": "A very high deposit rate is a reason to ask more questions, not fewer.",
+        "hi": "बहुत ऊँची जमा दर ज़्यादा सवाल पूछने का कारण है, कम नहीं।",
+        "mr": "खूप जास्त ठेव दर हे जास्त प्रश्न विचारण्याचे कारण आहे, कमी नाही."
+      },
+      {
+        "en": "Check that a 'bank' appears in the RBI's list before depositing.",
+        "hi": "जमा करने से पहले देखें कि 'बैंक' RBI की सूची में है।",
+        "mr": "ठेव ठेवण्यापूर्वी 'बँक' RBI च्या यादीत आहे का ते तपासा."
+      },
+      {
+        "en": "Choose a bank for its branch access, charges and service, not only its rate.",
+        "hi": "बैंक उसकी शाखा पहुँच, शुल्क और सेवा देखकर चुनें, सिर्फ़ दर नहीं।",
+        "mr": "बँक तिची शाखा सुविधा, शुल्क आणि सेवा पाहून निवडा, फक्त दर नाही."
+      }
+    ],
+    "example": {
+      "en": "Verena's aunt has ₹9 lakh in fixed deposits at one cooperative bank offering a high rate. Verena explains that only ₹5 lakh is insured there and helps her move ₹4 lakh to a second bank. Now every rupee is covered.",
+      "hi": "वेरेना की मौसी के ₹9 लाख एक सहकारी बैंक की FD में हैं जो ऊँची दर देता है। वेरेना समझाती है कि वहाँ सिर्फ़ ₹5 लाख बीमित है और ₹4 लाख दूसरे बैंक में ले जाने में मदद करती है। अब हर रुपया सुरक्षित है।",
+      "mr": "वेरेनाच्या मावशीचे ₹9 लाख जास्त दर देणाऱ्या एका सहकारी बँकेच्या FD मध्ये आहेत. वेरेना समजावते की तिथे फक्त ₹5 लाखच विमाधारक आहेत आणि ₹4 लाख दुसऱ्या बँकेत हलवायला मदत करते. आता प्रत्येक रुपया सुरक्षित आहे."
+    },
+    "tryIt": {
+      "text": {
+        "en": "Play the chapter about choosing where to keep savings.",
+        "hi": "वह अध्याय खेलें जिसमें बचत कहाँ रखें, यह चुनना है।",
+        "mr": "बचत कुठे ठेवायची ते निवडण्याचा अध्याय खेळा."
+      },
+      "link": "episode:bank-choice"
+    },
+    "check": {
+      "question": {
+        "en": "Up to how much are your deposits in one bank insured by DICGC?",
+        "hi": "DICGC एक बैंक में आपकी जमा कितने तक बीमित करता है?",
+        "mr": "DICGC एका बँकेतील तुमच्या ठेवींना किती रकमेपर्यंत विमा देते?"
+      },
+      "options": [
+        {
+          "en": "₹50,000",
+          "hi": "₹50,000",
+          "mr": "₹50,000"
+        },
+        {
+          "en": "₹5 lakh",
+          "hi": "₹5 लाख",
+          "mr": "₹5 लाख"
+        },
+        {
+          "en": "Without limit",
+          "hi": "बिना सीमा",
+          "mr": "मर्यादेशिवाय"
+        }
+      ],
+      "answer": 1,
+      "why": {
+        "en": "₹5 lakh per depositor per bank, principal and interest together.",
+        "hi": "हर बैंक में हर जमाकर्ता के लिए ₹5 लाख, मूलधन और ब्याज मिलाकर।",
+        "mr": "प्रत्येक बँकेत प्रत्येक ठेवीदारासाठी ₹5 लाख, मुद्दल आणि व्याज मिळून."
+      }
+    },
+    "reviewed": "2026-10",
+    "sources": [
+      "https://www.dicgc.org.in/",
+      "https://www.rbi.org.in/"
+    ]
   }
 ]

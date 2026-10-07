@@ -1,1483 +1,1881 @@
 {
- "savings-account": [
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "VERENA ANIL D'SOUZA",
-   "note": {
-    "en": "Copied letter for letter from Aadhaar.",
-    "hi": "आधार से अक्षरशः।",
-    "mr": "आधारवरून अक्षरशः."
-   }
-  },
-  {
-   "label": {
-    "en": "Father's / mother's name",
-    "hi": "पिता / माता का नाम",
-    "mr": "वडील / आईचे नाव"
-   },
-   "value": "ANIL D'SOUZA / ANITA D'SOUZA"
-  },
-  {
-   "label": {
-    "en": "Date of birth",
-    "hi": "जन्म तिथि",
-    "mr": "जन्मतारीख"
-   },
-   "value": "14/03/2004"
-  },
-  {
-   "label": {
-    "en": "Address",
-    "hi": "पता",
-    "mr": "पत्ता"
-   },
-   "value": "Flat 3B, Shanti Niwas, Kothrud, Pune 411038",
-   "note": {
-    "en": "Current address, with PIN code.",
-    "hi": "मौजूदा पता, पिन कोड के साथ।",
-    "mr": "सध्याचा पत्ता, पिन कोडसह."
-   }
-  },
-  {
-   "label": {
-    "en": "Mobile",
-    "hi": "मोबाइल",
-    "mr": "मोबाइल"
-   },
-   "value": "98xxxxxx21 (linked to Aadhaar)"
-  },
-  {
-   "label": {
-    "en": "PAN",
-    "hi": "पैन",
-    "mr": "पॅन"
-   },
-   "value": "ABCPD1234K"
-  },
-  {
-   "label": {
-    "en": "Account type",
-    "hi": "खाते का प्रकार",
-    "mr": "खात्याचा प्रकार"
-   },
-   "value": "Basic Savings Bank Deposit Account (BSBDA)"
-  },
-  {
-   "label": {
-    "en": "Occupation / annual income",
-    "hi": "पेशा / सालाना आय",
-    "mr": "व्यवसाय / वार्षिक उत्पन्न"
-   },
-   "value": "Student-intern · below ₹1 lakh"
-  },
-  {
-   "label": {
-    "en": "Mode of operation",
-    "hi": "संचालन का तरीक़ा",
-    "mr": "व्यवहाराची पद्धत"
-   },
-   "value": "Single"
-  },
-  {
-   "label": {
-    "en": "Nominee",
-    "hi": "नॉमिनी",
-    "mr": "नॉमिनी"
-   },
-   "value": "ANITA D'SOUZA, mother, 02/08/1975"
-  },
-  {
-   "label": {
-    "en": "Services",
-    "hi": "सेवाएँ",
-    "mr": "सेवा"
-   },
-   "value": "RuPay debit card ✓ · SMS alerts ✓ · Mobile banking ✓ · Cheque book ✗"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Verena D'Souza (inside the box)"
-  },
-  {
-   "label": {
-    "en": "Date and place",
-    "hi": "तारीख़ और स्थान",
-    "mr": "तारीख आणि ठिकाण"
-   },
-   "value": "06/10/2026, Pune"
-  }
- ],
- "kyc-update": [
-  {
-   "label": {
-    "en": "Customer ID / account",
-    "hi": "ग्राहक ID / खाता",
-    "mr": "ग्राहक ID / खाते"
-   },
-   "value": "CIF 8xxxxx904 · A/c 3xxxxxxx2741"
-  },
-  {
-   "label": {
-    "en": "Type of update",
-    "hi": "अपडेट का प्रकार",
-    "mr": "अद्ययावतीकरणाचा प्रकार"
-   },
-   "value": "Change in name (after marriage)"
-  },
-  {
-   "label": {
-    "en": "Old name / new name",
-    "hi": "पुराना / नया नाम",
-    "mr": "जुने / नवे नाव"
-   },
-   "value": "ANITA PEREIRA → ANITA D'SOUZA"
-  },
-  {
-   "label": {
-    "en": "Documents attached",
-    "hi": "संलग्न दस्तावेज़",
-    "mr": "जोडलेली कागदपत्रे"
-   },
-   "value": "Aadhaar (new name), PAN, marriage certificate (self-attested)"
-  },
-  {
-   "label": {
-    "en": "CKYC number",
-    "hi": "CKYC नंबर",
-    "mr": "CKYC क्रमांक"
-   },
-   "value": "Leave blank if you do not know it; the bank fills it"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Anita D'Souza"
-  },
-  {
-   "label": {
-    "en": "Date and place",
-    "hi": "तारीख़ और स्थान",
-    "mr": "तारीख आणि ठिकाण"
-   },
-   "value": "12/10/2026, Pune"
-  }
- ],
- "nomination": [
-  {
-   "label": {
-    "en": "Account number",
-    "hi": "खाता संख्या",
-    "mr": "खाते क्रमांक"
-   },
-   "value": "3xxxxxxx2741"
-  },
-  {
-   "label": {
-    "en": "Nominee 1",
-    "hi": "नॉमिनी 1",
-    "mr": "नॉमिनी 1"
-   },
-   "value": "ANITA D'SOUZA · mother · 02/08/1975 · 60%"
-  },
-  {
-   "label": {
-    "en": "Nominee 2",
-    "hi": "नॉमिनी 2",
-    "mr": "नॉमिनी 2"
-   },
-   "value": "MIRA D'SOUZA · sister · 11/05/2012 · 40%",
-   "note": {
-    "en": "A minor, so a guardian is named below.",
-    "hi": "नाबालिग, इसलिए नीचे अभिभावक।",
-    "mr": "अल्पवयीन, म्हणून खाली पालक."
-   }
-  },
-  {
-   "label": {
-    "en": "Guardian for minor",
-    "hi": "नाबालिग के अभिभावक",
-    "mr": "अल्पवयीनाचे पालक"
-   },
-   "value": "ANIL D'SOUZA · father"
-  },
-  {
-   "label": {
-    "en": "Simultaneous or successive",
-    "hi": "एक साथ या क्रम से",
-    "mr": "एकाच वेळी की क्रमाने"
-   },
-   "value": "Simultaneous (shares as above)"
-  },
-  {
-   "label": {
-    "en": "Total share",
-    "hi": "कुल हिस्सा",
-    "mr": "एकूण वाटा"
-   },
-   "value": "100%",
-   "note": {
-    "en": "Shares must add up to exactly 100.",
-    "hi": "हिस्से ठीक 100 होने चाहिए।",
-    "mr": "वाटे बरोबर 100 व्हायला हवेत."
-   }
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Verena D'Souza (inside the box)"
-  },
-  {
-   "label": {
-    "en": "Witness (if thumb impression)",
-    "hi": "गवाह (अँगूठा निशान हो तो)",
-    "mr": "साक्षीदार (अंगठ्याचा ठसा असल्यास)"
-   },
-   "value": "Not needed: signed"
-  }
- ],
- "pan-application": [
-  {
-   "label": {
-    "en": "Application type",
-    "hi": "आवेदन प्रकार",
-    "mr": "अर्जाचा प्रकार"
-   },
-   "value": "New PAN, Form 49A (Indian citizen)"
-  },
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "D'SOUZA VERENA ANIL (surname, first, middle)"
-  },
-  {
-   "label": {
-    "en": "Date of birth",
-    "hi": "जन्म तिथि",
-    "mr": "जन्मतारीख"
-   },
-   "value": "14/03/2004"
-  },
-  {
-   "label": {
-    "en": "Father's name",
-    "hi": "पिता का नाम",
-    "mr": "वडिलांचे नाव"
-   },
-   "value": "D'SOUZA ANIL"
-  },
-  {
-   "label": {
-    "en": "Name on card",
-    "hi": "कार्ड पर नाम",
-    "mr": "कार्डवरील नाव"
-   },
-   "value": "VERENA ANIL D'SOUZA"
-  },
-  {
-   "label": {
-    "en": "Address",
-    "hi": "पता",
-    "mr": "पत्ता"
-   },
-   "value": "Flat 3B, Shanti Niwas, Kothrud, Pune 411038"
-  },
-  {
-   "label": {
-    "en": "Mobile",
-    "hi": "मोबाइल",
-    "mr": "मोबाइल"
-   },
-   "value": "98xxxxxx21 · verena@email.com"
-  },
-  {
-   "label": {
-    "en": "Aadhaar",
-    "hi": "आधार",
-    "mr": "आधार"
-   },
-   "value": "XXXX XXXX 8821 (OTP-verified)"
-  },
-  {
-   "label": {
-    "en": "Source of income",
-    "hi": "आय का स्रोत",
-    "mr": "उत्पन्नाचा स्रोत"
-   },
-   "value": "No income / salary (as applicable)"
-  },
-  {
-   "label": {
-    "en": "Proof submitted",
-    "hi": "प्रमाण",
-    "mr": "पुरावा"
-   },
-   "value": "Aadhaar for identity, address and date of birth"
-  }
- ],
- "no-pan-declaration": [
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "SUNITA RAMESH JADHAV"
-  },
-  {
-   "label": {
-    "en": "Date of birth",
-    "hi": "जन्म तिथि",
-    "mr": "जन्मतारीख"
-   },
-   "value": "03/01/1990"
-  },
-  {
-   "label": {
-    "en": "Address",
-    "hi": "पता",
-    "mr": "पत्ता"
-   },
-   "value": "Room 12, Laxmi Chawl, Hadapsar, Pune 411028"
-  },
-  {
-   "label": {
-    "en": "Transaction",
-    "hi": "लेन-देन",
-    "mr": "व्यवहार"
-   },
-   "value": "Opening savings account · cash deposit ₹55,000"
-  },
-  {
-   "label": {
-    "en": "Applied for PAN?",
-    "hi": "पैन के लिए आवेदन?",
-    "mr": "पॅनसाठी अर्ज?"
-   },
-   "value": "Yes, acknowledgement no. 8812xxxxxxxx, dated 01/10/2026"
-  },
-  {
-   "label": {
-    "en": "Agricultural income",
-    "hi": "कृषि आय",
-    "mr": "शेती उत्पन्न"
-   },
-   "value": "Nil"
-  },
-  {
-   "label": {
-    "en": "Other income (estimated, year)",
-    "hi": "अन्य आय (अनुमानित, साल)",
-    "mr": "इतर उत्पन्न (अंदाजे, वर्ष)"
-   },
-   "value": "₹1,40,000",
-   "note": {
-    "en": "A truthful estimate; a false declaration is an offence.",
-    "hi": "सच्चा अनुमान; ग़लत घोषणा अपराध है।",
-    "mr": "खरा अंदाज; खोटी घोषणा गुन्हा आहे."
-   }
-  },
-  {
-   "label": {
-    "en": "Identity document",
-    "hi": "पहचान दस्तावेज़",
-    "mr": "ओळख दस्तऐवज"
-   },
-   "value": "Aadhaar XXXX XXXX 4410"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Sunita Jadhav"
-  },
-  {
-   "label": {
-    "en": "Date and place",
-    "hi": "तारीख़ और स्थान",
-    "mr": "तारीख आणि ठिकाण"
-   },
-   "value": "06/10/2026, Pune"
-  }
- ],
- "salary-tds-certificate": [
-  {
-   "label": {
-    "en": "Employer (deductor)",
-    "hi": "नियोक्ता (कटौतीकर्ता)",
-    "mr": "नियोक्ता (कपात करणारा)"
-   },
-   "value": "Nimbus Analytics Pvt Ltd · TAN PNEN0xxxxA"
-  },
-  {
-   "label": {
-    "en": "Employee",
-    "hi": "कर्मचारी",
-    "mr": "कर्मचारी"
-   },
-   "value": "Verena D'Souza · PAN ABCPD1234K"
-  },
-  {
-   "label": {
-    "en": "Assessment year",
-    "hi": "निर्धारण वर्ष",
-    "mr": "निर्धारण वर्ष"
-   },
-   "value": "2026-27 (income of Apr 2025–Mar 2026)"
-  },
-  {
-   "label": {
-    "en": "Gross salary",
-    "hi": "सकल वेतन",
-    "mr": "एकूण पगार"
-   },
-   "value": "₹3,60,000"
-  },
-  {
-   "label": {
-    "en": "Standard deduction",
-    "hi": "स्टैंडर्ड डिडक्शन",
-    "mr": "प्रमाणित वजावट"
-   },
-   "value": "As per the regime chosen"
-  },
-  {
-   "label": {
-    "en": "Tax regime",
-    "hi": "टैक्स व्यवस्था",
-    "mr": "कर पद्धत"
-   },
-   "value": "New (default)"
-  },
-  {
-   "label": {
-    "en": "TDS deducted and deposited",
-    "hi": "कटा और जमा TDS",
-    "mr": "कापलेला आणि जमा TDS"
-   },
-   "value": "₹4,200 · matches Form 26AS ✓",
-   "note": {
-    "en": "Always tick this against 26AS before filing.",
-    "hi": "रिटर्न से पहले इसे 26AS से मिलाएँ।",
-    "mr": "विवरणपत्रापूर्वी हे 26AS शी जुळवा."
-   }
-  },
-  {
-   "label": {
-    "en": "Part A / Part B",
-    "hi": "भाग A / भाग B",
-    "mr": "भाग A / भाग B"
-   },
-   "value": "Part A: TDS quarters · Part B: salary breakup"
-  }
- ],
- "no-tds-declaration": [
-  {
-   "label": {
-    "en": "Form",
-    "hi": "फ़ॉर्म",
-    "mr": "फॉर्म"
-   },
-   "value": "15G (below 60) · 15H if 60 or older"
-  },
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "SUNITA RAMESH JADHAV"
-  },
-  {
-   "label": {
-    "en": "PAN",
-    "hi": "पैन",
-    "mr": "पॅन"
-   },
-   "value": "AXXPJ5678Q",
-   "note": {
-    "en": "Needed; without PAN the form is not valid.",
-    "hi": "ज़रूरी; पैन के बिना फ़ॉर्म मान्य नहीं।",
-    "mr": "आवश्यक; पॅनशिवाय फॉर्म वैध नाही."
-   }
-  },
-  {
-   "label": {
-    "en": "Previous year",
-    "hi": "पिछला वर्ष",
-    "mr": "मागील वर्ष"
-   },
-   "value": "2026-27"
-  },
-  {
-   "label": {
-    "en": "Interest from this FD (estimate)",
-    "hi": "इस FD से ब्याज (अनुमान)",
-    "mr": "या FD वरील व्याज (अंदाज)"
-   },
-   "value": "₹7,800"
-  },
-  {
-   "label": {
-    "en": "Total estimated income",
-    "hi": "कुल अनुमानित आय",
-    "mr": "एकूण अंदाजे उत्पन्न"
-   },
-   "value": "₹1,48,000 (below taxable limit)"
-  },
-  {
-   "label": {
-    "en": "Other 15G filed this year",
-    "hi": "इस साल दूसरे 15G",
-    "mr": "या वर्षी इतर 15G"
-   },
-   "value": "1 · ₹2,400 at Post Office"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Sunita Jadhav"
-  },
-  {
-   "label": {
-    "en": "Date and place",
-    "hi": "तारीख़ और स्थान",
-    "mr": "तारीख आणि ठिकाण"
-   },
-   "value": "02/04/2026, Pune",
-   "note": {
-    "en": "Submit at the start of the financial year, before interest is credited.",
-    "hi": "वित्त वर्ष की शुरुआत में, ब्याज जमा होने से पहले जमा करें।",
-    "mr": "आर्थिक वर्षाच्या सुरुवातीला, व्याज जमा होण्यापूर्वी सादर करा."
-   }
-  }
- ],
- "loan-kfs": [
-  {
-   "label": {
-    "en": "Loan amount",
-    "hi": "लोन रकम",
-    "mr": "कर्ज रक्कम"
-   },
-   "value": "₹1,50,000"
-  },
-  {
-   "label": {
-    "en": "Tenure",
-    "hi": "अवधि",
-    "mr": "मुदत"
-   },
-   "value": "24 months"
-  },
-  {
-   "label": {
-    "en": "Interest rate",
-    "hi": "ब्याज दर",
-    "mr": "व्याजदर"
-   },
-   "value": "11.5% p.a., fixed, reducing balance"
-  },
-  {
-   "label": {
-    "en": "Processing fee",
-    "hi": "प्रोसेसिंग शुल्क",
-    "mr": "प्रक्रिया शुल्क"
-   },
-   "value": "₹1,500 + GST ₹270"
-  },
-  {
-   "label": {
-    "en": "APR",
-    "hi": "APR",
-    "mr": "APR"
-   },
-   "value": "12.6%",
-   "note": {
-    "en": "Compare loans on this line.",
-    "hi": "लोन की तुलना इसी लाइन से करें।",
-    "mr": "कर्जांची तुलना याच ओळीने करा."
-   }
-  },
-  {
-   "label": {
-    "en": "EMI and date",
-    "hi": "EMI और तारीख़",
-    "mr": "EMI आणि तारीख"
-   },
-   "value": "₹7,026 on the 5th · 24 instalments"
-  },
-  {
-   "label": {
-    "en": "Total payable",
-    "hi": "कुल देय",
-    "mr": "एकूण देय"
-   },
-   "value": "₹1,68,624 + fee"
-  },
-  {
-   "label": {
-    "en": "Penal / bounce charges",
-    "hi": "दंड / बाउंस शुल्क",
-    "mr": "दंड / बाउन्स शुल्क"
-   },
-   "value": "2% per month on overdue · ₹500 per bounce"
-  },
-  {
-   "label": {
-    "en": "Grievance officer",
-    "hi": "शिकायत अधिकारी",
-    "mr": "तक्रार अधिकारी"
-   },
-   "value": "Name, phone and email printed"
-  },
-  {
-   "label": {
-    "en": "Cooling-off period",
-    "hi": "कूलिंग-ऑफ़ अवधि",
-    "mr": "कूलिंग-ऑफ कालावधी"
-   },
-   "value": "Stated in the KFS (exit by repaying principal + proportionate APR)"
-  }
- ],
- "gold-loan": [
-  {
-   "label": {
-    "en": "Items pledged",
-    "hi": "गिरवी रखे गहने",
-    "mr": "तारण दागिने"
-   },
-   "value": "2 bangles, 22 carat"
-  },
-  {
-   "label": {
-    "en": "Gross / net weight",
-    "hi": "कुल / शुद्ध वज़न",
-    "mr": "एकूण / निव्वळ वजन"
-   },
-   "value": "32.4 g / 30.1 g"
-  },
-  {
-   "label": {
-    "en": "Assessed value",
-    "hi": "आँका गया मूल्य",
-    "mr": "मूल्यांकन"
-   },
-   "value": "As per the day's gold rate, printed"
-  },
-  {
-   "label": {
-    "en": "Loan sanctioned",
-    "hi": "स्वीकृत लोन",
-    "mr": "मंजूर कर्ज"
-   },
-   "value": "₹80,000 (within the lender's loan-to-value limit)"
-  },
-  {
-   "label": {
-    "en": "Rate and repayment",
-    "hi": "दर और भुगतान",
-    "mr": "दर आणि परतफेड"
-   },
-   "value": "9.5% p.a. · interest monthly · principal at 12 months"
-  },
-  {
-   "label": {
-    "en": "Packet number",
-    "hi": "पैकेट नंबर",
-    "mr": "पाकीट क्रमांक"
-   },
-   "value": "G-55xx, sealed in front of borrower"
-  },
-  {
-   "label": {
-    "en": "Auction clause",
-    "hi": "नीलामी शर्त",
-    "mr": "लिलाव अट"
-   },
-   "value": "Written notice before any auction; surplus returned"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Anita D'Souza"
-  }
- ],
- "insurance-proposal": [
-  {
-   "label": {
-    "en": "Proposer / insured",
-    "hi": "प्रस्तावक / बीमित",
-    "mr": "प्रस्तावक / विमाधारक"
-   },
-   "value": "Verena D'Souza, 24"
-  },
-  {
-   "label": {
-    "en": "Occupation and income",
-    "hi": "पेशा और आय",
-    "mr": "व्यवसाय आणि उत्पन्न"
-   },
-   "value": "Analyst · ₹5,04,000 a year"
-  },
-  {
-   "label": {
-    "en": "Height / weight",
-    "hi": "क़द / वज़न",
-    "mr": "उंची / वजन"
-   },
-   "value": "162 cm / 54 kg"
-  },
-  {
-   "label": {
-    "en": "Medical history (last 4 years)",
-    "hi": "चिकित्सा इतिहास (4 साल)",
-    "mr": "वैद्यकीय इतिहास (4 वर्षे)"
-   },
-   "value": "YES: mild asthma since 2016, inhaler as needed",
-   "note": {
-    "en": "Disclose everything; hiding it can void a claim.",
-    "hi": "सब बताएँ; छुपाने से क्लेम ख़ारिज हो सकता है।",
-    "mr": "सगळे सांगा; लपवल्यास क्लेम नाकारला जाऊ शकतो."
-   }
-  },
-  {
-   "label": {
-    "en": "Tobacco / alcohol",
-    "hi": "तंबाकू / शराब",
-    "mr": "तंबाखू / मद्य"
-   },
-   "value": "No / No"
-  },
-  {
-   "label": {
-    "en": "Sum insured",
-    "hi": "सम इंश्योर्ड",
-    "mr": "विमा रक्कम"
-   },
-   "value": "₹5,00,000 · individual"
-  },
-  {
-   "label": {
-    "en": "Premium",
-    "hi": "प्रीमियम",
-    "mr": "प्रीमियम"
-   },
-   "value": "₹7,400 a year incl. GST, paid by UPI from own account"
-  },
-  {
-   "label": {
-    "en": "Nominee",
-    "hi": "नॉमिनी",
-    "mr": "नॉमिनी"
-   },
-   "value": "Anil D'Souza, father"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Verena D'Souza (inside the box)"
-  }
- ],
- "jan-suraksha": [
-  {
-   "label": {
-    "en": "Account number",
-    "hi": "खाता संख्या",
-    "mr": "खाते क्रमांक"
-   },
-   "value": "Savings A/c XXXX4410, Pune branch"
-  },
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "SUNITA RAMESH JADHAV"
-  },
-  {
-   "label": {
-    "en": "Date of birth",
-    "hi": "जन्म तिथि",
-    "mr": "जन्मतारीख"
-   },
-   "value": "03/01/1990"
-  },
-  {
-   "label": {
-    "en": "Scheme",
-    "hi": "योजना",
-    "mr": "योजना"
-   },
-   "value": "PMJJBY ✓ (₹436/yr) · PMSBY ✓ (₹20/yr)"
-  },
-  {
-   "label": {
-    "en": "Auto-debit consent",
-    "hi": "ऑटो-डेबिट सहमति",
-    "mr": "ऑटो-डेबिट संमती"
-   },
-   "value": "Yes, every year until I opt out"
-  },
-  {
-   "label": {
-    "en": "Nominee",
-    "hi": "नॉमिनी",
-    "mr": "नॉमिनी"
-   },
-   "value": "POOJA JADHAV · daughter · 2014"
-  },
-  {
-   "label": {
-    "en": "Guardian (minor nominee)",
-    "hi": "अभिभावक (नाबालिग)",
-    "mr": "पालक (अल्पवयीन)"
-   },
-   "value": "MEENA KAMBLE · sister"
-  },
-  {
-   "label": {
-    "en": "Health declaration (PMJJBY)",
-    "hi": "स्वास्थ्य घोषणा (PMJJBY)",
-    "mr": "आरोग्य घोषणा (PMJJBY)"
-   },
-   "value": "In good health, as stated"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Sunita Jadhav"
-  }
- ],
- "atal-pension": [
-  {
-   "label": {
-    "en": "Account number",
-    "hi": "खाता संख्या",
-    "mr": "खाते क्रमांक"
-   },
-   "value": "Savings A/c XXXX4410"
-  },
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "SUNITA RAMESH JADHAV · age 34"
-  },
-  {
-   "label": {
-    "en": "Pension chosen",
-    "hi": "चुनी पेंशन",
-    "mr": "निवडलेली पेन्शन"
-   },
-   "value": "₹3,000 a month from age 60"
-  },
-  {
-   "label": {
-    "en": "Contribution",
-    "hi": "योगदान",
-    "mr": "योगदान"
-   },
-   "value": "Monthly, auto-debited (amount shown by bank for age 34)"
-  },
-  {
-   "label": {
-    "en": "Spouse",
-    "hi": "जीवनसाथी",
-    "mr": "जोडीदार"
-   },
-   "value": "RAMESH JADHAV"
-  },
-  {
-   "label": {
-    "en": "Nominee",
-    "hi": "नॉमिनी",
-    "mr": "नॉमिनी"
-   },
-   "value": "RAMESH JADHAV · husband"
-  },
-  {
-   "label": {
-    "en": "Income taxpayer?",
-    "hi": "आयकरदाता?",
-    "mr": "आयकरदाता?"
-   },
-   "value": "No",
-   "note": {
-    "en": "Income taxpayers are not eligible to join APY.",
-    "hi": "आयकरदाता APY में नहीं जुड़ सकते।",
-    "mr": "आयकरदाते APY मध्ये सामील होऊ शकत नाहीत."
-   }
-  },
-  {
-   "label": {
-    "en": "Mobile",
-    "hi": "मोबाइल",
-    "mr": "मोबाइल"
-   },
-   "value": "97xxxxxx08"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Sunita Jadhav"
-  }
- ],
- "sukanya-samriddhi": [
-  {
-   "label": {
-    "en": "Girl child",
-    "hi": "बालिका",
-    "mr": "मुलगी"
-   },
-   "value": "MIRA VERENA SHAH · DOB 21/06/2023"
-  },
-  {
-   "label": {
-    "en": "Birth certificate no.",
-    "hi": "जन्म प्रमाणपत्र नं.",
-    "mr": "जन्म दाखला क्र."
-   },
-   "value": "PMC/2023/xxxx"
-  },
-  {
-   "label": {
-    "en": "Guardian",
-    "hi": "अभिभावक",
-    "mr": "पालक"
-   },
-   "value": "VERENA SHAH (mother) · PAN, Aadhaar attached"
-  },
-  {
-   "label": {
-    "en": "First deposit",
-    "hi": "पहली जमा",
-    "mr": "पहिली ठेव"
-   },
-   "value": "₹2,000 by cheque (minimum ₹250)"
-  },
-  {
-   "label": {
-    "en": "Office",
-    "hi": "कार्यालय",
-    "mr": "कार्यालय"
-   },
-   "value": "Kothrud Post Office"
-  },
-  {
-   "label": {
-    "en": "Yearly deposit plan",
-    "hi": "सालाना जमा योजना",
-    "mr": "वार्षिक ठेव नियोजन"
-   },
-   "value": "₹1,000 a month by standing instruction"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Verena Shah"
-  }
- ],
- "epf-joining": [
-  {
-   "label": {
-    "en": "Form",
-    "hi": "फ़ॉर्म",
-    "mr": "फॉर्म"
-   },
-   "value": "Form 11 (declaration) at joining"
-  },
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "VERENA ANIL D'SOUZA"
-  },
-  {
-   "label": {
-    "en": "Date of birth",
-    "hi": "जन्म तिथि",
-    "mr": "जन्मतारीख"
-   },
-   "value": "14/03/2004"
-  },
-  {
-   "label": {
-    "en": "Previous PF member?",
-    "hi": "पहले PF सदस्य?",
-    "mr": "आधी PF सदस्य?"
-   },
-   "value": "Yes · UAN 10xxxxxxxx21 (internship)",
-   "note": {
-    "en": "Give the old UAN so your account continues.",
-    "hi": "पुराना UAN दें ताकि खाता जारी रहे।",
-    "mr": "जुना UAN द्या म्हणजे खाते पुढे चालू राहील."
-   }
-  },
-  {
-   "label": {
-    "en": "International worker?",
-    "hi": "अंतरराष्ट्रीय कर्मचारी?",
-    "mr": "आंतरराष्ट्रीय कर्मचारी?"
-   },
-   "value": "No"
-  },
-  {
-   "label": {
-    "en": "KYC",
-    "hi": "KYC",
-    "mr": "KYC"
-   },
-   "value": "Aadhaar · PAN · bank A/c + IFSC"
-  },
-  {
-   "label": {
-    "en": "Nominee",
-    "hi": "नॉमिनी",
-    "mr": "नॉमिनी"
-   },
-   "value": "e-nomination: Anita D'Souza, 100%"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Verena D'Souza (inside the box)"
-  }
- ],
- "itr-1": [
-  {
-   "label": {
-    "en": "Assessment year",
-    "hi": "निर्धारण वर्ष",
-    "mr": "निर्धारण वर्ष"
-   },
-   "value": "2026-27"
-  },
-  {
-   "label": {
-    "en": "PAN",
-    "hi": "पैन",
-    "mr": "पॅन"
-   },
-   "value": "ABCPD1234K"
-  },
-  {
-   "label": {
-    "en": "Status / regime",
-    "hi": "स्थिति / व्यवस्था",
-    "mr": "स्थिती / पद्धत"
-   },
-   "value": "Individual · new regime"
-  },
-  {
-   "label": {
-    "en": "Salary (from Form 16)",
-    "hi": "तनख़्वाह (फ़ॉर्म 16 से)",
-    "mr": "पगार (फॉर्म 16 मधून)"
-   },
-   "value": "₹3,60,000"
-  },
-  {
-   "label": {
-    "en": "Other sources",
-    "hi": "अन्य स्रोत",
-    "mr": "इतर स्रोत"
-   },
-   "value": "Savings interest ₹1,240"
-  },
-  {
-   "label": {
-    "en": "TDS",
-    "hi": "TDS",
-    "mr": "TDS"
-   },
-   "value": "₹4,200 (matches 26AS)"
-  },
-  {
-   "label": {
-    "en": "Tax payable",
-    "hi": "देय टैक्स",
-    "mr": "देय कर"
-   },
-   "value": "₹0 after rebate"
-  },
-  {
-   "label": {
-    "en": "Refund",
-    "hi": "रिफ़ंड",
-    "mr": "परतावा"
-   },
-   "value": "₹4,200 to pre-validated A/c ••2741"
-  },
-  {
-   "label": {
-    "en": "Verification",
-    "hi": "सत्यापन",
-    "mr": "पडताळणी"
-   },
-   "value": "e-verified by Aadhaar OTP the same day"
-  }
- ],
- "health-claim": [
-  {
-   "label": {
-    "en": "Policy / member ID",
-    "hi": "पॉलिसी / सदस्य ID",
-    "mr": "पॉलिसी / सदस्य ID"
-   },
-   "value": "2xxxx/48/27 · member 01 (Anil D'Souza)"
-  },
-  {
-   "label": {
-    "en": "Hospital",
-    "hi": "अस्पताल",
-    "mr": "रुग्णालय"
-   },
-   "value": "City Care Hospital, Pune (non-network)"
-  },
-  {
-   "label": {
-    "en": "Admission / discharge",
-    "hi": "भर्ती / डिस्चार्ज",
-    "mr": "दाखल / डिस्चार्ज"
-   },
-   "value": "12/10/2026 – 16/10/2026"
-  },
-  {
-   "label": {
-    "en": "Diagnosis",
-    "hi": "निदान",
-    "mr": "निदान"
-   },
-   "value": "As written on the discharge summary"
-  },
-  {
-   "label": {
-    "en": "Amount claimed",
-    "hi": "माँगी रकम",
-    "mr": "मागितलेली रक्कम"
-   },
-   "value": "₹1,46,900 (pre- and post-bills listed separately)"
-  },
-  {
-   "label": {
-    "en": "Bills attached",
-    "hi": "संलग्न बिल",
-    "mr": "जोडलेली बिले"
-   },
-   "value": "Final bill, 9 pharmacy bills, 4 lab reports, receipts"
-  },
-  {
-   "label": {
-    "en": "Bank for payment",
-    "hi": "भुगतान हेतु बैंक",
-    "mr": "पैशांसाठी बँक"
-   },
-   "value": "A/c ••6612 · cancelled cheque attached"
-  },
-  {
-   "label": {
-    "en": "Part B",
-    "hi": "भाग B",
-    "mr": "भाग B"
-   },
-   "value": "Filled and stamped by the hospital"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "Verena D'Souza (proposer)"
-  }
- ],
- "epf-claim": [
-  {
-   "label": {
-    "en": "Claim type",
-    "hi": "क्लेम प्रकार",
-    "mr": "क्लेम प्रकार"
-   },
-   "value": "Advance (Form 31) for medical treatment"
-  },
-  {
-   "label": {
-    "en": "Purpose",
-    "hi": "उद्देश्य",
-    "mr": "उद्देश"
-   },
-   "value": "Illness of father (dependent)"
-  },
-  {
-   "label": {
-    "en": "Amount",
-    "hi": "रकम",
-    "mr": "रक्कम"
-   },
-   "value": "Within the eligible limit shown on the portal"
-  },
-  {
-   "label": {
-    "en": "Bank account",
-    "hi": "बैंक खाता",
-    "mr": "बँक खाते"
-   },
-   "value": "Seeded A/c ••2741 · cheque/passbook image uploaded"
-  },
-  {
-   "label": {
-    "en": "Date of leaving",
-    "hi": "छोड़ने की तारीख़",
-    "mr": "सोडण्याची तारीख"
-   },
-   "value": "Not applicable (still employed)"
-  },
-  {
-   "label": {
-    "en": "Verification",
-    "hi": "सत्यापन",
-    "mr": "पडताळणी"
-   },
-   "value": "Aadhaar OTP on the member portal"
-  }
- ],
- "ppf-account": [
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "VERENA ANIL D'SOUZA"
-  },
-  {
-   "label": {
-    "en": "PAN",
-    "hi": "पैन",
-    "mr": "पॅन"
-   },
-   "value": "ABCPD1234K"
-  },
-  {
-   "label": {
-    "en": "Address",
-    "hi": "पता",
-    "mr": "पत्ता"
-   },
-   "value": "Flat 3B, Shanti Niwas, Kothrud, Pune 411038"
-  },
-  {
-   "label": {
-    "en": "Initial deposit",
-    "hi": "पहली जमा",
-    "mr": "पहिली ठेव"
-   },
-   "value": "₹1,000 (minimum ₹500 a year)"
-  },
-  {
-   "label": {
-    "en": "Mode",
-    "hi": "तरीक़ा",
-    "mr": "पद्धत"
-   },
-   "value": "Online via net banking · standing instruction ₹1,000/month"
-  },
-  {
-   "label": {
-    "en": "Nominee",
-    "hi": "नॉमिनी",
-    "mr": "नॉमिनी"
-   },
-   "value": "ANITA D'SOUZA · mother · 100%"
-  },
-  {
-   "label": {
-    "en": "Declaration",
-    "hi": "घोषणा",
-    "mr": "घोषणा"
-   },
-   "value": "I do not hold another PPF account"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "e-signed (OTP)"
-  }
- ],
- "credit-card": [
-  {
-   "label": {
-    "en": "Card",
-    "hi": "कार्ड",
-    "mr": "कार्ड"
-   },
-   "value": "Card X · lifetime free"
-  },
-  {
-   "label": {
-    "en": "Income declared",
-    "hi": "घोषित आय",
-    "mr": "जाहीर उत्पन्न"
-   },
-   "value": "₹42,000 a month, salaried"
-  },
-  {
-   "label": {
-    "en": "Limit requested",
-    "hi": "माँगी लिमिट",
-    "mr": "मागितलेली मर्यादा"
-   },
-   "value": "₹40,000 (offered ₹1,20,000)"
-  },
-  {
-   "label": {
-    "en": "Fees accepted",
-    "hi": "स्वीकृत शुल्क",
-    "mr": "स्वीकारलेले शुल्क"
-   },
-   "value": "Joining ₹0 · annual ₹0 · late fee as per MITC"
-  },
-  {
-   "label": {
-    "en": "Finance charge",
-    "hi": "फ़ाइनेंस चार्ज",
-    "mr": "फायनान्स चार्ज"
-   },
-   "value": "Up to ~3.6% a month on unpaid balance (read MITC)"
-  },
-  {
-   "label": {
-    "en": "Auto-debit",
-    "hi": "ऑटो-डेबिट",
-    "mr": "ऑटो-डेबिट"
-   },
-   "value": "TOTAL amount due, from A/c ••2741",
-   "note": {
-    "en": "Choose total, not minimum.",
-    "hi": "न्यूनतम नहीं, कुल चुनें।",
-    "mr": "किमान नाही, एकूण निवडा."
-   }
-  },
-  {
-   "label": {
-    "en": "Add-ons",
-    "hi": "अतिरिक्त",
-    "mr": "जादा"
-   },
-   "value": "Card protection / insurance: declined"
-  },
-  {
-   "label": {
-    "en": "Signature",
-    "hi": "हस्ताक्षर",
-    "mr": "सही"
-   },
-   "value": "e-signed (OTP)"
-  }
- ],
- "ayushman-card": [
-  {
-   "label": {
-    "en": "Eligibility check",
-    "hi": "पात्रता जाँच",
-    "mr": "पात्रता तपासणी"
-   },
-   "value": "Found in the beneficiary list by mobile / ration card"
-  },
-  {
-   "label": {
-    "en": "Full name",
-    "hi": "पूरा नाम",
-    "mr": "पूर्ण नाव"
-   },
-   "value": "SUNITA RAMESH JADHAV"
-  },
-  {
-   "label": {
-    "en": "Aadhaar e-KYC",
-    "hi": "आधार ई-KYC",
-    "mr": "आधार ई-KYC"
-   },
-   "value": "OTP + face match ✓"
-  },
-  {
-   "label": {
-    "en": "Family members",
-    "hi": "परिवार के सदस्य",
-    "mr": "कुटुंबातील सदस्य"
-   },
-   "value": "Ramesh (husband), Pooja (daughter): each verified"
-  },
-  {
-   "label": {
-    "en": "Card",
-    "hi": "कार्ड",
-    "mr": "कार्ड"
-   },
-   "value": "Downloaded from the official portal / app"
-  },
-  {
-   "label": {
-    "en": "Cover",
-    "hi": "कवर",
-    "mr": "कव्हर"
-   },
-   "value": "Family floater per year at empanelled hospitals, cashless"
-  },
-  {
-   "label": {
-    "en": "Fee",
-    "hi": "शुल्क",
-    "mr": "शुल्क"
-   },
-   "value": "₹0: never pay an agent for this card"
-  }
- ]
+  "savings-account": [
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "VERENA ANIL D'SOUZA",
+      "note": {
+        "en": "Copied letter for letter from Aadhaar.",
+        "hi": "आधार से अक्षरशः।",
+        "mr": "आधारवरून अक्षरशः."
+      }
+    },
+    {
+      "label": {
+        "en": "Father's / mother's name",
+        "hi": "पिता / माता का नाम",
+        "mr": "वडील / आईचे नाव"
+      },
+      "value": "ANIL D'SOUZA / ANITA D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "Date of birth",
+        "hi": "जन्म तिथि",
+        "mr": "जन्मतारीख"
+      },
+      "value": "14/03/2004"
+    },
+    {
+      "label": {
+        "en": "Address",
+        "hi": "पता",
+        "mr": "पत्ता"
+      },
+      "value": "Flat 3B, Shanti Niwas, Kothrud, Pune 411038",
+      "note": {
+        "en": "Current address, with PIN code.",
+        "hi": "मौजूदा पता, पिन कोड के साथ।",
+        "mr": "सध्याचा पत्ता, पिन कोडसह."
+      }
+    },
+    {
+      "label": {
+        "en": "Mobile",
+        "hi": "मोबाइल",
+        "mr": "मोबाइल"
+      },
+      "value": "98xxxxxx21 (linked to Aadhaar)"
+    },
+    {
+      "label": {
+        "en": "PAN",
+        "hi": "पैन",
+        "mr": "पॅन"
+      },
+      "value": "ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Account type",
+        "hi": "खाते का प्रकार",
+        "mr": "खात्याचा प्रकार"
+      },
+      "value": "Basic Savings Bank Deposit Account (BSBDA)"
+    },
+    {
+      "label": {
+        "en": "Occupation / annual income",
+        "hi": "पेशा / सालाना आय",
+        "mr": "व्यवसाय / वार्षिक उत्पन्न"
+      },
+      "value": "Student-intern · below ₹1 lakh"
+    },
+    {
+      "label": {
+        "en": "Mode of operation",
+        "hi": "संचालन का तरीक़ा",
+        "mr": "व्यवहाराची पद्धत"
+      },
+      "value": "Single"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "ANITA D'SOUZA, mother, 02/08/1975"
+    },
+    {
+      "label": {
+        "en": "Services",
+        "hi": "सेवाएँ",
+        "mr": "सेवा"
+      },
+      "value": "RuPay debit card ✓ · SMS alerts ✓ · Mobile banking ✓ · Cheque book ✗"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Verena D'Souza (inside the box)"
+    },
+    {
+      "label": {
+        "en": "Date and place",
+        "hi": "तारीख़ और स्थान",
+        "mr": "तारीख आणि ठिकाण"
+      },
+      "value": "06/10/2026, Pune"
+    }
+  ],
+  "kyc-update": [
+    {
+      "label": {
+        "en": "Customer ID / account",
+        "hi": "ग्राहक ID / खाता",
+        "mr": "ग्राहक ID / खाते"
+      },
+      "value": "CIF 8xxxxx904 · A/c 3xxxxxxx2741"
+    },
+    {
+      "label": {
+        "en": "Type of update",
+        "hi": "अपडेट का प्रकार",
+        "mr": "अद्ययावतीकरणाचा प्रकार"
+      },
+      "value": "Change in name (after marriage)"
+    },
+    {
+      "label": {
+        "en": "Old name / new name",
+        "hi": "पुराना / नया नाम",
+        "mr": "जुने / नवे नाव"
+      },
+      "value": "ANITA PEREIRA → ANITA D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "Documents attached",
+        "hi": "संलग्न दस्तावेज़",
+        "mr": "जोडलेली कागदपत्रे"
+      },
+      "value": "Aadhaar (new name), PAN, marriage certificate (self-attested)"
+    },
+    {
+      "label": {
+        "en": "CKYC number",
+        "hi": "CKYC नंबर",
+        "mr": "CKYC क्रमांक"
+      },
+      "value": "Leave blank if you do not know it; the bank fills it"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Anita D'Souza"
+    },
+    {
+      "label": {
+        "en": "Date and place",
+        "hi": "तारीख़ और स्थान",
+        "mr": "तारीख आणि ठिकाण"
+      },
+      "value": "12/10/2026, Pune"
+    }
+  ],
+  "nomination": [
+    {
+      "label": {
+        "en": "Account number",
+        "hi": "खाता संख्या",
+        "mr": "खाते क्रमांक"
+      },
+      "value": "3xxxxxxx2741"
+    },
+    {
+      "label": {
+        "en": "Nominee 1",
+        "hi": "नॉमिनी 1",
+        "mr": "नॉमिनी 1"
+      },
+      "value": "ANITA D'SOUZA · mother · 02/08/1975 · 60%"
+    },
+    {
+      "label": {
+        "en": "Nominee 2",
+        "hi": "नॉमिनी 2",
+        "mr": "नॉमिनी 2"
+      },
+      "value": "MIRA D'SOUZA · sister · 11/05/2012 · 40%",
+      "note": {
+        "en": "A minor, so a guardian is named below.",
+        "hi": "नाबालिग, इसलिए नीचे अभिभावक।",
+        "mr": "अल्पवयीन, म्हणून खाली पालक."
+      }
+    },
+    {
+      "label": {
+        "en": "Guardian for minor",
+        "hi": "नाबालिग के अभिभावक",
+        "mr": "अल्पवयीनाचे पालक"
+      },
+      "value": "ANIL D'SOUZA · father"
+    },
+    {
+      "label": {
+        "en": "Simultaneous or successive",
+        "hi": "एक साथ या क्रम से",
+        "mr": "एकाच वेळी की क्रमाने"
+      },
+      "value": "Simultaneous (shares as above)"
+    },
+    {
+      "label": {
+        "en": "Total share",
+        "hi": "कुल हिस्सा",
+        "mr": "एकूण वाटा"
+      },
+      "value": "100%",
+      "note": {
+        "en": "Shares must add up to exactly 100.",
+        "hi": "हिस्से ठीक 100 होने चाहिए।",
+        "mr": "वाटे बरोबर 100 व्हायला हवेत."
+      }
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Verena D'Souza (inside the box)"
+    },
+    {
+      "label": {
+        "en": "Witness (if thumb impression)",
+        "hi": "गवाह (अँगूठा निशान हो तो)",
+        "mr": "साक्षीदार (अंगठ्याचा ठसा असल्यास)"
+      },
+      "value": "Not needed: signed"
+    }
+  ],
+  "pan-application": [
+    {
+      "label": {
+        "en": "Application type",
+        "hi": "आवेदन प्रकार",
+        "mr": "अर्जाचा प्रकार"
+      },
+      "value": "New PAN, Form 49A (Indian citizen)"
+    },
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "D'SOUZA VERENA ANIL (surname, first, middle)"
+    },
+    {
+      "label": {
+        "en": "Date of birth",
+        "hi": "जन्म तिथि",
+        "mr": "जन्मतारीख"
+      },
+      "value": "14/03/2004"
+    },
+    {
+      "label": {
+        "en": "Father's name",
+        "hi": "पिता का नाम",
+        "mr": "वडिलांचे नाव"
+      },
+      "value": "D'SOUZA ANIL"
+    },
+    {
+      "label": {
+        "en": "Name on card",
+        "hi": "कार्ड पर नाम",
+        "mr": "कार्डवरील नाव"
+      },
+      "value": "VERENA ANIL D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "Address",
+        "hi": "पता",
+        "mr": "पत्ता"
+      },
+      "value": "Flat 3B, Shanti Niwas, Kothrud, Pune 411038"
+    },
+    {
+      "label": {
+        "en": "Mobile",
+        "hi": "मोबाइल",
+        "mr": "मोबाइल"
+      },
+      "value": "98xxxxxx21 · verena@email.com"
+    },
+    {
+      "label": {
+        "en": "Aadhaar",
+        "hi": "आधार",
+        "mr": "आधार"
+      },
+      "value": "XXXX XXXX 8821 (OTP-verified)"
+    },
+    {
+      "label": {
+        "en": "Source of income",
+        "hi": "आय का स्रोत",
+        "mr": "उत्पन्नाचा स्रोत"
+      },
+      "value": "No income / salary (as applicable)"
+    },
+    {
+      "label": {
+        "en": "Proof submitted",
+        "hi": "प्रमाण",
+        "mr": "पुरावा"
+      },
+      "value": "Aadhaar for identity, address and date of birth"
+    }
+  ],
+  "no-pan-declaration": [
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "SUNITA RAMESH JADHAV"
+    },
+    {
+      "label": {
+        "en": "Date of birth",
+        "hi": "जन्म तिथि",
+        "mr": "जन्मतारीख"
+      },
+      "value": "03/01/1990"
+    },
+    {
+      "label": {
+        "en": "Address",
+        "hi": "पता",
+        "mr": "पत्ता"
+      },
+      "value": "Room 12, Laxmi Chawl, Hadapsar, Pune 411028"
+    },
+    {
+      "label": {
+        "en": "Transaction",
+        "hi": "लेन-देन",
+        "mr": "व्यवहार"
+      },
+      "value": "Opening savings account · cash deposit ₹55,000"
+    },
+    {
+      "label": {
+        "en": "Applied for PAN?",
+        "hi": "पैन के लिए आवेदन?",
+        "mr": "पॅनसाठी अर्ज?"
+      },
+      "value": "Yes, acknowledgement no. 8812xxxxxxxx, dated 01/10/2026"
+    },
+    {
+      "label": {
+        "en": "Agricultural income",
+        "hi": "कृषि आय",
+        "mr": "शेती उत्पन्न"
+      },
+      "value": "Nil"
+    },
+    {
+      "label": {
+        "en": "Other income (estimated, year)",
+        "hi": "अन्य आय (अनुमानित, साल)",
+        "mr": "इतर उत्पन्न (अंदाजे, वर्ष)"
+      },
+      "value": "₹1,40,000",
+      "note": {
+        "en": "A truthful estimate; a false declaration is an offence.",
+        "hi": "सच्चा अनुमान; ग़लत घोषणा अपराध है।",
+        "mr": "खरा अंदाज; खोटी घोषणा गुन्हा आहे."
+      }
+    },
+    {
+      "label": {
+        "en": "Identity document",
+        "hi": "पहचान दस्तावेज़",
+        "mr": "ओळख दस्तऐवज"
+      },
+      "value": "Aadhaar XXXX XXXX 4410"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Sunita Jadhav"
+    },
+    {
+      "label": {
+        "en": "Date and place",
+        "hi": "तारीख़ और स्थान",
+        "mr": "तारीख आणि ठिकाण"
+      },
+      "value": "06/10/2026, Pune"
+    }
+  ],
+  "salary-tds-certificate": [
+    {
+      "label": {
+        "en": "Employer (deductor)",
+        "hi": "नियोक्ता (कटौतीकर्ता)",
+        "mr": "नियोक्ता (कपात करणारा)"
+      },
+      "value": "Nimbus Analytics Pvt Ltd · TAN PNEN0xxxxA"
+    },
+    {
+      "label": {
+        "en": "Employee",
+        "hi": "कर्मचारी",
+        "mr": "कर्मचारी"
+      },
+      "value": "Verena D'Souza · PAN ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Assessment year",
+        "hi": "निर्धारण वर्ष",
+        "mr": "निर्धारण वर्ष"
+      },
+      "value": "2026-27 (income of Apr 2025–Mar 2026)"
+    },
+    {
+      "label": {
+        "en": "Gross salary",
+        "hi": "सकल वेतन",
+        "mr": "एकूण पगार"
+      },
+      "value": "₹3,60,000"
+    },
+    {
+      "label": {
+        "en": "Standard deduction",
+        "hi": "स्टैंडर्ड डिडक्शन",
+        "mr": "प्रमाणित वजावट"
+      },
+      "value": "As per the regime chosen"
+    },
+    {
+      "label": {
+        "en": "Tax regime",
+        "hi": "टैक्स व्यवस्था",
+        "mr": "कर पद्धत"
+      },
+      "value": "New (default)"
+    },
+    {
+      "label": {
+        "en": "TDS deducted and deposited",
+        "hi": "कटा और जमा TDS",
+        "mr": "कापलेला आणि जमा TDS"
+      },
+      "value": "₹4,200 · matches Form 26AS ✓",
+      "note": {
+        "en": "Always tick this against 26AS before filing.",
+        "hi": "रिटर्न से पहले इसे 26AS से मिलाएँ।",
+        "mr": "विवरणपत्रापूर्वी हे 26AS शी जुळवा."
+      }
+    },
+    {
+      "label": {
+        "en": "Part A / Part B",
+        "hi": "भाग A / भाग B",
+        "mr": "भाग A / भाग B"
+      },
+      "value": "Part A: TDS quarters · Part B: salary breakup"
+    }
+  ],
+  "no-tds-declaration": [
+    {
+      "label": {
+        "en": "Form",
+        "hi": "फ़ॉर्म",
+        "mr": "फॉर्म"
+      },
+      "value": "15G (below 60) · 15H if 60 or older"
+    },
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "SUNITA RAMESH JADHAV"
+    },
+    {
+      "label": {
+        "en": "PAN",
+        "hi": "पैन",
+        "mr": "पॅन"
+      },
+      "value": "AXXPJ5678Q",
+      "note": {
+        "en": "Needed; without PAN the form is not valid.",
+        "hi": "ज़रूरी; पैन के बिना फ़ॉर्म मान्य नहीं।",
+        "mr": "आवश्यक; पॅनशिवाय फॉर्म वैध नाही."
+      }
+    },
+    {
+      "label": {
+        "en": "Previous year",
+        "hi": "पिछला वर्ष",
+        "mr": "मागील वर्ष"
+      },
+      "value": "2026-27"
+    },
+    {
+      "label": {
+        "en": "Interest from this FD (estimate)",
+        "hi": "इस FD से ब्याज (अनुमान)",
+        "mr": "या FD वरील व्याज (अंदाज)"
+      },
+      "value": "₹7,800"
+    },
+    {
+      "label": {
+        "en": "Total estimated income",
+        "hi": "कुल अनुमानित आय",
+        "mr": "एकूण अंदाजे उत्पन्न"
+      },
+      "value": "₹1,48,000 (below taxable limit)"
+    },
+    {
+      "label": {
+        "en": "Other 15G filed this year",
+        "hi": "इस साल दूसरे 15G",
+        "mr": "या वर्षी इतर 15G"
+      },
+      "value": "1 · ₹2,400 at Post Office"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Sunita Jadhav"
+    },
+    {
+      "label": {
+        "en": "Date and place",
+        "hi": "तारीख़ और स्थान",
+        "mr": "तारीख आणि ठिकाण"
+      },
+      "value": "02/04/2026, Pune",
+      "note": {
+        "en": "Submit at the start of the financial year, before interest is credited.",
+        "hi": "वित्त वर्ष की शुरुआत में, ब्याज जमा होने से पहले जमा करें।",
+        "mr": "आर्थिक वर्षाच्या सुरुवातीला, व्याज जमा होण्यापूर्वी सादर करा."
+      }
+    }
+  ],
+  "loan-kfs": [
+    {
+      "label": {
+        "en": "Loan amount",
+        "hi": "लोन रकम",
+        "mr": "कर्ज रक्कम"
+      },
+      "value": "₹1,50,000"
+    },
+    {
+      "label": {
+        "en": "Tenure",
+        "hi": "अवधि",
+        "mr": "मुदत"
+      },
+      "value": "24 months"
+    },
+    {
+      "label": {
+        "en": "Interest rate",
+        "hi": "ब्याज दर",
+        "mr": "व्याजदर"
+      },
+      "value": "11.5% p.a., fixed, reducing balance"
+    },
+    {
+      "label": {
+        "en": "Processing fee",
+        "hi": "प्रोसेसिंग शुल्क",
+        "mr": "प्रक्रिया शुल्क"
+      },
+      "value": "₹1,500 + GST ₹270"
+    },
+    {
+      "label": {
+        "en": "APR",
+        "hi": "APR",
+        "mr": "APR"
+      },
+      "value": "12.6%",
+      "note": {
+        "en": "Compare loans on this line.",
+        "hi": "लोन की तुलना इसी लाइन से करें।",
+        "mr": "कर्जांची तुलना याच ओळीने करा."
+      }
+    },
+    {
+      "label": {
+        "en": "EMI and date",
+        "hi": "EMI और तारीख़",
+        "mr": "EMI आणि तारीख"
+      },
+      "value": "₹7,026 on the 5th · 24 instalments"
+    },
+    {
+      "label": {
+        "en": "Total payable",
+        "hi": "कुल देय",
+        "mr": "एकूण देय"
+      },
+      "value": "₹1,68,624 + fee"
+    },
+    {
+      "label": {
+        "en": "Penal / bounce charges",
+        "hi": "दंड / बाउंस शुल्क",
+        "mr": "दंड / बाउन्स शुल्क"
+      },
+      "value": "2% per month on overdue · ₹500 per bounce"
+    },
+    {
+      "label": {
+        "en": "Grievance officer",
+        "hi": "शिकायत अधिकारी",
+        "mr": "तक्रार अधिकारी"
+      },
+      "value": "Name, phone and email printed"
+    },
+    {
+      "label": {
+        "en": "Cooling-off period",
+        "hi": "कूलिंग-ऑफ़ अवधि",
+        "mr": "कूलिंग-ऑफ कालावधी"
+      },
+      "value": "Stated in the KFS (exit by repaying principal + proportionate APR)"
+    }
+  ],
+  "gold-loan": [
+    {
+      "label": {
+        "en": "Items pledged",
+        "hi": "गिरवी रखे गहने",
+        "mr": "तारण दागिने"
+      },
+      "value": "2 bangles, 22 carat"
+    },
+    {
+      "label": {
+        "en": "Gross / net weight",
+        "hi": "कुल / शुद्ध वज़न",
+        "mr": "एकूण / निव्वळ वजन"
+      },
+      "value": "32.4 g / 30.1 g"
+    },
+    {
+      "label": {
+        "en": "Assessed value",
+        "hi": "आँका गया मूल्य",
+        "mr": "मूल्यांकन"
+      },
+      "value": "As per the day's gold rate, printed"
+    },
+    {
+      "label": {
+        "en": "Loan sanctioned",
+        "hi": "स्वीकृत लोन",
+        "mr": "मंजूर कर्ज"
+      },
+      "value": "₹80,000 (within the lender's loan-to-value limit)"
+    },
+    {
+      "label": {
+        "en": "Rate and repayment",
+        "hi": "दर और भुगतान",
+        "mr": "दर आणि परतफेड"
+      },
+      "value": "9.5% p.a. · interest monthly · principal at 12 months"
+    },
+    {
+      "label": {
+        "en": "Packet number",
+        "hi": "पैकेट नंबर",
+        "mr": "पाकीट क्रमांक"
+      },
+      "value": "G-55xx, sealed in front of borrower"
+    },
+    {
+      "label": {
+        "en": "Auction clause",
+        "hi": "नीलामी शर्त",
+        "mr": "लिलाव अट"
+      },
+      "value": "Written notice before any auction; surplus returned"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Anita D'Souza"
+    }
+  ],
+  "insurance-proposal": [
+    {
+      "label": {
+        "en": "Proposer / insured",
+        "hi": "प्रस्तावक / बीमित",
+        "mr": "प्रस्तावक / विमाधारक"
+      },
+      "value": "Verena D'Souza, 24"
+    },
+    {
+      "label": {
+        "en": "Occupation and income",
+        "hi": "पेशा और आय",
+        "mr": "व्यवसाय आणि उत्पन्न"
+      },
+      "value": "Analyst · ₹5,04,000 a year"
+    },
+    {
+      "label": {
+        "en": "Height / weight",
+        "hi": "क़द / वज़न",
+        "mr": "उंची / वजन"
+      },
+      "value": "162 cm / 54 kg"
+    },
+    {
+      "label": {
+        "en": "Medical history (last 4 years)",
+        "hi": "चिकित्सा इतिहास (4 साल)",
+        "mr": "वैद्यकीय इतिहास (4 वर्षे)"
+      },
+      "value": "YES: mild asthma since 2016, inhaler as needed",
+      "note": {
+        "en": "Disclose everything; hiding it can void a claim.",
+        "hi": "सब बताएँ; छुपाने से क्लेम ख़ारिज हो सकता है।",
+        "mr": "सगळे सांगा; लपवल्यास क्लेम नाकारला जाऊ शकतो."
+      }
+    },
+    {
+      "label": {
+        "en": "Tobacco / alcohol",
+        "hi": "तंबाकू / शराब",
+        "mr": "तंबाखू / मद्य"
+      },
+      "value": "No / No"
+    },
+    {
+      "label": {
+        "en": "Sum insured",
+        "hi": "सम इंश्योर्ड",
+        "mr": "विमा रक्कम"
+      },
+      "value": "₹5,00,000 · individual"
+    },
+    {
+      "label": {
+        "en": "Premium",
+        "hi": "प्रीमियम",
+        "mr": "प्रीमियम"
+      },
+      "value": "₹7,400 a year incl. GST, paid by UPI from own account"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "Anil D'Souza, father"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Verena D'Souza (inside the box)"
+    }
+  ],
+  "jan-suraksha": [
+    {
+      "label": {
+        "en": "Account number",
+        "hi": "खाता संख्या",
+        "mr": "खाते क्रमांक"
+      },
+      "value": "Savings A/c XXXX4410, Pune branch"
+    },
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "SUNITA RAMESH JADHAV"
+    },
+    {
+      "label": {
+        "en": "Date of birth",
+        "hi": "जन्म तिथि",
+        "mr": "जन्मतारीख"
+      },
+      "value": "03/01/1990"
+    },
+    {
+      "label": {
+        "en": "Scheme",
+        "hi": "योजना",
+        "mr": "योजना"
+      },
+      "value": "PMJJBY ✓ (₹436/yr) · PMSBY ✓ (₹20/yr)"
+    },
+    {
+      "label": {
+        "en": "Auto-debit consent",
+        "hi": "ऑटो-डेबिट सहमति",
+        "mr": "ऑटो-डेबिट संमती"
+      },
+      "value": "Yes, every year until I opt out"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "POOJA JADHAV · daughter · 2014"
+    },
+    {
+      "label": {
+        "en": "Guardian (minor nominee)",
+        "hi": "अभिभावक (नाबालिग)",
+        "mr": "पालक (अल्पवयीन)"
+      },
+      "value": "MEENA KAMBLE · sister"
+    },
+    {
+      "label": {
+        "en": "Health declaration (PMJJBY)",
+        "hi": "स्वास्थ्य घोषणा (PMJJBY)",
+        "mr": "आरोग्य घोषणा (PMJJBY)"
+      },
+      "value": "In good health, as stated"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Sunita Jadhav"
+    }
+  ],
+  "atal-pension": [
+    {
+      "label": {
+        "en": "Account number",
+        "hi": "खाता संख्या",
+        "mr": "खाते क्रमांक"
+      },
+      "value": "Savings A/c XXXX4410"
+    },
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "SUNITA RAMESH JADHAV · age 34"
+    },
+    {
+      "label": {
+        "en": "Pension chosen",
+        "hi": "चुनी पेंशन",
+        "mr": "निवडलेली पेन्शन"
+      },
+      "value": "₹3,000 a month from age 60"
+    },
+    {
+      "label": {
+        "en": "Contribution",
+        "hi": "योगदान",
+        "mr": "योगदान"
+      },
+      "value": "Monthly, auto-debited (amount shown by bank for age 34)"
+    },
+    {
+      "label": {
+        "en": "Spouse",
+        "hi": "जीवनसाथी",
+        "mr": "जोडीदार"
+      },
+      "value": "RAMESH JADHAV"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "RAMESH JADHAV · husband"
+    },
+    {
+      "label": {
+        "en": "Income taxpayer?",
+        "hi": "आयकरदाता?",
+        "mr": "आयकरदाता?"
+      },
+      "value": "No",
+      "note": {
+        "en": "Income taxpayers are not eligible to join APY.",
+        "hi": "आयकरदाता APY में नहीं जुड़ सकते।",
+        "mr": "आयकरदाते APY मध्ये सामील होऊ शकत नाहीत."
+      }
+    },
+    {
+      "label": {
+        "en": "Mobile",
+        "hi": "मोबाइल",
+        "mr": "मोबाइल"
+      },
+      "value": "97xxxxxx08"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Sunita Jadhav"
+    }
+  ],
+  "sukanya-samriddhi": [
+    {
+      "label": {
+        "en": "Girl child",
+        "hi": "बालिका",
+        "mr": "मुलगी"
+      },
+      "value": "MIRA VERENA SHAH · DOB 21/06/2023"
+    },
+    {
+      "label": {
+        "en": "Birth certificate no.",
+        "hi": "जन्म प्रमाणपत्र नं.",
+        "mr": "जन्म दाखला क्र."
+      },
+      "value": "PMC/2023/xxxx"
+    },
+    {
+      "label": {
+        "en": "Guardian",
+        "hi": "अभिभावक",
+        "mr": "पालक"
+      },
+      "value": "VERENA SHAH (mother) · PAN, Aadhaar attached"
+    },
+    {
+      "label": {
+        "en": "First deposit",
+        "hi": "पहली जमा",
+        "mr": "पहिली ठेव"
+      },
+      "value": "₹2,000 by cheque (minimum ₹250)"
+    },
+    {
+      "label": {
+        "en": "Office",
+        "hi": "कार्यालय",
+        "mr": "कार्यालय"
+      },
+      "value": "Kothrud Post Office"
+    },
+    {
+      "label": {
+        "en": "Yearly deposit plan",
+        "hi": "सालाना जमा योजना",
+        "mr": "वार्षिक ठेव नियोजन"
+      },
+      "value": "₹1,000 a month by standing instruction"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Verena Shah"
+    }
+  ],
+  "epf-joining": [
+    {
+      "label": {
+        "en": "Form",
+        "hi": "फ़ॉर्म",
+        "mr": "फॉर्म"
+      },
+      "value": "Form 11 (declaration) at joining"
+    },
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "VERENA ANIL D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "Date of birth",
+        "hi": "जन्म तिथि",
+        "mr": "जन्मतारीख"
+      },
+      "value": "14/03/2004"
+    },
+    {
+      "label": {
+        "en": "Previous PF member?",
+        "hi": "पहले PF सदस्य?",
+        "mr": "आधी PF सदस्य?"
+      },
+      "value": "Yes · UAN 10xxxxxxxx21 (internship)",
+      "note": {
+        "en": "Give the old UAN so your account continues.",
+        "hi": "पुराना UAN दें ताकि खाता जारी रहे।",
+        "mr": "जुना UAN द्या म्हणजे खाते पुढे चालू राहील."
+      }
+    },
+    {
+      "label": {
+        "en": "International worker?",
+        "hi": "अंतरराष्ट्रीय कर्मचारी?",
+        "mr": "आंतरराष्ट्रीय कर्मचारी?"
+      },
+      "value": "No"
+    },
+    {
+      "label": {
+        "en": "KYC",
+        "hi": "KYC",
+        "mr": "KYC"
+      },
+      "value": "Aadhaar · PAN · bank A/c + IFSC"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "e-nomination: Anita D'Souza, 100%"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Verena D'Souza (inside the box)"
+    }
+  ],
+  "itr-1": [
+    {
+      "label": {
+        "en": "Assessment year",
+        "hi": "निर्धारण वर्ष",
+        "mr": "निर्धारण वर्ष"
+      },
+      "value": "2026-27"
+    },
+    {
+      "label": {
+        "en": "PAN",
+        "hi": "पैन",
+        "mr": "पॅन"
+      },
+      "value": "ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Status / regime",
+        "hi": "स्थिति / व्यवस्था",
+        "mr": "स्थिती / पद्धत"
+      },
+      "value": "Individual · new regime"
+    },
+    {
+      "label": {
+        "en": "Salary (from Form 16)",
+        "hi": "तनख़्वाह (फ़ॉर्म 16 से)",
+        "mr": "पगार (फॉर्म 16 मधून)"
+      },
+      "value": "₹3,60,000"
+    },
+    {
+      "label": {
+        "en": "Other sources",
+        "hi": "अन्य स्रोत",
+        "mr": "इतर स्रोत"
+      },
+      "value": "Savings interest ₹1,240"
+    },
+    {
+      "label": {
+        "en": "TDS",
+        "hi": "TDS",
+        "mr": "TDS"
+      },
+      "value": "₹4,200 (matches 26AS)"
+    },
+    {
+      "label": {
+        "en": "Tax payable",
+        "hi": "देय टैक्स",
+        "mr": "देय कर"
+      },
+      "value": "₹0 after rebate"
+    },
+    {
+      "label": {
+        "en": "Refund",
+        "hi": "रिफ़ंड",
+        "mr": "परतावा"
+      },
+      "value": "₹4,200 to pre-validated A/c ••2741"
+    },
+    {
+      "label": {
+        "en": "Verification",
+        "hi": "सत्यापन",
+        "mr": "पडताळणी"
+      },
+      "value": "e-verified by Aadhaar OTP the same day"
+    }
+  ],
+  "health-claim": [
+    {
+      "label": {
+        "en": "Policy / member ID",
+        "hi": "पॉलिसी / सदस्य ID",
+        "mr": "पॉलिसी / सदस्य ID"
+      },
+      "value": "2xxxx/48/27 · member 01 (Anil D'Souza)"
+    },
+    {
+      "label": {
+        "en": "Hospital",
+        "hi": "अस्पताल",
+        "mr": "रुग्णालय"
+      },
+      "value": "City Care Hospital, Pune (non-network)"
+    },
+    {
+      "label": {
+        "en": "Admission / discharge",
+        "hi": "भर्ती / डिस्चार्ज",
+        "mr": "दाखल / डिस्चार्ज"
+      },
+      "value": "12/10/2026 – 16/10/2026"
+    },
+    {
+      "label": {
+        "en": "Diagnosis",
+        "hi": "निदान",
+        "mr": "निदान"
+      },
+      "value": "As written on the discharge summary"
+    },
+    {
+      "label": {
+        "en": "Amount claimed",
+        "hi": "माँगी रकम",
+        "mr": "मागितलेली रक्कम"
+      },
+      "value": "₹1,46,900 (pre- and post-bills listed separately)"
+    },
+    {
+      "label": {
+        "en": "Bills attached",
+        "hi": "संलग्न बिल",
+        "mr": "जोडलेली बिले"
+      },
+      "value": "Final bill, 9 pharmacy bills, 4 lab reports, receipts"
+    },
+    {
+      "label": {
+        "en": "Bank for payment",
+        "hi": "भुगतान हेतु बैंक",
+        "mr": "पैशांसाठी बँक"
+      },
+      "value": "A/c ••6612 · cancelled cheque attached"
+    },
+    {
+      "label": {
+        "en": "Part B",
+        "hi": "भाग B",
+        "mr": "भाग B"
+      },
+      "value": "Filled and stamped by the hospital"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "Verena D'Souza (proposer)"
+    }
+  ],
+  "epf-claim": [
+    {
+      "label": {
+        "en": "Claim type",
+        "hi": "क्लेम प्रकार",
+        "mr": "क्लेम प्रकार"
+      },
+      "value": "Advance (Form 31) for medical treatment"
+    },
+    {
+      "label": {
+        "en": "Purpose",
+        "hi": "उद्देश्य",
+        "mr": "उद्देश"
+      },
+      "value": "Illness of father (dependent)"
+    },
+    {
+      "label": {
+        "en": "Amount",
+        "hi": "रकम",
+        "mr": "रक्कम"
+      },
+      "value": "Within the eligible limit shown on the portal"
+    },
+    {
+      "label": {
+        "en": "Bank account",
+        "hi": "बैंक खाता",
+        "mr": "बँक खाते"
+      },
+      "value": "Seeded A/c ••2741 · cheque/passbook image uploaded"
+    },
+    {
+      "label": {
+        "en": "Date of leaving",
+        "hi": "छोड़ने की तारीख़",
+        "mr": "सोडण्याची तारीख"
+      },
+      "value": "Not applicable (still employed)"
+    },
+    {
+      "label": {
+        "en": "Verification",
+        "hi": "सत्यापन",
+        "mr": "पडताळणी"
+      },
+      "value": "Aadhaar OTP on the member portal"
+    }
+  ],
+  "ppf-account": [
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "VERENA ANIL D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "PAN",
+        "hi": "पैन",
+        "mr": "पॅन"
+      },
+      "value": "ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Address",
+        "hi": "पता",
+        "mr": "पत्ता"
+      },
+      "value": "Flat 3B, Shanti Niwas, Kothrud, Pune 411038"
+    },
+    {
+      "label": {
+        "en": "Initial deposit",
+        "hi": "पहली जमा",
+        "mr": "पहिली ठेव"
+      },
+      "value": "₹1,000 (minimum ₹500 a year)"
+    },
+    {
+      "label": {
+        "en": "Mode",
+        "hi": "तरीक़ा",
+        "mr": "पद्धत"
+      },
+      "value": "Online via net banking · standing instruction ₹1,000/month"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "ANITA D'SOUZA · mother · 100%"
+    },
+    {
+      "label": {
+        "en": "Declaration",
+        "hi": "घोषणा",
+        "mr": "घोषणा"
+      },
+      "value": "I do not hold another PPF account"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "e-signed (OTP)"
+    }
+  ],
+  "credit-card": [
+    {
+      "label": {
+        "en": "Card",
+        "hi": "कार्ड",
+        "mr": "कार्ड"
+      },
+      "value": "Card X · lifetime free"
+    },
+    {
+      "label": {
+        "en": "Income declared",
+        "hi": "घोषित आय",
+        "mr": "जाहीर उत्पन्न"
+      },
+      "value": "₹42,000 a month, salaried"
+    },
+    {
+      "label": {
+        "en": "Limit requested",
+        "hi": "माँगी लिमिट",
+        "mr": "मागितलेली मर्यादा"
+      },
+      "value": "₹40,000 (offered ₹1,20,000)"
+    },
+    {
+      "label": {
+        "en": "Fees accepted",
+        "hi": "स्वीकृत शुल्क",
+        "mr": "स्वीकारलेले शुल्क"
+      },
+      "value": "Joining ₹0 · annual ₹0 · late fee as per MITC"
+    },
+    {
+      "label": {
+        "en": "Finance charge",
+        "hi": "फ़ाइनेंस चार्ज",
+        "mr": "फायनान्स चार्ज"
+      },
+      "value": "Up to ~3.6% a month on unpaid balance (read MITC)"
+    },
+    {
+      "label": {
+        "en": "Auto-debit",
+        "hi": "ऑटो-डेबिट",
+        "mr": "ऑटो-डेबिट"
+      },
+      "value": "TOTAL amount due, from A/c ••2741",
+      "note": {
+        "en": "Choose total, not minimum.",
+        "hi": "न्यूनतम नहीं, कुल चुनें।",
+        "mr": "किमान नाही, एकूण निवडा."
+      }
+    },
+    {
+      "label": {
+        "en": "Add-ons",
+        "hi": "अतिरिक्त",
+        "mr": "जादा"
+      },
+      "value": "Card protection / insurance: declined"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "e-signed (OTP)"
+    }
+  ],
+  "ayushman-card": [
+    {
+      "label": {
+        "en": "Eligibility check",
+        "hi": "पात्रता जाँच",
+        "mr": "पात्रता तपासणी"
+      },
+      "value": "Found in the beneficiary list by mobile / ration card"
+    },
+    {
+      "label": {
+        "en": "Full name",
+        "hi": "पूरा नाम",
+        "mr": "पूर्ण नाव"
+      },
+      "value": "SUNITA RAMESH JADHAV"
+    },
+    {
+      "label": {
+        "en": "Aadhaar e-KYC",
+        "hi": "आधार ई-KYC",
+        "mr": "आधार ई-KYC"
+      },
+      "value": "OTP + face match ✓"
+    },
+    {
+      "label": {
+        "en": "Family members",
+        "hi": "परिवार के सदस्य",
+        "mr": "कुटुंबातील सदस्य"
+      },
+      "value": "Ramesh (husband), Pooja (daughter): each verified"
+    },
+    {
+      "label": {
+        "en": "Card",
+        "hi": "कार्ड",
+        "mr": "कार्ड"
+      },
+      "value": "Downloaded from the official portal / app"
+    },
+    {
+      "label": {
+        "en": "Cover",
+        "hi": "कवर",
+        "mr": "कव्हर"
+      },
+      "value": "Family floater per year at empanelled hospitals, cashless"
+    },
+    {
+      "label": {
+        "en": "Fee",
+        "hi": "शुल्क",
+        "mr": "शुल्क"
+      },
+      "value": "₹0: never pay an agent for this card"
+    }
+  ],
+  "demat-account": [
+    {
+      "label": {
+        "en": "Name (as on PAN)",
+        "hi": "नाम (PAN अनुसार)",
+        "mr": "नाव (PAN प्रमाणे)"
+      },
+      "value": "VERENA ANIL D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "PAN",
+        "hi": "पैन",
+        "mr": "पॅन"
+      },
+      "value": "ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Bank account",
+        "hi": "बैंक खाता",
+        "mr": "बँक खाते"
+      },
+      "value": "Savings ••••4821 · IFSC on cancelled cheque"
+    },
+    {
+      "label": {
+        "en": "Segments",
+        "hi": "सेगमेंट",
+        "mr": "सेगमेंट"
+      },
+      "value": "Equity cash only · F&O not selected"
+    },
+    {
+      "label": {
+        "en": "Income range",
+        "hi": "आय सीमा",
+        "mr": "उत्पन्न श्रेणी"
+      },
+      "value": "₹5–10 lakh a year · Salaried"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "ANITA D'SOUZA · mother · 100%"
+    },
+    {
+      "label": {
+        "en": "DDPI",
+        "hi": "DDPI",
+        "mr": "DDPI"
+      },
+      "value": "Signed for delivery of sold shares only"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "e-signed (Aadhaar OTP)"
+    }
+  ],
+  "mutual-fund": [
+    {
+      "label": {
+        "en": "Scheme",
+        "hi": "योजना",
+        "mr": "योजना"
+      },
+      "value": "Nifty 50 Index Fund · Direct · Growth"
+    },
+    {
+      "label": {
+        "en": "ARN",
+        "hi": "ARN",
+        "mr": "ARN"
+      },
+      "value": "Direct"
+    },
+    {
+      "label": {
+        "en": "SIP amount and date",
+        "hi": "SIP रकम और तारीख",
+        "mr": "SIP रक्कम आणि तारीख"
+      },
+      "value": "₹2,000 on the 7th of every month"
+    },
+    {
+      "label": {
+        "en": "Mandate ceiling",
+        "hi": "मैंडेट सीमा",
+        "mr": "मँडेट मर्यादा"
+      },
+      "value": "₹3,000 a month"
+    },
+    {
+      "label": {
+        "en": "KYC",
+        "hi": "KYC",
+        "mr": "KYC"
+      },
+      "value": "Verified with KRA"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "ANITA D'SOUZA · mother · 100%"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "e-signed (OTP)"
+    }
+  ],
+  "nps-account": [
+    {
+      "label": {
+        "en": "Name",
+        "hi": "नाम",
+        "mr": "नाव"
+      },
+      "value": "VERENA ANIL D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "Account",
+        "hi": "खाता",
+        "mr": "खाते"
+      },
+      "value": "Tier I (Tier II not opened)"
+    },
+    {
+      "label": {
+        "en": "Investment choice",
+        "hi": "निवेश विकल्प",
+        "mr": "गुंतवणूक पर्याय"
+      },
+      "value": "Auto choice · moderate"
+    },
+    {
+      "label": {
+        "en": "Pension fund manager",
+        "hi": "पेंशन फ़ंड मैनेजर",
+        "mr": "पेन्शन फंड मॅनेजर"
+      },
+      "value": "Chosen from the official list"
+    },
+    {
+      "label": {
+        "en": "Monthly contribution",
+        "hi": "मासिक योगदान",
+        "mr": "मासिक योगदान"
+      },
+      "value": "₹2,000 by standing instruction"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "ANITA D'SOUZA · mother · 100%"
+    },
+    {
+      "label": {
+        "en": "PRAN",
+        "hi": "PRAN",
+        "mr": "PRAN"
+      },
+      "value": "Issued after verification"
+    }
+  ],
+  "rbi-retail-direct": [
+    {
+      "label": {
+        "en": "PAN",
+        "hi": "पैन",
+        "mr": "पॅन"
+      },
+      "value": "ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Name",
+        "hi": "नाम",
+        "mr": "नाव"
+      },
+      "value": "VERENA ANIL D'SOUZA"
+    },
+    {
+      "label": {
+        "en": "Linked savings account",
+        "hi": "जुड़ा बचत खाता",
+        "mr": "जोडलेले बचत खाते"
+      },
+      "value": "••••4821"
+    },
+    {
+      "label": {
+        "en": "Mobile and email",
+        "hi": "मोबाइल और ईमेल",
+        "mr": "मोबाइल आणि ईमेल"
+      },
+      "value": "Verified by OTP on rbiretaildirect.org.in"
+    },
+    {
+      "label": {
+        "en": "Nominee",
+        "hi": "नॉमिनी",
+        "mr": "नॉमिनी"
+      },
+      "value": "MAYA D'SOUZA · daughter · 100% (guardian: Verena)"
+    },
+    {
+      "label": {
+        "en": "First purchase",
+        "hi": "पहली खरीद",
+        "mr": "पहिली खरेदी"
+      },
+      "value": "A government bond held to maturity"
+    }
+  ],
+  "demand-draft": [
+    {
+      "label": {
+        "en": "In favour of",
+        "hi": "किसके पक्ष में",
+        "mr": "कोणाच्या नावे"
+      },
+      "value": "THE REGISTRAR, PUNE UNIVERSITY"
+    },
+    {
+      "label": {
+        "en": "Payable at",
+        "hi": "कहाँ देय",
+        "mr": "कुठे देय"
+      },
+      "value": "Pune"
+    },
+    {
+      "label": {
+        "en": "Amount",
+        "hi": "रकम",
+        "mr": "रक्कम"
+      },
+      "value": "₹45,000 (Rupees Forty-Five Thousand only)"
+    },
+    {
+      "label": {
+        "en": "Commission",
+        "hi": "कमीशन",
+        "mr": "कमिशन"
+      },
+      "value": "As per the bank's schedule of charges"
+    },
+    {
+      "label": {
+        "en": "Paid by",
+        "hi": "भुगतान",
+        "mr": "पैसे"
+      },
+      "value": "Debit to savings ••••4821 (no cash)"
+    },
+    {
+      "label": {
+        "en": "Applicant",
+        "hi": "आवेदक",
+        "mr": "अर्जदार"
+      },
+      "value": "VERENA ANIL D'SOUZA · PAN ABCPD1234K"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "As per bank records"
+    }
+  ],
+  "cheque": [
+    {
+      "label": {
+        "en": "Date",
+        "hi": "तारीख",
+        "mr": "तारीख"
+      },
+      "value": "08/10/2026"
+    },
+    {
+      "label": {
+        "en": "Pay",
+        "hi": "Pay",
+        "mr": "Pay"
+      },
+      "value": "RAMESH KULKARNI ——————"
+    },
+    {
+      "label": {
+        "en": "Rupees",
+        "hi": "रुपये",
+        "mr": "रुपये"
+      },
+      "value": "Thirty Thousand only ——"
+    },
+    {
+      "label": {
+        "en": "₹",
+        "hi": "₹",
+        "mr": "₹"
+      },
+      "value": "30,000/-"
+    },
+    {
+      "label": {
+        "en": "Crossing",
+        "hi": "क्रॉसिंग",
+        "mr": "क्रॉसिंग"
+      },
+      "value": "Two lines · A/c Payee"
+    },
+    {
+      "label": {
+        "en": "Counterfoil",
+        "hi": "काउंटरफ़ॉयल",
+        "mr": "काउंटरफॉइल"
+      },
+      "value": "Cheque 000214 · rent deposit · ₹30,000"
+    },
+    {
+      "label": {
+        "en": "Signature",
+        "hi": "हस्ताक्षर",
+        "mr": "सही"
+      },
+      "value": "As per bank records"
+    }
+  ],
+  "pms-aif-agreement": [
+    {
+      "label": {
+        "en": "Product checked",
+        "hi": "जाँचा गया उत्पाद",
+        "mr": "तपासलेले उत्पादन"
+      },
+      "value": "PMS · discretionary"
+    },
+    {
+      "label": {
+        "en": "SEBI registration",
+        "hi": "SEBI पंजीकरण",
+        "mr": "SEBI नोंदणी"
+      },
+      "value": "Checked on sebi.gov.in"
+    },
+    {
+      "label": {
+        "en": "Minimum",
+        "hi": "न्यूनतम",
+        "mr": "किमान"
+      },
+      "value": "₹50 lakh"
+    },
+    {
+      "label": {
+        "en": "Fees asked in writing",
+        "hi": "लिखित में माँगी फ़ीस",
+        "mr": "लेखी मागितलेले शुल्क"
+      },
+      "value": "Fixed fee + profit share above a hurdle"
+    },
+    {
+      "label": {
+        "en": "Lock-in / exit",
+        "hi": "लॉक-इन / निकासी",
+        "mr": "लॉक-इन / बाहेर पडणे"
+      },
+      "value": "Exit charge in year 1"
+    },
+    {
+      "label": {
+        "en": "Decision",
+        "hi": "फ़ैसला",
+        "mr": "निर्णय"
+      },
+      "value": "Not signed: after fees, similar to an index fund"
+    }
+  ]
 }

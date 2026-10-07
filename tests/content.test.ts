@@ -40,7 +40,7 @@ describe("content", () => {
     const glossary = readJson("content/glossary.json");
     expect(questions).toHaveLength(60);
     expect(cases).toHaveLength(12);
-    expect(guide).toHaveLength(47);
+    expect(guide).toHaveLength(57);
     expect(glossary).toHaveLength(60);
     expect(guide.map((item: { id: string }) => item.id)).toEqual([...LESSON_IDS]);
     expect(cases.map((item: { id: string }) => item.id)).toEqual([...CASE_IDS]);

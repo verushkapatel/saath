@@ -8,12 +8,12 @@ import type { Look, Progress } from "./progress";
 export type PostcardDef = { id: string; from: number; to: number; look: Look };
 
 export const POSTCARDS: PostcardDef[] = [
-  { id: "first-steps", from: 1, to: 9, look: { outfit: "blazer", extra: "bag", place: "office" } },
-  { id: "finding-balance", from: 10, to: 17, look: { outfit: "hoodie", extra: "headphones", place: "cafe" } },
-  { id: "tested", from: 18, to: 26, look: { outfit: "jacket", extra: "watch", place: "home" } },
-  { id: "family", from: 27, to: 36, look: { outfit: "sari", extra: "earrings", place: "home" } },
-  { id: "long-view", from: 37, to: 44, look: { outfit: "suit", extra: "glasses", place: "office" } },
-  { id: "retirement", from: 45, to: 46, look: { outfit: "shawl", extra: "glasses", place: "garden" } },
+  { id: "first-steps", from: 1, to: 11, look: { outfit: "blazer", extra: "bag", place: "office" } },
+  { id: "finding-balance", from: 12, to: 22, look: { outfit: "hoodie", extra: "headphones", place: "cafe" } },
+  { id: "tested", from: 23, to: 31, look: { outfit: "jacket", extra: "watch", place: "home" } },
+  { id: "family", from: 32, to: 42, look: { outfit: "sari", extra: "earrings", place: "home" } },
+  { id: "long-view", from: 43, to: 53, look: { outfit: "suit", extra: "glasses", place: "office" } },
+  { id: "retirement", from: 54, to: 55, look: { outfit: "shawl", extra: "glasses", place: "garden" } },
 ];
 
 export type Postcard = PostcardDef & { index: number; ageFrom: number; ageTo: number; unlocked: boolean };

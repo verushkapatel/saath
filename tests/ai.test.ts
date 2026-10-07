@@ -66,7 +66,7 @@ describe("on-device rule provider", () => {
   it("finds the right guide for the way students actually ask", async () => {
     const top = async (lang: Lang, question: string) => (await rules.answerQuestion(question, request(lang))).sources[0]?.href;
     expect(await top("en", "how do i save money as a student")).toBe("/guide/pay-yourself");
-    expect(await top("en", "what is a mutual fund")).toBe("/guide/what-sip");
+    expect(await top("en", "what is a mutual fund")).toBe("/guide/mutual-funds");
     expect(await top("en", "buy now pay later is it a loan")).toBe("/guide/pay-later");
     expect(await top("mr", "बजेट कसे बनवायचे?")).toBe("/guide/budget");
     expect(await top("hi", "पैसे कैसे बचाएँ?")).toBe("/guide/pay-yourself");

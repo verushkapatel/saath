@@ -161,6 +161,313 @@
       }
     },
     {
+      "id": "cheque-and-draft",
+      "stage": "banking",
+      "topic": "banking",
+      "age": 22,
+      "place": "home",
+      "title": {
+        "en": "04 · Cheque or demand draft?",
+        "hi": "04 · चेक या डिमांड ड्राफ़्ट?",
+        "mr": "04 · चेक की डिमांड ड्राफ्ट?"
+      },
+      "setup": {
+        "en": "Verena finds a room near her office. The landlord, Mr Kulkarni, wants a ₹30,000 security deposit 'by cheque or DD, no cash', and hands her his name on a scrap of paper.",
+        "hi": "वेरेना को दफ़्तर के पास कमरा मिलता है। मकान मालिक कुलकर्णी जी ₹30,000 की सिक्योरिटी डिपॉज़िट 'चेक या DD से, नकद नहीं' माँगते हैं, और एक पर्ची पर अपना नाम लिखकर देते हैं।",
+        "mr": "वेरेनाला ऑफिसजवळ खोली मिळते. घरमालक कुलकर्णी ₹30,000 अनामत रक्कम 'चेक किंवा DD ने, रोख नको' मागतात, आणि एका चिठ्ठीवर त्यांचे नाव लिहून देतात."
+      },
+      "more": {
+        "en": "Her new cheque book has never been used. A colleague says, 'Just sign a cheque and let him fill the rest, it's faster.'",
+        "hi": "उसकी नई चेक बुक कभी इस्तेमाल नहीं हुई। एक सहकर्मी कहता है, 'बस चेक पर दस्तखत करके दे दो, बाकी वो भर लेंगे, जल्दी होगा।'",
+        "mr": "तिचे नवे चेकबुक कधीच वापरलेले नाही. एक सहकारी म्हणतो, 'फक्त चेकवर सही करून दे, बाकी ते भरतील, पटकन होईल.'"
+      },
+      "question": {
+        "en": "How should Verena pay the deposit?",
+        "hi": "वेरेना डिपॉज़िट कैसे दे?",
+        "mr": "वेरेनाने अनामत रक्कम कशी द्यावी?"
+      },
+      "action": {
+        "en": "Write a crossed, A/c Payee cheque herself: exact name, amount in words ending in 'only', no gaps, and note it in the counterfoil.",
+        "hi": "खुद क्रॉस्ड, A/c Payee चेक लिखे: सही नाम, शब्दों में रकम 'only' के साथ, कोई जगह नहीं, और काउंटरफ़ॉयल में दर्ज करे।",
+        "mr": "स्वतः क्रॉस्ड, A/c Payee चेक लिहावा: अचूक नाव, अक्षरी रक्कम 'only' सह, कुठेही जागा नाही, आणि काउंटरफॉइलमध्ये नोंद."
+      },
+      "okay": {
+        "en": "Get a demand draft from the bank, paying its commission and taking half a day off.",
+        "hi": "बैंक से डिमांड ड्राफ़्ट बनवाए, कमीशन दे और आधे दिन की छुट्टी ले।",
+        "mr": "बँकेतून डिमांड ड्राफ्ट काढावा, कमिशन द्यावे आणि अर्ध्या दिवसाची रजा घ्यावी."
+      },
+      "costly": {
+        "en": "Sign a blank cheque and let the landlord fill in the details.",
+        "hi": "कोरे चेक पर दस्तखत करके मकान मालिक को विवरण भरने दे।",
+        "mr": "कोऱ्या चेकवर सही करून घरमालकाला तपशील भरू द्यावा."
+      },
+      "goodOutcome": {
+        "en": "The cheque clears in two days. Nobody could change the amount or cash it in another name, and her counterfoil is her proof of payment.",
+        "hi": "दो दिन में चेक क्लियर हो जाता है। कोई रकम नहीं बदल सकता था, न किसी और नाम पर भुना सकता था, और काउंटरफ़ॉयल उसका भुगतान प्रमाण है।",
+        "mr": "दोन दिवसांत चेक क्लिअर होतो. कोणीही रक्कम बदलू शकत नव्हते किंवा दुसऱ्या नावावर वटवू शकत नव्हते, आणि काउंटरफॉइल हा तिचा पेमेंटचा पुरावा आहे."
+      },
+      "okayOutcome": {
+        "en": "The DD works and cannot bounce, but it costs a commission and a lost half-day for something a careful cheque would have done.",
+        "hi": "DD काम करता है और बाउंस नहीं हो सकता, पर इसमें कमीशन और आधा दिन गया, जो एक सावधान चेक से हो जाता।",
+        "mr": "DD चालतो आणि परत येऊ शकत नाही, पण काळजीपूर्वक लिहिलेल्या चेकने होणाऱ्या कामासाठी कमिशन आणि अर्धा दिवस गेला."
+      },
+      "costlyOutcome": {
+        "en": "The cheque is presented for ₹80,000. It bounces, the bank charges her a fee, and she spends weeks proving she never agreed to that amount.",
+        "hi": "चेक ₹80,000 के लिए पेश होता है। यह बाउंस होता है, बैंक शुल्क काटता है, और उसे हफ़्तों तक साबित करना पड़ता है कि उसने कभी उतनी रकम पर सहमति नहीं दी।",
+        "mr": "चेक ₹80,000 साठी सादर होतो. तो परत येतो, बँक शुल्क कापते, आणि तिने ती रक्कम कधीच मान्य केली नव्हती हे सिद्ध करण्यात तिचे आठवडे जातात."
+      },
+      "lesson": {
+        "en": "A cheque is an order to your bank. Fill every part yourself, cross it, and leave no space where someone else can write.",
+        "hi": "चेक आपके बैंक को दिया आदेश है। हर हिस्सा खुद भरें, क्रॉस करें, और कोई जगह न छोड़ें जहाँ कोई और लिख सके।",
+        "mr": "चेक म्हणजे तुमच्या बँकेला दिलेला आदेश. प्रत्येक भाग स्वतः भरा, क्रॉस करा, आणि दुसरा कोणी लिहू शकेल अशी जागा सोडू नका."
+      },
+      "delta": {
+        "cash": -30000,
+        "confidence": 4
+      },
+      "guide": "cheques",
+      "lines": [
+        {
+          "label": {
+            "en": "Pay",
+            "hi": "Pay",
+            "mr": "Pay"
+          },
+          "value": {
+            "en": "RAMESH KULKARNI ———",
+            "hi": "RAMESH KULKARNI ———",
+            "mr": "RAMESH KULKARNI ———"
+          },
+          "note": {
+            "en": "Full name, then a line to the end so no name can be added.",
+            "hi": "पूरा नाम, फिर अंत तक लकीर ताकि कोई नाम न जोड़ा जा सके।",
+            "mr": "पूर्ण नाव, मग शेवटपर्यंत रेषा म्हणजे दुसरे नाव जोडता येणार नाही."
+          }
+        },
+        {
+          "label": {
+            "en": "Rupees",
+            "hi": "रुपये",
+            "mr": "रुपये"
+          },
+          "value": {
+            "en": "Thirty Thousand only",
+            "hi": "Thirty Thousand only",
+            "mr": "Thirty Thousand only"
+          },
+          "note": {
+            "en": "Starts right after the printed word and ends with 'only'.",
+            "hi": "छपे शब्द के ठीक बाद शुरू और 'only' पर खत्म।",
+            "mr": "छापील शब्दानंतर लगेच सुरू आणि 'only' ने शेवट."
+          }
+        },
+        {
+          "label": {
+            "en": "₹ in figures",
+            "hi": "₹ अंकों में",
+            "mr": "₹ अंकांत"
+          },
+          "value": {
+            "en": "30,000/-",
+            "hi": "30,000/-",
+            "mr": "30,000/-"
+          },
+          "note": {
+            "en": "Close to the ₹ sign and closed with '/-'.",
+            "hi": "₹ के पास और '/-' से बंद।",
+            "mr": "₹ जवळ आणि '/-' ने बंद."
+          }
+        },
+        {
+          "label": {
+            "en": "Crossing",
+            "hi": "क्रॉसिंग",
+            "mr": "क्रॉसिंग"
+          },
+          "value": {
+            "en": "Two lines · A/c Payee",
+            "hi": "दो लकीरें · A/c Payee",
+            "mr": "दोन रेषा · A/c Payee"
+          },
+          "note": {
+            "en": "Now it can only go into Mr Kulkarni's own account.",
+            "hi": "अब यह सिर्फ़ कुलकर्णी जी के अपने खाते में जा सकता है।",
+            "mr": "आता तो फक्त कुलकर्णींच्याच खात्यात जाऊ शकतो."
+          }
+        },
+        {
+          "label": {
+            "en": "Blank cheque",
+            "hi": "कोरा चेक",
+            "mr": "कोरा चेक"
+          },
+          "value": {
+            "en": "Signed, nothing else",
+            "hi": "सिर्फ़ दस्तखत",
+            "mr": "फक्त सही"
+          },
+          "note": {
+            "en": "Whoever holds it can write any name and amount. Never.",
+            "hi": "जिसके पास हो वह कोई भी नाम और रकम लिख सकता है। कभी नहीं।",
+            "mr": "ज्याच्याकडे असेल तो कोणतेही नाव आणि रक्कम लिहू शकतो. कधीच नाही."
+          },
+          "flag": true
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "How long is a cheque valid from its date?",
+            "hi": "चेक अपनी तारीख से कितने समय मान्य है?",
+            "mr": "चेक त्याच्या तारखेपासून किती काळ वैध असतो?"
+          },
+          "options": [
+            {
+              "en": "Three months",
+              "hi": "तीन महीने",
+              "mr": "तीन महिने"
+            },
+            {
+              "en": "One week",
+              "hi": "एक हफ़्ता",
+              "mr": "एक आठवडा"
+            },
+            {
+              "en": "Forever",
+              "hi": "हमेशा",
+              "mr": "कायम"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "After three months the bank will not pay it.",
+            "hi": "तीन महीने बाद बैंक इसका भुगतान नहीं करेगा।",
+            "mr": "तीन महिन्यांनंतर बँक तो वटवणार नाही."
+          }
+        },
+        {
+          "question": {
+            "en": "What does 'A/c Payee' crossing do?",
+            "hi": "'A/c Payee' क्रॉसिंग क्या करती है?",
+            "mr": "'A/c Payee' क्रॉसिंग काय करते?"
+          },
+          "options": [
+            {
+              "en": "Lets anyone cash it",
+              "hi": "कोई भी भुना सकता है",
+              "mr": "कोणीही वटवू शकतो"
+            },
+            {
+              "en": "Pays only into the payee's account",
+              "hi": "सिर्फ़ पाने वाले के खाते में जाता है",
+              "mr": "फक्त घेणाऱ्याच्याच खात्यात जातो"
+            },
+            {
+              "en": "Doubles the amount",
+              "hi": "रकम दोगुनी करती है",
+              "mr": "रक्कम दुप्पट करते"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A lost or stolen crossed cheque cannot be cashed by someone else.",
+            "hi": "खोया या चोरी हुआ क्रॉस्ड चेक कोई और नहीं भुना सकता।",
+            "mr": "हरवलेला किंवा चोरीला गेलेला क्रॉस्ड चेक दुसरा वटवू शकत नाही."
+          }
+        },
+        {
+          "question": {
+            "en": "Why can a demand draft not bounce?",
+            "hi": "डिमांड ड्राफ़्ट बाउंस क्यों नहीं होता?",
+            "mr": "डिमांड ड्राफ्ट परत का येत नाही?"
+          },
+          "options": [
+            {
+              "en": "It is paid for in advance",
+              "hi": "इसका भुगतान पहले हो चुका है",
+              "mr": "त्याचे पैसे आधीच भरलेले असतात"
+            },
+            {
+              "en": "It is printed in red",
+              "hi": "यह लाल रंग में छपता है",
+              "mr": "तो लाल रंगात छापलेला असतो"
+            },
+            {
+              "en": "The RBI signs it",
+              "hi": "RBI इस पर दस्तखत करता है",
+              "mr": "RBI त्यावर सही करते"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The bank has the money before it issues the draft.",
+            "hi": "ड्राफ़्ट जारी करने से पहले बैंक के पास पैसा होता है।",
+            "mr": "ड्राफ्ट देण्यापूर्वीच बँकेकडे पैसे असतात."
+          }
+        },
+        {
+          "question": {
+            "en": "A cheque bounces for lack of funds. What can follow?",
+            "hi": "पैसे न होने से चेक बाउंस हो जाए तो क्या हो सकता है?",
+            "mr": "शिल्लक नसल्याने चेक परत आला तर काय होऊ शकते?"
+          },
+          "options": [
+            {
+              "en": "Nothing at all",
+              "hi": "कुछ नहीं",
+              "mr": "काहीच नाही"
+            },
+            {
+              "en": "Bank charges and possibly a case under Section 138",
+              "hi": "बैंक शुल्क और धारा 138 के तहत मामला",
+              "mr": "बँक शुल्क आणि कलम 138 खाली खटला"
+            },
+            {
+              "en": "A free new cheque book",
+              "hi": "मुफ़्त नई चेक बुक",
+              "mr": "मोफत नवे चेकबुक"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Dishonour is treated seriously under the Negotiable Instruments Act.",
+            "hi": "नेगोशिएबल इंस्ट्रूमेंट्स एक्ट में अनादर को गंभीरता से लिया जाता है।",
+            "mr": "निगोशिएबल इन्स्ट्रुमेंट्स अॅक्टमध्ये अनादराला गांभीर्याने घेतले जाते."
+          }
+        },
+        {
+          "question": {
+            "en": "What is the counterfoil for?",
+            "hi": "काउंटरफ़ॉयल किस लिए है?",
+            "mr": "काउंटरफॉइल कशासाठी?"
+          },
+          "options": [
+            {
+              "en": "Decoration",
+              "hi": "सजावट",
+              "mr": "सजावट"
+            },
+            {
+              "en": "A record of each cheque you wrote",
+              "hi": "आपके लिखे हर चेक का रिकॉर्ड",
+              "mr": "तुम्ही लिहिलेल्या प्रत्येक चेकची नोंद"
+            },
+            {
+              "en": "Giving to the payee",
+              "hi": "पाने वाले को देने के लिए",
+              "mr": "घेणाऱ्याला देण्यासाठी"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "It is your proof of what, when and to whom you paid.",
+            "hi": "यह आपका प्रमाण है कि क्या, कब और किसे दिया।",
+            "mr": "काय, केव्हा आणि कोणाला दिले याचा तो तुमचा पुरावा आहे."
+          }
+        }
+      ]
+    },
+    {
       "id": "first-income",
       "source": "first-income",
       "stage": "first-income",
@@ -168,9 +475,9 @@
       "age": 22,
       "place": "room",
       "title": {
-        "en": "04 · First month's pay",
-        "hi": "04 · पहले महीने का वेतन",
-        "mr": "04 · पहिल्या महिन्याचा पगार"
+        "en": "05 · First month's pay",
+        "hi": "05 · पहले महीने का वेतन",
+        "mr": "05 · पहिल्या महिन्याचा पगार"
       },
       "delta": {
         "cash": 42000,
@@ -187,9 +494,9 @@
       "age": 23,
       "place": "room",
       "title": {
-        "en": "05 · The first bad spending decision",
-        "hi": "05 · खर्च का पहला गलत फ़ैसला",
-        "mr": "05 · खर्चाचा पहिला चुकीचा निर्णय"
+        "en": "06 · The first bad spending decision",
+        "hi": "06 · खर्च का पहला गलत फ़ैसला",
+        "mr": "06 · खर्चाचा पहिला चुकीचा निर्णय"
       },
       "delta": {
         "confidence": 2
@@ -204,9 +511,9 @@
       "age": 23,
       "place": "room",
       "title": {
-        "en": "06 · Building an emergency fund",
-        "hi": "06 · आपात निधि बनाना",
-        "mr": "06 · आणीबाणी निधी उभा करणे"
+        "en": "07 · Building an emergency fund",
+        "hi": "07 · आपात निधि बनाना",
+        "mr": "07 · आणीबाणी निधी उभा करणे"
       },
       "delta": {
         "emergency": 18000,
@@ -222,9 +529,9 @@
       "age": 24,
       "place": "office",
       "title": {
-        "en": "07 · Her first insurance decision",
-        "hi": "07 · बीमा का पहला फ़ैसला",
-        "mr": "07 · विम्याचा पहिला निर्णय"
+        "en": "08 · Her first insurance decision",
+        "hi": "08 · बीमा का पहला फ़ैसला",
+        "mr": "08 · विम्याचा पहिला निर्णय"
       },
       "delta": {
         "insurance": 25,
@@ -239,9 +546,9 @@
       "age": 24,
       "place": "home",
       "title": {
-        "en": "08 · Government benefits and eligibility",
-        "hi": "08 · सरकारी लाभ और पात्रता",
-        "mr": "08 · सरकारी लाभ आणि पात्रता"
+        "en": "09 · Government benefits and eligibility",
+        "hi": "09 · सरकारी लाभ और पात्रता",
+        "mr": "09 · सरकारी लाभ आणि पात्रता"
       },
       "setup": {
         "en": "A colleague sends Verena a scheme poster. It promises quick approval, but gives no department, date or official link.",
@@ -304,15 +611,307 @@
       }
     },
     {
+      "id": "bank-choice",
+      "stage": "banking",
+      "topic": "banking",
+      "age": 24,
+      "place": "bank",
+      "title": {
+        "en": "10 · Which bank for her savings?",
+        "hi": "10 · उसकी बचत किस बैंक में?",
+        "mr": "10 · तिची बचत कोणत्या बँकेत?"
+      },
+      "setup": {
+        "en": "Verena has ₹60,000 saved. A payments bank app offers easy UPI, a cooperative bank near home offers a higher FD rate, and her salary bank is a large public sector bank.",
+        "hi": "वेरेना के पास ₹60,000 बचत है। एक पेमेंट्स बैंक ऐप आसान UPI देता है, घर के पास एक सहकारी बैंक ऊँची FD दर देता है, और उसका वेतन बैंक एक बड़ा सरकारी बैंक है।",
+        "mr": "वेरेनाकडे ₹60,000 बचत आहे. एक पेमेंट्स बँक अॅप सोपे UPI देते, घराजवळची सहकारी बँक जास्त FD दर देते, आणि तिची पगार बँक एक मोठी सरकारी बँक आहे."
+      },
+      "more": {
+        "en": "A cousin says, 'Small banks fail, keep cash at home.' Another says, 'Go wherever the rate is highest, all banks are the same.'",
+        "hi": "एक चचेरा भाई कहता है, 'छोटे बैंक डूब जाते हैं, नकद घर में रखो।' दूसरा कहता है, 'जहाँ दर सबसे ऊँची हो वहाँ जाओ, सब बैंक एक जैसे हैं।'",
+        "mr": "एक चुलत भाऊ म्हणतो, 'लहान बँका बुडतात, रोख घरी ठेव.' दुसरा म्हणतो, 'जिथे दर सर्वात जास्त तिथे जा, सगळ्या बँका सारख्याच.'"
+      },
+      "question": {
+        "en": "Where should Verena keep her savings?",
+        "hi": "वेरेना अपनी बचत कहाँ रखे?",
+        "mr": "वेरेनाने बचत कुठे ठेवावी?"
+      },
+      "action": {
+        "en": "Keep an emergency buffer in her salary bank and an FD in a regulated bank she has checked, knowing deposits are insured up to ₹5 lakh per bank.",
+        "hi": "आपात बफ़र वेतन बैंक में रखे और जाँचे हुए नियंत्रित बैंक में FD करे, यह जानते हुए कि हर बैंक में ₹5 लाख तक जमा बीमित है।",
+        "mr": "आणीबाणी राखीव रक्कम पगार बँकेत ठेवावी आणि तपासलेल्या नियंत्रित बँकेत FD करावी, प्रत्येक बँकेत ₹5 लाखांपर्यंत ठेवींना विमा आहे हे जाणून."
+      },
+      "okay": {
+        "en": "Leave all of it in her savings account, safe but earning very little.",
+        "hi": "सब बचत खाते में छोड़ दे, सुरक्षित पर बहुत कम कमाई।",
+        "mr": "सगळे बचत खात्यातच ठेवावे, सुरक्षित पण कमाई खूप कमी."
+      },
+      "costly": {
+        "en": "Keep it as cash in a cupboard at home.",
+        "hi": "घर की अलमारी में नकद रखे।",
+        "mr": "घरच्या कपाटात रोख ठेवावे."
+      },
+      "goodOutcome": {
+        "en": "Her FD earns more than savings, the buffer stays a tap away, and she knows exactly what is insured and by whom.",
+        "hi": "उसकी FD बचत से ज़्यादा कमाती है, बफ़र एक टैप दूर रहता है, और उसे ठीक पता है कि क्या बीमित है और किसके द्वारा।",
+        "mr": "तिची FD बचतीपेक्षा जास्त कमावते, राखीव रक्कम एका टॅपवर राहते, आणि काय विमाधारक आहे आणि कोणाकडून हे तिला नेमके माहीत आहे."
+      },
+      "okayOutcome": {
+        "en": "Her money is safe and insured, but over the year inflation eats more than the account pays.",
+        "hi": "पैसा सुरक्षित और बीमित है, पर साल भर में महँगाई खाते की कमाई से ज़्यादा खा जाती है।",
+        "mr": "पैसे सुरक्षित आणि विमाधारक आहेत, पण वर्षभरात महागाई खात्याच्या कमाईपेक्षा जास्त खाते."
+      },
+      "costlyOutcome": {
+        "en": "Cash at home earns nothing, is not insured, and ₹8,000 of it quietly disappears into small spends over a few months.",
+        "hi": "घर का नकद कुछ नहीं कमाता, बीमित नहीं, और कुछ महीनों में ₹8,000 चुपचाप छोटे खर्चों में चला जाता है।",
+        "mr": "घरातली रोख काहीच कमावत नाही, विमाधारक नाही, आणि काही महिन्यांत ₹8,000 शांतपणे छोट्या खर्चात जातात."
+      },
+      "lesson": {
+        "en": "Banks differ in what they may do, but deposits in all of them are insured up to ₹5 lakh per bank. Check the bank, then choose for access, cost and rate together.",
+        "hi": "बैंक अपने कामों में अलग हैं, पर सभी में जमा हर बैंक में ₹5 लाख तक बीमित है। बैंक जाँचें, फिर पहुँच, खर्च और दर साथ देखकर चुनें।",
+        "mr": "बँका त्यांच्या कामात वेगळ्या असतात, पण सर्वांतील ठेवींना प्रत्येक बँकेत ₹5 लाखांपर्यंत विमा आहे. बँक तपासा, मग सुविधा, खर्च आणि दर एकत्र पाहून निवडा."
+      },
+      "delta": {
+        "savings": 6000,
+        "resilience": 3,
+        "confidence": 3
+      },
+      "guide": "kinds-of-banks",
+      "lines": [
+        {
+          "label": {
+            "en": "Payments bank",
+            "hi": "पेमेंट्स बैंक",
+            "mr": "पेमेंट्स बँक"
+          },
+          "value": {
+            "en": "Up to ₹2 lakh, no loans",
+            "hi": "₹2 लाख तक, लोन नहीं",
+            "mr": "₹2 लाखांपर्यंत, कर्ज नाही"
+          },
+          "note": {
+            "en": "Good for payments; it cannot lend or issue credit cards.",
+            "hi": "भुगतान के लिए अच्छा; यह लोन या क्रेडिट कार्ड नहीं दे सकता।",
+            "mr": "पेमेंटसाठी चांगली; ती कर्ज किंवा क्रेडिट कार्ड देऊ शकत नाही."
+          }
+        },
+        {
+          "label": {
+            "en": "Cooperative bank FD",
+            "hi": "सहकारी बैंक FD",
+            "mr": "सहकारी बँक FD"
+          },
+          "value": {
+            "en": "Higher rate",
+            "hi": "ऊँची दर",
+            "mr": "जास्त दर"
+          },
+          "note": {
+            "en": "Insured up to ₹5 lakh too; check its licence and health before a large deposit.",
+            "hi": "यह भी ₹5 लाख तक बीमित; बड़ी जमा से पहले लाइसेंस और स्थिति जाँचें।",
+            "mr": "हीसुद्धा ₹5 लाखांपर्यंत विमाधारक; मोठ्या ठेवीपूर्वी परवाना आणि स्थिती तपासा."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Salary bank",
+            "hi": "वेतन बैंक",
+            "mr": "पगार बँक"
+          },
+          "value": {
+            "en": "Public sector",
+            "hi": "सरकारी",
+            "mr": "सरकारी"
+          },
+          "note": {
+            "en": "Easy access for an emergency buffer.",
+            "hi": "आपात बफ़र के लिए आसान पहुँच।",
+            "mr": "आणीबाणी राखीव रकमेसाठी सोपी सुविधा."
+          }
+        },
+        {
+          "label": {
+            "en": "Cash at home",
+            "hi": "घर में नकद",
+            "mr": "घरी रोख"
+          },
+          "value": {
+            "en": "₹0 interest",
+            "hi": "₹0 ब्याज",
+            "mr": "₹0 व्याज"
+          },
+          "note": {
+            "en": "Not insured, easily spent, and it loses value to inflation.",
+            "hi": "बीमित नहीं, आसानी से खर्च, और महँगाई से कीमत घटती है।",
+            "mr": "विमाधारक नाही, सहज खर्च होते, आणि महागाईने किंमत कमी होते."
+          },
+          "flag": true
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "Up to how much are deposits insured per depositor per bank?",
+            "hi": "हर बैंक में हर जमाकर्ता की जमा कितने तक बीमित है?",
+            "mr": "प्रत्येक बँकेत प्रत्येक ठेवीदाराच्या ठेवींना किती विमा?"
+          },
+          "options": [
+            {
+              "en": "₹5 lakh",
+              "hi": "₹5 लाख",
+              "mr": "₹5 लाख"
+            },
+            {
+              "en": "₹1 lakh",
+              "hi": "₹1 लाख",
+              "mr": "₹1 लाख"
+            },
+            {
+              "en": "No insurance",
+              "hi": "कोई बीमा नहीं",
+              "mr": "विमा नाही"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "DICGC covers principal and interest together up to ₹5 lakh.",
+            "hi": "DICGC मूलधन और ब्याज मिलाकर ₹5 लाख तक देता है।",
+            "mr": "DICGC मुद्दल आणि व्याज मिळून ₹5 लाखांपर्यंत संरक्षण देते."
+          }
+        },
+        {
+          "question": {
+            "en": "What can a payments bank not do?",
+            "hi": "पेमेंट्स बैंक क्या नहीं कर सकता?",
+            "mr": "पेमेंट्स बँक काय करू शकत नाही?"
+          },
+          "options": [
+            {
+              "en": "Take deposits",
+              "hi": "जमा लेना",
+              "mr": "ठेवी घेणे"
+            },
+            {
+              "en": "Give loans",
+              "hi": "लोन देना",
+              "mr": "कर्ज देणे"
+            },
+            {
+              "en": "Offer UPI",
+              "hi": "UPI देना",
+              "mr": "UPI देणे"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Payments banks are limited to deposits and payments.",
+            "hi": "पेमेंट्स बैंक जमा और भुगतान तक सीमित हैं।",
+            "mr": "पेमेंट्स बँका ठेवी आणि पेमेंटपुरत्या मर्यादित आहेत."
+          }
+        },
+        {
+          "question": {
+            "en": "Is a deposit with an NBFC covered by DICGC?",
+            "hi": "क्या NBFC में जमा DICGC के बीमे में है?",
+            "mr": "NBFC मधील ठेवीला DICGC विमा आहे का?"
+          },
+          "options": [
+            {
+              "en": "Yes, always",
+              "hi": "हाँ, हमेशा",
+              "mr": "हो, नेहमी"
+            },
+            {
+              "en": "No",
+              "hi": "नहीं",
+              "mr": "नाही"
+            },
+            {
+              "en": "Only on weekends",
+              "hi": "सिर्फ़ सप्ताहांत पर",
+              "mr": "फक्त शनिवार-रविवारी"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "NBFCs are not banks, so their deposits are outside this insurance.",
+            "hi": "NBFC बैंक नहीं, इसलिए उनकी जमा इस बीमे से बाहर है।",
+            "mr": "NBFC बँका नाहीत, म्हणून त्यांच्या ठेवी या विम्याबाहेर आहेत."
+          }
+        },
+        {
+          "question": {
+            "en": "Why is cash at home costly over time?",
+            "hi": "समय के साथ घर का नकद महँगा क्यों पड़ता है?",
+            "mr": "काळानुसार घरची रोख महाग का पडते?"
+          },
+          "options": [
+            {
+              "en": "It earns nothing and inflation shrinks it",
+              "hi": "यह कुछ नहीं कमाता और महँगाई इसे घटाती है",
+              "mr": "ती काहीच कमावत नाही आणि महागाई ती कमी करते"
+            },
+            {
+              "en": "Banks charge for it",
+              "hi": "बैंक इसका शुल्क लेते हैं",
+              "mr": "बँका त्याचे शुल्क घेतात"
+            },
+            {
+              "en": "It grows too fast",
+              "hi": "यह बहुत तेज़ बढ़ता है",
+              "mr": "ती खूप वेगाने वाढते"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Its buying power falls every year, and it is not insured.",
+            "hi": "हर साल इसकी खरीदने की ताकत घटती है, और यह बीमित नहीं।",
+            "mr": "दरवर्षी तिची खरेदी क्षमता कमी होते, आणि ती विमाधारक नसते."
+          }
+        },
+        {
+          "question": {
+            "en": "With ₹9 lakh to deposit, how do you keep it all insured?",
+            "hi": "₹9 लाख जमा करने हों तो पूरी रकम बीमित कैसे रखें?",
+            "mr": "₹9 लाख ठेवायचे असल्यास सगळी रक्कम विमाधारक कशी ठेवावी?"
+          },
+          "options": [
+            {
+              "en": "Put it all in one bank",
+              "hi": "सब एक बैंक में",
+              "mr": "सगळे एका बँकेत"
+            },
+            {
+              "en": "Split it across two banks",
+              "hi": "दो बैंकों में बाँटें",
+              "mr": "दोन बँकांत वाटा"
+            },
+            {
+              "en": "Keep it as cash",
+              "hi": "नकद रखें",
+              "mr": "रोख ठेवा"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The ₹5 lakh limit applies to each bank separately.",
+            "hi": "₹5 लाख की सीमा हर बैंक पर अलग से लागू होती है।",
+            "mr": "₹5 लाखांची मर्यादा प्रत्येक बँकेला स्वतंत्रपणे लागू होते."
+          }
+        }
+      ]
+    },
+    {
       "id": "first-goal",
       "stage": "saving",
       "topic": "saving",
       "age": 25,
       "place": "cafe",
       "title": {
-        "en": "09 · Her first financial goal",
-        "hi": "09 · उसका पहला आर्थिक लक्ष्य",
-        "mr": "09 · तिचे पहिले आर्थिक लक्ष्य"
+        "en": "11 · Her first financial goal",
+        "hi": "11 · उसका पहला आर्थिक लक्ष्य",
+        "mr": "11 · तिचे पहिले आर्थिक लक्ष्य"
       },
       "setup": {
         "en": "Verena wants to fund a professional course in eighteen months. The fee is clear, but travel and study materials also matter.",
@@ -382,15 +981,245 @@
       }
     },
     {
+      "id": "ppf-start",
+      "stage": "saving",
+      "topic": "saving",
+      "age": 25,
+      "place": "room",
+      "title": {
+        "en": "12 · Opening a PPF account",
+        "hi": "12 · PPF खाता खोलना",
+        "mr": "12 · PPF खाते उघडणे"
+      },
+      "setup": {
+        "en": "Verena wants money for a goal fifteen years away: a home deposit or her parents' care. Her father swears by PPF. Her friend says it is 'too slow'.",
+        "hi": "वेरेना पंद्रह साल दूर के लक्ष्य के लिए पैसा चाहती है: घर की डाउन पेमेंट या माता-पिता की देखभाल। पिता PPF के भरोसे हैं। दोस्त कहती है यह 'बहुत धीमा' है।",
+        "mr": "वेरेनाला पंधरा वर्षांनंतरच्या उद्दिष्टासाठी पैसे हवे आहेत: घराचे डाउन पेमेंट किंवा आई-वडिलांची काळजी. वडील PPF वर विश्वास ठेवतात. मैत्रीण म्हणते ते 'खूप संथ' आहे."
+      },
+      "more": {
+        "en": "She can spare ₹1,000 a month. The bank's app lets her open PPF online in ten minutes.",
+        "hi": "वह हर महीने ₹1,000 निकाल सकती है। बैंक के ऐप से PPF दस मिनट में ऑनलाइन खुल जाता है।",
+        "mr": "ती दरमहा ₹1,000 बाजूला काढू शकते. बँकेच्या अॅपवरून PPF दहा मिनिटांत ऑनलाइन उघडते."
+      },
+      "question": {
+        "en": "What should Verena do with the ₹1,000 a month?",
+        "hi": "वेरेना ₹1,000 महीने का क्या करे?",
+        "mr": "वेरेनाने दरमहा ₹1,000 चे काय करावे?"
+      },
+      "action": {
+        "en": "Open PPF with a nominee and a monthly standing instruction, keeping her emergency fund separate.",
+        "hi": "नॉमिनी और मासिक स्टैंडिंग इंस्ट्रक्शन के साथ PPF खोले, आपात निधि अलग रखते हुए।",
+        "mr": "नॉमिनी आणि मासिक स्टँडिंग इन्स्ट्रक्शनसह PPF उघडावे, आणीबाणी निधी वेगळा ठेवून."
+      },
+      "okay": {
+        "en": "Open PPF but deposit only when she remembers.",
+        "hi": "PPF खोले पर जब याद आए तभी जमा करे।",
+        "mr": "PPF उघडावे पण आठवेल तेव्हाच पैसे भरावे."
+      },
+      "costly": {
+        "en": "Put her emergency fund into PPF too, to get the tax-free interest.",
+        "hi": "टैक्स-मुक्त ब्याज के लिए आपात निधि भी PPF में डाल दे।",
+        "mr": "करमुक्त व्याजासाठी आणीबाणी निधीही PPF मध्ये टाकावा."
+      },
+      "goodOutcome": {
+        "en": "₹12,000 goes in every year without effort. The balance grows tax-free, and her emergency money stays reachable.",
+        "hi": "हर साल बिना मेहनत ₹12,000 जमा होते हैं। रकम टैक्स-मुक्त बढ़ती है, और आपात पैसा पहुँच में रहता है।",
+        "mr": "दरवर्षी विनासायास ₹12,000 जमा होतात. रक्कम करमुक्त वाढते, आणि आणीबाणीचे पैसे हाताशी राहतात."
+      },
+      "okayOutcome": {
+        "en": "Some years she deposits, some she forgets. One year she misses the ₹500 minimum and has to pay a penalty to revive the account.",
+        "hi": "किसी साल जमा करती है, किसी साल भूल जाती है। एक साल ₹500 का न्यूनतम छूट जाता है और खाता चालू कराने के लिए जुर्माना देना पड़ता है।",
+        "mr": "काही वर्षी भरते, काही वर्षी विसरते. एका वर्षी ₹500 किमान चुकते आणि खाते सुरू करण्यासाठी दंड भरावा लागतो."
+      },
+      "costlyOutcome": {
+        "en": "Six months later her laptop breaks. Her money is locked in PPF, so she buys a new one on a credit card at high interest.",
+        "hi": "छह महीने बाद लैपटॉप खराब हो जाता है। पैसा PPF में बंद है, इसलिए वह ऊँचे ब्याज पर क्रेडिट कार्ड से नया खरीदती है।",
+        "mr": "सहा महिन्यांनी तिचा लॅपटॉप बिघडतो. पैसे PPF मध्ये बंद आहेत, म्हणून ती जास्त व्याजाने क्रेडिट कार्डवर नवा घेते."
+      },
+      "lesson": {
+        "en": "PPF rewards patience with safety and tax-free growth, but it locks money for years. Fund it steadily, and never with money you may need soon.",
+        "hi": "PPF धैर्य को सुरक्षा और टैक्स-मुक्त बढ़त से पुरस्कृत करता है, पर पैसा सालों तक बंद रखता है। नियमित जमा करें, और कभी वह पैसा नहीं जो जल्दी चाहिए।",
+        "mr": "PPF संयमाला सुरक्षितता आणि करमुक्त वाढ देतो, पण पैसे वर्षानुवर्षे बंद ठेवतो. नियमित भरा, आणि लवकर लागू शकणारे पैसे कधीही नाही."
+      },
+      "delta": {
+        "savings": 12000,
+        "resilience": 3,
+        "confidence": 2
+      },
+      "guide": "ppf-explained",
+      "sim": {
+        "kind": "grow",
+        "monthly": 1000,
+        "rate": 7,
+        "years": [
+          5,
+          10,
+          15
+        ]
+      },
+      "drill": [
+        {
+          "question": {
+            "en": "How long does a PPF account run?",
+            "hi": "PPF खाता कितने साल चलता है?",
+            "mr": "PPF खाते किती वर्षे चालते?"
+          },
+          "options": [
+            {
+              "en": "15 years",
+              "hi": "15 साल",
+              "mr": "15 वर्षे"
+            },
+            {
+              "en": "1 year",
+              "hi": "1 साल",
+              "mr": "1 वर्ष"
+            },
+            {
+              "en": "50 years",
+              "hi": "50 साल",
+              "mr": "50 वर्षे"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It can then be extended in blocks of five years.",
+            "hi": "फिर इसे पाँच-पाँच साल बढ़ाया जा सकता है।",
+            "mr": "मग ते पाच-पाच वर्षांनी वाढवता येते."
+          }
+        },
+        {
+          "question": {
+            "en": "What is the yearly deposit range?",
+            "hi": "सालाना जमा की सीमा क्या है?",
+            "mr": "वार्षिक ठेवीची मर्यादा काय?"
+          },
+          "options": [
+            {
+              "en": "₹500 to ₹1.5 lakh",
+              "hi": "₹500 से ₹1.5 लाख",
+              "mr": "₹500 ते ₹1.5 लाख"
+            },
+            {
+              "en": "Any amount",
+              "hi": "कोई भी रकम",
+              "mr": "कोणतीही रक्कम"
+            },
+            {
+              "en": "₹10 lakh minimum",
+              "hi": "कम से कम ₹10 लाख",
+              "mr": "किमान ₹10 लाख"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Below ₹500 in a year the account becomes inactive.",
+            "hi": "किसी साल ₹500 से कम हो तो खाता निष्क्रिय होता है।",
+            "mr": "एखाद्या वर्षी ₹500 पेक्षा कमी असल्यास खाते निष्क्रिय होते."
+          }
+        },
+        {
+          "question": {
+            "en": "Who sets the PPF interest rate?",
+            "hi": "PPF ब्याज दर कौन तय करता है?",
+            "mr": "PPF व्याजदर कोण ठरवते?"
+          },
+          "options": [
+            {
+              "en": "Your bank manager",
+              "hi": "आपका बैंक मैनेजर",
+              "mr": "तुमचा बँक मॅनेजर"
+            },
+            {
+              "en": "The government, every quarter",
+              "hi": "सरकार, हर तिमाही",
+              "mr": "सरकार, दर तिमाहीला"
+            },
+            {
+              "en": "It never changes",
+              "hi": "यह कभी नहीं बदलती",
+              "mr": "तो कधीच बदलत नाही"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Check the current rate before relying on any number.",
+            "hi": "किसी आँकड़े पर भरोसे से पहले मौजूदा दर देखें।",
+            "mr": "कोणत्याही आकड्यावर अवलंबून राहण्यापूर्वी सध्याचा दर पाहा."
+          }
+        },
+        {
+          "question": {
+            "en": "Why not put the emergency fund in PPF?",
+            "hi": "आपात निधि PPF में क्यों न डालें?",
+            "mr": "आणीबाणी निधी PPF मध्ये का टाकू नये?"
+          },
+          "options": [
+            {
+              "en": "It is locked for years",
+              "hi": "पैसा सालों तक बंद रहता है",
+              "mr": "पैसे वर्षानुवर्षे बंद राहतात"
+            },
+            {
+              "en": "It is not safe",
+              "hi": "यह सुरक्षित नहीं",
+              "mr": "ते सुरक्षित नाही"
+            },
+            {
+              "en": "It pays no interest",
+              "hi": "इसमें ब्याज नहीं",
+              "mr": "त्यात व्याज नाही"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Emergencies need money you can reach today.",
+            "hi": "आपात स्थिति में आज मिलने वाला पैसा चाहिए।",
+            "mr": "आणीबाणीला आज मिळणारे पैसे लागतात."
+          }
+        },
+        {
+          "question": {
+            "en": "How many PPF accounts can one person hold in their own name?",
+            "hi": "एक व्यक्ति अपने नाम पर कितने PPF खाते रख सकता है?",
+            "mr": "एक व्यक्ती स्वतःच्या नावावर किती PPF खाती ठेवू शकते?"
+          },
+          "options": [
+            {
+              "en": "One",
+              "hi": "एक",
+              "mr": "एक"
+            },
+            {
+              "en": "Five",
+              "hi": "पाँच",
+              "mr": "पाच"
+            },
+            {
+              "en": "Unlimited",
+              "hi": "असीमित",
+              "mr": "अमर्याद"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "A second account in the same name is not allowed.",
+            "hi": "उसी नाम पर दूसरा खाता नहीं हो सकता।",
+            "mr": "त्याच नावावर दुसरे खाते चालत नाही."
+          }
+        }
+      ]
+    },
+    {
       "id": "tracking-spending",
       "stage": "budgeting",
       "topic": "budgeting",
       "age": 25,
       "place": "room",
       "title": {
-        "en": "10 · Tracking everyday spending",
-        "hi": "10 · रोज़मर्रा के खर्च का हिसाब",
-        "mr": "10 · रोजच्या खर्चाची नोंद"
+        "en": "13 · Tracking everyday spending",
+        "hi": "13 · रोज़मर्रा के खर्च का हिसाब",
+        "mr": "13 · रोजच्या खर्चाची नोंद"
       },
       "setup": {
         "en": "Small payments keep disappearing from Verena's account. None looks serious alone, but together they are larger than her electricity bill.",
@@ -461,9 +1290,9 @@
       "age": 25,
       "place": "cafe",
       "title": {
-        "en": "11 · The receipt",
-        "hi": "11 · रसीद",
-        "mr": "11 · पावती"
+        "en": "14 · The receipt",
+        "hi": "14 · रसीद",
+        "mr": "14 · पावती"
       },
       "setup": {
         "en": "A long receipt mixes item prices, tax, a service charge and a discount. Verena wants to know what she actually paid and why.",
@@ -531,9 +1360,9 @@
       "age": 26,
       "place": "room",
       "title": {
-        "en": "12 · The subscription trap",
-        "hi": "12 · सब्सक्रिप्शन का जाल",
-        "mr": "12 · सबस्क्रिप्शनचा सापळा"
+        "en": "15 · The subscription trap",
+        "hi": "15 · सब्सक्रिप्शन का जाल",
+        "mr": "15 · सबस्क्रिप्शनचा सापळा"
       },
       "setup": {
         "en": "Three free trials became monthly charges. Verena uses one often, one sometimes and has forgotten the third completely.",
@@ -603,9 +1432,9 @@
       "age": 26,
       "place": "home",
       "title": {
-        "en": "13 · Rent versus lifestyle",
-        "hi": "13 · किराया बनाम जीवनशैली",
-        "mr": "13 · भाडे विरुद्ध जीवनशैली"
+        "en": "16 · Rent versus lifestyle",
+        "hi": "16 · किराया बनाम जीवनशैली",
+        "mr": "16 · भाडे विरुद्ध जीवनशैली"
       },
       "setup": {
         "en": "A brighter flat cuts Verena's commute, but the rent and deposit would slow her emergency fund for a year.",
@@ -670,6 +1499,298 @@
       }
     },
     {
+      "id": "demat-first",
+      "stage": "investing",
+      "topic": "investing",
+      "age": 26,
+      "place": "cafe",
+      "title": {
+        "en": "17 · Her demat account and a hot tip",
+        "hi": "17 · उसका डीमैट खाता और एक गरम टिप",
+        "mr": "17 · तिचे डिमॅट खाते आणि एक गरम टिप"
+      },
+      "setup": {
+        "en": "Verena opens a demat and trading account with a SEBI-registered broker. The same week, a 'stock guru' in a chat group posts: 'Buy XYZ now, target double in 30 days. Send your login, I will trade for you.'",
+        "hi": "वेरेना SEBI में पंजीकृत ब्रोकर से डीमैट और ट्रेडिंग खाता खोलती है। उसी हफ़्ते एक चैट ग्रुप में 'स्टॉक गुरु' लिखता है: 'अभी XYZ खरीदो, 30 दिन में दोगुना। अपना लॉगिन भेजो, मैं तुम्हारे लिए ट्रेड करूँगा।'",
+        "mr": "वेरेना SEBI नोंदणीकृत ब्रोकरकडे डिमॅट आणि ट्रेडिंग खाते उघडते. त्याच आठवड्यात एका चॅट ग्रुपमध्ये 'स्टॉक गुरू' लिहितो: 'आत्ता XYZ घ्या, 30 दिवसांत दुप्पट. तुमचे लॉगिन पाठवा, मी तुमच्यासाठी ट्रेड करतो.'"
+      },
+      "more": {
+        "en": "Screenshots of 'profits' arrive every hour. XYZ is a tiny company she has never heard of. She has ₹20,000 set aside for investing.",
+        "hi": "हर घंटे 'मुनाफ़े' के स्क्रीनशॉट आते हैं। XYZ एक छोटी कंपनी है जिसका नाम उसने कभी नहीं सुना। निवेश के लिए उसके पास ₹20,000 रखे हैं।",
+        "mr": "दर तासाला 'नफ्याचे' स्क्रीनशॉट येतात. XYZ ही तिने कधीही न ऐकलेली छोटी कंपनी आहे. गुंतवणुकीसाठी तिच्याकडे ₹20,000 बाजूला आहेत."
+      },
+      "question": {
+        "en": "What should Verena do with the tip?",
+        "hi": "वेरेना टिप का क्या करे?",
+        "mr": "वेरेनाने टिपचे काय करावे?"
+      },
+      "action": {
+        "en": "Ignore the tip, never share her login, and put the ₹20,000 into a diversified index fund instead of one share.",
+        "hi": "टिप को अनदेखा करे, लॉगिन कभी न दे, और ₹20,000 एक शेयर के बजाय विविध इंडेक्स फ़ंड में लगाए।",
+        "mr": "टिपकडे दुर्लक्ष करावे, लॉगिन कधीही देऊ नये, आणि ₹20,000 एका शेअरऐवजी वैविध्यपूर्ण इंडेक्स फंडात गुंतवावे."
+      },
+      "okay": {
+        "en": "Buy a little XYZ 'just to see', without sharing her login.",
+        "hi": "लॉगिन दिए बिना 'बस देखने के लिए' थोड़ा XYZ खरीदे।",
+        "mr": "लॉगिन न देता 'फक्त पाहण्यासाठी' थोडे XYZ घ्यावे."
+      },
+      "costly": {
+        "en": "Send the guru her login so he can trade for her.",
+        "hi": "गुरु को लॉगिन भेज दे ताकि वह उसके लिए ट्रेड करे।",
+        "mr": "गुरूला लॉगिन पाठवावे म्हणजे तो तिच्यासाठी ट्रेड करेल."
+      },
+      "goodOutcome": {
+        "en": "A week later XYZ crashes after the group stops posting; it was a pump-and-dump. Verena's index fund dips and recovers like the market, and her account stays hers.",
+        "hi": "एक हफ़्ते बाद ग्रुप के चुप होते ही XYZ गिर जाता है; यह पंप-एंड-डंप था। वेरेना का इंडेक्स फ़ंड बाज़ार की तरह थोड़ा गिरकर संभल जाता है, और खाता उसी का रहता है।",
+        "mr": "आठवड्यानंतर ग्रुप गप्प झाल्यावर XYZ कोसळतो; तो पंप-अँड-डंप होता. वेरेनाचा इंडेक्स फंड बाजाराप्रमाणे थोडा घसरून सावरतो, आणि खाते तिचेच राहते."
+      },
+      "okayOutcome": {
+        "en": "Her ₹3,000 in XYZ becomes ₹900 when the scheme collapses. A small, painful lesson.",
+        "hi": "योजना ढहने पर XYZ में लगे ₹3,000 के ₹900 रह जाते हैं। छोटा, पर दर्दनाक सबक।",
+        "mr": "योजना कोसळल्यावर XYZ मधील ₹3,000 चे ₹900 होतात. छोटा पण वेदनादायक धडा."
+      },
+      "costlyOutcome": {
+        "en": "The 'guru' sells her holdings and makes trades that wipe out ₹20,000. Because she shared her login, getting it back is very hard.",
+        "hi": "'गुरु' उसकी होल्डिंग बेचकर ऐसे सौदे करता है जो ₹20,000 साफ़ कर देते हैं। लॉगिन देने की वजह से पैसा वापस पाना बहुत मुश्किल है।",
+        "mr": "'गुरू' तिची होल्डिंग विकून असे व्यवहार करतो की ₹20,000 संपतात. लॉगिन दिल्यामुळे पैसे परत मिळवणे खूप कठीण आहे."
+      },
+      "lesson": {
+        "en": "Your demat login is like your bank PIN. Sure-profit tips in chat groups are how pump-and-dump schemes find buyers; diversify and decide for yourself.",
+        "hi": "डीमैट लॉगिन बैंक PIN जैसा है। चैट ग्रुप की पक्के मुनाफ़े वाली टिप से ही पंप-एंड-डंप को खरीदार मिलते हैं; पैसा बाँटें और खुद फ़ैसला करें।",
+        "mr": "डिमॅट लॉगिन बँक PIN सारखे आहे. चॅट ग्रुपमधील निश्चित नफ्याच्या टिपमधूनच पंप-अँड-डंपला खरेदीदार मिळतात; पैसे वाटा आणि स्वतः निर्णय घ्या."
+      },
+      "delta": {
+        "investments": 20000,
+        "confidence": 4,
+        "resilience": 2
+      },
+      "guide": "stock-market",
+      "lines": [
+        {
+          "label": {
+            "en": "Broker",
+            "hi": "ब्रोकर",
+            "mr": "ब्रोकर"
+          },
+          "value": {
+            "en": "SEBI-registered",
+            "hi": "SEBI पंजीकृत",
+            "mr": "SEBI नोंदणीकृत"
+          },
+          "note": {
+            "en": "Checked on sebi.gov.in before opening.",
+            "hi": "खाता खोलने से पहले sebi.gov.in पर जाँचा।",
+            "mr": "खाते उघडण्यापूर्वी sebi.gov.in वर तपासले."
+          }
+        },
+        {
+          "label": {
+            "en": "Tip",
+            "hi": "टिप",
+            "mr": "टिप"
+          },
+          "value": {
+            "en": "'Double in 30 days'",
+            "hi": "'30 दिन में दोगुना'",
+            "mr": "'30 दिवसांत दुप्पट'"
+          },
+          "note": {
+            "en": "No honest investment can promise this.",
+            "hi": "कोई ईमानदार निवेश इसका वादा नहीं कर सकता।",
+            "mr": "कोणतीही प्रामाणिक गुंतवणूक याचे वचन देऊ शकत नाही."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Request",
+            "hi": "माँग",
+            "mr": "मागणी"
+          },
+          "value": {
+            "en": "Send your login",
+            "hi": "अपना लॉगिन भेजो",
+            "mr": "तुमचे लॉगिन पाठवा"
+          },
+          "note": {
+            "en": "Your login and OTP are never shared, with anyone.",
+            "hi": "लॉगिन और OTP कभी किसी को नहीं दिए जाते।",
+            "mr": "लॉगिन आणि OTP कधीही कोणालाही दिले जात नाहीत."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Instead",
+            "hi": "इसके बजाय",
+            "mr": "त्याऐवजी"
+          },
+          "value": {
+            "en": "Index fund",
+            "hi": "इंडेक्स फ़ंड",
+            "mr": "इंडेक्स फंड"
+          },
+          "note": {
+            "en": "Hundreds of companies, low cost, no tips needed.",
+            "hi": "सैकड़ों कंपनियाँ, कम खर्च, टिप की ज़रूरत नहीं।",
+            "mr": "शेकडो कंपन्या, कमी खर्च, टिपची गरज नाही."
+          }
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "What does a demat account hold?",
+            "hi": "डीमैट खाता क्या रखता है?",
+            "mr": "डिमॅट खाते काय ठेवते?"
+          },
+          "options": [
+            {
+              "en": "Your shares, electronically",
+              "hi": "आपके शेयर, इलेक्ट्रॉनिक रूप में",
+              "mr": "तुमचे शेअर, इलेक्ट्रॉनिक स्वरूपात"
+            },
+            {
+              "en": "Your salary",
+              "hi": "आपका वेतन",
+              "mr": "तुमचा पगार"
+            },
+            {
+              "en": "Your passwords",
+              "hi": "आपके पासवर्ड",
+              "mr": "तुमचे पासवर्ड"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The trading account places orders; the demat account holds what you own.",
+            "hi": "ट्रेडिंग खाता ऑर्डर देता है; डीमैट खाता आपकी चीज़ें रखता है।",
+            "mr": "ट्रेडिंग खाते ऑर्डर देते; डिमॅट खाते तुमच्या मालकीचे ठेवते."
+          }
+        },
+        {
+          "question": {
+            "en": "Who regulates the stock market in India?",
+            "hi": "भारत में शेयर बाज़ार का नियामक कौन है?",
+            "mr": "भारतात शेअर बाजाराचे नियामक कोण?"
+          },
+          "options": [
+            {
+              "en": "SEBI",
+              "hi": "SEBI",
+              "mr": "SEBI"
+            },
+            {
+              "en": "A chat group admin",
+              "hi": "चैट ग्रुप एडमिन",
+              "mr": "चॅट ग्रुप अॅडमिन"
+            },
+            {
+              "en": "Your employer",
+              "hi": "आपका नियोक्ता",
+              "mr": "तुमचा मालक"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Check any broker or adviser's SEBI registration.",
+            "hi": "किसी भी ब्रोकर या सलाहकार का SEBI पंजीकरण जाँचें।",
+            "mr": "कोणत्याही ब्रोकर किंवा सल्लागाराची SEBI नोंदणी तपासा."
+          }
+        },
+        {
+          "question": {
+            "en": "What is a pump-and-dump?",
+            "hi": "पंप-एंड-डंप क्या है?",
+            "mr": "पंप-अँड-डंप म्हणजे काय?"
+          },
+          "options": [
+            {
+              "en": "A government bond",
+              "hi": "सरकारी बॉन्ड",
+              "mr": "सरकारी बाँड"
+            },
+            {
+              "en": "Hyping a small share, then selling to the new buyers",
+              "hi": "छोटे शेयर को चढ़ाकर नए खरीदारों को बेच देना",
+              "mr": "छोट्या शेअरची हवा करून नव्या खरेदीदारांना विकणे"
+            },
+            {
+              "en": "A type of SIP",
+              "hi": "SIP का प्रकार",
+              "mr": "SIP चा प्रकार"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The promoters profit; the late buyers are left holding the loss.",
+            "hi": "प्रमोटर कमाते हैं; बाद के खरीदार नुकसान उठाते हैं।",
+            "mr": "प्रवर्तक कमावतात; उशिरा घेणाऱ्यांच्या वाट्याला तोटा येतो."
+          }
+        },
+        {
+          "question": {
+            "en": "Someone asks for your trading login 'to help'. You:",
+            "hi": "कोई 'मदद' के लिए ट्रेडिंग लॉगिन माँगे तो आप:",
+            "mr": "कोणी 'मदतीसाठी' ट्रेडिंग लॉगिन मागितले तर तुम्ही:"
+          },
+          "options": [
+            {
+              "en": "Share it once",
+              "hi": "एक बार दे दें",
+              "mr": "एकदा द्या"
+            },
+            {
+              "en": "Refuse, always",
+              "hi": "हमेशा मना करें",
+              "mr": "नेहमी नकार द्या"
+            },
+            {
+              "en": "Share only the OTP",
+              "hi": "सिर्फ़ OTP दें",
+              "mr": "फक्त OTP द्या"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Whoever has the login controls your money.",
+            "hi": "जिसके पास लॉगिन है, वह आपके पैसे पर नियंत्रण रखता है।",
+            "mr": "ज्याच्याकडे लॉगिन तो तुमच्या पैशांवर नियंत्रण ठेवतो."
+          }
+        },
+        {
+          "question": {
+            "en": "Why is an index fund safer than one share?",
+            "hi": "एक शेयर से इंडेक्स फ़ंड सुरक्षित क्यों है?",
+            "mr": "एका शेअरपेक्षा इंडेक्स फंड सुरक्षित का?"
+          },
+          "options": [
+            {
+              "en": "It owns many companies",
+              "hi": "इसमें कई कंपनियाँ होती हैं",
+              "mr": "त्यात अनेक कंपन्या असतात"
+            },
+            {
+              "en": "It never falls",
+              "hi": "यह कभी नहीं गिरता",
+              "mr": "तो कधीच घसरत नाही"
+            },
+            {
+              "en": "It is guaranteed",
+              "hi": "इसकी गारंटी है",
+              "mr": "त्याची हमी आहे"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "One company's trouble cannot sink the whole fund.",
+            "hi": "एक कंपनी की परेशानी पूरे फ़ंड को नहीं डुबो सकती।",
+            "mr": "एका कंपनीच्या अडचणीने संपूर्ण फंड बुडत नाही."
+          }
+        }
+      ]
+    },
+    {
       "id": "investing",
       "source": "investing",
       "stage": "investing",
@@ -677,9 +1798,9 @@
       "age": 27,
       "place": "cafe",
       "title": {
-        "en": "14 · Her first small investment",
-        "hi": "14 · उसका पहला छोटा निवेश",
-        "mr": "14 · तिची पहिली छोटी गुंतवणूक"
+        "en": "18 · Her first small investment",
+        "hi": "18 · उसका पहला छोटा निवेश",
+        "mr": "18 · तिची पहिली छोटी गुंतवणूक"
       },
       "delta": {
         "investments": 18000,
@@ -688,15 +1809,244 @@
       "guide": "risk-diversify"
     },
     {
+      "id": "mutual-fund-plan",
+      "stage": "investing",
+      "topic": "investing",
+      "age": 27,
+      "place": "room",
+      "title": {
+        "en": "19 · Direct or regular? Her first SIP form",
+        "hi": "19 · डायरेक्ट या रेगुलर? उसका पहला SIP फ़ॉर्म",
+        "mr": "19 · डायरेक्ट की रेग्युलर? तिचा पहिला SIP फॉर्म"
+      },
+      "setup": {
+        "en": "Verena decides on a ₹3,000 monthly SIP. A friendly agent offers to fill everything for her, in a 'regular' plan. The same fund's 'direct' plan is on the fund house's website.",
+        "hi": "वेरेना ₹3,000 मासिक SIP तय करती है। एक मिलनसार एजेंट 'रेगुलर' प्लान में सब भरने की पेशकश करता है। उसी फ़ंड का 'डायरेक्ट' प्लान फ़ंड हाउस की वेबसाइट पर है।",
+        "mr": "वेरेना ₹3,000 मासिक SIP ठरवते. एक मनमिळाऊ एजंट 'रेग्युलर' प्लॅनमध्ये सगळे भरून देण्याची तयारी दाखवतो. त्याच फंडाचा 'डायरेक्ट' प्लॅन फंड हाऊसच्या वेबसाइटवर आहे."
+      },
+      "more": {
+        "en": "The fund's factsheet shows the regular plan's expense ratio is noticeably higher than the direct plan's. The agent also suggests a mandate ceiling of ₹50,000 'so you never have to sign again'.",
+        "hi": "फ़ंड की फ़ैक्टशीट दिखाती है कि रेगुलर प्लान का एक्सपेंस रेशियो डायरेक्ट से साफ़ ज़्यादा है। एजेंट ₹50,000 की मैंडेट सीमा भी सुझाता है 'ताकि दोबारा दस्तखत न करने पड़ें'।",
+        "mr": "फंडाची फॅक्टशीट दाखवते की रेग्युलर प्लॅनचा एक्सपेन्स रेशो डायरेक्टपेक्षा स्पष्टपणे जास्त आहे. एजंट ₹50,000 ची मँडेट मर्यादाही सुचवतो 'म्हणजे पुन्हा सही करावी लागणार नाही'."
+      },
+      "question": {
+        "en": "How should Verena set up her SIP?",
+        "hi": "वेरेना अपनी SIP कैसे शुरू करे?",
+        "mr": "वेरेनाने तिची SIP कशी सुरू करावी?"
+      },
+      "action": {
+        "en": "Choose the direct plan, Growth option, a SIP date after payday, a mandate ceiling close to ₹3,000, and a nominee.",
+        "hi": "डायरेक्ट प्लान, ग्रोथ विकल्प, वेतन के बाद की SIP तारीख, ₹3,000 के करीब मैंडेट सीमा, और नॉमिनी चुने।",
+        "mr": "डायरेक्ट प्लॅन, ग्रोथ पर्याय, पगारानंतरची SIP तारीख, ₹3,000 जवळची मँडेट मर्यादा, आणि नॉमिनी निवडावा."
+      },
+      "okay": {
+        "en": "Take the regular plan through the agent, but set her own sensible mandate limit.",
+        "hi": "एजेंट से रेगुलर प्लान ले, पर अपनी समझदार मैंडेट सीमा रखे।",
+        "mr": "एजंटकडून रेग्युलर प्लॅन घ्यावा, पण स्वतःची योग्य मँडेट मर्यादा ठेवावी."
+      },
+      "costly": {
+        "en": "Let the agent fill and sign everything as he suggests.",
+        "hi": "एजेंट को उसके कहे अनुसार सब भरने और दस्तखत कराने दे।",
+        "mr": "एजंटला त्याच्या सांगण्याप्रमाणे सगळे भरू आणि सही करू द्यावे."
+      },
+      "goodOutcome": {
+        "en": "Every rupee of the lower cost stays invested. Over twenty years that small yearly difference grows into a meaningful sum, and she understands every line of her form.",
+        "hi": "कम खर्च का हर रुपया निवेश में रहता है। बीस साल में वह छोटा सालाना अंतर अच्छी-ख़ासी रकम बन जाता है, और उसे फ़ॉर्म की हर पंक्ति समझ आती है।",
+        "mr": "कमी खर्चाचा प्रत्येक रुपया गुंतवणुकीत राहतो. वीस वर्षांत तो छोटा वार्षिक फरक लक्षणीय रक्कम बनतो, आणि तिला फॉर्मची प्रत्येक ओळ समजते."
+      },
+      "okayOutcome": {
+        "en": "She is invested and protected by a sensible limit, but pays a higher yearly cost for the same fund for as long as she holds it.",
+        "hi": "वह निवेशित है और समझदार सीमा से सुरक्षित, पर जब तक फ़ंड रखेगी, उसी फ़ंड के लिए ज़्यादा सालाना खर्च देगी।",
+        "mr": "ती गुंतवणूक करते आणि योग्य मर्यादेने सुरक्षित आहे, पण फंड ठेवेल तोपर्यंत त्याच फंडासाठी जास्त वार्षिक खर्च भरेल."
+      },
+      "costlyOutcome": {
+        "en": "Months later she finds a second fund she never chose, debited under the large mandate. Undoing it takes weeks of calls.",
+        "hi": "महीनों बाद उसे एक दूसरा फ़ंड मिलता है जो उसने कभी नहीं चुना, बड़ी मैंडेट से कटा हुआ। इसे ठीक कराने में हफ़्तों के कॉल लगते हैं।",
+        "mr": "महिन्यांनंतर तिला एक दुसरा फंड दिसतो जो तिने कधीच निवडला नव्हता, मोठ्या मँडेटखाली कापलेला. ते दुरुस्त करायला आठवड्यांचे कॉल लागतात."
+      },
+      "lesson": {
+        "en": "The same fund can cost different amounts. Read the plan type, the expense ratio and the mandate limit yourself; they decide what you keep.",
+        "hi": "एक ही फ़ंड अलग-अलग खर्च का हो सकता है। प्लान का प्रकार, एक्सपेंस रेशियो और मैंडेट सीमा खुद पढ़ें; यही तय करते हैं कि आपके पास क्या बचेगा।",
+        "mr": "एकच फंड वेगवेगळ्या खर्चाचा असू शकतो. प्लॅनचा प्रकार, एक्सपेन्स रेशो आणि मँडेट मर्यादा स्वतः वाचा; तुमच्याकडे काय राहील ते हेच ठरवतात."
+      },
+      "delta": {
+        "investments": 9000,
+        "confidence": 4
+      },
+      "guide": "mutual-funds",
+      "sim": {
+        "kind": "grow",
+        "monthly": 3000,
+        "rate": 10,
+        "years": [
+          5,
+          10,
+          20
+        ]
+      },
+      "drill": [
+        {
+          "question": {
+            "en": "What is NAV?",
+            "hi": "NAV क्या है?",
+            "mr": "NAV म्हणजे काय?"
+          },
+          "options": [
+            {
+              "en": "The price of one unit",
+              "hi": "एक यूनिट की कीमत",
+              "mr": "एका युनिटची किंमत"
+            },
+            {
+              "en": "A bank account number",
+              "hi": "बैंक खाता संख्या",
+              "mr": "बँक खाते क्रमांक"
+            },
+            {
+              "en": "A guaranteed return",
+              "hi": "पक्का रिटर्न",
+              "mr": "हमीचा परतावा"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It is declared after every working day.",
+            "hi": "यह हर कामकाजी दिन के बाद घोषित होता है।",
+            "mr": "तो प्रत्येक कामकाजाच्या दिवसानंतर जाहीर होतो."
+          }
+        },
+        {
+          "question": {
+            "en": "Why is a direct plan cheaper?",
+            "hi": "डायरेक्ट प्लान सस्ता क्यों?",
+            "mr": "डायरेक्ट प्लॅन स्वस्त का?"
+          },
+          "options": [
+            {
+              "en": "No distributor commission inside it",
+              "hi": "इसमें वितरक कमीशन नहीं",
+              "mr": "त्यात वितरकाचे कमिशन नाही"
+            },
+            {
+              "en": "Worse fund manager",
+              "hi": "खराब फ़ंड मैनेजर",
+              "mr": "वाईट फंड मॅनेजर"
+            },
+            {
+              "en": "It is a different fund",
+              "hi": "यह अलग फ़ंड है",
+              "mr": "तो वेगळा फंड आहे"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Same portfolio, lower expense ratio.",
+            "hi": "वही पोर्टफ़ोलियो, कम एक्सपेंस रेशियो।",
+            "mr": "तोच पोर्टफोलिओ, कमी एक्सपेन्स रेशो."
+          }
+        },
+        {
+          "question": {
+            "en": "What should a SIP mandate ceiling be?",
+            "hi": "SIP मैंडेट सीमा कितनी हो?",
+            "mr": "SIP मँडेट मर्यादा किती असावी?"
+          },
+          "options": [
+            {
+              "en": "As high as possible",
+              "hi": "जितनी ज़्यादा हो सके",
+              "mr": "शक्य तितकी जास्त"
+            },
+            {
+              "en": "Close to the SIP amount",
+              "hi": "SIP रकम के करीब",
+              "mr": "SIP रकमेच्या जवळ"
+            },
+            {
+              "en": "Zero",
+              "hi": "शून्य",
+              "mr": "शून्य"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A tight ceiling limits what can be debited without you.",
+            "hi": "कम सीमा बिना आपके कटने वाली रकम सीमित रखती है।",
+            "mr": "कमी मर्यादा तुमच्याशिवाय कापली जाणारी रक्कम मर्यादित ठेवते."
+          }
+        },
+        {
+          "question": {
+            "en": "What does the Growth option do?",
+            "hi": "ग्रोथ विकल्प क्या करता है?",
+            "mr": "ग्रोथ पर्याय काय करतो?"
+          },
+          "options": [
+            {
+              "en": "Reinvests gains in the fund",
+              "hi": "मुनाफ़ा फ़ंड में फिर से लगाता है",
+              "mr": "नफा फंडात पुन्हा गुंतवतो"
+            },
+            {
+              "en": "Pays cash every week",
+              "hi": "हर हफ़्ते नकद देता है",
+              "mr": "दर आठवड्याला रोख देतो"
+            },
+            {
+              "en": "Removes all risk",
+              "hi": "सारा जोखिम हटाता है",
+              "mr": "सर्व जोखीम काढतो"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Gains stay invested and can compound.",
+            "hi": "मुनाफ़ा निवेश में रहता है और बढ़ सकता है।",
+            "mr": "नफा गुंतवणुकीत राहतो आणि वाढू शकतो."
+          }
+        },
+        {
+          "question": {
+            "en": "Past returns in an advert are:",
+            "hi": "विज्ञापन में पिछला रिटर्न:",
+            "mr": "जाहिरातीतील मागील परतावा:"
+          },
+          "options": [
+            {
+              "en": "A promise",
+              "hi": "एक वादा",
+              "mr": "एक वचन"
+            },
+            {
+              "en": "Not a guide to future returns",
+              "hi": "भविष्य के रिटर्न का संकेत नहीं",
+              "mr": "भविष्यातील परताव्याचा संकेत नाही"
+            },
+            {
+              "en": "Set by the RBI",
+              "hi": "RBI तय करता है",
+              "mr": "RBI ठरवते"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Funds rise and fall; judge cost, risk and fit instead.",
+            "hi": "फ़ंड चढ़ते-गिरते हैं; खर्च, जोखिम और उपयुक्तता परखें।",
+            "mr": "फंड वर-खाली होतात; खर्च, जोखीम आणि योग्यता पारखा."
+          }
+        }
+      ]
+    },
+    {
       "id": "market-fall",
       "stage": "investing",
       "topic": "investing",
       "age": 27,
       "place": "room",
       "title": {
-        "en": "15 · Market fall",
-        "hi": "15 · बाज़ार में गिरावट",
-        "mr": "15 · बाजारातील घसरण"
+        "en": "20 · Market fall",
+        "hi": "20 · बाज़ार में गिरावट",
+        "mr": "20 · बाजारातील घसरण"
       },
       "setup": {
         "en": "Verena's diversified investment falls soon after she starts. A group chat says to sell everything before it gets worse.",
@@ -773,9 +2123,9 @@
       "age": 28,
       "place": "home",
       "title": {
-        "en": "16 · A financial scam",
-        "hi": "16 · आर्थिक ठगी",
-        "mr": "16 · आर्थिक फसवणूक"
+        "en": "21 · A financial scam",
+        "hi": "21 · आर्थिक ठगी",
+        "mr": "21 · आर्थिक फसवणूक"
       },
       "delta": {
         "confidence": 5,
@@ -790,9 +2140,9 @@
       "age": 28,
       "place": "home",
       "title": {
-        "en": "17 · The consequences of a mistake",
-        "hi": "17 · गलती के नतीजे",
-        "mr": "17 · चुकीचे परिणाम"
+        "en": "22 · The consequences of a mistake",
+        "hi": "22 · गलती के नतीजे",
+        "mr": "22 · चुकीचे परिणाम"
       },
       "setup": {
         "en": "Verena clicked the message but stopped before sharing an OTP. She now needs to secure the account and understand every warning sign she missed.",
@@ -860,9 +2210,9 @@
       "age": 29,
       "place": "home",
       "title": {
-        "en": "18 · An unexpected medical expense",
-        "hi": "18 · अचानक चिकित्सा खर्च",
-        "mr": "18 · अचानक वैद्यकीय खर्च"
+        "en": "23 · An unexpected medical expense",
+        "hi": "23 · अचानक चिकित्सा खर्च",
+        "mr": "23 · अचानक वैद्यकीय खर्च"
       },
       "setup": {
         "en": "A medical bill arrives on a Sunday. Verena has some emergency savings and insurance, but the hospital asks for immediate payment.",
@@ -932,9 +2282,9 @@
       "age": 30,
       "place": "room",
       "title": {
-        "en": "19 · Money is tight",
-        "hi": "19 · पैसों की तंगी",
-        "mr": "19 · पैशांची चणचण"
+        "en": "24 · Money is tight",
+        "hi": "24 · पैसों की तंगी",
+        "mr": "24 · पैशांची चणचण"
       },
       "setup": {
         "en": "A repair and a family visit land in the same month. For the first time, Verena's planned expenses are above her income.",
@@ -1006,9 +2356,9 @@
       "age": 31,
       "place": "bank",
       "title": {
-        "en": "20 · Verena needs a loan",
-        "hi": "20 · वेरेना को लोन चाहिए",
-        "mr": "20 · वेरेनाला कर्ज हवे आहे"
+        "en": "25 · Verena needs a loan",
+        "hi": "25 · वेरेना को लोन चाहिए",
+        "mr": "25 · वेरेनाला कर्ज हवे आहे"
       },
       "delta": {
         "cash": 240000,
@@ -1024,9 +2374,9 @@
       "age": 31,
       "place": "cafe",
       "title": {
-        "en": "21 · The bad loan offer",
-        "hi": "21 · खराब लोन ऑफ़र",
-        "mr": "21 · वाईट कर्ज ऑफर"
+        "en": "26 · The bad loan offer",
+        "hi": "26 · खराब लोन ऑफ़र",
+        "mr": "26 · वाईट कर्ज ऑफर"
       },
       "setup": {
         "en": "A lender advertises a tiny monthly payment. The processing fee, flat rate and late charge are hidden in smaller text.",
@@ -1102,9 +2452,9 @@
       "age": 32,
       "place": "room",
       "title": {
-        "en": "22 · Loan repayment",
-        "hi": "22 · लोन की चुकौती",
-        "mr": "22 · कर्जाची परतफेड"
+        "en": "27 · Loan repayment",
+        "hi": "27 · लोन की चुकौती",
+        "mr": "27 · कर्जाची परतफेड"
       },
       "setup": {
         "en": "The first EMI is due beside rent, groceries and savings. Verena sees how debt narrows every later choice.",
@@ -1175,9 +2525,9 @@
       "age": 33,
       "place": "home",
       "title": {
-        "en": "23 · Job loss",
-        "hi": "23 · नौकरी छूटना",
-        "mr": "23 · नोकरी जाणे"
+        "en": "28 · Job loss",
+        "hi": "28 · नौकरी छूटना",
+        "mr": "28 · नोकरी जाणे"
       },
       "setup": {
         "en": "Verena's role is removed without warning. The next salary will not come, but rent and the EMI still will.",
@@ -1249,9 +2599,9 @@
       "age": 34,
       "place": "office",
       "title": {
-        "en": "24 · Recovery",
-        "hi": "24 · फिर से संभलना",
-        "mr": "24 · पुन्हा उभे राहणे"
+        "en": "29 · Recovery",
+        "hi": "29 · फिर से संभलना",
+        "mr": "29 · पुन्हा उभे राहणे"
       },
       "setup": {
         "en": "A new job arrives after four difficult months. The salary is higher, but the emergency fund is almost empty.",
@@ -1323,9 +2673,9 @@
       "age": 34,
       "place": "office",
       "title": {
-        "en": "25 · A sophisticated fraud attempt",
-        "hi": "25 · एक चालाक धोखाधड़ी",
-        "mr": "25 · एक हुशार फसवणूक प्रयत्न"
+        "en": "30 · A sophisticated fraud attempt",
+        "hi": "30 · एक चालाक धोखाधड़ी",
+        "mr": "30 · एक हुशार फसवणूक प्रयत्न"
       },
       "setup": {
         "en": "A caller knows Verena's employer and recent purchase. They create urgency, then ask her to install a support app.",
@@ -1393,9 +2743,9 @@
       "age": 35,
       "place": "rooftop",
       "title": {
-        "en": "26 · Financial reset",
-        "hi": "26 · आर्थिक रीसेट",
-        "mr": "26 · आर्थिक पुनर्रचना"
+        "en": "31 · Financial reset",
+        "hi": "31 · आर्थिक रीसेट",
+        "mr": "31 · आर्थिक पुनर्रचना"
       },
       "setup": {
         "en": "Verena pauses to review thirteen years of choices: what protected her, what cost more than expected and what still feels fragile.",
@@ -1464,9 +2814,9 @@
       "age": 36,
       "place": "office",
       "title": {
-        "en": "27 · Career growth",
-        "hi": "27 · करियर में बढ़त",
-        "mr": "27 · करिअरमधील वाढ"
+        "en": "32 · Career growth",
+        "hi": "32 · करियर में बढ़त",
+        "mr": "32 · करिअरमधील वाढ"
       },
       "delta": {
         "income": 18000,
@@ -1476,15 +2826,308 @@
       "guide": "pay-yourself"
     },
     {
+      "id": "rbi-ombudsman",
+      "stage": "banking",
+      "topic": "banking",
+      "age": 36,
+      "place": "home",
+      "title": {
+        "en": "33 · A wrong charge and the RBI Ombudsman",
+        "hi": "33 · गलत शुल्क और RBI लोकपाल",
+        "mr": "33 · चुकीचे शुल्क आणि RBI लोकपाल"
+      },
+      "setup": {
+        "en": "Verena notices ₹590 deducted for a 'card replacement' she never asked for, and ₹354 for 'SMS charges' twice in one quarter. She complained at the branch five weeks ago and got only a token number.",
+        "hi": "वेरेना देखती है कि बिना माँगे 'कार्ड रिप्लेसमेंट' के ₹590 कटे हैं, और एक तिमाही में दो बार 'SMS शुल्क' के ₹354। पाँच हफ़्ते पहले उसने शाखा में शिकायत की थी और सिर्फ़ टोकन नंबर मिला।",
+        "mr": "वेरेनाला दिसते की न मागितलेल्या 'कार्ड रिप्लेसमेंट' साठी ₹590 कापले गेले, आणि एका तिमाहीत दोनदा 'SMS शुल्क' म्हणून ₹354. पाच आठवड्यांपूर्वी तिने शाखेत तक्रार केली होती आणि फक्त टोकन क्रमांक मिळाला."
+      },
+      "more": {
+        "en": "Then a call: 'This is the RBI. To refund you, we need your card number and OTP.'",
+        "hi": "फिर एक कॉल: 'यह RBI है। रिफ़ंड के लिए आपका कार्ड नंबर और OTP चाहिए।'",
+        "mr": "मग एक कॉल: 'हे RBI आहे. परतावा देण्यासाठी तुमचा कार्ड नंबर आणि OTP हवा.'"
+      },
+      "question": {
+        "en": "What should Verena do?",
+        "hi": "वेरेना क्या करे?",
+        "mr": "वेरेनाने काय करावे?"
+      },
+      "action": {
+        "en": "Hang up, then file a free complaint at cms.rbi.org.in with her bank complaint number, the dates and her statement.",
+        "hi": "फ़ोन काटे, फिर बैंक शिकायत संख्या, तारीखों और स्टेटमेंट के साथ cms.rbi.org.in पर मुफ़्त शिकायत दर्ज करे।",
+        "mr": "फोन ठेवावा, मग बँक तक्रार क्रमांक, तारखा आणि स्टेटमेंटसह cms.rbi.org.in वर मोफत तक्रार नोंदवावी."
+      },
+      "okay": {
+        "en": "Keep visiting the branch and hope someone fixes it.",
+        "hi": "शाखा जाती रहे और उम्मीद करे कि कोई ठीक करेगा।",
+        "mr": "शाखेत जात राहावे आणि कोणी तरी दुरुस्त करेल अशी आशा ठेवावी."
+      },
+      "costly": {
+        "en": "Give the caller the details so the 'refund' comes faster.",
+        "hi": "कॉलर को जानकारी दे ताकि 'रिफ़ंड' जल्दी आए।",
+        "mr": "'परतावा' लवकर यावा म्हणून कॉलरला माहिती द्यावी."
+      },
+      "goodOutcome": {
+        "en": "The Ombudsman's office takes up the case. Within weeks the bank reverses ₹944 and stops the wrong SMS charge. It cost her nothing.",
+        "hi": "लोकपाल कार्यालय मामला उठाता है। कुछ हफ़्तों में बैंक ₹944 लौटा देता है और गलत SMS शुल्क बंद करता है। उसे कुछ खर्च नहीं हुआ।",
+        "mr": "लोकपाल कार्यालय प्रकरण हाती घेते. काही आठवड्यांत बँक ₹944 परत करते आणि चुकीचे SMS शुल्क थांबवते. तिला काहीच खर्च आला नाही."
+      },
+      "okayOutcome": {
+        "en": "After three more visits, the branch refunds the card charge but not the SMS fees.",
+        "hi": "तीन और चक्करों के बाद शाखा कार्ड शुल्क लौटाती है पर SMS शुल्क नहीं।",
+        "mr": "आणखी तीन फेऱ्यांनंतर शाखा कार्ड शुल्क परत करते पण SMS शुल्क नाही."
+      },
+      "costlyOutcome": {
+        "en": "Within minutes ₹38,000 is spent on her card. The 'RBI' caller was a fraudster.",
+        "hi": "कुछ ही मिनटों में उसके कार्ड से ₹38,000 खर्च हो जाते हैं। 'RBI' वाला कॉलर ठग था।",
+        "mr": "काही मिनिटांत तिच्या कार्डवरून ₹38,000 खर्च होतात. 'RBI' वाला कॉलर फसवणूक करणारा होता."
+      },
+      "lesson": {
+        "en": "The RBI never calls for your card or OTP. When a bank does not resolve a complaint in 30 days, the RBI Ombudsman is free, online and effective.",
+        "hi": "RBI कभी कार्ड या OTP के लिए कॉल नहीं करता। बैंक 30 दिन में शिकायत न सुलझाए तो RBI लोकपाल मुफ़्त, ऑनलाइन और असरदार है।",
+        "mr": "RBI कधीही कार्ड किंवा OTP साठी कॉल करत नाही. बँक 30 दिवसांत तक्रार सोडवत नसेल तर RBI लोकपाल मोफत, ऑनलाइन आणि परिणामकारक आहे."
+      },
+      "delta": {
+        "cash": 944,
+        "confidence": 5,
+        "resilience": 2
+      },
+      "guide": "rbi-explained",
+      "lines": [
+        {
+          "label": {
+            "en": "Charge 1",
+            "hi": "शुल्क 1",
+            "mr": "शुल्क 1"
+          },
+          "value": {
+            "en": "₹590 card replacement",
+            "hi": "₹590 कार्ड रिप्लेसमेंट",
+            "mr": "₹590 कार्ड रिप्लेसमेंट"
+          },
+          "note": {
+            "en": "Never requested. Disputed at the branch.",
+            "hi": "कभी माँगा नहीं। शाखा में विवादित।",
+            "mr": "कधीच मागितले नाही. शाखेत वादग्रस्त."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Charge 2",
+            "hi": "शुल्क 2",
+            "mr": "शुल्क 2"
+          },
+          "value": {
+            "en": "₹354 SMS, twice",
+            "hi": "₹354 SMS, दो बार",
+            "mr": "₹354 SMS, दोनदा"
+          },
+          "note": {
+            "en": "Charged twice in one quarter.",
+            "hi": "एक तिमाही में दो बार।",
+            "mr": "एका तिमाहीत दोनदा."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Bank complaint",
+            "hi": "बैंक शिकायत",
+            "mr": "बँक तक्रार"
+          },
+          "value": {
+            "en": "Filed 5 weeks ago",
+            "hi": "5 हफ़्ते पहले",
+            "mr": "5 आठवड्यांपूर्वी"
+          },
+          "note": {
+            "en": "More than 30 days: she can now go to the Ombudsman.",
+            "hi": "30 दिन से ज़्यादा: अब वह लोकपाल के पास जा सकती है।",
+            "mr": "30 दिवसांपेक्षा जास्त: आता ती लोकपालाकडे जाऊ शकते."
+          }
+        },
+        {
+          "label": {
+            "en": "'RBI' call",
+            "hi": "'RBI' कॉल",
+            "mr": "'RBI' कॉल"
+          },
+          "value": {
+            "en": "Asks for OTP",
+            "hi": "OTP माँगता है",
+            "mr": "OTP मागतो"
+          },
+          "note": {
+            "en": "The RBI never asks for card details or OTPs.",
+            "hi": "RBI कभी कार्ड या OTP नहीं माँगता।",
+            "mr": "RBI कधीही कार्ड किंवा OTP मागत नाही."
+          },
+          "flag": true
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "When can you approach the RBI Ombudsman?",
+            "hi": "RBI लोकपाल के पास कब जा सकते हैं?",
+            "mr": "RBI लोकपालाकडे केव्हा जाता येते?"
+          },
+          "options": [
+            {
+              "en": "After the bank fails to resolve it in 30 days",
+              "hi": "बैंक 30 दिन में हल न करे तब",
+              "mr": "बँकेने 30 दिवसांत सोडवले नाही तर"
+            },
+            {
+              "en": "Before telling the bank",
+              "hi": "बैंक को बताने से पहले",
+              "mr": "बँकेला सांगण्यापूर्वी"
+            },
+            {
+              "en": "Never",
+              "hi": "कभी नहीं",
+              "mr": "कधीच नाही"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Complain to the bank first and keep the complaint number.",
+            "hi": "पहले बैंक से शिकायत करें और संख्या रखें।",
+            "mr": "आधी बँकेकडे तक्रार करा आणि क्रमांक ठेवा."
+          }
+        },
+        {
+          "question": {
+            "en": "What does the Ombudsman charge?",
+            "hi": "लोकपाल कितना शुल्क लेता है?",
+            "mr": "लोकपाल किती शुल्क घेतो?"
+          },
+          "options": [
+            {
+              "en": "Nothing",
+              "hi": "कुछ नहीं",
+              "mr": "काहीच नाही"
+            },
+            {
+              "en": "₹5,000",
+              "hi": "₹5,000",
+              "mr": "₹5,000"
+            },
+            {
+              "en": "10% of the claim",
+              "hi": "दावे का 10%",
+              "mr": "दाव्याच्या 10%"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It is a free service for customers.",
+            "hi": "यह ग्राहकों के लिए मुफ़्त सेवा है।",
+            "mr": "ही ग्राहकांसाठी मोफत सेवा आहे."
+          }
+        },
+        {
+          "question": {
+            "en": "What does the RBI set through its Monetary Policy Committee?",
+            "hi": "RBI अपनी मौद्रिक नीति समिति से क्या तय करता है?",
+            "mr": "RBI पतधोरण समितीमार्फत काय ठरवते?"
+          },
+          "options": [
+            {
+              "en": "The repo rate",
+              "hi": "रेपो दर",
+              "mr": "रेपो दर"
+            },
+            {
+              "en": "Your salary",
+              "hi": "आपका वेतन",
+              "mr": "तुमचा पगार"
+            },
+            {
+              "en": "Share prices",
+              "hi": "शेयर की कीमतें",
+              "mr": "शेअरच्या किमती"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The repo rate influences loan and deposit rates across the economy.",
+            "hi": "रेपो दर पूरी अर्थव्यवस्था में लोन और जमा दरों पर असर डालती है।",
+            "mr": "रेपो दर संपूर्ण अर्थव्यवस्थेतील कर्ज आणि ठेव दरांवर परिणाम करतो."
+          }
+        },
+        {
+          "question": {
+            "en": "A caller 'from the RBI' asks for your OTP. This is:",
+            "hi": "'RBI से' कॉलर OTP माँगे तो यह:",
+            "mr": "'RBI कडून' कॉलर OTP मागतो, हे:"
+          },
+          "options": [
+            {
+              "en": "Normal",
+              "hi": "सामान्य",
+              "mr": "सामान्य"
+            },
+            {
+              "en": "A scam",
+              "hi": "धोखा",
+              "mr": "फसवणूक"
+            },
+            {
+              "en": "A refund process",
+              "hi": "रिफ़ंड प्रक्रिया",
+              "mr": "परतावा प्रक्रिया"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "The RBI does not hold public accounts or ask for OTPs.",
+            "hi": "RBI आम खाते नहीं रखता, न OTP माँगता है।",
+            "mr": "RBI सामान्य खाती ठेवत नाही, OTP मागत नाही."
+          }
+        },
+        {
+          "question": {
+            "en": "What should a complaint include?",
+            "hi": "शिकायत में क्या होना चाहिए?",
+            "mr": "तक्रारीत काय असावे?"
+          },
+          "options": [
+            {
+              "en": "Dates, amounts, complaint number and statement",
+              "hi": "तारीख, रकम, शिकायत संख्या और स्टेटमेंट",
+              "mr": "तारखा, रक्कम, तक्रार क्रमांक आणि स्टेटमेंट"
+            },
+            {
+              "en": "Only anger",
+              "hi": "सिर्फ़ गुस्सा",
+              "mr": "फक्त राग"
+            },
+            {
+              "en": "Your PIN",
+              "hi": "आपका PIN",
+              "mr": "तुमचा PIN"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Clear evidence makes a quick resolution likely.",
+            "hi": "साफ़ सबूत से जल्दी समाधान की संभावना बढ़ती है।",
+            "mr": "स्पष्ट पुरावा असल्यास लवकर निवारण होण्याची शक्यता वाढते."
+          }
+        }
+      ]
+    },
+    {
       "id": "moving-home",
       "stage": "family-finances",
       "topic": "family",
       "age": 37,
       "place": "home",
       "title": {
-        "en": "28 · Moving to a new home",
-        "hi": "28 · नए घर में जाना",
-        "mr": "28 · नव्या घरात जाणे"
+        "en": "34 · Moving to a new home",
+        "hi": "34 · नए घर में जाना",
+        "mr": "34 · नव्या घरात जाणे"
       },
       "setup": {
         "en": "A new home offers space and a shorter commute. It also brings a deposit, moving costs and higher utilities.",
@@ -1556,9 +3199,9 @@
       "age": 38,
       "place": "home",
       "title": {
-        "en": "29 · Family finances",
-        "hi": "29 · परिवार के पैसे",
-        "mr": "29 · कुटुंबाचे पैसे"
+        "en": "35 · Family finances",
+        "hi": "35 · परिवार के पैसे",
+        "mr": "35 · कुटुंबाचे पैसे"
       },
       "delta": {
         "confidence": 5,
@@ -1573,9 +3216,9 @@
       "age": 39,
       "place": "home",
       "title": {
-        "en": "30 · Insurance review",
-        "hi": "30 · बीमा की समीक्षा",
-        "mr": "30 · विम्याचा आढावा"
+        "en": "36 · Insurance review",
+        "hi": "36 · बीमा की समीक्षा",
+        "mr": "36 · विम्याचा आढावा"
       },
       "setup": {
         "en": "Verena now shares a home and supports another person. The cover she bought at twenty-four may no longer match the risk.",
@@ -1644,9 +3287,9 @@
       "age": 39,
       "place": "office",
       "title": {
-        "en": "31 · Taxes",
-        "hi": "31 · कर",
-        "mr": "31 · कर"
+        "en": "37 · Taxes",
+        "hi": "37 · कर",
+        "mr": "37 · कर"
       },
       "setup": {
         "en": "Verena receives salary and tax documents with unfamiliar labels. She needs to understand what they record without guessing current rules.",
@@ -1714,9 +3357,9 @@
       "age": 40,
       "place": "home",
       "title": {
-        "en": "32 · Important documents",
-        "hi": "32 · ज़रूरी दस्तावेज़",
-        "mr": "32 · महत्त्वाची कागदपत्रे"
+        "en": "38 · Important documents",
+        "hi": "38 · ज़रूरी दस्तावेज़",
+        "mr": "38 · महत्त्वाची कागदपत्रे"
       },
       "setup": {
         "en": "A claim is delayed because a document is hard to find. Verena decides her financial papers need a simple system.",
@@ -1784,9 +3427,9 @@
       "age": 40,
       "place": "home",
       "title": {
-        "en": "33 · The government form",
-        "hi": "33 · सरकारी फ़ॉर्म",
-        "mr": "33 · सरकारी अर्ज"
+        "en": "39 · The government form",
+        "hi": "39 · सरकारी फ़ॉर्म",
+        "mr": "39 · सरकारी अर्ज"
       },
       "setup": {
         "en": "An application asks for identity, address, eligibility details and supporting documents. One unofficial agent offers to fill it for a fee.",
@@ -1854,9 +3497,9 @@
       "age": 41,
       "place": "bank",
       "title": {
-        "en": "34 · KYC",
-        "hi": "34 · KYC",
-        "mr": "34 · KYC"
+        "en": "40 · KYC",
+        "hi": "40 · KYC",
+        "mr": "40 · KYC"
       },
       "setup": {
         "en": "A financial institution asks Verena to update identity and address details. A message link looks convenient but the domain is unfamiliar.",
@@ -1924,9 +3567,9 @@
       "age": 41,
       "place": "bank",
       "title": {
-        "en": "35 · A gold-loan decision",
-        "hi": "35 · गोल्ड लोन का फ़ैसला",
-        "mr": "35 · सोने कर्जाचा निर्णय"
+        "en": "41 · A gold-loan decision",
+        "hi": "41 · गोल्ड लोन का फ़ैसला",
+        "mr": "41 · सोने कर्जाचा निर्णय"
       },
       "setup": {
         "en": "A family expense makes a gold loan look fast. Verena must weigh the lower secured rate against the risk of losing the collateral.",
@@ -2004,9 +3647,9 @@
       "age": 42,
       "place": "home",
       "title": {
-        "en": "36 · Having a child",
-        "hi": "36 · बच्चे का जन्म",
-        "mr": "36 · मूल होणे"
+        "en": "42 · Having a child",
+        "hi": "42 · बच्चे का जन्म",
+        "mr": "42 · मूल होणे"
       },
       "delta": {
         "dependents": 1,
@@ -2022,9 +3665,9 @@
       "age": 44,
       "place": "home",
       "title": {
-        "en": "37 · Education planning",
-        "hi": "37 · शिक्षा की योजना",
-        "mr": "37 · शिक्षणाचे नियोजन"
+        "en": "43 · Education planning",
+        "hi": "43 · शिक्षा की योजना",
+        "mr": "43 · शिक्षणाचे नियोजन"
       },
       "delta": {
         "investments": 120000,
@@ -2033,15 +3676,307 @@
       "guide": "children-planning"
     },
     {
+      "id": "govt-bond-buy",
+      "stage": "long-term-planning",
+      "topic": "investing",
+      "age": 44,
+      "place": "office",
+      "title": {
+        "en": "44 · Lending to the government",
+        "hi": "44 · सरकार को उधार देना",
+        "mr": "44 · सरकारला कर्ज देणे"
+      },
+      "setup": {
+        "en": "Verena's daughter Maya will start college in ten years. Verena wants that money to be steady, not tied to the stock market, and has heard she can buy government bonds herself.",
+        "hi": "वेरेना की बेटी माया दस साल में कॉलेज जाएगी। वेरेना चाहती है कि वह पैसा स्थिर रहे, शेयर बाज़ार से बँधा न हो, और उसने सुना है कि वह खुद सरकारी बॉन्ड खरीद सकती है।",
+        "mr": "वेरेनाची मुलगी माया दहा वर्षांत कॉलेजला जाईल. वेरेनाला ते पैसे स्थिर हवे आहेत, शेअर बाजाराशी बांधलेले नको, आणि तिने ऐकले आहे की ती स्वतः सरकारी बाँड घेऊ शकते."
+      },
+      "more": {
+        "en": "A website in a forwarded message offers 'RBI bonds at 12% guaranteed'. The official RBI Retail Direct portal shows bonds of different maturities at current market yields.",
+        "hi": "एक फ़ॉरवर्ड संदेश की वेबसाइट '12% गारंटीड RBI बॉन्ड' दिखाती है। आधिकारिक RBI रिटेल डायरेक्ट पोर्टल अलग-अलग परिपक्वता के बॉन्ड मौजूदा बाज़ार दरों पर दिखाता है।",
+        "mr": "फॉरवर्ड संदेशातील एक वेबसाइट '12% हमीचे RBI बाँड' दाखवते. अधिकृत RBI रिटेल डायरेक्ट पोर्टल वेगवेगळ्या मुदतीचे बाँड सध्याच्या बाजार दरांवर दाखवते."
+      },
+      "question": {
+        "en": "How should Verena invest Maya's college money?",
+        "hi": "वेरेना माया के कॉलेज का पैसा कैसे लगाए?",
+        "mr": "वेरेनाने मायाच्या कॉलेजचे पैसे कसे गुंतवावेत?"
+      },
+      "action": {
+        "en": "Register on rbiretaildirect.org.in herself and buy a government bond that matures close to Maya's college year, planning to hold it to maturity.",
+        "hi": "खुद rbiretaildirect.org.in पर पंजीकरण करे और माया के कॉलेज साल के करीब परिपक्व होने वाला सरकारी बॉन्ड खरीदे, परिपक्वता तक रखने की योजना से।",
+        "mr": "स्वतः rbiretaildirect.org.in वर नोंदणी करावी आणि मायाच्या कॉलेज वर्षाजवळ मुदत संपणारा सरकारी बाँड घ्यावा, मुदतपूर्तीपर्यंत ठेवण्याच्या योजनेने."
+      },
+      "okay": {
+        "en": "Buy a 30-year bond because its yield is slightly higher.",
+        "hi": "थोड़ी ऊँची दर के लिए 30 साल का बॉन्ड खरीदे।",
+        "mr": "थोड्या जास्त दरासाठी 30 वर्षांचा बाँड घ्यावा."
+      },
+      "costly": {
+        "en": "Invest through the forwarded '12% guaranteed' website.",
+        "hi": "फ़ॉरवर्ड हुई '12% गारंटीड' वेबसाइट से निवेश करे।",
+        "mr": "फॉरवर्ड झालेल्या '12% हमी' वेबसाइटवरून गुंतवणूक करावी."
+      },
+      "goodOutcome": {
+        "en": "Interest arrives twice a year, and the bond repays in full the year Maya starts college. Market falls along the way do not touch this money.",
+        "hi": "ब्याज साल में दो बार आता है, और माया के कॉलेज शुरू होने वाले साल बॉन्ड पूरा लौटाता है। बीच में बाज़ार की गिरावट इस पैसे को नहीं छूती।",
+        "mr": "व्याज वर्षातून दोनदा येते, आणि माया कॉलेज सुरू करते त्या वर्षी बाँड पूर्ण परत करतो. मधल्या बाजार घसरणीचा या पैशांवर परिणाम होत नाही."
+      },
+      "okayOutcome": {
+        "en": "When Maya needs the money, rates have risen, and selling the long bond early fetches less than Verena paid.",
+        "hi": "जब माया को पैसा चाहिए, दरें बढ़ चुकी हैं, और लंबा बॉन्ड जल्दी बेचने पर वेरेना की खरीद से कम मिलता है।",
+        "mr": "मायाला पैसे लागतात तेव्हा दर वाढलेले असतात, आणि दीर्घ बाँड लवकर विकल्यावर वेरेनाने दिलेल्यापेक्षा कमी मिळते."
+      },
+      "costlyOutcome": {
+        "en": "The site disappears with her ₹2 lakh. It was never connected to the RBI.",
+        "hi": "साइट उसके ₹2 लाख लेकर गायब हो जाती है। उसका RBI से कोई संबंध नहीं था।",
+        "mr": "साइट तिचे ₹2 लाख घेऊन गायब होते. तिचा RBI शी कधीच संबंध नव्हता."
+      },
+      "lesson": {
+        "en": "Match a bond's maturity to when you need the money, and buy only through the official portal. 'Guaranteed' high returns from a link are a scam.",
+        "hi": "बॉन्ड की परिपक्वता को पैसे की ज़रूरत के समय से मिलाएँ, और सिर्फ़ आधिकारिक पोर्टल से खरीदें। लिंक वाले 'गारंटीड' ऊँचे रिटर्न धोखा हैं।",
+        "mr": "बाँडची मुदत पैशांची गरज असेल त्या वेळेशी जुळवा, आणि फक्त अधिकृत पोर्टलवरूनच घ्या. लिंकमधील 'हमीचे' जास्त परतावे फसवणूक आहे."
+      },
+      "delta": {
+        "investments": 200000,
+        "resilience": 4,
+        "confidence": 3
+      },
+      "guide": "govt-bonds",
+      "lines": [
+        {
+          "label": {
+            "en": "Goal",
+            "hi": "लक्ष्य",
+            "mr": "उद्दिष्ट"
+          },
+          "value": {
+            "en": "Maya's college, in 10 years",
+            "hi": "माया का कॉलेज, 10 साल में",
+            "mr": "मायाचे कॉलेज, 10 वर्षांत"
+          },
+          "note": {
+            "en": "The date tells you which maturity to pick.",
+            "hi": "तारीख बताती है कि कौन सी परिपक्वता चुनें।",
+            "mr": "तारीख कोणती मुदत निवडायची ते सांगते."
+          }
+        },
+        {
+          "label": {
+            "en": "Official portal",
+            "hi": "आधिकारिक पोर्टल",
+            "mr": "अधिकृत पोर्टल"
+          },
+          "value": {
+            "en": "rbiretaildirect.org.in",
+            "hi": "rbiretaildirect.org.in",
+            "mr": "rbiretaildirect.org.in"
+          },
+          "note": {
+            "en": "Typed by hand, never opened from a message.",
+            "hi": "हाथ से टाइप किया, संदेश से कभी नहीं खोला।",
+            "mr": "हाताने टाइप केलेले, संदेशातून कधीच उघडलेले नाही."
+          }
+        },
+        {
+          "label": {
+            "en": "30-year bond",
+            "hi": "30 साल का बॉन्ड",
+            "mr": "30 वर्षांचा बाँड"
+          },
+          "value": {
+            "en": "Slightly higher yield",
+            "hi": "थोड़ी ऊँची दर",
+            "mr": "थोडा जास्त दर"
+          },
+          "note": {
+            "en": "Must be sold early for college, at whatever price rates allow.",
+            "hi": "कॉलेज के लिए जल्दी बेचना पड़ेगा, दरों के अनुसार जो कीमत मिले।",
+            "mr": "कॉलेजसाठी लवकर विकावा लागेल, दरांनुसार मिळेल त्या किमतीत."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Forwarded site",
+            "hi": "फ़ॉरवर्ड साइट",
+            "mr": "फॉरवर्ड साइट"
+          },
+          "value": {
+            "en": "'12% guaranteed'",
+            "hi": "'12% गारंटीड'",
+            "mr": "'12% हमी'"
+          },
+          "note": {
+            "en": "Not the RBI. A fake promise.",
+            "hi": "RBI नहीं। झूठा वादा।",
+            "mr": "RBI नाही. खोटे वचन."
+          },
+          "flag": true
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "What is a Treasury Bill?",
+            "hi": "ट्रेज़री बिल क्या है?",
+            "mr": "ट्रेझरी बिल म्हणजे काय?"
+          },
+          "options": [
+            {
+              "en": "Government borrowing for under a year",
+              "hi": "एक साल से कम का सरकारी उधार",
+              "mr": "एका वर्षापेक्षा कमी कालावधीचे सरकारी कर्ज"
+            },
+            {
+              "en": "A credit card bill",
+              "hi": "क्रेडिट कार्ड बिल",
+              "mr": "क्रेडिट कार्ड बिल"
+            },
+            {
+              "en": "A tax refund",
+              "hi": "टैक्स रिफ़ंड",
+              "mr": "कर परतावा"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Longer government borrowing is done through G-Secs.",
+            "hi": "लंबा सरकारी उधार G-Sec से होता है।",
+            "mr": "दीर्घ सरकारी कर्ज G-Sec मधून घेतले जाते."
+          }
+        },
+        {
+          "question": {
+            "en": "How do you avoid price risk on a bond?",
+            "hi": "बॉन्ड पर कीमत के जोखिम से कैसे बचें?",
+            "mr": "बाँडवरील किमतीची जोखीम कशी टाळावी?"
+          },
+          "options": [
+            {
+              "en": "Hold it to maturity",
+              "hi": "परिपक्वता तक रखें",
+              "mr": "मुदतपूर्तीपर्यंत ठेवा"
+            },
+            {
+              "en": "Sell it monthly",
+              "hi": "हर महीने बेचें",
+              "mr": "दरमहा विका"
+            },
+            {
+              "en": "Buy the longest one",
+              "hi": "सबसे लंबा खरीदें",
+              "mr": "सर्वात दीर्घ घ्या"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "At maturity you get the full face value whatever rates are doing.",
+            "hi": "परिपक्वता पर दरें जो भी हों, पूरी अंकित राशि मिलती है।",
+            "mr": "मुदतपूर्तीला दर कसेही असले तरी पूर्ण दर्शनी मूल्य मिळते."
+          }
+        },
+        {
+          "question": {
+            "en": "Where do individuals buy government securities directly?",
+            "hi": "लोग सरकारी प्रतिभूतियाँ सीधे कहाँ खरीदते हैं?",
+            "mr": "व्यक्ती सरकारी रोखे थेट कुठे घेतात?"
+          },
+          "options": [
+            {
+              "en": "RBI Retail Direct",
+              "hi": "RBI रिटेल डायरेक्ट",
+              "mr": "RBI रिटेल डायरेक्ट"
+            },
+            {
+              "en": "A forwarded link",
+              "hi": "फ़ॉरवर्ड लिंक",
+              "mr": "फॉरवर्ड लिंक"
+            },
+            {
+              "en": "A chat group",
+              "hi": "चैट ग्रुप",
+              "mr": "चॅट ग्रुप"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It is free and run by the RBI.",
+            "hi": "यह मुफ़्त है और RBI चलाता है।",
+            "mr": "ते मोफत आहे आणि RBI चालवते."
+          }
+        },
+        {
+          "question": {
+            "en": "If interest rates rise, an existing bond's market price usually:",
+            "hi": "ब्याज दरें बढ़ें तो मौजूदा बॉन्ड की बाज़ार कीमत आम तौर पर:",
+            "mr": "व्याजदर वाढल्यास विद्यमान बाँडची बाजार किंमत साधारणपणे:"
+          },
+          "options": [
+            {
+              "en": "Falls",
+              "hi": "गिरती है",
+              "mr": "घसरते"
+            },
+            {
+              "en": "Rises",
+              "hi": "बढ़ती है",
+              "mr": "वाढते"
+            },
+            {
+              "en": "Stays fixed",
+              "hi": "वही रहती है",
+              "mr": "तशीच राहते"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "New bonds pay more, so older ones sell for less.",
+            "hi": "नए बॉन्ड ज़्यादा देते हैं, इसलिए पुराने कम में बिकते हैं।",
+            "mr": "नवे बाँड जास्त देतात, म्हणून जुने कमी किमतीत विकले जातात."
+          }
+        },
+        {
+          "question": {
+            "en": "A site promises '12% guaranteed RBI bonds'. You should:",
+            "hi": "कोई साइट '12% गारंटीड RBI बॉन्ड' का वादा करे तो:",
+            "mr": "एखादी साइट '12% हमीचे RBI बाँड' देत असेल तर:"
+          },
+          "options": [
+            {
+              "en": "Invest quickly",
+              "hi": "जल्दी निवेश करें",
+              "mr": "पटकन गुंतवा"
+            },
+            {
+              "en": "Treat it as a scam",
+              "hi": "इसे धोखा मानें",
+              "mr": "ती फसवणूक समजा"
+            },
+            {
+              "en": "Share it with family",
+              "hi": "परिवार को भेजें",
+              "mr": "कुटुंबाला पाठवा"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "Real bond yields come from the market and are shown on the official portal.",
+            "hi": "असली बॉन्ड दरें बाज़ार से आती हैं और आधिकारिक पोर्टल पर दिखती हैं।",
+            "mr": "खरे बाँड दर बाजारातून येतात आणि अधिकृत पोर्टलवर दिसतात."
+          }
+        }
+      ]
+    },
+    {
       "id": "family-emergency",
       "stage": "financial-security",
       "topic": "family",
       "age": 46,
       "place": "home",
       "title": {
-        "en": "38 · A family emergency",
-        "hi": "38 · परिवार की आपात स्थिति",
-        "mr": "38 · कुटुंबातील आणीबाणी"
+        "en": "45 · A family emergency",
+        "hi": "45 · परिवार की आपात स्थिति",
+        "mr": "45 · कुटुंबातील आणीबाणी"
       },
       "setup": {
         "en": "A parent needs urgent support while Verena is rebuilding savings. Care, cash flow and long-term stability pull in different directions.",
@@ -2107,15 +4042,307 @@
       }
     },
     {
+      "id": "pms-pitch",
+      "stage": "long-term-planning",
+      "topic": "investing",
+      "age": 46,
+      "place": "office",
+      "title": {
+        "en": "46 · The PMS pitch",
+        "hi": "46 · PMS की पेशकश",
+        "mr": "46 · PMS ची ऑफर"
+      },
+      "setup": {
+        "en": "Verena's savings have grown. A relationship manager invites her for coffee: 'Our PMS beat the market by 20% last year. Minimum ₹50 lakh. You could take a loan against your flat to get in.'",
+        "hi": "वेरेना की बचत बढ़ गई है। एक रिलेशनशिप मैनेजर कॉफ़ी पर बुलाता है: 'हमारे PMS ने पिछले साल बाज़ार को 20% से हराया। न्यूनतम ₹50 लाख। आप फ़्लैट पर लोन लेकर जुड़ सकती हैं।'",
+        "mr": "वेरेनाची बचत वाढली आहे. एक रिलेशनशिप मॅनेजर कॉफीला बोलावतो: 'आमच्या PMS ने गेल्या वर्षी बाजाराला 20% ने मागे टाकले. किमान ₹50 लाख. तुम्ही फ्लॅटवर कर्ज घेऊन सहभागी होऊ शकता.'"
+      },
+      "more": {
+        "en": "He also mentions an AIF 'only for special clients' with a ₹1 crore minimum and a five-year lock-in. The brochure shows one great year and no fees.",
+        "hi": "वह 'सिर्फ़ ख़ास ग्राहकों के लिए' ₹1 करोड़ न्यूनतम और पाँच साल लॉक-इन वाले AIF का भी ज़िक्र करता है। ब्रोशर में एक शानदार साल दिखता है और फ़ीस नहीं।",
+        "mr": "तो 'फक्त खास ग्राहकांसाठी' ₹1 कोटी किमान आणि पाच वर्षांच्या लॉक-इनच्या AIF चाही उल्लेख करतो. माहितीपत्रकात एक उत्तम वर्ष दिसते आणि शुल्क दिसत नाही."
+      },
+      "question": {
+        "en": "How should Verena respond?",
+        "hi": "वेरेना क्या जवाब दे?",
+        "mr": "वेरेनाने काय उत्तर द्यावे?"
+      },
+      "action": {
+        "en": "Ask for the SEBI registration, the disclosure document and every fee in writing, compare five years after fees with an index fund, and never borrow to invest.",
+        "hi": "SEBI पंजीकरण, डिस्क्लोज़र डॉक्यूमेंट और हर फ़ीस लिखित में माँगे, फ़ीस के बाद पाँच साल की तुलना इंडेक्स फ़ंड से करे, और निवेश के लिए कभी उधार न ले।",
+        "mr": "SEBI नोंदणी, डिस्क्लोजर डॉक्युमेंट आणि प्रत्येक शुल्क लेखी मागावे, शुल्कानंतरच्या पाच वर्षांची तुलना इंडेक्स फंडाशी करावी, आणि गुंतवणुकीसाठी कधीही कर्ज घेऊ नये."
+      },
+      "okay": {
+        "en": "Put in ₹50 lakh of her own savings without reading the fees.",
+        "hi": "फ़ीस पढ़े बिना अपनी बचत के ₹50 लाख लगा दे।",
+        "mr": "शुल्क न वाचता स्वतःच्या बचतीतील ₹50 लाख टाकावे."
+      },
+      "costly": {
+        "en": "Take a loan against her flat to reach the minimum.",
+        "hi": "न्यूनतम राशि पूरी करने के लिए फ़्लैट पर लोन ले।",
+        "mr": "किमान रक्कम गाठण्यासाठी फ्लॅटवर कर्ज घ्यावे."
+      },
+      "goodOutcome": {
+        "en": "After fees, the PMS's five-year result was close to a low-cost index fund, with more risk. She stays with her plan and keeps her flat free of debt.",
+        "hi": "फ़ीस के बाद PMS का पाँच साल का नतीजा कम खर्च वाले इंडेक्स फ़ंड जैसा था, ज़्यादा जोखिम के साथ। वह अपनी योजना पर रहती है और फ़्लैट कर्ज़-मुक्त रखती है।",
+        "mr": "शुल्कानंतर PMS चा पाच वर्षांचा निकाल कमी खर्चाच्या इंडेक्स फंडाइतकाच होता, जास्त जोखमीसह. ती आपल्या योजनेवर ठाम राहते आणि फ्लॅट कर्जमुक्त ठेवते."
+      },
+      "okayOutcome": {
+        "en": "The portfolio is concentrated in a few shares. A bad year plus fixed and performance fees leave her behind a simple index fund.",
+        "hi": "पोर्टफ़ोलियो कुछ शेयरों में केंद्रित है। एक खराब साल, तय और प्रदर्शन फ़ीस उसे साधारण इंडेक्स फ़ंड से पीछे छोड़ देते हैं।",
+        "mr": "पोर्टफोलिओ काही शेअरमध्ये केंद्रित आहे. एक वाईट वर्ष, ठराविक आणि कामगिरी शुल्क तिला साध्या इंडेक्स फंडाच्या मागे ठेवतात."
+      },
+      "costlyOutcome": {
+        "en": "The market falls 25%. Her portfolio drops, but the loan EMI does not. She has to sell at a loss to keep paying.",
+        "hi": "बाज़ार 25% गिरता है। पोर्टफ़ोलियो गिरता है, पर लोन की EMI नहीं। चुकाते रहने के लिए उसे नुकसान में बेचना पड़ता है।",
+        "mr": "बाजार 25% घसरतो. पोर्टफोलिओ घसरतो, पण कर्जाचा EMI नाही. फेडत राहण्यासाठी तिला तोट्यात विकावे लागते."
+      },
+      "lesson": {
+        "en": "PMS and AIFs are for large, spare money and come with higher fees and risk. Demand registration, disclosure and fees in writing, and never borrow to reach a minimum.",
+        "hi": "PMS और AIF बड़े, फ़ालतू पैसे के लिए हैं और इनमें ज़्यादा फ़ीस व जोखिम है। पंजीकरण, खुलासा और फ़ीस लिखित में माँगें, और न्यूनतम राशि के लिए कभी उधार न लें।",
+        "mr": "PMS आणि AIF मोठ्या, अतिरिक्त पैशांसाठी आहेत आणि त्यात जास्त शुल्क व जोखीम असते. नोंदणी, खुलासा आणि शुल्क लेखी मागा, आणि किमान रकमेसाठी कधीही कर्ज घेऊ नका."
+      },
+      "delta": {
+        "confidence": 5,
+        "resilience": 4
+      },
+      "guide": "aif-pms",
+      "lines": [
+        {
+          "label": {
+            "en": "Minimum",
+            "hi": "न्यूनतम",
+            "mr": "किमान"
+          },
+          "value": {
+            "en": "₹50 lakh (PMS) · ₹1 crore (AIF)",
+            "hi": "₹50 लाख (PMS) · ₹1 करोड़ (AIF)",
+            "mr": "₹50 लाख (PMS) · ₹1 कोटी (AIF)"
+          },
+          "note": {
+            "en": "These are SEBI's floors, meant for large, spare money.",
+            "hi": "ये SEBI की न्यूनतम सीमाएँ हैं, बड़े फ़ालतू पैसे के लिए।",
+            "mr": "ही SEBI ची किमान मर्यादा आहे, मोठ्या अतिरिक्त पैशांसाठी."
+          }
+        },
+        {
+          "label": {
+            "en": "'Beat market by 20%'",
+            "hi": "'बाज़ार को 20% से हराया'",
+            "mr": "'बाजाराला 20% ने मागे टाकले'"
+          },
+          "value": {
+            "en": "One year shown",
+            "hi": "एक साल दिखाया",
+            "mr": "एक वर्ष दाखवले"
+          },
+          "note": {
+            "en": "Ask for five years, after all fees.",
+            "hi": "सारी फ़ीस के बाद पाँच साल माँगें।",
+            "mr": "सर्व शुल्कानंतरची पाच वर्षे मागा."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Fees",
+            "hi": "फ़ीस",
+            "mr": "शुल्क"
+          },
+          "value": {
+            "en": "Not in brochure",
+            "hi": "ब्रोशर में नहीं",
+            "mr": "माहितीपत्रकात नाही"
+          },
+          "note": {
+            "en": "Fixed fee and profit share must be in the disclosure document.",
+            "hi": "तय फ़ीस और मुनाफ़े का हिस्सा डिस्क्लोज़र डॉक्यूमेंट में होना चाहिए।",
+            "mr": "ठराविक शुल्क आणि नफ्याचा हिस्सा डिस्क्लोजर डॉक्युमेंटमध्ये असला पाहिजे."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "Loan against flat",
+            "hi": "फ़्लैट पर लोन",
+            "mr": "फ्लॅटवर कर्ज"
+          },
+          "value": {
+            "en": "Suggested by RM",
+            "hi": "RM का सुझाव",
+            "mr": "RM ची सूचना"
+          },
+          "note": {
+            "en": "Borrowing to invest turns a market fall into a debt problem.",
+            "hi": "निवेश के लिए उधार बाज़ार की गिरावट को कर्ज़ की समस्या बना देता है।",
+            "mr": "गुंतवणुकीसाठी कर्ज घेतल्यास बाजार घसरण कर्जाची समस्या बनते."
+          },
+          "flag": true
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "What is the SEBI minimum for a PMS?",
+            "hi": "PMS के लिए SEBI न्यूनतम क्या है?",
+            "mr": "PMS साठी SEBI किमान किती?"
+          },
+          "options": [
+            {
+              "en": "₹50 lakh",
+              "hi": "₹50 लाख",
+              "mr": "₹50 लाख"
+            },
+            {
+              "en": "₹500",
+              "hi": "₹500",
+              "mr": "₹500"
+            },
+            {
+              "en": "₹5 lakh",
+              "hi": "₹5 लाख",
+              "mr": "₹5 लाख"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "PMS is designed for large portfolios.",
+            "hi": "PMS बड़े पोर्टफ़ोलियो के लिए बना है।",
+            "mr": "PMS मोठ्या पोर्टफोलिओसाठी आहे."
+          }
+        },
+        {
+          "question": {
+            "en": "What usually makes AIFs harder to exit?",
+            "hi": "AIF से निकलना आम तौर पर कठिन क्यों?",
+            "mr": "AIF मधून बाहेर पडणे साधारणपणे कठीण का?"
+          },
+          "options": [
+            {
+              "en": "Lock-in periods",
+              "hi": "लॉक-इन अवधि",
+              "mr": "लॉक-इन कालावधी"
+            },
+            {
+              "en": "Daily NAV",
+              "hi": "रोज़ का NAV",
+              "mr": "रोजचा NAV"
+            },
+            {
+              "en": "UPI limits",
+              "hi": "UPI सीमा",
+              "mr": "UPI मर्यादा"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Money can be committed for years.",
+            "hi": "पैसा सालों के लिए बँध सकता है।",
+            "mr": "पैसे वर्षानुवर्षे गुंतलेले राहू शकतात."
+          }
+        },
+        {
+          "question": {
+            "en": "What is a performance fee?",
+            "hi": "प्रदर्शन फ़ीस क्या है?",
+            "mr": "कामगिरी शुल्क म्हणजे काय?"
+          },
+          "options": [
+            {
+              "en": "A share of profits taken by the manager",
+              "hi": "मैनेजर का लिया मुनाफ़े का हिस्सा",
+              "mr": "व्यवस्थापकाने घेतलेला नफ्याचा हिस्सा"
+            },
+            {
+              "en": "A government tax",
+              "hi": "सरकारी टैक्स",
+              "mr": "सरकारी कर"
+            },
+            {
+              "en": "A bonus paid to you",
+              "hi": "आपको मिलने वाला बोनस",
+              "mr": "तुम्हाला मिळणारा बोनस"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It reduces what you keep in good years.",
+            "hi": "यह अच्छे सालों में आपकी बचत घटाता है।",
+            "mr": "हे चांगल्या वर्षांत तुमच्याकडे राहणारे कमी करते."
+          }
+        },
+        {
+          "question": {
+            "en": "Is borrowing to reach an investment minimum wise?",
+            "hi": "निवेश की न्यूनतम राशि के लिए उधार लेना समझदारी है?",
+            "mr": "गुंतवणुकीची किमान रक्कम गाठण्यासाठी कर्ज घेणे शहाणपणाचे आहे का?"
+          },
+          "options": [
+            {
+              "en": "Yes, always",
+              "hi": "हाँ, हमेशा",
+              "mr": "हो, नेहमी"
+            },
+            {
+              "en": "No: losses and EMIs can collide",
+              "hi": "नहीं: नुकसान और EMI टकरा सकते हैं",
+              "mr": "नाही: तोटा आणि EMI एकत्र येऊ शकतात"
+            },
+            {
+              "en": "Only on Fridays",
+              "hi": "सिर्फ़ शुक्रवार को",
+              "mr": "फक्त शुक्रवारी"
+            }
+          ],
+          "answer": 1,
+          "why": {
+            "en": "A fall in value does not reduce the loan.",
+            "hi": "मूल्य गिरने से लोन कम नहीं होता।",
+            "mr": "मूल्य घसरल्याने कर्ज कमी होत नाही."
+          }
+        },
+        {
+          "question": {
+            "en": "What should you compare a PMS against?",
+            "hi": "PMS की तुलना किससे करें?",
+            "mr": "PMS ची तुलना कशाशी करावी?"
+          },
+          "options": [
+            {
+              "en": "A low-cost index fund, after fees",
+              "hi": "फ़ीस के बाद कम खर्च वाला इंडेक्स फ़ंड",
+              "mr": "शुल्कानंतर कमी खर्चाचा इंडेक्स फंड"
+            },
+            {
+              "en": "Its best single year",
+              "hi": "उसका सबसे अच्छा साल",
+              "mr": "त्याचे सर्वोत्तम वर्ष"
+            },
+            {
+              "en": "A friend's opinion",
+              "hi": "दोस्त की राय",
+              "mr": "मित्राचे मत"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "If it cannot beat a simple fund after fees, the extra cost is not worth it.",
+            "hi": "फ़ीस के बाद साधारण फ़ंड से बेहतर न हो तो अतिरिक्त खर्च बेकार है।",
+            "mr": "शुल्कानंतर साध्या फंडापेक्षा चांगले नसेल तर जादा खर्च व्यर्थ आहे."
+          }
+        }
+      ]
+    },
+    {
       "id": "helping-relative",
       "stage": "family-finances",
       "topic": "family",
       "age": 47,
       "place": "cafe",
       "title": {
-        "en": "39 · Helping a relative",
-        "hi": "39 · रिश्तेदार की मदद",
-        "mr": "39 · नातेवाईकाला मदत"
+        "en": "47 · Helping a relative",
+        "hi": "47 · रिश्तेदार की मदद",
+        "mr": "47 · नातेवाईकाला मदत"
       },
       "setup": {
         "en": "A relative asks Verena for money and promises to return it soon. She wants to help without risking rent or the relationship.",
@@ -2186,9 +4413,9 @@
       "age": 49,
       "place": "office",
       "title": {
-        "en": "40 · Long-term investing",
-        "hi": "40 · दीर्घकालिक निवेश",
-        "mr": "40 · दीर्घकालीन गुंतवणूक"
+        "en": "48 · Long-term investing",
+        "hi": "48 · दीर्घकालिक निवेश",
+        "mr": "48 · दीर्घकालीन गुंतवणूक"
       },
       "setup": {
         "en": "With steadier finances, Verena can invest regularly. She still needs to balance growth, volatility, time and diversification.",
@@ -2264,9 +4491,9 @@
       "age": 51,
       "place": "home",
       "title": {
-        "en": "41 · Financial security",
-        "hi": "41 · आर्थिक सुरक्षा",
-        "mr": "41 · आर्थिक सुरक्षितता"
+        "en": "49 · Financial security",
+        "hi": "49 · आर्थिक सुरक्षा",
+        "mr": "49 · आर्थिक सुरक्षितता"
       },
       "setup": {
         "en": "Verena now has emergency savings, manageable debt, insurance, investments and organised documents. The pieces finally support one another.",
@@ -2336,9 +4563,9 @@
       "age": 53,
       "place": "garden",
       "title": {
-        "en": "42 · Thinking about retirement",
-        "hi": "42 · सेवानिवृत्ति के बारे में सोचना",
-        "mr": "42 · निवृत्तीचा विचार"
+        "en": "50 · Thinking about retirement",
+        "hi": "50 · सेवानिवृत्ति के बारे में सोचना",
+        "mr": "50 · निवृत्तीचा विचार"
       },
       "setup": {
         "en": "Retirement is no longer abstract. Verena lists future expenses, possible income sources and the years her money may need to last.",
@@ -2408,15 +4635,305 @@
       }
     },
     {
+      "id": "nps-epf-check",
+      "stage": "retirement",
+      "topic": "retirement",
+      "age": 54,
+      "place": "home",
+      "title": {
+        "en": "51 · EPF, NPS and the pension she will need",
+        "hi": "51 · EPF, NPS और ज़रूरी पेंशन",
+        "mr": "51 · EPF, NPS आणि लागणारी पेन्शन"
+      },
+      "setup": {
+        "en": "Six years from 60, Verena finally adds up her EPF passbook, her NPS statement and her other savings, and estimates the monthly income she will need after retirement.",
+        "hi": "60 से छह साल पहले वेरेना आखिरकार EPF पासबुक, NPS स्टेटमेंट और बाकी बचत जोड़ती है, और रिटायरमेंट के बाद ज़रूरी मासिक आय का अंदाज़ा लगाती है।",
+        "mr": "60 ला सहा वर्षे बाकी असताना वेरेना शेवटी EPF पासबुक, NPS स्टेटमेंट आणि इतर बचत जोडते, आणि निवृत्तीनंतर लागणाऱ्या मासिक उत्पन्नाचा अंदाज घेते."
+      },
+      "more": {
+        "en": "Her NPS is still mostly in shares under Active choice. A colleague says, 'At 60, take out everything you can and buy a flat to rent out.'",
+        "hi": "उसका NPS एक्टिव चॉइस में अब भी ज़्यादातर शेयरों में है। एक सहकर्मी कहता है, '60 पर जितना निकाल सको निकालो और किराए के लिए फ़्लैट ले लो।'",
+        "mr": "तिचे NPS अॅक्टिव्ह चॉइसमध्ये अजूनही बहुतेक शेअरमध्ये आहे. एक सहकारी म्हणतो, '60 व्या वर्षी जेवढे काढता येईल तेवढे काढ आणि भाड्याने देण्यासाठी फ्लॅट घे.'"
+      },
+      "question": {
+        "en": "What should Verena do now?",
+        "hi": "वेरेना अब क्या करे?",
+        "mr": "वेरेनाने आता काय करावे?"
+      },
+      "action": {
+        "en": "Gradually move NPS towards bonds, keep contributing, check the nominee on EPF and NPS, and plan the annuity and withdrawals around her monthly need.",
+        "hi": "धीरे-धीरे NPS को बॉन्ड की ओर ले जाए, योगदान जारी रखे, EPF और NPS पर नॉमिनी जाँचे, और मासिक ज़रूरत के हिसाब से एन्युटी व निकासी की योजना बनाए।",
+        "mr": "हळूहळू NPS बाँडकडे वळवावे, योगदान चालू ठेवावे, EPF आणि NPS वर नॉमिनी तपासावा, आणि मासिक गरजेनुसार अॅन्युइटी व काढणीचे नियोजन करावे."
+      },
+      "okay": {
+        "en": "Leave everything as it is and decide at 60.",
+        "hi": "सब जैसा है छोड़ दे और 60 पर तय करे।",
+        "mr": "सगळे तसेच ठेवावे आणि 60 व्या वर्षी ठरवावे."
+      },
+      "costly": {
+        "en": "Plan to withdraw the maximum at 60 and put it all into one flat.",
+        "hi": "60 पर ज़्यादा से ज़्यादा निकालकर सब एक फ़्लैट में लगाने की योजना बनाए।",
+        "mr": "60 व्या वर्षी जास्तीत जास्त काढून सगळे एका फ्लॅटमध्ये घालण्याचे नियोजन करावे."
+      },
+      "goodOutcome": {
+        "en": "A market fall at 58 barely dents her NPS, now mostly in bonds. At 60 her annuity, savings and EPF together cover her monthly need, and her daughter is the nominee everywhere.",
+        "hi": "58 पर बाज़ार की गिरावट उसके NPS को मुश्किल से छूती है, जो अब ज़्यादातर बॉन्ड में है। 60 पर एन्युटी, बचत और EPF मिलकर मासिक ज़रूरत पूरी करते हैं, और हर जगह बेटी नॉमिनी है।",
+        "mr": "58 व्या वर्षी बाजार घसरणीचा तिच्या NPS वर फारसा परिणाम होत नाही, जे आता बहुतेक बाँडमध्ये आहे. 60 व्या वर्षी अॅन्युइटी, बचत आणि EPF मिळून मासिक गरज भागवतात, आणि सगळीकडे मुलगी नॉमिनी आहे."
+      },
+      "okayOutcome": {
+        "en": "A fall at 59 takes a large bite out of her shares just before she needs the money, and her first years of pension are smaller than planned.",
+        "hi": "59 पर गिरावट पैसे की ज़रूरत से ठीक पहले उसके शेयरों का बड़ा हिस्सा खा जाती है, और पेंशन के पहले साल योजना से कम रहते हैं।",
+        "mr": "59 व्या वर्षी घसरण पैशांची गरज असण्याच्या अगदी आधी तिच्या शेअरचा मोठा भाग खाते, आणि पेन्शनची पहिली वर्षे नियोजनापेक्षा कमी राहतात."
+      },
+      "costlyOutcome": {
+        "en": "The flat stays empty for months and needs repairs. With most of her money in one property, she struggles to pay monthly bills.",
+        "hi": "फ़्लैट महीनों खाली रहता है और मरम्मत चाहिए। ज़्यादातर पैसा एक संपत्ति में होने से मासिक बिल भरना मुश्किल होता है।",
+        "mr": "फ्लॅट महिनोंमहिने रिकामा राहतो आणि दुरुस्ती लागते. बहुतेक पैसे एका मालमत्तेत असल्याने मासिक बिले भरणे कठीण जाते."
+      },
+      "lesson": {
+        "en": "Retirement is about steady monthly income. Reduce risk as 60 approaches, keep nominees current, and spread income across annuity, savings and EPF.",
+        "hi": "रिटायरमेंट स्थिर मासिक आय के बारे में है। 60 पास आते ही जोखिम घटाएँ, नॉमिनी अपडेट रखें, और आय एन्युटी, बचत और EPF में बाँटें।",
+        "mr": "निवृत्ती म्हणजे स्थिर मासिक उत्पन्न. 60 जवळ येताच जोखीम कमी करा, नॉमिनी अद्ययावत ठेवा, आणि उत्पन्न अॅन्युइटी, बचत आणि EPF मध्ये वाटा."
+      },
+      "delta": {
+        "resilience": 5,
+        "confidence": 4
+      },
+      "guide": "retirement-accounts",
+      "lines": [
+        {
+          "label": {
+            "en": "EPF passbook",
+            "hi": "EPF पासबुक",
+            "mr": "EPF पासबुक"
+          },
+          "value": {
+            "en": "Checked with UAN",
+            "hi": "UAN से जाँचा",
+            "mr": "UAN ने तपासले"
+          },
+          "note": {
+            "en": "Every job's EPF is in one place because she transferred, not withdrew.",
+            "hi": "हर नौकरी का EPF एक जगह है क्योंकि उसने निकाला नहीं, ट्रांसफ़र किया।",
+            "mr": "प्रत्येक नोकरीचे EPF एकाच ठिकाणी आहे कारण तिने काढले नाही, ट्रान्सफर केले."
+          }
+        },
+        {
+          "label": {
+            "en": "NPS mix",
+            "hi": "NPS मिश्रण",
+            "mr": "NPS मिश्रण"
+          },
+          "value": {
+            "en": "Mostly shares",
+            "hi": "ज़्यादातर शेयर",
+            "mr": "बहुतेक शेअर"
+          },
+          "note": {
+            "en": "Six years from 60, a big fall would hurt. Time to shift towards bonds.",
+            "hi": "60 से छह साल पहले बड़ी गिरावट चोट करेगी। बॉन्ड की ओर जाने का समय।",
+            "mr": "60 ला सहा वर्षे असताना मोठी घसरण दुखावेल. बाँडकडे वळण्याची वेळ."
+          },
+          "flag": true
+        },
+        {
+          "label": {
+            "en": "At 60",
+            "hi": "60 पर",
+            "mr": "60 व्या वर्षी"
+          },
+          "value": {
+            "en": "At least 40% to annuity",
+            "hi": "कम से कम 40% एन्युटी में",
+            "mr": "किमान 40% अॅन्युइटीत"
+          },
+          "note": {
+            "en": "The rest can be taken out under the rules in force then.",
+            "hi": "बाकी उस समय लागू नियमों के अनुसार निकाला जा सकता है।",
+            "mr": "उरलेले त्या वेळी लागू असलेल्या नियमांनुसार काढता येते."
+          }
+        },
+        {
+          "label": {
+            "en": "Nominees",
+            "hi": "नॉमिनी",
+            "mr": "नॉमिनी"
+          },
+          "value": {
+            "en": "Check EPF and NPS",
+            "hi": "EPF और NPS जाँचें",
+            "mr": "EPF आणि NPS तपासा"
+          },
+          "note": {
+            "en": "Out-of-date nominees create long delays for family.",
+            "hi": "पुराने नॉमिनी परिवार के लिए लंबी देरी पैदा करते हैं।",
+            "mr": "जुने नॉमिनी कुटुंबासाठी मोठा विलंब निर्माण करतात."
+          }
+        }
+      ],
+      "drill": [
+        {
+          "question": {
+            "en": "What share of the NPS corpus must buy an annuity at 60?",
+            "hi": "60 पर NPS जमा का कितना हिस्सा एन्युटी में जाना ज़रूरी है?",
+            "mr": "60 व्या वर्षी NPS जमा रकमेपैकी किती भाग अॅन्युइटीत जाणे आवश्यक?"
+          },
+          "options": [
+            {
+              "en": "At least 40%",
+              "hi": "कम से कम 40%",
+              "mr": "किमान 40%"
+            },
+            {
+              "en": "None",
+              "hi": "कुछ नहीं",
+              "mr": "काहीच नाही"
+            },
+            {
+              "en": "100% always",
+              "hi": "हमेशा 100%",
+              "mr": "नेहमी 100%"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "The annuity provides a monthly pension.",
+            "hi": "एन्युटी मासिक पेंशन देती है।",
+            "mr": "अॅन्युइटी मासिक पेन्शन देते."
+          }
+        },
+        {
+          "question": {
+            "en": "What does 'Auto choice' in NPS do as you age?",
+            "hi": "NPS में 'ऑटो चॉइस' उम्र बढ़ने पर क्या करता है?",
+            "mr": "NPS मधील 'ऑटो चॉइस' वय वाढल्यावर काय करते?"
+          },
+          "options": [
+            {
+              "en": "Moves money towards bonds",
+              "hi": "पैसा बॉन्ड की ओर ले जाता है",
+              "mr": "पैसे बाँडकडे वळवते"
+            },
+            {
+              "en": "Moves all money to shares",
+              "hi": "सारा पैसा शेयरों में",
+              "mr": "सगळे पैसे शेअरमध्ये"
+            },
+            {
+              "en": "Stops your pension",
+              "hi": "पेंशन बंद करता है",
+              "mr": "पेन्शन थांबवते"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "Risk falls automatically as retirement nears.",
+            "hi": "रिटायरमेंट पास आते ही जोखिम अपने आप घटता है।",
+            "mr": "निवृत्ती जवळ येताच जोखीम आपोआप कमी होते."
+          }
+        },
+        {
+          "question": {
+            "en": "What is your UAN for?",
+            "hi": "आपका UAN किस लिए है?",
+            "mr": "तुमचा UAN कशासाठी?"
+          },
+          "options": [
+            {
+              "en": "Tracking EPF across jobs",
+              "hi": "नौकरियों में EPF का हिसाब",
+              "mr": "नोकऱ्यांमध्ये EPF चा माग"
+            },
+            {
+              "en": "Paying tax",
+              "hi": "टैक्स भरना",
+              "mr": "कर भरणे"
+            },
+            {
+              "en": "Opening a demat account",
+              "hi": "डीमैट खाता खोलना",
+              "mr": "डिमॅट खाते उघडणे"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "One UAN links all your EPF accounts.",
+            "hi": "एक UAN आपके सभी EPF खाते जोड़ता है।",
+            "mr": "एक UAN तुमची सर्व EPF खाती जोडतो."
+          }
+        },
+        {
+          "question": {
+            "en": "Who is the Atal Pension Yojana for?",
+            "hi": "अटल पेंशन योजना किसके लिए है?",
+            "mr": "अटल पेन्शन योजना कोणासाठी?"
+          },
+          "options": [
+            {
+              "en": "People aged 18 to 40, mostly in informal work",
+              "hi": "18 से 40 साल के लोग, ज़्यादातर असंगठित काम में",
+              "mr": "18 ते 40 वयोगटातील लोक, बहुतेक असंघटित कामातील"
+            },
+            {
+              "en": "Only government officers",
+              "hi": "सिर्फ़ सरकारी अधिकारी",
+              "mr": "फक्त सरकारी अधिकारी"
+            },
+            {
+              "en": "Only retirees",
+              "hi": "सिर्फ़ रिटायर लोग",
+              "mr": "फक्त निवृत्त"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "It gives a fixed pension of ₹1,000 to ₹5,000 a month from 60.",
+            "hi": "यह 60 से हर महीने ₹1,000 से ₹5,000 की तय पेंशन देती है।",
+            "mr": "ती 60 पासून दरमहा ₹1,000 ते ₹5,000 ची ठराविक पेन्शन देते."
+          }
+        },
+        {
+          "question": {
+            "en": "Why spread retirement money across several sources?",
+            "hi": "रिटायरमेंट का पैसा कई जगह क्यों बाँटें?",
+            "mr": "निवृत्तीचे पैसे अनेक ठिकाणी का वाटावेत?"
+          },
+          "options": [
+            {
+              "en": "One problem cannot cut off all income",
+              "hi": "एक समस्या सारी आय नहीं रोक सकती",
+              "mr": "एका अडचणीने सगळे उत्पन्न थांबत नाही"
+            },
+            {
+              "en": "It looks impressive",
+              "hi": "यह प्रभावशाली लगता है",
+              "mr": "ते प्रभावी दिसते"
+            },
+            {
+              "en": "The RBI requires it",
+              "hi": "RBI इसकी माँग करता है",
+              "mr": "RBI ते बंधनकारक करते"
+            }
+          ],
+          "answer": 0,
+          "why": {
+            "en": "An empty flat or a bad year should not stop your monthly income.",
+            "hi": "खाली फ़्लैट या खराब साल मासिक आय नहीं रोकना चाहिए।",
+            "mr": "रिकामा फ्लॅट किंवा वाईट वर्ष मासिक उत्पन्न थांबवू नये."
+          }
+        }
+      ]
+    },
+    {
       "id": "retirement-plan",
       "stage": "retirement",
       "topic": "retirement",
       "age": 55,
       "place": "home",
       "title": {
-        "en": "43 · The retirement plan",
-        "hi": "43 · सेवानिवृत्ति योजना",
-        "mr": "43 · निवृत्ती योजना"
+        "en": "52 · The retirement plan",
+        "hi": "52 · सेवानिवृत्ति योजना",
+        "mr": "52 · निवृत्ती योजना"
       },
       "setup": {
         "en": "Verena turns the retirement idea into a simple educational plan: likely expenses, a buffer, income sources and a review date.",
@@ -2492,9 +5009,9 @@
       "age": 59,
       "place": "home",
       "title": {
-        "en": "44 · A late-life financial shock",
-        "hi": "44 · जीवन के बाद के दौर का झटका",
-        "mr": "44 · आयुष्याच्या उत्तरार्धातील आर्थिक धक्का"
+        "en": "53 · A late-life financial shock",
+        "hi": "53 · जीवन के बाद के दौर का झटका",
+        "mr": "53 · आयुष्याच्या उत्तरार्धातील आर्थिक धक्का"
       },
       "setup": {
         "en": "A major home repair arrives just before retirement. Verena must protect liquidity without dismantling the whole long-term plan.",
@@ -2566,9 +5083,9 @@
       "age": 62,
       "place": "garden",
       "title": {
-        "en": "45 · Retirement",
-        "hi": "45 · सेवानिवृत्ति",
-        "mr": "45 · निवृत्ती"
+        "en": "54 · Retirement",
+        "hi": "54 · सेवानिवृत्ति",
+        "mr": "54 · निवृत्ती"
       },
       "delta": {
         "income": 35000,
@@ -2584,9 +5101,9 @@
       "age": 63,
       "place": "garden",
       "title": {
-        "en": "46 · Verena looks back",
-        "hi": "46 · वेरेना पीछे मुड़कर देखती है",
-        "mr": "46 · वेरेना मागे वळून पाहते"
+        "en": "55 · Verena looks back",
+        "hi": "55 · वेरेना पीछे मुड़कर देखती है",
+        "mr": "55 · वेरेना मागे वळून पाहते"
       },
       "setup": {
         "en": "Verena compares her first offer letter with the life she built. The transformation came from many imperfect decisions, corrected over time.",

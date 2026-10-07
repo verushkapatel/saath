@@ -3293,6 +3293,1244 @@
         "what-insurance"
       ],
       "verified": "2026-10-04"
+    },
+    {
+      "id": "demat-account",
+      "topic": "investing",
+      "name": {
+        "en": "Demat and trading account opening form",
+        "hi": "डीमैट और ट्रेडिंग खाता खोलने का फ़ॉर्म",
+        "mr": "डिमॅट आणि ट्रेडिंग खाते उघडण्याचा फॉर्म"
+      },
+      "alsoCalled": {
+        "en": "Account opening kit, KYC form for a broker",
+        "hi": "अकाउंट ओपनिंग किट, ब्रोकर का KYC फ़ॉर्म",
+        "mr": "अकाउंट ओपनिंग किट, ब्रोकरचा KYC फॉर्म"
+      },
+      "purpose": {
+        "en": "Opens a demat account to hold shares and a trading account to buy and sell them, linked to your bank account.",
+        "hi": "शेयर रखने के लिए डीमैट खाता और खरीदने-बेचने के लिए ट्रेडिंग खाता खोलता है, जो आपके बैंक खाते से जुड़ा होता है।",
+        "mr": "शेअर ठेवण्यासाठी डिमॅट खाते आणि खरेदी-विक्रीसाठी ट्रेडिंग खाते उघडतो, जे तुमच्या बँक खात्याशी जोडलेले असते."
+      },
+      "authority": {
+        "en": "Opened through a SEBI-registered stockbroker and depository participant; the demat account sits with NSDL or CDSL.",
+        "hi": "SEBI में पंजीकृत स्टॉकब्रोकर और डिपॉज़िटरी पार्टिसिपेंट के ज़रिए खुलता है; डीमैट खाता NSDL या CDSL में रहता है।",
+        "mr": "SEBI नोंदणीकृत स्टॉकब्रोकर आणि डिपॉझिटरी पार्टिसिपंटमार्फत उघडते; डिमॅट खाते NSDL किंवा CDSL कडे असते."
+      },
+      "audience": {
+        "en": "Anyone who wants to buy shares, ETFs or bonds on an exchange.",
+        "hi": "जो भी एक्सचेंज पर शेयर, ETF या बॉन्ड खरीदना चाहता है।",
+        "mr": "एक्सचेंजवर शेअर, ETF किंवा बाँड घेऊ इच्छिणारा कोणीही."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "PAN and Aadhaar-based KYC",
+            "hi": "PAN और आधार आधारित KYC",
+            "mr": "PAN आणि आधार आधारित KYC"
+          },
+          "meaning": {
+            "en": "PAN is compulsory. Your name must match PAN exactly.",
+            "hi": "PAN अनिवार्य है। आपका नाम PAN से हूबहू मिलना चाहिए।",
+            "mr": "PAN अनिवार्य आहे. तुमचे नाव PAN शी तंतोतंत जुळले पाहिजे."
+          }
+        },
+        {
+          "name": {
+            "en": "Bank account details",
+            "hi": "बैंक खाते की जानकारी",
+            "mr": "बँक खात्याचा तपशील"
+          },
+          "meaning": {
+            "en": "Money for purchases comes from, and sale money goes back to, this account only.",
+            "hi": "खरीद का पैसा इसी खाते से जाता है और बिक्री का पैसा इसी में लौटता है।",
+            "mr": "खरेदीचे पैसे याच खात्यातून जातात आणि विक्रीचे पैसे यातच परत येतात."
+          }
+        },
+        {
+          "name": {
+            "en": "Segments",
+            "hi": "सेगमेंट",
+            "mr": "सेगमेंट"
+          },
+          "meaning": {
+            "en": "Equity cash is enough to start. Futures and options are high-risk; leave them unticked unless you truly understand them.",
+            "hi": "शुरू करने के लिए इक्विटी कैश काफ़ी है। फ़्यूचर्स और ऑप्शंस बहुत जोखिम भरे हैं; पूरी समझ न हो तो इन पर निशान न लगाएँ।",
+            "mr": "सुरुवातीला इक्विटी कॅश पुरेसे आहे. फ्युचर्स आणि ऑप्शन्स खूप जोखमीचे आहेत; पूर्ण समज नसेल तर त्यावर खूण करू नका."
+          }
+        },
+        {
+          "name": {
+            "en": "Income range and occupation",
+            "hi": "आय सीमा और पेशा",
+            "mr": "उत्पन्न श्रेणी आणि व्यवसाय"
+          },
+          "meaning": {
+            "en": "Required by SEBI. Be honest; it decides which products the broker may offer you.",
+            "hi": "SEBI के लिए ज़रूरी। सच लिखें; इससे तय होता है कि ब्रोकर आपको कौन से उत्पाद दे सकता है।",
+            "mr": "SEBI साठी आवश्यक. खरे लिहा; त्यावरून ब्रोकर तुम्हाला कोणती उत्पादने देऊ शकतो ते ठरते."
+          }
+        },
+        {
+          "name": {
+            "en": "Nominee",
+            "hi": "नॉमिनी",
+            "mr": "नॉमिनी"
+          },
+          "meaning": {
+            "en": "Add one, or opt out in writing. Without a nominee, your family faces a long process.",
+            "hi": "नॉमिनी जोड़ें, या लिखित रूप से मना करें। नॉमिनी के बिना परिवार को लंबी प्रक्रिया झेलनी पड़ती है।",
+            "mr": "नॉमिनी जोडा, किंवा लेखी नकार द्या. नॉमिनीशिवाय कुटुंबाला लांब प्रक्रिया करावी लागते."
+          }
+        },
+        {
+          "name": {
+            "en": "Power of attorney or DDPI",
+            "hi": "पावर ऑफ़ अटॉर्नी या DDPI",
+            "mr": "पॉवर ऑफ अॅटर्नी किंवा DDPI"
+          },
+          "meaning": {
+            "en": "Optional. It only lets the broker deliver shares you sell. Read its limits before signing.",
+            "hi": "वैकल्पिक। यह ब्रोकर को सिर्फ़ आपके बेचे शेयर पहुँचाने देता है। दस्तखत से पहले सीमाएँ पढ़ें।",
+            "mr": "ऐच्छिक. यामुळे ब्रोकर फक्त तुम्ही विकलेले शेअर पोहोचवू शकतो. सही करण्यापूर्वी मर्यादा वाचा."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "PAN card.",
+          "hi": "PAN कार्ड।",
+          "mr": "PAN कार्ड."
+        },
+        {
+          "en": "Address proof, usually Aadhaar.",
+          "hi": "पते का प्रमाण, आम तौर पर आधार।",
+          "mr": "पत्त्याचा पुरावा, साधारणपणे आधार."
+        },
+        {
+          "en": "A cancelled cheque or bank statement.",
+          "hi": "रद्द किया चेक या बैंक स्टेटमेंट।",
+          "mr": "रद्द केलेला चेक किंवा बँक स्टेटमेंट."
+        },
+        {
+          "en": "Income proof, only if you want futures and options.",
+          "hi": "आय का प्रमाण, सिर्फ़ फ़्यूचर्स और ऑप्शंस के लिए।",
+          "mr": "उत्पन्नाचा पुरावा, फक्त फ्युचर्स आणि ऑप्शन्ससाठी."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "Brokerage",
+            "hi": "ब्रोकरेज",
+            "mr": "ब्रोकरेज"
+          },
+          "meaning": {
+            "en": "The fee per trade. Add exchange charges, taxes and stamp duty to see the real cost.",
+            "hi": "हर सौदे की फ़ीस। असली लागत के लिए एक्सचेंज शुल्क, टैक्स और स्टांप ड्यूटी जोड़ें।",
+            "mr": "प्रत्येक व्यवहाराचे शुल्क. खरा खर्च पाहण्यासाठी एक्सचेंज शुल्क, कर आणि मुद्रांक शुल्क जोडा."
+          }
+        },
+        {
+          "term": {
+            "en": "Annual maintenance charge",
+            "hi": "सालाना रखरखाव शुल्क",
+            "mr": "वार्षिक देखभाल शुल्क"
+          },
+          "meaning": {
+            "en": "A yearly fee for keeping the demat account, even if you do not trade.",
+            "hi": "डीमैट खाता रखने की सालाना फ़ीस, भले आप सौदा न करें।",
+            "mr": "डिमॅट खाते ठेवण्याचे वार्षिक शुल्क, तुम्ही व्यवहार केला नाही तरी."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "Ticking futures and options without understanding them.",
+          "hi": "बिना समझे फ़्यूचर्स और ऑप्शंस पर निशान लगाना।",
+          "mr": "न समजता फ्युचर्स आणि ऑप्शन्सवर खूण करणे."
+        },
+        {
+          "en": "Letting an agent keep your login or fill the form for you.",
+          "hi": "एजेंट को लॉगिन रखने देना या फ़ॉर्म भरवाना।",
+          "mr": "एजंटला लॉगिन ठेवू देणे किंवा फॉर्म भरू देणे."
+        },
+        {
+          "en": "Skipping the nominee.",
+          "hi": "नॉमिनी छोड़ देना।",
+          "mr": "नॉमिनी न देणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Check the broker's SEBI registration number on sebi.gov.in.",
+          "hi": "sebi.gov.in पर ब्रोकर की SEBI पंजीकरण संख्या जाँचें।",
+          "mr": "sebi.gov.in वर ब्रोकरचा SEBI नोंदणी क्रमांक तपासा."
+        },
+        {
+          "en": "After opening, confirm the account in the email and SMS from NSDL or CDSL.",
+          "hi": "खुलने के बाद NSDL या CDSL के ईमेल और SMS से खाता पक्का करें।",
+          "mr": "उघडल्यानंतर NSDL किंवा CDSL च्या ईमेल आणि SMS ने खाते निश्चित करा."
+        }
+      ],
+      "source": [
+        {
+          "name": "SEBI investor website",
+          "url": "https://investor.sebi.gov.in/"
+        },
+        {
+          "name": "NSDL",
+          "url": "https://nsdl.co.in/"
+        },
+        {
+          "name": "CDSL",
+          "url": "https://www.cdslindia.com/"
+        }
+      ],
+      "guides": [
+        "stock-market",
+        "risk-diversify"
+      ],
+      "verified": "2026-10-08"
+    },
+    {
+      "id": "mutual-fund",
+      "topic": "investing",
+      "name": {
+        "en": "Mutual fund purchase and SIP form",
+        "hi": "म्यूचुअल फ़ंड खरीद और SIP फ़ॉर्म",
+        "mr": "म्युच्युअल फंड खरेदी आणि SIP फॉर्म"
+      },
+      "alsoCalled": {
+        "en": "Common application form, SIP registration, KIM",
+        "hi": "कॉमन एप्लीकेशन फ़ॉर्म, SIP पंजीकरण, KIM",
+        "mr": "कॉमन अॅप्लिकेशन फॉर्म, SIP नोंदणी, KIM"
+      },
+      "purpose": {
+        "en": "Buys units of a mutual fund once or sets up a monthly SIP, and records your bank, nominee and KYC.",
+        "hi": "म्यूचुअल फ़ंड के यूनिट एक बार में खरीदता है या मासिक SIP शुरू करता है, और आपका बैंक, नॉमिनी व KYC दर्ज करता है।",
+        "mr": "म्युच्युअल फंडाचे युनिट्स एकदाच घेतो किंवा मासिक SIP सुरू करतो, आणि तुमची बँक, नॉमिनी व KYC नोंदवतो."
+      },
+      "authority": {
+        "en": "Issued by each asset management company under SEBI rules. Your KYC is held by a KYC registration agency and works across all funds.",
+        "hi": "SEBI नियमों के तहत हर एसेट मैनेजमेंट कंपनी का अपना। आपका KYC एक KYC पंजीकरण एजेंसी के पास रहता है और सभी फ़ंड में चलता है।",
+        "mr": "SEBI नियमांनुसार प्रत्येक अॅसेट मॅनेजमेंट कंपनीचा. तुमचा KYC एका KYC नोंदणी संस्थेकडे असतो आणि सर्व फंडांत चालतो."
+      },
+      "audience": {
+        "en": "Anyone investing in a mutual fund, directly or through a distributor.",
+        "hi": "जो भी सीधे या वितरक के ज़रिए म्यूचुअल फ़ंड में निवेश करे।",
+        "mr": "थेट किंवा वितरकामार्फत म्युच्युअल फंडात गुंतवणूक करणारा कोणीही."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "Scheme name, plan and option",
+            "hi": "योजना का नाम, प्लान और विकल्प",
+            "mr": "योजनेचे नाव, प्लॅन आणि पर्याय"
+          },
+          "meaning": {
+            "en": "Write the exact scheme. Choose Direct or Regular, and Growth or IDCW. Growth reinvests gains.",
+            "hi": "सही योजना लिखें। डायरेक्ट या रेगुलर, और ग्रोथ या IDCW चुनें। ग्रोथ मुनाफ़े को फिर से निवेश करता है।",
+            "mr": "अचूक योजना लिहा. डायरेक्ट किंवा रेग्युलर, आणि ग्रोथ किंवा IDCW निवडा. ग्रोथ नफा पुन्हा गुंतवतो."
+          }
+        },
+        {
+          "name": {
+            "en": "ARN or 'Direct'",
+            "hi": "ARN या 'Direct'",
+            "mr": "ARN किंवा 'Direct'"
+          },
+          "meaning": {
+            "en": "A distributor's code goes here. Writing 'Direct' means no commission is paid.",
+            "hi": "यहाँ वितरक का कोड जाता है। 'Direct' लिखने का मतलब कोई कमीशन नहीं।",
+            "mr": "येथे वितरकाचा कोड येतो. 'Direct' लिहिल्यास कमिशन दिले जात नाही."
+          }
+        },
+        {
+          "name": {
+            "en": "Amount, SIP date and duration",
+            "hi": "रकम, SIP तारीख और अवधि",
+            "mr": "रक्कम, SIP तारीख आणि कालावधी"
+          },
+          "meaning": {
+            "en": "Pick a date a few days after salary arrives so the debit never fails.",
+            "hi": "वेतन आने के कुछ दिन बाद की तारीख चुनें ताकि डेबिट कभी फ़ेल न हो।",
+            "mr": "पगार आल्यानंतर काही दिवसांची तारीख निवडा म्हणजे डेबिट कधी फसणार नाही."
+          }
+        },
+        {
+          "name": {
+            "en": "Bank mandate",
+            "hi": "बैंक मैंडेट",
+            "mr": "बँक मँडेट"
+          },
+          "meaning": {
+            "en": "Authorises the monthly debit, up to a ceiling you set. Keep the ceiling close to your SIP.",
+            "hi": "हर महीने डेबिट की अनुमति देता है, आपकी तय सीमा तक। सीमा SIP के करीब रखें।",
+            "mr": "दरमहा डेबिटची परवानगी देतो, तुम्ही ठरवलेल्या मर्यादेपर्यंत. मर्यादा SIP च्या जवळ ठेवा."
+          }
+        },
+        {
+          "name": {
+            "en": "Nominee",
+            "hi": "नॉमिनी",
+            "mr": "नॉमिनी"
+          },
+          "meaning": {
+            "en": "Add up to the number of nominees allowed and their shares, or opt out in writing.",
+            "hi": "अनुमति अनुसार नॉमिनी और उनका हिस्सा जोड़ें, या लिखित रूप से मना करें।",
+            "mr": "परवानगीनुसार नॉमिनी आणि त्यांचा हिस्सा जोडा, किंवा लेखी नकार द्या."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "Completed KYC (PAN, address proof, photo), done once.",
+          "hi": "पूरा KYC (PAN, पते का प्रमाण, फ़ोटो), एक बार।",
+          "mr": "पूर्ण KYC (PAN, पत्त्याचा पुरावा, फोटो), एकदाच."
+        },
+        {
+          "en": "A cancelled cheque for the bank details.",
+          "hi": "बैंक विवरण के लिए रद्द किया चेक।",
+          "mr": "बँक तपशिलासाठी रद्द केलेला चेक."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "NAV",
+            "hi": "NAV",
+            "mr": "NAV"
+          },
+          "meaning": {
+            "en": "The price of one unit, declared after each working day.",
+            "hi": "एक यूनिट की कीमत, हर कामकाजी दिन के बाद घोषित।",
+            "mr": "एका युनिटची किंमत, प्रत्येक कामकाजाच्या दिवसानंतर जाहीर."
+          }
+        },
+        {
+          "term": {
+            "en": "Exit load",
+            "hi": "एग्ज़िट लोड",
+            "mr": "एक्झिट लोड"
+          },
+          "meaning": {
+            "en": "A charge if you sell within a stated period. Check it in the scheme documents.",
+            "hi": "तय अवधि के भीतर बेचने पर लगने वाला शुल्क। योजना दस्तावेज़ में देखें।",
+            "mr": "ठराविक कालावधीत विकल्यास लागणारे शुल्क. योजना कागदपत्रांत पाहा."
+          }
+        },
+        {
+          "term": {
+            "en": "Expense ratio",
+            "hi": "एक्सपेंस रेशियो",
+            "mr": "एक्सपेन्स रेशो"
+          },
+          "meaning": {
+            "en": "The yearly cost of running the fund, taken from the fund's value.",
+            "hi": "फ़ंड चलाने का सालाना खर्च, फ़ंड के मूल्य से लिया जाता है।",
+            "mr": "फंड चालवण्याचा वार्षिक खर्च, फंडाच्या मूल्यातून घेतला जातो."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "Choosing a Regular plan without knowing a commission is paid.",
+          "hi": "बिना जाने कि कमीशन जाता है, रेगुलर प्लान चुनना।",
+          "mr": "कमिशन जाते हे न कळता रेग्युलर प्लॅन निवडणे."
+        },
+        {
+          "en": "Setting a mandate ceiling far above the SIP amount.",
+          "hi": "SIP से बहुत ऊपर की मैंडेट सीमा रखना।",
+          "mr": "SIP पेक्षा खूप जास्त मँडेट मर्यादा ठेवणे."
+        },
+        {
+          "en": "Picking a fund only for last year's return.",
+          "hi": "सिर्फ़ पिछले साल के रिटर्न से फ़ंड चुनना।",
+          "mr": "फक्त मागच्या वर्षीच्या परताव्यावरून फंड निवडणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Read the Key Information Memorandum: risk, costs and exit load.",
+          "hi": "की इन्फ़ॉर्मेशन मेमोरेंडम पढ़ें: जोखिम, खर्च और एग्ज़िट लोड।",
+          "mr": "की इन्फॉर्मेशन मेमोरँडम वाचा: जोखीम, खर्च आणि एक्झिट लोड."
+        },
+        {
+          "en": "Check your units in the consolidated account statement sent each month.",
+          "hi": "हर महीने आने वाले कंसॉलिडेटेड अकाउंट स्टेटमेंट में अपने यूनिट जाँचें।",
+          "mr": "दरमहा येणाऱ्या कन्सॉलिडेटेड अकाउंट स्टेटमेंटमध्ये तुमचे युनिट्स तपासा."
+        }
+      ],
+      "source": [
+        {
+          "name": "AMFI investor corner",
+          "url": "https://www.amfiindia.com/investor-corner"
+        },
+        {
+          "name": "SEBI investor website",
+          "url": "https://investor.sebi.gov.in/"
+        }
+      ],
+      "guides": [
+        "mutual-funds",
+        "what-sip"
+      ],
+      "verified": "2026-10-08"
+    },
+    {
+      "id": "nps-account",
+      "topic": "retirement",
+      "name": {
+        "en": "NPS subscriber registration form",
+        "hi": "NPS सब्सक्राइबर पंजीकरण फ़ॉर्म",
+        "mr": "NPS सबस्क्रायबर नोंदणी फॉर्म"
+      },
+      "alsoCalled": {
+        "en": "National Pension System account opening, PRAN application",
+        "hi": "नेशनल पेंशन सिस्टम खाता खोलना, PRAN आवेदन",
+        "mr": "नॅशनल पेन्शन सिस्टम खाते उघडणे, PRAN अर्ज"
+      },
+      "purpose": {
+        "en": "Opens your NPS account and gives you a PRAN, the number that stays with you for life.",
+        "hi": "आपका NPS खाता खोलता है और PRAN देता है, वह संख्या जो जीवन भर आपके साथ रहती है।",
+        "mr": "तुमचे NPS खाते उघडतो आणि PRAN देतो, जो क्रमांक आयुष्यभर तुमच्यासोबत राहतो."
+      },
+      "authority": {
+        "en": "Pension Fund Regulatory and Development Authority (PFRDA), through banks and online points of presence.",
+        "hi": "पेंशन फ़ंड नियामक और विकास प्राधिकरण (PFRDA), बैंकों और ऑनलाइन पॉइंट्स ऑफ़ प्रेज़ेंस के ज़रिए।",
+        "mr": "पेन्शन फंड नियामक आणि विकास प्राधिकरण (PFRDA), बँका आणि ऑनलाइन पॉइंट्स ऑफ प्रेझेन्समार्फत."
+      },
+      "audience": {
+        "en": "Indian citizens aged 18 to 70 who want a long-term pension account.",
+        "hi": "18 से 70 साल के भारतीय नागरिक जो लंबी अवधि का पेंशन खाता चाहते हैं।",
+        "mr": "दीर्घकालीन पेन्शन खाते हवे असलेले 18 ते 70 वयाचे भारतीय नागरिक."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "Tier I and Tier II",
+            "hi": "टियर I और टियर II",
+            "mr": "टियर I आणि टियर II"
+          },
+          "meaning": {
+            "en": "Tier I is the pension account with tax benefits and withdrawal limits. Tier II is an optional, flexible add-on.",
+            "hi": "टियर I टैक्स लाभ और निकासी सीमाओं वाला पेंशन खाता है। टियर II वैकल्पिक, लचीला अतिरिक्त खाता है।",
+            "mr": "टियर I हे कर लाभ आणि काढण्याच्या मर्यादा असलेले पेन्शन खाते आहे. टियर II ऐच्छिक, लवचिक जोड खाते आहे."
+          }
+        },
+        {
+          "name": {
+            "en": "Pension fund manager",
+            "hi": "पेंशन फ़ंड मैनेजर",
+            "mr": "पेन्शन फंड मॅनेजर"
+          },
+          "meaning": {
+            "en": "The company that invests your money. You can change it later.",
+            "hi": "वह कंपनी जो आपका पैसा निवेश करती है। बाद में बदल सकते हैं।",
+            "mr": "तुमचे पैसे गुंतवणारी कंपनी. नंतर बदलता येते."
+          }
+        },
+        {
+          "name": {
+            "en": "Investment choice: Active or Auto",
+            "hi": "निवेश विकल्प: एक्टिव या ऑटो",
+            "mr": "गुंतवणूक पर्याय: अॅक्टिव्ह किंवा ऑटो"
+          },
+          "meaning": {
+            "en": "Auto shifts money from shares to safer bonds as you age. Active lets you set the mix within limits.",
+            "hi": "ऑटो उम्र बढ़ने के साथ पैसा शेयरों से सुरक्षित बॉन्ड में ले जाता है। एक्टिव में आप सीमा में मिश्रण तय करते हैं।",
+            "mr": "ऑटो वय वाढेल तसे पैसे शेअरमधून सुरक्षित बाँडमध्ये नेतो. अॅक्टिव्हमध्ये मर्यादेत मिश्रण तुम्ही ठरवता."
+          }
+        },
+        {
+          "name": {
+            "en": "Nominee",
+            "hi": "नॉमिनी",
+            "mr": "नॉमिनी"
+          },
+          "meaning": {
+            "en": "Name who receives the money if you die before or after 60.",
+            "hi": "बताएँ कि 60 से पहले या बाद आपकी मृत्यु पर पैसा किसे मिले।",
+            "mr": "60 च्या आधी किंवा नंतर मृत्यू झाल्यास पैसे कोणाला मिळावेत ते लिहा."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "PAN.",
+          "hi": "PAN।",
+          "mr": "PAN."
+        },
+        {
+          "en": "Aadhaar or another address proof.",
+          "hi": "आधार या पते का कोई दूसरा प्रमाण।",
+          "mr": "आधार किंवा पत्त्याचा दुसरा पुरावा."
+        },
+        {
+          "en": "Bank account details.",
+          "hi": "बैंक खाते की जानकारी।",
+          "mr": "बँक खात्याचा तपशील."
+        },
+        {
+          "en": "Photo and signature.",
+          "hi": "फ़ोटो और हस्ताक्षर।",
+          "mr": "फोटो आणि सही."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "PRAN",
+            "hi": "PRAN",
+            "mr": "PRAN"
+          },
+          "meaning": {
+            "en": "Permanent Retirement Account Number, your lifelong NPS ID.",
+            "hi": "स्थायी सेवानिवृत्ति खाता संख्या, आपकी जीवन भर की NPS पहचान।",
+            "mr": "कायम निवृत्ती खाते क्रमांक, तुमची आयुष्यभराची NPS ओळख."
+          }
+        },
+        {
+          "term": {
+            "en": "Annuity",
+            "hi": "एन्युटी",
+            "mr": "अॅन्युइटी"
+          },
+          "meaning": {
+            "en": "A plan bought at exit that pays a monthly pension. At least 40% of the corpus must go into one at 60.",
+            "hi": "निकासी पर खरीदी योजना जो मासिक पेंशन देती है। 60 पर जमा राशि का कम से कम 40% इसमें जाना ज़रूरी है।",
+            "mr": "बाहेर पडताना घेतलेली योजना जी मासिक पेन्शन देते. 60 व्या वर्षी जमा रकमेपैकी किमान 40% त्यात जाणे आवश्यक."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "Opening Tier II only and missing the pension benefits of Tier I.",
+          "hi": "सिर्फ़ टियर II खोलना और टियर I के पेंशन लाभ छोड़ देना।",
+          "mr": "फक्त टियर II उघडणे आणि टियर I चे पेन्शन लाभ गमावणे."
+        },
+        {
+          "en": "Choosing an aggressive mix close to retirement.",
+          "hi": "रिटायरमेंट के करीब आक्रामक मिश्रण चुनना।",
+          "mr": "निवृत्तीजवळ आक्रमक मिश्रण निवडणे."
+        },
+        {
+          "en": "Not updating the nominee after marriage or a birth.",
+          "hi": "शादी या बच्चे के जन्म के बाद नॉमिनी अपडेट न करना।",
+          "mr": "लग्न किंवा मुलाच्या जन्मानंतर नॉमिनी अद्ययावत न करणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Check your PRAN statement online with the central recordkeeping agency.",
+          "hi": "केंद्रीय रिकॉर्डकीपिंग एजेंसी पर अपना PRAN स्टेटमेंट ऑनलाइन देखें।",
+          "mr": "केंद्रीय रेकॉर्डकीपिंग संस्थेकडे तुमचे PRAN स्टेटमेंट ऑनलाइन पाहा."
+        },
+        {
+          "en": "Confirm current withdrawal and annuity rules on the PFRDA website before exit.",
+          "hi": "निकासी से पहले PFRDA की वेबसाइट पर मौजूदा निकासी और एन्युटी नियम पक्का करें।",
+          "mr": "बाहेर पडण्यापूर्वी PFRDA च्या वेबसाइटवर सध्याचे काढणी आणि अॅन्युइटी नियम निश्चित करा."
+        }
+      ],
+      "source": [
+        {
+          "name": "PFRDA",
+          "url": "https://www.pfrda.org.in/"
+        },
+        {
+          "name": "NPS Trust",
+          "url": "https://npstrust.org.in/"
+        }
+      ],
+      "guides": [
+        "retirement-accounts",
+        "retirement-basics"
+      ],
+      "verified": "2026-10-08"
+    },
+    {
+      "id": "rbi-retail-direct",
+      "topic": "investing",
+      "name": {
+        "en": "RBI Retail Direct registration",
+        "hi": "RBI रिटेल डायरेक्ट पंजीकरण",
+        "mr": "RBI रिटेल डायरेक्ट नोंदणी"
+      },
+      "alsoCalled": {
+        "en": "Retail Direct Gilt account, RDG account",
+        "hi": "रिटेल डायरेक्ट गिल्ट खाता, RDG खाता",
+        "mr": "रिटेल डायरेक्ट गिल्ट खाते, RDG खाते"
+      },
+      "purpose": {
+        "en": "Opens a free account with the RBI to buy government securities directly, without a broker.",
+        "hi": "बिना ब्रोकर सीधे सरकारी प्रतिभूतियाँ खरीदने के लिए RBI के पास मुफ़्त खाता खोलता है।",
+        "mr": "ब्रोकरशिवाय थेट सरकारी रोखे घेण्यासाठी RBI कडे मोफत खाते उघडतो."
+      },
+      "authority": {
+        "en": "Reserve Bank of India, on the official rbiretaildirect.org.in portal.",
+        "hi": "भारतीय रिज़र्व बैंक, आधिकारिक rbiretaildirect.org.in पोर्टल पर।",
+        "mr": "भारतीय रिझर्व्ह बँक, अधिकृत rbiretaildirect.org.in पोर्टलवर."
+      },
+      "audience": {
+        "en": "Individuals with a PAN, a savings bank account in India and a registered mobile number and email.",
+        "hi": "PAN, भारत में बचत बैंक खाता, और पंजीकृत मोबाइल व ईमेल वाले व्यक्ति।",
+        "mr": "PAN, भारतातील बचत बँक खाते आणि नोंदणीकृत मोबाइल व ईमेल असलेल्या व्यक्ती."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "PAN and personal details",
+            "hi": "PAN और निजी जानकारी",
+            "mr": "PAN आणि वैयक्तिक तपशील"
+          },
+          "meaning": {
+            "en": "Pulled from KYC records. The name must match your bank account.",
+            "hi": "KYC रिकॉर्ड से लिया जाता है। नाम बैंक खाते से मिलना चाहिए।",
+            "mr": "KYC नोंदींतून घेतले जाते. नाव बँक खात्याशी जुळले पाहिजे."
+          }
+        },
+        {
+          "name": {
+            "en": "Linked savings account",
+            "hi": "जुड़ा बचत खाता",
+            "mr": "जोडलेले बचत खाते"
+          },
+          "meaning": {
+            "en": "Payments for bonds go from, and interest and maturity money come back to, this account.",
+            "hi": "बॉन्ड का भुगतान इसी खाते से जाता है और ब्याज व परिपक्वता की रकम इसी में आती है।",
+            "mr": "बाँडचे पैसे याच खात्यातून जातात आणि व्याज व मुदतपूर्तीची रक्कम यातच येते."
+          }
+        },
+        {
+          "name": {
+            "en": "Nominee",
+            "hi": "नॉमिनी",
+            "mr": "नॉमिनी"
+          },
+          "meaning": {
+            "en": "Add a nominee so your bonds pass smoothly to your family.",
+            "hi": "नॉमिनी जोड़ें ताकि आपके बॉन्ड आसानी से परिवार तक पहुँचें।",
+            "mr": "नॉमिनी जोडा म्हणजे तुमचे बाँड सहज कुटुंबाकडे जातील."
+          }
+        },
+        {
+          "name": {
+            "en": "Mobile and email OTP",
+            "hi": "मोबाइल और ईमेल OTP",
+            "mr": "मोबाइल आणि ईमेल OTP"
+          },
+          "meaning": {
+            "en": "Used to confirm your identity. Enter them only on the official portal.",
+            "hi": "आपकी पहचान पक्की करने के लिए। सिर्फ़ आधिकारिक पोर्टल पर डालें।",
+            "mr": "तुमची ओळख निश्चित करण्यासाठी. फक्त अधिकृत पोर्टलवरच टाका."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "PAN.",
+          "hi": "PAN।",
+          "mr": "PAN."
+        },
+        {
+          "en": "Savings bank account details.",
+          "hi": "बचत बैंक खाते की जानकारी।",
+          "mr": "बचत बँक खात्याचा तपशील."
+        },
+        {
+          "en": "A cancelled cheque or bank details for verification.",
+          "hi": "सत्यापन के लिए रद्द किया चेक या बैंक विवरण।",
+          "mr": "पडताळणीसाठी रद्द केलेला चेक किंवा बँक तपशील."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "Coupon",
+            "hi": "कूपन",
+            "mr": "कूपन"
+          },
+          "meaning": {
+            "en": "The interest a bond pays, usually twice a year.",
+            "hi": "बॉन्ड जो ब्याज देता है, आम तौर पर साल में दो बार।",
+            "mr": "बाँड देत असलेले व्याज, साधारणपणे वर्षातून दोनदा."
+          }
+        },
+        {
+          "term": {
+            "en": "Maturity",
+            "hi": "परिपक्वता",
+            "mr": "मुदतपूर्ती"
+          },
+          "meaning": {
+            "en": "The date the government repays the full face value.",
+            "hi": "वह तारीख जब सरकार पूरी अंकित राशि लौटाती है।",
+            "mr": "ज्या तारखेला सरकार पूर्ण दर्शनी मूल्य परत करते."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "Registering through a link in a message instead of typing the official address.",
+          "hi": "आधिकारिक पता टाइप करने के बजाय संदेश के लिंक से पंजीकरण करना।",
+          "mr": "अधिकृत पत्ता टाइप करण्याऐवजी संदेशातील लिंकने नोंदणी करणे."
+        },
+        {
+          "en": "Buying a long bond with money you may need before it matures.",
+          "hi": "उस पैसे से लंबा बॉन्ड खरीदना जिसकी परिपक्वता से पहले ज़रूरत पड़ सकती है।",
+          "mr": "मुदतपूर्तीपूर्वी लागू शकणाऱ्या पैशांतून दीर्घ बाँड घेणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Type rbiretaildirect.org.in yourself and check the padlock before logging in.",
+          "hi": "rbiretaildirect.org.in खुद टाइप करें और लॉगिन से पहले ताले का निशान देखें।",
+          "mr": "rbiretaildirect.org.in स्वतः टाइप करा आणि लॉगिनपूर्वी कुलपाचे चिन्ह पाहा."
+        },
+        {
+          "en": "After buying, confirm the holding in your Retail Direct statement.",
+          "hi": "खरीद के बाद रिटेल डायरेक्ट स्टेटमेंट में होल्डिंग पक्की करें।",
+          "mr": "खरेदीनंतर रिटेल डायरेक्ट स्टेटमेंटमध्ये होल्डिंग निश्चित करा."
+        }
+      ],
+      "source": [
+        {
+          "name": "RBI Retail Direct",
+          "url": "https://rbiretaildirect.org.in/"
+        },
+        {
+          "name": "Reserve Bank of India",
+          "url": "https://www.rbi.org.in/"
+        }
+      ],
+      "guides": [
+        "govt-bonds",
+        "who-keeps-safe"
+      ],
+      "verified": "2026-10-08"
+    },
+    {
+      "id": "demand-draft",
+      "topic": "banking",
+      "name": {
+        "en": "Demand draft request form",
+        "hi": "डिमांड ड्राफ़्ट अनुरोध फ़ॉर्म",
+        "mr": "डिमांड ड्राफ्ट विनंती फॉर्म"
+      },
+      "alsoCalled": {
+        "en": "DD application, pay order request, banker's cheque request",
+        "hi": "DD आवेदन, पे ऑर्डर अनुरोध, बैंकर्स चेक अनुरोध",
+        "mr": "DD अर्ज, पे ऑर्डर विनंती, बँकर्स चेक विनंती"
+      },
+      "purpose": {
+        "en": "Asks your bank to issue a demand draft or pay order in someone's favour, paid for in advance.",
+        "hi": "बैंक से किसी के नाम डिमांड ड्राफ़्ट या पे ऑर्डर जारी करने को कहता है, जिसका भुगतान पहले होता है।",
+        "mr": "बँकेला एखाद्याच्या नावे डिमांड ड्राफ्ट किंवा पे ऑर्डर देण्यास सांगतो, ज्याचे पैसे आधी भरले जातात."
+      },
+      "authority": {
+        "en": "Each bank has its own form. The cash and KYC limits follow RBI rules.",
+        "hi": "हर बैंक का अपना फ़ॉर्म होता है। नकद और KYC सीमाएँ RBI नियमों के अनुसार।",
+        "mr": "प्रत्येक बँकेचा स्वतःचा फॉर्म असतो. रोख आणि KYC मर्यादा RBI नियमांनुसार."
+      },
+      "audience": {
+        "en": "Anyone paying a college, landlord, court or office that asks for a DD.",
+        "hi": "जो भी कॉलेज, मकान मालिक, अदालत या दफ़्तर को भुगतान करे जो DD माँगे।",
+        "mr": "DD मागणाऱ्या कॉलेज, घरमालक, न्यायालय किंवा कार्यालयाला पैसे देणारा कोणीही."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "In favour of",
+            "hi": "किसके पक्ष में",
+            "mr": "कोणाच्या नावे"
+          },
+          "meaning": {
+            "en": "The payee's name, spelled exactly as they asked.",
+            "hi": "पाने वाले का नाम, ठीक वैसा जैसा उन्होंने माँगा।",
+            "mr": "घेणाऱ्याचे नाव, त्यांनी मागितल्याप्रमाणेच."
+          }
+        },
+        {
+          "name": {
+            "en": "Payable at",
+            "hi": "कहाँ देय",
+            "mr": "कुठे देय"
+          },
+          "meaning": {
+            "en": "The city where the payee will deposit it.",
+            "hi": "वह शहर जहाँ पाने वाला इसे जमा करेगा।",
+            "mr": "घेणारा तो जिथे जमा करेल ते शहर."
+          }
+        },
+        {
+          "name": {
+            "en": "Amount in figures and words",
+            "hi": "रकम अंकों और शब्दों में",
+            "mr": "रक्कम अंकांत आणि अक्षरांत"
+          },
+          "meaning": {
+            "en": "Both must match. Add the commission charged by the bank.",
+            "hi": "दोनों मिलने चाहिए। बैंक का कमीशन भी जोड़ें।",
+            "mr": "दोन्ही जुळले पाहिजेत. बँकेचे कमिशनही जोडा."
+          }
+        },
+        {
+          "name": {
+            "en": "Mode of payment",
+            "hi": "भुगतान का तरीका",
+            "mr": "पैसे देण्याची पद्धत"
+          },
+          "meaning": {
+            "en": "From your account, by cheque, or in cash. For ₹50,000 or more, cash is not accepted.",
+            "hi": "खाते से, चेक से, या नकद। ₹50,000 या ज़्यादा के लिए नकद नहीं चलता।",
+            "mr": "खात्यातून, चेकने किंवा रोख. ₹50,000 किंवा जास्तसाठी रोख चालत नाही."
+          }
+        },
+        {
+          "name": {
+            "en": "Applicant's PAN",
+            "hi": "आवेदक का PAN",
+            "mr": "अर्जदाराचा PAN"
+          },
+          "meaning": {
+            "en": "Needed for larger amounts under KYC rules.",
+            "hi": "KYC नियमों के तहत बड़ी रकम के लिए ज़रूरी।",
+            "mr": "KYC नियमांनुसार मोठ्या रकमेसाठी आवश्यक."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "Your account details, or the cash and an ID for smaller amounts.",
+          "hi": "आपके खाते की जानकारी, या छोटी रकम के लिए नकद और पहचान पत्र।",
+          "mr": "तुमच्या खात्याचा तपशील, किंवा लहान रकमेसाठी रोख आणि ओळखपत्र."
+        },
+        {
+          "en": "PAN for larger amounts.",
+          "hi": "बड़ी रकम के लिए PAN।",
+          "mr": "मोठ्या रकमेसाठी PAN."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "Commission",
+            "hi": "कमीशन",
+            "mr": "कमिशन"
+          },
+          "meaning": {
+            "en": "The bank's fee for issuing the DD. Ask for the amount before you fill the form.",
+            "hi": "DD जारी करने की बैंक की फ़ीस। फ़ॉर्म भरने से पहले रकम पूछें।",
+            "mr": "DD देण्याचे बँकेचे शुल्क. फॉर्म भरण्यापूर्वी रक्कम विचारा."
+          }
+        },
+        {
+          "term": {
+            "en": "Revalidation",
+            "hi": "पुनर्वैधीकरण",
+            "mr": "पुनर्वैधीकरण"
+          },
+          "meaning": {
+            "en": "If a DD expires after three months, the bank can revalidate or cancel it.",
+            "hi": "तीन महीने बाद DD की अवधि खत्म हो जाए तो बैंक इसे फिर मान्य या रद्द कर सकता है।",
+            "mr": "तीन महिन्यांनंतर DD ची मुदत संपल्यास बँक तो पुन्हा वैध किंवा रद्द करू शकते."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "A spelling mistake in the payee's name.",
+          "hi": "पाने वाले के नाम में वर्तनी की गलती।",
+          "mr": "घेणाऱ्याच्या नावात स्पेलिंगची चूक."
+        },
+        {
+          "en": "Writing your own city instead of where it will be deposited.",
+          "hi": "जमा होने वाली जगह की बजाय अपना शहर लिखना।",
+          "mr": "जमा होणाऱ्या ठिकाणाऐवजी स्वतःचे शहर लिहिणे."
+        },
+        {
+          "en": "Throwing away the counterfoil.",
+          "hi": "काउंटरफ़ॉयल फेंक देना।",
+          "mr": "काउंटरफॉइल फेकून देणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Read the DD before leaving the counter: name, city, amount and date.",
+          "hi": "काउंटर छोड़ने से पहले DD पढ़ें: नाम, शहर, रकम और तारीख।",
+          "mr": "काउंटर सोडण्यापूर्वी DD वाचा: नाव, शहर, रक्कम आणि तारीख."
+        },
+        {
+          "en": "Photograph the DD and keep the receipt until payment is confirmed.",
+          "hi": "DD की फ़ोटो लें और भुगतान पक्का होने तक रसीद रखें।",
+          "mr": "DD चा फोटो घ्या आणि पेमेंट निश्चित होईपर्यंत पावती ठेवा."
+        }
+      ],
+      "source": [
+        {
+          "name": "Reserve Bank of India",
+          "url": "https://www.rbi.org.in/"
+        }
+      ],
+      "guides": [
+        "demand-draft",
+        "payment-proof"
+      ],
+      "verified": "2026-10-08"
+    },
+    {
+      "id": "cheque",
+      "topic": "banking",
+      "name": {
+        "en": "Writing a cheque",
+        "hi": "चेक लिखना",
+        "mr": "चेक लिहिणे"
+      },
+      "alsoCalled": {
+        "en": "Cheque leaf, CTS cheque",
+        "hi": "चेक पन्ना, CTS चेक",
+        "mr": "चेकचे पान, CTS चेक"
+      },
+      "purpose": {
+        "en": "Orders your bank to pay a named person a stated amount from your account.",
+        "hi": "आपके बैंक को आदेश देता है कि आपके खाते से एक नामित व्यक्ति को तय रकम दे।",
+        "mr": "तुमच्या बँकेला आदेश देतो की तुमच्या खात्यातून ठराविक व्यक्तीला ठराविक रक्कम द्यावी."
+      },
+      "authority": {
+        "en": "Governed by the Negotiable Instruments Act, 1881; cheque formats follow the RBI's CTS-2010 standard.",
+        "hi": "नेगोशिएबल इंस्ट्रूमेंट्स एक्ट, 1881 के तहत; चेक का प्रारूप RBI के CTS-2010 मानक के अनुसार।",
+        "mr": "निगोशिएबल इन्स्ट्रुमेंट्स अॅक्ट, 1881 नुसार; चेकचे स्वरूप RBI च्या CTS-2010 मानकानुसार."
+      },
+      "audience": {
+        "en": "Anyone with a cheque book paying rent, fees, deposits or a person.",
+        "hi": "चेक बुक वाला कोई भी जो किराया, फ़ीस, जमा या किसी व्यक्ति को भुगतान करे।",
+        "mr": "चेकबुक असलेला कोणीही जो भाडे, फी, अनामत किंवा एखाद्या व्यक्तीला पैसे देतो."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "Date",
+            "hi": "तारीख",
+            "mr": "तारीख"
+          },
+          "meaning": {
+            "en": "Write today's date or the date it may be paid. It stays valid for three months from this date.",
+            "hi": "आज की तारीख या जिस दिन भुगतान हो सकता है, वह लिखें। इस तारीख से तीन महीने मान्य रहता है।",
+            "mr": "आजची किंवा पैसे देता येतील ती तारीख लिहा. या तारखेपासून तीन महिने वैध राहतो."
+          }
+        },
+        {
+          "name": {
+            "en": "Pay",
+            "hi": "Pay (किसे)",
+            "mr": "Pay (कोणाला)"
+          },
+          "meaning": {
+            "en": "The person's or organisation's full name. Draw a line after it.",
+            "hi": "व्यक्ति या संस्था का पूरा नाम। उसके बाद एक लकीर खींचें।",
+            "mr": "व्यक्तीचे किंवा संस्थेचे पूर्ण नाव. त्यानंतर एक रेषा ओढा."
+          }
+        },
+        {
+          "name": {
+            "en": "Rupees, in words",
+            "hi": "रुपये, शब्दों में",
+            "mr": "रुपये, अक्षरांत"
+          },
+          "meaning": {
+            "en": "Start right after the printed word and end with 'only'.",
+            "hi": "छपे शब्द के ठीक बाद से शुरू करें और 'only' पर खत्म करें।",
+            "mr": "छापील शब्दानंतर लगेच सुरू करा आणि 'only' ने संपवा."
+          }
+        },
+        {
+          "name": {
+            "en": "Amount in figures",
+            "hi": "रकम अंकों में",
+            "mr": "रक्कम अंकांत"
+          },
+          "meaning": {
+            "en": "Start close to the ₹ sign and end with '/-' so nothing can be added.",
+            "hi": "₹ के पास से शुरू करें और '/-' से खत्म करें ताकि कुछ जोड़ा न जा सके।",
+            "mr": "₹ चिन्हाजवळून सुरू करा आणि '/-' ने संपवा म्हणजे काही जोडता येणार नाही."
+          }
+        },
+        {
+          "name": {
+            "en": "Crossing and 'A/c Payee'",
+            "hi": "क्रॉसिंग और 'A/c Payee'",
+            "mr": "क्रॉसिंग आणि 'A/c Payee'"
+          },
+          "meaning": {
+            "en": "Two lines in the top-left corner with 'A/c Payee' send it only into the payee's account.",
+            "hi": "ऊपर बाएँ कोने में दो लकीरें और 'A/c Payee' इसे सिर्फ़ पाने वाले के खाते में भेजते हैं।",
+            "mr": "वरच्या डाव्या कोपऱ्यात दोन रेषा आणि 'A/c Payee' तो फक्त घेणाऱ्याच्या खात्यातच पाठवतात."
+          }
+        },
+        {
+          "name": {
+            "en": "Signature",
+            "hi": "हस्ताक्षर",
+            "mr": "सही"
+          },
+          "meaning": {
+            "en": "Must match the signature the bank has on record.",
+            "hi": "बैंक के रिकॉर्ड वाले हस्ताक्षर से मिलना चाहिए।",
+            "mr": "बँकेकडील नोंदीतील सहीशी जुळली पाहिजे."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "Nothing extra. Keep your cheque book safe and note every cheque in its counterfoil.",
+          "hi": "कुछ अतिरिक्त नहीं। चेक बुक सँभालें और हर चेक काउंटरफ़ॉयल में लिखें।",
+          "mr": "अतिरिक्त काही नाही. चेकबुक जपा आणि प्रत्येक चेक काउंटरफॉइलमध्ये नोंदवा."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "Bounce (dishonour)",
+            "hi": "बाउंस (अनादर)",
+            "mr": "बाउन्स (अनादर)"
+          },
+          "meaning": {
+            "en": "When the bank refuses to pay, often for lack of funds. Under Section 138 it can lead to a criminal case.",
+            "hi": "जब बैंक भुगतान से मना करे, अक्सर पैसे न होने से। धारा 138 के तहत आपराधिक मामला हो सकता है।",
+            "mr": "बँक पैसे देण्यास नकार देते तेव्हा, अनेकदा शिल्लक नसल्याने. कलम 138 खाली फौजदारी खटला होऊ शकतो."
+          }
+        },
+        {
+          "term": {
+            "en": "Positive Pay",
+            "hi": "पॉज़िटिव पे",
+            "mr": "पॉझिटिव्ह पे"
+          },
+          "meaning": {
+            "en": "Confirming a large cheque's details to your bank in advance, so a forged one is stopped.",
+            "hi": "बड़े चेक का विवरण बैंक को पहले से बताना, ताकि जाली चेक रुक जाए।",
+            "mr": "मोठ्या चेकचा तपशील बँकेला आधीच कळवणे, म्हणजे बनावट चेक थांबतो."
+          }
+        },
+        {
+          "term": {
+            "en": "Stop payment",
+            "hi": "स्टॉप पेमेंट",
+            "mr": "स्टॉप पेमेंट"
+          },
+          "meaning": {
+            "en": "An instruction to your bank not to pay a cheque you have issued, for example if it is lost.",
+            "hi": "बैंक को दिया निर्देश कि आपके दिए चेक का भुगतान न करे, जैसे खो जाने पर।",
+            "mr": "तुम्ही दिलेला चेक, उदाहरणार्थ हरवल्यास, वटवू नये अशी बँकेला सूचना."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "Leaving space before or after the amount.",
+          "hi": "रकम के पहले या बाद जगह छोड़ना।",
+          "mr": "रकमेच्या आधी किंवा नंतर जागा सोडणे."
+        },
+        {
+          "en": "Overwriting or correcting; the bank may reject a corrected cheque.",
+          "hi": "ऊपर से लिखना या सुधारना; बैंक सुधारा गया चेक लौटा सकता है।",
+          "mr": "खाडाखोड किंवा दुरुस्ती; बँक दुरुस्त केलेला चेक नाकारू शकते."
+        },
+        {
+          "en": "Signing a blank cheque for anyone.",
+          "hi": "किसी के लिए कोरे चेक पर दस्तखत करना।",
+          "mr": "कोणासाठीही कोऱ्या चेकवर सही करणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Check your statement until the cheque has cleared.",
+          "hi": "चेक क्लियर होने तक स्टेटमेंट देखते रहें।",
+          "mr": "चेक क्लिअर होईपर्यंत स्टेटमेंट पाहत राहा."
+        },
+        {
+          "en": "For large cheques, confirm Positive Pay through your bank's app or branch.",
+          "hi": "बड़े चेक के लिए बैंक के ऐप या शाखा से पॉज़िटिव पे पक्का करें।",
+          "mr": "मोठ्या चेकसाठी बँकेच्या अॅप किंवा शाखेतून पॉझिटिव्ह पे निश्चित करा."
+        }
+      ],
+      "source": [
+        {
+          "name": "Reserve Bank of India",
+          "url": "https://www.rbi.org.in/"
+        },
+        {
+          "name": "India Code: Negotiable Instruments Act, 1881",
+          "url": "https://www.indiacode.nic.in/"
+        }
+      ],
+      "guides": [
+        "cheques",
+        "payment-proof"
+      ],
+      "verified": "2026-10-08"
+    },
+    {
+      "id": "pms-aif-agreement",
+      "topic": "investing",
+      "name": {
+        "en": "PMS or AIF agreement and disclosure document",
+        "hi": "PMS या AIF समझौता और डिस्क्लोज़र डॉक्यूमेंट",
+        "mr": "PMS किंवा AIF करार आणि डिस्क्लोजर डॉक्युमेंट"
+      },
+      "alsoCalled": {
+        "en": "Client agreement, private placement memorandum, contribution agreement",
+        "hi": "क्लाइंट एग्रीमेंट, प्राइवेट प्लेसमेंट मेमोरेंडम, कॉन्ट्रिब्यूशन एग्रीमेंट",
+        "mr": "क्लायंट करार, प्रायव्हेट प्लेसमेंट मेमोरँडम, कॉन्ट्रिब्युशन करार"
+      },
+      "purpose": {
+        "en": "Sets out what a portfolio manager or alternative fund will do with your money, what it charges and when you can leave.",
+        "hi": "बताता है कि पोर्टफ़ोलियो मैनेजर या वैकल्पिक फ़ंड आपके पैसे से क्या करेगा, क्या शुल्क लेगा और आप कब निकल सकते हैं।",
+        "mr": "पोर्टफोलिओ मॅनेजर किंवा पर्यायी फंड तुमच्या पैशांचे काय करेल, किती शुल्क घेईल आणि तुम्ही केव्हा बाहेर पडू शकता ते सांगतो."
+      },
+      "authority": {
+        "en": "SEBI (Portfolio Managers) Regulations and SEBI (Alternative Investment Funds) Regulations.",
+        "hi": "SEBI (पोर्टफ़ोलियो मैनेजर्स) विनियम और SEBI (वैकल्पिक निवेश फ़ंड) विनियम।",
+        "mr": "SEBI (पोर्टफोलिओ मॅनेजर्स) नियम आणि SEBI (पर्यायी गुंतवणूक फंड) नियम."
+      },
+      "audience": {
+        "en": "Investors with large sums: at least ₹50 lakh for PMS and usually ₹1 crore for an AIF.",
+        "hi": "बड़ी रकम वाले निवेशक: PMS के लिए कम से कम ₹50 लाख और AIF के लिए आम तौर पर ₹1 करोड़।",
+        "mr": "मोठी रक्कम असलेले गुंतवणूकदार: PMS साठी किमान ₹50 लाख आणि AIF साठी साधारण ₹1 कोटी."
+      },
+      "fields": [
+        {
+          "name": {
+            "en": "Investment approach",
+            "hi": "निवेश तरीका",
+            "mr": "गुंतवणूक दृष्टिकोन"
+          },
+          "meaning": {
+            "en": "What the manager may buy, and how concentrated it can be.",
+            "hi": "मैनेजर क्या खरीद सकता है, और कितना केंद्रित हो सकता है।",
+            "mr": "व्यवस्थापक काय घेऊ शकतो, आणि किती केंद्रित असू शकते."
+          }
+        },
+        {
+          "name": {
+            "en": "Fees: fixed, performance and exit",
+            "hi": "फ़ीस: तय, प्रदर्शन और निकासी",
+            "mr": "शुल्क: ठराविक, कामगिरी आणि बाहेर पडणे"
+          },
+          "meaning": {
+            "en": "Write down every fee as a rupee amount on an example portfolio to see the real cost.",
+            "hi": "असली लागत देखने के लिए एक उदाहरण पोर्टफ़ोलियो पर हर फ़ीस को रुपये में लिखें।",
+            "mr": "खरा खर्च पाहण्यासाठी एका उदाहरण पोर्टफोलिओवर प्रत्येक शुल्क रुपयांत लिहा."
+          }
+        },
+        {
+          "name": {
+            "en": "Lock-in and exit terms",
+            "hi": "लॉक-इन और निकासी शर्तें",
+            "mr": "लॉक-इन आणि बाहेर पडण्याच्या अटी"
+          },
+          "meaning": {
+            "en": "AIFs can lock money for years; PMS exits may carry a charge.",
+            "hi": "AIF में पैसा सालों तक बंद रह सकता है; PMS से निकलने पर शुल्क लग सकता है।",
+            "mr": "AIF मध्ये पैसे वर्षानुवर्षे बंद राहू शकतात; PMS मधून बाहेर पडताना शुल्क लागू शकते."
+          }
+        },
+        {
+          "name": {
+            "en": "Risk disclosure",
+            "hi": "जोखिम खुलासा",
+            "mr": "जोखीम खुलासा"
+          },
+          "meaning": {
+            "en": "Read it in full. It tells you how much could be lost.",
+            "hi": "पूरा पढ़ें। यह बताता है कितना नुकसान हो सकता है।",
+            "mr": "पूर्ण वाचा. किती तोटा होऊ शकतो ते सांगते."
+          }
+        }
+      ],
+      "documents": [
+        {
+          "en": "KYC and PAN.",
+          "hi": "KYC और PAN।",
+          "mr": "KYC आणि PAN."
+        },
+        {
+          "en": "Proof of funds for the minimum investment.",
+          "hi": "न्यूनतम निवेश के लिए पैसे का प्रमाण।",
+          "mr": "किमान गुंतवणुकीसाठी पैशांचा पुरावा."
+        }
+      ],
+      "terms": [
+        {
+          "term": {
+            "en": "Hurdle rate",
+            "hi": "हर्डल रेट",
+            "mr": "हर्डल रेट"
+          },
+          "meaning": {
+            "en": "The return the manager must beat before taking a share of profits.",
+            "hi": "वह रिटर्न जिसे मुनाफ़े का हिस्सा लेने से पहले मैनेजर को पार करना होता है।",
+            "mr": "नफ्याचा हिस्सा घेण्यापूर्वी व्यवस्थापकाला पार करावा लागणारा परतावा."
+          }
+        },
+        {
+          "term": {
+            "en": "High-water mark",
+            "hi": "हाई-वॉटर मार्क",
+            "mr": "हाय-वॉटर मार्क"
+          },
+          "meaning": {
+            "en": "Ensures you are not charged a performance fee twice for recovering the same loss.",
+            "hi": "पक्का करता है कि एक ही नुकसान की भरपाई पर आपसे दो बार प्रदर्शन फ़ीस न ली जाए।",
+            "mr": "एकाच तोट्याच्या भरपाईसाठी तुमच्याकडून दोनदा कामगिरी शुल्क घेतले जात नाही याची खात्री करतो."
+          }
+        }
+      ],
+      "mistakes": [
+        {
+          "en": "Signing on the strength of one year's past return.",
+          "hi": "एक साल के पिछले रिटर्न के भरोसे दस्तखत करना।",
+          "mr": "एका वर्षाच्या मागील परताव्यावर विश्वास ठेवून सही करणे."
+        },
+        {
+          "en": "Borrowing or selling a home to reach the minimum.",
+          "hi": "न्यूनतम राशि पूरी करने के लिए उधार लेना या घर बेचना।",
+          "mr": "किमान रक्कम गाठण्यासाठी कर्ज घेणे किंवा घर विकणे."
+        },
+        {
+          "en": "Not asking for the fees in writing.",
+          "hi": "फ़ीस लिखित में न माँगना।",
+          "mr": "शुल्क लेखी न मागणे."
+        }
+      ],
+      "verify": [
+        {
+          "en": "Check the SEBI registration of the manager or fund on sebi.gov.in.",
+          "hi": "sebi.gov.in पर मैनेजर या फ़ंड का SEBI पंजीकरण जाँचें।",
+          "mr": "sebi.gov.in वर व्यवस्थापकाची किंवा फंडाची SEBI नोंदणी तपासा."
+        },
+        {
+          "en": "Compare the after-fee result with a simple index fund over the same years.",
+          "hi": "उन्हीं सालों में फ़ीस के बाद के नतीजे की तुलना एक साधारण इंडेक्स फ़ंड से करें।",
+          "mr": "त्याच वर्षांतील शुल्कानंतरच्या निकालाची तुलना साध्या इंडेक्स फंडाशी करा."
+        }
+      ],
+      "source": [
+        {
+          "name": "SEBI",
+          "url": "https://www.sebi.gov.in/"
+        },
+        {
+          "name": "SEBI investor website",
+          "url": "https://investor.sebi.gov.in/"
+        }
+      ],
+      "guides": [
+        "aif-pms",
+        "mutual-funds"
+      ],
+      "verified": "2026-10-08"
     }
   ]
 }
