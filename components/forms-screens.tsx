@@ -462,7 +462,7 @@ function FormSim({ found }: { found: FormReading["found"] }) {
         <div key={at} className="form-sim-card">
           <div className="form-paper" aria-label={t("forms.readAs")}>
             <span className="form-paper-label">{t("forms.sim.onPaper")}</span>
-            <p className="form-paper-line"><mark>{item.line}</mark></p>
+            <p className="form-paper-line"><PaperLine line={item.line} patterns={item.rule.patterns} /></p>
           </div>
           <h3>{item.rule.label[code]}</h3>
           <div className="form-sim-row"><span className="form-sim-tag ask">{t("forms.whatItAsks")}</span><p>{item.rule.meaning[code]}</p></div>
@@ -495,4 +495,20 @@ function FormSim({ found }: { found: FormReading["found"] }) {
       )}
     </div>
   );
+}
+
+/** The line as read from the paper, with only the part this step is about highlighted (two fields can share a line). */
+function PaperLine({ line, patterns }: { line: string; patterns: string[] }) {
+  const lower = line.toLowerCase();
+  let at = -1;
+  let size = 0;
+  for (const pattern of patterns) {
+    const index = lower.indexOf(pattern);
+    if (index >= 0 && (at < 0 || index < at)) { at = index; size = pattern.length; }
+  }
+  if (at < 0) return <mark>{line}</mark>;
+  // Highlight from the matched words up to the next colon, which is where the label usually ends.
+  const colon = line.indexOf(":", at + size);
+  const end = colon >= 0 && colon - at < 60 ? colon + 1 : at + size;
+  return <>{line.slice(0, at)}<mark>{line.slice(at, end)}</mark>{line.slice(end)}</>;
 }

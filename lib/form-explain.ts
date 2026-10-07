@@ -25,7 +25,8 @@ export type FormReading = {
  * It never guesses a field that is not printed on the paper, and it says so when the photo is unreadable.
  */
 export function explainFormText(text: string, rules: FieldRule[]): FormReading {
-  const lines = text.split(/\r?\n/).map((line) => line.replace(/\s+/g, " ").trim()).filter((line) => line.length > 2);
+  // A camera often reads the word "I" as a bar: "| confirm" becomes "I confirm".
+  const lines = text.split(/\r?\n/).map((line) => line.replace(/\s+/g, " ").replace(/(^| )\|(?= [a-z])/g, "$1I").trim()).filter((line) => line.length > 2);
   // Letters include vowel signs (\p{M}): in Hindi and Marathi most syllables carry one.
   const letters = (text.match(/[\p{L}\p{M}]/gu) ?? []).length;
   const words = text.split(/\s+/).filter((word) => /^[\p{L}\p{M}]{3,}$/u.test(word)).length;
