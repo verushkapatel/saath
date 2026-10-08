@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState, type CSSProperties } from "react";
-import { ArrowRight, BookOpen, Check, FileText, Home, MessageCircle, Route, Settings, Wallet } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BookOpen, Check, FileText, Home, MessageCircle, Route, Settings, Wallet } from "lucide-react";
 import { currentAccount, hasAccounts, logOut, type Account } from "@/lib/account";
 import { asset } from "@/lib/config";
 import { LANGS, type Lang } from "@/lib/catalog";
@@ -111,6 +111,31 @@ const WITH_FOOTER = ["/", "/privacy", "/privacy/partners", "/about", "/handbook"
  * Cards rise gently into place the first time they scroll into view, on every screen. Anything already on screen
  * when the page opens is shown at once, so nothing waits for a scroll.
  */
+/** A soft light that follows the pointer across cards, on devices with a mouse or trackpad. */
+function CardSpotlight() {
+  useEffect(() => {
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let frame = 0;
+    let last: { el: HTMLElement; x: number; y: number } | null = null;
+    const paint = () => {
+      frame = 0;
+      if (!last) return;
+      last.el.style.setProperty("--mx", `${last.x}px`);
+      last.el.style.setProperty("--my", `${last.y}px`);
+    };
+    const onMove = (event: PointerEvent) => {
+      const el = (event.target as HTMLElement | null)?.closest?.(".card, .g-card > a, .plan-cta") as HTMLElement | null;
+      if (!el) return;
+      const box = el.getBoundingClientRect();
+      last = { el, x: event.clientX - box.left, y: event.clientY - box.top };
+      if (!frame) frame = requestAnimationFrame(paint);
+    };
+    document.addEventListener("pointermove", onMove, { passive: true });
+    return () => { document.removeEventListener("pointermove", onMove); cancelAnimationFrame(frame); };
+  }, []);
+  return null;
+}
+
 function ScrollReveal({ path }: { path: string }) {
   useEffect(() => {
     if (typeof IntersectionObserver === "undefined" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -176,16 +201,24 @@ function AppFrame({ children, account }: { children: React.ReactNode; account: A
           const Icon = tab.icon;
           return (
             <Link key={tab.href} href={tab.href} className={`nav${index === TABS.length ? " nav-gap" : ""}`} aria-current={tab.match(clean) ? "page" : undefined}>
-              <Icon aria-hidden size={20} />
+              <span className="nav-ico" aria-hidden><Icon size={19} /></span>
               {t(tab.key)}
             </Link>
           );
         })}
         <span className="rail-gap" />
-        <p className="faint rail-note">{t("common.footer")}</p>
+        <a className="rail-initiative" href="https://theskywardproject.com" target="_blank" rel="noopener noreferrer" data-testid="skyward-link">
+          <SkywardEmblem size={46} />
+          <span>
+            <small>{t("nav.initiative")}</small>
+            <strong>The Skyward Project</strong>
+            <em>{t("nav.learnMore")} <ArrowUpRight aria-hidden size={13} /></em>
+          </span>
+        </a>
       </nav>
       <main id="content" className="page">
         <ScrollReveal path={pathname} />
+        <CardSpotlight />
         <div key={pathname} className="screen">
           {children}
           {WITH_FOOTER.includes(clean) && <Footer />}

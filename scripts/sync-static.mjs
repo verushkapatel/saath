@@ -23,6 +23,8 @@ const gate = Object.fromEntries(["en", "hi", "mr"].map((lang) => {
   return [lang, land];
 }));
 writeFileSync(join(root, "public", "locales", "gate.json"), JSON.stringify(gate));
+// The list of guides that have a step-by-step walkthrough, so the app never asks for one that does not exist.
+writeFileSync(join(root, "public", "content", "walk-ids.json"), JSON.stringify(readdirSync(join(root, "content", "walks")).filter((name) => name.endsWith(".json")).map((name) => name.replace(/\.json$/, ""))));
 copyDirJson(join(root, "content"), join(root, "public", "content"));
 
 const tessJs = join(root, "node_modules", "tesseract.js", "dist", "worker.min.js");

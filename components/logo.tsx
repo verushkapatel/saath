@@ -60,11 +60,17 @@ export function Logo({ size = 28, emblem = true }: { size?: number; emblem?: boo
 }
 
 /** "A Skyward Project initiative", with the emblem large enough to read. */
-export function SkywardBadge({ size = 44, label = "A project by" }: { size?: number; label?: string }) {
-  return (
-    <span className="skyward-badge" data-testid="skyward-badge">
+export function SkywardBadge({ size = 44, label = "A project by", link = false }: { size?: number; label?: string; link?: boolean }) {
+  const inner = (
+    <>
       <SkywardEmblem size={size} />
       <span><small>{label}</small> The Skyward Project</span>
+    </>
+  );
+  if (link) return <a className="skyward-badge" href="https://theskywardproject.com" target="_blank" rel="noopener noreferrer" data-testid="skyward-badge">{inner}</a>;
+  return (
+    <span className="skyward-badge" data-testid="skyward-badge">
+      {inner}
     </span>
   );
 }

@@ -182,7 +182,7 @@ export function HomeScreen() {
             <span aria-hidden>{streak.count}</span>
           </span>
         </div>
-        <SkywardBadge size={46} label={t("home.initiative")} />
+        <SkywardBadge size={46} label={t("home.initiative")} link />
       </header>
 
       <VerenaHud />

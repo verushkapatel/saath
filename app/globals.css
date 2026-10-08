@@ -3526,3 +3526,58 @@ a.card:hover, .story-card:hover { transform: translateY(-3px); border-color: var
 .switch[aria-checked="true"] { background: linear-gradient(180deg, #3a5ce0, #213a9c) !important; border-color: #3a5ce0 !important; }
 .switch[aria-checked="true"] i { background: #fff !important; }
 .seg, .story-tabs { border: 1px solid var(--edge); }
+
+/* ───────────────────────────────────────────────────────────────
+   Saath 6: a premium menu. A bigger Skyward emblem, icon tiles, a glowing pill for the open page,
+   an "Our initiative" card linking to theskywardproject.com, a floating glass tab bar on phones,
+   and a soft light that follows the pointer across cards.
+   ─────────────────────────────────────────────────────────────── */
+@media (min-width: 900px) {
+  :root { --rail: 272px; }
+  .rail { padding: 26px 18px 18px !important; gap: 4px !important; background: linear-gradient(180deg, rgba(13, 21, 52, 0.85), rgba(6, 10, 26, 0.92)) !important; box-shadow: 1px 0 0 rgba(140, 165, 255, 0.08), 20px 0 60px -40px rgba(47, 86, 224, 0.5); }
+  :root[data-theme="light"] .rail { background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 244, 255, 0.92)) !important; }
+  .rail .brand { margin: 0 6px 22px !important; padding-bottom: 20px; border-bottom: 1px solid var(--edge); }
+  .rail .logo .skyward-emblem { width: 58px !important; height: 58px !important; }
+  .rail .logo .brand-name { font-size: 1.7rem !important; }
+  .rail a.nav { min-height: 50px; gap: 14px !important; padding: 0 10px !important; font-weight: 600; font-size: 1.02rem; letter-spacing: -0.005em; color: var(--text-muted) !important; transition: background 300ms cubic-bezier(0.22, 1, 0.36, 1), color 250ms, transform 300ms cubic-bezier(0.22, 1, 0.36, 1) !important; }
+  .rail a.nav:hover { background: rgba(140, 165, 255, 0.07) !important; color: var(--text) !important; transform: translateX(2px); }
+  .rail a.nav.nav-gap { margin-top: 14px; position: relative; }
+  .rail a.nav.nav-gap::after { content: ""; position: absolute; left: 10px; right: 10px; top: -8px; height: 1px; background: var(--edge); }
+  .rail a.nav[aria-current="page"] { color: #fff !important; }
+  :root[data-theme="light"] .rail a.nav[aria-current="page"] { color: #13235c !important; }
+}
+.nav-ico { display: grid; place-items: center; width: 34px; height: 34px; flex: none; border-radius: 11px; background: rgba(140, 165, 255, 0.08); border: 1px solid rgba(140, 165, 255, 0.12); transition: background 300ms, border-color 300ms, box-shadow 300ms; }
+.nav-ico svg { color: inherit !important; }
+.rail a.nav[aria-current="page"] .nav-ico { background: linear-gradient(180deg, #3a5ce0, #213a9c); border-color: transparent; color: #fff; box-shadow: 0 8px 18px -8px rgba(58, 92, 224, 0.95); }
+.rail a.nav:hover .nav-ico { border-color: rgba(140, 165, 255, 0.3); }
+
+/* Our initiative: the Skyward Project card at the foot of the rail. */
+.rail-initiative { position: relative; overflow: hidden; display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; padding: 14px; border-radius: 20px; text-decoration: none; color: #fff; border: 1px solid rgba(150, 175, 255, 0.28); background: radial-gradient(120% 120% at 0% 0%, rgba(58, 92, 224, 0.45), transparent 60%), linear-gradient(160deg, #142463, #0a1236); box-shadow: 0 20px 40px -26px rgba(47, 86, 224, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.1); transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 350ms; }
+.rail-initiative:hover { transform: translateY(-2px); box-shadow: 0 26px 50px -24px rgba(47, 86, 224, 1), inset 0 1px 0 rgba(255, 255, 255, 0.14); }
+.rail-initiative::after { content: ""; position: absolute; top: 0; bottom: 0; width: 45%; left: -70%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.16), transparent); animation: sheen 6s ease-in-out 2s infinite; }
+.rail-initiative > span { display: grid; gap: 1px; min-width: 0; }
+.rail-initiative small { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #a9bcff; }
+.rail-initiative strong { font-size: 1rem; line-height: 1.2; }
+.rail-initiative em { font-style: normal; font-size: 0.85rem; color: rgba(225, 232, 255, 0.8); display: inline-flex; align-items: center; gap: 3px; }
+.rail-initiative .skyward-emblem { width: 46px; height: 46px; }
+a.skyward-badge { text-decoration: none; cursor: pointer; transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), border-color 300ms; }
+a.skyward-badge:hover { transform: translateY(-1px); border-color: rgba(170, 195, 255, 0.6) !important; }
+
+/* Phones: a floating glass tab bar with a glowing active tab. */
+@media (max-width: 899px) {
+  :root { --tabbar: 78px; }
+  .tabs { left: 12px !important; right: 12px !important; bottom: calc(10px + env(safe-area-inset-bottom)) !important; padding: 6px !important; border-radius: 26px; border: 1px solid var(--edge-hi) !important; background: color-mix(in srgb, #0a1130 78%, transparent) !important; box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08); }
+  :root[data-theme="light"] .tabs { background: color-mix(in srgb, #ffffff 82%, transparent) !important; box-shadow: 0 18px 40px -20px rgba(20, 40, 120, 0.45); }
+  .tabs a { border-radius: 20px; padding: 6px 0; transition: background 300ms, color 300ms; }
+  .tabs a[aria-current="page"] { background: linear-gradient(180deg, rgba(58, 92, 224, 0.35), rgba(58, 92, 224, 0.12)); }
+  .tabs a[aria-current="page"] svg { background: transparent !important; filter: drop-shadow(0 0 8px rgba(142, 166, 255, 0.8)); }
+  .shell-top .skyward-emblem { width: 40px !important; height: 40px !important; }
+}
+
+/* A soft light that follows the pointer across cards. */
+@media (hover: hover) and (pointer: fine) {
+  .card:not(.hero):not(.wallet), .g-card > a, .plan-cta { background-image: radial-gradient(420px circle at var(--mx, -999px) var(--my, -999px), rgba(120, 150, 255, 0.10), transparent 45%); }
+}
+/* Every press gives way a little. */
+.btn:active:not(:disabled), .chip:active, .rail a.nav:active { transform: scale(0.97); }
+@media (prefers-reduced-motion: reduce) { .rail-initiative::after { animation: none; } }

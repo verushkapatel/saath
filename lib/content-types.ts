@@ -230,6 +230,12 @@ export type Walkthrough = {
 /** Which walkthroughs exist, so lists can show them without loading every file. */
 export type WalkIndex = { id: string; guide: string; title: Copy; steps: number }[];
 
-export function loadWalk(id: string): Promise<Walkthrough> {
+let walkIds: Promise<Set<string> | null> | null = null;
+
+export async function loadWalk(id: string): Promise<Walkthrough> {
+  walkIds ??= loadJson<string[]>("/content/walk-ids.json").then((list) => new Set(list)).catch(() => null);
+  const known = await walkIds;
+  // Without the list, try the file anyway; with it, skip guides that have no walkthrough.
+  if (known && !known.has(id)) throw new Error("no walkthrough");
   return loadJson<Walkthrough>(`/content/walks/${id}.json`);
 }
