@@ -3581,3 +3581,30 @@ a.skyward-badge:hover { transform: translateY(-1px); border-color: rgba(170, 195
 /* Every press gives way a little. */
 .btn:active:not(:disabled), .chip:active, .rail a.nav:active { transform: scale(0.97); }
 @media (prefers-reduced-motion: reduce) { .rail-initiative::after { animation: none; } }
+
+/* ───────────────────────────────────────────────────────────────
+   Saath 7: premium type. Inter for everything you read and tap; the serif only for large headlines.
+   ─────────────────────────────────────────────────────────────── */
+:root {
+  --font-body: var(--font-ui), var(--font-dev), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-ui-stack: var(--font-ui), var(--font-dev), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+body { font-family: var(--font-ui-stack); font-size: 15.5px; line-height: 1.6; letter-spacing: -0.006em; font-feature-settings: "cv11", "ss01", "ss03"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+button, input, select, textarea, .btn, .chip, .tabs a, .rail a.nav, .seg button, .ask-btn, .link, .item, .item-title, .item-sub, .faint, .muted, .lead, .label, .note, p, li, dd, dt, small, label { font-family: var(--font-ui-stack); }
+h1, h2, .page-hero h1, .celebrate-title, .hero-num, .brand-name, .wordmark, .lp h1, .lp h2, .gate2 h1, .splash-name, .lp-statement, .lp-belief-text { font-family: var(--font-sans), var(--font-dev), Georgia, serif; }
+h1 { font-weight: 600; letter-spacing: -0.02em; }
+h2 { font-weight: 600; letter-spacing: -0.015em; }
+h3, .item-title, .card strong, .g-card strong { font-family: var(--font-ui-stack); font-weight: 600; letter-spacing: -0.015em; }
+.kicker, .masthead, .label, .eyebrow, .g-label, .g-hud dt, .ask-chips-head, .home-hero .skyward-badge small, .rail-initiative small { font-family: var(--font-ui-stack) !important; font-size: 0.7rem !important; font-weight: 600 !important; letter-spacing: 0.14em !important; text-transform: uppercase !important; }
+.lead { font-size: 1.04rem; line-height: 1.65; letter-spacing: -0.01em; }
+.faint { font-size: 0.86rem; }
+.btn { font-weight: 600; letter-spacing: -0.01em; font-size: 0.97rem; }
+.rail a.nav { font-size: 0.95rem !important; font-weight: 550 !important; }
+.tabs a { font-size: 0.68rem !important; font-weight: 600 !important; letter-spacing: 0; }
+.num, dd, .hero-num, .g-xp, .think-pct, .wallet-num, .g-vault-meter b, .stats dd { font-variant-numeric: tabular-nums lining-nums; }
+.lp, .lp p, .lp li, .lp button, .lp a { font-family: var(--font-ui-stack); }
+.lp-label, .lp-kicker { font-family: var(--font-ui-stack) !important; }
+/* Laptops: a wider, calmer column, and Verena's frames in soft navy instead of flat black. */
+@media (min-width: 1200px) { :root { --page: 860px; } }
+.stage, .card.hero .stage, .navy-scene .stage, .home-quest-character.stage { background: radial-gradient(90% 80% at 50% 20%, rgba(70, 100, 220, 0.28), transparent 70%), linear-gradient(180deg, #121c45, #0a1030) !important; border-color: var(--edge) !important; }
+:root[data-theme="light"] .stage { background: radial-gradient(90% 80% at 50% 20%, rgba(70, 100, 220, 0.14), transparent 70%), linear-gradient(180deg, #eef2ff, #e2e8fb) !important; }
