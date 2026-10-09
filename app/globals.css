@@ -3663,3 +3663,6 @@ h3, .item-title, .card strong, .g-card strong { font-family: var(--font-ui-stack
 .verena-hud .walk-strip .life-scene { z-index: 0; }
 .verena-hud .walk-strip .walker { z-index: 1; bottom: 6px; filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35)); }
 .verena-hud .walk-strip .character { width: 110px; height: auto; }
+/* The winding story path stays inside the column on wide screens. */
+.g-world { overflow-x: clip; }
+@media (min-width: 900px) { .g-step { transform: translateX(calc(var(--x, 0) * 0.45)); } }
