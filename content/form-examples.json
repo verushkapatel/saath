@@ -6,7 +6,7 @@
         "hi": "पूरा नाम",
         "mr": "पूर्ण नाव"
       },
-      "value": "VERENA ANIL D'SOUZA",
+      "value": "VERENA ANIL ALDRIN",
       "note": {
         "en": "Copied letter for letter from Aadhaar.",
         "hi": "आधार से अक्षरशः।",
@@ -19,7 +19,7 @@
         "hi": "पिता / माता का नाम",
         "mr": "वडील / आईचे नाव"
       },
-      "value": "ANIL D'SOUZA / ANITA D'SOUZA"
+      "value": "ANIL ALDRIN / ANITA ALDRIN"
     },
     {
       "label": {
@@ -56,7 +56,7 @@
         "hi": "पैन",
         "mr": "पॅन"
       },
-      "value": "ABCPD1234K"
+      "value": "ABCPA1234K"
     },
     {
       "label": {
@@ -88,7 +88,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "ANITA D'SOUZA, mother, 02/08/1975"
+      "value": "ANITA ALDRIN, mother, 02/08/1975"
     },
     {
       "label": {
@@ -104,7 +104,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Verena D'Souza (inside the box)"
+      "value": "Verena Aldrin (inside the box)"
     },
     {
       "label": {
@@ -138,7 +138,7 @@
         "hi": "पुराना / नया नाम",
         "mr": "जुने / नवे नाव"
       },
-      "value": "ANITA PEREIRA → ANITA D'SOUZA"
+      "value": "ANITA PEREIRA → ANITA ALDRIN"
     },
     {
       "label": {
@@ -162,7 +162,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Anita D'Souza"
+      "value": "Anita Aldrin"
     },
     {
       "label": {
@@ -188,7 +188,7 @@
         "hi": "नॉमिनी 1",
         "mr": "नॉमिनी 1"
       },
-      "value": "ANITA D'SOUZA · mother · 02/08/1975 · 60%"
+      "value": "ANITA ALDRIN · mother · 02/08/1975 · 60%"
     },
     {
       "label": {
@@ -196,7 +196,7 @@
         "hi": "नॉमिनी 2",
         "mr": "नॉमिनी 2"
       },
-      "value": "MIRA D'SOUZA · sister · 11/05/2012 · 40%",
+      "value": "MIRA ALDRIN · sister · 11/05/2012 · 40%",
       "note": {
         "en": "A minor, so a guardian is named below.",
         "hi": "नाबालिग, इसलिए नीचे अभिभावक।",
@@ -209,7 +209,7 @@
         "hi": "नाबालिग के अभिभावक",
         "mr": "अल्पवयीनाचे पालक"
       },
-      "value": "ANIL D'SOUZA · father"
+      "value": "ANIL ALDRIN · father"
     },
     {
       "label": {
@@ -238,7 +238,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Verena D'Souza (inside the box)"
+      "value": "Verena Aldrin (inside the box)"
     },
     {
       "label": {
@@ -264,7 +264,7 @@
         "hi": "पूरा नाम",
         "mr": "पूर्ण नाव"
       },
-      "value": "D'SOUZA VERENA ANIL (surname, first, middle)"
+      "value": "ALDRIN VERENA ANIL (surname, first, middle)"
     },
     {
       "label": {
@@ -280,7 +280,7 @@
         "hi": "पिता का नाम",
         "mr": "वडिलांचे नाव"
       },
-      "value": "D'SOUZA ANIL"
+      "value": "ALDRIN ANIL"
     },
     {
       "label": {
@@ -288,7 +288,7 @@
         "hi": "कार्ड पर नाम",
         "mr": "कार्डवरील नाव"
       },
-      "value": "VERENA ANIL D'SOUZA"
+      "value": "VERENA ANIL ALDRIN"
     },
     {
       "label": {
@@ -433,7 +433,7 @@
         "hi": "कर्मचारी",
         "mr": "कर्मचारी"
       },
-      "value": "Verena D'Souza · PAN ABCPD1234K"
+      "value": "Verena Aldrin · PAN ABCPA1234K"
     },
     {
       "label": {
@@ -723,7 +723,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Anita D'Souza"
+      "value": "Anita Aldrin"
     }
   ],
   "insurance-proposal": [
@@ -733,7 +733,7 @@
         "hi": "प्रस्तावक / बीमित",
         "mr": "प्रस्तावक / विमाधारक"
       },
-      "value": "Verena D'Souza, 24"
+      "value": "Verena Aldrin, 24"
     },
     {
       "label": {
@@ -794,7 +794,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "Anil D'Souza, father"
+      "value": "Anil Aldrin, father"
     },
     {
       "label": {
@@ -802,7 +802,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Verena D'Souza (inside the box)"
+      "value": "Verena Aldrin (inside the box)"
     }
   ],
   "jan-suraksha": [
@@ -1031,7 +1031,7 @@
         "hi": "पूरा नाम",
         "mr": "पूर्ण नाव"
       },
-      "value": "VERENA ANIL D'SOUZA"
+      "value": "VERENA ANIL ALDRIN"
     },
     {
       "label": {
@@ -1076,7 +1076,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "e-nomination: Anita D'Souza, 100%"
+      "value": "e-nomination: Anita Aldrin, 100%"
     },
     {
       "label": {
@@ -1084,7 +1084,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Verena D'Souza (inside the box)"
+      "value": "Verena Aldrin (inside the box)"
     }
   ],
   "itr-1": [
@@ -1102,7 +1102,7 @@
         "hi": "पैन",
         "mr": "पॅन"
       },
-      "value": "ABCPD1234K"
+      "value": "ABCPA1234K"
     },
     {
       "label": {
@@ -1168,7 +1168,7 @@
         "hi": "पॉलिसी / सदस्य ID",
         "mr": "पॉलिसी / सदस्य ID"
       },
-      "value": "2xxxx/48/27 · member 01 (Anil D'Souza)"
+      "value": "2xxxx/48/27 · member 01 (Anil Aldrin)"
     },
     {
       "label": {
@@ -1232,7 +1232,7 @@
         "hi": "हस्ताक्षर",
         "mr": "सही"
       },
-      "value": "Verena D'Souza (proposer)"
+      "value": "Verena Aldrin (proposer)"
     }
   ],
   "epf-claim": [
@@ -1292,7 +1292,7 @@
         "hi": "पूरा नाम",
         "mr": "पूर्ण नाव"
       },
-      "value": "VERENA ANIL D'SOUZA"
+      "value": "VERENA ANIL ALDRIN"
     },
     {
       "label": {
@@ -1300,7 +1300,7 @@
         "hi": "पैन",
         "mr": "पॅन"
       },
-      "value": "ABCPD1234K"
+      "value": "ABCPA1234K"
     },
     {
       "label": {
@@ -1332,7 +1332,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "ANITA D'SOUZA · mother · 100%"
+      "value": "ANITA ALDRIN · mother · 100%"
     },
     {
       "label": {
@@ -1487,7 +1487,7 @@
         "hi": "नाम (PAN अनुसार)",
         "mr": "नाव (PAN प्रमाणे)"
       },
-      "value": "VERENA ANIL D'SOUZA"
+      "value": "VERENA ANIL ALDRIN"
     },
     {
       "label": {
@@ -1495,7 +1495,7 @@
         "hi": "पैन",
         "mr": "पॅन"
       },
-      "value": "ABCPD1234K"
+      "value": "ABCPA1234K"
     },
     {
       "label": {
@@ -1527,7 +1527,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "ANITA D'SOUZA · mother · 100%"
+      "value": "ANITA ALDRIN · mother · 100%"
     },
     {
       "label": {
@@ -1593,7 +1593,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "ANITA D'SOUZA · mother · 100%"
+      "value": "ANITA ALDRIN · mother · 100%"
     },
     {
       "label": {
@@ -1611,7 +1611,7 @@
         "hi": "नाम",
         "mr": "नाव"
       },
-      "value": "VERENA ANIL D'SOUZA"
+      "value": "VERENA ANIL ALDRIN"
     },
     {
       "label": {
@@ -1651,7 +1651,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "ANITA D'SOUZA · mother · 100%"
+      "value": "ANITA ALDRIN · mother · 100%"
     },
     {
       "label": {
@@ -1669,7 +1669,7 @@
         "hi": "पैन",
         "mr": "पॅन"
       },
-      "value": "ABCPD1234K"
+      "value": "ABCPA1234K"
     },
     {
       "label": {
@@ -1677,7 +1677,7 @@
         "hi": "नाम",
         "mr": "नाव"
       },
-      "value": "VERENA ANIL D'SOUZA"
+      "value": "VERENA ANIL ALDRIN"
     },
     {
       "label": {
@@ -1701,7 +1701,7 @@
         "hi": "नॉमिनी",
         "mr": "नॉमिनी"
       },
-      "value": "MAYA D'SOUZA · daughter · 100% (guardian: Verena)"
+      "value": "MAYA ALDRIN · daughter · 100% (guardian: Verena)"
     },
     {
       "label": {
@@ -1759,7 +1759,7 @@
         "hi": "आवेदक",
         "mr": "अर्जदार"
       },
-      "value": "VERENA ANIL D'SOUZA · PAN ABCPD1234K"
+      "value": "VERENA ANIL ALDRIN · PAN ABCPA1234K"
     },
     {
       "label": {

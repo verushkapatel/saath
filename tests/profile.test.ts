@@ -27,7 +27,8 @@ describe("guest profile", () => {
 
   it("stores nothing that looks like a name, phone or email by default", () => {
     ensureProfile();
-    const saved = [...store.values()].join(" ");
+    // The random id is not personal, and a UUID can contain ten digits in a row by chance.
+    const saved = [...store.values()].map((value) => value.replace(/"id":"[^"]*"/g, "")).join(" ");
     expect(saved).not.toMatch(/@|\+91|\d{10}/);
   });
 });

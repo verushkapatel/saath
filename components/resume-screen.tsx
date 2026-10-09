@@ -215,7 +215,7 @@ export function ResumeScreen() {
         </>
       ) : (
         <section className="card resume-intro">
-          <div className="resume-thumb" aria-hidden><Paper resume={{ name: "Verena D'Souza", headline: "Operations Trainee", contact: "Pune · verena@email.com", summary: "Commerce graduate who managed a ₹4.2 lakh fest budget.", education: [{ title: "B.Com", place: "Pune University", dates: "2023–2026", detail: "8.1 CGPA" }], experience: [{ title: "Intern", place: "CA firm", dates: "2025", bullets: ["Reconciled 140 entries in Excel."] }], projects: [], skills: ["Excel", "Tally"], certifications: [], languages: ["English", "Hindi", "Marathi"] }} /></div>
+          <div className="resume-thumb" aria-hidden><Paper resume={{ name: "Verena Aldrin", headline: "Operations Trainee", contact: "Pune · verena@email.com", summary: "Commerce graduate who managed a ₹4.2 lakh fest budget.", education: [{ title: "B.Com", place: "Pune University", dates: "2023–2026", detail: "8.1 CGPA" }], experience: [{ title: "Intern", place: "CA firm", dates: "2025", bullets: ["Reconciled 140 entries in Excel."] }], projects: [], skills: ["Excel", "Tally"], certifications: [], languages: ["English", "Hindi", "Marathi"] }} /></div>
           <div className="stack-sm">
             <p>{t("resume.how")}</p>
             <button type="button" className="btn btn-primary" onClick={() => { tap(); setStep(0); }} data-testid="resume-start"><Sparkles aria-hidden size={18} />{t("resume.start")}</button>
