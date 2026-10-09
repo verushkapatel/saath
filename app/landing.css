@@ -350,3 +350,7 @@
 .lp-label::before { content: ""; flex: none; width: 22px; height: 12px; background: radial-gradient(circle at 6px 6px, transparent 3.2px, currentColor 3.4px, currentColor 5px, transparent 5.2px), radial-gradient(circle at 16px 6px, transparent 3.2px, currentColor 3.4px, currentColor 5px, transparent 5.2px); opacity: 0.9; }
 .lp-hero .lp-label::before, .lp-hero .lp-kicker::before { content: none; }
 @media (prefers-reduced-motion: reduce) { .lp-ink { transition: none; background-size: 100% 0.14em; } }
+/* The hero stage is Verena's room, alive. */
+.lp-stage-frame .life-scene { z-index: 0; }
+.lp-stage-actor { position: absolute; left: 50%; bottom: 3%; z-index: 1; transform: translateX(-50%); width: 70%; filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.45)); }
+.lp-stage-actor .character { width: 100% !important; margin: 0 !important; }

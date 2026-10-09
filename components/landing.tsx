@@ -8,6 +8,7 @@ import { Character } from "./character";
 import { LangSwitch } from "./lang-switch";
 import { Logo, LogoMark, SkywardEmblem } from "./logo";
 import { useI18n } from "./providers";
+import { LifeScene } from "./life-scene";
 import { ThemeToggle } from "./theme-toggle";
 
 /**
@@ -269,8 +270,8 @@ export function Landing({ onJoin, onLogin }: { onJoin: () => void; onLogin: () =
 
         <div className="lp-stage lp-fade" style={{ "--d": "500ms" } as CSSProperties}>
           <div className="lp-stage-frame">
-            <div className="lp-stage-floor" aria-hidden />
-            <Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={300} label={t("lp.hero.figure")} alive />
+            <LifeScene place="room" />
+            <div className="lp-stage-actor"><Character look={{ outfit: "kurta", extra: "none", place: "room" }} age={22} size={300} label={t("lp.hero.figure")} alive bare /></div>
           </div>
           <p className="lp-chip c1"><Wallet size={14} aria-hidden /> {t("lp.hero.chip1")}</p>
           <p className="lp-chip c2"><MessageCircle size={14} aria-hidden /> {t("lp.hero.chip2")}</p>

@@ -3658,3 +3658,8 @@ h3, .item-title, .card strong, .g-card strong { font-family: var(--font-ui-stack
   .ls-steam, .ls-mote { opacity: 0; }
   .ls-world { transition: none; }
 }
+/* Home: Verena walks through her own world, which changes as she grows up. */
+.verena-hud .walk-strip { --walk-h: 190px; background: none !important; }
+.verena-hud .walk-strip .life-scene { z-index: 0; }
+.verena-hud .walk-strip .walker { z-index: 1; bottom: 6px; filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35)); }
+.verena-hud .walk-strip .character { width: 110px; height: auto; }

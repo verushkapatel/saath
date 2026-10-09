@@ -20,6 +20,7 @@ import { FeedbackPanel } from "./feedback-panel";
 import { InstallCard } from "./install";
 import { SkywardBadge } from "./logo";
 import { useI18n } from "./providers";
+import { LifeScene } from "./life-scene";
 import { useSession } from "./session";
 import { CheckCard, ListenButton, PageSkeleton, Sheet, Skeleton } from "./ui";
 
@@ -34,6 +35,9 @@ function greetingKey(date = new Date()) {
  * Verena on Home, like a game's character screen: she walks along, and the bar shows the XP to the next level and how
  * close her next change is. She is exactly as the person's progress has made her.
  */
+/** Where Verena is in life sets the scene behind her on Home. */
+const ERA_PLACE: Record<string, string> = { child: "room", teen: "room", student: "cafe", young: "office", adult: "home", middle: "home", senior: "garden" };
+
 function VerenaHud() {
   const { t } = useI18n();
   const app = useApp();
@@ -41,7 +45,7 @@ function VerenaHud() {
   return (
     <Link href="/progress" className="verena-hud" onClick={tap} data-testid="verena-hud" aria-label={t("hud.label", { age: verena.age, level: level.level })}>
       <div className="walk-strip" aria-hidden>
-        <span className="hud-sky" />
+        <LifeScene place={ERA_PLACE[verena.era] ?? "room"} />
         <div className="walker"><div className="walker-flip"><div className="walker-bob"><Character look={verena} age={verena.age} size={96} bare alive /></div></div></div>
       </div>
       <div className="hud-stats">
