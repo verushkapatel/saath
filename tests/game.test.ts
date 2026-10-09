@@ -36,3 +36,17 @@ describe("game layer", () => {
     expect(missionDone("done", order).drill).toBe(true);
   });
 });
+
+import { completeEpisode as complete, emptyProgress as empty, scoreDrill } from "@/lib/progress";
+
+describe("a chapter counts once", () => {
+  it("records at the outcome, then the questions only add their bonus once", () => {
+    const lived = complete(empty(), "ch", 0, 0, "2026-10-09");
+    const xp = lived.xp;
+    expect(complete(lived, "ch", 0, 0, "2026-10-09")).toBe(lived);
+    const scored = scoreDrill(lived, "ch", 4);
+    expect(scored.xp).toBeGreaterThan(xp);
+    expect(scoreDrill(scored, "ch", 4)).toBe(scored);
+    expect(scoreDrill(scored, "ch", 2)).toBe(scored);
+  });
+});

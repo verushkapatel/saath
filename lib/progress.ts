@@ -280,6 +280,17 @@ export function completeEpisode(progress: Progress, episodeId: string, choice: n
   return { ...next, xp: next.xp + XP.episode + drillRight * XP.drillRight };
 }
 
+/** Adds the five-question bonus to a chapter already lived: XP only for answers beyond the best score so far. */
+export function scoreDrill(progress: Progress, episodeId: string, drillRight: number): Progress {
+  const result = progress.journey[episodeId];
+  if (!result || drillRight <= (result.drill ?? 0)) return progress;
+  return {
+    ...progress,
+    xp: progress.xp + (drillRight - (result.drill ?? 0)) * XP.drillRight,
+    journey: { ...progress.journey, [episodeId]: { ...result, drill: drillRight } },
+  };
+}
+
 /** Remembers a wrong answer in a topic, so it can be suggested for revision. */
 export function noteMistake(progress: Progress, topic: string | null | undefined): Progress {
   if (!topic) return progress;

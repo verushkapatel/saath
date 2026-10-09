@@ -9,6 +9,7 @@ import {
   answerCase,
   answerQuestion,
   completeEpisode,
+  scoreDrill,
   completeLesson,
   completeStep,
   completeWalk,
@@ -91,7 +92,9 @@ type AppState = {
   /** Rewards that opened since they were last shown. */
   fresh: Reward[];
   clearFresh: () => void;
-  finishEpisode: (episodeId: string, choice: number, drillRight: number) => Promise<void>;
+  finishEpisode: (episodeId: string, choice: number, drillRight: number, before?: Progress) => Promise<void>;
+  /** Records a chapter as lived the moment its outcome is seen, quietly; returns progress as it was before. */
+  recordEpisode: (episodeId: string, choice: number) => Promise<Progress>;
   mistake: (topic: string | null | undefined) => Promise<void>;
   markStory: (storyId: string) => Promise<void>;
   markForm: (formId: string) => Promise<void>;
@@ -257,12 +260,17 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     [change],
   );
 
-  const finishEpisode = useCallback(async (episodeId: string, choice: number, drillRight: number) => {
-    const before = progressRef.current;
+  const finishEpisode = useCallback(async (episodeId: string, choice: number, drillRight: number, earlier?: Progress) => {
+    const before = earlier ?? progressRef.current;
     const fresh = !(episodeId in before.journey);
-    await change((current) => completeEpisode(current, episodeId, choice, drillRight, todayISO()));
+    await change((current) => scoreDrill(completeEpisode(current, episodeId, choice, drillRight, todayISO()), episodeId, drillRight));
     if (fresh) play("chapter", episodeId, `/journey/${episodeId}`, before);
   }, [change, play]);
+  const recordEpisode = useCallback(async (episodeId: string, choice: number) => {
+    const before = progressRef.current;
+    await change((current) => completeEpisode(current, episodeId, choice, 0, todayISO()), false);
+    return before;
+  }, [change]);
   const endCelebration = useCallback(() => setCelebration(null), []);
   const finishWalk = useCallback(async (walkId: string, lessonId: string, goodChoices: number) => {
     const before = progressRef.current;
@@ -334,13 +342,13 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
     logEntry, setGoal, addLoan, restore,
-    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
+    journey, story, level, fresh, clearFresh, finishEpisode, recordEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
     totalSteps, verena, celebration, endCelebration, celebrate, finishWalk,
   }), [
     ready, failed, today, entries, loans, goal, progress, lessons, paths, streak, cheer,
     answer, finishTask, finishLesson, finishStep, finishCase, setActivePath, dismissOffer,
     logEntry, setGoal, addLoan, restore,
-    journey, story, level, fresh, clearFresh, finishEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
+    journey, story, level, fresh, clearFresh, finishEpisode, recordEpisode, mistake, markStory, markForm, saveFocus, saveLook, finishMoneyIntro, deleteEntry, finishChallenge, finishGame,
     totalSteps, verena, celebration, endCelebration, celebrate, finishWalk,
   ]);
 

@@ -374,6 +374,8 @@ export function EpisodeScreen({ id }: { id: string }) {
   const [drill, setDrill] = useState<(number | null)[]>([]);
   const [xpBefore, setXpBefore] = useState<number | null>(null);
   const finishing = useRef(false);
+  // Progress as it was before this chapter was first recorded, so the celebration at the end shows what it earned.
+  const beforeRef = useRef<typeof progress | null>(null);
   const topRef = useRef<HTMLDivElement | null>(null);
   const walk = useWalk(episode?.guides[0]);
   const hasLive = Boolean(walk && walk !== "missing");
@@ -442,8 +444,8 @@ export function EpisodeScreen({ id }: { id: string }) {
   async function finish() {
     if (finishing.current || !episode || choice === null) return;
     finishing.current = true;
-    setXpBefore(progress.xp);
-    await app.finishEpisode(episode.id, choice, drillRight);
+    if (xpBefore === null) setXpBefore(progress.xp);
+    await app.finishEpisode(episode.id, choice, drillRight, beforeRef.current ?? undefined);
     setStep("done");
   }
 
@@ -545,6 +547,11 @@ export function EpisodeScreen({ id }: { id: string }) {
             onClick={() => {
               if (choice === null) return;
               if (episode.options[choice].verdict === "costly") void app.mistake(episode.topic);
+              // Seeing the outcome is living the chapter: it counts now, even if the questions are skipped.
+              if (!replaying && !beforeRef.current && !(episode.id in progress.journey)) {
+                setXpBefore(progress.xp);
+                void app.recordEpisode(episode.id, choice).then((before) => { beforeRef.current = before; });
+              }
               go("outcome");
             }}
           >
