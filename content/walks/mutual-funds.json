@@ -1,0 +1,181 @@
+{
+  "id": "mutual-funds",
+  "guide": "mutual-funds",
+  "title": {
+    "en": "Choosing a fund and starting a SIP, reading every line",
+    "hi": "फ़ंड चुनना और SIP शुरू करना, हर पंक्ति पढ़कर",
+    "mr": "फंड निवडणे आणि SIP सुरू करणे, प्रत्येक ओळ वाचून"
+  },
+  "setting": {
+    "en": "Verena, 27, with her first pay rise",
+    "hi": "वेरेना, 27, अपनी पहली वेतन वृद्धि के साथ",
+    "mr": "वेरेना, 27, तिच्या पहिल्या पगारवाढीसह"
+  },
+  "steps": [
+    {
+      "scene": "laptop",
+      "title": {
+        "en": "Read the factsheet, not the advert",
+        "hi": "विज्ञापन नहीं, फ़ैक्टशीट पढ़ें",
+        "mr": "जाहिरात नाही, फॅक्टशीट वाचा"
+      },
+      "text": {
+        "en": "She opens the fund's factsheet: what it invests in, its riskometer, and its expense ratio for direct and regular plans.",
+        "hi": "वह फ़ंड की फ़ैक्टशीट खोलती है: यह किसमें निवेश करता है, रिस्कोमीटर, और डायरेक्ट व रेगुलर प्लान का एक्सपेंस रेशियो।",
+        "mr": "ती फंडाची फॅक्टशीट उघडते: तो कशात गुंतवतो, रिस्कोमीटर, आणि डायरेक्ट व रेग्युलर प्लॅनचा एक्सपेन्स रेशो."
+      },
+      "screen": [
+        {
+          "en": "Nifty 50 Index Fund",
+          "hi": "Nifty 50 इंडेक्स फ़ंड",
+          "mr": "Nifty 50 इंडेक्स फंड"
+        },
+        {
+          "en": "Riskometer: Very high",
+          "hi": "रिस्कोमीटर: बहुत ऊँचा",
+          "mr": "रिस्कोमीटर: खूप जास्त"
+        },
+        {
+          "en": "Expense ratio: Direct lower · Regular higher",
+          "hi": "एक्सपेंस रेशियो: डायरेक्ट कम · रेगुलर ज़्यादा",
+          "mr": "एक्सपेन्स रेशो: डायरेक्ट कमी · रेग्युलर जास्त"
+        }
+      ],
+      "details": [
+        {
+          "en": "'Very high' risk means it can fall a lot in a bad year. It suits money she will not need for 7 years or more.",
+          "hi": "'बहुत ऊँचा' जोखिम यानी खराब साल में बहुत गिर सकता है। यह उस पैसे के लिए है जिसकी 7 या ज़्यादा साल ज़रूरत नहीं।",
+          "mr": "'खूप जास्त' जोखीम म्हणजे वाईट वर्षात खूप घसरू शकतो. 7 किंवा जास्त वर्षे न लागणाऱ्या पैशांसाठी योग्य."
+        }
+      ]
+    },
+    {
+      "scene": "form",
+      "title": {
+        "en": "Set up the SIP",
+        "hi": "SIP शुरू करें",
+        "mr": "SIP सुरू करा"
+      },
+      "text": {
+        "en": "She picks the Direct plan, Growth option, ₹3,000 on the 7th of each month, a mandate limit of ₹5,000 and her mother as nominee.",
+        "hi": "वह डायरेक्ट प्लान, ग्रोथ विकल्प, हर महीने 7 तारीख को ₹3,000, ₹5,000 की मैंडेट सीमा और माँ को नॉमिनी चुनती है।",
+        "mr": "ती डायरेक्ट प्लॅन, ग्रोथ पर्याय, दरमहा 7 तारखेला ₹3,000, ₹5,000 ची मँडेट मर्यादा आणि आईला नॉमिनी निवडते."
+      },
+      "screen": [
+        {
+          "en": "SIP: ₹3,000 · 7th monthly",
+          "hi": "SIP: ₹3,000 · हर महीने 7 तारीख",
+          "mr": "SIP: ₹3,000 · दरमहा 7 तारीख"
+        },
+        {
+          "en": "Plan: Direct · Growth",
+          "hi": "प्लान: डायरेक्ट · ग्रोथ",
+          "mr": "प्लॅन: डायरेक्ट · ग्रोथ"
+        },
+        {
+          "en": "Mandate limit: ₹5,000",
+          "hi": "मैंडेट सीमा: ₹5,000",
+          "mr": "मँडेट मर्यादा: ₹5,000"
+        }
+      ],
+      "details": [
+        {
+          "en": "Her salary arrives on the 1st, so the 7th never bounces.",
+          "hi": "वेतन 1 तारीख को आता है, इसलिए 7 तारीख कभी फ़ेल नहीं होती।",
+          "mr": "पगार 1 तारखेला येतो, म्हणून 7 तारीख कधी फसत नाही."
+        }
+      ],
+      "cost": {
+        "en": "10 minutes",
+        "hi": "10 मिनट",
+        "mr": "10 मिनिटे"
+      }
+    },
+    {
+      "scene": "alert",
+      "title": {
+        "en": "The first bad month",
+        "hi": "पहला खराब महीना",
+        "mr": "पहिला वाईट महिना"
+      },
+      "text": {
+        "en": "Three months in, the market falls and her fund shows a loss. Her app pings in red.",
+        "hi": "तीन महीने में बाज़ार गिरता है और फ़ंड में नुकसान दिखता है। ऐप लाल रंग में बजता है।",
+        "mr": "तीन महिन्यांत बाजार घसरतो आणि फंडात तोटा दिसतो. अॅप लाल रंगात वाजते."
+      },
+      "screen": [
+        {
+          "en": "Invested ₹9,000",
+          "hi": "निवेश ₹9,000",
+          "mr": "गुंतवणूक ₹9,000"
+        },
+        {
+          "en": "Value ₹8,350",
+          "hi": "मूल्य ₹8,350",
+          "mr": "मूल्य ₹8,350"
+        },
+        {
+          "en": "−7.2%",
+          "hi": "−7.2%",
+          "mr": "−7.2%"
+        }
+      ],
+      "choice": {
+        "prompt": {
+          "en": "What should she do?",
+          "hi": "वह क्या करे?",
+          "mr": "तिने काय करावे?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Keep the SIP going",
+              "hi": "SIP जारी रखे",
+              "mr": "SIP चालू ठेवावी"
+            },
+            "good": true,
+            "result": {
+              "en": "Her next ₹3,000 buys more units at the lower price. Over years, these dips are where SIPs earn their keep.",
+              "hi": "अगले ₹3,000 कम कीमत पर ज़्यादा यूनिट खरीदते हैं। सालों में यही गिरावट SIP को फ़ायदा देती है।",
+              "mr": "पुढचे ₹3,000 कमी किमतीत जास्त युनिट्स घेतात. वर्षानुवर्षे याच घसरणीत SIP फायदा देते."
+            }
+          },
+          {
+            "text": {
+              "en": "Stop the SIP and sell",
+              "hi": "SIP बंद करके बेच दे",
+              "mr": "SIP थांबवून विकावे"
+            },
+            "good": false,
+            "result": {
+              "en": "She locks in the loss and misses the recovery that follows.",
+              "hi": "वह नुकसान पक्का कर लेती है और बाद की रिकवरी से चूक जाती है।",
+              "mr": "ती तोटा पक्का करते आणि नंतरची सुधारणा गमावते."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Read the riskometer and expense ratio before investing.",
+      "hi": "निवेश से पहले रिस्कोमीटर और एक्सपेंस रेशियो पढ़ें।",
+      "mr": "गुंतवणुकीपूर्वी रिस्कोमीटर आणि एक्सपेन्स रेशो वाचा."
+    },
+    {
+      "en": "Direct plans cost less for the same fund.",
+      "hi": "एक ही फ़ंड के लिए डायरेक्ट प्लान सस्ता है।",
+      "mr": "त्याच फंडासाठी डायरेक्ट प्लॅन स्वस्त असतो."
+    },
+    {
+      "en": "Falls are normal; a SIP keeps buying through them.",
+      "hi": "गिरावट सामान्य है; SIP उनमें खरीदती रहती है।",
+      "mr": "घसरण सामान्य आहे; SIP त्यात खरेदी करत राहते."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://investor.sebi.gov.in/"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "retirement-accounts",
+  "guide": "retirement-accounts",
+  "title": {
+    "en": "Moving EPF between jobs and opening NPS",
+    "hi": "नौकरी बदलने पर EPF ले जाना और NPS खोलना",
+    "mr": "नोकरी बदलताना EPF नेणे आणि NPS उघडणे"
+  },
+  "setting": {
+    "en": "Verena, 30, on her last day at her old job",
+    "hi": "वेरेना, 30, पुरानी नौकरी के आख़िरी दिन",
+    "mr": "वेरेना, 30, जुन्या नोकरीच्या शेवटच्या दिवशी"
+  },
+  "steps": [
+    {
+      "scene": "phone",
+      "title": {
+        "en": "Check the EPF passbook",
+        "hi": "EPF पासबुक देखें",
+        "mr": "EPF पासबुक पाहा"
+      },
+      "text": {
+        "en": "She logs in to the EPFO portal with her UAN and sees eight years of contributions from her and her employer.",
+        "hi": "वह UAN से EPFO पोर्टल पर लॉगिन करती है और अपना और नियोक्ता का आठ साल का योगदान देखती है।",
+        "mr": "ती UAN ने EPFO पोर्टलवर लॉगिन करते आणि तिचे व मालकाचे आठ वर्षांचे योगदान पाहते."
+      },
+      "screen": [
+        {
+          "en": "UAN 1009xxxxxxxx",
+          "hi": "UAN 1009xxxxxxxx",
+          "mr": "UAN 1009xxxxxxxx"
+        },
+        {
+          "en": "Employee share: ₹2,10,000",
+          "hi": "कर्मचारी हिस्सा: ₹2,10,000",
+          "mr": "कर्मचारी हिस्सा: ₹2,10,000"
+        },
+        {
+          "en": "Employer share: ₹1,05,000",
+          "hi": "नियोक्ता हिस्सा: ₹1,05,000",
+          "mr": "मालक हिस्सा: ₹1,05,000"
+        }
+      ],
+      "details": [
+        {
+          "en": "Part of the employer's share goes to the pension scheme, so the EPF balance shows less than the full matching amount.",
+          "hi": "नियोक्ता के हिस्से का एक भाग पेंशन योजना में जाता है, इसलिए EPF बैलेंस पूरे बराबर हिस्से से कम दिखता है।",
+          "mr": "मालकाच्या हिश्श्याचा काही भाग पेन्शन योजनेत जातो, म्हणून EPF शिल्लक पूर्ण समान रकमेपेक्षा कमी दिसते."
+        }
+      ]
+    },
+    {
+      "scene": "form",
+      "title": {
+        "en": "Transfer, don't withdraw",
+        "hi": "निकालें नहीं, ट्रांसफ़र करें",
+        "mr": "काढू नका, ट्रान्सफर करा"
+      },
+      "text": {
+        "en": "Her new employer links the same UAN. She files an online transfer request so the old balance joins the new account.",
+        "hi": "नया नियोक्ता वही UAN जोड़ता है। वह ऑनलाइन ट्रांसफ़र अनुरोध भरती है ताकि पुरानी रकम नए खाते में जुड़ जाए।",
+        "mr": "नवा मालक तोच UAN जोडतो. ती ऑनलाइन ट्रान्सफर विनंती भरते म्हणजे जुनी रक्कम नव्या खात्यात जुळते."
+      },
+      "choice": {
+        "prompt": {
+          "en": "A friend says 'withdraw it, buy a bike'. She:",
+          "hi": "एक दोस्त कहता है 'निकाल लो, बाइक ले लो'। वह:",
+          "mr": "एक मित्र म्हणतो 'काढून घे, बाइक घे'. ती:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Transfers it",
+              "hi": "ट्रांसफ़र करती है",
+              "mr": "ट्रान्सफर करते"
+            },
+            "good": true,
+            "result": {
+              "en": "Her retirement savings keep compounding for thirty more years.",
+              "hi": "उसकी रिटायरमेंट बचत तीस साल और बढ़ती रहती है।",
+              "mr": "तिची निवृत्ती बचत आणखी तीस वर्षे वाढत राहते."
+            }
+          },
+          {
+            "text": {
+              "en": "Withdraws it",
+              "hi": "निकाल लेती है",
+              "mr": "काढून घेते"
+            },
+            "good": false,
+            "result": {
+              "en": "The bike is fun; the thirty years of growth on that money are gone, and early withdrawal can be taxed.",
+              "hi": "बाइक मज़ेदार है; उस पैसे की तीस साल की बढ़त चली गई, और जल्दी निकासी पर टैक्स लग सकता है।",
+              "mr": "बाइक मजेदार आहे; त्या पैशांची तीस वर्षांची वाढ गेली, आणि लवकर काढल्यास कर लागू शकतो."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene": "laptop",
+      "title": {
+        "en": "Add NPS on top",
+        "hi": "ऊपर से NPS जोड़ें",
+        "mr": "वरून NPS जोडा"
+      },
+      "text": {
+        "en": "She opens an NPS Tier I account online, picks Auto choice and sets ₹2,000 a month.",
+        "hi": "वह ऑनलाइन NPS टियर I खाता खोलती है, ऑटो चॉइस चुनती है और ₹2,000 महीना तय करती है।",
+        "mr": "ती ऑनलाइन NPS टियर I खाते उघडते, ऑटो चॉइस निवडते आणि दरमहा ₹2,000 ठरवते."
+      },
+      "screen": [
+        {
+          "en": "PRAN generated",
+          "hi": "PRAN बना",
+          "mr": "PRAN तयार"
+        },
+        {
+          "en": "Tier I · Auto choice",
+          "hi": "टियर I · ऑटो चॉइस",
+          "mr": "टियर I · ऑटो चॉइस"
+        },
+        {
+          "en": "₹2,000 monthly",
+          "hi": "₹2,000 मासिक",
+          "mr": "₹2,000 मासिक"
+        }
+      ],
+      "details": [
+        {
+          "en": "Auto choice moves money toward bonds as she gets older, lowering risk near 60.",
+          "hi": "ऑटो चॉइस उम्र बढ़ने के साथ पैसा बॉन्ड की ओर ले जाता है, 60 के पास जोखिम घटाते हुए।",
+          "mr": "ऑटो चॉइस वय वाढेल तसे पैसे बाँडकडे नेतो, 60 जवळ जोखीम कमी करतो."
+        }
+      ]
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Your UAN follows you; transfer EPF instead of withdrawing.",
+      "hi": "UAN साथ चलता है; EPF निकालने के बजाय ट्रांसफ़र करें।",
+      "mr": "UAN सोबत येतो; EPF काढण्याऐवजी ट्रान्सफर करा."
+    },
+    {
+      "en": "NPS adds a flexible pension on top of EPF.",
+      "hi": "NPS, EPF के ऊपर एक लचीली पेंशन जोड़ता है।",
+      "mr": "NPS, EPF वर एक लवचिक पेन्शन जोडते."
+    },
+    {
+      "en": "Starting early matters more than starting big.",
+      "hi": "जल्दी शुरू करना बड़ी रकम से ज़्यादा मायने रखता है।",
+      "mr": "लवकर सुरुवात करणे मोठ्या रकमेपेक्षा जास्त महत्त्वाचे."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.epfindia.gov.in/",
+    "https://www.pfrda.org.in/"
+  ]
+}

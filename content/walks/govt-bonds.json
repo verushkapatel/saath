@@ -1,0 +1,122 @@
+{
+  "id": "govt-bonds",
+  "guide": "govt-bonds",
+  "title": {
+    "en": "Buying a government bond on RBI Retail Direct",
+    "hi": "RBI रिटेल डायरेक्ट पर सरकारी बॉन्ड खरीदना",
+    "mr": "RBI रिटेल डायरेक्टवर सरकारी बाँड घेणे"
+  },
+  "setting": {
+    "en": "Verena, 44, planning for her daughter's college",
+    "hi": "वेरेना, 44, बेटी के कॉलेज की योजना बनाते हुए",
+    "mr": "वेरेना, 44, मुलीच्या कॉलेजचे नियोजन करताना"
+  },
+  "steps": [
+    {
+      "scene": "laptop",
+      "title": {
+        "en": "Type the address herself",
+        "hi": "पता खुद टाइप करें",
+        "mr": "पत्ता स्वतः टाइप करा"
+      },
+      "text": {
+        "en": "She ignores a forwarded link and types rbiretaildirect.org.in, then registers with PAN, bank details and OTPs.",
+        "hi": "वह फ़ॉरवर्ड लिंक को अनदेखा करके rbiretaildirect.org.in टाइप करती है, फिर PAN, बैंक विवरण और OTP से पंजीकरण करती है।",
+        "mr": "ती फॉरवर्ड लिंककडे दुर्लक्ष करून rbiretaildirect.org.in टाइप करते, मग PAN, बँक तपशील आणि OTP ने नोंदणी करते."
+      },
+      "screen": [
+        {
+          "en": "rbiretaildirect.org.in",
+          "hi": "rbiretaildirect.org.in",
+          "mr": "rbiretaildirect.org.in"
+        },
+        {
+          "en": "Retail Direct Gilt account",
+          "hi": "रिटेल डायरेक्ट गिल्ट खाता",
+          "mr": "रिटेल डायरेक्ट गिल्ट खाते"
+        },
+        {
+          "en": "Status: Active",
+          "hi": "स्थिति: सक्रिय",
+          "mr": "स्थिती: सक्रिय"
+        }
+      ]
+    },
+    {
+      "scene": "calendar",
+      "title": {
+        "en": "Match the date",
+        "hi": "तारीख मिलाएँ",
+        "mr": "तारीख जुळवा"
+      },
+      "text": {
+        "en": "Maya starts college in ten years, so Verena picks a bond that matures that year, and plans to hold it to the end.",
+        "hi": "माया दस साल में कॉलेज जाएगी, इसलिए वेरेना उसी साल परिपक्व होने वाला बॉन्ड चुनती है, अंत तक रखने की योजना से।",
+        "mr": "माया दहा वर्षांत कॉलेजला जाईल, म्हणून वेरेना त्याच वर्षी मुदत संपणारा बाँड निवडते, शेवटपर्यंत ठेवण्याच्या योजनेने."
+      },
+      "details": [
+        {
+          "en": "Held to maturity, the full face value comes back whatever interest rates do in between.",
+          "hi": "परिपक्वता तक रखने पर, बीच में दरें कुछ भी करें, पूरी अंकित राशि लौटती है।",
+          "mr": "मुदतपूर्तीपर्यंत ठेवल्यास, मध्ये दर काहीही झाले तरी पूर्ण दर्शनी मूल्य परत येते."
+        }
+      ],
+      "choice": {
+        "prompt": {
+          "en": "Which bond?",
+          "hi": "कौन सा बॉन्ड?",
+          "mr": "कोणता बाँड?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "The one maturing in ten years",
+              "hi": "दस साल में परिपक्व होने वाला",
+              "mr": "दहा वर्षांत मुदत संपणारा"
+            },
+            "good": true,
+            "result": {
+              "en": "The money arrives exactly when Maya needs it.",
+              "hi": "पैसा ठीक तब आता है जब माया को चाहिए।",
+              "mr": "मायाला गरज असेल तेव्हाच पैसे येतात."
+            }
+          },
+          {
+            "text": {
+              "en": "A 30-year bond for a slightly higher yield",
+              "hi": "थोड़ी ऊँची दर के लिए 30 साल का बॉन्ड",
+              "mr": "थोड्या जास्त दरासाठी 30 वर्षांचा बाँड"
+            },
+            "good": false,
+            "result": {
+              "en": "She would have to sell it early, at whatever price rates allow then.",
+              "hi": "उसे जल्दी बेचना पड़ेगा, तब की दरों के अनुसार जो कीमत मिले।",
+              "mr": "तिला तो लवकर विकावा लागेल, तेव्हाच्या दरांनुसार मिळेल त्या किमतीत."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Use only the official RBI Retail Direct website.",
+      "hi": "सिर्फ़ आधिकारिक RBI रिटेल डायरेक्ट वेबसाइट इस्तेमाल करें।",
+      "mr": "फक्त अधिकृत RBI रिटेल डायरेक्ट वेबसाइट वापरा."
+    },
+    {
+      "en": "Match the bond's maturity to when you need the money.",
+      "hi": "बॉन्ड की परिपक्वता को पैसे की ज़रूरत के समय से मिलाएँ।",
+      "mr": "बाँडची मुदत पैशांची गरज असेल त्या वेळेशी जुळवा."
+    },
+    {
+      "en": "Holding to maturity removes price risk.",
+      "hi": "परिपक्वता तक रखने से कीमत का जोखिम खत्म होता है।",
+      "mr": "मुदतपूर्तीपर्यंत ठेवल्यास किमतीची जोखीम जाते."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.rbi.org.in/"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "id": "cheques",
+  "guide": "cheques",
+  "title": {
+    "en": "Writing a cheque that cannot be misused, and what happens when one bounces",
+    "hi": "ऐसा चेक लिखना जिसका दुरुपयोग न हो, और बाउंस होने पर क्या होता है",
+    "mr": "गैरवापर होणार नाही असा चेक लिहिणे, आणि चेक परत आल्यावर काय होते"
+  },
+  "setting": {
+    "en": "Verena, 22, paying a room deposit",
+    "hi": "वेरेना, 22, कमरे की डिपॉज़िट देते हुए",
+    "mr": "वेरेना, 22, खोलीची अनामत रक्कम देताना"
+  },
+  "steps": [
+    {
+      "scene": "form",
+      "title": {
+        "en": "Fill every part herself",
+        "hi": "हर हिस्सा खुद भरें",
+        "mr": "प्रत्येक भाग स्वतः भरा"
+      },
+      "text": {
+        "en": "She writes the date, the landlord's full name, the amount in words and figures, and signs as in the bank's records.",
+        "hi": "वह तारीख, मकान मालिक का पूरा नाम, शब्दों और अंकों में रकम लिखती है, और बैंक रिकॉर्ड जैसे हस्ताक्षर करती है।",
+        "mr": "ती तारीख, घरमालकाचे पूर्ण नाव, अक्षरी व अंकी रक्कम लिहिते, आणि बँकेच्या नोंदीप्रमाणे सही करते."
+      },
+      "screen": [
+        {
+          "en": "Pay: RAMESH KULKARNI ———",
+          "hi": "Pay: RAMESH KULKARNI ———",
+          "mr": "Pay: RAMESH KULKARNI ———"
+        },
+        {
+          "en": "Rupees: Thirty Thousand only",
+          "hi": "Rupees: Thirty Thousand only",
+          "mr": "Rupees: Thirty Thousand only"
+        },
+        {
+          "en": "₹ 30,000/-",
+          "hi": "₹ 30,000/-",
+          "mr": "₹ 30,000/-"
+        },
+        {
+          "en": "A/c Payee ═══",
+          "hi": "A/c Payee ═══",
+          "mr": "A/c Payee ═══"
+        }
+      ],
+      "details": [
+        {
+          "en": "Lines after the name and amount stop anyone adding words or digits.",
+          "hi": "नाम और रकम के बाद की लकीरें कुछ जोड़ने से रोकती हैं।",
+          "mr": "नाव आणि रकमेनंतरच्या रेषा काही जोडण्यापासून रोखतात."
+        }
+      ]
+    },
+    {
+      "scene": "receipt",
+      "title": {
+        "en": "Record it",
+        "hi": "दर्ज करें",
+        "mr": "नोंद करा"
+      },
+      "text": {
+        "en": "She notes the cheque number, date, payee and amount in the counterfoil, and photographs the cheque.",
+        "hi": "वह काउंटरफ़ॉयल में चेक नंबर, तारीख, पाने वाला और रकम लिखती है, और चेक की फ़ोटो लेती है।",
+        "mr": "ती काउंटरफॉइलमध्ये चेक क्रमांक, तारीख, घेणारा आणि रक्कम नोंदवते, आणि चेकचा फोटो घेते."
+      },
+      "screen": [
+        {
+          "en": "Cheque 000214",
+          "hi": "चेक 000214",
+          "mr": "चेक 000214"
+        },
+        {
+          "en": "To R. Kulkarni · ₹30,000",
+          "hi": "आर. कुलकर्णी को · ₹30,000",
+          "mr": "आर. कुलकर्णी यांना · ₹30,000"
+        },
+        {
+          "en": "Rent deposit · 08 Oct",
+          "hi": "किराया डिपॉज़िट · 08 अक्टू",
+          "mr": "भाडे अनामत · 08 ऑक्टो"
+        }
+      ]
+    },
+    {
+      "scene": "sms",
+      "title": {
+        "en": "A message from the bank",
+        "hi": "बैंक का संदेश",
+        "mr": "बँकेचा संदेश"
+      },
+      "text": {
+        "en": "Two days later: 'Cheque 000214 for ₹30,000 presented.' Her balance is ₹31,200, so it clears.",
+        "hi": "दो दिन बाद: 'चेक 000214 ₹30,000 के लिए पेश हुआ।' बैलेंस ₹31,200 है, तो क्लियर हो जाता है।",
+        "mr": "दोन दिवसांनी: 'चेक 000214 ₹30,000 साठी सादर.' शिल्लक ₹31,200 आहे, म्हणून तो क्लिअर होतो."
+      },
+      "details": [
+        {
+          "en": "Had the balance been short, the cheque would bounce: bank charges, and a possible case under Section 138 of the Negotiable Instruments Act.",
+          "hi": "बैलेंस कम होता तो चेक बाउंस होता: बैंक शुल्क, और नेगोशिएबल इंस्ट्रूमेंट्स एक्ट की धारा 138 के तहत मामला हो सकता था।",
+          "mr": "शिल्लक कमी असती तर चेक परत आला असता: बँक शुल्क, आणि निगोशिएबल इन्स्ट्रुमेंट्स अॅक्टच्या कलम 138 खाली खटला होऊ शकला असता."
+        }
+      ]
+    },
+    {
+      "scene": "call",
+      "title": {
+        "en": "A strange request",
+        "hi": "एक अजीब अनुरोध",
+        "mr": "एक विचित्र विनंती"
+      },
+      "text": {
+        "en": "A new flatmate asks Verena for 'a signed blank cheque, just for security'.",
+        "hi": "एक नई रूममेट वेरेना से 'बस सुरक्षा के लिए' एक हस्ताक्षरित कोरा चेक माँगती है।",
+        "mr": "एक नवी रूममेट वेरेनाकडे 'फक्त सुरक्षेसाठी' सही केलेला कोरा चेक मागते."
+      },
+      "choice": {
+        "prompt": {
+          "en": "What does she do?",
+          "hi": "वह क्या करे?",
+          "mr": "तिने काय करावे?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Refuse, and offer a written agreement instead",
+              "hi": "मना करे, और लिखित समझौता दे",
+              "mr": "नकार द्यावा, आणि लेखी करार द्यावा"
+            },
+            "good": true,
+            "result": {
+              "en": "A blank signed cheque lets anyone write any amount. A written agreement protects both of them.",
+              "hi": "कोरा हस्ताक्षरित चेक किसी को भी कोई भी रकम लिखने देता है। लिखित समझौता दोनों की रक्षा करता है।",
+              "mr": "कोरा सही केलेला चेक कोणालाही कोणतीही रक्कम लिहू देतो. लेखी करार दोघांचे संरक्षण करतो."
+            }
+          },
+          {
+            "text": {
+              "en": "Sign one to keep the peace",
+              "hi": "शांति के लिए दस्तखत कर दे",
+              "mr": "शांततेसाठी सही करून द्यावी"
+            },
+            "good": false,
+            "result": {
+              "en": "Months later it is presented for ₹50,000 and bounces, with her name on it.",
+              "hi": "महीनों बाद यह ₹50,000 के लिए पेश होता है और उसके नाम से बाउंस होता है।",
+              "mr": "महिन्यांनंतर तो ₹50,000 साठी सादर होतो आणि तिच्या नावाने परत येतो."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Fill every part yourself, cross it, and draw lines after the name and amount.",
+      "hi": "हर हिस्सा खुद भरें, क्रॉस करें, और नाम व रकम के बाद लकीर खींचें।",
+      "mr": "प्रत्येक भाग स्वतः भरा, क्रॉस करा, आणि नाव व रकमेनंतर रेषा ओढा."
+    },
+    {
+      "en": "Keep the balance ready for when it can be presented.",
+      "hi": "जब चेक पेश हो सकता है, तब तक बैलेंस तैयार रखें।",
+      "mr": "चेक सादर होऊ शकतो तेव्हा शिल्लक तयार ठेवा."
+    },
+    {
+      "en": "Never sign a blank cheque.",
+      "hi": "कभी कोरे चेक पर दस्तखत न करें।",
+      "mr": "कधीही कोऱ्या चेकवर सही करू नका."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.rbi.org.in/"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "rbi-explained",
+  "guide": "rbi-explained",
+  "title": {
+    "en": "Taking a wrong bank charge to the RBI Ombudsman",
+    "hi": "गलत बैंक शुल्क की शिकायत RBI लोकपाल से करना",
+    "mr": "चुकीच्या बँक शुल्काची तक्रार RBI लोकपालाकडे करणे"
+  },
+  "setting": {
+    "en": "Verena, 36, looking at her statement",
+    "hi": "वेरेना, 36, अपना स्टेटमेंट देखते हुए",
+    "mr": "वेरेना, 36, तिचे स्टेटमेंट पाहताना"
+  },
+  "steps": [
+    {
+      "scene": "alert",
+      "title": {
+        "en": "Spot the charge",
+        "hi": "शुल्क पकड़ें",
+        "mr": "शुल्क ओळखा"
+      },
+      "text": {
+        "en": "Her statement shows ₹590 for a card replacement she never asked for.",
+        "hi": "स्टेटमेंट में ₹590 का कार्ड रिप्लेसमेंट शुल्क है जो उसने कभी नहीं माँगा।",
+        "mr": "स्टेटमेंटमध्ये ₹590 चे कार्ड रिप्लेसमेंट शुल्क आहे जे तिने कधीच मागितले नाही."
+      },
+      "screen": [
+        {
+          "en": "12 Sep · Card replacement fee",
+          "hi": "12 सित · कार्ड रिप्लेसमेंट शुल्क",
+          "mr": "12 सप्टें · कार्ड रिप्लेसमेंट शुल्क"
+        },
+        {
+          "en": "− ₹590",
+          "hi": "− ₹590",
+          "mr": "− ₹590"
+        }
+      ]
+    },
+    {
+      "scene": "branch",
+      "title": {
+        "en": "Complain to the bank first",
+        "hi": "पहले बैंक से शिकायत करें",
+        "mr": "आधी बँकेकडे तक्रार करा"
+      },
+      "text": {
+        "en": "She files a complaint through the bank's app and saves the complaint number. Thirty days pass with no fix.",
+        "hi": "वह बैंक के ऐप से शिकायत करती है और शिकायत संख्या सँभालती है। तीस दिन बीत जाते हैं, कोई हल नहीं।",
+        "mr": "ती बँकेच्या अॅपमधून तक्रार करते आणि तक्रार क्रमांक जपते. तीस दिवस जातात, काही उपाय नाही."
+      },
+      "screen": [
+        {
+          "en": "Complaint CMP-48213",
+          "hi": "शिकायत CMP-48213",
+          "mr": "तक्रार CMP-48213"
+        },
+        {
+          "en": "Status: Under review (31 days)",
+          "hi": "स्थिति: समीक्षा में (31 दिन)",
+          "mr": "स्थिती: पुनरावलोकनात (31 दिवस)"
+        }
+      ]
+    },
+    {
+      "scene": "laptop",
+      "title": {
+        "en": "Go to the RBI Ombudsman",
+        "hi": "RBI लोकपाल के पास जाएँ",
+        "mr": "RBI लोकपालाकडे जा"
+      },
+      "text": {
+        "en": "On cms.rbi.org.in she files a free complaint with the dates, amount, statement and her bank complaint number.",
+        "hi": "cms.rbi.org.in पर वह तारीख, रकम, स्टेटमेंट और बैंक शिकायत संख्या के साथ मुफ़्त शिकायत दर्ज करती है।",
+        "mr": "cms.rbi.org.in वर ती तारखा, रक्कम, स्टेटमेंट आणि बँक तक्रार क्रमांकासह मोफत तक्रार नोंदवते."
+      },
+      "choice": {
+        "prompt": {
+          "en": "Then a call: 'This is the RBI, share your OTP for the refund.' She:",
+          "hi": "फिर एक कॉल: 'यह RBI है, रिफ़ंड के लिए OTP बताइए।' वह:",
+          "mr": "मग एक कॉल: 'हे RBI आहे, परताव्यासाठी OTP सांगा.' ती:"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Hangs up; the RBI never asks for OTPs",
+              "hi": "फ़ोन काटती है; RBI कभी OTP नहीं माँगता",
+              "mr": "फोन ठेवते; RBI कधीही OTP मागत नाही"
+            },
+            "good": true,
+            "result": {
+              "en": "Weeks later the bank reverses the ₹590 after the Ombudsman takes up the case.",
+              "hi": "हफ़्तों बाद लोकपाल के मामला उठाने पर बैंक ₹590 लौटा देता है।",
+              "mr": "आठवड्यांनी लोकपालाने प्रकरण हाती घेतल्यावर बँक ₹590 परत करते."
+            }
+          },
+          {
+            "text": {
+              "en": "Shares the OTP to speed things up",
+              "hi": "जल्दी के लिए OTP बता देती है",
+              "mr": "लवकर व्हावे म्हणून OTP सांगते"
+            },
+            "good": false,
+            "result": {
+              "en": "It was a fraudster. Her card is used for ₹38,000 within minutes.",
+              "hi": "वह ठग था। कुछ मिनटों में कार्ड से ₹38,000 खर्च हो जाते हैं।",
+              "mr": "तो फसवणूक करणारा होता. काही मिनिटांत कार्डवरून ₹38,000 खर्च होतात."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Complain to your bank first and keep the number.",
+      "hi": "पहले बैंक से शिकायत करें और संख्या रखें।",
+      "mr": "आधी बँकेकडे तक्रार करा आणि क्रमांक ठेवा."
+    },
+    {
+      "en": "After 30 days, the RBI Ombudsman is free and online.",
+      "hi": "30 दिन बाद RBI लोकपाल मुफ़्त और ऑनलाइन है।",
+      "mr": "30 दिवसांनंतर RBI लोकपाल मोफत आणि ऑनलाइन आहे."
+    },
+    {
+      "en": "The RBI never calls for your OTP or card number.",
+      "hi": "RBI कभी OTP या कार्ड नंबर के लिए कॉल नहीं करता।",
+      "mr": "RBI कधीही OTP किंवा कार्ड नंबरसाठी कॉल करत नाही."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://cms.rbi.org.in/",
+    "https://www.rbi.org.in/"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "demand-draft",
+  "guide": "demand-draft",
+  "title": {
+    "en": "Getting a demand draft for college fees, and recovering a lost one",
+    "hi": "कॉलेज फ़ीस के लिए डिमांड ड्राफ़्ट बनवाना, और खोया हुआ वापस पाना",
+    "mr": "कॉलेज फीसाठी डिमांड ड्राफ्ट काढणे, आणि हरवलेला परत मिळवणे"
+  },
+  "setting": {
+    "en": "Verena, 21, at her bank branch",
+    "hi": "वेरेना, 21, अपनी बैंक शाखा में",
+    "mr": "वेरेना, 21, तिच्या बँक शाखेत"
+  },
+  "steps": [
+    {
+      "scene": "queue",
+      "title": {
+        "en": "Know exactly what to write",
+        "hi": "ठीक-ठीक पता हो कि क्या लिखना है",
+        "mr": "नेमके काय लिहायचे ते माहीत असू द्या"
+      },
+      "text": {
+        "en": "The college asks for a DD of ₹45,000 'in favour of The Registrar, Pune University, payable at Pune'. She copies it exactly.",
+        "hi": "कॉलेज 'The Registrar, Pune University के पक्ष में, पुणे में देय' ₹45,000 का DD माँगता है। वह इसे ठीक वैसा ही लिखती है।",
+        "mr": "कॉलेज 'The Registrar, Pune University यांच्या नावे, पुण्यात देय' ₹45,000 चा DD मागते. ती ते तसेच लिहिते."
+      },
+      "screen": [
+        {
+          "en": "DD request",
+          "hi": "DD अनुरोध",
+          "mr": "DD विनंती"
+        },
+        {
+          "en": "Favour: THE REGISTRAR, PUNE UNIVERSITY",
+          "hi": "पक्ष: THE REGISTRAR, PUNE UNIVERSITY",
+          "mr": "नावे: THE REGISTRAR, PUNE UNIVERSITY"
+        },
+        {
+          "en": "Payable at: Pune",
+          "hi": "देय: पुणे",
+          "mr": "देय: पुणे"
+        },
+        {
+          "en": "Amount: ₹45,000",
+          "hi": "रकम: ₹45,000",
+          "mr": "रक्कम: ₹45,000"
+        }
+      ]
+    },
+    {
+      "scene": "counter",
+      "title": {
+        "en": "Pay for it",
+        "hi": "इसका भुगतान करें",
+        "mr": "त्याचे पैसे द्या"
+      },
+      "text": {
+        "en": "She pays from her account, because a DD of ₹50,000 or more cannot be bought with cash, and it is safer anyway.",
+        "hi": "वह खाते से भुगतान करती है, क्योंकि ₹50,000 या ज़्यादा का DD नकद से नहीं बनता, और यह सुरक्षित भी है।",
+        "mr": "ती खात्यातून पैसे देते, कारण ₹50,000 किंवा जास्त रकमेचा DD रोखीने मिळत नाही, आणि ते सुरक्षितही आहे."
+      },
+      "say": {
+        "who": {
+          "en": "Bank officer",
+          "hi": "बैंक अधिकारी",
+          "mr": "बँक अधिकारी"
+        },
+        "line": {
+          "en": "Please check the name and city before you leave.",
+          "hi": "जाने से पहले नाम और शहर जाँच लें।",
+          "mr": "जाण्यापूर्वी नाव आणि शहर तपासा."
+        }
+      },
+      "cost": {
+        "en": "A small commission",
+        "hi": "थोड़ा कमीशन",
+        "mr": "थोडे कमिशन"
+      }
+    },
+    {
+      "scene": "letter",
+      "title": {
+        "en": "The college loses it",
+        "hi": "कॉलेज इसे खो देता है",
+        "mr": "कॉलेजकडून तो हरवतो"
+      },
+      "text": {
+        "en": "Three weeks later the college says the DD never reached the accounts office.",
+        "hi": "तीन हफ़्ते बाद कॉलेज कहता है कि DD लेखा विभाग तक पहुँचा ही नहीं।",
+        "mr": "तीन आठवड्यांनी कॉलेज म्हणते की DD लेखा विभागात पोहोचलाच नाही."
+      },
+      "choice": {
+        "prompt": {
+          "en": "What does Verena do?",
+          "hi": "वेरेना क्या करे?",
+          "mr": "वेरेनाने काय करावे?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Take the DD number and receipt to her bank to cancel and reissue",
+              "hi": "DD नंबर और रसीद लेकर बैंक जाए, रद्द कराकर नया बनवाए",
+              "mr": "DD क्रमांक आणि पावती घेऊन बँकेत जावे, रद्द करून नवा घ्यावा"
+            },
+            "good": true,
+            "result": {
+              "en": "Because the DD was never cashed, the bank cancels it and issues a fresh one. Her money is safe.",
+              "hi": "DD कभी भुनाया नहीं गया, इसलिए बैंक इसे रद्द करके नया जारी करता है। पैसा सुरक्षित है।",
+              "mr": "DD कधी वटवला गेला नाही, म्हणून बँक तो रद्द करून नवा देते. पैसे सुरक्षित आहेत."
+            }
+          },
+          {
+            "text": {
+              "en": "Pay the fee again in cash",
+              "hi": "फ़ीस फिर से नकद दे",
+              "mr": "फी पुन्हा रोख भरावी"
+            },
+            "good": false,
+            "result": {
+              "en": "She pays twice, and the first ₹45,000 sits unclaimed until she sorts it out.",
+              "hi": "वह दो बार भुगतान करती है, और पहले ₹45,000 तब तक पड़े रहते हैं जब तक वह सुलझाती नहीं।",
+              "mr": "ती दोनदा पैसे भरते, आणि पहिले ₹45,000 ती निस्तारेपर्यंत पडून राहतात."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Copy the payee's name and city exactly as asked.",
+      "hi": "पाने वाले का नाम और शहर ठीक वैसा लिखें जैसा माँगा।",
+      "mr": "घेणाऱ्याचे नाव आणि शहर मागितल्याप्रमाणेच लिहा."
+    },
+    {
+      "en": "Keep the receipt and DD number until payment is confirmed.",
+      "hi": "भुगतान पक्का होने तक रसीद और DD नंबर रखें।",
+      "mr": "पेमेंट निश्चित होईपर्यंत पावती आणि DD क्रमांक ठेवा."
+    },
+    {
+      "en": "A lost, uncashed DD can be cancelled and reissued.",
+      "hi": "खोया हुआ, न भुनाया DD रद्द करके फिर बन सकता है।",
+      "mr": "हरवलेला, न वटवलेला DD रद्द करून पुन्हा मिळू शकतो."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.rbi.org.in/"
+  ]
+}

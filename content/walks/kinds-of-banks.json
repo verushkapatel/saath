@@ -1,0 +1,136 @@
+{
+  "id": "kinds-of-banks",
+  "guide": "kinds-of-banks",
+  "title": {
+    "en": "Choosing where to keep savings, and keeping them all insured",
+    "hi": "बचत कहाँ रखें, और सारी बीमित कैसे रखें",
+    "mr": "बचत कुठे ठेवायची, आणि सगळी विमाधारक कशी ठेवायची"
+  },
+  "setting": {
+    "en": "Verena, 24, helping her aunt too",
+    "hi": "वेरेना, 24, मौसी की भी मदद करते हुए",
+    "mr": "वेरेना, 24, मावशीलाही मदत करताना"
+  },
+  "steps": [
+    {
+      "scene": "branch",
+      "title": {
+        "en": "Three kinds of bank",
+        "hi": "तीन तरह के बैंक",
+        "mr": "तीन प्रकारच्या बँका"
+      },
+      "text": {
+        "en": "A payments bank app, a cooperative bank near home, and her public sector salary bank each offer something different.",
+        "hi": "एक पेमेंट्स बैंक ऐप, घर के पास सहकारी बैंक, और सरकारी वेतन बैंक, हर एक कुछ अलग देता है।",
+        "mr": "एक पेमेंट्स बँक अॅप, घराजवळची सहकारी बँक, आणि सरकारी पगार बँक, प्रत्येक काहीतरी वेगळे देते."
+      },
+      "screen": [
+        {
+          "en": "Payments bank: max ₹2 lakh, no loans",
+          "hi": "पेमेंट्स बैंक: अधिकतम ₹2 लाख, लोन नहीं",
+          "mr": "पेमेंट्स बँक: कमाल ₹2 लाख, कर्ज नाही"
+        },
+        {
+          "en": "Cooperative bank: higher FD rate",
+          "hi": "सहकारी बैंक: ऊँची FD दर",
+          "mr": "सहकारी बँक: जास्त FD दर"
+        },
+        {
+          "en": "Salary bank: branches everywhere",
+          "hi": "वेतन बैंक: हर जगह शाखाएँ",
+          "mr": "पगार बँक: सगळीकडे शाखा"
+        }
+      ]
+    },
+    {
+      "scene": "documents",
+      "title": {
+        "en": "How deposit insurance works",
+        "hi": "जमा बीमा कैसे काम करता है",
+        "mr": "ठेव विमा कसा चालतो"
+      },
+      "text": {
+        "en": "All three are covered by DICGC: up to ₹5 lakh per depositor in each bank, principal and interest together.",
+        "hi": "तीनों DICGC के दायरे में हैं: हर बैंक में हर जमाकर्ता के लिए ₹5 लाख तक, मूलधन और ब्याज मिलाकर।",
+        "mr": "तिन्ही DICGC च्या कक्षेत आहेत: प्रत्येक बँकेत प्रत्येक ठेवीदारासाठी ₹5 लाखांपर्यंत, मुद्दल आणि व्याज मिळून."
+      },
+      "details": [
+        {
+          "en": "An NBFC is not a bank. Deposits with it are not covered.",
+          "hi": "NBFC बैंक नहीं है। उसकी जमा इस बीमे में नहीं।",
+          "mr": "NBFC बँक नाही. तिच्याकडील ठेवींना हा विमा नाही."
+        }
+      ]
+    },
+    {
+      "scene": "family",
+      "title": {
+        "en": "Her aunt's ₹9 lakh",
+        "hi": "मौसी के ₹9 लाख",
+        "mr": "मावशीचे ₹9 लाख"
+      },
+      "text": {
+        "en": "Her aunt has ₹9 lakh in FDs at one cooperative bank.",
+        "hi": "मौसी के ₹9 लाख एक सहकारी बैंक की FD में हैं।",
+        "mr": "मावशीचे ₹9 लाख एका सहकारी बँकेच्या FD मध्ये आहेत."
+      },
+      "choice": {
+        "prompt": {
+          "en": "What does Verena suggest?",
+          "hi": "वेरेना क्या सुझाए?",
+          "mr": "वेरेनाने काय सुचवावे?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Move ₹4 lakh to a second bank",
+              "hi": "₹4 लाख दूसरे बैंक में ले जाएँ",
+              "mr": "₹4 लाख दुसऱ्या बँकेत हलवा"
+            },
+            "good": true,
+            "result": {
+              "en": "Now each bank holds ₹5 lakh or less, so every rupee is insured.",
+              "hi": "अब हर बैंक में ₹5 लाख या कम है, तो हर रुपया बीमित है।",
+              "mr": "आता प्रत्येक बँकेत ₹5 लाख किंवा कमी आहेत, म्हणून प्रत्येक रुपया विमाधारक आहे."
+            }
+          },
+          {
+            "text": {
+              "en": "Leave it all for the higher rate",
+              "hi": "ऊँची दर के लिए सब वहीं छोड़ दें",
+              "mr": "जास्त दरासाठी सगळे तिथेच ठेवा"
+            },
+            "good": false,
+            "result": {
+              "en": "Only ₹5 lakh is insured there. If the bank fails, ₹4 lakh is at risk.",
+              "hi": "वहाँ सिर्फ़ ₹5 लाख बीमित है। बैंक डूबे तो ₹4 लाख जोखिम में है।",
+              "mr": "तिथे फक्त ₹5 लाख विमाधारक आहेत. बँक बुडल्यास ₹4 लाख धोक्यात आहेत."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Deposits are insured up to ₹5 lakh per depositor per bank.",
+      "hi": "हर बैंक में हर जमाकर्ता की जमा ₹5 लाख तक बीमित है।",
+      "mr": "प्रत्येक बँकेत प्रत्येक ठेवीदाराच्या ठेवींना ₹5 लाखांपर्यंत विमा आहे."
+    },
+    {
+      "en": "Spread large savings across banks.",
+      "hi": "बड़ी बचत कई बैंकों में बाँटें।",
+      "mr": "मोठी बचत अनेक बँकांत वाटा."
+    },
+    {
+      "en": "NBFC deposits are not covered.",
+      "hi": "NBFC जमा बीमित नहीं।",
+      "mr": "NBFC ठेवींना विमा नाही."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.dicgc.org.in/",
+    "https://www.rbi.org.in/"
+  ]
+}

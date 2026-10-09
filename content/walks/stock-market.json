@@ -1,0 +1,223 @@
+{
+  "id": "stock-market",
+  "guide": "stock-market",
+  "title": {
+    "en": "Opening a demat account and placing a first order, safely",
+    "hi": "डीमैट खाता खोलना और पहला ऑर्डर सुरक्षित रूप से देना",
+    "mr": "डिमॅट खाते उघडणे आणि पहिली ऑर्डर सुरक्षितपणे देणे"
+  },
+  "setting": {
+    "en": "Verena, 26, on her laptop on a Sunday evening",
+    "hi": "वेरेना, 26, रविवार शाम अपने लैपटॉप पर",
+    "mr": "वेरेना, 26, रविवारी संध्याकाळी लॅपटॉपवर"
+  },
+  "steps": [
+    {
+      "scene": "laptop",
+      "title": {
+        "en": "Check the broker first",
+        "hi": "पहले ब्रोकर जाँचें",
+        "mr": "आधी ब्रोकर तपासा"
+      },
+      "text": {
+        "en": "Before typing a single detail, Verena searches the broker's name on SEBI's website and finds its registration number.",
+        "hi": "एक भी जानकारी डालने से पहले वेरेना SEBI की वेबसाइट पर ब्रोकर का नाम खोजती है और पंजीकरण संख्या पाती है।",
+        "mr": "एकही तपशील टाकण्यापूर्वी वेरेना SEBI च्या वेबसाइटवर ब्रोकरचे नाव शोधते आणि नोंदणी क्रमांक मिळवते."
+      },
+      "screen": [
+        {
+          "en": "SEBI · Registered intermediaries",
+          "hi": "SEBI · पंजीकृत मध्यस्थ",
+          "mr": "SEBI · नोंदणीकृत मध्यस्थ"
+        },
+        {
+          "en": "Stock broker: registered",
+          "hi": "स्टॉक ब्रोकर: पंजीकृत",
+          "mr": "स्टॉक ब्रोकर: नोंदणीकृत"
+        },
+        {
+          "en": "Depository participant: registered",
+          "hi": "डिपॉज़िटरी पार्टिसिपेंट: पंजीकृत",
+          "mr": "डिपॉझिटरी पार्टिसिपंट: नोंदणीकृत"
+        }
+      ],
+      "details": [
+        {
+          "en": "A broker that is not on this list cannot legally hold your account.",
+          "hi": "जो ब्रोकर इस सूची में नहीं, वह कानूनी रूप से आपका खाता नहीं रख सकता।",
+          "mr": "या यादीत नसलेला ब्रोकर कायदेशीररीत्या तुमचे खाते ठेवू शकत नाही."
+        }
+      ],
+      "cost": {
+        "en": "2 minutes",
+        "hi": "2 मिनट",
+        "mr": "2 मिनिटे"
+      }
+    },
+    {
+      "scene": "form",
+      "title": {
+        "en": "Fill the account form",
+        "hi": "खाते का फ़ॉर्म भरें",
+        "mr": "खात्याचा फॉर्म भरा"
+      },
+      "text": {
+        "en": "She enters her PAN, links her savings account, selects only the equity segment, adds her mother as nominee and e-signs with an Aadhaar OTP.",
+        "hi": "वह PAN डालती है, बचत खाता जोड़ती है, सिर्फ़ इक्विटी सेगमेंट चुनती है, माँ को नॉमिनी बनाती है और आधार OTP से ई-साइन करती है।",
+        "mr": "ती PAN टाकते, बचत खाते जोडते, फक्त इक्विटी सेगमेंट निवडते, आईला नॉमिनी करते आणि आधार OTP ने ई-सही करते."
+      },
+      "screen": [
+        {
+          "en": "Segments",
+          "hi": "सेगमेंट",
+          "mr": "सेगमेंट"
+        },
+        {
+          "en": "☑ Equity cash",
+          "hi": "☑ इक्विटी कैश",
+          "mr": "☑ इक्विटी कॅश"
+        },
+        {
+          "en": "☐ Futures & options",
+          "hi": "☐ फ़्यूचर्स और ऑप्शंस",
+          "mr": "☐ फ्युचर्स आणि ऑप्शन्स"
+        },
+        {
+          "en": "Nominee: Anita D'Souza, 100%",
+          "hi": "नॉमिनी: अनीता डिसूज़ा, 100%",
+          "mr": "नॉमिनी: अनिता डिसूझा, 100%"
+        }
+      ],
+      "details": [
+        {
+          "en": "Futures and options can lose more than you put in. Leave them off until you truly understand them.",
+          "hi": "फ़्यूचर्स और ऑप्शंस में लगाए से ज़्यादा डूब सकता है। पूरी समझ तक इन्हें बंद रखें।",
+          "mr": "फ्युचर्स आणि ऑप्शन्समध्ये गुंतवलेल्यापेक्षा जास्त तोटा होऊ शकतो. पूर्ण समज येईपर्यंत ते बंद ठेवा."
+        }
+      ],
+      "cost": {
+        "en": "15 minutes, free or a small fee",
+        "hi": "15 मिनट, मुफ़्त या छोटी फ़ीस",
+        "mr": "15 मिनिटे, मोफत किंवा थोडे शुल्क"
+      }
+    },
+    {
+      "scene": "sms",
+      "title": {
+        "en": "Confirm it is really hers",
+        "hi": "पक्का करें कि खाता उसी का है",
+        "mr": "खाते तिचेच आहे याची खात्री करा"
+      },
+      "text": {
+        "en": "Two days later an email and SMS from the depository confirm her demat account. She saves her client ID and turns on two-factor login.",
+        "hi": "दो दिन बाद डिपॉज़िटरी से ईमेल और SMS डीमैट खाते की पुष्टि करते हैं। वह क्लाइंट ID सँभालती है और दो-स्तरीय लॉगिन चालू करती है।",
+        "mr": "दोन दिवसांनी डिपॉझिटरीकडून ईमेल आणि SMS डिमॅट खात्याची पुष्टी करतात. ती क्लायंट ID जपते आणि दोन-स्तरीय लॉगिन सुरू करते."
+      },
+      "screen": [
+        {
+          "en": "CDSL: Your demat account is active",
+          "hi": "CDSL: आपका डीमैट खाता सक्रिय है",
+          "mr": "CDSL: तुमचे डिमॅट खाते सक्रिय आहे"
+        },
+        {
+          "en": "BO ID: 1208xxxxxxxx",
+          "hi": "BO ID: 1208xxxxxxxx",
+          "mr": "BO ID: 1208xxxxxxxx"
+        }
+      ],
+      "details": [
+        {
+          "en": "You will get an SMS from the depository whenever shares leave your account. If you did not sell, act at once.",
+          "hi": "जब भी शेयर आपके खाते से निकलें, डिपॉज़िटरी से SMS आएगा। अगर आपने नहीं बेचा, तुरंत कार्रवाई करें।",
+          "mr": "जेव्हा शेअर तुमच्या खात्यातून जातील तेव्हा डिपॉझिटरीकडून SMS येईल. तुम्ही विकले नसेल तर लगेच कारवाई करा."
+        }
+      ]
+    },
+    {
+      "scene": "phone",
+      "title": {
+        "en": "Her first order, and a tempting message",
+        "hi": "पहला ऑर्डर, और एक लुभावना संदेश",
+        "mr": "पहिली ऑर्डर, आणि एक मोहक संदेश"
+      },
+      "text": {
+        "en": "She plans to buy an index fund ETF. A chat message says: 'Buy XYZ, guaranteed double in 30 days.'",
+        "hi": "वह एक इंडेक्स फ़ंड ETF खरीदने वाली है। एक चैट संदेश कहता है: 'XYZ खरीदो, 30 दिन में पक्का दोगुना।'",
+        "mr": "ती इंडेक्स फंड ETF घेणार आहे. एक चॅट संदेश म्हणतो: 'XYZ घ्या, 30 दिवसांत खात्रीने दुप्पट.'"
+      },
+      "screen": [
+        {
+          "en": "Buy · Nifty 50 ETF",
+          "hi": "खरीदें · Nifty 50 ETF",
+          "mr": "खरेदी · Nifty 50 ETF"
+        },
+        {
+          "en": "Qty 10 · Limit order",
+          "hi": "मात्रा 10 · लिमिट ऑर्डर",
+          "mr": "प्रमाण 10 · लिमिट ऑर्डर"
+        },
+        {
+          "en": "Charges shown before you confirm",
+          "hi": "पुष्टि से पहले शुल्क दिखते हैं",
+          "mr": "पुष्टीपूर्वी शुल्क दिसते"
+        }
+      ],
+      "choice": {
+        "prompt": {
+          "en": "What does Verena do?",
+          "hi": "वेरेना क्या करे?",
+          "mr": "वेरेनाने काय करावे?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Buy the ETF with a limit order and ignore the tip",
+              "hi": "लिमिट ऑर्डर से ETF ले और टिप को अनदेखा करे",
+              "mr": "लिमिट ऑर्डरने ETF घ्यावा आणि टिपकडे दुर्लक्ष करावे"
+            },
+            "good": true,
+            "result": {
+              "en": "She owns a slice of fifty large companies at a price she chose. The 'tip' later collapses.",
+              "hi": "उसके पास अपनी चुनी कीमत पर पचास बड़ी कंपनियों का हिस्सा है। 'टिप' बाद में ढह जाती है।",
+              "mr": "तिने निवडलेल्या किमतीत तिच्याकडे पन्नास मोठ्या कंपन्यांचा हिस्सा आहे. 'टिप' नंतर कोसळते."
+            }
+          },
+          {
+            "text": {
+              "en": "Put everything into XYZ",
+              "hi": "सब XYZ में लगा दे",
+              "mr": "सगळे XYZ मध्ये टाकावे"
+            },
+            "good": false,
+            "result": {
+              "en": "XYZ was a pump-and-dump. Within weeks her ₹20,000 is worth ₹6,000.",
+              "hi": "XYZ पंप-एंड-डंप था। कुछ हफ़्तों में उसके ₹20,000 के ₹6,000 रह जाते हैं।",
+              "mr": "XYZ पंप-अँड-डंप होता. काही आठवड्यांत तिच्या ₹20,000 चे ₹6,000 होतात."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Check the broker's SEBI registration before sharing any detail.",
+      "hi": "कोई भी जानकारी देने से पहले ब्रोकर का SEBI पंजीकरण जाँचें।",
+      "mr": "कोणताही तपशील देण्यापूर्वी ब्रोकरची SEBI नोंदणी तपासा."
+    },
+    {
+      "en": "Start with equity cash only; skip futures and options.",
+      "hi": "सिर्फ़ इक्विटी कैश से शुरू करें; फ़्यूचर्स और ऑप्शंस छोड़ें।",
+      "mr": "फक्त इक्विटी कॅशने सुरुवात करा; फ्युचर्स आणि ऑप्शन्स टाळा."
+    },
+    {
+      "en": "'Guaranteed' returns from a chat group are a warning, never a tip.",
+      "hi": "चैट ग्रुप के 'गारंटीड' रिटर्न चेतावनी हैं, टिप नहीं।",
+      "mr": "चॅट ग्रुपमधील 'हमीचे' परतावे धोक्याची सूचना आहेत, टिप नाही."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://investor.sebi.gov.in/"
+  ]
+}

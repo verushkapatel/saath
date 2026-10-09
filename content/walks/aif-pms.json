@@ -1,0 +1,171 @@
+{
+  "id": "aif-pms",
+  "guide": "aif-pms",
+  "title": {
+    "en": "Saying no to the wrong PMS, and knowing what to check",
+    "hi": "गलत PMS को मना करना, और जानना कि क्या जाँचें",
+    "mr": "चुकीच्या PMS ला नकार देणे, आणि काय तपासायचे ते जाणणे"
+  },
+  "setting": {
+    "en": "Verena, 46, invited for coffee by a relationship manager",
+    "hi": "वेरेना, 46, एक रिलेशनशिप मैनेजर के कॉफ़ी निमंत्रण पर",
+    "mr": "वेरेना, 46, एका रिलेशनशिप मॅनेजरच्या कॉफी निमंत्रणावर"
+  },
+  "steps": [
+    {
+      "scene": "office",
+      "title": {
+        "en": "The pitch",
+        "hi": "पेशकश",
+        "mr": "ऑफर"
+      },
+      "text": {
+        "en": "He shows a chart where the PMS 'beat the market by 20%' last year and suggests a loan against her flat to reach ₹50 lakh.",
+        "hi": "वह चार्ट दिखाता है जिसमें PMS ने पिछले साल 'बाज़ार को 20% से हराया' और ₹50 लाख पूरे करने के लिए फ़्लैट पर लोन सुझाता है।",
+        "mr": "तो चार्ट दाखवतो ज्यात PMS ने गेल्या वर्षी 'बाजाराला 20% ने मागे टाकले' आणि ₹50 लाख पूर्ण करण्यासाठी फ्लॅटवर कर्ज सुचवतो."
+      },
+      "screen": [
+        {
+          "en": "Last year: +34%",
+          "hi": "पिछला साल: +34%",
+          "mr": "मागील वर्ष: +34%"
+        },
+        {
+          "en": "Minimum: ₹50 lakh",
+          "hi": "न्यूनतम: ₹50 लाख",
+          "mr": "किमान: ₹50 लाख"
+        },
+        {
+          "en": "Fees: on request",
+          "hi": "फ़ीस: माँगने पर",
+          "mr": "शुल्क: मागणीवर"
+        }
+      ],
+      "details": [
+        {
+          "en": "Urgency and one great year are sales tactics, not evidence.",
+          "hi": "जल्दबाज़ी और एक शानदार साल बिक्री की चाल हैं, सबूत नहीं।",
+          "mr": "घाई आणि एक उत्तम वर्ष ही विक्रीची युक्ती आहे, पुरावा नाही."
+        }
+      ],
+      "say": {
+        "who": {
+          "en": "Relationship manager",
+          "hi": "रिलेशनशिप मैनेजर",
+          "mr": "रिलेशनशिप मॅनेजर"
+        },
+        "line": {
+          "en": "Only for special clients. The window closes Friday.",
+          "hi": "सिर्फ़ ख़ास ग्राहकों के लिए। शुक्रवार तक ही।",
+          "mr": "फक्त खास ग्राहकांसाठी. शुक्रवारपर्यंतच."
+        }
+      }
+    },
+    {
+      "scene": "documents",
+      "title": {
+        "en": "Ask for the papers",
+        "hi": "काग़ज़ माँगें",
+        "mr": "कागदपत्रे मागा"
+      },
+      "text": {
+        "en": "She asks for the SEBI registration, the disclosure document and every fee in writing, and five years of results after fees.",
+        "hi": "वह SEBI पंजीकरण, डिस्क्लोज़र डॉक्यूमेंट, लिखित में हर फ़ीस और फ़ीस के बाद पाँच साल के नतीजे माँगती है।",
+        "mr": "ती SEBI नोंदणी, डिस्क्लोजर डॉक्युमेंट, लेखी प्रत्येक शुल्क आणि शुल्कानंतरचे पाच वर्षांचे निकाल मागते."
+      },
+      "screen": [
+        {
+          "en": "Fixed fee: 2% a year",
+          "hi": "तय फ़ीस: 2% सालाना",
+          "mr": "ठराविक शुल्क: वर्षाला 2%"
+        },
+        {
+          "en": "Profit share: 20% above 10%",
+          "hi": "मुनाफ़े का हिस्सा: 10% के ऊपर 20%",
+          "mr": "नफ्याचा हिस्सा: 10% वर 20%"
+        },
+        {
+          "en": "Exit charge in year 1",
+          "hi": "पहले साल निकासी शुल्क",
+          "mr": "पहिल्या वर्षी बाहेर पडण्याचे शुल्क"
+        }
+      ],
+      "details": [
+        {
+          "en": "These fee numbers are an example. Every PMS must disclose its own.",
+          "hi": "ये फ़ीस आँकड़े उदाहरण हैं। हर PMS को अपनी फ़ीस बतानी होती है।",
+          "mr": "हे शुल्काचे आकडे उदाहरण आहेत. प्रत्येक PMS ने स्वतःचे जाहीर करावे लागतात."
+        }
+      ]
+    },
+    {
+      "scene": "calculator",
+      "title": {
+        "en": "Do the comparison",
+        "hi": "तुलना करें",
+        "mr": "तुलना करा"
+      },
+      "text": {
+        "en": "After fees, the five-year result is close to a low-cost index fund, with more swings.",
+        "hi": "फ़ीस के बाद पाँच साल का नतीजा कम खर्च वाले इंडेक्स फ़ंड जैसा है, ज़्यादा उतार-चढ़ाव के साथ।",
+        "mr": "शुल्कानंतर पाच वर्षांचा निकाल कमी खर्चाच्या इंडेक्स फंडाइतकाच आहे, जास्त हेलकाव्यांसह."
+      },
+      "choice": {
+        "prompt": {
+          "en": "What does she decide?",
+          "hi": "वह क्या तय करे?",
+          "mr": "तिने काय ठरवावे?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "Keep her index funds and no loan",
+              "hi": "इंडेक्स फ़ंड रखे और कोई लोन नहीं",
+              "mr": "इंडेक्स फंड ठेवावे आणि कर्ज नाही"
+            },
+            "good": true,
+            "result": {
+              "en": "Same growth, lower cost, and her flat stays free of debt.",
+              "hi": "वही बढ़त, कम खर्च, और फ़्लैट कर्ज़-मुक्त रहता है।",
+              "mr": "तीच वाढ, कमी खर्च, आणि फ्लॅट कर्जमुक्त राहतो."
+            }
+          },
+          {
+            "text": {
+              "en": "Take the loan and sign",
+              "hi": "लोन लेकर दस्तखत करे",
+              "mr": "कर्ज घेऊन सही करावी"
+            },
+            "good": false,
+            "result": {
+              "en": "A market fall shrinks the portfolio, but the EMI stays the same every month.",
+              "hi": "बाज़ार गिरने से पोर्टफ़ोलियो घटता है, पर EMI हर महीने वही रहती है।",
+              "mr": "बाजार घसरल्यावर पोर्टफोलिओ कमी होतो, पण EMI दरमहा तसाच राहतो."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "PMS needs at least ₹50 lakh; AIFs usually ₹1 crore.",
+      "hi": "PMS के लिए कम से कम ₹50 लाख; AIF के लिए आम तौर पर ₹1 करोड़।",
+      "mr": "PMS साठी किमान ₹50 लाख; AIF साठी साधारण ₹1 कोटी."
+    },
+    {
+      "en": "Get registration, disclosure and fees in writing.",
+      "hi": "पंजीकरण, खुलासा और फ़ीस लिखित में लें।",
+      "mr": "नोंदणी, खुलासा आणि शुल्क लेखी घ्या."
+    },
+    {
+      "en": "Never borrow to reach an investment minimum.",
+      "hi": "निवेश की न्यूनतम राशि के लिए कभी उधार न लें।",
+      "mr": "गुंतवणुकीच्या किमान रकमेसाठी कधीही कर्ज घेऊ नका."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.sebi.gov.in/"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "ppf-explained",
+  "guide": "ppf-explained",
+  "title": {
+    "en": "Opening a PPF account and keeping it alive for 15 years",
+    "hi": "PPF खाता खोलना और 15 साल तक चालू रखना",
+    "mr": "PPF खाते उघडणे आणि 15 वर्षे चालू ठेवणे"
+  },
+  "setting": {
+    "en": "Verena, 25, at the post office with her father",
+    "hi": "वेरेना, 25, पिता के साथ डाकघर में",
+    "mr": "वेरेना, 25, वडिलांसोबत पोस्ट ऑफिसमध्ये"
+  },
+  "steps": [
+    {
+      "scene": "counter",
+      "title": {
+        "en": "At the counter",
+        "hi": "काउंटर पर",
+        "mr": "काउंटरवर"
+      },
+      "text": {
+        "en": "The clerk hands her the account opening form. She fills her details, a nominee and the first deposit of ₹1,000.",
+        "hi": "क्लर्क उसे खाता खोलने का फ़ॉर्म देता है। वह जानकारी, नॉमिनी और पहली जमा ₹1,000 भरती है।",
+        "mr": "क्लार्क तिला खाते उघडण्याचा फॉर्म देतो. ती तपशील, नॉमिनी आणि पहिली ठेव ₹1,000 भरते."
+      },
+      "screen": [
+        {
+          "en": "PPF account opening",
+          "hi": "PPF खाता खोलना",
+          "mr": "PPF खाते उघडणे"
+        },
+        {
+          "en": "First deposit: ₹1,000",
+          "hi": "पहली जमा: ₹1,000",
+          "mr": "पहिली ठेव: ₹1,000"
+        },
+        {
+          "en": "Nominee: Anita D'Souza",
+          "hi": "नॉमिनी: अनीता डिसूज़ा",
+          "mr": "नॉमिनी: अनिता डिसूझा"
+        }
+      ],
+      "say": {
+        "who": {
+          "en": "Clerk",
+          "hi": "क्लर्क",
+          "mr": "क्लार्क"
+        },
+        "line": {
+          "en": "Minimum ₹500 every year, madam, or the account stops.",
+          "hi": "हर साल कम से कम ₹500, मैडम, वरना खाता रुक जाता है।",
+          "mr": "दरवर्षी किमान ₹500, मॅडम, नाहीतर खाते थांबते."
+        }
+      },
+      "cost": {
+        "en": "KYC documents, 20 minutes",
+        "hi": "KYC दस्तावेज़, 20 मिनट",
+        "mr": "KYC कागदपत्रे, 20 मिनिटे"
+      }
+    },
+    {
+      "scene": "calendar",
+      "title": {
+        "en": "Make it automatic",
+        "hi": "इसे अपने आप चलने दें",
+        "mr": "हे आपोआप चालू द्या"
+      },
+      "text": {
+        "en": "She links the PPF to her bank and sets a standing instruction of ₹1,000 each month.",
+        "hi": "वह PPF को बैंक से जोड़ती है और हर महीने ₹1,000 का स्टैंडिंग इंस्ट्रक्शन लगाती है।",
+        "mr": "ती PPF बँकेशी जोडते आणि दरमहा ₹1,000 चा स्टँडिंग इन्स्ट्रक्शन लावते."
+      },
+      "screen": [
+        {
+          "en": "Standing instruction",
+          "hi": "स्टैंडिंग इंस्ट्रक्शन",
+          "mr": "स्टँडिंग इन्स्ट्रक्शन"
+        },
+        {
+          "en": "₹1,000 · 5th of every month",
+          "hi": "₹1,000 · हर महीने 5 तारीख",
+          "mr": "₹1,000 · दरमहा 5 तारीख"
+        },
+        {
+          "en": "Yearly total: ₹12,000",
+          "hi": "सालाना कुल: ₹12,000",
+          "mr": "वार्षिक एकूण: ₹12,000"
+        }
+      ],
+      "details": [
+        {
+          "en": "Deposits before the 5th of a month earn interest for that month.",
+          "hi": "महीने की 5 तारीख से पहले की जमा पर उस महीने का ब्याज मिलता है।",
+          "mr": "महिन्याच्या 5 तारखेपूर्वीच्या ठेवीवर त्या महिन्याचे व्याज मिळते."
+        }
+      ]
+    },
+    {
+      "scene": "growth",
+      "title": {
+        "en": "Year seven: a tempting withdrawal",
+        "hi": "सातवाँ साल: लुभावनी निकासी",
+        "mr": "सातवे वर्ष: मोहक काढणी"
+      },
+      "text": {
+        "en": "Friends plan a holiday abroad. Her PPF now allows a partial withdrawal.",
+        "hi": "दोस्त विदेश घूमने की योजना बनाते हैं। अब PPF से आंशिक निकासी हो सकती है।",
+        "mr": "मित्र परदेश सहलीची योजना आखतात. आता PPF मधून आंशिक काढणी करता येते."
+      },
+      "choice": {
+        "prompt": {
+          "en": "Does she take money out?",
+          "hi": "क्या वह पैसा निकाले?",
+          "mr": "तिने पैसे काढावेत का?"
+        },
+        "options": [
+          {
+            "text": {
+              "en": "No, it stays for her long goal",
+              "hi": "नहीं, यह लंबे लक्ष्य के लिए रहेगा",
+              "mr": "नाही, ते दीर्घ उद्दिष्टासाठी राहील"
+            },
+            "good": true,
+            "result": {
+              "en": "Her tax-free balance keeps compounding toward the home deposit she is planning.",
+              "hi": "उसकी टैक्स-मुक्त रकम घर की डाउन पेमेंट की ओर बढ़ती रहती है।",
+              "mr": "तिची करमुक्त रक्कम घराच्या डाउन पेमेंटकडे वाढत राहते."
+            }
+          },
+          {
+            "text": {
+              "en": "Yes, for the holiday",
+              "hi": "हाँ, छुट्टी के लिए",
+              "mr": "हो, सुट्टीसाठी"
+            },
+            "good": false,
+            "result": {
+              "en": "She can, but the years of compounding on that money are gone for good.",
+              "hi": "वह निकाल सकती है, पर उस पैसे पर सालों की बढ़त हमेशा के लिए चली जाती है।",
+              "mr": "ती काढू शकते, पण त्या पैशांवरील वर्षांची वाढ कायमची जाते."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "takeaways": [
+    {
+      "en": "Deposit at least ₹500 every financial year.",
+      "hi": "हर वित्त वर्ष में कम से कम ₹500 जमा करें।",
+      "mr": "प्रत्येक आर्थिक वर्षात किमान ₹500 भरा."
+    },
+    {
+      "en": "Deposit before the 5th to earn that month's interest.",
+      "hi": "उस महीने का ब्याज पाने के लिए 5 तारीख से पहले जमा करें।",
+      "mr": "त्या महिन्याचे व्याज मिळवण्यासाठी 5 तारखेपूर्वी भरा."
+    },
+    {
+      "en": "PPF is for long goals; withdrawals cost years of growth.",
+      "hi": "PPF लंबे लक्ष्यों के लिए है; निकासी सालों की बढ़त छीनती है।",
+      "mr": "PPF दीर्घ उद्दिष्टांसाठी आहे; काढणीने वर्षांची वाढ जाते."
+    }
+  ],
+  "reviewed": "2026-10",
+  "sources": [
+    "https://www.nsiindia.gov.in/",
+    "https://www.indiapost.gov.in/"
+  ]
+}
