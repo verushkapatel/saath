@@ -14,6 +14,7 @@ import { useApp } from "./app-state";
 import { StoryTabs } from "./story-tabs";
 import { Character, type Mood } from "./character";
 import { WalkCard, WalkPlayer, useWalk } from "./walkthrough";
+import { LifeScene } from "./life-scene";
 import { verenaAt } from "@/lib/verena";
 import { ShareButton } from "./share-button";
 import { useI18n } from "./providers";
@@ -323,12 +324,13 @@ function StoryPlayer({ episode, look, name, onDone }: { episode: Episode; look: 
         {lines.map((_, index) => <li key={index} className={index < at ? "was" : index === at ? "on" : undefined}><i /></li>)}
       </ol>
       <div className="story-stage">
-        <Character look={{ ...look, place: episode.place }} age={episode.age} size={230} mood={mood} label={t("journey.figure", { name, age: episode.age })} alive />
+        <LifeScene place={episode.place} beat={at} />
+        <div className="story-actor"><Character look={{ ...look, place: episode.place }} age={episode.age} size={230} mood={mood} label={t("journey.figure", { name, age: episode.age })} alive bare /></div>
         <button type="button" className="story-tap back" onClick={back} aria-label={t("common.back")} disabled={at === 0} />
         <button type="button" className="story-tap fwd" onClick={next} aria-label={t("common.next")} />
       </div>
-      <div className="story-caption" key={at} aria-live="polite">
-        <p>{lines[at][code]}</p>
+      <div className="story-caption" key={at}>
+        <Typewriter text={lines[at][code]} />
       </div>
       <div className="story-controls">
         <ListenButton text={lines[at][code]} compact />
@@ -338,6 +340,30 @@ function StoryPlayer({ episode, look, name, onDone }: { episode: Episode; look: 
         </button>
       </div>
     </section>
+  );
+}
+
+/** A line that types itself out like a subtitle; the whole line is available to screen readers at once. */
+function Typewriter({ text }: { text: string }) {
+  const [shown, setShown] = useState(0);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setShown(text.length); return; }
+    setShown(0);
+    const chars = [...text];
+    let i = 0;
+    const timer = window.setInterval(() => {
+      i += Math.max(1, Math.round(chars.length / 90));
+      setShown(Math.min(chars.length, i));
+      if (i >= chars.length) window.clearInterval(timer);
+    }, 22);
+    return () => window.clearInterval(timer);
+  }, [text]);
+  const chars = [...text];
+  return (
+    <p onClick={() => setShown(chars.length)}>
+      <span className="visually-hidden" aria-live="polite">{text}</span>
+      <span aria-hidden>{chars.slice(0, shown).join("")}<span className="tw-rest">{chars.slice(shown).join("")}</span></span>
+    </p>
   );
 }
 

@@ -3608,3 +3608,53 @@ h3, .item-title, .card strong, .g-card strong { font-family: var(--font-ui-stack
 @media (min-width: 1200px) { :root { --page: 860px; } }
 .stage, .card.hero .stage, .navy-scene .stage, .home-quest-character.stage { background: radial-gradient(90% 80% at 50% 20%, rgba(70, 100, 220, 0.28), transparent 70%), linear-gradient(180deg, #121c45, #0a1030) !important; border-color: var(--edge) !important; }
 :root[data-theme="light"] .stage { background: radial-gradient(90% 80% at 50% 20%, rgba(70, 100, 220, 0.14), transparent 70%), linear-gradient(180deg, #eef2ff, #e2e8fb) !important; }
+
+/* ───────────────────────────────────────────────────────────────
+   Life, animated: the story player becomes a living scene. Real time of day, drifting clouds, rising steam,
+   a ticking clock, a bank token display, city lights; the camera eases with each line; subtitles type out.
+   ─────────────────────────────────────────────────────────────── */
+.story-player, .chapter.navy-scene { background: radial-gradient(120% 90% at 0% 0%, rgba(58, 92, 224, 0.28), transparent 55%), linear-gradient(160deg, #111d4a, #0a1130 70%) !important; border: 1px solid var(--edge); }
+.story-stage { position: relative; min-height: clamp(280px, 52vw, 460px) !important; border-radius: 22px; overflow: hidden; isolation: isolate; box-shadow: 0 30px 60px -36px rgba(0, 0, 0, 0.9), inset 0 0 0 1px rgba(255, 255, 255, 0.06); }
+.life-scene { position: absolute; inset: 0; z-index: 0; }
+.ls-svg { width: 100%; height: 100%; display: block; }
+.ls-world { transform-origin: 50% 80%; transform: translateX(calc(var(--beat, 0) * -5px)) scale(calc(1.03 + var(--beat, 0) * 0.012)); transition: transform 1.6s cubic-bezier(0.22, 1, 0.36, 1); }
+.ls-vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(5, 8, 23, 0.55)), linear-gradient(180deg, transparent 70%, rgba(5, 8, 23, 0.35)); }
+.story-actor { position: absolute; left: 50%; bottom: 4%; z-index: 1; transform: translateX(-50%); filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.4)); }
+.story-actor .character { width: clamp(150px, 26vw, 230px); height: auto; }
+.story-stage .story-tap { z-index: 2; }
+.ls-cloud { animation: ls-cloud var(--t, 40s) linear infinite; animation-delay: var(--d, 0s); }
+@keyframes ls-cloud { from { transform: translateX(-120px); } to { transform: translateX(460px); } }
+.ls-twinkle { animation: ls-twinkle 3.2s ease-in-out infinite; animation-delay: var(--d, 0s); }
+@keyframes ls-twinkle { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+.ls-steam { animation: ls-steam 2.8s ease-out infinite; animation-delay: var(--d, 0s); opacity: 0; }
+@keyframes ls-steam { 0% { opacity: 0; transform: translateY(4px); } 30% { opacity: 0.8; } 100% { opacity: 0; transform: translateY(-12px); } }
+.ls-sway { animation: ls-sway 5s ease-in-out infinite alternate; animation-delay: var(--d, 0s); }
+@keyframes ls-sway { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg); } }
+.ls-swing { animation: ls-swing 4s ease-in-out infinite alternate; animation-delay: var(--d, 0s); }
+@keyframes ls-swing { from { transform: rotate(-1.6deg); } to { transform: rotate(1.6deg); } }
+.ls-second { transform: rotate(var(--s, 0deg)); animation: ls-tick 60s steps(60) infinite; }
+@keyframes ls-tick { from { transform: rotate(var(--s, 0deg)); } to { transform: rotate(calc(var(--s, 0deg) + 360deg)); } }
+.ls-blink { animation: ls-blink 4s steps(1) infinite; }
+@keyframes ls-blink { 0%, 92% { opacity: 1; } 93%, 97% { opacity: 0.2; } 98% { opacity: 1; } }
+.ls-screen { animation: ls-screen 6s ease-in-out infinite alternate; }
+@keyframes ls-screen { from { opacity: 0.85; } to { opacity: 1; } }
+.ls-type { stroke-dasharray: 60; animation: ls-type 3s steps(12) infinite; }
+@keyframes ls-type { from { stroke-dashoffset: 60; } to { stroke-dashoffset: 0; } }
+.ls-glow { animation: ls-glow 5s ease-in-out infinite alternate; }
+@keyframes ls-glow { from { opacity: 0.12; } to { opacity: 0.24; } }
+.ls-sun { filter: drop-shadow(0 0 10px rgba(255, 230, 160, 0.8)); }
+.ls-fly { animation: ls-fly 9s ease-in-out infinite; animation-delay: var(--d, 0s); }
+@keyframes ls-fly { 0% { transform: translate(0, 0); } 25% { transform: translate(40px, -18px); } 50% { transform: translate(80px, 4px); } 75% { transform: translate(30px, 16px); } 100% { transform: translate(0, 0); } }
+.ls-mote { transform: translate(var(--x), 0); animation: ls-mote 9s linear infinite; animation-delay: var(--d, 0s); }
+@keyframes ls-mote { 0% { opacity: 0; transform: translate(var(--x), 0); } 15% { opacity: 0.5; } 85% { opacity: 0.35; } 100% { opacity: 0; transform: translate(calc(var(--x) + 20px), -230px); } }
+.life-scene.night .ls-mote { fill: #ffd89a; }
+
+/* Subtitles that type themselves out. */
+.story-caption { background: rgba(8, 12, 32, 0.72) !important; border: 1px solid rgba(160, 180, 255, 0.16); }
+.story-caption p { cursor: default; font-family: var(--font-ui-stack); font-size: 1.12rem; line-height: 1.6; font-weight: 500; letter-spacing: -0.01em; }
+.tw-rest { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) {
+  .ls-cloud, .ls-twinkle, .ls-steam, .ls-sway, .ls-swing, .ls-second, .ls-blink, .ls-screen, .ls-type, .ls-glow, .ls-fly, .ls-mote { animation: none !important; }
+  .ls-steam, .ls-mote { opacity: 0; }
+  .ls-world { transition: none; }
+}

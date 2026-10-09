@@ -104,6 +104,28 @@ const CHECKS = [
   },
 ];
 
+const EFFECT_NAMES: Record<string, Copy> = {
+  cash: C("Cash", "नकद", "रोख"), savings: C("Savings", "बचत", "बचत"), debt: C("Debt", "कर्ज़", "कर्ज"),
+  investments: C("Investments", "निवेश", "गुंतवणूक"), emergency: C("Emergency fund", "आपात निधि", "आणीबाणी निधी"),
+  income: C("Income", "आय", "उत्पन्न"), confidence: C("Confidence", "आत्मविश्वास", "आत्मविश्वास"),
+  resilience: C("Resilience", "मज़बूती", "लवचिकता"), dependents: C("Dependents", "आश्रित", "अवलंबित"),
+};
+const MONEY_KEYS = new Set(["cash", "savings", "debt", "investments", "emergency", "income"]);
+
+/** "Savings +₹6,000 · Confidence +3", in each language. */
+function effectSummary(effects: Effects): Copy {
+  const parts = Object.entries(effects).filter(([, value]) => value).slice(0, 3);
+  const line = (lang: "en" | "hi" | "mr") => parts.length
+    ? parts.map(([key, raw]) => {
+      const value = raw ?? 0;
+      const sign = value > 0 ? "+" : "−";
+      const amount = MONEY_KEYS.has(key) ? `₹${Math.abs(value).toLocaleString("en-IN")}` : `${Math.abs(value)}`;
+      return `${EFFECT_NAMES[key]?.[lang] ?? key} ${sign}${amount}`;
+    }).join(" · ")
+    : C("No change", "कोई बदलाव नहीं", "बदल नाही")[lang];
+  return { en: line("en"), hi: line("hi"), mr: line("mr") };
+}
+
 function okayEffects(effects: Effects): Effects {
   return Object.fromEntries(Object.entries(effects).map(([key, value]) => [key, Math.round((value ?? 0) * ((value ?? 0) < 0 ? 1.15 : 0.35))])) as Effects;
 }
@@ -155,6 +177,13 @@ function generated(seed: ChapterSeed, index: number): Episode {
   ];
   const shift = index % variants.length;
   const options = [...variants.slice(shift), ...variants.slice(0, shift)];
+  // Without a hand-made simulation, the try-it step plays each choice forward and shows what it would change.
+  const trySim: Sim | null = (!seed.sim || seed.sim.kind === "inspect") && !seed.lines?.length ? {
+    kind: "inspect",
+    title: C("Play each choice forward", "हर विकल्प को आगे चलाकर देखें", "प्रत्येक पर्याय पुढे नेऊन पाहा"),
+    hint: C("Tap a choice to see what it would change in Verena's life. These are educational examples, not promises.", "किसी विकल्प पर टैप करें और देखें कि वह वेरेना की ज़िंदगी में क्या बदलेगा। ये शैक्षिक उदाहरण हैं, वादे नहीं।", "एखाद्या पर्यायावर टॅप करा आणि तो वेरेनाच्या आयुष्यात काय बदलेल ते पाहा. ही शैक्षणिक उदाहरणे आहेत, वचने नाहीत."),
+    lines: options.map((option) => ({ label: option.text, value: C("Tap to play it forward", "आगे चलाने के लिए टैप करें", "पुढे नेण्यासाठी टॅप करा"), note: effectSummary(option.effects) })),
+  } : null;
   return {
     id: seed.id,
     stage: seed.stage,
@@ -163,7 +192,7 @@ function generated(seed: ChapterSeed, index: number): Episode {
     place: seed.place,
     title: seed.title,
     story: seed.more ? [seed.setup ?? PHRASES.moment, seed.more, PHRASES.bridge] : [seed.setup ?? PHRASES.moment, PHRASES.bridge, PHRASES.moment],
-    sim: makeSim(seed),
+    sim: trySim ?? makeSim(seed),
     question: seed.question ?? PHRASES.question,
     options,
     lesson: seed.lesson ?? PHRASES.lesson,
