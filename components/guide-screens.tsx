@@ -231,7 +231,8 @@ export function LessonScreen({ id, pathId }: { id: string; pathId?: string }) {
         {path ? path.title[code] : t("guide.title")}
       </Link>
       <div className="pin-top cluster"><ListenButton text={spoken} /><ShareButton title={lesson.title[code]} text={`${lesson.title[code]}: ${lesson.points[0]?.[code] ?? ""}`} path={walk && walk !== "missing" ? `/guide/${lesson.id}/?live=1` : `/guide/${lesson.id}`} /></div>
-      <div className="stack-sm">
+      <div className="stack-sm page-hero">
+        <PageGlow />
         <span className="item-icon"><ContentIcon name={lesson.icon} /></span>
         <span className="unit-badge">{t(`topics.${lesson.topic}`)}</span>
         <h1>{lesson.title[code]}</h1>

@@ -2208,6 +2208,17 @@
       "o1": "On-device",
       "o2": "Cited",
       "o3": "Ad-free"
+    },
+    "reel": {
+      "label": "Her whole life",
+      "title": "Scene by scene, decision by decision.",
+      "lead": "Verena grows up in front of you, from her childhood room to retirement. Every place is alive, and every choice follows her.",
+      "s0": "10 · Her first piggy bank",
+      "s1": "21 · A budget on a student's pocket money",
+      "s2": "27 · Her first SIP",
+      "s3": "34 · A wrong charge, fixed",
+      "s4": "45 · Planning for her daughter",
+      "s5": "63 · Retirement, on her terms"
     }
   },
   "game": {

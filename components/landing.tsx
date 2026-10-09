@@ -198,6 +198,43 @@ function Belief() {
   );
 }
 
+/** Her whole life on one stage: the scene, her age and her outfit change every few seconds, or on tap. */
+const REEL = [
+  { place: "room", age: 10, outfit: "uniform", extra: "backpack" },
+  { place: "cafe", age: 21, outfit: "hoodie", extra: "headphones" },
+  { place: "office", age: 27, outfit: "blazer", extra: "watch" },
+  { place: "bank", age: 34, outfit: "kurta", extra: "bag" },
+  { place: "home", age: 45, outfit: "sari", extra: "earrings" },
+  { place: "garden", age: 63, outfit: "shawl", extra: "glasses" },
+];
+function LifeReel() {
+  const { t } = useI18n();
+  const [at, setAt] = useState(0);
+  useEffect(() => {
+    if (reduced()) return;
+    const timer = window.setInterval(() => setAt((value) => (value + 1) % REEL.length), 3800);
+    return () => window.clearInterval(timer);
+  }, []);
+  const scene = REEL[at];
+  return (
+    <section className="lp-reel">
+      <Reveal as="header" className="lp-head">
+        <p className="lp-label">{t("lp.reel.label")}</p>
+        <h2>{t("lp.reel.title")}</h2>
+        <p className="lp-sub">{t("lp.reel.lead")}</p>
+      </Reveal>
+      <Reveal className="lp-reel-frame">
+        <div key={scene.place} className="lp-reel-scene"><LifeScene place={scene.place} /></div>
+        <div key={`v${at}`} className="lp-reel-actor"><Character look={{ outfit: scene.outfit, extra: scene.extra, place: scene.place }} age={scene.age} size={260} bare alive /></div>
+        <p key={`c${at}`} className="lp-reel-caption">{t(`lp.reel.s${at}`)}</p>
+        <div className="lp-reel-dots" role="tablist" aria-label={t("lp.reel.label")}>
+          {REEL.map((item, index) => <button key={item.place} type="button" role="tab" aria-selected={index === at} aria-label={t(`lp.reel.s${index}`)} className={index === at ? "on" : ""} onClick={() => setAt(index)} />)}
+        </div>
+      </Reveal>
+    </section>
+  );
+}
+
 export function Landing({ onJoin, onLogin }: { onJoin: () => void; onLogin: () => void }) {
   const { t } = useI18n();
   const heroRef = useRef<HTMLDivElement | null>(null);
@@ -311,6 +348,8 @@ export function Landing({ onJoin, onLogin }: { onJoin: () => void; onLogin: () =
       </section>
 
       <Belief />
+
+      <LifeReel />
 
       <section id="features" className="lp-features">
         <Reveal as="header" className="lp-head">
