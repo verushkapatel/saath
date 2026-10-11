@@ -27,7 +27,7 @@ export type EpisodeOption = {
 
 /** The hands-on part of an episode, before the decision. */
 export type Sim =
-  | { kind: "inspect"; title: Copy; hint: Copy; lines: { label: Copy; value: Copy; note: Copy; flag?: boolean }[] }
+  | { kind: "inspect"; title: Copy; hint: Copy; play?: boolean; lines: { label: Copy; value: Copy; note: Copy; flag?: boolean }[] }
   | { kind: "budget"; title: Copy; hint: Copy; income: number; needs: number }
   | { kind: "grow"; title: Copy; hint: Copy; monthly: number; rate: number; years: number[] }
   | { kind: "emi"; title: Copy; hint: Copy; principal: number; rate: number; months: number[] };

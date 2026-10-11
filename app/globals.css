@@ -3666,3 +3666,37 @@ h3, .item-title, .card strong, .g-card strong { font-family: var(--font-ui-stack
 /* The winding story path stays inside the column on wide screens. */
 .g-world { overflow-x: clip; }
 @media (min-width: 900px) { .g-step { transform: translateX(calc(var(--x, 0) * 0.45)); } }
+
+/* ───────────────────────────────────────────────────────────────
+   Saath 8: one formal serif. EB Garamond for everything, sized up because it reads small.
+   ─────────────────────────────────────────────────────────────── */
+:root {
+  --font-body: var(--font-sans), var(--font-dev), Garamond, Georgia, serif;
+  --font-ui-stack: var(--font-sans), var(--font-dev), Garamond, Georgia, serif;
+}
+body { font-size: 18px; line-height: 1.55; letter-spacing: 0; font-feature-settings: "kern", "liga", "onum"; }
+.num, .hero-num, .g-hud dd, .form-value { font-feature-settings: "kern", "lnum", "tnum"; }
+h1, h2, h3, .item-title, .card strong, .g-card strong { letter-spacing: -0.005em; }
+.kicker, .masthead, .label, .eyebrow, .g-label, .g-hud dt, .ask-chips-head, .home-hero .skyward-badge small, .rail-initiative small { font-size: 0.74rem !important; letter-spacing: 0.16em !important; }
+.story-caption p { font-size: 1.22rem; font-weight: 400; letter-spacing: 0; }
+.btn, button { letter-spacing: 0.01em; }
+
+/* Play each choice forward: quiet lettered cards, effects unfold as small chips. */
+.play-list { list-style: none; margin: var(--s-3) 0 0; padding: 0; display: grid; gap: 10px; }
+.play-card { width: 100%; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; padding: 16px 18px; text-align: left; background: transparent; border: 1px solid var(--line); border-radius: var(--r-md); color: var(--text); cursor: pointer; transition: border-color .2s, background .2s; }
+.play-card:hover { border-color: var(--line-strong); background: var(--surface-2); }
+.play-card.is-open { border-color: var(--accent-soft); background: var(--surface-2); border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.play-letter { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line-strong); font-size: 0.95rem; font-style: italic; color: var(--text-muted); }
+.play-card.is-open .play-letter { border-color: var(--accent); color: var(--accent-text); }
+.play-text { font-size: 1.08rem; line-height: 1.45; }
+.play-plus { position: relative; width: 14px; height: 14px; opacity: .55; transition: transform .25s; }
+.play-plus::before, .play-plus::after { content: ""; position: absolute; inset: 6px 0 auto; height: 1.5px; background: currentColor; }
+.play-plus::after { transform: rotate(90deg); }
+.play-card.is-open .play-plus { transform: rotate(45deg); opacity: .9; }
+.play-reveal { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 18px 16px 64px; border: 1px solid var(--accent-soft); border-top: 0; border-radius: 0 0 var(--r-md) var(--r-md); background: var(--surface-2); animation: play-in .3s ease-out; }
+.play-reveal[hidden] { display: none; }
+.play-chip { padding: 3px 12px; border-radius: var(--r-full); font-size: 0.92rem; background: var(--surface-3); color: var(--text-muted); }
+.play-chip.is-up { background: var(--ok-soft); color: var(--ok); }
+.play-chip.is-down { background: var(--sev-high-soft); color: var(--sev-high); }
+@keyframes play-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@media (max-width: 560px) { .play-card { gap: 12px; padding: 14px; } .play-reveal { padding-left: 14px; } }

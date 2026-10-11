@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { EB_Garamond, Inter, Noto_Sans_Devanagari } from "next/font/google";
+import { EB_Garamond, Noto_Sans_Devanagari } from "next/font/google";
 import { Providers } from "@/components/providers";
 import { RegisterSW, Shell } from "@/components/shell";
 import { asset } from "@/lib/config";
@@ -11,7 +11,6 @@ import "./landing.css";
 // One formal serif throughout: EB Garamond for Latin, Noto Sans Devanagari for Hindi and Marathi.
 // They are downloaded at build time and served from this site, with size-matched fallbacks so text does not jump.
 const sans = EB_Garamond({ subsets: ["latin"], variable: "--font-sans", display: "swap", weight: ["400", "500", "600", "700", "800"] });
-const ui = Inter({ subsets: ["latin"], variable: "--font-ui", display: "swap" });
 const dev = Noto_Sans_Devanagari({ subsets: ["devanagari"], variable: "--font-dev", display: "swap", weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
@@ -48,7 +47,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${ui.variable} ${dev.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} ${dev.variable}`} suppressHydrationWarning>
       <head>
         {/* Applies the saved theme and text size before anything is drawn, so there is no flash of the wrong theme. */}
         <script dangerouslySetInnerHTML={{ __html: PREFS_BOOT }} />

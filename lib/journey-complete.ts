@@ -182,6 +182,7 @@ function generated(seed: ChapterSeed, index: number): Episode {
     kind: "inspect",
     title: C("Play each choice forward", "हर विकल्प को आगे चलाकर देखें", "प्रत्येक पर्याय पुढे नेऊन पाहा"),
     hint: C("Tap a choice to see what it would change in Verena's life. These are educational examples, not promises.", "किसी विकल्प पर टैप करें और देखें कि वह वेरेना की ज़िंदगी में क्या बदलेगा। ये शैक्षिक उदाहरण हैं, वादे नहीं।", "एखाद्या पर्यायावर टॅप करा आणि तो वेरेनाच्या आयुष्यात काय बदलेल ते पाहा. ही शैक्षणिक उदाहरणे आहेत, वचने नाहीत."),
+    play: true,
     lines: options.map((option) => ({ label: option.text, value: C("Tap to play it forward", "आगे चलाने के लिए टैप करें", "पुढे नेण्यासाठी टॅप करा"), note: effectSummary(option.effects) })),
   } : null;
   return {

@@ -194,9 +194,37 @@ export function JourneyScreen() {
   );
 }
 
+// Each choice as a quiet card: tap one and what it would change in Verena's life unfolds beneath it.
+function PlayForward({ sim }: { sim: Extract<Sim, { kind: "inspect" }> }) {
+  const { code } = useI18n();
+  const [open, setOpen] = useState<number | null>(null);
+  return (
+    <ol className="play-list">
+      {sim.lines.map((line, index) => {
+        const shown = open === index;
+        return (
+          <li key={index}>
+            <button type="button" className={`play-card${shown ? " is-open" : ""}`} aria-expanded={shown} onClick={() => { tap(); setOpen(shown ? null : index); }}>
+              <span className="play-letter" aria-hidden="true">{String.fromCharCode(65 + index)}</span>
+              <span className="play-text">{line.label[code]}</span>
+              <span className="play-plus" aria-hidden="true" />
+            </button>
+            <div className="play-reveal" hidden={!shown}>
+              {line.note[code].split(" · ").map((part) => (
+                <span key={part} className={`play-chip${part.includes("−") ? " is-down" : part.includes("+") ? " is-up" : ""}`}>{part}</span>
+              ))}
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
 function InspectSim({ sim }: { sim: Extract<Sim, { kind: "inspect" }> }) {
   const { t, code } = useI18n();
   const [open, setOpen] = useState<number[]>([]);
+  if (sim.play) return <PlayForward sim={sim} />;
   return (
     <div className="stack-sm">
       <ul className="paper-form">
